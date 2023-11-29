@@ -1,0 +1,2 @@
+We are sorry but we don't accept pull requests.
+Please read <https://github.com/fujitsu/compiler-test-suite/blob/main/README.md>.
