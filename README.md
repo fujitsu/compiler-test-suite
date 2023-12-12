@@ -26,3 +26,14 @@ Contribution
 [Bug reports are welcome](https://github.com/fujitsu/compiler-test-suite/issues/new).
 
 We are sorry but we don't accept pull requests. As explained above, we plan to join the LLVM test-suite in the future, but the license is different. We'll switch the license when we join. To make it easy, we want to hold copyright of whole test suite. If you have any suggestions, please let us know them as [issues](https://github.com/fujitsu/compiler-test-suite/issues/new).
+
+Current Status
+--------------
+
+As of the 2023-12 release, Fujitsu Compiler Test Suite lacks following things. They will be available in the upcoming releases.
+
+- Test programs for C/C++
+- More test programs for Fortran
+- Tools to run test programs
+- Information for verifying test results
+- Documents
