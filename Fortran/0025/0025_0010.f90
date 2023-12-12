@@ -1,0 +1,55 @@
+
+integer(1)  :: r1(1000)
+real(8) :: r2(1000)
+real(8) :: r3(1000)
+real(8) :: r4(1000)
+common /com/ r2,r3,r1,r4
+r1=1
+r2=5
+if (sizeof(r2(1)).ne.8) print *,'array merye err'
+if (sizeof(r1(1)).ne.1) print *,'array merye err'
+print *,'pass'
+end 
+subroutine sub01()
+common    /com01/ r2,r3,r1,r4
+integer(1)  :: r1(1000)
+real(8) :: r2(1000)
+logical(8) :: r3(1000)
+complex(8) :: r4(1000)
+r1=1
+r2=5
+r1=r2
+end
+subroutine sub02()
+common    /com02/ r3,r1,r4,r2
+integer(1)  :: r1(1000)
+real(8) :: r2(1000)
+logical(8) :: r3(1000)
+complex(8) :: r4(1000)
+r1=1
+r2=5
+r1=r2
+end
+
+
+subroutine sub03()
+common    /com03/ r1,r4,r2,r3
+integer(1)  :: r1(1000)
+real(8) :: r2(1000)
+logical(8) :: r3(1000)
+complex(8) :: r4(1000)
+r1=1
+r2=5
+r1=r2
+end
+
+subroutine sub04()
+common    /com04/ r4,r2,r3,r1
+integer(1)  :: r1(1000)
+real(8) :: r2(1000)
+logical(8) :: r3(1000)
+complex(8) :: r4(1000)
+r1=1
+r2=5
+r1=r2
+end

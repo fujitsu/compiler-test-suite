@@ -1,0 +1,20 @@
+subroutine s
+ parameter(k=1001)
+block
+    integer(1):: i(k)
+    addr = loc(i)
+  if (addr /= loc(i)) print *,1
+end block
+end
+subroutine t
+ parameter(k=1000)
+block
+    integer(1):: i(k)
+    addr = loc(i)
+  if (addr /= loc(i)) print *,1
+end block
+end
+call s
+call t
+  print *,'OK'
+end 
