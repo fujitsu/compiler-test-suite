@@ -1,0 +1,19 @@
+PROGRAM MAIN
+
+TYPE T
+COMPLEX::COM
+END TYPE
+TYPE(T)::OBJW
+REAL::R1,R2
+character(50)::D
+ OBJW%COM=(3.4,5.44)
+     WRITE(D,*)OBJW%COM%RE,OBJW%COM%IM  
+     READ (D,*)R1,R2
+
+IF( R1 .ne.3.4 )print*,101
+IF( R2 .ne.5.44 )print*,102
+ PRINT*,'PASS'
+
+
+END PROGRAM
+

@@ -1,0 +1,32 @@
+IMPLICIT COMPLEX*8(U),REAL*8(W-Y)
+INTEGER*1 JG,PPO53,a2,a1,a6,C9R,X,V1RRT,           R53CYGJ2,N,CS,DC0182GQ20MASFIIIS70D,A0ES9J3G9,           a5,XA8HKK8NF9NJMN,ICUHJ0J0,           a14,KSF05P_30PV_0ZYVT,GYAKVPXOK5Z99W3LOY4I           ,YH60B6T,PY,M,Z                                        &
+& ,aaa      
+
+PARAMETER (JG=1,PPO53=29,a2=28,a1=39,a6=127           ,C9R=-4,X=1,V1RRT=3,R53CYGJ2=-29,N=-1,CS=-78,           DC0182GQ20MASFIIIS70D=1,A0ES9J3G9=23,a5=0,           XA8HKK8NF9NJMN=1,ICUHJ0J0=0,a14=1,           KSF05P_30PV_0ZYVT=2,GYAKVPXOK5Z99W3LOY4I=-1,YH&
+&60B6T=123,PY=           31,M=4,Z=14)
+#line 300
+nnnnnnn=1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+print *,'pass'
+end

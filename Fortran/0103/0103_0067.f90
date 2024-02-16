@@ -1,0 +1,10 @@
+integer,parameter::a=kind(maskl(1,1))
+integer,parameter::b=kind(maskl(1,2))
+integer,parameter::c=kind(maskl(1,4))
+integer,parameter::d=kind(maskl(1,8))
+if(a.ne.1)print*,"100"
+if(b.ne.2)print*,"101"
+if(c.ne.4)print*,"102"
+if(d.ne.8)print*,"103"
+print*,"PASS"
+end

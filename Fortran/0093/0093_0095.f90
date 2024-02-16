@@ -1,0 +1,15 @@
+PROGRAM MAIN
+
+COMPLEX::OBJW,OBJR
+character(50)::D
+ OBJW=(3.4,5.44)
+     WRITE(D,*)OBJW%RE,OBJW%IM  
+     READ (D,*)OBJR%RE,OBJR%IM
+
+IF( OBJR%RE .ne.3.4 )print*,101
+IF( OBJR%IM .ne.5.44 )print*,102
+ PRINT*,'PASS'
+
+
+END PROGRAM
+

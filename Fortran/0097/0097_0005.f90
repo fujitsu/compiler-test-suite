@@ -1,0 +1,16 @@
+integer ::a(3)=[1,2,3]
+integer::x =1
+integer::y =3
+integer::z =2
+ call sub(a(x:y:z))
+ if (any(a/=[11,2,13])) print *,102,a
+ print *,'pass'
+ contains
+subroutine sub(b)
+integer,contiguous :: b(:)
+ if(is_contiguous(b).neqv..true.)print*,"102"
+ if (any(b/=[1,3])) print *,101
+  b=b+10
+  end subroutine
+  end
+

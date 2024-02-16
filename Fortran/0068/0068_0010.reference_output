@@ -1,0 +1,17 @@
+ loop1 : OK
+ loop1_2 : OK
+ loop2 : OK
+ loop2_2 : OK
+ loop3 : OK
+ loop3_2 : OK
+ loop4 : OK
+ loop4_2 : OK
+ loop5 : OK
+ loop5_2 : OK
+ loop6 : OK
+ loop6_2 : OK
+ loop7 : OK
+ loop7_2 : OK
+ loop8 : OK
+ loop8_2 : OK
+exit 0

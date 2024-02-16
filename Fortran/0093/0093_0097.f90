@@ -1,0 +1,38 @@
+MODULE M
+  TYPE T
+      COMPLEX::A
+END TYPE T
+
+END MODULE M
+
+PROGRAM MAIN
+
+USE M
+TYPE(T)::OBJW(5),OBJR(5)
+
+OBJW%A=(2.44,7.44)
+OBJW(1)%A=(3.44,8.44)
+OBJW(3)%A=(4.44,5.44)
+OBJW(5)%A=(6.44,9.44)
+
+OPEN (UNIT=71, FILE='fort.76', FORM='FORMATTED')
+WRITE(UNIT=71,*) OBJW(1:5:2)%A%RE
+WRITE(UNIT=71,*) OBJW(1:5:2)%A%IM
+     CLOSE (UNIT=71)
+
+OPEN (UNIT=77, FILE='fort.76', FORM='FORMATTED')
+READ(UNIT=77,*) OBJR(1:5:2)%A%RE
+READ(UNIT=77,*) OBJR(1:5:2)%A%IM
+     CLOSE (UNIT=77,status='delete')
+
+IF( OBJR(1)%A%RE .ne. 3.44)print*,'1013'
+IF( OBJR(3)%A%RE .ne. 4.44)print*,'1012'
+IF( OBJR(5)%A%RE .ne. 6.44)print*,'1011'
+IF( OBJR(1)%A%IM .ne. 8.44)print*,'1023'
+IF( OBJR(3)%A%IM .ne. 5.44)print*,'1022'
+IF( OBJR(5)%A%IM .ne. 9.44)print*,'1021'
+
+PRINT*,'PASS'
+
+END PROGRAM
+

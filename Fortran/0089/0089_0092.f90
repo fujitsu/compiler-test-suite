@@ -1,0 +1,52 @@
+module n
+type base         
+  contains
+   procedure,nopass::prc1  
+end type
+contains
+subroutine prc1()
+  write(6,*) 'NG call'
+end subroutine
+end
+
+module nn           
+use n
+type ext                  
+end type
+
+private
+public::base
+end module
+
+module m
+type base
+end type
+end
+
+module mm                
+use m
+
+type, extends(base)::ext    
+  contains
+   procedure,nopass::prc1
+end type
+contains
+subroutine prc1()
+  write(4,*)400
+end subroutine
+end module
+
+use nn
+use mm, only:ext 
+
+type(ext)::tc1  
+call tc1%prc1()
+rewind 4
+read(4,*) k
+if (k/=400) print *,4001
+read(4,*,end=400) k
+print *,40021
+400 continue
+
+print *,'pass'
+end

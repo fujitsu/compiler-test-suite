@@ -9,7 +9,7 @@ end module module_2nd
 module module_3rd
   use module_2nd 
   use module_1st
-  integer :: hoge != DP
+  integer :: hoge
 end module module_3rd
 
   use module_3rd, ONLY :

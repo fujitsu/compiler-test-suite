@@ -1,0 +1,21 @@
+module m1
+contains
+SUBROUTINE S0(A,B)
+complex(KIND=8),INTENT(INOUT)::A(2,2,2,2),B(2,2)
+I=1
+A(I,1:2,1:2,1)=A(I,1:2,1:2,1)+MATMUL(B,A(I+1,1:2,2,1:2))
+
+end SUBROUTINE
+end
+use m1
+complex(KIND=8)::A(2,2,2,2),B(2,2)
+A=reshape((/(i,i=1,16)/),(/2,2,2,2/))
+B=reshape((/(i,i=1,4)/),(/2,2/))
+ call S0(A,B)
+if (any(abs((/A/)-(/&
+31,2,47,4,67,6,99,8,9,10,11,12,13,14,15,16&
+/))>0.001))print *,'error'
+
+print *,'pass'
+end
+

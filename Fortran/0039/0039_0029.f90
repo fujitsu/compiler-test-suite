@@ -1,32 +1,32 @@
        module mod_1
-       type derived_type ! 1)
+       type derived_type
         integer:: com
        end type
-       type derived_type2! 1)
+       type derived_type2
         integer:: com
        end type
-       type derived_type3! 1)
+       type derived_type3
         integer:: com
        end type
       end
-      module mod_2    ! 2)
-      use mod_1       ! 3)
+      module mod_2
+      use mod_1
         interface
-          module subroutine proc()  ! 4)
-            type(derived_type) :: d_var  !5)
-            type(derived_type2) :: d_var2  !5)
-            type(derived_type3) :: d_var3  !5)
-            type(derived_type3) :: d_var4  !5)
-            type(derived_type3) :: d_var5  !5)
+          module subroutine proc()
+            type(derived_type) :: d_var
+            type(derived_type2) :: d_var2
+            type(derived_type3) :: d_var3
+            type(derived_type3) :: d_var4
+            type(derived_type3) :: d_var5
           end subroutine
         end interface
       end module
     
 module mod_3
-     use mod_2,only:proc ! 6), 7), 8)
+     use mod_2,only:proc
      use mod_1,only:derived_type,derived_type3
-            type(derived_type) :: d_var  !5)
-            type(derived_type3) :: d_var3  !5)
+            type(derived_type) :: d_var
+            type(derived_type3) :: d_var3
 private
 public::proc
 end

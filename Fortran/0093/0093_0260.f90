@@ -1,0 +1,16 @@
+   type ty
+   complex,pointer:: p2(:)
+   end type
+   type(ty) :: obj
+   complex,target::c(4)
+   c=(2,4)
+   obj%p2=>c
+   call s01(obj%p2%im)
+   contains
+   subroutine s01(r)
+   real,pointer,intent(in)::r(:)
+   if (any( r .ne. 4)) print*,101
+   print *,'pass'
+   end subroutine
+      end
+

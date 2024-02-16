@@ -1,0 +1,16 @@
+MODULE MOD
+  REAL(4),DIMENSION(3) :: A,B
+  integer::n
+END MODULE MOD
+
+SUBROUTINE SUB0()
+  USE MOD
+
+  DO I=1,n !56 -> pipelined
+     A(I) = B(I)
+  ENDDO
+END SUBROUTINE SUB0
+
+PROGRAM MAIN
+  print *,"OK"
+END PROGRAM MAIN

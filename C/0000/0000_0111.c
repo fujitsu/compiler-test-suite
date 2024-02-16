@@ -1,0 +1,36 @@
+#include "stdio.h"
+#define N 64
+
+void sub(long double * restrict a,long double * restrict b) {
+  int i;
+  for(i=0;i<N;i++) {
+    a[i] = a[i] + b[i] * 2;
+  }
+}
+
+int main()
+{
+  long double dest[N],res[N],src[N];
+  int i;
+  int ok=1;
+
+#pragma loop nosimd
+  for(i=0;i<N;i++) {
+    dest[i] = i;
+    src[i] = i+2;
+    res[i] = dest[i]+src[i]*2;
+  }
+
+  sub (dest,src);
+
+#pragma loop nosimd
+  for (i = 0;i < N;i++) {
+    if (dest[i] != res[i]) {
+      printf(" NG: %d: dest=%Lf  res=%Lf \n",i,dest[i],res[i]);
+      ok = 0;
+    }
+  }
+  if (ok) {
+    printf("ok\n");
+  }
+}

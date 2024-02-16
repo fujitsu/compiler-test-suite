@@ -1,0 +1,40 @@
+      !k=0
+                        k=                                            1_
+     &4+
+     &5
+c        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX2
+
+      if (k/=6) print *,105
+
+      kkk=10
+      k=                                                               k
+     &kk+1
+     &5
+c        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX2
+
+      if (k/=25) print *,106
+
+      a=                                                               1
+     &.
+     &5
+c        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX2
+
+      if (abs(a-1.5)>0.00001) print *,107
+
+      a=                                                              1.
+     &0
+     &5
+c        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX2
+
+      if (abs(a-1.05)>0.00001) print *,108
+
+
+      a=                                                              11
+     &11.
+     &5
+c        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX2
+
+      if (abs(a-1111.5)>0.00001) print *,109
+
+      print *,'pass'
+      end

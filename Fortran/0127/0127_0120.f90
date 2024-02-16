@@ -1,0 +1,45 @@
+subroutine init(val,n,seed)
+  integer(kind=8)::val(n)
+  integer n,seed
+
+  do i = 1, n
+     val(i) = i * seed
+  enddo
+
+end subroutine
+
+subroutine func()
+  integer(kind=4)::nn=40
+  integer(kind=4)::i=0,j=0,k=0,l=0
+  integer(kind=8)::v2=2,v3=3
+  integer(kind=8),dimension(40)::a
+  integer(kind=8)::aa=0
+
+  call init(a,nn,3)
+
+  do k=1,40
+     do j=nn-1,11,-1
+        a(j) = j
+     enddo
+
+     if (i <= l) v2=v3
+
+     v3=10
+
+     do j=nn-1,11,-1
+        aa = aa + a(j)
+     enddo
+  enddo
+
+  if ((aa .eq. (725*40)) .and. (v2 .eq. 10) .and. (v3 .eq. 10)) then
+     print *, "OK"
+  else
+     print *, "NG"
+  end if
+
+end subroutine
+
+
+program main
+  call func()
+end program

@@ -15,9 +15,7 @@ use mod_1
   end interface
 end module
 
-!use mod_2,only:proc
-use mod_2!,only:proc
-
+use mod_2
 print *,'pass'
 end
 

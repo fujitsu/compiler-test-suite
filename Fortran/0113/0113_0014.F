@@ -1,0 +1,14 @@
+      k = 100000 - 100000 + 100000 - 100000 + 100000 - 100000 + 100000 -
+     &100000  + 100000 - 100000 + 100000 - 100000 + 100000 - 100000 +  1
+     &1 
+c        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX23456789
+
+
+
+
+
+
+      if (k/=11)print *,k
+      print *,'pass'
+
+      end

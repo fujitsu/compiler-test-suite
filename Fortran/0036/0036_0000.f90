@@ -7,10 +7,7 @@ MODULE MOD_A
 END MODULE MOD_A
 
 MODULE MOD_B
-! Uncomment to show error
   USE MOD_A, ONLY: Var_A, String
-! Uncomment for no error
-!  USE MOD_A
   IMPLICIT NONE
 END MODULE MOD_B
 

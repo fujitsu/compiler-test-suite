@@ -19,7 +19,7 @@
           end 
       end
     
-     use mod_2,only:proc ! 6), 7), 8)
+     use mod_2,only:proc
      use mod_1
       type(derived_type) :: var  
 call proc(var)

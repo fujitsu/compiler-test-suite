@@ -1,0 +1,20 @@
+PROGRAM MAIN
+      COMPLEX::A,B
+INTEGER::J,I
+A=(3.44,8.44)
+
+OPEN (UNIT=71, FILE='fort.75', FORM='FORMATTED')
+WRITE(UNIT=71,*) ((A%RE,A%IM,I=1,2),J=1,2)
+     CLOSE (UNIT=71)
+
+OPEN (UNIT=77, FILE='fort.75', FORM='FORMATTED')
+READ(UNIT=77,*) ((B%RE,B%IM,I=1,2),J=1,2)
+     CLOSE (UNIT=77,status='delete')
+
+IF( B%RE .ne. 3.44)print*,'101'
+IF( B%IM .ne. 8.44)print*,'102'
+
+PRINT*,'PASS'
+
+END PROGRAM
+

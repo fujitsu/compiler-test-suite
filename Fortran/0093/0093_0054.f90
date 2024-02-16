@@ -1,0 +1,40 @@
+MODULE M
+  TYPE T
+      COMPLEX::A
+END TYPE T
+ 
+
+
+
+END MODULE M
+
+PROGRAM MAIN
+
+USE M
+TYPE(T)::OBJW1
+REAL::R1,R2
+INTEGER::C=5,D=7
+OBJW1%A=(3.44,8.44)
+
+ OPEN (UNIT=71, FILE='fort.81', FORM='UNFORMATTED')
+     WRITE(UNIT=71)C,[OBJW1%A%RE],D 
+     WRITE(UNIT=71)C,[OBJW1%A%IM],D 
+
+     CLOSE (UNIT=71)
+
+
+OPEN (UNIT=77, FILE='fort.81', FORM='UNFORMATTED')
+     READ(UNIT=77)C,R1,D
+     READ(UNIT=77)C,R2,D
+     CLOSE (UNIT=77,status='delete')
+
+
+IF( R1 .ne. 3.44)print*,'101'
+IF( R2 .ne. 8.44)print*,'102'
+
+
+
+ PRINT*,'PASS'
+
+END PROGRAM
+

@@ -1,0 +1,30 @@
+
+PROGRAM MAIN
+
+COMPLEX::OBJW1
+REAL::R1,R2
+INTEGER::C=5,D=7
+OBJW1=(3.44,8.44)
+
+ OPEN (UNIT=71, FILE='fort.81', FORM='FORMATTED')
+     WRITE(UNIT=71,FMT='(I2,F5.2,I2)')C,[OBJW1%RE],D 
+     WRITE(UNIT=71,FMT='(I2,F5.2,I2)')C,[OBJW1%IM],D 
+
+     CLOSE (UNIT=71)
+
+
+OPEN (UNIT=77, FILE='fort.81', FORM='FORMATTED')
+     READ(UNIT=77,FMT='(I2,F5.2,I2)')C,R1,D
+     READ(UNIT=77,FMT='(I2,F5.2,I2)')C,R2,D
+     CLOSE (UNIT=77,status='delete')
+
+
+IF( R1 .ne. 3.44)print*,'101'
+IF( R2 .ne. 8.44)print*,'102'
+
+
+
+ PRINT*,'PASS'
+
+END PROGRAM
+
