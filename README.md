@@ -10,10 +10,15 @@ Target Platform
 
 Most test programs in this test suite will be able to run on many platforms (OS/CPU). However, because it was originally developed for Fujitsu C/C++/Fortran compilers, which target Linux/AArch64, it may contain test programs which don't run on platforms other than Linux/AArch64.
 
+How to Use
+----------
+
+Please read [RUN.md](RUN.md) to use this test suite.
+
 License
 -------
 
-Fujitsu Compiler Test Suite is licensed under [the Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0). It is slightly different from the one used in [the LLVM Project](https://github.com/llvm/llvm-project/) and [the LLVM test-suite](https://github.com/llvm/llvm-test-suite/) ([Apache License v2.0 with LLVM Exceptions](https://github.com/llvm/llvm-project/blob/main/LICENSE.TXT)) for internal reasons.
+The Fujitsu Compiler Test Suite is licensed under [the Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0). It is slightly different from the one used in [the LLVM Project](https://github.com/llvm/llvm-project/) and [the LLVM test-suite](https://github.com/llvm/llvm-test-suite/) ([Apache License v2.0 with LLVM Exceptions](https://github.com/llvm/llvm-project/blob/main/LICENSE.TXT)) for internal reasons.
 
 Contact
 -------
@@ -30,10 +35,8 @@ We are sorry but we don't accept pull requests. As explained above, we plan to j
 Current Status
 --------------
 
-As of the 2023-12 release, Fujitsu Compiler Test Suite lacks following things. They will be available in the upcoming releases.
+As of the 2024-02 release, the Fujitsu Compiler Test Suite lacks following things. They will be available in the upcoming releases.
 
-- Test programs for C/C++
-- More test programs for Fortran
-- Tools to run test programs
-- Information for verifying test results
-- Documents
+- Test programs for C++
+- More test programs for C/Fortran
+- Many missing reference output files (used to verify outputs from test programs)
