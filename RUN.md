@@ -8,7 +8,7 @@ The Fujitsu Compiler Test Suite uses the infrastructure of [the LLVM test-suite]
 Preparation
 -----------
 
-First, you need an environment to run the LLVM test-suite. Read [the test-suite Guide in the LLVM Project](https://llvm.org/docs/TestSuiteGuide.html). Just to be sure, the required software is listed below..
+First, you need an environment to run the LLVM test-suite. Read [the test-suite Guide in the LLVM Project](https://llvm.org/docs/TestSuiteGuide.html). Just to be sure, the required software is listed below.
 
 - [CMake](https://cmake.org/)  
   CMake 3.24.0 or higher is required to test Flang.
@@ -45,8 +45,6 @@ Create a build directory and use CMake to configure the LLVM test-suite. Options
 
 There are three important options for the Fujitsu Compiler Test Suite.
 
-- **`-DCMAKE_EXE_LINKER_FLAGS=-lm`**  
-  As of the 2024-02 release, this option is required to compile some C tests. It may become unnecessary in the upcoming releases.
 - **`-DTEST_SUITE_SUBDIRS=Fujitsu`**  
   The LLVM test-suite infrastructure has a setting to select directories in which you want to run tests. You cloned the Fujitsu Compiler Test Suite with the directory name `Fujitsu`. By specifying this option, the LLVM test-suite infrastructure is configured to run only the Fujitsu Compiler Test Suite.
 - **`-DTEST_SUITE_FORTRAN=ON`**  
@@ -63,7 +61,6 @@ cd llvm-test-suite-build
 cmake -GNinja \
       -DCMAKE_C_COMPILER=<path to llvm build>/bin/clang \
       -DCMAKE_Fortran_COMPILER=<path to llvm build>/bin/flang-new \
-      -DCMAKE_EXE_LINKER_FLAGS=-lm \
       -DTEST_SUITE_SUBDIRS=Fujitsu \
       -DTEST_SUITE_FORTRAN=ON \
       -C../llvm-test-suite/cmake/caches/O0.cmake \
