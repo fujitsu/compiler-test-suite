@@ -1,4 +1,3 @@
-c
 
       module var_def
       real(kind=4):: f1=1.0E0
@@ -17,7 +16,6 @@ c
       logical(kind=1),parameter::FF=.false.
       logical(kind=1)::res=FF
       
-c
       if ((f1 .eq. DC1) .and. (f2 .eq. DC1)) then
          res = TT
       else
@@ -25,7 +23,6 @@ c
          stop
       endif
 
-c
       if ((f1 .eq. DC1) .or. (f2 .eq. DC1)) then
          res = TT
       else
@@ -33,7 +30,6 @@ c
          stop
       endif
 
-c
       if ((f3 .ne. DC2) .and. (f2 .eq. DC1)) then
          res = TT
       else
@@ -59,7 +55,6 @@ c
          stop
       endif
 
-c
       if ((f3 .ne. DC2) .or. (f2 .eq. DC1)) then
          res = TT
       else
@@ -85,7 +80,6 @@ c
          stop
       endif
 
-c
       if ((f1 .eq. DC1) .and. (f2 .eq. DC1)
      &     .and. (f3 .ne. DC2)) then
          res = TT
@@ -94,7 +88,6 @@ c
          stop
       endif
 
-c
       if ((f1 .eq. DC1) .or. (f2 .eq. DC1)
      &     .or. (f3 .ne. DC2)) then
          res = TT
@@ -103,7 +96,6 @@ c
          stop
       endif
 
-c
       if (((f1 .eq. DC1) .and. (f2 .eq. DC1))
      &     .and. (f3 .ne. DC2)) then
          res = TT
@@ -112,7 +104,6 @@ c
          stop
       endif
 
-c
       if ((f3 .ne. DC2) .and. (f2 .eq. DC1)
      &     .or. (f1 .eq. DC1)) then
          res = TT
@@ -121,7 +112,6 @@ c
          stop
       endif
 
-c
       if ((f3 .ne. DC2) .and. (f4 .eq. DC2)
      &     .or. (f1 .eq. DC1)) then
          res = TT
@@ -130,7 +120,6 @@ c
          stop
       endif
 
-c
       if ((f3 .ne. DC2) .and. (f2 .eq. DC1)
      &     .and. (f4 .ne. DC2)) then
          res = TT
@@ -139,7 +128,6 @@ c
          stop
       endif
 
-c
       if ((f3 .ne. DC2) .or. (f2 .eq. DC1)
      &     .or. (f4 .ne. DC2)) then
          res = TT

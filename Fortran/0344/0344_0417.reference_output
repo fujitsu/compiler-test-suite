@@ -1,0 +1,57 @@
+
+  ## TEST 1 ## 
+ F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+F
+    2    7   10   15   22   27   30   35   42   47   50   55   62   67   70
+   75   82   87   90   95  102  107  110  115  122  127  130  135  142  147
+  150  155  162  167  170  175  182  187  190  195
+  100  100  100  100  100  100  100  100  100  100  100  100  100  100  100
+  100  100  100  100  100  100  100  100  100  100  100  100  100  100  100
+  100  100  100  100  100  100  100  100  100  100
+
+  ## TEST 2 ## 
+ T F F F T F F F T F F F T F F F T F F F T F F F T F F F T F F F T F F F T F F
+F T F F F T F F F T F F F T F F F T F F F T F F F T F F F T F F F T F F F T F F
+F T F F F T F F F T F F F T F F F T F F F T F F F T F F F T F F F T F F F T F F
+F T F F F T F F F T F F F T F F F T F F F T F F F T F F F T F F F T F F F T F F
+F T F F F T F F F T F F F T F F F T F F F T F F F T F F F T F F F T F F F T F F
+F
+    3    0   11    0   23    0   31    0   43    0   51    0   63    0   71
+    0   83    0   91    0  103    0  111    0  123    0  131    0  143    0
+  151    0  163    0  171    0  183    0  191    0
+  100    0  100    0  100    0  100    0  100    0  100    0  100    0  100
+    0  100    0  100    0  100    0  100    0  100    0  100    0  100    0
+  100    0  100    0  100    0  100    0  100    0
+
+  ## TEST 3 ## 
+ F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F
+T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F
+T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F
+T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F
+T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F
+T
+      536870912            138         131092      134217758             40
+          32818       33554492             78           8272        8388698
+            102           2158        2097272    -2147483518            652
+         524438      536871072            170         131252      134217918
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0
+
+  ## TEST 4 ## 
+ F T F F F T T T F T F T T T F T F T F T F F F T T T F T F T T T F F F T F T F
+F F T T T F T F T F T F F F T F T F T F T T T F T F T F T F F F T T T F T F T T
+T F F F T F T F F F T T T F T F T F T F F F T T T F T F T T T F T F T F T F F F
+T T T F T F T T T F F F T F T F F F T T T F T F T F T F F F T F T F T F T T T F
+T F T F T F F F T T T F T F T T T F F F T F T F F F T T T F T F T F T F F F T T
+T
+    0    0    0   30    0    0   28    0    0   26    0    0   24    0    0
+   22    0    0   20    0
+           -100              0              0    -1073741893              0
+              0     -268435495              0              0      -67108873
+              0              0             21              0              0
+             51              0              0             81              0
+exit 0

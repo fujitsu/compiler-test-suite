@@ -31,4 +31,3 @@ if (any(abs((/A/)-(/&
 end do
 print *,'pass'
 end
-

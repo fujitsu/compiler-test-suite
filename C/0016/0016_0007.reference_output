@@ -1,0 +1,9 @@
+ sub1 : OK
+ sub2 : OK
+ sub3 : OK
+ sub4 : OK
+ sub5 : OK
+ sub6 : OK
+ sub7 : OK
+ sub8 : OK
+exit 0

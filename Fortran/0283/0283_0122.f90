@@ -1,0 +1,24 @@
+PROGRAM main
+IMPLICIT NONE
+
+INTEGER :: i,n = 0
+
+ASSOCIATE(bb => fun())
+  DO i = bb,10,bb
+    n = n + bb
+  END DO
+END ASSOCIATE
+
+IF(n .EQ. 10) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+CONTAINS
+
+INTEGER FUNCTION fun()
+  fun = 2
+END FUNCTION
+
+END PROGRAM

@@ -1,0 +1,131 @@
+      DOUBLE PRECISION  P,GOL,A(13),X,Y,C,B,Z,DARRAY(2,2),DI,DIFF
+      N=0
+      K=-10000
+      ISW=1
+      IS=1
+      IISW=1
+      GOL=0.6931471805599455D0
+      A(1)=1.000000000000000D0
+      A(2)=0.6931471805599453D0
+      A(3)=0.2402265069591018D0
+      A(4)=0.5550410866479814D-1
+      A(5)=0.9618129107895819D-2
+      A(6)=0.1333355812830156D-2
+      A(7)=0.1540353118123955D-3
+      A(8)=0.1525271089953616D-4
+      A(9)=0.1321594141090956D-5
+      A(10)=0.1017191425354767D-6
+      A(11)=0.711112799318383D-8
+      A(12)=0.41191250317756D-9
+      A(13)=0.3639276131050D-10
+      P=1.0D0
+      DARRAY(1,1)=-0.5D0
+      DARRAY(1,2)=-0.001D0
+      DARRAY(2,1)=0.01D0
+      DARRAY(2,2)=0.5D0
+      DIFF=1.0D-13
+C
+      ITEM=2
+   10 N=N+1
+      IF(N-1)11,12,11
+   11 WRITE(6,210)
+  210 FORMAT(1H1 / )
+   12 CONTINUE
+C
+      L=0
+   20 DI=K
+      X=DI/100.0D0
+   30 Y=DEXP(X)
+      C=0.0D0
+      B=X
+      IF(B)40,45,50
+   40 KSW=1
+      B=DABS(B)
+      GO TO 60
+   45 Z=1.0D0
+      GO TO 21
+   50 KSW=0
+   60 B=B/GOL
+      KB=B
+      B=B-FLOAT(KB)
+   80 Z=0.0D0
+      DO 100 M=1,13
+      Z=Z+A(M)*B**(M-1)
+  100 CONTINUE
+      Z=(2.0D0**KB)*Z
+      IF(KSW-1) 21,22,21
+   22 Z=1.0D0/Z
+   21 CALL DPRTN(L,DIFF,X,Y,Z)
+      L=L+1
+      IF(ITEM-3)23,24,23
+   23 IF(K+100) 26,25,25
+   26 K=K+100
+      IF(L-50)20,10,10
+   25 ITEM=1
+      IF(K-100)  28,27,27
+   28 GO TO(91,92),ISW
+   91 ISW=2
+      K=K+100
+      GO TO 10
+   92 K=K+1
+      IF(L-50)20,10,10
+   27 ITEM=2
+      IF(K-17000) 29,31,31
+   29 K=K+100
+      GO TO(93,94),IISW
+   93 IISW=2
+      GO TO 10
+   94 IF(L-50)20,10,10
+   31 ITEM=3
+      N=N+1
+      WRITE(6,210)
+C
+      L=0
+   24 GO TO(1,2,3,4,5,6,7,8,9),IS
+    1 X=DARRAY(1,1)
+      IS=2
+      GO TO 30
+    2 X=DARRAY(1,2)
+      IS=3
+      GO TO 30
+    3 X=DARRAY(2,1)
+      IS=4
+      GO TO 30
+    4 X=DARRAY(2,2)
+      IS=5
+      GO TO 30
+    5 X=((P**2-2.0D0)*6.0D0+1.0D0)/10.0D0
+      IS=6
+      GO TO 30
+    6 X=(P**2+P*0.1D0-P/10.0D0)/(-100.0D0)
+      IS=7
+      GO TO 30
+    7 X=DARRAY(1,1)**2+(P/10.0D0)*2.0D0
+      IS=8
+      GO TO 30
+    8 X=(DARRAY(1,1)**2+(P/10.0D0)*2.0D0+DARRAY(2,2)/10.0D0)
+      IS=9
+      GO TO 30
+    9 CONTINUE
+      STOP
+      END
+C
+      SUBROUTINE    DPRTN (L,D,A,R,V)
+      DOUBLE PRECISION A,R,V,DIFF,D
+      DIFF = V - R
+      IF(R) 90,80,90
+   80 IF(DABS(DIFF)-D) 100,120,120
+   90 IF(DABS(DIFF)-D*DABS(V)) 100,120,120
+  100 WRITE (6,1)
+    1 FORMAT(1H ,5X,4H*OK*)
+      GO TO 130
+  120 WRITE (6,2) A,R,V,DIFF
+    2 FORMAT(1H ,5X,8H*ERROR* ,4(5X,D24.17) )
+  130 IF (L- 9) 200,190,140
+  140 IF (L-19) 200,190,150
+  150 IF (L-29) 200,190,160
+  160 IF (L-39) 200,190,200
+  190 WRITE (6,3)
+    3 FORMAT (1H )
+  200 RETURN
+      END

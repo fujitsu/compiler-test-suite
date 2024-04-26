@@ -42,4 +42,3 @@ if(constvar1 .neqv. .TRUE.)print*,"119"
 if(constvar2 .neqv. .FALSE.)print*,"120"
 print*,"PASS"
 end
-

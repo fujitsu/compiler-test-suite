@@ -13,7 +13,6 @@ end
 submodule(m)smod
 contains
      module subroutine sub_3
-     !print *,'smod.sub_3'
      END subroutine
      module subroutine sub_1
      call sub_2()

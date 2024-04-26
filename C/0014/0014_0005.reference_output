@@ -1,0 +1,57 @@
+=== pattern aa ===
+size = 8
+- before store
+       0: 00 00 00 00 00 00 00 00 
+- after store
+       0: 00 00 00 00 21 43 34 12 
+- loaded value
+12344321
+=== pattern ua ===
+size = 8
+- before store
+       0: 00 00 00 00 00 00 00 00 
+- after store
+       0: 00 00 00 00 10 32 44 23 
+- loaded value
+2344321
+=== pattern au ===
+size = 8
+- before store
+       0: 00 00 00 00 00 00 00 00 
+- after store
+       0: 00 00 00 00 32 44 23 01 
+- loaded value
+1234432
+=== pattern uu1 ===
+size = 12
+- before store
+       0: 00 00 00 00 00 00 00 00 00 00 00 00 
+- after store
+       0: 00 00 00 00 00 00 00 10 32 12 00 00 
+- loaded value
+12321
+=== pattern uu2 ===
+size = 12
+- before store
+       0: 00 00 00 00 00 00 00 00 00 00 00 00 
+- after store
+       0: 00 00 00 00 00 00 21 23 01 00 00 00 
+- loaded value
+12321
+=== pattern uu3 ===
+size = 12
+- before store
+       0: 00 00 00 00 00 00 00 00 00 00 00 00 
+- after store
+       0: 00 00 00 00 10 32 44 23 01 00 00 00 
+- loaded value
+12344321
+=== pattern uu4 ===
+size = 12
+- before store
+       0: 00 00 00 00 00 00 00 00 00 00 00 00 
+- after store
+       0: 00 00 00 00 00 00 00 10 32 44 23 01 
+- loaded value
+12344321
+exit 0

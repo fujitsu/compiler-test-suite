@@ -1,0 +1,9 @@
+&mod_name        ma=11,  mb=12   mc=13   /
+&mod_sub_name    msa=21, msb=22  msc=23  /
+&mod_ch_sub_name mcsa=31,mcsb=32 mcsc=33 /
+&mod_name        ma=111,  mb=112   mc=113   /
+&mod_sub_name    msa=121, msb=122  msc=123  /
+&mod_ch_sub_name mcsa=131,mcsb=132 mcsc=133 /
+&mod_name        ma=1111,  mb=1112   mc=1113   /
+&mod_sub_name    msa=1121, msb=1122  msc=1123  /
+&mod_ch_sub_name mcsa=1131,mcsb=1132 mcsc=1133 /

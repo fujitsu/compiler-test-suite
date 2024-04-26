@@ -18,7 +18,7 @@
          write(6,*) 'true value :',chr_b
          write(6,*) 'calc value :',chr_a
       else
-         write(6,*) '*** ok !! ***'
+         write(6,*) '*** ok    ***'
       endif
       deallocate (chr_a)
       stop

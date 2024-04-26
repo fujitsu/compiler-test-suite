@@ -1,4 +1,3 @@
-c 
 
       program main
 
@@ -8,14 +7,12 @@ c
 
       a = (0.0, 0.0)
 
-c
       do i=1,N
          do j=1,N
             a(i*j) = a(i+j) + 1.0
          enddo
       enddo
 
-c
       do i=1,N
          do j=1,N
             do k=1,N
@@ -24,7 +21,6 @@ c
          enddo
       enddo
 
-c
       do i=1,N
          do j=1,N
             do k=1,N
@@ -33,7 +29,6 @@ c
          enddo
       enddo
 
-c
       do i=1,N
          do j=1,N
             do k=1,N

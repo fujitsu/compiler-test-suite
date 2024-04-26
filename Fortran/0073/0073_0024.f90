@@ -6,17 +6,11 @@ integer:: b(k1,k2,k3+1,k4)
 end type
 type(x)::z
 integer::n1=2,n2=2
-!interface
-! pure subroutine subcheck(x,k)
-!   integer,intent(in)::x,k
-! end subroutine
-!end interface
 contains
 pure function f(n2,n3,k2,k1,k) result(r)
 integer,intent(in)::n2,n3,k2,k1,k
 integer::r(k2,k1)
 r=n2+n3
-!call subcheck(r(1,1),k)
 end function
 subroutine s1(k1,k2,k3,k4)
 !$omp parallel
@@ -46,7 +40,6 @@ end
 use m1
 call omp_set_num_threads(1)
 write(1,'(a)') repeat('0',18)
-!allocate( z%a(k1,k2,k3+1,k4),z%b(k1,k2,k3+1,k4))
 z%a=reshape([(n,n=1,k1*k2*(k3+1)*k4)],[k1,k2,k3+1,k4])
 z%b=reshape([(n,n=1,k1*k2*(k3+1)*k4)],[k1,k2,k3+1,k4])
 call s1(k1,k2,k3,k4)

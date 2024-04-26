@@ -1,4 +1,3 @@
-!
 
 program main
 integer,dimension(1:1000)::ra,y,x
@@ -22,7 +21,6 @@ integer inx1,inx2,scale,m,n
 end
 
 
-!
 subroutine exe_sub(inx1,inx2,scale,m,n,ra,y,x)
 integer inx1,inx2,scale,m,n
 integer,dimension(1:1000) :: ra,y,x

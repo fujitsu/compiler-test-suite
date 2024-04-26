@@ -5,9 +5,7 @@
      1                               0.,7316.,56.,672.,97861./         
       LOGICAL NO_GOOD/.FALSE./                                         
                                                                        
-**  TESTING STATEMENT  **                                              
       A(1:8:3)=A(1:6:2)/0.5                                            
-**  - - - - - - - - -  **                                              
                                                                        
       DO I=1,10                                                        
          IF (A(I) .NE. RIGHT_RESULT(I)) NO_GOOD = .TRUE.                 

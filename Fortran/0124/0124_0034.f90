@@ -1,4 +1,3 @@
-! 
 
       complex(kind=8)  cvar8
       real(kind=8)     ans

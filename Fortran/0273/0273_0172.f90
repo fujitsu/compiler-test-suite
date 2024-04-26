@@ -1,0 +1,24 @@
+ REAL (KIND=2) :: R,R1
+ COMPLEX (KIND=2) :: C,C1
+ R=5.0_2
+ R1=5.0_2
+ C=(1.0_2,2.0_2)
+ C1=(1.0_2,2.0_2)
+ IF(R/=5.0_2) PRINT *,'101'
+ IF(C/=(1.0_2,2.0_2)) PRINT *,'102'
+ IF(R/=R1) THEN
+ PRINT *,'101'
+ ELSEIF(C/=C1) THEN
+ PRINT *,'102'
+ ELSE
+ R1=6.0_2
+ C1=(2.0_2,2.0_2)
+ END IF
+ IF(R==R1) THEN
+ PRINT *,'103'
+ ELSEIF(C==C1) THEN
+ PRINT *,'104'
+ END IF
+ PRINT *,'PASS'
+ END
+

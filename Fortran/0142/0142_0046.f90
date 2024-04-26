@@ -1,0 +1,47 @@
+subroutine s1(k1,k2,k3,a)
+type x
+ sequence
+ integer::vx,v
+end type
+type(x) :: a(k1,k2+1,k3)
+
+m1=1;m2=1
+forall (n1=1:k2)
+  a(: , n1+1, m2)%v=a(: , n1 , m1 )%v+dble(n1)
+end forall
+
+end
+subroutine s2(k1,k2,k3,b)
+type x
+ sequence
+ integer::vx,v
+end type
+type(x) :: b(k1,k2+1,k3)
+integer :: c(k1,k2+1,k3)
+
+m1=1;m2=1
+do      n1=1,k2
+  c(: , n1 , 2)=b(:, n1 , m1  )%v+dble(n1)
+end do
+do      n1=1,k2
+  b(: , n1+1 , m2)%v=c(:, n1 , 2 )
+end do
+end
+
+integer,parameter:: k1=5,k2=3,k3=4
+type x
+ sequence
+ integer::vx,v
+end type
+type(x) ::a(k1,k2+1,k3),b(k1,k2+1,k3)
+a%v=reshape([(n,n=1,20*4)],[5,4,4])
+b%v=reshape([(n,n=1,20*4)],[5,4,4])
+call s1(k1,k2,k3,a)
+call s2(k1,k2,k3,b)
+if (any(a%v/=b%v)) then 
+print *,101
+print *,a%v
+print *,b%v
+endif
+print *,'pass'
+end

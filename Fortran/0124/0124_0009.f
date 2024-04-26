@@ -1,4 +1,3 @@
-c 
 
       program main
 
@@ -8,7 +7,6 @@ c
 
       a = (1.0, 2.0)
 
-c
       do i=1,N/2
          a(i+1) = a(i+2) + 1.0
       enddo

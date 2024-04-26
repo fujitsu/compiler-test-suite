@@ -1,0 +1,16 @@
+PROGRAM main
+IMPLICIT NONE
+
+CHARACTER(LEN = 4),DIMENSION(3) :: arr = ' '
+
+ASSOCIATE(aa => arr)
+aa(1:3)(1:2) = 'hi'
+END ASSOCIATE
+
+IF(ALL(arr(1:3) .EQ. 'hi')) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+END PROGRAM

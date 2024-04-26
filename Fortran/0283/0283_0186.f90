@@ -1,0 +1,46 @@
+MODULE mod1
+IMPLICIT NONE
+
+REAL :: r1 = 3.0
+TYPE t1
+  REAL :: rr
+END TYPE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+REAL,PARAMETER :: n = 5.0
+TYPE(t1),POINTER :: ptr
+TYPE(t1),ALLOCATABLE :: allc
+ALLOCATE(ptr,allc)
+ptr%rr = 2.0
+allc%rr = 3.0
+
+CALL sub(ptr,allc)
+
+CONTAINS
+
+SUBROUTINE sub(dyp,dya)
+USE mod1
+IMPLICIT NONE
+TYPE(t1),POINTER :: dyp
+TYPE(t1),ALLOCATABLE :: dya
+ASSOCIATE(aa => (dyp%rr*dya%rr)+(n*r1))
+  CALL sub_2(aa)
+END ASSOCIATE
+END SUBROUTINE
+
+SUBROUTINE sub_2(ddy)
+IMPLICIT NONE
+REAL :: ddy
+IF(ddy .GT. 10.0) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+END SUBROUTINE
+
+END PROGRAM

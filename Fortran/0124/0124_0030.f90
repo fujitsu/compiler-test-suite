@@ -1,4 +1,3 @@
-! 
 
       complex(kind=4)                       :: r4dim0
       complex(kind=4),dimension(1:10)       :: r4dim1

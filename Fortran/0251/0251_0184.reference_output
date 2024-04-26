@@ -1,0 +1,17 @@
+ correct destructor called
+ 3
+ 3
+ 3
+ within block
+ correct destructor called
+ 4
+ 4
+ 4
+ 4
+ correct destructor called
+ 4
+ 4
+ 4
+ 4
+ after block
+exit 0

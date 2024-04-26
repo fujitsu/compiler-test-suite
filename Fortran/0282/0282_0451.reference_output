@@ -1,0 +1,30 @@
+ ab---ab
+ R -> R
+ ab---ab
+ R -> R
+ ab---ab
+ R -> R
+ bc---bc
+ R -> R
+ bc---bc
+ R -> R
+ bc---bc
+ R -> R
+ cd---cd
+ R -> R
+ cd---cd
+ R -> R
+ cd---cd
+ R -> R
+ dk---dk
+ R -> R
+ dk---dk
+ R -> R
+ dk---dk
+ R -> R
+ 4 3 -- 4 3
+ Shape OK 
+ Shape OK 
+ 1 -- 1
+ KIND OK 
+exit 0

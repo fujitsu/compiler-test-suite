@@ -13,4 +13,3 @@ use m1
 call sub
 print *,'pass'
 end
-

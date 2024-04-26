@@ -1,4 +1,3 @@
-!
 
 integer,volatile :: j
 integer, parameter :: N=20

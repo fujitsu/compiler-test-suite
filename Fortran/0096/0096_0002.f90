@@ -1,5 +1,3 @@
-! Array Constructor
-! Block used
 program pro
 block
  real,parameter :: x1(2)=(/3.0,4.0/)

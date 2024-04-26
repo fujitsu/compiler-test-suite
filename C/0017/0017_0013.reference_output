@@ -1,0 +1,7 @@
+test for isfinite(float)
+NAN:       not isfinite(x)
+INFINITY:  not isfinite(x)
+ZERO:      isfinite(x)
+SUBNORMAL: isfinite(x)
+NORMAL:    isfinite(x)
+exit 0

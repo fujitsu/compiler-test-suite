@@ -1,0 +1,45 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  REAL :: r1
+END TYPE
+
+TYPE,EXTENDS(t1) :: t2
+  REAL :: r2
+END TYPE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+CLASS(t2),DIMENSION(:),ALLOCATABLE :: allc,allc2
+ALLOCATE(allc(1:10),allc2(1:10))
+allc%r2 = (/2.0,-1.0,2.0,-1.0,2.0,-1.0,2.0,-1.0,2.0,-1.0/)
+
+ASSOCIATE(aa => fun(allc))
+  WHERE(aa%r2 .GT. 0.0)
+    allc2%r2 = 1.0
+  ELSEWHERE
+    allc2%r2 = 0.0
+  END WHERE
+END ASSOCIATE
+
+IF(ALL(allc2( : : 2)%r2 .EQ. 1.0)) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+CONTAINS
+
+FUNCTION fun(dd1)
+IMPLICIT NONE
+CLASS(t2),DIMENSION(:),ALLOCATABLE :: dd1,fun
+ALLOCATE(fun(1:10))
+fun%r2 = dd1%r2
+END FUNCTION
+
+END PROGRAM

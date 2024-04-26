@@ -1,0 +1,115 @@
+      DIMENSION ARRAY(2,2)
+      E(R)=1.0+R-R
+      F(R)=(R**2+EXP(SIN(R-1.0)))/SQRT(4.0*R)
+C
+      N=0
+      ITEM=1
+      K=-500
+      P=1.0
+      ISW=1
+      IISW=1
+      ARRAY(1,1)=-0.5
+      ARRAY(1,2)=-0.01
+      ARRAY(2,1)=0.01
+      ARRAY(2,2)=0.5
+  100 N=N+1
+      IF(N-1)110,120,110
+  110 CONTINUE
+C
+   12 FORMAT(1H1 / )
+  120 CONTINUE
+C
+   13 FORMAT(1H0,7X,9H*** ITEM(,I2,5H) ***,7X,
+     1       50H*****  TEST  OF  STANDARD  INTRINSIC  FUNCTION  - ,
+     2       11HIFIX(X) -  ,5H*****,21X,9H( PAGE = ,I3,2H )
+     3       ///6X,11H- JUSTICE -,20X,12H- ARGUMENT -,16X,
+     4       19H- COMPUTED RESULT -,9X,17H- COMPARE VALUE - )
+      L=0
+  130 X=FLOAT(K)/100.0
+      IY=IFIX(X)
+      IZ=X
+      IF(L) 150,140,131
+  131 IF(L-10) 150,140,132
+  132 IF(L-20) 150,140,133
+  133 IF(L-30) 150,140,134
+  134 IF(L-40) 150,140,150
+  140 CONTINUE
+C
+   14 FORMAT(1H )
+  150 IF(IY-IZ)160,170,160
+  160 WRITE(6,15)X,IY,IZ
+   15 FORMAT(1H ,8X,7H*ERROR*,20X,E14.7,23X,I6,21X,I6)
+      GO TO 180
+  170 CONTINUE
+C
+   16 FORMAT(1H ,8X,4H*OK*,23X,E14.7,23X,I6,21X,I6)
+  180 L=L+1
+      IF(K-500)190,200,200
+  190 K=K+1
+      IF(L-50)130,100,100
+  200 ITEM=2
+      N=N+1
+C
+      L=0
+  220 GO TO (1,2,3,4,5),ISW
+    1 X=-1.234E-30
+      ISW=2
+      GO TO 210
+    2 X=0.0
+      ISW=3
+      GO TO 210
+    3 X=3.435E1
+      ISW=4
+      GO TO 210
+    4 X=-3.435E3
+      ISW=5
+  210 IY=IFIX(X)
+      IZ=X
+      IF(L)240,230,240
+  230 CONTINUE
+C
+  240 IF(IY-IZ)250,260,250
+  250 WRITE(6,15)X,IY,IZ
+      GO TO 270
+  260 CONTINUE
+C
+  270 L=L+1
+      GO TO 220
+    5 ITEM=3
+C
+   17 FORMAT(1H0/19X,3H- (,I3,3H) -//)
+  280 GO TO (21,22,23,24,25,26,27,28,29),IISW
+   21 X=SIN(P-1.0)-SQRT(P**2/4.0)
+      IISW=2
+      GO TO 290
+   22 X=(EXP(P-1.0)*SQRT(4.0*P)-3.0)/100.0
+      IISW=3
+      GO TO 290
+   23 X=(ALOG(P**2-1.0*SQRT(4.0*P)+2.0)+P)/100.0
+      IISW=4
+      GO TO 290
+   24 X=SIN(ALOG(EXP(SIN(P-1.0))))*SQRT(P)+0.5
+      IISW=5
+      GO TO 290
+   25 X=F(P)*ARRAY(1,1)
+      IISW=6
+      GO TO 290
+   26 X=EXP(ALOG(F(P**2)))/100.0-P*0.02
+      IISW=7
+      GO TO 290
+   27 X=F(ARRAY(2,1)*100.0)/100.0
+      IISW=8
+      GO TO 290
+   28 X=E(SIN(SQRT(F(P)+3.0)-F(P)*2.0))*ARRAY(2,2)
+      IISW=9
+  290 IY=IFIX(X)
+      IZ=X
+      IF(IY-IZ)300,310,300
+  300 WRITE(6,15)X,IY,IZ
+      GO TO 280
+  310 CONTINUE
+C
+      GO TO 280
+   29 CONTINUE
+      STOP
+      END

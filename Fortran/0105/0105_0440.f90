@@ -4,7 +4,6 @@ SUBROUTINE S0(A,B,C)
 complex(KIND=8),INTENT(INOUT)::A(2,2,2,2),B(2,2),C(2,2)
 I=1
 C=MATMUL(B,A(I+1,1:2,2,1:2))
-! dot call
 end SUBROUTINE
 end
 use m1
@@ -18,4 +17,3 @@ if (any(abs((/C/)-(/&
 
 print *,'pass'
 end
-

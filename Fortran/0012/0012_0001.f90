@@ -23,4 +23,3 @@ a1=ac
 call ss(a1(:,:))
 print *,'OK'
 end
-

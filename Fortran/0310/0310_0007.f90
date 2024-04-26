@@ -1,0 +1,7 @@
+CHARACTER(LEN=2) B(4)
+DATA B(2)/'ABCDE'/
+IF(ICHAR(B(1))==0 .AND. B(2)=='AB' .AND. &
+  &ICHAR(B(3))==0 .AND. ICHAR(B(4))==0) THEN
+  PRINT *,'*** ok ***'
+END IF
+END

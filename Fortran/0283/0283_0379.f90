@@ -1,0 +1,49 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  REAL(KIND = 4) :: r1
+END TYPE
+
+TYPE,EXTENDS(t1) :: t2
+  REAL(KIND = 4),DIMENSION(3,4,5,6,2) :: r2
+END TYPE
+
+INTERFACE OPERATOR( * )
+  MODULE PROCEDURE multip
+END INTERFACE
+
+CONTAINS
+
+FUNCTION multip(dd1,dd2)
+IMPLICIT NONE
+CLASS(t2),INTENT(IN) :: dd1
+REAL(KIND = 4),INTENT(IN) :: dd2
+CLASS(t2),ALLOCATABLE :: multip
+ALLOCATE(multip)
+multip%r2 = dd1%r2 * dd2
+END FUNCTION
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+CLASS(*),ALLOCATABLE :: acc
+
+ALLOCATE(t2 :: acc)
+
+SELECT TYPE(acc)
+  CLASS IS(t2)
+    acc%r2 = 20.00
+    ASSOCIATE(aa => acc * 30.00)
+      IF(aa%r2(1,1,1,1,1) .EQ. 600.00)THEN
+        PRINT*,'pass'
+      ELSE
+        PRINT*,101
+      END IF
+    END ASSOCIATE
+END SELECT
+
+END PROGRAM

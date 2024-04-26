@@ -11,7 +11,6 @@ end
 submodule(m)smod
 contains
      module subroutine sub_3
-!     print *,'smod.sub_3'
      END subroutine
      module subroutine sub_1
      call sub_2()
@@ -30,5 +29,4 @@ call sub_1()
 print *,'pass'
 end
      subroutine sub_3
-!     print *,'sub_3'
      END subroutine

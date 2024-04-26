@@ -1,0 +1,69 @@
+      I1  =12345
+      I2  =11111
+      A1  =I1+I2
+      ANS =23456.0
+      DIF =A1-ANS
+      ITM =01
+      IF(ABS(DIF)-1.0E-01)2,1,1
+    1 WRITE(6,102)ITM,A1,ANS,DIF
+  102 FORMAT(1H0,12X,7H*ERROR*,9X,2H( ,I2,2H ),12X,E13.6,13X,E13.6,7X,
+     *E14.7)
+      GO TO 500
+    2 WRITE(6,103)ITM
+  103 FORMAT(1H0,12X,4H*OK*,12X,2H( ,I2,2H ),12X,E13.6,13X,E13.6,7X,
+     *E14.7)
+C
+C
+  500 I3  =-5
+      I4  =100
+      A2  =I1-I2
+      ANS =1234.0
+      DIF =A2-ANS
+      ITM=ITM+1
+      IF(ABS(DIF)-1.0E-02)4,3,3
+    3 WRITE(6,102)ITM,A2,ANS,DIF
+      GO TO 501
+    4 WRITE(6,103)ITM
+C
+C
+  501 A3  =I4*I3
+      ANS =-500
+      DIF =A3-ANS
+      ITM =ITM+1
+      IF(ABS(DIF)-1.0E-01)6,5,5
+    5 WRITE(6,102)ITM,A3,ANS,DIF
+      GO TO 502
+    6 WRITE(6,103)ITM
+C
+C
+  502 I5  =20
+      A4  =I5/I4
+      ANS =0.0
+      ITM =ITM+1
+      DIF =A4-ANS
+      IF(ABS(DIF)-1.0E-05)8,7,7
+    7 WRITE(6,102)ITM,A4,ANS,DIF
+      GO TO 503
+    8 WRITE(6,103)ITM
+C
+C
+  503 A5  =I3/I4
+      ITM=ITM+1
+      ANS =0.0
+      DIF =A5-ANS
+      IF(ABS(DIF)-1.0E-05)10,9,9
+    9 WRITE(6,102)ITM,A5,ANS,DIF
+      GO TO 504
+   10 WRITE(6,103)ITM
+C
+  504 A6  =7/3
+      ANS =2.0
+      ITM=ITM+1
+      DIF =A6-ANS
+      IF(ABS(DIF)-1.0E-05)12,11,11
+   11 WRITE(6,102)ITM,A6,ANS,DIF
+      GO TO 505
+   12 WRITE(6,103)ITM
+  505 CONTINUE
+      STOP
+      END

@@ -1,4 +1,3 @@
-!
       real*16,dimension(1:10) :: a
       real*16,parameter :: ans=20._16
 

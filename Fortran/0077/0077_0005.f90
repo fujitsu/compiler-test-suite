@@ -18,7 +18,7 @@ end function
 end
 subroutine s2
 use m1
-type(y),allocatable:: x!(:)
+type(y),allocatable:: x
 allocate (x , source= f() )
 end
 use m1

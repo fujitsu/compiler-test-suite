@@ -1,0 +1,6 @@
+ within function
+ 10
+ call of dest 10
+ after block
+ pass
+exit 0

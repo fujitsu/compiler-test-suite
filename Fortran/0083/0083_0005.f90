@@ -1,6 +1,5 @@
 module m0
   integer::k=2
-!public:: ss1,n,ss2,ss3
  interface
  module subroutine ss1(c)
   character(k+2) :: c 

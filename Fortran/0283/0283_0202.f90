@@ -1,0 +1,38 @@
+PROGRAM main
+
+INTEGER :: a(10)=0
+
+ASSOCIATE(b=>a(f1():f2():f3()))
+  b(3)=1
+END ASSOCIATE
+
+IF(a(6)==1) THEN
+  a(6) = 0
+ELSE
+  a(6) = 1
+END IF
+
+IF(ALL(a(1:10) == 0)) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+CONTAINS
+
+FUNCTION f1()
+  INTEGER :: f1
+  f1=2
+END FUNCTION
+
+FUNCTION f2()
+  INTEGER :: f2
+  f2=8
+END FUNCTION
+
+FUNCTION f3()
+  INTEGER :: f3
+  f3=2
+END FUNCTION
+
+END PROGRAM

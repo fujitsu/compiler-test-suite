@@ -1,0 +1,44 @@
+      DIMENSION X(2,2)
+      COMMON X1,X2,X3,X4
+      EQUIVALENCE (X3,X(2,1))
+  102 FORMAT(1H0,12X,7H*ERROR*,7X,2H( ,I2,2H ),10X,E14.7,13X,E14.7,8X)
+C
+  103 FORMAT(1H0,12X,4H*OK*,10X,2H( ,I2,2H ),10X,E14.7,13X,E14.7,8X)
+C
+      X2  =4506.17
+      ITM =01
+      IF(X(1,1)-X2)1,2,1
+    1 WRITE(6,102)ITM,X(1,1),X2
+      GO TO 500
+    2 WRITE(6,103)ITM
+C
+  500 X(2,1)=4641.3
+      ITM =ITM+1
+      IF(X3-X(2,1))3,4,3
+    3 WRITE(6,102)ITM,X3,X(2,1)
+      GO TO 501
+    4 WRITE(6,103)ITM
+C
+  501 X4  =-0.001432E 03
+      ITM =ITM+1
+      IF(X(1,2)-X4)5,6,5
+    5 WRITE(6,102)ITM,X(1,2),X4
+      GO TO 502
+    6 WRITE(6,103)ITM
+  502 CALL SUB
+C
+      ITM =ITM+1
+      ANS=9012.4
+      IF(X(2,2)-ANS)7,8,7
+    7 WRITE(6,102)ITM,X(2,2),ANS
+      GO TO 503
+    8 WRITE(6,103)ITM
+  503 CONTINUE
+      STOP
+      END
+      SUBROUTINE SUB
+      DIMENSION A(10)
+      COMMON A
+      A(5)=9012.4
+      RETURN
+      END

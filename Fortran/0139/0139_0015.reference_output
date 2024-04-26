@@ -1,0 +1,9 @@
+ bcdef---bcdef
+ UTF -> UTF
+ efghi---efghi
+ UTF -> UTF
+ ghijk---ghijk
+ UTF -> UTF
+ 4 -- 4
+ KIND OK 
+exit 0

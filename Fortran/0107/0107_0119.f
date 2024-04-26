@@ -1,11 +1,11 @@
       PROGRAM MAIN                                                  
       REAL       REAL_A1(10),REAL_B1(10)                               
       REAL       REAL_A2(10,10),REAL_B2(10,10)                         
-C                                                                      
+
       DATA REAL_A1,REAL_A2/110*1.0/                                    
       DATA REAL_B1,REAL_B2/110*1.0/                                    
       I=INT(COS(0.0))                                                  
-C                                                                      
+
    10 I=I+1                                                            
       IF (I .GE. 3) THEN                                               
       REAL_A2(1,1:)=REAL_A1*3.0                                        
@@ -22,7 +22,7 @@ C
         REAL_A2(K,:)=REAL_A1*2                                         
    60 CONTINUE                                                         
    20 CONTINUE                                                         
-C                                                                      
+
       J=INT(COS(0.0))                                                  
   110 J=J+1                                                            
       IF (I .GE. 3) THEN                                               
@@ -52,8 +52,7 @@ C
   260 CONTINUE                                                         
   160 CONTINUE                                                         
   120 CONTINUE                                                         
-C                                                                      
-C                                                                      
+
       DO 999 INC1=1,10                                                 
         DO 999 INC2=1,10                                               
           IF (REAL_A2(INC1,INC2) .NE. REAL_B2(INC1,INC2)) THEN         

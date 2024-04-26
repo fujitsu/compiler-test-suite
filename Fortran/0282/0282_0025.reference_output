@@ -1,0 +1,16 @@
+ T T T T
+ T T T T
+ T --- T
+ I -> I
+ T --- T
+ I -> I
+ T --- T
+ I -> I
+ T --- T
+ I -> I
+ 2 2 -- 2 2
+ SHAPE OK 
+ SHAPE OK 
+ 4 -- 4
+ KIND OK 
+exit 0

@@ -1,0 +1,3 @@
+ destructor call & dmy(1)%ii = 10
+ pass
+exit 0

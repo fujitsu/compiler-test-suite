@@ -1,0 +1,98 @@
+      REAL DP(2),ANS(2)
+      COMPLEX DCX,DCXS,DCXC
+      EQUIVALENCE (DCX,DP(1)),(DCXS,ANS(1))
+C
+      N=0
+      ITEM=0
+      ISW=1
+      K1=1
+      DIFF=1.0E-5
+   85 GO TO(10,20,30,40),ISW
+   10 R=1.0
+      J=100
+      DP(1)=FLOAT(K1)
+      GO TO 51
+   20 R=0.5
+      J=50
+      K2=5
+      DP(1)=FLOAT(K2)/10.0
+      GO TO 51
+   30 R=2.0
+      J=200
+      K3=2
+      DP(1)=FLOAT(K3)
+   51 ITEM=ITEM+1
+      N=N+1
+      IF(N-1) 15,25,15
+   15 CONTINUE
+C
+  201 FORMAT(1H1 / )
+   25 CONTINUE
+      L=0
+      DO 100 M=1,2
+      IF(M-1)  500,600,500
+  500 J=J-1
+  600  DO 100 I=1,J
+      IF (M-1) 35,45,35
+   45 DP(1)=DP(1)-FLOAT(K1)/100.0
+      DP(2)=SQRT(R**2-DP(1)**2)
+      GO TO 55
+   35 DP(1)=DP(1)+FLOAT(K1)/100.0
+      DP(2)=-1.0*SQRT(R**2-DP(1)**2)
+   55 ANS(1)=ALOG(SQRT(DP(1)**2+DP(2)**2))
+      ANS(2)=ATAN2(DP(2),DP(1))
+      DCXC=CLOG(DCX)
+      CALL CPRTN(L,DIFF,DCX,DCXC,DCXS)
+      L=L+1
+      IF (L-50) 100,75,75
+   75 N=N+1
+C
+C
+      L=0
+  100 CONTINUE
+      ISW=ISW+1
+      GO TO 85
+   40 K=-1000
+      ITEM=ITEM+1
+  135 N=N+1
+C
+C
+      L=0
+  125 DP(1)=FLOAT(K)/100.0
+      DP(2)=DP(1)
+      IF(DP(1))5,95,5
+    5 ANS(1)=ALOG(SQRT(DP(1)**2+DP(2)**2))
+      ANS(2)=ATAN2(DP(2),DP(1))
+      DCXC=CLOG(DCX)
+      CALL CPRTN(L,DIFF,DCX,DCXC,DCXS)
+      L=L+1
+   95 IF (K-1000) 105,115,115
+  105 K=K+10
+      IF (L-50) 125,135,135
+  115 CONTINUE
+      STOP
+      END
+C
+      SUBROUTINE    CPRTN (L,D,A,R,V)
+      COMPLEX A,R,V,DIFF
+      DIFF = V - R
+      IF(CABS(R)) 90,80,90
+   80 IF(CABS(DIFF)-D) 100,120,120
+   90 IF(CABS(DIFF)-D*CABS(V)) 100,120,120
+  100 CONTINUE
+C
+    1 FORMAT (1H ,2X,7H*OK*   ,4X,E14.7,1X,E14.7,4X,E14.7,1X,E14.7,
+     *        4X,E14.7,1X,E14.7,3X,2E10.3)
+      GO TO 130
+  120 WRITE (6,2) A,R,V,DIFF
+    2 FORMAT (1H ,2X,7H*ERROR*,4X,E14.7,1X,E14.7,4X,E14.7,1X,E14.7,
+     *        4X,E14.7,1X,E14.7,3X,2E10.3)
+  130 IF (L- 9) 200,190,140
+  140 IF (L-19) 200,190,150
+  150 IF (L-29) 200,190,160
+  160 IF (L-39) 200,190,200
+  190 CONTINUE
+C
+    3 FORMAT (1H )
+  200 RETURN
+      END

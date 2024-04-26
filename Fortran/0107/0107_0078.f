@@ -7,9 +7,7 @@
       LOGICAL NO_GOOD/.FALSE./                                         
       I=3*INT(COS(0.0))                                                
                                                                        
-**  TESTING STATEMENT  **                                              
       A(1:9:I)=A(2:10:I)-10                                            
-**  - - - - - - - - -  **                                              
                                                                        
       DO I=1,10                                                        
          IF (A(I) .NE. RIGHT_RESULT(I)) NO_GOOD = .TRUE.                 

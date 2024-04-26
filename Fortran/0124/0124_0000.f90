@@ -1,4 +1,3 @@
-!
 
 program main
 real r1,r2

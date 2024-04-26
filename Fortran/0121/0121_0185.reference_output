@@ -1,0 +1,11 @@
+ (Inf,NaN)
+ (Inf,NaN)
+ (Inf,-Inf)
+ (NaN,Inf)
+ (NaN,-Inf)
+ (Inf,Inf)
+ (0.,-0.)
+ (1.,-0.)
+ (1.,0.)
+ (NaN,NaN)
+exit 0

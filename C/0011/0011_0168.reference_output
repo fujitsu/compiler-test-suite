@@ -1,0 +1,5 @@
+*** TEST START ***
+ ** NO.1 TEST OK **
+ ** NO.2 TEST OK **
+*** TEST END ***
+exit 0

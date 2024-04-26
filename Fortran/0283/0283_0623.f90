@@ -1,0 +1,16 @@
+PROGRAM main
+IMPLICIT NONE
+
+CHARACTER(LEN = 1) :: bb
+
+ASSOCIATE(aa => 'c')
+  bb = aa(1:1)  
+END ASSOCIATE
+
+IF(bb .EQ. 'c') THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+END PROGRAM

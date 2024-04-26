@@ -6,4 +6,3 @@ if(any(k.ne.m))print*,"100"
 if(any(k.ne.[3,3,3]))print*,"101"
 print*,"PASS"
 end
-

@@ -61,7 +61,7 @@
          ALL(str_a%real%r4_b .eq.  str_b%real%r4_b) .AND. &
          ALL(str_a%slog%l4_a .eqv. str_b%slog%l4_a) .AND. &
          ALL(str_a%slog%l4_b .eqv. str_b%slog%l4_b)       ) then
-         write(6,*) '*** ok !! ***'
+         write(6,*) '*** ok    ***'
       else
          write(6,*) '*** ng ?? ***'
       endif

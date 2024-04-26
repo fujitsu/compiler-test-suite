@@ -1,5 +1,3 @@
-! 1D Array, Alloctable , KIND=8
-! Keywords not mentioned
 program pro
 implicit none
 integer, parameter :: n(2)=[1,2]

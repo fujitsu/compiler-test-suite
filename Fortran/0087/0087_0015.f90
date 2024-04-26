@@ -13,7 +13,6 @@ type(t)::et
       end module mod01
      
      module k3
-       ! use mod01
      contains
        subroutine sub (p)       
          interface
@@ -22,8 +21,6 @@ type(t)::et
             type(type01) :: p
           end function
          end interface
-         !use ::n02
-         !procedure (s1) :: proc    
        end subroutine sub
      end
     

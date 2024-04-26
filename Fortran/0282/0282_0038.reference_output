@@ -1,0 +1,17 @@
+ 2 2
+ F F F F
+ F F F F
+ F --- F
+ I -> I
+ F --- F
+ I -> I
+ F --- F
+ I -> I
+ F --- F
+ I -> I
+ 4 -- 4
+ KIND OK 
+ 2 2 -- 2 2
+ SHAPE OK 
+ SHAPE OK 
+exit 0

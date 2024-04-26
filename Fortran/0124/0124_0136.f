@@ -1,4 +1,3 @@
-c 
 
       program main
       real(kind=4)  f4, res
@@ -9,7 +8,6 @@ c
 
       call init_var
 
-c
       if (f4 .eq. N)then
          f4 = f4 + 1.0E0
       endif
@@ -29,7 +27,6 @@ c
       res = f4
 
       call init_var
-c
       if (f4 .eq. S1)then
          f4 = f4 + 1.0E0
       endif

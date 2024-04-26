@@ -1,0 +1,119 @@
+      PAI=3.141592653589793
+      TAN16=0.1989123673796580
+      TA316=0.6681786379192983
+      TAN8=0.4142135623730950
+      K=-5000
+      A0=1.0
+      A1=-0.3333330809014
+      A2=0.1999823845613
+      A3=-0.1424043239989
+      A4=0.1057579909248
+      A5=-0.604018298222E-1
+      N=0
+      DIFF=1.0E-5
+      ITEM=3
+      IIW=1
+      IW=1
+      ISW=1
+      IISW=1
+   10 N=N+1
+      IF(N-1)11,12,11
+   11 CONTINUE
+C
+  210 FORMAT(1H1 / )
+   12 CONTINUE
+C
+  220 FORMAT(1H0,7X,9H*** ITEM(,I2,5H) ***,7X,
+     1       49H*****  TEST  OF  STANDARD  EXTERNAL  FUNCTION  - ,
+     2       10HATAN(X) - ,5H*****,22X,9H( PAGE = ,I3,2H ),
+     3       ///9X,11H- JUSTICE -,9X,12H- ARGUMENT -,12X,
+     4       19H- COMPUTED RESULT -,8X,17H- COMPARE VALUE -,13X,
+     5       14H- DIFFERENCE - / )
+C
+      L=0
+   20 I=0
+      J=0
+      X=FLOAT(K)/1000.0
+      Y=ATAN(X)
+      A=X
+      IF(A)30,40,40
+   30 A=-A
+      I=1
+   40 IF(A-1.0)41,41,42
+   42 A=1.0/A
+      J=1
+   41 IF(A-TAN16)43,44,44
+   43 B=0.0
+      X3=0.0
+      GO TO 50
+   44 IF(A-TA316)45,46,46
+   45 B=TAN8
+      X3=PAI/8.0
+      GO TO 50
+   46 B=1.0
+      X3=PAI/4.
+   50 C=(A-B)/(1.0+A*B)
+      Z=X3+(A0+(A1+(A2+(A3+(A4+A5*C**2)*C**2)*C**2)*C**2)*C**2)*C
+      IF(J-1)48,47,48
+   47 Z=PAI/2.-Z
+   48 IF(I-1)51,49,51
+   49 Z=-Z
+   51 CALL PRTN(L,DIFF,X,Y,Z)
+      L=L+1
+      IF(K+1500)53,52,52
+   53 K=K+100
+      IF(L-50)20,10,10
+   52 ITEM=2
+      IF(K+1000)55,54,54
+   55 K=K+10
+      GO TO (1,2),IW
+    1 IW=2
+      GO TO 10
+    2 IF(L-50)20,10,10
+   54 ITEM=1
+      IF(K-999) 56,57,57
+   56 K=K+1
+      GO TO (3,4),IIW
+    3 IIW=2
+      GO TO 10
+    4 IF(L-50)20,10,10
+   57 ITEM=2
+      IF(K-1490)59,58,58
+   59 GO TO(5,6),ISW
+    5 ISW=2
+      K=K+1
+      GO TO 10
+    6 K=K+10
+      IF(L-50)20,10,10
+   58 ITEM=3
+      IF(K-5000)62,61,61
+   62 GO TO (7,8),IISW
+    7 K=K+10
+      IISW=2
+      GO TO 10
+    8 K=K+100
+      IF(L-50)20,10,10
+   61 CONTINUE
+      STOP
+      END
+C
+      SUBROUTINE    PRTN ( L, D, A, R, V )
+      DIFF = V - R
+      IF(R) 90,80,90
+   80 IF(ABS(DIFF)-D) 100,120,120
+   90 IF(ABS(DIFF)-D*ABS(V)) 100,120,120
+  100 CONTINUE
+C
+    1 FORMAT(1H ,9X,7H*OK*   ,11X,E15.7,12X,E15.7,11X,E15.7,14X,E15.7)
+      GO TO 130
+  120 WRITE (6,2) A,R,V,DIFF
+    2 FORMAT(1H ,9X,7H*ERROR*,11X,E15.7,12X,E15.7,11X,E15.7,14X,E15.7)
+  130 IF (L-9) 200,190,140
+  140 IF (L-19) 200,190,150
+  150 IF (L-29) 200,190,160
+  160 IF (L-39)200,190,200
+  190 CONTINUE
+C
+    3 FORMAT (1H )
+  200 RETURN
+      END

@@ -1,0 +1,9 @@
+ mod_fun0_entry0
+ mod_sub0_entry0
+ mod_sub1_entry0
+ mod_sub0_entry0
+ mod_sub1_entry1
+ mod_sub0_entry1
+ mod_sub1_entry1
+ pass
+exit 0

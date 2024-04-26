@@ -1,4 +1,3 @@
-c 
 
       program main
       integer a(1000)/1000*0/

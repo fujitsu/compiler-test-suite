@@ -6,7 +6,7 @@ END MODULE MOD
 SUBROUTINE SUB0()
   USE MOD
 
-  DO I=1,n !56 -> pipelined
+  DO I=1,n
      A(I) = B(I)
   ENDDO
 END SUBROUTINE SUB0

@@ -1,9 +1,9 @@
       PROGRAM MAIN                                                   
       COMPLEX,DIMENSION(10)::A,B                                           
       DATA A,B/20*(1.0,2.0)/                                           
-C                                                                      
+
       A(1:10)=B(1:10)+A(1:10)                                          
-C                                                                      
+
       DO 10 I=1,10                                                     
         IF (A(I) .NE. (2.0,4.0)) THEN                                  
           WRITE (6,999)                                                
@@ -16,6 +16,6 @@ C
   20  CONTINUE                                                         
  998  FORMAT (1H ,'**** OK ****')                           
  999  FORMAT (1H ,'**** NG ****')                           
-C                                                                      
+
       STOP                                                             
       END                                                              

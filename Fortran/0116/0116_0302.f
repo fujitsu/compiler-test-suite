@@ -9,7 +9,6 @@
       DO 2 I3=1,1
          CALL W21(IA(1,I3))
          IB(2,3) =  IA(2,3)
-!         write(6,*) IA(2,3)
   2   CONTINUE
  3    CONTINUE
       

@@ -1,0 +1,10 @@
+ === mod_s1_child called at mod_s1 ===
+ local  =  2
+ common =  4
+ === mod_s2_child called at mod_s2 ===
+ subroutine local  =  80
+ subroutine common =  160
+ === mod_s2 called at mod_s1 ===
+ local  =  8
+ common =  320
+exit 0

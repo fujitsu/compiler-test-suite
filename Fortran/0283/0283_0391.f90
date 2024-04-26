@@ -1,0 +1,30 @@
+PROGRAM main
+IMPLICIT NONE
+
+INTEGER :: res
+INTEGER,DIMENSION(3:12,3:12,3:12,3:12) :: arr = 10
+
+res = fun(arr(5:10,5:10,5:10,5:10))
+
+IF(res .EQ. 1) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+CONTAINS
+
+FUNCTION fun(dd1)
+IMPLICIT NONE
+INTEGER :: fun
+INTEGER,INTENT(IN) :: dd1(5,*)
+ASSOCIATE(aa => dd1(5,10) * 3)
+  IF(30 .EQ. aa) THEN
+    fun = 1
+  ELSE
+    fun = 0
+  END IF
+END ASSOCIATE 
+END FUNCTION
+
+END PROGRAM

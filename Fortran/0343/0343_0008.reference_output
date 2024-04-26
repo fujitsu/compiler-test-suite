@@ -1,0 +1,90 @@
+
+
+ + justice + item +               + computed result +                   + compare value +                               + difference +
+
+0 *ok*    (  1 )
+0 *ok*    (  2 )
+0 *ok*    (  3 )
+0 *ok*    (  4 )
+0 *ok*    (  5 )
+0 *ok*    (  6 )
+0 *ok*    (  7 )
+0 *ok*    (  8 )
+0 *ok*    (  9 )
+0 *ok*    ( 10 )
+0 *ok*    ( 11 )
+0 *ok*    ( 12 )
+0 *ok*    ( 13 )
+0 *ok*    ( 14 )
+0 *ok*    ( 15 )
+1
+
+ + justice + item +               + computed result +                   + comapre value +                               + difference +
+
+0 *ok*    ( 16 )
+0 *ok*    ( 17 )
+0 *ok*    ( 18 )
+0 *ok*    ( 19 )
+0 *ok*    ( 20 )
+0 *ok*    ( 21 )
+0 *ok*    ( 22 )
+0 *ok*    ( 23 )
+0 *ok*    ( 24 )
+0 *ok*    ( 25 )
+0 *ok*    ( 26 )
+0 *ok*    ( 27 )
+0 *ok*    ( 28 )
+0 *ok*    ( 29 )
+0 *ok*    ( 30 )
+1
+
+ + justice + item +               + computed result +                   + comapre value +                               + difference +
+
+0 *ok*    ( 31 )
+0 *ok*    ( 32 )
+0 *ok*    ( 33 )
+0 *ok*    ( 34 )
+0 *ok*    ( 35 )
+0 *ok*    ( 36 )
+0 *ok*    ( 37 )
+0 *ok*    ( 38 )
+0 *ok*    ( 39 )
+0 *ok*    ( 40 )
+0 *ok*    ( 41 )
+0 *ok*    ( 42 )
+0 *ok*    ( 43 )
+0 *ok*    ( 44 )
+0 *ok*    ( 45 )
+1
+
+ + justice + item +               + computed result +                   + comapre value +                               + difference +
+
+0 *ok*    ( 46 )
+0 *ok*    ( 47 )
+0 *ok*    ( 48 )
+0 *ok*    ( 49 )
+0 *ok*    ( 50 )
+0 *ok*    ( 51 )
+0 *ok*    ( 52 )
+0 *ok*    ( 53 )
+0 *ok*    ( 54 )
+0 *ok*    ( 55 )
+0 *ok*    ( 56 )
+0 *ok*    ( 57 )
+0 *ok*    ( 58 )
+0 *ok*    ( 59 )
+0 *ok*    ( 60 )
+1
+
+ + justice + item +               + computed result +                   + comapre value +                               + difference +
+
+0 *ok*    ( 61 )
+0 *ok*    ( 62 )
+0 *ok*    ( 63 )
+0 *ok*    ( 64 )
+0 *ok*    ( 65 )
+0 *ok*    ( 66 )
+0 *ok*    ( 67 )
+0 *ok*    ( 68 )
+0 *ok*    ( 69 )
+exit 0

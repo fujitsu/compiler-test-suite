@@ -23,4 +23,3 @@ call ss(v)
 if (any(v%a1/=ac)) print *,3001
 print *,'OK'
 end
-

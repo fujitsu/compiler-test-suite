@@ -1,0 +1,262 @@
+      I1  =12
+      I2  =2
+      J1  =I1**I2
+      JANS=144
+      ITM =01
+      IF(JANS-J1)1,2,1
+    1 WRITE(6,102)ITM,J1,JANS
+  102 FORMAT(1H0,12X,7H*ERROR*,7X,2H( ,I2,2H ),14X,I6,20X,I6)
+      GO TO 500
+    2 WRITE(6,103)ITM
+  103 FORMAT(1H0,12X,4H*OK*,10X,2H( ,I2,2H ),14X,I6,20X,I6)
+C
+C
+  500 J2  =I2**5
+      JANS=32
+      ITM =ITM+1
+      IF(JANS-J2)3,4,3
+    3 WRITE(6,102)ITM,J2,JANS
+      GO TO 501
+    4 WRITE(6,103)ITM
+C
+C
+  501 J3  =15**I2
+      JANS=225
+      ITM =ITM+1
+      IF(JANS-J3)5,6,5
+    5 WRITE(6,102)ITM,J3,JANS
+      GO TO 502
+    6 WRITE(6,103)ITM
+C
+C
+  502 B1  =1.3
+      A1  =B1**I2
+      ANS =1.69
+      ITM =ITM+1
+      DIF =A1-ANS
+      IF(ABS(DIF)-1.0E-05)8,7,7
+    7 WRITE(6,104)ITM,A1,ANS,DIF
+  104 FORMAT(1H0,12X,7H*ERROR*,7X,2H( ,I2,2H ),10X,E14.7,13X,E14.7,8X,
+     *E14.7)
+      GO TO 503
+    8 WRITE(6,105)ITM
+C
+  105 FORMAT(1H0,12X,4H*OK*,10X,2H( ,I2,2H ),10X,E14.7,12X,E14.7,8X,
+     *E14.7)
+C
+  503 A2  =B1**3
+      ANS =2.197
+      ITM =ITM+1
+      DIF =A2-ANS
+      IF(ABS(DIF)-1.0E-05)10,9,9
+    9 WRITE(6,104)ITM,A2,ANS,DIF
+      GO TO 504
+   10 WRITE(6,105)ITM
+C
+C
+  504 A3  =0.123E 02**I2
+      ANS =151.29
+      ITM =ITM+1
+      DIF =A3-ANS
+      IF(ABS(DIF)-1.0E-03)12,11,11
+   11 WRITE(6,104)ITM,A3,ANS,DIF
+      GO TO 505
+   12 WRITE(6,105)ITM
+C
+C
+  505 B2  =2.0
+      A4  =B1**B2
+      ANS =1.69
+      ITM =ITM+1
+      DIF =A4-ANS
+      IF(ABS(DIF)-1.0E-05)14,13,13
+   13 WRITE(6,104)ITM,A4,ANS,DIF
+      GO TO 506
+   14 WRITE(6,105)ITM
+C
+C
+  506 A5  =B1**3.0
+      ANS =2.197
+      ITM =ITM+1
+      DIF =A5-ANS
+      IF(ABS(DIF)-1.0E-05)16,15,15
+   15 WRITE(6,104)ITM,A5,ANS,DIF
+      GO TO 507
+   16 WRITE(6,105)ITM
+C
+C
+  507 A6  =10.8E-02**B2
+      ANS =0.011664
+      ITM =ITM+1
+      DIF =A6-ANS
+      IF(ABS(DIF)-1.0E-05)18,17,17
+   17 WRITE(6,104)ITM,A6,ANS,DIF
+      GO TO 508
+   18 WRITE(6,105)ITM
+C
+C
+  508 B3  =-2.0
+      A7  =2.0**B3
+      ANS =0.25
+      ITM =ITM+1
+      DIF =A7-ANS
+      IF(ABS(DIF)-1.0E-05)20,19,19
+   19 WRITE(6,104)ITM,A7,ANS,DIF
+      GO TO 509
+   20 WRITE(6,105)ITM
+C
+C
+  509 A8  =B3**3
+      ANS =-8.0
+      ITM =ITM+1
+      DIF =A8-ANS
+      IF(ABS(DIF)-1.0E-05)22,21,21
+   21 WRITE(6,104)ITM,A8,ANS,DIF
+      GO TO 510
+   22 WRITE(6,105)ITM
+C
+C
+  510 I6  =0
+      A9  =B3**I6
+      ANS =1.0
+      ITM =ITM+1
+      DIF =A9-ANS
+      IF(ABS(DIF)-1.0E-05)24,23,23
+   23 WRITE(6,104)ITM,A9,ANS,DIF
+      GO TO 511
+   24 WRITE(6,105)ITM
+C
+C
+  511 ITM  =ITM+1
+      B1  =4.0**2
+      ANS =16.0
+      DIF =B1-ANS
+      IF(ABS(DIF)-1.0E-04)26,25,25
+   25 WRITE(6,104)ITM,B1,ANS,DIF
+      GO TO 512
+   26 WRITE(6,105)ITM
+C
+C
+  512 B2   =2.0**4
+      ANS  =16.0
+      ITM  =ITM+1
+      DIF  =B2-ANS
+      IF(ABS(DIF)-1.0E-05)28,27,27
+   27 WRITE(6,104)ITM,B2,ANS,DIF
+      GO TO 513
+   28 WRITE(6,105)ITM
+C
+C
+  513 ITM  =ITM+1
+      B3   =3.0**3.0
+      ANS  =27.0
+      DIF  =B3-ANS
+      IF(ABS(DIF)-1.0E-04)30,29,29
+   29 WRITE(6,104)ITM,B3,ANS,DIF
+      GO TO 514
+   30 WRITE(6,105)ITM
+C
+  514 ITM =ITM+1
+      B4  =144.0**0.5
+      ANS =12.0
+      DIF =B4-ANS
+      IF(ABS(DIF)-1.0E-04)32,31,31
+   32 WRITE(6,105)ITM
+      GO TO 515
+   31 WRITE(6,104)ITM,B4,ANS,DIF
+C
+  515 ITM =ITM+1
+      J6  =(-4)**0
+      JANS =1
+      IF(J6-JANS)34,33,34
+   33 WRITE(6,103)ITM
+      GO TO 516
+   34 WRITE(6,102)ITM,J6,JANS
+C
+  516 ITM =ITM+1
+      J7  =-2**7
+      JANS=-128
+      IF(J7-JANS)36,35,36
+   35 WRITE(6,103)ITM
+      GO TO 517
+   36 WRITE(6,102)ITM,J7,JANS
+C
+  517 ITM =ITM+1
+      J8  =0**15
+      JANS=0
+      IF(J8-JANS)38,37,38
+   37 WRITE(6,103)ITM
+      GO TO 518
+   38 WRITE(6,102)ITM,J8,JANS
+C
+  518 ITM =ITM+1
+      J9  =32767**0
+      JANS=1
+      IF(J9-JANS)40,39,40
+   39 WRITE(6,103)ITM
+      GO TO 519
+   40 WRITE(6,102)ITM,J9,JANS
+C
+  519 ITM =ITM+1
+      J10 =7**(-3)
+      JANS=0
+      IF(J10-JANS)42,41,42
+   41 WRITE(6,103)ITM
+      GO TO 520
+   42 WRITE(6,102)ITM,J10,JANS
+C
+  520 ITM =ITM+1
+      J11 =-3**(-3)
+      JANS=0
+      IF(J11-JANS)44,43,44
+   43 WRITE(6,103)ITM
+      GO TO 521
+   44 WRITE(6,102)ITM,J11,JANS
+C
+  521 ITM =ITM+1
+      J12 =1**32767
+      JANS=1
+      IF(J12-JANS)46,45,46
+   45 WRITE(6,103)ITM
+      GO TO 522
+   46 WRITE(6,102)ITM,J12,JANS
+C
+  522 AA  =33554.4**0.0
+      ANS =1.0
+      GO TO 600
+C
+   70 AA  =(-16.0)**0.0
+      ANS =1.0
+      GO TO 600
+C
+  71  AA  =0.0**34.567
+      ANS =0.0
+      GO TO 600
+C
+   72 AA  =0.0**32767
+      ANS =0.0
+      GO TO 600
+C
+   73 AA  =2.2**(-2)
+      ANS =0.2066116
+      GO TO 600
+C
+   74 AA  =8931.4**0
+      ANS =1.0
+      GO TO 600
+C
+   75 AA  =(-1.2)**(-2)
+      ANS =0.694444
+  600 DIF =AA-ANS
+      ITM =ITM+1
+      IF(ANS-0.0)601,602,601
+  601 IF(ABS(DIF)-1.0E-06*ABS(ANS))700,701,701
+  602 IF(ABS(DIF)-1.0E-06)700,701,701
+  700 WRITE(6,105)ITM
+      GO TO 1000
+  701 WRITE(6,104)ITM,AA,ANS,DIF
+ 1000 IT  =ITM-23
+      GO TO (70,71,72,73,74,75,76),IT
+   76 CONTINUE
+      STOP
+      END

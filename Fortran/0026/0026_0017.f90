@@ -9,13 +9,9 @@ real,parameter::a07   =bessel_jn( 1_8,    -0.0_16)
 real,parameter::a08(*)=bessel_jn( 1_8 ,1_8 ,-0.0_16)
 
 real,parameter::a11   =bessel_yn( 0_8,    1.0_16)
-!!!real,parameter::a12(*)=bessel_yn( 1_8,    0.0_16)
 real,parameter::a13(*)=bessel_yn( 0_8 ,0_8 ,1.0_16)
 real,parameter::a14(*)=bessel_yn( 1_8 ,0_8 ,1.0_16)
 real,parameter::a15(*)=bessel_yn( 0_8 ,1_8 ,1.0_16)
-!!!real,parameter::a16(*)=bessel_yn( 1 ,1 ,0.0 )
-!!!real,parameter::a17(*)=bessel_yn( 1,    -0.0 )
-!!!real,parameter::a18(*)=bessel_yn( 1 ,1 ,-0.0 )
 write(1,*) a01
 write(1,*) a02
 write(1,*) a03

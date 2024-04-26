@@ -6,7 +6,6 @@ do i=1,n
   a(i) = real(i, kind=8)/1000._8
 enddo
 
-!
 do i=1,n
   a(n) = a(n) + a(i)
 enddo

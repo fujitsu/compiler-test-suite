@@ -10,7 +10,7 @@
         DATA             S_CHA,S_CHB/10*'AAAAAAAA',10*'BBBBBBBB'/       
         DATA             V_CHA,V_CHB/10*'AAAAAAAA',10*'BBBBBBBB'/       
         DATA             ERROR/0/                                       
-C                                                                       
+
           DO I=1,10,1                                                   
             S_A(I)=S_A(I)+S_B(I)                                        
             S_CHA(I)(1:8)=S_CHA(I)(1:4)//S_CHB(I)(5:8)                  
@@ -30,7 +30,7 @@ C
           V_CHA(1:10)(1:8)=V_CHA(1:10)(1:4)//V_CHB(1:10)(5:8)           
           CALL SUB(ERROR,V_A,V_B,V_A+V_B,V_A-V_B)                       
           V_A=V_A-V_B+1.0                                               
-C                                                                       
+
           DO I=1,10,1                                                   
             IF(V_A(I) .NE. S_A(I)) THEN                                 
               ERROR=ERROR+1                                             
@@ -44,7 +44,7 @@ C
           ELSE                                                          
             WRITE(6,*) 'NG'
           END IF                                                        
-C                                                                       
+
           STOP                                                          
       END
                                                                         
@@ -53,7 +53,7 @@ C
         INTEGER*4 ERROR,I                                               
         REAL*4    A,B,ADDDATA,SUBDATA                                   
         DIMENSION A(10),B(10),ADDDATA(10),SUBDATA(10)                   
-C                                                                       
+
         DO I=1,10,1                                                     
           IF( (ADDDATA(I)+SUBDATA(I))/2 .NE. A(I)) THEN                 
             ERROR=ERROR+1                                               

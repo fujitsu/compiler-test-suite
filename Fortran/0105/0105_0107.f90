@@ -17,4 +17,3 @@ if (any(abs((/A/)-(/&
 /))>0.00001))print *,'error'
 print *,'pass'
 end
-

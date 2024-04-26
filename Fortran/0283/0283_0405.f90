@@ -1,0 +1,23 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  INTEGER(KIND = 4),POINTER :: ptr
+END TYPE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+TYPE(t1) :: obj
+ALLOCATE(obj%ptr)
+
+obj%ptr = 123
+
+ASSOCIATE(aa => ASSOCIATED(obj%ptr))
+  IF(aa) PRINT*,'pass'
+END ASSOCIATE
+
+END PROGRAM

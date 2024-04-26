@@ -1,0 +1,69 @@
+      PROGRAM MAIN
+      DIMENSION ASST(100,101)
+      COMMON/AAA/NELEM,NSIZE
+      COMMON/BBB/DIS(100)
+      COMMON JOE(250,4),DP(6),FORCE(101),SOL(100)
+      DATA ASST/10100*2/
+      CALL INIT
+      
+      CALL SOLVER(ASST,100)
+      WRITE(6,*) SOL
+      CALL SOL2
+      WRITE(6,*) DP
+      STOP
+      END
+C
+      SUBROUTINE INIT
+      COMMON/AAA/NELEM
+      COMMON/BBB/DIS(100)
+      COMMON JOE(250,4),DP(6),FORCE(101),SOL(100)
+      NELEM=250
+      DO 11 I=1,100
+        DIS(I) = I
+        SOL(I) = I
+        FORCE(I) = I
+   11 CONTINUE
+      FORCE(101) = 101
+      DO 12 I=1,250
+        DO 12 J=1,4
+          JOE(I,J) = 1
+   12 CONTINUE
+      DO 13 I=1,6
+        DP(I) = I
+   13 CONTINUE
+      RETURN
+      END
+C
+      SUBROUTINE SOLVER(ASST,NSDF)
+      DIMENSION ASST(100,101)
+      COMMON/AAA/NELEM
+      COMMON/BBB/DIS(100)
+      COMMON JOE(250,4),DP(6),FORCE(101),SOL(100)
+      DO 200 I=1,NSDF
+        SOL(I)=1.0
+        DO 200 J=1,NSDF
+          SOL(I)=SOL(I)+ASST(I,J)*FORCE(J)
+  200 CONTINUE
+      RETURN
+      END
+C
+      SUBROUTINE SOL2
+      COMMON/AAA/NELEM
+      COMMON/BBB/DIS(100)
+      COMMON JOE(250,4),DP(6),FORCE(101),SOL(100)
+      DO 400 IE=1,NELEM
+        CALL ESTIFF(IE)
+        DO 410 J=1,3
+          M=JOE(IE,J)
+          DP(2*J-1)=DIS(2*M-1)
+          DP(2*J)=DIS(2*M)
+  410   CONTINUE
+  400 CONTINUE
+      RETURN
+      END
+C
+      SUBROUTINE ESTIFF(IE)
+      INTEGER IE
+      IE=IE
+      RETURN
+      END

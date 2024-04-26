@@ -37,7 +37,6 @@ integer,parameter :: ians_sub1=400
 integer,parameter :: ians_sub2=468
 integer,parameter :: ians_sub3=648
 
-
 real(8),dimension(1:n) :: a,b
 integer,dimension(1:n) :: c
 

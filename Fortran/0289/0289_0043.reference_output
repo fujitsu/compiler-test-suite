@@ -1,0 +1,18 @@
+ *** start ***
+ ___ check-01 ok _______ good
+ ___ check-02 ok _______ good
+ ___ check-03 ok _______ good
+ ___ check-04 ok _______ good
+ ___ check-05 ok _______ good
+ ___ check-06 ok _______ good
+ ___ check-07 ok _______ good
+ ___ check-08 ok _______ good
+ ___ check-09 ok _______ good
+ ___ check-10 ok _______ good
+ ___ check-11 ok _______ good
+ ___ check-12 ok _______ good
+ ___ check-13 ok _______ good
+ ___ check-14 ok _______ good
+ ___ check-15 ok _______ good
+ *** end ***
+exit 0

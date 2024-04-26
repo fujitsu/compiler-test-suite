@@ -1,0 +1,127 @@
+      INTEGER A,B,C
+      DIMENSION E(3,3,3)
+      INTEGER E
+      INTEGER F(3),G(2,3,4)
+      INTEGER FUNC
+      REAL    I,J,JB
+      DIMENSION L(3),N(3,3)
+      REAL L,N
+      REAL    IA(3),JA(2,3,4)
+      REAL    NASI
+      LOGICAL M,H,LGL,LGA
+      DIMENSION K(3),Q(3,3)
+      LOGICAL K,Q
+      LOGICAL KA(3),AB(2,3,4)
+      LOGICAL FUN
+  102 FORMAT(1H0,12X,7H*ERROR*,7X,2H( ,I2,2H ),14X,I6,20X,I6)
+  103 FORMAT(1H0,12X,4H*OK*,10X,2H( ,I2,2H ),14X,I6,20X,I6)
+  104 FORMAT(1H0,12X,7H*ERROR*,7X,2H( ,I2,2H ),10X,E14.7,13X,E14.7,8X,
+     *E14.7)
+  105 FORMAT(1H0,12X,4H*OK*,10X,2H( ,I2,2H ),10X,E14.7,13X,E14.7,8X,
+     *E14.7)
+  106 FORMAT(1H0,12X,7H*ERROR*,7X,2H( ,I2,2H ),14X,L6,20X,L6)
+  107 FORMAT(1H0,12X,4H*OK*,10X,2H( ,I2,2H ),14X,L6,20X,L6)
+      A   =3000
+      B   =-5
+      C   =10
+      E(2,2,2)=10000
+      F(3)=2000
+      G(1,2,3)=-32767
+      I   =4.33E 01
+      J   =-1.111
+      JB  =1234.3
+      L(3)=5.55
+      N(3,2)=6.666
+      IA(3) =13.69
+      JA(2,3,2)=-2.8
+      KA(3)=.TRUE.
+      AB(2,3,3)=.FALSE.
+      M   =.TRUE.
+      ITM =01
+      H   =.FALSE.
+      K(3)=.TRUE.
+      Q(3,3)=.FALSE.
+C
+    1 NASA=A*B/3+5-C*2
+      JANS=-5015
+      GO TO 700
+C
+    2 NASA=E(2,2,2)*2+C
+      JANS=20010
+      GO TO 700
+C
+    3 NASA=G(1,2,3)+F(3)*4
+      JANS=-24767
+      GO TO 700
+C
+    4 NASA=FUNC(5)
+      JANS=-1649
+      GO TO 700
+C
+    5 REST=I*J+JB-1.0
+      ANS =1185.1937
+      GO TO 701
+C
+    6 REST=L(3)/1.11+N(3,2)*0.1+1000.0
+      ANS =1005.6666
+      GO TO 701
+C
+    7 REST=IA(3)**0.5+JA(2,3,2)*2.0-1000.0
+      ANS =-1001.9
+      GO TO 701
+C
+    8 REST=NASI(0.4)*300.0
+      ANS =1521.0
+      GO TO 701
+C
+    9 LGL =3000.LE.A.OR.C.GT.3
+      LGA =.TRUE.
+      IF(LGL)GO TO 904
+      GO TO 905
+C
+   10 LGL =.NOT.H.AND.K(3).OR.Q(3,3)
+      LGA =.TRUE.
+      IF(LGL)GO TO 904
+      GO TO 905
+C
+   11 LGL =KA(3).AND.AB(2,3,3)
+      LGA =.FALSE.
+      IF(LGL)GO TO 905
+      GO TO 904
+C
+   12 LGL =FUN(M)
+      LGA =.FALSE.
+      IF(LGL)GO TO 905
+      GO TO 904
+  700 IF(NASA-JANS)901,900,901
+  900 WRITE(6,103)ITM
+      GO TO 1000
+  901 WRITE(6,102)ITM,NASA,JANS
+      GO TO 1000
+  701 DIF =REST-ANS
+      IF(ABS(DIF)-1.0E-02)903,902,902
+  902 WRITE(6,104)ITM,REST,ANS,DIF
+      GO TO 1000
+  903 WRITE(6,105)ITM
+      GO TO 1000
+  904 WRITE(6,107)ITM
+      GO TO 1000
+  905 WRITE(6,106)ITM,LGL,LGA
+ 1000 ITM =ITM+1
+      GO TO (1,2,3,4,5,6,7,8,9,10,11,12,13),ITM
+   13 CONTINUE
+      STOP
+      END
+      INTEGER FUNCTION FUNC(IN)
+      FUNC =3*IN/3**2-IN*330
+      RETURN
+      END
+      REAL FUNCTION NASI(X)
+      NASI=0.8*X+4.75
+      RETURN
+      END
+      LOGICAL FUNCTION FUN(M)
+      LOGICAL M
+      FUN =3.EQ.4.AND.M
+      RETURN
+      END

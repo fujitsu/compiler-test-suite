@@ -1,0 +1,74 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  INTEGER(KIND = 4) :: xx 
+END TYPE
+
+TYPE,EXTENDS(t1) :: t2
+  INTEGER(KIND = 4) :: yy
+END TYPE
+
+INTERFACE OPERATOR(.plus.)
+  MODULE PROCEDURE addit
+END INTERFACE
+
+CONTAINS
+
+FUNCTION addit(d1,d2)
+IMPLICIT NONE
+CLASS(t2),DIMENSION(:),INTENT(IN) :: d1
+INTEGER(KIND = 4),INTENT(IN) :: d2
+CLASS(t2),DIMENSION(:),ALLOCATABLE :: addit
+ALLOCATE(addit(10))
+addit%yy = d1%yy + d2
+END FUNCTION
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+INTEGER(KIND = 4) :: res,rr = 50
+CLASS(*),DIMENSION(:),ALLOCATABLE :: cstr
+CLASS(t2),DIMENSION(:),ALLOCATABLE :: acc
+ALLOCATE(acc(10))
+acc%yy = 10
+acc%xx = 10
+ALLOCATE(cstr(10),SOURCE = acc)
+
+SELECT TYPE(cstr)
+TYPE IS(t2)
+ASSOCIATE(aa => fun_1(cstr))
+  SELECT CASE(aa(5)%yy)
+    CASE(10)
+      res = 1
+  END SELECT
+  ASSOCIATE(bb => aa .plus. rr)
+    IF(ALL(bb(2::2)%yy .EQ. 60)) THEN
+      res = res + 1
+    ELSE
+      res = res - 1
+    END IF
+  END ASSOCIATE
+END ASSOCIATE
+END SELECT
+
+IF(res .EQ. 2) THEN
+   PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+CONTAINS
+
+FUNCTION fun_1(dd1)
+IMPLICIT NONE
+CLASS(t2),DIMENSION(:) :: dd1
+TYPE(t2),DIMENSION(:),ALLOCATABLE :: fun_1
+ALLOCATE(fun_1(10))
+fun_1%yy = dd1%yy
+END FUNCTION
+
+END PROGRAM

@@ -1,5 +1,5 @@
 module m
-complex,target,private  :: tar1!=2.0
+complex,target,private  :: tar1
 
 data tar1%re /2.0/
 type ty1

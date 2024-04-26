@@ -1,0 +1,7 @@
+***** START ***** 
+ SIGNED CHAR --> O K 
+ SIGNED SHORT --> O K 
+ SIGNED INT   --> O K 
+ SIGNED LONG  --> O K 
+***** E  N  D ***** 
+exit 0

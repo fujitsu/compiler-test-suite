@@ -1,5 +1,3 @@
-! block construct used
-! intrinsic function passed in argument
 program pro
 block
 Intrinsic :: LOG_GAMMA

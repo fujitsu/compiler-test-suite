@@ -11,7 +11,6 @@ integer elemental function xproc1(x)
 end function
 end module
 
-
 use m1
 type(t1) :: obj
 integer :: a1

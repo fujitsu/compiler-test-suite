@@ -17,4 +17,3 @@ b2=reshape((/(i,i=31,39)/),(/3,3/))
 call s1(a1,a2,b1,b2)
 print *,'pass'
 end
-

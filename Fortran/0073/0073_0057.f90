@@ -3,17 +3,11 @@ integer,parameter:: k1=3,k2=4,k3=5,k4=6
 complex:: a(k1,k2,k3+1,k4)
 complex:: b(k1,k2,k3+1,k4)
 integer::n1=2,n2=2
-!interface
-! pure subroutine subcheck(x,k)
-!   integer,intent(in)::x,k
-! end subroutine
-!end interface
 contains
 pure function f(n2,n3,k2,k1,k) result(r)
 integer,intent(in)::n2,n3,k2,k1,k
 complex(8)::r(k2,k1)
 r=cmplx(n2+n3,n3+n2)
-!!call subcheck(r(1,1),k)
 end function
 subroutine s1(k1,k2,k3,k4)
 complex :: d(k1,k2,k3+1,k4)
@@ -43,7 +37,6 @@ end subroutine
 end
 use m1
 write(1,'(a)') repeat('0',18)
-!allocate( a(k1,k2,k3+1,k4),b(k1,k2,k3+1,k4))
 a= cmplx( &
   reshape([(n,n=1,k1*k2*(k3+1)*k4)],[k1,k2,k3+1,k4]), &
   reshape([(n,n=1,k1*k2*(k3+1)*k4)],[k1,k2,k3+1,k4]),8)

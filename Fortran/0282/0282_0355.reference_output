@@ -1,0 +1,19 @@
+ 
+--
+
+ character->character OK
+ KIND:: 1 --KIND:: 1
+ KIND OK
+ 
+--
+
+ character->character OK
+ KIND:: 1 --KIND:: 1
+ KIND OK
+ 
+--
+
+ character->character OK
+ KIND:: 1 --KIND:: 1
+ KIND OK
+exit 0

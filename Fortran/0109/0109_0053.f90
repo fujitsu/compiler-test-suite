@@ -12,7 +12,7 @@
       endwhere
       
       if(check(b,c) .eq.0) then
-         write(6,*) '*** ok !! ***'
+         write(6,*) '*** ok    ***'
       else
          write(6,*) '*** ng ?? ***'
       endif

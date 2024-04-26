@@ -1,5 +1,3 @@
-! 1D Array, DSE CASE
-! Module Used
 module m1
 type ty
   integer :: n(2)

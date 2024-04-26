@@ -5,4 +5,3 @@ integer,parameter::constvar(2)=minloc(temp,.true.,4,back=.false.)
 if(any(constvar.ne.[2,1]))print*,"100"
 print*,"PASS"
 end program minlocs
-

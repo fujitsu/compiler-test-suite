@@ -1,0 +1,8 @@
+PROGRAM main
+IMPLICIT NONE
+
+ASSOCIATE(aa => (/1,2,3,4,5/) + 10)
+  IF(aa(3) .EQ. 13) PRINT*,'pass'
+END ASSOCIATE
+
+END PROGRAM

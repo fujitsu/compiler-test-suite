@@ -1,0 +1,34 @@
+REAL(2) :: RES
+REAL(2) :: RES_DSB(5)
+
+REAL(2) :: R2 = 1.0_2
+REAL(2) :: R2_AR(4) = 4.0_2
+REAL(8) :: R8(5) = 10.0_8
+
+INTEGER(2) :: I2 = 5_2
+INTEGER(8) :: I8(5) = 2_8
+
+COMPLEX(2) :: C2 = (2.0_2,3.0_2)     
+COMPLEX(2) :: C2_AR(5) = (10.0_2,10.0_2)     
+R2_AR(3)=10.0_2
+RES=R2/R2
+IF(RES .NE. (1.0_2/1.0_2))PRINT*,"101"
+
+RES_DSB(2)=R2_AR(3)/R8(1)
+IF(RES_DSB(2) .NE. (10.0_2/10.0_8))PRINT*,"102"
+
+RES=I2/R2
+IF(RES .NE. (5_2/(1.0_2)))PRINT*,"103"
+
+RES_DSB(3)=R2_AR(1)/I8(1)
+IF(RES_DSB(3) .NE. (4.0_2/2_8))PRINT*,"104"
+
+RES_DSB(4)=C2_AR(2)/R2_AR(2)
+IF(RES_DSB(4) .NE. REAL((10.0_2,10.0_2)/(4.0_2)))PRINT*,"105"
+
+RES=R2/C2
+IF(RES .NE. REAL((1.0_2)/(2.0_2,3.0_2)))PRINT*,"106"
+
+print*,"PASS"
+
+END

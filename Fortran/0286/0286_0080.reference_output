@@ -1,0 +1,8 @@
+ *** int_switch ***
+ &INTLIST X= 100,Y= 1/
+ *** real_switch ***
+ &REALLIST X= 1.2345679E+38,Y= 1./
+ *** complex_switch ***
+ &COMPLEXLIST X= (1.2345679E+38,1.),Y= (1.,1.)/
+ PASS
+exit 0

@@ -1,4 +1,3 @@
-! Kind used
 program pro
 real(kind=16), parameter:: x=5.0
 integer,parameter::z1= kind(LOG_GAMMA(x))

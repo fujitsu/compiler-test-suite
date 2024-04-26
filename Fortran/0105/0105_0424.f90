@@ -13,4 +13,3 @@ endif
 
 print *,'pass'
 end
-

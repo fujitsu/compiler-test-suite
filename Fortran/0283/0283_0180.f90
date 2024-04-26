@@ -1,0 +1,27 @@
+PROGRAM main
+IMPLICIT NONE
+
+INTEGER,POINTER :: ptr,ptr2
+
+ptr => fun()
+
+ASSOCIATE(aa => ptr)
+  ptr2 => aa
+END ASSOCIATE
+
+IF(ptr2 .EQ. 10) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+CONTAINS
+
+FUNCTION fun()
+IMPLICIT NONE
+INTEGER,POINTER :: fun
+ALLOCATE(fun)
+fun = 10
+END FUNCTION
+
+END PROGRAM

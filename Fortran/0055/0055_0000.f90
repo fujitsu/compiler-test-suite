@@ -8,4 +8,3 @@
        if( f()/=1) print *,101
         print *,"PASS"
       end
-

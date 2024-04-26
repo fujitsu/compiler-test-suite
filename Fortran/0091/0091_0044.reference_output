@@ -1,0 +1,25 @@
+ Shape of Front  10
+ Shape of Back  10
+ 12 -- 12
+  I4->I4 OK
+ 32 -- 32
+  I4->I4 OK
+ 34 -- 34
+  I4->I4 OK
+ 11 -- 11
+  I4->I4 OK
+ 19 -- 19
+  I4->I4 OK
+ 29 -- 29
+  I4->I4 OK
+ 25 -- 25
+  I4->I4 OK
+ 67 -- 67
+  I4->I4 OK
+ 45 -- 45
+  I4->I4 OK
+ 23 -- 23
+  I4->I4 OK
+ 4 -- 4
+ KIND OK
+exit 0

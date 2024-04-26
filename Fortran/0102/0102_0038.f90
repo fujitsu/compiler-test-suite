@@ -6,4 +6,3 @@ logical,parameter::constvar=BGT(obj%a,obj%b)
 if(constvar .neqv. .FALSE.)print*,'100'
 print*,"PASS"
 end
-

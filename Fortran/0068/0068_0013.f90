@@ -194,7 +194,7 @@ program main
   c=(2.0,1.0)
   b2=(2.0,3.0)
   c2=(3.0,2.0)
-  
+
   call add1(a,b,c)
   if (a==(3.0,3.0)) then
      print *,'add1 : OK'
@@ -322,7 +322,7 @@ program main
   endif
 
   call div1(a,b,c)
-  
+
   ar = real(a)
   ai = imag(a)
   if(((ar.gt.0.7999999).and.(ar.lt.0.8000001)).and.((ai.gt.0.5999999).and.(ai.lt.0.6000001))) then

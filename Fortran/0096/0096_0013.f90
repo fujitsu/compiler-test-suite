@@ -1,4 +1,3 @@
-! Module, Subroutine used
 Module mod5
 real :: y1 = LOG_GAMMA(3.0)
 real :: y2 = LOG_GAMMA(3.0_8)
@@ -14,4 +13,3 @@ use mod5
 call sub
  print *, "pass"
 end
-

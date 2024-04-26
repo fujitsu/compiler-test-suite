@@ -1,0 +1,7 @@
+ rxm = 1.
+ rym = 1023.
+ irxm= 1
+ jrym= 1
+ irym= 1
+ jrym= 1
+exit 0

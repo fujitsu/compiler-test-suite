@@ -1,7 +1,3 @@
-! 2D Array
-! complex designator used
-! Module Used
-! Keywords Shuffled
 module m1
   integer,parameter  :: n1=2
   integer,parameter  :: n2=3

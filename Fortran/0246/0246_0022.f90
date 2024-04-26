@@ -1,0 +1,23 @@
+PROGRAM MAIN
+IMPLICIT NONE
+INTEGER :: K,X,L,B,arr(5),M
+X=0
+K=10
+L=30
+B=0
+arr=(/ 1,2,3,4,5 /)
+DO CONCURRENT(K=1:5,arr(K)<3 .OR. K==5)
+  DO CONCURRENT(L=1:4)
+    FORALL(M=2:5,arr(L)>=3)
+      FORALL(B=2:4,L>3 .AND. arr(M)>3)
+        X=X+1
+      END FORALL
+    END FORALL
+  END DO
+END DO
+IF (X == 3 .AND. K==10 .AND. L==30) THEN
+ Print *,"PASS"
+ELSE
+ Print *,"FAIL",X,K,L
+END IF
+END PROGRAM

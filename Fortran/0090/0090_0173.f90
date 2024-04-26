@@ -19,9 +19,7 @@ program main
   endif
 
   contains
-!
-! [TEST1]
-!
+
   logical(kind=1) function test1()
 
     integer(kind=4),parameter :: ans1=36_4
@@ -261,9 +259,6 @@ program main
 
   end function
 
-!
-! [TEST2]
-!
   logical(kind=1) function test2()
 
     integer(kind=4),parameter :: ans1=36_4

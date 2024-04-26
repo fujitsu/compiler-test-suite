@@ -1,0 +1,17 @@
+REAL(2) :: R2(2,4)
+INTEGER :: I4(2,4)
+COMPLEX(KIND=2) :: C2(2,4)
+R2(1,:)=5 
+R2(2,:)=6
+I4(1,:)=2
+C2(1,:)=(6,7)     
+C2(2,:)=(8,9)     
+ASSOCIATE(R1=>R2(2,:)+I4(1,:),C1=>C2(2,:)+R2(2,:))
+IF(ANY(R1 .NE. 8))PRINT*,"101"
+IF(ANY(C1 .NE. (14,9)))PRINT*,"102"
+IF(KIND(R1) .NE. 2)PRINT*,"103"
+IF(KIND(C1) .NE. 2)PRINT*,"104"
+PRINT*,"PASS"
+END ASSOCIATE
+END
+

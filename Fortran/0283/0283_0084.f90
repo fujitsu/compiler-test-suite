@@ -1,0 +1,18 @@
+PROGRAM main
+IMPLICIT NONE
+
+INTEGER :: num = 20
+
+ASSOCIATE(bb => num)
+  DO WHILE(bb > 0)
+    bb = bb - 4
+  END DO
+END ASSOCIATE
+
+IF(num .EQ. 0) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+END PROGRAM

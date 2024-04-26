@@ -14,7 +14,6 @@ end subroutine
 
 program main
 complex*16 a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z
-!integer ir,iq
 real(8) ir,iq
 real(8) :: ir_ans = 1150
 real(8) :: iq_ans = -200
@@ -57,4 +56,3 @@ else
 endif
 
 end program
-

@@ -1,0 +1,48 @@
+MODULE mod1
+IMPLICIT NONE
+
+REAL :: r1 = 2.0
+
+TYPE t1
+  REAL :: rr
+END TYPE
+
+INTERFACE
+SUBROUTINE sub(ddy)
+REAL,VALUE :: ddy
+END SUBROUTINE
+END INTERFACE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+TYPE(t1),POINTER :: ptr
+TYPE(t1),ALLOCATABLE :: allc
+ALLOCATE(ptr,allc)
+allc%rr = 10.0
+ptr%rr = 20.0
+
+ASSOCIATE(aa => fun(allc)*(MAX(3.3,2.2)+r1)+ptr%rr)
+  CALL sub(aa)
+END ASSOCIATE
+
+CONTAINS
+
+REAL FUNCTION fun(dda)
+TYPE(t1),ALLOCATABLE :: dda
+fun = dda%rr
+END FUNCTION
+
+END PROGRAM
+
+SUBROUTINE sub(ddy)
+REAL,VALUE :: ddy
+IF(ddy .GT. 10.0) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+END SUBROUTINE

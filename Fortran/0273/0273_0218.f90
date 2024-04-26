@@ -1,0 +1,12 @@
+ MODULE M_USE_ONLY
+ REAL (KIND=2) :: R
+ COMPLEX (KIND=2) :: C
+ END MODULE 
+
+ USE M_USE_ONLY ,ONLY :R,C
+ R=1.0_2
+ C=(1.0_2,1.0_2)
+ IF (R /= 1.0_2) PRINT*,'101'
+ IF (C /= (1.0_2,1.0_2)) PRINT*,'102'
+ PRINT *,'PASS'
+ END

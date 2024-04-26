@@ -19,7 +19,6 @@
       else
          print *,"ng",result,ANSWER
       endif
-!      WRITE(6,*) c
  100   FORMAT(1H ,20I3)
       STOP
       end program main

@@ -1,0 +1,35 @@
+PROGRAM main
+IMPLICIT NONE
+
+INTEGER :: arr(1:4,1:5,1:3,1:2) = 0
+
+INTERFACE 
+SUBROUTINE sub(ar)
+  IMPLICIT NONE
+  INTEGER :: ar(:,:,:,:)
+END SUBROUTINE
+END INTERFACE
+
+ASSOCIATE(aa => arr)
+  CALL sub(aa(3:4,4:5,1:2,1:2))
+END ASSOCIATE
+
+IF(arr(3,4,1,1) .EQ. 1) THEN
+  arr(3,4,1,1) = 0
+ELSE
+  arr(3,4,1,1) = 1
+END IF
+
+IF(ALL(arr(1:4,1:5,1:3,1:2) .EQ. 0)) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+END PROGRAM
+
+SUBROUTINE sub(ar)
+IMPLICIT NONE
+INTEGER :: ar(:,:,:,:)
+ar(1,1,1,1) = 1
+END SUBROUTINE

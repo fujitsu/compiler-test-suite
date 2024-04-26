@@ -7,4 +7,3 @@ if (any(abs((/D/)-(/ 58,82,68,96 /))>0.001))print *,'error'
 
 print *,'pass'
 end
-

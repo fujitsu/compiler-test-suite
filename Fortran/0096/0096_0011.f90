@@ -1,6 +1,3 @@
-!Module, subroutine used
-! SUM intrinsic function used
-! Array Section used
 module m1
  real,parameter :: x1(2,2)=RESHAPE([3.3,4.0,5.8,6.2],[2,2])
 end module m1

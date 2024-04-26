@@ -1,0 +1,10 @@
+PROGRAM main
+IMPLICIT NONE
+
+CHARACTER(LEN = 4) :: ch = 'pass'
+
+ASSOCIATE(aa => ch)
+  PRINT*, aa
+END ASSOCIATE
+
+END PROGRAM

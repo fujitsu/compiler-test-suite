@@ -8,12 +8,11 @@ implicit real(16)(y)
   real(16),parameter:: x4=ap/bp
   real(16):: ym=-0.0,yp=0.0
   real(16):: wm=-1.0,wp=1.0
-  
+
 write(1,'(z32.32)')x1
 write(1,'(z32.32)')x2
 write(1,'(z32.32)')x3
 write(1,'(z32.32)')x4
-!
   y1=ym/wm
   y2=yp/wm
   y3=ym/wp
@@ -27,19 +26,17 @@ subroutine s2
 implicit real(y)
   real,parameter:: am=-0.0,ap=0.0
   real,parameter:: bm=-1.0,bp=1.0
-  !real,parameter:: ar=z'8000 0000 0000 0000 0000 0000 0000 0000' ,ai=ar
   real,parameter:: x1=am/bm
   real,parameter:: x2=ap/bm
   real,parameter:: x3=am/bp
   real,parameter:: x4=ap/bp
   real:: ym=-0.0,yp=0.0
   real:: wm=-1.0,wp=1.0
-  
+
 write(2,'(z8.8)')x1
 write(2,'(z8.8)')x2
 write(2,'(z8.8)')x3
 write(2,'(z8.8)')x4
-!
   y1=ym/wm
   y2=yp/wm
   y3=ym/wp

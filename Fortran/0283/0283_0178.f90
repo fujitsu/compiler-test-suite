@@ -1,0 +1,23 @@
+PROGRAM main
+IMPLICIT NONE
+
+CHARACTER(LEN = 5) :: chr = 'apple'
+
+ASSOCIATE(aa => chr)
+  CALL sub(chr(2:4))
+END ASSOCIATE
+
+IF(chr(2:4) .EQ. 'aaa') THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+CONTAINS
+
+SUBROUTINE sub(ddm)
+CHARACTER(LEN = 3) :: ddm
+ddm = 'aaa'
+END SUBROUTINE
+
+END PROGRAM

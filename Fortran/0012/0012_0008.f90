@@ -1,7 +1,6 @@
 module m1
 integer,parameter:: ac(*,*)=reshape([(n,n=1,6)],[2,3])
 type x
-!!!!integer,pointer,contiguous:: a1(:,:)
 integer,pointer:: a1(:,:)
 end type
 contains
@@ -25,4 +24,3 @@ call ss(v)
 if (any(v%a1/=ac)) print *,3001
 print *,'OK'
 end
-

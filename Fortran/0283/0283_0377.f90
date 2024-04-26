@@ -1,0 +1,53 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  INTEGER(KIND = 2) :: r1
+END TYPE
+
+TYPE,EXTENDS(t1) :: t2
+  INTEGER(KIND = 2) :: r2
+END TYPE
+
+INTERFACE OPERATOR( * )
+  MODULE PROCEDURE multip
+END INTERFACE
+
+CONTAINS
+
+FUNCTION multip(dd1,dd2)
+IMPLICIT NONE
+CLASS(t2),INTENT(IN) :: dd1,dd2
+CLASS(t2),ALLOCATABLE :: multip
+ALLOCATE(multip)
+multip%r2 = dd1%r2 * dd2%r2
+END FUNCTION
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+CLASS(*),POINTER :: ptr
+CLASS(t2),POINTER :: ptr2
+CLASS(t2),ALLOCATABLE :: allc2
+
+ALLOCATE(allc2,ptr2)
+allc2%r2 =12
+
+ALLOCATE(ptr , SOURCE = ptr2)
+
+SELECT TYPE(ptr)
+  CLASS IS(t2)
+  ptr%r2 = 20
+  ASSOCIATE(aa => ptr *  allc2)
+    IF(aa%r2 .EQ. 240) THEN
+      PRINT*,'pass'
+    ELSE
+      PRINT*,101
+    END IF
+  END ASSOCIATE
+END SELECT
+
+END PROGRAM

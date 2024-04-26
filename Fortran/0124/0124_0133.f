@@ -1,11 +1,9 @@
-c
       module sub_mod
       integer,parameter::N=10
       integer,parameter::ANS=1032
       integer,target,dimension(1:N):: aa, bb
 
       contains
-c
       subroutine init_data
       aa = (/(i,i=10,1,-1)/)
       bb = (/(mod(i,2)+1,i=1,10)/)
@@ -13,7 +11,6 @@ c
 
       end module sub_mod
 
-c
       program main
       use sub_mod
       integer res
@@ -36,7 +33,6 @@ c
 
       res = sum(aa) + sum(bb)
 
-c      print *,res
       if (res .eq. ANS) then
          print *,"OK"
       else
@@ -45,7 +41,6 @@ c      print *,res
 
       end
 
-c
       subroutine treat_data(a,b,N)
       integer,target:: a(N),b(N)
       integer,pointer::ap_next,ap_end

@@ -40,7 +40,6 @@ if (.false.) print *,a(1,1,:,2)
  call sub(c(1,1,1,20))
  select case(c(1,1,1,20)) 
   case (20)
-    ! ok
   case default
     print *,"err"
  end select

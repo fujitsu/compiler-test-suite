@@ -21,9 +21,7 @@ CONTAINS
     real_to_t1%value = x
   END 
   module procedure int_to_t2
-!print *,101
     int_to_t2%value = x
-!print *,102
 write(1,*) 3
   END 
 END subMODULE smod
@@ -32,7 +30,6 @@ use m
 type(t(double))::d
 real(double)::r=2.1
 d = t(2, t(double)(0))
-!print *,105
 if (abs(d%value-2)>0.001) print *,201
 rewind 1
 read(1,*) k

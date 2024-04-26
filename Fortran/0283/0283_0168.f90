@@ -1,0 +1,27 @@
+PROGRAM main
+IMPLICIT NONE
+
+INTEGER :: num = 10
+
+CALL sub(num)
+
+IF(num .EQ. 10) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+CONTAINS
+
+SUBROUTINE sub(dd1)
+INTEGER,VALUE :: dd1
+ASSOCIATE(aa => dd1)
+  IF(aa .GT. 10) THEN
+    aa = 0
+  ELSE
+    aa = 1
+  END IF
+END ASSOCIATE
+END SUBROUTINE
+
+END PROGRAM

@@ -1,0 +1,117 @@
+      PROGRAM MAIN
+
+      COMMON  /BLOCKA/I
+      INTEGER       I,J,ERROR/0/
+      CHARACTER     CHARA01_A(10,10),CHARA01_B(10,10),CHARA01_Z(10,10)
+      CHARACTER *10 CHARA10_A(10,10),CHARA10_B(10,10),CHARA10_Z(10,10)
+      REAL          REAL4_A(10,10)  ,REAL4_B(10,10)  ,REAL_Z(10,10)
+
+      DATA J/1/
+      DATA CHARA01_A,CHARA10_A/100*' ',100*'          '/
+      DATA CHARA01_B,CHARA10_B/100*' ',100*'          '/
+      DATA CHARA01_Z,CHARA10_Z/100*' ',100*'          '/
+      DATA REAL4_A,REAL4_B/100*0.0,100*0.0/
+      DATA REAL_Z/100*0.0/
+
+      I=INT(COS(0.0))*5
+C
+      CHARA01_A(1:,I*2:1:-1)         ='A'//CHARA01_A(J*10:1:-1,:I*2)
+      CHARA10_A(10:1:-1,(-I)+15:1:-1)=
+     1                 'CHARA'//CHARA01_A(:,:J*J*10)//CHARA10_A(:,:)
+
+      REAL4_A(5:5:5,-(-J):)=REAL4_A(1:1,I/I:10)+1.0
+C
+      CALL SUB2(J,I*2,CHARA01_A,CHARA10_A)
+C
+      DO 30 INC2=1,10
+        DO 31 INC1=1,10
+          CHARA01_Z(INC1,INC2)='A'//CHARA01_B(11-INC1,INC2)
+  31    CONTINUE
+  30  CONTINUE
+      DO 32 INC2=1,10
+        DO 33 INC1=1,10
+          CHARA01_B(INC1,11-INC2)=CHARA01_Z(INC1,INC2)
+  33    CONTINUE
+  32  CONTINUE
+      DO 40 INC2=10,1,-1
+        DO 41 INC1=10,1,-1
+          CHARA10_Z(11-INC1,11-INC2)=
+     1      'CHARA'//CHARA01_B(INC1,INC2)//CHARA10_B(INC1,INC2)
+  41    CONTINUE
+  40  CONTINUE
+      DO 42 INC2=10,1,-1
+        DO 43 INC1=10,1,-1
+          CHARA10_B(INC1,INC2)      =CHARA10_Z(11-INC1,11-INC2)
+  43    CONTINUE
+  42  CONTINUE
+
+      DO 50 INC1=1,10
+        REAL_Z(1,INC1) =REAL4_B(1,INC1)+1.0
+  50  CONTINUE
+      DO 51 INC1=1,10
+        REAL4_B(5,INC1)=REAL_Z(1,INC1)
+  51  CONTINUE
+C
+      CALL SUB4(J,I*2,CHARA01_B,CHARA10_B)
+C
+ 200  DO 110 INC2=1,10
+        DO 111 INC1=1,10
+          IF (CHARA10_A(INC1,INC2) .NE. CHARA10_B(INC1,INC2)) THEN
+            ERROR=ERROR+1
+            WRITE (6,998)
+            WRITE (6,*) 'CHARA10_A(',CHARA10_A,')'
+            WRITE (6,*) '"RIGHT" ',CHARA10_B
+            GOTO 210
+          END IF
+ 111    CONTINUE
+ 110  CONTINUE
+
+ 210  DO 120 INC2=1,10
+        DO 121 INC1=1,10
+          IF (REAL4_A(INC1,INC2) .NE. REAL4_B(INC1,INC2)) THEN
+            ERROR=ERROR+1
+            WRITE (6,997)
+            WRITE (6,*) 'REAL4_A(',REAL4_A,')'
+            WRITE (6,*) '"RIGHT" ',REAL4_B
+            GOTO 220
+          END IF
+ 121    CONTINUE
+ 120  CONTINUE
+      IF(ERROR .EQ. 0) THEN
+        WRITE(6,*) 'OK'
+      ELSE
+        WRITE(6,*) 'NG'
+      ENDIF
+
+ 220  CONTINUE
+ 993  FORMAT (1H ,'OK')
+ 994  FORMAT (1H ,'OK')
+
+ 997  FORMAT (1H ,'NG')
+ 998  FORMAT (1H ,'NG')
+
+      STOP
+      END
+C
+      SUBROUTINE SUB2(X,Y,A1,A2)
+        INTEGER X,Y
+        CHARACTER    A1(Y,Y)
+        CHARACTER*10 A2(Y,Y)
+          A2(X:Y,:Y)=A1(X:Y,:Y)//A2(X:Y,:)
+        END SUBROUTINE SUB2
+C
+      SUBROUTINE SUB4(X,Y,B1,B2)
+        INTEGER X,Y
+        CHARACTER  B1(Y,Y)
+        CHARACTER*10 B2(Y,Y),DM(10,10)
+        DO 400 INC2=X,Y
+          DO 410 INC1=1,Y
+            DM(INC1,INC2)=B1(INC1,INC2)//B2(INC1,INC2)
+ 410      CONTINUE
+ 400    CONTINUE
+        DO 420 INC2=X,Y
+          DO 430 INC1=1,Y
+            B2(INC1,INC2)=DM(INC1,INC2)
+ 430      CONTINUE
+ 420    CONTINUE
+      END SUBROUTINE SUB4

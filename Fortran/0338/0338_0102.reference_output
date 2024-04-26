@@ -1,0 +1,10 @@
+ #### START ####
+ *** LABEL 1 ***
+ *** LABEL 2 ***
+ *** LABEL 3 ***
+ *** LABEL 4 ***
+ *** LABEL 5 ***
+ *** LABEL 6 ***
+ *** LABEL 7 ***
+ ####  END  ####
+exit 0

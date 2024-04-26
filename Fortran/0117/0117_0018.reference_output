@@ -1,0 +1,7 @@
+ i= 1   then a=    3,b=    3
+ i= 2   then a=    6,b=    8
+ i= 3   then a=   11,b=   35
+ i= 4   then a=   20,b=  272
+ i= 5   then a=   37,b= 3157
+ ***** OK *****
+exit 0

@@ -1,0 +1,23 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE ty
+  COMPLEX(KIND = 8) :: cmp1
+END TYPE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+TYPE(ty),ALLOCATABLE :: obj
+
+ALLOCATE(obj)
+obj%cmp1 = (10.20,30.40)
+
+ASSOCIATE(aa => obj)
+  IF(aa%cmp1 .EQ. (10.20,30.40)) PRINT*,'pass'
+END ASSOCIATE
+
+END PROGRAM

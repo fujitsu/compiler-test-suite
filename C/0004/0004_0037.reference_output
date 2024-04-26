@@ -1,0 +1,11 @@
+test1 start
+
+test1 OK 1
+
+test1 end
+test2 start
+
+test2 OK 1
+
+test2 end
+exit 0

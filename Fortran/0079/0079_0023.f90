@@ -4,7 +4,6 @@ interface subaa
   end subroutine
 end interface
 contains
-  !module pure subroutine suba
   module subroutine suba
   end subroutine
 end

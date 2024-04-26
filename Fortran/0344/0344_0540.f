@@ -1,0 +1,18 @@
+      PROGRAM MAIN
+      REAL*4  ETMP1,ETMP2,VMIX(10),AFG(10)
+      INTEGER KMY(10)
+      REAL*8  DAFG(10)
+      DATA KMY/1,2,3,4,5,6,7,8,9,10/,N/10/
+      DATA VMIX/0.11,0.22,0.33,0.44,0.55,0.66,0.77,0.88,0.99,2.1/
+      DATA AFG/2.1,0.99,0.88,0.77,0.66,0.55,0.44,0.33,0.22,0.11/
+C
+      DO 10 I=1,N
+         ETMP1        = -VMIX(KMY(I))
+         ETMP2        = VMIX(KMY(I)) * 2.718
+         DAFG(KMY(I)) = ETMP1 ** 2 * AFG(KMY(I)) - ETMP2
+   10 CONTINUE
+C
+      WRITE(6,100) DAFG
+  100 FORMAT(1H ,E30.10)
+      STOP
+      END

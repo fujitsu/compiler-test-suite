@@ -14,4 +14,3 @@ else
 print*,"FAIL"
 end if
 end program minlocs
-

@@ -1,0 +1,20 @@
+PROGRAM main
+IMPLICIT NONE
+
+CHARACTER(LEN = 2),POINTER :: ptr2
+CHARACTER(LEN = 4),POINTER :: ptr
+CHARACTER(LEN = 4),TARGET :: ch = 'aaaa'
+
+ptr => ch
+
+ASSOCIATE(aa => ptr(2:3))
+  ptr2 => aa
+END ASSOCIATE
+
+IF(ptr2(1:2) .EQ. 'aa') THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+END PROGRAM

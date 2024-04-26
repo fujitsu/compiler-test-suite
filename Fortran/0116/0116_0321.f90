@@ -14,7 +14,6 @@ real(8),parameter :: ans=100.0
 
   type(str1),dimension(10,10) :: strRoot
 
-!  allocate(strRoot(10,10))
   do i=1,10
     do j=1,10
       allocate(strRoot(i,j)%innerNode(10,10))
@@ -26,7 +25,6 @@ real(8),parameter :: ans=100.0
       enddo
     enddo
   enddo
-!  call testFunc(strRoot)
   i1 = 1
   i2 = 1
   j1 = 2

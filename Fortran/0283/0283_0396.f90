@@ -1,0 +1,14 @@
+PROGRAM main
+IMPLICIT NONE
+
+LOGICAL(KIND = 4) :: l1 = .true.
+
+ASSOCIATE(aa => l1)
+  IF(aa) THEN
+     PRINT*,'pass'
+  ELSE
+    PRINT*,101
+  END IF
+END ASSOCIATE
+
+END PROGRAM

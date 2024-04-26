@@ -17,7 +17,6 @@ type(t3) :: o3
 contains
 end type
 
-
 type(ty) :: obj
 type(t2) :: obj2
 type(t3) :: obj3

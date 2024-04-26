@@ -1,0 +1,22 @@
+ s_c1 now
+ sub:call soon s_c1 2nd.
+ s_c1 now
+ sub:call soon s_c1 2nd.
+ s_c1 now
+ s_c1 end
+ 2 2
+ sc_1:call soon sub by else if. savei= 2
+                                isave_sc1= 26
+ s_c1 end
+ 2 2
+ sc_1:call soon sub by if. savei= 2
+                           isave_sc1= 26
+ s_c1 end
+ sub:call soon s_c1 1st. savei= 4
+ 2 4 1
+ sub:call soon s_c1 2nd.
+ s_c1 now
+ s_c1 end
+ 2 4
+ 2
+exit 0

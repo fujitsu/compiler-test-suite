@@ -1,0 +1,19 @@
+PROGRAM main
+IMPLICIT NONE
+
+INTEGER,DIMENSION(:,:,:,:,:),ALLOCATABLE :: arr
+INTEGER :: a = 9 ,b = 67
+
+ALLOCATE(arr(3,5,7,2,8))
+
+arr = 3
+
+ASSOCIATE(aa => arr(2,2:4,2:6:2,1,2:8:2) + MOD(b,a))
+  IF(aa(2,3,3) .EQ. 7) THEN
+    PRINT*,'pass'
+  ELSE
+    PRINT*,101
+  END IF
+END ASSOCIATE
+
+END PROGRAM

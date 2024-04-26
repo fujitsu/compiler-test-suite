@@ -11,7 +11,7 @@ subroutine s0
 allocate(w(3)%x1(-3:-1),source=a+20)
 end subroutine
 function f()
-type(y),pointer::f!!!(:)
+type(y),pointer::f
 f=>w(3)
 c=c+1
 end function

@@ -1,0 +1,20 @@
+       integer*4 d,a(10),b(10)
+       ind1 = 0
+       b = 0
+       d = 0
+
+       do j=1,10
+         a(j) = j
+       enddo
+
+       do j=1,10
+         do i=1,10
+           if (d < a(i)) then
+             d = a(i)
+             ind1 = i
+           endif
+         enddo
+         b(j) = ind1
+       enddo
+       print*, b,d
+       end

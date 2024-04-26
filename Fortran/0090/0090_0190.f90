@@ -18,23 +18,19 @@ program main
 
   call init_data()
 
-!!! TEST
-
-! integer
   out_i1  =  in_i11(in_i12)
   out_i2  =  in_i21(in_i22)
   out_i4  =  in_i41(in_i42)
   out_i8  =  in_i81(in_i82)
-! real
+
   out_r4  =  in_r41(int(in_r42))
   out_r8  =  in_r81(int(in_r82))
   out_r16 =  in_r161(int(in_r162))
-! complex
+
   out_c8  =  in_c81(int(aimag(in_c82)))
   out_c16 =  in_c161(int(aimag(in_c162)))
   out_c32 =  in_c321(int(aimag(in_c322)))
 
-!!! CHECK
   ok = .false.
   if (real(maxval(out_i1),kind=16) == real(maxval(out_i2),kind=16)) then
     if (real(maxval(out_i2),kind=16) == real(maxval(out_i4),kind=16)) then

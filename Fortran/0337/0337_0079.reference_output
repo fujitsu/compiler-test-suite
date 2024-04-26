@@ -1,0 +1,9 @@
+0          - JUSTICE -     - ITEM -      - COMPUTED RESULT -          - COMPARE VALUE -         - DIFFERENCE -
+
+0            *OK*           ( 1)                    153                          153
+0            *OK*           ( 2)          0.1001000E+04                0.1001000E+04          0.0000000E+00
+0            *OK*           ( 3)               F                           F
+0            *OK*           ( 4)                     32                           32
+0            *OK*           ( 5)          0.9990001E+03                0.9990001E+03          0.0000000E+00
+0            *OK*           ( 6)               F                           F
+exit 0

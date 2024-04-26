@@ -1,0 +1,24 @@
+<<<< start >>>>
+arg=0:even*1/2->0
+arg=1:odd*3+1->4
+arg=2:even*1/2->1
+arg=3:odd*3+1->10
+arg=4:even*1/2->2
+arg=5:odd*3+1->16
+arg=6:even*1/2->3
+arg=7:odd*3+1->22
+arg=8:even*1/2->4
+arg=9:odd*3+1->28
+arg=10:even*1/2->5
+arg=11:odd*3+1->34
+arg=12:even*1/2->6
+arg=13:odd*3+1->40
+arg=14:even*1/2->7
+arg=15:odd*3+1->46
+arg=16:even*1/2->8
+arg=17:odd*3+1->52
+arg=18:even*1/2->9
+arg=19:odd*3+1->58
+arg=20:even*1/2->10
+<<<< end >>>>
+exit 0

@@ -1,0 +1,20 @@
+PROGRAM main
+IMPLICIT NONE
+
+INTEGER,PARAMETER :: num = 10
+INTEGER :: i
+INTEGER,DIMENSION(1:10) :: arr = 1,arr2
+
+DO i = 1,num 
+ASSOCIATE(aa => arr(i) * num)
+  arr2 = aa
+END ASSOCIATE
+END DO
+
+IF(arr2(5) .EQ. 10) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+END PROGRAM

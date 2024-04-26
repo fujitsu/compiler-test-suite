@@ -15,7 +15,7 @@ interface inr
 function subb3(d1)
 real :: d1
 integer :: subb3
-end !function
+end
 end interface
 
 integer :: ii=9
@@ -45,4 +45,3 @@ real :: d1
 d1=5
 subb3=d1
 end
-

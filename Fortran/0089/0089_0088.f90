@@ -21,4 +21,3 @@ type(ext)::var
 if (var%x1/=1) print *,1010
 print *,'pass'
 end
-

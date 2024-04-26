@@ -1,5 +1,3 @@
-! Complex Designator used
-! module, subroutine used
         Module mod2
 complex,parameter :: xx1 = (3.0,5.0)
 
@@ -13,4 +11,3 @@ use mod2
 call sub
  print *, "pass"
 end
-

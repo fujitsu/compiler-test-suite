@@ -1,0 +1,113 @@
+      LOGICAL T,F
+      T   =.TRUE.
+      F   =.FALSE.
+  102 FORMAT(1H0,12X,7H*ERROR*,7X,2H( ,I2,2H ),14X,L6)
+  103 FORMAT(1H0,12X,4H*OK*,10X,2H( ,I2,2H ),14X,L6)
+      I   =32767
+      J   =-32767
+C
+    1 ITM =01
+      IF(J.LT.I)GO TO 700
+      GO TO 701
+C
+    2 IF(J.LT.J)GO TO 702
+      GO TO 703
+C
+    3 IF(I.LT.J)GO TO 702
+      GO TO 703
+C
+    4 IF(J.LE.I)GO TO 700
+      GO TO 701
+C
+    5 IF(I.LE.I)GO TO 700
+      GO TO 701
+C
+    6 IF(I.LE.J)GO TO 702
+      GO TO 703
+C
+    7 IF(J.EQ.I)GO TO 702
+      GO TO 703
+C
+    8 IF(J.EQ.J)GO TO 700
+      GO TO 701
+C
+    9 IF(I.EQ.J)GO TO 702
+      GO TO 703
+C
+   10 IF(J.NE.I)GO TO 700
+      GO TO 701
+C
+   11 IF(I.NE.I)GO TO 702
+      GO TO 703
+C
+   12 IF(I.NE.J)GO TO 700
+      GO TO 701
+C
+   13 IF(J.GT.I)GO TO 702
+      GO TO 703
+C
+   14 IF(J.GT.J)GO TO 702
+      GO TO 703
+C
+   15 IF(I.GT.J)GO TO 700
+      GO TO 701
+C
+   16 IF(J.GE.I)GO TO 702
+      GO TO 703
+C
+   17 IF(J.GE.J)GO TO 700
+      GO TO 701
+C
+   18 IF(I.GE.J)GO TO 700
+      GO TO 701
+C
+   19 IF(J.LT.3)IF(4-I)700,701,701
+      GO TO 701
+C
+   20 IF(J.LE.J)IF(I-8)701,701,700
+      GO TO 701
+C
+   21 IF(I.EQ.I)IF(J+30)700,701,701
+      GO TO 701
+C
+   22 IF(I.GT.J)IF(I/4)701,701,700
+      GO TO 701
+C
+   23 IF(J.GE.J)IF(J/8)700,701,701
+      GO TO 701
+C
+   24 IF(J.NE.I)IF(J+8)700,701,701
+      GO TO 701
+C
+   25 IF(4.LT.I)K=4+33
+      IF(K-37)701,700,701
+C
+   26 IF(I.LE.I)K=4**4
+      IF(K-256)701,700,701
+C
+   27 IF(J.EQ.J)K=38/2
+      IF(K-19)701,700,701
+C
+   28 IF(30.NE.J)K=7*9
+      IF(K-63)701,700,701
+C
+   29 IF(I.GT.J)K=7*8/2
+      IF(K-28)701,700,701
+C
+   30 CONTINUE
+C
+      IF(I.GE.I)K=(3+4)*3
+      IF(K-21)701,700,701
+  700 WRITE(6,103)ITM
+      GO TO 1000
+  701 WRITE(6,102)ITM,T
+      GO TO 1000
+  702 WRITE(6,102)ITM,F
+      GO TO 1000
+  703 WRITE(6,103)ITM
+ 1000 ITM =ITM+1
+      GO TO (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,
+     *23,24,25,26,27,28,30,31),ITM
+   31 CONTINUE
+      STOP 7777
+      END

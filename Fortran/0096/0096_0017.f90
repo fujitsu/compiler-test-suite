@@ -1,9 +1,8 @@
-! SUM intrinsic function used
 program pro
  real*4,parameter :: x1(2,2)=RESHAPE([2.3,3.0,4.8,3.2],[2,2])
  real*8,parameter :: x2(2,2)=RESHAPE([2.3,3.0,4.8,3.2],[2,2])
  real*16,parameter :: x3(2,2)=RESHAPE([2.3,3.0,4.8,3.2],[2,2])
- 
+
  real*4:: rslt1(2) = SUM(LOG_GAMMA(x1),2)
  real*8:: rslt2(2) = SUM(LOG_GAMMA(x2),2)
  real*16:: rslt3(2) = SUM(LOG_GAMMA(x3),2)

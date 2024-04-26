@@ -1,0 +1,7 @@
+ 7 -- 7
+ string->integer OK
+ 7 -- 7
+ string->integer OK
+ KIND:: 4 --KIND:: 4
+ KIND OK
+exit 0

@@ -1,0 +1,10 @@
+
+
+
+          - JUSTICE -     - ITEM -      - COMPUTED RESULT -          - COMPARE VALUE -
+
+0            *OK*           ( 1)                   -112                         -112
+0            *OK*           ( 2)                  10004                        10004
+0            *OK*           ( 3)                    -49                          -49
+0            *OK*           ( 4)                    -62                          -62
+exit 0

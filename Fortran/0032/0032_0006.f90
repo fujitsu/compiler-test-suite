@@ -1,7 +1,7 @@
 module m
-integer  :: tar1!=1
-target   :: tar1!=1
-private  :: tar1!=1
+integer  :: tar1
+target   :: tar1
+private  :: tar1
 type ty1
    integer,pointer :: ptr1=>tar1
 end type

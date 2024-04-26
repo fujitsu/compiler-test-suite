@@ -1,0 +1,26 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE ty
+  INTEGER(KIND = 8),DIMENSION(:),allocatable :: arr
+END TYPE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+TYPE(ty),ALLOCATABLE :: obj
+
+ALLOCATE(obj)
+ALLOCATE(obj%arr(8))
+obj%arr = 100
+
+ASSOCIATE(aa => obj%arr(:8))
+  IF(ALL(aa(2:4) .EQ. 100)) PRINT*,'pass'
+
+  IF(ALL(aa .NE. 100)) PRINT*,'101'
+END ASSOCIATE
+
+END PROGRAM

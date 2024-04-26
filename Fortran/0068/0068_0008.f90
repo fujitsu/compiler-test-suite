@@ -1,11 +1,9 @@
-!
 subroutine add_c8_r4(a8,r4,c8)
   complex*8 :: a8,c8
   real*4 :: r4
   a8 = r4 + c8
 end subroutine add_c8_r4
 
-!
 subroutine add_c16_r8(a16,r8,c16)
   complex*16 :: a16,c16
   real*8 :: r8
@@ -24,7 +22,6 @@ subroutine add_c8_r8(a8,r8,c8)
   a8 = r8 + c8
 end subroutine add_c8_r8
 
-!
 subroutine add5(a16,r4,c8)
   complex*16 :: a16
   complex*8 :: c8
@@ -32,7 +29,6 @@ subroutine add5(a16,r4,c8)
   a16 = r4 + c8
 end subroutine add5
 
-!
 subroutine add6(a8,r8,c16)
   complex*16 :: c16
   complex*8 :: a8
@@ -78,21 +74,18 @@ subroutine add_sin_c8cnt2(a16,r8)
   a16 = sin(r8) + (1.0_4, 4.0_4)
 end subroutine add_sin_c8cnt2
 
-!
 subroutine add_r4_c8cnt2(a8,r4)
   complex*8 :: a8
   real*4 :: r4
   a8 = r4 + (1.0_4, 4.0_4)
 end subroutine add_r4_c8cnt2
 
-!
 subroutine add_r8_c16cnt(a16,r8)
   complex*16 :: a16
   real*8 :: r8
   a16 = r8 + (1.0_8, 4.0_8)
 end subroutine add_r8_c16cnt
 
-!
 subroutine add_r4_c16cnt(a16,r4)
   complex*16 :: a16
   real*4 :: r4
@@ -105,7 +98,6 @@ subroutine add_sin_c8cnt(a8,r4)
   a8 = sin(r4) + (1.0_4, 4.0_4)
 end subroutine add_sin_c8cnt
 
-!
 subroutine add_sin_c8cnt3(a16,r4)
   complex*16 :: a16
   real*4:: r4
@@ -127,13 +119,13 @@ end subroutine libfunc_add_complex_cnt22
 subroutine libfunc_add_complex_cnt2_1(a16,r4)
   complex*16 :: a16
   real*4:: r4
-  a16 = sin(r4) + cmplx(1.0_8, 4.0_8) ! c16=r4+c8 => c16=(c16)((r4,0)+c8)
+  a16 = sin(r4) + cmplx(1.0_8, 4.0_8)
 end subroutine libfunc_add_complex_cnt2_1
 
 subroutine libfunc_add_complex_cnt2(a16,r4)
   complex*16 :: a16
   real*4:: r4
-  a16 = sin(r4) + dcmplx(1.0_8, 4.0_8) ! c16=r4+c16 => c16=((c16)(r4,0)+c16)
+  a16 = sin(r4) + dcmplx(1.0_8, 4.0_8)
 end subroutine libfunc_add_complex_cnt2
 
 subroutine add_r4_cmplx(a16,r4)
@@ -172,21 +164,20 @@ subroutine add_r4_cmplx6(a16,r4)
   complex*16 :: a16
   real*4:: r4
   r4=30
-  a16 = r4 + cmplx(sin(r4), 4.0_4) !dsin() : r8(double) sin():r4(float)
+  a16 = r4 + cmplx(sin(r4), 4.0_4)
 end subroutine add_r4_cmplx6
 
 subroutine add_r4_cmplx7(a16,r4)
   complex*16 :: a16
   real*4:: r4
   r4=30
-  a16 = r4 + dcmplx(sin(r4), 4.0_4) !dsin() : r8(double) sin():r4(float)
+  a16 = r4 + dcmplx(sin(r4), 4.0_4)
 end subroutine add_r4_cmplx7
 
 subroutine add_cnt_cnt(a16)
   complex*16 :: a16
   a16 = 4.0 + (1.0_4, 4.0_4)
 end subroutine add_cnt_cnt
-
 
 program main
   implicit none
@@ -421,4 +412,3 @@ program main
   endif
 
 end program main
-

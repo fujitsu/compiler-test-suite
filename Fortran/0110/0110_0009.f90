@@ -122,7 +122,6 @@ if (any(c04.ne.420)) print *,'err4c'
 if (any(c05.ne.520)) print *,'err5c'
 end
 
-
 subroutine sub01()
 integer,dimension(10) :: a01,a02,a03,a04,a05
 integer,dimension(10) :: b01,b02,b03,b04,b05
@@ -161,4 +160,3 @@ if (any(c03.ne.320)) print *,'err3c'
 if (any(c04.ne.420)) print *,'err4c'
 if (any(c05.ne.520)) print *,'err5c'
 end
-

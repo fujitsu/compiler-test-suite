@@ -6,4 +6,3 @@ if(any(k .ne. m ))print*,"100"
 if(any(k .ne. reshape((/2,2,1,2/),(/2,2/))))print*,"101"
 print*,"PASS"
 end
-

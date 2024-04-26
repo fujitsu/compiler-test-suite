@@ -1,0 +1,23 @@
+PROGRAM MAIN
+REAL(4),DIMENSION(50) :: A,B,C
+N=50
+
+DO I=1,N
+A(I)=I*50
+END DO
+
+DO I=1,N
+B(I)=I*50
+END DO
+
+DO I=1,50
+C(I)=I*50
+END DO
+
+DO I=1,N
+IF(A(I).ne.B(I)) PRINT *,"??? 9_11 NG ???"
+IF(B(I).ne.C(I)) PRINT *,"??? 9_11 NG ???"
+END DO
+
+PRINT *,"*** OK ***"
+END

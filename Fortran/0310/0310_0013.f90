@@ -1,0 +1,12 @@
+REAL(KIND=4) :: A,B,C
+A=0.1
+B=1.0
+C=1.0
+  IF(A-0.1)1,2,1
+1 PRINT *,'1'
+  GO TO 50
+2 GO TO 3
+4 PRINT *,'*** ok ***'
+  GO TO 50
+3 IF(B.EQ.C)GO TO 4
+50 END

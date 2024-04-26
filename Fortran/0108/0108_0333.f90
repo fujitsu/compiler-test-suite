@@ -33,8 +33,6 @@ a = (/(int(i,kind=8),i=1,N)/)
 b = (/(int(i*i-i,kind=8),i=1,N)/)
 end subroutine
 
-! subroutine sub0x
-! use&def,use,def
 subroutine sub00()
 integer(kind=8) prg
 call init_a()
@@ -113,8 +111,6 @@ enddo
 print *,int(prg,kind=8)
 end subroutine
 
-! subroutine sub1x
-! use&def,use,def,use
 subroutine sub10()
 integer(kind=8) prg,prg2
 call init_a()
@@ -199,8 +195,6 @@ enddo
 print *,int(prg+prg2,kind=8)
 end subroutine
 
-! subroutine sub2x
-! use,use&def,use,def
 subroutine sub20()
 integer(kind=8) prg,prg2
 call init_a()
@@ -285,8 +279,6 @@ enddo
 print *,int(prg+prg2,kind=8)
 end subroutine
 
-! subroutine sub3x
-! use,use&def,use,def,use
 subroutine sub30()
 integer(kind=8) prg,prg2,prg3
 call init_a()

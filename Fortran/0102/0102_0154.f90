@@ -9,4 +9,3 @@ integer,parameter::constvar(3,2)=minloc(temp,dim=3,back=obj%l)
 if(any(constvar.ne.reshape([1,2,2,2,1,1],[3,2])))print*,"100"
 print*,"PASS"
 end program minlocs
-

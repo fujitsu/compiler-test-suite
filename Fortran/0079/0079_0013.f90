@@ -13,7 +13,6 @@ contains
      module subroutine sub_3
 pointer ::aa
 allocate(aa)
-     !print *,'smod.sub_3'
      END subroutine
      module subroutine sub_1
      call sub_2()
@@ -24,7 +23,6 @@ end
 submodule(m:smod)smod2
 contains
      module subroutine sub_2
-     !call sub_3()
      END subroutine
 end
 use m

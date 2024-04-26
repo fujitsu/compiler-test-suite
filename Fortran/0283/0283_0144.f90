@@ -1,0 +1,32 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  INTEGER :: i
+END TYPE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+LOGICAL :: res
+TYPE(t1),ALLOCATABLE :: obj,obj2
+ALLOCATE(obj)
+obj%i = 4
+
+ASSOCIATE(aa => obj)
+  ALLOCATE(obj2 , SOURCE = obj)
+  obj2%i = obj2%i + 2
+  DEALLOCATE(obj2)
+  res = ALLOCATED(obj2) 
+END ASSOCIATE
+
+IF(res) THEN
+  PRINT*,101
+ELSE
+  PRINT*,'pass'
+END IF
+
+END PROGRAM 

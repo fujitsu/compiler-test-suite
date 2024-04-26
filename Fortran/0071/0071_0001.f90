@@ -13,7 +13,7 @@ contains
   integer(c_int) function foo() result(zz)
     type(c_funptr) :: fp
 
-    fp = fun()!
+    fp = fun()
 if (c_associated(fp)) print *,301
 
     zz = 0
@@ -24,4 +24,3 @@ use xxxf
 if (foo()/=0) print *,'202'
 print *,'pass'
 end
-

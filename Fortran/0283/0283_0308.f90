@@ -1,0 +1,14 @@
+PROGRAM main
+IMPLICIT NONE
+
+INTEGER :: a = -3,b = 5
+
+ASSOCIATE(aa => (/12,11,17,9,0/) + SIGN(a,b))
+  IF(aa(3) .EQ. 20) THEN
+    PRINT*,'pass'
+  ELSE
+    PRINT*,101
+  END IF
+END ASSOCIATE
+
+END PROGRAM

@@ -1,4 +1,3 @@
-!
       module m1
        interface a
           procedure::k1
@@ -15,4 +14,3 @@
       if (a(1,2)/=3) print *,101
       print *,'PASS'
      end
-

@@ -1,0 +1,5 @@
+ *** OK ***
+ case-1 : end
+ *** OK ***
+ case-2 : end
+exit 0

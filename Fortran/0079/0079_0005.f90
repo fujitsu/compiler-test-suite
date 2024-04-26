@@ -42,7 +42,6 @@ use m
 use mmm
 call sub0(ii)
 if (ii.ne.30) print *,'err 0'
-!print *,g%z
 if (g%z.ne.1) then
  print *,'ng'
 else

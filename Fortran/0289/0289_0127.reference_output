@@ -1,0 +1,5 @@
+ c3= 4.9290185
+ ** program is  ok(c3) **
+ ** program is  ok(i) **
+ ** program is  ok(add) **
+exit 0

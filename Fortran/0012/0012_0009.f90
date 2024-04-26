@@ -19,4 +19,3 @@ call ss(b(::2,:))
 if (any(b(::2,:)/=ac)) print *,3001
 print *,'OK'
 end
-

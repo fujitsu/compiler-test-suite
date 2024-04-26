@@ -1,0 +1,7 @@
+module m1
+  intrinsic ATOMIC_DEFINE,ATOMIC_REF,CO_SUM,CO_MIN,CO_MAX
+  intrinsic IMAGE_INDEX,LCOBOUND,NUM_IMAGES,THIS_IMAGE,UCOBOUND
+end
+use m1
+print *,'pass'
+end

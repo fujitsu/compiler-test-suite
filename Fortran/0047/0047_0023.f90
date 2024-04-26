@@ -1,5 +1,3 @@
-! Specification Example
-! Keyword Used
 program pro
 implicit none
 integer,parameter ::n= 2

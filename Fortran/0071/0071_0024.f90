@@ -26,9 +26,9 @@ entry kmr_fixfun(fp) result(zz) bind(c)
     procedure(mapfn) :: m
     type(c_funptr) :: fp
 
-    fp =            c_funloc(m)!
+    fp =            c_funloc(m)
  if (.not.c_associated(fp)) print *,301
-    fp = kmr_fixfun(c_funloc(m))!
+    fp = kmr_fixfun(c_funloc(m))
  if (.not.c_associated(fp)) print *,302
 
     zz = 0

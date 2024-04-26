@@ -1,0 +1,96 @@
+      DOUBLE PRECISION  R,G2,A(9),X,Y,B,D,C,Z,DIFF,E,DI
+      A(1)=2.885390081777927D0
+      A(2)=0.9617966939259755D0
+      A(3)=0.5770780163556935D0
+      A(4)=0.4121985830734861D0
+      A(5)=0.3205989045353651D0
+      A(6)=0.2623075480640132D0
+      A(7)=0.2219890761494066D0
+      A(8)=0.1911392479842068D0
+      A(9)=0.1913317120226657D0
+      R=1.414213562373095D0
+      G2=0.6931471805599453D0
+      K=1
+      N=0
+      Z=0.0D0
+      E=2.718281828459045D0
+      DIFF=1.0D-13
+C
+      ITEM=1
+      IW=1
+      IIW=1
+   10 N=N+1
+      IF(N-1)11,12,11
+   11 CONTINUE
+C
+  210 FORMAT(1H1 / )
+   12 CONTINUE
+C
+      L=0
+   20 DI=K
+      X=DI/1000.0D0
+   30 Y=DLOG(X)
+      B=0.5D0
+      IF(X-1.0D0)40,50,50
+   40 D=1.0D0/X
+      I=1
+      GO TO 60
+   50 D=X
+      I=0
+   60 IF(D-2.0D0)80,80,70
+   70 D=D*5.0D-1
+      B=B+1.0D0
+      GO TO 60
+   80 C=(D-R)/(D+R)
+      Z=0.0D0
+      DO 100 J=1,9
+      Z=Z+A(J)*C**(2*J-1)
+  100 CONTINUE
+      Z=Z+B
+      IF(I)90,15,90
+   90 Z=-Z
+   15 Z=Z*G2
+      CALL DPRTN(L,DIFF,X,Y,Z)
+      GO TO(1,2),IIW
+    1 L=L+1
+      IF(K-1000)17,16,16
+   17 K=K+1
+      IF(L-50)20,10,10
+   16 ITEM=2
+      IF(K-10000)19,18,18
+   19 K=K+10
+      GO TO(3,4),IW
+    3 IW=2
+      GO TO 10
+    4 IF(L-50)20,10,10
+   18 ITEM=3
+      X=E
+      N=N+1
+      IF(N-1)95,96,95
+   95 CONTINUE
+   96 CONTINUE
+C
+      L=0
+      IIW=2
+      GO TO 30
+    2 CONTINUE
+      STOP
+      END
+C
+      SUBROUTINE    DPRTN (L,D,A,R,V)
+      DOUBLE PRECISION A,R,V,DIFF,D
+      DIFF = V - R
+      IF(DABS(DIFF)-D) 100,120,120
+  100 CONTINUE
+      GO TO 130
+  120 WRITE (6,2) A,R,V,DIFF
+    2 FORMAT(1H ,5X,8H*ERROR* ,4(5X,D24.17) )
+  130 IF (L- 9) 200,190,140
+  140 IF (L-19) 200,190,150
+  150 IF (L-29) 200,190,160
+  160 IF (L-39) 200,190,200
+  190 CONTINUE
+C
+    3 FORMAT (1H )
+  200 RETURN
+      END

@@ -1,0 +1,6 @@
+llvm_singlesource_compile_only_file(0291_0006.F PREFIX "Fujitsu-Fortran-")
+llvm_singlesource_compile_only_file(0291_0062.f PREFIX "Fujitsu-Fortran-")
+llvm_singlesource_compile_only_file(0291_0132.f PREFIX "Fujitsu-Fortran-")
+llvm_singlesource(PREFIX "Fujitsu-Fortran-")
+llvm_set_own_fortran_module_directory()
+set_property(SOURCE 0291_0139.f APPEND PROPERTY COMPILE_OPTIONS "-ffree-form")

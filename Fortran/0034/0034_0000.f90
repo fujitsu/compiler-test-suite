@@ -8,7 +8,7 @@ type method_base
 end type
      type,extends(method_base) :: method_grp
       type(LOCK_TYPE) :: ndx2
-      type(coord), allocatable :: grp(:) !frameArray(:)
+      type(coord), allocatable :: grp(:)
      end type method_grp
 print *,'OK'
 end

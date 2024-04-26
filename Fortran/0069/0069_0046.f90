@@ -12,20 +12,20 @@ contains
     w_character01(3) = "1"
 
     w_character00 = "123"
-    allocate(chr_pointer00,source=w_character01(2)) !
-    allocate(chr_pointer01,source=w_character01(2)) !
-    allocate(chr_pointer01,source=w_character00(2)) !
+    allocate(chr_pointer00,source=w_character01(2))
+    allocate(chr_pointer01,source=w_character01(2))
+    allocate(chr_pointer01,source=w_character00(2))
 
-    allocate(chr_pointer00,source=w_character01(2)//w_character01(2)) !
-    allocate(chr_pointer02,source=w_character01(2)//w_character01(2)) !
-    allocate(chr_pointer02,source=w_character01(2)//w_character00(2)) !
+    allocate(chr_pointer00,source=w_character01(2)//w_character01(2))
+    allocate(chr_pointer02,source=w_character01(2)//w_character01(2))
+    allocate(chr_pointer02,source=w_character01(2)//w_character00(2))
 
-    allocate(chr_pointer00,source=w_character01(2)//w_character01(2)//w_character01(2)) !
-    allocate(chr_pointer03,source=w_character01(2)//w_character01(2)//w_character01(2)) !
-    allocate(chr_pointer03,source=w_character01(2)//w_character01(2)//w_character00(2)) !
+    allocate(chr_pointer00,source=w_character01(2)//w_character01(2)//w_character01(2))
+    allocate(chr_pointer03,source=w_character01(2)//w_character01(2)//w_character01(2))
+    allocate(chr_pointer03,source=w_character01(2)//w_character01(2)//w_character00(2))
 
-    allocate(chr_pointer00,source=w_character01(2)//"1"//w_character01(2)) !
-    allocate(chr_pointer03,source=w_character01(2)//"1"//w_character01(2)) !
-    allocate(chr_pointer03,source=w_character01(2)//"1"//w_character00(2)) !
+    allocate(chr_pointer00,source=w_character01(2)//"1"//w_character01(2))
+    allocate(chr_pointer03,source=w_character01(2)//"1"//w_character01(2))
+    allocate(chr_pointer03,source=w_character01(2)//"1"//w_character00(2))
   end subroutine
 end

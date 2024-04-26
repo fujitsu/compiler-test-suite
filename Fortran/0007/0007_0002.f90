@@ -1,4 +1,3 @@
-!
 subroutine s1
 integer,dimension(10,11,12)::a,b
 a=reshape([(k,k=1,10*11*12)],[10,11,12])

@@ -1,0 +1,44 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  INTEGER :: n
+END TYPE
+
+TYPE,EXTENDS(t1) :: t2
+  CHARACTER(LEN = 10) :: ch
+  CHARACTER(LEN = 6) :: ch2='x'
+END TYPE
+
+END MODULE
+
+PROGRAM maiN
+USE mod1
+IMPLICIT NONE
+
+CLASS(t2),DIMENSION(:,:,:,:),ALLOCATABLE :: acc2  
+
+ALLOCATE(acc2(3,2,5,6))
+acc2%ch = 'xxxxxxxxxx'
+acc2%n = 10
+
+ASSOCIATE(aa => fun())
+  SELECT TYPE(aa)
+    TYPE IS(t2)
+      IF(aa(1,1,1,1)%ch(:10) .EQ. 'xxxxxxxxxx') THEN
+        PRINT*,'pass'
+      ELSE
+        PRINT*,101
+      END IF
+  END SELECT
+END ASSOCIATE
+
+CONTAINS
+
+FUNCTION fun()
+IMPLICIT NONE
+CLASS(*),DIMENSION(:,:,:,:),ALLOCATABLE :: fun
+ALLOCATE(fun(3,2,5,6),SOURCE = acc2)
+END FUNCTION
+
+END PROGRAM

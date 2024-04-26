@@ -1,0 +1,21 @@
+PROGRAM main
+IMPLICIT NONE
+
+INTEGER,POINTER :: pp
+INTEGER,POINTER :: rr
+INTEGER,TARGET :: tt
+tt = 4
+pp => tt
+
+ASSOCIATE(bb => pp)
+  rr => bb
+  NULLIFY(rr)
+END ASSOCIATE
+
+IF(ASSOCIATED(rr)) THEN
+  PRINT*,101
+ELSE
+  PRINT*,'pass'
+END IF
+
+END PROGRAM

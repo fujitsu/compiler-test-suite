@@ -67,7 +67,6 @@ do n=1,j
 mmmm(n+1 ,:) = nnnn(n,:)
 end do
 
-
 if (any(kk/=mm)) then
   print *,101
   print *,kk
@@ -93,4 +92,3 @@ end
 call s1
 print *,'OK'
 end
-

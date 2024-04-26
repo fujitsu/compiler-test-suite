@@ -3,7 +3,7 @@ contains
 subroutine sub(dmy)
     integer :: dmy
     dmy = 1
-end !subroutine
+end
 end module
 
 use mod1
@@ -24,4 +24,3 @@ contains
   fun2 = fun1()
   end 
 end
-

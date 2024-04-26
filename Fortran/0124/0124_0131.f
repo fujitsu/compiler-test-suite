@@ -1,12 +1,9 @@
-c
-c
       module sub_mod
       integer,parameter::N=10
       integer,parameter::ANS=122
       integer,target:: aa, bb
 
       contains
-c
       subroutine init_data
       aa = 1
       bb = 1
@@ -14,7 +11,6 @@ c
 
       end module sub_mod
 
-c
       program main
       use sub_mod
       integer res
@@ -43,7 +39,6 @@ c
 
       end
 
-c
       subroutine treat_data(a,b,N)
       integer,target:: a,b
       integer,pointer::ap,bp

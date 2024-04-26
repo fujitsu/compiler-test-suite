@@ -4,4 +4,3 @@ logical,parameter::k(2,2,2) = bge(x,y)
 if(any(k .neqv. reshape((/.true.,.false.,.true.,.false.,.true.,.true.,.false.,.true./),(/2,2,2/))))print*,"100"
 print*,"PASS"
 end
-

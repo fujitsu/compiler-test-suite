@@ -1,0 +1,18 @@
+ in fun1
+ in fun2
+ 1:Pass
+ in fun1
+ in fun2
+ 2:Pass
+ in fun1
+ in fun2
+ 3:Pass
+ in fun1
+ in fun2
+ 4:Pass
+ in fun1
+ in fun2
+ 5:Pass
+ in fun1
+ 6:Pass
+exit 0

@@ -1,4 +1,3 @@
-! Constant Used
 program pro
 implicit none
 real,parameter :: rslt(2)=BESSEL_YN(2,3,1.0)

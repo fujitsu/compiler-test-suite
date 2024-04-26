@@ -1,0 +1,3 @@
+ r4 ** i8 power inline TEST START
+ r4 ** i8 power inline TEST END
+exit 0

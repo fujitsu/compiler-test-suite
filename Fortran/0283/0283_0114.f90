@@ -1,0 +1,25 @@
+PROGRAM main
+IMPLICIT NONE
+
+INTEGER :: num = 8
+
+ASSOCIATE(bb => num)
+  CALL sub(bb,*10,*20,*30)
+  10 PRINT*,1
+  20 PRINT*,'pass'
+  30 PRINT*,'pass2'
+END ASSOCIATE
+
+CONTAINS
+SUBROUTINE sub(dum,*,*,*)
+INTEGER :: dum
+IF(dum > 10) THEN
+  RETURN 1
+ELSE IF(dum < 10) THEN
+  RETURN 2
+ELSE
+  RETURN 3
+END IF
+END SUBROUTINE
+
+END PROGRAM

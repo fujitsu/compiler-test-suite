@@ -1,23 +1,22 @@
 module m1
- real:: value  ! 2)
+ real:: value
 end
 
 module m2
- use m1        ! 3)
+ use m1
 contains
  subroutine def
-  value = 2    ! 4)
+  value = 2
   call ref
 end subroutine
 end
 
-use m2,only: def ! 5) , 6)
+use m2,only: def
 call def
 print *,'OK'
 end
 
-subroutine ref    ! 7)
- use m1           ! 8)
- write(1,*) value ! 9)
+subroutine ref
+ use m1
+ write(1,*) value
 end 
-

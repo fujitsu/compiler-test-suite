@@ -1,4 +1,3 @@
-c 
 
       program main
       integer, volatile :: s
@@ -13,7 +12,6 @@ c
 
       call init_var()
 
-c
       do i=1,N
          do j=1,N
             a(i,j) = a(i,j) + a(i,j) + 0.0
@@ -23,7 +21,6 @@ c
          enddo
       enddo
 
-c
       do i=1,N
          c1(i) = c1(i)
          do j=1,N
@@ -31,13 +28,11 @@ c
          enddo
       enddo
 
-c
       do i=1,N
          c1(i) = c1(i) * 2.0
          c1(i) = c1(i) / 2.0
       enddo
 
-c
       c2 = c2 - 2.0
       do i=1,N
          do j=1,N
@@ -45,7 +40,6 @@ c
          enddo
       enddo
 
-c
       do s=1,N/2
          do j=1,N/2
             c1(s*j) = c1(s*j) - 1.0

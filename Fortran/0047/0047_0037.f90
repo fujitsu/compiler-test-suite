@@ -1,4 +1,3 @@
-!Kind 16
 program pro
 type ty
 real :: x

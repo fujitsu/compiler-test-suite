@@ -1,0 +1,7 @@
+test for isnan(float)
+NAN:       isnan(x)
+INFINITY:  not isnan(x)
+ZERO:      not isnan(x)
+SUBNORMAL: not isnan(x)
+NORMAL:    not isnan(x)
+exit 0

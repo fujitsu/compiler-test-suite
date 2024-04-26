@@ -1,4 +1,3 @@
-c
 
       module f_def
       real(kind=4):: f1=1.0E0
@@ -52,7 +51,6 @@ c
 
       call init_fvar
 
-c
       if (f1 .eq. f2) then
          res = .true.
       else
@@ -60,7 +58,6 @@ c
          goto 100
       endif
 
-c
       if (f1 .eq. FC1) then
          res = .true.
       else
@@ -74,7 +71,6 @@ c
          goto 100
       endif
 
-c
       if (FC1 .eq. FC2) then
          res = .true.
       else
@@ -82,7 +78,6 @@ c
          goto 100
       endif
 
-c
       if (f1 < FMAX) then
          res = .true.
       else
@@ -96,7 +91,6 @@ c
          goto 100
       endif
 
-c
       if (f1 > FMIN) then
          res = .true.
       else
@@ -127,7 +121,6 @@ c
 
       call init_dvar
 
-c
       if (d1 .eq. d2) then
          res = .true.
       else
@@ -135,7 +128,6 @@ c
          goto 200
       endif
 
-c
       if (d1 .eq. DC1) then
          res = .true.
       else
@@ -149,7 +141,6 @@ c
          goto 200
       endif
 
-c
       if (DC1 .eq. DC2) then
          res = .true.
       else
@@ -157,7 +148,6 @@ c
          goto 200
       endif
 
-c
       if (d1 < DMAX) then
          res = .true.
       else
@@ -171,7 +161,6 @@ c
          goto 200
       endif
 
-c
       if (d1 > DMIN) then
          res = .true.
       else
@@ -204,7 +193,6 @@ c
 
       call init_fdvar
 
-c
       if (f1 .eq. d1) then
          res = .true.
       else
@@ -230,7 +218,6 @@ c
          goto 300
       endif
 
-c
       if (f1 .eq. DC1) then
          res = .true.
       else
@@ -244,7 +231,6 @@ c
          goto 300
       endif
 
-c
       if (f3 .ne. DC3) then
          res = .true.
       else
@@ -258,7 +244,6 @@ c
          goto 300
       endif
 
-c
       if (FC1 .eq. DC2) then
          res = .true.
       else
@@ -284,7 +269,6 @@ c
          goto 300
       endif
 
-c
       if (f1 < DMAX) then
          res = .true.
       else
@@ -298,7 +282,6 @@ c
          goto 300
       endif
 
-c
       if (f1 > DMIN) then
          res = .true.
       else

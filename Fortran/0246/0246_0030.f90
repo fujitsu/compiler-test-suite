@@ -1,0 +1,22 @@
+PROGRAM MAIN
+IMPLICIT NONE
+INTEGER :: K,X,L
+X=0
+K=10
+L=3
+DO CONCURRENT(K=1:5)
+  DO WHILE(X < 2)
+   DO CONCURRENT(L=1:4)
+      DO WHILE(X*2 < L)
+        X=X+1
+      END DO
+    END DO
+    X=X+1
+  END DO
+END DO
+IF (X == 3 .AND. K==10 .AND. L==3) THEN
+ Print *,"PASS"
+ELSE
+ Print *,"FAIL",X
+END IF
+END PROGRAM

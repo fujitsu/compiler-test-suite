@@ -1,0 +1,75 @@
+#define N 1024
+#define MTYPE integer
+#define MTYPEFUNC int
+#define TKIND 4
+#define MASTER 524800
+#define ERR_D 0
+
+subroutine target(red, src, v)
+  MTYPE(TKIND) :: red,v
+  MTYPE(TKIND),dimension(1:N):: src
+  integer::i
+  red = MTYPEFUNC(0,kind=TKIND)
+  do i=1, N
+     red = red + src(i)*v
+  end do
+end subroutine target
+
+subroutine master(res)
+  MTYPE(TKIND) :: res
+  res = MASTER
+end subroutine master
+
+
+subroutine init(src)
+  MTYPE(TKIND),dimension(1:N)::src
+  integer::i
+  do i=1,N
+     src(i) = MTYPEFUNC(i,kind=TKIND)
+  end do
+end subroutine init
+
+
+subroutine check(red, res)
+  MTYPE(TKIND) :: red, res
+  interface
+     logical function equal_d(a,b)
+       MTYPE(TKIND)::a,b
+     end function equal_d
+  end interface
+  if (equal_d(red, res)) then
+     print *, "OK"
+  else
+     print *, "NG"
+  endif
+end subroutine check
+
+
+program main
+  MTYPE(TKIND),dimension(1:N):: src
+  MTYPE(TKIND) :: red,res,v
+  v = MTYPEFUNC(1,kind=TKIND)
+  call init(src);
+  call target(red, src, v)
+  call master(res)
+  call check(red, res)
+end  program main
+
+logical function equal_d(a, b)
+  MTYPE(TKIND)::a,b
+  if ( a.eq.b ) then
+     equal_d = .true.
+  else if ( a.eq.0 ) then
+     if ( b .lt. ERR_D) then
+        equal_d = .true.
+     else
+        equal_d = .false.
+     end if
+  else 
+     if ( abs(a-b)/abs(a) .lt. ERR_D) then
+        equal_d = .true.
+     else
+        equal_d = .false.
+     end if
+  end if
+end function equal_d

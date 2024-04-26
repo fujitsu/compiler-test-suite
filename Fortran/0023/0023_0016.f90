@@ -5,7 +5,6 @@ end
 
 use m1
 use m1,only: a2
-!!!use m1,only: 
 implicit none
 
 if (a1/=1) print *,201

@@ -1,0 +1,39 @@
+      SUBROUTINE FTDIFS(FTDT,TT,IT1,IT2,XC,YC,ZC,GX,GY,GZ,ELM)
+      IMPLICIT REAL*8 (A-H,O-Z)
+
+      COMMON /FCAREA/ IMAX,JMAX,KMAX,NXYZN,
+     1                INJN,INJR,INKN,INKR,IRJN,IRJR,IRKN,IRKR,
+     2                JN,JN2,JNKN,JNKR,JR,JR2,JRKN,JRKR,KN,KN2,KR,KR2,
+     3                NXC,NYC,NZC,NCQ1,NCQL,NCQM,NCQN,NCQX,NCQY,NCQZ,
+     4                NCD1,NCDL,NCDM,NCDN,NCDX,NCDY,NCDZ,
+     5                NNFREC,NNFRE,NFREP,NNFRE1,NNFRE2,
+     6                NNWFC,NNWF,NWFP,NNTBLC,NNTBL,NTBLP,NVIC,
+     7                NNLIBC,NNLIB,NLIBP,NNRPTC,NNRPT,NRPTP
+      COMMON /FCENTR/ NXYZE,NXYZK,NT1C,NT1,NT1P,NT2C,NT2,NT2P,
+     1                NTBC,NTBCI,NTBCR,NTBCN(0:7),NT3BC,NT3BCI,
+     2                NT3BCN(0:6),NVBCR,NAKBC,NEPBC
+
+      DIMENSION FTDT(NXYZN),TT(NXYZE)
+      DIMENSION IT1(NT1C,NT1),IT2(NT2C,NT2)
+      DIMENSION XC(NXC,IMAX),YC(NYC,JMAX),ZC(NZC,KMAX)
+      DIMENSION GX(NXYZN),GY(NXYZN),GZ(NXYZN),ELM(NXYZE)
+
+
+      DO 100 LL=1,NT1P
+      I  =IT1(1,LL)
+      IJK=IT1(4,LL)
+      GXELM1=XC(12,I  )*GX(IJK  )*( XC(5,I  )*ELM(IJK+1)
+     1                             +XC(6,I  )*ELM(IJK  ))
+      GXELM2=XC(12,I-1)*GX(IJK-1)*( XC(5,I-1)*ELM(IJK  )
+     1                             +XC(6,I-1)*ELM(IJK-1))
+      FTDT(IJK)=FTDT(IJK)+XC(16,I)
+     1  *( GXELM1*XC(8,I  )*(TT(IJK+1)-TT(IJK  ))
+     2    +GXELM2*XC(8,I-1)*(TT(IJK-1)-TT(IJK  )) )
+  100 CONTINUE
+C
+
+      RETURN
+      END
+
+      write(6,*) "OK"
+      end

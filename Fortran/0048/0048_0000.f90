@@ -10,9 +10,9 @@ arr1 = reshape(['A','B','B','C','D','E','G','F','H','B','D','C'],[3,4])
 arr2 = reshape([2.2,3.3,4.4,5.5,4.4,3.3,2.2,1.1,6.6,7.7,8.8,9.9],[3,4])
 
 arr4 = reshape([(2,3),(3,3),(4,4),(2,3),(3,3),(2,2),(1,1),(6,3),(2,3),(3,3),(1,1),(7,7)],[3,4])
-jj = findloc(arr,7,1)!,BACK = .TRUE.)
+jj = findloc(arr,7,1)
 
-kk = findloc(arr1,'B',1)!,BACK = .TRUE.)
+kk = findloc(arr1,'B',1)
 ll = findloc(arr2,4.4,2,BACK = .TRUE.)
 
 nn = findloc(arr4,(3,3),1,BACK = .TRUE.)

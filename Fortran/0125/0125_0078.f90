@@ -48,4 +48,3 @@ program main
      print *,"NG"
   endif
 end program main
-

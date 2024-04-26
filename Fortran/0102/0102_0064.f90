@@ -4,4 +4,3 @@ logical,parameter::k(2,2,2) = BLE(x,y)
 if(any(k .neqv. reshape([.false.,.true.,.false.,.true.,.true.,.false.,.true.,.false.],[2,2,2])))print*,"100"
 print*,"PASS"
 end
-

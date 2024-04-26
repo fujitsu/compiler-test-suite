@@ -1,0 +1,21 @@
+PROGRAM main
+
+INTEGER :: a(10)=0
+
+ASSOCIATE(b=>a(2:8))
+  b(:) = 1
+END ASSOCIATE
+
+IF(ALL(a(2:8) .EQ. 1)) THEN
+  a(2:8) = 0
+ELSE
+  a(2:8) = 1
+END IF
+
+IF(ALL(a(1:10) == 0)) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+END PROGRAM

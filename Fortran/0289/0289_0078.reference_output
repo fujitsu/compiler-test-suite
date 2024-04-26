@@ -1,0 +1,9 @@
+ *** ok  res= 8  ans= 8
+ *** ok  res= 32  ans= 32
+ *** ok  res= 128  ans= 128
+ *** ok  res= 512  ans= 512
+ *** ok  res= 2048  ans= 2048
+ *** ok  res= 8192  ans= 8192
+ *** ok  res= 32768  ans= 32768
+ *** ok  res= 131072  ans= 131072
+exit 0

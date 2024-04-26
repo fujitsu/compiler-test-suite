@@ -1,0 +1,21 @@
+ ***** i?_to_r8
+ ok
+ ok
+ ok
+ ok
+ ***** r8_to_i?
+ ok
+ ok
+ ok
+ ok
+ ***** i?_to_r4
+ ok
+ ok
+ ok
+ ok
+ ***** r4_to_i?
+ ok
+ ok
+ ok
+ ok
+exit 0

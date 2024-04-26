@@ -1,0 +1,10 @@
+ l1 =  T T T T T T T T T T
+ l2 =  T T F F F T T T T T
+ l3 =  F T T F F F T T T T
+ l4 =  F T F F T T T T F T
+ l5 =  T T T T T T T T T T
+ l1 =  F T F F F F T T T T
+ l2 =  T T F F T T T T T T
+ l3 =  F T T T F F T T T T
+ l4 =  T T T T T T T T F T
+exit 0

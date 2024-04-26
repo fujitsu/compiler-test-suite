@@ -114,7 +114,6 @@ k=0
 EnsTim=reshape((/(i,i=1,10*5)/),(/5,10/))
 Xp=reshape((/(i,i=1,10)/),(/10/))
 DX=reshape((/(i,i=21,25)/),(/5/))
-!
 call sub01(DX,i5,i10,n1,n2,n,k,EnsTim,Xp,r)
 if (any(abs(DX-(/21,22,23,24,25/))>0.01))print *,'error-01'
 call sub02(DX,i5,i10,n1,n2,n,k,EnsTim,Xp,r)
@@ -147,6 +146,5 @@ call sub15(DX,i5,i10,n1,n2,n,k,EnsTim,Xp,r)
 if (any(abs(DX-(/4918861,5077952,5237043,5396134,5555225/))>0.01))print *,'error-15'
 call sub16(DX,i5,i10,n1,n2,n,k,EnsTim,Xp,r)
 if (any(abs(DX-(/14756583,15233856,15711129,16188402,16665675/))>0.01))print *,'error-16'
-!
 print *,'pass'
 end

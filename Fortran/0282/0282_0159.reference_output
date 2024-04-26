@@ -1,0 +1,11 @@
+ 97 -- 97
+ character->integer OK
+ 98 -- 98
+ character->integer OK
+ 99 -- 99
+ character->integer OK
+ 100 -- 100
+ character->integer OK
+ KIND:: 1 --KIND:: 1
+ KIND OK
+exit 0

@@ -1,0 +1,41 @@
+
+
+ + justice + item +               + computed result +                   + compare value +                               + difference +
+
+0 *ok*
++         (  1 )                                   4                                   4
+0 *ok*
++         (  2 )                                   8                                   8
+0 *ok*
++         (  3 )                                  32                                  32
+0 *ok*
++         (  4 )                                  11                                  11
+0 *ok*
++         (  5 )                                   4                                   4
+0 *ok*
++         (  6 )                                 109                                 109
+0 *ok*
++         (  7 )                                  39                                  39
+0 *ok*
++         (  8 )                                  46                                  46
+0 *ok*
++         (  9 )                                  19                                  19
+0 *ok*
++         ( 10 )                                   4                                   4
+0 *ok*
++         ( 11 )                                  40                                  40
+0 *ok*
++         ( 12 )                                   8                                   8
+0 *ok*
++         ( 13 )                                   6                                   6
+0 *ok*
++         ( 14 )                                  12                                  12
+0 *ok*
++         ( 15 )                                  30                                  30
+1
+
+ + justice + item +               + computed result +                   + comapre value +                               + difference +
+
+0 *ok*
++         ( 16 )                                  15                                  15
+exit 0

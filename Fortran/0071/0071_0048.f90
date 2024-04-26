@@ -11,13 +11,13 @@ contains
   subroutine foo() 
   use iso_c_binding
     type(c_ptr) :: fp
-    fp = fun()!
+    fp = fun()
     if (c_associated(fp)) print *,301
-    fp = fun1()!
+    fp = fun1()
     if (c_associated(fp)) print *,301
-    fp = fun2()!
+    fp = fun2()
     if (c_associated(fp)) print *,301
-    fp = fun3()!
+    fp = fun3()
     if (c_associated(fp)) print *,301
   end subroutine
   type(c_ptr) function fun2() result(zz)
@@ -33,4 +33,3 @@ use m1
 call foo
 print *,'pass'
 end
-

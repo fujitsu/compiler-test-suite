@@ -1,0 +1,36 @@
+MODULE M
+ TYPE gg
+   INTEGER::CC
+ END TYPE gg
+end
+module m2
+use m
+INTERFACE  READ(UNFORMATTED)
+     SUBROUTINE UNFMTWRITE1(DTV, UNIT, IOSTAT, IOMSG)
+         use M
+          CLASS(gg), INTENT(INOUT)    :: DTV
+         INTEGER,                  INTENT(IN)    :: UNIT
+         INTEGER,                  INTENT(OUT)   :: IOSTAT
+         CHARACTER(LEN=*),         INTENT(INOUT) :: IOMSG
+     END SUBROUTINE UNFMTWRITE1
+END INTERFACE READ(UNFORMATTED)
+private READ(UNFORMATTED)
+end
+
+module m3
+use m
+INTERFACE  READ(UNFORMATTED)
+     SUBROUTINE UNFMTWRITE1(DTV, UNIT, IOSTAT, IOMSG)
+         use M
+          CLASS(gg), INTENT(INOUT)    :: DTV
+         INTEGER,                  INTENT(IN)    :: UNIT
+         INTEGER,                  INTENT(OUT)   :: IOSTAT
+         CHARACTER(LEN=*),         INTENT(INOUT) :: IOMSG
+     END SUBROUTINE UNFMTWRITE1
+END INTERFACE READ(UNFORMATTED)
+PUBLIC :: READ(UNFORMATTED)
+end
+
+
+print *,'pass'
+end

@@ -1,0 +1,15 @@
+ ** TEST 1 **
+ F T F T F F F F F F F F F F F F F F F F F T F T F F F F F F F F F F F F F F F
+F F T F T F F F F F F F F F F F F F F F F F T F T F F F F F F F F F F F F F F F
+F F T F T F F F F F F F F F F F F F F F F
+  
+ ** TEST 2 **
+ T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T
+  
+ ** TEST 3 **
+ F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+F F F F F F F F F F F F F F F F F F F F F
+exit 0

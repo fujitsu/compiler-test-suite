@@ -23,13 +23,9 @@ contains
    call x
  end 
   module subroutine ss1(i,ii,iii)
-  !integer :: i(k,1)
   integer :: i(k)
   integer :: ii(k+1)
   integer :: iii(k+2)
-!   print *,size(i,1) 
-!   print *,size(ii,1) 
-!   print *,size(iii,1) 
   end
   module subroutine x
    k=k+1

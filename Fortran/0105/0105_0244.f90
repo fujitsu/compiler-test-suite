@@ -31,4 +31,3 @@ if (any(abs((/A/)-(/&
 /))>0.0001_WP))print *,'error'
 print *,'pass'
 end
-

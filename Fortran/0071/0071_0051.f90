@@ -25,16 +25,16 @@ contains
   subroutine foo() 
     type(c_ptr) :: fp
     k=0
-    fp = fun(k)!
+    fp = fun(k)
     if (c_associated(fp)) print *,301
     k=0
-    fp = fun1(k)!
+    fp = fun1(k)
     if (c_associated(fp)) print *,301
     k=0
-    fp = fun2(k)!
+    fp = fun2(k)
     if (c_associated(fp)) print *,301
     k=0
-    fp = fun3(k)!
+    fp = fun3(k)
     if (c_associated(fp)) print *,301
   end subroutine
   recursive function fun3(k) result(zz)
@@ -66,4 +66,3 @@ use m1
 call foo
 print *,'pass'
 end
-

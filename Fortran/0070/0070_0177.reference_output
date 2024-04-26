@@ -1,0 +1,4 @@
+ &NAM AAA= 1,BBB= 2 2 2,CCC= 3 3 3,AAA= 1,BBB= 2 2 2,CCC= 3 3 3,AAA= 1,BBB= 2 2
+ 2,CCC= 3 3 3,AAA= 1,BBB= 2 2 2,CCC= 3 3 3/
+ pass
+exit 0

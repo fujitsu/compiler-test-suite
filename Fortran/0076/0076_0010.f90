@@ -8,7 +8,7 @@ do j=1,n
     a(i,j) = a(i,j) + b(i,j)
   enddo
 enddo
-end !subroutine
+end
 end
 use m1
 real,dimension(:,:),pointer,contiguous :: a,b

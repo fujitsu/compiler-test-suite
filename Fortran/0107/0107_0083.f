@@ -5,7 +5,7 @@
      1                  -21.0,-3.5/                                    
       INTEGER I                                                        
       LOGICAL NO_GOOD/.FALSE./                                         
-C                                                                      
+
       T3=C(2)+C(1)                                                     
       A(2:6)=A(2:6)+B(1:5)                                             
       T1=C(1)                                                          
@@ -13,7 +13,7 @@ C
       A(1:5)=A(1:5)*T3                                                 
       T3=T2+T1                                                         
       B(6:10)=A(1:5)*5.0-T3                                            
-C                                                                      
+
       DO I=1,10                                                        
         IF (B(I).NE.RIGHT_RESULT(I)) NO_GOOD = .TRUE.
       ENDDO                                                            
@@ -25,6 +25,6 @@ C
       ELSE                                                             
         WRITE (6,*) '!!!!!! OK !!!!!!'                         
       ENDIF                                                            
-C                                                                      
+
       STOP                                                             
       END                                                              

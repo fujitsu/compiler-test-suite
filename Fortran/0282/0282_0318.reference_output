@@ -1,0 +1,15 @@
+ g---g
+ PASS
+ i---i
+ PASS
+ e---e
+ PASS
+ h---h
+ PASS
+ j---j
+ PASS
+ f---f
+ PASS
+ 1 -- 1
+ KIND OK 
+exit 0

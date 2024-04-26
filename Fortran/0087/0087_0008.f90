@@ -51,7 +51,6 @@ call qq
 
 subroutine qq
 use w
-!!use mod01
 use n02
          procedure (s1) :: pr 
 call sub(pr)

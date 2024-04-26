@@ -1,0 +1,26 @@
+      IMPLICIT DOUBLE PRECISION(A-H,O-Z)
+      LOGICAL SOME
+
+      DEMAX = -1.0
+      JROTMX = 0
+      SOME = .TRUE.
+      DUM = 0.0
+      CALL SUB(DEMAX,JROTMX,SOME,DUM)
+      STOP
+      END
+
+      SUBROUTINE SUB(DEMAX,JROTMX,SOME,DUM)
+
+      IMPLICIT DOUBLE PRECISION(A-H,O-Z)
+
+      LOGICAL SOME
+
+      DO 210 J=1,10
+        IF (DUM.GT.DEMAX) THEN
+          JROTMX=J
+          DEMAX=DUM
+        END IF
+        IF(SOME) WRITE(6,*) DUM,J
+  210 CONTINUE
+      RETURN
+      END

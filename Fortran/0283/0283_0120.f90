@@ -1,0 +1,31 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  INTEGER :: i
+END TYPE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+
+IMPLICIT NONE
+TYPE(t1) :: obj
+INTEGER :: n = 0,i
+
+obj%i = 2
+
+ASSOCIATE(bb => obj%i)
+DO i = 1,5,bb
+  n = n + bb
+END DO
+END ASSOCIATE
+
+IF(n .EQ. 6) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+END PROGRAM

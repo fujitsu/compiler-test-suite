@@ -1,0 +1,6 @@
+ 2001 YEAR 2 MONTH 1 DATE
+ 2001 "YEAR" 2 "MONTH" 1 "DATE"
+ 2001 'YEAR' 2 'MONTH' 1 'DATE'
+ 6 5 4 3 2 1
+ '*** ok ***'
+exit 0

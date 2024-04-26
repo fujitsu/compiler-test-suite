@@ -19,4 +19,3 @@ if (any(abs((/POP2/)-(/&
 /))>0.01))print *,'error'
 print *,'pass'
 end
-

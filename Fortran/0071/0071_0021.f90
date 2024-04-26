@@ -17,7 +17,7 @@ contains
   integer(c_int) function foo() result(zz)
     type(c_ptr) :: fp
 
-    fp = kmr_fixfun()!
+    fp = kmr_fixfun()
     if (c_associated(fp)) print *,101
 
     zz = 0

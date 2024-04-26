@@ -1,0 +1,5 @@
+ a=
+ b=
+ a+b= 7
+ pass
+exit 0

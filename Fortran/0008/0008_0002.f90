@@ -23,4 +23,3 @@ end
 call s1
 print *,'OK'
 end
-

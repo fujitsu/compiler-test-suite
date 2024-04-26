@@ -1,0 +1,5 @@
+1     ITEM.NO              VALUE.
+0           9  0.900036783293D+01
+0     **** ERROR IS DETECTED BY THIS PROGRAM.
+0          FILE = TEST0510
+exit 0

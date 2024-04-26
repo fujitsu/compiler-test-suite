@@ -1,0 +1,15 @@
+
+
+
+          - JUSTICE -     - ITEM -      - COMPUTED RESULT -          - COMPARE VALUE -
+
+0            *OK*           ( 1)                      45                           45
+0            *OK*           ( 2)                      17                           17
+0            *OK*           ( 3)                      28                           28
+0            *OK*           ( 4)                      22                           22
+0            *OK*           ( 5)                      12                           12
+0            *OK*           ( 6)                      -9                           -9
+0            *OK*           ( 7)                       3                            3
+0            *OK*           ( 8)                      11                           11
+0            *OK*           ( 9)                      12                           12
+exit 0

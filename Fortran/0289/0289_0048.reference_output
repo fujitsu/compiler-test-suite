@@ -1,0 +1,13 @@
+ ===== start =====
+ i'm in 'main program'.        
+ scr level is  0
+ entrance is esub1.
+ return to caller
+ entrance is esub1.
+ return to caller
+ entrance is entry.
+ return to caller
+ return by isub1
+ ***** -- ok -- *****
+ ===== end =====
+exit 0

@@ -1,0 +1,32 @@
+MODULE mod1
+IMPLICIT NONE
+  TYPE t1
+    INTEGER :: i
+  END TYPE
+END MODULE
+
+PROGRAM main
+
+USE mod1
+IMPLICIT NONE
+
+TYPE(t1) :: obj
+
+ASSOCIATE(aa => obj)
+  call sub(aa)  
+END ASSOCIATE
+
+IF(obj%i .EQ. 2) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+CONTAINS
+SUBROUTINE sub(ob)
+USE mod1
+TYPE(t1) :: ob
+ob%i = 2
+END SUBROUTINE
+
+END PROGRAM

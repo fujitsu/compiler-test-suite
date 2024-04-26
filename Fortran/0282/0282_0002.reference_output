@@ -1,0 +1,13 @@
+ F--F
+ integer->character OK
+ KIND:: 1 --KIND:: 1
+ KIND OK
+ F--F
+ integer->character OK
+ KIND:: 1 --KIND:: 1
+ KIND OK
+ F--F
+ integer->character OK
+ KIND:: 1 --KIND:: 1
+ KIND OK
+exit 0

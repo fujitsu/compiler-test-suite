@@ -1,0 +1,62 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  INTEGER(KIND = 4) :: r1
+END TYPE
+
+TYPE,EXTENDS(t1) :: t2
+  INTEGER(KIND = 4) :: r2
+END TYPE
+
+INTERFACE
+FUNCTION fun_2(d1,d2,d3,d4)
+IMPLICIT NONE
+INTEGER :: d1,d2,d3,d4,fun_2
+END FUNCTION
+END INTERFACE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+INTEGER,PARAMETER :: xx = 11
+INTEGER :: res
+TYPE(t1) :: obj1
+CLASS(t1),POINTER :: ptr
+CLASS(t2),ALLOCATABLE :: allc
+ALLOCATE(allc,ptr)
+allc%r2 = 3
+obj1%r1 = 2
+ptr%r1 = 4
+
+res = fun(allc,ptr)
+
+IF(res .EQ. 40) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF 
+
+CONTAINS
+
+INTEGER FUNCTION fun(dd1,dd2)
+CLASS(t1),POINTER :: dd2
+CLASS(t2),ALLOCATABLE :: dd1
+ASSOCIATE(aa => (dd1%r2 * dd2%r1) + (obj1%r1 * xx) + fun_2(dd1%r2,dd2%r1,obj1%r1,xx))
+SELECT CASE(aa)
+    CASE (40)
+    fun = aa
+  END SELECT
+END ASSOCIATE
+END FUNCTION
+
+END PROGRAM
+
+FUNCTION fun_2(d1,d2,d3,d4)
+IMPLICIT NONE
+INTEGER :: d1,d2,d3,d4,fun_2
+fun_2 = (d3 + d4) - (d1 + d2)
+END FUNCTION

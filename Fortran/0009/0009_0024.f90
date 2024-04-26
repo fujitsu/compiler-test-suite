@@ -13,7 +13,6 @@ call chk
 print *,'OK'
 end
 
-
 subroutine ref  
 use m2
  write(1,*) value
@@ -24,4 +23,3 @@ rewind 1
 read(1,*) x
 if (x/=2.) print *,202
 end
-

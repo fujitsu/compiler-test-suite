@@ -30,9 +30,6 @@ if (any(kk/=mm)) then
   print *,mm
 end if
 
-
-!print *,kk
-!  print *,mm
 contains
 function ifun( k ) result(ir)
 integer:: k(4,3)
@@ -43,4 +40,3 @@ end
 call s1
 print *,'OK'
 end
-

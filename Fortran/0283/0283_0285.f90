@@ -1,0 +1,39 @@
+MODULE mod1
+IMPLICIT NONE
+
+INTERFACE OPERATOR( + )
+  MODULE PROCEDURE conctt
+END INTERFACE
+
+CONTAINS
+
+FUNCTION conctt(dd1,dd2)
+IMPLICIT NONE
+CHARACTER(LEN = 3),INTENT(IN) :: dd1,dd2
+CHARACTER(LEN = 6) :: conctt
+conctt = TRIM(dd1) // TRIM(dd2)
+END FUNCTION
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+CHARACTER(LEN = 6),DIMENSION(:),POINTER :: ptr
+CHARACTER(LEN = 6),DIMENSION(:),ALLOCATABLE :: ch
+
+ALLOCATE(ptr(2),ch(2))
+
+ptr = 'aaaaaa'
+ch = 'xxxxxx'
+
+ASSOCIATE(aa => ptr(1)(1:3) + ch(1)(1:3))
+  IF(aa .EQ. 'aaaxxx') THEN
+    PRINT*,'pass'
+  ELSE
+    PRINT*,101
+  END IF
+END ASSOCIATE
+
+END PROGRAM

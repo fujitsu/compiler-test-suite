@@ -7,4 +7,3 @@ if (.not.((res1)>2.22 .and.  (res1)<2.24)) print *,101,res1
 print *,"pass"
 
 end
-

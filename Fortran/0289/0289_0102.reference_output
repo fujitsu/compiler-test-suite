@@ -1,0 +1,5 @@
+ loop no.1 end
+ loop no.2 end
+ add= 30050.
+,** test is ok||| **
+exit 0

@@ -1,0 +1,40 @@
+MODULE mod1
+IMPLICIT NONE
+
+INTERFACE 
+FUNCTION fun_ex(dd)
+IMPLICIT NONE
+INTEGER,DIMENSION(5) :: fun_ex,dd
+END FUNCTION
+END INTERFACE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+INTEGER,DIMENSION(5) :: arr = 0
+
+ASSOCIATE(aa => (/1,1,1,1,1/) + fun_ex(arr))
+  WHERE(aa .GT. 0)
+    arr = 1
+  ELSEWHERE
+    arr = 0
+  END WHERE
+END ASSOCIATE
+
+IF(ALL(arr(2:4:2) .EQ. 1)) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+END PROGRAM
+
+FUNCTION fun_ex(dd)
+IMPLICIT NONE
+INTEGER,DIMENSION(5) :: fun_ex,dd
+dd = (/-1,1,-1,1,-1/)
+fun_ex = dd
+END FUNCTION

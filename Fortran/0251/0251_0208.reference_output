@@ -1,0 +1,7 @@
+ correct destructor called
+ 3
+ 3
+ 3
+ within block
+ after block
+exit 0

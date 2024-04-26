@@ -4,8 +4,8 @@ integer,dimension(1:n,1:n) :: m1,m2,m3,m4
 
 do j=1,n
   do i=1,n
-    if (m1(i,j) + m2(i,j) .lt. 0) then   !overflow
-      if (m3(i,j) + m4(i,j) .lt. 0) then !overflow
+    if (m1(i,j) + m2(i,j) .lt. 0) then
+      if (m3(i,j) + m4(i,j) .lt. 0) then
         a(i,j) = b(i,j) + c(i,j)*d(i,j)
       else
         a(i,j) = b(i,j) - c(i,j)*d(i,j)

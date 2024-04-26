@@ -28,8 +28,6 @@ use nod, only:ext
 type(ext)::var
 call var%prc()
 
-
-
 rewind 3
 read(3,*) k
 if (k/=300) print *,1100

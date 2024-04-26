@@ -12,18 +12,18 @@ program main
   real(8) :: result
   real(8),parameter :: answer=55.0
   integer(8) :: HD
-  integer(8) :: hoge
+  integer(8) :: hhhh
   HD = 0
-  hoge=0
+  hhhh=0
 
   do i = RESHAPE((/.FALSE._1,.FALSE._1,.TRUE._1, &
           .TRUE._1,.TRUE._1,.FALSE._1/),(/1,2,3/)) &
         +RESHAPE((/ (/6.6/),(-6.0,-4.0_4,HD=1,51,9),( 3.6,0.0,HD=1,1,4),2.0,2.0 /),(/2,2,2/)) &
          ,10, 1
-    hoge = hoge + i
+    hhhh = hhhh + i
  end do
 
-   result = real(hoge)
+   result = real(hhhh)
    if ( result .eq. answer ) then
      print *,"ok",result
    else
@@ -31,7 +31,6 @@ program main
    endif
 stop
 end program main
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 INTEGER(8) FUNCTION f_mercury(lo_aaa,r_bbb)
   LOGICAL*1 lo_aaa(1,2,3)
@@ -41,5 +40,4 @@ INTEGER(8) FUNCTION f_mercury(lo_aaa,r_bbb)
   f_mercury=1_8
   return
 END FUNCTION f_mercury
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 

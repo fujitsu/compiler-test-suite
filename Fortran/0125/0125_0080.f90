@@ -29,9 +29,9 @@ program main
 
   call nostride(c,100)
   call check_c(c,100)
-  
+
   print *, "ok"
-        
+
 end program main
 
 subroutine check_a(a,n)
@@ -154,4 +154,3 @@ subroutine nostride(c,n)
      c(1,i) = 1.
   enddo
 end subroutine nostride
-

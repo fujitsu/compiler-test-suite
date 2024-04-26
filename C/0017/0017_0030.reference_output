@@ -1,0 +1,4 @@
+test for signbit(long double)
+-1.0L: negative value
+ 1.0L: positive value
+exit 0

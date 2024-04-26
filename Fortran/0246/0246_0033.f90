@@ -1,0 +1,19 @@
+PROGRAM MAIN
+IMPLICIT NONE
+INTEGER :: K,X,L,M
+X=0
+K=10
+L=30
+DO CONCURRENT(K=1:5,K<3 .OR. K==5)
+    DO CONCURRENT(L=1:4)
+      DO M=1,K,L
+        X=X+1
+      END DO
+    END DO
+END DO
+IF (X == 21 .AND. K==10 .AND. L==30) THEN
+ Print *,"PASS"
+ELSE
+ Print *,"FAIL",X
+END IF
+END PROGRAM

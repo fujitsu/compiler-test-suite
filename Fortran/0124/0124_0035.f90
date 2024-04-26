@@ -1,4 +1,3 @@
-! 
 
       real(kind=4)  r4
       real(kind=8)  r8

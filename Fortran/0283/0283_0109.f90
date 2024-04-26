@@ -1,0 +1,18 @@
+PROGRAM main
+IMPLICIT NONE
+
+INTEGER :: l = 3,n = 5,m = 4
+
+ASSOCIATE(bb => n)
+  CALL sub(l+(bb*m)-(bb*l))
+END ASSOCIATE
+
+CONTAINS
+
+SUBROUTINE sub(num)
+IMPLICIT NONE
+INTEGER :: num
+IF(num .EQ. 8) PRINT*,'pass'
+END SUBROUTINE
+
+END PROGRAM

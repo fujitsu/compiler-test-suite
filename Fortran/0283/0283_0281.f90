@@ -1,0 +1,24 @@
+PROGRAM main
+IMPLICIT NONE
+
+CHARACTER(LEN = 5) :: ch = 'aaaaa'
+
+ASSOCIATE(aa => ch(2:4))
+  CALL sub(aa)
+END ASSOCIATE
+
+IF(ch(2:4) .EQ. 'ccc' ) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+CONTAINS
+
+SUBROUTINE sub(dd)
+IMPLICIT NONE
+CHARACTER(LEN = 3) :: dd
+dd = 'ccc'
+END SUBROUTINE
+
+END PROGRAM

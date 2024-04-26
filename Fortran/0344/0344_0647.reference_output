@@ -1,0 +1,5 @@
+ LD1=  F F T F T F T F T F T F T F T F T F T F
+ LD2=  F T F T F T F T F T F T F T F T F T F T
+ RA1=  2. 21. 4. 19. 6. 17. 8. 15. 10. 13. 12. 11. 14. 9. 16. 7. 18. 5. 20. 3.
+ RA4=  2. 1. 2. 1. 2. 1. 2. 1. 2. 1. 2. 1. 2. 1. 2. 1. 2. 1. 2. 1.
+exit 0

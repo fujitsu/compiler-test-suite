@@ -16,8 +16,6 @@ z%a=cmplx( &
 z%b=cmplx( &
     reshape([(n,n=1,k1*k2*(k3+1)*k4)],[k1,k2,k3+1,k4]),&
     reshape([(n,n=1,k1*k2*(k3+1)*k4)],[k1,k2,k3+1,k4]),8)
-!call s1(k1,k2,k3,k4)
-!call s2(k1,k2,k3,k4)
 if (any(abs(z%a-z%b)>0.000000001)) then
 print *,101
 print *,z%a

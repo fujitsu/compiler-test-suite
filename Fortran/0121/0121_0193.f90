@@ -2,7 +2,6 @@
   data res/16*0/,ab/16*1/,cd/16*1/
 
 
-!  (a + i b)/(c + i d)
   ab(1) = cmplx(4.0E-22, 1e-35)
   cd(1) = cmplx(2.0E-030, 1e-34)
 

@@ -1,0 +1,10 @@
+real*8 A(100),B(100),C(100),D(100)
+DATA B/100*1/
+DATA D/100*2/
+DO I=1,100
+A(I)=EXP(B(I))
+C(I)=EXP(D(I))
+ENDDO
+WRITE(6,*)"A=",A
+WRITE(6,*)"C=",C
+END

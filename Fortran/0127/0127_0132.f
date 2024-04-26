@@ -1,4 +1,3 @@
-! sum
       program main
       call sub(100,10)
       stop

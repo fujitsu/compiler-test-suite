@@ -15,4 +15,3 @@ end
 call sub(3)
 print *,'pass'
 end
-

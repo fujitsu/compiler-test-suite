@@ -1,0 +1,7 @@
+COMPLEX(KIND=2) :: C2(2)
+C2(1)=(3.0_2,4.0_2)
+C2(2)=(5.0_2,6.0_2)
+IF(C2(2)%RE .NE. 5.0_2)PRINT*,"101"
+IF(C2(2)%IM .NE. 6.0_2)PRINT*,"102"
+PRINT*,"PASS"
+END

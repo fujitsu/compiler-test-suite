@@ -3,8 +3,6 @@
        data a/100*1/
        data n/0/
 
-!! test1
-
 !$omp parallel do 
        do i=1,100
 !$omp critical
@@ -12,8 +10,6 @@
          a(i) = n
 !$omp end critical
        enddo
-
-!! test2
 
        n = 0
 !$omp parallel do

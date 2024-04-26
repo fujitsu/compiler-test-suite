@@ -1,0 +1,15 @@
+ 0 --- 0
+ PASS
+ -3 --- -3
+ PASS
+ 0 --- 0
+ PASS
+ 3 --- 3
+ PASS
+ 9 --- 9
+ PASS
+ 2 --- 2
+ PASS
+ 2 -- 2
+ KIND OK 
+exit 0

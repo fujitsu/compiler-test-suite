@@ -4,9 +4,6 @@ type ty
 end type
 type(ty),target::obj
 
-! real ,pointer :: ip=>it
-! real ,pointer :: ipa(:)=>ita
-
 type ty2
  real ,pointer :: ip=>obj%it
  real ,pointer :: ipa(:)=>obj%ita

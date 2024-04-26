@@ -4,7 +4,6 @@ type base
    procedure,nopass::prc1  
 end type
 
-
 private
 public::base
 

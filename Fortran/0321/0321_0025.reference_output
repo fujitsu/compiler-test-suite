@@ -1,0 +1,8 @@
+1
+0     * TEST OF EXPRESSION ( INTEGER*4 = REAL*8 , COMPLEX*16 ) *
+
+0                     CONSTANT VALUE.            RESULT VALUE.
+0     ANS (  8 ) =                -10                      -25
+1
+0     ERROR IS NOT DETECTED BY TEST0400
+exit 0

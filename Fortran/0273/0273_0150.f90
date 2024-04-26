@@ -1,0 +1,16 @@
+ REAL (KIND=2) :: R
+ COMPLEX (KIND=2) :: C
+ R=5.0
+ C=(1,0)
+ IF (R+5) 1,2,3
+ 1 PRINT *,"101"
+ 2 PRINT *,"102"
+ 3 IF(R+5 .NE. 10)PRINT*,"103"
+ 
+ IF (C%IM) 4,5,6
+ 4 PRINT*,"101"
+ 6 PRINT *,"103"
+ 5 IF(C%IM .NE. 0)PRINT *,"102"
+ 
+PRINT *,"PASS"
+ END

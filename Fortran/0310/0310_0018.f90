@@ -1,0 +1,6 @@
+   INTEGER :: I4=44
+   INTEGER :: I2=22
+   WRITE(6,10)I4,I2
+10 FORMAT(5H FFFF,I4,T2,4X,I2)
+   PRINT *,'*** ok ***'
+   END

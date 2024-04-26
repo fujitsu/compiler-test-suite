@@ -1,4 +1,3 @@
-c 
 
       program main
 
@@ -25,7 +24,6 @@ c
       integer M
       complex*8 x(M)
 
-c
       do i=1,3
          do j=1,3
             x(i*j) = x(i*j) + 1.0
@@ -38,7 +36,6 @@ c
       integer M
       complex*8 x(M), y(M)
 
-c
       do i=1,3
          do j=1,3
             x(i*j) = y(i*j) + 1

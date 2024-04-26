@@ -5,7 +5,7 @@
      1                 128.0/                                          
       INTEGER I,J                                                      
       LOGICAL NO_GOOD/.FALSE./                                         
-C                                                                      
+
       T3=C(2)+C(1)                                                     
       A=A+B                                                            
       T1=C(1)+T3                                                       
@@ -13,7 +13,7 @@ C
       A=A*T1                                                           
       T3=T2+T1                                                         
       B=A*5.0-T3                                                       
-C                                                                      
+
       DO J=1,3                                                         
         DO I=1,3                                                       
         IF (B(I,J).NE.RIGHT_RESULT(I,J)) NO_GOOD = .TRUE.
@@ -27,6 +27,6 @@ C
       ELSE                                                             
         WRITE (6,*) '!!!!!! OK !!!!!!'                         
       ENDIF                                                            
-C                                                                      
+
       STOP                                                             
       END                                                              

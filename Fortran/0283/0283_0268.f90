@@ -1,0 +1,31 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  REAL :: r1
+END TYPE
+
+TYPE,EXTENDS(t1) :: t2
+  REAL :: r2
+END TYPE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+CLASS(t2),DIMENSION(:),POINTER :: ptrar
+TYPE(t2),DIMENSION(3:12),TARGET :: tgtrr 
+tgtrr(3:12)%r2 = 0.0
+
+ptrar => tgtrr
+
+ASSOCIATE(aa => ptrar)
+  SELECT TYPE(aa)
+    TYPE IS(t2)
+    PRINT*,'pass'
+  END SELECT
+END ASSOCIATE
+
+END PROGRAM

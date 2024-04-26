@@ -1,0 +1,354 @@
+0       *** ITEM( 1) ***       *****  TEST  OF  STANDARD  EXTERNAL  FUNCTION  - SQRT(X) - ******                      ( PAGE =   1 )
+
+
+         - JUSTICE -         - ARGUMENT -            - COMPUTED RESULT -        - COMPARE VALUE -             - DIFFERENCE -
+
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+ 
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+ 
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+ 
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+ 
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+1
+
+0       *** ITEM( 1) ***       *****  TEST  OF  STANDARD  EXTERNAL  FUNCTION  - SQRT(X) - ******                      ( PAGE =   2 )
+
+
+         - JUSTICE -         - ARGUMENT -            - COMPUTED RESULT -        - COMPARE VALUE -             - DIFFERENCE -
+
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+ 
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+ 
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+ 
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+ 
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+1
+
+0       *** ITEM( 2) ***       *****  TEST  OF  STANDARD  EXTERNAL  FUNCTION  - SQRT(X) - ******                      ( PAGE =   3 )
+
+
+         - JUSTICE -         - ARGUMENT -            - COMPUTED RESULT -        - COMPARE VALUE -             - DIFFERENCE -
+
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+ 
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+ 
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+ 
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+ 
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+1
+
+0       *** ITEM( 2) ***       *****  TEST  OF  STANDARD  EXTERNAL  FUNCTION  - SQRT(X) - ******                      ( PAGE =   4 )
+
+
+         - JUSTICE -         - ARGUMENT -            - COMPUTED RESULT -        - COMPARE VALUE -             - DIFFERENCE -
+
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+ 
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+ 
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+ 
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+ 
+1
+
+0       *** ITEM( 3) ***       *****  TEST  OF  STANDARD  EXTERNAL  FUNCTION  - SQRT(X) - ******                      ( PAGE =   5 )
+
+
+         - JUSTICE -         - ARGUMENT -            - COMPUTED RESULT -        - COMPARE VALUE -             - DIFFERENCE -
+
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+ 
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+ 
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+ 
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+ 
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+1
+
+0       *** ITEM( 3) ***       *****  TEST  OF  STANDARD  EXTERNAL  FUNCTION  - SQRT(X) - ******                      ( PAGE =   6 )
+
+
+         - JUSTICE -         - ARGUMENT -            - COMPUTED RESULT -        - COMPARE VALUE -             - DIFFERENCE -
+
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+ 
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+ 
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+ 
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+ 
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+          *OK*   
+exit 0

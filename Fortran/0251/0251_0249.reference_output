@@ -1,0 +1,7 @@
+ value = 100
+ 1
+ value = 101
+ 1
+ value = 102
+ 1
+exit 0

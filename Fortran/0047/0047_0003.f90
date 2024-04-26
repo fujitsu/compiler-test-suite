@@ -1,6 +1,3 @@
-! 2D Array, KIND=8
-! Module Used, Subroutine inside module
-! Keyword used
 module m1
 integer(2),parameter :: n(2,2)=RESHAPE([2,1,1,2],[2,2])
 real(8),parameter :: x(2,2)=RESHAPE([2.0,1.8,1.4,2.2],[2,2])

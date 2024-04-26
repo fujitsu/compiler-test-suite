@@ -8,11 +8,6 @@ final:: final_sub
 end type
 type(x)::z(k1),w(k1)
 integer::n1=2,n2=2
-!interface
-! pure subroutine subcheck(x,k)
-!   integer,intent(in)::x,k
-! end subroutine
-!end interface
 interface operator(+)
   module procedure plus
 end interface
@@ -36,7 +31,6 @@ pure function f(k1,k2,k3,k4,k) result(r)
 integer,intent(in)::k1,k2,k3,k4,k
 integer::r(k1,k2,k3,k4)
 r=reshape( [( k,k=1,k1*k2*k3*k4*2 )],[k1,k2,k3,k4])
-!call subcheck(r(1,1),k)
 end function
 subroutine s1(k1,k2,k3,k4)
 forall (n2=1:k1)
@@ -68,7 +62,6 @@ print *,z(n)%a
 print *,w(n)%a
 endif
 end do
-!call subcheck2
 print *,'pass'
 end
  subroutine subcheck(x,k)
@@ -91,5 +84,4 @@ endif
 end do
 10 end
 pure subroutine subcheck3
-!!! print *,'called'
 end subroutine subcheck3

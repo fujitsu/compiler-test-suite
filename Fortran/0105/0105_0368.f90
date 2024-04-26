@@ -18,4 +18,3 @@ z=100
 call s1(a1,a2,b1,b2,z)
 print *,'pass'
 end
-

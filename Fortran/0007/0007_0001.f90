@@ -1,4 +1,3 @@
-!
 module m0
   integer:: NUMIA_I=400
   integer,save:: NUMFSL
@@ -9,7 +8,6 @@ module m1
 contains
  subroutine s0
  end subroutine
-!
  subroutine s1
   real(kind=8),dimension( 2:NUMIA_I, 2:NUMFSL ) :: u1,u2,u3,u4
  integer::k,j
@@ -19,20 +17,6 @@ u3=0
 u4=0
 k=2
 j=1
-!print *,ubound(u1)
-!if (any(ubound(u1)/=[399,99])) print *,101
-!if (any(ubound(u2)/=[399,99])) print *,102
-!if (any(ubound(u3)/=[400,100])) print *,103
-!if (any(ubound(u4)/=[399,99])) print *,104
-!print *,lbound(u1)
-!if (any(lbound(u1)/=[1,1])) print *,201
-!if (any(lbound(u2)/=[1,1])) print *,202
-!if (any(lbound(u3)/=[2,2])) print *,203
-!if (any(lbound(u4)/=[1,1])) print *,204
-!print '(z16.16)',loc(u1)
-!print '(z16.16)',loc(u1(2,2))
-!print '(z16.16)',loc(u1(k,k))
-!print '(z16.16)',loc(u1(j+1,j+1))
 if (loc(u1)/=loc(u1(2,2))) print *,301
 if (loc(u1)/=loc(u1(k,k))) print *,302
 if (loc(u1)/=loc(u1(j+1,j+1))) print *,303

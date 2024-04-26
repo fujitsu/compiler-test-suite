@@ -43,4 +43,3 @@ end
     logical :: fun2
     fun2=.true.
     end function
-    

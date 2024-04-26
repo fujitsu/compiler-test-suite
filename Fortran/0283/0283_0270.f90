@@ -1,0 +1,34 @@
+MODULE mod1
+IMPLICIT NONE
+
+INTERFACE
+FUNCTION fun_ex(dmr)
+REAL,DIMENSION(:),POINTER :: fun_ex
+END FUNCTION
+END INTERFACE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+REAL :: rr = 1.0
+REAL,DIMENSION(:),POINTER :: ptr2
+
+  ptr2 => fun_ex(rr)
+
+IF(ALL(ptr2(1:3) .EQ. 1.0)) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+END PROGRAM
+
+FUNCTION fun_ex(dmr)
+REAL :: dmr
+REAL,DIMENSION(:),POINTER :: fun_ex
+ALLOCATE(fun_ex(3))
+fun_ex = dmr
+END FUNCTION

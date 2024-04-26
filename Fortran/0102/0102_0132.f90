@@ -9,4 +9,3 @@ if(l2(1).ne.5)print*,"102"
 if(l3(1).ne.5)print*,"103"
 print*,"PASS"
 end
-

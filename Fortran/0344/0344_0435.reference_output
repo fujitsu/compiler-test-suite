@@ -1,0 +1,23 @@
+
+  ## TEST 1 ## 
+
+ F F F T F F T F F T F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+F F F F F F F F F F F F F F F F F F F F F
+ F
+ F F F F F F T F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+F F F F F F F F F F F F F F F F F F F F F
+ 0 0 0 6 0 0 14 0 0 11 0 0 11 0 0 11 0 0 11 0 0 11 0 0 11 0 0 11 0 0 11 0 0 11
+ 0 0 11 0 0 11 0 0 11 0 0 11 0 0 11 0 0 11 0 0 11 0 0 11 0 0 11 0 0 11 0 0 11 0
+ 0 11 0 0 11 0 0 11 0 0 11 0 0 11 0 0 11 0 0 11 0 0 11 0 0 11 0 0 11 0 0 11
+ 11
+
+  ## TEST 2 ## 
+
+ F
+ F F F F F F T F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+F F F F F F F F F F F F F F F F F F F F F
+ 67108890
+exit 0

@@ -1,0 +1,6 @@
+ START
+  TEST 1 OK
+  TEST 2 OK
+  TEST 3 OK
+ END
+exit 0

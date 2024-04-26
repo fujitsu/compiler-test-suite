@@ -1,0 +1,10 @@
+PROGRAM main
+IMPLICIT NONE
+
+INTEGER :: num = 20
+
+ASSOCIATE(bb => num)
+  IF(bb > 0) PRINT*,'pass'
+END ASSOCIATE
+
+END PROGRAM

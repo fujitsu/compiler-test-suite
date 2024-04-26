@@ -1,0 +1,36 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  REAL :: rr
+END TYPE
+
+TYPE,EXTENDS(t1) :: t2
+  REAL :: rr2
+END TYPE
+
+TYPE,EXTENDS(t2) :: t3
+  REAL :: rr3
+END TYPE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+CLASS(t1),POINTER :: ptr
+TYPE(t2),TARGET :: trt
+
+ptr => trt
+
+ASSOCIATE(aa => ptr)
+  SELECT TYPE(aa)
+  TYPE IS(t1)
+    PRINT*,101
+  CLASS DEFAULT
+    PRINT*,'pass'
+  END SELECT
+END ASSOCIATE
+
+END PROGRAM

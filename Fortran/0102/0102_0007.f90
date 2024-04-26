@@ -8,4 +8,3 @@ use m
 if(constvar .neqv. .true.) print*,"100"
 print*,"PASS"
 end program
-

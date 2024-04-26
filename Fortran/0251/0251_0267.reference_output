@@ -1,0 +1,13 @@
+ in fun1
+ 1:pass
+ in fun2
+ 2:pass
+ in sub3
+ 3:pass
+ in fun1
+ 4:pass
+ in fun2
+ 5:pass
+ in fun1
+ 6:pass
+exit 0

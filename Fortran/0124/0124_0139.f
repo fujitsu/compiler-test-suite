@@ -1,4 +1,3 @@
-c 
 
       module data_mod
       integer, parameter:: N=10

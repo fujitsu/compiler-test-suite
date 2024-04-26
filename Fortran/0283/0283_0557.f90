@@ -1,0 +1,35 @@
+MODULE mod1
+IMPLICIT NONE
+
+INTERFACE OPERATOR( + )
+  MODULE PROCEDURE contt
+END INTERFACE
+
+CONTAINS
+
+FUNCTION contt(dd1,dd2)
+IMPLICIT NONE
+CHARACTER(LEN = 8) :: contt
+CHARACTER(LEN = 3),INTENT(IN) :: dd1
+CHARACTER(LEN = 5),INTENT(IN) :: dd2
+contt = dd1 // dd2 
+END FUNCTION
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+CHARACTER(LEN = 3) :: arg1 = 'aaa'
+CHARACTER(LEN =5) :: arg2 = 'ccccc'
+
+ASSOCIATE(aa => arg1 , bb => arg2 , cc => arg1 + arg2)
+  IF(cc(3:5) .EQ. 'acc') THEN
+    PRINT*,'pass'
+  ELSE
+    PRINT*,101 
+ END IF
+END ASSOCIATE
+
+END PROGRAM

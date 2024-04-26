@@ -1,0 +1,3 @@
+       parallel do reduction(+:ia,ib) -----
+ OK
+exit 0

@@ -1,0 +1,9 @@
+ ok sub1
+ ok sub11
+ ok sub2
+ ok sub22
+ ok sub3
+ ok sub33
+ ok sub4
+ ok sub44
+exit 0

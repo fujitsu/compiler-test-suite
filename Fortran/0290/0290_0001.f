@@ -1,0 +1,9 @@
+  103 FORMAT(1H0,12X,4H*OK*,10X,2H( ,I2,2H ),14X,E14.7)
+      ITM=01
+      ANS =0.3**6
+      IF (ABS(ANS-0.7290000E-03)>1.0E-6) THEN
+    2 WRITE(6,103)ITM,ANS
+      ELSE
+    3 WRITE(6,103)ITM
+      ENDIF
+      END

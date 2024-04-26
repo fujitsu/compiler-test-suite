@@ -1,0 +1,44 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  INTEGER :: n1
+  CHARACTER(LEN = 10) :: ch1
+  CHARACTER(LEN = 6) :: ch2='x'
+END TYPE
+
+TYPE,EXTENDS(t1) :: t2
+  REAL :: r1
+END TYPE
+
+TYPE,EXTENDS(t2) :: t3
+  COMPLEX :: cmp
+END TYPE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+ASSOCIATE(aa => fun())
+IF(aa(1,1,1,1,1)%ch1(3:8) .EQ. 'aaxxaa') THEN
+    PRINT*,'pass'
+  ELSE
+    PRINT*,101
+  END IF  
+END ASSOCIATE
+
+CONTAINS
+
+FUNCTION fun()
+IMPLICIT NONE
+CLASS(t3),DIMENSION(:,:,:,:,:),ALLOCATABLE :: fun
+ALLOCATE(fun(3,5,4,6,7))
+fun%n1 = 10
+fun%ch1 = 'xxaaxxaaxx'
+fun%r1 = 10.20
+fun%cmp = (12.20,13.30)
+END FUNCTION
+
+END PROGRAM

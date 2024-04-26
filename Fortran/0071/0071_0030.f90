@@ -10,7 +10,7 @@ contains
   integer(c_int) function foo() result(zz)
     type(c_funptr) :: fp(3)
 
-    fp = kmr_fixfun()!
+    fp = kmr_fixfun()
 if (c_associated(fp(1))) print *,301
 if (c_associated(fp(2))) print *,301
 if (c_associated(fp(3))) print *,301
@@ -23,4 +23,3 @@ use xxxf
 if (foo()/=0) print *,'202'
 print *,'pass'
 end
-

@@ -1,0 +1,17 @@
+
+
+ + justice + item +               + computed result +                   + compare value +                               + difference +
+
+0 *ok*
++         (  1 )                                  42                                  42
+0 *ok*
++         (  2 )                                   5                                   5
+0 *ok*
++         (  3 )                                   1                                   1
+0 *ok*
++         (  4 )                                   1                                   1
+0 *ok*
++         (  5 )                                   1                                   1
+0 *ok*
++         (  6 )                      0.34000000E+02                      0.34000000E+02                               0.00000000E+00
+exit 0

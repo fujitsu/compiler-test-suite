@@ -1,0 +1,5 @@
+ 97 -- 97
+ character->integer OK
+ KIND:: 4 --KIND:: 4
+ KIND OK
+exit 0

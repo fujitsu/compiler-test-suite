@@ -41,4 +41,3 @@ else
   print *,"ng", res, ians
 endif
 end program
-

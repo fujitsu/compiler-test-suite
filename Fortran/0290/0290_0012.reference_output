@@ -1,0 +1,6 @@
+  BSET 1
+  BCLR 1
+  BSET 2
+  BCLR 2
+  TEST PASSED 
+exit 0

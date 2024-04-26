@@ -1,0 +1,5 @@
+ call sub 1st
+ 10
+ call sub 2nd
+ 65
+exit 0

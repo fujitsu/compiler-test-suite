@@ -1,0 +1,5 @@
+ 3 -- 3
+ string->integer OK
+ KIND:: 1 --KIND:: 1
+ KIND OK
+exit 0

@@ -1,0 +1,7 @@
+test for isinf(double)
+NAN:       not isinf(x)
+INFINITY:  isinf(x)
+ZERO:      not isinf(x)
+SUBNORMAL: not isinf(x)
+NORMAL:    not isinf(x)
+exit 0

@@ -1,0 +1,6 @@
+ m_local_14 =  1048576
+ m_pri_local_14 =  2097152
+ m_com_14 =  3145728
+ m_local  =  2097152
+ m_common =  8388608
+exit 0

@@ -1,0 +1,23 @@
+PROGRAM main
+IMPLICIT NONE
+
+INTEGER ::yy = 2
+CALL sub(yy)
+
+IF(yy .EQ. 10) THEN
+  PRINT*,'pass'
+ELSE 
+  PRINT*,101
+END IF
+
+CONTAINS
+
+SUBROUTINE sub(y)
+  INTEGER :: y
+  ASSOCIATE(bb => y)
+    bb= bb*5
+    RETURN 
+  END ASSOCIATE
+END SUBROUTINE
+
+END PROGRAM

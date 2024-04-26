@@ -1,0 +1,55 @@
+      INTEGER I401(20)
+      DATA I401/14,18,6,2,16,7,4,11,20,9,10,3,5,12,6,13,8,1,15,17/
+      DO 1 I=1,10
+        N = I + 10
+   1    M = I - 2
+C
+      IMXVAL = 0
+      DO 10 I=1,N
+        IF (I401(I).GT.IMXVAL) IMXVAL = I401(I)
+   10 CONTINUE
+      WRITE(6,*) IMXVAL
+C
+      IMNVAL = 1000000
+      DO 20 I=1,N
+        IF (I401(I).LT.IMXVAL) IMXVAL = I401(I)
+   20 CONTINUE
+      WRITE(6,*) IMXVAL
+C
+      IMXIDX = 1
+      DO 30 I=1,N
+        IF (I401(I).GT.I401(IMXIDX)) IMXIDX = I
+   30 CONTINUE
+      WRITE(6,*) IMXIDX
+C
+      IMNIDX = 1
+      DO 40 I=1,N
+        IF (I401(I).LT.I401(IMNIDX)) IMNIDX = I
+   40 CONTINUE
+      WRITE(6,*) IMNIDX
+C
+      DO 11 I=1,M
+        IF (I401(I).GT.IMXVAL) IMXVAL = I401(I)
+   11 CONTINUE
+      WRITE(6,*) IMXVAL
+C
+      IMNVAL = 1000000
+      DO 21 I=1,M
+        IF (I401(I).LT.IMXVAL) IMXVAL = I401(I)
+   21 CONTINUE
+      WRITE(6,*) IMXVAL
+C
+      IMXIDX = 1
+      DO 31 I=1,M
+        IF (I401(I).GT.I401(IMXIDX)) IMXIDX = I
+   31 CONTINUE
+      WRITE(6,*) IMXIDX
+C
+      IMNIDX = 1
+      DO 41 I=1,M
+        IF (I401(I).LT.I401(IMNIDX)) IMNIDX = I
+   41 CONTINUE
+      WRITE(6,*) IMNIDX
+C
+      STOP
+      END

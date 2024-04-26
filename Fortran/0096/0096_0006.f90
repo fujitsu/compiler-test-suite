@@ -1,4 +1,3 @@
-! Consecutive calling
 program pro
 Intrinsic :: LOG_GAMMA
  real,parameter :: xx1 = (10.0)
@@ -15,4 +14,3 @@ Intrinsic :: LOG_GAMMA
     if(.not.(rslt3>52.13 .and. (rslt3)<52.15)) print *,103,rslt3
     print *,"pass"
 end
-

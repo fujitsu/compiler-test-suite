@@ -1,4 +1,3 @@
-!Kind 8  
 program pro
 type ty
 real :: x

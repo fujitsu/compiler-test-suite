@@ -1,4 +1,3 @@
-c 
 
       program main
 
@@ -12,9 +11,7 @@ c
 
       do i=1,N
          do j=1,N
-c
             a(i,j) = a(i,j) + 1.0
-c
             b(i+j) = b(i*j) + 1.0
          enddo
       enddo

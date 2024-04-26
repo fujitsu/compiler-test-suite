@@ -20,4 +20,3 @@ if (any(abs((/Poj1/)-(/&
 /))>0.00001))print *,'error'
 print *,'pass'
 end
-

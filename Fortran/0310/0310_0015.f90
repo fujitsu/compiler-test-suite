@@ -1,0 +1,6 @@
+CHARACTER(LEN=5) C
+C='12345'
+C(1:4)=C(2:5)
+PRINT *,C
+PRINT *,'*** ok ***'
+END

@@ -1,11 +1,9 @@
-!
 
 program main
 integer,parameter::n=100
 real(kind=8),dimension(:),pointer :: a, b
 real(kind=8),target :: x(1:n+n)
 integer,parameter :: ans=5248
-!x=(/(i,i=1,n+n,1)/)
 x=1
 a=>x(1:n)
 b=>x(n/2+1:n+n/2)

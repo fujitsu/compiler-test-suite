@@ -1,0 +1,35 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE ty
+INTEGER :: num
+CONTAINS
+PROCEDURE,PASS(a) :: proc
+END TYPE
+
+CONTAINS
+
+INTEGER FUNCTION proc(a,b)
+CLASS(ty),INTENT(IN) :: a
+INTEGER,INTENT(IN) :: b
+proc = b + a%num
+END FUNCTION
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+INTEGER :: n = 4
+TYPE(ty) :: obj
+obj%num = 10
+
+ASSOCIATE(aa => obj%proc(n))
+  SELECT CASE(aa)
+  CASE(14)
+    PRINT*,'pass'
+  END SELECT
+END ASSOCIATE
+
+END PROGRAM

@@ -20,7 +20,6 @@ subroutine sub
  character,pointer::ptr6=>t6
  character,pointer::ptr7(:)
  data ptr7 /t7(1:4:2)/
- ! ptr7=>t7(1:5:2)
  if(associated(ptr).neqv..true.)print*,"101"
  if(associated(ptr2).neqv..true.)print*,"102"
  if(associated(ptr3).neqv..true.)print*,"103"
@@ -44,4 +43,3 @@ end
 use m
 call sub
 end
-

@@ -1,4 +1,3 @@
-!
 
 program main
   integer,parameter::n=100
@@ -8,7 +7,6 @@ program main
   type(pp), dimension(n) :: array
   integer,parameter :: ans=10099
 
-!  allocate(array(n))
   do i = 1, n
     allocate(array(i)%p(n))
     array(i)%p=i
@@ -23,7 +21,6 @@ program main
   endif
 
   do i = 1, n
-!    print *,array(i)%p
     deallocate(array(i)%p)
   end do
 

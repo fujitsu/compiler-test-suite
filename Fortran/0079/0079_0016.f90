@@ -16,9 +16,6 @@ contains
    call ss1(1,2)
    call x
  end 
-!  subroutine ss1(i)
-!   k=k+i
-!  end
   module subroutine x
    k=k+1
   end

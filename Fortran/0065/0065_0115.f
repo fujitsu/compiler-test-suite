@@ -10,7 +10,7 @@
         print *,"*** end   ***"
 
       end
-    
+
       subroutine sub(a,b,maxab,minab,n) 
         real*8 a(n),b(n),maxab(n),minab(n)
         real*8 x(n),y(n),z(n)
@@ -28,7 +28,7 @@
         enddo 
         call chk( 3,x,minab,n) 
         call chk( 4,y,maxab,n) 
-        
+
         do i=1,n
            x(i)=max(a(i),b(i))
            y(i)=min(a(i),b(i))

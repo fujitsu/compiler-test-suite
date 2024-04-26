@@ -31,7 +31,7 @@ end subroutine
 end module
 
 use nn
-use mm!!!!!, only:ext 
+use mm
 
 type(ext)::tc1  
 call tc1%prc1()

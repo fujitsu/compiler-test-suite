@@ -1,4 +1,3 @@
-c 
 
       program main
 
@@ -6,7 +5,6 @@ c
 
       a = (1.0, 1.0)
 
-c
       a = 2.0 - a
 
       if ((real(a).eq.1.0).and.(aimag(a).eq.-1.0)) then

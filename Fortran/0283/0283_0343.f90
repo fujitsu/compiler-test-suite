@@ -1,0 +1,67 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  REAL :: r1
+END TYPE
+
+TYPE,EXTENDS(t1) :: t2
+  REAL :: r2
+END TYPE
+
+INTERFACE OPERATOR ( * )
+  MODULE PROCEDURE multip
+END INTERFACE
+
+CONTAINS
+
+FUNCTION multip (dy1,dy2)
+IMPLICIT NONE
+CLASS(t2),DIMENSION(:),INTENT(IN) :: dy1,dy2
+CLASS(t2),DIMENSION(:),ALLOCATABLE :: multip
+ALLOCATE(multip(5))
+multip%r2 = dy1%r2 * dy2%r2
+END FUNCTION
+
+END MODULE 
+
+PROGRAM main
+USE mod1     
+IMPLICIT NONE
+
+CLASS(t2),DIMENSION(:),ALLOCATABLE :: arr1,arr2,arr3
+ALLOCATE(arr1(5),arr2(5),arr3(5))
+
+arr1%r2 = 2.0
+arr2%r2 = 3.0
+arr3%r2 = 1.0
+
+ASSOCIATE(aa => fun_1(arr1,arr2) * fun_2(arr1,arr2,arr3))
+  IF(aa(3)%r2 .EQ. 260.0) THEN
+    PRINT*,'pass'
+  ELSE
+    PRINT*,101
+  END IF
+END ASSOCIATE
+
+CONTAINS
+
+FUNCTION fun_1(dd1,dd2)
+IMPLICIT NONE
+CLASS(t2),DIMENSION(:),ALLOCATABLE :: dd1,dd2,fun_1
+ALLOCATE(fun_1(5))
+dd1%r2 = dd1%r2 + 3.0
+dd2%r2 = dd2%r2 + 2.0
+fun_1%r2 = dd1%r2 + dd2%r2
+END FUNCTION
+
+FUNCTION fun_2(d1,d2,d3)
+IMPLICIT NONE
+CLASS(t2),DIMENSION(:),ALLOCATABLE :: d1,d2,d3,fun_2
+ALLOCATE(fun_2(5))
+d2%r2 = d1%r2 + d2%r2
+d3%r2 = d2%r2 + d3%r2
+fun_2%r2 = d1%r2 + d2%r2 + d3%r2
+END FUNCTION
+
+END PROGRAM

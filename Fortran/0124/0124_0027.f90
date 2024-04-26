@@ -1,4 +1,3 @@
-! 
 
       complex(kind=4),dimension(1:10,1:10) :: cvar
       

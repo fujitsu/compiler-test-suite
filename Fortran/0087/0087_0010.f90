@@ -29,9 +29,7 @@
        module procedure  sub
          use ::n02
          use mod01
-      !   procedure (s1) :: proc 
          type(type01):: d
-      !   call proc(d)
          d%x=1
          if (d%x/=1) print *,801
        end 
@@ -41,7 +39,6 @@
        module procedure  s3
          use ::n02
          procedure (s1) :: pr 
-!!!call sub(pr)
        end
        end 
     
@@ -52,7 +49,6 @@ call qq
 
 subroutine qq
 use w
-!!use mod01
 use n02
          procedure (s1) :: pr 
 call sub(pr)

@@ -137,27 +137,21 @@ logical,parameter::hhhhhh=BLT(-2147483648_4,b'0111111111111111111111111111111111
 logical,parameter::iiiiii=BLT(9223372036854775807_8,z'7F')
 logical,parameter::jjjjjj=BLT(9223372036854775807_8,z'7FFF')
 logical,parameter::kkkkkk=BLT(9223372036854775807_8,z'7FFFFFFF')
-!logical,parameter::llllll=BLT(9223372036854775807_8,z'7FFFFFFFFFFFFFFF')
 logical,parameter::mmmmmm=BLT(9223372036854775807_8,o'177')
 logical,parameter::nnnnnn=BLT(9223372036854775807_8,o'77777')
 logical,parameter::oooooo=BLT(9223372036854775807_8,o'777777777')
-!logical,parameter::pppppp=BLT(9223372036854775807_8,o'777777777777777777777')
 logical,parameter::qqqqqq=BLT(9223372036854775807_8,b'01111111')
 logical,parameter::rrrrrr=BLT(9223372036854775807_8,b'0111111111111111')
 logical,parameter::ssssss=BLT(9223372036854775807_8,b'01111111111111111111111111111111')
-!logical,parameter::tttttt=BLT(9223372036854775807_8,b'0111111111111111111111111111111111111111111111111111111111111111')
 logical,parameter::uuuuuu=BLT(-9223372036854775808_8,z'7F')
 logical,parameter::vvvvvv=BLT(-9223372036854775808_8,z'7FFF')
 logical,parameter::wwwwww=BLT(-9223372036854775808_8,z'7FFFFFFF')
-!logical,parameter::xxxxxx=BLT(-9223372036854775808_8,z'7FFFFFFFFFFFFFFF')
 logical,parameter::yyyyyy=BLT(-9223372036854775808_8,o'177')
 logical,parameter::zzzzzz=BLT(-9223372036854775808_8,o'77777')
 logical,parameter::aaaaaaa=BLT(-9223372036854775808_8,o'777777777')
-!logical,parameter::bbbbbbb=BLT(-9223372036854775808_8,o'777777777777777777777')
 logical,parameter::ccccccc=BLT(-9223372036854775808_8,b'01111111')
 logical,parameter::ddddddd=BLT(-9223372036854775808_8,b'0111111111111111')
 logical,parameter::eeeeeee=BLT(-9223372036854775808_8,b'01111111111111111111111111111111')
-!logical,parameter::fffffff=BLT(-9223372036854775808_8,b'0111111111111111111111111111111111111111111111111111111111111111')
 
 logical::a1,b1,c1,d1,e1,f1,g1,h1,i1,j1,k1,l1,m1,n1,o1,p1,q1,r1,s1,t1,u1,v1,w1,x1,y1,z1
 logical::aa1,bb1,cc1,dd1,ee1,ff1,gg1,hh1,ii1,jj1,kk1,ll1,mm1,nn1,oo1,pp1,qq1,rr1,ss1,tt1,uu1,vv1,ww1,xx1,yy1,zz1
@@ -168,8 +162,6 @@ logical::wwwww1,xxxxx1,zzzzz1
 logical::aaaaaa1,bbbbbb1,dddddd1,eeeeee1,ffffff1,hhhhhh1,iiiiii1,jjjjjj1,mmmmmm1,nnnnnn1,qqqqqq1,rrrrrr1
 logical::uuuuuu1,vvvvvv1,yyyyyy1,zzzzzz1
 logical::ccccccc1,ddddddd1
-!logical::llllll1,pppppp1,tttttt1,xxxxxx1,bbbbbbb1,fffffff1
-!logical::mmmmm1,qqqqq1,uuuuu1,yyyyy1,cccccc1,gggggg1,kkkkkk1,oooooo1,ssssss1,wwwwww1,aaaaaaa1,eeeeeee1
 
 a1=BLT(127_1,126_1)
 b1=BLT(-128_1,-127_1)
@@ -285,52 +277,34 @@ iiiii1=BLT(-32768_2,b'01111111111111111111111111111111')
 jjjjj1=BLT(-32768_2,b'0111111111111111111111111111111111111111111111111111111111111111')
 kkkkk1=BLT(2147483647_4,z'7F')
 lllll1=BLT(2147483647_4,z'7FFF')
-!mmmmm1=BLT(2147483647_4,z'7FFFFFFF')
 nnnnn1=BLT(2147483647_4,z'7FFFFFFFFFFFFFFF')
 ooooo1=BLT(2147483647_4,o'177')
 ppppp1=BLT(2147483647_4,o'77777')
-!qqqqq1=BLT(2147483647_4,o'777777777')
 rrrrr1=BLT(2147483647_4,o'777777777777777777777')
 sssss1=BLT(2147483647_4,b'01111111')
 ttttt1=BLT(2147483647_4,b'0111111111111111')
-!uuuuu1=BLT(2147483647_4,b'01111111111111111111111111111111')
 vvvvv1=BLT(2147483647_4,b'0111111111111111111111111111111111111111111111111111111111111111')
 wwwww1=BLT(-2147483648_4,z'7F')
 xxxxx1=BLT(-2147483648_4,z'7FFF')
-!yyyyy1=BLT(-2147483648_4,z'7FFFFFFF')
 zzzzz1=BLT(-2147483648_4,z'7FFFFFFFFFFFFFFF')
 aaaaaa1=BLT(-2147483648_4,o'177')
 bbbbbb1=BLT(-2147483648_4,o'77777')
-!cccccc1=BLT(-2147483648_4,o'777777777')
 dddddd1=BLT(-2147483648_4,o'777777777777777777777')
 eeeeee1=BLT(-2147483648_4,b'01111111')
 ffffff1=BLT(-2147483648_4,b'0111111111111111')
-!gggggg1=BLT(-2147483648_4,b'01111111111111111111111111111111')
 hhhhhh1=BLT(-2147483648_4,b'0111111111111111111111111111111111111111111111111111111111111111')
 iiiiii1=BLT(9223372036854775807_8,z'7F')
 jjjjjj1=BLT(9223372036854775807_8,z'7FFF')
-!kkkkkk1=BLT(9223372036854775807_8,z'7FFFFFFF')
-!llllll1=BLT(9223372036854775807_8,z'7FFFFFFFFFFFFFFF')
 mmmmmm1=BLT(9223372036854775807_8,o'177')
 nnnnnn1=BLT(9223372036854775807_8,o'77777')
-!oooooo1=BLT(9223372036854775807_8,o'777777777')
-!pppppp1=BLT(9223372036854775807_8,o'777777777777777777777')
 qqqqqq1=BLT(9223372036854775807_8,b'01111111')
 rrrrrr1=BLT(9223372036854775807_8,b'0111111111111111')
-!ssssss1=BLT(9223372036854775807_8,b'01111111111111111111111111111111')
-!tttttt1=BLT(9223372036854775807_8,b'0111111111111111111111111111111111111111111111111111111111111111')
 uuuuuu1=BLT(-9223372036854775808_8,z'7F')
 vvvvvv1=BLT(-9223372036854775808_8,z'7FFF')
-!wwwwww1=BLT(-9223372036854775808_8,z'7FFFFFFF')
-!xxxxxx1=BLT(-9223372036854775808_8,z'7FFFFFFFFFFFFFFF')
 yyyyyy1=BLT(-9223372036854775808_8,o'177')
 zzzzzz1=BLT(-9223372036854775808_8,o'77777')
-!aaaaaaa1=BLT(-9223372036854775808_8,o'777777777')
-!bbbbbbb1=BLT(-9223372036854775808_8,o'777777777777777777777')
 ccccccc1=BLT(-9223372036854775808_8,b'01111111')
 ddddddd1=BLT(-9223372036854775808_8,b'0111111111111111')
-!eeeeeee1=BLT(-9223372036854775808_8,b'01111111111111111111111111111111')
-!fffffff1=BLT(-9223372036854775808_8,b'0111111111111111111111111111111111111111111111111111111111111111')
 
 if( a .neqv. a1 )print*,"100"
 if( b .neqv. b1 )print*,"101"
@@ -408,8 +382,6 @@ if( uuu .neqv. uuu1 )print*,"172"
 if( vvv .neqv. vvv1 )print*,"173"
 if( www .neqv. www1 )print*,"174"
 if( xxx .neqv. xxx1 )print*,"175"
-!if( yyy .neqv. yyy1 )print*,"176"
-!if( zzz .neqv. zzz1 )print*,"177"
 if( aaaa .neqv. aaaa1 )print*,"178"
 if( bbbb .neqv. bbbb1 )print*,"179"
 if( cccc .neqv. cccc1 )print*,"180"
@@ -473,27 +445,21 @@ if( hhhhhh .neqv. hhhhhh1 )print*,"237"
 if( iiiiii .neqv. iiiiii1 )print*,"238"
 if( jjjjjj .neqv. jjjjjj1 )print*,"239"
 if( kkkkkk .neqv. .false. )print*,"240"
-!if( llllll .neqv. llllll1 )print*,"241"
 if( mmmmmm .neqv. mmmmmm1 )print*,"242"
 if( nnnnnn .neqv. nnnnnn1 )print*,"243"
 if( oooooo .neqv. .false. )print*,"244"
-!if( pppppp .neqv. pppppp1 )print*,"245"
 if( qqqqqq .neqv. qqqqqq1 )print*,"246"
 if( rrrrrr .neqv. rrrrrr1 )print*,"247"
 if( ssssss .neqv. .false. )print*,"248"
-!if( tttttt .neqv. tttttt1 )print*,"249"
 if( uuuuuu .neqv. uuuuuu1 )print*,"250"
 if( vvvvvv .neqv. vvvvvv1 )print*,"251"
 if( wwwwww .neqv. .false. )print*,"252"
-!if( xxxxxx .neqv. xxxxxx1 )print*,"253"
 if( yyyyyy .neqv. yyyyyy1 )print*,"254"
 if( zzzzzz .neqv. zzzzzz1 )print*,"255"
 if( aaaaaaa .neqv. .false. )print*,"256"
-!if( bbbbbbb .neqv. bbbbbbb1 )print*,"257"
 if( ccccccc .neqv. ccccccc1 )print*,"258"
 if( ddddddd .neqv. ddddddd1 )print*,"259"
 if( eeeeeee .neqv. .false. )print*,"260"
-!if( fffffff .neqv. fffffff1 )print*,"261"
 print*,"PASS"
 
 end

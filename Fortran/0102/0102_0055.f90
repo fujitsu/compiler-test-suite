@@ -1,4 +1,4 @@
-logical,parameter::a=BLE(o'11',o'12') !9,10
+logical,parameter::a=BLE(o'11',o'12')
 logical,parameter::b=BLE(o'12',b'00000011')
 logical,parameter::c=BLE(o'4',12)
 logical,parameter::d=BLE(z'f',o'12')
@@ -76,4 +76,3 @@ if( jj8 .neqv. .true.)print*,"136"
 if( jj9 .neqv. .false.)print*,"137"
 print*,"PASS"
 end
-

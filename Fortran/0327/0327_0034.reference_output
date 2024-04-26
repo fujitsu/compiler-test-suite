@@ -1,0 +1,3 @@
+ sub: 10. 10.
+ pass
+exit 0

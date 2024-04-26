@@ -1,0 +1,4 @@
+ sub1  *** ok ***
+ sub2  *** ok ***
+ sub3  *** ok ***
+exit 0

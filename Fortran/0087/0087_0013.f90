@@ -1,4 +1,4 @@
-      module mod01        !
+      module mod01
 type trt
            integer :: xy
 end type

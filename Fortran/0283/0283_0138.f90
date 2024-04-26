@@ -1,0 +1,15 @@
+PROGRAM main
+IMPLICIT NONE
+
+INTEGER :: num = 0
+
+ASSOCIATE(aa => num)
+END ASSOCIATE
+
+IF(num .EQ. 0) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+END PROGRAM

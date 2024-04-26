@@ -9,7 +9,7 @@ end module module_2nd
 module module_3rd
   use module_1st
   use module_2nd
-  integer :: hoge =kind(DP)
+  integer :: itmp =kind(DP)
 end module module_3rd
 module m1
   use module_3rd,ONLY :ssss

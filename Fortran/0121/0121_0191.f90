@@ -4,32 +4,24 @@
   real tiny/1.17549435E-38/
   data res/10*0/,ab/10*1/,cd/10*1/
 
-!  (a + i b)/(c + i d)
-!  abs(a*c)>HUGE
   ab(1) = cmplx(huge, 0.0)
   cd(1) = cmplx(1.1,  0.0)
 
-!  abs(b*d)>HUGE
   ab(2) = cmplx(0.0,huge)
   cd(2) = cmplx(0.0,1.1)
 
-!  abs(a*c+b*d)>HUGE
   ab(3) = cmplx(huge,2.0)
   cd(3) = cmplx(1.0, 2.0)
 
-!  abs(c*b)>HUGE
   ab(4) = cmplx(0.0,huge)
   cd(4) = cmplx(1.1, 0.0)
 
-!  abs(a*d)>HUGE
   ab(5) = cmplx(huge,0.0)
   cd(5) = cmplx(0.0, 1.1)
 
-!  abs(c*b-a*d)>HUGE
   ab(6) = cmplx(2.0,huge)
   cd(6) = cmplx(1.0, 2.0)
 
-!  c*c+d*d>HUGE
   ab(7) = cmplx(1.0, 1.0)
   cd(7) = cmplx(2.0, huge/2)
 

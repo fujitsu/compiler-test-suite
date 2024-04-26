@@ -93,4 +93,3 @@ integer e(100000),f(100000)
 save
 a=1;b=size(a);c=b;d=c;e=d;f=e;a=size(f);
 end subroutine
-

@@ -1,0 +1,13 @@
+REAL(KIND=4) :: A,B,C
+A=0.1
+B=1.0
+C=1.0
+D=0.00001
+  IF(ABS(A-0.1)-0.00001)2,1,1
+1 PRINT *,'1'
+  GO TO 50
+2 GO TO 3
+4 PRINT *,'*** ok ***'
+  GO TO 50
+3 IF(ABS(B-C)<D)GO TO 4
+50 END

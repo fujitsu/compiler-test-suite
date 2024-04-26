@@ -1,0 +1,6 @@
+ within subroutine
+ in block 1
+ middle
+ in block 2
+ pass
+exit 0

@@ -1,5 +1,3 @@
-! Module, Subroutine used
-! Complex Designator used
         module m1
 complex*8, parameter::x1=(0.6703, 3.0)
 contains
@@ -14,4 +12,3 @@ use m1
 call sub
 print *,"pass"
 end
-

@@ -79,5 +79,3 @@ common /c003a/ d
 common /c004a/ e
 a=1;b=size(a);c=b;d=c;e=d;f=e;a=size(f);
 end subroutine
-
-

@@ -1,0 +1,14 @@
+PROGRAM main
+IMPLICIT NONE
+
+INTEGER :: num = 20
+
+ASSOCIATE(bb => num)
+  IF(bb/10 .EQ. 2) THEN
+    PRINT*,'pass'
+  ELSE
+    PRINT*,101
+  END IF
+END ASSOCIATE
+
+END PROGRAM

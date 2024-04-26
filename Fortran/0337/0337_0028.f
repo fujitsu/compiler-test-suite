@@ -1,0 +1,97 @@
+      DIMENSION D(2,3)
+      COMMON A,B,I,ITM,D
+  102 FORMAT(1H0,12X,7H*ERROR*,7X,2H( ,I2,2H ),10X,E14.7,13X,E14.7,8X,
+     *E14.7)
+  103 FORMAT(1H0,12X,4H*OK*,10X,2H( ,I2,2H ),10X,E14.7,13X,E14.7,8X,
+     *E14.7)
+      A   =2.5
+      B   =3.5
+      ITM =01
+      CALL SUB1
+C
+      ITM =ITM+1
+      ANS =1004.75
+      DIF =D(2,1)-ANS
+      IF(ABS(DIF)-1.0E-02)2,1,1
+    1 WRITE(6,102)ITM,D(2,1),ANS,DIF
+      GO TO 500
+    2 WRITE(6,103)ITM
+C
+  500 ITM =ITM+1
+      ANS =-1226.7
+      DIF =D(1,2)-ANS
+      IF(ABS(DIF)-1.0E-02)4,3,3
+    3 WRITE(6,102)ITM,D(1,2),ANS,DIF
+      GO TO 501
+    4 WRITE(6,103)ITM
+  501 CONTINUE
+      STOP 3124
+      END
+      SUBROUTINE SUB1
+      DIMENSION Y(3)
+      COMMON AA,BB,II,ITM
+      COMMON X,Y
+      X   =1.5
+      CALL SUB2
+C
+      ITM =ITM+1
+      ANS =-4.8
+      DIF=X-ANS
+      IF(ABS(DIF)-1.0E-05)2,1,1
+    1 WRITE(6,102)ITM,X,ANS,DIF
+      GO TO 500
+    2 WRITE(6,103)ITM
+  500 Y(1)=Y(1)+FLOAT(II)
+      Y(2)=Y(2)-1234.2
+C
+      ITM =ITM+1
+      ANS =-1.7
+      DIF=Y(3)-ANS
+      IF(ABS(DIF)-1.0E-05)4,3,3
+    3 WRITE(6,102)ITM,Y(3),ANS,DIF
+      GO TO 501
+    4 WRITE(6,103)ITM
+  102 FORMAT(1H0,12X,7H*ERROR*,7X,2H( ,I2,2H ),10X,E14.7,13X,E14.7,8X,
+     *E14.7)
+  103 FORMAT(1H0,12X,4H*OK*,10X,2H( ,I2,2H ),10X,E14.7,13X,E14.7,8X,
+     *E14.7)
+  501 RETURN
+      END
+      SUBROUTINE SUB2
+      DIMENSION Y(3)
+      COMMON A,B,II,ITM
+      COMMON X,Y
+      Y(1)=A*X+B/3.5
+      Y(2)=A+B+X
+      Y(3)=A**2-B**2+4.3
+C
+      ANS =4.75
+      DIF =Y(1)-ANS
+      IF(ABS(DIF)-1.0E-05)2,1,1
+    1 WRITE(6,102)ITM,Y(1),ANS,DIF
+      GO TO 500
+    2 WRITE(6,103)ITM
+C
+  500 ITM =ITM+1
+      ANS =7.5
+      DIF =Y(2)-ANS
+      IF(ABS(DIF)-1.0E-05)4,3,3
+    3 WRITE(6,102)ITM,Y(2),ANS,DIF
+      GO TO 501
+    4 WRITE(6,103)ITM
+C
+  501 ITM =ITM+1
+      ANS =-1.7
+      DIF =Y(3)-ANS
+      IF(ABS(DIF)-1.0E-05)6,5,5
+    5 WRITE(6,102)ITM,Y(3),ANS,DIF
+      GO TO 502
+    6 WRITE(6,103)ITM
+  502 X   =-4.8
+      II =1000
+  102 FORMAT(1H0,12X,7H*ERROR*,7X,2H( ,I2,2H ),10X,E14.7,13X,E14.7,8X,
+     *E14.7)
+  103 FORMAT(1H0,12X,4H*OK*,10X,2H( ,I2,2H ),10X,E14.7,13X,E14.7,8X,
+     *E14.7)
+      RETURN
+      END

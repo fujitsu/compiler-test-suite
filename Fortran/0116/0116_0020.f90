@@ -4,12 +4,10 @@ program main
 
   type str2
     real(8),pointer,dimension(:,:) :: memberXX
-!    real(8),dimension(10,10) :: memberXX
   end type str2
 
   type str1
     type(str2),pointer,dimension(:,:) :: memStructXX
-!    type(str2),dimension(10,10) :: memStructXX
   end type str1
 
   real(8),parameter :: ANSWER=100.0
@@ -49,9 +47,9 @@ program main
 	  do i4=1,10
             do i5=1,10
               do i6=1,10
-	        structXX(i1,i2)%memStructXX(i3,i4)%memberXX(i5,i6) = 1 !nine01a
-	        structXX(i1,i2)%memStructXX(i3,i4)%memberXX( :,i6) = 1 !nine01b
-	        structXX(i1,i2)%memStructXX(i3,i4)%memberXX( :, :) = 1 !nine01c
+	        structXX(i1,i2)%memStructXX(i3,i4)%memberXX(i5,i6) = 1
+	        structXX(i1,i2)%memStructXX(i3,i4)%memberXX( :,i6) = 1
+	        structXX(i1,i2)%memStructXX(i3,i4)%memberXX( :, :) = 1
               enddo
             enddo
           enddo

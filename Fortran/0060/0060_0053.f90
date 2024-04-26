@@ -7,12 +7,11 @@ implicit logical(y)
   logical,parameter:: x3=am/=ap
   logical,parameter:: x4=ap/=ap
   complex(16):: ym=-0.0,yp=0.0
-  
+
 write(1,'(z8.8)')x1
 write(1,'(z8.8)')x2
 write(1,'(z8.8)')x3
 write(1,'(z8.8)')x4
-!
   y1=ym/=ym
   y2=yp/=ym
   y3=ym/=yp
@@ -26,18 +25,16 @@ subroutine s2
 implicit logical(y)
   real    (4),parameter:: cm=-0.0,cp=0.0
   complex(4),parameter:: am=(cm,cp),ap=(cp,cp)
-  !complex,parameter:: ar=z'8000 0000 0000 0000 0000 0000 0000 0000' ,ai=ar
   logical,parameter:: x1=am/=am
   logical,parameter:: x2=ap/=am
   logical,parameter:: x3=am/=ap
   logical,parameter:: x4=ap/=ap
   complex   :: ym=-0.0,yp=0.0
-  
+
 write(2,'(z8.8)')x1
 write(2,'(z8.8)')x2
 write(2,'(z8.8)')x3
 write(2,'(z8.8)')x4
-!
   y1=ym/=ym
   y2=yp/=ym
   y3=ym/=yp
@@ -56,12 +53,11 @@ implicit logical(y)
   logical,parameter:: x3=am/=ap
   logical,parameter:: x4=ap/=ap
   complex(8)   :: ym=-0.0,yp=0.0
-  
+
 write(3,'(z8.8)')x1
 write(3,'(z8.8)')x2
 write(3,'(z8.8)')x3
 write(3,'(z8.8)')x4
-!
   y1=ym/=ym
   y2=yp/=ym
   y3=ym/=yp

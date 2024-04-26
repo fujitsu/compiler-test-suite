@@ -1,0 +1,42 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  CHARACTER(LEN = 2) :: r1
+END TYPE
+
+TYPE,EXTENDS(t1) :: t2
+  CHARACTER(LEN = 2) :: r2
+END TYPE
+
+END MODULE 
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+CLASS(t2),DIMENSION(:),ALLOCATABLE :: allc
+
+ALLOCATE(allc(5))
+allc%r2 = 'cc' 
+
+ASSOCIATE(aa => fun(allc,'dd'))
+  IF(ALL(aa(2:4)%r2(2:2) .EQ. 'd')) THEN
+    PRINT*,'pass'
+  ELSE
+    PRINT*,101
+  END IF
+END ASSOCIATE
+
+CONTAINS
+
+FUNCTION fun(dd1,dd2)
+IMPLICIT NONE
+CHARACTER(LEN = 2) :: dd2
+CLASS(t2),DIMENSION(:),ALLOCATABLE :: dd1,fun
+ALLOCATE(fun(5))
+dd1%r2 = dd2
+fun%r2 = dd1%r2
+END FUNCTION
+
+END PROGRAM

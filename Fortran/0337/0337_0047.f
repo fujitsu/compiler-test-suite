@@ -1,0 +1,113 @@
+      DIMENSION IARAY(2,2)
+      IFU1(K)=2*K
+      IFU2(K)=(K**2+K)/K
+      ITEM=1
+      ISW=1
+      IX1=100
+      IARAY(1,1)=-50
+      IARAY(1,2)=-1
+      IARAY(2,1)=1
+      IARAY(2,2)=50
+      N=0
+      P=1.0
+      IX=5
+  100 IX2=-150
+  110 N=N+1
+      IF(N-1)120,130,120
+  120 CONTINUE
+   12 FORMAT(1H1 / )
+  130 CONTINUE
+
+   13 FORMAT(1H0,7X,9H*** ITEM(,I2,5H) ***,7X,
+     1       50H*****  TEST  OF  STANDARD  INTRINSIC  FUNCTION  - ,
+     2       15HISIGN(I1,I2) - ,5H*****,17X,9H( PAGE = ,I3,2H )
+     3       ///6X,11H- JUSTICE -,18X,13H- ARGUMENTS -,11X,
+     4       19H- COMPUTED RESULT -,5X,17H- COMPARE VALUE -)
+      L=0
+  140 IF(IX2)150,160,150
+  150 IY=ISIGN(IX1,IX2)
+      IF(IX2)170,170,180
+  170 IZ=(-1)*IABS(IX1)
+      GO TO 190
+  180 IZ=IABS(IX1)
+  190 CALL I2RTN(L,IX1,IX2,IY,IZ)
+      L=L+1
+  160 IF(IX2-150)200,210,210
+  200 IX2=IX2+1
+      IF(L-50)140,110,110
+  210 GO TO (1,2,3,4,5,6,7,8,9,10,21),ISW
+    1 IX1=-100
+      ISW=2
+      ITEM=2
+      GO TO 100
+    2 IX1=0
+      IX2=34
+      ITEM=3
+      ISW=3
+      N=N+1
+C
+      L=0
+  220 IY=ISIGN(IX1,IX2)
+      IF(IX2)230,230,240
+  230 IZ=(-1)*IABS(IX1)
+      GO TO 250
+  240 IZ=IABS(IX1)
+  250 CALL I2RTN(L,IX1,IX2,IY,IZ)
+      L=L+1
+      GO TO 210
+    3 ITEM=4
+C
+   15 FORMAT(1H0/19X,3H- (,I3,3H) -// )
+      IX1=IARAY(1,1)
+      IX2=IARAY(1,2)
+      ISW=4
+      GO TO 220
+    4 IX1=IARAY(2,1)
+      IX2=IARAY(2,2)
+      ISW=5
+      GO TO 220
+    5 IX1=(5-IX**2)*3+10
+      IX2=(IX**2-IX*2)*2/(-30)
+      ISW=6
+      GO TO 220
+    6 IX1=(IARAY(2,1)*10+IX*2)/20
+      IX2=IARAY(2,2)**2/100+IX*5
+      ISW=7
+      GO TO 220
+    7 IX1=IABS(IX-10)*(-10)
+      IX2=IFIX(P-FLOAT(IX)+3.0)
+      ISW=8
+      GO TO 220
+    8 IX1=IFIX(P**2+FLOAT(IX+4))/10
+      IX2=IABS(IX**2-IFIX(P**2+74.0))
+      ISW=9
+      GO TO 220
+    9 IX1=-(8*IX)-IFU1(IX)
+      IX2=(IFU2(IX)-IFU1(IX))/4
+      ISW=10
+      GO TO 220
+   10 IX1=IABS(IFU2(IX)-IFU1(IX))/4
+      IX2=2*IFU1(IX)+5*IFU2(IX)
+      ISW=11
+      GO TO 220
+   21 CONTINUE
+      STOP
+      END
+      SUBROUTINE I2RTN(L,IX1,IX2,IY,IZ)
+      IF (L)    120,110,100
+  100 IF (L-10) 120,110,101
+  101 IF (L-20) 120,110,102
+  102 IF (L-30) 120,110,103
+  103 IF (L-40) 120,110,120
+  110 CONTINUE
+C
+   10 FORMAT(1H )
+  120 IF(IY-IZ)130,140,130
+  130 WRITE(6,11)IX1,IX2,IY,IZ
+   11 FORMAT(1H ,8X,7H*ERROR*,17X,I6,4X,I6,2(17X,I6))
+      RETURN
+  140 CONTINUE
+C
+   12 FORMAT(1H ,8X,4H*OK*,20X,I6,4X,I6,2(17X,I6))
+      RETURN
+      END

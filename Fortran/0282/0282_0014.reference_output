@@ -1,0 +1,11 @@
+ F -- F
+ L -> L
+ F -- F
+ L -> L
+ T -- T
+ L -> L
+ 3 -- 3
+ SHAPE OK 
+ 1 -- 1
+ KIND OK 
+exit 0

@@ -27,15 +27,14 @@ if (c_associated(fp3)) print *,201
 
     call sub(fp2,fp2)
     fp=fp2
-    fp = kmr_fixfun()!
+    fp = kmr_fixfun()
  if (c_associated(fp)) print *,301
 
     zz = 0
   end function foo
- 
+
 end module xxxf
 use xxxf
 if (foo()/=0) print *,'202'
 print *,'pass'
 end
-

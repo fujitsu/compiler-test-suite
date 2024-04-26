@@ -1,0 +1,11 @@
+ bdf
+ bdf
+ b---b
+ UTF -> UTF
+ d---d
+ UTF -> UTF
+ f---f
+ UTF -> UTF
+ 4 -- 4
+ KIND OK 
+exit 0

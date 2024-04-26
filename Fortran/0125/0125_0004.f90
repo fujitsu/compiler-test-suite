@@ -33,7 +33,6 @@ real(8),dimension(1:n) :: a,b
 real(8),dimension(1:n) :: c,d
 integer :: res
 
-
 a = 1.
 b = 2.
 c = 1.
@@ -51,4 +50,3 @@ else
   print *,"ng", res, ians
 endif
 end program
-

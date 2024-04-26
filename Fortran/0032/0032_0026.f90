@@ -5,7 +5,7 @@ module m
 use m0
 private :: tar1
 type ty1
-   integer,pointer :: ptr1!=>tar1
+   integer,pointer :: ptr1
 end type
 contains
 function ifun() result(ii)

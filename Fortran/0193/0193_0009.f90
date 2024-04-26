@@ -1,0 +1,55 @@
+module mod
+interface
+module subroutine sub_1()
+end subroutine
+module subroutine sub_2()
+end subroutine
+module subroutine sub_3()
+end subroutine
+end interface
+pointer(ptr,ia)
+integer :: ib
+end
+
+submodule (mod) smod1
+pointer(ptr1,ia1)
+contains
+module subroutine sub_1()
+ptr1 =loc(ib)
+if (ia1.ne.100) print *,'err'
+end subroutine
+end
+
+submodule (mod:smod1) smod2
+pointer(ptr2,ia2)
+integer :: ib_l
+contains
+module subroutine sub_2()
+ptr2 =loc(ib_l)
+ib_l=200
+if (ia2.ne.200) print *,'err'
+end subroutine
+end
+
+submodule (mod:smod2) smod3
+pointer(ptr1,ia1)
+contains
+module subroutine sub_3()
+pointer(ptr2,ia2)
+ptr1 =loc(ib_l)
+ptr2 =loc(ib_l)
+if (ia1.ne.200) print *,'err'
+if (ia2.ne.200) print *,'err'
+end subroutine
+end
+
+use mod
+ptr =loc(ib)
+ib=100
+call sub_1()
+call sub_2()
+call sub_3()
+if (ia.ne.100) print *,'err',ia
+print *,'pass'
+end
+

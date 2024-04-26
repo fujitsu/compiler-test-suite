@@ -8,7 +8,7 @@ end module module_2nd
 module module_3rd
   use module_1st
   use module_2nd
-  integer :: hoge !=kind(DP)
+  integer :: itmp
 end module module_3rd
   use module_3rd,ONLY :ssss
   use module_3rd,ONLY :

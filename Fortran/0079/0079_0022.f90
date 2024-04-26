@@ -9,8 +9,6 @@ submodule  (m) smod
 interface 
 module subroutine sub1(i)
 end subroutine
-!module subroutine sub2(i)
-!end subroutine
 end interface
 contains
 module subroutine sub0(i)

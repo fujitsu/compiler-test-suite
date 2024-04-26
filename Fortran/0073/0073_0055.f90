@@ -3,17 +3,11 @@ integer,parameter:: k1=3,k2=4,k3=5,k4=6
 complex(8),allocatable:: a(:,:,:,:)
 complex(8),allocatable:: b(:,:,:,:)
 integer::n1=2,n2=2
-!interface
-! pure subroutine subcheck(x,k)
-!   integer,intent(in)::x,k
-! end subroutine
-!end interface
 contains
 pure function f(n2,n3,k2,k1,k) result(r)
 integer,intent(in)::n2,n3,k2,k1,k
 complex(8)::r(k2,k1)
 r=cmplx(n2+n3,n2+n3)
-!call subcheck(r(1,1),k)
 end function
 subroutine s1(k1,k2,k3,k4)
 forall (n2=1:k1,n3=1:k3)

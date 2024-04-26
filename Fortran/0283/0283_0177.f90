@@ -1,0 +1,8 @@
+PROGRAM main
+IMPLICIT NONE
+
+ASSOCIATE(aa => 'ch')
+  IF(aa .EQ. 'ch') PRINT*,'pass'
+END ASSOCIATE
+
+END PROGRAM  

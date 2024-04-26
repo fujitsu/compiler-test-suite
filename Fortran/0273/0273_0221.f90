@@ -1,0 +1,11 @@
+REAL(2) :: R2(6)
+COMPLEX(2) :: C2(2)
+R2=(/1,2,3,4,5,6/)
+C2=(/(1,2),(3,4)/)
+WHERE (R2 .GE. 3) R2=7
+WHERE (C2 .EQ. (1,2))C2=(8,9)
+IF (ANY(R2(4:6) .NE. 7))PRINT*,"101"
+IF (C2(1) .NE. (8,9))PRINT*,"102"
+PRINT*,"PASS"
+END
+

@@ -1,0 +1,8 @@
+INTEGER(2) :: I2=-1
+CALL S(ABS(I2))
+CONTAINS
+  SUBROUTINE S(X)
+    INTEGER(4) :: X
+    IF (X == 1) PRINT *,"*** OK ***"
+  ENDSUBROUTINE
+END

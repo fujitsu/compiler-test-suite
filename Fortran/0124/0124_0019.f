@@ -1,4 +1,3 @@
-c 
 
       module sub_mod
       integer, parameter :: N=5
@@ -21,7 +20,6 @@ c
       a1 = (/(MOD(i,3)+1,i=1,N)/)
       a2 = (/(MOD(i,2)+1,i=1,N)/)
 
-c
       do i=1, N
          do j=1, N
             a2_8(5,3)  = a2_8(5,3)  - a2_8(5,3) + 1.0E0
@@ -78,7 +76,6 @@ c
          enddo
       enddo
 
-c
 
       ires = mod(ires + sum_cmplx(),N)
 

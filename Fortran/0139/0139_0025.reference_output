@@ -1,0 +1,15 @@
+ 97 --- 97
+ 98 --- 98
+ ab---ab
+ UTF -> UTF
+ bc---bc
+ UTF -> UTF
+ cd---cd
+ UTF -> UTF
+ dw---dw
+ UTF -> UTF
+ 4 -- 4
+ SHAPE OK 
+ 4 -- 4
+ KIND OK 
+exit 0

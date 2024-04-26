@@ -45,4 +45,3 @@
        if( lf2() .neqv. .true.) print *,103
         print *,"PASS"
       end
-

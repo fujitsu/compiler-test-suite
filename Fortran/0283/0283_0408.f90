@@ -1,0 +1,69 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  COMPLEX(KIND = 4) :: cmp1
+END TYPE
+
+TYPE,EXTENDS(t1) :: t2
+  COMPLEX(KIND = 4) :: cmp2
+END TYPE
+
+INTERFACE OPERATOR(.plus.)
+  MODULE PROCEDURE addit
+END INTERFACE
+
+INTERFACE OPERATOR(.minus.)
+  MODULE PROCEDURE subtrct
+END INTERFACE
+
+CONTAINS
+
+FUNCTION addit(dy1,dy2)
+IMPLICIT NONE
+CLASS(t2),INTENT(IN) :: dy1,dy2
+CLASS(t2),ALLOCATABLE :: addit
+ALLOCATE(addit)
+addit%cmp2 = dy1%cmp2 + dy2%cmp2
+END FUNCTION
+
+FUNCTION subtrct(dy1,dy2)
+IMPLICIT NONE
+CLASS(t2),INTENT(IN) :: dy1
+COMPLEX(KIND = 4),INTENT(IN) :: dy2
+CLASS(t2),ALLOCATABLE :: subtrct
+ALLOCATE(subtrct)
+subtrct%cmp2 = dy1%cmp2 + dy2
+END FUNCTION
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+CLASS(t2),ALLOCATABLE :: acc1,acc2,acc3
+ALLOCATE(acc1,acc2)
+acc1%cmp2 = (13.45,23.50)
+acc2%cmp2 = (12.23,-43.70)
+
+ASSOCIATE(aa => acc1 .plus. fun(acc2) .minus. (11.20,35.50))
+  ALLOCATE(acc3,SOURCE = aa)
+  IF(acc3%cmp2 .EQ. aa%cmp2) THEN
+    PRINT*,'pass'
+  ELSE
+    PRINT*,101
+  END IF
+END ASSOCIATE
+
+CONTAINS
+
+FUNCTION fun(dd1)
+IMPLICIT NONE
+CLASS(t2) :: dd1
+CLASS(t2),ALLOCATABLE :: fun
+ALLOCATE(fun)
+fun%cmp2 = dd1%cmp2
+END FUNCTION
+
+END PROGRAM

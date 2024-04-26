@@ -1,0 +1,44 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  REAL :: r
+END TYPE
+
+TYPE,EXTENDS(t1) :: t2
+  REAL :: r2
+END TYPE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+TYPE(t2),TARGET :: tgt
+
+ASSOCIATE(aa => fun(tgt))
+  SELECT TYPE(aa)
+    TYPE IS(t1) 
+    tgt%r2 = 5.0
+    TYPE IS(t2)
+    tgt%r2 = 1.0
+  END SELECT
+END ASSOCIATE
+
+IF(tgt%r2==1.0) THEN
+  PRINT*,'pass'
+ELSE
+   PRINT*,101
+END IF
+
+CONTAINS 
+
+FUNCTION fun(ttg)
+CLASS(t1),POINTER :: fun
+TYPE(t2),TARGET :: ttg
+ttg%r2 = 10.0
+fun => ttg
+END FUNCTION
+
+END PROGRAM

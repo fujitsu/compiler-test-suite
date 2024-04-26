@@ -3,10 +3,6 @@ subroutine sub(x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x2
   real(8),pointer,contiguous :: a11(:),a12(:),a13(:),a14(:),a15(:),a16(:),a17(:),a18(:)
   real(8),pointer,contiguous :: b1(:,:),b2(:,:)
   real(8),pointer,contiguous :: c1(:),c2(:)
-!  real(8),contiguous :: a1(:),a2(:),a3(:),a4(:),a5(:),a6(:),a7(:),a8(:),a9(:),a10(:)
-!  real(8),contiguous :: a11(:),a12(:),a13(:),a14(:),a15(:),a16(:),a17(:),a18(:)
-!  real(8),contiguous :: b1(:,:),b2(:,:)
-!  real(8),contiguous :: c1(:),c2(:)
   real(8),dimension(n),target :: x1,x2,x3,x4,x5,x6,x7,x8,x9,x10
   real(8),dimension(n),target :: x11,x12,x13,x14,x15,x16,x17,x18
   real(8),dimension(n),target :: x21,x22
@@ -57,7 +53,7 @@ program main
   real(8),dimension(n),target :: x21,x22
   real(8),dimension(1,n),target :: x23,x24
   real(8) :: res
-       
+
   interface
      subroutine sub(x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15,x16,x17,x18,x21,x22,x23,x24,d,n,res)
        implicit none

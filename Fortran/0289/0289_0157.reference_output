@@ -1,0 +1,6 @@
+ ###### test-start ######
+ ****** test1 ok ******
+ ****** test2 ok ******
+ ****** test3 ok ******
+ ###### test-end   ######
+exit 0

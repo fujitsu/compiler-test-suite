@@ -1,0 +1,14 @@
+ REAL*2::R2=6
+ COMPLEX*4::C2=(7,8)
+ REAL(2) :: RES(2)
+ COMPLEX(2) :: CRES(3)
+ RES= (/ R2,R2 /)
+ CRES= (/ C2,C2,C2/)
+ IF(ANY(RES .NE. 6.0))PRINT*,"101"   
+ IF(ANY(CRES .NE. (7,8)))PRINT*,"102"   
+ PRINT*,"PASS"
+ END
+
+
+
+

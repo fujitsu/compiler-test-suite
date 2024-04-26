@@ -1,4 +1,3 @@
-! 
 
       complex(kind=16)                      :: dim0
       complex(kind=16),dimension(1:10)      :: dim1

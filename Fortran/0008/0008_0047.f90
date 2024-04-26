@@ -38,7 +38,5 @@ p= reshape([(k,k=1,(n1)*(n2)*(n3)*(n4))],[n1,n2,n3,n4])
 call s1(i1,n2,n4)
 call s2(i2,n2,n4)
 if (any(i1/=i2)) print *,101
-!print *,i1
-!print *,i2
 print *,'OK'
 end

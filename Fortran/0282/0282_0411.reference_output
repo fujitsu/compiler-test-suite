@@ -1,0 +1,7 @@
+ 15 -- 15
+ integer->integer OK
+ 48 -- 48
+ integer->integer OK
+ KIND:: 4 --KIND:: 4
+ KIND OK
+exit 0

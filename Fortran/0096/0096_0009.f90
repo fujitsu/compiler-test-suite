@@ -1,4 +1,3 @@
-! Complex designator used
 program pro
 complex,parameter :: cmp(5)=(3.5,4.0)
 real :: res(3) = LOG_GAMMA(cmp(1:5:2)%im)

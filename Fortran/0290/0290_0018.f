@@ -1,0 +1,40 @@
+	integer*2,parameter:: i2_mask1 = z'ffff'
+	integer*2,parameter:: i2_mask2 = z'ff00'
+	integer*2,parameter:: i2_p0 = 0
+	integer*2,parameter:: i2_p1 = 1
+	integer*2,parameter:: i2_p8 = 8
+	integer*2,parameter:: i2_p15 = 15
+	print 1,ibclr(i2_mask1,i2_p0)
+	print 1,ibclr(i2_mask1,i2_p1)
+	print 1,ibclr(i2_mask1,i2_p8)
+	print 1,ibclr(i2_mask1,i2_p15)
+	print 1,ibclr(i2_mask1,0)
+	print 1,ibclr(i2_mask1,1)
+	print 1,ibclr(i2_mask1,8)
+	print 1,ibclr(i2_mask1,15)
+	print 1,ibclr(i2_mask2,i2_p0)
+	print 1,ibclr(i2_mask2,i2_p1)
+	print 1,ibclr(i2_mask2,i2_p8)
+	print 1,ibclr(i2_mask2,i2_p15)
+	print 1,ibclr(i2_mask2,0)
+	print 1,ibclr(i2_mask2,1)
+	print 1,ibclr(i2_mask2,8)
+	print 1,ibclr(i2_mask2,15)
+	print 1,ibset(i2_mask1,i2_p0)
+	print 1,ibset(i2_mask1,i2_p1)
+	print 1,ibset(i2_mask1,i2_p8)
+	print 1,ibset(i2_mask1,i2_p15)
+	print 1,ibset(i2_mask1,0)
+	print 1,ibset(i2_mask1,1)
+	print 1,ibset(i2_mask1,8)
+	print 1,ibset(i2_mask1,15)
+	print 1,ibset(i2_mask2,i2_p0)
+	print 1,ibset(i2_mask2,i2_p1)
+	print 1,ibset(i2_mask2,i2_p8)
+	print 1,ibset(i2_mask2,i2_p15)
+	print 1,ibset(i2_mask2,0)
+	print 1,ibset(i2_mask2,1)
+	print 1,ibset(i2_mask2,8)
+	print 1,ibset(i2_mask2,15)
+1       format(1h ,z4.4)
+        end

@@ -1,4 +1,3 @@
-!
 program main
 integer,parameter::n=100
 real(kind=8),dimension(:),pointer :: a, b

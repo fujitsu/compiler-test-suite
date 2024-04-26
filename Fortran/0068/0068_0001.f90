@@ -279,7 +279,7 @@ program main
   f=(2.0,1.0)
   g=(2.0,3.0)
   h=(2.0,3.0)
-  
+
   b2=(1.0,2.0)
   c2=(2.0,1.0)
   d2=(2.0,3.0)
@@ -561,6 +561,5 @@ program main
   else
      print *,'calc44 : NG a2=',a2
   endif
-
 
 end program main

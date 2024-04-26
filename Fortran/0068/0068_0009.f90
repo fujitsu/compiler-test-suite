@@ -451,5 +451,5 @@ program main
   else
      print *,'sub12_2 : NG',int(cdabs(sum(a2))),'!=',71844
   endif
-        
+
 end program main

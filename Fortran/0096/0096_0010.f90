@@ -1,4 +1,3 @@
-! LOG_GAMMA passed as argument
 program pro
 real(kind=4),parameter :: xx1 = 5.0
 real(kind=8),parameter :: xx2 = 5.0
@@ -13,4 +12,3 @@ if(.not.(rslt2>0.86 .and. rslt2<0.89)) print *,102
 if(.not.(rslt3>0.86 .and. rslt3<0.89)) print *,103
 print *, "pass"
 end
-

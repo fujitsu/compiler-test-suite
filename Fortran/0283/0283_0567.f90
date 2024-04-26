@@ -1,0 +1,88 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  INTEGER(KIND = 4) :: xx 
+END TYPE
+
+TYPE,EXTENDS(t1) :: t2
+  INTEGER(KIND = 4) :: yy
+END TYPE
+
+INTERFACE OPERATOR(.plus.)
+  MODULE PROCEDURE addit
+END INTERFACE
+
+INTERFACE OPERATOR(.mult.)
+  MODULE PROCEDURE multip
+END INTERFACE
+
+CONTAINS
+
+FUNCTION addit(d1,d2)
+IMPLICIT NONE
+CLASS(t2),DIMENSION(:),INTENT(IN) :: d1
+INTEGER(KIND = 4),INTENT(IN) :: d2
+CLASS(t2),DIMENSION(:),ALLOCATABLE :: addit
+ALLOCATE(addit(10))
+addit%yy = d1%yy + d2
+END FUNCTION
+
+FUNCTION multip(d1,d2)
+IMPLICIT NONE
+CLASS(t2),DIMENSION(:),INTENT(IN) :: d1
+CLASS(t1),DIMENSION(:),INTENT(IN) :: d2
+CLASS(t2),DIMENSION(:),ALLOCATABLE :: multip
+ALLOCATE(multip(10))
+multip%yy = d1%yy * d2%xx
+END FUNCTION
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+INTEGER(KIND = 4) :: res,rr = 50
+CLASS(t2),DIMENSION(:),ALLOCATABLE :: acc
+CLASS(t1),DIMENSION(:),POINTER :: ptr
+ALLOCATE(acc(10),ptr(10))
+acc%yy = 10
+ptr%xx = 20
+
+ASSOCIATE(aa => fun_1(acc))
+  SELECT CASE(aa(5)%yy)
+    CASE(10)
+      res = 1
+  END SELECT
+  ASSOCIATE(bb => aa .plus. rr)
+    IF(ALL(bb(2::2)%yy .EQ. 60)) THEN
+      res = res + 1
+    ELSE
+      res = res - 1
+    END IF
+    ASSOCIATE(cc => aa .mult. ptr)
+      SELECT TYPE(cc)
+        TYPE IS(t2)
+          res = res + 1
+      END SELECT
+    END ASSOCIATE
+  END ASSOCIATE
+END ASSOCIATE
+
+IF(res .EQ. 3) THEN
+   PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+CONTAINS
+
+FUNCTION fun_1(dd1)
+IMPLICIT NONE
+CLASS(t2),DIMENSION(:),ALLOCATABLE :: dd1,fun_1
+ALLOCATE(fun_1(10))
+fun_1%yy = dd1%yy
+END FUNCTION
+
+END PROGRAM

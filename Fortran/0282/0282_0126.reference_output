@@ -1,0 +1,55 @@
+ 4 -- 4
+ pass
+ 4 -- 4
+ pass
+ 7 -- 7
+ pass
+ 4 -- 4
+ pass
+ 2 -- 2
+ pass
+ 4 -- 4
+ pass
+ 3 -- 3
+ pass
+ 4 -- 4
+ pass
+ 8 -- 8
+ pass
+ 5 -- 5
+ pass
+ 3 -- 3
+ pass
+ 5 -- 5
+ pass
+ 3 -- 3
+ pass
+ 5 -- 5
+ pass
+ 3 -- 3
+ pass
+ 5 -- 5
+ pass
+ 4 -- 4
+ pass
+ 6 -- 6
+ pass
+ 4 -- 4
+ pass
+ 6 -- 6
+ pass
+ 4 -- 4
+ pass
+ 6 -- 6
+ pass
+ 4 -- 4
+ pass
+ 6 -- 6
+ pass
+ 3 4 2 -- 3 4 2
+ SHAPE OK 
+ SHAPE OK 
+ SHAPE OK 
+ 8 -- 8
+ KIND OK 
+exit 0

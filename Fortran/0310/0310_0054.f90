@@ -1,0 +1,24 @@
+INTEGER(KIND=4) :: A(10),B(5),AB(5)
+DATA A/1,2,3,4,5,6,7,8,9,0/
+DATA AB/1,2,3,4,5/
+DO I=1,10
+  A(I)=A(I)+1 
+  IF (I.LE.5) THEN
+    CALL S 
+    DO J=1,5
+      B(J)=A(J) 
+    END DO
+    CALL T 
+  END IF
+END DO
+DO K=1,5
+IF (B(K)/=AB(K)) EXIT
+END DO
+PRINT *,"*** OK ***"
+END
+
+SUBROUTINE S
+END SUBROUTINE
+
+SUBROUTINE T
+END SUBROUTINE

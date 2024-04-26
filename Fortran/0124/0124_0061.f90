@@ -1,4 +1,3 @@
-!
 
 integer, volatile :: k
 real    rr

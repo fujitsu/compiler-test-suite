@@ -1,0 +1,17 @@
+ ===== start =====
+*** in sub3 ** a ok ***
+*** in sub3 ** b ok ***
+*** in sub3 ** c ok ***
+*** in sub3 ** a ok ***
+*** in sub3 ** b ok ***
+*** in sub3 ** c ok ***
+*** in sub3 ** a ok ***
+*** in sub3 ** b ok ***
+*** in sub3 ** c ok ***
+*** in sub3 ** a ok ***
+*** in sub3 ** b ok ***
+*** in sub3 ** c ok ***
+ *** read end ***
+ ***** ok *****
+ ===== end =====
+exit 0

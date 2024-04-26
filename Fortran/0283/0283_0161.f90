@@ -1,0 +1,20 @@
+PROGRAM main
+IMPLICIT NONE
+
+CHARACTER(LEN = 4) :: ch1
+INTEGER :: num = 10
+
+ASSOCIATE(aa => num) 
+ WRITE (num, '(A)') 'THIS'
+ OPEN (UNIT = num, STATUS = 'OLD', PAD = 'YES')
+ REWIND num
+ READ (num, '(A4)') ch1
+END ASSOCIATE
+
+IF(ch1 .EQ. 'THIS') THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+END PROGRAM

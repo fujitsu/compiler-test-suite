@@ -24,6 +24,6 @@
       if (err.eq.1)then
          write(6,*)'*** ng ?? ***'
       else
-         write(6,*)'*** ok !! ***'
+         write(6,*)'*** ok    ***'
       endif
       end

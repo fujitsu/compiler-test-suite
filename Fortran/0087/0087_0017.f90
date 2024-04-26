@@ -19,7 +19,6 @@
       end 
     
      module k3               
-       ! use mod01            
      contains
        function   proc()       
          use ::n02

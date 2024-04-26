@@ -1,0 +1,28 @@
+module m
+ interface
+  module subroutine sub
+  end subroutine
+ end interface
+end
+
+module mm
+contains
+ subroutine msub
+  print *,'pass'
+ end subroutine
+end
+
+submodule(m)smod
+contains
+ module subroutine sub
+  call ssub
+ end subroutine
+ subroutine ssub
+  use mm
+  call msub
+ end subroutine
+end
+
+use m
+call sub
+end

@@ -1,0 +1,27 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  CHARACTER(LEN = 10),ALLOCATABLE :: ch
+END TYPE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+TYPE(t1) :: obj
+ALLOCATE(obj%ch)
+
+obj%ch = 'abcdefghij'
+
+ASSOCIATE(aa => INDEX(obj%ch,'def'))
+  IF(aa .EQ. 4) THEN
+    PRINT*,'pass'
+  ELSE
+    PRINT*,101
+  END IF
+END ASSOCIATE
+
+END PROGRAM

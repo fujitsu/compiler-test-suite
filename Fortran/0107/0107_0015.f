@@ -26,7 +26,6 @@
       REAL,DIMENSION(5,X)::A                                                
                                                                         
       X=X/2                                                             
-      !A(:,3:)=A(1:5,3:4)+3.14                                           
       A(:,3:)=A(1:5,3:5)+3.14                                           
                                                                         
       END SUBROUTINE SUB                                                

@@ -1,4 +1,3 @@
-!
       real a,ans
       parameter (ans=2.0)
 

@@ -1,0 +1,60 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  INTEGER(KIND = 8) :: r1
+END TYPE
+
+TYPE,EXTENDS(t1) :: t2
+  INTEGER(KIND = 8) :: r2
+END TYPE
+
+INTERFACE
+FUNCTION fun_ext()
+IMPLICIT NONE
+INTEGER(KIND = 8) :: fun_ext
+END FUNCTION
+END INTERFACE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+INTEGER(KIND = 8),DIMENSION(5) :: res
+CLASS(t1),POINTER :: ptr
+CLASS(t2),ALLOCATABLE :: allc
+TYPE(t1),DIMENSION(:),ALLOCATABLE :: obj
+
+ALLOCATE(allc,ptr,obj(5))
+
+allc%r2 = 24100
+ptr%r1 = 12100
+obj%r1 = 40010
+res = fun(obj)
+
+IF(res(4) .EQ. 77321) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+CONTAINS
+
+FUNCTION fun(dd1)
+IMPLICIT NONE
+INTEGER(KIND = 8),DIMENSION(5) :: fun 
+TYPE(t1),DIMENSION(:) :: dd1
+ASSOCIATE(aa => allc%r2 + ptr%r1 + dd1%r1 + fun_ext())
+  IF(ALL(aa(2:4) .EQ. 77321)) fun = aa  
+END ASSOCIATE
+END FUNCTION
+
+END PROGRAM
+
+FUNCTION fun_ext()
+IMPLICIT NONE
+INTEGER(KIND = 8) :: fun_ext
+fun_ext = 1111
+END FUNCTION

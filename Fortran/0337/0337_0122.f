@@ -1,0 +1,87 @@
+      DOUBLE PRECISION X,Y,Z,DIFF,DARRAY(2,2),DI
+      N=0
+      K=-200
+      DIFF=1.0D-14
+      ITEM=1
+      ISW=1
+      DARRAY(1,1)=-0.5D0
+      DARRAY(1,2)=-0.01D0
+      DARRAY(2,1)=0.01D0
+      DARRAY(2,2)=0.5D0
+   75 N=N+1
+      IF(N-1) 7,8,7
+    7 CONTINUE
+
+  201 FORMAT(1H1 / )
+    8 CONTINUE
+      L=0
+   65 DI=K
+      X=DI/100.0D0
+      Y=DABS(X)
+      IF(X-0.0D0) 15,25,25
+   25 Z=X
+      GO TO 35
+   15 Z=-1.0D0*X
+   35 CALL DPRTN(L,DIFF,X,Y,Z)
+      L=L+1
+      IF(K-200) 45,46,46
+   45 K=K+1
+      IF(L-50) 65,75,75
+   46 ITEM=2
+      N=N+1
+C
+      L=0
+   55 GO TO(1,2,3,4),ISW
+    1 X=-2.29637D-30
+      ISW=2
+      GO TO 85
+    2 X=0.0D0
+      ISW=3
+      GO TO 85
+    3 X=+2.29637D-30
+      ISW=4
+   85 Y=DABS(X)
+      IF(X-0.0D0) 95,105,105
+   95 Z=-1.0D0*X
+      GO TO 115
+  105 Z=X
+  115 CALL DPRTN(L,DIFF,X,Y,Z)
+      L=L+1
+      GO TO 55
+    4 ITEM=3
+C
+  204 FORMAT(1H0 / 19X,3H- (,I3,3H) - //)
+      DO 100 I=1,2
+      DO 100 J=1,2
+      X=DARRAY(I,J)
+      Y=DABS(DARRAY(I,J))
+       IF(DARRAY(I,J)-0.0D0) 125,135,135
+  125  Z=-1.0D0*DARRAY(I,J)
+       GO TO 145
+  135  Z=DARRAY(I,J)
+  145 CALL DPRTN(L,DIFF,X,Y,Z)
+  100  CONTINUE
+      STOP
+      END
+C
+      SUBROUTINE    DPRTN (L,D,A,R,V)
+      DOUBLE PRECISION A,R,V,DIFF,D
+      DIFF = V - R
+      IF(R) 90,80,90
+   80 IF(DABS(DIFF)-D) 100,120,120
+   90 IF(DABS(DIFF)-D*DABS(V)) 100,120,120
+  100 CONTINUE
+C
+    1 FORMAT(1H ,5X,8H*OK*    ,4(5X,D24.17) )
+      GO TO 130
+  120 WRITE (6,2) A,R,V,DIFF
+    2 FORMAT(1H ,5X,8H*ERROR* ,4(5X,D24.17) )
+  130 IF (L- 9) 200,190,140
+  140 IF (L-19) 200,190,150
+  150 IF (L-29) 200,190,160
+  160 IF (L-39) 200,190,200
+  190 CONTINUE
+C
+    3 FORMAT (1H )
+  200 RETURN
+      END

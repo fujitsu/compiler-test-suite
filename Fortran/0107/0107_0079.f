@@ -8,9 +8,7 @@
       LOGICAL NO_GOOD/.FALSE./                                         
       EQUIVALENCE (A,B)                                                
                                                                        
-**  TESTING STATEMENT  **                                              
       A( 536870902: 536870911)=B(- 536870911:- 536870902)/0.5          
-**  - - - - - - - - -  **                                              
                                                                        
       DO I=1,10                                                        
          IF (A(2**29-11+I) .NE. RIGHT_RESULT(I)) NO_GOOD = .TRUE.        

@@ -1,0 +1,22 @@
+ bc--bc
+ CH -> CH
+ cd--cd
+ CH -> CH
+ ij--ij
+ CH -> CH
+ lm--lm
+ CH -> CH
+ ab--ab
+ CH -> CH
+ ef--ef
+ CH -> CH
+ gh--gh
+ CH -> CH
+ no--no
+ CH -> CH
+ 2 4 -- 2 4
+ SHAPE OK 
+ SHAPE OK 
+ 4 -- 4
+ KIND OK 
+exit 0

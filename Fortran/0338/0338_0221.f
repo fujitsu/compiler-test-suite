@@ -1,0 +1,34 @@
+      INTEGER*2   A1(10),A2(10),A3(10)
+      INTEGER*4   B1(10),B2(10),B3(10)
+      REAL*4      C1(10),C2(10),C3(10)
+      REAL*8      D1(10),D2(10),D3(10)
+      COMPLEX*8   E1(10),E2(10),E3(10)
+      COMPLEX*16  F1(10),F2(10),F3(10)
+      LOGICAL*1   G1(10),G2(10),G3(10)
+      LOGICAL*4   H1(10),H2(10),H3(10)
+      CHARACTER*1 I1(10),I2(10),I3(10)
+      CHARACTER*4 J1(10),J2(10),J3(10)
+      INTEGER*4   XXX,YYY
+C
+      DATA A1,A2,A3/30*0/
+      DATA B1,B2,B3/30*0/
+      DATA C1,C2,C3/30*0.0/
+      DATA D1,D2,D3/30*0.0E+00/
+      DATA E1,E2,E3/30*(0.0,0.0)/
+      DATA F1,F2,F3/30*(0.0,0.0)/
+      DATA G1,G2,G3/30*.TRUE./
+      DATA H1,H2,H3/30*.FALSE./
+      DATA I1,I2,I3/30*' '/
+      DATA J1,J2,J3/30*'    '/
+C
+      ASSIGN 100 TO XXX
+      ASSIGN 200 TO YYY
+C
+      GOTO XXX(100,200)
+  200 STOP 200
+C
+  100 WRITE(6,*) A1,B1,C1,D1,E1,F1,G1,H1,I1,J1
+      WRITE(6,*) A2,B2,C2,D2,E2,F2,G2,H2,I2,J2
+      WRITE(6,*) A3,B3,C3,D3,E3,F3,G3,H3,I3,J3
+      STOP 100
+      END

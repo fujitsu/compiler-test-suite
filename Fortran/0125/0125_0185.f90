@@ -20,7 +20,6 @@ real(8),dimension(1:n,1:n) :: a2,b2,c2
   enddo
  enddo
 
-
 end subroutine sub1
 
 program main

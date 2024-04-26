@@ -1,4 +1,3 @@
-! DSE Case 
 type ty
   real :: cc1(2)
 end type
@@ -8,4 +7,3 @@ if( .not.(rslt1(1)>0.68 .and. rslt1(1)<0.70))  print *,101
 if( .not.(rslt1(2)>1.78 .and. rslt1(2)<1.80))  print *,102
     print *,"pass"
 end
-

@@ -1,0 +1,21 @@
+TYPE TY
+    REAL(2):: R2(4,5) = 5.0
+    COMPLEX(2) :: CC(2,3) = (2,3)
+END TYPE
+TYPE(TY) :: OBJ
+
+IF(FUN(OBJ%R2,OBJ%CC) .NE. 1)PRINT*,"103"
+CONTAINS
+FUNCTION FUN(DMY1,DMY2)
+      INTEGER :: FUN
+      REAL(2) :: DMY1(:,:)
+      COMPLEX(2) :: DMY2(:,:)
+      IF(ANY(DMY1 .NE. 5.0)) PRINT*,"101"
+      IF(ANY(DMY2 .NE. (2,3))) PRINT*,"102"
+      IF(RANK(DMY1) .NE. 2)PRINT*,"103"
+      IF(RANK(DMY2) .NE. 2)PRINT*,"104"
+      FUN=1
+      PRINT*,"PASS"
+END FUNCTION
+END
+

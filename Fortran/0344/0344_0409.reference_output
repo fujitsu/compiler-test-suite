@@ -1,0 +1,32 @@
+
+  ## TEST 1 ## 
+ F F F F F F F F F F
+
+  ## TEST 2 ## 
+ T T T T T T T T T T
+
+  ## TEST 3 ## 
+ F T T F F T T F F T
+
+  ## TEST 4 ## 
+ T T F F F F F F F F
+
+  ## TEST 5 ## 
+ T T T T T T T T T T
+
+  ## TEST 6 ## 
+ T T T F F F F F F F
+
+  ## TEST 7 ## 
+ F F F F F F F F F F
+
+  ## TEST 8 ## 
+ F F F F F F F F F F
+
+  ## TEST 9 ## 
+ T T T T T T T T T T
+
+  ## TEST 10 ## 
+ T T T T F F F F F F
+
+exit 0

@@ -1,7 +1,7 @@
       module m1
        interface gnr
          module procedure k1
-         module procedurek2  !! warning expected
+         module procedurek2
        end interface
        contains
        function k1(n1,n2)
@@ -21,4 +21,3 @@
       if (gnr(1,2)/=3) print *,101
       print *,'PASS'
      end
-

@@ -7,9 +7,7 @@
       LOGICAL NO_GOOD/.FALSE./                                         
       I=2*INT(COS(0.0))                                                
                                                                        
-**  TESTING STATEMENT  **                                              
       A(I,1:5:2)=A(8:10,5)+3.                                          
-**  - - - - - - - - -  **                                              
                                                                        
       DO J=1,5                                                         
         DO I=1,10                                                      

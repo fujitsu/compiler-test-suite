@@ -1,0 +1,23 @@
+0       *** ITEM( 1) ***       *****  TEST  OF  STANDARD  INTRINSIC  FUNCTION  - IABS(I) -  *****                     ( PAGE =   1 )
+
+
+      - JUSTICE -                    - ARGUMENT -                - COMPUTED RESULT -         - COMPARE VALUE -
+ 
+         *OK*                           -32767                            32767                      32767
+         *OK*                            -1234                             1234                       1234
+         *OK*                                0                                0                          0
+         *OK*                             1234                             1234                       1234
+         *OK*                            32767                            32767                      32767
+0
+                   - (  2) -
+
+ 
+         *OK*                              -50                               50                         50
+         *OK*                               -1                                1                          1
+         *OK*                                1                                1                          1
+         *OK*                               50                               50                         50
+         *OK*                              -50                               50                         50
+         *OK*                               -1                                1                          1
+         *OK*                               10                               10                         10
+         *OK*                               50                               50                         50
+exit 0

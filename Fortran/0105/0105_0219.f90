@@ -16,4 +16,3 @@ e = matmul(c, d) + 1.4_8 - e -2.0_8
 if (any(abs(e-(-63.736_8))>0.0001))print *,'error-13'
 print *, 'pass'
 end
-

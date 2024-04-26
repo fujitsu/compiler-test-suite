@@ -16,4 +16,3 @@ if (any(abs((/A/)-(/&
 
 print *,'pass'
 end
-

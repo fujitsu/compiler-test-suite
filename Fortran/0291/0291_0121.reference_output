@@ -1,0 +1,13 @@
+  recursive 4a  10 0
+  recursive 4b  9 10
+  recursive 4a  8 19
+  recursive 4b  7 27
+  recursive 4a  6 34
+  recursive 4b  5 40
+  recursive 4a  4 45
+  recursive 4b  3 49
+  recursive 4a  2 52
+  recursive 4b  1 54
+  recursive 4a  0 55
+ OK  55
+exit 0

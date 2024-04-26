@@ -4,9 +4,7 @@
       DATA RIGHT_RESULT/10*996.0,10*6.0,10*30.0,10*3330.0,10*65533.0/  
       LOGICAL NO_GOOD/.FALSE./                                         
                                                                        
-**  TESTING STATEMENT  **                                              
       A(:,:)=A(:,1:5)-3.                                               
-**  - - - - - - - - -  **                                              
                                                                        
       DO J=1,5                                                         
          DO I=1,10                                                     

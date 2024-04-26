@@ -6,4 +6,3 @@ if (any(abs((/C/)-(/ 81,95 /))>0.001))print *,'error'
 
 print *,'pass'
 end
-

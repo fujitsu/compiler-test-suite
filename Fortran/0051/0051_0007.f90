@@ -16,7 +16,6 @@ if(associated(ptr).neqv..true.)print*,"101"
 if(associated(ptr2).neqv..true.)print*,"102"
 if(associated(ptr3).neqv..true.)print*,"103"
 if(associated(ptr4).neqv..true.)print*,"104"
-!ptr4=>tar2%im
 ptr2=10.0
 ptr3=12.0
 ptr4=13.0
@@ -25,4 +24,3 @@ if(ptr3.ne.12.0)print*,"106"
 if(ptr2.ne.10.0)print*,"107"
 print*,"PASS"
 end
-

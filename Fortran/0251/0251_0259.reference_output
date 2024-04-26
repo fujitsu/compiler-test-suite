@@ -1,0 +1,7 @@
+ in fun1
+ 1:pass
+ in fun1
+ 2:pass
+ in fun1
+ 3:pass
+exit 0

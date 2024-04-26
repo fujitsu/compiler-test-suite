@@ -1,4 +1,3 @@
-!
 
 program main
   integer,parameter::n=50
@@ -8,7 +7,6 @@ program main
   type(pp), dimension(n) :: array
   integer,parameter :: ans=6375000
 
-!  allocate(array(n))
   do i = 1, n
     allocate(array(i)%p(n,n,n))
     array(i)%p=i

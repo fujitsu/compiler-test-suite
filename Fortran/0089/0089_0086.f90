@@ -18,4 +18,3 @@ type(ext)::var
 if (var%x1/=2) print *,1010
 print *,'pass'
 end
-

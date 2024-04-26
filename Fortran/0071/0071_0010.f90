@@ -7,14 +7,13 @@ module xxxf
 contains
 
   type(c_funptr) function kmr_fixfun() result(zz) bind(c)
-    !type(c_funptr), value, intent(in) :: fp
        zz = c_null_funptr
   end function kmr_fixfun
 
   integer(c_int) function foo() result(zz)
     type(c_funptr) :: fp
 
-    fp = kmr_fixfun()!
+    fp = kmr_fixfun()
 
     zz = 0
   end function foo
@@ -24,4 +23,3 @@ use xxxf
 if (foo()/=0) print *,'202'
 print *,'pass'
 end
-

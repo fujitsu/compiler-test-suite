@@ -1,6 +1,5 @@
 module m0
   integer::k=2
-!!!private
 public:: ss1
  interface
  module subroutine ss1(i)

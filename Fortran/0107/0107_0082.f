@@ -6,12 +6,10 @@
       DATA A/10*1/,B/-4.0,-3.0,-2.0,-1.0,0.0,1.0,2.0,3.0,4.0,5.0/      
       DATA A_RIGHT_RESULT /1,-3.0,-2.0,-1.0,0.0,1.0,1.0,1.0,1.0,1.0/   
       DATA AA_RIGHT_RESULT/100*52.5/                                   
-C                                                                      
-C     INITIALIZATION                                                   
-C                                                                      
+
       A(2:6)=A(N(1):N(2))+B(1:5)                                       
       AA=AA+BB(1:20:2,1:20:2)                                          
-C                                                                      
+
       DO I=1,10                                                        
         IF (A(I).NE.A_RIGHT_RESULT(I)) A_NO_GOOD = .TRUE.
       ENDDO                                                            
@@ -36,6 +34,6 @@ C
       ELSE                                                             
         WRITE (6,*) '!!!!!! OK !!!!!!'                         
       ENDIF                                                            
-C                                                                      
+
       STOP                                                             
       END                                                              

@@ -1,0 +1,7 @@
+ OK --- num%x =  -121
+ OK --- num%y =  176
+ OK --- chr%y = PPPPPPFORT
+ OK --- string = ppppppPPPP
+ OK --- mx%a =  57
+ OK --- mx%b = P
+exit 0

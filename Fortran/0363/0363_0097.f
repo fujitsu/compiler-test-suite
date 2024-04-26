@@ -1,0 +1,37 @@
+      program main
+      integer*1 i1a(65),i1b(65),result(65)
+      call init(i1a,i1b,result,65)
+      do i=1,2
+        call test(i1a,i1b,65)
+      enddo
+      do i=1,65
+         if(i1a(i) .ne. result(i)) goto 10
+      enddo
+      write (6,*) "OK"
+      goto 20
+ 10   write (6,*) "NG"
+ 20   continue
+      end
+
+      subroutine init(i1a,i1b,result,n1)
+      integer*1  i1a(n1),i1b(n1),result(n1)
+
+      do i=1,65
+        i1a(i) = 0
+        i1b(i) = i
+        result(i) = i
+      enddo
+
+      do i=1,65,2
+        i1b(i) = -i
+      enddo
+      end
+
+      subroutine test(i1a,i1b,n1)
+      integer*1 i1a(n1),i1b(n1)
+      
+      do i=1,65
+        i1a(i) = abs(i1b(i))
+      enddo
+      
+      end

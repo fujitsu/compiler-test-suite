@@ -1,0 +1,4 @@
+PARAMETER(I=Z'0001ABCD')
+PRINT '(1H Z2)',I
+PRINT *,"*** OK ***"
+END

@@ -13,7 +13,6 @@ type(tz)::et
       end module mod01
      
      module k3
-       ! use mod01
      contains
        subroutine sub (p)       
          interface
@@ -22,8 +21,6 @@ type(tz)::et
             type(type01) :: p
           end function
          end interface
-         !use ::n02
-         !procedure (s1) :: proc    
          call ss(p())
        end subroutine sub
      end

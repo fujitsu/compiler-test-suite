@@ -1,0 +1,9 @@
+ max of i*2 ...   9
+ max of i*4 ...   9
+ max of r*4 ...   9
+ max of r*8 ...   9
+ max of r*16 ...   9
+ max of c*8 ...   9
+ max of c*16 ...   9
+ max of c*32 ...   9
+exit 0

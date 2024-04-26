@@ -1,0 +1,104 @@
+      DOUBLE PRECISION Y,Z,XX,DF
+      DIMENSION  ARRAY(2,2)
+      E(R)=1.0+R-R
+      F(R)=(R**2+EXP(SIN(R-1.0)))/SQRT(4.0*R)
+C
+      ARRAY(1,1)=-0.5
+      ARRAY(1,2)=-0.01
+      ARRAY(2,1)=+0.01
+      ARRAY(2,2)=+0.5
+      DIFF=1.0D-5
+      N=0
+      ITEM=1
+      ISW=1
+      IISW=1
+      P=1.0
+      J=1
+      K=-200
+C
+  100 N=N+1
+      IF(N-1)110,120,110
+  110 CONTINUE
+C
+   12 FORMAT(1H1 / )
+  120 CONTINUE
+      L=1
+  130 X=FLOAT(K)/100.0
+      Y=DBLE(X)
+      Z=X
+      XX=DABS(Z-Y)
+      IF(Y)140,150,140
+  140 DF=DIFF*DABS(Z)
+      GO TO 160
+  150 DF=DIFF
+  160 IF(XX-DF)170,180,180
+  170 CONTINUE
+C
+   14 FORMAT(1H ,4X,4H*OK*,11X,E14.7,3(7X,D24.17))
+      GO TO 190
+  180 WRITE(6,15)X,Y,Z,XX
+   15 FORMAT(1H ,4X,7H*ERROR*,8X,E14.7,3(7X,D24.17))
+  190 IF(MOD(L,10))200,210,200
+  210 CONTINUE
+C
+   16 FORMAT(1H )
+  200 L=L+1
+      IF(K-200)220,230,220
+  220 K=K+1
+      IF(L-50)130,130,100
+  230 ITEM=2
+      N=N+1
+C
+  240 GO TO (1,2,3,4),ISW
+    1 X=-2.29637E-30
+      ISW=2
+      GO TO 250
+    2 X=0.0
+      ISW=3
+      GO TO 250
+    3 X=2.29637E-30
+      ISW=4
+  250 Y=DBLE(X)
+      Z=X
+      XX=DABS(Z-Y)
+      IF(Y)260,270,260
+  260 DF=DIFF*DABS(Z)
+      GO TO 280
+  270 DF=DIFF
+  280 IF(XX-DF)290,300,300
+  290 CONTINUE
+C
+      GO TO 310
+  300 WRITE(6,15)X,Y,Z,XX
+  310 IF(ITEM-2)320,240,320
+    4 ITEM=3
+C
+   17 FORMAT(1H0/19X,3H- (,I3,3H) -// )
+  320 GO TO (21,22,23,24,25,26,27,28,29),IISW
+   21 X=SIN(P-1.0)-SQRT(P**2/4.0)
+      IISW=2
+      GO TO 250
+   22 X=(EXP(P-1.0)*SQRT(4.0*P)-3.0)/100.0
+      IISW=3
+      GO TO 250
+   23 X=(ALOG(P**2-1.0*SQRT(4.0*P)+2.0)+P)/100.0
+      IISW=4
+      GO TO 250
+   24 X=SIN(ALOG(EXP(SIN(P-1.0))))*SQRT(P)+0.5
+      IISW=5
+      GO TO 250
+   25 X=F(P)*ARRAY(1,1)
+      IISW=6
+      GO TO 250
+   26 X=EXP(ALOG(F(P**2)))/100.0-P*0.02
+      IISW=7
+      GO TO 250
+   27 X=F(ARRAY(2,1)*100.0)/100.0
+      IISW=8
+      GO TO 250
+   28 X=E(SIN(SQRT(F(P)+3.0)-F(P)*2.0))*ARRAY(2,2)
+      IISW=9
+      GO TO 250
+   29 CONTINUE
+      STOP
+      END

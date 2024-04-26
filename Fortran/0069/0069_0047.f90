@@ -14,20 +14,20 @@ contains
     type(typ01) :: struct01
     allocate(struct01%w_character00,source=[p_character01])
 
-    allocate(chr_pointer00,source=struct01%w_character01(2)) !
-    allocate(chr_pointer01,source=struct01%w_character01(2)) !
-    allocate(chr_pointer01,source=struct01%w_character00(2)) !
+    allocate(chr_pointer00,source=struct01%w_character01(2))
+    allocate(chr_pointer01,source=struct01%w_character01(2))
+    allocate(chr_pointer01,source=struct01%w_character00(2))
 
-    allocate(chr_pointer00,source=struct01%w_character01(2)//struct01%w_character01(2)) !
-    allocate(chr_pointer02,source=struct01%w_character01(2)//struct01%w_character01(2)) !
-    allocate(chr_pointer02,source=struct01%w_character01(2)//struct01%w_character00(2)) !
+    allocate(chr_pointer00,source=struct01%w_character01(2)//struct01%w_character01(2))
+    allocate(chr_pointer02,source=struct01%w_character01(2)//struct01%w_character01(2))
+    allocate(chr_pointer02,source=struct01%w_character01(2)//struct01%w_character00(2))
 
-    allocate(chr_pointer00,source=struct01%w_character01(2)//struct01%w_character01(2)//struct01%w_character01(2)) !
-    allocate(chr_pointer03,source=struct01%w_character01(2)//struct01%w_character01(2)//struct01%w_character01(2)) !
-    allocate(chr_pointer03,source=struct01%w_character01(2)//struct01%w_character01(2)//struct01%w_character00(2)) !
+    allocate(chr_pointer00,source=struct01%w_character01(2)//struct01%w_character01(2)//struct01%w_character01(2))
+    allocate(chr_pointer03,source=struct01%w_character01(2)//struct01%w_character01(2)//struct01%w_character01(2))
+    allocate(chr_pointer03,source=struct01%w_character01(2)//struct01%w_character01(2)//struct01%w_character00(2))
 
-    allocate(chr_pointer00,source=struct01%w_character01(2)//"1"//struct01%w_character01(2)) !
-    allocate(chr_pointer03,source=struct01%w_character01(2)//"1"//struct01%w_character01(2)) !
-    allocate(chr_pointer03,source=struct01%w_character01(2)//"1"//struct01%w_character00(2)) !
+    allocate(chr_pointer00,source=struct01%w_character01(2)//"1"//struct01%w_character01(2))
+    allocate(chr_pointer03,source=struct01%w_character01(2)//"1"//struct01%w_character01(2))
+    allocate(chr_pointer03,source=struct01%w_character01(2)//"1"//struct01%w_character00(2))
   end subroutine
 end

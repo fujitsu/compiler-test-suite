@@ -1,4 +1,3 @@
-!
 
 integer, parameter :: N=20
 real(kind=16),dimension(1:N) :: a

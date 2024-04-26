@@ -8,7 +8,7 @@
    array_b = 1.0
    do j=1, 4
        do i=1, 6
-         vec = func_hoge(array_a(1:10,:),array_b(2:11,1:10))
+         vec = func_hhhh(array_a(1:10,:),array_b(2:11,1:10))
        enddo
    enddo
 
@@ -20,10 +20,10 @@
   endif
  contains
  
-   pure function func_hoge(array_a,array_b) result(rval)
+   pure function func_hhhh(array_a,array_b) result(rval)
      real,dimension(10,10),intent(in) :: array_a,array_b
      real, dimension(1:100) :: rval
      rval = sum(array_a)
      rval = rval - sum(array_b)
-   end function func_hoge
+   end function func_hhhh
  end

@@ -1,0 +1,35 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  CHARACTER(LEN = 5) :: ch
+END TYPE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+TYPE(t1) :: obj
+obj%ch = 'aaaaa'
+
+ASSOCIATE(aa => obj)
+  CALL sub(obj%ch(2:4))
+END ASSOCIATE
+
+IF(obj%ch(2:4) .EQ. 'xxx') THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+CONTAINS
+
+SUBROUTINE sub(dd1)
+IMPLICIT NONE
+CHARACTER(LEN = 3) :: dd1
+dd1 = 'xxx'
+END SUBROUTINE
+
+END PROGRAM

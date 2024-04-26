@@ -12,6 +12,4 @@ if(k(1).eq.m(1).and.k(1).eq.4)then
 else
  print*,"FAIL"
 end if
-!print*,k
 end
-

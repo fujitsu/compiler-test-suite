@@ -1,0 +1,29 @@
+PROGRAM main
+IMPLICIT NONE
+
+INTEGER :: num = 20
+
+ASSOCIATE(aa => num) 
+  DO WHILE(aa .GT. 0)
+    aa = aa - 2
+  END DO
+  CALL sub(aa)
+  DO aa = 1,5
+    IF(aa .EQ. 3) EXIT
+  END DO
+END ASSOCIATE
+
+IF(num .EQ. 3) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+CONTAINS
+
+SUBROUTINE sub(n)
+INTEGER :: n
+n = 1
+END SUBROUTINE
+
+END PROGRAM

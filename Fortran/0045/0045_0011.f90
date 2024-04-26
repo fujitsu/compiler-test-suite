@@ -1,4 +1,3 @@
-! Array constructor as arguments
         module m
  real:: rslt1(2)  =HYPOT((/5.4, 3.5/),(/2.0,5.0/))
 contains

@@ -1,4 +1,3 @@
-c 
 
       program main
       integer, parameter :: N = 10

@@ -1,4 +1,4 @@
-PROGRAM dse
+PROGRAM main
 type ty
 complex::act(2) = (6.43,3.23)
 end type ty

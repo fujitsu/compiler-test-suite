@@ -1,0 +1,13 @@
+ **  TEST 1 **
+ T T T T T F T T T T
+ T T T T T T T T T T
+ T T T T T F T T T T
+ T T T T T T T T T T
+  
+ **  TEST 2 **
+ T T T T T F T T T T
+ T T T T T T T T T T
+ T T T T T F T T T T
+ T
+  
+exit 0

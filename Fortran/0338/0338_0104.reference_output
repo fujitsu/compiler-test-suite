@@ -1,0 +1,10 @@
+ #### START ####
+ *** LABEL 1,5 ***
+ *** LABEL 2,x ***
+ *** LABEL 3,6 ***
+ *** LABEL 4,x ***
+ *** LABEL 1,5 ***
+ *** LABEL 3,6 ***
+ *** LABEL x,7 ***
+ ####  END  ####
+exit 0

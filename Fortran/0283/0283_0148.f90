@@ -1,0 +1,40 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE ty
+INTEGER :: num
+CONTAINS
+PROCEDURE,PASS(a) :: sub
+END TYPE
+
+CONTAINS
+
+SUBROUTINE sub(a,b)
+CLASS(ty),INTENT(IN) :: a
+INTEGER :: b
+b = b + a%num
+END SUBROUTINE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+INTEGER :: n = 4
+TYPE(ty) :: obj
+TYPE(ty),ALLOCATABLE :: acc
+
+ASSOCIATE(bb => obj)
+  bb%num = 10
+  CALL bb%sub(n)
+  ALLOCATE(acc , SOURCE = bb)
+END ASSOCIATE
+
+IF(acc%num .EQ. 10) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+END PROGRAM

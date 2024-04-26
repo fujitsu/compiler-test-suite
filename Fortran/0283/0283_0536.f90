@@ -1,0 +1,36 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  INTEGER :: r1
+END TYPE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+TYPE(t1),ALLOCATABLE :: obj,obj2
+ALLOCATE(obj)
+
+obj%r1 = 5
+
+ASSOCIATE(aa => 50 , bb => obj)
+  ALLOCATE(obj2 , SOURCE = bb)
+  SELECT CASE(aa)
+  CASE (10)
+  obj2%r1 = 0
+  CASE (50)
+  obj2%r1 = obj2%r1 + 5
+  END SELECT
+  DEALLOCATE(obj2)
+END ASSOCIATE
+
+IF(ALLOCATED(obj2)) THEN
+  PRINT*,101
+ELSE
+  PRINT*,'pass'
+END IF
+
+END PROGRAM

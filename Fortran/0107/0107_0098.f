@@ -18,9 +18,7 @@
       DATA RIGHT_RESULT/-4.0,-3.0,-2.0,-1.0,0.0,1.0,2.0,3.0,4.0,5.0/   
       LOGICAL NO_GOOD/.FALSE./                                         
                                                                        
-**  TESTING STATEMENT  **                                              
       A=A                                                              
-**  - - - - - - - - -  **                                              
                                                                        
       DO I=1,10                                                        
          IF (A(I) .NE. RIGHT_RESULT(I)) NO_GOOD = .TRUE.               

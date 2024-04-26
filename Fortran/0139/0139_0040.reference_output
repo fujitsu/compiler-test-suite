@@ -1,0 +1,30 @@
+ abcd---abcd
+ R -> R
+ abcd---abcd
+ R -> R
+ abcd---abcd
+ R -> R
+ bcde---bcde
+ R -> R
+ bcde---bcde
+ R -> R
+ bcde---bcde
+ R -> R
+ cdef---cdef
+ R -> R
+ cdef---cdef
+ R -> R
+ cdef---cdef
+ R -> R
+ dkil---dkil
+ R -> R
+ dkil---dkil
+ R -> R
+ dkil---dkil
+ R -> R
+ 4 3 -- 4 3
+ Shape OK 
+ Shape OK 
+ 4 -- 4
+ KIND OK 
+exit 0

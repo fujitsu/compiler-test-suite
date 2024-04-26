@@ -1,5 +1,3 @@
-! Specification Example
-! Keyword Used
 program pro
 implicit none
 real,parameter ::x1= 3.0

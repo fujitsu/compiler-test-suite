@@ -11,7 +11,6 @@ end function
 subroutine s1
 integer::a6( f(ieee_support_datatype( 1.0) ))
 if( size(a6)/=1) print *,106,size(a6)
-!print *,f(ieee_support_datatype( 1.0) )
 end subroutine
 end
 use m1

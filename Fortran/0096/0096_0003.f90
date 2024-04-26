@@ -1,4 +1,3 @@
-! Array Element passed as argument
 program pro
  real,parameter :: x1(2)=(/3.0,5.0/)
  real:: rslt1  =LOG_GAMMA(x1(1))

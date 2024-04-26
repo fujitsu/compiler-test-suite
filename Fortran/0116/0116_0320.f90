@@ -24,8 +24,6 @@ integer,parameter :: ans=10
 
   i1 = 1
   i2 = 1
-!  i3 = 1
-!  i4 = 1
   do i1=1,n
     strRoot(i1)%innerNode(i2)%leaf(:) = 1
   enddo

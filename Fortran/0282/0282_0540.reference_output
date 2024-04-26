@@ -1,0 +1,5 @@
+ AB  CDEF            --AB  CDEF
+ string->string OK
+ KIND:: 1 --KIND:: 1
+ KIND OK
+exit 0

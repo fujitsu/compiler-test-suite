@@ -24,4 +24,3 @@ subroutine ref
  use m1        
  write(1,*) value 
 end 
-

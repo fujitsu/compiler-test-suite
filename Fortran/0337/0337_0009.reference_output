@@ -1,0 +1,19 @@
+0
+
+          - JUSTICE -     - ITEM -      - COMPUTED RESULT -          - COMPARE VALUE -        - DIFFERENCE -
+0            *OK*          (  1 )                   8                         8
+0            *OK*          (  2 )                   8                         8
+0            *OK*          (  3 )                   8                         8
+0            *OK*          (  4 )                   8                         8
+0            *OK*          (  5 )                   8                         8
+0            *OK*          (  6 )                   8                         8
+0            *OK*          (  7 )                  16                        16
+0            *OK*          (  8 )                   4                         4
+0            *OK*          (  9 )                  12                        12
+0            *OK*          ( 10 )                   6                         6
+0            *OK*          ( 11 )                   9                         9
+0            *OK*          ( 11 )                   5                         5
+0            *OK*          ( 12 )                   6                         6
+0            *OK*          ( 13 )                   9                         9
+0            *OK*          ( 14 )                  14                        14
+exit 0

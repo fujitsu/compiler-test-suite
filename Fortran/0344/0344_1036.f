@@ -1,0 +1,12 @@
+      PROGRAM MAIN
+      INTEGER*8 A,B(100),C(100)
+      DATA B/100*237654/,C/100*512397/,A/0/
+C
+      DO 10 I=1,100,10
+         A = IOR(B(I),C(I))
+   10 CONTINUE
+C
+      WRITE(6,100) A
+  100 FORMAT(1H ,I9)
+      STOP
+      END

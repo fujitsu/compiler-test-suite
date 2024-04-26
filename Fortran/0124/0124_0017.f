@@ -1,4 +1,3 @@
-c 
 
       module sub_mod
       integer, parameter :: N=5
@@ -26,7 +25,6 @@ c
       use sub_mod
       integer d1,d2
       integer a1(N),a2(N)
-c     integer a3(N,N), a4(N,N)
       integer sum_cmplx
       integer res
       integer,parameter::ANS=685
@@ -37,15 +35,11 @@ c     integer a3(N,N), a4(N,N)
       d2 = cos(0.0) + cos(0.0)
       a1 = (/(MOD(i,3)+1,i=1,N)/)
       a2 = (/(MOD(i,2)+1,i=1,N)/)
-c     a3 = reshape((/(MOD(i,3)+1,i=1,N*N)/),(/N,N/))
-c     a4 = reshape((/(MOD(i,2)+1,i=1,N*N)/),(/N,N/))
 
-c
       a0_8  = a0_8  + 1.0
       a0_16 = a0_16 - 1.0
       a0_32 = a0_32 + 1.0
 
-c
       a1_8(5)  = a1_8(5)  - 1.0
       a1_16(5) = a1_16(5) + 1.0
       a1_32(5) = a1_32(5) - 1.0
@@ -86,7 +80,6 @@ c
          a1_32(maxval(a2)) = a1_32(maxval(a2)) + 1.0
       enddo
 
-c
       a2_8(5,3)  = a2_8(5,3)  - 1.0
       a2_16(4,2) = a2_16(4,2) + 1.0
       a2_32(3,1) = a2_32(3,1) - 1.0
@@ -135,7 +128,6 @@ c
          enddo
       enddo
 
-c
       a3_16(d1,d1+d2,d2) = a3_16(d1,d1+d2,d2) + 1.0
       do i=1,N
          do j=1,N
@@ -145,7 +137,6 @@ c
          enddo
       enddo
 
-c
       a4_8(d1,d1+d2,d2,d1*d2) = a4_8(d1,d1+d2,d2,d1*d2) + 1.0
       do i=1,N
          do j=1,N

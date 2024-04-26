@@ -1,0 +1,9 @@
+      CHARACTER*14 A(10)/10*'ABCDEFGHIJKLMN'/
+      CHARACTER*4 B
+      DO 10 I=1,10
+        B=A(I)(1:4)
+ 10   CONTINUE
+      WRITE(6,1000) B
+ 1000 FORMAT(1X,A4)
+      STOP
+      END

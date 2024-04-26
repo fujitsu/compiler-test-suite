@@ -1,0 +1,8 @@
+  cpu-time(msec)             total      inlined time      do over-head    call over-head      pure execute      over-head  %
+      move                   0.000             0.000             0.000             0.000             0.000              0.00
+      add                    0.000             0.000             0.000             0.000             0.000              0.00
+      sub                    0.000             0.000             0.000             0.000             0.000              0.00
+      mult                   0.000             0.000             0.000             0.000             0.000              0.00
+      div                    0.000             0.000             0.000             0.000             0.000              0.00
+ *** ok ***
+exit 0

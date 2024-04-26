@@ -1,0 +1,3 @@
+__STDC_VERSION__ test program
+__STDC_VERSION__ is defined. value = 199901L
+exit 0

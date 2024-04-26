@@ -1,0 +1,39 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  REAL :: r1
+END TYPE
+
+TYPE,EXTENDS(t1) :: t2
+  REAL :: r2
+END TYPE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+CLASS(t1),ALLOCATABLE :: acc
+ALLOCATE(acc)
+acc%r1 = 0.0
+ASSOCIATE(aa => acc)
+SELECT TYPE(aa)
+  TYPE IS(t2)
+    aa%r1 = aa%r1 - 10.0
+  TYPE IS(t1)
+    aa%r1 = aa%r1 + 10.0
+END SELECT
+DO WHILE(aa%r1 > 0.0)
+  aa%r1 = aa%r1 - 2.0
+END DO
+END ASSOCIATE
+
+IF(acc%r1 .EQ. 0.0) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+END PROGRAM

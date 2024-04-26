@@ -1,0 +1,108 @@
+      DOUBLE PRECISION X,DARRAY(2,2),P,DI
+      K=-200
+      N=0
+      ITEM=1
+      P=1.0D0
+      IISW=1
+      ISW=1
+      DARRAY(1,1)=-0.5D0
+      DARRAY(2,1)=0.01D0
+      DARRAY(1,2)=-0.01D0
+      DARRAY(2,2)=0.5D0
+      DIFF=1.0E-5
+C
+  100 N=N+1
+      IF(N-1)110,120,110
+  110 CONTINUE
+C
+   12 FORMAT(1H1 / )
+  120 CONTINUE
+      L=0
+  130 DI=K
+      X=DI/100.0D0
+      Y=SNGL(X)
+      Z=X
+      IF(MOD(L,10))140,150,140
+  150 CONTINUE
+C
+   14 FORMAT(1H )
+  140 XX=ABS(Z-Y)
+      IF(Y)160,170,160
+  160 DF=DIFF*ABS(Z)
+      GO TO 180
+  170 DF=DIFF
+  180 IF(XX-DF)190,200,200
+  190 CONTINUE
+C
+   15 FORMAT(1H ,7X,4H*OK*,17X,D24.17,3(10X,E14.7))
+      GO TO 210
+  200 WRITE(6,16)X,Y,Z,XX
+   16 FORMAT(1H ,7X,7H*ERROR*,14X,D24.17,3(10X,E14.7))
+  210 L=L+1
+      IF(K-200)220,230,230
+  220 K=K+1
+      IF(L-50)130,100,100
+  230 ITEM=2
+      N=N+1
+C
+C
+      L=0
+  240 GO TO (1,2,3,4),ISW
+    1 X=-2.29637D-30
+      ISW=2
+      GO TO 250
+    2 X=0.0D0
+      ISW=3
+      GO TO 250
+    3 X=2.29637D-30
+      ISW=4
+  250 Y=SNGL(X)
+      Z=X
+      IF(L)260,270,260
+C
+  270 CONTINUE
+C
+  260 XX=ABS(Z-Y)
+      IF(Y)280,290,280
+  280 DF=DIFF*ABS(Z)
+      GO TO 300
+  290 DF=DIFF
+  300 IF(XX-DF)310,320,320
+  310 CONTINUE
+C
+      GO TO 330
+  320 WRITE(6,16)X,Y,Z,XX
+  330 L=L+1
+      IF(ITEM-2)340,240,340
+    4 ITEM=3
+C
+   17 FORMAT(1H0/19X,3H- (,I3,3H) -/ )
+      L=0
+  340 GO TO (21,22,23,24,25,26,27,28,29),IISW
+   21 X=DARRAY(1,1)
+      IISW=2
+      GO TO 250
+   22 X=DARRAY(1,2)
+      IISW=3
+      GO TO 250
+   23 X=DARRAY(2,1)
+      IISW=4
+      GO TO 250
+   24 X=DARRAY(2,2)
+      IISW=5
+      GO TO 250
+   25 X=((P**2-2.0D0)*6.0D0+1.0D0)/(-100.0D0)
+      IISW=6
+      GO TO 250
+   26 X=(P**2+P*0.1D0-P/10.0D0)/(-100.0D0)
+      IISW=7
+      GO TO 250
+   27 X=(DARRAY(1,1)*(-10.0D0)+5.0D0*P)/1000.0D0
+      IISW=8
+      GO TO 250
+   28 X=DARRAY(1,1)**2+(P/10.0D0)*2.0D0+DARRAY(2,2)/10.0D0
+      IISW=9
+      GO TO 250
+   29 CONTINUE
+      STOP
+      END

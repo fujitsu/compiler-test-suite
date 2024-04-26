@@ -1,4 +1,3 @@
-! interface, subroutine used
 program pro
 interface
   subroutine sub
@@ -18,4 +17,3 @@ real*16:: rslt3=LOG_GAMMA(3.0_16)
 
         print *,"pass"
 end subroutine
-

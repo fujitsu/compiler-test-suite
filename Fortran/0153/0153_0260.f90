@@ -1,0 +1,23 @@
+subroutine s1
+INTEGER,DIMENSION(101,102,103)::AA,BB,CC
+BB(101,102,103)=2
+CC(1,2,3)=3
+write(1,*)BB(101,102,103)
+AA(101,102,103)=CC(1,2,3)
+CALL SUB(AA)
+block
+INTEGER,DIMENSION(101,102,103)::A,B,C
+B(101,102,103)=2
+C(1,2,3)=3
+write(1,*)B(101,102,103)
+A(101,102,103)=C(1,2,3)
+CALL SUB(A)
+end block
+END
+call s1
+print *,'pass'
+end
+subroutine sub(A)
+INTEGER,DIMENSION(101,102,103)::A
+if (A(101,102,103)/=3) print *,101
+end

@@ -1,4 +1,3 @@
-! 
 
       complex(kind=4) cvar
       

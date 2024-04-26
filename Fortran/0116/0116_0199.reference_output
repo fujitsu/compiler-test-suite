@@ -1,0 +1,2 @@
+ ok: sum(array) =  10000.
+exit 0

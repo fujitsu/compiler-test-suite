@@ -1,0 +1,26 @@
+PROGRAM main
+IMPLICIT NONE
+
+INTEGER :: xx = 3
+INTEGER,POINTER :: ptr
+
+ASSOCIATE(bb => xx)
+ptr => fun(bb)
+END ASSOCIATE
+
+IF(ptr .EQ. 3) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+CONTAINS
+
+FUNCTION fun(aa)
+INTEGER,POINTER :: fun
+INTEGER :: aa
+ALLOCATE(fun)
+fun = aa
+END FUNCTION
+
+END PROGRAM

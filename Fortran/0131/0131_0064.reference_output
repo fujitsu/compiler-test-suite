@@ -1,0 +1,7 @@
+ ****binary section method ****
+ 1.414213 1.4142135
+ test ===> ok
+ ****    newtons method    ****
+ 1.414213 1.4142135
+ test ===> ok
+exit 0

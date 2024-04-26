@@ -1,0 +1,3 @@
+ u(1,1,1)= 0. u(ix,iy,iz)= 0.
+ ua(1,1,1)= 0. ua(ix,iy,iz)= 0.
+exit 0

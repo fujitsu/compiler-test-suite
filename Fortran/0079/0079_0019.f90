@@ -5,26 +5,20 @@ module m0
  end 
  module subroutine x()
  end 
-! subroutine ss1(i,ii)
-! end 
  end interface
  interface
- module subroutine ss1(ia,ii)!   err
+ module subroutine ss1(ia,ii)
  end 
  end interface
 end
 
 submodule (m0) ss
-! interface
-! module subroutine ss1(i,ii)!   err
-! end 
-! end interface
 contains
  module subroutine s()
    call ss1(1,3)
    call x
  end 
-  module subroutine ss1(ia,ii)!   err
+  module subroutine ss1(ia,ii)
 i=1
    k=k+i
   end
@@ -36,11 +30,6 @@ end
 use m0
 k=1
 call s
-!if (k/=2) print *,101
 call ss1(1,2)
 print *,'pass'
 end
-! subroutine ss1(i,ii)
-! use m0
-!  k=k+i+ii
-! end 

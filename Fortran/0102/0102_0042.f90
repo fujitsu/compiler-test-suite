@@ -1,10 +1,9 @@
 program calling_func
 implicit none
- 
+
  call get_val()
 
 end program calling_func
-
 
 subroutine get_val()
 
@@ -15,4 +14,3 @@ subroutine get_val()
    if(val .neqv. .false.)print*,"100"
    print*,"PASS"
 end subroutine get_val
-

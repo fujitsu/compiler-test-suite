@@ -1,6 +1,3 @@
-! 2D Array, KIND=16
-! Array Element
-!Transformational
 program pro
 implicit none
 integer,parameter :: n1=2

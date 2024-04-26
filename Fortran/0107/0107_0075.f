@@ -9,9 +9,7 @@
       I=2*INT(COS(0.0))                                                
       J=INT(ACOS(0.0))                                                 
                                                                        
-**  TESTING STATEMENT  **                                              
       A(I,1:5)=A(1:9:2,J)                                              
-**  - - - - - - - - -  **                                              
                                                                        
       DO J=1,5                                                         
         DO I=1,10                                                      

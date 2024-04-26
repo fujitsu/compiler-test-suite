@@ -5,7 +5,6 @@ end
 
 module m
   implicit none
-  !!!!integer :: n=10000
   interface
     module subroutine sub(a)
       use m2

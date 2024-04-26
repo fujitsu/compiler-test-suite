@@ -1,0 +1,7 @@
+test for fpclassify(float)
+NAN:       fpclassify(x)==FP_NAN
+INFINITY:  fpclassify(x)==FP_INFINITE
+ZERO:      fpclassify(x)==FP_ZERO
+SUBNORMAL: fpclassify(x)==FP_SUBNORMAL
+NORMAL:    fpclassify(x)==FP_NORMAL
+exit 0

@@ -18,7 +18,6 @@ integer,target,save ::t2=20
 integer::k
 
 data ptr, ptr3,  obj2%ptr2, ptr6,k, obj2%ptr4,obj2%x, ptr7 /NULL(),t2, t1, t1,4, t1,23,t1/
-!data ptr, ptr3, ptr6,k, ptr7 /NULL(),t2, t1,4,t1/
 
 if(k.ne.4)print*,"101"
 if(associated(ptr).neqv..false.)print*,"102"

@@ -1,0 +1,20 @@
+
+  ## TEST 1 ## 
+ T T F F F F F F F F
+
+  ## TEST 2 ## 
+ T F T F F F F F F F
+
+  ## TEST 3 ## 
+ T T T T T T T T T T
+
+  ## TEST 4 ## 
+ T T T T T T T T T T
+
+  ## TEST 5 ## 
+ F F F F F F F T T T
+
+  ## TEST 6 ## 
+ T T F F F F F F F F
+
+exit 0

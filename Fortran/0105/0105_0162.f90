@@ -9,4 +9,3 @@ Z = MATMUL(A, X) - MATMUL(B, Y)
 if (any(abs(Z-(/-46.3,-48.0/))>0.001_8))print *,'error'
 print *,'pass'
 end
-

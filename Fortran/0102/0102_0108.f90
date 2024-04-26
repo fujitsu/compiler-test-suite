@@ -9,7 +9,5 @@ if(any(k.ne.[2,1,1]))then
  print*,"PASS"
 else
  print*,"FAIL"
-!print*,k
 end if
 end
-

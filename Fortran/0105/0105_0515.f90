@@ -24,4 +24,3 @@ complex(8)::a1(:,:),a2(:,:),r(2,2)
 r=MATMUL(a1,a2)
 end function
 END
-

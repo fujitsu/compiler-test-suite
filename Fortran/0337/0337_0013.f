@@ -1,0 +1,247 @@
+  102 FORMAT(1H0,12X,7H*ERROR*,7X,2H( ,I2,2H ),14X,E14.7)
+  103 FORMAT(1H0,12X,4H*OK*,10X,2H( ,I2,2H ),14X,E14.7)
+      A1  =1.0
+      A2  =2.0
+      A3  =3.5
+      A4  =4.0
+      A5  =5.5
+      A6  =6.6
+      A7  =7.0
+      A8  =8.0
+      B1  =-0.1
+      B2  =-2.2
+      B3  =-3.5
+      B4  =-4.0
+      B5  =0.0
+C
+      ITM =01
+      ANS =2.3+16.4
+      IF(2.3+16.4)1,1,2
+    2 WRITE(6,103)ITM
+      GO TO 500
+    1 WRITE(6,102)ITM,ANS
+C
+C
+  500 ITM =ITM+1
+      ANS =8.8-8.79
+      IF(8.8-8.79)3,3,4
+    3 WRITE(6,102)ITM,ANS
+      GO TO 501
+    4 WRITE(6,103)ITM
+C
+C
+  501 ITM =ITM+1
+      ANS =5.7*8.5
+      IF(5.7*8.5)5,5,6
+    5 WRITE(6,102)ITM,ANS
+      GO TO 502
+    6 WRITE(6,103)ITM
+C
+C
+  502 ITM =ITM+1
+      ANS =24.6/16.0E 30
+      IF(24.6/16.0E 30)7,7,8
+    7 WRITE(6,102)ITM,ANS
+      GO TO 503
+    8 WRITE(6,103)ITM
+C
+C
+  503 ITM =ITM+1
+      ANS =7.8**9.9
+      IF(7.8**9.9)9,9,10
+    9 WRITE(6,102)ITM,ANS
+      GO TO 504
+   10 WRITE(6,103)ITM
+C
+C
+  504 ITM =ITM+1
+      ANS =-20.7+20.6999
+      IF(-20.7+20.6999)12,11,11
+   11 WRITE(6,102)ITM,ANS
+      GO TO 505
+   12 WRITE(6,103)ITM
+C
+C
+  505 ITM =ITM+1
+      ANS =2.0-202.2
+      IF(2.0-202.2)14,13,13
+   13 WRITE(6,102)ITM,ANS
+      GO TO 506
+   14 WRITE(6,103)ITM
+C
+C
+  506 ITM =ITM+1
+      ANS =165.2*(-213.2)
+      IF(165.2*(-213.2))16,15,15
+   15 WRITE(6,102)ITM,ANS
+      GO TO 507
+   16 WRITE(6,103)ITM
+C
+C
+  507 ITM =ITM+1
+      ANS =-0.1/5.0E 4
+      IF(-0.1/5.0E 4)18,17,17
+   17 WRITE(6,102)ITM,ANS
+      GO TO 508
+   18 WRITE(6,103)ITM
+C
+C
+  508 ITM =ITM+1
+      ANS =-3.4**3
+      IF(-3.4**3)20,19,19
+   19 WRITE(6,102)ITM,ANS
+      GO TO 509
+   20 WRITE(6,103)ITM
+C
+C
+  509 ITM =ITM+1
+      ANS =-5.0+5.0
+      IF(-5.0+5.0)21,22,21
+   21 WRITE(6,102)ITM,ANS
+      GO TO 510
+   22 WRITE(6,103)ITM
+C
+C
+  510 ITM =ITM+1
+      ANS =24.3-24.3
+      IF(24.3-24.3)23,24,23
+   23 WRITE(6,102)ITM,ANS
+      GO TO 511
+   24 WRITE(6,103)ITM
+C
+C
+  511 ITM =ITM+1
+      ANS =0.0*267.7
+      IF(0.0*267.7)25,26,25
+   25 WRITE(6,102)ITM,ANS
+      GO TO 512
+   26 WRITE(6,103)ITM
+C
+C
+  512 ITM =ITM+1
+      ANS =0.0/24.5E 04
+      IF(0.0/24.5E 04)27,28,27
+   27 WRITE(6,102)ITM,ANS
+      GO TO 513
+   28 WRITE(6,103)ITM
+C
+C
+  513 ITM =ITM+1
+      ANS =A1+A2
+      IF(A1+A2)29,29,30
+   29 WRITE(6,102)ITM,ANS
+      GO TO 514
+   30 WRITE(6,103)ITM
+C
+C
+  514 ITM =ITM+1
+      ANS =A3-A1
+      IF(A3-A1)31,31,32
+   31 WRITE(6,102)ITM,ANS
+      GO TO 515
+   32 WRITE(6,103)ITM
+C
+C
+  515 ITM =ITM+1
+      ANS =A4*A5
+      IF(A4*A5)33,33,34
+   33 WRITE(6,102)ITM,ANS
+      GO TO 516
+   34 WRITE(6,103)ITM
+C
+C
+  516 ITM =ITM+1
+      ANS =A7/A4
+      IF(A7/A4)35,35,36
+   35 WRITE(6,102)ITM,ANS
+      GO TO 517
+   36 WRITE(6,103)ITM
+C
+C
+  517 ITM =ITM+1
+      ANS =A7**A2
+      IF(A7**A2)37,37,38
+   37 WRITE(6,102)ITM,ANS
+      GO TO 518
+   38 WRITE(6,103)ITM
+C
+C
+  518 ITM =ITM+1
+      ANS =B1+B2
+      IF(B1+B2)40,39,39
+   39 WRITE(6,102)ITM,ANS
+      GO TO 519
+   40 WRITE(6,103)ITM
+C
+C
+  519 ITM =ITM+1
+      ANS =B3-A5
+      IF(B3-A5)42,41,41
+   41 WRITE(6,102)ITM,ANS
+      GO TO 520
+   42 WRITE(6,103)ITM
+C
+C
+  520 ITM =ITM+1
+      ANS =B2*A4
+      IF(B2*A4)44,43,43
+   43 WRITE(6,102)ITM,ANS
+      GO TO 521
+   44 WRITE(6,103)ITM
+C
+C
+  521 ITM =ITM+1
+      ANS =A7/B2
+      IF(A7/B2)46,45,45
+   45 WRITE(6,102)ITM,ANS
+      GO TO 522
+   46 WRITE(6,103)ITM
+C
+C
+  522 ITM =ITM+1
+      ANS =A3**A7
+      IF(A3**A7)47,47,48
+   47 WRITE(6,102)ITM,ANS
+      GO TO 523
+   48 WRITE(6,103)ITM
+C
+C
+  523 ITM =ITM+1
+      ANS =A4+B4
+      IF(A4+B4)49,50,49
+   49 WRITE(6,102)ITM,ANS
+      GO TO 524
+   50 WRITE(6,103)ITM
+C
+C
+  524 ITM =ITM+1
+      ANS =B5-B5
+      IF(B5-B5)51,52,51
+   51 WRITE(6,102)ITM,ANS
+      GO TO 525
+   52 WRITE(6,103)ITM
+C
+C
+  525 ITM =ITM+1
+      ANS =B4*B5
+      IF(B4*B5)53,54,53
+   53 WRITE(6,102)ITM,ANS
+      GO TO 526
+   54 WRITE(6,103)ITM
+C
+C
+  526 ITM =ITM+1
+      ANS =B5/A6
+      IF(B5/A6)55,56,55
+   55 WRITE(6,102)ITM,ANS
+      GO TO 527
+   56 WRITE(6,103)ITM
+C
+C
+  527 ITM =ITM+1
+      IF(3.5+0.1)57,57,57
+   57 IF(A3-A8)58,58,58
+   58 IF(A4*B5)59,59,59
+   59 WRITE(6,103)ITM
+      STOP
+      END

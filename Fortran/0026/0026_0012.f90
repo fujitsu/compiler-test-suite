@@ -9,13 +9,9 @@ write(1,*)bessel_jn( 1_8,    -0.0_8)
 write(1,*)bessel_jn( 1_8 ,1_8 ,-0.0_8)
 
 write(1,*)bessel_yn( 0_8,    1.0_8)
-!write(1,*)bessel_yn( 1_8,    0.0_8)
 write(1,*)bessel_yn( 0_8 ,0_8 ,1.0_8)
 write(1,*)bessel_yn( 1_8 ,0_8 ,1.0_8)
 write(1,*)bessel_yn( 0_8 ,1_8 ,1.0_8)
-!write(1,*)bessel_yn( 1_8 ,1_8 ,0.0_8)
-!write(1,*)bessel_yn( 1_8,    -0.0_8)
-!write(1,*)bessel_yn( 1_8 ,1_8 ,-0.0_8)
 end
 call s1
 call chk

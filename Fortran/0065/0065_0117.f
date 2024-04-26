@@ -10,7 +10,7 @@
         print *,"*** end   ***"
 
       end
-    
+
       subroutine sub(a,b,maxab,minab,n) 
         integer a(n),b(n),maxab(n),minab(n)
         integer x(n),y(n),z(n)
@@ -24,7 +24,7 @@
         y=max(a,b)
         call chk( 3,x,minab,n) 
         call chk( 4,y,maxab,n) 
-        
+
         x=max(a,b)
         y=min(a,b)
         z=max(a,b) 

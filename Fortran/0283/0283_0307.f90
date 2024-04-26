@@ -1,0 +1,25 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  INTEGER,DIMENSION(1:5,1:5,1:5,1:5) :: arr2
+END TYPE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+TYPE(t1) :: obj
+obj%arr2 = 3
+
+ASSOCIATE(aa => (/12,11,17,9,0/) + obj%arr2(3,3,3,3))
+  IF(aa(3) .EQ. 20) THEN
+    PRINT*,'pass'
+  ELSE
+    PRINT*,101
+  END IF
+END ASSOCIATE
+
+END PROGRAM

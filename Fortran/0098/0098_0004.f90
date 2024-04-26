@@ -8,7 +8,6 @@ contains
 end type
 end
 
-!program pro
 use m1
 integer :: x = 1
 type ty3

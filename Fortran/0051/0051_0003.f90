@@ -5,13 +5,10 @@
  real ,pointer :: ip,ipa(:)
  data  ip /obj%it%re/
 data  ipa /obj%ita(1:10:1)%re/
-!ip=>obj%it%re
-!ipa=>obj%ita%re
-       
+
          ipa=1
          if (any(ipa/=1)) print *,201
          ip=1
         if (   (ip/=1)) print *,211
         print *,'pass'
         end
-

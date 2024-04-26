@@ -1,0 +1,30 @@
+ abc --abc 
+ UTF -> UTF
+ def --def 
+ UTF -> UTF
+ ghi --ghi 
+ UTF -> UTF
+ jkl --jkl 
+ UTF -> UTF
+ lmn --lmn 
+ UTF -> UTF
+ nop --nop 
+ UTF -> UTF
+ pqr --pqr 
+ UTF -> UTF
+ rst --rst 
+ UTF -> UTF
+ uvw --uvw 
+ UTF -> UTF
+ abc --abc 
+ UTF -> UTF
+ def --def 
+ UTF -> UTF
+ abc --abc 
+ UTF -> UTF
+ 3 4 -- 3 4
+ SHAPE OK 
+ SHAPE OK 
+ 4 -- 4
+ KIND OK 
+exit 0

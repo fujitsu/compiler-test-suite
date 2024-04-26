@@ -1,0 +1,4 @@
+!$OMP PARALLEL
+!$OMP END PARALLEL
+print *,"PASS"
+end

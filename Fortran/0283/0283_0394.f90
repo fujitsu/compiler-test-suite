@@ -1,0 +1,19 @@
+PROGRAM main
+IMPLICIT NONE
+
+INTEGER(KIND = 2) :: num
+num = 225
+
+ASSOCIATE(aa => num)
+  DO WHILE(aa .GT. 0)
+    aa = aa - 5
+  END DO
+END ASSOCIATE
+
+IF(num .EQ. 0) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+END PROGRAM

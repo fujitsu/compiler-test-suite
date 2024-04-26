@@ -1,4 +1,3 @@
-! 
 
       real(kind=4),dimension(1:10) :: r4
       real(kind=8),dimension(1:10) :: r8

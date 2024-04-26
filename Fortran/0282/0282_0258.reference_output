@@ -1,0 +1,7 @@
+ 5 -- 5
+ integer->integer OK
+ 6 -- 6
+ integer->integer OK
+ KIND:: 4 --KIND:: 4
+ KIND OK
+exit 0

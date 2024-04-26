@@ -1,0 +1,13 @@
+ *** case# 11  ok ***   1 1
+ *** case# 12  ok ***   5 5
+ *** case# 13  ok ***   25 25
+ *** case# 14  ok ***   5 5
+ *** case# 15  ok ***   1 1
+ *** case# 16  ok ***   25 25
+ *** case# 21  ok ***   5 5
+ *** case# 22  ok ***   25 25
+ *** case# 23  ok ***   125 125
+ *** case# 24  ok ***   25 25
+ *** case# 25  ok ***   5 5
+ *** case# 26  ok ***   125 125
+exit 0

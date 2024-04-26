@@ -1,0 +1,84 @@
+      DOUBLE PRECISION X,Y,Z,P,PAI2,DIFF,DI
+      P=1.0D0
+      N=0
+      K=-629
+      ISW=1
+      PAI2=1.570796326794897D0
+      ITEM=1
+      DIFF=1.0D-14
+  100 N=N+1
+      IF(N-1)110,120,110
+  110 CONTINUE
+C
+   12 FORMAT(1H1/)
+  120 CONTINUE
+      L=0
+  130 K=K+1
+      DI=K
+      X=DI/100.0D0
+      Y=DCOS(X)
+      Z=DSIN(X+PAI2)
+      CALL DPRTN(L,DIFF,X,Y,Z)
+      L=L+1
+      IF(K-628)140,150,150
+  140 IF(L-50)130,100,100
+  150 N=N+1
+      ITEM=2
+C
+C
+      L=0
+      X=(-PAI2)/2.0D0
+      DO 160 I=1,6
+      Y=DCOS(X)
+      Z=DSIN(X+PAI2)
+      CALL DPRTN(L,DIFF,X,Y,Z)
+      L=L+1
+      X=X+PAI2/2.0D0
+  160 CONTINUE
+      N=N+1
+      ITEM=3
+C
+   14 FORMAT(1H /)
+C
+   15 FORMAT(1H ,18X,3H- (,I3,3H) -// )
+      L=0
+  170 GO TO (1,2,3,4,5),ISW
+    1 X=DSIN(P-1.0D0)-DSQRT(P**2/4.0D0)
+      ISW=2
+      GO TO 180
+    2 X=(DEXP(P-1.0D0)*DSQRT(4.0D0*P)-3.0D0)/100.0D0
+      ISW=3
+      GO TO 180
+    3 X=(DLOG(P**2-1.0D0*DSQRT(4.0D0*P)+2.0D0)+P)/100.0D0
+      ISW=4
+      GO TO 180
+    4 X=DSIN(DLOG(DEXP(DSIN(P-1.0D0))))*DSQRT(P)+0.5D0
+      ISW=5
+  180 Y=DCOS(X)
+      Z=DSIN(X+PAI2)
+      CALL DPRTN(L,DIFF,X,Y,Z)
+      L=L+1
+      GO TO 170
+    5 CONTINUE
+      STOP
+      END
+C
+      SUBROUTINE    DPRTN (L,D,A,R,V)
+      DOUBLE PRECISION A,R,V,DIFF,D
+      DIFF = V - R
+   80 IF(DABS(DIFF)-D) 100,120,120
+  100 CONTINUE
+C
+    1 FORMAT(1H ,5X,8H*OK*    ,4(5X,D24.17) )
+      GO TO 130
+  120 WRITE (6,2) A,R,V,DIFF
+    2 FORMAT(1H ,5X,8H*ERROR* ,4(5X,D24.17) )
+  130 IF (L- 9) 200,190,140
+  140 IF (L-19) 200,190,150
+  150 IF (L-29) 200,190,160
+  160 IF (L-39) 200,190,200
+  190 CONTINUE
+C
+    3 FORMAT (1H )
+  200 RETURN
+      END

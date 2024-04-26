@@ -1,0 +1,10 @@
+test for isunordered(long double, long double)
+LDBL_MIN, 1.0L:     ordered
+NAN,      1.0L:     unordered
+LDBL_MIN, NAN:      unordered
+NAN,      NAN:      unordered
+0.0L,     INFINITY: ordered
+INFINITY, LDBL_MAX: ordered
+NAN,      INFINITY: unordered
+INFINITY, NAN:      unordered
+exit 0

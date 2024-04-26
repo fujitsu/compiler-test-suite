@@ -1,4 +1,3 @@
-!
 
 integer, volatile :: k
 integer, parameter :: N=20

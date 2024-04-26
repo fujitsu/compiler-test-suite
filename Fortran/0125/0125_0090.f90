@@ -149,7 +149,6 @@ result08 = int(sum(a08))
 result09 = int(sum(a09))
 result10 = int(sum(a10))
 
-
 if (result01 .ne. ians01) then
   print *,"ng:sub01", " result =", result01,"master =", ians01
   ng_flg = 1

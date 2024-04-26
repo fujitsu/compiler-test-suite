@@ -1,0 +1,7 @@
+test for isnormal(double)
+NAN:       not isnormal(x)
+INFINITY:  not isnormal(x)
+ZERO:      not isnormal(x)
+SUBNORMAL: not isnormal(x)
+NORMAL:    isnormal(x)
+exit 0

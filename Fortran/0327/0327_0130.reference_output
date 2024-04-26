@@ -1,0 +1,8 @@
+ sub:
+ a=
+ b=
+ a+b= 7
+ a=
+ b=
+ ng
+exit 0

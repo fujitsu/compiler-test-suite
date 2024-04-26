@@ -1,0 +1,51 @@
+  ichar= 97
+  ichar= 98
+  ichar= 99
+  ichar= 100
+  ichar= 101
+  ichar= 102
+  ichar= 103
+  ichar= 104
+  ichar= 105
+  ichar= 106
+  ichar= 107
+  ichar= 108
+  ichar= 109
+  ichar= 110
+  ichar= 111
+  ichar= 112
+  ichar= 113
+  ichar= 114
+  ichar= 115
+  ichar= 116
+ 10 2
+ 10 0
+ 10 0
+ 10 3
+ 10 0
+ 10 0
+ 10 0
+ 10 1
+ 10 0
+ 10 0
+ 10 4
+ 10 0
+ 10 0
+ 10 0
+ 10 0
+ 10 0
+ 10 0
+ 10 0
+ 10 7
+ 10 0
+ F
+ T
+ F
+ F
+ T
+ T
+ F
+ T
+ F
+ T
+exit 0

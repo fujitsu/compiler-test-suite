@@ -1,0 +1,5 @@
+ within subroutine
+ 10
+ call of dest 10
+ after block
+exit 0

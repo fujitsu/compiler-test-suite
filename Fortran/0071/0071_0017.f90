@@ -17,7 +17,7 @@ entry kmr_fixfun() result(zz)
   integer(c_int) function foo() result(zz)
     type(c_ptr) :: fp
 
-    fp = kmr_fixfun()!
+    fp = kmr_fixfun()
 if (c_associated(fp) ) print *,301
 
     zz = 0
@@ -28,4 +28,3 @@ use xxxf
 if (foo()/=0) print *,'202'
 print *,'pass'
 end
-

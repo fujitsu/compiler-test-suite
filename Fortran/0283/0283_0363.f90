@@ -1,0 +1,45 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  INTEGER :: r1
+END TYPE
+
+TYPE t2
+  TYPE(t1) :: tt_1(3,3) 
+END TYPE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+INTEGER :: res
+INTEGER,PARAMETER :: num = 10
+TYPE(t2),ALLOCATABLE :: obj
+ALLOCATE(obj)
+obj%tt_1%r1 = 4
+
+res = fun(num)
+
+IF(res .EQ. 1) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+CONTAINS
+
+INTEGER FUNCTION fun(dd1)
+IMPLICIT NONE
+INTEGER :: dd1
+ASSOCIATE(aa => obj%tt_1(1,1)%r1 * 3 * dd1)
+  SELECT CASE(aa)
+    CASE(120)
+    fun = 1
+  END SELECT
+END ASSOCIATE
+END FUNCTION
+
+END PROGRAM

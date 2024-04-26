@@ -1,0 +1,40 @@
+COMPLEX(2) :: CMP(2)
+
+REAL(2) :: R2(2) = 1.0
+REAL(4) :: R4(2) = 2.0
+REAL(8) :: R8(2) = 3.0
+
+INTEGER(1) :: I1(2) = 4
+INTEGER(2) :: I2(2) = 5
+INTEGER(4) :: I4(2) = 6
+INTEGER(8) :: I8(2) = 7
+
+COMPLEX(2) :: C2(2) = (2,3)     
+COMPLEX(4) :: C4(2) = (4,5)     
+COMPLEX(8) :: C8(2) = (1,1)     
+
+CMP(2)=C2(1)-R2(1)
+IF(CMP(2) .NE. (1,3))PRINT*,"101"
+CMP(2)=C2(2)+R4(2)
+IF(CMP(2) .NE. (4,3))PRINT*,"102"
+CMP(1)=R8(1)*C2(1)
+IF(CMP(1) .NE. (6,9))PRINT*,"103"
+
+CMP(1)=I1(1)-C2(2)
+IF(CMP(1) .NE. (2,-3))PRINT*,"104"
+CMP(2)=C2(2)-I2(1)
+IF(CMP(2) .NE. (-3,3))PRINT*,"105"
+CMP(1)=I4(1)+C2(2)
+IF(CMP(1) .NE. (8,3))PRINT*,"106"
+CMP(1)=C2(1)*I8(2)
+IF(CMP(1) .NE. (14,21))PRINT*,"107"
+
+CMP(2)=C2(1)+C2(1)
+IF(CMP(2) .NE. (4,6))PRINT*,"108"
+CMP(2)=C4(1)-C2(2)
+IF(CMP(2) .NE. (2,2))PRINT*,"109"
+CMP(1)=C8(1)*C2(2)
+IF(CMP(1) .NE. (-1,5))PRINT*,"110"
+
+PRINT*,"PASS"
+END

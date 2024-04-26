@@ -5,4 +5,3 @@
  if (f4()/=200.5_8) print *,101
 print *,'PASS'
 end
-

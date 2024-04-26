@@ -1,0 +1,6 @@
+ ********************************************
+      NEXT OUTPUT LAST DATA .EQ. &end ===> OK
+      NEXT OUTPUT LAST DATA .EQ. /    ===> OK
+ ********************************************
+ &NAM CH= 12345          /
+exit 0

@@ -1,0 +1,4 @@
+test for signbit(float)
+-1.0F: negative value
+ 1.0F: positive value
+exit 0

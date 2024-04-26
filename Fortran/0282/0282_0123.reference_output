@@ -1,0 +1,55 @@
+ jkl--jkl
+ pass
+ stu--stu
+ pass
+ ghi--ghi
+ pass
+ stu--stu
+ pass
+ def--def
+ pass
+ stu--stu
+ pass
+ lmn--lmn
+ pass
+ stu--stu
+ pass
+ jkl--jkl
+ pass
+ uvw--uvw
+ pass
+ ghi--ghi
+ pass
+ uvw--uvw
+ pass
+ mno--mno
+ pass
+ uvw--uvw
+ pass
+ mno--mno
+ pass
+ uvw--uvw
+ pass
+ jkl--jkl
+ pass
+ xyz--xyz
+ pass
+ pqr--pqr
+ pass
+ xyz--xyz
+ pass
+ pqr--pqr
+ pass
+ xyz--xyz
+ pass
+ pqr--pqr
+ pass
+ xyz--xyz
+ pass
+ 3 4 2 -- 3 4 2
+ SHAPE OK 
+ SHAPE OK 
+ SHAPE OK 
+ 1 -- 1
+ KIND OK 
+exit 0

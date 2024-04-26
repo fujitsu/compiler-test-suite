@@ -1,4 +1,3 @@
-!
   common /com/ok
   logical(kind=1) ok
   ok = .true.

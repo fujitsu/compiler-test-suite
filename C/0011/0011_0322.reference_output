@@ -1,0 +1,2 @@
+ volatile test ==> ok
+exit 0

@@ -1,0 +1,122 @@
+      DIMENSION C(10)
+      COMMON A,B
+      COMMON C,ITM
+  102 FORMAT(1H0,12X,7H*ERROR*,7X,2H( ,I2,2H ),10X,E14.7,13X,E14.7,8X,
+     *E14.7)
+  103 FORMAT(1H0,12X,4H*OK*,10X,2H( ,I2,2H ),10X,E14.7,13X,E14.7,8X,
+     *E14.7)
+C
+      ITM =01
+      A   =2.5
+      B   =3.5
+      X   =4.0
+      Y   =5.0
+      Z   =6.6
+      CALL SUB(X,Y,Z)
+C
+      ITM =ITM+1
+      ANS =34.1
+      DIF =C(1)-ANS
+      IF(ABS(DIF)-1.0E-04)2,1,1
+    1 WRITE(6,102)ITM,C(1),ANS,DIF
+      GO TO 500
+    2 WRITE(6,103)ITM
+C
+  500 ITM =ITM+1
+      ANS =134.1
+      DIF =C(2)-ANS
+      IF(ABS(DIF)-1.0E-03)4,3,3
+    3 WRITE(6,102)ITM,C(2),ANS,DIF
+      GO TO 501
+    4 WRITE(6,103)ITM
+C
+  501 ITM =ITM+1
+      ANS=604.1
+      DIF =C(3)-ANS
+      IF(ABS(DIF)-1.0E-03)6,5,5
+    5 WRITE(6,102)ITM,C(3),ANS,DIF
+      GO TO 502
+    6 WRITE(6,103)ITM
+C
+  502 ITM =ITM+1
+      ANS=0.98
+      DIF =C(4)-ANS
+      IF(ABS(DIF)-1.0E-05)8,7,7
+    7 WRITE(6,102)ITM,C(4),ANS,DIF
+      GO TO 503
+    8 WRITE(6,103)ITM
+  503 X1=4.0
+      Y1=5.0
+      CALL SUB(X1,Y1,6.6)
+C
+      ITM=ITM+1
+      ANS =34.1
+      DIF =C(1)-ANS
+      IF(ABS(DIF)-1.0E-04)10,9,9
+    9 WRITE(6,102)ITM,C(1),ANS,DIF
+      GO TO 504
+   10 WRITE(6,103)ITM
+C
+  504 ITM =ITM+1
+      ANS =134.1
+      DIF =C(2)-ANS
+      IF(ABS(DIF)-1.0E-03)12,11,11
+   11 WRITE(6,102)ITM,C(2),ANS,DIF
+      GO TO 505
+   12 WRITE(6,103)ITM
+  505 CONTINUE
+      STOP 3124
+      END
+      SUBROUTINE SUB(X,Y,Z)
+      DIMENSION C(10)
+      COMMON A,B,C,ITM
+      C(1)=A*X+B*Y+Z
+      C(2)=A*X**2+B*Y**2+Z
+      C(3)=A*X**3+B*Y**3+Z
+      C(4)=Y/X-0.03*(X+Y)
+C
+      ITM =ITM+1
+      ANS =2.5
+      DIF =A-ANS
+      IF(ABS(DIF)-1.0E-05)2,1,1
+    1 WRITE(6,102)ITM,A,ANS,DIF
+      GO TO 500
+    2 WRITE(6,103)ITM
+C
+  500 ITM =ITM+1
+      ANS =3.5
+      DIF =B-ANS
+      IF(ABS(DIF)-1.0E-05)4,3,3
+    3 WRITE(6,102)ITM,B,ANS,DIF
+      GO TO 501
+    4 WRITE(6,103)ITM
+C
+  501 ITM =ITM+1
+      ANS =4.0
+      DIF =X-ANS
+      IF(ABS(DIF)-1.0E-05)6,5,5
+    5 WRITE(6,102)ITM,X,ANS,DIF
+      GO TO 502
+    6 WRITE(6,103)ITM
+C
+  502 ITM =ITM+1
+      ANS =5.0
+      DIF =Y-ANS
+      IF(ABS(DIF)-1.0E-05)8,7,7
+    7 WRITE(6,102)ITM,Y,ANS,DIF
+      GO TO 503
+    8 WRITE(6,103)ITM
+C
+  503 ITM =ITM+1
+      ANS =6.6
+      DIF =Z-ANS
+      IF(ABS(DIF)-1.0E-05)10,9,9
+    9 WRITE(6,102)ITM,Z,ANS,DIF
+      GO TO 504
+   10 WRITE(6,103)ITM
+  102 FORMAT(1H0,12X,7H*ERROR*,7X,2H( ,I2,2H ),10X,E14.7,13X,E14.7,8X,
+     *E14.7)
+  103 FORMAT(1H0,12X,4H*OK*,10X,2H( ,I2,2H ),10X,E14.7,13X,E14.7,8X,
+     *E14.7)
+  504 RETURN
+      END

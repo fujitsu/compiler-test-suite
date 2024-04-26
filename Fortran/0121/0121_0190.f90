@@ -1,7 +1,6 @@
   complex*16 res(16),ab(16),cd(16)
   data res/16*0/,ab/16*1/,cd/16*1/
 
-!  (a + i b)/(c + i d)
   ab(1) = dcmplx(2.225073858507201D-308, 1.0)
   cd(1) = dcmplx(1.0, 1.0)
 

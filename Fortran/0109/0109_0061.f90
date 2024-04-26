@@ -15,7 +15,7 @@
          write(6,*) '*** ng ?? ***'
          write(6,*) 'error count: ',error
       else
-         write(6,*) '*** ok !! ***'
+         write(6,*) '*** ok    ***'
       endif
       stop
       end

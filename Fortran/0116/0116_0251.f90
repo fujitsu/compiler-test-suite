@@ -1,4 +1,3 @@
-!
 
 program main
 integer,parameter::n=100
@@ -10,7 +9,6 @@ type str1
   integer :: i1,i2,i3
   type(str2),dimension(:),pointer :: s1
 end type str1
-!type(str1),pointer :: a,b
 type(str1) :: a,b
 
 integer,parameter :: ansa=515000

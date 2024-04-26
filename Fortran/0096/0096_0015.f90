@@ -1,5 +1,3 @@
-! Module, Subroutine used
-! constant passed
 module m
  real:: y(2)  =LOG_GAMMA((/3.0,4.0/))
 contains

@@ -1,0 +1,45 @@
+MODULE mod1
+IMPLICIT NONE
+
+REAL :: lr = 3.0
+
+TYPE t1
+  REAL :: rr
+END TYPE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+REAL :: num = 5.0
+REAL,POINTER :: ptr
+TYPE(t1),ALLOCATABLE :: obj
+ALLOCATE(obj,ptr)
+ptr = 4.0
+obj%rr = 2.0
+
+CALL sub(num)
+
+IF(num .EQ. 5.0) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+CONTAINS
+
+SUBROUTINE sub(dy)
+IMPLICIT NONE
+REAL,VALUE :: dy
+ASSOCIATE(aa => (obj%rr*ptr)-dy/5.0)
+  IF(aa .GT. 0) THEN
+    dy = 1
+  ELSE
+    dy = 0
+  END IF 
+END ASSOCIATE
+END SUBROUTINE
+
+END PROGRAM

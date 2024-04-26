@@ -12,7 +12,7 @@ private :: tar1
 type ty1
    real   ,pointer :: ptr1=>tar1
 end type
-type(ty1):: aaa!=ty1(tar1)
+type(ty1):: aaa
 
 end module
 

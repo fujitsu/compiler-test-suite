@@ -1,9 +1,5 @@
 module m1
-!abstract interface ! Standard confirming 
-!   subroutine gen01()
-!   end subroutine
-!end interface
-abstractinterface ! Non standard confirming 
+abstractinterface
    subroutine gen02()
    end subroutine
 end interface

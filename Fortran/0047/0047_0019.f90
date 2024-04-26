@@ -1,4 +1,3 @@
-!  Intrinsic Functions Used   (Elemental and Transformational)
 program pro
 implicit none
 integer*8,parameter  ::n1= 2

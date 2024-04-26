@@ -13,4 +13,3 @@ if(n(1) .ne. (1))print*,"102"
 if(o(1) .ne. (1))print*,"103"
 print*,"PASS"
 end
-

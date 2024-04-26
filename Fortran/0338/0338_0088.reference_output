@@ -1,0 +1,13 @@
+ #### START ####
+ INTEGER*2 ==>  100
+ INTEGER*4 ==>  100
+ REAL*4 =====>  100.5
+ REAL*8 =====>  100.5
+ COMPLEX*8 ==>  (100.5,100.5)
+ COMPLEX*16 =>  (100.5,100.5)
+ LOGICAL*1 ==>  F
+ LOGICAL*4 ==>  T
+ CHARACTER ==> A
+ CHARACTER*7 > FORTRAN
+ ####  END  ####
+exit 0

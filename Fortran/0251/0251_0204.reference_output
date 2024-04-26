@@ -1,0 +1,4 @@
+ within subroutine
+ 10
+ after block
+exit 0

@@ -11,7 +11,7 @@ contains
   integer function foo() result(zz)
    procedure(sub),pointer:: fp
 
-    fp => kmr_fixfun()!
+    fp => kmr_fixfun()
 
     zz = 0
   end function foo
@@ -21,4 +21,3 @@ use xxxf
 if (foo()/=0) print *,'202'
 print *,'pass'
 end
-

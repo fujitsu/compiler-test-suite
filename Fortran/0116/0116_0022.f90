@@ -46,9 +46,9 @@ program main
 	  do i4=1,10
             do i5=1,10
               do i6=1,10
-	        structXX(i1,i2)%memStructXX(i3,i4)%memberXX(i5,i6) = 1 !nine03a
-	        structXX(i1,i2)%memStructXX(i3,i4)%memberXX( :,i6) = 1 !nine03b
-	        structXX(i1,i2)%memStructXX(i3,i4)%memberXX( :, :) = 1 !nine03c
+	        structXX(i1,i2)%memStructXX(i3,i4)%memberXX(i5,i6) = 1
+	        structXX(i1,i2)%memStructXX(i3,i4)%memberXX( :,i6) = 1
+	        structXX(i1,i2)%memStructXX(i3,i4)%memberXX( :, :) = 1
               enddo
             enddo
           enddo

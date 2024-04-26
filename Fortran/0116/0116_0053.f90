@@ -1,11 +1,8 @@
-!
 
 program main
 integer,parameter::n=100
 real(kind=8),dimension(n,n) :: a, b
 integer,parameter :: ans=2770000
-!allocate(a(n,n))
-!allocate(b(n,n))
 a=reshape( (/(mod(i,10),i=1,n*n,1)/), shape(a) )
 b=reshape( (/(mod(i,10),i=n*n-1,0,-1)/), shape(b) )
 call sub_pointer_array(a,b,n)
@@ -14,8 +11,6 @@ if (int(sum(a)) .eq. ans) then
 else
   print *,"ng: sum(a) = ",sum(a)
 endif
-!deallocate(a)
-!deallocate(b)
 contains
   subroutine sub_pointer_array(a,b,n)
     real(kind=8),dimension(:,:) :: a,b

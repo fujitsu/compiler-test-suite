@@ -1,0 +1,7 @@
+llvm_singlesource_compile_only_file(0295_0042.f90 PREFIX "Fujitsu-Fortran-")
+llvm_singlesource(PREFIX "Fujitsu-Fortran-")
+llvm_set_own_fortran_module_directory()
+set_property(SOURCE 0295_0001.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
+set_property(TARGET Fujitsu-Fortran-0295_0001 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
+set_property(SOURCE 0295_0042.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
+set_property(TARGET Fujitsu-Fortran-0295_0042 APPEND PROPERTY LINK_OPTIONS "-fopenmp")

@@ -302,7 +302,6 @@ result08 = int(sum(h1))
 result09 = int(sum(i1))
 result10 = int(sum(j1))
 
-
 if (result01 .ne. ians01) then
   print *,"ng:sub01", " result =", result01,"master =", ians01
   ng_flg = 1

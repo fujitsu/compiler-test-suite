@@ -161,7 +161,6 @@ subroutine array_sub_real_loop(a,b,loop_size)
   end do
 end subroutine array_sub_real_loop
 
-
 subroutine array_mul_real_loop(a,b,loop_size)
   implicit none
   integer,parameter::xp = 8
@@ -307,7 +306,6 @@ subroutine array_conjg4_2(a,b,c,e,loop_size)
      a(i)=conjg(b(i)+c(i))-e(i)
   end do
 end subroutine array_conjg4_2
-
 
 subroutine array_conjg5(a,b,c,e,loop_size) 
   implicit none
@@ -914,6 +912,3 @@ program main
      print *,'multi_array3_2 : NG aa2(5,5,5,5,5)=',aa2(5,5,5,5,5)
   endif
 end program main
-
-
-

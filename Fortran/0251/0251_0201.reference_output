@@ -1,0 +1,5 @@
+ within subroutine
+ obj1
+ call of dest for obj1
+ after block
+exit 0

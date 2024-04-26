@@ -31,4 +31,3 @@ rewind 1
 read(1,*) a
 if (a/=2) print *,102
 end
-

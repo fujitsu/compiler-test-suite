@@ -1,0 +1,43 @@
+MODULE mod1
+IMPLICIT NONE
+
+INTERFACE
+FUNCTION fun_1(ddm)
+INTEGER,DIMENSION(1:10) :: ddm,fun_1
+END FUNCTION
+END INTERFACE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+INTEGER,DIMENSION(1:10) :: arr = 0,ar = 0
+INTEGER :: i = 0 
+
+ASSOCIATE(aa => fun_1(arr))
+ FORALL(i = 1:10,aa(i) .GT. 0)
+   ar(i) = aa(i)
+ END FORALL 
+END ASSOCIATE
+
+IF(ar(10) .EQ. 10) THEN
+  ar = 0
+ELSE
+  ar = 1
+END IF
+
+IF(ALL(ar(1:10) .EQ. 0)) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+END PROGRAM
+
+FUNCTION fun_1(ddm)
+INTEGER,DIMENSION(1:10) :: ddm,fun_1
+ddm = (/-1,2,-3,4,-5,6,-7,8,-9,10/)
+fun_1 = ddm
+END FUNCTION

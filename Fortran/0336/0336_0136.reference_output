@@ -1,0 +1,10 @@
+1
+      *fortran*     f7711009     enter
+
+ justice + item +               + computed result +                   + compare value +                    + difference +
+
+   * ok  *  (  1 )                             5005                                5005
+
+
+     fortran77   *f7711009*   exit
+exit 0

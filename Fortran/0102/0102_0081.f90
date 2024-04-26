@@ -5,4 +5,3 @@ if(constvar(3) .neqv. .FALSE.)print*,'102'
 if(constvar(4) .neqv. .FALSE.)print*,'103'
 print*,"PASS"
 end
-

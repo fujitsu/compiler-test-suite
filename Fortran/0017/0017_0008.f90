@@ -8,12 +8,12 @@ end module module_2nd
 module module_3rd
   use module_1st
   use module_2nd
-  integer :: hoge =kind(DP)
+  integer :: itmp =kind(DP)
   private :: vvv,MPI
 end module module_3rd
 
   use module_3rd, ONLY :
-  use module_1st,ONLY :MPI_INTEGER,MPI  !NOT PASS
+  use module_1st,ONLY :MPI_INTEGER,MPI
   implicit none
   if (MPI_INTEGER.ne.1) print *,'ng'
   if (MPI.ne.2) print *,'ng'

@@ -11,4 +11,3 @@ if (any(abs((/ACOPY/)-(/&
 /))>0.0001_WP))print *,'error'
 print *,'pass'
 end
-

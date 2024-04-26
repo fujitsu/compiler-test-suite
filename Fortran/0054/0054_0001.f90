@@ -13,11 +13,6 @@ MODULE m
        TYPE(t(double)) mold
      END FUNCTION int_to_t2
   END INTERFACE t
-  !INTERFACE t1
-  !   module TYPE(t(single)) FUNCTION real_to_t3(x)
-  !     REAL(single) x
-  !   END FUNCTION real_to_t3
-  !END INTERFACE t1
 end MODULE m
 
 subMODULE(m)smod
@@ -29,13 +24,9 @@ CONTAINS
    TYPE(t(double)) :: obj
    TYPE(t(double)) :: obj2
    TYPE(t(single)) :: obj3
-!print *,101
     int_to_t2%value = x
 write(1,*) 103
   END 
-  ! module procedure real_to_t3(x)
-  !  real_to_t3%value = x
-  ! end
 END subMODULE smod
 
 use m
@@ -46,6 +37,5 @@ if (abs(d%value-2)>0.001) print *,201
 rewind 1
 read(1,*) k
 if (k/=103) print *,401
-!print *,105
 print *,'pass'
 end

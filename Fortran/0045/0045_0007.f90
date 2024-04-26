@@ -8,4 +8,3 @@ if(.not.(res1>8.22 .and. res1<8.26)) print *,101
         print *,"pass"
 
 end
-

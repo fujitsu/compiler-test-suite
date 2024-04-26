@@ -1,0 +1,9 @@
+<<<<<<<< START >>>>>>>>
+S =01234567890123456789012345 
+T =abcdefghijklmnopqrstuvwxyz 
+******** OK 1  ********
+S =abcdefghijklmnopqrstuvwxyz 
+T =01234567890123456789012345 
+******** OK 2  ********
+<<<<<<<< END >>>>>>>>
+exit 0

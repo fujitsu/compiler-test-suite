@@ -1,4 +1,3 @@
-! RESHAPE inside argument, KIND USED
 program pro
  implicit none
  integer,parameter :: n(2,2)=RESHAPE([real(8)::1.3,1.8,2.0,2.2],[2,2])

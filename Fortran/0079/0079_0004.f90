@@ -27,13 +27,11 @@ integer :: ii(2)
 integer ,intent(inout) :: i
 i=10
 call sub2(ii)
-!if (ii(1).ne.20) err_code =1 !print *,'err 2'
 end subroutine
 module elemental subroutine sub2(i)
 integer,intent(inout) :: i
 i=20
 if (1.eq.2) call sub1(ii)
-!call sub1(iii)
 end subroutine
 end
 

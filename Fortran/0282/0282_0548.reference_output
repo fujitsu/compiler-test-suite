@@ -1,0 +1,22 @@
+ T --- T
+ L -> L
+ T --- T
+ L -> L
+ F --- F
+ L -> L
+ F --- F
+ L -> L
+ T --- T
+ L -> L
+ F --- F
+ L -> L
+ T --- T
+ L -> L
+ F --- F
+ L -> L
+ 4 2 -- 4 2
+ SHAPE OK 
+ SHAPE OK 
+ 8 -- 8
+ KIND OK 
+exit 0

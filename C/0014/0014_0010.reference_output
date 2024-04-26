@@ -1,0 +1,33 @@
+=== pattern aa ===
+size = 2
+- before store
+       0: 00 00 
+- after store
+       0: 00 12 
+- loaded value
+12
+=== pattern ua ===
+size = 2
+- before store
+       0: 00 00 
+- after store
+       0: 00 10 
+- loaded value
+1
+=== pattern au ===
+size = 2
+- before store
+       0: 00 00 
+- after store
+       0: 00 01 
+- loaded value
+1
+=== pattern uu1 ===
+size = 3
+- before store
+       0: 00 00 00 
+- after store
+       0: 00 20 01 
+- loaded value
+12
+exit 0

@@ -1,0 +1,18 @@
+ 2 -- 2
+ L -> I
+ 2 -- 2
+ L -> I
+ 2 -- 2
+ L -> I
+ 2 -- 2
+ L -> I
+ 3 -- 3
+ L -> I
+ 3 -- 3
+ L -> I
+ 3 2 -- 3 2
+ SHAPE OK 
+ SHAPE OK 
+ 4 -- 4
+ KIND OK 
+exit 0

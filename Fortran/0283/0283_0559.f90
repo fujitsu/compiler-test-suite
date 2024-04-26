@@ -1,0 +1,30 @@
+PROGRAM main
+IMPLICIT NONE
+
+INTERFACE
+SUBROUTINE sub()
+END SUBROUTINE
+END INTERFACE
+
+INTEGER :: x,y
+COMMON /a/x,y  
+x = 10
+y = 20
+
+ASSOCIATE(aa => x , bb => y)
+  CALL sub()
+  IF(aa .EQ. 10 .AND. bb .EQ. 30) THEN
+    PRINT*,'pass'
+  ELSE
+  PRINT*,101
+  END IF
+END ASSOCIATE
+
+END PROGRAM
+
+SUBROUTINE sub()
+IMPLICIT NONE
+INTEGER :: l,m
+COMMON /a/m,l
+l = l + m
+END SUBROUTINE

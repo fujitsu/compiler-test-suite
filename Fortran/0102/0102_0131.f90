@@ -19,7 +19,6 @@ integer,parameter::l7(1) =MAXLOC(x,mask=[.false.,.true.,.false.,.true.,.true.],b
 integer,parameter::l8(1) =MAXLOC(x,kind=1,back=.true.)
 integer,parameter::l9(1) =MAXLOC(x,dim=1,kind=1,back=.true.)
 
-
 integer,parameter::m(1)  =MAXLOC(x,dim=1,mask=[.false.,.true.,.false.,.true.,.true.],kind=1)
 integer,parameter::m1(1) =MAXLOC(x,mask=[.false.,.true.,.false.,.true.,.true.],kind=1)
 integer,parameter::m2(1) =MAXLOC(x,dim=1,mask=[.false.,.true.,.false.,.true.,.true.])

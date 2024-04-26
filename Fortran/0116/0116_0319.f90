@@ -15,7 +15,6 @@ real(8),parameter :: ans=1.0
 
   type(str1),dimension(10,10) :: strRoot
 
-!  allocate(strRoot(10,10))
   do i=1,10
     do j=1,10
       allocate(strRoot(i,j)%innerNode(10,10))

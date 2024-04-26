@@ -66,7 +66,7 @@
      c       (.not.(chr_a(10) == 'z')))
 
       if ( ( lflg .eqv. .true.) .and. ( hflg .eqv. .true. ) ) then
-         write(6,*)'*** ok !! ***'
+         write(6,*)'*** ok    ***'
       else
          write(6,*)'*** ng ?? ***'
       endif

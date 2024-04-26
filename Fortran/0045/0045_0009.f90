@@ -1,4 +1,3 @@
-! Keywords shuffled
         program pro
  real,parameter :: x1(2,2)=RESHAPE([4,6,2,7],[2,2])
  real,parameter :: y1(2,2)=RESHAPE([1,2,4,5],[2,2])

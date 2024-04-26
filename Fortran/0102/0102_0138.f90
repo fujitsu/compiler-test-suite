@@ -14,7 +14,6 @@ end interface
    end if
 end program calling_func
 
-
 function get_val()
 
    integer,parameter ::x(5) = [45,9,1,1,9]

@@ -1,0 +1,27 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  REAL(KIND = 4),ALLOCATABLE :: rr
+END TYPE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+TYPE(t1) :: obj
+ALLOCATE(obj%rr)
+
+obj%rr = 123.900
+
+ASSOCIATE(aa => ANINT(obj%rr))
+  IF(aa .GT. 123.00) THEN
+    PRINT*,'pass'
+  ELSE
+    PRINT*,101
+  END IF
+END ASSOCIATE
+
+END PROGRAM

@@ -9,5 +9,3 @@ if(constvar1 .neqv. .FALSE.)print*,'101'
 if(constvar2 .neqv. .TRUE.)print*,'102'
 print*,"PASS"
 end
-
-

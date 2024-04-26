@@ -1,0 +1,5 @@
+ 5 -- 5
+ utfchar->integer OK
+ KIND:: 4 --KIND:: 4
+ KIND OK
+exit 0

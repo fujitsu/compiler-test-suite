@@ -1,0 +1,65 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  REAL :: r1
+END TYPE
+
+TYPE,EXTENDS(t1) :: t2
+  REAL :: r2
+END TYPE
+
+INTERFACE OPERATOR ( * )
+  MODULE PROCEDURE multip
+END INTERFACE
+
+CONTAINS
+
+FUNCTION multip(dd1,dd2)
+IMPLICIT NONE
+CLASS(t2),DIMENSION(:),INTENT(IN) :: dd1 
+CLASS(t2),DIMENSION(:),ALLOCATABLE :: multip 
+CLASS(t1),DIMENSION(:),INTENT(IN) :: dd2
+ALLOCATE(multip(1:10))
+multip%r2 = dd1%r2 * dd2%r1
+END FUNCTION
+
+END MODULE 
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+TYPE(t2),DIMENSION(1:10) :: obj
+CLASS(t2),DIMENSION(:),ALLOCATABLE :: allc
+CLASS(t1),DIMENSION(:),POINTER :: ptr
+
+ALLOCATE(allc(1:10),ptr(1:10))
+allc%r2 = (/2.0,-2.0,2.0,-2.0,2.0,-2.0,2.0,-2.0,2.0,-2.0/)
+ptr%r1 = (/1.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0/)
+
+obj = fun(allc , ptr)
+
+IF(ALL(obj(2:10:2)%r2 .EQ. 1.1)) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+CONTAINS
+
+FUNCTION fun(dd1,dd2)
+IMPLICIT NONE
+CLASS(t2),DIMENSION(:),ALLOCATABLE :: dd1,fun
+CLASS(t1),DIMENSION(:),POINTER :: dd2
+ALLOCATE(fun(1:10))
+ASSOCIATE(aa => dd1 * dd2)
+  WHERE(aa%r2 .EQ. 0.0)
+    fun%r2 = 1.1
+  ELSEWHERE
+    fun%r2 = 1.0
+  END WHERE
+END ASSOCIATE
+END FUNCTION
+
+END PROGRAM

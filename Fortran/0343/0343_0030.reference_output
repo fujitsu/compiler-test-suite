@@ -1,0 +1,30 @@
+
+
+ + justice + item +               + computed result +                   + compare value +                               + difference +
+
+0 *ok*
++         (  1 )                      0.24532100E+03                      0.24532100E+03                               0.00000000E+00
++                  count=  1
+0 *ok*    (  2 )
++                  count=  4
+0 *ok*    (  3 )
++                  count=  3
+0 *ok*    (  4 )
++                  count=  3
+0 *ok*    (  5 )
++                  count=  5
+0 *ok*    (  6 )
++                  count=  5
+0 *ok*    (  7 )
++                  count=  3
+0 *ok*    (  8 )
++                  count=  4
+0 *ok*    (  9 )
++                  count=  5
+0 *ok*    ( 10 )
++                  count=  3
+0 *ok*    ( 11 )
++                  count=  8
+0 *ok*    ( 12 )
++                  count=  2
+exit 0

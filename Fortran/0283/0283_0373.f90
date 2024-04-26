@@ -1,0 +1,13 @@
+PROGRAM main
+IMPLICIT NONE
+
+CHARACTER(LEN = 5) :: ch = 'aaaa'
+
+ASSOCIATE(aa => TRIM(ch) // 'c')
+  SELECTCASE(aa)
+    CASE('aaaac')
+    PRINT*,'pass'
+  END SELECT
+END ASSOCIATE
+
+END PROGRAM

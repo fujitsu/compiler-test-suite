@@ -1,0 +1,15 @@
+ T F T F F T
+ T F T F F T
+ T -- T
+ L -> L
+ F -- F
+ L -> L
+ F -- F
+ L -> L
+ F -- F
+ L -> L
+ T -- T
+ L -> L
+ T -- T
+ L -> L
+exit 0

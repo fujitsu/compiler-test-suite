@@ -129,4 +129,3 @@ if(any(k62.ne.[3,1]))print*,"162"
 if(any(k63.ne.[3,3]))print*,"163"
 print*,"PASS"
 end
-

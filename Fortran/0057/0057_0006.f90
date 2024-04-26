@@ -28,5 +28,3 @@ call sube(a1,a2)
 if(a1 .ne. 4)print*,"102",a1
 print*,"Pass"
 end
-
-

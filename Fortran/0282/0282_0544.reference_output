@@ -1,0 +1,21 @@
+ abcd---abcd
+ CH -> CH
+ efgh---efgh
+ CH -> CH
+ ghij---ghij
+ CH -> CH
+ klmn---klmn
+ CH -> CH
+ mnop---mnop
+ CH -> CH
+ qrst---qrst
+ CH -> CH
+ uvwx---uvwx
+ CH -> CH
+ zabc---zabc
+ CH -> CH
+ 8 -- 8
+ SHAPE OK 
+ 1 -- 1
+ KIND OK 
+exit 0

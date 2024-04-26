@@ -1,0 +1,19 @@
+ REAL (KIND=2) :: AR(5)
+ COMPLEX (KIND=2) :: AC(3)
+ COMPLEX (KIND=2) :: CD(3)
+ AR=(/1,1,1,4,4/)
+ AC=[(1,2),(3,4),(5,6)]
+ CD=[(1,2),(2,2),(9,10)]
+ WHERE (AC==CD)
+ AC=AC+AR(1)
+ END WHERE
+ WHERE (AR<=3.0)
+ AR=AR+1.0
+ ELSEWHERE
+ AR=AR+0
+ END WHERE
+ IF (AC(1) /= CD(2))PRINT *, '101' 
+ IF (ANY(AR(1:3) /= 2))PRINT *, '102'
+ IF (ANY(AR(4:5) /= 4))PRINT *, '102'
+ PRINT *,"PASS"
+ END

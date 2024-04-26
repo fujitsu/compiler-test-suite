@@ -1,0 +1,86 @@
+      WRITE(6,101)
+  101 FORMAT(1H0 // 10X,40H- JUSTICE -     - ITEM -      - COMPUTED,
+     *58H RESULT -          - COMPARE VALUE -        - DIFFERENCE -)
+C
+C
+      B1  =5.2
+      C1  =30.0
+      J1  =B1+C1
+      JANS=35
+      ITM =01
+      IF(JANS-J1)1,2,1
+    1 WRITE(6,102)ITM,J1,JANS
+  102 FORMAT(1H0,12X,7H*ERROR*,7X,2H( ,I2,2H ),14X,I6,20X,I6)
+      GO TO 500
+  103 FORMAT(1H0,12X,4H*OK*,10X,2H( ,I2,2H ),14X,I6,20X,I6)
+    2 WRITE(6,103)ITM,J1,JANS
+C
+C
+  500 B2  =0.22E+01
+      J2  =C1-B2
+      JANS=27
+      ITM =ITM+1
+      IF(JANS-J2)3,4,3
+    3 WRITE(6,102)ITM,J2,JANS
+      GO TO 501
+    4 WRITE(6,103)ITM,J2,JANS
+C
+C
+  501 C2  =0.4
+      J3  =B1*C2
+      JANS=2
+      ITM=ITM+1
+      IF(JANS-J3)5,6,5
+    5 WRITE(6,102)ITM,J3,JANS
+      GO TO 502
+    6 WRITE(6,103)ITM,J3,JANS
+C
+C
+  502 J4  =B1/C1
+      JANS=0
+      ITM =ITM+1
+      IF(JANS-J4)7,8,7
+    7 WRITE(6,102)ITM,J4,JANS
+      GO TO 503
+    8 WRITE(6,103)ITM,J4,JANS
+C
+C
+  503 J5  =4.1E-01+0.6
+      JANS=1
+      ITM =ITM+1
+      IF(JANS-J5)9,10,9
+    9 WRITE(6,102)ITM,J5,JANS
+      GO TO 504
+   10 WRITE(6,103)ITM,J5,JANS
+C
+C
+  504 J6  =0.0-B1
+      JANS=-5
+      ITM =ITM+1
+      IF(JANS-J6)11,12,11
+   11 WRITE(6,102)ITM,J6,JANS
+      GO TO 505
+   12 WRITE(6,103)ITM,J6,JANS
+C
+C
+  505 B3  =-2.5
+      J7  =20.0*B3
+      JANS=-50
+      ITM =ITM+1
+      IF(JANS-J7)13,14,13
+   13 WRITE(6,102)ITM,J7,JANS
+      GO TO 506
+   14 WRITE(6,103)ITM,J7,JANS
+C
+C
+  506 J8 =C1/(-2.8)
+      ITM=ITM+1
+      JANS=-10
+      IF(JANS-J8)15,16,15
+   15 WRITE(6,102)ITM,J8,JANS
+      GO TO 507
+   16 WRITE(6,103)ITM,J8,JANS
+C
+  507 CONTINUE
+      STOP
+      END

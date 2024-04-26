@@ -1,4 +1,3 @@
-c
 
       program main
       integer,parameter::N=10
@@ -13,7 +12,6 @@ c
       res = res + (sum(fary1) - sum(fary2))
       res = res + (sum(dary1) - sum(dary2))
 
-c      print *,res
       if (int(res).eq.ANS) then
          print *,"OK"
       else

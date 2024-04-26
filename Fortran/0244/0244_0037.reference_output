@@ -1,0 +1,5 @@
+ INSIDE 1-D scalar destructor
+ 20
+ INSIDE 1-D array destructor
+ 30 40
+exit 0

@@ -3,7 +3,7 @@ module m1
 contains
   subroutine foo() 
     type(c_funptr) :: fp
-    fp = fun()!
+    fp = fun()
     if (c_associated(fp)) print *,201
   end subroutine
   type(c_funptr) function fun() result(zz)
@@ -14,4 +14,3 @@ use m1
 call foo
 print *,'pass'
 end
-

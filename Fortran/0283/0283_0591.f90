@@ -1,0 +1,75 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  COMPLEX :: cmp1=(9.8,10.11)
+END TYPE
+
+TYPE,EXTENDS(t1) :: t2
+  COMPLEX :: cmp2=(9.8,10.11)
+END TYPE
+
+TYPE ty
+  COMPLEX :: cmp=(9.8,10.11)
+  REAL :: rr=0
+  REAL,DIMENSION(5) :: cmarr=0
+END TYPE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+CLASS(*),POINTER :: ptr,obj
+CLASS(*),ALLOCATABLE :: allc
+CLASS(t1),POINTER :: ptr2
+CLASS(t2),ALLOCATABLE :: allc2
+
+ALLOCATE(allc2,ptr2)
+allc2%cmp2 = (10.20,11.20)
+ptr2%cmp1 = (1.0,2.0)
+ALLOCATE(allc,SOURCE = allc2)
+ALLOCATE(ptr,SOURCE = ptr2)
+
+obj => fun(allc,ptr)
+
+SELECT TYPE(obj)
+TYPE IS(t1)
+IF(obj%cmp1 .EQ. (1.0,2.0)) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+END SELECT
+
+CONTAINS
+
+FUNCTION fun(dd1,dd2)
+IMPLICIT NONE
+CLASS(*),ALLOCATABLE :: dd1
+CLASS(*),POINTER :: fun,dd2
+SELECT TYPE(dd1)
+CLASS IS(t2)
+ASSOCIATE(aa => dd1 , bb => 12.90)
+  SELECT CASE(INT(AIMAG(aa%cmp2)))
+  CASE(11)
+  ASSOCIATE(aa => fun_2(dd2) , cc => AIMAG(aa%cmp1) + bb)
+    IF(aa%cmp1 .EQ. (1.0,2.0)) allocate(fun,source = aa)
+  END ASSOCIATE
+  END SELECT
+END ASSOCIATE
+END SELECT
+END FUNCTION 
+
+FUNCTION fun_2(dd2)
+IMPLICIT NONE
+CLASS(*),POINTER :: dd2
+CLASS(t1),POINTER :: fun_2
+SELECT TYPE(dd2)
+CLASS IS(t1)
+fun_2 => dd2
+END SELECT
+END FUNCTION
+
+END PROGRAM

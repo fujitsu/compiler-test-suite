@@ -6,4 +6,3 @@ if(constvar(4) .neqv. .TRUE.)print*,'103'
 if(constvar(5) .neqv. .FALSE.)print*,'104'
 print*,"PASS"
 end
-

@@ -1,0 +1,36 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  CHARACTER(LEN = 6) :: ch 
+END TYPE
+
+TYPE,EXTENDS(t1) :: t2
+  CHARACTER(LEN = 6),DIMENSION(6) :: ch2
+END TYPE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+CLASS(t2),ALLOCATABLE :: acc
+
+ALLOCATE(acc)
+acc%ch2 = 'xxxxxx'
+
+ASSOCIATE(aa => acc%ch2(1::2)(2:5))
+  aa = 'xxxx'
+  CALL sub(aa)
+END ASSOCIATE
+
+CONTAINS
+
+SUBROUTINE sub(dd)
+IMPLICIT NONE
+CHARACTER(LEN = 4),DIMENSION(3) :: dd
+IF(ALL(dd(1:3)(1:4) .EQ. 'xxxx' )) PRINT*,'pass'
+END SUBROUTINE
+
+END PROGRAM

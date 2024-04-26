@@ -1,0 +1,11 @@
+ ababbc
+ ababbc
+ ab---ab
+ UTF -> UTF
+ ab---ab
+ UTF -> UTF
+ bc---bc
+ UTF -> UTF
+ 4 -- 4
+ KIND OK 
+exit 0

@@ -1,0 +1,38 @@
+MODULE mod1
+IMPLICIT NONE
+
+CONTAINS
+
+INTEGER FUNCTION fun1(dd1,dd2,dd3)
+IMPLICIT NONE
+INTEGER :: dd1,dd2,dd3
+fun1 = dd1 + dd2 - dd3
+END FUNCTION
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+INTEGER :: xx = 2, yy =3 , zz = 4 , fun , n
+
+fun(n) = n * 2 
+
+ASSOCIATE(aa => fun1(xx,yy,zz) , bb => fun(xx)) 
+  CALL sub(aa,bb)
+END ASSOCIATE
+
+CONTAINS
+
+SUBROUTINE sub(d1,d2)
+IMPLICIT NONE
+INTEGER :: d1,d2
+IF(d1 .LT. d2) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+END SUBROUTINE
+
+END PROGRAM

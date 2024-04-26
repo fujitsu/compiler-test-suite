@@ -1,0 +1,78 @@
+      I1  =20
+      N   =5
+      J1  =(3*I1+5)/N-10
+      JANS=3
+      ITM =01
+      IF(JANS-J1)1,2,1
+  102 FORMAT(1H0,12X,7H*ERROR*,7X,2H( ,I2,2H ),14X,I6,20X,I6)
+    1 WRITE(6,102)ITM,J1,JANS
+      GO TO 500
+    2 WRITE(6,103)ITM
+  103 FORMAT(1H0,12X,4H*OK*,10X,2H( ,I2,2H ),14X,I6,20X,I6)
+C
+C
+  500 ALP =194.0
+      A1  =2.0
+      B   =-0.4
+      J2  =ALP/(A1**2)**3-12.3E-02/(B+.5)
+      JANS=1
+      ITM =ITM+1
+      IF(JANS-J2)3,4,3
+    3 WRITE(6,102)ITM,J2,JANS
+      GO TO 501
+    4 WRITE(6,103)ITM
+C
+C
+  501 A3  =(A1+B)/B+4.0**2-0.00015E 05*0.3
+      ANS =7.5
+      ITM =ITM+1
+      DIF =A3-ANS
+      IF(ABS(DIF)-1.0E-05)6,5,5
+    5 WRITE(6,104)ITM,A3,ANS,DIF
+  104 FORMAT(1H0,12X,7H*ERROR*,7X,2H( ,I2,2H ),10X,E14.7,13X,E14.7,8X,
+     *E14.7)
+      GO TO 502
+    6 WRITE(6,105)ITM
+  105 FORMAT(1H0,12X,4H*OK*,10X,2H( ,I2,2H ),10X,E14.7,13X,E14.7,8X,
+     *E14.7)
+C
+C
+  502 A4  =N**3/5-I1*(N-3)+10
+      ANS =-5.0
+      DIF =A4-ANS
+      ITM =ITM+1
+      IF(ABS(DIF)-1.0E-05)8,7,7
+   7  WRITE(6,104)ITM,A4,ANS,DIF
+      GO TO 503
+    8 WRITE(6,105)ITM
+C
+C
+  503 J5  =IFIX(ALP)/97-IFIX(A1)**4+I1
+      JANS=6
+      ITM =ITM+1
+      IF(JANS-J5)9,10,9
+    9 WRITE(6,102)ITM,J5,JANS
+      GO TO 504
+   10 WRITE(6,103)ITM
+C
+C
+  504 J6  =FLOAT(N)*2.2-(FLOAT(N)-3.5)**2
+      JANS=8
+      ITM =ITM+1
+      IF(JANS-J6)11,12,11
+   11 WRITE(6,102)ITM,J6,JANS
+      GO TO 505
+   12 WRITE(6,103)ITM
+C
+C
+  505 A7  =((((5.5E 01+FLOAT(N))/30.0)**2+4.)*A1+A1)*1.2
+      ANS =21.6
+      DIF =A7-ANS
+      ITM =ITM+1
+      IF(ABS(DIF)-1.0E-04)14,13,13
+   13 WRITE(6,104)ITM,A7,ANS,DIF
+      GO TO 506
+   14 WRITE(6,105)ITM
+  506 CONTINUE
+      STOP
+      END

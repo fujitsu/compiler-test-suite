@@ -16,15 +16,12 @@
         VALUE :: a1
         integer,value:: a2
         INTENT(in) :: a2
-        !a1=a2+10
         end subroutine
         elemental function f2(a3,a4)
         VALUE :: a3
         integer,intent(in)::a3
         INTENT(in):: a4
         integer,value::a4
-        !a3=a4+30
         f2=a3
         end function
         end
-

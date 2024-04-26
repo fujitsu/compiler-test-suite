@@ -9,7 +9,7 @@ use mm,only:tar1=>tar2
 private :: tar1
 
 type ty1
-   integer,pointer :: ptr1!=>tar1
+   integer,pointer :: ptr1
 end type
 type(ty1):: aaa=ty1(tar1)
 

@@ -6,7 +6,7 @@ contains
   end function fun
   subroutine foo() 
     type(c_funptr) :: fp
-    fp = fun()!
+    fp = fun()
     if (c_associated(fp)) print *,301
   end subroutine
 end 
@@ -14,4 +14,3 @@ use m1
 call foo
 print *,'pass'
 end
-

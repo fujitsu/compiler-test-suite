@@ -1,0 +1,30 @@
+PROGRAM main
+IMPLICIT NONE
+
+TYPE t1
+  INTEGER :: i
+END TYPE
+
+TYPE,EXTENDS(t1) :: t2
+  INTEGER :: j
+END TYPE
+
+TYPE,EXTENDS(t2) :: t3
+  INTEGER :: k
+END TYPE
+
+TYPE(t3),TARGET :: tr3
+CLASS(t1),POINTER :: ptr
+
+ptr => tr3
+
+ASSOCIATE(bb => ptr)
+  SELECT TYPE (bb)
+  CLASS IS(t3)
+    PRINT*,'pass'
+  TYPE IS(t1)
+    PRINT*,101
+  END SELECT
+END ASSOCIATE
+
+END PROGRAM

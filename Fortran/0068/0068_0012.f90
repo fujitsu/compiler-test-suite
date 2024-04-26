@@ -793,7 +793,7 @@ program main
   else
      print *,'calc19  : NG, a=',a
   endif
-  
+
   call calc20(a,b,x,y)
   dist = abs(a-(0.100,-0.200))
   if(dist < 0.01) then
@@ -1086,7 +1086,7 @@ program main
   else
      print *,'calc59  : NG, a2=',a2
   endif
-  
+
   call calc60(a2,b2,x2,y2)
   dist2 = abs(a2-(0.100,-0.200))
   if(dist2 < 0.01) then
@@ -1246,6 +1246,3 @@ program main
   endif
 
 end program main
-
-
-

@@ -1,0 +1,5 @@
+outer x:    1
+inner j:   10
+outer x:    1
+inner j:   10
+exit 0

@@ -1,0 +1,32 @@
+ 3 2 2
+ F -- F
+ pass
+ F -- F
+ pass
+ F -- F
+ pass
+ F -- F
+ pass
+ T -- T
+ pass
+ F -- F
+ pass
+ F -- F
+ pass
+ F -- F
+ pass
+ F -- F
+ pass
+ F -- F
+ pass
+ F -- F
+ pass
+ F -- F
+ pass
+ 3 2 2 -- 3 2 2
+ SHAPE OK 
+ SHAPE OK 
+ SHAPE OK 
+ 1 -- 1
+ KIND OK 
+exit 0

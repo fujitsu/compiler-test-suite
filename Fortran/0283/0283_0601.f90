@@ -1,0 +1,77 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  INTEGER :: i1
+END TYPE
+
+TYPE,EXTENDS(t1) :: t2
+  INTEGER :: i2
+END TYPE
+
+TYPE ty
+  INTEGER :: n = 2
+  REAL :: r = 3.0
+END TYPE
+
+INTERFACE OPERATOR(.plus.)
+  MODULE PROCEDURE addit
+END INTERFACE
+
+CONTAINS
+
+FUNCTION addit(dd1,dd2)
+IMPLICIT NONE
+CLASS(t2),DIMENSION(:,:,:),INTENT(IN) :: dd1
+CLASS(t1),DIMENSION(:,:,:),INTENT(IN) :: dd2
+CLASS(t2),DIMENSION(:,:,:),ALLOCATABLE :: addit
+ALLOCATE(addit(10,10,10))
+addit%i2 = dd1%i2 + dd2%i1
+END FUNCTION
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+INTEGER :: st_fn,dn
+
+st_fn(dn) = dn + 2
+
+TYPE(ty) :: obj
+CLASS(t2),DIMENSION(:,:,:),ALLOCATABLE :: arr1
+CLASS(t1),DIMENSION(:,:,:),POINTER :: ptr
+
+ALLOCATE(arr1(3:12,3:12,3:12),ptr(3:12,3:12,3:12))
+arr1%i2 = 10
+ptr%i1 = 5
+
+ASSOCIATE(aa => fun_1(arr1(:,INT(obj%r):12,:st_fn(10))) .plus. &
+                fun_2(ptr(:,INT(obj%r):12,:st_fn(10))))
+  IF(aa(1,1,1)%i2 .EQ. 25) THEN
+    PRINT*,'pass'
+  ELSE
+    PRINT*,101
+  END IF
+END ASSOCIATE
+
+CONTAINS
+
+FUNCTION fun_1(dd1)
+IMPLICIT NONE
+CLASS(t2),DIMENSION(:,:,:) :: dd1
+CLASS(t2),DIMENSION(:,:,:),ALLOCATABLE :: fun_1
+ALLOCATE(fun_1(10,10,10))
+fun_1%i2 = dd1%i2 + 10
+END FUNCTION
+
+FUNCTION fun_2(dd2)
+IMPLICIT NONE
+CLASS(t1),DIMENSION(:,:,:) :: dd2
+CLASS(t1),DIMENSION(:,:,:),POINTER :: fun_2
+ALLOCATE(fun_2(10,10,10))
+fun_2%i1 = dd2%i1
+END FUNCTION
+
+END PROGRAM

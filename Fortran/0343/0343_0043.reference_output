@@ -1,0 +1,25 @@
+
+
+ + justice + item +               + computed result +                   + compare value +                               + difference +
+
+0 *ok*
++         (  1 )                                   2                                   2
+0 *ok*
++         (  2 )                                   1                                   1
+0 *ok*
++         (  3 )                                  35                                  35
+0 *ok*
++         (  4 )                                  23                                  23
+0 *ok*
++         (  5 )                                  10                                  10
+0 *ok*
++         (  6 )                                   1                                   1
+0 *ok*
++         (  7 )                                   1                                   1
+0 *ok*
++         (  8 )                                  16                                  16
+0 *ok*
++         (  9 )                                  -1                                  -1
+0 *ok*
++         ( 10 )                                   1                                   1
+exit 0

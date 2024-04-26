@@ -1,0 +1,15 @@
+ I'm main.
+ I'm main's sub.
+ I'm mod's sub.
+ I'm mod's sub internal 1.
+ I'm mod's sub internal 2.
+ I'm foo.
+ I'm ent.
+ I'm foo.
+ I'm mod's sub.
+ I'm mod's sub internal 1.
+ I'm mod's sub internal 2.
+ I'm foo.
+ I'm ent.
+ I'm foo.
+exit 0

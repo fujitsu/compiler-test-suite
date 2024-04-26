@@ -1,0 +1,26 @@
+PROGRAM main
+IMPLICIT NONE
+
+COMPLEX(KIND = 8),POINTER :: ptr
+COMPLEX(KIND = 8) :: tgt
+
+ALLOCATE(ptr)
+tgt = (12.23,-32.10)
+ptr = (23.10,21.90)
+
+ASSOCIATE(aa => tgt + CONJG(fun(ptr)))
+  SELECT CASE(INT(AIMAG(aa)))
+  CASE(-53)
+  PRINT*,'pass'
+  END SELECT
+END ASSOCIATE
+
+CONTAINS
+
+FUNCTION fun(ddy)
+IMPLICIT NONE
+COMPLEX(KIND = 8),POINTER :: ddy,fun
+fun => ddy
+END FUNCTION
+
+END PROGRAM

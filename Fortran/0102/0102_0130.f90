@@ -17,4 +17,3 @@ if(l3(1).ne.n3(1).and. l3(1) .ne.1)print*,"103"
 if(l4(1).ne.n4(1).and. l4(1) .ne.1)print*,"104"
 print*,"PASS"
 end
-

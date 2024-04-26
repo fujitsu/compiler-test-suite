@@ -1,0 +1,218 @@
+      DIMENSION X(100),Y(100 ,30 ),Z(100 ,30 )
+  102 FORMAT(1H0,12X,7H*ERROR*,7X,2H( ,I2,2H ),10X,E14.7,13X,E14.7,8X,
+     *E14.7)
+  103 FORMAT(1H0,12X,4H*OK*,10X,2H( ,I2,2H ),10X,E14.7,13X,E14.7,8X,
+     *E14.7)
+      M   =10
+      N   =40
+      L   =2
+      DO 90 N=1,100
+      X(N)=FLOAT(N)/10.0
+      DO 90 K=1,30
+      Y(N,K)=FLOAT(K)/100.0+FLOAT(N)/10.0
+   90 CONTINUE
+      DO 95 N=1,30
+      DO 95 K=1,30
+      Z(N,K)=Y(N,K)-X(N)/100.-X(N)
+   95 CONTINUE
+C
+C
+      ITM =01
+      ANS =0.1
+      DIF =X(1)-ANS
+      IF(ABS(DIF)-1.0E-05)2,1,1
+    1 WRITE(6,102)ITM,X(1),ANS,DIF
+      GO TO 500
+    2 WRITE(6,103)ITM
+C
+C
+  500 ITM =ITM+1
+      ANS =1.0
+      DIF =X(M)-ANS
+      IF(ABS(DIF)-1.0E-05)4,3,3
+    3 WRITE(6,102)ITM,X(M),ANS,DIF
+      GO TO 501
+    4 WRITE(6,103)ITM
+C
+C
+  501 ITM =ITM+1
+      ANS =2.4
+      DIF =X(M+14)-ANS
+      IF(ABS(DIF)-1.0E-05)6,5,5
+    5 WRITE(6,102)ITM,X(M+14),ANS,DIF
+      GO TO 502
+    6 WRITE(6,103)ITM
+C
+      N=40
+C
+  502 ITM =ITM+1
+      ANS =3.6
+      DIF =X(N-4)-ANS
+      IF(ABS(DIF)-1.0E-05)8,7,7
+    7 WRITE(6,102)ITM,X(N-4),ANS,DIF
+      GO TO 503
+    8 WRITE(6,103)ITM
+C
+C
+  503 ITM =ITM+1
+      ANS =5.0
+      DIF =X(5*M)-ANS
+      IF(ABS(DIF)-1.0E-05)10,9,9
+    9 WRITE(6,102)ITM,X(5*M),ANS,DIF
+      GO TO 504
+   10 WRITE(6,103)ITM
+C
+C
+  504 ITM =ITM+1
+      ANS =7.3
+      DIF =X(7*M+3)-ANS
+      IF(ABS(DIF)-1.0E-05)12,11,11
+   11 WRITE(6,102)ITM,X(7*M+3),ANS,DIF
+      GO TO 505
+   12 WRITE(6,103)ITM
+C
+C
+  505 ITM =ITM+1
+      ANS =9.7
+      DIF =X(10*M-3)-ANS
+      IF(ABS(DIF)-1.0E-05)14,13,13
+   13 WRITE(6,102)ITM,X(10*M-3),ANS,DIF
+      GO TO 506
+   14 WRITE(6,103)ITM
+C
+C
+  506 ITM =ITM+1
+      ANS =Y(2,2)-X(2)/100.-X(2)
+      DIF =Z(2,2)-ANS
+      IF(ABS(DIF)-1.0E-05)16,15,15
+   15 WRITE(6,102)ITM,Z(2,2),ANS,DIF
+      GO TO 508
+   16 WRITE(6,103)ITM
+C
+C
+  508 ITM =ITM+1
+      ANS =Y(M,10)-X(M)/100.-X(M)
+      DIF =Z(M,10)-ANS
+      IF(ABS(DIF)-1.0E-05)18,17,17
+   17 WRITE(6,102)ITM,Z(M,10),ANS,DIF
+      GO TO 509
+   18 WRITE(6,103)ITM
+C
+C
+  509 ITM =ITM+1
+      ANS =Y(M+10,20)-X(M+10)/100.-X(M+10)
+      DIF =Z(M+10,20)-ANS
+      IF(ABS(DIF)-1.0E-05)20,19,19
+   19 WRITE(6,102)ITM,Z(M+10,20),ANS,DIF
+      GO TO 510
+   20 WRITE(6,103)ITM
+      N =12
+C
+  510 ITM =ITM+1
+      ANS =Y(N-3,18)-X(N-3)/100.-X(N-3)
+      DIF =Z(N-3,18)-ANS
+      IF(ABS(DIF)-1.0E-05)22,21,21
+   21 WRITE(6,102)ITM,Z(N-3,18),ANS,DIF
+      GO TO 511
+   22 WRITE(6,103)ITM
+C
+  511 ITM =ITM+1
+      ANS =Y(3*M,20)-X(3*M)/100.-X(3*M)
+      DIF =Z(3*M,20)-ANS
+      IF(ABS(DIF)-1.0E-05)24,23,23
+   23 WRITE(6,102)ITM,Z(3*M,20),ANS,DIF
+      GO TO 512
+   24 WRITE(6,103)ITM
+C
+C
+  512 ITM =ITM+1
+      ANS =Y(2*N+1,23)-X(2*N+1)/100.-X(2*N+1)
+      DIF =Z(2*N+1,23)-ANS
+      IF(ABS(DIF)-1.0E-05)26,25,25
+   25 WRITE(6,*)ITM,Z(2*N+1,23),ANS,DIF
+      GO TO 513
+   26 WRITE(6,103)ITM
+C
+C
+  513 ITM =ITM+1
+      ANS =Y(2 *N-1,29)-X(2 *N-1)/100.-X(2 *N-1)
+      DIF =Z(2 *N-1,29)-ANS
+      IF(ABS(DIF)-1.0E-05)28,27,27
+   27 WRITE(6,102)ITM,Z(2 *N-1,29),ANS,DIF
+      GO TO 514
+   28 WRITE(6,103)ITM
+C
+C
+  514 ITM =ITM+1
+      ANS =Y(29,L)-X(29)/100.-X(29)
+      DIF =Z(29,L)-ANS
+      IF(ABS(DIF)-1.0E-05)30,29,29
+   29 WRITE(6,102)ITM,Z(29,L),ANS,DIF
+      GO TO 515
+   30 WRITE(6,103)ITM
+C
+C
+  515 ITM =ITM+1
+      ANS =Y(11,L+10)-X(11)/100.-X(11)
+      DIF =Z(11,L+10)-ANS
+      IF(ABS(DIF)-1.0E-05)32,31,31
+   31 WRITE(6,102)ITM,Z(11,L+10),ANS,DIF
+      GO TO 516
+   32 WRITE(6,103)ITM
+C
+C
+  516 ITM =ITM+1
+      ANS =Y(16,N-8)-X(16)/100.-X(16)
+      DIF =Z(16,N-8)-ANS
+      IF(ABS(DIF)-1.0E-05)34,33,33
+   33 WRITE(6,102)ITM,Z(16,N-8),ANS,DIF
+      GO TO 517
+   34 WRITE(6,103)ITM
+C
+C
+  517 ITM =ITM+1
+      ANS =Y(25,2*M)-X(25)/100.-X(25)
+      DIF =Z(25,2*M)-ANS
+      IF(ABS(DIF)-1.0E-05)36,35,35
+   35 WRITE(6,102)ITM,Z(25,2*M),ANS,DIF
+      GO TO 518
+   36 WRITE(6,103)ITM
+C
+C
+  518 ITM =ITM+1
+      ANS =Y(20,2*N+4)-X(20)/100.-X(20)
+      DIF =Z(20,2*N+4)-ANS
+      IF(ABS(DIF)-1.0E-05)38,37,37
+   37 WRITE(6,102)ITM,Z(20,2*N+4),ANS,DIF
+      GO TO 519
+   38 WRITE(6,103)ITM
+C
+C
+  519 ITM =ITM+1
+      ANS =Y(5,3*N-20)-X(5)/100.-X(5)
+      DIF =Z(5,3*N-20)-ANS
+      IF(ABS(DIF)-1.0E-05)40,39,39
+   39 WRITE(6,102)ITM,Z(5,3*N-20),ANS,DIF
+      GO TO 520
+   40 WRITE(6,103)ITM
+C
+C
+  520 ITM =ITM+1
+      ANS =Y(N+9,M-8)-X(N+9)/100.-X(N+9)
+      DIF =Z(N+9,M-8)-ANS
+      IF(ABS(DIF)-1.0E-05)42,41,41
+   41 WRITE(6,102)ITM,Z(N+9,M-8),ANS,DIF
+      GO TO 521
+   42 WRITE(6,103)ITM
+C
+C
+  521 ITM =ITM+1
+      ANS =Y(1*L+2,2*N-8)-X(1*L+2)/100.-X(1*L+2)
+      DIF =Z(1*L+2,2*N-8)-ANS
+      IF(ABS(DIF)-1.0E-05)44,43,43
+   43 WRITE(6,102)ITM,Z(1*L+2,2*N-8),ANS,DIF
+      GO TO 522
+   44 WRITE(6,103)ITM
+  522 CONTINUE
+      STOP
+      END

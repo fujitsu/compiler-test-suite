@@ -1,0 +1,11 @@
+ === subroutine child called ===
+ local  =  10
+ common =  4
+ m_local  =  10
+ m_common =  4
+ === module subroutine called ===
+ local  =  40
+ common =  160
+ m_local  =  40
+ m_common =  160
+exit 0

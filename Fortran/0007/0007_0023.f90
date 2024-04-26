@@ -1,7 +1,6 @@
 module m1
  integer:: id1=10,id2=10
  contains
-!
  subroutine sub
  integer a(id1,id2),b(id1,id2)
  a=1

@@ -1,0 +1,31 @@
+MODULE mod1
+IMPLICIT NONE
+
+REAL :: rr = 2.0
+
+CONTAINS
+
+REAL FUNCTION fun_1(dy)
+REAL :: dy
+fun_1 = dy * rr
+END FUNCTION
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+REAL :: lr= 3.0
+
+ASSOCIATE(aa => fun_1(lr))
+  lr =lr + aa
+END ASSOCIATE
+
+IF(lr .EQ. 9.0) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+END PROGRAM 

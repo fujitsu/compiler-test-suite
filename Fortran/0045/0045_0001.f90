@@ -15,4 +15,3 @@ real :: rslt1=HYPOT(xx1,y=yy1)
  call sub
  print *, "pass"
 end
-

@@ -1,0 +1,87 @@
+      DIFF=1.0E-5
+      N=0
+      ITEM=1
+      K=0
+      IIW=1
+      C1=9.0/16.0
+      C2=7.0/16.0
+      C3=7.0/8.0
+      C4=9.0/32.0
+  100 N=N+1
+      IF(N-1)110,120,110
+  110 WRITE(6,12)
+   12 FORMAT(1H1 / )
+  120 WRITE(6,13)ITEM,N
+   13 FORMAT(1H0,7X,9H*** ITEM(,I2,5H) ***,7X,
+     1       49H*****  TEST  OF  STANDARD  EXTERNAL  FUNCTION  - ,
+     2       16HSQRT(X) - ******,22X,9H( PAGE = ,I3,2H )
+     3       ///9X,11H- JUSTICE -,9X,12H- ARGUMENT -,12X,
+     4       19H- COMPUTED RESULT -,8X,17H- COMPARE VALUE -,13X,
+     5       14H- DIFFERENCE - / )
+C
+      L=0
+  200 IF(ITEM-1) 500,600,500
+  600 X=FLOAT(K)/10.0
+      GO TO 700
+  500 X=FLOAT(K)
+  700 Y=SQRT(X)
+      A=X
+      I=0
+      IF(A) 300,310,300
+  310 Z=0.0
+      GO TO 195
+  300 IF(A-0.25) 320,130,130
+  320 A=4.0*A
+      I=I-1
+      GO TO 300
+  130 IF(A-1.0)150,150,140
+  140 A=0.25*A
+      I=I+1
+      GO TO 130
+  150 IF(A-0.5)160,170,170
+  160 B1=C3*A+C4
+      GO TO 180
+  170 B1=C1*A+C2
+  180 B2=(B1+A/B1)*0.5
+      B3=(B2+A/B2)*0.5
+      Z=B3*2.0**I
+  195 CALL PRTN(L,DIFF,X,Y,Z)
+      L=L+1
+      GO TO(800,900,950),ITEM
+  800 IF(K-99) 190,210,210
+  190 K=K+1
+      IF(L-50)200,100,100
+  210 ITEM=2
+      K=10
+      GO TO 100
+  900 IF(K-99)220,230,230
+  220 K=K+1
+      IF(L-50)200,100,100
+  230 ITEM=3
+      K=100
+      GO TO 100
+  950 IF(K-9900)240,250,250
+  240 K=K+100
+      IF(L-50)200,100,100
+  250 CONTINUE
+      STOP
+      END
+C
+      SUBROUTINE    PRTN ( L, D, A, R, V )
+      DIFF = V - R
+      IF(R) 90,80,90
+   80 IF(ABS(DIFF)-D) 100,120,120
+   90 IF(ABS(DIFF)-D*ABS(V)) 100,120,120
+  100 WRITE (6,1)
+    1 FORMAT(1H ,9X,7H*OK*   ,11X,E15.7,12X,E15.7,11X,E15.7,14X,E15.7)
+      GO TO 130
+  120 WRITE (6,2) A,R,V,DIFF
+    2 FORMAT(1H ,9X,7H*ERROR*,11X,E15.7,12X,E15.7,11X,E15.7,14X,E15.7)
+  130 IF (L- 9) 200,190,140
+  140 IF (L-19) 200,190,150
+  150 IF (L-29) 200,190,160
+  160 IF (L-39)200,190,200
+  190 WRITE (6,3)
+    3 FORMAT (1H )
+  200 RETURN
+      END

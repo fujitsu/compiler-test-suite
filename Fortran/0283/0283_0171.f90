@@ -1,0 +1,28 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  REAL :: rr
+END TYPE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+REAL :: r = 10.0
+
+ASSOCIATE(aa => t1(5.0))
+  DO WHILE(r .GT. aa%rr)
+    r = r - 1.0
+  END DO
+END ASSOCIATE
+
+IF(r .EQ. 5.0) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+END PROGRAM

@@ -1,6 +1,6 @@
 module m0
 type ty0
- integer  :: tar1!=2
+ integer  :: tar1
 end type
 end 
 module m

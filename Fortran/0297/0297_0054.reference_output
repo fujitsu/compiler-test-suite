@@ -1,0 +1,21 @@
+ ***** i?_to_c16
+ ok
+ ok
+ ok
+ ok
+ ***** c16_to_i?
+ ok
+ ok
+ ok
+ ok
+ ***** i?_to_c8
+ ok
+ ok
+ ok
+ ok
+ ***** c8_to_i?
+ ok
+ ok
+ ok
+ ok
+exit 0

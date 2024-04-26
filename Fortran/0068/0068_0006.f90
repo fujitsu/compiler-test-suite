@@ -258,7 +258,6 @@ subroutine sub13_2(a,b,loop_size)
   end do
 end subroutine sub13_2
 
-
 program main
   implicit none
   integer,parameter::xp1 = 4 

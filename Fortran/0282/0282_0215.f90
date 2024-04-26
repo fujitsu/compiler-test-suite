@@ -1,0 +1,55 @@
+program main
+real*16, parameter::a(8) = (/1.0_16, 2.0_16, 3.0_16, 4.0_16, &
+                             5.0_16, 6.0_16, 7.0_16, 8.0_16/)
+real*16, parameter::b(2, 4) = reshape(a, (/2,4/))
+real*16, parameter::c(12) = (/41.0_16, 42.0_16, 43.0_16, 44.0_16, &
+                              45.0_16, 46.0_16, 47.0_16, 48.0_16, &
+							  49.0_16, 50.0_16, 51.0_16, 52.0_16/)
+real*16, parameter::d(4, 3) = reshape(c, (/4,3/))
+
+real*16::e(2,3) = matmul(b, d)
+real*16::f(2,3)
+integer::i,j
+integer::m(2)
+integer::g(2) = shape(matmul(b,d))
+integer::h = kind(matmul(b,d))
+f = matmul(b ,d)
+m = shape(matmul(b,d))
+do i =1,2
+do j =1,3
+print*, e(i,j), '--', f(i,j)
+if(e(i,j).ne.f(i,j)) then
+print*, '??? (Error: R->R) ???'
+else
+print*, 'R -> R'
+endif
+enddo
+enddo
+
+call check(g,m)
+call check1(h, kind(matmul(b,d)))
+
+end
+
+subroutine check(x, y)
+integer x(2), y(2)
+integer::i
+print*, x,'--',y
+do i=1,2
+if (x(i).ne.y(i)) then
+print*, '??? (Error: Shape) ???'
+else
+print*, 'SHAPE OK '
+endif
+enddo
+end subroutine
+
+subroutine check1(x, y)
+integer x, y
+print*, x,'--',y
+if (x.ne.y) then
+print*, '??? (KIND Error:) ???'
+else
+print*, 'KIND OK '
+endif
+end subroutine

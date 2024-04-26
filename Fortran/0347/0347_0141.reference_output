@@ -1,0 +1,15 @@
+  **  a result value  ** 
+ 8. 8. -12. -12. 8. 8. 4. 4.
+  **  b result value  ** 
+ 21. 21. 21. 21. 10. 10. 10. 10.
+  **  c result value  ** 
+ 14. 28. 14. 28. 14. 28. 14. 28.
+  **  aa result value  ** 
+ 2 84 105 128 153
+  **  bb result value  ** 
+ 4 5 6 7 8
+  **  cc result value  ** 
+ 3 4 5 6 3
+  **** n and m ***** 
+ 2 9
+exit 0

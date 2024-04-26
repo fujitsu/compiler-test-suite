@@ -16,4 +16,3 @@ use m1
 call foo
 print *,'pass'
 end
-

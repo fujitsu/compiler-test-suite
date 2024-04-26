@@ -1,0 +1,141 @@
+      DOUBLE PRECISION RANS,RD1,RD2,RD3,RD4,RD5,RD6,RD7,RD8
+      DOUBLE PRECISION RANS1,RANS2,RANS3
+      RD1 = 123456.12345D00
+      RD2  = 500.
+      RD3  = .4
+      RD4  = 5D-06
+      RD5  = 2.5D+01
+      RD6  = .4D+01
+      RD7  = -25.
+      RD8  = -5D02
+      IG   = -2
+      IPSW = 0
+      ITEM = 0
+ 1000 ITEM = ITEM+1
+      GO TO ( 1, 2, 3, 4, 5, 6, 7, 8, 9,10,11,12,13,14,15,
+     1       16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,
+     2       31,32,33,34,35,2000),ITEM
+  100 FORMAT(1H1/1H0,5X,41H * TEST OF EXPRESSION ( REAL*8 = REAL*8 ,,
+     *                  22H REAL*8 ) ERROR LIST *//1H0,
+     *               5X,7HITEM.NO,5X,15HCONSTANT VALUE.,14X,6HVALUE.)
+  101 FORMAT(1H0,7X,I5,2(D20.10))
+  102 FORMAT(1H1/1H0,5X,33HERROR IS NOT DETECTED BY TEST0120)
+  103 FORMAT(1H0,5X,37H*** ERROR IS DETECTED BY TEST0120 ***)
+    1 RANS = 3.1415D0+.92653589D-4
+      RANS1 =  3.141592653589
+      GO TO 1500
+    2 RANS = .456D-3*6D-5
+      RANS1 =  2.736D-08
+      GO TO 1500
+    3 RANS = 35.4938D2/.2D1
+      RANS1 =  17.7469D 02
+      GO TO 1500
+    4 RANS = RD2-5D-6
+      RANS1 =  499.999995
+      GO TO 1500
+    5 RANS = 5D-6*RD3
+      RANS1 =  2D-6
+      GO TO 1500
+    6 RANS = RD1+RD2
+      RANS1 =  123956.12345
+      GO TO 1500
+    7 RANS = RD3-RD6
+      RANS1 =  -3.6D 00
+      GO TO 1500
+    8 RANS = RD4*RD2
+      RANS1 =  25D-04
+      GO TO 1500
+    9 RANS = RD2/RD3
+      RANS1 =  1.25D03
+      GO TO 1500
+   10 RANS = (RD5+RD6)
+      RANS1 =  2.9D 01
+      GO TO 1500
+   11 RANS = (RD5-(-RD7))
+      RANS1 =  0.0
+      GO TO 1500
+   12 RANS = (-RD8*RD3)
+      RANS1 =  2.0D 02
+      GO TO 1500
+   13 RANS = ((-RD2)/(-RD3))
+      RANS1 =  1.25D 03
+      GO TO 1500
+   14 RANS = RD5*(RD2+RD8)
+      RANS1 =  0.0
+      GO TO 1500
+   15 RANS = RD4/(RD5-RD7)
+      RANS1 =  1.0D-07
+      GO TO 1500
+   16 RANS = (RD4+RD3)+RD6
+      RANS1 =  4.400005
+      GO TO 1500
+   17 RANS = (RD7+RD5)-RD1
+      RANS1 =  -123456.12345
+      GO TO 1500
+   18 RANS = (RD1+RD2)+(RD4+RD6)
+      RANS1 =  123960.123455
+      GO TO 1500
+   19 RANS = (RD2+RD8)/(RD4+RD1)
+      RANS1 =  0.0
+      GO TO 1500
+   20 RANS = -((RD1+RD2)+(RD4+RD6))
+      RANS1 =  -123960.123455
+      GO TO 1500
+   21 RANS = RD8-(RD4+RD3)
+      RANS1 = -500.400005
+      GO TO 1500
+   22 RANS = RD2*(.5D-05-RD4)
+      RANS1 =  0.0
+      GO TO 1500
+   23 RANS = (RD1+3.987654321)+RD8
+      RANS1 =  122960.111104321
+      GO TO 1500
+   24 RANS = (.25D2+RD7)/RD8
+      RANS1 =  0.0
+      GO TO 1500
+   25 RANS = (RD2+2.154768D3)+(RD1-45612345D-5)
+      RANS1 =  125654768D-03
+      GO TO 1500
+   26 RANS = (4D-07+RD4)-(RD6+1234567D-6)
+      RANS1 =  -0.52345616D 01
+      GO TO 1500
+   27 RANS = (25D0+RD7)*(3.1415926+RD1)
+      RANS1 =  0.0
+      GO TO 1500
+   28 RANS = (RD1-12345612345D-5)/(.4D-70+RD8)
+      RANS1 =  0.0
+      GO TO 1500
+   29 RANS = RD2/.2D01
+      RANS1 =  250.0
+      GO TO 1500
+   30 RANS = (RD2+RD8)**(IG+3)
+      RANS1 =  0.0
+      GO TO 1500
+   31 RANS = RD4**(RD6-2.)
+      RANS1 =  2.5D-11
+      GO TO 1500
+   32 RANS = RD5**(RD6-2.0D0)
+      RANS1 =  625.0
+      GO TO 1500
+   33 RANS  = RD7**(3+(+IG))
+      RANS1 =  -25.0
+      GO TO 1500
+   34 RANS = (0.06D01+RD3)**(5D-06*1D06)
+      RANS1 =  1.0
+      GO TO 1000
+   35 RANS = -(RD3*0.1D2)**(.2D01)
+      RANS1 = -16D00
+ 1500 RANS2 = RANS1-DABS(RANS1*0.1D-05)
+      RANS3 =  RANS1+DABS(RANS1*0.1D-05)
+      IF (RANS.GE.RANS2.AND.RANS.LE.RANS3)        GO TO 1000
+      IF (IPSW.NE.0)                                    GO TO 1501
+      IPSW   =    1
+      WRITE(6,100)
+ 1501 WRITE(6,101) ITEM,RANS1,RANS
+      GO TO 1000
+ 2000 IF (IPSW.NE.0)               GO TO 2001
+      WRITE(6,102)
+      STOP
+ 2001 WRITE(6,103)
+      STOP
+      END

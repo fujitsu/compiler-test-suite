@@ -21,7 +21,7 @@
          print *,i04a
          print *,i04t
       else
-         write(6,*) '*** ok !! ***'
+         write(6,*) '*** ok    ***'
       endif
       stop
       end

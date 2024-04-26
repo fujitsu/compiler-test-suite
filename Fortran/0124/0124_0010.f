@@ -1,4 +1,3 @@
-c 
 
       program main
 
@@ -8,7 +7,6 @@ c
 
       a = (0.0, 0.0)
 
-c
       do i=1,N
          b(i) = a(i) + 1.0
       enddo

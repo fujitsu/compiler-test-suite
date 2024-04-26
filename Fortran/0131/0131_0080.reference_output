@@ -1,0 +1,4 @@
+ test(i4)==>ok
+ test(r4)==>ok
+ test(r*8)==>ok
+exit 0

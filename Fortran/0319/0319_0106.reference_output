@@ -1,0 +1,10 @@
+ === main child called at main ===
+ local  =  2
+ common =  4
+ === subroutine child called at sub ===
+ subroutine local  =  80
+ subroutine common =  160
+ === subroutine called at main ===
+ local  =  8
+ common =  320
+exit 0

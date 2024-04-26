@@ -1,4 +1,4 @@
-logical,parameter::a=BGE(o'11',o'12') !9,10
+logical,parameter::a=BGE(o'11',o'12')
 logical,parameter::b=BGE(o'12',b'00000011')
 logical,parameter::c=BGE(o'4',12)
 logical,parameter::d=BGE(z'f',o'12')
@@ -60,4 +60,3 @@ if( ii1 .neqv. .false. )print*,"128"
 if( jj1 .neqv. .false. )print*,"129"
 print*,"PASS"
 end
-

@@ -1,0 +1,15 @@
+********** TEST START **********
+ X  --> O K
+ Y  --> O K
+ Y2 --> O K
+ Z  --> O K
+ W  --> O K
+ Q  --> O K
+ Q2 --> O K
+ Q3 --> O K
+ S  --> O K
+ T  --> O K
+ S2 --> O K
+ T2 --> O K
+**********  TEST  END  **********
+exit 0

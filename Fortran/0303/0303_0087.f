@@ -1,0 +1,37 @@
+      PROGRAM  MAIN
+      IMPLICIT REAL*8(A-B,D),LOGICAL*4(L),COMPLEX*16(C)
+      DIMENSION  DA10(10,10),DA20(10,10),DA30(10,10),DA40(10,10),
+     *           LD10(10,10)
+      COMMON /BLK/ CD10(10,10),CD20(10,10),CD30(10,10)
+!
+      DATA     DA10/100*1.0D0/,DA20/100*2.0D0/
+      DATA     DA30/100*3.0D0/,DA40/100*4.0D0/
+      DATA     LD10/100*.FALSE./
+      DATA     NN/10/
+C
+      CD10 = 0
+      CD20 = 0
+      CD30 = 0
+      CALL  SUB2(DA10,DA20,DA30,DA40,LD10,NN)
+      print *," end "
+      STOP
+      END
+      SUBROUTINE SUB2(DA10,DA20,DA30,DA40,LD10,NN)
+      IMPLICIT  REAL*8(D),LOGICAL*4(L),COMPLEX*16(C)
+      DIMENSION  DA10(NN,NN),DA20(NN,NN),DA30(NN,NN),DA40(NN,NN),
+     *           LD10(NN,NN)
+      COMMON /BLK/ CD10(10,10),CD20(10,10),CD30(10,10)
+!
+      NX=NN-2
+      DO 60 I1=2,NX,2
+       DO 50 I2=2,NX,2
+         CD30(I1,NX)=CD30(I1,NX)-CD20(I1,I2)
+         IF ( LD10(I1,I2) ) THEN
+           DA10(I1,I2) = DA20(I1+1,2)
+         ENDIF
+  50   CONTINUE
+         DA40(I1,2)=DA10(I1,3)-DIMAG(CD10(I1,2))
+         DA30(I1,4)=DIMAG(CD30(I1+1,NX))-DA20(I1,3)
+  60  CONTINUE
+      RETURN
+      END

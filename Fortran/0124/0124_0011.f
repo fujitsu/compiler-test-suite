@@ -1,4 +1,3 @@
-c 
       program main
 
       integer, parameter:: N=4
@@ -6,7 +5,6 @@ c
 
       a = (2.0, 2.0)
 
-c
       a(1) = a(1) + 1.0
 
       if ((real(sum(a))+aimag(sum(a))).eq.17.0) then

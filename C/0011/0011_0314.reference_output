@@ -1,0 +1,2 @@
+mtr  test(1) ==> okTEST(2) ==> OK all test ==> ok
+exit 0

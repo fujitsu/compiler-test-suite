@@ -1,4 +1,3 @@
-!
 integer,dimension(10,11,12,2) :: a
 integer,dimension(10,11,12) :: b,c
 a=1

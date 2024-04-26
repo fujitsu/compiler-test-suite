@@ -1,0 +1,6 @@
+CHARACTER(LEN=5) :: CH='XXXXX'
+NAMELIST /X/CH
+OPEN(6)
+WRITE(6,NML=X)
+PRINT *,'*** ok ***'
+END

@@ -43,7 +43,6 @@ c1 = 1.
 c2 = 1.
 d = (/(i,i=1,n)/)
 
-
 call sub(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,b1,b2,c1,c2,d,n)
 
 if (int(sum(a17)) .eq. ians) then

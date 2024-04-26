@@ -1,4 +1,3 @@
-!
 
 program main
   integer,parameter::n=100
@@ -9,7 +8,6 @@ program main
   integer,parameter :: ans=5150
   real(8) :: anssum
 
-!  allocate(array(n))
   do i = 1, n
     allocate(array(i)%p)
     array(i)%p=i
@@ -29,7 +27,6 @@ program main
   endif
 
   do i = 1, n
-!    print *,array(i)%p
     deallocate(array(i)%p)
   end do
 
@@ -37,9 +34,7 @@ program main
   subroutine sub_pointer_array(array,n)
   type(pp),dimension(:) :: array
     do j=1,n
-!      do i=1,n
         array(j)%p = array(j)%p + 1._8
-!      enddo
     enddo
   end subroutine sub_pointer_array
 end program

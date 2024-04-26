@@ -1,4 +1,3 @@
-c 
 
       program main
 
@@ -10,13 +9,10 @@ c
       a = sin(0.0)
       c = cmplx(a,a)
 
-c
       a = a + 3.0
 
-c
       b = a + 4.0
 
-c
       c = c + b 
 
       res = b + c + a

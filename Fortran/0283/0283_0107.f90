@@ -1,0 +1,38 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE ty
+INTEGER :: num
+PROCEDURE(sub),POINTER,NOPASS :: proc
+END TYPE
+
+CONTAINS
+
+SUBROUTINE sub(a,b)
+TYPE(ty),INTENT(IN) :: a
+INTEGER :: b
+b = b + a%num
+END SUBROUTINE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+INTEGER :: n = 4
+TYPE(ty) :: obj
+
+ASSOCIATE(bb => obj)
+  bb%num = 10
+  bb%proc => sub
+  CALL bb%proc(bb,n)
+END ASSOCIATE
+
+IF(n .EQ. 14) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+END PROGRAM

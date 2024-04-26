@@ -1,0 +1,25 @@
+program main
+        implicit complex(kind=8)                (x-z)
+
+        implicit type(complex(kind=8))          (w)
+
+        implicit type(complex(8))               (a,i)
+        implicit type(complex(kind=8))          (b)
+        implicit type(complex(kind=(12-4)))     (c)
+        implicit type(complex(12-4))            (d)
+        implicit type(complex(2*4))             (e)
+        implicit type(complex(((16)-(2*4))))    (f)
+
+        if(kind(x) /= kind(y)) print*,101
+        if(kind(x) /= kind(a)) print*,102
+        if(kind(x) /= kind(i)) print*,103
+        if(kind(x) /= kind(b)) print*,104
+        if(kind(x) /= kind(c)) print*,105
+        if(kind(x) /= kind(d)) print*,106
+        if(kind(x) /= kind(e)) print*,107
+        if(kind(x) /= kind(f)) print*,108
+        if(kind(x) /= kind(w)) print*,109
+
+print*,"pass"
+end program main
+

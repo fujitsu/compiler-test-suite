@@ -1,0 +1,33 @@
+      WRITE(6,101)
+  101 FORMAT(1H0 // 10X,40H- JUSTICE -     - ITEM        - COMPUTED,
+     *9H RESULT -)
+  102 FORMAT(1H0,12X,7H*ERROR*,7X,2H( ,I2,2H ),14X,I6)
+  103 FORMAT(1H0,12X,4H*OK*,10X,2H( ,I2,2H ),14X,I6)
+      I3  =0
+      ITM =01
+      K   =1
+      GO TO (11,10),K
+   10 WRITE(6,102)ITM
+      GO TO 12
+   11 WRITE(6,103)ITM
+   12 ITM =ITM+1
+      K   =4
+      GO  TO (13,13,13,14),K
+   13 WRITE(6,102)ITM
+      GO TO 15
+   14 WRITE(6,103)ITM
+   15 ITM =ITM+1
+      K=K+2
+      GO TO (16,16,16,16,16,20,16,20,16,30),K
+   16 WRITE(6,102)ITM
+      GO TO 15
+   20 WRITE(6,103)ITM
+      GO TO 15
+   30 WRITE(6,103)ITM
+      ITM =ITM+1
+      I3  =I3+1
+      GO TO (30,31,32),I3
+   31 GO TO 30
+   32 CONTINUE
+      STOP
+      END

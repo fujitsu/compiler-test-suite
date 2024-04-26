@@ -13,4 +13,3 @@ end
    write(1,*) v%pa
 print *,'OK'
 end 
-

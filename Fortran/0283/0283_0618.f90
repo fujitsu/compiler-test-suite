@@ -1,0 +1,20 @@
+PROGRAM main
+IMPLICIT NONE
+
+CHARACTER(LEN = 5),DIMENSION(:),POINTER :: ptr
+CHARACTER(LEN = 5),DIMENSION(3:12),TARGET :: tgt = 'aaaaa'
+CHARACTER(LEN = 3),DIMENSION(:),POINTER :: ptr2
+
+ptr => tgt
+
+ASSOCIATE(aa => ptr)
+  ptr2 => aa(3: : 2)(2:4)
+END ASSOCIATE
+
+IF(ALL(ptr2(3: : 2)(1:3) .EQ. 'aaa')) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+END PROGRAM  

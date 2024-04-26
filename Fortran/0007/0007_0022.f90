@@ -1,5 +1,4 @@
 module m0
-  !!integer,parameter:: NUMIA_I=400, NUMFSL=100
   integer:: NUMIA_I=400, NUMFSL=100
 end
 module m1
@@ -8,7 +7,6 @@ module m1
 contains
  subroutine s0
  end subroutine
-!
  subroutine s1
   real(kind=8),dimension( NUMIA_I, NUMFSL ) :: u1,u2,u3,u4,v1,v2,v3,v4
   real(kind=8),dimension( NUMIA_I, NUMFSL ) :: ud1,ud2,ud3,ud4,vd1,vd2,vd3,vd4

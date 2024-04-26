@@ -1,4 +1,3 @@
-! Kind used
         program pro
 integer, parameter:: x1= kind(HYPOT(4.0,5.0))
 

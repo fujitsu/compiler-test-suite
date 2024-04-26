@@ -5,7 +5,7 @@ interface
   end function
 end interface
   character(3),pointer :: chr_pointer01
-  allocate(chr_pointer01,source=fun01()) !
+  allocate(chr_pointer01,source=fun01())
   print *,'pass'
 end
 

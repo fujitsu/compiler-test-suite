@@ -1,4 +1,3 @@
-! sum
       program main
       call sub()
       stop

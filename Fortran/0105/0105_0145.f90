@@ -15,4 +15,3 @@ if (any(abs((/DX/)-(/&
 /))>0.01))print *,'error'
 print *,'pass'
 end
-

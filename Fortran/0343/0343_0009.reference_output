@@ -1,0 +1,13 @@
+
+
+ + justice + item +               + computed result +                   + compare value +                               + difference +
+
+0 *ok*    (  1 )
+0 *ok*    (  2 )
+0 *ok*    (  3 )
+0 *ok*    (  4 )
+0 *ok*    (  5 )
+0 *ok*    (  6 )
+0 *ok*    (  7 )
+0 *ok*    (  8 )
+exit 0

@@ -1,0 +1,49 @@
+
+  ## TEST 1 ## 
+ F F F F F F F F F F
+
+  ## TEST 2 ## 
+ F F F T T T T F F F
+
+  ## TEST 3 ## 
+ F F F F F F F F F F
+
+  ## TEST 4 ## 
+ F F F F F F F F F F
+
+  ## TEST 5 ## 
+ T T F F F F F F F F
+
+  ## TEST 6 ## 
+ F F F F F F F F F F
+
+  ## TEST 7 ## 
+ T T T T T T T T T T
+
+  ## TEST 8 ## 
+ T F F F F F F F F F
+
+  ## TEST 9 ## 
+ T T T T T T T T T T
+
+  ## TEST 10 ## 
+ F F T F T F T F T T
+
+  ## TEST 11 ## 
+ F F F F T F F F F F
+
+  ## TEST 12 ## 
+ F T T F F T F F F T
+
+  ## TEST 13 ## 
+ T T T T T T T T T T
+
+  ## TEST 14 ## 
+ T F T F T F T F T F
+
+  ## TEST 15 ## 
+ F F F F F F F F F F
+
+  ## TEST 16 ## 
+ F F F F F F F F F F
+exit 0

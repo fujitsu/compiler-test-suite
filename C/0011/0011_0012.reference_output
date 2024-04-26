@@ -1,0 +1,5 @@
+start
+u8:ok
+i8:ok
+ended
+exit 0

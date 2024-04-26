@@ -1,0 +1,11 @@
+ A--A
+ integer->character OK
+ C--C
+ integer->character OK
+ B--B
+ integer->character OK
+ D--D
+ integer->character OK
+ KIND:: 1 --KIND:: 1
+ KIND OK
+exit 0

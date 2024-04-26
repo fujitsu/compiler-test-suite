@@ -1,0 +1,32 @@
+ 3 2 2
+ bc--bc
+ pass
+   --  
+ pass
+ ij--ij
+ pass
+   --  
+ pass
+ cd--cd
+ pass
+   --  
+ pass
+   --  
+ pass
+   --  
+ pass
+   --  
+ pass
+   --  
+ pass
+   --  
+ pass
+   --  
+ pass
+ 3 2 2 -- 3 2 2
+ SHAPE OK 
+ SHAPE OK 
+ SHAPE OK 
+ 1 -- 1
+ KIND OK 
+exit 0

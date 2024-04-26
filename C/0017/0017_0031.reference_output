@@ -1,0 +1,3 @@
+__STDC_VERSION__ test program
+__STDC_VERSION__ is correct.
+exit 0

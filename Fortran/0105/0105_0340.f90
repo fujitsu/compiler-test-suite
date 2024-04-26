@@ -14,4 +14,3 @@ end
 call s1
 print *,'pass'
 end
-

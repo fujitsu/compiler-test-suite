@@ -1,0 +1,21 @@
+PROGRAM MAIN
+IMPLICIT NONE
+INTEGER :: K,X,L,M,N
+X=0
+K=10
+L=30
+DO CONCURRENT(K=1:5,L=1:4,(K<3 .OR. K==5))
+    DO CONCURRENT(N=1:4,L /= K)
+      IF(L /= N) THEN
+        DO M=K,L,L-K
+          X=X+1
+        END DO
+      END IF
+    END DO
+END DO
+IF (X == 60 .AND. K==10 .AND. L==30) THEN
+ Print *,"PASS"
+ELSE
+ Print *,"FAIL",X
+END IF
+END PROGRAM

@@ -4,7 +4,6 @@ type base
    procedure,nopass::prc1
 end type
 
-
 contains
 subroutine prc1()
   write(1,*)100

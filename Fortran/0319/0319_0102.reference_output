@@ -1,0 +1,5 @@
+ local  =  8
+ common =  32
+ m_local  =  8
+ m_common =  32
+exit 0

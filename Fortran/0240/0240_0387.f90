@@ -1,0 +1,17 @@
+call s
+print *,'pass'
+end
+subroutine s
+use, intrinsic :: ieee_arithmetic
+type(ieee_round_type) ::round_value
+real ::x
+x=1.0
+call ieee_get_rounding_mode(round_value)
+if (ieee_support_datatype(x)) then
+if (ieee_support_rounding(round_value, x)) then
+call ieee_set_rounding_mode(ieee_nearest)
+end if
+end if
+call ieee_set_rounding_mode(round_value)
+if(round_value.ne.ieee_nearest) print *,'err'
+end

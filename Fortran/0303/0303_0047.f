@@ -1,0 +1,35 @@
+      COMMON/COM/ N99,N30
+      CALL DUMMY
+      CALL SUB
+      END
+      SUBROUTINE DUMMY
+      END
+      SUBROUTINE SUB
+      COMMON/COM/ N99,N30
+      REAL*8 H004(100),P004(100),Q004(100)
+      REAL*8 H006(2,3000,1)
+      REAL*8 R005(3000,2)
+      REAL*8 U004
+      DATA  H004,P004,Q004/100*4.0, 100*2.0, 100*3.0/
+      DATA  R005/6000*4.0/
+      DATA  H006/6000*4.0/
+
+      DO 132 I=3,N99
+        U004   =P004(I)*Q004(I)
+        H004(I)=U004
+  132 CONTINUE
+!
+      DO 142 I=1,N30
+        U004   =H006(2,I,1)
+        R005(I,1)=U004
+  142 CONTINUE
+      DO 143 I=1,N30
+        R005(I,1)=H006(2,I,1)
+  143 CONTINUE
+      WRITE(6,*) (H004(I),I=1,100,10)
+      WRITE(6,*) ((R005(J,I),J=1,3000,100),I=1,2)
+      END
+      BLOCK DATA
+      COMMON/COM/ N99,N30
+      DATA  N99,N30/99,3000/
+      END

@@ -41,7 +41,6 @@
       I=INT(SINH(0.0))                                                 
                                                                        
       A(2147483647*I+I+1:5,1073741824*I*2+3)=A(9,1:5)/3.               
-C     The statement above equals to A(1:5,3)=A(9,1:5)/3.               
                                                                        
       DO J=1,5                                                         
          DO I=1,10                                                     

@@ -1,0 +1,18 @@
+REAL*2::A(4,5),B(4,5)
+REAL*2::C(4,5)
+A=4.5_2
+B=-5.4_2
+C=SIGN(A,B)
+IF(ANY(C /= -4.5_2))PRINT*,"101"
+C=SIGN(B,A)
+IF(ANY(C /= 5.4_2))PRINT*,"102"
+B=-0.0_2
+C=SIGN(A,B)
+IF(ANY(C /= -4.5_2))PRINT*,"103"
+B=0.0_2
+C=SIGN(A,B)
+IF(ANY(C /= 4.5_2))PRINT*,"104"
+
+PRINT*,"PASS"
+
+END

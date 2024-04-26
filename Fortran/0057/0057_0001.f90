@@ -16,7 +16,7 @@
     if(gnr(arr,4).ne.14)print*,"101" 
     print*,"Pass"
    end
-   
+
     elemental function fun(x,n)         
     integer :: fun
        integer,value :: n
@@ -31,4 +31,3 @@
        integer,intent(in) :: d1
        fun2=d1+d2
      end function
-

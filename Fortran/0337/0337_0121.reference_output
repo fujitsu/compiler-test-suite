@@ -1,0 +1,23 @@
+0
+
+          - JUSTICE -     - ITEM -          - COMPUTED RESULT -             - COMPARE VALUE -               - DIFFERENCE -
+
+0            *OK*          (  1 )
+0            *OK*          (  2 )
+0            *OK*          (  3 )
+0            *OK*          (  4 )
+0            *OK*          (  5 )
+0            *OK*          (  6 )
+0            *OK*          (  7 )
+0            *OK*          (  8 )
+0            *OK*          (  9 )
+0           REAL    IMAG                   REAL          IMAG             REAL          IMAG             REAL          IMAG
+
+
+0           *OK*    *OK*   ( 10 )
+0           *OK*    *OK*   ( 11 )
+0           *OK*    *OK*   ( 12 )
+0           *OK*    *OK*   ( 13 )
+0           *OK*    *OK*   ( 14 )
+0           *OK*    *OK*   ( 15 )
+exit 0

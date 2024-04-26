@@ -1,0 +1,11 @@
+ call mod01_sub
+ call mod02_sub
+ call mod03_sub
+ call mod04_sub
+ call mod05_sub
+ call mod06_sub
+ call mod07_sub
+ call mod08_sub
+ call mod09_sub
+ call mod10_sub
+exit 0

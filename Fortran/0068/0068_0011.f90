@@ -431,7 +431,6 @@ subroutine power24_2(aa,d,e,f,g,loop_size)
   end do
 end subroutine power24_2
 
-
 subroutine c_sqrt1(a,b)
   implicit none
   integer,parameter::xp = 4 
@@ -543,7 +542,6 @@ subroutine c_sqrt8_2(a,b,c)
   complex(xp)::a,b,c
   a = sqrt(b)/c
 end subroutine c_sqrt8_2
-
 
 program main
   implicit none
@@ -1055,4 +1053,3 @@ program main
      print *,'c_sqrt8_2 : NG a2=',a2
   endif
 end program main
- 

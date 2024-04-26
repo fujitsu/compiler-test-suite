@@ -13,35 +13,35 @@ contains
   end function 
   subroutine foo() 
     type(c_funptr) :: fp(3)
-    fp = fun()!
+    fp = fun()
     if (c_associated(fp(1))) print *,301
     if (c_associated(fp(2))) print *,301
     if (c_associated(fp(3))) print *,301
-    fp = fun1()!
+    fp = fun1()
     if (c_associated(fp(1))) print *,301
     if (c_associated(fp(2))) print *,301
     if (c_associated(fp(3))) print *,301
-    fp = fun2()!
+    fp = fun2()
     if (c_associated(fp(1))) print *,301
     if (c_associated(fp(2))) print *,301
     if (c_associated(fp(3))) print *,301
-    fp = fun3()!
+    fp = fun3()
     if (c_associated(fp(1))) print *,301
     if (c_associated(fp(2))) print *,301
     if (c_associated(fp(3))) print *,301
-    fp = fun11()!
+    fp = fun11()
     if (c_associated(fp(1))) print *,301
     if (c_associated(fp(2))) print *,301
     if (c_associated(fp(3))) print *,301
-    fp = fun12()!
+    fp = fun12()
     if (c_associated(fp(1))) print *,301
     if (c_associated(fp(2))) print *,301
     if (c_associated(fp(3))) print *,301
-    fp = fun13()!
+    fp = fun13()
     if (c_associated(fp(1))) print *,301
     if (c_associated(fp(2))) print *,301
     if (c_associated(fp(3))) print *,301
-    fp = fun14()!
+    fp = fun14()
     if (c_associated(fp(1))) print *,301
     if (c_associated(fp(2))) print *,301
     if (c_associated(fp(3))) print *,301
@@ -61,4 +61,3 @@ use m1
 call foo
 print *,'pass'
 end
-

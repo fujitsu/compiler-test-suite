@@ -1,0 +1,15 @@
+ j i bb(i) 1 1 2
+ end of outer iter:  1
+ j i bb(i) 2 1 2
+ j i bb(i) 2 2 3
+ end of outer iter:  2
+ j i bb(i) 3 1 2
+ j i bb(i) 3 2 3
+ j i bb(i) 3 3 4
+ end of outer iter:  3
+ j i bb(i) 4 1 2
+ j i bb(i) 4 2 3
+ j i bb(i) 4 3 4
+ j i bb(i) 4 4 5
+ end of outer iter:  4
+exit 0

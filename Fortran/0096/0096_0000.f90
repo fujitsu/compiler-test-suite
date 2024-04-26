@@ -1,4 +1,3 @@
-! Specification Example
 program pro
 real, parameter:: x1=3.0
 real(kind=8), parameter:: x2=3.0
@@ -12,4 +11,3 @@ if(.not.(rslt3>0.68 .and. rslt3<0.70)) print*,103,rslt3
         print *, "pass"
 
 end
-

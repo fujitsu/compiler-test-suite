@@ -32,7 +32,6 @@ real(8),dimension(1:n3) :: a3,b3
 
 end subroutine ans
 
-
 program main
 integer,parameter :: n1=10000
 integer,parameter :: n2=10

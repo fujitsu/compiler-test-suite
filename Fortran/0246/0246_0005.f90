@@ -1,0 +1,22 @@
+PROGRAM MAIN
+IMPLICIT NONE
+INTEGER::index_var1=100,loop_counter
+INTEGER,TARGET::tar1=23,tar2=24,tar3=25
+INTEGER,ALLOCATABLE::ptr
+ALLOCATE(ptr,SOURCE=tar1)
+OUTER : DO CONCURRENT(index_var1=10:7:-2,ALLOCATED(ptr))
+  INNER: DO loop_counter=1,1
+    DEALLOCATE(ptr)
+    IF(index_var1 .EQ. 10) THEN 
+      ALLOCATE(ptr,SOURCE=tar2)
+    ELSE
+      ALLOCATE(ptr,SOURCE=tar3)
+    ENDIF
+  END DO INNER
+END DO OUTER
+IF(ptr == 25 .AND. index_var1 == 100) THEN
+  PRINT*,'PASS'
+ELSE
+  PRINT*,'FAIL',ptr,index_var1
+ENDIF
+END PROGRAM

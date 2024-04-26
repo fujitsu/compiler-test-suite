@@ -1,0 +1,7 @@
+ Before som => abcdefghij swm => jihgfedcba
+ After  som => jihgfedcba swm => abcdefghij
+ Before soma(5) => abcdefghij swma(5) => jihgfedcba
+ After  soma(5) => jihgfedcba swma(5) => abcdefghij
+ Before somi =>  1 2 3 4 5 6 7 8 9 10       swmi =>  2 4 6 8 10 12 14 16 18 20
+ After  somi =>  2 4 6 8 10 12 14 16 18 20  swmi =>  1 2 3 4 5 6 7 8 9 10
+exit 0

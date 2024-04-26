@@ -1,8 +1,8 @@
       INTEGER A(1000)                                                   
-C                                                                       
+
       A = 0                                                             
       A = A + 1                                                         
-C                                                                       
+
       DO 10 I=1,1000                                                    
          IF(A(I).NE.1) THEN                                             
             WRITE(6,*) 'NG'
@@ -10,9 +10,9 @@ C
             GO TO 20                                                    
          ENDIF                                                          
    10 CONTINUE                                                          
-C                                                                       
+
       WRITE(6,*) 'OK'
-C                                                                       
+
    20 CONTINUE                                                          
       STOP                                                              
       END                                                               

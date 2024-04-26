@@ -46,7 +46,6 @@ s = t(1,t(single)(0))
 if (s%value /= (1,0)) print *,101
 s = t(1.1)
 d = t(2, t(double)(0))
-!if (d%value /= (2,0)) print *,102,d%value
 d = t(r)
 print *,'pass'
 end

@@ -1,0 +1,70 @@
+      INTEGER I401(10)/1,2,3,4,5,1,2,3,4,5/
+      INTEGER I402(10)/5,6,7,8,9,1,2,3,4,5/
+      INTEGER I403(10)/2,4,6,8,10,1,3,5,7,9/
+      INTEGER I404(10)/10,8,6,4,2,1,3,5,7,9/
+      INTEGER I405/0/
+C
+      CALL SUB01(I401,I402,10)
+      WRITE(6,*) I402
+      CALL SUB02(I401,I402,10)
+      CALL SUB03(I401,I402,I403,I404,10)
+      WRITE(6,*) I404
+      CALL SUB04(I401,I405,10)
+      WRITE(6,*) I405
+C
+      STOP
+      END
+C
+      SUBROUTINE SUB01(S401,S402,N)
+      INTEGER S401(N),S402(N)
+      INTEGER I403(10)/9,8,7,6,5,3,2,1,10,9/
+      INTEGER I404(10)/4,3,2,1,10,9,8,7,6,5/
+C
+      DO 10 I=1,10
+        IF (S401(I).LE.5) THEN
+          S402(I) = I403(I) * I404(I)
+        ENDIF
+   10 CONTINUE
+C
+      RETURN
+      END
+C
+      SUBROUTINE SUB02(S401,S402,N)
+      INTEGER S401(N),S402(N)
+      INTEGER I403(10)/9,8,7,6,5,3,2,1,10,9/
+      INTEGER I404(10)/4,3,2,1,10,9,8,7,6,5/
+C
+      DO 10 I=1,10
+        IF (I403(I).LE.5) THEN
+          I404(I) = S401(I) * S402(I)
+        ENDIF
+   10 CONTINUE
+      WRITE(6,*) I404
+C
+      RETURN
+      END
+C
+      SUBROUTINE SUB03(S401,S402,S403,S404,N)
+      INTEGER S401(N),S402(N),S403(N),S404(N)
+C
+      DO 10 I=1,10
+        IF (S403(I).LE.9) THEN
+          S404(I) = S401(I) * S402(I)
+        ENDIF
+   10 CONTINUE
+C
+      RETURN
+      END
+C
+      SUBROUTINE SUB04(S401,S405,N)
+      INTEGER S401(N),S405
+      INTEGER I402(10)/1,0,1,0,0,0,1,0,1,1/
+C
+      DO 10 I=1,10
+        IF (I402(I).LE.0) THEN
+          S405 = S401(I) * I
+        ENDIF
+   10 CONTINUE
+C
+      RETURN
+      END

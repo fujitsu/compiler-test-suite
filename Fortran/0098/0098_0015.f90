@@ -3,7 +3,7 @@ contains
 subroutine sub(dmy)
     integer :: dmy
     dmy = 1
-end !subroutine
+end
 end module
 
 use mod1
@@ -12,4 +12,3 @@ call sub(yy)
 if(yy /= 1) print *,101
 print *,"Pass"
 end
-

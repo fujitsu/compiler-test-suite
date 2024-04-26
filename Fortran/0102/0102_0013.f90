@@ -5,4 +5,3 @@ type(ty)::obj
 if(obj%constvar .neqv. .false.)print*,'100'
 print*,"PASS"
 end
-

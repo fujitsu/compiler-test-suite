@@ -1,6 +1,3 @@
-! 1D Array, Array Section
-! Keywords Used
-! INTRINSIC Keyword Used
 program pro
 implicit none
 integer,parameter :: n1(2)=2

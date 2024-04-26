@@ -1,0 +1,53 @@
+REAL(2) :: RES
+
+REAL(2) :: R2
+REAL(4) :: R4
+REAL(8) :: R8
+
+INTEGER(1) :: I1
+INTEGER(2) :: I2
+INTEGER(4) :: I4
+INTEGER(8) :: I8
+
+COMPLEX(2) :: C2 
+COMPLEX(4) :: C4
+COMPLEX(8) :: C8 
+
+
+R2 = 2.0
+R4 = 4.0
+R8 = 10.0
+I1 = 9
+I2 = 3
+I4 = 5
+I8 = 6
+C2 =(1,3)
+C4 =(7,5)
+C8 =(8,8)
+
+RES = R2
+IF(RES .NE. 2.0) PRINT*,"121"
+RES = R4
+IF(RES .NE. 4.0) PRINT*,"122"
+RES = R8
+IF(RES .NE. 10.0) PRINT*,"123"
+
+RES = I1
+IF(RES .NE. 9) PRINT*,"124"
+RES = I2
+IF(RES .NE. 3) PRINT*,"125"
+RES = I4
+IF(RES .NE. 5) PRINT*,"126"
+RES = I8
+IF(RES .NE. 6) PRINT*,"127"
+
+RES = C2
+IF(RES .NE. 1) PRINT*,"128"
+RES = C4
+IF(RES .NE. 7) PRINT*,"129"
+RES = C8
+IF(RES .NE. 8) PRINT*,"130"
+
+PRINT*,"PASS"
+END
+

@@ -1,11 +1,9 @@
-!
       integer*4 a1, a2
       real*8    b1, b2
       logical   ok
 
       ok = .true.
 
-! TEST1
       a1 = 21474_4
       b1 = 21474.1D0
       a2 = b1

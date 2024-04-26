@@ -1,0 +1,5 @@
+ START
+ OK I= 21
+ T1 END
+ END
+exit 0

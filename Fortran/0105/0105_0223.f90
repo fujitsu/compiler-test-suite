@@ -68,7 +68,6 @@ n5=5
 pop1=reshape((/(i,i=11,15)/),(/5/))
 pop=reshape((/(i,i=1,10*5)/),(/10,5/))
 y=reshape((/(i,i=1,10)/),(/10/))
-!
 call sub01(i5,i10,n1,n2,n3,n4,k1,k2,pop1,pop,y,ny,L,M,n5,poj1)
 if (any(abs(poj1(6,:)-(/781,1882,2983,4084,5185/))>0.01))print *,'error-11'
 call sub02(i5,i10,n1,n2,n3,n4,k1,k2,pop1,pop,y,ny,L,M,n5,poj1)

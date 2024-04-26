@@ -2,7 +2,7 @@
       parameter (loop_num=1000)
       integer(8) Master
       parameter (Master=6420)
- 
+
       TYPE st
         real*8 :: a
         real*8 :: b
@@ -10,7 +10,7 @@
 
       TYPE(st) :: st1(loop_num),st2(loop_num)
       TYPE(st) :: st3(loop_num),st4(loop_num)
- 
+
       integer c(loop_num)
       integer i,result
 

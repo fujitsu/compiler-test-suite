@@ -1,0 +1,57 @@
+
+  ## TEST 1 ## 
+ F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+F
+    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2
+    2    2    2    2    2    2    2    2    2    2    2    2    2    2    2
+    2    2    2    2    2    2    2    2    2    2
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+    0    0    0    0    0    0    0    0    0    0
+
+  ## TEST 2 ## 
+ T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T
+F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T
+F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T
+F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T
+F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T F T
+F
+    3    0    6    0   11    0   18    0   23    0   26    0   31    0   38
+    0   43    0   46    0   51    0   58    0   63    0   66    0   71    0
+   78    0   83    0   86    0   91    0   98    0
+    0    2    0    2    0    2    0    2    0    2    0    2    0    2    0
+    2    0    2    0    2    0    2    0    2    0    2    0    2    0    2
+    0    2    0    2    0    2    0    2    0    2
+
+  ## TEST 3 ## 
+ F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+F
+    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+    1    1    1    1    1    1    1    1    1    1    1    1    1    1    1
+    1    1    1    1    1    1    1    1    1    1
+    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6
+    6    6    6    6    6    6    6    6    6    6    6    6    6    6    6
+    6    6    6    6    6    6    6    6    6    6
+
+  ## TEST 4 ## 
+ F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+F
+   64    0    0   64    0    0   64    0    0   64    0    0   64    0    0
+   64    0    0   64    0    0   64    0    0   64    0    0   64    0    0
+   64    0    0   64    0    0   64    0    0   64
+ -100    0    0  -84    0    0  -70    0    0  -54    0    0  -40    0    0
+  -24    0    0  -10    0    0    6    0    0   20    0    0   36    0    0
+   50    0    0   66    0    0   80    0    0   96
+exit 0

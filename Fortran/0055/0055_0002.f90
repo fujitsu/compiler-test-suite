@@ -31,4 +31,3 @@
           type(real(kind=4)) function f4()
             f4=200.5
           end function
-

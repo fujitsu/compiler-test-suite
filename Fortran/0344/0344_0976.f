@@ -1,0 +1,18 @@
+      CHARACTER*20 C1(100)
+      CHARACTER*10 C0
+      DATA C1/100*'AAAAAAAAAAAAAAAAAAAA'/,N/100/
+      DO 10 I=1,N
+         C0 = C1(I)(1:10)
+         CALL SUB1(C0)
+         C1(I)(11:20) = C0
+   10 CONTINUE
+      WRITE(6,100) (C1(I),I=1,N)
+  100 FORMAT(2A20)
+      STOP
+      END
+C
+      SUBROUTINE SUB1(X)
+      CHARACTER*10 X
+      X = 'BBBBBBBBBBBBBBBBBBBB'
+      RETURN
+      END

@@ -1,0 +1,11 @@
+INTEGER(KIND=4) :: A(2,3),AA(2,3)
+DATA A/1,2,3,4,5,6/
+DATA AA/1,2,3,4,5,6/
+PRINT *,((A(I,J),I=1,2),J=1,3)
+DO I=1,2
+  DO J=1,3
+    IF(A(I,J)/=AA(I,J)) EXIT
+  END DO
+END DO
+PRINT *,"*** OK ***"
+END

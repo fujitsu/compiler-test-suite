@@ -1,5 +1,3 @@
-! 1D Array 
-! Array Constructor Used
 program pro
 implicit none
 real,parameter :: rslt(4)=BESSEL_YN((/2,3,2,3/),(/1.4,2.0,1.8,2.2/))

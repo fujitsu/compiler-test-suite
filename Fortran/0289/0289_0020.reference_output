@@ -1,0 +1,15 @@
+ *** item= 1 ok *** 
+ *** item= 2 ok ***
+ *** item= 3 ok ***
+ *** item= 4 ok ***
+ *** item= 5 ok ***
+ *** item= 6 ok ***
+ *** item= 7 ok *** 
+ *** item= 8 ok ***
+ *** item= 9 ok ***
+ *** item=10 ok ***
+ *** item=11 ok ***
+ *** item=12 ok ***
+ *** item=13 ok ***
+ *** item=14 ok ***
+exit 0

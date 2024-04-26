@@ -1,4 +1,4 @@
-logical,parameter::a=BLT(o'11',o'12') !9,10
+logical,parameter::a=BLT(o'11',o'12')
 logical,parameter::b=BLT(o'12',b'00000011')
 logical,parameter::c=BLT(o'4',12)
 logical,parameter::d=BLT(z'f',o'12')
@@ -64,4 +64,3 @@ if( jj2 .neqv. .true.)print*,"130"
 if( jj3 .neqv. .false.)print*,"131"
 print*,"PASS"
 end
-

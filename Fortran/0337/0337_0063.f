@@ -1,0 +1,91 @@
+      DIMENSION N(10,10,10),NN(10,10,10)
+      WRITE(6,101)
+  101 FORMAT(1H0 // 10X,39H- JUSTICE -     - ITEM -      - COMPUTE,
+     *36H RESULT -          - COMPARE VALUE -,/)
+  102 FORMAT(1H0,12X,7H*ERROR*,7X,2H( ,I2,2H ),14X,I6,20X,I6)
+  103 FORMAT(1H0,12X,4H*OK*,10X,2H( ,I2,2H ),14X,I6,20X,I6)
+      M   =1
+      DO 20 K=1,10
+      DO 20 J=1,10
+      DO 20 I=1,10
+      N(I,J,K)=M
+      M   =M+1
+   20 CONTINUE
+      DO 40 K=1,10
+      DO 40 J=1,10
+      DO 40 I=1,10
+      NN(I,J,K)=10*N(I,J,K)
+   40 CONTINUE
+      I =10
+      II  =1
+      JJ  =4
+      KK  =6
+      ITM =01
+C
+    1 JANS=10
+      LL  =NN(1,1,1)
+      IF(NN(1,1,1)-10)701,700,701
+C
+    2 JANS=3340
+      LL  =NN(JJ,JJ,JJ)
+      IF(NN(JJ,JJ,JJ)-3340)701,700,701
+C
+    3 JANS=2230
+      LL  =NN(II+2,II+2,II+2)
+      IF(NN(II+2,II+2,II+2)-2230)701,700,701
+C
+    4 JANS=4450
+      LL  =NN(KK-1,KK-1,KK-1)
+      IF(NN(KK-1,KK-1,KK-1)-4450)701,700,701
+C
+    5 JANS=7780
+      LL  =NN(2*JJ,2*JJ,2*JJ)
+      IF(NN(2*JJ,2*JJ,2*JJ)-7780)701,700,701
+C
+    6 JANS=10000
+      LL  =NN(2*JJ+2,2*JJ+2,2*JJ+2)
+      IF(NN(2*JJ+2,2*JJ+2,2*JJ+2)-10000)701,700,701
+C
+    7 JANS=6670
+      LL  =NN(2*JJ-1,2*JJ-1,2*JJ-1)
+      IF(NN(2*JJ-1,2*JJ-1,2*JJ-1)-6670)701,700,701
+C
+    8 JANS=9420
+      LL  =NN(JJ-2,JJ+1,I)
+      IF(NN(JJ-2,JJ+1,I)-9420)701,700,701
+C
+    9 JANS=4730
+      LL  =NN(JJ-1,2*JJ,II+4)
+      IF(NN(JJ-1,2*JJ,II+4)-4730)701,700,701
+C
+   10 JANS=5120
+      LL  =NN(KK-4,2*II,1*JJ+2)
+      IF(NN(KK-4,2*II,1*JJ+2)-5120)701,700,701
+C
+   11 JANS=8970
+      LL  =NN(7*II,3*KK-8,2*JJ+1)
+      IF(NN(7*II,3*KK-8,2*JJ+1)-8970)701,700,701
+C
+   12 JANS=6560
+      LL  =NN(KK,JJ+2,3*II+4)
+      IF(NN(KK,JJ+2,3*II+4)-6560)701,700,701
+C
+   13 JANS=8350
+      LL  =NN(KK-1,JJ,30*KK-171)
+      IF(NN(KK-1,JJ,30*KK-171)-8350)701,700,701
+C
+   14 JANS=3940
+      LL  =NN(KK-2,3*JJ-2,4)
+      IF(NN(KK-2,3*JJ-2,4)-3940)701,700,701
+C
+   15 JANS=5880
+      LL  =NN(2*JJ,9,KK)
+      IF(NN(2*JJ,9,KK)-5880)701,700,701
+  700 WRITE(6,103)ITM,LL,JANS
+      GO TO 1000
+  701 WRITE(6,102)ITM,LL,JANS
+ 1000 ITM =ITM+1
+      GO TO (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16),ITM
+   16 CONTINUE
+      STOP
+      END

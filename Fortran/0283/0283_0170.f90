@@ -1,0 +1,25 @@
+PROGRAM main
+IMPLICIT NONE
+
+INTEGER,PARAMETER :: n = 10
+INTEGER,DIMENSION(1:10) :: arr
+INTEGER :: i = 0
+ASSOCIATE(aa => n)
+  DO i = 1,aa,2
+    arr(i) = 1
+  END DO
+END ASSOCIATE
+
+IF(ALL(arr(1:10:2) .EQ. 1)) THEN
+  arr = 0
+ELSE
+  arr = 1
+END IF
+
+IF(ALL(arr(1:10:2) .EQ. 0)) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+END PROGRAM

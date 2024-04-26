@@ -9,7 +9,6 @@ subroutine sub(Matrix)
 complex(8),dimension(:,:)::Matrix
 complex(8),pointer,dimension(:,:)::Matrix_2
 complex(8),dimension(5)::Vector,Vector_Add,R_vector
-!
 Vector=(/1,2,3,4,5/)
 allocate(Matrix_2(5,5))
 R_vector = MATMUL(Matrix,Vector)

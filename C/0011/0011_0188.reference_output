@@ -1,0 +1,8 @@
+SCPLD01 START 
+  F3 = OK 
+  F2 = OK 
+  F1 = OK 
+  F4 = OK 
+  F5 = OK 
+SCPLD01  END  
+exit 0

@@ -1,0 +1,24 @@
+subroutine sub(a, z)
+  integer*8,dimension(1:10) :: a, b
+  real*4,dimension(1:10)    :: z
+  
+  do i = 1, 10
+     b(i) = ibits(a(i), 3, 1)
+     z(i) = real(b(i))
+  end do
+end subroutine sub
+
+program main
+  integer*8,dimension(1:10) :: a = 8_4
+  real*4,dimension(1:10)    :: z = 0.0
+  
+  call sub(a, z)
+  
+  do i = 1, 10
+     if(z(i) .eq. 1.0_4) then
+        write(6, *) 'OK'
+     else
+        write(6, *) 'NG'
+     end if
+  end do
+end program main

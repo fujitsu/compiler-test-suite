@@ -1,0 +1,86 @@
+ --- project person ---
+ 17 member0017
+ 16 member0016(kind1)
+ 15 member0015
+ 14 member0014
+ 13 member0013(kind1)
+ 12 member0012
+ 11 member0011
+ 10 member0010
+ 9 member0009
+ 8 member0008
+ 7 member0007
+ 6 member0006
+ 5 member0005
+ 4 member0004
+ 3 member0003
+ 2 member0002
+ 1 member0001
+ ----------------------
+ --- project person ---
+ 17 member0017
+ 15 member0015
+ 14 member0014
+ 12 member0012
+ 11 member0011
+ 10 member0010
+ 9 member0009
+ 8 member0008
+ 7 member0007
+ 6 member0006
+ 5 member0005
+ 4 member0004
+ 3 member0003
+ 2 member0002
+ 1 member0001
+ 16 member0016(kind1)
+ 13 member0013(kind1)
+ ----------------------
+ --- project person ---
+ 1 member0001
+ 2 member0002
+ 3 member0003
+ 4 member0004
+ 5 member0005
+ 6 member0006
+ 7 member0007
+ 8 member0008
+ 9 member0009
+ 10 member0010
+ 11 member0011
+ 12 member0012
+ 13 member0013(kind1)
+ 14 member0014
+ 15 member0015
+ 16 member0016(kind1)
+ 17 member0017
+ ----------------------
+ ******** result ********
+ --- project menber ---
+ 1 member0001
+ 2 member0002
+ 3 member0003
+ 4 member0004
+ 5 member0005
+ 6 member0006
+ 7 member0007
+ 8 member0008
+ 9 member0009
+ 10 member0010
+ 11 member0011
+ 12 member0012
+ 13 member0013
+ 14 member0014
+ 15 member0015
+ 16 member0016
+ 17 member0017
+ ----------------------
+ --- project kind1 ---
+ 13 member0013
+ 16 member0016
+ ----------------------
+ --- project kind1 ---
+ 13 member0013
+ 16 member0016
+ ----------------------
+exit 0

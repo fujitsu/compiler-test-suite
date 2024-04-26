@@ -1,0 +1,30 @@
+ abc --abc 
+ CH -> CH
+ def --def 
+ CH -> CH
+ ghi --ghi 
+ CH -> CH
+ jkl --jkl 
+ CH -> CH
+ lmn --lmn 
+ CH -> CH
+ nop --nop 
+ CH -> CH
+ pqr --pqr 
+ CH -> CH
+ rst --rst 
+ CH -> CH
+ uvw --uvw 
+ CH -> CH
+ abc --abc 
+ CH -> CH
+ def --def 
+ CH -> CH
+ abc --abc 
+ CH -> CH
+ 3 4 -- 3 4
+ SHAPE OK 
+ SHAPE OK 
+ 1 -- 1
+ KIND OK 
+exit 0

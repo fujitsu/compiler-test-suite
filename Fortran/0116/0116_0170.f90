@@ -1,4 +1,3 @@
-!
 
 program main
   integer,parameter::n=100
@@ -17,7 +16,6 @@ program main
   else
     print *,"ng: sum(a) = ",sum(a%p)
   endif
-!  deallocate(a)
 
   contains
   subroutine sub_pointer_array(a,n)

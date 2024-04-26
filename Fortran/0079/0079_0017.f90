@@ -29,7 +29,6 @@ end
 use m0
 k=1
 call s
-!if (k/=2) print *,101
 call ss1(1,2,3)
 print *,'pass'
 end

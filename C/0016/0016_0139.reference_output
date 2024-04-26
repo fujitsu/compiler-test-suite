@@ -1,0 +1,7 @@
+ tree1 : OK
+ tree2 : OK
+ tree3 : OK
+ tree6 : OK
+ tree7 : OK
+ tree8 : OK
+exit 0

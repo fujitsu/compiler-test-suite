@@ -1,0 +1,12 @@
+INTEGER :: I(4)=(/1,2,3,4/)
+NAMELIST /X/I
+WRITE(1,*)'&X I=2* 30,40,/'
+REWIND 1
+READ(1,NML=X)
+PRINT *,I(1)
+PRINT *,I(2)
+PRINT *,I(3)
+PRINT *,I(4)
+PRINT *,'*** ok ***'
+CLOSE(1,STATUS='DELETE')
+END

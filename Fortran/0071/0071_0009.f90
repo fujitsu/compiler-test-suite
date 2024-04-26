@@ -23,8 +23,8 @@ contains
     procedure(mapfn) :: m
     type(c_funptr) :: fp
 
-    fp =            c_funloc(m)!
-    fp = kmr_fixfun(c_funloc(m))!
+    fp =            c_funloc(m)
+    fp = kmr_fixfun(c_funloc(m))
 
     zz = 0
   end function foo

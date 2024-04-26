@@ -1,4 +1,3 @@
-! 
 
       complex(kind=4)  cvar4
       complex(kind=8)  cvar8

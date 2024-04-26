@@ -1,0 +1,30 @@
+ within subroutine
+ 10
+ call of dest 10 1
+ 30
+ 40
+ call of dest 40 2
+ 50
+ 60
+ call of dest 60 3
+ 70
+ call of dest 70 4
+ call of dest 50 5
+ 80
+ call of dest 80 6
+ call of dest 30 7
+ 90
+ call of dest 90 8
+ 100
+ 110
+ 120
+ call of dest 120 9
+ 130
+ call of dest 130 10
+ call of dest 110 11
+ call of dest 100 12
+ 140
+ call of dest 140 13
+ after block
+ pass
+exit 0

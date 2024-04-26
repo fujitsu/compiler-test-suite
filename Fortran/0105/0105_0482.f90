@@ -12,4 +12,3 @@ else
   print *,'pass'
 endif
 END
-

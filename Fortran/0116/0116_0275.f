@@ -1,4 +1,4 @@
-C
+
 
       PROGRAM MAIN
       INTEGER ERROR
@@ -15,28 +15,28 @@ C
 
 
       SUBROUTINE TEST(ERROR)
-C
+
       INTEGER A(1000),B(1000),C(1000),D(1000),CODE,ERROR
       REAL*8  E(100),F(100),G(100),H(100)
       REAL*8  I(100),J(100),K(100),L(100)
       DATA A/1000*1/,B/1000*1/,C/1000*1/,D/1000*1/
       DATA E/100*1.0/,F/100*1.0/,G/100*1.0/,H/100*1.0/
       DATA I/100*1.0/,J/100*1.0/,K/100*1.0/,L/100*1.0/
-C
+
       CODE = 0
       DO 10 II=1,10
          CALL SUB4(A+B,C+D,CODE)
          DO 20 JJ=1,100
-            call hoge(E+F,G+H)
+            call hhhh(E+F,G+H)
    20    CONTINUE
-         call hoge(I+J,K+L)
+         call hhhh(I+J,K+L)
 
    10 CONTINUE
 
       ERROR=ERROR+CODE
       END SUBROUTINE TEST
-C
-C
+
+
       SUBROUTINE SUB4(A,B,CODE)
       INTEGER A(1000),B(1000),CODE
 
@@ -54,11 +54,11 @@ C
    40 CONTINUE
       RETURN
       END
-C
-C
 
-      subroutine hoge(C,D)
+
+
+      subroutine hhhh(C,D)
       REAL*8 C(100),D(100)
 
       RETURN
-      end subroutine hoge
+      end subroutine hhhh

@@ -13,7 +13,7 @@ contains
   integer(c_int) function foo() result(zz)
     type(c_ptr) :: fp
 
-    fp = kmr_fixfun()!
+    fp = kmr_fixfun()
 
     zz = 0
   end function foo
@@ -23,4 +23,3 @@ use xxxf
 if (foo()/=0) print *,'202'
 print *,'pass'
 end
-

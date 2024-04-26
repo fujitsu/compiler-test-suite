@@ -1,0 +1,38 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  COMPLEX(KIND = 4) :: cmp1
+END TYPE
+
+TYPE,EXTENDS(t1) :: t2
+  COMPLEX(KIND = 4) :: cmp2
+END TYPE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+CLASS(t2),ALLOCATABLE :: acc
+ALLOCATE(acc)
+acc%cmp2 = (13.45,23.50)
+acc%cmp1 = (12.23,-43.70)
+
+ASSOCIATE(aa => acc%cmp2 + fun(acc%cmp1) + (11.20,35.50))
+  SELECT CASE(INT(AIMAG(aa)))
+  CASE(15)
+  PRINT*,'pass'
+  END SELECT
+END ASSOCIATE
+
+CONTAINS
+
+FUNCTION fun(dd1)
+IMPLICIT NONE
+COMPLEX(KIND = 4) :: dd1,fun
+fun = dd1
+END FUNCTION
+
+END PROGRAM

@@ -20,7 +20,7 @@
       if(error/=0) then
          write(6,*) '*** ng ?? ***'
       else
-         write(6,*) '*** ok !! ***'
+         write(6,*) '*** ok    ***'
       endif
       stop
       end

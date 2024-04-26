@@ -1,0 +1,65 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  INTEGER :: r1
+END TYPE
+
+TYPE,EXTENDS(t1) :: t2
+  INTEGER :: r2
+END TYPE
+
+INTERFACE
+FUNCTION fun_2(d1,d2)
+IMPLICIT NONE
+INTEGER :: d1,d2,fun_2
+END FUNCTION
+END INTERFACE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+INTEGER :: i
+INTEGER,DIMENSION(1:5) :: res = 0
+CLASS(*),ALLOCATABLE :: allc
+TYPE(t1) :: obj1
+obj1%r1 = 2
+
+ALLOCATE(t2 :: allc)
+
+res = fun(allc,obj1)
+
+IF(ALL(res(2: :2) .EQ. 1)) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF 
+
+CONTAINS
+
+FUNCTION fun(dd1,dd2)
+INTEGER,DIMENSION(1:5) :: fun,temp = 0 
+TYPE(t1) :: dd2
+CLASS(*),ALLOCATABLE :: dd1
+SELECT TYPE(dd1)
+TYPE IS(t2)
+  dd1%r2 = 3
+  ASSOCIATE(aa => (dd1%r2 * dd2%r1 * fun_2(dd1%r2,dd2%r1)) * (/1,-1,1,-1,1/))
+    FORALL(i = 1:5,aa(i) .LT. 0)
+      temp(i) = 1
+    END FORALL
+  END ASSOCIATE
+END SELECT
+fun = temp
+END FUNCTION
+
+END PROGRAM
+
+FUNCTION fun_2(d1,d2)
+IMPLICIT NONE
+INTEGER :: d1,d2,fun_2
+fun_2 = d1 * d2
+END FUNCTION

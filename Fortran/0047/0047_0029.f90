@@ -1,5 +1,3 @@
-! Expression used
-! keyword used
 program pro
 implicit none
 block

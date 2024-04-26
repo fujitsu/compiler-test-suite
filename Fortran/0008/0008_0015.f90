@@ -1,9 +1,6 @@
 subroutine s1(nn)
 integer:: i(10,3:3)= reshape([(k,k=1,10)],[10,1])
 integer:: v(nn)
-!forall (k=1:10) i(k,:) = i(k,:)+1 
-!forall (k=1:10) i(:,k) = i(:,k)+1 
-!!!forall (k=1:10) i(v,k) = i(:,k)!!!+1 
 v=[1,2,3,4,5,6,7,8,9,10]
 
 n=10

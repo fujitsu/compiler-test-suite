@@ -18,6 +18,5 @@ write(1,*)bessel_yn( k0,    a1 )
 write(1,*)bessel_yn( k1,    a0 )
 write(1,*)bessel_yn( k1,k1 ,a0 )
 end
-!!!call s1
 print *,'pass'
 end

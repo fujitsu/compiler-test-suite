@@ -17,5 +17,3 @@ subroutine get_val()
   print*,"FAIL"
  end if 
 end subroutine get_val
-
-

@@ -2,10 +2,6 @@
       program main
         parameter(iaa=240,ibb=30,icc=240)
       common /base2/  nc, jmax1, kmax1, lmax1, jj, kj, lj
-      common /varstb/  cmyu, clmd, alpl, alpm, prtb
-
-      common /vars1/   Rhs(4,0:iaa,0:ibb,0:icc)
-
       common /vars2/    pp(0:iaa,0:ibb,0:icc)
 
       dimension  G(4,iaa), Gv1(4,iaa), Gv2(4,iaa)

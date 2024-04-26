@@ -1,0 +1,19 @@
+ Now mod_ch_sub. Stopper is  3
+ &MOD_NAME MA= 11,MB= 12,MC= 13/
+ &MOD_SUB_NAME MSA= 21,MSB= 22,MSC= 23/
+ &MOD_CH_SUB_NAME MCSA= 31,MCSB= 32,MCSC= 33/
+ Now mod_ch_sub. Stopper is  2
+ &MOD_NAME MA= 111,MB= 112,MC= 113/
+ &MOD_SUB_NAME MSA= 121,MSB= 122,MSC= 123/
+ &MOD_CH_SUB_NAME MCSA= 131,MCSB= 132,MCSC= 133/
+ Now mod_ch_sub. Stopper is  1
+ &MOD_NAME MA= 1111,MB= 1112,MC= 1113/
+ &MOD_SUB_NAME MSA= 1121,MSB= 1122,MSC= 1123/
+ &MOD_CH_SUB_NAME MCSA= 1131,MCSB= 1132,MCSC= 1133/
+ &MOD_NAME MA= 1111,MB= 1112,MC= 1113/
+ test end
+ test end
+ test end
+ test end
+ test end
+exit 0
