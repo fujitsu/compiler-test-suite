@@ -23,7 +23,7 @@ The Fujitsu Compiler Test Suite is licensed under [the Apache License, Version 2
 Contact
 -------
 
-email: itou.tetsuya@fujitsu.com
+email: contact-compiler-test-suite@cs.jp.fujitsu.com
 
 Contribution
 ------------
