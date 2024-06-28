@@ -15,6 +15,11 @@ How to Use
 
 Please read [RUN.md](RUN.md) to use this test suite.
 
+Known Issues
+------------
+
+Please see [KnownIssues Wiki page](https://github.com/fujitsu/compiler-test-suite/wiki/KnownIssues) for known issues.
+
 License
 -------
 
