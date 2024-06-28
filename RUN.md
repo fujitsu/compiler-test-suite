@@ -11,7 +11,7 @@ Preparation
 First, you need an environment to run the LLVM test-suite. Read [the test-suite Guide in the LLVM Project](https://llvm.org/docs/TestSuiteGuide.html). Just to be sure, the required software is listed below.
 
 - [CMake](https://cmake.org/)  
-  CMake 3.24.0 or higher is required to test Flang.
+  CMake 3.27.0 or higher is required to test Flang.
 - [Ninja](https://ninja-build.org/)  
   Build tools other than Ninja may be able to be used, but they are not tested.
 - [lit](https://llvm.org/docs/CommandGuide/lit.html)  

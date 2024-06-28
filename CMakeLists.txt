@@ -87,8 +87,9 @@ if(LINUX OR TEST_SUITE_FUJITSU_FORCE_UNSUPPORTED_PLATFORM)
   if(ARCH STREQUAL "AArch64" OR TEST_SUITE_FUJITSU_FORCE_UNSUPPORTED_PLATFORM)
     add_subdirectory(C)
     if(TEST_SUITE_FORTRAN)
-      # CMake supports LLVM Flang since 3.24.0
-      cmake_minimum_required(VERSION 3.24.0)
+      # CMake supports LLVM Flang since 3.24.0 and supports `.f03` and `.f08`
+      # filename suffixes since 3.27.0.
+      cmake_minimum_required(VERSION 3.27.0)
       add_subdirectory(Fortran)
     endif()
     file(COPY lit.local.cfg DESTINATION "${CMAKE_CURRENT_BINARY_DIR}")
