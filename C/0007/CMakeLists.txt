@@ -1,4 +1,4 @@
-llvm_singlesource(PREFIX "Fujitsu-C-")
+llvm_singlesource_compile_only_directory(PREFIX "Fujitsu-C-")
 set_property(SOURCE 0007_0000.c APPEND PROPERTY COMPILE_OPTIONS "-march=armv8.2-a+sve")
 set_property(SOURCE 0007_0001.c APPEND PROPERTY COMPILE_OPTIONS "-march=armv8.2-a+sve")
 set_property(SOURCE 0007_0002.c APPEND PROPERTY COMPILE_OPTIONS "-march=armv8.2-a+sve")
