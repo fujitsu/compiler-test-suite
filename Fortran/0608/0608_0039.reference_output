@@ -1,0 +1,7 @@
+ assume size destructor called
+ 99
+ assume size destructor called
+ 30
+ assume size destructor called
+ 30
+exit 0

@@ -1,0 +1,14 @@
+REAL*8 A(10,10,10),B(10,10),M(10)
+A=3
+B=5
+DO K=1,10
+DO J=1,10
+DO i=1,10
+B(i,j)=SIN(A(K,J,i))**COS(A(J,i,K))
+M(i)=B(i,j)**B(3,5)
+ENDDO
+ENDDO
+ENDDO
+WRITE(6,*)'M=',M
+WRITE(6,*)'B=',B
+END

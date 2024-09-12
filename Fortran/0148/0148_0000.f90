@@ -1,6 +1,4 @@
 MODULE MOD1
-!
-!****************************************************************
 CONTAINS 
   SUBROUTINE SUB1              &
  &          (  nspec ,  cflx_typ    )  

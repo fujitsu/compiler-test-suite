@@ -1,0 +1,22 @@
+module m1
+implicit none
+ procedure(),pointer::p
+ protected::p
+contains
+ subroutine s
+external sub
+p=> sub
+call p
+ end subroutine
+end
+
+use m1
+call sub
+rewind 1
+read(1,*) k
+if (k/=100) print *,10001
+print *,'pass'
+end
+ subroutine sub
+write(1,*) 100
+ end subroutine

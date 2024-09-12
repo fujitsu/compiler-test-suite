@@ -1,0 +1,10 @@
+ ITEM ( 1) OK
+ ITEM ( 2) OK
+ ITEM ( 3) OK
+ ITEM ( 4) OK
+ ITEM ( 5) OK
+ ITEM ( 6) OK
+ ITEM ( 7) OK
+ ITEM ( 8) OK
+ PASS
+exit 0

@@ -16,7 +16,7 @@ end
 end module
 use m1
 call z1
-print *,"sngg611e : pass"
+print *,"pass"
 end
 integer function s1() bind(c,name='ss1')
   s1=1

@@ -1,0 +1,73 @@
+MODULE mod1
+
+  TYPE :: MYDATA
+    INTEGER :: NN = 0
+    INTEGER :: MM = 0
+  CONTAINS
+    PROCEDURE :: LESSTHAN
+    GENERIC :: OPERATOR (.LT.) => LESSTHAN
+  END TYPE MYDATA
+
+CONTAINS
+
+  LOGICAL FUNCTION LESSTHAN(A, B)
+    CLASS (MYDATA), INTENT (IN) :: A, B
+    LESSTHAN = (A%NN .LT. B%NN)
+  END FUNCTION LESSTHAN
+
+END MODULE mod1
+
+MODULE mod2 
+  USE mod1
+  TYPE MYNODE
+    INTEGER :: KEY
+    CLASS (MYDATA), POINTER :: PT
+  CONTAINS
+    PROCEDURE :: LST
+    GENERIC :: OPERATOR (.LT.) => LST
+  END TYPE MYNODE
+
+CONTAINS
+
+  LOGICAL FUNCTION LST(A, B)
+    CLASS (MYNODE), INTENT (IN) :: A, B
+    IF (A%KEY .GT. 0 .AND. B%KEY .GT. 0) THEN
+      LST = (A%KEY .LT. B%KEY)
+    ELSE
+      LST = (A%PT .LT. B%PT)
+    END IF
+  END FUNCTION LST
+
+END MODULE mod2
+
+PROGRAM TEST
+  USE mod2
+  IMPLICIT NONE
+
+  CLASS (MYDATA), POINTER :: POINTA => NULL(), POINTB => NULL()
+  CLASS (MYNODE), POINTER :: NDA => NULL(), NDB => NULL()
+
+  ALLOCATE (MYDATA :: POINTA)
+  ALLOCATE (MYDATA :: POINTB)
+  ALLOCATE (MYNODE :: NDA)
+  ALLOCATE (MYNODE :: NDB)
+
+  POINTA%NN = 5
+  NDA%PT => POINTA
+  NDA%KEY = 2
+  POINTB%NN = 10
+  NDB%PT => POINTB
+  NDB%KEY = 3
+
+  if(NDA .LT. NDB) then
+  else 
+  print*, 'Error-1'    
+  endif   
+
+  if(.NOT. NDB .LT. NDA)   then
+  else
+  print*, 'Error-2'    
+  endif 
+  print*, "pass"
+
+END

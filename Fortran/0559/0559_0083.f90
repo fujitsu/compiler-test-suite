@@ -1,0 +1,12 @@
+MODULE mod1
+TYPE ty(k1, k2)
+  INTEGER ,KIND::k1,k2=4
+  CHARACTER(LEN=k2)::ch(k1:k2)
+  REAL::arr(k2)
+END TYPE
+END MODULE
+PROGRAM main
+USE mod1
+PRINT*,ty(2,4)(' PDT ', 100.00)
+WRITE(*,*),ty(2,4)(' PDT ',200)
+END PROGRAM

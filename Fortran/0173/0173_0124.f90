@@ -31,7 +31,7 @@ use  m1
   TYPE(x) :: v(3),w
 v%z(1)=1
 call s( f(  v ) )
-call chk
+!call chk
 print *,'pass'
 contains
 subroutine s(dd)

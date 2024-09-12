@@ -1,0 +1,17 @@
+      WRITE(6,10)
+   10 FORMAT('1',5X,'====== FORTRAN ====== ... = TEST ='/)
+      GO TO 60
+   80 WRITE(6,90)
+   90 FORMAT(20X,'ASSIGN STATEMENT ERROR')
+      GO TO 40
+   20 WRITE(6,30)
+   30 FORMAT(21X,'= TEST =     OK'/)
+   40 WRITE (6,50)
+   50 FORMAT(6X,'END RUNUNIT')
+      STOP
+   60 ASSIGN 20 TO LINE
+      GO TO LINE,(20,80)
+  100 FORMAT(20X,'ASSIGN GO TO STATEMENT ERROR'/)
+      WRITE(6,100)
+      GO TO 40
+      E N D

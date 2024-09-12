@@ -1,0 +1,4 @@
+ CASE:SELECTOR IN I/O STATEMENT
+ 5 a        2 T
+ pass
+exit 0

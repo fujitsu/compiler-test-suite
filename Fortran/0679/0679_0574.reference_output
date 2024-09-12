@@ -1,0 +1,13 @@
+   a= F F T T T F
+   b= T T F F F T
+   c= F F T T T F
+   d= T T F F F T
+   e= F F F F T T
+   l= 1 1 1 1 2 2
+   a= T T F F F T
+   b= F F T T T F
+   c= T T F F F T
+   d= F F T T T F
+   e= T T T T F F
+   l= 2 2 2 2 1 1
+exit 0

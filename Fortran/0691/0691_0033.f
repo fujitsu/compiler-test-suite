@@ -1,0 +1,69 @@
+      DOUBLE PRECISION  Y,Z,XX,DIFF
+      INTEGER * 4   X
+      ITEM=1
+      N=1
+      IISW=1
+      ISW=1
+      J=5
+      P=1.0
+      DIFF=1.0D-14
+C
+      WRITE(6,100)
+  100 FORMAT(1H1 / 7X,24H*FORTRAN*          ENTER)
+      WRITE(6,200)ITEM,N
+  200 FORMAT(1H0,7X,9H*** ITEM(,I2,5H) ***,7X,
+     *       50H*****  TEST  OF  STANDARD  INTRINSIC  FUNCTION  - ,
+     *       19HDFLOAT(I) -  ***** ,18X,9H( PAGE = ,I3,2H ),
+     *       ///6X,11H- JUSTICE -,8X,12H- ARGUMENT -,6X,
+     *       19H- COMPUTED RESULT -,14X,17H- COMPARE VALUE -,14X,
+     *       14H- DIFFERENCE - / )
+      L=1
+    8 GO TO(1000,2000,3000,4000,5000,6000),ISW
+ 1000 X=-32767
+      ISW=2
+      GO TO 1
+ 2000 X=-1234
+      ISW=3
+      GO TO 1
+ 3000 X=0
+      ISW=4
+      GO TO 1
+ 4000 X=1234
+      ISW=5
+      GO TO 1
+ 5000 X=32767
+      ISW=6
+    1 Y=DFLOAT(X)
+      Z=X
+      XX=DABS(Z-Y)
+      IF(Y)2,3,2
+    3 DF=DIFF
+      GO TO 4
+    2 DF=DIFF*DABS(Z)
+    4 IF(XX-DF)5,6,6
+    5 WRITE(6,300)X,Y,Z,XX
+  300 FORMAT(1H ,8X,4H*OK*,15X,I6,7X,D24.17,7X,D24.17,7X,D24.17)
+      GO TO 7
+    6 WRITE(6,400)X,Y,Z,XX
+  400 FORMAT(1H ,8X,7H*ERROR*,12X,I6,7X,D24.17,7X,D24.17,7X,D24.17)
+    7 IF(ITEM-2)8,9,8
+ 6000 ITEM=2
+      WRITE(6,500)ITEM
+  500 FORMAT(1H0/19X,3H- (,I3,3H) - //)
+    9 GO TO(1100,2100,3100,4100,5100),IISW
+ 1100 X=IABS(J-10)*(-10)
+      IISW=2
+      GO TO 1
+ 2100 X=IFIX(P-FLOAT(J)+3.0)
+      IISW=3
+      GO TO 1
+ 3100 X=IFIX(P**2+FLOAT(J+4))/10
+      IISW=4
+      GO TO 1
+ 4100 X=IABS(J**2-IFIX(P**2+74.0))
+      IISW=5
+      GO TO 1
+ 5100 WRITE(6,600)
+  600 FORMAT(1H0 / 7X,23H*FORTRAN*          EXIT)
+      STOP
+      END

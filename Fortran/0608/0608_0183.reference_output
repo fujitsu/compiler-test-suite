@@ -1,0 +1,4 @@
+ PASS -  1
+ PASS 20
+ PASS 30
+exit 0

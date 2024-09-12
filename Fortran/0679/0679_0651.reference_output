@@ -1,0 +1,3 @@
+ ** real data   ** s   = 11.     =  11.
+ ** logical data ** ls = .false. =  F
+exit 0

@@ -1,0 +1,33 @@
+PROGRAM main
+IMPLICIT NONE
+
+TYPE first
+ INTEGER(KIND = 4) :: i1
+END TYPE
+ 
+TYPE,EXTENDS(first) :: second
+ INTEGER(KIND = 4) :: i2
+END TYPE
+
+SELECT TYPE(A=>Afun())
+ TYPE IS(second)
+  IF(A%i1/=2) THEN
+    PRINT*,212
+  ELSE
+    PRINT*,'pass'
+  END IF
+END SELECT
+
+CONTAINS
+
+FUNCTION Afun()
+IMPLICIT NONE
+CLASS(*),ALLOCATABLE :: Afun
+ALLOCATE(second :: Afun)
+SELECT TYPE(Afun)
+TYPE IS(second)
+Afun%i1 = 2
+END SELECT
+END FUNCTION
+ 
+END PROGRAM

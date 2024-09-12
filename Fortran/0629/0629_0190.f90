@@ -1,0 +1,9 @@
+REAL*8 A1(10),C(10)
+
+DATA C/1,2,3,4,5,6,7,8,9,10/
+DO i=1,10
+A1(i)=SIN(C(i))
+ENDDO
+WRITE(6,*)'dsin A1=',A1
+
+END

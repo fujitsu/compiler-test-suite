@@ -1,0 +1,50 @@
+PROGRAM main
+
+IMPLICIT NONE
+
+INTERFACE
+  SUBROUTINE sub(dmy)
+    REAL :: dmy
+  END SUBROUTINE
+END INTERFACE
+
+ABSTRACT INTERFACE
+  SUBROUTINE sub_abs(dmy)
+    REAL :: dmy
+  END SUBROUTINE
+END INTERFACE
+
+
+REAL :: temp
+
+TYPE ty1
+  PROCEDURE(sub_abs),POINTER,NOPASS :: proc_ptr=>NULL()
+END TYPE
+
+TYPE,EXTENDS(ty1) :: ty2
+  INTEGER :: int1
+END TYPE
+
+CLASS(ty2),DIMENSION(:,:),ALLOCATABLE :: obj
+ALLOCATE(obj(5,5))
+
+temp=2.0
+
+SELECT TYPE(asc => obj)
+TYPE IS(ty2)
+asc(1,1)%proc_ptr => sub
+CALL sub(temp)
+END SELECT
+
+IF (temp .EQ. 3.00) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+ENDIF
+
+END PROGRAM 
+
+SUBROUTINE sub(dmy)
+  REAL :: dmy
+  dmy = dmy + 1
+END SUBROUTINE

@@ -1,0 +1,36 @@
+      LOGICAL H007(100)
+      LOGICAL R007(40000)
+      LOGICAL H008(3,3)
+      LOGICAL H009(20,30,10,10),P009(20,30,10,10,1,1)
+      LOGICAL                 Q009(20,1,30,10,1,1,20)
+      LOGICAL R008(3000,20)
+      LOGICAL U007
+      DATA  H007/100*.TRUE./
+      DATA  R007/40000*.TRUE./
+      DATA  H008/9*.TRUE./
+      DATA  R008/60000*.TRUE./
+      DATA  H009,P009,Q009/60000*.TRUE.,60000*.TRUE.,120000*.FALSE./
+      DO 164 I=1,10
+      DO 164 J=1,9
+      DO 164 K=1,30
+      DO 164 L=1,19
+        U007   =H009(L,K,J,I)
+        H009(L,K,J,I)=U007.OR.Q009(L,1,K,J,1,1,I+10)
+  164 CONTINUE
+      DO 165 I=1,4
+      DO 165 J=1,8
+      DO 165 K=1,28
+      DO 165 L=1,18
+        U007   =P009(L,K,J,I,1,1).AND.Q009(L,1,K,J,1,1,J)
+        H009(L,K,J,I)=U007
+        P009(L,K,J,I,1,1)=.NOT.H009(L,K,J,I).OR.Q009(L,1,K,J,1,1,I)
+        U007   =P009(L,K,J,I,1,1).AND.Q009(1,1,1,1,1,1,2)
+        H009(L,K,J,I)=U007
+        H009(L,K,J,I)=P009(L,K,J,I,1,1).AND.Q009(J,1,I,1,1,1,1)
+  165 CONTINUE
+      WRITE(6,*) (H007(I),I=1,100,10)
+      WRITE(6,*) (R007(I),I=1,10000,1000)
+      WRITE(6,*) H008
+      WRITE(6,*) ((R008(J,I),J=1,3000,100),I=1,20,5)
+      WRITE(6,*) ((((H009(L,K,J,I),L=1,20,5),K=1,30,6),J=1,10,5),I=1,10)
+      END

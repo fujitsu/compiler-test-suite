@@ -7,5 +7,5 @@ subroutine fun(dmy1)  bind(c,name='ss1')
                            implicit none
                            integer::dmy1
                         end
-print *,'sngg615e : pass'
+print *,'pass'
 end

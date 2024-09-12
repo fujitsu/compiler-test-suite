@@ -1,0 +1,60 @@
+MODULE m1
+TYPE t1
+  INTEGER,POINTER:: x11(:,:,:)
+  CONTAINS
+    PROCEDURE:: t_prc=>prc
+    GENERIC:: ASSIGNMENT(=) => t_prc
+END TYPE
+CONTAINS
+SUBROUTINE   prc(x,y)
+  CLASS(t1),INTENT(OUT)::x
+  CLASS(t1),INTENT(IN)::y
+  x%x11 = y%x11+100
+END SUBROUTINE
+END MODULE
+
+
+
+MODULE m2
+USE m1
+TYPE t2
+  INTEGER:: x21
+  TYPE(t1):: x22
+END TYPE
+END MODULE
+ 
+
+
+PROGRAM MAIN
+USE m2
+TYPE(t2),ALLOCATABLE:: v21(:),v22(:)
+INTEGER::n
+n=2
+ALLOCATE(v21(n),v22(n))
+v21(1)%x21=11
+v21(2)%x21=12
+ALLOCATE(v21(1)%x22%x11(2,1,3))
+ALLOCATE(v21(2)%x22%x11(2,1,3))
+v21(1)%x22%x11(1,1,1)=1
+v21(1)%x22%x11(1,1,2)=2
+v21(1)%x22%x11(1,1,3)=3
+v21(1)%x22%x11(2,1,1)=4
+v21(1)%x22%x11(2,1,2)=5
+v21(1)%x22%x11(2,1,3)=6
+v21(2)%x22%x11(1,1,1)=10
+v21(2)%x22%x11(1,1,2)=20
+v21(2)%x22%x11(1,1,3)=30
+v21(2)%x22%x11(2,1,1)=40
+v21(2)%x22%x11(2,1,2)=50
+v21(2)%x22%x11(2,1,3)=60
+CALL s1(v21,v22,n)
+IF (v22(2)%x21 .EQ. 12)PRINT *,'pass1/3'
+IF (v22(1)%x22%x11(1,1,3) .EQ. 103)PRINT *,'pass2/3'
+IF (v22(2)%x22%x11(1,1,3) .EQ. 130)PRINT *,'pass3/3'
+CONTAINS
+SUBROUTINE s1(dmy1,dmy2,n)
+  TYPE(t2):: dmy1(n),dmy2(n)
+  INTEGER::n
+  dmy2=dmy1
+END SUBROUTINE
+END

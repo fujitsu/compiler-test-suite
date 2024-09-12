@@ -1,0 +1,3 @@
+      write (*,*) 'ok'
+      stop
+      end

@@ -1,0 +1,21 @@
+1
+       *FORTRAN*          ENTER
+0
+
+                               WOULD YOU CHECK EACH ELEMENT NAME.
+
+                              SEE UNDER
+
+                                    * NOGOOD *          * GOOD *
+
+                                      FTMAIN   ------+   ELEM00
+
+                                      SUB      ------+   ELEM01
+
+                                      FUNC     ------+   ELEM02
+
+                                      BLKDAT   ------+   ELEM03
+0
+
+       *FORTRAN*          EXIT
+exit 0

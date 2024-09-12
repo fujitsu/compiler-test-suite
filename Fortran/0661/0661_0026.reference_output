@@ -1,0 +1,4 @@
+ SUB AAA END
+ SUB BBB END
+ *****PASS*****
+exit 0

@@ -1,0 +1,26 @@
+ des4 destructor called
+ des3 destructor called
+ 300
+ des2_ele destructor called
+ 800 700
+ des1_scalar destructor called
+ 200
+ des1_scalar destructor called
+ 100
+ des1_scalar destructor called
+ 600
+ des1_scalar destructor called
+ 500
+ des1_ele destructor called
+ 1900 1800
+ des1_ele destructor called
+ 1700 1600
+ des2_scalar destructor called
+ 2
+ des1_scalar destructor called
+ 1
+ des1_scalar destructor called
+ 1
+ des1_ele destructor called
+ 1 1
+exit 0

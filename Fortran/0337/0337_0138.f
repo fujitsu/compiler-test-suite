@@ -1,9 +1,9 @@
-      DOUBLE PRECISION X,Y,Z,P,PAI2,DIFF,DI
+      DOUBLE PRECISION X,Y,Z,P,Pi2,DIFF,DI
       P=1.0D0
       N=0
       K=-629
       ISW=1
-      PAI2=1.570796326794897D0
+      Pi2=1.570796326794897D0
       ITEM=1
       DIFF=1.0D-14
   100 N=N+1
@@ -17,7 +17,7 @@ C
       DI=K
       X=DI/100.0D0
       Y=DCOS(X)
-      Z=DSIN(X+PAI2)
+      Z=DSIN(X+Pi2)
       CALL DPRTN(L,DIFF,X,Y,Z)
       L=L+1
       IF(K-628)140,150,150
@@ -27,13 +27,13 @@ C
 C
 C
       L=0
-      X=(-PAI2)/2.0D0
+      X=(-Pi2)/2.0D0
       DO 160 I=1,6
       Y=DCOS(X)
-      Z=DSIN(X+PAI2)
+      Z=DSIN(X+Pi2)
       CALL DPRTN(L,DIFF,X,Y,Z)
       L=L+1
-      X=X+PAI2/2.0D0
+      X=X+Pi2/2.0D0
   160 CONTINUE
       N=N+1
       ITEM=3
@@ -55,7 +55,7 @@ C
     4 X=DSIN(DLOG(DEXP(DSIN(P-1.0D0))))*DSQRT(P)+0.5D0
       ISW=5
   180 Y=DCOS(X)
-      Z=DSIN(X+PAI2)
+      Z=DSIN(X+Pi2)
       CALL DPRTN(L,DIFF,X,Y,Z)
       L=L+1
       GO TO 170

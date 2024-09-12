@@ -1,0 +1,16 @@
+1
+      *FORTRAN*          ENTER 
+0
+     - ITEM -     - JUSTICE -          - COMPUTED  VALUE -     - COMPARE  VALUE -     - DIFFERENS - 
+0      ( 1)         *OK*
+0      ( 2)         *OK*
+0      ( 3)         *OK*                 0.2000000E+01         0.2000000E+01         0.1192093E-06
+0      ( 4)         *OK*
+0      ( 5)         *OK*                 0.1980664E+05         0.1980664E+05         0.9860960E-07
+0      ( 6)         *OK*                 0.7670000E+04         0.7670000E+04         0.0000000E+00
+0      ( 7)         *OK*                  TRUE                  TRUE 
+0
+
+
+      *FORTRAN*          EXIT  
+exit 0

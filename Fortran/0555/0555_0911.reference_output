@@ -1,0 +1,4 @@
+ optional
+ NOT optional
+ PASS
+exit 0

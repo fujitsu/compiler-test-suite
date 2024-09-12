@@ -1,12 +1,12 @@
-      REAL                     DP(2),ANS(2),PAI,WK,EPS
+      REAL                     DP(2),ANS(2),Pi,WK,EPS
       INTEGER                  IPAGE,RETI,RETI2
       COMPLEX                  DCX,DCXC,DCXS,DIFF
       EQUIVALENCE              (DCX,DP(1)),(DCXS,ANS(1))
-      PAI=3.1415926
+      Pi=3.1415926
       IPAGE=0
       ITEM=0
 C
-      DP(1)=-1.0*PAI/4.0
+      DP(1)=-1.0*Pi/4.0
       RETI=1
       RETI2=1
       EPS=2.7182818
@@ -40,7 +40,7 @@ C
    90 DP(1)=0.0
       RETI2=2
       GO TO 15
-  100 DP(1)=PAI/3.0
+  100 DP(1)=Pi/3.0
       RETI2=3
       GO TO 15
 C

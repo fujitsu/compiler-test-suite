@@ -1,0 +1,251 @@
+      DIMENSION ICA(20),ICHA(20),RCA(20),RCHA(20)
+      INTEGER DIA(20),DIHA(20)
+      DOUBLE PRECISION DRA(20),DRHA(20),DRH,DRB,DRC,DRD,DRE,DIF,DIR,DII
+      COMPLEX*16   DCA(20),DCHA(20)
+      COMPLEX CA,CB,CC,CD,CE,CF,CG,CH,CI,CJ,CK,CL,CM,CN,CO,CP,CQ
+  111 FORMAT(1H1/7X,24H*FORTRAN           ENTER)
+  120 FORMAT(1H0/5X,11H**INTEGER**)
+  121 FORMAT(1H0/6X,23H- JUSTICE -    - ITEM -,10X,19H- COMPUTED RESULT
+     *-,  19X,17H- COMPARE VALUE -,19X,14H- DIFFERENCE -/)
+  122 FORMAT(1H0,7X,4H*OK*,11X,1H(I2,1H),17X,I12,21X,I12)
+  123 FORMAT(1H0,7X,7H*ERROR*,8X,1H(I2,1H),17X,I12,21X,I12)
+  124 FORMAT(1H0/5X,18H**DOUBLE INTEGER**)
+  126 FORMAT(1H0/5X,8H**REAL**)
+  127 FORMAT(1H0/5X,25H**DOUBLE PRECISION REAL**)
+  128 FORMAT(1H0,7X,4H*OK*,11X,1H(I2,1H),14X,E14.7,19X,E14.7,21XE14.7)
+  129 FORMAT(1H0,7X,7H*ERROR*8X1H(I2,1H),14X,E14.7,19X,E14.7,21XE14.7)
+  130 FORMAT(1H0,7X,4H*OK*,11X,1H(I2,1H)5X,D24.17,10XD24.17,12XD24.17)
+  131 FORMAT(1H0,7X7H*ERROR*8X1H(I2,1H)5X,D24.17,10XD24.17,12XD24.17)
+  132 FORMAT(1H0/5X,28H**DOUBLE PRECISION COMPLEX**)
+  133 FORMAT(1H0,5X,20H- JUSTICE - - ITEM - 21X,19H- COMPUTED RESULT -,
+     *36X,17H- COMPARE VALUE -)
+  134 FORMAT(1H0,3X,15H*ERROR* *ERROR*,3X,1H(I2,1H),2(5X,D24.17,2X,
+     * D20.13)/58X,16H- DIFFERENCE -  ,2(2X,D24.17))
+  136 FORMAT(1H0,3X,15H*ERROR* *OK*   ,3X,1H(I2,1H),2(5X,D24.17,2X,
+     * D20.13)/58X,16H- DIFFERENCE -  ,2(2X,D24.17))
+  137 FORMAT(1H0,3X,15H*OK*    *ERROR*,3X,1H(I2,1H),2(5X,D24.17,2X,
+     * D20.13)/58X,16H- DIFFERENCE -  ,2(2X,D24.17))
+  138 FORMAT(1H0,3X,15H*OK*    *OK*   ,3X,1H(I2,1H),2(5X,D24.17,2X,
+     * D20.13)/58X,16H- DIFFERENCE -  ,2(2X,D24.17))
+  144 FORMAT(1H0 38X,9HREAL PART,18X,9HIMAG PART,20X,9HREAL PART,
+     *17X,9HIMAG PART)
+  140 FORMAT(1H0///7X,23H*FORTRAN*          EXIT)
+  141 FORMAT(1H1 ///)
+      CON05=1.0E-05
+      CON06=1.0E-06
+      CA=(2.12,4.11)
+      CB=(2.12,-4.11)
+      CC=(2.12,0.0)
+      CD=(-2.12,4.11)
+      CE=(-2.12,-5.00)
+      CF=(-2.12,0.0)
+      CG=(0.0,0.0)
+      CH=(0.0,4.11)
+      CI=(0.0,-4.11)
+      CJ=(2.0,4.0)
+      CK=(2.0,-4.0)
+      CL=(2.0,0.0)
+      CM=(-2.0,4.0)
+      CN=(-2.0,-4.0)
+      CO=(-2.0,0.0)
+      CP=(0.0,4.0)
+      CQ=(0.0,-4.0)
+      RA=2.12
+      RB=-2.12
+      RC=0.0
+      RD=2.
+      RE=-4.
+      DRH=2.1210000000000
+      DRB=-2.121000000000
+      DRC=0.0
+      DRD=3.
+      DRE=-5.
+      ICA(1)=RD*CL
+      ICHA(1)=4
+      ICA(2)=RE*CB
+      ICHA(2)=-8
+      ICA(3)=RC*CA
+      ICHA(3)=0
+      ICA(4)=RE/CF
+      ICHA(4)=1
+      ICA(5)=RE/CL
+      ICHA(5)=-2
+      ICA(6)=DRC/CK
+      ICHA(6)=0
+      ICA(7)=DRD+CC
+      ICHA(7)=5
+      ICA(8)=CE+CN
+      ICHA(8)=-4
+      ICA(9)=CF+DRH
+      ICHA(9)=0
+      ICA(10)=CA-RC
+      ICHA(10)=2
+      ICA(11)=CP-RD
+      ICHA(11)=-2
+      ICA(12)=CB-DRH
+      ICHA(12)=0
+      WRITE(6,111)
+      WRITE(6,121)
+      WRITE(6,120)
+      DO 5 I=1,12
+      IF(ICA(I)-ICHA(I))2,1,2
+    1 WRITE(6,122)I,ICA(I),ICHA(I)
+      GO TO 5
+    2 WRITE(6,123)I,ICA(I),ICHA(I)
+    5 CONTINUE
+      WRITE(6,124)
+      DIA(1)=(2.0,0.0)*4000.
+      DIHA(1)=8000
+      DIA(2)=CL*DRE
+      DIHA(2)=-10
+      DIA(3)=CP*CO
+      DIHA(3)=0
+      DIA(4)=40000./CJ
+      DIHA(4)=4000
+      DIA(5)=RE/CL
+      DIHA(5)=-2
+      DIA(6)=(0.0,4.0)/(2.0,0.0)
+      DIHA(6)= 0
+      DIA(7)=(-120.0,0.0)+(4000.0,-1.36)
+      DIHA(7)=3880
+      DIA(8)=CO+(-8.0)
+      DIHA(8)=-10
+      DIA(9)=CE+RA
+      DIHA(9)=0
+      DIA(10)=(32.00,0.0)-RD
+      DIHA(10)=30
+      DIA(11)=(4.0,0.0)-(9.0,0.0)
+      DIHA(11)=-5
+      DIA(12)=DRH-(2.121,0.0)
+      DIHA(12)=0
+      DO 15 I=1,12
+      J=12+I
+      IF(DIA(I)-DIHA(I))4,3,4
+    3 WRITE(6,122)J,DIA(I),DIHA(I)
+      GO TO 15
+    4 WRITE(6,123)J,DIA(I),DIHA(I)
+   15 CONTINUE
+      WRITE(6,141)
+      WRITE(6,121)
+      WRITE(6,126)
+      RCA(1)=RA*CA
+      RCHA(1)=4.4944
+      RCA(2)=-DRD*(35.0,0.0)
+      RCHA(2)=-105.0
+      RCA(3)=CI*CL
+      RCHA(3)=0.0
+      RCA(4)=(4.498641,0.0)/DRH
+      RCHA(4)=2.121
+      RCA(5)=(-4.242,0.0)/2.1
+      RCHA(5)=-2.02
+      RCA(6)=CG/DRB
+      RCHA(6)=0.0
+      RCA(7)=CB+CK
+      RCHA(7)=4.12
+      RCA(8)=DRE+CM
+      RCHA(8)=-7.0
+      RCA(9)=RE+(4.0,0.0)
+      RCHA(9)=0.0
+      RCA(10)=(+4.0E-10,1.36E-10)-(5.28E-10,4.95E-10)
+      RCHA(10)=(-1.28E-10)
+      RCA(11)=CN-DRE
+      RCHA(11)=3.0
+      RCA(12)=(3.2,-5.6)-(3.2,-5.6)
+      RCHA(12)=0.0
+      DO 25 I=1,12
+      J=I+24
+      RIF=RCA(I)-RCHA(I)
+      IF(RCHA(I))6,905,6
+  905 IF(ABS(RIF)-CON06)501,502,502
+    6 IF(ABS(RIF)-CON05*ABS(RCHA(I)))501,502,502
+  501 WRITE(6,128)J,RCA(I),RCHA(I),RIF
+      GO TO 25
+  502 WRITE(6,129)J,RCA(I),RCHA(I),RIF
+   25 CONTINUE
+      WRITE(6,127)
+      DRA(1)=DRH*CC
+      DRHA(1)=4.49652
+      DRA(2)=RB*CJ
+      DRHA(2)=-4.24
+      DRA(3)=CF*0.
+      DRHA(3)=0.0
+      DRA(4)=(-6.666,0.0)/(-DRD)
+      DRHA(4)=2.222
+      DRA(5)=CL/CO
+      DRHA(5)=-1
+      DRA(6)=DRC/(3.2,2.6)
+      DRHA(6)=0.0
+      DRA(7)=3.6+(4.2,2.1)
+      DRHA(7)=7.8
+      DRA(8)=CF+RD
+      DRHA(8)=-0.12
+      DRA(9)=CK+CM
+      DRHA(9)=0.0
+      DRA(10)=(7.98,0.1)-(6.0,0.0)
+      DRHA(10)=1.98
+      DRA(11)=DRE-CK
+      DRHA(11)=-7.0
+      DRA(12)=(-2.12)-(-2.12,0.0)
+      DRHA(12)=0.0
+      DO 35 I=1,12
+      J=36+I
+      DIF=DRA(I)-DRHA(I)
+      IF(DRHA(I))8,7,8
+    7 IF(DABS(DIF)-CON06)503,504,504
+    8 IF(DABS(DIF)-CON05*DABS(DRHA(I)))503,504,504
+  503 WRITE(6,130)J,DRA(I),DRHA(I),DIF
+      GO TO 35
+  504 WRITE(6,131)J,DRA(I),DRHA(I),DIF
+   35 CONTINUE
+      WRITE(6,141)
+      WRITE(6,133)
+      WRITE(6,144)
+      WRITE(6,132)
+      DCA(1)=(4.28,6.0)*RA
+      DCHA(1)=(9.0736D0,12.72D0)
+      DCA(2)=(4.28,6.0)*(-RA)
+      DCHA(2)=(-9.0736D0,-12.72D0)
+      DCA(3)=(4.28,6.0)*RC
+      DCHA(3)=(0.0D0,0.0D0)
+      DCA(4)=RA/(0.53,0.53)
+      DCHA(4)=(2.0D0,-2.0D0)
+      DCA(5)=RE/(-2.0,-2.0)
+      DCHA(5)=(1.0D0,-1.0D0)
+      DCA(6)=(0.0,0.0)/RE
+      DCHA(6)=(0.0D0,0.0D0)
+      DCA(7)=(5.55,4.44)+DRB
+      DCHA(7)=(3.429D0,4.44D0)
+      DCA(8)=(1.36E-14,-3.2E-07)+(-4.68E-14,-6.8E-07)
+      DCHA(8)=(-3.32E-14,-10.0E-07)
+      DCA(9)=1.468+(-1.468,0.0)
+      DCHA(9)=(0.0D0,0.0D0)
+      DCA(10)=RB-(1.768,9.2846)
+      DCHA(10)=(-3.888D0,-9.2846D0)
+      DCA(11)=CE-6.29
+      DCHA(11)=(-8.41D0,-5.0D0)
+      DCA(12)=(3.0,0.0)-DRD
+      DCHA(12)=(0.0D0,0.0D0)
+      DO 45 I=1,12
+      J=48+I
+      DIR=DREAL(DCA(I))-DREAL(DCHA(I))
+      DII=DIMAG(DCA(I))-DIMAG(DCHA(I))
+      IF(DREAL(DCHA(I)))10,9,10
+    9 IF(DABS(DIR)-CON06)300,301,301
+   10 IF(DABS(DIR)-CON05*DABS(DREAL(DCHA(I))))300,301,301
+  300 IF(DIMAG(DCHA(I)))12,11,12
+   11 IF(DABS(DII)-CON06)505,506,506
+   12 IF(DABS(DII)-CON05*DABS(DIMAG(DCHA(I))))505,506,506
+  505 WRITE(6,138)J,DCA(I),DCHA(I),DIR,DII
+      GO TO 45
+  506 WRITE(6,137)J,DCA(I),DCHA(I),DIR,DII
+      GO TO 45
+  301 IF(DIMAG(DCHA(I)))14,13,14
+   13 IF(DABS(DII)-CON06)507,508,508
+   14 IF(DABS(DII)-CON05*DABS(DIMAG(DCHA(I))))507,508,508
+  507 WRITE(6,136)J,DCA(I),DCHA(I),DIR,DII
+      GO TO 45
+  508 WRITE(6,134)J,DCA(I),DCHA(I),DIR,DII
+   45 CONTINUE
+      WRITE(6,140)
+      STOP
+      END

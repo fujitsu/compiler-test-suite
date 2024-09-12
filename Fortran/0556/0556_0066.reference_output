@@ -1,0 +1,5 @@
+ foo 7 4
+ foo 4 7
+ foo 4 7
+ Pass
+exit 0

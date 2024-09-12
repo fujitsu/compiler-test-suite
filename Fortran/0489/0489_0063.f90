@@ -1,0 +1,17 @@
+INTEGER,PARAMETER::M=5
+INTEGER I
+INTEGER  Z(M),W(M,M)
+Z=0
+I=44
+DO CONCURRENT (I=1:M,II=1:M,Z(I).EQ. 0.00) 
+    Z(I)=I+II
+END DO
+Z=0
+W=0
+I=44
+DO CONCURRENT (I=1:M,II=1:M,Z(I).EQ. 0.00) 
+    Z(2)=1
+    W(I,II)=2
+END DO
+print *,'pass'
+end

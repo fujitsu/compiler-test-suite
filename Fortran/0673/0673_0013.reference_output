@@ -1,0 +1,4 @@
+           test start  
+          test normal end 
+  (but if  error output is ng ng ng) 
+exit 0

@@ -1,0 +1,53 @@
+MODULE mod1
+IMPLICIT NONE
+
+PROCEDURE(ss),POINTER :: ptr
+
+INTERFACE gnr 
+  PROCEDURE :: msub
+END INTERFACE
+
+PRIVATE :: msub
+
+CONTAINS
+SUBROUTINE msub(d1)
+REAL :: d1
+d1 = d1 * 4
+END SUBROUTINE
+
+SUBROUTINE ss(dd)
+INTEGER :: dd
+dd = dd + 2
+END SUBROUTINE
+
+END MODULE
+
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+INTEGER :: num = 2
+
+ptr => ss
+CALL sub(ptr)
+
+CONTAINS
+SUBROUTINE sub(dum)
+PROCEDURE(ss),POINTER :: dum
+
+INTERFACE gnr
+  PROCEDURE :: dum
+END INTERFACE
+
+dum => ss
+CALL gnr(num)
+
+IF(num .EQ. 4) THEN 
+  PRINT*,"PASS"
+ELSE
+  PRINT*,"ERROR"
+END IF
+END SUBROUTINE
+
+END PROGRAM

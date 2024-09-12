@@ -1,0 +1,110 @@
+      PROGRAM MAIN
+      IMPLICIT REAL*8(A-B,D),LOGICAL*4(L),COMPLEX*16(C)
+      DIMENSION  DA10(50,50),DA20(50,50),DA30(50,50),DA40(50,50),
+     *           LD10(50,50),LD20(50,50)
+      COMMON /BLK/ CD10(50,50),CD20(50,50),CD30(50,50)
+      DATA     DA10/2500*1.0D0/,DA20/2500*2.0D0/
+      DATA     DA30/2500*3.0D0/,DA40/2500*4.0D0/
+      DATA     LD10/2500*.FALSE./,LD20/2500*.FALSE./
+      DATA     NN/50/
+      DX = 1.D0
+      DO 10 I=1,50
+       DY = DFLOAT(I)
+       DO 10 J=1,50
+        DZ=DFLOAT(J)
+        CD10(I,J)=DCMPLX(DX,DY)
+        CD20(I,J)=DCMPLX(DY,DZ)
+        CD30(I,J)=DCMPLX(DZ,DX)
+  10  CONTINUE
+      CALL  SUB1(DA10,DA20,DA30,DA40,LD10,LD20,NN)
+      NN=NN/2
+      CALL  SUB2(DA10,DA20,DA30,DA40,LD10,LD20,NN)
+      WRITE(6,*) 'DA10=',DA10
+      WRITE(6,*) 'DA20=',DA20
+      WRITE(6,*) 'DA30=',DA30
+      WRITE(6,*) 'DA40=',DA40
+      WRITE(6,*) 'LD10=',LD10
+      WRITE(6,*) 'LD20=',LD20
+      WRITE(6,*) 'CD10=',((CD10(I,J),I=1,20),J=1,20)
+      WRITE(6,*) 'CD20=',((CD20(I,J),I=1,20),J=1,20)
+      WRITE(6,*) 'CD30=',((CD30(I,J),I=1,20),J=1,20)
+      STOP
+      END
+      SUBROUTINE SUB1(DA10,DA20,DA30,DA40,LD10,LD20,NN)
+      IMPLICIT  REAL*8(D),LOGICAL*4(L),COMPLEX*16(C)
+      DIMENSION  DA10(NN,NN),DA20(NN,NN),DA30(NN,NN),DA40(NN,NN),
+     *           LD10(NN,NN),LD20(NN,NN)
+      COMMON /BLK/ CD10(50,50),CD20(50,50),CD30(50,50)
+      NX=NN-5
+      DO 10 I=2,NX
+       ICNT=I
+       DA20(I,NX)=0.D0
+       IF ( LD10(I,NX).OR.LD20(I,NX) ) THEN
+         GOTO 10
+       ENDIF
+  25   CONTINUE
+       DO 20 J=I+1,NX
+         DA10(I,J)=DA10(I,NX)+DA20(I+1,J)
+         DA20(I,J) =DA20(I,J+1)+DMIN1(DA30(I,J),DA10(I,J))
+         IF ( DA30(I,J) - DA40(I,J) ) 21,20,22
+  21      LD10(I,J)=.TRUE.
+          GOTO 23
+  22      LD20(I,J)=.TRUE.
+  23     CD20(I,J)=CD20(I,I)+CD30(I,J)
+  20   CONTINUE
+       DO 30 J=I+1,NX
+         DX=DIMAG(CD10(I,J+1))+DA20(I,J)
+         DY=DREAL(CD20(I,J+1))+DA40(I,J)
+         IF (DX.GT.DY) THEN
+           LD10(I,J)=.NOT.LD20(2,J)
+         ELSE
+           LD20(I,J)=.NOT.LD10(NX,J)
+         ENDIF
+         DA30(2,J) = DA30(2,I)+DA10(I,J)
+         DA40(2,J) = DA40(I,J+1)-DMIN1(DX,DY)
+         CD10(I,J)=DCMPLX(DX,DY)-CD20(I,J)
+  30   CONTINUE
+       IF ( LD10(I,2).OR.LD20(I,2) .OR. ICNT.GT.5 ) THEN
+         LD20(I,2)=.TRUE.
+         GOTO 10
+       ENDIF
+       ICNT=ICNT+1
+       GOTO 25
+  10  CONTINUE
+  50  WRITE(6,*) ' ICNT=',ICNT
+      RETURN
+      END
+      SUBROUTINE SUB2(DA10,DA20,DA30,DA40,LD10,LD20,NN)
+      IMPLICIT  REAL*8(D),LOGICAL*4(L),COMPLEX*16(C)
+      DIMENSION  DA10(NN,NN),DA20(NN,NN),DA30(NN,NN),DA40(NN,NN),
+     *           LD10(NN,NN),LD20(NN,NN)
+      COMMON /BLK/ CD10(50,50),CD20(50,50),CD30(50,50)
+      NX=NN-2
+      DO 60 I1=2,NX,2
+       DX=DFLOAT(I1)
+       DO 50 I2=2,NX,2
+         CD10(I1,I2)=CD30(I1-1,NX)+CD20(I1,I2)
+         CD30(I1,NX)=CD30(I1,NX)-CD20(I1,I2)
+         IF ( LD10(I1,I2) .OR. LD20(I1,I2) ) THEN
+          DA10(I1,I2)=DA20(I1+1,2)+DA40(I1,I2+1)
+         ELSE
+          DA20(I1,I2)=DA10(I1+1,I2)-DA30(I1,I2+1)
+         ENDIF
+  50   CONTINUE
+         DA40(I1,2)=DA10(I1,3)-DIMAG(CD10(I1,2))
+         DA30(I1,4)=DIMAG(CD30(I1+1,NX))-DA20(I1,3)
+  60  CONTINUE
+      DO 70 K1=2,NX
+       CD20(K1,2) = CD10(K1,NX)+(2.D0,1.D0)
+       DO 80 K2=K1+1,NX
+        CD30(K2,NX) = CD10(K2,K1)+CD20(K2,2)
+        DA40(K2,NX) = DA30(K2,K1)-DA20(K1,NX)
+  80   CONTINUE
+       DO 90 K2=K1+1,NX
+        CD10(K2,NX) = CD30(K1,NX)+CD20(K2,2)
+        DA20(K2,2) = DA40(K1,NX)+DA10(K1,K1)
+  90   CONTINUE
+       DA30(2,K1)=5.D0
+  70  CONTINUE
+      RETURN
+      END

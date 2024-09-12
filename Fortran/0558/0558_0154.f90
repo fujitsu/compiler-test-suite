@@ -1,0 +1,41 @@
+MODULE mod1
+IMPLICIT NONE
+
+INTEGER,ALLOCATABLE :: num(:)
+
+CONTAINS
+SUBROUTINE msub(dd1)
+  INTEGER :: dd1(:),ii = 1
+  FORALL(ii = 1 : 5)
+    dd1(ii) = dd1(ii) * 2
+  END FORALL
+END SUBROUTINE
+
+END MODULE
+
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+ALLOCATE(num(5))
+
+num = [3,5,8,2,7]
+CALL int_sub(num)
+
+IF(num(1) .EQ. 6 .AND. num(3) .EQ. 16) THEN
+  PRINT*,"PASS"
+ELSE
+  PRINT*,"ERROR"
+END IF
+
+CONTAINS
+SUBROUTINE int_sub(dd1)
+INTEGER :: dd1(:)
+INTERFACE gnr
+  MODULE PROCEDURE msub
+END INTERFACE
+CALL gnr(dd1)
+END SUBROUTINE
+
+END PROGRAM

@@ -1,0 +1,42 @@
+MODULE mod1
+IMPLICIT NONE
+
+INTEGER :: num
+
+INTERFACE 
+  SUBROUTINE esub(dd1)
+    INTEGER :: dd1
+  END SUBROUTINE 
+END INTERFACE
+
+CONTAINS
+SUBROUTINE int_sub(dum_sub)
+  PROCEDURE(esub) :: dum_sub
+  INTERFACE gnr
+    PROCEDURE dum_sub
+  END INTERFACE
+CALL gnr(num)
+END SUBROUTINE
+
+
+END MODULE
+
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+num = 14
+CALL int_sub(esub)
+
+END PROGRAM
+
+SUBROUTINE esub(dd1)
+  INTEGER :: dd1
+  dd1 = dd1 * 2
+  IF(dd1 .EQ. 28) THEN
+    PRINT*,"PASS"
+  ELSE
+    PRINT*,"ERROR"
+  END IF
+END SUBROUTINE

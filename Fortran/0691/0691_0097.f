@@ -1,0 +1,276 @@
+      LOGICAL FPRICE,TPRICE
+      DOUBLE PRECISION  PR71,PR72,PR73
+      EQUIVALENCE(PR1,DP1),(PR2,DP2),(PR3,DP3),(PR4,DP4),(PR5,DP5),
+     1           (PR6,DP6),(PR7,DP7),(PR8,DP8),(PR9,DP9),(PR10,DP10),
+     2         (PR11,DP11),(PR12,DP12),(PR13,DP13),(PR14,DP14),
+     3         (PR15,DP15),(PR16,DP16),(PR17,DP17),(PR18,DP18),
+     4         (PR19,DP19),(PR20,DP20),(PR21,DP21),(PR22,DP22),
+     5         (PR23,DP23),(PR24,DP24),(PR25,DP25),(PR26,DP26),
+     6         (PR27,DP27),(PR28,DP28),(PR29,DP29),(PR30,DP30),
+     7         (PR31,DP31),(PR32,DP32),(PR33,DP33),(PR34,DP34),
+     8         (PR35,DP35),(PR36,DP36),(PR37,DP37),(PR38,DP38),
+     9         (PR39,DP39),(PR40,DP40),(PR41,DP41),(PR42,DP42),
+     A         (PR43,DP43),(PR44,DP44),(PR45,DP45),(PR46,DP46),
+     B         (PR47,DP47),(PR48,DP48),(PR49,DP49),(PR50,DP50),
+     C         (PR51,DP51),(PR52,DP52),(PR53,DP53),(PR54,DP54),
+     D         (PR55,DP55),(PR56,DP56),(PR57,DP57),(PR58,DP58),
+     E         (PR59,DP59),(PR60,DP60),(PR61,DP61),(PR62,DP62),
+     F         (PR63,DP63),(PR64,DP64),(PR65,DP65),(PR66,DP66),
+     G         (PR67,DP67),(PR68,DP68),(PR69,DP69),(PR70,DP70),
+     H         (PR71,DP71),(PR72,DP72),(PR73,DP73),(PR74,DP74),
+     I     (PR75,DP75),(PR76,DP76),(PR77,DP77),(PR78,DP78),(PR79,DP79)
+      WRITE(6,100)
+      WRITE(6,101)
+  100 FORMAT(1H1/6X,25H*FORTRAN*          ENTER )
+  101 FORMAT(1H0/5X,8H- ITEM -,5X,11H- JUSTICE -,10X,
+     -     19H- COMPUTED  VALUE -,5X,18H- COMPARE  VALUE -,5X,
+     -       14H- DIFFERENS - )
+  102 FORMAT(1H0///6X,25H*FORTRAN*          EXIT  )
+  103 FORMAT(1H0,6X,2H( ,I1,1H),9X,4H*OK*,16X,E14.7,8X,E14.7,8X,E14.7)
+ 1031 FORMAT(1H0,6X,2H( ,I1,1H),9X,4H*OK*)
+  104 FORMAT(1H0,6X,2H( ,I1,1H),9X,7H*ERROR*,13X,E14.7,8X,E14.7,8X,
+     -       E14.7)
+  105 FORMAT(1H0,6X,2H( ,I1,1H),9X,7H*OK*   ,15X,5HTRUE ,17X,5HTRUE )
+  106 FORMAT(1H0,6X,2H( ,I1,1H),9X,7H*ERROR*,15X,5HFALSE,17X,5HTRUE )
+      TPRICE=.TRUE.
+      ACOMP=121.5
+       BCOMP=605.4302
+      CCOMP=2.0
+      DCOMP=1958.1
+      ECOMP=19806.64
+      GCOMP=0.76700D 04
+      APRICE=0.0
+      BPRICE=0.0
+      CPRICE=0.0
+      DPRICE=0.0
+      EPRICE=0.0
+      J=0
+      DIFRNC=0.0
+      PR1=1.1
+      PR2=2.1
+      PR3=3.1
+      PR4=4.1
+      PR5=5.1
+      PR6=6.1
+      PR7=7.1
+      PR8=8.1
+      PR9=9.1
+      PR10=10.1
+      PR11=11.1
+      PR12=12.1
+      PR13=13.1
+      PR14=14.1
+      PR15=15.1
+      PR16=16.1
+      PR17=17.1
+      PR18=18.1
+      PR19=19.1
+      PR20=20.1
+      PR21=21.1
+      PR22=22.1
+      PR23=23.1
+      PR24=24.1
+      PR25=25.1
+      PR26=26.1
+      PR27=27.1
+      PR28=28.1
+      PR29=29.1
+      PR30=30.1
+      PR31=31.1
+      PR32=32.1
+      PR33=33.1
+      PR34=34.1
+      PR35=35.1
+      PR36=36.1
+      PR37=37.1
+      PR38=38.1
+      PR39=39.1
+      PR40=40.1
+      PR41=41.1
+      PR42=42.1
+      PR43=43.1
+      PR44=44.1
+      PR45=45.1
+      PR46=46.1
+      PR47=47.1
+      PR48=48.1
+      PR49=49.1
+      PR50=50.1
+      PR51=51.1
+      PR52=52.1
+      PR53=53.1
+      PR54=54.1
+      PR55=55.1
+      PR56=56.1
+      PR57=57.1
+      PR58=58.1
+      PR59=59.1
+      PR60=60.1
+      PR61=61.1
+      PR62=62.1
+      PR63=63.1
+      PR64=64.1
+      PR65=65.1
+      PR66=66.1
+      PR67=67.1
+      PR68=68.1
+      PR69=69.1
+      PR70=70.1
+      PR71=0.2233400D 06
+      PR72=0.5435500D 06
+      PR73=0.3420345600D 09
+      PR74=74.1
+      PR75=75.1
+      PR76=76.1
+      PR77=77.1
+      PR78=78.1
+      PR79=79.1
+      X=DP1
+      X=DP2
+      X=DP3
+      X=DP4
+      X=DP5
+      X=DP6
+      X=DP7
+      X=DP8
+      X=DP9
+      X=DP10
+      X=DP11
+      X=DP12
+      X=DP13
+      X=DP14
+      X=DP15
+      X=DP16
+      X=DP17
+      X=DP18
+      X=DP19
+      X=DP20
+      X=DP21
+      X=DP22
+      X=DP23
+      X=DP24
+      X=DP25
+      X=DP26
+      X=DP27
+      X=DP28
+      X=DP29
+      X=DP30
+      X=DP31
+      X=DP32
+      X=DP33
+      X=DP34
+      X=DP35
+      X=DP36
+      X=DP37
+      X=DP38
+      X=DP39
+      X=DP40
+      X=DP41
+      X=DP42
+      X=DP43
+      X=DP44
+      X=DP45
+      X=DP46
+      X=DP47
+      X=DP48
+      X=DP49
+      X=DP50
+      X=DP51
+      X=DP52
+      X=DP53
+      X=DP54
+      X=DP55
+      X=DP56
+      X=DP57
+      X=DP58
+      X=DP59
+      X=DP60
+      X=DP61
+      X=DP62
+      X=DP63
+      X=DP64
+      X=DP65
+      X=DP66
+      X=DP67
+      X=DP68
+      X=DP69
+      X=DP70
+      X=DP71
+      X=DP72
+      X=DP73
+      X=DP74
+      X=DP75
+      X=DP76
+      X=DP77
+      X=DP78
+      X=DP79
+      J=1
+      APRICE=(PR1+PR2+PR3+PR4+PR5+PR6+PR7+PR8+PR9+PR10+
+     1        PR11+PR12+PR13+PR14+PR15)
+      IF(ACOMP.EQ.0.0) GO TO 110
+      DIFRNC=ABS((ACOMP-APRICE)/ACOMP)
+  110 IF(DIFRNC.LE.0.1E-4) GO TO 200
+      WRITE(6,104)J,APRICE,ACOMP,DIFRNC
+      GO TO 300
+  200 DIFRNC=0.
+      WRITE(6,1031)J
+C
+  300 J=2
+      BPRICE=(PR16*PR17+PR18*PR19+PR20*PR21+PR22*PR23+PR24*PR25-
+     1     PR26*DP27-PR28*DP29-PR30)
+      IF(BCOMP.EQ.0.0) GO TO 120
+      DIFRNC=ABS((BCOMP-BPRICE)/BCOMP)
+  120 IF(DIFRNC.LE.0.1E-4) GO TO 400
+      WRITE(6,104)J,BPRICE,BCOMP,DIFRNC
+      GO TO 500
+  400 DIFRNC=0.
+      WRITE(6,1031)J
+C
+  500 CPRICE=((PR31+PR32+PR33+PR34+PR41+PR42+PR43+PR44)/
+     1     (DP36+DP37+DP38+DP39))
+      J=3
+      IF(CCOMP.EQ.0.0) GO TO 130
+      DIFRNC=ABS((CCOMP-CPRICE)/CCOMP)
+  130 IF(DIFRNC.LE.0.1E-4) GO TO 600
+      WRITE(6,104)J,CPRICE,CCOMP,DIFRNC
+      GO TO 700
+  600 WRITE(6,103)J,CPRICE,CCOMP,DIFRNC
+C
+  700 J=4
+      DPRICE=(DP1*PR5+DP2*PR10+DP3*PR15+DP4*PR20+DP5*DP25+
+     1        DP6*PR30+DP7*PR35+DP8*PR40+DP9*PR45+DP10*PR50)
+      IF(DCOMP.EQ.0.0) GO TO 140
+      DIFRNC=ABS((DCOMP-DPRICE)/DCOMP)
+  140 IF(DIFRNC.LE.0.1E-3) GO TO 800
+      WRITE(6,104)J,DPRICE,DCOMP,DIFRNC
+      GO TO 900
+  800 CONTINUE
+      WRITE(6,1031)J
+C
+  900 J=5
+      EPRICE=((DP55+PR55+DP65+PR75)*PR79)
+      DIFRNC=ABS((ECOMP-EPRICE)/ECOMP)
+      IF(DIFRNC.EQ.0.0E 00)GO TO 1000
+      IF((ABS(DIFRNC/ECOMP)).LE.0.1E-6)GO TO 1000
+      WRITE(6,104)J,EPRICE,ECOMP,DIFRNC
+      GO TO 1100
+ 1000 WRITE(6,103)J,EPRICE,ECOMP,DIFRNC
+C
+ 1100 J=6
+      GPRICE=((PR73-(PR71+PR72))-0.3412600000D 09)
+      DIFRNC=ABS((GCOMP-GPRICE)/GCOMP)
+      IF(DIFRNC.EQ.0.0E 00)GO TO 1200
+      IF((ABS(DIFRNC/GCOMP)).LE.0.1E-6)GO TO 1200
+      WRITE(6,104) J,GPRICE,GCOMP,DIFRNC
+      GO TO 1300
+ 1200 WRITE(6,103) J,GPRICE,GCOMP,DIFRNC
+C
+ 1300 J=7
+      FPRICE=((PR60+PR61).EQ.(DP60+DP61).AND.(PR62+PR63).LT.(PR63+DP64))
+      IF(FPRICE.AND.TPRICE)GO TO 1400
+      WRITE(6,106) J
+      GO TO 1500
+ 1400 WRITE(6,105) J
+ 1500 WRITE(6,102)
+      STOP
+      END

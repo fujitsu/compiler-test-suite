@@ -1,0 +1,8 @@
+ 1  destructor call PASS  100
+ 2  destructor call PASS  200
+ 3  destructor call PASS  300
+ 4  destructor call PASS  400
+ 5  destructor call PASS  500
+ 6  destructor call PASS  600
+ 7  destructor call PASS  700
+exit 0

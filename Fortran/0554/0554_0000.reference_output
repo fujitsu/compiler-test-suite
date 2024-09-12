@@ -1,0 +1,4 @@
+ KIND: 4 --- 4
+ 1 -- 1
+ boz->integer OK
+exit 0

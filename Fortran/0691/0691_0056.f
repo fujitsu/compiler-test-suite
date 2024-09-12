@@ -1,0 +1,121 @@
+      DOUBLE PRECISION X1,X2,Y,Z,DIFF,DARRAY(2,2),E,F,P
+      E(P)=1.0D0+P-P
+      F(P)=(P**2+DEXP(DSIN(P-1.0D0)))/DSQRT(4.0D0*P)
+      N=0
+      P=1.0D0
+      J=1
+      X1=10.0D0
+      DARRAY(1,1)=-0.5D0
+      DARRAY(1,2)=-0.01D0
+      DARRAY(2,1)=0.01D0
+      DARRAY(2,2)=0.5D0
+      ITEM=1
+      DIFF=1.0D-14
+      ISW=1
+C
+      WRITE(6,11)
+   11 FORMAT(1H1/7X,24H*FORTRAN*          ENTER)
+  100 K=-150
+  110 N=N+1
+      IF(N-1)120,130,120
+  120 WRITE(6,12)
+   12 FORMAT(1H1 / )
+  130 WRITE(6,13)ITEM,N
+   13 FORMAT(1H0,7X,9H*** ITEM(,I2,5H) ***,7X,
+     1       50H*****  TEST  OF  STANDARD  INTRINSIC  FUNCTION  - ,
+     2       17HDDIM(DX1,DX2) -  ,5H*****,15X,9H( PAGE = ,I3,2H ),
+     3       ///2X,11H- JUSTICE -,15X,13H- ARGUMENTS -,23X,
+     4       19H- COMPUTED RESULT -,9X,17H- COMPARE VALUE -,6X,
+     5       14H- DIFFERENCE -)
+      L=0
+  140 X2=DFLOAT(K)/10.0D0
+      Y=DDIM(X1,X2)
+      Z=X1-DMIN1(X1,X2)
+      CALL DR2RTN(L,DIFF,X1,X2,Y,Z)
+      L=L+1
+      IF(K-150)150,160,160
+  150 K=K+1
+      IF(L-50)140,110,110
+  160 GO TO (1,2,3,4,5,6,7,8,9,10,21,22,23),ISW
+    1 X1=-10.0D0
+      ISW=2
+      ITEM=2
+      GO TO 100
+    2 X1=0.0D0
+      X2=3.4D0
+      ITEM=3
+      ISW=3
+      N=N+1
+      WRITE(6,12)
+      WRITE(6,13)ITEM,N
+      L=0
+  170 Y=DDIM(X1,X2)
+      Z=X1-DMIN1(X1,X2)
+      CALL DR2RTN(L,DIFF,X1,X2,Y,Z)
+      L=L+1
+      GO TO 160
+    3 ITEM=4
+      WRITE(6,15)ITEM
+   15 FORMAT(1H0/19X,3H- (,I3,3H) -// )
+      X1=DARRAY(1,1)
+      X2=DARRAY(1,2)
+      ISW=4
+      GO TO 170
+    4 X1=DARRAY(2,1)
+      X2=DARRAY(2,2)
+      ISW=5
+      GO TO 170
+    5 X1=((P**2-2.0D0)*6.0D0+1.0D0)/10.0D0
+      X2=(P**2+P*0.1D0-P/10.0D0)/(-100.0D0)
+      ISW=6
+      GO TO 170
+    6 X1=(DARRAY(1,1)*(-10.0D0)+5.0D0*P)/1000.0D0
+      X2=DARRAY(1,1)**2+(P/10.0D0)*2.0D0+DARRAY(2,2)/10.0
+      ISW=7
+      GO TO 170
+    7 X1=DABS(P-2.0D0)*(-0.5D0)
+      X2=DFLOAT(J*2-IFIX(10.0/3.0))/100.0D0
+      ISW=8
+      GO TO 170
+    8 X1=DFLOAT(J**2*2-IFIX(10.0/3.0)+2)/100.0D0
+      X2=(DABS(P**2+2.0D0)+DFLOAT(J*(-8)))/10.0D0*DSIGN(P,P)
+      ISW=9
+      GO TO 170
+    9 X1=DSIN(P-1.0D0)-DSQRT(P**2/4.0D0)
+      X2=(DEXP(P-1.0D0)*DSQRT(4.0D0*P)-3.0D0)/100.0D0
+      ISW=10
+      GO TO 170
+   10 X1=(DLOG(P**2-1.0D0*DSQRT(4.0D0*P)+2.0D0)+P)/100.0D0
+      X2=DSIN(DLOG(DEXP(DSIN(P-1.0D0))))*DSQRT(P)+0.5D0
+      ISW=11
+      GO TO 170
+   21 X1=F(P)*DARRAY(1,1)
+      X2=DEXP(DLOG(F(P**2)))/100.0D0-P*0.02D0
+      ISW=12
+      GO TO 170
+   22 X1=F(DARRAY(2,1)*100.0D0)/100.0D0
+      X2=E(DSIN(DSQRT(F(P)+3.0D0)-F(P)*2.0D0))*DARRAY(2,2)
+      ISW=13
+      GO TO 170
+   23 WRITE(6,14)
+   14 FORMAT(1H0/7X,23H*FORTRAN*          EXIT)
+      STOP
+      END
+      SUBROUTINE DR2RTN(L,D,X1,X2,Y,Z)
+      DOUBLE PRECISION XX,DF,X1,X2,Y,Z,D
+      IF(MOD(L,10))120,110,120
+  110 WRITE(6,11)
+   11 FORMAT(1H )
+  120 XX=DABS(Z-Y)
+      IF(Y)150,160,150
+  150 DF=D*DABS(Z)
+      GO TO 170
+  160 DF=D
+  170 IF(XX-DF)130,140,140
+  130 WRITE(6,12)X1,X2,Y,Z,XX
+   12 FORMAT(1H ,4X,4H*OK*,5X,D24.17,2X,3(D24.17,3X),D12.5)
+      RETURN
+  140 WRITE(6,13)X1,X2,Y,Z,XX
+   13 FORMAT(1H ,4X,7H*ERROR*,2X,D24.17,2X,3(D24.17,3X),D12.5)
+      RETURN
+      END

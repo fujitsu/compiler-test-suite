@@ -1,0 +1,14 @@
+ subroutine set
+ OK-11
+ OK-22
+ OK-31 1
+ OK-31 2
+ OK-31 3
+ OK-31 4
+ OK-31 5
+ OK-31 6
+ OK-31 7
+ OK-31 8
+ OK-31 9
+ OK-31 10
+exit 0

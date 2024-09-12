@@ -1,0 +1,35 @@
+MODULE mod1
+IMPLICIT NONE
+
+INTEGER :: num
+
+CONTAINS
+SUBROUTINE msub(dd1)
+  INTEGER :: dd1
+  dd1 = dd1 + 2
+END SUBROUTINE
+
+END MODULE
+
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+PROCEDURE(msub),POINTER :: prc
+ 
+INTERFACE gnr
+  PROCEDURE :: prc
+END INTERFACE
+
+num = 14
+prc => msub
+CALL gnr(num)
+
+IF(num .EQ. 16) THEN
+  PRINT*,"PASS"
+ELSE
+  PRINT*,"ERROR"
+END IF
+
+END PROGRAM

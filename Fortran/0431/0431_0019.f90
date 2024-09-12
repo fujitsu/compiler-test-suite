@@ -1,0 +1,46 @@
+module m1
+type x1
+  integer::x
+end type
+type x2
+  character::x
+end type
+type(x1),pointer:: t1(:)
+type(x2),pointer:: t2(:)
+interface gena
+ module procedure a1,a2
+end interface
+interface genb
+ module procedure b1,b2
+end interface
+contains
+subroutine s1
+allocate (t1(2),t2(2))
+t1%x=(/1,2/)
+t2%x=(/'1','2'/)
+call gena(t1)
+call genb(t1)
+call gena(t2)
+call genb(t2)
+end subroutine
+subroutine a1(pp)
+type(x1),pointer::pp(:)
+if (any(pp%x/=(/1,2/))) print *,201
+end subroutine
+subroutine a2(pp)
+type(x2),pointer::pp(:)
+if (any(pp%x/=(/'1','2'/))) print *,301
+end subroutine
+subroutine b1(pp)
+type(x1),pointer,intent(in)::pp(:)
+if (any(pp%x/=(/1,2/))) print *,401
+end subroutine
+subroutine b2(pp)
+type(x2),pointer,intent(in)::pp(:)
+if (any(pp%x/=(/'1','2'/))) print *,501
+end subroutine
+end
+use m1
+call s1
+print *,'pass'
+end

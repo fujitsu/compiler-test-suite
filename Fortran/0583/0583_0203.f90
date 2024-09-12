@@ -1,0 +1,23 @@
+SUBROUTINE EX_SUB()
+         TYPE TY
+         INTEGER :: JJ
+         INTEGER,ALLOCATABLE :: ALC
+         END TYPE
+
+        TYPE TY1
+         INTEGER :: II
+        TYPE(TY), ALLOCATABLE :: NODE2
+        END TYPE
+
+        CALL SUB(TY1(6,TY(10,11)))
+        PRINT*,"PASS"
+        CONTAINS
+        SUBROUTINE SUB(AAA)
+        TYPE(TY1),INTENT(IN) :: AAA
+        IF(AAA%NODE2%JJ .NE. 10) PRINT*,"121"
+        IF(AAA%NODE2%ALC .NE. 11) PRINT*,"122"
+        IF(AAA%II .NE. 6) PRINT*,"123"
+        END SUBROUTINE
+        END SUBROUTINE
+CALL EX_SUB()
+END

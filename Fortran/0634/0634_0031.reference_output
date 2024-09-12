@@ -1,0 +1,9 @@
+1     ====== FORTRAN ====== ... = TEST =
+     ===============================================
+     ASSIGNED GO TO 1===========
+     ASSIGNED GO TO 3===========
+     ASSIGNED GO TO 5===========
+     ASSIGNED GO TO 7===========
+     ASSIGNED GO TO 9===========
+          END RUN UNIT
+exit 0

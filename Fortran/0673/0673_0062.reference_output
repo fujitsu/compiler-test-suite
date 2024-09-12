@@ -1,0 +1,8 @@
+ ************************************************
+ *                  test ... h0000110           *
+ *  test for formatted direct-access read/write *
+
+ *          h0000110 ... ok                     *
+ * end run unit ... error test22(end of record)?*
+ ************************************************
+exit 0

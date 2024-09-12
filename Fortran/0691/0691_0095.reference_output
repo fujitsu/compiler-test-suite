@@ -1,0 +1,134 @@
+1
+
+                    *FORTRAN*                         ENTER
+
+
+
+
+      -ITEM-          - JUSTICE -     - COMPUTED VALUE -     - COMPARE  VALUE -     - DIFERANCE -
+0      (  1)               *OK* 
+0      (  2)               *OK* 
+0      (  3)               *OK* 
+0      (  4)               *OK* 
+0      (  5)               *OK* 
+0      (  6)               *OK* 
+0      (  7)               *OK* 
+0      (  8)               *OK* 
+0      (  9)               *OK* 
+0      ( 10)               *OK* 
+0      ( 11)               *OK* 
+0      ( 12)               *OK* 
+0      ( 13)               *OK* 
+0      ( 14)               *OK* 
+0      ( 15)               *OK* 
+0      ( 16)               *OK* 
+0      ( 17)               *OK* 
+0      ( 18)               *OK* 
+0      ( 19)               *OK* 
+0      ( 20)               *OK* 
+0      ( 21)               *OK* 
+0      ( 22)               *OK* 
+0      ( 23)               *OK* 
+0      ( 24)               *OK* 
+0      ( 25)               *OK* 
+1
+
+
+
+
+
+
+      -ITEM-          - JUSTICE -     - COMPUTED VALUE -     - COMPARE  VALUE -     - DIFERANCE -
+0      ( 26)               *OK* 
+0      ( 27)               *OK* 
+0      ( 28)               *OK* 
+0      ( 29)               *OK* 
+0      ( 30)               *OK* 
+0      ( 31)               *OK* 
+0      ( 32)               *OK* 
+0      ( 33)               *OK* 
+0      ( 34)               *OK* 
+0      ( 35)               *OK* 
+0      ( 36)               *OK* 
+0      ( 37)               *OK* 
+0      ( 38)               *OK* 
+0      ( 39)               *OK* 
+0      ( 40)               *OK* 
+0      ( 41)               *OK* 
+0      ( 42)               *OK* 
+0      ( 43)               *OK* 
+0      ( 44)               *OK* 
+0      ( 45)               *OK* 
+0      ( 46)               *OK* 
+0      ( 47)               *OK* 
+0      ( 48)               *OK* 
+0      ( 49)               *OK* 
+0      ( 50)               *OK* 
+0      ( 51)               *OK* 
+1
+
+
+
+
+
+
+      -ITEM-          - JUSTICE -     - COMPUTED VALUE -     - COMPARE  VALUE -     - DIFERANCE -
+0      ( 52)               *OK* 
+0      ( 53)               *OK* 
+0      ( 54)               *OK* 
+0      ( 55)               *OK* 
+0      ( 56)               *OK* 
+0      ( 57)               *OK* 
+0      ( 58)               *OK* 
+0      ( 59)               *OK* 
+0      ( 60)               *OK* 
+0      ( 61)               *OK* 
+0      ( 62)               *OK* 
+0      ( 63)               *OK* 
+0      ( 64)               *OK* 
+0      ( 65)               *OK* 
+0      ( 66)               *OK* 
+0      ( 67)               *OK* 
+0      ( 68)               *OK* 
+0      ( 69)               *OK* 
+0      ( 70)               *OK* 
+0      ( 71)               *OK* 
+0      ( 72)               *OK* 
+0      ( 73)               *OK* 
+0      ( 74)               *OK* 
+0      ( 75)               *OK* 
+0      ( 76)               *OK* 
+0      ( 77)               *OK* 
+1
+
+
+
+
+
+
+      -ITEM-          - JUSTICE -     - COMPUTED VALUE -     - COMPARE  VALUE -     - DIFERANCE -
+0      ( 78)               *OK* 
+0      ( 79)               *OK* 
+0      ( 80)               *OK* 
+0      ( 81)               *OK* 
+0      ( 82)               *OK* 
+0      ( 83)               *OK* 
+0      ( 84)               *OK* 
+0      ( 85)               *OK* 
+0      ( 86)               *OK* 
+0      ( 87)               *OK* 
+0      ( 88)               *OK* 
+0      ( 89)               *OK* 
+0      ( 90)               *OK* 
+0      ( 91)               *OK* 
+0      ( 92)               *OK* 
+0      ( 93)               *OK* 
+0      ( 94)               *OK* 
+0      ( 95)               *OK* 
+0      ( 96)               *OK* 
+0      ( 97)               *OK* 
+0      ( 98)               *OK* 
+0      ( 99)               *OK* 
+0      (100)               *OK* 
+0                    *FORTRAN*                         EXIT 
+exit 0

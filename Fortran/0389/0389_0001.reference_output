@@ -1,0 +1,4 @@
+ struct pass
+ sequence pass
+ pass
+exit 0

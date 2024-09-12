@@ -1,0 +1,4 @@
+  ty1_scalar_destructor CALL  100
+  ty0_scalar_destructor CALL  200
+  PASS
+exit 0

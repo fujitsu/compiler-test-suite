@@ -1,0 +1,31 @@
+      PROGRAM MAIN
+      IMPLICIT    REAL*8(D),COMPLEX*16(C)
+      DIMENSION   DA10(100),DA20(100),DA30(100),DA40(100),
+     *      DB10(100,100),DB20(100,100),DB30(100,100)
+      DIMENSION   CD10(100),CD20(100),CD30(100)
+      INTEGER*4   ID10(100),ID20(100),ID30(100)
+
+      DATA   DA10/100*2.0D0/,DA20/100*3.0D0/,DA30/100*4.D0/
+      DATA   DA40/100*16.D0/
+      DATA   DB10/10000*1.D0/,DB20/10000*1.0D0/,DB30/10000*0.D0/
+      DATA   CD10/100*(1.D0,2.D0)/,CD20/100*(2.D0,4.D0)/
+      DATA   CD30/100*(3.D0,1.D0)/
+      DATA   ID10/100*1/,ID20/100*2/,ID30/100*4/
+      DATA   IT1/1/,IT2/2/,IT3/5/,IT4/10/,IT5/15/
+      DATA   IM1/-1/,IM2/-2/,IM3/-5/
+
+      DO 30 I=1,95
+        ID10(I) = ID20(I) - ID30(I+1)
+        ID20(I) = MAX(ID10(I),ID30(I),5)
+        IF ( ID10(I) ) 31,32,33
+ 31       ID10(I) = - ID10(I)
+          GO TO 33
+ 32       ID10(I) = 10
+ 33       ID30(I) = ID10(I) + ID20(I)
+        IF ( ID30(I) .GT. 70 ) ID30(I) = 100
+ 30   CONTINUE
+      WRITE(6,*) ID10
+      WRITE(6,*) ID20
+      WRITE(6,*) ID30
+      STOP
+      END

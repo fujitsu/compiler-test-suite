@@ -1,0 +1,38 @@
+MODULE mod1
+IMPLICIT NONE
+TYPE ty
+  INTEGER :: num2
+END TYPE
+
+INTERFACE OPERATOR ( + )
+  MODULE PROCEDURE m_add 
+END INTERFACE
+
+CONTAINS
+FUNCTION m_add(d1,d2)
+  INTEGER,INTENT(IN) :: d1
+  TYPE(ty),INTENT(IN) :: d2
+  INTEGER :: m_add
+  m_add = d1 + d2%num2 + 2
+END FUNCTION
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+INTEGER :: num1,res
+TYPE(ty) :: obj1
+
+num1 = 2
+obj1%num2 = 4
+
+res = num1 + obj1
+
+IF(res .EQ. 8) THEN
+  PRINT*,"PASS"
+ELSE
+  PRINT*,"ERROR"
+END IF
+
+END PROGRAM

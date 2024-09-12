@@ -1,0 +1,21 @@
+  listdirect test (write->rewind->read)
+      5*1eor read (recfm=u) 
+      5*1eor read (recfm=u) 
+      5*eor read (recfm=u) 
+      5* eor read (recfm=u) 
+      5*,eor read (recfm=u) 
+      5*/eor read (recfm=u) 
+      5 5 5 5 5eor read (recfm=u) 
+      9 9 9 9 9 eor read (recfm=u) 
+  if(1 1 1 1 1)is output 6 time ok ok 
+  if(5 5 5 5 5)is output 1 time ok ok 
+  if(9 9 9 9 9)is output 1 time ok ok 
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 1 1 1 1 1
+ 5 5 5 5 5
+ 9 9 9 9 9
+exit 0

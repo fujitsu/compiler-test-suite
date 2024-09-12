@@ -1,0 +1,43 @@
+module m1
+ type x
+   character(1),pointer::p3(:)
+   character(1)::xx
+ end type
+character(:),pointer::p3(:)
+character(1),pointer::p4(:)
+ contains
+subroutine s1(w8)
+type (x),pointer:: w8(:)
+allocate(w8(2:3))
+w8(3)%xx='z'
+w8(3)%p3(2:25)=>p3f(p3)
+if (    w8(3)%xx/='z')print *,008304
+if (any(lbound(w8(3)%p3)/=2))print *,008301
+if (any(w8(3)%p3/='x'))print *,008302
+if (len(w8(3)%p3)/=1)print *,008303
+w8(3)%p3(2:25)=>p4f(p4)
+if (    w8(3)%xx/='z')print *,108304
+if (any(lbound(w8(3)%p3)/=2))print *,018301
+if (any(w8(3)%p3/='x'))print *,018302
+if (len(w8(3)%p3)/=1)print *,018303
+end subroutine
+subroutine set
+allocate(character(1)::p3(24));p3='x'
+allocate(              p4(24));p4='x'
+end subroutine
+function p3f(p3)
+character(:),pointer::p3(:),p3f(:)
+allocate(character(1)::p3f(24));p3f=p3
+end function
+function p4f(p4)
+character(1),pointer::p4(:),p4f(:)
+allocate(              p4f(24));p4f=p4
+end function
+end
+
+use m1
+type (x),pointer:: w8(:)
+call set
+call       s1(w8)
+print *,'pass'
+end

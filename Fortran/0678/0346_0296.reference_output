@@ -1,0 +1,41 @@
+ *=*=*=*=*= CALL  SUBA1  =*=*=*=*=*
+ *=*=*=*=*= SUBA1 ***** ENTERED =*=*=*=*=*
+   SUBA1  TEST ITEM NO. 1      
+ 19 19 19 19 19 19 19 19 19 19
+   SUBA1  TEST ITEM NO. 2      
+ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+   SUBA1  TEST ITEM NO. 3      
+ -19 -19 -19 -19 -19 -19 -19 -19 -19 -19
+   SUBA1  TEST ITEM NO. 4      
+ 1 1 1 1 1 1 1 1 1 1
+ *=*=*=*=*= CALL  SUBA2  =*=*=*=*=*
+ *=*=*=*=*= SUBA2 ***** ENTERED =*=*=*=*=*
+   SUBA2  TEST ITEM NO. 1      
+ 1 1 1 1 1 1 1 1 1 1
+   SUBA2  TEST ITEM NO. 2      
+ 1 1 1 1 1 1 1 1 1 1
+   SUBA2  TEST ITEM NO. 3      
+ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+   SUBA2  TEST ITEM NO. 4      
+ -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+ *=*=*=*=*= CALL  SUBA3  =*=*=*=*=*
+ *=*=*=*=*= SUBA3 ***** ENTERED =*=*=*=*=*
+   SUBA3  TEST ITEM NO. 1      
+ 30 30 30 30 30 30 30 30 30 30
+   SUBA3  TEST ITEM NO. 2      
+ -30 -30 -30 -30 -30 -30 -30 -30 -30 -30
+   SUBA3  TEST ITEM NO. 3      
+ 30 30 30 30 30 30 30 30 30 30
+   SUBA3  TEST ITEM NO. 4      
+ -30 -30 -30 -30 -30 -30 -30 -30 -30 -30
+ *=*=*=*=*= CALL  SUBA4  =*=*=*=*=*
+ ***======= SUBA4 ========== ENTERED =======***
+   SUBA4  TEST ITEM NO. 1     
+ 0 0 0 0 0 0 0 0 0 0
+   SUBA4  TEST ITEM NO. 2     
+ 0 0 0 0 0 0 0 0 0 0
+   SUBA4  TEST ITEM NO. 3     
+ 0 0 0 0 0 0 0 0 0 0
+   SUBA4  TEST ITEM NO. 4     
+ 0 0 0 0 0 0 0 0 0 0
+exit 0

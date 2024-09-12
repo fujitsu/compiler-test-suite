@@ -1,0 +1,48 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  REAL :: r1 = 0.0
+END TYPE
+
+TYPE,EXTENDS(t1) :: t2
+  REAL :: r2 = 0.0
+END TYPE
+
+INTERFACE OPERATOR(.plus.)
+  MODULE PROCEDURE addit
+END INTERFACE 
+
+CONTAINS
+
+FUNCTION addit(dy1,dy2)
+IMPLICIT NONE
+CLASS(t1),INTENT(IN) :: dy1,dy2
+CLASS(t1),POINTER :: addit
+ALLOCATE(addit)
+addit%r1 = dy1%r1 + dy2%r1
+END FUNCTION
+
+END MODULE
+
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+CLASS(t1),POINTER :: ptr,ptr2
+
+ALLOCATE(ptr,ptr2)
+ptr%r1 = 10.00
+ptr2%r1 = 12.00
+
+SELECT TYPE(aa => ptr .plus. ptr2)
+TYPE IS(t1)
+  IF(aa%r1 .EQ. 22.00) THEN
+    PRINT*,'pass'
+  ELSE
+    PRINT*,101
+  END IF
+END SELECT
+
+END PROGRAM

@@ -1,0 +1,36 @@
+      WRITE (6,10)
+   10 FORMAT ('1',5X,'====== FORTRAN ======')
+      IP = 0
+      CALL F01420(IP)
+      IF (IP.NE.0 ) GO TO 30
+      WRITE ( 6,20 )
+   20 FORMAT (' ',20X,'= TEST =',5X,'OK')
+   30 WRITE (6 ,40 )
+   40 FORMAT (1H0,4X,'END RUNUNIT')
+      STOP
+      END
+      SUBROUTINE F01420(IP)
+      IMPLICIT LOGICAL(L)
+      DIMENSION L1210(10)
+     0L1210(5)=.NOT..FALSE..OR ..FALSE..OR ..FALSE..OR ..FALSE..OR ..FA
+     1 LSE..OR..FALSE..OR..FALSE..OR..FALSE..OR..FALSE..OR..FALS
+     2 E..OR ..FALSE..OR ..FALSE..OR ..FALSE..OR ..FALSE..OR ..FALSE.
+     3 .OR ..FALSE..OR ..FALSE..OR ..FALSE..OR ..FALSE..OR ..FALSE..O
+     4 R ..FALSE..OR ..FALSE..OR ..FALSE..OR ..FALSE..OR ..FALSE..OR
+     5 ..FALSE..OR ..FALSE..OR ..FALSE..OR ..FALSE..OR ..FALSE..OR ..
+     6 FALSE..OR ..FALSE..OR ..FALSE..OR ..FALSE..OR ..FALSE..OR ..FA
+     7 LSE..OR ..FALSE..OR ..FALSE..OR ..FALSE..OR ..FALSE..OR ..FALS
+     8 E..OR ..FALSE..OR ..FALSE..OR ..FALSE..OR ..FALSE..OR ..FALSE.
+     9 .OR ..FALSE..OR ..FALSE..OR ..FALSE..OR ..FALSE..OR ..FALSE..
+     1 OR..FALSE..OR ..FALSE..OR ..FALSE..OR ..FALSE..OR ..FALSE..OR
+     2 ..FALSE..OR ..FALSE..OR ..FALSE..OR ..FALSE..OR ..FALSE..OR ..
+     3 FALSE..OR ..FALSE..OR ..FALSE..OR ..FALSE..OR ..FALSE..OR ..FA
+     4 LSE..OR ..FALSE..OR ..FALSE..OR ..FALSE..OR ..FALSE..OR ..FALS
+     E E..OR..FALSE..OR..FALSE..OR..FALSE.
+   20 IF(L1210(5))GO TO 100
+      WRITE(6,10)
+   100FORMAT(1H0,20X,'==TEST==',3X,'ERROR =============================
+     E=')
+      IP=IP+1
+  100 RETURN
+      END

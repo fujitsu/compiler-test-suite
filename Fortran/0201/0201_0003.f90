@@ -14,5 +14,5 @@
             end function
          end interface
          if (f1()/=2) print *,101
-      print *,'sngg343f : pass'
+      print *,'pass'
         end

@@ -1,0 +1,90 @@
+      INTEGER X,IARRAY(2,2)
+      IARRAY(1,1)=-5000000
+      IARRAY(1,2)=-100000
+      IARRAY(2,1)=100000
+      IARRAY(2,2)=5000000
+      N=1
+      ITEM=1
+      J=500
+      ISW=1
+      IISW=1
+      DIFF=1.0E-5
+      WRITE(6,11)
+   11 FORMAT(1H1/7X,24H*FORTRAN*          ENTER)
+      WRITE(6,12)ITEM,N
+   12 FORMAT(1H0,7X,9H*** ITEM(,I2,5H) ***,7X,
+     1       50H*****  TEST  OF  STANDARD  INTRINSIC  FUNCTION  - ,
+     2       14HFLOATL(DI) -  ,5H*****,18X,9H( PAGE = ,I3,2H )
+     3       ///6X,11H- JUSTICE -,14X,12H- ARGUMENT -,7X,
+     4       19H- COMPUTED RESULT -,9X,17H- COMPARE VALUE -,12X,
+     5       14H- DIFFERENCE - / )
+C
+  100 GO TO (1,2,3,4,5,6,7),ISW
+    1 X=-2147483647
+      ISW=2
+      GO TO 110
+    2 X=-123456
+      ISW=3
+      GO TO 110
+    3 X=-32769
+      ISW=4
+      GO TO 110
+    4 X=32768
+      ISW=5
+      GO TO 110
+    5 X=123456
+      ISW=6
+      GO TO 110
+    6 X=2147483647
+      ISW=7
+  110 Y=FLOATL(X)
+      Z=X
+      XX=ABS(Z-Y)
+      IF(Y)120,130,120
+  120 DF=DIFF*ABS(Z)
+      GO TO 140
+  130 DF=DIFF
+  140 IF(XX-DF)150,160,160
+  150 WRITE(6,13)X,Y,Z,XX
+   13 FORMAT(1H ,8X,4H*OK*,18X,I11,11X,2(E14.7,13X),E14.7)
+      GO TO 170
+  160 WRITE(6,14)X,Y,Z,XX
+   14 FORMAT(1H ,8X,7H*ERROR*,15X,I11,2(E14.7,13X),E14.7)
+  170 IF(ITEM-2)100,180,100
+    7 ITEM=2
+      WRITE(6,15)ITEM
+   15 FORMAT(1H0/19X,3H- (,I3,3H) -// )
+  180 GO TO (31,32,33,34,35,36,37,38,39),IISW
+   31 X=IARRAY(1,1)
+      IISW=2
+      GO TO 110
+   32 X=IARRAY(1,2)
+      IISW=3
+      GO TO 110
+   33 X=IARRAY(2,1)
+      IISW=4
+      GO TO 110
+   34 X=IARRAY(2,2)
+      IISW=5
+      GO TO 110
+   35 X=(50000-J**2)*30+1000000
+      IISW=6
+      GO TO 110
+   36 X=(J**2-200*J)*2/(-3)
+      IISW=7
+      GO TO 110
+   37 X=(IARRAY(2,1)*10+J*2000)/20
+      IISW=8
+      GO TO 110
+   38 X=IARRAY(2,2)**1/2+J*5000
+      IISW=9
+      GO TO 110
+   39 WRITE(6,16)
+   16 FORMAT(1H0/7X,23H*FORTRAN*          EXIT)
+      STOP
+      END
+      FUNCTION FLOATL(II)
+      INTEGER II
+      FLOATL=II
+      RETURN
+      END

@@ -1,0 +1,7 @@
+ ALLOCATION success to src
+ ALLOCATION success to ptr
+ HELLO               HELLO               HELLO               HELLO             
+   HELLO               
+ HOW ARE YOU         HOW ARE YOU         HOW ARE YOU         HOW ARE YOU       
+   HOW ARE YOU         
+exit 0

@@ -4,7 +4,7 @@
       P=1.0
       J=1
       ISW=1
-      PAI=3.14159265
+      Pi=3.14159265
       ITEM=1
    10 N=N+1
       IF(N-1)11,12,11
@@ -23,7 +23,7 @@ C
       L=0
    20 X=FLOAT(K)/100.0
       Y=COS(X)
-      Z=SIN(X+PAI/2.0)
+      Z=SIN(X+Pi/2.0)
       CALL PRTN(L,DIFF,X,Y,Z)
       L=L+1
       IF(K-628)30,40,30
@@ -33,13 +33,13 @@ C
       N=N+1
 C
       L=0
-      X=-PAI/2.0
+      X=-Pi/2.0
       DO 100 I=1,6
       Y=COS(X)
-      Z=SIN(X+PAI/2.0)
+      Z=SIN(X+Pi/2.0)
       CALL PRTN(L,DIFF,X,Y,Z)
       L=L+1
-      X=X+PAI/4.0
+      X=X+Pi/4.0
   100 CONTINUE
       ITEM=3
 C
@@ -71,7 +71,7 @@ C
     8 X=SIN(ALOG(EXP(SIN(P-1.0))))*SQRT(P)+0.5
       ISW=9
    90 Y=COS(X)
-      Z=SIN(X+PAI/2.)
+      Z=SIN(X+Pi/2.)
       CALL PRTN(L,DIFF,X,Y,Z)
       L=L+1
       GO TO 80

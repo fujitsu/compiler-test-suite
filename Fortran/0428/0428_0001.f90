@@ -1,0 +1,31 @@
+MODULE MOD06
+  IMPLICIT NONE
+
+  TYPE :: D06
+   CONTAINS
+     PROCEDURE, NOPASS :: PROC => SUB06
+  END TYPE D06
+
+CONTAINS
+  SUBROUTINE SUB06()
+    IMPLICIT NONE
+    write(1,*) 06
+  END SUBROUTINE SUB06
+END MODULE MOD06
+
+  USE MOD06
+
+  CLASS(*), POINTER :: NTYPE_VAR(:)
+
+  ALLOCATE(D06 :: NTYPE_VAR(1))
+
+  SELECT TYPE(name => NTYPE_VAR(1))
+  CLASS IS(D06)
+     CALL name%PROC()
+  END SELECT
+rewind 1
+read(1,*) k
+if (k/=6) print *,101
+  print *, "pass"
+
+END

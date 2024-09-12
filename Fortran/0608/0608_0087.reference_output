@@ -1,0 +1,10 @@
+ start destructor
+ 99 99 99 99
+ end destructor
+ start destructor
+ 40 60 50 70
+ end destructor
+ start destructor
+ 10 20 30 40
+ end destructor
+exit 0

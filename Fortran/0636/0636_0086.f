@@ -1,0 +1,37 @@
+      PROGRAM MAIN
+      IMPLICIT REAL*8(A-D),LOGICAL*4(L)
+      DIMENSION  DA10(50,50),DA20(50,50),DA30(50,50),DA40(50,50),
+     *           LD10(50,50),LD20(50,50)
+      INTEGER*4 IN(50)/50*5/
+      DATA     DA10/2500*1.0D0/,DA20/2500*2.0D0/
+      DATA     DA30/2500*0.5D0/,DA40/2500*4.0D0/
+      DATA     LD10/2500*.FALSE./,LD20/2500*.FALSE./
+      DATA     NN/50/
+      DO 12 J=1,1
+      DO 10 I=1,50
+10      DA10(I,J)=DA10(I,J)+1.0
+12    CONTINUE
+      DO 22 J=2,3
+      DO 20 I=1,50,2
+20      DA10(I,J)=DA10(I,J)+2.
+22    CONTINUE
+      DO 32 J=4,6
+      DO 30 I=1,50,2
+30      DA10(I,J)=DA10(I,J)+2.2
+32      CONTINUE
+      K=5
+      DO 42 J=10,13
+      DO 40 I=40,50
+40      DA10(I,J)=DA10(I,J) +9.
+42    CONTINUE
+      DO 52 J=14,18
+      DO 50 I=40,50
+50      DA10(I,J)=DA10(I,J) +9.
+52    CONTINUE
+      DO 62 J=1,IN(1)
+      DO 60 I=1,50,IN(2)
+60      DA10(I,J)=DA10(I,J) +7.
+62    CONTINUE
+       WRITE(6,*) DA10,DA20
+      STOP
+      END

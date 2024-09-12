@@ -1,0 +1,11 @@
+1
+  *FORTRAN*               ENTER
+0** PLEASE SET  ASW .... **
+0         STOP 9999 WHEN ALL ASW ARE SET ON ... **
+0           ..  ASW(1)  .ON.      ..
+            ..  ASW(2)  .ON.      ..
+            ..  ASW(3)  .ON.      ..
+            ..  ASW(4)  .ON.      ..
+0
+  *FORTRAN*               EXIT 
+exit 0

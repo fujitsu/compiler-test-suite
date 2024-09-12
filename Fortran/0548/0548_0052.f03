@@ -1,0 +1,210 @@
+call s1
+call s2
+call s3
+call s4
+print *,'pass'
+end
+subroutine s1
+integer(1)::i1(1),i2(1,2),i3(1,1,3),i4(1,1,1,4),i5(1,1,1,1,5),i6(1,1,1,1,1,6),i7(1,1,1,1,1,1,7)
+i1=0;i2=0;i3=0;i4=0;i5=0;i6=0;i7=0
+call ss1(i1,i2,i3,i4,i5,i6,i7)
+contains
+subroutine ss1(i1,i2,i3,i4,i5,i6,i7)
+integer(1)::i1(:),i2(:,:),i3(:,:,:),i4(:,:,:,:),i5(:,:,:,:,:),i6(:,:,:,:,:,:),i7(:,:,:,:,:,:,:)
+if(any(leadz(i1)/=[8])) print *,'err1'
+if(any(leadz(i2)/=reshape([8,8],[1,2]))) print *,'err2'
+if(any(leadz(i3)/=reshape([8,8,8],[1,1,3]))) print *,'err3'
+if(any(leadz(i4)/=reshape([8,8,8,8],[1,1,1,4]))) print *,'err4'
+if(any(leadz(i5)/=reshape([8,8,8,8,8],[1,1,1,1,5]))) print *,'err5'
+if(any(leadz(i6)/=reshape([8,8,8,8,8,8],[1,1,1,1,1,6]))) print *,'err6'
+if(any(leadz(i7)/=reshape([8,8,8,8,8,8,8],[1,1,1,1,1,1,7]))) print *,'err7'
+if(any(trailz(i1)/=[8])) print *,'err1'
+if(any(trailz(i2)/=reshape([8,8],[1,2]))) print *,'err2'
+if(any(trailz(i3)/=reshape([8,8,8],[1,1,3]))) print *,'err3'
+if(any(trailz(i4)/=reshape([8,8,8,8],[1,1,1,4]))) print *,'err4'
+if(any(trailz(i5)/=reshape([8,8,8,8,8],[1,1,1,1,5]))) print *,'err5'
+if(any(trailz(i6)/=reshape([8,8,8,8,8,8],[1,1,1,1,1,6]))) print *,'err6'
+if(any(trailz(i7)/=reshape([8,8,8,8,8,8,8],[1,1,1,1,1,1,7]))) print *,'err7'
+if(any(popcnt(i1)/=[0])) print *,'err1'
+if(any(popcnt(i2)/=reshape([0,0],[1,2]))) print *,'err2'
+if(any(popcnt(i3)/=reshape([0,0,0],[1,1,3]))) print *,'err3'
+if(any(popcnt(i4)/=reshape([0,0,0,0],[1,1,1,4]))) print *,'err4'
+if(any(popcnt(i5)/=reshape([0,0,0,0,0],[1,1,1,1,5]))) print *,'err5'
+if(any(popcnt(i6)/=reshape([0,0,0,0,0,0],[1,1,1,1,1,6]))) print *,'err6'
+if(any(popcnt(i7)/=reshape([0,0,0,0,0,0,0],[1,1,1,1,1,1,7]))) print *,'err7'
+if(any(poppar(i1)/=[0])) print *,'err1'
+if(any(poppar(i2)/=reshape([0,0],[1,2]))) print *,'err2'
+if(any(poppar(i3)/=reshape([0,0,0],[1,1,3]))) print *,'err3'
+if(any(poppar(i4)/=reshape([0,0,0,0],[1,1,1,4]))) print *,'err4'
+if(any(poppar(i5)/=reshape([0,0,0,0,0],[1,1,1,1,5]))) print *,'err5'
+if(any(poppar(i6)/=reshape([0,0,0,0,0,0],[1,1,1,1,1,6]))) print *,'err6'
+if(any(poppar(i7)/=reshape([0,0,0,0,0,0,0],[1,1,1,1,1,1,7]))) print *,'err7'
+if(any(maskl(i1)/=[0])) print *,'err1'
+if(any(maskl(i2)/=reshape([0,0],[1,2]))) print *,'err2'
+if(any(maskl(i3)/=reshape([0,0,0],[1,1,3]))) print *,'err3'
+if(any(maskl(i4)/=reshape([0,0,0,0],[1,1,1,4]))) print *,'err4'
+if(any(maskl(i5)/=reshape([0,0,0,0,0],[1,1,1,1,5]))) print *,'err5'
+if(any(maskl(i6)/=reshape([0,0,0,0,0,0],[1,1,1,1,1,6]))) print *,'err6'
+if(any(maskl(i7)/=reshape([0,0,0,0,0,0,0],[1,1,1,1,1,1,7]))) print *,'err7'
+if(any(maskr(i1)/=[0])) print *,'err1'
+if(any(maskr(i2)/=reshape([0,0],[1,2]))) print *,'err2'
+if(any(maskr(i3)/=reshape([0,0,0],[1,1,3]))) print *,'err3'
+if(any(maskr(i4)/=reshape([0,0,0,0],[1,1,1,4]))) print *,'err4'
+if(any(maskr(i5)/=reshape([0,0,0,0,0],[1,1,1,1,5]))) print *,'err5'
+if(any(maskr(i6)/=reshape([0,0,0,0,0,0],[1,1,1,1,1,6]))) print *,'err6'
+if(any(maskr(i7)/=reshape([0,0,0,0,0,0,0],[1,1,1,1,1,1,7]))) print *,'err7'
+end subroutine 
+end
+subroutine s2
+integer(2)::i1(1),i2(1,2),i3(1,1,3),i4(1,1,1,4),i5(1,1,1,1,5),i6(1,1,1,1,1,6),i7(1,1,1,1,1,1,7)
+i1=0;i2=0;i3=0;i4=0;i5=0;i6=0;i7=0
+call ss2(i1,i2,i3,i4,i5,i6,i7)
+contains
+subroutine ss2(i1,i2,i3,i4,i5,i6,i7)
+integer(2)::i1(:),i2(:,:),i3(:,:,:),i4(:,:,:,:),i5(:,:,:,:,:),i6(:,:,:,:,:,:),i7(:,:,:,:,:,:,:)
+if(any(leadz(i1)/=[16])) print *,'err1'
+if(any(leadz(i2)/=reshape([16,16],[1,2]))) print *,'err2'
+if(any(leadz(i3)/=reshape([16,16,16],[1,1,3]))) print *,'err3'
+if(any(leadz(i4)/=reshape([16,16,16,16],[1,1,1,4]))) print *,'err4'
+if(any(leadz(i5)/=reshape([16,16,16,16,16],[1,1,1,1,5]))) print *,'err5'
+if(any(leadz(i6)/=reshape([16,16,16,16,16,16],[1,1,1,1,1,6]))) print *,'err6'
+if(any(leadz(i7)/=reshape([16,16,16,16,16,16,16],[1,1,1,1,1,1,7]))) print *,'err7'
+if(any(trailz(i1)/=[16])) print *,'err1'
+if(any(trailz(i2)/=reshape([16,16],[1,2]))) print *,'err2'
+if(any(trailz(i3)/=reshape([16,16,16],[1,1,3]))) print *,'err3'
+if(any(trailz(i4)/=reshape([16,16,16,16],[1,1,1,4]))) print *,'err4'
+if(any(trailz(i5)/=reshape([16,16,16,16,16],[1,1,1,1,5]))) print *,'err5'
+if(any(trailz(i6)/=reshape([16,16,16,16,16,16],[1,1,1,1,1,6]))) print *,'err6'
+if(any(trailz(i7)/=reshape([16,16,16,16,16,16,16],[1,1,1,1,1,1,7]))) print *,'err7'
+if(any(popcnt(i1)/=[0])) print *,'err1'
+if(any(popcnt(i2)/=reshape([0,0],[1,2]))) print *,'err2'
+if(any(popcnt(i3)/=reshape([0,0,0],[1,1,3]))) print *,'err3'
+if(any(popcnt(i4)/=reshape([0,0,0,0],[1,1,1,4]))) print *,'err4'
+if(any(popcnt(i5)/=reshape([0,0,0,0,0],[1,1,1,1,5]))) print *,'err5'
+if(any(popcnt(i6)/=reshape([0,0,0,0,0,0],[1,1,1,1,1,6]))) print *,'err6'
+if(any(popcnt(i7)/=reshape([0,0,0,0,0,0,0],[1,1,1,1,1,1,7]))) print *,'err7'
+if(any(poppar(i1)/=[0])) print *,'err1'
+if(any(poppar(i2)/=reshape([0,0],[1,2]))) print *,'err2'
+if(any(poppar(i3)/=reshape([0,0,0],[1,1,3]))) print *,'err3'
+if(any(poppar(i4)/=reshape([0,0,0,0],[1,1,1,4]))) print *,'err4'
+if(any(poppar(i5)/=reshape([0,0,0,0,0],[1,1,1,1,5]))) print *,'err5'
+if(any(poppar(i6)/=reshape([0,0,0,0,0,0],[1,1,1,1,1,6]))) print *,'err6'
+if(any(poppar(i7)/=reshape([0,0,0,0,0,0,0],[1,1,1,1,1,1,7]))) print *,'err7'
+if(any(maskl(i1)/=[0])) print *,'err1'
+if(any(maskl(i2)/=reshape([0,0],[1,2]))) print *,'err2'
+if(any(maskl(i3)/=reshape([0,0,0],[1,1,3]))) print *,'err3'
+if(any(maskl(i4)/=reshape([0,0,0,0],[1,1,1,4]))) print *,'err4'
+if(any(maskl(i5)/=reshape([0,0,0,0,0],[1,1,1,1,5]))) print *,'err5'
+if(any(maskl(i6)/=reshape([0,0,0,0,0,0],[1,1,1,1,1,6]))) print *,'err6'
+if(any(maskl(i7)/=reshape([0,0,0,0,0,0,0],[1,1,1,1,1,1,7]))) print *,'err7'
+if(any(maskr(i1)/=[0])) print *,'err1'
+if(any(maskr(i2)/=reshape([0,0],[1,2]))) print *,'err2'
+if(any(maskr(i3)/=reshape([0,0,0],[1,1,3]))) print *,'err3'
+if(any(maskr(i4)/=reshape([0,0,0,0],[1,1,1,4]))) print *,'err4'
+if(any(maskr(i5)/=reshape([0,0,0,0,0],[1,1,1,1,5]))) print *,'err5'
+if(any(maskr(i6)/=reshape([0,0,0,0,0,0],[1,1,1,1,1,6]))) print *,'err6'
+if(any(maskr(i7)/=reshape([0,0,0,0,0,0,0],[1,1,1,1,1,1,7]))) print *,'err7'
+end subroutine 
+end
+subroutine s3
+integer(4)::i1(1),i2(1,2),i3(1,1,3),i4(1,1,1,4),i5(1,1,1,1,5),i6(1,1,1,1,1,6),i7(1,1,1,1,1,1,7)
+i1=0;i2=0;i3=0;i4=0;i5=0;i6=0;i7=0
+call ss3(i1,i2,i3,i4,i5,i6,i7)
+contains
+subroutine ss3(i1,i2,i3,i4,i5,i6,i7)
+integer(4)::i1(:),i2(:,:),i3(:,:,:),i4(:,:,:,:),i5(:,:,:,:,:),i6(:,:,:,:,:,:),i7(:,:,:,:,:,:,:)
+if(any(leadz(i1)/=[32])) print *,'err1'
+if(any(leadz(i2)/=reshape([32,32],[1,2]))) print *,'err2'
+if(any(leadz(i3)/=reshape([32,32,32],[1,1,3]))) print *,'err3'
+if(any(leadz(i4)/=reshape([32,32,32,32],[1,1,1,4]))) print *,'err4'
+if(any(leadz(i5)/=reshape([32,32,32,32,32],[1,1,1,1,5]))) print *,'err5'
+if(any(leadz(i6)/=reshape([32,32,32,32,32,32],[1,1,1,1,1,6]))) print *,'err6'
+if(any(leadz(i7)/=reshape([32,32,32,32,32,32,32],[1,1,1,1,1,1,7]))) print *,'err7'
+if(any(trailz(i1)/=[32])) print *,'err1'
+if(any(trailz(i2)/=reshape([32,32],[1,2]))) print *,'err2'
+if(any(trailz(i3)/=reshape([32,32,32],[1,1,3]))) print *,'err3'
+if(any(trailz(i4)/=reshape([32,32,32,32],[1,1,1,4]))) print *,'err4'
+if(any(trailz(i5)/=reshape([32,32,32,32,32],[1,1,1,1,5]))) print *,'err5'
+if(any(trailz(i6)/=reshape([32,32,32,32,32,32],[1,1,1,1,1,6]))) print *,'err6'
+if(any(trailz(i7)/=reshape([32,32,32,32,32,32,32],[1,1,1,1,1,1,7]))) print *,'err7'
+if(any(popcnt(i1)/=[0])) print *,'err1'
+if(any(popcnt(i2)/=reshape([0,0],[1,2]))) print *,'err2'
+if(any(popcnt(i3)/=reshape([0,0,0],[1,1,3]))) print *,'err3'
+if(any(popcnt(i4)/=reshape([0,0,0,0],[1,1,1,4]))) print *,'err4'
+if(any(popcnt(i5)/=reshape([0,0,0,0,0],[1,1,1,1,5]))) print *,'err5'
+if(any(popcnt(i6)/=reshape([0,0,0,0,0,0],[1,1,1,1,1,6]))) print *,'err6'
+if(any(popcnt(i7)/=reshape([0,0,0,0,0,0,0],[1,1,1,1,1,1,7]))) print *,'err7'
+if(any(poppar(i1)/=[0])) print *,'err1'
+if(any(poppar(i2)/=reshape([0,0],[1,2]))) print *,'err2'
+if(any(poppar(i3)/=reshape([0,0,0],[1,1,3]))) print *,'err3'
+if(any(poppar(i4)/=reshape([0,0,0,0],[1,1,1,4]))) print *,'err4'
+if(any(poppar(i5)/=reshape([0,0,0,0,0],[1,1,1,1,5]))) print *,'err5'
+if(any(poppar(i6)/=reshape([0,0,0,0,0,0],[1,1,1,1,1,6]))) print *,'err6'
+if(any(poppar(i7)/=reshape([0,0,0,0,0,0,0],[1,1,1,1,1,1,7]))) print *,'err7'
+if(any(maskl(i1)/=[0])) print *,'err1'
+if(any(maskl(i2)/=reshape([0,0],[1,2]))) print *,'err2'
+if(any(maskl(i3)/=reshape([0,0,0],[1,1,3]))) print *,'err3'
+if(any(maskl(i4)/=reshape([0,0,0,0],[1,1,1,4]))) print *,'err4'
+if(any(maskl(i5)/=reshape([0,0,0,0,0],[1,1,1,1,5]))) print *,'err5'
+if(any(maskl(i6)/=reshape([0,0,0,0,0,0],[1,1,1,1,1,6]))) print *,'err6'
+if(any(maskl(i7)/=reshape([0,0,0,0,0,0,0],[1,1,1,1,1,1,7]))) print *,'err7'
+if(any(maskr(i1)/=[0])) print *,'err1'
+if(any(maskr(i2)/=reshape([0,0],[1,2]))) print *,'err2'
+if(any(maskr(i3)/=reshape([0,0,0],[1,1,3]))) print *,'err3'
+if(any(maskr(i4)/=reshape([0,0,0,0],[1,1,1,4]))) print *,'err4'
+if(any(maskr(i5)/=reshape([0,0,0,0,0],[1,1,1,1,5]))) print *,'err5'
+if(any(maskr(i6)/=reshape([0,0,0,0,0,0],[1,1,1,1,1,6]))) print *,'err6'
+if(any(maskr(i7)/=reshape([0,0,0,0,0,0,0],[1,1,1,1,1,1,7]))) print *,'err7'
+end subroutine 
+end
+subroutine s4
+integer(8)::i1(1),i2(1,2),i3(1,1,3),i4(1,1,1,4),i5(1,1,1,1,5),i6(1,1,1,1,1,6),i7(1,1,1,1,1,1,7)
+i1=0;i2=0;i3=0;i4=0;i5=0;i6=0;i7=0
+call ss4(i1,i2,i3,i4,i5,i6,i7)
+contains
+subroutine ss4(i1,i2,i3,i4,i5,i6,i7)
+integer(8)::i1(:),i2(:,:),i3(:,:,:),i4(:,:,:,:),i5(:,:,:,:,:),i6(:,:,:,:,:,:),i7(:,:,:,:,:,:,:)
+if(any(leadz(i1)/=[64])) print *,'err1'
+if(any(leadz(i2)/=reshape([64,64],[1,2]))) print *,'err2'
+if(any(leadz(i3)/=reshape([64,64,64],[1,1,3]))) print *,'err3'
+if(any(leadz(i4)/=reshape([64,64,64,64],[1,1,1,4]))) print *,'err4'
+if(any(leadz(i5)/=reshape([64,64,64,64,64],[1,1,1,1,5]))) print *,'err5'
+if(any(leadz(i6)/=reshape([64,64,64,64,64,64],[1,1,1,1,1,6]))) print *,'err6'
+if(any(leadz(i7)/=reshape([64,64,64,64,64,64,64],[1,1,1,1,1,1,7]))) print *,'err7'
+if(any(trailz(i1)/=[64])) print *,'err1'
+if(any(trailz(i2)/=reshape([64,64],[1,2]))) print *,'err2'
+if(any(trailz(i3)/=reshape([64,64,64],[1,1,3]))) print *,'err3'
+if(any(trailz(i4)/=reshape([64,64,64,64],[1,1,1,4]))) print *,'err4'
+if(any(trailz(i5)/=reshape([64,64,64,64,64],[1,1,1,1,5]))) print *,'err5'
+if(any(trailz(i6)/=reshape([64,64,64,64,64,64],[1,1,1,1,1,6]))) print *,'err6'
+if(any(trailz(i7)/=reshape([64,64,64,64,64,64,64],[1,1,1,1,1,1,7]))) print *,'err7'
+if(any(popcnt(i1)/=[0])) print *,'err1'
+if(any(popcnt(i2)/=reshape([0,0],[1,2]))) print *,'err2'
+if(any(popcnt(i3)/=reshape([0,0,0],[1,1,3]))) print *,'err3'
+if(any(popcnt(i4)/=reshape([0,0,0,0],[1,1,1,4]))) print *,'err4'
+if(any(popcnt(i5)/=reshape([0,0,0,0,0],[1,1,1,1,5]))) print *,'err5'
+if(any(popcnt(i6)/=reshape([0,0,0,0,0,0],[1,1,1,1,1,6]))) print *,'err6'
+if(any(popcnt(i7)/=reshape([0,0,0,0,0,0,0],[1,1,1,1,1,1,7]))) print *,'err7'
+if(any(poppar(i1)/=[0])) print *,'err1'
+if(any(poppar(i2)/=reshape([0,0],[1,2]))) print *,'err2'
+if(any(poppar(i3)/=reshape([0,0,0],[1,1,3]))) print *,'err3'
+if(any(poppar(i4)/=reshape([0,0,0,0],[1,1,1,4]))) print *,'err4'
+if(any(poppar(i5)/=reshape([0,0,0,0,0],[1,1,1,1,5]))) print *,'err5'
+if(any(poppar(i6)/=reshape([0,0,0,0,0,0],[1,1,1,1,1,6]))) print *,'err6'
+if(any(poppar(i7)/=reshape([0,0,0,0,0,0,0],[1,1,1,1,1,1,7]))) print *,'err7'
+if(any(maskl(i1)/=[0])) print *,'err1'
+if(any(maskl(i2)/=reshape([0,0],[1,2]))) print *,'err2'
+if(any(maskl(i3)/=reshape([0,0,0],[1,1,3]))) print *,'err3'
+if(any(maskl(i4)/=reshape([0,0,0,0],[1,1,1,4]))) print *,'err4'
+if(any(maskl(i5)/=reshape([0,0,0,0,0],[1,1,1,1,5]))) print *,'err5'
+if(any(maskl(i6)/=reshape([0,0,0,0,0,0],[1,1,1,1,1,6]))) print *,'err6'
+if(any(maskl(i7)/=reshape([0,0,0,0,0,0,0],[1,1,1,1,1,1,7]))) print *,'err7'
+if(any(maskr(i1)/=[0])) print *,'err1'
+if(any(maskr(i2)/=reshape([0,0],[1,2]))) print *,'err2'
+if(any(maskr(i3)/=reshape([0,0,0],[1,1,3]))) print *,'err3'
+if(any(maskr(i4)/=reshape([0,0,0,0],[1,1,1,4]))) print *,'err4'
+if(any(maskr(i5)/=reshape([0,0,0,0,0],[1,1,1,1,5]))) print *,'err5'
+if(any(maskr(i6)/=reshape([0,0,0,0,0,0],[1,1,1,1,1,6]))) print *,'err6'
+if(any(maskr(i7)/=reshape([0,0,0,0,0,0,0],[1,1,1,1,1,1,7]))) print *,'err7'
+end subroutine 
+end

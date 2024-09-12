@@ -1,0 +1,41 @@
+MODULE mod1
+IMPLICIT NONE
+
+INTEGER :: num1,num2
+
+INTERFACE gnr
+  MODULE PROCEDURE psub
+  MODULE PROCEDURE qsub
+END INTERFACE
+
+CONTAINS
+SUBROUTINE psub(dd1)
+  INTEGER :: dd1
+  dd1 = dd1 * 5
+END SUBROUTINE
+SUBROUTINE qsub(dd1,dd2)
+  INTEGER :: dd1,dd2
+  dd1 = dd1 * 2
+  dd2 = dd2 * 3
+END SUBROUTINE
+
+END MODULE
+
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+num1 = 5
+num2 = 7
+
+CALL gnr(num1,num2)
+
+IF(num1 .EQ. 10 .AND. num2 .EQ. 21) THEN
+  PRINT*,"PASS"
+ELSE
+  PRINT*,"ERROR"
+END IF
+
+END PROGRAM
+

@@ -1,0 +1,63 @@
+MODULE mod1
+IMPLICIT NONE
+
+INTEGER :: num1,num2,res
+
+INTERFACE
+SUBROUTINE msub(dd1)
+  INTEGER :: dd1
+END SUBROUTINE
+
+SUBROUTINE qsub(dd1,dd2)
+  INTEGER :: dd1,dd2
+END SUBROUTINE
+END INTERFACE
+
+CONTAINS
+INTEGER FUNCTION modfun(d1,d2)
+INTEGER :: d1,d2
+
+PROCEDURE(msub) :: npsub
+
+INTERFACE gnr
+  PROCEDURE :: qsub
+  PROCEDURE npsub
+END INTERFACE
+
+CALL gnr(d1,d2)
+
+modfun = d1 + d2
+
+END FUNCTION
+
+END MODULE
+
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+num1 = 5
+num2 = 7
+
+res = modfun(num1,num2)
+
+IF(res .EQ. 31) THEN
+  PRINT*,"PASS"
+ELSE
+  PRINT*,"ERROR"
+END IF
+
+END PROGRAM
+
+SUBROUTINE npsub(dd1)
+  INTEGER :: dd1
+  dd1 = dd1 * 5
+END SUBROUTINE
+
+SUBROUTINE qsub(dd1,dd2)
+  INTEGER :: dd1,dd2
+  dd1 = dd1 * 2
+  dd2 = dd2 * 3
+END SUBROUTINE
+

@@ -1,0 +1,52 @@
+     type t1   
+       integer(8)::z1
+     end type
+     type,extends(t1)::t2 
+       integer(8)::z2(100)=-11
+     end type
+     type t3
+       class(t1),allocatable::y1    
+     end type
+     type (t3),allocatable::a1,a2(:) ,a3,a4
+     type (t2)::v=t2(-1_8,-2_8)
+     integer, allocatable::x(:)
+     allocate(a1,a3,a4)                       
+     allocate(t2::a1%y1,a3%y1,a4%y1)
+     allocate(x(2))
+     x=1
+     k=0
+     select type (d=>a1%y1)
+       type is (t2)
+         if (any(d%z2/=-11)) print *,'NG3',d%z2(1)
+         d=v
+         if (d%z1/=-1) print *,'NG1',d%z1
+         if (any(d%z2/=-2)) print *,'NG2',d%z2(1)
+         k=1
+         if (any(x/=1)) print *,800,x
+     end select
+     k=0
+     select type (d=>a3%y1)
+       type is (t2)
+         if (any(d%z2/=-11)) print *,'NG3',d%z2(1)
+         d=v
+         if (d%z1/=-1) print *,'NG1',d%z1
+         if (any(d%z2/=-2)) print *,'NG2',d%z2(1)
+         k=1
+         if (any(x/=1)) print *,800,x
+     end select
+     k=0
+     select type (d=>a4%y1)
+       type is (t2)
+         if (any(d%z2/=-11)) print *,'NG3',d%z2(1)
+         d=v
+         if (d%z1/=-1) print *,'NG1',d%z1
+         if (any(d%z2/=-2)) print *,'NG2',d%z2(1)
+         k=1
+         if (any(x/=1)) print *,800,x
+     end select
+     if (k/=1) print *,900
+     if (0==1) a2=a1
+     if (0==1) a2=a3
+     if (0==1) a2=a4
+     print *,'pass'
+     end

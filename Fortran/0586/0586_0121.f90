@@ -1,0 +1,16 @@
+type ty
+integer,pointer::ptr
+integer::x
+end type
+
+type(ty)::obj
+type(ty)::obj2(5)
+
+integer,target::t1=20
+data obj%ptr ,obj2(4)%ptr ,obj2(1)%ptr,obj%x,obj2(1:5)%x /3*t1,6*30/
+if(associated(obj%ptr).neqv..true.)print*,"101"
+if(associated(obj2(1)%ptr).neqv..true.)print*,"102"
+if(obj2(1)%x.ne.30)print*,"104"
+print*,"PASS"
+end
+

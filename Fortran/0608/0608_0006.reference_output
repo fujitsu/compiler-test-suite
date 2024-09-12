@@ -1,0 +1,5 @@
+ destructor called
+ 40 40
+ destructor called
+ 1 50
+exit 0

@@ -1,0 +1,8 @@
+ 6
+ gsub
+ aa
+ 9.
+ 8
+ gsub
+ 1 2 3
+exit 0

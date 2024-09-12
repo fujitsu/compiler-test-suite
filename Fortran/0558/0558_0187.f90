@@ -1,0 +1,47 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE ty
+  INTEGER :: num 
+END TYPE
+
+INTERFACE
+SUBROUTINE msub(dd1)
+  IMPORT ty
+  TYPE(ty) :: dd1(5)
+END SUBROUTINE
+END INTERFACE
+
+END MODULE
+
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+TYPE(ty) :: obj(5)
+obj%num = 14
+CALL int_sub()
+
+IF(ALL(obj(1:5)%num .EQ. 28)) THEN
+  PRINT*,"PASS"
+ELSE
+  PRINT*,"ERROR"
+END IF
+
+CONTAINS
+SUBROUTINE int_sub()
+PROCEDURE(msub) :: prc
+INTERFACE gnr
+  PROCEDURE :: prc
+END INTERFACE
+CALL gnr(obj)
+END SUBROUTINE
+
+END PROGRAM
+
+SUBROUTINE prc(dd1)
+  USE mod1
+  TYPE(ty) :: dd1(5)
+  dd1%num = dd1%num * 2
+END SUBROUTINE

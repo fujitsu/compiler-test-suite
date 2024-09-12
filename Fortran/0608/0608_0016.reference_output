@@ -1,0 +1,6 @@
+ correct destructor called
+ 3
+ 100
+ correct destructor called
+ 100
+exit 0

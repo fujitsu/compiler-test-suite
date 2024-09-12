@@ -71,8 +71,8 @@ deallocate(d)
 end
 use m1
 call s1
-if (f1/=15) print *,8001,f1
-if (f2/=30) print *,8002,f2
+if (f1/=16) print *,8001,f1
+if (f2/=15) print *,8002,f2
 if (f3/=1) print *,8003,f3
 if (f4/=0) print *,8004,f4
 print *,'pass'

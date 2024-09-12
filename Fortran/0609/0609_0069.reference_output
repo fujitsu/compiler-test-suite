@@ -1,0 +1,7 @@
+ des3 destructor called
+ 300
+ des1 destructor called
+ 200
+ des1 destructor called
+ 100
+exit 0

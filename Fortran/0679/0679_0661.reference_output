@@ -1,0 +1,7 @@
+ ** real data   ** s(1)   =  2.     =  2.
+ ** real data   ** s(2)   =  6.     =  6.
+ ** real data   ** s(3)   = 15.     =  15.
+ ** logical data ** ls(1) = .true.  =  T
+ ** logical data ** ls(2) = .true.  =  T
+ ** logical data ** ls(3) = .false. =  F
+exit 0

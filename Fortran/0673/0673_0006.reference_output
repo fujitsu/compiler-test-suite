@@ -1,0 +1,13 @@
+    test start 
+   **ok**    test no  1
+   **ok**    test no  2
+   **ok**    test no  3
+   **ok**    test no  4
+   **ok**    test no  5
+   **ok**    test no  6
+   **ok**    test no  7
+   **ok**    test no  8
+   **ok**    test no  9
+   **ok**    test no  10
+    test end  
+exit 0

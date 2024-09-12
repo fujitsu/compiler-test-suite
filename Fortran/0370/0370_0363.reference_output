@@ -1,0 +1,11 @@
+ call p1
+ call p1
+ call p1
+ call p1
+ call p1
+ call p2
+ call p2
+ call p2
+ call p2
+ call p2
+exit 0

@@ -1,0 +1,5 @@
+1     OS/700 FORTRAN-A TEAT ... = TEST =
+
+0                    = TEST =     OK
+      END RUNUNIT
+exit 0

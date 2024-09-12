@@ -8,5 +8,5 @@ subroutine fun(dmy1)  bind(c,name='ss1')
                            integer::dmy1
                                if(dmy1 .ne. 500) print*,"401"
                         end
-print *,'sngg619e : pass'
+print *,'pass'
 end

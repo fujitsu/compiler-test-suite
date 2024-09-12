@@ -1,0 +1,105 @@
+      PROGRAM MAIN
+      IMPLICIT REAL*8(A-D),LOGICAL*4(L)
+      DIMENSION  DA10(50,50),DA20(50,50),DA30(50,50),DA40(50,50),
+     *           LD10(50,50),LD20(50,50)
+      DATA     DA10/2500*1.0D0/,DA20/2500*2.0D0/
+      DATA     DA30/2500*3.0D0/,DA40/2500*4.0D0/
+      DATA     LD10/2500*.FALSE./,LD20/2500*.FALSE./
+      DATA     NN/50/
+      DO 10 J=1,10
+      DO 11 I=1,10
+11     DA10(I,J)=J
+      DA10(5,5)=1.
+10    CONTINUE
+      DO 20 J=11,20
+      DA10(15,15)=1.
+      DO 21 I=11,20
+21     DA10(I,J)=DA10(I,J)+1.
+20    CONTINUE
+      DO 30 J=21,30
+      DA10(25,25)=1.
+      DO 31 I=21,30
+31     DA10(I,J)=DA10(I,J)+1.
+      DA10(25,25)=2.
+30    CONTINUE
+      DO 40 J=41,50
+      DO 41 I=41,50
+41     DA10(I,J)=J
+      DA10(45,45)=1.
+      DO 42 I=41,50
+42     DA10(I,J)=DA10(I,J)+1.
+40    CONTINUE
+      DO 50 J=1,10
+      DA20(5,5)=1.
+      DO 51 I=1,10
+51     DA10(I,J)=DA10(I,J)+1.
+      DO 52 I=1,10
+52     DA20(I,J)=DA20(I,J)+1.
+50    CONTINUE
+      DO 60 J=11,20
+      DA20(15,15)=2.
+      DO 61 I=11,20,2
+61     DA10(I,J)=DA10(I,J)+2.
+      DO 62 I=11,20
+62     DA20(I,J)=DA20(I,J)+2.
+60    CONTINUE
+      WRITE(6,*) ' ITEM 1 ',DA10,DA20
+      DO 70 J=1,10
+      IF(DA10(2,1).GT.5.0) THEN
+      DA20(5,5)=2.
+      DO 71 I=1,10,2
+71     DA10(I,J)=DA10(I,J)+2.
+      ENDIF
+      DO 72 I=1,10
+72     DA20(I,J)=DA20(I,J)+2.
+70    CONTINUE
+      DO 80 J=11,20
+      IF(J+DA20(13,11).GT.17)          THEN
+      DO 81 I=11,20
+81     DA10(I,J)=DA20(11,18)
+      ENDIF
+      DO 82 I=11,20
+82     DA20(I,J)=DA20(I,J)+2.
+      DO 83 I=11,20,2
+83     DA20(I,J)=DA20(I,J)+3.
+80    CONTINUE
+      WRITE(6,*) ' ITEM 2 ',DA10,DA20
+      DO 100 J=1,20
+      DO 101 I=1,20
+101    DA20(I,J)=DA20(I,J)-5.
+      IF(DA20(12,12).GT.10.) GOTO 109
+      DO 102 I=1,20
+102    DA20(I,J)=DA20(I,J)+100.
+100   CONTINUE
+109   CONTINUE
+      DO 110 J=1,20
+      DO 112 I=1,20
+       DA20(I,J)=DA20(I,J)-5.
+       IF(DA20(I,J).GT.10.) GOTO 119
+112    DA20(I,J)=DA20(I,J)+100.
+110   CONTINUE
+119   CONTINUE
+      WRITE(6,*) ' ITEM 3 ',DA10,DA20
+
+      DO 200 J=1,20
+       DO 201 I=1,20
+201    DA20(I,J)=DA20(I,J)-5.
+      CALL SUB(DA20(2,2))
+      DO 202 I=1,20
+202    DA20(I,J)=DA20(I,J)+100.
+200   CONTINUE
+      DO 210 J=1,20
+      DO 211 I=1,20
+211    DA20(I,J)=DA20(I,J)-5.
+       WRITE(6,*) DA20(1,J)
+      DO 212 I=1,20
+212    DA20(I,J)=DA20(I,J)+100.
+210   CONTINUE
+      WRITE(6,*) ' ITEM 3 ',DA10,DA20
+      STOP
+      END
+      SUBROUTINE SUB(A)
+      REAL*8 A
+      A=8.5
+      RETURN
+      END

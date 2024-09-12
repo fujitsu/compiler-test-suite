@@ -1,0 +1,11 @@
+  pat.1 csum=  34700
+  pat.2 csum=  34848
+  pat.3 csum=  34700
+  pat.4 csum=  34700
+  pat.5 csum=  500
+  pat.6 csum=  500
+  pat.7 csum=  20100
+  pat.8 csum=  694
+  pat.9 csum=  694
+  pat.10 csum=  300
+exit 0

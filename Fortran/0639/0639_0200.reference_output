@@ -1,0 +1,25 @@
+0     *=*=*     L041(1,...,11)   *=*=*
+           F     F     F     F     F     T     T     T     T     T     T
+      *=*=*     L043(1,...,11)   *=*=*
+           T     T     T     T     T     F     F     F     F     F     F
+      *=*=*     L042(1,...,11)   *=*=*
+           F     F     F     F     F     T     F     F     F     F     F
+      *=*=*     L044(1,...,11)   *=*=*
+           T     T     T     T     T     F     F     F     F     F     F
+0     *=*=*     L041(1,...,11)   *=*=*
+           F     F     F     F     F     T     T     T     T     T     T
+      *=*=*     L043(1,...,11)   *=*=*
+           F     F     F     F     F     T     T     T     T     T     T
+      *=*=*     L042(1,...,11)   *=*=*
+           F     F     F     F     F     T     F     F     F     F     F
+      *=*=*     L044(1,...,11)   *=*=*
+           F     F     F     F     F     T     F     F     F     F     F
+0     *=*=*     L041(1,...,11)   *=*=*
+           F     F     F     F     F     T     T     T     T     T     T
+      *=*=*     L043(1,...,11)   *=*=*
+           F     F     F     F     F     T     T     T     T     T     T
+      *=*=*     L042(1,...,11)   *=*=*
+           F     F     F     F     F     T     F     F     F     F     F
+      *=*=*     L044(1,...,11)   *=*=*
+           F     F     F     F     F     T     T     T     T     T     T
+exit 0

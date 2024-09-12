@@ -1,0 +1,16 @@
+  ty1_scalar_destructor CALL  20
+  ty0_scalar_destructor CALL  10
+  ty1_scalar_destructor CALL  20
+  ty0_scalar_destructor CALL  10
+  ty1_scalar_destructor CALL  20
+  ty0_scalar_destructor CALL  400
+  ty1_scalar_destructor CALL  20
+  ty0_scalar_destructor CALL  10
+  ty1_scalar_destructor CALL  20
+  ty0_scalar_destructor CALL  400
+  ty1_scalar_destructor CALL  20
+  ty0_scalar_destructor CALL  10
+  ty1_scalar_destructor CALL  20
+  ty0_scalar_destructor CALL  400
+  PASS 20 400
+exit 0

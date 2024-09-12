@@ -23,7 +23,7 @@
       DATA    CQA/1000*(1.,1.)/,CQB/100*(2.,1.)/,CQC/10*(1.,2.)/
       DATA    LBA/1000*.TRUE./,LBB/100*.TRUE./,LBC/10*.TRUE./
       DATA    L4A/1000*.TRUE./,L4B/100*.TRUE./,L4C/10*.TRUE./
-      DATA    SA/'FACOM'/,SB/'FACOM OS4'/
+      DATA    SA/'COM'/,SB/'COM OS'/
       DATA    J1/1/,J2/2/,J3/3/,J4/4/,ID3/3/
       RSUM=0.0
       DSUM=0.0
@@ -75,7 +75,7 @@
       CHARACTER SA*10
       INTEGER*4 IL(10),I1,I2,ID1,ID2
       COMMON /BL1/RA,RB,RC,RE,/BL2/CEA,CEB,CEC,/BL3/IL
-      DATA SA/'FACOM'/
+      DATA SA/'COM'/
       DATA LBA/1000*.TRUE./
       ID3=0
       DO 10 J1=1,10

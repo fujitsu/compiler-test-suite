@@ -1,0 +1,8 @@
+                       test (h0000190)
+           direct-access read/write no i/o list
+
+
+                     h0000190 ... ok
+
+      end run unit
+exit 0

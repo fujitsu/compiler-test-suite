@@ -1,0 +1,5 @@
+  same file de open->close->open->  
+  write->close test     (no.1/2) 
+
+          end 
+exit 0

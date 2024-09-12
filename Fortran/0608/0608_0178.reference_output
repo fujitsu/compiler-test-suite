@@ -1,0 +1,5 @@
+ PASS -  1
+ K -  5
+ PASS -  2
+ K -  5
+exit 0

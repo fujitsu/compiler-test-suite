@@ -1,0 +1,59 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  INTEGER :: i1 = 2
+END TYPE
+
+TYPE ,EXTENDS(t1) :: t2
+  PROCEDURE(fun1),POINTER,NOPASS :: prc
+END TYPE
+
+CONTAINS
+
+FUNCTION fun1(d1,d2)
+IMPLICIT NONE
+INTEGER,INTENT(IN) :: d1,d2
+CLASS(t2),ALLOCATABLE :: fun1
+ALLOCATE(fun1)
+fun1%i1 = d1 + d2
+END FUNCTION
+
+END MODULE
+
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+INTEGER :: res
+CLASS(t1),POINTER :: ptr
+CLASS(t2),ALLOCATABLE,TARGET :: tgt
+ALLOCATE(tgt)
+ptr => tgt
+
+res = fun(ptr)
+
+IF(res .EQ. 1) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+CONTAINS
+
+FUNCTION fun(dd1)
+IMPLICIT NONE
+INTEGER :: fun
+CLASS(t1) :: dd1
+SELECT TYPE(ptr)
+TYPE IS(t2)
+  ptr%prc => fun1
+  SELECT TYPE(asc => ptr%prc(2,3))
+  TYPE IS(t2)
+  IF(asc%i1 .EQ. 5) fun = 1
+  END SELECT
+END SELECT
+END FUNCTION
+
+END PROGRAM

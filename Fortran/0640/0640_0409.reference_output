@@ -1,0 +1,21 @@
+ ** TEST NO. 1 ***
+ 11. -8. T T 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. T F T
+F T F T F T F F T F T F T F T F T 9. 4. 0. 0. 0. 0. 0. 0. 0. 0. T T F F F F F F
+F F
+ ** TEST NO. 2 ***
+ 11. -8. F T 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. T F T
+F T F T F T F F T F T F T F T F T 11. 18. 0. 0. 0. 0. 0. 0. 0. 0. T T F F F F F
+F F F
+ ** TEST NO. 3 ***
+ 11. 10. F F 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. T F T
+F T F T F T F F T F T F T F T F T 11. 18. 0. 13. 0. 0. 0. 0. 0. 0. T T F F F F
+F F F F
+ ** TEST NO. 4 ***
+ 10. 2. F T 11. 2. 4. 4. 6. 6. 8. 8. 10. 10. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. T F
+T F T F T F T F F T F T F T F T F T 11. 18. 0. 2. 0. 0. 0. 0. 0. 0. T T F F F F
+F F F F
+ ** TEST NO. 5 ***
+ 10. 11. F F 11. 2. 4. 4. 6. 6. 8. 8. 10. 10. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. F F
+F F F F F F F F F T F T F T F T F T 11. 18. 0. 2. 1. 0. 0. 0. 0. 0. T T F F F F
+F F F F
+exit 0

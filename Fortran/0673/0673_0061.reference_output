@@ -1,0 +1,12 @@
+1                      test ... c0000820
+
+0                    Pi =  3.141592
+  20.0 '  20.0
+    T '    F
+ word ' word
+  20.0 '  20.0
+    T '    F
+                     test     c0000820     ok
+
+      end rununit
+exit 0

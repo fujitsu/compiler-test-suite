@@ -43,7 +43,7 @@
        43         if(aa .ne. 202)print*,"101",aa
 
        45         call zzz
-       46         print*,"sngg538e : pass"
+       46         print*,"pass"
 
        48       contains
        49         subroutine zzz

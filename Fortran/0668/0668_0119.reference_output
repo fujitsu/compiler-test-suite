@@ -1,0 +1,37 @@
+  ** **  no.1 
+  i4s11  
+   25
+  i4s12  
+    0
+  i4a1 
+    1    0    3    0    2    0    1    0    3    0
+  l4b1 
+    T    F    T    F    T    F    T    F    T    F
+  ** **  no.2  
+  i4s2  
+   10
+  i4a2  
+   20    0   20    0   20    0   20    0   20    0
+  i4c2 
+   10    5   12    5   11    5   10    5   12    5
+  l4b2 
+    T    F    T    F    T    F    T    F    T    F
+  ** **  no.3  
+  i4s31  
+    5
+  i4s32  
+   -4
+  i4a3 
+    1    0    3    1    2   -1    1    0    3    1
+  l4a3 
+    T    F    T    F    T    F    T    F    T    F
+  ** **  no.4  
+  i4s41  
+    5
+  i4s42  
+   -5
+  i4b4 
+    1   -1    1   -1    1   -1    1   -1    1   -1
+  l4b4 
+    T    T    F    F    F    T    T    T    F    F
+exit 0

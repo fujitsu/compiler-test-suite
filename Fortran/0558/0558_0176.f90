@@ -1,0 +1,40 @@
+MODULE mod1
+IMPLICIT NONE
+
+REAL :: num(2,3)
+
+INTERFACE
+FUNCTION efun(dd1)
+  REAL,DIMENSION(2,3) :: dd1,efun
+END FUNCTION
+END INTERFACE
+
+END MODULE
+
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+REAL :: res(2,3)
+
+INTERFACE gnr
+  PROCEDURE efun
+END INTERFACE
+
+num = 14.0
+res = gnr(num)
+
+IF(ALL(res(1:2,1:3) .EQ. 28.0)) THEN
+  PRINT*,"PASS"
+ELSE
+  PRINT*,"ERROR"
+END IF
+
+END PROGRAM
+
+FUNCTION efun(dd1)
+  REAL,DIMENSION(2,3) :: dd1,efun
+  dd1 = dd1 * 2.0
+  efun = dd1
+END FUNCTION

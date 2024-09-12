@@ -1,0 +1,17 @@
+  ** com-array test no.1 ** 
+ a:all(-1.0)
+ a= -1.
+ z:all(1.0,2.0)
+ z= (1.,2.)
+  ** com-array test no.2 ** 
+ 9999.
+  ** com-array test no.3 ** 
+ -9999.
+ 0
+  ** com-array test no.4 ** 
+ 1.
+ (18.,26.)
+  ** com-array test no.5 ** 
+ 1.
+ (3.,0.)
+exit 0

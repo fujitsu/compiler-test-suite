@@ -1,0 +1,8 @@
+ sub01:mod01sub
+ sub02:mod01sub
+ sub03:mod01sub
+ sub01:mod02sub
+ sub02:mod02sub
+ sub03:mod02sub
+ ok
+exit 0

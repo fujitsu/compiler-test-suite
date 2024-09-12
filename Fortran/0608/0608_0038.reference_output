@@ -1,0 +1,5 @@
+ correct destructor called
+ 3
+ 3
+ 3
+exit 0

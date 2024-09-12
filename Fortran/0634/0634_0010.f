@@ -1,0 +1,120 @@
+      WRITE(6,10)
+   10 FORMAT ('1',5X,'====== FORTRAN ======')
+      IP = 0
+      CALL F18701 (IP)
+      IF (IP.NE.0 ) GO TO 30
+      WRITE ( 6,20 )
+   20 FORMAT (' ',20X,'= TEST =',5X,'OK')
+   30 WRITE (6 ,40 )
+   40 FORMAT(1H0,4X,'END RUNUNIT')
+      CALL RX401
+      STOP
+      END
+      SUBROUTINE F18701(IP)
+      IMPLICIT COMPLEX*16(W,Z)
+      COMMON /W1/W11
+      COMMON /W2/W21
+      COMMON /W3/W31
+      COMMON /W4/ W41
+      COMMON /W5/W51
+      COMMON /W6/W61
+      COMMON /W7/W71
+      COMMON /W8/W81
+      COMMON /Z1/Z11
+      COMMON /Z2/Z21
+      COMMON /Z3/Z31
+      COMMON /Z4/Z41
+      COMMON /Z5/Z51
+      COMMON /Z6/Z61
+      COMMON /W1/W12
+      COMMON /Z7/Z71
+      COMMON /W1/W13
+      COMMON /Z8/Z81
+     0DIMENSION W11(4),W21(2),W31(2),W41(2),W51(2),W61(2),W81(2),Z11(2),
+     1
+     E Z21(2),Z31(2),Z41(2),Z51(2),Z61(2),Z71(2),Z81(2),W71(2)
+      Z9=(0.2D+4,0.5D+2)
+   30 IF((DREAL(W11(1)).EQ.DREAL(Z11(1)) .AND.
+     1    DIMAG(W11(1)).EQ.DIMAG(W11(1)))    .AND.
+     2   (DREAL(W81(1)).EQ.DREAL(Z81(1)) .AND.
+     3    DIMAG(W81(1)).EQ.DIMAG(Z81(1)))    .AND.
+     4   (DREAL(Z81(1)).EQ.DREAL(Z9)     .AND.
+     E    DIMAG(Z81(1)).EQ.DIMAG(Z9))) GO TO 10
+      IP=IP+1
+      WRITE (6,20) W11(1),Z11(1),W81(1),Z81(1)
+   200FORMAT (1H0,20X,'==TEST==',3X,'NG',3X,D8.1,2X,D8.1,3H ' ,D8.1,2X,
+     E D8.1,3H ' ,D8.1,2X,D8.1)
+   10 IF((DREAL(W11(2)).EQ.DREAL(W12) .AND.
+     1    DIMAG(W11(2)).EQ.DIMAG(W12))  .AND.
+     2   (DREAL(W12).EQ.DREAL(W13) .AND.
+     E    DIMAG(W12).EQ.DIMAG(W13))) GO TO 40
+      IP=IP+1
+      WRITE (6,20) W11(2),W12,W13
+   40 RETURN
+      END
+      SUBROUTINE  RX401
+      WRITE (6,10)
+   10 FORMAT ('1',5X,'====== FORTRAN ======')
+      IP=0
+      CALL F18501 (IP)
+      IF (IP.NE. 0 ) GO TO 30
+      WRITE (6,20)
+   20 FORMAT (' ',20X,'= TEST =',5X,'OK')
+   30 WRITE (6,40)
+   40 FORMAT (1H ,20X,'END RUN UNIT')
+      STOP
+      END
+      SUBROUTINE F18501 (IP)
+      IMPLICIT COMPLEX (Q)
+     0COMMON /Q1 /Q11(2) /Q2/Q21(2) /Q3 /Q31(2)/Q4 /Q41(2) /Q5 /Q51(2)
+     1 /Q6 / Q61(2) /Q7/Q71(2) /Q8 /Q81(2)/Q9 /Q91(2)/Q10 /Q101(2)
+     2 /Q11 /Q111(2) /Q12 /Q121(2) /Q13 /Q131(2) /Q14 / Q141(2)
+     E /Q15 / Q151(2) /Q16 /Q161(2) /Q1 / Q12(2) / Q1/Q13(2)
+      Q17=(2.5,3.5)
+   300IF((REAL(Q11(1)).EQ.REAL(Q121(1)).AND.IMAG(Q11(1)).EQ.IMAG(Q121(1)
+     1 )).AND.(REAL(Q61(2)).EQ.REAL(Q111(2)).AND.IMAG(Q61(2)).EQ.IMAG(Q1
+     211(2))).AND.(REAL(Q111(2)).EQ.REAL(Q17).AND.IMAG(Q111(2)).EQ.IMAG(
+     3Q17)))GO TO 10
+      IP=IP+1
+      WRITE (6,20) Q11(1),Q121(1),Q61(1),Q111(1)
+   200FORMAT (1H0,20X,'==TEST==',3X,'NG',5X,E9.2,2X,E9.2,3H ' ,E9.2,2X,
+     E E9.2,3H ' ,E9.2,2X,E9.2/40X,E9.2,2X,E9.2,3H ' ,E9.2,2X,E9.2)
+   10 IF((REAL(Q11(2)).EQ.REAL(Q12(2)).AND.IMAG(Q11(2)).EQ.IMAG(Q12(2)))
+     A.AND.(REAL(Q12(2)).EQ.REAL(Q13(2)).AND.IMAG(Q12(2)).EQ.IMAG(Q13(2)
+     B))) GO TO 40
+      IP=IP+1
+      WRITE (6,20) Q11(2),Q12(2),Q13(2)
+   40 RETURN
+      END
+      BLOCK DATA
+      IMPLICIT COMPLEX (Q)
+      IMPLICIT COMPLEX*16(W,Z)
+      COMMON /W1/W11(4),W12,W13
+      COMMON /W2/W21 (2)
+      COMMON /W3/W31 (2)
+      COMMON /W4/W41 (2)
+      COMMON /W5/W51 (2)
+      COMMON /W6/W61 (2)
+      COMMON /W7/W71 (2)
+      COMMON /W8/W81 (2)
+      COMMON /Z1/Z11 (2)
+      COMMON /Z2/Z21 (2)
+      COMMON /Z3/Z31 (2)
+      COMMON /Z4/Z41 (2)
+      COMMON /Z5/Z51 (2)
+      COMMON /Z6/Z61 (2)
+      COMMON /Z7/Z71 (2)
+      COMMON /Z8/Z81 (2)
+     0COMMON /Q1 / Q11(6) /Q2/Q21(2) /Q3/Q31(2)/Q4/Q41(2)/Q5 /Q51(2)
+     1 /Q6/Q61(2)/ Q7/Q71(2)/Q8/Q81(2)/Q9/Q91(2)/Q10/ Q101(2)
+     2 /Q12/Q121(2) /Q13/Q131(2)/Q14/Q141(2) /Q15 /Q151(2) /Q16/
+     E Q161(2)/Q11/Q111(2)
+     0DATA W11(1),W21,W31,W41,W51,W61,W71,W81,Z11,Z21,Z31,Z41,Z51,Z61,
+     1
+     E Z71,Z81/31*(0.2D+4,0.5D+2)/
+      DATA W11(2),W11(3),W11(4) /3*(0.5D+2,0.2D+4)/
+      DATA W12,W13/2*(0.5D+2,0.2D+4)/
+      DATA Q11(2),Q11(4),Q11(6) /3*(2.5,3.5) /
+      DATA Q11(1),Q61(2) /2*(2.5,3.5) /
+      DATA Q121(1),Q111(2)/2*(2.5,3.5) /
+      END

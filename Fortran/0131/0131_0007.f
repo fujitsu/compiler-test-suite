@@ -1,7 +1,7 @@
 
       integer*4  i, j, sum, rand
       character  str0*120, str1*120, str2(7)*120, ch*1
-      real*4     pai
+      real*4     Pi
       integer*4  ans( 10), cal( 10), nn
       data ans  /   1, 555,   0,   0,   0,   0,   0,   0,   0,   0/
       parameter (nn=2)
@@ -17,8 +17,8 @@
       do 100 i=1, 1000000
         if ((rand()**2+rand()**2).le.50**2) j=j+1
   100 continue
-      pai=(10000.0*real(j))/(2500.0*1000000.0)
-      if (abs(pai-3.0937510).le.0.000001) then
+      Pi=(10000.0*real(j))/(2500.0*1000000.0)
+      if (abs(Pi-3.0937510).le.0.000001) then
          sum=1
       else
          sum=0

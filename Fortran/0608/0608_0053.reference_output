@@ -1,0 +1,5 @@
+ destructor called::last
+ 70
+ destructor called::last
+ 30
+exit 0

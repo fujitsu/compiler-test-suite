@@ -1,0 +1,50 @@
+MODULE TYPES
+  TYPE T
+     INTEGER :: K(10)
+   CONTAINS   
+     PROCEDURE :: UDIO_WRITE_ARRAY
+     GENERIC :: WRITE(FORMATTED) => UDIO_WRITE_ARRAY
+  END TYPE T
+  TYPE T1
+        INTEGER::K(10)
+        TYPE(T)::B
+  END TYPE T1
+
+  TYPE T3
+        INTEGER::K(10)
+        INTEGER::L
+  END TYPE T3
+
+  TYPE T0
+   TYPE (T1):: B2
+   TYPE (T3):: B3
+  END TYPE T0 
+
+CONTAINS
+  SUBROUTINE UDIO_WRITE_ARRAY (DTV, UNIT, IOTYPE, V_LIST, IOSTAT, IOMSG)                                
+    CLASS(T), INTENT(IN)        :: DTV
+    INTEGER, INTENT(IN)         :: UNIT
+    CHARACTER(*), INTENT(IN)    :: IOTYPE
+    INTEGER, INTENT(IN)         :: V_LIST (:)
+    INTEGER, INTENT(OUT)        :: IOSTAT
+    CHARACTER(*), INTENT(INOUT) :: IOMSG
+
+    WRITE (UNIT, FMT=*) dtv%k 
+  END SUBROUTINE UDIO_WRITE_ARRAY
+
+END MODULE TYPES
+
+PROGRAM MAIN
+  USE TYPES
+  TYPE (T0) :: W
+
+  W%b2%k=1
+  W%b2%b%k=1
+  W%b3%k=1 
+  W%b3%l=1 
+
+write(1,*) W
+
+print  *,'pass'
+
+END 

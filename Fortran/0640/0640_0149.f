@@ -1,0 +1,22 @@
+      PROGRAM MAIN
+      REAL              CMT(10,10)/100*0/
+      LBSL=0
+      DO 1900 L =1,10
+      IF(LBSL.NE.0 ) GO TO 1900
+ 1600 CONTINUE
+      J =5
+      IF(4) 1610,1610,1510
+ 1510 CONTINUE
+      CMT(L,J) =-20.
+ 1610 CONTINUE
+      J =6
+      IF(5) 1620,1620,1520
+ 1520 CMT(L,J) =-30.
+ 1620 CONTINUE
+ 1900 CONTINUE
+      DO 9810 J =5,6
+      WRITE(6,*) J
+      WRITE(6,*) (CMT(L,J),L=1,10)
+ 9810 CONTINUE
+      STOP
+      END

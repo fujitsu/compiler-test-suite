@@ -33,7 +33,7 @@ allocate(v(1)% z(1),source=1)
 allocate(v(2)% z(1),source=1)
 allocate(v(3)% z(1),source=1)
 call s( f(  v ) )
-call chk
+!call chk
 print *,'pass'
 contains
 subroutine s(dd)

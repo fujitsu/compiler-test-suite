@@ -1,0 +1,7 @@
+         start
+ check1 end data set=seqs
+ check2 end data set=seqs
+ check1 end data set=seqs
+ check2 end data set=seqs
+         end
+exit 0

@@ -1,0 +1,40 @@
+
+  ###   ### 
+
+  ## test 1 ## 
+  i4001 
+ 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+  i8001 
+ 1 11 17 27 41 51 57 67 81 91
+  i8002 
+ 1 1 2 6 11 15 20 28 37 45
+
+  ## test 2 ## 
+  l4001 
+ F T T T T T F T T T T T F T T T T T F T F T F T F T F T F T F T F T
+  l4002 
+ T T F T T T T T T T T T T T T T T T T T T T T F T T T T T T T T F T F T T T T
+T T T T T F T F T F T T T T T T T T T T T F T F T T F T T T T
+  l4003 
+ F T F T T T T F T T T T T F F T F T F T T F T F T F T F F T F T F T F F T F T
+F T F F T F T F T F F T F T F T F F T F T F T F F T F T F T F F T F T F T F F T
+F T F T F F T F T F T F F T F T F T F F T F T F T F F T F T F T F F T F T F T F
+F T F T F T F F T F T F T F F T F T F T F F T F T F T F F T F T F T F F T F T F
+T F F T F T F T F F T F T F T F F T F T F T F F T F T F T F F T F T F T F F T F
+T F T F F T F T F T F
+  l4004 
+ F
+
+  ## test 3 ## 
+  i4005 
+              3              6             11             20             37
+             70            135            264            521           1034
+           2059           4108           8205          16398          32783
+          65552         131089         262162         524307        1048596
+        2097173        4194326        8388631       16777240       33554457
+       67108890      134217755      268435484      536870941     1073741854
+  i4006 
+ 3 3 3 3 3 3 3 3 3 3 3 3 5 5 5 5 5 5 5 5 5 5 5 5 10 10 10 10 10 10 10 10 10 10
+ 10 10
+
+exit 0

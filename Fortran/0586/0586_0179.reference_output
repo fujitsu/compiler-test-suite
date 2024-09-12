@@ -1,0 +1,8 @@
+ Boundary A  1
+ Boundary B  2
+ Boundary C  3
+ Boundary A  1
+ Boundary B  2
+ Boundary C  3
+ PASS
+exit 0

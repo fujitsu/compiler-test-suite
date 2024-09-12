@@ -1,0 +1,16 @@
+ ***         test ****
+ ***** test a( 1)  ok! ok! *****
+ ***** test a( 2)  ok! ok! *****
+ ***** test a( 3)  ok! ok! *****
+ ***** test a( 4)  ok! ok! *****
+ ***** test a( 5)  ok! ok! *****
+ ***** test a( 6)  ok! ok! *****
+ ***** test a( 7)  ok! ok! *****
+ ***** test a( 8)  ok! ok! *****
+ ***** test a( 9)  ok! ok! *****
+ ***** test b( 1)  ok! ok! *****
+ ***** test b( 2)  ok! ok! *****
+ ***** test b( 3)  ok! ok! *****
+ ***** test b( 4)  ok! ok! *****
+ ***** test c ok! ok! *****
+exit 0

@@ -1,0 +1,65 @@
+      PROGRAM MAIN
+      IMPLICIT REAL*8(A-B,D),LOGICAL*4(L),COMPLEX*16(C)
+      DIMENSION  DA10(20,20,20),DA20(20,20,20),DA30(20,20,20),
+     *           DA40(20,20,20),LD10(20,20,20),LD20(20,20,20)
+      COMMON /BLK/ CD10(20,20,20),CD20(20,20,20)
+
+      DATA     DA10/8000*1.0D0/,DA20/8000*2.0D0/
+      DATA     DA30/8000*3.0D0/,DA40/8000*4.0D0/
+      DATA     LD10/8000*.FALSE./,LD20/8000*.FALSE./
+      DATA     NN/20/
+
+      DO 10 I=1,NN
+       DX=DFLOAT(I)
+       DO 10 J=1,NN
+        DY=DFLOAT(J)
+        DO 10 K=1,NN
+         DZ=DFLOAT(K)
+         CD10(I,J,K)=DCMPLX(DX,DY)
+         CD20(I,J,K)=DCMPLX(DY,DZ)
+  10   CONTINUE
+
+      CALL  SUB1(DA10,DA20,DA30,DA40,LD10,LD20,NN)
+      WRITE(6,99) 'DA10=',DA10
+      WRITE(6,99) 'DA20=',DA20
+      WRITE(6,99) 'DA30=',DA30
+      WRITE(6,99) 'DA40=',DA40
+      WRITE(6,*) 'LD10=',LD10
+      WRITE(6,*) 'LD20=',LD20
+ 99   FORMAT(A,(8F10.3))
+      STOP
+      END
+      SUBROUTINE SUB1(DA10,DA20,DA30,DA40,LD10,LD20,NN)
+      IMPLICIT  REAL*8(A-B,D),LOGICAL*4(L),COMPLEX*16(C)
+      DIMENSION  DA10(NN,NN,NN),DA20(NN,NN,NN),DA30(NN,NN,NN),
+     *           DA40(NN,NN,NN),LD10(NN,NN,NN),LD20(NN,NN,NN)
+      COMMON /BLK/ CD10(20,20,20),CD20(20,20,20)
+      IN=1
+
+      NX=NN-1
+      DO 10 I=2,NX
+       LD10(I,1,1)=.FALSE.
+       DO 10 J=2,NX
+        DA10(1,I,J)=DIMAG(CD10(I,J,J))
+        DO 10 K=2,NX
+         DX = DA10(I,J,K)/2.12D0+DA20(I,J,K)
+         DY = DA30(I,J,K)/3.12D0-DA40(I,J,K)
+         IF ( DX .GT. DY ) LD10(I,J,K)=.TRUE.
+         LD20(I,J,K)=.NOT.LD20(I,J,K) .AND. LD10(I,J,K)
+         CD10(I,J,K) = DCMPLX(DX,DY)-CD20(I,J,K)
+  10   CONTINUE
+
+      DO 20 I=NX,2,-1
+       DO 30 J=NX,2,-1
+        LD20(I,J,J)=.NOT.LD10(I,J,2)
+        DO 40 K=2,NX
+         DA30(I,J,K)=DA10(I,J,K)*DA20(I,J,K)/(DA30(I,J,K)+1.D0)-
+     1    DREAL(CD10(I,J,K-1))/(1.D0+DIMAG(CD20(I,J,K+1)))
+     2    * DA20(I+1,J,K)/DA40(I,J,K+1)
+  40    CONTINUE
+        DA20(I,I,J)=DA30(I,J,J)+DA10(I,J,2)
+  30   CONTINUE
+  20  CONTINUE
+
+      RETURN
+      END

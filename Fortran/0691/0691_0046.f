@@ -1,0 +1,317 @@
+      INTEGER AI(12),BI(12),DIFI
+      INTEGER  ADI(12),BDI(12),DIFDI
+      REAL CONS05,CONS06
+      DOUBLE PRECISION ADR(12),BDR(12),DIFDR,DDCR,DDCI,CRDA,CIDA,CRDB,
+     *CIDB
+     *,CONS14,CONS15
+      COMPLEX AC(12),BC(12)
+      COMPLEX*16   ADC(15),BDC(15)
+     *,DA,DB,DC,DD,DE,DF,DG,DH,DJ
+      DIMENSION AR(12),BR(12)
+      CONS05=1.0E-05
+      CONS06=1.0E-06
+      CONS14=1.0D-14
+      CONS15=1.0D-15
+      DA=(3.0D+0,4.0D+0)
+      DB=(7.3D+0,7.2D+0)
+      DC=(6.0D+0,0.0D+0)
+      DD=(0.0D+0,1.25D+0)
+      DE=(3.0D+0,-4.0D+0)
+      DF=(100.0D+0,-1.25D+0)
+      DG=(6.0D+0,4.32D+0)
+      DH=(32700.0D+0,39000.0D+0)
+      DJ=(50000.0D+0,1.0D+0)
+ 1000 FORMAT(1H1 / 6X,24H*FORTRAN*          ENTER)
+  100 FORMAT(1H1,6X)
+  101 FORMAT(1H0 / 5X,11H- JUSTICE -,4X,8H- ITEM -,10X,19H- COMPUTED RES
+     1ULT -,17X,17H- COMPARE VALUE -,19X,14H- DIFFERENCE -)
+  102 FORMAT(1H0 7X,4H*OK*,11X,1H(,I2,1H),17X,I12,22X,I12)
+  103 FORMAT(1H0 7X,7H*ERROR*,8X,1H(,I2,1H),17X,I12,22X,I12)
+  104 FORMAT(1H0 7X,4H*OK*,11X,1H(,I2,1H),14X,E14.7,19X,E14.7,21X,E14.7)
+  105 FORMAT(1H0 7X,7H*ERROR*,8X,1H(,I2,1H),14X,E14.7,19X,E14.7,21X,E14.
+     17)
+  106 FORMAT(1H0 7X,4H*OK*,11X,1H(,I2,1H),5X,D24.17,10X,D24.17,12X,D24.1
+     17)
+  107 FORMAT(1H0 7X,7H*ERROR*,8X,1H(,I2,1H),5X,D24.17,10X,D24.17,12X,D24
+     1.17)
+  108 FORMAT(1H0 24X,3(9X,9HREAL PART,8X,9HIMAG PART))
+  109 FORMAT(1H0 4X,19H*OK*    *OK*      (,I2,1H),1X,3(4X,E14.7,3X,E14.7
+     1))
+  110 FORMAT(1H0 4X,19H*OK*    *ERROR*   (,I2,1H),1X,3(4X,E14.7,3X,E14.7
+     1))
+  111 FORMAT(1H0 4X,19H*ERROR* *OK*      (,I2,1H),1X,3(4X,E14.7,3X,E14.7
+     1))
+  112 FORMAT(1H0 4X,19H*ERROR* *ERROR*   (,I2,1H),1X,3(4X,E14.7,3X,E14.7
+     1))
+  113 FORMAT(1H0 / 5X,20H- JUSTICE - - ITEM -,21X,19H- COMPUTED RESULT -
+     1,36X,17H- COMPARE VALUE - // 39X,9HREAL PART,17X,9HIMAG PART,20X,9
+     2HREAL PART,17X,9HIMAG PART)
+114   FORMAT(1H0/3X,17H*OK*    *OK*    (,I2,1H),2X,2(3X,D24.17,2X,
+     1  D24.17)//57X,14H- DIFFERENCE -,2X,2(2X,D24.17))
+115   FORMAT(1H0/3X,17H*OK*    *ERROR* (,I2,1H),2X,2(3X,D24.17,2X,
+     1  D24.17)//57X,14H- DIFFERENCE -,2X,2(2X,D24.17))
+116   FORMAT(1H0/3X,17H*ERROR* *OK*    (,I2,1H),2X,2(3X,D24.17,2X,
+     1  D24.17)//57X,14H- DIFFERENCE -,2X,2(2X,D24.17))
+117   FORMAT(1H0/3X,17H*ERROR* *ERROR* (,I2,1H),2X,2(3X,D24.17,2X,
+     1  D24.17)//57X,14H- DIFFERENCE -,2X,2(2X,D24.17))
+ 9999 FORMAT(1H0 // 6X,23H*FORTRAN*          EXIT)
+      AI(1)=DA+DC
+      BI(1)=9
+      AI(2)=DC+(-DG)
+      BI(2)=0
+      AI(3)=-DF+DE
+      BI(3)=-97
+      AI(4)=DB-(-DD)
+      BI(4)=7
+      AI(5)=-DD-(0.0D+0,120.0D+0)
+      BI(5)=0
+      AI(6)=DA-DD
+      BI(6)=3
+      AI(7)=DE*DC
+      BI(7)=18
+      AI(8)=DF*(0.0D+0,0.0D+0)
+      BI(8)=0
+      AI(9)=(-DB)*DG
+      BI(9)=-12
+      AI(10)=DA/(2.0D+0,1.0D+0)
+      BI(10)=2
+      AI(11)=DG/(6.0D+0,4.32D+0)
+      BI(11)=1
+      AI(12)=DD/(-DE)
+      BI(12)=0
+      I=1
+      N=12
+      WRITE(6,1000)
+      WRITE(6,101)
+      DO 10 I=I,N
+      DIFI=AI(I)-BI(I)
+      IF(DIFI)701,700,701
+  700 WRITE(6,102)I,AI(I),BI(I)
+      GO TO 10
+  701 WRITE(6,103)I,AI(I),BI(I)
+   10 CONTINUE
+      ADI(1)=DH+DC
+      BDI(1)=32706D+0
+      ADI(2)=DC+(-DG)
+      BDI(2)=0D+0
+      ADI(3)=-DF+DE
+      BDI(3)=-97
+      ADI(4)=DJ-(-DD)
+      BDI(4)=50000D+0
+      ADI(5)=-DD-(0.0D+0,120.0D+0)
+      BDI(5)=0D+0
+      ADI(6)=DA-DA
+      BDI(6)=0D+0
+      ADI(7)=(-DB)*DJ
+      BDI(7)=-364992D+0
+      ADI(8)=DH*(0.0D+0,0.0D+0)
+      BDI(8)=0D+0
+      ADI(9)=DE*DC
+      BDI(9)=18
+      ADI(10)=DD/(-DE)
+      BDI(10)=0D+0
+      ADI(11)=DG/(6.0D+0,4.32D+0)
+      BDI(11)=1
+      ADI(12)=DJ/(2.0D+0,1.0D+0)
+      BDI(12)=20000D+0
+      WRITE (6,100)
+      WRITE (6,101)
+      I=13
+      N=24
+      DO 11 I=I,N
+      DIFDI=ADI(I-12)-BDI(I-12)
+      IF(DIFDI)703,702,703
+  702 WRITE(6,102)I,ADI(I-12),BDI(I-12)
+      GO TO 11
+  703 WRITE(6,103)I,ADI(I-12),BDI(I-12)
+   11 CONTINUE
+      AR(1)=DA+DC
+      BR(1)=9.0
+      AR(2)=DC+(-DG)
+      BR(2)=0.0
+      AR(3)=-DF+DE
+      BR(3)=-97.0
+      AR(4)=DB-(-DD)
+      BR(4)=7.3
+      AR(5)=-DD-(0.0D+0,120.0D+0)
+      BR(5)=0.0
+      AR(6)=DA-DA
+      BR(6)=0.0
+      AR(7)=(-DB)*DG
+      BR(7)=-12.696
+      AR(8)=DF*(0.0D+0,0.0D+0)
+      BR(8)=0.0
+      AR(9)=DE*DC
+      BR(9)=18.0
+      AR(10)=DD/(-DE)
+      BR(10)=0.2
+      AR(11)=DG/(6.0D+0,4.32D+0)
+      BR(11)=1.0
+      AR(12)=DA/(2.0D+0,1.0D+0)
+      BR(12)=2.0
+      WRITE(6,100)
+      WRITE(6,101)
+      I=25
+      N=36
+      DO 12 I=I,N
+      DIFR=AR(I-24)-BR(I-24)
+      IF(BR(I-24))6,5,6
+    5 IF(ABS(DIFR)-CONS06)704,705,705
+    6 IF(ABS(DIFR)-CONS05*ABS(BR(I-24)))704,705,705
+  704 WRITE(6,104)I,AR(I-24),BR(I-24),DIFR
+      GO TO 12
+  705 WRITE(6,105)I,AR(I-24),BR(I-24),DIFR
+   12 CONTINUE
+      ADR(1)=DH+DC
+      BDR(1)=32706.0D+0
+      ADR(2)=DC+(-DG)
+      BDR(2)=0.0D+0
+      ADR(3)=-DF+DE
+      BDR(3)=-97.0D+0
+      ADR(4)=DJ-(-DD)
+      BDR(4)=50000.0D+0
+      ADR(5)=-DD-(0.0D+0,120.0D+0)
+      BDR(5)=0.0D+0
+      ADR(6)=DA-DA
+      BDR(6)=0.0D+0
+      ADR(7)=(-DB)*DG
+      BDR(7)=-0.12696D+2
+      ADR(8)=DH*(0.0D+0,0.0D+0)
+      BDR(8)=0.0D+0
+      ADR(9)=DE*DC
+      BDR(9)=18.0D+0
+      ADR(10)=DD/(-DE)
+      BDR(10)=0.2D+0
+      ADR(11)=DG/(6.0D+0,4.32D+0)
+      BDR(11)=1.0D+0
+      ADR(12)=DJ/(2.0D+0,1.0D+0)
+      BDR(12)=20000.2D+0
+      WRITE(6,100)
+      WRITE(6,101)
+      I=37
+      N=48
+      DO 13 I=I,N
+      DIFDR=ADR(I-36)-BDR(I-36)
+      IF(BDR(I-36))8,7,8
+    7 IF(DABS(DIFDR)-CONS15)706,707,707
+    8 IF(DABS(DIFDR)-CONS14*DABS(BDR(I-36)))706,707,707
+  706 WRITE(6,106)I,ADR(I-36),BDR(I-36),0.0
+      GO TO 13
+  707 WRITE(6,107)I,ADR(I-36),BDR(I-36),0.0
+   13 CONTINUE
+      AC(1)=DA+DC
+      BC(1)=(9.0,4.0)
+      AC(2)=DC+(-DG)
+      BC(2)=(0.0E+0,-4.32E+0)
+      AC(3)=-DF+DE
+      BC(3)=(-0.97E+2,-0.275E+1)
+      AC(4)=DB-(-DD)
+      BC(4)=(0.73E+1,0.845E+1)
+      AC(5)=-DD-(0.0D+0,120.0D+0)
+      BC(5)=(0.0E+0,-0.12125E+3)
+      AC(6)=DA-DA
+      BC(6)=(0.0,0.0)
+      AC(7)=(-DB)*DG
+      BC(7)=(-12.696,-74.736)
+      AC(8)=DF*(0.0D+0,0.0D+0)
+      BC(8)=(0.0,0.0)
+      AC(9)=DE*DC
+      BC(9)=(18.0,-24.0)
+      AC(10)=DD/(-DE)
+      BC(10)=(0.2,-0.15)
+      AC(11)=DG/(6.0D+0,4.32D+0)
+      BC(11)=(1.0,0.0)
+      AC(12)=DA/(2.0D+0,0.0D+0)
+      BC(12)=(0.15E+1,0.2E+1)
+      WRITE(6,100)
+      WRITE(6,101)
+      WRITE(6,108)
+      DO 14 I=49,60
+      DIFCR=REAL(AC(I-48))-REAL(BC(I-48))
+      DIFCI=AIMAG(AC(I-48))-AIMAG(BC(I-48))
+      CRA=REAL(AC(I-48))
+      CIA=AIMAG(AC(I-48))
+      CRB=REAL(BC(I-48))
+      CIB=AIMAG(BC(I-48))
+      IF(CRB)31,30,31
+   30 IF(ABS(DIFCR)-CONS06)32,33,33
+   31 IF(ABS(DIFCR)-CONS05*ABS(CRB))32,33,33
+   32 IF(AIMAG(BC(I-48)))35,34,35
+   33 IF(AIMAG(BC(I-48)))37,36,37
+   34 IF(ABS(DIFCI)-CONS06)709,710,710
+   35 IF(ABS(DIFCI)-CONS05*ABS(CIB))709,710,710
+   36 IF(ABS(DIFCI)-CONS06)711,712,712
+   37 IF(ABS(DIFCI)-CONS05*ABS(CIB))711,712,712
+  709 WRITE(6,109)I,CRA,CIA,CRB,CIB,DIFCR,DIFCI
+      GO TO 14
+  710 WRITE(6,110)I,CRA,CIA,CRB,CIB,DIFCR,DIFCI
+      GO TO 14
+  711 WRITE(6,111)I,CRA,CIA,CRB,CIB,DIFCR,DIFCI
+      GO TO 14
+  712 WRITE(6,112)I,CRA,CIA,CRB,CIB,DIFCR,DIFCI
+   14 CONTINUE
+      ADC(1)=DH+DC
+      BDC(1)=(0.32706D+5,0.39D+5)
+      ADC(2)=DC+(-DG)
+      BDC(2)=(0.0D+0,-0.432D+1)
+      ADC(3)=-DF+DE
+      BDC(3)=(-0.97D+2,-0.275D+1)
+      ADC(4)=DJ-(-DD)
+      BDC(4)=(50000.0D+0,2.25D+0)
+      ADC(5)=-DD-(0.0D+0,120.0D+0)
+      BDC(5)=(0.0D+0,-0.12125D+3)
+      ADC(6)=DA-DA
+      BDC(6)=(0.0D+0,0.0D+0)
+      ADC(7)=(-DB)*DJ
+      BDC(7)=(-0.3649928D+6,-0.3600073D+6)
+      ADC(8)=DH*(0.0D+0,0.0D+0)
+      BDC(8)=(0.0D+0,0.0D+0)
+      ADC(9)=DE*DC
+      BDC(9)=(18.0D+0,-24.0D+0)
+      ADC(10)=DD/(-DE)
+      BDC(10)=(0.2D+0,-0.15D+0)
+      ADC(11)=DG/(6.0D+0,4.32D+0)
+      BDC(11)=(1.0D+0,0.0D+0)
+      ADC(12)=DJ/(2.0D+0,1.0D+0)
+      BDC(12)=(0.200002D+5,-0.99996D+4)
+      ADC(13)=DA+DC+DD/(-DE)*DC-DB
+      BDC(13)=( 2.9D+0,-4.1D+0)
+      ADC(14)=(DA+(-DA))*DG-DD/(2.0D+0,1.0D+0)+(0.25D+0,0.5D+0)
+      BDC(14)=(0.0D+0,0.0D+0)
+      ADC(15)=DE*DC-DD/(2.0D+0,1.0D+0)+DH+DC
+      BDC(15)=(32723.750D+0,38975.5D+0)
+      I=61
+      N=72
+   50 WRITE(6,100)
+      WRITE(6,113)
+      DO 15 I=I,N
+      DDCR=DREAL(ADC(I-60))-DREAL(BDC(I-60))
+      DDCI=DIMAG(ADC(I-60))-DIMAG(BDC(I-60))
+      CRDA=DREAL(ADC(I-60))
+      CIDA=DIMAG(ADC(I-60))
+      CRDB=DREAL(BDC(I-60))
+      CIDB=DIMAG(BDC(I-60))
+      IF(CRDB)41,40,41
+   40 IF(DABS(DDCR)-CONS15)42,43,43
+   41 IF(DABS(DDCR)-CONS14*DABS(CRDB))42,43,43
+   42 IF(CIDB)45,44,45
+   43 IF(CIDB)47,46,47
+   44 IF(DABS(DDCI)-CONS15)714,715,715
+   45 IF(DABS(DDCI)-CONS14*DABS(CIDB))714,715,715
+   46 IF(DABS(DDCI)-CONS15)716,717,717
+   47 IF(DABS(DDCI)-CONS14*DABS(CIDB))716,717,717
+  714 WRITE(6,114)I,CRDA,CIDA,CRDB,CIDB,DDCR,DDCI
+      GO TO 15
+  715 WRITE(6,115)I,CRDA,CIDA,CRDB,CIDB,DDCR,DDCI
+      GO TO 15
+  716 WRITE(6,116)I,CRDA,CIDA,CRDB,CIDB,DDCR,DDCI
+      GO TO 15
+  717 WRITE(6,117)I,CRDA,CIDA,CRDB,CIDB,DDCR,DDCI
+   15 CONTINUE
+      IF(N-75)51,99,99
+   51 I=73
+      N=75
+      GO TO 50
+   99 WRITE(6,9999)
+      STOP
+      END

@@ -1,0 +1,9 @@
+write(6,'(d)')1.0
+write(6,'(e)')1.0
+write(6,'(f)')1.0
+write(6,'(g)')1.0
+write(6,'(i)')1
+write(6,'(l)').true.
+write(6,'(b)')1
+write(6,'(o)')1
+end

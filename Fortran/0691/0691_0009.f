@@ -1,0 +1,99 @@
+      DOUBLE PRECISION A,B,DIF,CNT16,CNT15
+      WRITE(6,101)
+  101 FORMAT(1H0 // 10X,44H- JUSTICE -     - ITEM -          - COMPUTED
+     *9H RESULT -13X,17H- COMPARE VALUE -15X,13H- DIFFERENS -/)
+  102 FORMAT(1H0,12X,7H*ERROR*,7X,2H( I2,2H )7X,D24.17,7X,D24.17,7X,
+     *D24.17)
+  103 FORMAT(1H012X,4H*OK*10X,2H( I2,2H )7X,D24.17,7X,D24.17,7X,D24.17)
+  999 FORMAT(1H0/2X,27H*FORTRAN*              EXIT)
+      A   =0.0D0
+      M   =0
+      ITM =0
+      CNT16=1.0D-16
+      CNT15=1.0D-15
+      DO 20 I=1,3
+   20 A=1.11111111111111D0+A
+      B=3.33333333333333D0
+      GO TO 700
+    2 A=9.999999999999999D0
+      DO 21 I=1,4
+   21 A=A-0.1111111111111111D1
+      B=5.555555555555555D0
+      GO TO 700
+    3 A=0.0D0
+      DO 22 I=1,3
+   22 A=1.2D1*1.2D1+A
+      B=0.432D3
+      GO TO 700
+    4 A=0.0D0
+      DO 23 I=1,4
+   23 A=14.4D1/0.12D2+A
+      B=0.48D2
+      GO TO 700
+    5 A=0.0D0
+      DO 24 I=1,3
+   24 A=1.3D1**I+A
+      B=2.379D3
+      GO TO 700
+    6 N=0
+      DO 80 MA=1,2
+      DO 30 I=1,8,4
+      N=N+1
+      GO TO 60
+   65 N=N+1
+      IF(N)50,40,50
+   40 N=N+1
+      IF(N-6)30,40,30
+   30 CONTINUE
+   80 CONTINUE
+      GO TO 55
+   60 N=N+10
+      GO TO 65
+   50 N=N+100
+      IF(N-110)500,55,500
+  500 IF(N-300)40,30,40
+   55 A=N
+      B=0.452D3
+      GO TO 700
+    7 N=0
+      DO 90 MB=1,1
+      DO 31 I=1,8,4
+      N=N+1
+      GO TO 61
+   66 N=N+1
+      IF(N)41,41,51
+   41 N=N+1
+      IF(N-6)31,41,31
+   31 CONTINUE
+   90 CONTINUE
+      GO TO 56
+   61 N=N+10
+      DO 52 J=1,3
+      M=M+1
+      DO 53 K=1,2
+   53 M=M+10
+   52 CONTINUE
+      GO TO 66
+   51 N=N+100
+      IF(N-110)31,41,41
+   56 A=N
+      B=0.226D3
+      GO TO 700
+    8 A=M
+      B=0.126D3
+      GO TO 700
+  700 ITM=ITM+1
+      IF(ITM-6)701,702,702
+  701 DIF=A-B
+      IF(DABS(DIF)-CNT15*DABS(B))703,703,704
+  703 WRITE(6,103)ITM,A,B,DIF
+      GO TO 1000
+  704 WRITE(6,102)ITM,A,B,DIF
+      GO TO 1000
+  702 IF(ITM-8)705,705,1000
+  705 DIF=A-B
+      IF(DABS(DIF)-CNT16*DABS(B))703,703,704
+ 1000 GO TO (2,3,4,5,6,7,8,14),ITM
+   14 WRITE(6,999)
+      STOP
+      END

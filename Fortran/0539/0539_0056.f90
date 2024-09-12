@@ -1,0 +1,50 @@
+call test01()
+call test02()
+print *,'pass'
+end
+subroutine test01()
+ido1=1
+ido2=2
+ido3=3
+!$omp parallel do  default(none)
+do ii=1,1
+!$omp  simd
+do ido1=1,10
+do ido2=1,10
+end do
+end do
+!$omp end simd
+do ido2=1,10
+do ido1=1,10
+end do
+end do
+end do
+!$omp end parallel do
+if (ido1.ne.1) print *,'ng1-1:',ido1
+if (ido2.ne.2) print *,'ng2-1:',ido2
+if (ido3.ne.3) print *,'ng3-1:',ido3
+end
+subroutine test02()
+ido1=1
+ido2=2
+ido3=3
+!$omp parallel do  default(none)
+do ii=1,1
+!$omp  simd
+do ido1=1,10
+do ido2=1,10
+end do
+end do
+!$omp end simd
+!$omp  simd
+do ido2=1,10
+do ido1=1,10
+end do
+end do
+!$omp end simd
+end do
+!$omp end parallel do
+if (ido1.ne.1) print *,'ng1:',ido1
+if (ido2.ne.2) print *,'ng2:',ido2
+if (ido3.ne.3) print *,'ng3:',ido3
+end

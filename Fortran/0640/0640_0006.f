@@ -1,0 +1,54 @@
+      INTEGER*4 IDA,J1,J2,J3,J4
+      REAL*4 R4A(-9:20),R4B(-9:20)
+      INTEGER*4 IDB
+      LOGICAL*4 L4A(-9:20)
+      REAL*4 RSUM
+
+      RFUN1(RA,RB,RC) = RA+RB+RC
+      RFUN2(RA,RB,RC) = RA+RB+RC
+      RFUN3(RA,RB,RC) = RA-RB*RC
+      DATA R4A/30*1.0/,R4B/30*2./,RSUM/0./,IDB/1/
+      DATA J1/1/,J2/2/,J3/3/,J4/4/
+      DATA L4A/5*.TRUE.,5*.FALSE.,5*.TRUE.,5*.FALSE.,5*.TRUE.,5*.FALSE./
+
+      DO 100 I0=1,10
+      IDA=-J3*J2-J3
+      DO 10 I1=-J3*J2-J1,J2*J1*J3+J3*J1,2
+        IDA=IDA+1
+        R4A(IDA)=R4A(IDA+1)*R4B(I1)
+        IF(I1.LT.IDA) THEN
+          R4B(I1)=RFUN1(R4A(IDA),R4B(IDA),R4A(IDA+1))
+     +           +RFUN2(R4A(IDA),R4B(IDA),R4A(IDA+1))
+     +           +RFUN2(R4A(IDA),R4B(IDA),R4A(IDA+1))
+          WRITE(6,*)'R4B(',I1,')=',R4B(I1)
+        ENDIF
+   10 CONTINUE
+
+      IDB=INT(RFUN1(FLOAT(-J1),FLOAT(-J2),FLOAT(-J3)))
+
+      DO 20 I2=-5,J1*J2+J3*J3,J1*J2-J1
+      RSUM=RSUM+RFUN4(R4A(I2),R4A(IDB),R4B(I2))
+      IDB=IDB+INT(RFUN3(FLOAT(J3),FLOAT(J1),FLOAT(J2)))
+      IF(L4A(I2)) THEN
+        WRITE(6,*) 'RSUM=',RSUM,'I2=',I2
+      ENDIF
+      IF(RFUN1(FLOAT(J1),FLOAT(J2),FLOAT(J3)).GT
+     +            .RFUN2(FLOAT(J1),FLOAT(J2),FLOAT(J3))) THEN
+        R4A(I2)=RSUM+RFUN3(R4B(I2),R4B(I2+1),R4B(I2-1))
+      ENDIF
+   20 CONTINUE
+      WRITE(6,*) 'RSUM=',RSUM
+      IF(IDB.GE.8) THEN
+        DO 30 I3=IDB,10
+          R4A(I3)=R4A(I3)+RSUM
+   30 CONTINUE
+      ENDIF
+  100 CONTINUE
+      STOP
+      END
+      FUNCTION RFUN4(RA,RB,RC)
+        RY=(RA+RB)/2.0
+        RY=RY*8.0+RC
+        RFUN4 = RY+RY*RC
+      RETURN
+      END

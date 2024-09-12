@@ -1,0 +1,6 @@
+ in destructor
+ 2 2
+ in destructor
+ 0 10 10
+ 10 10
+exit 0

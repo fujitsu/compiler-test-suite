@@ -1,0 +1,21 @@
+      PROGRAM MAIN
+      COMPLEX*8  CNAN02(0:100,10,10)/10100*(0.0,0.0)/,CDPN02
+      PARAMETER  (CDPN02=(0.1D-3,0.2D2))
+      LOGICAL*4  ZL4001
+      COMPLEX*8  ZC8001
+      INTEGER*4  ZID001,ZID002
+      INTEGER*4  I4Z001
+      DO 200 I1=1,10,1
+        I4Z001 = -5
+        DO 200 I2 = I4Z001,10,1
+          ZL4001 = I2.GE.1
+          IF( ZL4001 ) THEN
+            ZC8001 = CMPLX( CDPN02 )
+            DO 99999 ZID001 = 1,50,1
+              ZID002 = 2 * ( (ZID001-1)*1 + 1 )
+              CNAN02(ZID002,I1,I2) = ZC8001
+99999       CONTINUE
+          ENDIF
+ 200  CONTINUE
+      PRINT*,CNAN02
+      END

@@ -1,0 +1,14 @@
+ F1 Call  1
+ F0 Call  0
+ F0 Call  1000
+ F1 Call  200
+ F0 Call  1000
+ Fa1 Call  300 300
+ F0 Call  900
+ F0 Call  900
+ F1 Call  200
+ F0 Call  1000
+ obj2 =  300 200 1000
+ F1 Call  200
+ F0 Call  1000
+exit 0

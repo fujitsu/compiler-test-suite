@@ -1,0 +1,49 @@
+      INTEGER DIV(20),DIHV(20),DCA,DCB,DCC,DCD,DCE,DCF
+  111 FORMAT(1H1/7X,24H*FORTRAN           ENTER)
+  120 FORMAT(1H0/6X,23H- JUSTICE -    - ITEM -,10X,19H- COMPUTED RESULT
+     +-,19X,17H- COMPARE VALUE -/)
+  121 FORMAT(1H0,7X,4H*OK*,11X,1H(I2,1H),17X,I12,21X,I12)
+  122 FORMAT(1H0,7X,7H*ERROR*,8X,1H(I2,1H),17X,I12,21X,I12)
+  149 FORMAT(1H0///7X,23H*FORTRAN*          EXIT)
+      DCA=2
+      DCB=15
+      DCC=32770
+      DCD=-32700
+      DCE=0
+      DCF=-20
+      DIV(1)=2100000000-1999999990
+      DIHV(1)=100000010
+      DIV(2)=DCC-40000
+      DIHV(2)=-7230
+      DIV(3)=15-DCB
+      DIHV(3)=0
+      DIV(4)=DCC+DCD
+      DIHV(4)=70
+      DIV(5)=-45000+DCA
+      DIHV(5)=-44998
+      DIV(6)=32770+DCD
+      DIHV(6)=70
+      DIV(7)=DCD*DCA
+      DIHV(7)=-65400
+      DIV(8)=DCB*(-2)
+      DIHV(8)=-30
+      DIV(9)=(-150)*0
+      DIHV(9)=0
+      DIV(10)=DCC/2
+      DIHV(10)=16385
+      DIV(11)=DCD/DCC
+      DIHV(11)=0
+      DIV(12)=80000/(-2)
+      DIHV(12)=-40000
+      WRITE(6,111)
+      WRITE(6,120)
+      DO 25 I=1,12
+      J=I
+      IF(DIV(I)-DIHV(I))4,3,4
+    3 WRITE(6,121)J,DIV(I),DIHV(I)
+      GO TO 25
+    4 WRITE(6,122)J,DIV(I),DIHV(I)
+   25 CONTINUE
+      WRITE(6,149)
+      STOP
+      END

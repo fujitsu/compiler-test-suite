@@ -1,0 +1,41 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  REAL :: r1 =0.0
+END TYPE
+
+TYPE,EXTENDS(t1) :: t2
+  REAL :: r2 = 0.0
+END TYPE
+
+END MODULE
+
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+CLASS(t1),DIMENSION(:),POINTER :: ptr
+CLASS(t2),DIMENSION(:),ALLOCATABLE,TARGET :: acc,acc2
+ALLOCATE(acc(10),acc2(10))
+acc%r2 = 10.00
+
+ptr => acc
+
+SELECT TYPE(aa => ptr([2,5,3,8,6,9]))
+  TYPE IS(t2)
+  acc2%r1 = 2.0
+  CLASS IS(t2)
+  PRINT*,102
+END SELECT
+
+IF(acc2(1)%r1 .EQ. 2.0) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+END PROGRAM  
+
+

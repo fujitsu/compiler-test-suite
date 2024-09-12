@@ -1,0 +1,9 @@
+                   **
+  ** positional editing test **
+  ** item(1)ok ok ok **
+  ** item(2)ok ok ok **
+  ** item(3)ok ok ok **
+  ** item(4)ok ok ok **
+  ** item(5)ok ok ok **
+  ** item(6)ok ok ok **
+exit 0

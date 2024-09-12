@@ -1,0 +1,4 @@
+ RMIN= 0.
+ RMIN= 0.
+ RMX= 1.
+exit 0

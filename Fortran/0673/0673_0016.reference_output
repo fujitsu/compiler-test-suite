@@ -1,0 +1,8 @@
+ ***test of endfile backspace
+ ***test1 ==> write-endfile-bsp-read(eod) **ok**
+ ***test2 ==> eod-bsp-bsp-read **ok**
+ ***test3 ==> eod-bsp-bsp-read **ok**
+ ***test5 ==> read-endfile-bsp-read **ok**
+ ***test5 ==> read-endfile-bsp-read **ok**
+ ***ok***   test end  ----
+exit 0

@@ -1,0 +1,4 @@
+1     ====== FORTRAN ====== ... = TEST =
+                     = TEST =     OK
+                     END RUN UNIT
+exit 0

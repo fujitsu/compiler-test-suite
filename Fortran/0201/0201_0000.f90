@@ -27,5 +27,5 @@ if (s1()/=2) print *,102
 end
 call z1
 call z2
-print *,'sngg241e : pass'
+print *,'pass'
 end

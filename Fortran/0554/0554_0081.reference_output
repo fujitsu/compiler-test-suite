@@ -1,0 +1,13 @@
+ T -- T
+ string->logical OK
+ 4 -- 4
+ KIND OK
+ T -- T
+ string->logical OK
+ 4 -- 4
+ KIND OK
+ T -- T
+ string->logical OK
+ 4 -- 4
+ KIND OK
+exit 0

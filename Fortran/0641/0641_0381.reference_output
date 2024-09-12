@@ -1,0 +1,5 @@
+ *** TEST NO. 1 **
+ 10. T
+ *** TEST NO. 2 **
+ 12. 13. T F
+exit 0

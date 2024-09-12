@@ -1,0 +1,21 @@
+ h  conversion      test job  +                                                x
+fortran test program          hollerith ' '                                    x
+ h  conversion           a16                                                   x
+test job                  a8                                                   x
+ +                        a1                                                   x
+fortran test program     a20                                                   x
+hollerith ' '            a13                                                   x
+          format              statement 13        +*             KKKKKaki      x
+devaid                                                                         x
+format                    a8                                                   x
+statement 13             a12                                                   x
+ &$                      2a2                                                   x
+KKKKKaki                  a5                                                   x
+devaid                    a7                                                   x
+     FFFFFFFFF - 15/25/35/45/ .......                                          x
+                                                  convert    test              x
+FFFFFFFFF - 15/25/35     a16                                                   x
+5/35/45 .......          a16                                                   x
+convert                   a8                                                   x
+ test                     a4                                                   x
+                                                                               x

@@ -1,0 +1,5 @@
+ ALLOCATION success to src
+ ALLOCATION success to ptr
+ HELLO                                             
+ HOW are you                                       
+exit 0

@@ -2,7 +2,7 @@ c
        program   main
        real      x,s,func
        real      s2,s4,sum
-       real      rst,pai
+       real      rst,Pi
        integer   i
        data rst/3.14/
 c
@@ -11,8 +11,8 @@ c
        do 100 i=1,9,1
              s = s+func(i/10.0)
   100  continue
-       pai = 0.4*s
-       write(6,*) pai
+       Pi = 0.4*s
+       write(6,*) Pi
        if(0.4*s-rst .lt. 1.0e-2) then
            write(6,*) ' test===> ok '
        else

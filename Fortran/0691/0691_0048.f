@@ -1,0 +1,113 @@
+      INTEGER O,P,Q,R,S
+      INTEGER DS,ADI(6),BDI(6),DX(8,7,6),
+     1DA(2,2,2,2,2,2,2)
+      DOUBLE PRECISION RL,IL,ARD,AID,BRD,BID,CONS14,CONS15
+      COMPLEX*16   DC(2,2,2,3,2,2,2),DDX(9,9),A(7),B(7)
+      CONS14=1.0D-14
+      CONS15=1.0D-15
+      I=1
+      J=2
+      K=3
+      L=4
+      M=5+1
+      O=1
+      P=2
+      Q=3
+      R=4
+      S=5+1
+      DA(1,1,1,1,1,1,1)=100
+      DA(1,1,1,1,1,1,2)=2
+      DA(2,1,2,1,2,1,2)=59645
+      DA(2,2,1,2,2,1,1)=88888
+      DX(2,3,1)=4
+      DX(1,1,1)=12
+      DX(8,7,6)=98765
+      DC(1,1,1,1,1,1,1)=(98.7D+0,100.0D+0)
+      DC(1,1,1,1,1,2,2)=(10.0D+50,1.0D+50)
+      DC(1,1,1,2,2,2,2)=(21.7D+0,3.6D+0)
+      DC(2,2,2,2,2,2,2)=(4.0D+0,4.0D+0)
+      DDX(1,1)=(0.0D+0,0.0D+0)
+      DDX(2,1)=(2.0D+0,1.0D+0)
+      DDX(5,9)=(1.0D+30,1.0D+40)
+      DDX(9,3)=(5.673D+30,82.5D+40)
+  100 FORMAT(1H1 / 6X,24H*FORTRAN*          ENTER)
+  101 FORMAT(1H0 / 5X,11H- JUSTICE -,4X,8H- ITEM -,10X,19H- COMPUTED RES
+     1ULT -,17X,17H- COMPARE VALUE -)
+  102 FORMAT(1H0,7X,4H*OK*,11X,1H(,I2,1H),17X,I12,22X,I12)
+  103 FORMAT(1H0,7X,7H*ERROR*,8X,1H(,I2,1H),17X,I12,22X,I12)
+  104 FORMAT(1H1/ 5X,20H- JUSTICE - - ITEM -,21X,19H- COMPUTED RESULT -
+     1,36X,17H- COMPARE VALUE - // 39X,9HREAL PART,17X,9HIMAG PART,20X,9
+     2HREAL PART,17X,9HIMAG PART)
+  105 FORMAT(1H0,3X,17H*OK*    *OK*    ()
+  106 FORMAT(1H0,3X,17H*OK*    *ERROR* ()
+  107 FORMAT(1H0,3X,17H*ERROR* *OK*    ()
+  108 FORMAT(1H0,3X,17H*ERROR* *ERROR* ()
+  109 FORMAT(1H+,20X,I2,1H),2X,2(D28.17,D25.17) // 65X,
+     114H- DIFFERENCE -,D28.17,D25.17)
+  999 FORMAT(1H0 // 6X,23H*FORTRAN*          EXIT)
+      ADI(1)=DA(1,1,1,1,1,1,1)+DA(2,1,2,1,2,1,2)
+      BDI(1)=59745
+      ADI(2)=DA(O+1,2*R-6,1,P,J,1*I,I)-DA(2,2,1,2,2,1,1)
+      BDI(2)=0
+      ADI(3)=DA(1,1*R-3,1,1,R-3,1,J)-100
+      BDI(3)=-98
+      ADI(4)=DX(2,3,1)+DX(2*Q+2,7,6)
+      BDI(4)=98769
+      ADI(5)=12-DX(1,1,1)
+      BDI(5)=0
+      ADI(6)=DX(2,3,1)*(-DX(1,1,1))
+      BDI(6)=-48
+      WRITE(6,100)
+      WRITE(6,101)
+      DO 1 I=1,6
+      DS=ADI(I)-BDI(I)
+      IF(DS.NE.0)GO TO 10
+      WRITE(6,102)I,ADI(I),BDI(I)
+      GO TO 1
+   10 WRITE(6,103)I,ADI(I),BDI(I)
+    1 CONTINUE
+C
+      A(1)=DC(1,1,1,1,1,1,1)+DC(1,1,J-1,1*P,2,J,2)
+      B(1)=(120.4D+0,103.6D+0)
+      A(2)=DC(1,O,1,L-3,1*P-1,Q-1,2)+(-(10.0D+50,1.0D+50))
+      B(2)=(0.0D+0,0.0D+0)
+      A(3)=DC(2,2,2,2,2,2,2)-DC(1,1,1,1,1,1,1)
+      B(3)=(-94.7D+0,-96.0D+0)
+      A(4)=DDX(S-1,4*Q-3)+DDX(8*O+1,P+1)
+      B(4)=(6.673D+30,83.5D+40)
+      A(5)=DDX(2,1)*DDX(P-1,1)
+      B(5)=(0.0D+0,0.0D+0)
+      A(6)=DDX(1*R-2,O)/(2.0D+0,1.0D+0)
+      B(6)=(1.0D+0,0.0D+0)
+      A(7)=DDX(1,1)/(9.852D+60,1.024D+15)
+      B(7)=(0.0D+0,0.0D+0)
+      WRITE(6,104)
+      DO 2 I=1,7
+      KL = I+6
+      RL=DREAL(A(I))-DREAL(B(I))
+      IL=DIMAG(A(I))-DIMAG(B(I))
+      ARD=DREAL(A(I))
+      AID=DIMAG(A(I))
+      BRD=DREAL(B(I))
+      BID=DIMAG(B(I))
+      IF(DREAL(B(I)))12,11,12
+   11 IF(DABS(RL)-CONS15)13,14,14
+   12 IF(DABS(RL)-CONS14*DABS(DREAL(B(I))))13,14,14
+   13 IF(DIMAG(B(I)))16,15,16
+   14 IF(DIMAG(B(I)))18,17,18
+   15 IF(DABS(IL)-CONS15)700,701,701
+   16 IF(DABS(IL)-CONS14*DABS(DIMAG(B(I))))700,701,701
+   17 IF(DABS(IL)-CONS15)702,703,703
+   18 IF(DABS(IL)-CONS14*DABS(DIMAG(B(I))))702,703,703
+  700 WRITE(6,105)
+      GO TO 20
+  701 WRITE(6,106)
+      GO TO 20
+  702 WRITE(6,107)
+      GO TO 20
+  703 WRITE(6,108)
+   20 WRITE(6,109)KL,ARD,AID,BRD,BID,RL,IL
+    2 CONTINUE
+      WRITE(6,999)
+      STOP
+      END

@@ -1,0 +1,16 @@
+ A         A         A         A         A         A         A         A       
+   A         A         
+ AAAAAAAAAA
+ AB C  D   E    F     G      H       I        J         
+ A         B         C         D         E         F         G         H       
+   I         J         
+ AA A  A   A    A     A      A       A        A         
+ AB C  D   E    F     G      H       I        J         
+ A         A         A         A         A         A         A         A       
+   A         A         
+ A         B         C         D         E         F         G         H       
+   I         J         
+ AA A  A   A    A     A      A       A        A         
+ AB C  D   E    F     G      H       I        J         
+ *** PASS ***
+exit 0

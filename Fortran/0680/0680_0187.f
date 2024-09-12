@@ -1,0 +1,16 @@
+      PROGRAM MAIN
+      INTEGER IA(100),IB(100),IC(100),ID(100)
+      DATA IB/100*1/,IC/100*Z'7FFFFFFF'/
+      DO 10 I=1,100
+        IA(I) = ISHFT(IB(I),MIN(I,5))
+        ID(I) = ISHFT(IC(I),MAX(-I,-5))
+   10 CONTINUE
+      WRITE(6,110) IA,ID
+  110 FORMAT(1H ,10(I10,1X))
+      DO 20 I=1,100
+        IA(I) = ISHFT(10000,MIN(I,5))
+        ID(I) = ISHFT(10000,MAX(-I,-5))
+   20 CONTINUE
+      WRITE(6,120) IA,ID
+  120 FORMAT(1H ,10(I10,1X))
+      END

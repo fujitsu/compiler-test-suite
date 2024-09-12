@@ -1,0 +1,34 @@
+MODULE m
+TYPE ty
+  INTEGER :: num2
+END TYPE
+
+CONTAINS
+SUBROUTINE m_asg(d1,d2)
+  INTEGER,INTENT(OUT) :: d1
+  TYPE(ty),INTENT(IN) :: d2
+  d1 = d2%num2
+END SUBROUTINE
+END MODULE 
+
+PROGRAM main
+use m
+IMPLICIT NONE
+
+INTEGER :: res
+TYPE(ty) :: obj1
+
+INTERFACE ASSIGNMENT ( = )
+  MODULE PROCEDURE m_asg 
+END INTERFACE
+
+obj1%num2 = 4
+res = obj1
+
+IF(res .EQ. 4) THEN
+  PRINT*,"PASS"
+ELSE
+  PRINT*,"ERROR"
+END IF
+
+END PROGRAM

@@ -1,0 +1,5 @@
+ F -- F
+ string->logical OK
+ KIND:: 4 --KIND:: 4
+ KIND OK
+exit 0

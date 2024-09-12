@@ -1,0 +1,5 @@
+ correct destructor called
+ 30
+ correct destructor called
+ 10
+exit 0

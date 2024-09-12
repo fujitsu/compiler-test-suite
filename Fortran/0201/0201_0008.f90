@@ -22,7 +22,7 @@
                       if(aa .ne. 200)print*,"101",aa
 
                       call zzz
-                      print*,"sngg536e : pass"
+                      print*,"pass"
 
                     contains
                       subroutine zzz

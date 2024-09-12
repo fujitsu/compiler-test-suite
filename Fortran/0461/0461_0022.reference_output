@@ -1,0 +1,11 @@
+  ty1_scalar_destructor CALL  101
+  ty0_scalar_destructor CALL  201
+  ty1_scalar_destructor CALL  102
+  ty0_scalar_destructor CALL  202
+  ty1_scalar_destructor CALL  103
+  ty0_scalar_destructor CALL  203
+  ty1_array_destructor CALL  101 102 103
+  ty0_scalar_destructor CALL  201
+  ty0_scalar_destructor CALL  202
+  ty0_scalar_destructor CALL  203
+exit 0

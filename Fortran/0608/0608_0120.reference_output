@@ -1,0 +1,8 @@
+ 1  2nd-destructor call PASS  100 100
+ 2  2nd-destructor call PASS  200 200
+ 3  1st-destructor call PASS  300 300
+ 4  2nd-destructor call PASS  400 400
+ 5  2nd-destructor call PASS  500 500
+ 6  2nd-destructor call PASS  600 600
+ 7  2nd-destructor call PASS  700 700
+exit 0

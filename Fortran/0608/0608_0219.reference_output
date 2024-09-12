@@ -1,0 +1,11 @@
+ Before FORALL
+ 20
+ 20
+ 100
+ 200
+ After FORALL
+ 100
+ 20
+ 100
+ 200
+exit 0

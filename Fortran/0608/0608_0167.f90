@@ -1,0 +1,157 @@
+MODULE mod1
+INTEGER :: COUNTER(6,2)=0
+  TYPE ty0
+   INTEGER :: I0=0
+   CONTAINS
+   FINAL :: f0,fa0
+  END TYPE
+
+  TYPE, extends(ty0)::ty1
+   INTEGER :: I1=1
+   CONTAINS
+   FINAL :: f1,fa1
+  END TYPE
+
+  TYPE, extends(ty1) :: ty2
+   INTEGER :: I2=2
+   CONTAINS
+   FINAL :: f2,fa2
+  END TYPE
+
+  TYPE ty3
+   INTEGER :: I3=3
+   TYPE(ty2) :: objty2(1)
+   CONTAINS
+   FINAL :: f3,fa3
+  END TYPE
+
+  TYPE, extends(ty3) :: ty4
+   INTEGER :: I4=4
+   CONTAINS
+   FINAL :: f4,fa4
+  END TYPE
+
+  TYPE ty5
+   INTEGER :: I5=5
+   TYPE(ty4) :: objty4
+   CONTAINS
+   FINAL :: f5,fa5
+  END TYPE
+
+  
+
+CONTAINS
+ 
+ SUBROUTINE f0( dmy )
+ TYPE(ty0), INTENT(INOUT):: dmy
+ COUNTER(1,1)=COUNTER(1,1) + 1
+ END SUBROUTINE f0
+
+ SUBROUTINE fa0( dmy )
+ TYPE(ty0), INTENT(INOUT):: dmy(:)
+ COUNTER(1,2)= COUNTER(1,2) + 1
+ END SUBROUTINE fa0
+
+ SUBROUTINE f1( dmy )
+ TYPE(ty1), INTENT(INOUT):: dmy
+  COUNTER(2,1)= COUNTER(2,1) + 1
+ END SUBROUTINE f1
+
+ SUBROUTINE fa1( dmy )
+ TYPE(ty1), INTENT(INOUT):: dmy(:)
+COUNTER(2,2)= COUNTER(2,2) + 1
+ END SUBROUTINE fa1
+ 
+SUBROUTINE f2( dmy )
+ TYPE(ty2), INTENT(INOUT):: dmy
+ COUNTER(3,1)= COUNTER(3,1) + 1
+ END SUBROUTINE f2
+
+ SUBROUTINE fa2( dmy )
+ TYPE(ty2), INTENT(INOUT):: dmy(:)
+ COUNTER(3,2)= COUNTER(3,2) + 1
+ END SUBROUTINE fa2
+
+SUBROUTINE f3( dmy )
+ TYPE(ty3), INTENT(INOUT):: dmy
+  COUNTER(4,1)= COUNTER(4,1) + 1
+ END SUBROUTINE f3
+
+ SUBROUTINE fa3( dmy )
+ TYPE(ty3), INTENT(INOUT):: dmy(:)
+ COUNTER(4,2)= COUNTER(4,2) + 1
+ END SUBROUTINE fa3
+
+SUBROUTINE f4( dmy )
+ TYPE(ty4), INTENT(INOUT):: dmy
+ COUNTER(5,1)= COUNTER(5,1) + 1
+ END SUBROUTINE f4
+
+ SUBROUTINE fa4( dmy )
+ TYPE(ty4), INTENT(INOUT):: dmy(:)
+ COUNTER(5,2)= COUNTER(5,2) + 1
+ END SUBROUTINE fa4
+
+SUBROUTINE f5( dmy )
+ TYPE(ty5), INTENT(INOUT):: dmy
+  COUNTER(6,1)= COUNTER(6,1) + 1
+ END SUBROUTINE f5
+
+ SUBROUTINE fa5( dmy )
+ TYPE(ty5), INTENT(INOUT):: dmy(:)
+ COUNTER(6,2)= COUNTER(6,2) + 1
+ END SUBROUTINE fa5
+END MODULE mod1
+
+
+PROGRAM MAIN
+  USE mod1
+
+PRINT *,FUN(FUN1(),FUN2(FUN2_1(),FUN2_2()),FUN3())
+
+do i=1,6
+ do j=1,2
+  if(COUNTER(i,j) /= 0) then
+   print *,"Destructor Call for (",i,",",j,") : ",COUNTER(i,j)
+  endif
+ end do
+end do
+
+
+contains
+FUNCTION FUN(o1,o3,o5) RESULT(obj1)
+  TYPE(ty1) :: o1
+  TYPE(ty3) :: o3
+  TYPE(ty5) :: o5
+  TYPE(ty3),POINTER :: obj1
+
+  ALLOCATE(obj1)
+END FUNCTION
+
+FUNCTION FUN1() RESULT(obj1)
+  TYPE(ty1),POINTER :: obj1
+  ALLOCATE(obj1)
+END FUNCTION
+
+FUNCTION FUN2(o2,o4) RESULT(obj1)
+  TYPE(ty2) :: o2
+  TYPE(ty4) :: o4
+  TYPE(ty3):: obj1
+END FUNCTION
+
+FUNCTION FUN2_1() RESULT(obj1)
+  TYPE(ty2) :: obj1
+  TYPE(ty2),DIMENSION(1) :: o2
+  obj1=o2(1)
+END FUNCTION
+
+FUNCTION FUN2_2() RESULT(obj1)
+  TYPE(ty4) :: obj1
+END FUNCTION
+
+FUNCTION FUN3() RESULT(obj1)
+  TYPE(ty5),ALLOCATABLE :: obj1
+  ALLOCATE(obj1)
+END FUNCTION
+
+END PROGRAM MAIN

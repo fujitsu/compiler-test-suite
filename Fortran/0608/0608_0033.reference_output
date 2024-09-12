@@ -1,0 +1,7 @@
+ destructor called::des4
+ 300
+ destructor called::des3
+ 200
+ correct destructor called
+ 100
+exit 0

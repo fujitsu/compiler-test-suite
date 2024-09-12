@@ -1,0 +1,181 @@
+      INTEGER     A, B(5),C(5,5),FUNCA,FUNCD,FUNCG
+      REAL        D, E(5),F(5,5)
+      DOUBLE PRECISION   X,Y(5),Z(5,5) ,DDIFF,DA, DS,DD ,DANS,FUNCE,
+     -   FUNCH,FUNCI
+      DIFF = 1.0 E -5
+      DDIFF= 1.0 D-14
+
+      WRITE (6,10)
+   10 FORMAT (1H1,6X,9H*FORTRAN*,5X,5X,5HENTER/ )
+      WRITE (6,11)
+   11 FORMAT (1H0,4X,13H - JUSTICE - ,2X,10H - ITEM - ,8X,21H - COMPUTED
+     - RESULT - ,15X,19H - COMPARE VALUE - ,13X,16H - DIFFERENCE -  / )
+C
+      ITEM = 1
+      DO 12 I=1,5
+      DO 12 J=1,5
+   12 C(I,J) = I*J
+      DO 13 I = 1,5
+   13 B(I) = I
+      A=30
+      IA= FUNCA(B,C,A)
+      IANS = 8
+      IF (IA -IANS) 14,15,14
+   14 WRITE (6,100) ITEM ,IA,IANS
+      GO TO 16
+   15 WRITE (6,110) ITEM,IA,IANS
+   16 ITEM =2
+      AA = FUNCB (B,C,A)
+      AANS = 8.0
+      ADIFF= AA -AANS
+      IF (ABS (AANS -AA) - DIFF*ABS(AANS)) 18,18,17
+   17 WRITE (6,200) ITEM ,AA, AANS ,ADIFF
+      GO TO 19
+   18 WRITE (6,210) ITEM,AA,AANS,ADIFF
+   19 ITEM = 3
+      DO 20 I=1,5
+      DO 20 J=1,5
+   20 F(I,J) = I*J
+      DO 21 I=1,5
+   21 E(I) = I
+      D = 30
+      AA = 0.0
+      AA = FUNCC ( E,F,D )
+      AANS = 8.0
+      ADIFF = AA -AANS
+      IF (ABS(AANS-AA) - DIFF*ABS(AANS)) 23,23,22
+   22 WRITE (6,200) ITEM ,AA,  AANS,ADIFF
+      GO TO 24
+   23 WRITE (6,210) ITEM,AA,AANS,ADIFF
+   24 ITEM = 4
+      IA=FUNCD (E,F,D)
+      IANS =8
+      IF ( IA -IANS ) 25,26,25
+   25 WRITE (6,100) ITEM,IA,IANS
+      GO TO 27
+   26 WRITE ( 6,110) ITEM,IA,IANS
+   27 ITEM = 5
+      DO 28 I=1,5
+      DO 28 J=1,5
+   28 Z(I,J) = I*J
+      DO 29 I=1,5
+   29 Y(I) = I
+      X = 30
+      DA = FUNCE ( Y,Z,X)
+      DANS = 8.0 D 0
+      DS  = DA - DANS
+      IF ( DABS( DANS-DA) - DDIFF* DABS(DANS)) 31,31,30
+   30 WRITE (6,300) ITEM, DA, DANS , DS
+      GO TO  32
+   31 WRITE (6,310) ITEM, DA, DANS,  DS
+   32 ITEM = 6
+      AA = FUNCF (Y,Z,X)
+      AANS = 8.0
+      ADIFF = AA - AANS
+      IF (ABS (AANS - AA) - DIFF*ABS(AANS)) 34,34,33
+   33 WRITE ( 6,200) ITEM,AA, AANS ,ADIFF
+      GO TO 35
+   34 WRITE (6,210)  ITEM,AA,AANS, ADIFF
+   35 ITEM = 7
+      IA = FUNCG (Y,Z,X)
+      IANS=8
+      IF (IA -IANS ) 36,37,36
+   36 WRITE (6,100) ITEM, IA,IANS
+      GO TO 38
+   37 WRITE (6,110) ITEM ,IA,IANS
+   38 ITEM = 8
+      DA = FUNCH (B,C, A)
+      DANS = 8.0 D0
+      DS = DA -DANS
+      IF (DABS( DANS -DA) - DDIFF* DABS(DANS)) 40,40,39
+   39 WRITE (6,300) ITEM, DA, DANS,DS
+      GO TO 41
+   40 WRITE (6,310) ITEM, DA, DANS,DS
+C
+   41 ITEM = 9
+      DA  = FUNCI (E,F,D)
+      DANS = 8.0 D0
+      DS = DA -DANS
+      DD = 1.0 D -5
+      IF  (DABS(DANS -DA) - DD*DABS(DANS)) 43,43,42
+   42 WRITE (6,300) ITEM,DA,DANS,DS
+      GO TO 44
+   43 WRITE (6,310) ITEM,DA,DANS,DS
+C
+   44 WRITE(6,500)
+      STOP
+  110 FORMAT (1H0,7X,4H*OK*,11X,1H(,I2,1H),20X,I14,21X,I14,11X   )
+  100 FORMAT (1H0,7X,7H*ERROR*,8X,1H(,I2,1H),20X,I14,21X,I14,11X )
+  200 FORMAT (1H0,7X,7H*ERROR*,8X,1H(,I2,1H),20X,E14.7,21X,E14.7,21X,
+     -        E14.7 )
+  210 FORMAT (1H0,7X,7H*OK*   ,8X,1H(,I2,1H),20X,E14.7,21X,E14.7,21X,
+     -        E14.7 )
+  300 FORMAT (1H0,7X,7H*ERROR*,8X,1H(,I2,1H),10X,D24.17,11X,D24.17,11X,
+     -        D24.17)
+  310 FORMAT (1H0,7X,7H*OK*   ,8X,1H(,I2,1H),10X,D24.17,11X,D24.17,11X,
+     -        D24.17)
+  500 FORMAT (1H0,6X,9H*FORTRAN*,5X,5X,5HEXIT / )
+      END
+      INTEGER FUNCTION  FUNCA ( B, C, A )
+      INTEGER  A,B(5),C(5,5)
+      FUNCA =0
+      DO  10 I=1,5
+      FUNCA=FUNCA + B(I)
+      DO  10 J=1,5
+      FUNCA = FUNCA + C(I,J)
+   10 CONTINUE
+      FUNCA = FUNCA / A
+      RETURN
+      END
+      REAL FUNCTION FUNCB (B,C,A)
+      INTEGER A,B(5),C(5,5),FUNCA
+      FUNCB = FUNCA (B,C,A)
+      RETURN
+      END
+      REAL FUNCTION  FUNCC ( E,F,D )
+      REAL  D, E(5), F(5,5)
+      FUNCC=0.0
+      DO 10 I=1,5
+      FUNCC = FUNCC + E(I)
+      DO 10 J=1,5
+      FUNCC = FUNCC + F(I,J)
+   10 CONTINUE
+      FUNCC = FUNCC / D
+      RETURN
+      END
+      INTEGER FUNCTION FUNCD (E,F,D)
+      REAL D ,E(5),F(5,5)
+      FUNCD = FUNCC ( E,F,D)
+      RETURN
+      END
+      DOUBLE PRECISION FUNCTION  FUNCE ( Y,Z,X)
+      DOUBLE PRECISION  X,Y(5),Z(5,5)
+      FUNCE = 0.0 D 0
+      DO 10 I=1,5
+      FUNCE = FUNCE + Y(I)
+      DO 10 J=1,5
+      FUNCE = FUNCE + Z(I,J)
+   10 CONTINUE
+      FUNCE = FUNCE / X
+      RETURN
+      END
+      REAL FUNCTION FUNCF (Y,Z,X)
+      DOUBLE PRECISION  X,Y(5),Z(5,5),FUNCE
+      FUNCF = FUNCE ( Y,Z,X)
+      RETURN
+      END
+      INTEGER FUNCTION FUNCG (Y,Z,X)
+      DOUBLE PRECISION X, Y(5),Z(5,5),FUNCE
+      FUNCG = FUNCE (Y,Z,X)
+      RETURN
+      END
+      DOUBLE PRECISION  FUNCTION FUNCH(B,C,A)
+      INTEGER  A,B(5),C(5,5),FUNCA
+      FUNCH=FUNCA (B,C,A)
+      RETURN
+      END
+      DOUBLE PRECISION  FUNCTION FUNCI(E,F,D)
+      REAL  D, E(5),F(5,5)
+      FUNCI = FUNCC (E,F,D)
+      RETURN
+      END

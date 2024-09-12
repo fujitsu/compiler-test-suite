@@ -1,0 +1,13 @@
+  real(8) aaa(100,1000),bbb(1000)
+  logical l
+  aaa=1.0d0
+  bbb=1.0d0
+  do i1=1,100
+     do i2=1,100
+        l = count((/bbb==aaa(i2,:)/))
+        if(l) aaa(i2,i1) = aaa(i2,i1) + 1.0d0
+     enddo
+  enddo
+  if(aaa(100,1000)/=1.0_8) print *,'err'
+  print *,'pass'
+end program

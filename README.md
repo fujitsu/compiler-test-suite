@@ -40,7 +40,7 @@ We are sorry but we don't accept pull requests. As explained above, we plan to j
 Current Status
 --------------
 
-As of the 2024-06 release, the Fujitsu Compiler Test Suite lacks following things. They will be available in the upcoming releases.
+As of the 2024-09 release, the Fujitsu Compiler Test Suite lacks following things. They will be available in the upcoming releases.
 
 - Test programs for C++
 - More test programs for C/Fortran

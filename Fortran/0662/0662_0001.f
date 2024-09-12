@@ -1,0 +1,175 @@
+      IMPLICIT LOGICAL(L),COMPLEX(C),COMPLEX*16(D),COMPLEX*32(E)
+      IMPLICIT CHARACTER*2(H),CHARACTER*4(N)
+      DIMENSION AA1(2),AA2(2),IA1(2),IA2(2),LA(85),LA1(2)
+      A1=1.
+      A2=2.
+      AA1=1.
+      AA2=2.
+      I1=1
+      I2=2
+      IA1=1
+      IA2=2
+      C1=(1.,1.)
+      D1=(1.D0,1.D0)
+      E1=(1.Q0,1.Q0)
+      C2=(1.,2.)
+      D2=(1.D0,2.D0)
+      E2=(1.Q0,2.Q0)
+      LA=.FALSE.
+      H1='12'
+      H2='34'
+      N1='１２'     
+      N2='３４'    
+      J=1
+      IF (I1.EQ.A1.AND.A1.EQ.I1)LA(1)=.TRUE.
+      LA(2:3)=IA1.EQ.AA1
+      LA(4:5)=AA1.EQ.IA1
+      LA(6:7)=IA1.EQ.A1
+      LA(8:9)=A1.EQ.IA1
+      IF (C1.EQ.C1) LA(10)=.TRUE.
+      IF (D1.EQ.D1) LA(11)=.TRUE.
+      IF (E1.EQ.E1) LA(12)=.TRUE.
+      IF (C1.NE.C2) LA(13)=.TRUE.
+      IF (D1.NE.D2) LA(14)=.TRUE.
+      IF (E1.NE.E2) LA(15)=.TRUE.
+      IF (I1.LE.1.AND.I1.LE.1)LA(16)=.TRUE.
+      IF (I1.GE.1.AND.I1.GE.1)LA(17)=.TRUE.
+      IF (I1.LT.2.AND.I1.LT.2)LA(18)=.TRUE.
+      IF (I1.GT.0.AND.I1.GT.0)LA(19)=.TRUE.
+      IF (I1.EQ.1.AND.I1.EQ.1)LA(20)=.TRUE.
+      IF (I1.NE.0.AND.I1.NE.0)LA(21)=.TRUE.
+      IF (C1.EQ.C1.AND.C2.EQ.C2)LA(22)=.TRUE.
+      LA(23)=.TRUE.
+      IF (C1.NE.C1.AND.C2.NE.C2)LA(23)=.FALSE.
+      IF (I1.LE.0.OR .I1.LE.1)LA(24)=.TRUE.
+      IF (I1.GE.2.OR .I1.GE.1)LA(25)=.TRUE.
+      IF (I1.LT.1.OR .I1.LT.2)LA(26)=.TRUE.
+      IF (I1.GT.1.OR .I1.GT.0)LA(27)=.TRUE.
+      IF (I1.EQ.2.OR .I1.EQ.1)LA(28)=.TRUE.
+      IF (I1.NE.1.OR .I1.NE.0)LA(29)=.TRUE.
+      IF (C1.EQ.C2.OR .C2.EQ.C2)LA(30)=.TRUE.
+      IF (C1.NE.C1.OR .C1.NE.C2)LA(31)=.TRUE.
+      IG=0
+   11 IF (I1.LE.1.AND.I1.LE.1)       GOTO 1
+   12 IF (I1.GE.1.AND.I1.GE.1)       GOTO 1
+   13 IF (I1.LT.2.AND.I1.LT.2)       GOTO 1
+   14 IF (I1.GT.0.AND.I1.GT.0)       GOTO 1
+   15 IF (I1.EQ.1.AND.I1.EQ.1)       GOTO 1
+   16 IF (I1.NE.0.AND.I1.NE.0)       GOTO 1
+   17 IF (C1.EQ.C1.AND.C2.EQ.C2)     GOTO 1
+   18 IF (C1.NE.C1.AND.C2.NE.C2)     GOTO 1
+   19 IF (I1.LE.0.OR .I1.LE.1)       GOTO 1
+   20 IF (I1.GE.2.OR .I1.GE.1)       GOTO 1
+   21 IF (I1.LT.1.OR .I1.LT.2)       GOTO 1
+   22 IF (I1.GT.1.OR .I1.GT.0)       GOTO 1
+   23 IF (I1.EQ.2.OR .I1.EQ.1)       GOTO 1
+   24 IF (I1.NE.1.OR .I1.NE.0)       GOTO 1
+   25 IF (C1.EQ.C2.OR .C2.EQ.C2)     GOTO 1
+   26 IF (C1.NE.C1.OR .C1.NE.C2)     GOTO 1
+   27 GOTO 2
+    1 LA(IG+32)=.TRUE.
+      IG=IG+1
+      GOTO
+     1 (11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27),IG
+    2 IF (IG.EQ.17)     LA(49)= .TRUE.
+      IF (H1.EQ.H1) LA(50)=.TRUE.
+      IF (H1.NE.H2) LA(51)=.TRUE.
+      IF (H1.LT.H2) LA(52)=.TRUE.
+      IF (H1.LE.H2) LA(53)=.TRUE.
+      IF (H2.GT.H1) LA(54)=.TRUE.
+      IF (H2.GE.H1) LA(55)=.TRUE.
+      IF (N1.EQ.N1) LA(56)=.TRUE.
+      IF (N1.NE.N2) LA(57)=.TRUE.
+      IF (N1.LT.N2) LA(58)=.TRUE.
+      IF (N1.LE.N2) LA(59)=.TRUE.
+      IF (N2.GT.N1) LA(60)=.TRUE.
+      IF (N2.GE.N1) LA(61)=.TRUE.
+      IF (I1.NE.1.OR .I1.NE.1)  J=J+1
+      IF (I1.NE.1.AND.I1.NE.1)  J=J+1
+      IF (I1.GT.1.OR .I1.GT.1)  J=J+1
+      IF (I1.GT.1.AND.I1.GT.1)  J=J+1
+      IF (I1.GE.1.OR .I1.GE.1)  J=J+1
+      IF (I1.GE.1.AND.I1.GE.1)  J=J+1
+      IF (I1.LT.1.OR .I1.LT.1)  J=J+1
+      IF (I1.LT.1.AND.I1.LT.1)  J=J+1
+      IF (I1.LE.1.OR .I1.LE.1)  J=J+1
+      IF (I1.LE.1.AND.I1.LE.1)  J=J+1
+      IG=62
+      IF (I1.EQ.1.OR .I1.EQ.1.OR .I1.EQ.1) GOTO 41
+211   IF (I1.EQ.1.AND.I1.EQ.1.AND.I1.EQ.1) GOTO 41
+212   IF (I1.NE.1.OR .I1.NE.1.OR .I1.NE.1) GOTO 41
+213   IF (I1.NE.1.AND.I1.NE.1.AND.I1.NE.1) GOTO 41
+214   IF (I1.GT.1.OR .I1.GT.1.OR .I1.GT.1) GOTO 41
+215   IF (I1.GT.1.AND.I1.GT.1.AND.I1.GT.1) GOTO 41
+216   IF (I1.GE.1.OR .I1.GE.1.OR .I1.GE.1) GOTO 41
+217   IF (I1.GE.1.AND.I1.GE.1.AND.I1.GE.1) GOTO 41
+218   IF (I1.LT.1.OR .I1.LT.1.OR .I1.LT.1) GOTO 41
+219   IF (I1.LT.1.AND.I1.LT.1.AND.I1.LT.1) GOTO 41
+220   IF (I1.LE.1.OR .I1.LE.1.OR .I1.LE.1) GOTO 41
+221   IF (I1.LE.1.AND.I1.LE.1.AND.I1.LE.1) GOTO 41
+222   GOTO 322
+   41 LA(IG)=.TRUE.
+      IG=IG+1
+      GOTO
+     1 (211,212,213,214,215,216,217,
+     2  218,219,220,221,222),IG-62
+322   IF (I1.EQ.1.OR .I1.EQ.1.OR .I1.EQ.1) J=J+1
+      IF (I1.EQ.1.AND.I1.EQ.1.AND.I1.EQ.1) J=J+1
+      IF (I1.NE.1.OR .I1.NE.1.OR .I1.NE.1) J=J+1
+      IF (I1.NE.1.AND.I1.NE.1.AND.I1.NE.1) J=J+1
+      IF (I1.GT.1.OR .I1.GT.1.OR .I1.NE.1) J=J+1
+      IF (I1.GT.1.AND.I1.GT.1.AND.I1.GT.1) J=J+1
+      IF (I1.GE.1.OR .I1.GE.1.OR .I1.GE.1) J=J+1
+      IF (I1.GE.1.AND.I1.GE.1.AND.I1.GE.1) J=J+1
+      IF (I1.LT.1.OR .I1.LT.1.OR .I1.LT.1) J=J+1
+      IF (I1.LT.1.AND.I1.LT.1.AND.I1.LT.1) J=J+1
+      IF (I1.LE.1.OR .I1.LE.1.OR .I1.LE.1) J=J+1
+      IF (I1.LE.1.AND.I1.LE.1.AND.I1.LE.1) J=J+1
+ 411  IF (I1.EQ.1.OR .I1.EQ.1.AND.I1.EQ.1) GOTO 161
+ 412  IF (I1.EQ.1.AND.I1.EQ.1.OR .I1.EQ.1) GOTO 161
+      GOTO 361
+ 413  IF (I1.NE.1.OR .I1.NE.1.AND.I1.NE.1) GOTO 361
+      GOTO 161
+ 414  IF (I1.NE.1.AND.I1.NE.1.OR .I1.NE.1) GOTO 361
+      GOTO 161
+ 415  IF (I1.GT.1.OR .I1.GT.1.AND.I1.GT.1) GOTO 361
+      GOTO 161
+ 416  IF (I1.GT.1.AND.I1.GT.1.OR .I1.GT.1) GOTO 361
+      GOTO 161
+ 417  IF (I1.GE.1.OR .I1.GE.1.AND.I1.GE.1) GOTO 161
+ 418  IF (I1.GE.1.AND.I1.GE.1.OR .I1.GE.1) GOTO 161
+ 419  IF (I1.LT.1.OR .I1.LT.1.AND.I1.LT.1) GOTO 361
+      GOTO 161
+ 420  IF (I1.LT.1.AND.I1.LT.1.OR .I1.LT.1) GOTO 361
+      GOTO 161
+ 421  IF (I1.LE.1.OR .I1.LE.1.AND.I1.LE.1) GOTO 161
+ 422  IF (I1.LE.1.AND.I1.LE.1.OR .I1.LE.1) GOTO 161
+ 423  GOTO 865
+  161 LA(IG)=.TRUE.
+      IG=IG+1
+      GOTO
+     1 (412,413,414,415,416,417,418,
+     2  419,420,421,422,423)    ,IG-74
+  361 LA(IG)=.FALSE.
+      IG=IG+1
+      GOTO
+     1 (412,413,414,415,416,417,418,
+     2  419,420,421,422,423)    ,IG-75
+ 865  IF (I1.EQ.1.OR .I1.EQ.1.AND.I1.EQ.1) J=J+1
+      IF (I1.EQ.1.AND.I1.EQ.1.OR .I1.EQ.1) J=J+1
+      IF (I1.NE.1.OR .I1.NE.1.AND.I1.NE.1) J=J+1
+      IF (I1.NE.1.AND.I1.NE.1.OR .I1.NE.1) J=J+1
+      IF (I1.GT.1.OR .I1.GT.1.AND.I1.NE.1) J=J+1
+      IF (I1.GT.1.AND.I1.GT.1.OR .I1.GT.1) J=J+1
+      IF (I1.GE.1.OR .I1.GE.1.AND.I1.GE.1) J=J+1
+      IF (I1.GE.1.AND.I1.GE.1.OR .I1.GE.1) J=J+1
+      IF (I1.LT.1.OR .I1.LT.1.AND.I1.LT.1) J=J+1
+      IF (I1.LT.1.AND.I1.LT.1.OR .I1.LT.1) J=J+1
+      IF (I1.LE.1.OR .I1.LE.1.AND.I1.LE.1) J=J+1
+      IF (I1.LE.1.AND.I1.LE.1.OR .I1.LE.1) J=J+1
+      IF (J.EQ.17) GOTO 9
+      PRINT *,'ERROR-1',J
+  9   DO 860 IL=1,85
+860   IF (.NOT.LA(IL)) PRINT *,'ERROR-2',IL,LA(IL)
+      PRINT *,'PASS'
+      END

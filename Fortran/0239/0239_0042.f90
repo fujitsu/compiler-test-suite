@@ -9,8 +9,8 @@ type x2
 end type
 type (x2),pointer:: a,z
 type (c_ptr):: cp
-associate(p=>a)
  allocate(a,stat=k)
+associate(p=>a)
  z=>p
  if (k/=0) print *,101
  if (any(lbound(p%b%a)/=[-3,-1,0])) print *,102
@@ -30,9 +30,9 @@ associate(p=>a)
 end associate
 deallocate (a)
 
+ allocate(a,stat=k)
 associate(q=>a)
 associate(p=>a%b%a)
- allocate(a,stat=k)
  z=>q
  if (k/=0) print *,201
  if (any(lbound(p)/=[-3,-1,0])) print *,202
@@ -45,7 +45,7 @@ end associate
  if (any(a%b%a/=1)) print *,107
 !
 associate(p=>a%b%a)
-  cp= c_loc(p)
+  cp= c_loc(a%b%a)
   if (c_associated(cp , c_loc(a%b%a)))then
   else
     print *,301

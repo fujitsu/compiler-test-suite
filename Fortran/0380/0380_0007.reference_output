@@ -1,0 +1,12 @@
+  ROUND = UP                  
+ 1.6600001
+  ROUND = DOWN                
+ 1.6600001
+  ROUND = ZERO                
+ 1.6600001
+  ROUND = COMPATIBLE          
+ 1.6600001
+  ROUND = NEAREST             
+ 1.66
+ pass
+exit 0

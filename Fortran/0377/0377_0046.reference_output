@@ -1,0 +1,20 @@
+  ceiling  :: kind =  8
+  count    :: kind =  8
+  floor    :: kind =  8
+  iachar   :: kind =  8
+  ichar    :: kind =  8
+  index    :: kind =  8
+  int      :: kind =  8
+  lbound   :: kind =  8
+  len      :: kind =  8
+  len_trim :: kind =  8
+  maxloc   :: kind =  8
+  minloc   :: kind =  8
+  nint     :: kind =  8
+  scan     :: kind =  8
+  shape    :: kind =  8
+  size     :: kind =  8
+  ubound   :: kind =  8
+  vefify   :: kind =  8
+ pass
+exit 0

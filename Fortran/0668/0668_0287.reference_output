@@ -1,0 +1,7 @@
+ **** start subroutine and ****
+ >>>>>ok<<<<<
+ **** start subroutine or  ****
+ >>>>>ok<<<<<
+ **** start subroutine exor****
+ >>>>>ok<<<<<
+exit 0

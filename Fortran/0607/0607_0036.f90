@@ -1,0 +1,16 @@
+PROGRAM main
+IMPLICIT NONE
+
+INTEGER :: num = 2
+
+ASSOCIATE(bb => num )
+  bb = bb - 1
+  SELECT CASE(bb)
+  CASE (2)
+    PRINT*,'FAIL'
+  CASE DEFAULT
+    PRINT*,'PASS'
+  END SELECT
+END ASSOCIATE
+
+END PROGRAM

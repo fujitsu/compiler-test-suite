@@ -1,0 +1,46 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  INTEGER :: num1=10
+END TYPE
+
+TYPE,EXTENDS(t1) :: ty_ppc
+  INTEGER :: nm
+  PROCEDURE(sub_ppc),POINTER,PASS(dd1) :: prc
+END TYPE
+
+CONTAINS
+
+SUBROUTINE sub_ppc(dd1,dd2)
+IMPLICIT NONE
+INTEGER,INTENT(IN) :: dd2
+CLASS(ty_ppc),INTENT(OUT) :: dd1
+dd1%num1=10
+dd1%num1 = dd1%num1 + dd2
+END SUBROUTINE
+
+END MODULE
+
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+CLASS(ty_ppc),ALLOCATABLE :: acc1
+ALLOCATE(acc1)
+acc1%num1 = 10
+acc1%prc => sub_ppc
+
+SELECT TYPE(asc => acc1)
+CLASS IS(ty_ppc)
+  CALL asc%prc(5)
+END SELECT
+
+IF(acc1%num1 .EQ. 15) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+
+END PROGRAM

@@ -1,0 +1,12 @@
+ ** test of scratch **
+  open(new)-rewind-close(delete)
+ ** test of scratch **
+  open(new)-rewind-close(delete)
+ ** test of scratch **
+  open(new)-rewind-close(delete)
+ ** test of scratch **
+  open(new)-rewind-close(delete)
+ ** test of scratch **
+  open(new)-rewind-close(delete)
+  *** test o.k ***
+exit 0

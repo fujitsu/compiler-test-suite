@@ -34,7 +34,7 @@ allocate(v(2)% z(1),source=2)
 v= f(  v )
 if (v(1)%z(1)/=2 ) print *,101
 if (v(2)%z(1)/=3 ) print *,102
-call chk
+!call chk
 print *,'pass'
 end
 

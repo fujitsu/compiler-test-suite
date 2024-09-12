@@ -1,0 +1,3 @@
+ <OK>: t1= 99 , t2= 198 , t3= 297
+ ok: result_sum = calc_sum =  74463147
+exit 0

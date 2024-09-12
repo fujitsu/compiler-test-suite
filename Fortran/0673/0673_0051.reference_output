@@ -1,0 +1,66 @@
+1
+      *fortran*     fd21701     enter
+
+0          + item +          + source data +          + field descriptor +          + compare value - answer +
+
+0            ( 1)           fortran  f230-45                   a16                    fortran  f230-45
+                                                                                      fortran  f230-45
+
+                                                               a20                    fortran  f230-45
+                                                                                      fortran  f230-45
+
+                                                               a10                          fortran  f
+                                                                                            fortran  f
+
+0            ( 2)           FFFFFF                             a16                    FFFFFF          
+                                                                                      FFFFFF          
+
+                                                                a5                              FFFFF
+                                                                                                FFFFF
+
+0            ( 3)                   word 'a'                   a10                            word 'a'
+                                                                                              word 'a'
+
+                                                                a7                             word 'a
+                                                                                               word 'a
+
+                                                                a2                                 wo 
+                                                                                                   wo
+
+                                        file                    a8                                file
+                                                                                                  file    
+1
+
+0     + justice +     + item +     + source data +     + field descriptor +          + answer +          + compare value +
+
+0       *ok*   
++                       ( 1)        h  conversion               a16                h  conversion           h  conversion  
+0       *ok*   
++                       ( 2)       test job                      a8               test job                test job        
+0       *ok*   
++                       ( 3)        +                            a1               +                       +               
+0       *ok*   
++                       ( 4)       fortran test program         a20               ran test program        ran test program
+0       *ok*   
++                       ( 5)       hollerith ' '                a13               hollerith ' '           hollerith ' '   
+0       *ok*   
++                       ( 6)       format                        a8                       format  format  
+0       *ok*   
++                       ( 7)       statement 13                 a12                       statemenstatemen
+0       *ok*   
++                       ( 8)        &$                          2a2                       +*      +*      
+0       *ok*   
++                       ( 9)       KKKKKaki                      a5                       KKKKK   KKKKK   
+0       *ok*   
++                       (10)       devaid                        a7                       devaid  devaid  
+0       *ok*   
++                       (11)       FFFFFFFFF - 15/25/35         a16               FFFFFFFFF - 15/2        FFFFFFFFF - 15/2
+0       *ok*   
++                       (12)       5/35/45 .......              a16               5/35/45/ .......        5/35/45/ .......
+0       *ok*   
++                       (13)       convert                       a8                       convert convert 
+0       *ok*   
++                       (14)        test                         a4                        test    test   
+0
+      *fortran*     fd21701     exit 
+exit 0

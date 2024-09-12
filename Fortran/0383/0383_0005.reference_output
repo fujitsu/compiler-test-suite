@@ -1,0 +1,4 @@
+ proc1
+ proc2
+ ok
+exit 0

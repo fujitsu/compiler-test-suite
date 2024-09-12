@@ -1,0 +1,52 @@
+Module mod1
+IMPLICIT NONE
+
+TYPE first
+ INTEGER :: i1
+END TYPE
+ 
+TYPE,EXTENDS(first) :: second
+ INTEGER :: i2
+END TYPE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+INTERFACE
+FUNCTION Efun(d)
+IMPORT first
+IMPORT second
+CLASS(*),POINTER :: Efun
+TYPE(second),TARGET :: d
+END FUNCTION
+END INTERFACE
+ 
+TYPE(second) :: tgt
+ 
+SELECT TYPE(A=>Efun(tgt))
+ CLASS IS(second)
+
+ IF(A%i1/=2 .or. A%i2/=32)THEN
+    PRINT*,101
+  ELSE 
+    PRINT*,'pass'
+  END IF
+END SELECT
+ 
+END PROGRAM
+
+FUNCTION Efun(d)
+USE mod1
+IMPLICIT NONE
+CLASS(*),POINTER :: Efun
+TYPE(second),TARGET :: d
+d%i2=32
+Efun=>d
+SELECT TYPE(Efun)
+TYPE IS(second)
+  Efun%i1=2
+END SELECT
+END FUNCTION

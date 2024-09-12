@@ -1,0 +1,15 @@
+ 1 0 7 0 9 0 7 0 19 0
+ 1 0 -1 0 1 0 7 0 -1 0
+ 0 0 12 0 20 0 0 0 90 0
+ T F F F F F T F F F
+ T F T F F F T F T F
+ F F T F F F F F T F
+ T F F F T F T F F F
+ 8 0 24 0 40 0 56 0 72 0
+ F F T F F F F F T F
+ F F T F F F F F T F
+ F F F F F F F F F F
+ T F T F T F T F T F
+ T F F F T F T F F F
+ T F F F T F T F F F
+exit 0

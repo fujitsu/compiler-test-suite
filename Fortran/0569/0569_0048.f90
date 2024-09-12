@@ -1,0 +1,36 @@
+type ty
+integer,allocatable :: ii(:)
+integer :: iii(2)
+character,allocatable :: ch(:,:)
+end type
+
+type tty
+type(ty) :: obj1
+end type tty
+
+type(tty),allocatable :: obj2(:)
+integer::res
+res=11
+Allocate(obj2(4))
+Allocate(obj2(2)%obj1%ii(2),obj2(2)%obj1%ch(3,4))
+obj2(2)%obj1%ii = 20
+obj2(2)%obj1%iii = 30
+obj2(2)%obj1%ch = 'e'
+
+res=fun(obj2(:)%obj1)
+ if(obj2(2)%obj1%ii(2) .ne. 20) print *,202, obj2(2)%obj1%ii(2)
+ if(obj2(2)%obj1%iii(2) .ne. 30) print *,203, obj2(2)%obj1%iii(2)
+ if(obj2(2)%obj1%ch(2,3) .ne. 'e') print *,204, obj2(2)%obj1%ch(2,3)
+ if(res /= 99) print*,205
+print *,"Pass"
+contains
+pure function fun(dmy)
+    type(ty),value :: dmy(4)
+    integer::fun
+    dmy(2)%ii(2) = 40
+    dmy(2)%iii(2) = 50
+    dmy(2)%ch(2,3) = 'g'
+    fun=99
+end function 
+end
+

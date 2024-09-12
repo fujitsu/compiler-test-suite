@@ -1,0 +1,44 @@
+MODULE mod1
+IMPLICIT NONE
+INTEGER :: num
+
+CONTAINS
+FUNCTION mfun(dd1)
+  INTEGER :: dd1,mfun
+  dd1 = dd1 * 2
+  SELECT CASE(dd1)
+  CASE(10)
+    PRINT*,"NOT ALLOWED"
+  CASE(28)
+     mfun = dd1
+  END SELECT
+END FUNCTION
+
+FUNCTION mainfun(d1)
+INTEGER :: d1,mainfun
+
+INTERFACE gnr
+  MODULE PROCEDURE :: mfun
+END INTERFACE
+
+mainfun = gnr(d1)
+END FUNCTION
+
+END MODULE
+
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+INTEGER :: res
+num = 14
+res = mainfun(num)
+
+IF(res .EQ. 28) THEN
+  PRINT*,"PASS"
+ELSE
+  PRINT*,"ERROR"
+END IF
+
+END PROGRAM

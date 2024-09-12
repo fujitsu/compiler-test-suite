@@ -1,0 +1,5 @@
+ add_const
+ pass
+ add_same
+ pass
+exit 0

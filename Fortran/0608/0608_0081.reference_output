@@ -1,0 +1,9 @@
+ in destructor
+ 99 99 99
+ in destructor
+ 1 2 3
+ in destructor
+ 99 99 99
+ in destructor
+ 3 1 2
+exit 0

@@ -1,0 +1,75 @@
+      WRITE(6,100)
+  100 FORMAT('1',5X,'====== FORTRAN ====== ... = TEST ='/)
+      IP=0
+      CALL F27101(IP)
+      CALL F27102(IP)
+      CALL F27103(IP)
+      CALL F27104(IP)
+      IF(IP.NE.0) GO TO 10
+      WRITE(6,110)
+  110 FORMAT(21X,'= TEST =     OK'/)
+   10 WRITE(6,120)
+  120 FORMAT(6X,'END RUNUNIT')
+      STOP
+      END
+      SUBROUTINE    F27101(IP)
+      IMPLICIT COMPLEX(C)
+      E0000=1.0
+      E1000=0.0
+      C0000=E1000+E0000*CMPLX(0.0,0.0)
+      E2000=REAL(CEXP (C0000))
+      IF(ABS(E0000-E2000).LT.1.0E-7) GO TO 10
+      IP=IP+1
+      WRITE(6,100) E0000 , E2000
+  100 FORMAT(1H0,20X,'==TEST==',3X,'NG',3X,'S=',E15.8,5X,'REAL=',E15.8)
+   10 RETURN
+      END
+      SUBROUTINE    F27102(IP)
+      IMPLICIT REAL*8(D),COMPLEX(C)
+      D0000=0.16777215D-30
+      DO  20  I=1,2
+      C0000=D0000+DCMPLX(0.0D0,0.0D0)
+      D1000=DREAL(DCMPLX(DBLE(REAL(C0000)),DBLE(IMAG(C0000))))
+      IF(DLOG10(DABS(D0000-D1000)).LT.DLOG10(DABS(D0000))-6.0 D0
+     * ) GO TO 10
+      IP=IP+1
+      WRITE(6,100) D0000 , D1000
+  1000FORMAT(1H0,20X,'==TEST==',3X,'NG',5X,'S=',D24.17,5X,'DREAL=',
+     ED24.17)
+   10 D0000=-0.16777215D-30
+   20 CONTINUE
+      WRITE(6,200)
+  200 FORMAT('0',20X,'================================================',
+     * '==================================================='/)
+      RETURN
+      END
+      SUBROUTINE    F27103(IP)
+      E0000=5.83
+      DO  10  I=1,10
+      E1000=AIMAG(CMPLX(3.0*E0000+I,4.0*E0000+I))
+      E2000=4.0*E0000+I
+      IF(E2000.EQ.E1000) GO TO 10
+      IP=IP+1
+      WRITE(6,100) E2000 , E1000
+  1000FORMAT(1H0,20X,'==TEST==',3X,'NG',5X,'S=',E15.8,5X,'AIMAG=',
+     E   E15.8)
+   10 CONTINUE
+      RETURN
+      END
+      SUBROUTINE    F27104(IP)
+      IMPLICIT REAL*8(D),COMPLEX*16(W)
+      DIMENSION  W0020(20)
+      D0000=6.0D0
+      DO 10  I = 1,20
+      D1000=I
+      W0020(I)= DCMPLX ( 3.0D0* D0000+D1000,4.0D0*D0000+ D1000 )
+      D2000=DIMAG(W0020(I))
+      D3000=4.0D0*D0000+D1000
+      IF(D2000.EQ.D3000) GO TO 10
+      IP=IP+1
+      WRITE(6,100) D3000 , D2000
+  1000FORMAT(1H0,20X,'==TEST==',3X,'NG',3X,'S=',D24.17,5X,'DIMAG='
+     ED24.17)
+   10 CONTINUE
+      RETURN
+      END

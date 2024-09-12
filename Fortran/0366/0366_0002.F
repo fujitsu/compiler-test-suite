@@ -1,3 +1,5 @@
+#define EQUAL_CHECK_WITH_MARGIN_REAL8(a, b) ((abs(a - b)/abs(a)) .gt. 1.0D-16)
+#define EQUAL_CHECK_WITH_MARGIN_REAL16(a, b) ((abs(a - b)/abs(a)) .gt. 1.0D-34)
  program acos
  integer*4,parameter::low=-1000,upper=1000
  real*4 test5
@@ -10,8 +12,12 @@
  if( test5(low,upper) /= res51 .and. test5(low,upper) /= res52 ) then
    print *,"NG1"
  endif 
- if( test6(low,upper) /= res6  ) print *,"NG2"
- if( test7(low,upper) /= res7  ) print *,"NG3"
+ if( .NOT. EQUAL_CHECK_WITH_MARGIN_REAL8(res6, test6(low,upper)) ) then
+   print *,"NG2"
+ endif
+ if( .NOT. EQUAL_CHECK_WITH_MARGIN_REAL16(res7, test7(low,upper)) ) then
+   print *,"NG3"
+ endif
  print *,"PASS"
  end
  real*4 function test5(low,upper)

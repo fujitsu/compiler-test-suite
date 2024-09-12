@@ -1,0 +1,9 @@
+ 1 2
+ msub
+ 2 3
+ sub
+ mfunc
+ 3 4
+ sub
+ 10
+exit 0

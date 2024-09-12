@@ -1,0 +1,9 @@
+1
+       *FORTRAN*          ENTER
+0
+
+                                    TEST OF SUBCHK
+0
+
+       *FORTRAN*          EXIT
+exit 0

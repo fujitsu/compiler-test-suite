@@ -1,0 +1,14 @@
+ RESULT: FFFFFFFF TTTTTTTTT                                                    
+            in fstr!
+ RESULT: FFFFFFFF TTTTTTTTT                                                    
+            in fstr1!
+ RESULT:  10  in fi!
+ RESULT:  20  in fl!
+ RESULT:  1.  in ff!
+ RESULT:  2.  in fd!
+ RESULT:  3.  in fld!
+ RESULT:  (1.1,1.2)  in ffx!
+ RESULT:  (2.1,2.2)  in fdx!
+ RESULT:  (3.1,3.2)  in fldx!
+ RESULT:  20 5. 20 5.  in fst!
+exit 0

@@ -1,0 +1,182 @@
+      IMPLICIT COMPLEX*16  (A,B-T)
+      IMPLICIT INTEGER (V)
+      DOUBLE PRECISION UA,UB
+      DIMENSION S(30),T(30)
+      COMMON A,B,C,D(2,2,2,2,2,2,2)/BCK1/E(2,2,2,2,2,2,2),F,G/BCK2/H,I,J
+     *,K(3,3,3,2),L,UA,UB
+      UA=3.889D-10
+      UB=-1.2345D70
+  100 FORMAT(1H1 2X,28H*FORTRAN*              ENTER)
+  101 FORMAT(1H0 6X,22H- JUSTICE -   - ITEM -13X,27H- COMPUTED RESULT /
+     *VALUE -30X,14H- DIFFERENCE -)
+  102 FORMAT(1H0 38X,9HREAL PART16X,9HIMAG PART17X9HREAL PART16X,9HIMAG
+     *PART)
+  999 FORMAT(1H0/2X28H*FORTRAN*               EXIT )
+      A               =(0.123456789D 10,123.45D-6)
+      D(1,1,1,1,1,1,1)=(-0.123456789D10,3.456789D35)
+      D(1,2,2,2,2,2,2)=(9.999999999999,-99999.9999999)
+      E(1,1,1,1,1,1,1)=(1.0D0,1.0D0)
+      E(2,2,1,1,1,1,1)=(0.0D0,0.0D0)
+      G               =(11110000.0D0,-9.9D74)
+      H               =(-3.5D8,-9.9D30)
+      K(1,1,1,1)      =(-99.99D-50,8.88D-55)
+      L               =(-1.5D-40,4.0D40)
+      WRITE(6,100)
+      WRITE(6,101)
+      WRITE(6,102)
+      CALL SUB1
+      S(21)=B
+      T(21)=(0.0D10,0.0D-40)
+      S(22)=D(1,1,2,2,2,2,2)
+      T(22)=(6146.807D08,5763.813D20)
+      S(23)=D(2,2,2,2,2,2,2)
+      T(23)=(-1.2301D0,22.22D-2)
+      S(24)=E(2,1,1,1,1,1,1)
+      T(24)=(3.3333D3,4.44444D4)
+      S(25)=E(2,2,2,2,2,2,2)
+      T(25)=(-5.555555555D50,6.666666666D6)
+      S(26)=F
+      T(26)=(7.77777777D 7,-8.88888888D-8)
+      S(27)=I
+      T(27)=(3.0D74,-0.3D-59)
+      S(28)=K(3,3,3,2)
+      T(28)=(-123.4D-50,-345.6D-49)
+      S(29)=L
+      T(29)=(0.0D0,3.8D60)
+      VI  =21
+      VN  =29
+      CALL SUB3(VI,VN,S,T)
+      WRITE(6,999)
+      STOP
+      END
+      SUBROUTINE SUB1
+      IMPLICIT COMPLEX*16  (A,B-T)
+      INTEGER VI,VN
+      DIMENSION S(30),T(30)
+      COMMON DA(2,2,2,2,2,2,2),BA(3,3)/BCK2/KA(3,3,3,2),N,O,P,Q,R/BCK3/S
+     *A(2,2,2,2,4),SB(4,2,2,2,2,2),SS
+      DA(2,1,1,1,1,1,1)=(0.0D10,0.0D-40)
+      DA(2,2,2,2,2,2,2)=(6146.807D8,5763.813D20)
+      BA(3,1)          =(-1.2301D0,22.22D-2)
+      KA(2,1,1,1)      =(3.0D74,-0.3D-59)
+      P                =(-123.4D-50,-345.6D-49)
+      Q                =(0.0D0,3.8D60)
+      SA(1,1,1,1,1)    =(-3.99D41,0.0D0)
+      SB(1,1,1,1,1,1)  =(0.1D-55,-8.888D 55)
+      SB(4,2,2,2,2,2)  =(3.9D1,4.8D0)
+      CALL SUB2
+      S(20)=DA(1,1,1,1,1,1,1)
+      T(20)=(0.123456789D 10,123.45D-6)
+      S(11)=DA(2,2,1,1,1,1,1)
+      T(11)=(-0.123456789D10,3.456789D35)
+      S(12)=BA(2,1)
+      T(12)=(9.999999999999,-99999.9999999)
+      S(13)=KA(1,1,1,1)
+      T(13)=(-3.5D8,-9.9D30)
+      S(14)=KA(3,1,1,1)
+      T(14)=(-123456789D10,-0.123456789D10)
+      S(15)=O
+      T(15)=(0.0D0,0.0D0)
+      S(16)=N
+      T(16)=(8765432101234D-50,11111111111D1)
+      S(17)=SA(2,2,2,2,4)
+      T(17)=(2.2D22,-22.22D22)
+      S(18)=SA(2,1,2,2,3)
+      T(18)=(99.99999D65,33.3D3)
+      S(19)=SS
+      T(19)=(0.0D0,-3.333D-3)
+      VI  =11
+      VN  =20
+      CALL SUB3(VI,VN,S,T)
+      RETURN
+      END
+      SUBROUTINE SUB2
+      IMPLICIT COMPLEX*16  (F,E,G,N,K,O-T)
+      DOUBLE PRECISION  US,UT
+      DIMENSION S(30),T(30)
+      INTEGER VI,VN
+      COMMON /BCK1/FA,EA(2,2,2,2,2,2,2),GA /BCK2/NA,OA,KB(3,3,3,2),PA,QA
+     *,RA/BCK3/SP(2,2,2,2,4),SQ(4,2,2,2,2,2),US,UT
+      EA(1,1,1,1,1,1,1)=(3.3333D3,4.44444D4)
+      EA(1,2,2,2,2,2,2)=(-5.555555555D50,6.666666666D6)
+      EA(2,2,2,2,2,2,2)=(7.77777777D 7,-8.88888888D-8)
+      KB(1,1,1,1)      =(-123456789D10,-0.123456789D10)
+      KB(3,3,3,2)      =(0.0D0,0.0D0)
+      KB(2,3,3,2)      =(8765432101234D-50,11111111111D1)
+      SP(2,2,2,2,4)    =(2.2D22,-22.22D22)
+      SP(2,1,2,2,3)    =(99.99999D65,33.3D3)
+      SQ(3,1,2,2,1,2)  =(-9.9D-55,-8.8D-55)
+      US =0.0D0
+      UT =-3.333D-3
+      S(1)=FA
+      T(1)=(1.0D0,1.0D0)
+      S(2)=EA(1,2,1,1,1,1,1)
+      T(2)=(0.0D0,0.0D0)
+      S(3)=GA
+      T(3)=(11110000.0D0,-9.9D74)
+      S(4)=NA
+      T(4)=(-3.5D8,-9.9D30)
+      S(5)=KB(2,1,1,1)
+      T(5)=(-99.99D-50,8.88D-55)
+      S(6)=QA
+      T(6)=(0.0D0,0.38D61)
+      S(7)=RA
+      T(7)=(3.889D-10,-1.2345D70)
+      S(8)=SP(1,1,1,1,1)
+      T(8)=(-3.99D41,0.0D0)
+      S(9)=SQ(1,1,1,1,1,1)
+      T(9)=(0.1D-55,-8.888D 55)
+      S(10)=SQ(4,2,2,2,2,2)
+      T(10)=(3.9D1,4.8D0)
+      VI  =1
+      VN  =10
+      CALL SUB3(VI,VN,S,T)
+      RETURN
+      END
+      SUBROUTINE SUB3 (I,N,S,T)
+      DIMENSION S(30),T(30)
+      DOUBLE PRECISION AD
+      COMPLEX*16   S,T
+      DOUBLE PRECISION DIFI ,DIFR,RL,AG
+      AD=0.1D-15
+  100 FORMAT(1H1)
+  101 FORMAT(1H0 6X,22H- JUSTICE-   - ITEM -13X,27H- COMPUTED RESULT / V
+     *ALUE -30X,14H- DIFFERENCE -)
+  102 FORMAT(1H0 38X,9HREAL PART16X,9HIMAG PART17X9HREAL PART16X,9HIMAG
+     *PART)
+  103 FORMAT(1H0 4X,4H*OK*5X4H*OK*4X,2H( I2,2H )1X,2(1X,D24.17),1X,2(1X,
+     *D24.17)/29X,2(1X,D24.17))
+  104 FORMAT(1H0 4X,4H*OK*2X7H*ERROR*4X2H( I2,2H )1X,2(1XD24.17),1X2(1X,
+     *D24.17)/29X,2(1X,D24.17))
+  105 FORMAT(1H0 1X,7H*ERROR*5X4H*OK*4X,2H( I2,2H )1X2(1XD24.17),1X2(1X,
+     *D24.17)/29X,2(1X,D24.17))
+  106 FORMAT(1H0 1X,7H*ERROR*2X,7H*ERROR*4X,2H( I2,2H )1X,2(1X,D24.17),1
+     *X,2(1X,D24.17)/29X,2(1X,D24.17))
+      DO 10 I=I,N
+      RL  =DREAL(T(I))
+      AG  =DIMAG(T(I))
+      DIFR=DREAL(S(I))-RL
+      DIFI=DIMAG(S(I))-AG
+      IF(RL)1,2,1
+    1 IF(DABS(DIFR)-AD*DABS(RL))701,702,702
+    2 IF(DABS(DIFR)-AD)701,702,702
+  701 IF(AG)3,4,3
+  702 IF(AG)5,6,5
+    3 IF(DABS(DIFI)-AD*DABS(AG))703,704,704
+    4 IF(DABS(DIFI)-AD)703,704,704
+    5 IF(DABS(DIFI)-AD*DABS(AG))705,706,706
+    6 IF(DABS(DIFI)-AD)705,706,706
+  703 WRITE(6,103)I,S(I),DIFR,DIFI,T(I)
+      GO TO 9
+  704 WRITE(6,104)I,S(I),DIFR,DIFI,T(I)
+      GO TO 9
+  705 WRITE(6,105)I,S(I),DIFR,DIFI,T(I)
+      GO TO 9
+  706 WRITE(6,106)I,S(I),DIFR,DIFI,T(I)
+    9 IF(I-15)10,7,10
+    7 WRITE(6,100)
+      WRITE(6,101)
+      WRITE(6,102)
+   10 CONTINUE
+      RETURN
+      END

@@ -1,0 +1,12 @@
+                  test ... h0000130
+
+
+  *** item = 1 : old file ***
+        h0000130 (ok)
+
+ end run unit
+  *** item = 2 : new file ***
+        h0000130 (ok)
+
+ end run unit
+exit 0

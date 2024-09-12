@@ -1,0 +1,4 @@
+1     ====== FORTRAN ====== --- = TEST =
+0                    = TEST =     OK
+0    END RUNUNIT
+exit 0

@@ -1,0 +1,6 @@
+  ** psl test ok(repeat count < 0) **
+  ** formated unformated listdirect all ok **
+  ** psl test ok(repeat count = 0) **
+  ** formated unformated listdirect all ok **
+  ** test program pc47993          **
+exit 0

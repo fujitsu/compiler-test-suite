@@ -1,0 +1,52 @@
+32767                                                                          x
+32767                                                                          x
+                                                                               x
+32767                                                                          x
+                                                                               x
+                                                                               x
+32767                                                                          x
+                                                                               x
+                                                                               x
+                                                                               x
+32767                                                                          x
+                                                                               x
+                                                                               x
+                                                                               x
+                                                                               x
+32767                                                                          x
+                                                                               x
+                                                                               x
+                                                                               x
+                                                                               x
+                                                                               x
+32767                                                                          x
+11212312345                                                                    x
+-1-12-123-1234-12345                                                           x
+12345123451234512345                                                           x
+    -12345    -12345    -12345    -12345                                       x
+-1-12-123-1234-12345                                                           x
+ 1 12 123 1234 12345                                                           x
+-12345-12345-12345-12345                                                       x
+ 12345 12345 12345 12345                                                       x
+12345123451234512345                                                           x
+ -12345  12345 -1 -12345  1  12345 -12 -12345  12  12345 -123  123             x
+     12345     12345     12345     12345                                       x
+12345     1234512345     12345                                                 x
+1h ,                                                                           x
+      write(6,100)                                                             x
+  100 format(1h ,29x,26habcdefghijklmnopqrstuvwxyz)                            x
+      write(6,102)                                                             x
+  102 format(1h ,29x,26h12345678901234567890123456)                            x
+1h0,                                                                           x
+      write(6,104)                                                             x
+  104 format(1h0,29x,26habcdefghijklmnopqrstuvwxyz)                            x
+      write(6,106)                                                             x
+  106 format(1h0,29x,26h12345678901234567890123456)                            x
+1h+,                                                                           x
+      write(6,108)                                                             x
+  108 format(1h ,29x,26hoooooooooooooooooooooooooo)                            x
+      write(6,110)                                                             x
+  110 format(1h+,29x,26h++++++++++++++++++++++++++)                            x
+1h1,                                                                           x
+      write(6,112)                                                             x
+  112 format(1h1,29x,26habcdefghijklmnopqrstuvwxyz)                            x

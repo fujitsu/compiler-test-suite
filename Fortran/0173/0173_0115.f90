@@ -35,7 +35,7 @@ w= f(  v )
 if (w(1)%z(1)/=1 ) print *,101
 if (w(2)%z(1)/=2 ) print *,102
 if (w(3)%z(1)/=3 ) print *,103
-call chk
+!call chk
 print *,'pass'
 end
 

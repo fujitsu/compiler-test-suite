@@ -1,0 +1,64 @@
+1
+      *FORTRAN*          ENTER 
+
+0
+          - JUSTICE -     - ITEM -       - COMPUTED RESULT -        - COMPARE VALUE - 
+
+0            *OK*          (  1 )                   T                         T
+0            *OK*          (  2 )                   T                         T
+0            *OK*          (  3 )                   F                         F
+0            *OK*          (  4 )                   F                         F
+0            *OK*          (  5 )                   T                         T
+0            *OK*          (  6 )                   F                         F
+0            *OK*          (  7 )                   F                         F
+0            *OK*          (  8 )                   T                         T
+0            *OK*          (  9 )                   T                         T
+0            *OK*          ( 10 )                   F                         F
+0            *OK*          ( 11 )                   T                         T
+0            *OK*          ( 12 )                   T                         T
+0            *OK*          ( 13 )                   F                         F
+0            *OK*          ( 14 )                   T                         T
+0            *OK*          ( 15 )                   F                         F
+0            *OK*          ( 16 )                   T                         T
+0            *OK*          ( 17 )                   T                         T
+0            *OK*          ( 18 )                   F                         F
+0            *OK*          ( 19 )                   F                         F
+0            *OK*          ( 20 )                   T                         T
+0            *OK*          ( 21 )                   T                         T
+0            *OK*          ( 22 )                   F                         F
+0            *OK*          ( 23 )                   F                         F
+0            *OK*          ( 24 )                   T                         T
+0            *OK*          ( 25 )                   T                         T
+0            *OK*          ( 26 )                   T                         T
+1
+
+
+
+
+          - JUSTICE -     - ITEM -      - COMPUTED RESULT -        - COMPARE VALUE - 
+
+0            *OK*          ( 27 )                   T                         T
+0            *OK*          ( 28 )                   T                         T
+0            *OK*          ( 29 )                   F                         F
+0            *OK*          ( 30 )                   F                         F
+0            *OK*          ( 31 )                   T                         T
+0            *OK*          ( 32 )                   T                         T
+0            *OK*          ( 33 )                   T                         T
+0            *OK*          ( 34 )                   F                         F
+0            *OK*          ( 35 )                   F                         F
+0            *OK*          ( 36 )                   T                         T
+0            *OK*          ( 37 )                   F                         F
+0            *OK*          ( 38 )                   T                         T
+0            *OK*          ( 39 )                   T                         T
+0            *OK*          ( 40 )                   T                         T
+0            *OK*          ( 41 )                   F                         F
+0            *OK*          ( 42 )                   F                         F
+0            *OK*          ( 43 )                   F                         F
+0            *OK*          ( 44 )                   F                         F
+0            *OK*          ( 45 )                   F                         F
+0            *OK*          ( 46 )                   F                         F
+0            *OK*          ( 47 )                   F                         F
+0            *OK*          ( 48 )                   F                         F
+0
+      *FORTRAN*          EXIT 
+exit 0

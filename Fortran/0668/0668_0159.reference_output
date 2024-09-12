@@ -1,0 +1,7 @@
+  ## integer*4 ## 
+  max =  58
+  min =  -21
+  ## real*4 ## 
+  max =  10.1
+  min =  -12.5
+exit 0

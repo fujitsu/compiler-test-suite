@@ -1,0 +1,48 @@
+MODULE mod1
+IMPLICIT NONE
+
+INTEGER :: num(10)
+
+INTERFACE
+SUBROUTINE esub(dd1)
+  INTEGER :: dd1(10)
+END SUBROUTINE 
+END INTERFACE
+
+CONTAINS
+SUBROUTINE mod_sub(dd1)
+INTEGER :: dd1(10)
+INTERFACE gnr
+  PROCEDURE :: esub
+END INTERFACE
+CALL gnr(dd1)
+END SUBROUTINE
+
+END MODULE
+
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+num = [-1,2,-1,2,-1,2,-1,2,-1,2]
+CALL mod_sub(num)
+
+IF(ALL(num(2:10:2) .EQ. 4)) THEN
+  PRINT*,"PASS"
+ELSE
+  PRINT*,"ERROR"
+END IF
+
+END PROGRAM
+
+SUBROUTINE esub(dd1)
+  INTEGER :: dd1(10),ii
+  FORALL(ii = 1 : 10)
+    WHERE(dd1 > 0)
+       dd1 = dd1 * 2 
+    ELSE WHERE
+       dd1 = dd1 - 1
+    END WHERE
+  END FORALL
+END SUBROUTINE

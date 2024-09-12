@@ -1,0 +1,7 @@
+ i4->r4        convert. csum=  9900.
+ i4->r8        convert. csum=  9900.
+ real-type->i4 convert. csum=  198
+ r4->r8        convert. csum=  9900.
+ r8->r4 pat.1  convert. csum=  9900.
+ r8->r4 pat.2  convert. csum=  4950.
+exit 0

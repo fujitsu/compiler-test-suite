@@ -1,0 +1,6 @@
+  ty1_array_destructor CALL  100 500
+  ty0_scalar_destructor CALL  200
+  ty0_scalar_destructor CALL  600
+  ty1_scalar_destructor CALL  100
+  ty0_scalar_destructor CALL  200
+exit 0

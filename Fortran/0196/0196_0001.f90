@@ -19,11 +19,11 @@ allocate(d(1),stat=iii,errmsg=a)
 allocate(d(1),stat=iii,errmsg=a)
 allocate(d(1),stat=iii,errmsg=a)
 if (iii.eq.0) print *,'err'
-if (a.ne.'An ALLOCATE statement cannot be executed for an allocatable variable which is currently allocated.') print *,'err1'
+if (a.ne.'Base address is not null') print *,'err1'
 deallocate(d)
 deallocate(d,stat=iii,errmsg=a)
 deallocate(d,stat=iii,errmsg=a)
 deallocate(d,stat=iii,errmsg=a)
 if (iii.eq.0) print *,'err',iii
-if (a.ne.'A DEALLOCATE statement cannot be executed for an allocatable variable which is not currently allocated.') print *,'err1'
+if (a.ne.'Base address is null') print *,'err1'
 end

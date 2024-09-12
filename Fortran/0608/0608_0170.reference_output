@@ -1,0 +1,17 @@
+ Fa3 Call 2 3
+ F2 Call 2
+ F1 Call 1
+ F2 Call 2
+ F1 Call 1
+ Fa3 Call 4 3
+ F2 Call 2
+ F1 Call 1
+ F2 Call 2
+ F1 Call 1
+ Fa3 Call 3 3
+ F2 Call 2
+ F1 Call 1
+ F2 Call 2
+ F1 Call 1
+ PASS
+exit 0

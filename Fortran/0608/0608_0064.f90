@@ -1,0 +1,43 @@
+MODULE mod1
+TYPE ty
+  INTEGER ::ii=2
+  INTEGER,ALLOCATABLE :: jj
+  CONTAINS
+  FINAL::ty1
+END TYPE
+CONTAINS
+PURE SUBROUTINE ty1(dmy)
+  TYPE(ty),INTENT(INOUT)::dmy
+  IF(ALLOCATED(dmy%jj))DEALLOCATE(dmy%jj)
+END SUBROUTINE
+
+PURE FUNCTION fun(dmy)
+  INTEGER::fun
+  TYPE(ty),INTENT(IN)::dmy
+  fun=dmy%ii
+END FUNCTION
+PURE FUNCTION fun1()
+  TYPE(ty)::fun1
+  TYPE(ty)::fun2
+  INTEGER,INTENT(IN)::dmy
+  fun1%ii=2
+  return
+  entry fun2(dmy)
+    fun2%ii=dmy
+    ALLOCATE(fun2%jj)
+    return
+END FUNCTION
+END MODULE
+
+PROGRAM MAIN
+USE mod1
+IMPLICIT NONE
+call sub
+CONTAINS
+SUBROUTINE sub
+INTEGER::arr(2:11,3:8)
+CHARACTER(LEN=UBOUND(arr,fun(fun2(1)))-2)::aa
+aa='ABCDEFG-HIJ'
+IF(aa .eq. 'ABCDEFG-H')PRINT*,'PASS'
+END SUBROUTINE
+END

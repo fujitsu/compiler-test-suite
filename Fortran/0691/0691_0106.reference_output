@@ -1,0 +1,66 @@
+1
+      *FORTRAN*          ENTER 
+
+0 - ITEM -   - JUSTICE -           - COMPUTED VALUE -                      - COMPARE VALUE -            - DIFERANCE -
+0  (  1 )         *OK*                            101                                    101                        0
+0                 *OK*                            102                                    102                        0
+0                 *OK*                            103                                    103                        0
+0                 *OK*                            104                                    104                        0
+0                 *OK*                            105                                    105                        0
+ 
+0                 *OK*                            101                                    101                        0
+0                 *OK*                            102                                    102                        0
+0                 *OK*                            103                                    103                        0
+0                 *OK*                            104                                    104                        0
+0                 *OK*                            105                                    105                        0
+0  (  2 )         *OK*                            101                                    101                        0
+0                 *OK*                            102                                    102                        0
+0                 *OK*                            103                                    103                        0
+0                 *OK*                            104                                    104                        0
+0                 *OK*                            105                                    105                        0
+ 
+0                 *OK*                            101                                    101                        0
+0                 *OK*                            102                                    102                        0
+0                 *OK*                            103                                    103                        0
+0                 *OK*                            104                                    104                        0
+0                 *OK*                            105                                    105                        0
+1
+0 - ITEM -   - JUSTICE -           - COMPUTED VALUE -                      - COMPARE VALUE -            - DIFERANCE -
+0  (  3 )         *OK*                            101                                    101                        0
+0                 *OK*                            102                                    102                        0
+0                 *OK*                            103                                    103                        0
+0                 *OK*                            104                                    104                        0
+0                 *OK*                            105                                    105                        0
+ 
+0                 *OK*                            101                                    101                        0
+0                 *OK*                            102                                    102                        0
+0                 *OK*                            103                                    103                        0
+0                 *OK*                            104                                    104                        0
+0                 *OK*                            105                                    105                        0
+0  (  4 )         *OK*                            201                                    201                        0
+0                 *OK*                            202                                    202                        0
+0                 *OK*                            203                                    203                        0
+0                 *OK*                            204                                    204                        0
+0                 *OK*                            205                                    205                        0
+0                 *OK*                              0                                      0                        0
+0                 *OK*                            207                                    207                        0
+0                 *OK*                            208                                    208                        0
+0                 *OK*                            209                                    209                        0
+0                 *OK*                            210                                    210                        0
+1
+0 - ITEM -   - JUSTICE -           - COMPUTED VALUE -                      - COMPARE VALUE -            - DIFERANCE -
+0  (  5 )         *OK*                             11                                     11                        0
+0                 *OK*                             12                                     12                        0
+0                 *OK*                             13                                     13                        0
+ 
+0                 *OK*                             11                                     11                        0
+0                 *OK*                             12                                     12                        0
+0                 *OK*                             13                                     13                        0
+ 
+0                 *OK*                             11                                     11                        0
+0                 *OK*                             12                                     12                        0
+0                 *OK*                             13                                     13                        0
+0
+      *FORTRAN*          EXIT 
+
+exit 0

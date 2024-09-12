@@ -1,0 +1,33 @@
+        INTEGER * 4 IDATA1(50),IDATA2(50) ,SDATA
+        REAL * 4 RDATA1(50),RDATA2(50)
+        REAL * 8 RDATA3(50),RDATA4(50)
+        REAL * 8  RDATA5(50),RDATA6(50)
+        COMPLEX * 16 CDATA1(50),CDATA2(50)
+        DATA IDATA1/50*5/,IDATA2/50*10/
+        DATA RDATA1/50*2.0/,RDATA2/50*10.0/
+        DATA RDATA3/50*3.0/,RDATA4/50*20.1/
+        DATA RDATA5/50*4.0/,RDATA6/50*10.1/
+        DATA CDATA1/50*(0.5,-5.5)/
+        DATA  CDATA2/50*(3.5,+8.3E-3)/
+        DATA SDATA/3/
+        DO 10 I=1,50
+          IDATA1(I)=IDATA1(I)**4
+          IDATA2(I)=IDATA2(I)**SDATA
+          RDATA1(I)=RDATA1(I)**3
+          RDATA2(I)=RDATA1(I)**SDATA
+          RDATA3(I)=RDATA3(I)**4
+          RDATA4(I)=RDATA4(I)**SDATA
+  10    CONTINUE
+        DO 20 I=1,50
+          RDATA5(I)=RDATA5(I)**5
+          RDATA6(I)=RDATA6(I)**SDATA
+          CDATA1(I)=CDATA1(I)**2
+          CDATA2(I)=CDATA2(I)**SDATA
+  20   CONTINUE
+        WRITE(6,*)   IDATA1,IDATA2,RDATA1,RDATA2,RDATA3,RDATA4
+ 100    FORMAT(1H ,10(I4),/,10(I4),/,10(F7.3),/,10(F7.3),/,10(F7.3),/,
+     *           10(F7.3),/,10(F7.3))
+        WRITE(6,*)   RDATA5,RDATA6,CDATA1,CDATA2
+ 200    FORMAT(1H ,10(F7.3),/,10(F7.3),/,10(F7.3),/,10(F7.3))
+        STOP
+        END

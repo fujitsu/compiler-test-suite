@@ -1,0 +1,10 @@
+                   **
+  **ok** data write end
+  **ok** rewind end
+  **ok** rewind -> read end 
+  **ok** backspace end
+  **ok** backspace -> read end 
+  **ok** read -> read end 
+  **ok** backspace end
+  **ok** backspace -> read end 
+exit 0

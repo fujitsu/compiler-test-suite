@@ -1,0 +1,28 @@
+MODULE mod1
+TYPE ty
+  INTEGER ::ii=2
+  CONTAINS
+  FINAL::ty1
+END TYPE
+CONTAINS
+SUBROUTINE ty1(dmy)
+  TYPE(ty)::dmy
+  PRINT*,'in destructor'
+  PRINT*,dmy%ii
+END SUBROUTINE
+
+FUNCTION fun1()
+  TYPE(ty),POINTER::fun1
+  TYPE(ty),ALLOCATABLE::local
+  ALLOCATE(fun1)
+  ALLOCATE(local)
+  fun1%ii=40
+  local%ii=fun1%ii
+END FUNCTION
+END MODULE
+
+PROGRAM MAIN
+USE mod1
+IMPLICIT NONE
+IF(.NOT.(ASSOCIATED(fun1())))PRINT*,'pass'
+END

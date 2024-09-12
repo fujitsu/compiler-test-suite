@@ -1,0 +1,40 @@
+ Pass argument value : 40
+ Pass argument value : 40
+ foo 1 ->  50
+ foo 2 ->  1
+ Pass argument value : 40
+ foo 1 ->  50
+ foo 2 ->  1
+ foo 3 ->  2
+ Pass argument value : 40
+ foo 1 ->  50
+ foo 2 ->  1
+ foo 3 ->  2
+ foo 4 ->  3
+ Pass argument value : 40
+ foo 1 ->  50
+ foo 2 ->  1
+ foo 3 ->  2
+ foo 4 ->  3
+ foo 5 ->  4
+ Pass argument value : 50
+ foo 1 ->  40
+ Pass argument value : 50
+ foo 1 ->  40
+ foo 2 ->  5
+ Pass argument value : 50
+ foo 1 ->  40
+ foo 2 ->  5
+ foo 3 ->  6
+ Pass argument value : 50
+ foo 1 ->  40
+ foo 2 ->  5
+ foo 3 ->  6
+ foo 4 ->  7
+ Pass argument value : 50
+ foo 1 ->  40
+ foo 2 ->  5
+ foo 3 ->  6
+ foo 4 ->  7
+ foo 5 ->  8
+exit 0

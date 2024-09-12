@@ -1,0 +1,7 @@
+ start array1d destructor
+ 99 99 99 99 99 99
+ end destructor
+ start array2d destructor
+ 1 4 2 5 3 6
+ end destructor
+exit 0

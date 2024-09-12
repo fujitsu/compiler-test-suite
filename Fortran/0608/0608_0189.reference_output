@@ -1,0 +1,6 @@
+ Fa1 Call  3 3
+ F0 Call  100
+ F0 Call  100
+ Pass 30
+ Pass 40
+exit 0

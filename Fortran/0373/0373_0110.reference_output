@@ -1,0 +1,5 @@
+ maxval pass
+ minval pass
+ pass product sum 
+ pass
+exit 0

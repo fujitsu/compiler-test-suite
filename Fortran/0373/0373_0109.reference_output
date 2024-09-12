@@ -1,0 +1,4 @@
+ maxloc pass
+ minloc pass
+ pass
+exit 0

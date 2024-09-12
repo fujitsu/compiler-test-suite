@@ -1,0 +1,24 @@
+MODULE moda
+  INTERFACE SUB2
+   module PROCEDURE  sub
+  END INTERFACE
+INTRINSIC :: INT
+contains
+SUBROUTINE sub2()
+END SUBROUTINE
+SUBROUTINE sub()
+END SUBROUTINE
+end
+module mod
+use moda
+
+PROCEDURE(sub), POINTER :: paa
+PROCEDURE(sub2), POINTER :: pa
+END MODULE
+
+MODULE mod1
+ USE mod
+END MODULE
+USE mod1,ONLY:
+print *,'pass'
+end 

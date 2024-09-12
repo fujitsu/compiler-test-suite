@@ -54,5 +54,5 @@ if (w1()/=12) print *,131
 end
 call z1
 call z2
-print *,'sngg244e : pass'
+print *,'pass'
 end

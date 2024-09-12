@@ -1,0 +1,5 @@
+ psub
+ c present
+ psub
+ Pass
+exit 0

@@ -1,0 +1,5 @@
+         start
+ check1 end
+ check2 end
+         end
+exit 0

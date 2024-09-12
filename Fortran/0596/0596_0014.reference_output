@@ -1,0 +1,4 @@
+ destructor1 call 
+ destructor call 
+ Pass
+exit 0

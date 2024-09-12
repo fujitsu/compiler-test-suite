@@ -1,0 +1,38 @@
+INTERFACE GEN
+SUBROUTINE S1 (J, PI,JJ)
+INTEGER J
+INTEGER, optional :: PI
+INTEGER JJ
+END SUBROUTINE S1
+
+ SUBROUTINE S2 (K, PR,AA)
+ INTEGER K
+ REAL, optional :: PR
+REAL    AA
+ END SUBROUTINE S2
+
+END INTERFACE
+
+ REAL, POINTER :: REAL_PTR
+ INTEGER, POINTER :: I_PTR
+ CALL GEN (7, NULL (REAL_PTR),1.0 )
+ CALL GEN (6, NULL (I_PTR) ,1)
+print *,'pass'
+end
+
+
+SUBROUTINE S1 (J, PI,JJ)
+INTEGER J
+INTEGER JJ
+INTEGER, optional :: PI
+if (j/=6) print *,401
+if (present(PI)) print *,501
+END SUBROUTINE S1
+
+ SUBROUTINE S2 (K, PR,AA)
+ INTEGER K
+ REAL, optional :: PR
+REAL    AA
+if (K/=7) print *,402
+if (present(PR)) print *,502
+ END SUBROUTINE S2

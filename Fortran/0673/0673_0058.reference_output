@@ -1,0 +1,4 @@
+1                      test ... b0000480
+0                    b0000480     ok
+0     end rununit
+exit 0

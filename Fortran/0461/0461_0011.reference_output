@@ -1,0 +1,19 @@
+ destructor ty2
+ 3
+ destructor ty1
+ 4
+ destructor base
+ 5.
+ destructor ty
+ 2
+ destructor ty
+ 20
+ destructor ty2
+ 30
+ destructor ty1
+ 40
+ destructor base
+ 50.00000000000000
+ destructor ty
+ 20
+exit 0

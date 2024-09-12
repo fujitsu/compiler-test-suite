@@ -1,0 +1,12 @@
+         start
+ check1 end data set=seq 
+ check2 end data set=seq 
+ check3 end data set=seq 
+ check1 end data set=dir 
+ check2 end data set=dir 
+ check3 end data set=dir 
+ check1 end data set=seq 
+ check2 end data set=seq 
+ check3 end data set=seq 
+         end
+exit 0

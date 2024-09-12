@@ -4,8 +4,8 @@ integer,pointer::ptr1(:)
 integer,pointer::ptr2(:)
 ptr1=>t1
 ptr2=>t2
-callsub3(ptr1)
-callsub3(ptr1,ptr2)
+call sub3(ptr1)
+call sub3(ptr1,ptr2)
 call sub3()
 print*,"Pass"
 contains

@@ -1,0 +1,15 @@
+ ***** sequential i/o combination test start *****
+  
+ *+*+* test of non open st. file is new *+*+*
+ *+*+* test is ok !! *+*+*
+  
+ *+*+* test of after open st(scratch file)*+*+*+
+ *+*+* test is ok !! *+*+*
+  
+ *+*+* test of after open st(file is new)*+*+*
+ *+*+* test is ok !! *+*+*
+  
+ *+*+* test of after open st(file is old)*+*+*
+ *+*+* test is ok !! *+*+*
+ ***** test is all ok !! *****
+exit 0

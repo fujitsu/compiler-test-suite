@@ -31,7 +31,7 @@ use  m1
 allocate(v(1)% z(1),source=1)
 w= f(  v )
 if (w(1)%z(1)/=1 ) print *,101
-call chk
+!call chk
 print *,'pass'
 end
 

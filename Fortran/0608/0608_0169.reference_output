@@ -1,0 +1,9 @@
+ Fa3 Call 30 3
+ F2 Call 2
+ F1 Call 1
+ F0 Call 0
+ F2 Call 2
+ F1 Call 1
+ F0 Call 0
+ PASS
+exit 0

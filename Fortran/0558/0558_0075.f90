@@ -1,0 +1,62 @@
+MODULE mod1
+IMPLICIT NONE
+
+REAL :: num1,num2
+
+INTERFACE
+SUBROUTINE extsub(d1,d2)
+INTEGER :: d1
+REAL :: d2
+END SUBROUTINE
+SUBROUTINE intsub(d1,d2)
+  REAL :: d1,d2
+END SUBROUTINE
+END INTERFACE
+
+CONTAINS
+SUBROUTINE msub(d1,d2)
+INTEGER :: d1,d2
+d1 = d1 + d2
+d2 = 2
+END SUBROUTINE
+
+END MODULE
+
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+PROCEDURE(extsub) :: npsub
+
+INTERFACE gnr
+  MODULE PROCEDURE msub
+  PROCEDURE intsub
+  PROCEDURE npsub
+END INTERFACE
+
+num1 = 5.0
+num2 = 7.0
+
+CALL gnr(num1,num2)
+
+IF(num1 .EQ. 10.0 .AND. num2 .EQ. 21.0) THEN
+  PRINT*,"PASS"
+ELSE
+  PRINT*,"ERROR"
+END IF
+
+END PROGRAM
+
+SUBROUTINE intsub(d1,d2)
+  REAL :: d1,d2
+  d1 = d1 * 2.0
+  d2 = d2 * 3.0
+END SUBROUTINE
+
+SUBROUTINE npsub(d1,d2)
+INTEGER :: d1
+REAL :: d2
+d1 = d1 + 2
+d2 = d2 + 2.0
+END SUBROUTINE

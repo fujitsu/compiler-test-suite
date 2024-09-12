@@ -1,0 +1,23 @@
+      PROGRAM MAIN
+      J=0
+ 5187 ASSIGN 187 TO I
+      GOTO 8888
+ 5188 ASSIGN 188 TO I
+      GOTO 8888
+ 5189 ASSIGN 189 TO I
+      GOTO 8888
+ 5190 ASSIGN 190 TO I
+ 8888 GOTO I,(187,188,189,190)
+  187 J=J+187
+      GOTO 5188
+  188 J=J+188
+      GOTO 5189
+  189 J=J+189
+      GOTO 5190
+  190 J=J+190
+      IF(J.EQ.754) THEN
+        PRINT *,'***** PASS *****'
+      ELSE
+        PRINT *,'** NG **'
+      ENDIF
+      END

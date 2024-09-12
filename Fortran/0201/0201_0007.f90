@@ -34,7 +34,7 @@ use m2
                       if(aa .ne. 200)print*,"101",aa
 
                       call zzz
-                      print*,"sngg535e : pass"
+                      print*,"pass"
 
                     contains
                       subroutine zzz

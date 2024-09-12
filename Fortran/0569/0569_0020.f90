@@ -1,0 +1,13 @@
+INTEGER::A
+A=5
+
+if(F(A) /=5)print*,101
+print*,"PASS"
+contains
+ELEMENTAL INTEGER FUNCTION F ( N)
+INTEGER, INTENT (IN) :: N
+REAL :: WORK_ARRAY(N) 
+F=SIZE(WORK_ARRAY)
+END FUNCTION F
+
+end

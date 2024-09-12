@@ -1,0 +1,46 @@
+      CALL AA
+      CALL BB
+      CALL CC
+      WRITE(6,*) '*****PASS*****'
+      STOP
+      END
+      SUBROUTINE AA
+      CHARACTER*4 A(9)
+      A(1)(1:4)='NO.1'
+      A(2)(1:4)='NO.2'
+      A(3)(1:4)='NO.3'
+      A(4)(1:4)='NO.4'
+      A(5)(1:4)='NO.5'
+      A(6)(1:4)='NO.6'
+      A(7)(1:4)='NO.7'
+      A(8)(1:4)='NO.8'
+      A(9)(1:4)='NO.9'
+      WRITE(6,*) ((A(I)(1:J),I=1,9),J=1,4)
+      WRITE(6,*) 'NNNNNNNNNNONONONONONONONONONO.NO.NO.NO.NO.NO.NO.NO.NO.
+     1NO.1NO.2NO.3NO.4NO.5NO.6NO.7NO.8NO.9'
+      END
+      SUBROUTINE BB
+      CHARACTER*4 A(9)
+      DO 10 K=1,9,1
+      A(K)(1:4)='TEST'
+   10 CONTINUE
+      WRITE(6,*) ((A(I)(1:J),I=1,9),J=1,4)
+      WRITE(6,*) 'TTTTTTTTTTATATATATATATATATATANTANTANTANTANTANTANTANTAN
+     1TESTTESTTESTTESTTESTTESTTESTTESTTEST'
+      END
+      SUBROUTINE CC
+      CHARACTER*4 A(9)
+      I=1
+      J=4
+      DO 100 K=1,9,1
+      A(K)(I:J)='KING'
+  100 CONTINUE
+      CALL SUBA(A,I,J)
+      END
+      SUBROUTINE SUBA(X,Y,Z)
+      CHARACTER*(*) X(9)
+      INTEGER Y,Z
+      WRITE(6,*) ((X(I)(Y:Z),I=1,9),Z=1,4)
+      WRITE(6,*) 'KKKKKKKKKKIKIKIKIKIKIKIKIKIKILKILKILKILKILKILKILKILKIL
+     1KINGKINGKINGKINGKINGKINGKINGKINGKING'
+      END

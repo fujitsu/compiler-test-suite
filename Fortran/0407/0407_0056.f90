@@ -1,0 +1,18 @@
+MODULE mod
+  INTERFACE
+    SUBROUTINE sub()
+    END SUBROUTINE
+  END INTERFACE
+
+  PROCEDURE(sub), POINTER :: pa
+END MODULE
+
+MODULE mod1
+ USE mod
+END MODULE
+MODULE mod2
+ USE mod1
+END MODULE
+USE mod2,ONLY:
+print *,'pass'
+end 

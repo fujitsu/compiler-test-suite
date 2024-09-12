@@ -1,0 +1,19 @@
+MODULE M
+
+TYPE T
+ INTEGER::A
+END TYPE T
+end
+
+INTERFACE READ(UNFORMATTED)
+     SUBROUTINE UNFMTREAD(DTV, UNIT, IOSTAT, IOMSG)
+         use M
+         CLASS (T), INTENT(INOUT)  :: DTV
+         INTEGER,                  INTENT(IN)     :: UNIT
+         INTEGER,                  INTENT(OUT)    :: IOSTAT
+         CHARACTER (LEN=*),        INTENT(INOUT)  :: IOMSG
+     END SUBROUTINE UNFMTREAD
+END INTERFACE READ(UNFORMATTED)
+
+print *,'pass'
+end

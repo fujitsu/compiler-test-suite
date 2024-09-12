@@ -1,0 +1,36 @@
+MODULE mod1
+IMPLICIT NONE
+TYPE ty
+  INTEGER :: ii=1
+  CONTAINS
+    FINAL::destructor_ty
+END TYPE
+CONTAINS
+SUBROUTINE destructor_ty(dmy)
+  TYPE(ty)::dmy
+  PRINT*,dmy%ii
+END SUBROUTINE
+END MODULE 
+
+
+
+MODULE mod2
+USE mod1
+IMPLICIT NONE
+TYPE,EXTENDS(ty)::ty1
+  INTEGER :: jj=2
+  TYPE(ty),POINTER::ty_ptr
+END TYPE
+END MODULE 
+
+
+
+PROGRAM MAIN
+USE mod2
+IMPLICIT NONE
+TYPE(ty1) :: ty1_obj1
+TYPE(ty)  :: ty_obj1
+ty_obj1%ii=50
+ALLOCATE(ty1_obj1%ty_ptr,SOURCE=ty_obj1)
+DEALLOCATE(ty1_obj1%ty_ptr)
+END

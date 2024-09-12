@@ -1,0 +1,19 @@
+PROGRAM MAIN
+	IMPLICIT NONE
+	
+	COMPLEX(4) :: C4_X
+	COMPLEX(4) :: C4_RESULT, C4_COMPARE
+	REAL(4), PARAMETER :: FORHUGE = HUGE(FORHUGE)
+	
+	C4_X = (FORHUGE,FORHUGE)
+
+
+print *,'pass'
+stop
+	C4_RESULT = ACOSH(C4_X)
+	C4_COMPARE = log(c4_x + sqrt(c4_x*c4_x - 1))
+
+	print 	*,C4_RESULT
+	print 	*,C4_COMPARE
+
+END PROGRAM

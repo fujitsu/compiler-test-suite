@@ -1,0 +1,10 @@
+ ** TEST NO. 1 **
+ 10. 11. 0. 0. 0. 0. 0. 0. 0. 0. 0. F T F F F F F F F F F
+ ** TEST NO. 2 **
+ 10. 11. 0. 0. 0. 0. 0. 0. 0. 0. 0. F T F F F F F F F F F 1. 2. 3. 4. 5. 6. 7.
+ 8. 9. 10. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. F F F F F F F F F F F T F T F T F T
+F T
+ ** TEST NO. 3 **
+ 10. 10. 10. 10. 10. 10. 10. 10. 10. 10. 11. 11. 11. 11. 11. 11. 11. 11. 11.
+ 11. F F F F F F F F F F T T T T T T T T T T
+exit 0

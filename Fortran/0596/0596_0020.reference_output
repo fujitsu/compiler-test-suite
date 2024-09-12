@@ -1,0 +1,3 @@
+ des1_scalar destructor called 2
+ des0_scalar destructor called 2
+exit 0

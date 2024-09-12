@@ -1,0 +1,36 @@
+SUBROUTINE EX_SUB()
+         TYPE TY
+         INTEGER :: JJ
+         INTEGER,ALLOCATABLE :: ALC
+         END TYPE
+
+        TYPE TY1
+         INTEGER :: II
+        TYPE(TY), ALLOCATABLE :: NODE2
+        END TYPE
+
+        TYPE TY2
+         INTEGER :: KK
+        TYPE(TY1), ALLOCATABLE :: NODE3
+        END TYPE
+        TYPE(TY1),ALLOCATABLE :: OBJ2
+
+        ALLOCATE(OBJ2)
+        ALLOCATE(OBJ2%NODE2)
+        ALLOCATE(OBJ2%NODE2%ALC)
+        OBJ2%NODE2%JJ = 4
+        OBJ2%NODE2%ALC = 5
+        CALL SUB(TY2(6,OBJ2))
+        IF(OBJ2%NODE2%ALC.NE.5)PRINT*,"101", OBJ2%NODE2%ALC
+        PRINT*,"PASS"
+        CONTAINS
+        SUBROUTINE SUB(OBJ)
+        TYPE(TY2):: OBJ
+        IF(OBJ%NODE3%NODE2%JJ .NE. 4) PRINT*,"121"
+        IF(OBJ%NODE3%NODE2%ALC .NE. 5) PRINT*,"122"
+        IF(OBJ%KK .NE. 6) PRINT*,"123"
+        deallocate(OBJ%NODE3%NODE2%ALC)
+        END SUBROUTINE
+        END SUBROUTINE
+CALL EX_SUB()
+END

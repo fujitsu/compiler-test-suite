@@ -1,0 +1,9 @@
+ its ty1_dest-> 20
+ its ty dest -> 10
+ its ty dest -> 10
+ its ty1_dest-> 200
+ its ty dest -> 100
+ its ty dest -> 100
+ its ty dest -> 100
+ its ty dest -> 100
+exit 0

@@ -1,0 +1,16 @@
+REAL*8 B(100),D(100),E(100),F(100)
+REAL*4 A(100),C(100),G(100),H(100)
+DATA D/100*1/
+DATA E/100*2/
+DATA G/100*3/
+DATA H/100*4/
+DO I=1,100
+A(I)=SIN(G(I))+COS(G(I))
+F(I)=A(I)
+B(I)=D(I)**E(I)+F(I)**D(I)
+C(I)=SIN(H(I))+COS(H(I))
+ENDDO
+WRITE(6,*)"A(1)=",A(1)
+WRITE(6,*)"B(1)=",B(1)
+WRITE(6,*)"C(1)=",C(1)
+END

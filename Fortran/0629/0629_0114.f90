@@ -1,0 +1,9 @@
+REAL(KIND=4) ,DIMENSION(5)::PZ
+PZ=RESHAPE((/(/(BOUR(),I=1,5),1.,2.,3.,4.,5./)/),(/5/))
+write(6,*) PZ
+end
+
+REAL(KIND=4) FUNCTION BOUR()
+BOUR=10.0
+RETURN
+end

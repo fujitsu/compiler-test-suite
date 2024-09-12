@@ -5,7 +5,7 @@
       F(R)=(R**2+EXP(SIN(R-1.0)))/SQRT(4.0*R)
       N=0
       ITEM=0
-      PAI=3.1415926
+      Pi=3.1415926
       P=1.0
       ISW=1
       J=1
@@ -20,7 +20,7 @@
       ARRAY(2,2)=0.5
       DIFF=1.0E-5
 C
-      DP(1)=PAI/4.0
+      DP(1)=Pi/4.0
       ISG=1
       IISG=1
    40 K=-500
@@ -109,10 +109,10 @@ C
       L=L+1
       GO TO 23
    21 GO TO(10,20,30),ISG
-   10 DP(1)=PAI/2.0
+   10 DP(1)=Pi/2.0
       ISG=2
       GO TO 40
-   20 DP(1)=PAI*5./6.
+   20 DP(1)=Pi*5./6.
       ISG=3
       GO TO 40
    30 DP(2)=-1.

@@ -1,0 +1,14 @@
+REAL*8 A(100),C(100),D(100),E(100),F(100),G(100)
+DATA C/100*1/
+DATA E/100*2/
+DO I=1,100
+A(I)=SIN(C(I))
+D(I)=SIN(E(I))
+F(I)=LOG(D(I))
+G(I)=LOG(C(I))
+ENDDO
+WRITE(6,*)"A(1)=",A(1)
+WRITE(6,*)"D(1)=",D(1)
+WRITE(6,*)"F(1)=",F(1)
+WRITE(6,*)"G(1)=",G(1)
+END

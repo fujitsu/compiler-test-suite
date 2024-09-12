@@ -1,0 +1,134 @@
+      DOUBLE PRECISION DP(2),ANS(2),P,DARRAY(2,2),DIFF
+      COMPLEX*16   DCX,DCXS,DCXC,DZZ,DZARY(2,2)
+      EQUIVALENCE (DCX,DP(1)),(DCXS,ANS(1))
+C
+      ITEM=0
+      N=0
+      P=1.0D0
+      ISW=1
+      IISW=1
+      DZZ=(0.0D0,0.0D0)
+      DZARY(1,1)=(-0.5D0,-0.5D0)
+      DZARY(1,2)=(-0.01D0,+0.01D0)
+      DZARY(2,1)=(0.01D0,-0.01D0)
+      DZARY(2,2)=(+0.5D0,+0.5D0)
+      DARRAY(1,1)=-0.5D0
+      DARRAY(1,2)=-0.01D0
+      DARRAY(2,1)=0.01D0
+      DARRAY(2,2)=0.5D0
+      DIFF=1.0D-14
+      WRITE(6,100)
+  100 FORMAT(1H1/7X,24H*FORTRAN*          ENTER)
+   11 K=-6283
+      GO TO(10,20,30,40),ISW
+   10 DP(1)=-1.0D0
+      GO TO 21
+   20 DP(1)=0.0D0
+      GO TO 21
+   30 DP(1)=1.0D0
+      GO TO 21
+   40 DP(1)=2.0D0
+   21 ITEM=ITEM+1
+   27 N=N+1
+      IF(N-1)22,23,22
+   22 WRITE(6,101)
+  101 FORMAT(1H1 / )
+   23 WRITE(6,102) ITEM,N
+  102 FORMAT(1H0,7X,9H*** ITEM(,I2,5H) ***,7X,
+     1       49H*****  TEST  OF  STANDARD  EXTERNAL  FUNCTION  - ,
+     2       14HCDEXP(DCX) _  ,5H*****,19X,9H( PAGE = ,I3,2H ),
+     3       ///2X,11H- JUSTICE -,11X,12H- ARGUMENT -,31X,
+     4       19H+ COMPUTED RESULT +,23X,14H- DIFFERENCE -
+     5       /67X,19H+ COMPARE   VALUE +)
+      L=0
+   26 DP(2)=DFLOAT(K)/1000.0D0
+      ANS(1)=DEXP(DP(1))*DCOS(DP(2))
+      ANS(2)=DEXP(DP(1))*DSIN(DP(2))
+      DCXC=CDEXP(DCX)
+      CALL DCPRTN(L,DIFF,DCX,DCXC,DCXS)
+      L=L+1
+      IF(K-6217)24,25,25
+   24 K=K+125
+      IF(L-25)26,27,27
+   25 IF(ITEM-4)29,28,28
+   29 ISW=ISW+1
+      GO TO 11
+   28 ITEM=5
+      N=N+1
+      WRITE(6,101)
+      WRITE(6,102) ITEM,N
+      L=0
+   60 GO TO (1,2,3,4,5,6,7,8,9),IISW
+    1 DP(1)=-0.5D0
+      DP(2)=-0.5D0
+      IISW=2
+      DCX=DZARY(1,1)
+      GO TO 50
+    2 DP(1)=-0.01D0
+      DP(2)=+0.01D0
+      IISW=3
+      DCX=DZARY(1,2)
+      GO TO 50
+    3 DP(1)=0.01D0
+      DP(2)=-0.01D0
+      IISW=4
+      DCX=DZARY(2,1)
+      GO TO 50
+    4 DP(1)=0.5D0
+      DP(2)=0.5D0
+      IISW=5
+      DCX=DZARY(2,2)
+      GO TO 50
+    5 DP(1)=-0.5D0
+      DP(2)=-0.5D0
+      IISW=6
+      DCX=((P**2-2.0D0)*6.0D0+1.0D0)/10.0D0*DZZ+DZARY(1,1)
+      GO TO 50
+    6 DP(1)=-0.01D0
+      DP(2)=+0.01D0
+      IISW=7
+      DCX=(P**2+P*0.1D0-P/10.0D0)/(-100.0D0)*DZZ+DZARY(1,2)
+      GO TO 50
+    7 DP(1)=0.01D0
+      DP(2)=-0.01D0
+      IISW=8
+      DCX=(DARRAY(1,1)*(-10.0D0)+5.0D0*P)/1000.0D0*DZZ+DZARY(2,1)
+      GO TO 50
+    8 DP(1)=+0.5D0
+      DP(2)=+0.5D0
+      IISW=9
+      DCX=(DARRAY(1,1)**2+P/10.0D0*2.0D0+DARRAY(2,2)/10.0D0)*DZZ+
+     1DZARY(2,2)
+   50 ANS(1)=DEXP(DP(1))*DCOS(DP(2))
+      ANS(2)=DEXP(DP(1))*DSIN(DP(2))
+      DCXC=CDEXP(DCX)
+      CALL DCPRTN (L,DIFF,DCX,DCXC,DCXS)
+      L=L+1
+      GO TO 60
+    9 WRITE(6,103)
+  103 FORMAT(1H0/7X,23H*FORTRAN*          EXIT)
+      STOP
+      END
+C
+      SUBROUTINE    DCPRTN (L,D,A,R,V)
+      COMPLEX*16   A,R,V,DIFF
+      DOUBLE PRECISION D
+      DIFF = V - R
+      IF (CDABS(R))  90,80,90
+   80 IF(CDABS(DIFF)-D) 100,120,120
+   90 IF(CDABS(DIFF)-D*CDABS(V)) 100,120,120
+  100 WRITE (6,1) A,R,V,DIFF
+    1 FORMAT (1H ,3X,7H*OK*   ,5X,D14.7,1X,D14.7,7X,D24.17,1X,D24.17 /
+     *        52X,D24.17,1X,D24.17,5X,2(D13.5))
+      GO TO 130
+  120 WRITE (6,2) A,R,V,DIFF
+    2 FORMAT (1H ,3X,7H*ERROR*,5X,D14.7,1X,D14.7,7X,D24.17,1X,D24.17 /
+     *        52X,D24.17,1X,D24.17,5X,2(D13.5))
+  130 IF (L- 4) 200,190,140
+  140 IF (L- 9) 200,190,150
+  150 IF (L-14) 200,190,160
+  160 IF (L-19) 200,190,200
+  190 WRITE(6,3)
+    3 FORMAT (1H )
+  200 RETURN
+      END

@@ -1,0 +1,112 @@
+      PROGRAM MAIN
+       REAL*8 DA11(10,10)
+       DATA DA11/100*10/ 
+       INTEGER*2 HA11(2:9)
+       REAL*4 EA11(10), EA12(-1:12), EA13(-1:11)
+       DATA EA13/13*10/ 
+       DATA EA12/14*9/ 
+       DATA EA11/10*0/ 
+       REAL*8 DA21(10,10)
+       DATA DA21/100*0/ 
+       INTEGER*2 HA21(2:9)
+       REAL*4 EA21(1:10), EA22(-1:12), EA23(0:11)
+       DATA EA23/12*10/ 
+       DATA EA22/14*9/ 
+       DATA EA21/10*0/ 
+       CALL SUB (DA11,HA11,EA11,EA12,EA13,DA21,HA21,EA21,EA22,EA23,10,11
+     X   ,12,0,1,(-1))
+       STOP 
+      END
+
+      SUBROUTINE SUB ( DA11, HA11, EA11, EA12, EA13, DA21, HA21, EA21, 
+     X  EA22, EA23, K10, K11, K12, K00, K01, KM1 )
+       REAL*8 DA11(10,K01:K10)
+       INTEGER*2 HA11(2:9)
+       REAL*4 EA11(K01:K10), EA12(KM1:12), EA13(KM1:11)
+       REAL*8 DA21(10,*)
+       INTEGER*2 HA21(2:9)
+       REAL*4 EA21(1:10), EA22(-1:K12), EA23(0:11)
+       INTEGER N
+       PARAMETER (N = 9)
+       INTEGER I1
+       REAL RR14, RR13, RR12, RR11, RR10, RR9, RR8, RR7, RR6, RR5, RR4, 
+     X   RR3, RR2, RR1
+       RR1 = EA13(1)
+       RR2 = EA13(2)
+       RR3 = EA13(3)
+       RR4 = EA13(4)
+       RR5 = EA13(5)
+       RR6 = EA13(6)
+       RR7 = EA13(7)
+       ES1 = EA13(8)
+       EA12(7) = EA13(8) * 2
+       EA12(6) = EA13(7) * 2
+       EA12(5) = EA13(6) * 2
+       EA12(4) = EA13(5) * 2
+       EA12(3) = EA13(4) * 2
+       EA12(2) = EA13(3) * 2
+       EA12(1) = EA13(2) * 2
+       EA12(0) = EA13(1) * 2
+       EA11(3) = RR1
+       EA11(4) = RR2
+       EA11(5) = RR3
+       EA11(6) = RR4
+       EA11(7) = RR5
+       EA11(8) = RR6
+       EA11(9) = RR7
+       EA11(10) = ES1
+       DO I1=2,9
+        HA11(I1) = 9
+        IF (I1 .LT. 8) THEN
+         DA11(I1,I1+1) = I1
+         EA11(I1) = I1 * 2
+        ELSE
+         DA11(I1,I1-1) = I1
+        END IF
+        IF (I1 .NE. 9) THEN
+         EA12(10-I1) = I1
+        END IF
+       END DO
+       WRITE (6, *) HA11, DA11, EA11, EA12
+
+       RR8 = EA23(1)
+       RR9 = EA23(2)
+       RR10 = EA23(3)
+       RR11 = EA23(4)
+       RR12 = EA23(5)
+       RR13 = EA23(6)
+       RR14 = EA23(7)
+       ES1 = EA23(8)
+       EA22(7) = EA23(8) * 2
+       EA22(6) = EA23(7) * 2
+       EA22(5) = EA23(6) * 2
+       EA22(4) = EA23(5) * 2
+       EA22(3) = EA23(4) * 2
+       EA22(2) = EA23(3) * 2
+       EA22(1) = EA23(2) * 2
+       EA22(0) = EA23(1) * 2
+       DA21(3,2) = RR8
+       DA21(4,3) = RR9
+       DA21(5,4) = RR10
+       DA21(6,5) = RR11
+       DA21(7,6) = RR12
+       DA21(8,7) = RR13
+       DA21(9,8) = RR14
+       DA21(10,9) = ES1
+
+       DO I1=2,9
+        HA21(I1) = 9
+        IF (I1 .LT. 8) THEN
+         DA21(I1,I1+1) = I1
+         EA21(I1) = I1 * 2
+        ELSE
+         DA21(I1,I1-1) = I1
+        END IF
+        IF (I1 .NE. 9) THEN
+         EA22(10-I1) = I1
+        END IF
+       END DO
+       I = 10
+       WRITE (6, *) HA21, ((DA21(I,J), I=1,10), J=1,10), EA21, EA22
+       STOP 
+      END

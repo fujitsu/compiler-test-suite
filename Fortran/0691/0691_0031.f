@@ -1,0 +1,55 @@
+      INTEGER DA,DT(30,5),D1,D2,D3,FDI,FUNC,R,C,A,B
+      DIMENSION DA(50)
+      FDI(D1,D2)=D1+D2
+      A=6935012
+      I=10
+      J=3
+      DT(I,J)=-38962
+      DA(2*I)=63500
+      B=20
+      WRITE(6,101)
+      WRITE(6,102)
+  101 FORMAT(1H1 / 6X,24H*FORTRAN*          ENTER /)
+  102 FORMAT(1H0,10X,11H- JUSTICE -,9X,8H- ITEM -,17X,
+     *19H- COMPUTED RESULT -,22X,17H- COMPARE VALUE -)
+      DO 256 JIS=1,1
+      DO 30 K=1,5
+      GO TO(1,2,3,4,5),K
+   30 CONTINUE
+  256 CONTINUE
+      GO TO 99
+   50 IF(C-R)52,51,52
+   51 WRITE(6,103)
+  103 FORMAT(1H0,12X,7H*OK*   )
+      GO TO 53
+   52 WRITE(6,104)
+  104 FORMAT(1H0,12X,7H*ERROR*)
+   53 WRITE(6,105)K,R,C
+  105 FORMAT(1H+,32X,1H(,I2,1H),22X,I12,28X,I12)
+      GO TO 30
+    1 R=A+358
+      C=6935370
+      GO TO 50
+    2 R=DT(I,J)-60
+      C=-39022
+      GO TO 50
+    3 R=DA(2*I)*J
+      C=190500
+      GO TO 50
+    4 R=FDI(A,DT(I,J))-6000000
+      C=896050
+      GO TO 50
+    5 R=FUNC(DT(I,J),A,B)-890000
+      C=6005978
+      GO TO 50
+   99 WRITE(6,106)
+  106 FORMAT(1H0,6X,23H*FORTRAN*          EXIT,//)
+      STOP
+      END
+      INTEGER FUNCTION FUNC(A,B,C)
+      INTEGER A,B,C,FC,X
+      FC(X)=X+52
+      J=1
+      FUNC=A+B*J-FC(C)
+      RETURN
+      END

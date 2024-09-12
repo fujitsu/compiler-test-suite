@@ -1,0 +1,128 @@
+      DIMENSION A1(10),A2(2,6),A3(2,2,2),A4(2,2,2,2),A5(2,2,2,2,2),
+     1          B1(10),B2(2,5),B3(2,2,2),B4(2,2,2,2),B5(2,2,2,2,2),
+     1          C1(10),C2(2,5),C3(2,2,2),C4(2,2,2,2),C5(2,2,2,2,2),
+     1          E1(20),E2(2,5),E3(2,2,2),E5(2,2,2,2),E6(2,2,2,2,2),ER(4)
+     1     ,A6(2,2,2,2,2,2)
+C
+      INTEGER*4  ITEM
+      ITM=1
+C
+C
+      WRITE(6,100,ERR=201)
+      GO TO 200
+  100 FORMAT(1H1,10X,24H*FORTRAN*          ENTER)
+  201 WRITE(6,102)
+  102 FORMAT(1H1,10X,11HWRITE ERROR)
+  212 STOP
+  200 WRITE(6,103,ERR=201)
+  103 FORMAT(1H0,4X,8H- ITEM -,6X,11H- JUSTICE -,8X,19H- COMPUTED  VALUE
+     * -,17X,17H- COMPARE VALUE -,20X,14H- DIFFERENCE -/)
+  202 READ(5,104,END=208,ERR=209) A1(1),A1(2),A1(3),A1(4),A1(5),A1(6),
+     1  A1(7),A1(8),A1(9),A1(10)
+  104 FORMAT(8F10.4)
+  208 DO 203 I=1,10
+      B=FLOAT(I)
+      A=A1(I)
+      CALL PRINT(ITM,A,B)
+  203 CONTINUE
+      GO TO 211
+  209 WRITE(6,106,ERR=212)
+      GO TO 212
+  106 FORMAT(1H0,10HREAD ERROR)
+  211 READ(5,104,END=213,ERR=209) ((A2(I,2*J-1),A2(I,2*J),J=1,3),I=1,2)
+  213 DO 214 I=1,2
+      DO 214 J=1,6
+      ITEM=J+10*I
+      B=FLOAT(ITEM)
+      A=A2(I,J)
+      CALL PRINT(ITM,A,B)
+  214 CONTINUE
+C
+C
+C
+C
+C
+  219 READ(5,104,END=220,ERR=209) (((A3(I,J,K),A3(I,J,2*K),K=1,1),J=1,2)
+     1    ,I=1,2)
+  220 DO 225 I=1,2
+      DO 225 J=1,2
+      DO 225 K=1,2
+      ITEM=K+10*J+100*I
+      B=FLOAT(ITEM)
+      A=A3(I,J,K)
+      CALL PRINT(ITM,A,B)
+  225 CONTINUE
+C
+C
+C
+C
+  227 READ(5,104,END=228,ERR=209) ((((A4(I,J,K,2*L-1),A4(I,J,K,2*L),
+     1    L=1,1),K=1,2),J=1,2),I=1,2)
+C
+  228 DO 229 I=1,2
+      DO 229 J=1,2
+      DO 229 K=1,2
+      DO 229 L=1,2
+      ITEM=L+10*K+100*J+1000*I
+      A=A4(I,J,K,L)
+      B=FLOAT(ITEM)
+      CALL PRINT(ITM,A,B)
+  229 CONTINUE
+C
+  237 READ(5,104,END=238,ERR=209) (((((A5(I,J,K,L,M),A5(I,J,K,L,2*M),
+     1    M=1,1),L=1,2),K=1,2),J=1,2),I=1,2)
+C
+  238 DO 239 I=1,2
+      DO 239 J=1,2
+      DO 239 K=1,2
+      DO 239 L=1,2
+      DO 239 M=1,2
+      ITEM=M+10*L+100*K+1000*J+10000*I
+      A=A5(I,J,K,L,M)
+      B=FLOAT(ITEM)
+      CALL PRINT(ITM,A,B)
+  239 CONTINUE
+C
+C
+C
+  246 READ(5,104,END=251,ERR=209) ((((((A6(I,J,K,L,M,2*N-1),A6(I,J,K,L,
+     1    M,2*N),N=1,1),M=1,2),L=1,2),K=1,2),J=1,2),I=1,2)
+C
+  251 CONTINUE
+      DO 247 I=1,2
+      DO 247 J=1,2
+      DO 247 K=1,2
+      DO 247 L=1,2
+      DO 247 M=1,2
+      DO 247 N=1,2
+      ITEM=N+10*M+100*L+1000*K+10000*J+100000*I
+      A=A6(I,J,K,L,M,N)
+      B=FLOAT(ITEM)
+      CALL PRINT(ITM,A,B)
+  247 CONTINUE
+C
+C
+      WRITE(6,107)
+  107 FORMAT(1H0//10X,23H*FORTRAN*        EXIT  )
+      STOP
+      END
+      SUBROUTINE  PRINT(ITM,A,B)
+      IF(MOD(ITM,28).EQ.0) GO TO 100
+      GO TO 200
+  100 WRITE(6,3)
+      WRITE(6,4)
+  200 DIF=1.0E-5
+      C=ABS((A-B)/B)
+      IF(C.GT.1.0E-5) GO TO 20
+      WRITE(6,1) ITM,A,B,C
+      GO TO 30
+   20 WRITE(6,2) ITM,A,B,C
+   30 ITM=ITM+1
+      RETURN
+    1 FORMAT(1H0,6X,1H(,I4,1H),8X,7H*OK*   ,18X,E14.7,2(21X,E14.7))
+    2 FORMAT(1H0,6X,1H(,I4,1H),8X,7H*ERROR*,18X,E14.7,2(21X,E14.7))
+    3 FORMAT(1H1///)
+    4 FORMAT(1H0,4X,8H- ITEM -,6X,11H- JUSTICE -,8X,19H- COMPUTED RESULT
+     - -,17X,17H- COMPARE VALUE -,20X,14H- DIFFERENCE -,/)
+      STOP
+      END

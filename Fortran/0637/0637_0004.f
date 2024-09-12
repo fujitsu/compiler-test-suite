@@ -1,0 +1,2 @@
+      write (*,*) 'ok'
+      end

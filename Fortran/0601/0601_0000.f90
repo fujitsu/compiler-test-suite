@@ -1,0 +1,34 @@
+COMPLEX(2) :: CMP
+COMPLEX(2) :: CMP_DSB(5)
+
+REAL(2) :: R2 = 1.0_2
+REAL(2) :: R2_AR(4) = 4.0_2
+REAL(16) :: R16(5) = 2.0_16
+
+INTEGER(1) :: I1 = 5_1
+INTEGER(2) :: I4(5) = 2_2
+
+COMPLEX(2) :: C2 = (2.0_2,3.0_2)     
+COMPLEX(2) :: C2_AR(5) = (4.0_2,3.0_2)     
+COMPLEX(16) :: C16(5) = (1.0_16,1.0_16)     
+COMPLEX::RES2
+CMP=C2**R2
+IF(CMP .NE. ((2,3)**1))PRINT*,"101"
+
+CMP_DSB(2)=C2_AR(3)**R16(1)
+RES2 = (4.0_2,3.0_2) ** 2.0_16
+IF(CMP_DSB(2) .NE. RES2)PRINT*,"102"
+
+CMP=I1**C2
+IF(CMP .NE. (5_1**(2.0_2,3.0_2)))PRINT*,"103"
+
+CMP_DSB(3)=C2_AR(1)**I4(1)
+IF(CMP_DSB(3) .NE. ((4.0_2,3.0_2)**2))PRINT*,"104"
+
+C16(1)=C2_AR(2)**C16(2)
+IF(C16(1) .NE. C2_AR(3)**C16(3))PRINT*,"105"
+
+CMP_DSB(1)=C2_AR(1)**R2_AR(2)
+IF(CMP_DSB(1) .NE. (C2_AR(2)**R2_AR(3)))PRINT*,"106"
+PRINT*,"PASS"
+END

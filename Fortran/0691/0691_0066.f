@@ -1,0 +1,281 @@
+      DIMENSION J(20),JANS(20),A(20),AANS(20)
+      INTEGER*4 JD(20),JDANS(20)
+      DOUBLE PRECISION D(20),DANS(20),MD,ND,DY,DZ,DIF,DIFC,DIFD,DREAL,DI
+     *MAG
+      COMPLEX C(20),CANS(20)
+      COMPLEX*16 DC(20),DCANS(20)
+  111 FORMAT(1H1/7X,24H*FORTRAN*          ENTER)
+  120 FORMAT(1H0/6X,23H- JUSTICE -    - ITEM -,10X,19H- COMPUTED RESULT
+     *-,19X,17H- COMPARE VALUE -,19X,14H- DIFFERENCE -)
+  121 FORMAT(1H0,7X,4H*OK*,11X,1H(,I2,1H),17X,I12,21X,I12)
+  122 FORMAT(1H0,7X,7H*ERROR*,8X,1H(,I2,1H),17X,I12,21X,I12)
+  123 FORMAT(1H0,7X,4H*OK*,11X,1H(,I2,1H),14X,E14.7,19X,E14.7,21X,E14.7)
+  124 FORMAT(1H0,7X,7H*ERROR*,8X,1H(,I2,1H),14X,E14.7,19X,E14.7,21X,
+     *E14.7)
+  126 FORMAT(1H0,7X,4H*OK*,11X,1H(,I2,1H),5X,D24.17,10X,D24.17,12X,
+     *D24.17)
+  127 FORMAT(1H0,7X,7H*ERROR*,8X,1H(,I2,1H),5X,D24.17,10X,D24.17,12X,
+     *D24.17)
+  128 FORMAT(1H0,25X,3(9X,9HREAL PART,8X,9HIMAG PART))
+  129 FORMAT(1H0,7X,4H*OK*,11X,1H(,I2,1H),1X,3(4X,E14.7,3X,E14.7))
+  130 FORMAT(1H0,7X,7H*ERROR*,8X,1H(,I2,1H),1X,3(4X,E14.7,3X,E14.7))
+  131 FORMAT(1H0,4X,20H_ JUSTICE _ _ ITEM _,17X,19H_ COMPUTED RESULT _,
+     *37X,17H_ COMPARE VALUE _)
+  132 FORMAT(1H0,35X,9HREAL PART,17X,9HIMAG PART,19X,9HREAL PART,17X,9HI
+     *MAG PART)
+  133 FORMAT(1H0,7X,4H*OK*,7X,1H(,I2,1H),2X,2(4X,D24.17,2X,D24.17)/66X,
+     *14H_ DIFFERENCE _,2(2X,D24.17))
+  134 FORMAT(1H0,7X,7H*ERROR*,4X,1H(,I2,1H),2X,2(4X,D24.17,2X,D24.17)/
+     *66X,14H_ DIFFERENCE _,2(2X,D24.17))
+  141 FORMAT(1H0/5X,11H**INTEGER**)
+  142 FORMAT(1H0/5X,18H**DOUBLE INTEGER**)
+  143 FORMAT(1H0/5X,8H**REAL**)
+  144 FORMAT(1H0/5X,25H**DOUBLE PRECISION REAL**)
+  145 FORMAT(1H0/5X,11H**COMPLEX**)
+  146 FORMAT(1H0/5X,28H**DOUBLE PRECISION COMPLEX**)
+  148 FORMAT(1H1 /)
+  149 FORMAT(1H0///7X,23H*FORTRAN*          EXIT)
+      B=1234.5
+      E=10.5
+      F=325.5
+      Z=0.0
+      K=2
+      L=15
+      MD=2100000000
+      ND=40000
+      DY=1.0E-05
+      DZ=1.0E-06
+      J(1)=1234.5+1111
+      JANS(1)=2345
+      J(2)=B-15
+      JANS(2)=1219
+      J(3)=16383.5*K
+      JANS(3)=32767
+      J(4)=B/L
+      JANS(4)=82
+      J(5)=-20*L
+      JANS(5)=-300
+      J(6)=B*0
+      JANS(6)=0
+      J(7)=32770*0.5
+      JANS(7)=16385
+      J(8)=450000/L
+      JANS(8)=30000
+      J(9)=-2090-2100
+      JANS(9)=-4190
+      J(10)=180000-192345
+      JANS(10)=-12345
+      J(11)=-105105/E
+      JANS(11)=-10010
+      J(12)=6300000*Z
+      JANS(12)=0
+      WRITE(6,111)
+      WRITE(6,120)
+      WRITE(6,141)
+      DO 15 I=1,12
+      IF(J(I)-JANS(I))2,1,2
+    1 WRITE(6,121)I,J(I),JANS(I)
+      GO TO 15
+    2 WRITE(6,122)I,J(I),JANS(I)
+   15 CONTINUE
+      JD(1)=32767+B
+      JDANS(1)=34001
+      JD(2)=-10000-32766.7
+      JDANS(2)=-42766
+      JD(3)=30000*E
+      JDANS(3)=315000
+      JD(4)=B*(-40)
+      JDANS(4)=-49380
+      JD(5)=2100/1.5E-2+0.5
+      JDANS(5)=140000
+      JD(6)=B*Z
+      JDANS(6)=0
+      JD(7)=123000+456.7
+      JDANS(7)=123456
+      JD(8)=MD-B
+      JDANS(8)=2099998765
+      JD(9)=ND*(-2.5)
+      JDANS(9)=-100000
+      JD(10)=4200000/E
+      JDANS(10)=400000
+      JD(11)=ND*F
+      JDANS(11)=13020000
+      JD(12)=ND*Z
+      JDANS(12)=0
+      WRITE(6,142)
+      DO 25 I=1,12
+      JI=12+I
+      IF(JD(I)-JDANS(I))4,3,4
+    3 WRITE(6,121)JI,JD(I),JDANS(I)
+      GO TO 25
+    4 WRITE(6,122)JI,JD(I),JDANS(I)
+   25 CONTINUE
+      A(1)=L+B
+      AANS(1)=1249.5
+      A(2)=F-K
+      AANS(2)=323.5
+      A(3)=F*K
+      AANS(3)=651.0
+      A(4)=F/3255
+      AANS(4)=0.1
+      A(5)=11.3*365
+      AANS(5)=4124.5
+      A(6)=L*Z
+      AANS(6)=0.0
+      A(7)=MD*DZ
+      AANS(7)=2100.0
+      A(8)=ND+B
+      AANS(8)=41234.5
+      A(9)=MD-E
+      AANS(9)=2099999989.5
+      A(10)=F/3255
+      AANS(10)=0.1
+      A(11)=1234000*DY
+      AANS(11)=12.34
+      A(12)=987654321*0.0
+      AANS(12)=0.0
+      WRITE(6,148)
+      WRITE(6,120)
+      WRITE(6,143)
+      DO 35 I=1,12
+      JI=24+I
+      SIF=A(I)-AANS(I)
+      IF(AANS(I))6,5,6
+    5 IF(ABS(SIF)-(1.0E-06))501,502,502
+    6 IF(ABS(SIF)-(1.0E-05)*ABS(AANS(I)))501,502,502
+  501 WRITE(6,123)JI,A(I),AANS(I),SIF
+      GO TO 35
+  502 WRITE(6,124)JI,A(I),AANS(I),SIF
+   35 CONTINUE
+      WRITE(6,144)
+      D(1)=32647+11111.11
+      DANS(1)=43758.11
+      D(2)=B-L
+      DANS(2)=1219.5
+      D(3)=F*401.1
+      DANS(3)=130558.05
+      D(4)=1.2345/1500
+      DANS(4)=0.000823
+      D(5)=E*(-5)
+      DANS(5)=-52.5
+      D(6)=12345*Z
+      DANS(6)=0.0
+      D(7)=51000+1.7
+      DANS(7)=51001.7
+      D(8)=15.6-123456
+      DANS(8)=-123440.4
+      D(9)=ND*0.8
+      DANS(9)=32000.0
+      D(10)=MD/ND
+      DANS(10)=52500.0
+      D(11)=82173645*Z
+      DANS(11)=0.0
+      D(12)=MD*Z
+      DANS(12)=0.0
+      DO 45 I=1,12
+      JI=36+I
+      DIF=D(I)-DANS(I)
+      IF(DANS(I))8,7,8
+    7 IF(DABS(DIF)-1.0D-5)503,504,504
+    8 IF(DABS(DIF)-1.0D-5*DABS(DANS(I)))503,504,504
+  503 WRITE(6,126)JI,D(I),DANS(I),DIF
+      GO TO 45
+  504 WRITE(6,127)JI,D(I),DANS(I),DIF
+   45 CONTINUE
+      WRITE(6,148)
+      WRITE(6,120)
+      WRITE(6,128)
+      WRITE(6,145)
+      C(1)=L+E
+      CANS(1)=(25.5,0.0)
+      C(2)=B-L
+      CANS(2)=(1219.5,0.0)
+      C(3)=K*E
+      CANS(3)=(21.0,0.0)
+      C(4)=F*(-2)
+      CANS(4)=(-651.0,0.0)
+      C(5)=E/5
+      CANS(5)=(2.1,0.0)
+      C(6)=0/B
+      CANS(6)=(0.0,0.0)
+      C(7)=40000-39876.5
+      CANS(7)=(123.5,0.0)
+      C(8)=ND+B
+      CANS(8)=(41234.5,0.0)
+      C(9)=MD/ND
+      CANS(9)=(52500.0,0.0)
+      C(10)=Z/10000
+      CANS(10)=(0.0,0.0)
+      C(11)=ND-40000.5
+      CANS(11)=(-0.5,0.0)
+      C(12)=Z/ND
+      CANS(12)=(0.0,0.0)
+      DO 55 I=1,12
+      JI=48+I
+      CIF=REAL(C(I))-REAL(CANS(I))
+      CNF=AIMAG(C(I))-AIMAG(CANS(I))
+      IF(AIMAG(CANS(I)))506,9,506
+    9 IF(CNF)506,11,506
+   11 IF(REAL(CANS(I)))10,13,10
+   10 IF(ABS(CIF)-(1.0E-05)*ABS(REAL(CANS(I))))505,506,506
+   13 IF(ABS(CIF)-(1.0E-06))505,506,506
+  505 WRITE(6,129)JI,C(I),CANS(I),CIF,CNF
+      GO TO 55
+  506 WRITE(6,130)JI,C(I),CANS(I),CIF,CNF
+   55 CONTINUE
+      WRITE(6,148)
+      WRITE(6,131)
+      WRITE(6,132)
+      WRITE(6,146)
+      DC(1)=K+E
+      DCANS(1)=(12.5D0,0.D0)
+      DC(2)=B-L
+      DCANS(2)=(1219.5D0,0.D0)
+      DC(3)=F*(-2)
+      DCANS(3)=(-651.D0,0.D0)
+      DC(4)=B/0.5
+      DCANS(4)=(2469.D0,0.D0)
+      DC(5)=0/B
+      DCANS(5)=(0.0D0,0.0D0)
+      DC(6)=K*(-2.5)
+      DCANS(6)=(-5.D0,0.D0)
+      DC(7)=ND-41234.5
+      DCANS(7)=(-1234.5D0,0.D0)
+      DC(8)=MD+ND
+      DCANS(8)=(2100040000.D0,0.D0)
+      DC(9)=123456.7*(-1)
+      DCANS(9)=(-123456.7D0,0.D0)
+      DC(10)=ND/(-2.5)
+      DCANS(10)=(-16000.D0,0.D0)
+      DC(11)=MD*Z
+      DCANS(11)=(0.0D0,0.0D0)
+      DC(12)=0/4582.64
+      DCANS(12)=(0.0D0,0.0D0)
+      DO 65 I=1,12
+      JI=60+I
+      DIFC=DREAL(DC(I))-DREAL(DCANS(I))
+      DIFD=DIMAG(DC(I))-DIMAG(DCANS(I))
+      IF(DIMAG(DC(I)))508,99,508
+   99 IF(DIFD)508,17,508
+   17 IF(DREAL(DCANS(I)))18,19,18
+   18 IF(DABS(DIFC)-1.0D-5*DABS(DREAL(DCANS(I))))507,508,508
+   19 IF(DABS(DIFC)-1.0D-5)507,508,508
+  507 WRITE(6,133)JI,DC(I),DCANS(I),DIFC,DIFD
+      GO TO 65
+  508 WRITE(6,134)JI,DC(I),DCANS(I),DIFC,DIFD
+   65 CONTINUE
+      WRITE(6,149)
+      STOP
+      END
+      DOUBLE PRECISION FUNCTION DREAL(C)
+      COMPLEX*16 C,CC
+      DOUBLE PRECISION D(2),DIMAG
+      EQUIVALENCE (CC,D(1))
+      CC=C
+      DREAL=D(1)
+      RETURN
+      ENTRY DIMAG(C)
+      CC=C
+      DIMAG=D(2)
+      RETURN
+      END

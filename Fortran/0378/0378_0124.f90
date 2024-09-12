@@ -1,0 +1,19 @@
+subroutine s(x)
+real(8)::x(5)
+real(8),dimension(5,5)::Matrix=2.0
+real(8),dimension(5)::Vector=3.0,R_vector
+R_vector = 1.234567890123456789012345678901234567890123456789012345678901234567890E+250_16*MATMUL(Matrix,Vector)
+IF (any(abs(R_vector-(/&
+3.703703670370370E+251_8,3.703703670370370E+251_8,3.703703670370370E+251_8,3.703703670370370E+251_8,3.703703670370370E+251_8&
+/))>1.E+250_8))print *,'error-2'
+R_vector = 1.234567890123456789012345678901234567890123456789012345678901234567890E+250_16* x
+IF (any(abs(R_vector-(/&
+3.703703670370370E+251_8,3.703703670370370E+251_8,3.703703670370370E+251_8,3.703703670370370E+251_8,3.703703670370370E+251_8&
+/))>1.E+250_8))print *,'error-3'
+end
+real(8),dimension(5,5)::Matrix=2.0
+real(8),dimension(5)::Vector=3.0,R_vector
+R_vector = MATMUL(Matrix,Vector)
+call s(R_vector)
+print *,'pass'
+end

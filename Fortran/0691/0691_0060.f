@@ -1,0 +1,72 @@
+      DOUBLE PRECISION B(2),C,D,DIFF
+      COMPLEX*16   X,Y,Z
+      EQUIVALENCE (Z,B(1)),(C,B(1)),(D,B(2))
+      ITEM=1
+      N=1
+      ISW=1
+      DIFF=1.0D-14
+C
+      WRITE(6,100)
+  100 FORMAT(1H1 / 7X,24H*FORTRAN*          ENTER)
+      WRITE(6,200)ITEM,N
+  200 FORMAT(1H0,7X,9H*** ITEM(,I2,5H) ***,7X,
+     1       50H*****  TEST  OF  STANDARD  INTRINSIC  FUNCTION  - ,
+     2       20HDCONJG(DCX) -  *****,17X,9H( PAGE = ,I3,2H )
+     3       ///2X,11H- JUSTICE -,10X,12H- ARGUMENT -,32X,
+     4       19H+ COMPUTED RESULT +,27X,14H- DIFFERENCE -,
+     5       /67X,19H+ COMPARE   VALUE +  / )
+C
+      L=0
+    9 GO TO (1,2,3,4,5,6,7,8),ISW
+    1 X=(3.0D0,4.0D0)
+      ISW=2
+      GO TO 10
+    2 X=(-3.0D0,4.0D0)
+      ISW=3
+      GO TO 10
+    3 X=(-3.0D0,-4.0D0)
+      ISW=4
+      GO TO 10
+    4 X=(3.0D0,4.0D0)
+      ISW=5
+      GO TO 10
+    5 X=(0.0D0,-5.0D0)
+      ISW=6
+      GO TO 10
+    6 X=(10.0D0,0.0D0)
+      ISW=7
+      GO TO 10
+    7 X=(0.0D0,0.0D0)
+      ISW=8
+   10 Y=DCONJG(X)
+      C=DREAL(X)
+      D=-DIMAG(X)
+      CALL DCPRTN(L,DIFF,X,Y,Z)
+      GO TO 9
+    8 WRITE(6,300)
+  300 FORMAT(1H0/7X,23H*FORTRAN*          EXIT)
+      STOP
+      END
+C
+      SUBROUTINE    DCPRTN (L,D,A,R,V)
+      COMPLEX*16   A,R,V,DIFF
+      DOUBLE PRECISION D
+      DIFF = V - R
+      IF (CDABS(R)) 90,80,90
+   80 IF(CDABS(DIFF)-D) 100,120,120
+   90 IF(CDABS(DIFF)-D*CDABS(V)) 100,120,120
+  100 WRITE (6,1) A,R,V,DIFF
+    1 FORMAT (1H ,3X,7H*OK*   ,5X,D14.7,1X,D14.7,7X,D24.17,1X,D24.17 /
+     *        52X,D24.17,1X,D24.17,5X,2(D13.5))
+      GO TO 130
+  120 WRITE (6,2) A,R,V,DIFF
+    2 FORMAT (1H ,3X,7H*ERROR*,5X,D14.7,1X,D14.7,7X,D24.17,1X,D24.17 /
+     *        52X,D24.17,1X,D24.17,5X,2(D13.5))
+  130 IF (L- 4) 200,190,140
+  140 IF (L- 9) 200,190,150
+  150 IF (L-14) 200,190,160
+  160 IF (L-19) 200,190,200
+  190 WRITE(6,3)
+    3 FORMAT (1H )
+  200 RETURN
+      END

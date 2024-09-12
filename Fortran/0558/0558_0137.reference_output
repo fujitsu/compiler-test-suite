@@ -1,0 +1,4 @@
+ m1 gnr subroutine
+ s1 subroutine m2 2
+ s2 subroutine m3 2
+exit 0

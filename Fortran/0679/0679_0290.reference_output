@@ -1,0 +1,8 @@
+ 4 5 6 7 8 9 10 11 12 13
+ 8 16 24 32 40 48 56 64 72 80
+ 5 5 5 5 5 6 7 8 9 10
+ T T F F F F F F F F
+ T T T T T F F F F F
+ F F F F F F F T T T
+ F F F F F F F F T T
+exit 0

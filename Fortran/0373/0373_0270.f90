@@ -1,0 +1,11 @@
+integer,allocatable,dimension(:)::a1
+integer,allocatable,dimension(:,:)::b1
+print*,0;allocate(a1(1:0));deallocate(a1)
+print*,1;allocate(a1(1:1));deallocate(a1)
+print*,100;allocate(a1(1:100));deallocate(a1)
+print*,200;allocate(a1(101:300));deallocate(a1)
+print*,0;allocate(b1(1:0,2));deallocate(b1)
+print*,1;allocate(b1(1:1,2));deallocate(b1)
+print*,200;allocate(b1(1:100,2));deallocate(b1)
+print*,400;allocate(b1(101:300,2));deallocate(b1)
+end

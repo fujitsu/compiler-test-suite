@@ -1,0 +1,29 @@
+ array destructor called
+ 1 1 1 1
+ array destructor called
+ 10 20 30 40
+ scalar destructor called
+ 40
+ scalar destructor called
+ 30
+ scalar destructor called
+ 20
+ scalar destructor called
+ 10
+ array destructor called
+ 10 20 30 40
+ array destructor called
+ 40 50 60 70
+ scalar destructor called
+ 70
+ scalar destructor called
+ 60
+ scalar destructor called
+ 50
+ scalar destructor called
+ 40
+ array destructor called
+ 25 25 25 25
+ array destructor called
+ 40 50 60 70
+exit 0

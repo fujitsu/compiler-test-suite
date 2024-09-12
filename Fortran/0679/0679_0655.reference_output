@@ -1,0 +1,7 @@
+ ** real data  ***
+ s(1)=10., s(2)=0. ,s(3)=10., s(4)=20. ,
+ 10. 0. 10. 20.
+ ** logical data ****
+ ls(1)=t  , ls(2)=t  , ls(3)=f   ,ls(4)=f    
+ T T F F
+exit 0

@@ -1,0 +1,6 @@
+ gsub
+ gsub3
+ gsub2
+ gsub3
+ gsub
+exit 0

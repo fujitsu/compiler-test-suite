@@ -1,0 +1,31 @@
+      WRITE (6,10)
+   10 FORMAT('1',5X,'====== FORTRAN ====== ... = TEST ='/)
+      IP=0
+      CALL F02105 (IP)
+      IF (IP.NE. 0 ) GO TO 30
+      WRITE (6,20)
+   20 FORMAT(' ',20X,'= TEST =     OK')
+   30 WRITE (6,40)
+   40 FORMAT (1H ,20X,'END RUN UNIT')
+      STOP
+      END
+      SUBROUTINE F02105 (IP)
+      KCONT=0
+      GO TO 1
+   20 KCONT=KCONT-1
+11111 CONTINUE
+      KCONT=KCONT+1
+      GO TO 1 1
+   30 KCONT=KCONT-1
+    1 CONTINUE
+      KCONT=KCONT+1
+      GO TO 11111
+   40 KCONT=KCONT-1
+1   1 CONTINUE
+      KCONT =KCONT+1
+   99 IF(KCONT.EQ.3) RETURN
+      WRITE(6,100) KCONT
+      IP=IP+1
+  100 FORMAT(1H0,20X,'==TEST==',3X,'NG',5X,4H3 ' ,I1)
+      RETURN
+      E N D

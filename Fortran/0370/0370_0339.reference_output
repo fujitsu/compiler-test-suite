@@ -1,0 +1,12 @@
+ pop
+ abcdefghinewold
+ def
+ defghi
+ ghidefabc
+ abcdefghinewoldpop
+ old
+ defghioldpop
+ oldpop
+ defold
+ popoldnewghidefabc
+exit 0

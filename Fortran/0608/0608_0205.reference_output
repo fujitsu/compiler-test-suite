@@ -1,0 +1,9 @@
+ Fa3 Call  3 3
+ F2 Call  200
+ F1 Call  100
+ F0 Call  100
+ F2 Call  200
+ F1 Call  100
+ F0 Call  200
+ i= 2
+exit 0

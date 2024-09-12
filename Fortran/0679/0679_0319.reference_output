@@ -1,0 +1,4 @@
+  lb =  F F T T T F F T F F
+  ld =  F F T T T T F F F T
+  le =  F F T T T T T F T T
+exit 0

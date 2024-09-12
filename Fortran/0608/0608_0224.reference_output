@@ -1,0 +1,11 @@
+ Before FORALL
+ 100
+ 200
+ 300
+ 400
+ After FORALL
+ 200
+ 200
+ 300
+ 400
+exit 0

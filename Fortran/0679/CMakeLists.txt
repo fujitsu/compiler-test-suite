@@ -1,0 +1,7 @@
+llvm_singlesource_compile_only_file(0679_0058.f PREFIX "Fujitsu-Fortran-")
+llvm_singlesource_compile_only_file(0679_0295.f PREFIX "Fujitsu-Fortran-")
+llvm_singlesource_compile_only_file(0679_0402.f PREFIX "Fujitsu-Fortran-")
+llvm_singlesource_compile_only_file(0679_0496.f PREFIX "Fujitsu-Fortran-")
+llvm_singlesource(PREFIX "Fujitsu-Fortran-")
+llvm_set_own_fortran_module_directory()
+set_property(SOURCE 0679_0513.f APPEND PROPERTY COMPILE_OPTIONS "-fbackslash")

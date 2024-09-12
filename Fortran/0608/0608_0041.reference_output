@@ -1,0 +1,5 @@
+ destructor called:scalar
+ 30
+ destructor called:scalar
+ 10
+exit 0

@@ -1,0 +1,68 @@
+MODULE mod1
+IMPLICIT NONE
+
+REAL,DIMENSION(3,3) :: num1,num2
+INTEGER,DIMENSION(3,3) :: res
+
+CONTAINS
+SUBROUTINE msub(d1,d2)
+REAL,DIMENSION(3,3) :: d1,d2
+d1 = d1 + d2
+d2 = 2
+END SUBROUTINE
+
+END MODULE
+
+
+MODULE mod2
+USE mod1
+IMPLICIT NONE
+
+INTERFACE
+SUBROUTINE extsub(d1,d2)
+INTEGER :: d1
+REAL :: d2
+END SUBROUTINE
+END INTERFACE
+
+END MODULE
+
+
+PROGRAM main
+USE mod2
+IMPLICIT NONE
+
+num1 = 5.0
+num2 = 7.0
+
+res = fun(msub)
+
+IF(ALL(res(1:3,1:3) .EQ. 14)) THEN
+  PRINT*,"PASS"
+ELSE
+  PRINT*,"ERROR"
+END IF
+
+CONTAINS
+FUNCTION fun(dsub)
+PROCEDURE(msub) :: dsub
+INTEGER,DIMENSION(3,3) :: fun
+
+INTERFACE gnr
+  PROCEDURE dsub
+  PROCEDURE extsub
+END INTERFACE
+
+CALL gnr(num1,num2)
+
+fun = int(num1 + num2)
+
+END FUNCTION
+END PROGRAM
+
+SUBROUTINE extsub(d1,d2)
+INTEGER :: d1
+REAL :: d2
+d1 = d1 + 2
+d2 = d2 + 2.0
+END SUBROUTINE

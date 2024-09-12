@@ -1,0 +1,5 @@
+llvm_singlesource_compile_only_file(0568_0002.f90 PREFIX "Fujitsu-Fortran-")
+llvm_singlesource_compile_only_file(0568_0011.f90 PREFIX "Fujitsu-Fortran-")
+llvm_singlesource_compile_only_file(0568_0012.f90 PREFIX "Fujitsu-Fortran-")
+llvm_singlesource(PREFIX "Fujitsu-Fortran-")
+llvm_set_own_fortran_module_directory()

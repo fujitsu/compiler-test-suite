@@ -1,0 +1,6 @@
+  ilc - start 
+  i1c - 0  100 100 100 100 100 100
+  sub-ins  1 1 1 1 1 1
+  i1c - 1  1 1 1 1 1 1
+ pass
+exit 0

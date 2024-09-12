@@ -1,0 +1,5 @@
+ destructor called:destructor
+ 79
+ destructor called:destructor
+ 89
+exit 0

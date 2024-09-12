@@ -1,0 +1,5 @@
+         start open(error)-open(nomal)- write-close
+  ** err branch ok ok ok **
+  open  iostat=  0
+ close  iostat=  0
+exit 0

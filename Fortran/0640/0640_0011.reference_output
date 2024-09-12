@@ -1,0 +1,7 @@
+ LA= T T T T T T T F T F T F T F T F T F T F T T T T T T T T T T LC= T T T T T
+T T F T F T F T F T F T F T F T T T T T T T T T T
+ RMAX= 0. RMIN= 0. IMX= 0 MR= 0.
+ RSUM= 91.
+ LA= T T T T T T T F T F T F T F T F T F T F T T T T T T T T T T LB= F F F F F
+F F F F F F F F F F F F F F F F F F F F F F F F F
+exit 0

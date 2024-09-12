@@ -1,0 +1,15 @@
+1      *FORTRAN*          ENTER
+
+
+
+0                 - ITEM -         - JUSTICE -       - COMPUTED VALUE -        - COMPARE VALUE -            - DIFERENCE -
+
+
+0                     ( 1)                *OK*                        3                        3                        0
+0                     ( 2)                *OK*                     6384                     6384                        0
+0                     ( 3)                *OK*                        3                        3                        0
+0                     ( 4)                *OK*                     6384                     6384                        0
+0
+      *FORTRAN*          EXIT 
+
+exit 0

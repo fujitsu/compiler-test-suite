@@ -1,0 +1,19 @@
+1
+      *FORTRAN*          ENTER
+0
+     - JUSTICE -    - ITEM -          - COMPUTED RESULT -                 - COMPARE VALUE -
+0       *OK*           ( 1)                           -2                                -2
+0       *OK*           ( 2)                            0                                 0
+0       *OK*           ( 3)                        32001                             32001
+0       *OK*           ( 4)                       -62000                            -62000
+0       *OK*           ( 5)                            0                                 0
+0       *OK*           ( 6)                            2                                 2
+0       *OK*           ( 7)                           -6                                -6
+0       *OK*           ( 8)                            0                                 0
+0       *OK*           ( 9)                        37500                             37500
+0       *OK*           (10)                           -3                                -3
+0       *OK*           (11)                            0                                 0
+0       *OK*           (12)                         8000                              8000
+0
+      *FORTRAN*          EXIT
+exit 0

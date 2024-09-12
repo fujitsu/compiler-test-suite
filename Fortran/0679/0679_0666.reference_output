@@ -1,0 +1,3 @@
+ ** real data    ** s  = 24.    =  24.
+ ** logical data ** ls = .true. =  T
+exit 0

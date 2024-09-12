@@ -1,0 +1,11 @@
+ 1 -- 1
+  OK
+ 3 -- 3
+  OK
+ 0 -- 0
+  OK
+ 4 -- 4
+  OK
+ KIND:: 4 --KIND:: 4
+ KIND OK
+exit 0

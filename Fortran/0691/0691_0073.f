@@ -1,0 +1,153 @@
+      LOGICAL L,T,F
+      DIMENSION J(10)
+      DOUBLE PRECISION DR1,DR2
+      T   =.TRUE.
+      F   =.FALSE.
+      WRITE(6,600)
+      WRITE(6,601)
+  600 FORMAT(1H1 / 6X,25H*FORTRAN*          ENTER  /)
+  601 FORMAT(1H0 / 10X,41H- JUSTICE -     - ITEM -       - COMPUTED
+     *35H RESULT -        - COMPARE VALUE -  /)
+  602 FORMAT(1H0, 12X, 7H*ERROR*,7X,2H( ,I2,2H ),14X,L6,20X,L6 )
+  603 FORMAT(1H0, 12X, 4H*OK*,10X,2H( ,I2,2H ),14X,L6,20X,L6 )
+  604 FORMAT(1H0 / 6X,24H*FORTRAN*          EXIT  )
+      DR1 = 3.3333D02
+      DR2 =-3.3333D02
+      DO 50 I=1,10
+      J(I)=I+100
+   50 CONTINUE
+      R1 =50.5
+      R2 =-0.505E02
+C
+      ITM =0
+      L   =.TRUE.
+      GO TO 900
+C
+    2 L   =.FALSE.
+      GO TO 901
+    3 L   =3*4.0+8.GT.R1-30+10.5
+      GO TO 901
+C
+    4 L   =R1-30+10.5.GT.3*4.0+8
+      GO TO 900
+C
+    5 L   =4.0**2+6*0.2E02.GE.2/1.0+10
+      GO TO 900
+C
+    6 L   =2/1.0+10.GE.4.0**2+6*0.2E02
+      GO TO 901
+C
+    7 L   =0.05+111.LT.222+0.05*1.0E03
+      GO TO 900
+C
+    8 L   =222+0.05*1.0E03.LT.0.05+111
+      GO TO 901
+C
+    9 L   =J(1)+9-R1.LE.R2/1+5**2
+      GO TO 901
+C
+   10 L   =R2/1+5**2.LE.J(1)+9-R1
+      GO TO 900
+C
+   11 L   =J(2)+8.0.LE.8.0+J(2)
+      GO TO 900
+C
+   12 L   =10E02/1.0+0.5.EQ.10E02/1.0+0.5
+      GO TO 900
+C
+   13 L   =25**2+0.4*0.7E03.EQ.J(3)+R1
+      GO TO 901
+C
+   14 L   =R1+10.NE.R2+10
+      GO TO 900
+C
+   15 L   =R2+10.NE.R1+10
+      GO TO 900
+   16 L   =30*1.0-2+DR1.GT.0.1D02/2.0+10
+      GO TO 900
+C
+   17 L   =0.1D02/2.0+10.GT.30*1.0-2+DR1
+      GO TO 901
+C
+   18 L   =1234+666.0*0.99999D01.GE.2.5*4+3.8E01-J(4)*0.1111D02
+      GO TO 900
+C
+   19 L   =2.5*4+3.8E01-J(4)*0.1111D02.GE.1234+666.0*0.99999D01
+      GO TO 901
+C
+   20 L   =DR1+22222.GE.DR1+22222
+      GO TO 900
+C
+   21 L   =2**3-5.0E02+J(5)/1.25D-01.LT.3*2.0+98.7653D-02
+      GO TO 901
+C
+   22 L   =3*2.0+98.7653D-02.LT.2**3-5.0E02+J(5)/1.25D-01
+      GO TO 900
+C
+   23 L   =222+R2*187.1D-01.LE.3.14*5/1.8E01+R1-DR1
+      GO TO 900
+C
+   24 L   =3.14*5/1.8E01+R1-DR1.LE.222+R2*187.1D-01
+      GO TO 901
+C
+   25 L   =J(6)+1.234-DR2.EQ.J(6)+1.234-DR2
+      GO TO 900
+C
+   26 L   =-3.0**3/2+1.111D03.EQ.-3.0**2/2+1.111D03
+      GO TO 901
+   27 WRITE(6,605)
+C
+      L   =R1+2.466-15*DR1.NE.R2/100*5.46**3+DR2
+      GO TO 900
+C
+   28 L   =R2/100*5.46**3+DR2.NE.R1+2.466-15*DR1
+      GO TO 900
+   29 L   =3*42.5+J(7).GT.0.48D01/1.0+53
+      GO TO 900
+C
+   30 L   =0.48D02/2.+60.GT.5*40.3+J(8)
+      GO TO 901
+C
+   31 L   =R1-30+10.5.GE.30*1.0-2+DR1
+      GO TO 901
+C
+   32 L   =30*1.0-2+DR1.GE.R1-30+10.5
+      GO TO 900
+C
+   33 L   =J(9)+2.5E03/3.LT.DR2*111.1E-01+125
+      GO TO 901
+C
+   34 L   =DR2*111.1E-01+125.LT.J(9)+2.5E03/3
+      GO TO 900
+C
+   35 L   =222+0.05*1.0E03.LE.DR1+J(10)*3.8E01
+      GO TO 900
+C
+   36 L   =DR1+J(10)*3.8E01.LE.222+0.05*1.0E03
+      GO TO 901
+C
+   37 L   =4.0**2+6*0.2E02.NE.DR2*111.1E-01+125
+      GO TO 900
+C
+   38 L   =DR2*111.1E-01+125.NE.4.0**2+6*0.2E02
+      GO TO 900
+  900 ITM =ITM+1
+      IF(L) GO TO 700
+      GO TO 701
+  901 ITM =ITM+1
+      IF(L) GO TO 702
+      GO TO 703
+  700 WRITE(6,603)ITM, L, T
+      GO TO 1000
+  701 WRITE(6,602)ITM, L, T
+      GO TO 1000
+  702 WRITE(6,602)ITM, L, F
+      GO TO 1000
+  703 WRITE(6,603)ITM, L, F
+ 1000 GO TO (2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,
+     * 23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39),ITM
+   39 WRITE(6,604)
+  605 FORMAT(1H1 ///// 10X,41H- JUSTICE -     - ITEM -       - COMPUTED
+     *35H RESULT -        - COMPARE VALUE -  /)
+      STOP
+      END
