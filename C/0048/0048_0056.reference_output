@@ -1,0 +1,162 @@
+***  *** TEST FOR COMMON *** STARTED ***
+
+ok
+
+ok
+
+ok
+
+ok
+
+********** SCPSI01 TEST START **********
+***** SCPSI01 - 01 ***** O   K *****
+***** SCPSI01 - 02 ***** O   K *****
+***** SCPSI01 - 03 ***** O   K *****
+********** SCPSI01 TEST  END  **********
+
+********** SCPSI02 TEST START **********
+***** SCPSI02 - 01 ***** O   K *****
+***** SCPSI02 - 02 ***** O   K *****
+***** SCPSI02 - 03 ***** O   K *****
+********** SCPSI02 TEST  END  **********
+
+********** SCPSI03 TEST START **********
+***** SCPSI03 - 01 ***** O   K *****
+***** SCPSI03 - 02 ***** O   K *****
+***** SCPSI03 - 03 ***** O   K *****
+***** SCPSI03 - 04 ***** O   K *****
+********** SCPSI03 TEST  END  **********
+
+********** SCPSI04 TEST START **********
+***** SCPSI04 - 01 ***** O   K *****
+********** SCPSI04 TEST  END  **********
+
+********** SCPSI05 TEST START **********
+***** SCPSI05 - 01 ***** O   K *****
+********** SCPSI05 TEST  END  **********
+
+********** SCPSI06 TEST START **********
+***** SCPSI06 - 01 ***** O   K *****
+***** SCPSI06 - 02 ***** O   K *****
+********** SCPSI06 TEST  END  **********
+
+********** SCPSI07 TEST START **********
+***** SCPSI07 - 01 ***** O   K *****
+********** SCPSI07 TEST  END  **********
+
+********** SCPSI08 TEST START **********
+***** SCPSI08 - 01 ***** O   K *****
+***** SCPSI08 - 02 ***** O   K *****
+********** SCPSI08 TEST  END  **********
+
+********** SCPSI11 TEST START **********
+***** SCPSI11 - 01 ***** O   K *****
+***** SCPSI11 - 02 ***** O   K *****
+***** SCPSI11 - 03 ***** O   K *****
+********** SCPSI11 TEST  END  **********
+
+********** SCPSI12 TEST START **********
+***** SCPSI12 - 01 ***** O   K *****
+***** SCPSI12 - 02 ***** O   K *****
+***** SCPSI12 - 03 ***** O   K *****
+***** SCPSI12 - 04 ***** O   K *****
+********** SCPSI12 TEST  END  **********
+
+*** SCPVA01 TEST START ***
+  ## SIGNED CHAR TEST OK            ##
+ ** UNSIGNED CHAR TEST OK          **
+ ** SIGNED SHORT INT TEST OK       **
+ ** UNSIGNED SHORT INT TEST OK     **
+ ** SIGNED LONG INT TEST OK        **
+ ** UNSIGNED LOND INT TEST OK      **
+ ** SIGNED LONG LONG INT TEST OK   **
+ ** UNSIGNED LONG LONG INT TEST OK **
+ ** FLOAT TEST OK                  **
+ ** DOUBLE TEST OK                 **
+ ** LONG DOUBLE TEST OK            **
+ ** CHAR*N TEST OK                 **
+ ** LONG CHAR TEST OK              **
+*** SCPVA01 TEST END   ***
+
+***** MPTEST01 START *****
+  in ''ii''
+  in ''f''
+  in ''f1''
+  ** OK **
+  in ''f1''
+  ** OK **
+***** MPTEST01 END *****
+
+start mptest02
+      mptest02 ok
+end   mptest02
+
+***** MPTEST03 START *****
+ ** OK *** t1.a = 0 *** 
+ ** OK *** t1.b = x *** 
+ ** OK *** t1.a = 1 *** 
+ ** OK *** t1.b = y *** 
+ ** OK *** t1.a = 2 *** 
+ ** OK *** t1.b = z *** 
+  ( t1a )  a=0, b=x
+  ( t1b )  a=1, b=y
+  ( t1c )  a=2, b=z
+***** MPTEST03 OK ***** 
+
+***** MPTEST04 START *****
+***** MPTEST04 OK END *****
+
+M3EVA110 TEST OK 
+
+M3EVA111 TEST OK 
+
+M3EVA112 TEST OK 
+
+M3EVA113 TEST OK 
+
+M3EVA114 TEST OK 
+
+M3EVA115 TEST OK 
+
+M3EVA116 TEST OK 
+
+M3EVA117 TEST OK 
+
+M3EVA118 TEST OK 
+
+M3EVA119 TEST OK 
+
+M3EVA120 TEST OK 
+
+M3EVA121 TEST OK 
+
+M3EVA122 TEST OK 
+
+M3EVA123 TEST OK 
+
+M3EVA126 TEST OK 
+
+M3EVA127 TEST OK 
+
+M3EVA130 TEST OK 
+
+M3EVA131 TEST OK 
+
+M3EVA132 TEST OK 
+
+M3EVA133 TEST OK 
+
+M3EVA134 TEST OK 
+
+M3EVA135 TEST OK 
+
+M3EVA136 TEST OK 
+
+M3EVA137 TEST OK 
+
+M3EVA138 TEST OK 
+
+M3EVA139 TEST OK 
+
+***  *** TEST FOR COMMON *** ENDED ***
+exit 0

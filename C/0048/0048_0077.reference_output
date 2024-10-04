@@ -1,0 +1,13 @@
+ ***  TEST-7  OK  S(INT)-INT  ***
+ ***  TEST-8  OK  S(INT)-CHA  ***
+ ***  TEST-9  OK  S(INT)-ENU  ***
+ ***  TEST-10 OK  S(CHA)-INT  ***
+ ***  TEST-11 OK  S(CHA)-CHA  ***
+ ***  TEST-12 OK  S(CHA)-ENU  ***
+ ***  TEST-13 OK  S(ENU)-INT  ***
+ ***  TEST-14 OK  S(ENU)-CHA  ***
+ ***  TEST-15 OK  S(ENU)-ENU  ***
+ ***  TEST-16 OK  S(DBL)-INT  ***
+ ***  TEST-17 OK  S(DBL)-CHA  ***
+ ***  TEST-18 OK  S(DBL)-ENU  ***
+exit 0

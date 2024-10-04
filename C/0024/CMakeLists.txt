@@ -1,0 +1,8 @@
+llvm_singlesource(PREFIX "Fujitsu-C-")
+set_property(TARGET Fujitsu-C-0024_0007 APPEND PROPERTY LINK_OPTIONS "-lm")
+set_property(TARGET Fujitsu-C-0024_0008 APPEND PROPERTY LINK_OPTIONS "-lm")
+set_property(TARGET Fujitsu-C-0024_0009 APPEND PROPERTY LINK_OPTIONS "-lm")
+set_property(TARGET Fujitsu-C-0024_0010 APPEND PROPERTY LINK_OPTIONS "-lm")
+set_property(TARGET Fujitsu-C-0024_0011 APPEND PROPERTY LINK_OPTIONS "-lm")
+set_property(SOURCE 0024_0012.c APPEND PROPERTY COMPILE_OPTIONS "-fno-fast-math")
+set_property(TARGET Fujitsu-C-0024_0012 APPEND PROPERTY LINK_OPTIONS "-lm")

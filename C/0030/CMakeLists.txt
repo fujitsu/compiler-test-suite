@@ -1,0 +1,8 @@
+llvm_singlesource_compile_only_file(0030_0025.c PREFIX "Fujitsu-C-")
+llvm_singlesource_compile_only_file(0030_0026.c PREFIX "Fujitsu-C-")
+llvm_singlesource(PREFIX "Fujitsu-C-")
+set_property(SOURCE 0030_0016.c APPEND PROPERTY COMPILE_OPTIONS "-fno-fast-math")
+set_property(SOURCE 0030_0057.c APPEND PROPERTY COMPILE_OPTIONS "-ffp-contract=off;-ffp-contract=off")
+set_property(SOURCE 0030_0068.c APPEND PROPERTY COMPILE_OPTIONS "-fsigned-char")
+set_property(SOURCE 0030_0083.c APPEND PROPERTY COMPILE_OPTIONS "-ffp-contract=off")
+set_property(SOURCE 0030_0116.c APPEND PROPERTY COMPILE_OPTIONS "-ffp-contract=off")

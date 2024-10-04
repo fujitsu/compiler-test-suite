@@ -1,0 +1,254 @@
+***  *** TEST FOR COMMON *** STARTED ***
+
+ok
+
+ok
+
+ok
+
+ok
+
+********** SCPSI01 TEST START **********
+***** SCPSI01 - 01 ***** O   K *****
+***** SCPSI01 - 02 ***** O   K *****
+***** SCPSI01 - 03 ***** O   K *****
+********** SCPSI01 TEST  END  **********
+
+********** SCPSI02 TEST START **********
+***** SCPSI02 - 01 ***** O   K *****
+***** SCPSI02 - 02 ***** O   K *****
+***** SCPSI02 - 03 ***** O   K *****
+********** SCPSI02 TEST  END  **********
+
+********** SCPSI03 TEST START **********
+***** SCPSI03 - 01 ***** O   K *****
+***** SCPSI03 - 02 ***** O   K *****
+***** SCPSI03 - 03 ***** O   K *****
+***** SCPSI03 - 04 ***** O   K *****
+********** SCPSI03 TEST  END  **********
+
+********** SCPSI04 TEST START **********
+***** SCPSI04 - 01 ***** O   K *****
+********** SCPSI04 TEST  END  **********
+
+********** SCPSI05 TEST START **********
+***** SCPSI05 - 01 ***** O   K *****
+********** SCPSI05 TEST  END  **********
+
+********** SCPSI06 TEST START **********
+***** SCPSI06 - 01 ***** O   K *****
+***** SCPSI06 - 02 ***** O   K *****
+********** SCPSI06 TEST  END  **********
+
+********** SCPSI07 TEST START **********
+***** SCPSI07 - 01 ***** O   K *****
+********** SCPSI07 TEST  END  **********
+
+********** SCPSI08 TEST START **********
+***** SCPSI08 - 01 ***** O   K *****
+***** SCPSI08 - 02 ***** O   K *****
+********** SCPSI08 TEST  END  **********
+
+********** SCPSI11 TEST START **********
+***** SCPSI11 - 01 ***** O   K *****
+***** SCPSI11 - 02 ***** O   K *****
+***** SCPSI11 - 03 ***** O   K *****
+********** SCPSI11 TEST  END  **********
+
+********** SCPSI12 TEST START **********
+***** SCPSI12 - 01 ***** O   K *****
+***** SCPSI12 - 02 ***** O   K *****
+***** SCPSI12 - 03 ***** O   K *****
+***** SCPSI12 - 04 ***** O   K *****
+********** SCPSI12 TEST  END  **********
+
+*** SCPVA01 TEST START ***
+ ** SIGNED CHAR TEST OK            **
+ ** UNSIGNED CHAR TEST OK          **
+ ** SIGNED SHORT INT TEST OK       **
+ ** UNSIGNED SHORT INT TEST OK     **
+ ** SIGNED LONG INT TEST OK        **
+ ** UNSIGNED LOND INT TEST OK      **
+ ** SIGNED LONG LONG INT TEST OK   **
+ ** UNSIGNED LONG LONG INT TEST OK **
+ ** FLOAT TEST OK                  **
+ ** DOUBLE TEST OK                 **
+ ** LONG DOUBLE TEST OK            **
+ ** CHAR*N TEST OK                 **
+ ** LONG CHAR TEST OK              **
+*** SCPVA01 TEST END   ***
+
+*** M3ETRM01 ** MK3 TEST FOR FE1 ** STARTED ***
+ *** M3ETRM01 TEST-01 OK ***
+ *** M3ETRM01 TEST-02 OK ***
+ *** M3ETRM01 TEST-03 OK ***
+ *** M3ETRM01 TEST-04 OK ***
+ *** M3ETRM01 TEST-05 OK ***
+ *** M3ETRM01 TEST-06 OK ***
+ *** M3ETRM01 TEST-07 OK ***
+*** M3ETRM01 TEST ENDED ***
+
+*** M3ETRM02 ** MK3 TEST FOR FE1 ** STARTED ***
+ *** M3ETRM02 TEST-01 OK ***
+ *** M3ETRM02 TEST-02 OK ***
+ *** M3ETRM02 TEST-03 OK ***
+ *** M3ETRM02 TEST-04 OK ***
+ *** M3ETRM02 TEST-05 OK ***
+ *** M3ETRM02 TEST-06 OK ***
+ *** M3ETRM02 TEST-07 OK ***
+ *** M3ETRM02 TEST-08 OK ***
+ *** M3ETRM02 TEST-09 OK ***
+ *** M3ETRM02 TEST-10 OK ***
+ *** M3ETRM02 TEST-11 OK ***
+ *** M3ETRM02 TEST-12 OK ***
+ *** M3ETRM02 TEST-13 OK ***
+ *** M3ETRM02 TEST-14 OK ***
+*** M3ETRM02 TEST ENDED ***
+
+*** M3ETRM03 ** MK3 TEST FOR FE1 ** STARTED ***
+ *** M3ETRM03 TEST-01 OK ***
+ *** M3ETRM03 TEST-02 OK ***
+ *** M3ETRM03 TEST-03 OK ***
+ *** M3ETRM03 TEST-04 OK ***
+ *** M3ETRM03 TEST-05 OK ***
+*** M3ETRM03 TEST ENDED ***
+
+*** M3ETRM04 ** MK3 TEST FOR FE1 ** STARTED ***
+ *** M3ETRM04 TEST-01 OK ***
+ *** M3ETRM04 TEST-02 OK ***
+ *** M3ETRM04 TEST-03 OK ***
+ *** M3ETRM04 TEST-04 OK ***
+ *** M3ETRM04 TEST-05 OK ***
+*** M3ETRM04 TEST ENDED ***
+
+*** M3ETRM05 ** MK3 TEST FOR FE1 ** STARTED ***
+ *** M3ETRM05 TEST-01 OK ***
+ *** M3ETRM05 TEST-02 OK ***
+ *** M3ETRM05 TEST-03 OK ***
+ *** M3ETRM05 TEST-04 OK ***
+ *** M3ETRM05 TEST-05 OK ***
+*** M3ETRM05 TEST ENDED ***
+
+*** M3ETRM06 ** MK3 TEST FOR FE1 ** STARTED ***
+ *** M3ETRM06 TEST-01 OK ***
+ *** M3ETRM06 TEST-02 OK ***
+ *** M3ETRM06 TEST-03 OK ***
+*** M3ETRM06 TEST ENDED ***
+
+*** M3ETRM07 ** MK3 TEST FOR FE1 ** STARTED ***
+ *** M3ETRM07 TEST-01 OK ***
+ *** M3ETRM07 TEST-02 OK ***
+*** M3ETRM07 TEST ENDED ***
+
+*** MPTEST21 CHECK01 OK ***
+*** MPTEST21 CHECK02 OK ***
+*** MPTEST21 CHECK3 OK ***
+
+*** MPTEST22 OK ***
+
+*** MPTEST23 START *** 
+** OK ** 
+** OK ** 
+*** MPTEST23  END  *** 
+
+*** mptest25 ok ***
+
+*** OK * 0 ***
+
+*** OK * 1 ***
+
+*** OK * 2 ***
+***** MPTEST26 END *****
+
+******** MPTEST27 START **************
+***    OK                       ***
+******** MPTEST27 END ****************
+
+<<<<<<<< START >>>>>>>>>>>>>>
+<<<<<<<< FUNC2 RECURSIVE >>>>
+<<<<<<<< FUNC2 RECURSIVE >>>>
+<<<<<<<< MPTEST28 OK >>>>>>>>
+<<<<<<<< MPTEST28 OK >>>>>>>>
+<<<<<<<< MPTEST28 OK >>>>>>>>
+<<<<<<<< MPTEST28 OK >>>>>>>>
+<<<<<<<< MPTEST28 OK >>>>>>>>
+<<<<<<<< MPTEST28 OK >>>>>>>>
+<<<<<<<< MPTEST28 END >>>>>>>
+******* FUNC011 IB05 CHECK     OK ****
+
+******* FUNC01 IA01            OK ****
+******* FUNC01 IA02 REAL ARGUM OK ****
+******* FUNC01 IA03 REAL ARGUM OK ****
+******* FUNC01 IA05 REAL ARGUM OK ****
+******* FUNC021 CB05 CHECK     OK ****
+******* FUNC02 CA01            OK ****
+******* FUNC02 CA02 REAL ARGUM OK ****
+******* FUNC02 CA03 REAL ARGUM OK ****
+******* FUNC02 CA05 REAL ARGUM OK ****
+******* FUNC031 SB05 CHECK     OK ****
+******* FUNC03 SA01            OK ****
+******* FUNC03 SA02 REAL ARGUM OK ****
+******* FUNC01 SA03 REAL ARGUM OK ****
+******* FUNC01 SA05 REAL ARGUM OK ****
+******* FUNC041 UIB05 CHECK    OK ****
+******* FUNC04 UIA01           OK ****
+******* FUNC04 UIA02 REAL ARGUM OK ****
+******* FUNC04 UIA03 REAL ARGUM OK ****
+******* FUNC04 UIA05 REAL ARGUM OK ****
+******* FUNC051 UCB05 CHECK    OK ****
+******* FUNC05 UCA01           OK ****
+******* FUNC05 UCA02 REAL ARGUM OK ****
+******* FUNC05 UCA03 REAL ARGUM OK ****
+******* FUNC05 UCA05 REAL ARGUM OK ****
+******* FUNC061 USB05 CHECK    OK ****
+******* FUNC06 USA01           OK ****
+******* FUNC06 USA02 REAL ARGUM OK ****
+******* FUNC06 USA03 REAL ARGUM OK ****
+******* FUNC06 USA05 REAL ARGUM OK ****
+******* FUNC071 FB05 CHECK     OK ****
+******* FUNC07 FA01            OK ****
+******* FUNC07 FA02 REAL ARGUM OK ****
+******* FUNC07 FA03 REAL ARGUM OK ****
+******* FUNC07 FA05 REAL ARGUM OK ****
+******* FUNC081 DB05 CHECK     OK ****
+******* FUNC08 DA01            OK ****
+******* FUNC08 DA02 REAL ARGUM OK ****
+******* FUNC08 DA03 REAL ARGUM OK ****
+******* FUNC08 DA05 REAL ARGUM OK ****
+ i2 value 5 
+*** mptest30 i2 ok ***
+ i4 value 5 
+*** mptest30 i4 ok ***
+ u2 value 5 
+*** mptest30 u2 ok ***
+ u4 value 5 
+*** mptest30 u4 ok ***
+ rs value 5.000000 
+*** mptest30 rs ok ***
+ rd value 5.000000 
+*** mptest30 rd ok ***
+ ch value 5 
+*** mptest30 ch ok ***
+*** MPTEST31 OK ***
+*** MPTEST31 OK ***
+*** MPTEST32 OK ***
+*** MPTEST32 OK ***
+*** MPTEST33  OK ***
+***** MPTEST34 OK *****
+***** MPTEST36 OK *****
+      
+    MPTEST37 START 
+      
+    EIGHT QUEEN PATTERN  = 92 
+      
+      
+    MPTEST37 OK 
+      
+    MPTEST37 END 
+      
+_____ CHECK 1 OK ____________
+_____ RETURN CODE = 999 _____
+_____ MPTEST38 OK ___________
+
+***  *** TEST FOR COMMON *** ENDED ***
+exit 0

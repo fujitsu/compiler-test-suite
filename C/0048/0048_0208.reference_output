@@ -1,0 +1,11 @@
+*****  test start *****
+########  INLFUNC1  NO.1  OK  ##########
+########  INLFUNC1  NO.2  OK  ##########
+########  INLFUNC1  NO.3  OK  ##########
+########  INLFUNC1  NO.4  OK  ##########
+########  INLFUNC1  NO.5  OK  ##########
+########  INLFUNC1  NO.6  OK  ##########
+########  INLFUNC1  NO.7  OK  ##########
+########  INLFUNC1  NO.8  OK  ##########
+*****  test ended *****
+exit 0

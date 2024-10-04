@@ -1,0 +1,87 @@
+***  **** START ***
+
+*** M3GSRI03 ** MK3 TEST ** STARTED ***
+*** M3GSRI03 - 01 ** OK ***
+*** M3GSRI03 - 02 ** OK ***
+*** M3GSRI03 - 03 ** OK ***
+*** M3GSRI03 - 04 ** OK ***
+*** M3GSRI03 - 05 ** OK ***
+*** M3GSRI03 - 06 ** OK ***
+*** M3GSRI03 - 07 ** OK ***
+*** M3GSRI03 - 08 ** OK ***
+*** M3GSRI03 - 09 ** OK ***
+*** M3GSRI03 - 10 ** OK ***
+*** M3GSRI03 - 11 ** OK ***
+*** M3GSRI03 - 12 ** OK ***
+*** M3GSRI03 TEST ENDED ***
+
+
+
+
+
+
+
+
+ SCRPZ11 PASS 
+M3GUNR04 START
+M3GUNR04 F4FNC1 OK
+M3GUNR04 F4FNC2 OK
+M3GUNR04 F4FNC3 OK
+M3GUNR04 F4FNC4 OK
+M3GUNR04 END  
+*** SCS001 *** OK ***
+M3GREL03 START
+M3GREL02 F1FNC1 OK
+M3GREL03 F1FNC2 OK
+M3GREL03 F1FNC3 OK
+M3GREL03 F1FNC4 OK
+M3GREL03 END  
+M3CTOK09   TEST START 
+ *** O K (11-01) ***  
+ *** O K (11-02) ***  
+ *** O K (11-03) ***  
+ *** O K (11-04) ***  
+ *** O K (11-05) ***  
+ *** O K (11-06) ***  
+ *** O K (11-07) ***  
+ *** O K (11-08) ***  
+ *** O K (11-09) ***  
+ *** O K (11-10) ***  
+ *** O K (11-11) ***  
+ *** O K (11-12) ***  
+ *** O K (11-13) ***  
+ *** O K (11-14) ***  
+ *** O K (12-01) ***  
+ *** O K (12-02) ***  
+ *** O K (12-03) ***  
+ *** O K (12-06) ***  
+ *** O K (12-07) ***  
+ *** O K (12-08) ***  
+M3CTOK09   TEST END 
+M3MPRD01 START
+M3MPRD01 OK
+M3MPRD01 END  
+ OK 
+M3CCCT01  TEST START 
+ *** O K (50-01) ***  
+ *** O K (50-02) ***  
+ *** O K (50-03) ***  
+ *** O K (50-04) ***  
+ *** O K (50-05) ***  
+ *** O K (50-06) ***  
+ *** O K (50-07) ***  
+ *** O K (50-10) ***  
+ *** O K (50-11) ***  
+ *** O K (50-12) ***  
+ *** O K (50-13) ***  
+ *** O K (50-14) ***  
+ *** O K (51-01) ***  
+ *** O K (51-02) ***  
+ *** O K (51-04) ***  
+ *** O K (51-06) ***  
+ *** O K (51-07) ***  
+ *** O K (51-08) ***  
+M3CCCT01   TEST END 
+
+***  ****  END  ***
+exit 0

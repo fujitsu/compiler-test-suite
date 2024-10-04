@@ -1,0 +1,112 @@
+***  **** START ***
+TEST01 --> OK 
+TEST02 --> OK 
+TEST03 --> OK 
+TEST04 --> OK 
+TEST05 --> OK 
+TEST06 --> OK 
+TEST07 --> OK 
+TEST08 --> OK 
+TEST09 --> OK 
+TEST10 --> OK 
+TEST11 --> OK 
+TEST12 --> OK 
+TEST13 --> OK 
+TEST14 --> OK 
+TEST15 --> OK 
+TEST16 --> OK 
+********** SCOSH01 TEST STARTED **********
+********** SCOSH01 -01 OK **********
+********** SCOSH01 -02 OK **********
+********** SCOSH01 -03 OK **********
+********** SCOSH01 -04 OK **********
+********** SCOSH01 -05 OK **********
+********** SCOSH01 -06 OK **********
+********** SCOSH01 -07 OK **********
+********** SCOSH01 -08 OK **********
+********** SCOSH01 -09 OK **********
+********** SCOSH01 -10 OK **********
+********** SCOSH01 TEST ENDED **********
+*** M3ECHG04 ** MK3 TEST FOR X_CHGTRE ** STARTED ***
+*** M3ECHG04-01 *** O     K ***
+*** M3ECHG04-02 *** O     K ***
+*** M3ECHG04-03 *** O     K ***
+*** M3ECHG04-04 *** O     K ***
+*** M3ECHG04 ** MK3 TEST FOR X_CHGTRE ** ENDED ***
+*** MPTEST25 OK ***
+************* 
+TEST01 --> OK 
+TEST02 --> OK 
+TEST03 --> OK 
+TEST04 --> OK 
+TEST05 --> OK 
+TEST06 --> OK 
+TEST07 --> OK 
+TEST08 --> OK 
+TEST09 --> OK 
+TEST10 --> OK 
+TEST11 --> OK 
+TEST12 --> OK 
+TEST13 --> OK 
+TEST14 --> OK 
+TEST15 --> OK 
+TEST16 --> OK 
+TEST17 --> OK 
+TEST18 --> OK 
+TEST19 --> OK 
+TEST20 --> OK 
+TEST21 --> OK 
+TEST22 --> OK 
+************* 
+ITEM1 OK
+ITEM2 OK
+
+*** MPTEST15 -- START ***
+*** MPTEST15 CHECK02 OK ***
+*** MPTEST15 CHECK01 OK ***
+
+*** MPTEST15 -- END   ***
+********** M3ERMV06 TEST START **********
+***** M3ERMV06 - 01 ***** O K *****
+***** M3ERMV06 - 02 ***** O K *****
+***** M3ERMV06 - 03 ***** O K *****
+***** M3ERMV06 - 04 ***** O K *****
+***** M3ERMV06 - 05 ***** O K *****
+***** M3ERMV06 - 06 ***** O K *****
+***** M3ERMV06 - 07 ***** O K *****
+***** M3ERMV06 - 08 ***** O K *****
+***** M3ERMV06 - 09 ***** O K *****
+***** M3ERMV06 - 10 ***** O K *****
+***** M3ERMV06 - 11 ***** O K *****
+***** M3ERMV06 - 12 ***** O K *****
+***** M3ERMV06 - 13 ***** O K *****
+***** M3ERMV06 - 14 ***** O K *****
+***** M3ERMV06 - 15 ***** O K *****
+***** M3ERMV06 - 16 ***** O K *****
+********** M3ERMV06 TEST  END  **********
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+** OK ** 
+** OK **
+** OK **
+** OK **
+** OK **
+** OK **
+** CASE3 **
+** CASE1 **
+** FLAG  : FALSE **
+***** OK *****
+M3MPRD07 OK
+********** SCOOD01 STARTED *********
+********** SCOOD01 -01 OK **********
+********** SCOOD01 -02 OK **********
+********** SCOOD01 ENDED **********
+***  ****  END  ***
+exit 0

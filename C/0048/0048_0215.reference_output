@@ -1,0 +1,5 @@
+ ***  TEST-1  OK           ***
+ ***           COMPOUND STATEMENTS ***
+ ***  TEST-2  OK  FOR(FOR) ***
+ ***  TEST-3  OK  SWC(SWC) ***
+exit 0

@@ -1,0 +1,118 @@
+***  *** TEST FOR COMMON *** STARTED ***
+
+M3EVA041 TEST OK 
+
+M3EVA042 TEST OK 
+
+M3EVA043 TEST OK 
+
+M3EVA044 TEST OK 
+
+M3EVA045 TEST OK 
+
+M3EVA046 TEST OK 
+
+M3EVA047 TEST OK 
+
+M3EVA048 TEST OK 
+
+M3EVA049 TEST OK 
+
+M3EVA050 TEST OK 
+
+********** SCPSI05 TEST START **********
+***** SCPSI05 - 01 ***** O   K *****
+********** SCPSI05 TEST  END  **********
+
+********** SCPSI06 TEST START **********
+***** SCPSI06 - 01 ***** O   K *****
+***** SCPSI06 - 02 ***** O   K *****
+********** SCPSI06 TEST  END  **********
+
+********** SCPSI07 TEST START **********
+***** SCPSI07 - 01 ***** O   K *****
+********** SCPSI07 TEST  END  **********
+
+********** SCPSI08 TEST START **********
+***** SCPSI08 - 01 ***** O   K *****
+***** SCPSI08 - 02 ***** O   K *****
+********** SCPSI08 TEST  END  **********
+
+m3mpsi05 ok
+
+m3mpsi07 ok
+
+m3mpsi08 ok
+
+m3mpsi09 ok
+m3mpsi09 ok
+
+********** SCPSI11 TEST START **********
+***** SCPSI11 - 01 ***** O   K *****
+***** SCPSI11 - 02 ***** O   K *****
+***** SCPSI11 - 03 ***** O   K *****
+********** SCPSI11 TEST  END  **********
+
+********** SCPSI12 TEST START **********
+***** SCPSI12 - 01 ***** O   K *****
+***** SCPSI12 - 02 ***** O   K *****
+***** SCPSI12 - 03 ***** O   K *****
+***** SCPSI12 - 04 ***** O   K *****
+********** SCPSI12 TEST  END  **********
+
+*** SCPVA01 TEST START ***
+  ## SIGNED CHAR TEST OK            ##
+ ** UNSIGNED CHAR TEST OK          **
+ ** SIGNED SHORT INT TEST OK       **
+ ** UNSIGNED SHORT INT TEST OK     **
+ ** SIGNED LONG INT TEST OK        **
+ ** UNSIGNED LOND INT TEST OK      **
+ ** SIGNED LONG LONG INT TEST OK   **
+ ** UNSIGNED LONG LONG INT TEST OK **
+ ** FLOAT TEST OK                  **
+ ** DOUBLE TEST OK                 **
+ ** LONG DOUBLE TEST OK            **
+ ** CHAR*N TEST OK                 **
+ ** LONG CHAR TEST OK              **
+*** SCPVA01 TEST END   ***
+
+M3EVA051 TEST OK 
+
+M3EVA052 TEST OK 
+
+M3EVA053 TEST OK 
+
+M3EVA054 TEST OK 
+
+M3EVA055 TEST OK 
+
+M3EVA056 TEST OK 
+
+M3EVA057 TEST OK 
+
+M3EVA058 TEST OK 
+
+M3EVA059 TEST OK 
+
+M3EVA060 TEST OK 
+
+m3mpsi0a ok
+m3mpsi0a ok
+m3mpsi0a ok
+
+********* sort program *********
+1st ====>>>  1   
+2dn ====>>>  2   
+3rd ====>>>  3   
+4th ====>>>  4   
+5th ====>>>  5   
+6th ====>>>  6   
+7th ====>>>  7   
+8th ====>>>  8   
+9th ====>>>  9   
+largest=>>>  10   
+
+ok
+
+***  *** TEST FOR COMMON *** ENDED ***
+exit 0

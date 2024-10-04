@@ -1,0 +1,19 @@
+17 TEST-START 
+17 1-1 TEST -O  K- 
+17 1-2 TEST -O  K- 
+17 1-3 TEST -O  K- 
+17 1-4 TEST -O  K- 
+17 2-1 TEST -O  K- 
+17 2-2 TEST -O  K- 
+17 2-3 TEST -O  K- 
+17 2-4 TEST -O  K- 
+17 3-1 TEST -O  K- 
+17 3-2 TEST -O  K- 
+17 3-3 TEST -O  K- 
+17 3-4 TEST -O  K- 
+17 4-1 TEST -O  K- 
+17 4-2 TEST -O  K- 
+17 4-3 TEST -O  K- 
+17 4-4 TEST -O  K- 
+17 TEST-END 
+exit 0

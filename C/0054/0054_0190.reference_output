@@ -1,0 +1,19 @@
+08 TEST-START 
+08 1-1 TEST -O  K- 
+08 1-2 TEST -O  K- 
+08 1-3 TEST -O  K- 
+08 1-4 TEST -O  K- 
+08 1-5 TEST -O  K- 
+08 1-6 TEST -O  K- 
+08 1-7 TEST -O  K- 
+08 1-8 TEST -O  K- 
+08 2-1 TEST -O  K- 
+08 2-2 TEST -O  K- 
+08 2-3 TEST -O  K- 
+08 2-4 TEST -O  K- 
+08 2-5 TEST -O  K- 
+08 2-6 TEST -O  K- 
+08 2-7 TEST -O  K- 
+08 2-8 TEST -O  K- 
+08 TEST-END 
+exit 0

@@ -1,0 +1,122 @@
+***  *** TEST FOR COMMON *** STARTED ***
+
+SCQIH13  PASS.
+ OK 
+ ----- ok ----- 
+--------- ok -------- 
+--------- ok -------- 
+--------- ok -------- 
+
+m3mpsi05 ok
+
+m3mpsi07 ok
+
+m3mpsi08 ok
+
+m3mpsi09 ok
+m3mpsi09 ok
+
+m3mpsi0a ok
+m3mpsi0a ok
+m3mpsi0a ok
+
+********* sort program *********
+1st ====>>>  1   
+2dn ====>>>  2   
+3rd ====>>>  3   
+4th ====>>>  4   
+5th ====>>>  5   
+6th ====>>>  6   
+7th ====>>>  7   
+8th ====>>>  8   
+9th ====>>>  9   
+largest=>>>  10   
+
+ok
+*** M3ETRE44 ** MK3 TEST FOR X_TREEMK **** STARTED 
+*** M3ETRE44-01 *****     O    K     *****
+*** M3ETRE44-02 *****     O    K     *****
+*** M3ETRE44-03 *****     O    K     *****
+*** M3ETRE44-04 *****     O    K     *****
+*** M3ETRE44-05 *****     O    K     *****
+*** M3ETRE44-06 *****     O    K     *****
+*** M3ETRE44-07 *****     O    K     *****
+*** M3ETRE44-08 *****     O    K     *****
+*** M3ETRE44-09 *****     O    K     *****
+*** M3ETRE44-10 *****     O    K     *****
+*** M3ETRE44 ** MK3 TEST FOR X_TREEMK **** ENDED 
+*** M3ETRE45 ** MK3 TEST FOR X_TREEMK **** STARTED 
+*** M3ETRE45-01 *****     O    K     *****
+*** M3ETRE45-02 *****     O    K     *****
+*** M3ETRE45-03 *****     O    K     *****
+*** M3ETRE45-04 *****     O    K     *****
+*** M3ETRE45-05 *****     O    K     *****
+*** M3ETRE45-06 *****     O    K     *****
+*** M3ETRE45-07 *****     O    K     *****
+*** M3ETRE45-08 *****     O    K     *****
+*** M3ETRE45-09 *****     O    K     *****
+*** M3ETRE45-10 *****     O    K     *****
+*** M3ETRE45 ** MK3 TEST FOR X_TREEMK **** ENDED 
+*** M3ETRE46 ** MK3 TEST FOR X_TREEMK **** STARTED 
+*** M3ETRE46-01 *****     O    K     *****
+*** M3ETRE46-02 *****     O    K     *****
+*** M3ETRE46-03 *****     O    K     *****
+*** M3ETRE46-04 *****     O    K     *****
+*** M3ETRE46-05 *****     O    K     *****
+*** M3ETRE46-06 *****     O    K     *****
+*** M3ETRE46-07 *****     O    K     *****
+*** M3ETRE46-08 *****     O    K     *****
+*** M3ETRE46-09 *****     O    K     *****
+*** M3ETRE46-10 *****     O    K     *****
+*** M3ETRE46 ** MK3 TEST FOR X_TREEMK **** ENDED 
+*** M3ETRE47 ** MK3 TEST FOR X_TREEMK **** STARTED 
+*** M3ETRE47-01 *****     O    K     *****
+*** M3ETRE47-02 *****     O    K     *****
+*** M3ETRE47-03 *****     O    K     *****
+*** M3ETRE47-04 *****     O    K     *****
+*** M3ETRE47-05 *****     O    K     *****
+*** M3ETRE47-06 *****     O    K     *****
+*** M3ETRE47-07 *****     O    K     *****
+*** M3ETRE47-08 *****     O    K     *****
+*** M3ETRE47-09 *****     O    K     *****
+*** M3ETRE47-10 *****     O    K     *****
+*** M3ETRE47 ** MK3 TEST FOR X_TREEMK **** ENDED 
+*** M3ETRE48 ** MK3 TEST FOR X_TREEMK **** STARTED 
+*** M3ETRE48-01 *****     O    K     *****
+*** M3ETRE48-02 *****     O    K     *****
+*** M3ETRE48-03 *****     O    K     *****
+*** M3ETRE48-04 *****     O    K     *****
+*** M3ETRE48-05 *****     O    K     *****
+*** M3ETRE48-06 *****     O    K     *****
+*** M3ETRE48-07 *****     O    K     *****
+*** M3ETRE48-08 *****     O    K     *****
+*** M3ETRE48-09 *****     O    K     *****
+*** M3ETRE48-10 *****     O    K     *****
+*** M3ETRE48 ** MK3 TEST FOR X_TREEMK **** ENDED 
+*** M3ETRE49 ** MK3 TEST FOR X_TREEMK **** STARTED 
+*** M3ETRE49-01 *****     O    K     *****
+*** M3ETRE49-02 *****     O    K     *****
+*** M3ETRE49-03 *****     O    K     *****
+*** M3ETRE49-04 *****     O    K     *****
+*** M3ETRE49-05 *****     O    K     *****
+*** M3ETRE49-06 *****     O    K     *****
+*** M3ETRE49-07 *****     O    K     *****
+*** M3ETRE49-08 *****     O    K     *****
+*** M3ETRE49-09 *****     O    K     *****
+*** M3ETRE49-10 *****     O    K     *****
+*** M3ETRE49 ** MK3 TEST FOR X_TREEMK **** ENDED 
+*** M3ETRE50 ** MK3 TEST FOR X_TREEMK **** STARTED 
+*** M3ETRE50-01 *****     O    K     *****
+*** M3ETRE50-02 *****     O    K     *****
+*** M3ETRE50-03 *****     O    K     *****
+*** M3ETRE50-04 *****     O    K     *****
+*** M3ETRE50-05 *****     O    K     *****
+*** M3ETRE50-06 *****     O    K     *****
+*** M3ETRE50-07 *****     O    K     *****
+*** M3ETRE50-08 *****     O    K     *****
+*** M3ETRE50-09 *****     O    K     *****
+*** M3ETRE50-10 *****     O    K     *****
+*** M3ETRE50 ** MK3 TEST FOR X_TREEMK **** ENDED 
+
+***  *** TEST FOR COMMON *** ENDED ***
+exit 0

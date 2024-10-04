@@ -1,0 +1,71 @@
+***  *** TEST FOR COMMON *** STARTED ***
+
+M3EVA062 TEST OK 
+
+M3EVA063 TEST OK 
+
+M3EVA064 TEST OK 
+
+M3EVA065 TEST OK 
+
+M3EVA066 TEST OK 
+
+M3EVA067 TEST OK 
+
+M3EVA068 TEST OK 
+
+M3EVA069 TEST OK 
+
+SCQIH13  PASS.
+ OK 
+
+***** MPTEST01 START *****
+  in ''ii''
+  in ''f''
+  in ''f1''
+  ** OK **
+  in ''f1''
+  ** OK **
+***** MPTEST01 END *****
+
+start mptest02
+      mptest02 ok
+end   mptest02
+
+***** MPTEST03 START *****
+ ** OK *** t1.a = 0 *** 
+ ** OK *** t1.b = x *** 
+ ** OK *** t1.a = 1 *** 
+ ** OK *** t1.b = y *** 
+ ** OK *** t1.a = 2 *** 
+ ** OK *** t1.b = z *** 
+  ( t1a )  a=0, b=x
+  ( t1b )  a=1, b=y
+  ( t1c )  a=2, b=z
+***** MPTEST03 OK ***** 
+
+***** MPTEST04 START *****
+***** MPTEST04 OK END *****
+
+M3EVA070 TEST OK 
+
+M3EVA071 TEST OK 
+
+M3EVA072 TEST OK 
+
+M3EVA073 TEST OK 
+
+M3EVA074 TEST OK 
+
+M3EVA075 TEST OK 
+
+M3EVA076 TEST OK 
+
+M3EVA077 TEST OK 
+
+M3EVA078 TEST OK 
+
+M3EVA079 TEST OK 
+
+***  *** TEST FOR COMMON *** ENDED ***
+exit 0

@@ -1,0 +1,130 @@
+***  **** START ***
+**** ITEM1 OK ****
+**** ITEM2 OK ****
+*** M3EDC127 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC127 TEST-01 OK ***
+ *** M3EDC127 TEST-02 OK ***
+ *** M3EDC127 TEST-03 OK ***
+ *** M3EDC127 TEST-05 OK ***
+ *** M3EDC127 TEST-06 OK ***
+ *** M3EDC127 TEST-07 OK ***
+ *** M3EDC127 TEST-08 OK ***
+*** M3EDC127 TEST ENDED ***
+********** SCOHD01 STARTED **********
+********** SCOHD01 -01 OK **********
+********** SCOHD01 -02 OK **********
+********** SCOHD01 -04 OK **********
+********** SCOHD01 -05 OK **********
+********** SCOHD01 -06 OK **********
+********** SCOHD01 -07 OK **********
+********** SCOHD01 -08 OK **********
+********** SCOHD01 -09 OK **********
+********** SCOHD01 -10 OK **********
+********** SCOHD01 -11 OK **********
+********** SCOHD01  ENDED **********
+*** M3ESAD58 ****** START ***  
+*** M3ESAD58-01 *****     O    K     *****
+*** M3ESAD58-02 *****     O    K     *****
+*** M3ESAD58-03 *****     O    K     *****
+*** M3ESAD58-04 *****     O    K     *****
+*** M3ESAD58 ****** END *** 
+head
+***** OK  *****
+*** M3EDC170 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC170 TEST-01 OK ***
+ *** M3EDC170 TEST-02 OK ***
+ *** M3EDC170 TEST-03 OK ***
+ *** M3EDC170 TEST-04 OK ***
+ *** M3EDC170 TEST-05 OK ***
+ *** M3EDC170 TEST-06 OK ***
+ *** M3EDC170 TEST-07 OK ***
+*** M3EDC170 TEST ENDED ***
+*************
+TEST01 --> OK 
+TEST02 --> OK 
+TEST03 --> OK 
+TEST04 --> OK 
+TEST05 --> OK 
+TEST06 --> OK 
+TEST07 --> OK 
+TEST08 --> OK 
+TEST09 --> OK 
+TEST10 --> OK 
+TEST11 --> OK 
+TEST12 --> OK 
+TEST13 --> OK 
+TEST14 --> OK 
+TEST15 --> OK 
+TEST16 --> OK 
+TEST17 --> OK 
+TEST18 --> OK 
+TEST19 --> OK 
+TEST20 --> OK 
+TEST21 --> OK 
+*** M3EDC070 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC070 TEST-01 OK ***
+ *** M3EDC070 TEST-02 OK ***
+ *** M3EDC070 TEST-03 OK ***
+ *** M3EDC070 TEST-04 OK ***
+ *** M3EDC070 TEST-05 OK ***
+ *** M3EDC070 TEST-06 OK ***
+*** M3EDC070 TEST ENDED ***
+*** MPTEST43 OK ***
+*** M3EDC133 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC133 TEST-01 OK ***
+ *** M3EDC133 TEST-02 OK ***
+ *** M3EDC133 TEST-03 OK ***
+ *** M3EDC133 TEST ENDED ***
+********** SCOSN01 TEST STARTED **********
+********** SCOSN01 - 01 OK **********
+********** SCOSN01 - 02 OK **********
+********** SCOSN01 - 03 OK **********
+********** SCOSN01 - 04 OK **********
+********** SCOSN01 - 05 OK **********
+********** SCOSN01 - 06 OK **********
+********** SCOSN01 - 07 OK **********
+********** SCOSN01 - 08 OK **********
+********** SCOSN01 - 09 OK **********
+********** SCOSN01 - 10 OK **********
+********** SCOSN01 - 11 OK **********
+********** SCOSN01 - 12 OK **********
+********** SCOSN01 TEST STARTED **********
+*** M3EDC061 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC061 TEST-01 OK ***
+ *** M3EDC061 TEST-02 OK ***
+ *** M3EDC061 TEST-03 OK ***
+ *** M3EDC061 TEST-04 OK ***
+ *** M3EDC061 TEST-05 OK ***
+ *** M3EDC061 TEST-06 OK ***
+*** M3EDC061 TEST ENDED ***
+***** SORT *****
+***** LIST DATA :  0
+***** LIST DATA :  1
+***** LIST DATA :  2
+***** LIST DATA :  3
+***** LIST DATA :  4
+***** LIST DATA :  5
+***** LIST DATA :  6
+***** LIST DATA :  7
+***** LIST DATA :  8
+***** LIST DATA :  9
+***** LIST DATA : 10
+***** LIST DATA : 20
+***** LIST DATA : 30
+***** LIST DATA : 40
+***** LIST DATA : 50
+***** LIST DATA : 60
+***** LIST DATA : 70
+***** LIST DATA : 80
+***** LIST DATA : 90
+***** LIST DATA : 100
+***** OK *****
+********** SCOPRL1 STARTED *********
+********** SCOPRL1 -01 OK **********
+********** SCOPRL1 -01.5 OK **********
+********** SCOPRL1 -02 OK **********
+********** SCOPRL1 ENDED **********
+***** M3EDC301 - 01 ***** O K *****
+***** M2EDC301 - 02 ***** O K *****
+***  ****  END  ***
+exit 0

@@ -1,0 +1,32 @@
+***  **** START ***
+***** M3EDC307 - 01 ***** O K *****
+***** M2EDC307 - 02 ***** O K *****
+***** M3EDC307 - 03 ***** O K *****
+***** M2EDC307 - 04 ***** O K *****
+***** M3EDC307 - 05 ***** O K *****
+***** M2EDC307 - 06 ***** O K *****
+*** M3EDC159 **  ** STARTED ***
+ *** M3EDC159 TEST-01 OK ***
+ *** M3EDC159 TEST-02 OK ***
+ *** M3EDC159 TEST-03 OK ***
+ *** M3EDC159 TEST-04 OK ***
+ *** M3EDC159 TEST-05 OK ***
+ *** M3EDC159 TEST-06 OK ***
+ *** M3EDC159 TEST-07 OK ***
+ *** M3EDC159 TEST-08 OK ***
+*** M3EDC159 TEST ENDED ***
+***** M3EDC322 - 01 ***** O K *****
+***** M3EDC322 - 02 ***** O K *****
+* M3ELVA01 ***      MK3  TEST     ****** STARTED *
+*** M3ELVA01-01 *** O K ***
+*** M3ELVA01-02 *** O K ***
+*** M3ELVA01-03 *** O K ***
+*** M3ELVA01-04 *** O K ***
+*** M3ELVA01-05 *** O K ***
+* M3ELVA01 ***      MK3  TEST     ****** ENDED ***
+********** M3ENRD01 TEST START **********
+***** M3ENRD01 - 01 ***** O K *****
+***** M3ENRD01 - 02 ***** O K *****
+********** M3ENRD01 TEST  END  **********
+***  ****  END  ***
+exit 0

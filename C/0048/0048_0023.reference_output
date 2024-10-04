@@ -1,0 +1,114 @@
+***  **** START ***
+*** M3EDC159 **  ** STARTED ***
+ *** M3EDC159 TEST-01 OK ***
+ *** M3EDC159 TEST-02 OK ***
+ *** M3EDC159 TEST-03 OK ***
+ *** M3EDC159 TEST-04 OK ***
+ *** M3EDC159 TEST-05 OK ***
+ *** M3EDC159 TEST-06 OK ***
+ *** M3EDC159 TEST-07 OK ***
+ *** M3EDC159 TEST-08 OK ***
+*** M3EDC159 TEST ENDED ***
+********** M3ERMV08 TEST START **********
+***** M3ERMV08 - 01 ***** O K *****
+***** M3ERMV08 - 02 ***** O K *****
+***** M3ERMV08 - 03 ***** O K *****
+***** M3ERMV08 - 04 ***** O K *****
+***** M3ERMV08 - 05 ***** O K *****
+***** M3ERMV08 - 06 ***** O K *****
+***** M3ERMV08 - 07 ***** O K *****
+***** M3ERMV08 - 08 ***** O K *****
+********** M3ERMV08 TEST  END  **********
+**** ITEM1 OK ****
+**** ITEM2 OK ****
+***** M3EDC307 - 01 ***** O K *****
+***** M2EDC307 - 02 ***** O K *****
+***** M3EDC307 - 03 ***** O K *****
+***** M2EDC307 - 04 ***** O K *****
+***** M3EDC307 - 05 ***** O K *****
+***** M2EDC307 - 06 ***** O K *****
+*** M3ESAD53 ** MK3 TEST FOR X_SAMDCK **** STARTED 
+*** M3ESAD53-01 *****     O    K     *****
+*** M3ESAD53-02 *****     O    K     *****
+*** M3ESAD53-03 *****     O    K     *****
+*** M3ESAD53-04 *****     O    K     *****
+*** M3ESAD53-05 *****     O    K     *****
+*** M3ESAD53-06 *****     O    K     *****
+*** M3ESAD53-07 *****     O    K     *****
+*** M3ESAD53-08 *****     O    K     *****
+*** M3ESAD53-09 *****     O    K     *****
+*** M3ESAD53 ** MK3 TEST FOR X_SAMDCK **** ENDED 
+********** M3ERMV03 TEST START **********
+***** M3ERMV03 - 01 ***** O K *****
+***** M3ERMV03 - 02 ***** O K *****
+***** M3ERMV03 - 03 ***** O K *****
+***** M3ERMV03 - 04 ***** O K *****
+***** M3ERMV03 - 05 ***** O K *****
+***** M3ERMV03 - 06 ***** O K *****
+***** M3ERMV03 - 07 ***** O K *****
+***** M3ERMV03 - 08 ***** O K *****
+********** M3ERMV03 TEST  END  **********
+---- SCPA015 START ---- 
+     ***  OK  *** 
+---- SCPA015  END  ---- 
+*** M3EDC189 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC189 TEST-01 OK ***
+ *** M3EDC189 TEST-02 OK ***
+ *** M3EDC189 TEST-03 OK ***
+ *** M3EDC189 TEST-04 OK ***
+*** M3EDC189 TEST ENDED ***
+******* MFNC011 IB05 CHECK     OK ****
+******* MFNC01 IA01            OK ****
+******* MFNC01 IA02 REAL ARGUM OK ****
+******* MFNC01 IA03 REAL ARGUM OK ****
+******* MFNC01 IA05 REAL ARGUM OK ****
+******* MFNC021 CB05 CHECK     OK ****
+******* MFNC02 CA01            OK ****
+******* MFNC02 CA02 REAL ARGUM OK ****
+******* MFNC02 CA03 REAL ARGUM OK ****
+******* MFNC02 CA05 REAL ARGUM OK ****
+******* MFNC031 SB05 CHECK     OK ****
+******* MFNC03 SA01            OK ****
+******* MFNC03 SA02 REAL ARGUM OK ****
+******* MFNC01 SA03 REAL ARGUM OK ****
+******* MFNC01 SA05 REAL ARGUM OK ****
+******* MFNC041 UIB05 CHECK    OK ****
+******* MFNC04 UIA01           OK ****
+******* MFNC04 UIA02 REAL ARGUM OK ****
+******* MFNC04 UIA03 REAL ARGUM OK ****
+******* MFNC04 UIA05 REAL ARGUM OK ****
+******* MFNC051 UCB05 CHECK    OK ****
+******* MFNC05 UCA01           OK ****
+******* MFNC05 UCA02 REAL ARGUM OK ****
+******* MFNC05 UCA03 REAL ARGUM OK ****
+******* MFNC05 UCA05 REAL ARGUM OK ****
+******* MFNC061 USB05 CHECK    OK ****
+******* MFNC06 USA01           OK ****
+******* MFNC06 USA02 REAL ARGUM OK ****
+******* MFNC06 USA03 REAL ARGUM OK ****
+******* MFNC06 USA05 REAL ARGUM OK ****
+******* MFNC071 FB05 CHECK     OK ****
+******* MFNC07 FA01            OK ****
+******* MFNC07 FA02 REAL ARGUM OK ****
+******* MFNC07 FA03 REAL ARGUM OK ****
+******* MFNC07 FA05 REAL ARGUM OK ****
+******* MFNC081 DB05 CHECK     OK ****
+******* MFNC08 DA01            OK ****
+******* MFNC08 DA02 REAL ARGUM OK ****
+******* MFNC08 DA03 REAL ARGUM OK ****
+******* MFNC08 DA05 REAL ARGUM OK ****
+***** M3EDC322 - 01 ***** O K *****
+***** M3EDC322 - 02 ***** O K *****
+* M3ELVA01 ***      MK3  TEST     ****** STARTED *
+*** M3ELVA01-01 *** O K ***
+*** M3ELVA01-02 *** O K ***
+*** M3ELVA01-03 *** O K ***
+*** M3ELVA01-04 *** O K ***
+*** M3ELVA01-05 *** O K ***
+* M3ELVA01 ***      MK3  TEST     ****** ENDED ***
+********** M3ENRD01 TEST START **********
+***** M3ENRD01 - 01 ***** O K *****
+***** M3ENRD01 - 02 ***** O K *****
+********** M3ENRD01 TEST  END  **********
+***  ****  END  ***
+exit 0

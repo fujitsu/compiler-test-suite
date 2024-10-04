@@ -1,0 +1,19 @@
+09 TEST-START 
+09 1-1 TEST -O  K- 
+09 1-2 TEST -O  K- 
+09 1-3 TEST -O  K- 
+09 1-4 TEST -O  K- 
+09 1-5 TEST -O  K- 
+09 1-6 TEST -O  K- 
+09 1-7 TEST -O  K- 
+09 1-8 TEST -O  K- 
+09 2-1 TEST -O  K- 
+09 2-2 TEST -O  K- 
+09 2-3 TEST -O  K- 
+09 2-4 TEST -O  K- 
+09 2-5 TEST -O  K- 
+09 2-6 TEST -O  K- 
+09 2-7 TEST -O  K- 
+09 2-8 TEST -O  K- 
+09 TEST-END 
+exit 0

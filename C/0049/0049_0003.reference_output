@@ -1,0 +1,74 @@
+y = 770   --- OK
+z = 580   --- OK
+p  = 2550
+pp = 2401
+q  = 50
+r  = 700
+s  = 700
+t  = 100
+u  = 100
+v  = 100
+w  = 100
+x  = 2450
+y  = 2449
+z  = 5000
+e  = 5000
+***** LOOP1 OK *****
+***** LOOP2 OK *****
+***** LOOP3 OK *****
+***** LOOP4 OK *****
+***** LOOP5 OK *****
+***** LOOP6 OK *****
+***** LOOP7 OK *****
+***** LOOP8 OK *****
+***** LOOP9 OK *****
+***** LOOP10 OK *****
+ starts. Need not to confirm optimization. Result check is enough.
+ mask op. is "or" : no optimize
+   OK
+M3MPRD02 START
+m3mprd02 ok
+m3mprd02 ok
+M3MPRD02 END  
+iemk2002-(01) ok
+iemk2002-(02) ok
+iemk2002-(03) ok
+iemk2002-(04) ok
+iemk2002-(05) ok
+iemk2002-(06) ok
+iemk2002-(07) ok
+iemk2002-(08) ok
+ mreg0002 result = 23 
+ ** OK ** 
+comk3112 ok1
+comk3112 ok2
+comk3112 ok3
+OK- 1
+OK- 2
+OK- 3
+** dpmk2002-(1) ** OK
+** dpmk2002-(2) ** OK
+** dpmk2002-(3) ** OK
+** dpmk2002-(4) ** OK
+** dpmk2002-(5) ** OK
+** dpmk2002-(6) ** OK
+** dpmk2002-(7) ** OK
+** dpmk2002-(8) ** OK
+** dpmk2002-(9) ** OK
+** dpmk2002-(10) ** OK
+** dpmk2002-(11) ** OK
+** dpmk2002-(12) ** OK
+** dpmk2002-(13) ** OK
+** dpmk2002-(14) ** OK
+** dpmk2002-(15) ** OK
+** dpmk2002-(16) ** OK
+** dpmk2002-(17) ** OK
+** dpmk2002-(18) ** OK
+** kaimk2002-(16) ** OK
+** kaimk2002-(17) ** OK
+** kaimk2002-(18) ** OK
+** kaimk2002-(16) ** OK
+** kaimk2002-(17) ** OK
+** kaimk2002-(18) ** OK
+comk3122 ok
+exit 0

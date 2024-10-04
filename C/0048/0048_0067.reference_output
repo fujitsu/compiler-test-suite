@@ -1,0 +1,96 @@
+***  **** START ***
+
+***** SORT *****
+***** LIST DATA :  0
+***** LIST DATA :  1
+***** LIST DATA :  2
+***** LIST DATA :  3
+***** LIST DATA :  4
+***** LIST DATA :  5
+***** LIST DATA :  6
+***** LIST DATA :  7
+***** LIST DATA :  8
+***** LIST DATA :  9
+***** LIST DATA : 10
+***** LIST DATA : 20
+***** LIST DATA : 30
+***** LIST DATA : 40
+***** LIST DATA : 50
+***** LIST DATA : 60
+***** LIST DATA : 70
+***** LIST DATA : 80
+***** LIST DATA : 90
+***** LIST DATA : 100
+***** OK *****
+M3EVA312 TEST OK 
+***** OK  *****
+M3GCNS11 START
+--- M3GCNS11 (45-01) OK ---
+--- M3GCNS11 (45-02) OK ---
+--- M3GCNS11 (45-03) OK ---
+--- M3GCNS11 (45-04) OK ---
+--- M3GCNS11 (45-05) OK ---
+--- M3GCNS11 (45-06) OK ---
+--- M3GCNS11 (45-07) OK ---
+--- M3GCNS11 (45-08) OK ---
+--- M3GCNS11 (45-09) OK ---
+--- M3GCNS11 (45-10) OK ---
+--- M3GCNS11 (45-11) OK ---
+--- M3GCNS11 (45-12) OK ---
+--- M3GCNS11 (45-13) OK ---
+--- M3GCNS11 (45-14) OK ---
+--- M3GCNS11 (45-15) OK ---
+--- M3GCNS11 (45-16) OK ---
+--- M3GCNS11 (45-17) OK ---
+--- M3GCNS11 (45-18) OK ---
+M3GCNS11 END  
+ OK 
+*************
+TEST01 --> OK 
+TEST02 --> OK 
+TEST03 --> OK 
+TEST04 --> OK 
+TEST05 --> OK 
+TEST06 --> OK 
+TEST07 --> OK 
+TEST08 --> OK 
+TEST09 --> OK 
+TEST10 --> OK 
+TEST11 --> OK 
+TEST12 --> OK 
+TEST13 --> OK 
+TEST14 --> OK 
+TEST15 --> OK 
+TEST16 --> OK 
+TEST17 --> OK 
+TEST18 --> OK 
+TEST19 --> OK 
+TEST20 --> OK 
+TEST21 --> OK 
+M3EVA277 TEST OK 
+*** MPTEST43 OK ***
+*** M3GENUM1 ** MK3 TEST ** STARTED ***
+*** M3GENUM1 - 01 ** OK ***
+*** M3GENUM1 - 02 ** OK ***
+*** M3GENUM1 - 03 ** OK ***
+*** M3GENUM1 - 04 ** OK ***
+*** M3GENUM1 - 05 ** OK ***
+*** M3GENUM1 - 06 ** OK ***
+*** M3GENUM1 - 07 ** OK ***
+*** M3GENUM1 - 08 ** OK ***
+*** M3GENUM1 - 09 ** OK ***
+*** M3GENUM1 - 10 ** OK ***
+*** M3GENUM1 - 11 ** OK ***
+*** M3GENUM1 - 12 ** OK ***
+*** M3GENUM1 - 13 ** OK ***
+*** M3GENUM1 - 14 ** OK ***
+*** M3GENUM1 - 15 ** OK ***
+*** M3GENUM1 - 16 ** OK ***
+*** M3GENUM1 - 17 ** OK ***
+*** M3GENUM1 - 18 ** OK ***
+*** M3GENUM1 - 19 ** OK ***
+*** M3GENUM1 - 20 ** OK ***
+******* M3GENUM1 TEST ENDED *******
+
+***  ****  END  ***
+exit 0

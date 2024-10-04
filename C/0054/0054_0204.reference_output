@@ -1,0 +1,11 @@
+22 TEST-START 
+22 1-1 TEST -O  K- 
+22 1-2 TEST -O  K- 
+22 1-3 TEST -O  K- 
+22 1-4 TEST -O  K- 
+22 2-1 TEST -O  K- 
+22 2-2 TEST -O  K- 
+22 2-3 TEST -O  K- 
+22 2-4 TEST -O  K- 
+22 TEST-END 
+exit 0

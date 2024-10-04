@@ -1,0 +1,4 @@
+--  -- 
+-- parallel  do lastprivate(ma) -- 
+OK 
+exit 0

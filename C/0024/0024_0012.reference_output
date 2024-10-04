@@ -1,0 +1,28 @@
+signbit for float
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+signbit for double
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+signbit for long double
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+exit 0

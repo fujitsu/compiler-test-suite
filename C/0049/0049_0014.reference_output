@@ -1,0 +1,94 @@
+ OK 
+140 
+20.000000 
+20 
+50 
+*** PK000971  START ***
+     +++ PK000971 OK +++
+*** PK000971   END  ***
+** cdpm0025(1) ** OK
+** cdpm0025(2) ** OK
+** cdpm0025(3) ** OK
+** cdpm0025(4) ** OK
+** cdpm0025(5) ** OK
+** cdpm0025(6) ** OK
+** cdpm0025(7) ** OK
+** cdpm0025(8) ** OK
+** cdpm0025(9) ** OK
+** cdpm0025(10) ** OK
+** cdpm0025(11) ** OK
+** cdpm0025(12) ** OK
+** cdpm0025(13) ** OK
+** cdpm0025(14) ** OK
+** cdpm0025(15) ** OK
+** cdpm0025(16) ** OK
+** cdpm0025(17) ** OK
+** cdpm0025(18) ** OK
+** cdpm0025(19) ** OK
+** cdpm0025(20) ** OK
+** cdpm0025(21) ** OK
+** cdpm0025(22) ** OK
+ NG 
+280 
+40.000000 
+40 
+100 
+*** PK000971  START ***
+     +++ PK000971 OK +++
+*** PK000971   END  ***
+** cdpm0025(1) ** OK
+** cdpm0025(2) ** OK
+** cdpm0025(3) ** OK
+** cdpm0025(4) ** OK
+** cdpm0025(5) ** OK
+** cdpm0025(6) ** OK
+** cdpm0025(7) ** OK
+** cdpm0025(8) ** OK
+** cdpm0025(9) ** OK
+** cdpm0025(10) ** OK
+** cdpm0025(11) ** OK
+** cdpm0025(12) ** OK
+** cdpm0025(13) ** OK
+** cdpm0025(14) ** OK
+** cdpm0025(15) ** OK
+** cdpm0025(16) ** OK
+** cdpm0025(17) ** OK
+** cdpm0025(18) ** OK
+** cdpm0025(19) ** OK
+** cdpm0025(20) ** OK
+** cdpm0025(21) ** OK
+** cdpm0025(22) ** OK
+ ok 
+ NG 
+420 
+60.000000 
+60 
+150 
+*** PK000971  START ***
+     +++ PK000971 OK +++
+*** PK000971   END  ***
+** cdpm0025(1) ** OK
+** cdpm0025(2) ** OK
+** cdpm0025(3) ** OK
+** cdpm0025(4) ** OK
+** cdpm0025(5) ** OK
+** cdpm0025(6) ** OK
+** cdpm0025(7) ** OK
+** cdpm0025(8) ** OK
+** cdpm0025(9) ** OK
+** cdpm0025(10) ** OK
+** cdpm0025(11) ** OK
+** cdpm0025(12) ** OK
+** cdpm0025(13) ** OK
+** cdpm0025(14) ** OK
+** cdpm0025(15) ** OK
+** cdpm0025(16) ** OK
+** cdpm0025(17) ** OK
+** cdpm0025(18) ** OK
+** cdpm0025(19) ** OK
+** cdpm0025(20) ** OK
+** cdpm0025(21) ** OK
+** cdpm0025(22) ** OK
+ ok 
+comk3126 ok
+exit 0

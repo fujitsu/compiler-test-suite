@@ -1,0 +1,110 @@
+*** M3EDC126 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC126 TEST-01 OK ***
+ *** M3EDC126 TEST-02 OK ***
+ *** M3EDC126 TEST-03 OK ***
+ *** M3EDC126 TEST-04 OK ***
+ *** M3EDC126 TEST-05 OK ***
+ *** M3EDC126 TEST-06 OK ***
+*** M3EDC126 TEST ENDED ***
+********** M3ERMV01 TEST START **********
+***** M3ERMV01 - 01 ***** O K *****
+***** M3ERMV01 - 02 ***** O K *****
+***** M3ERMV01 - 03 ***** O K *****
+***** M3ERMV01 - 04 ***** O K *****
+***** M3ERMV01 - 05 ***** O K *****
+***** M3ERMV01 - 06 ***** O K *****
+***** M3ERMV01 - 07 ***** O K *****
+***** M3ERMV01 - 08 ***** O K *****
+********** M3ERMV01 TEST  END  **********
+*** M3EDC115 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC115 TEST-01 OK ***
+ *** M3EDC115 TEST-02 OK ***
+ *** M3EDC115 TEST-03 OK ***
+ *** M3EDC115 TEST-04 OK ***
+ *** M3EDC115 TEST-05 OK ***
+ *** M3EDC115 TEST-06 OK ***
+ *** M3EDC115 TEST-07 OK ***
+*** M3EDC115 TEST ENDED ***
+M3MPRD03 OK
+*** SCOCV03  START ***
+*** OK  1 ***
+*** SCOCV03  END ***
+*** M3EDC157 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC157 TEST-01 OK ***
+ *** M3EDC157 TEST-02 OK ***
+ *** M3EDC157 TEST-03 OK ***
+ *** M3EDC157 TEST-05 OK ***
+ *** M3EDC157 TEST-06 OK ***
+*** M3EDC157 TEST ENDED ***
+*** M3EDC191 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC191 TEST-01 OK ***
+M3EDC191 - 02 IS OMITTED BECAUST OF RESTRICTION.
+*** M3EDC191 TEST ENDED ***
+M3MPRD03 OK
+*** M3EINI01 STARTED ***
+OK
+*** M3EINI01 ENDED ***
+*** SCODV01  STRT ***
+*** OK  1 ***
+*** OK  2 ***
+*** OK  3 ***
+*** OK  4 ***
+*** OK  5 ***
+*** OK  6 ***
+*** OK  7 ***
+*** OK  8 ***
+*** OK  9 ***
+*** OK 10 ***
+*** OK 11 ***
+*** OK 12 ***
+*** SCODV01  END ***
+*** M3EDC144 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC144 TEST-01 OK ***
+ *** M3EDC144 TEST-02 OK ***
+ *** M3EDC144 TEST-03 OK ***
+ *** M3EDC144 TEST-04 OK ***
+ *** M3EDC144 TEST-05 OK ***
+ *** M3EDC144 TEST-06 OK ***
+ *** M3EDC144 TEST-07 OK ***
+ *** M3EDC144 TEST-08 OK ***
+*** M3EDC144 TEST ENDED ***
+*** M3EDC134 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC134 TEST-01 OK ***
+ *** M3EDC134 TEST-02 OK ***
+ *** M3EDC134 TEST-03 OK ***
+ *** M3EDC134 TEST-04 OK ***
+ *** M3EDC134 TEST-05 OK ***
+*** M3EDC134 TEST ENDED ***
+OK OF B-1-1
+ok of b-1-2
+error of b-1-3 at second : ei = 1128792064
+error of b-1-4 at second : ei = 1128792064
+OK OF B-1-5
+OK OF B-1-6
+*** M3EDC172 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC172 TEST-01 OK ***
+ *** M3EDC172 TEST-02 OK ***
+ *** M3EDC172 TEST-03 OK ***
+ *** M3EDC172 TEST-04 OK ***
+ *** M3EDC172 TEST-05 OK ***
+ *** M3EDC172 TEST-06 OK ***
+*** M3EDC172 TEST ENDED ***
+*** M3EDC164 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC164 TEST-01 OK ***
+ *** M3EDC164 TEST-02 OK ***
+ *** M3EDC164 TEST-03 OK ***
+ *** M3EDC164 TEST-04 OK ***
+ *** M3EDC164 TEST-05 OK ***
+ *** M3EDC164 TEST-06 OK ***
+ *** M3EDC164 TEST-07 OK ***
+*** M3EDC164 TEST ENDED ***
+*** M3EDC181 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC181 TEST-01 OK ***
+ *** M3EDC181 TEST-02 OK ***
+ *** M3EDC181 TEST-03 OK ***
+ *** M3EDC181 TEST-04 OK ***
+ *** M3EDC181 TEST-05 OK ***
+ *** M3EDC181 TEST-06 OK ***
+ *** M3EDC181 TEST-07 OK ***
+*** M3EDC181 TEST ENDED ***
+exit 0

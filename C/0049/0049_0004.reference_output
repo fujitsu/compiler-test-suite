@@ -1,0 +1,65 @@
+ABCDEF1 is OK 
+data  = 200.000000 --- OK
+o = 41650
+p = 44100
+q = 80850
+r = 2450
+s = 40425
+t = 84525
+u = 2450
+sum = 40425
+***** LOOP1 OK *****
+***** LOOP2 OK *****
+***** LOOP3 OK *****
+----- sum OK -----
+**dpmk2128-(01)** OK
+**dpmk2128-(02)** OK
+**dpmk2128-(03)** OK
+**dpmk2128-(04)** OK
+**dpmk2128-(05)** OK
+**dpmk2128-(06)** OK
+**dpmk2128-(07)** OK
+**dpmk2128-(08)** OK
+**dpmk2128-(09)** OK
+**dpmk2128-(10)** OK
+**dpmk2128-(11)** OK
+**dpmk2128-(12)** OK
+**dpmk2128-(13)** OK
+**dpmk2128-(14)** OK
+**dpmk2128-(15)** OK
+**dpmk2128-(16)** OK
+**dpmk2128-(17)** OK
+**dpmk2128-(18)** OK
+***** unroll028 ***** unroll 1 never 0 not 0
+ok
+***** unroll028 ***** end
+** comk3108(1) ** OK
+** comk3108(2) ** OK
+** comk3108(3) ** OK
+** comk3108(4) ** OK
+** comk3108(5) ** OK
+** comk3108(6) ** OK
+** comk3108(7) ** OK
+** comk3108(8) ** OK
+** comk3108(9) ** OK
+** comk3108(10) ** OK
+** comk3108(11) ** OK
+** comk3108(12) ** OK
+** comk3108(13) ** OK
+** comk3108(14) ** OK
+** comk3108(15) ** OK
+** comk3108(16) ** OK
+** comk3108(17) ** OK
+** comk3108(18) ** OK
+** comk3108(19) ** OK
+** comk3108(20) ** OK
+** comk3108(21) ** OK
+** comk3108(22) ** OK
+---- scpa008 start ---- 
+     ***  ok  *** 
+---- scpa008  end  ---- 
+ OKOKOK 
+ FUNC ENTERED : PI1 = 0 
+ FUNC ENTERED : PI1 = 1 
+ SNITR08 OK 
+exit 0

@@ -1,0 +1,12 @@
+ ***  TEST-1 OK +INT    ***
+ ***  TEST-2 OK +CHAR   ***
+ ***  TEST-3 OK +SH.IN  ***
+ ***  TEST-4 OK +LO.IN  ***
+ ***  TEST-9 OK +S.INT  ***
+ ***  TEST-10 OK +S.CHAR ***
+ ***  TEST-11 OK +S.SH.IN ***
+ ***  TEST-12 OK +S.LO.IN ***
+ ***  TEST-17 OK +U.INT  ***
+ ***  TEST-18 OK +U.CHAR ***
+ ***  TEST-19 OK +U.SH.IN ***
+exit 0

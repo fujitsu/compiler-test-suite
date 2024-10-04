@@ -1,0 +1,17 @@
+ ***  TEST-17 OK  INT-INT  ***
+ ***  TEST-18 OK  INT-DBL  ***
+ ***  TEST-19 OK  INT-CHA  ***
+ ***  TEST-20 OK  INT-ENU  ***
+ ***  TEST-21 OK  DBL-INT  ***
+ ***  TEST-22 OK  DBL-DBL  ***
+ ***  TEST-23 OK  DBL-CHA  ***
+ ***  TEST-24 OK  DBL-ENU  ***
+ ***  TEST-25 OK  CHA-INT  ***
+ ***  TEST-26 OK  CHA-DBL  ***
+ ***  TEST-27 OK  CHA-CHA  ***
+ ***  TEST-28 OK  CHA-ENU  ***
+ ***  TEST-29 OK  ENU-INT  ***
+ ***  TEST-30 OK  ENU-DBL  ***
+ ***  TEST-31 OK  ENU-CHA  ***
+ ***  TEST-32 OK  ENU-ENU  ***
+exit 0

@@ -1,0 +1,190 @@
+*  *** TEST FOR COMMON *** STARTED *
+
+* M3ETRE37 *** MK3 TEST FOR X_TREEMK *** STARTED *
+*** M3ETRE37-01 *****     O    K     *****
+*** M3ETRE37-02 *****     O    K     *****
+*** M3ETRE37-03 *****     O    K     *****
+*** M3ETRE37-04 *****     O    K     *****
+*** M3ETRE37-05 *****     O    K     *****
+*** M3ETRE37-06 *****     O    K     *****
+*** M3ETRE37-07 *****     O    K     *****
+*** M3ETRE37-08 *****     O    K     *****
+*** M3ETRE37-09 *****     O    K     *****
+*** M3ETRE37-10 *****     O    K     *****
+*** M3ETRE37 *** MK3 TEST FOR X_TREEMK *** ENDED ***
+
+*** MPTEST21 CHECK01 OK ***
+*** MPTEST21 CHECK02 OK ***
+*** MPTEST21 CHECK3 OK ***
+
+*** MPTEST22 OK ***
+
+*** MPTEST23 START *** 
+** OK ** 
+** OK ** 
+*** MPTEST23  END  *** 
+
+*** mptest25 ok ***
+
+*** OK * 0 ***
+
+*** OK * 1 ***
+
+*** OK * 2 ***
+***** MPTEST26 END *****
+
+******** MPTEST27 START **************
+***    OK                       ***
+******** MPTEST27 END ****************
+
+<<<<<<<< START >>>>>>>>>>>>>>
+<<<<<<<< FUNC2 RECURSIVE >>>>
+<<<<<<<< FUNC2 RECURSIVE >>>>
+<<<<<<<< MPTEST28 OK >>>>>>>>
+<<<<<<<< MPTEST28 OK >>>>>>>>
+<<<<<<<< MPTEST28 OK >>>>>>>>
+<<<<<<<< MPTEST28 OK >>>>>>>>
+<<<<<<<< MPTEST28 OK >>>>>>>>
+<<<<<<<< MPTEST28 OK >>>>>>>>
+<<<<<<<< MPTEST28 END >>>>>>>
+******* FUNC011 IB05 CHECK     OK ****
+
+******* FUNC01 IA01            OK ****
+******* FUNC01 IA02 REAL ARGUM OK ****
+******* FUNC01 IA03 REAL ARGUM OK ****
+******* FUNC01 IA05 REAL ARGUM OK ****
+******* FUNC021 CB05 CHECK     OK ****
+******* FUNC02 CA01            OK ****
+******* FUNC02 CA02 REAL ARGUM OK ****
+******* FUNC02 CA03 REAL ARGUM OK ****
+******* FUNC02 CA05 REAL ARGUM OK ****
+******* FUNC031 SB05 CHECK     OK ****
+******* FUNC03 SA01            OK ****
+******* FUNC03 SA02 REAL ARGUM OK ****
+******* FUNC01 SA03 REAL ARGUM OK ****
+******* FUNC01 SA05 REAL ARGUM OK ****
+******* FUNC041 UIB05 CHECK    OK ****
+******* FUNC04 UIA01           OK ****
+******* FUNC04 UIA02 REAL ARGUM OK ****
+******* FUNC04 UIA03 REAL ARGUM OK ****
+******* FUNC04 UIA05 REAL ARGUM OK ****
+******* FUNC051 UCB05 CHECK    OK ****
+******* FUNC05 UCA01           OK ****
+******* FUNC05 UCA02 REAL ARGUM OK ****
+******* FUNC05 UCA03 REAL ARGUM OK ****
+******* FUNC05 UCA05 REAL ARGUM OK ****
+******* FUNC061 USB05 CHECK    OK ****
+******* FUNC06 USA01           OK ****
+******* FUNC06 USA02 REAL ARGUM OK ****
+******* FUNC06 USA03 REAL ARGUM OK ****
+******* FUNC06 USA05 REAL ARGUM OK ****
+******* FUNC071 FB05 CHECK     OK ****
+******* FUNC07 FA01            OK ****
+******* FUNC07 FA02 REAL ARGUM OK ****
+******* FUNC07 FA03 REAL ARGUM OK ****
+******* FUNC07 FA05 REAL ARGUM OK ****
+******* FUNC081 DB05 CHECK     OK ****
+******* FUNC08 DA01            OK ****
+******* FUNC08 DA02 REAL ARGUM OK ****
+******* FUNC08 DA03 REAL ARGUM OK ****
+******* FUNC08 DA05 REAL ARGUM OK ****
+ i2 value 5 
+*** mptest30 i2 ok ***
+ i4 value 5 
+*** mptest30 i4 ok ***
+ u2 value 5 
+*** mptest30 u2 ok ***
+ u4 value 5 
+*** mptest30 u4 ok ***
+ rs value 5.000000 
+*** mptest30 rs ok ***
+ rd value 5.000000 
+*** mptest30 rd ok ***
+ ch value 5 
+*** mptest30 ch ok ***
+
+*** M3ETRE38 ** MK3 TEST FOR X_TREEMK **** STARTED 
+*** M3ETRE38-01 *****     O    K     *****
+*** M3ETRE38-02 *****     O    K     *****
+*** M3ETRE38-03 *****     O    K     *****
+*** M3ETRE38-04 *****     O    K     *****
+*** M3ETRE38-05 *****     O    K     *****
+*** M3ETRE38-06 *****     O    K     *****
+*** M3ETRE38-07 *****     O    K     *****
+*** M3ETRE38-08 *****     O    K     *****
+*** M3ETRE38-09 *****     O    K     *****
+*** M3ETRE38-10 *****     O    K     *****
+*** M3ETRE38 ** MK3 TEST FOR X_TREEMK **** ENDED 
+
+*** M3ETRE39 ** MK3 TEST FOR X_TREEMK **** STARTED 
+*** M3ETRE39-01 *****     O    K     *****
+*** M3ETRE39-02 *****     O    K     *****
+*** M3ETRE39-03 *****     O    K     *****
+*** M3ETRE39-04 *****     O    K     *****
+*** M3ETRE39-05 *****     O    K     *****
+*** M3ETRE39-06 *****     O    K     *****
+*** M3ETRE39-07 *****     O    K     *****
+*** M3ETRE39-08 *****     O    K     *****
+*** M3ETRE39-09 *****     O    K     *****
+*** M3ETRE39-10 *****     O    K     *****
+*** M3ETRE39 ** MK3 TEST FOR X_TREEMK **** ENDED 
+
+*** M3ETRE40 ** MK3 TEST FOR X_TREEMK **** STARTED 
+*** M3ETRE40-01 *****     O    K     *****
+*** M3ETRE40-02 *****     O    K     *****
+*** M3ETRE40-03 *****     O    K     *****
+*** M3ETRE40-04 *****     O    K     *****
+*** M3ETRE40-05 *****     O    K     *****
+*** M3ETRE40-06 *****     O    K     *****
+*** M3ETRE40-07 *****     O    K     *****
+*** M3ETRE40-08 *****     O    K     *****
+*** M3ETRE40-09 *****     O    K     *****
+*** M3ETRE40-10 *****     O    K     *****
+*** M3ETRE40 ** MK3 TEST FOR X_TREEMK **** ENDED 
+
+*** M3ETRE41 ** MK3 TEST FOR X_TREEMK **** STARTED 
+*** M3ETRE41-01 *****     O    K     *****
+*** M3ETRE41-02 *****     O    K     *****
+*** M3ETRE41-03 *****     O    K     *****
+*** M3ETRE41-04 *****     O    K     *****
+*** M3ETRE41-05 *****     O    K     *****
+*** M3ETRE41-06 *****     O    K     *****
+*** M3ETRE41-07 *****     O    K     *****
+*** M3ETRE41-08 *****     O    K     *****
+*** M3ETRE41-09 *****     O    K     *****
+*** M3ETRE41-10 *****     O    K     *****
+*** M3ETRE41 ** MK3 TEST FOR X_TREEMK **** ENDED 
+
+*** M3ETRE42 ** MK3 TEST FOR X_TREEMK **** STARTED 
+*** M3ETRE42-01 *****     O    K     *****
+*** M3ETRE42-02 *****     O    K     *****
+*** M3ETRE42-03 *****     O    K     *****
+*** M3ETRE42-04 *****     O    K     *****
+*** M3ETRE42-05 *****     O    K     *****
+*** M3ETRE42-06 *****     O    K     *****
+*** M3ETRE42-07 *****     O    K     *****
+*** M3ETRE42-08 *****     O    K     *****
+*** M3ETRE42-09 *****     O    K     *****
+*** M3ETRE42-10 *****     O    K     *****
+*** M3ETRE42 ** MK3 TEST FOR X_TREEMK **** ENDED 
+
+*** M3ETRE43 ** MK3 TEST FOR X_TREEMK **** STARTED 
+*** M3ETRE43-01 *****     O    K     *****
+*** M3ETRE43-02 *****     O    K     *****
+*** M3ETRE43-03 *****     O    K     *****
+*** M3ETRE43-04 *****     O    K     *****
+*** M3ETRE43-05 *****     O    K     *****
+*** M3ETRE43-06 *****     O    K     *****
+*** M3ETRE43-07 *****     O    K     *****
+*** M3ETRE43-08 *****     O    K     *****
+*** M3ETRE43-09 *****     O    K     *****
+*** M3ETRE43-10 *****     O    K     *****
+*** M3ETRE43 ** MK3 TEST FOR X_TREEMK **** ENDED 
+<<<<<< SCQTP06 START >>>>>>
+**s.fu43=1 ** 
+**s.fu42=0 ** 
+**** OK ****
+<<<<<< SCQTP06   END >>>>>>
+
+*  *** TEST FOR COMMON *** ENDED *
+exit 0

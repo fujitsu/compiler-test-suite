@@ -1,0 +1,5 @@
+ ***  TEST-1  OK  ARITHMATIC  ***
+ ***  TEST-2  OK  ADDRESS     ***
+ ***  TEST-3  OK  ADDRESS + 1 ***
+ ***  TEST-4  OK  ADDRESS - 1 ***
+exit 0

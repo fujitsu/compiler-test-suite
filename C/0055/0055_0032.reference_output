@@ -1,0 +1,6 @@
+ atomic_always_lock_free 
+ atomic_always_lock_free 
+ atomic_always_lock_free 
+ atomic_always_lock_free 
+ no_atomic_always_lock_free 
+exit 0

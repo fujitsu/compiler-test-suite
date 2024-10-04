@@ -1,0 +1,46 @@
+-1***TEST FOR TOKEN***STARTED
+TEST01***O   K***
+TEST02***O   K***
+TEST03***O   K***
+TEST04***O   K***
+TEST05***O   K***
+TEST06***O   K***
+TEST07***O   K***
+TEST08***O   K***
+TEST09***O   K***
+TEST10***O   K***
+TEST11***O   K***
+TEST12***O   K***
+TEST13***O   K***
+-1***TEST FOR TOKEN***END
+-2***TEST FOR TOKEN***
+TEST01***O   K***
+TEST02***O   K***
+TEST03***O   K***
+TEST04***O   K***
+TEST05***O   K***
+TEST06***O   K***
+TEST07***O   K***
+TEST08***O   K***
+-2***TEST FOR TOKEN***END
+-3***TEST FOR TOKEN***STARTED
+TEST01***O   K***
+TEST02***O   K***
+TEST03***O   K***
+TEST04***O   K***
+TEST05***O   K***
+TEST06***O   K***
+TEST07***O   K***
+TEST08***O   K***
+TEST09***O   K***
+TEST10***O   K***
+TEST11***O   K***
+TEST12***O   K***
+TEST13***O   K***
+TEST14***O   K***
+TEST15***O   K***
+TEST16***O   K***
+TEST17***O   K***
+TEST18***O   K***
+-3***TEST FOR TOKEN***END
+exit 0

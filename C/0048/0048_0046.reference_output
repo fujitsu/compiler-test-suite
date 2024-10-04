@@ -1,0 +1,122 @@
+***  *** TEST FOR COMMON *** STARTED ***
+
+M3EVA080 TEST OK 
+
+M3EVA081 TEST OK 
+
+M3EVA082 TEST OK 
+
+M3EVA083 TEST OK 
+
+M3EVA084 TEST OK 
+
+M3EVA085 TEST OK 
+
+M3EVA086 TEST OK 
+
+M3EVA087 TEST OK 
+
+M3EVA088 TEST OK 
+
+M3EVA089 TEST OK 
+
+M3EVA090 TEST OK 
+
+M3EVA091 TEST OK 
+
+M3EVA092 TEST OK 
+
+M3EVA093 TEST OK 
+
+M3EVA094 TEST OK 
+
+M3EVA095 TEST OK 
+
+M3EVA096 TEST OK 
+
+M3EVA097 TEST OK 
+
+M3EVA098 TEST OK 
+
+M3EVA099 TEST OK 
+
+M3EVA100 TEST OK 
+
+M3EVA101 TEST OK 
+
+M3EVA102 TEST OK 
+
+M3EVA103 TEST OK 
+
+M3EVA104 TEST OK 
+
+M3EVA105 TEST OK 
+
+M3EVA106 TEST OK 
+
+M3EVA108 TEST OK 
+
+M3EVA109 TEST OK 
+ ----- ok ----- 
+--------- ok -------- 
+--------- ok -------- 
+--------- ok -------- 
+
+***** MPTEST08 START *****
+    * CALL func1 *
+     +++ OK exi=1 +++
+    * CALL func2 *
+     +++ OK exi=3 +++
+    * CALL func3 *
+     +++ OK exi=6 +++
+   ** MPTEST08 OK OK OK ** 
+***** MPTEST08 END *****
+
+
+***** MPTEST09 START *****
+   ** SORTSS RETURN OK **
+   ** SCHK   RETURN OK **
+***** MPTEST09 OK OK OK *****
+***** MPTEST09 END END *****
+
+***** MPTEST10 START *****
+( 0) d=  1, atr=off  ( 1) d=  2, atr= on  ( 2) d=  3, atr= on
+( 3) d=  4, atr=off  ( 4) d=  5, atr= on  ( 5) d=  6, atr=off
+( 6) d=  7, atr= on  ( 7) d=  8, atr=off  ( 8) d=  9, atr=off
+( 9) d= 10, atr=off  (10) d= 11, atr= on  (11) d= 12, atr=off
+(12) d= 13, atr= on  (13) d= 14, atr=off  (14) d= 15, atr=off
+(15) d= 16, atr=off  (16) d= 17, atr= on  (17) d= 18, atr=off
+(18) d= 19, atr= on  (19) d= 20, atr=off  (20) d= 21, atr=off
+(21) d= 22, atr=off  (22) d= 23, atr= on  (23) d= 24, atr=off
+(24) d= 25, atr=off  (25) d= 26, atr=off  (26) d= 27, atr=off
+(27) d= 28, atr=off  (28) d= 29, atr= on  (29) d= 30, atr=off
+(30) d= 31, atr= on  (31) d= 32, atr=off  (32) d= 33, atr=off
+(33) d= 34, atr=off  (34) d= 35, atr=off  (35) d= 36, atr=off
+(36) d= 37, atr= on  (37) d= 38, atr=off  (38) d= 39, atr=off
+(39) d= 40, atr=off  (40) d= 41, atr= on  (41) d= 42, atr=off
+(42) d= 43, atr= on  (43) d= 44, atr=off  (44) d= 45, atr=off
+(45) d= 46, atr=off  (46) d= 47, atr= on  (47) d= 48, atr=off
+(48) d= 49, atr=off  (49) d= 50, atr=off  (50) d= 51, atr=off
+(51) d= 52, atr=off  (52) d= 53, atr= on  (53) d= 54, atr=off
+(54) d= 55, atr=off  (55) d= 56, atr=off  (56) d= 57, atr=off
+(57) d= 58, atr=off  (58) d= 59, atr= on  (59) d= 60, atr=off
+(60) d= 61, atr= on  (61) d= 62, atr=off  (62) d= 63, atr=off
+(63) d= 64, atr=off  (64) d= 65, atr=off  (65) d= 66, atr=off
+(66) d= 67, atr= on  (67) d= 68, atr=off  (68) d= 69, atr=off
+(69) d= 70, atr=off  (70) d= 71, atr= on  (71) d= 72, atr=off
+(72) d= 73, atr= on  (73) d= 74, atr=off  (74) d= 75, atr=off
+(75) d= 76, atr=off  (76) d= 77, atr=off  (77) d= 78, atr=off
+(78) d= 79, atr= on  (79) d= 80, atr=off  (80) d= 81, atr=off
+(81) d= 82, atr=off  (82) d= 83, atr= on  (83) d= 84, atr=off
+(84) d= 85, atr=off  (85) d= 86, atr=off  (86) d= 87, atr=off
+(87) d= 88, atr=off  (88) d= 89, atr= on  (89) d= 90, atr=off
+(90) d= 91, atr=off  (91) d= 92, atr=off  (92) d= 93, atr=off
+(93) d= 94, atr=off  (94) d= 95, atr=off  (95) d= 96, atr=off
+(96) d= 97, atr= on  (97) d= 98, atr=off  (98) d= 99, atr=off
+(99) d=100, atr=off  
+  **  CHAIN OK **
+ *** CHECK OK ***
+***** MPTEST10 OK END *****
+
+***  *** TEST FOR COMMON *** ENDED ***
+exit 0

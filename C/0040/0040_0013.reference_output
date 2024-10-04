@@ -1,0 +1,4 @@
+--  -- 
+-- parallel  do firstprivate(ma, mb) -- 
+OK 
+exit 0

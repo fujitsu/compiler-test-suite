@@ -1,0 +1,94 @@
+***  **** START ***
+*** MPTEST41 CHECK01 OK ***
+*** MPTEST41 CHECK02 OK ***
+*** MPTEST41 CHECK3 OK ***
+---- SCPA012 START ---- 
+   ***  OK  *** 
+---- SCPA012  END  ---- 
+*** M3EDC116 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC116 TEST-01 OK ***
+ *** M3EDC116 TEST-02 OK ***
+ *** M3EDC116 TEST-03 OK ***
+ *** M3EDC116 TEST-04 OK ***
+ *** M3EDC116 TEST-05 OK ***
+ *** M3EDC116 TEST-06 OK ***
+ *** M3EDC116 TEST-07 OK ***
+*** M3EDC116 TEST ENDED ***
+---- SCPA013 START ---- 
+  1: ***  OK  *** 
+  2: ***  OK  *** 
+  3: ***  OK  *** 
+  4: ***  OK  *** 
+---- SCPA013  END  ---- 
+*** SCODV01  STRT ***
+*** OK  1 ***
+*** OK  2 ***
+*** OK  3 ***
+*** OK  4 ***
+*** OK  5 ***
+*** OK  6 ***
+*** OK  7 ***
+*** OK  8 ***
+*** OK  9 ***
+*** OK 10 ***
+*** OK 11 ***
+*** OK 12 ***
+*** SCODV01  END ***
+*** M3EDC055 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC055 TEST-01 OK ***
+ *** M3EDC055 TEST-02 OK ***
+ *** M3EDC055 TEST-03 OK ***
+ *** M3EDC055 TEST-04 OK ***
+ *** M3EDC055 TEST-05 OK ***
+ *** M3EDC055 TEST-06 OK ***
+*** M3EDC055 TEST ENDED ***
+TEST01 --> OK 
+TEST02 --> OK 
+TEST03 --> OK 
+TEST04 --> OK 
+TEST05 --> OK 
+TEST06 --> OK 
+TEST07 --> OK 
+TEST08 --> OK 
+TEST09 --> OK 
+TEST10 --> OK 
+TEST11 --> OK 
+TEST12 --> OK 
+TEST13 --> OK 
+TEST14 --> OK 
+TEST15 --> OK 
+TEST16 --> OK 
+ITEM1 OK
+ITEM2 OK
+
+***** MPTEST07  START *****
+     TOTLV = 475 
+          TOTLVA = 45 
+          TOTLVB = 145 
+          TOTLVC = 285 
+     TOTLU = 475 
+     TOTLH = 475 
+***** MPTEST07  OK *****
+*** M3EDC192 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC192 TEST OK ***
+*** M3EDC192 TEST ENDED ***
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+M3MPRD06 OK
+*** M3EDC060 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC060 TEST-01 OK ***
+ *** M3EDC060 TEST-02 OK ***
+ *** M3EDC060 TEST-03 OK ***
+ *** M3EDC060 TEST-04 OK ***
+ *** M3EDC060 TEST-05 OK ***
+ *** M3EDC060 TEST-06 OK ***
+*** M3EDC060 TEST ENDED ***
+***  ****  END  ***
+exit 0

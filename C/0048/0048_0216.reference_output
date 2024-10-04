@@ -1,0 +1,13 @@
+ ***  TEST-5  OK  *(*)     ***
+ ***  TEST-6  OK  ARR[]    ***
+ ***  TEST-6  OK  ARR[]    ***
+ar3=27
+ar4=23
+ ***  TEST-6  OK  ARR[]    ***
+ar5=21
+ar6=9
+ ***  TEST-6  OK  ARR[]    ***
+ar7=17
+ ***  TEST-7  OK  F(F)     ***
+ ***  TEST-8  OK  EXPRES   ***
+exit 0

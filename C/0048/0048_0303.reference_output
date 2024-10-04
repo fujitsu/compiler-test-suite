@@ -1,0 +1,5 @@
+### jmp_buf_10 ### start 
+   then 1 
+   else 
+### jmp_buf_10 ### end 
+exit 0

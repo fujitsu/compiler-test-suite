@@ -1,0 +1,65 @@
+***  *** TEST FOR COMMON *** STARTED ***
+ ----- ok ----- 
+ ----- ok ----- 
+ ----- ok ----- 
+ ----- ok ----- 
+ OK 
+ ----- ok ----- 
+--------- ok -------- 
+--------- ok -------- 
+--------- ok -------- 
+*** MPTEST31 OK ***
+*** MPTEST31 OK ***
+*** MPTEST32 OK ***
+*** MPTEST32 OK ***
+*** MPTEST33  OK ***
+***** MPTEST34 OK *****
+***** MPTEST36 OK *****
+      
+    MPTEST37 START 
+      
+    EIGHT QUEEN PATTERN  = 92 
+      
+      
+    MPTEST37 OK 
+      
+    MPTEST37 END 
+      
+_____ CHECK 1 OK ____________
+
+M3EVA140 TEST OK 
+
+M3EVA141 TEST OK 
+
+M3EVA145 TEST OK 
+
+M3EVA146 TEST OK 
+
+M3EVA147 TEST OK 
+
+M3EVA148 TEST OK 
+
+M3EVA149 TEST OK 
+
+M3EVA150 TEST OK 
+
+M3EVA151 TEST OK 
+
+M3EVA152 TEST OK 
+
+M3EVA153 TEST OK 
+
+M3EVA154 TEST OK 
+
+M3EVA155 TEST OK 
+
+M3EVA156 TEST OK 
+
+M3EVA157 TEST OK 
+
+M3EVA158 TEST OK 
+
+M3EVA159 TEST OK 
+
+***  *** TEST FOR COMMON *** ENDED ***
+exit 0

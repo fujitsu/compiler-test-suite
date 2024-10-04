@@ -1,0 +1,101 @@
+***  **** START ***
+********** M3ERMV09 TEST START **********
+***** M3ERMV09 - 01 ***** O K *****
+***** M3ERMV09 - 02 ***** O K *****
+***** M3ERMV09 - 03 ***** O K *****
+***** M3ERMV09 - 04 ***** O K *****
+***** M3ERMV09 - 05 ***** O K *****
+***** M3ERMV09 - 06 ***** O K *****
+***** M3ERMV09 - 07 ***** O K *****
+***** M3ERMV09 - 08 ***** O K *****
+********** M3ERMV09 TEST  END  **********
+***** OK *****
+***** OK *****
+***** OK *****
+*** M3EDC117 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC117 TEST-01 OK ***
+ *** M3EDC117 TEST-02 OK ***
+ *** M3EDC117 TEST-03 OK ***
+ *** M3EDC117 TEST-04 OK ***
+ *** M3EDC117 TEST-05 OK ***
+*** M3EDC117 TEST ENDED ***
+******* MFNC011 IB05 CHECK     OK ****
+******* MFNC01 IA01            OK ****
+******* MFNC01 IA02 REAL ARGUM OK ****
+******* MFNC01 IA03 REAL ARGUM OK ****
+******* MFNC01 IA05 REAL ARGUM OK ****
+******* MFNC021 CB05 CHECK     OK ****
+******* MFNC02 CA01            OK ****
+******* MFNC02 CA02 REAL ARGUM OK ****
+******* MFNC02 CA03 REAL ARGUM OK ****
+******* MFNC02 CA05 REAL ARGUM OK ****
+******* MFNC031 SB05 CHECK     OK ****
+******* MFNC03 SA01            OK ****
+******* MFNC03 SA02 REAL ARGUM OK ****
+******* MFNC01 SA03 REAL ARGUM OK ****
+******* MFNC01 SA05 REAL ARGUM OK ****
+******* MFNC041 UIB05 CHECK    OK ****
+******* MFNC04 UIA01           OK ****
+******* MFNC04 UIA02 REAL ARGUM OK ****
+******* MFNC04 UIA03 REAL ARGUM OK ****
+******* MFNC04 UIA05 REAL ARGUM OK ****
+******* MFNC051 UCB05 CHECK    OK ****
+******* MFNC05 UCA01           OK ****
+******* MFNC05 UCA02 REAL ARGUM OK ****
+******* MFNC05 UCA03 REAL ARGUM OK ****
+******* MFNC05 UCA05 REAL ARGUM OK ****
+******* MFNC061 USB05 CHECK    OK ****
+******* MFNC06 USA01           OK ****
+******* MFNC06 USA02 REAL ARGUM OK ****
+******* MFNC06 USA03 REAL ARGUM OK ****
+******* MFNC06 USA05 REAL ARGUM OK ****
+******* MFNC071 FB05 CHECK     OK ****
+******* MFNC07 FA01            OK ****
+******* MFNC07 FA02 REAL ARGUM OK ****
+******* MFNC07 FA03 REAL ARGUM OK ****
+******* MFNC07 FA05 REAL ARGUM OK ****
+******* MFNC081 DB05 CHECK     OK ****
+******* MFNC08 DA01            OK ****
+******* MFNC08 DA02 REAL ARGUM OK ****
+******* MFNC08 DA03 REAL ARGUM OK ****
+******* MFNC08 DA05 REAL ARGUM OK ****
+********** SCOSH01 TEST STARTED **********
+********** SCOSH01 -01 OK **********
+********** SCOSH01 -02 OK **********
+********** SCOSH01 -03 OK **********
+********** SCOSH01 -04 OK **********
+********** SCOSH01 -05 OK **********
+********** SCOSH01 -06 OK **********
+********** SCOSH01 -07 OK **********
+********** SCOSH01 -08 OK **********
+********** SCOSH01 -09 OK **********
+********** SCOSH01 -10 OK **********
+********** SCOSH01 TEST ENDED **********
+M3MPSI04 OK
+********** SCOPRL1 STARTED *********
+********** SCOPRL1 -01 OK **********
+********** SCOPRL1 -01.5 OK **********
+********** SCOPRL1 -02 OK **********
+********** SCOPRL1 ENDED **********
+***** M3EDCL08 **  ** START *****
+***** M3EDCL08 - 01 ***** OK *****
+***** M3EDCL08 - 02 ***** OK *****
+***** M3EDCL08 **  **  END  *****
+
+*** MPTEST13 -- START ***
+*** OK E = 600 ***
+*** OK C = 400 ***
+***    OK         ***
+
+*** MPTEST13 -- END   ***
+***** M3EDC311 - 01 ***** O K *****
+***** M3EDC311 - 02 ***** O K *****
+***** M3EDC311 - 03 ***** O K *****
+***** M3EDC311 - 04 ***** O K *****
+CASE3
+***** OK *****
+********** SCORT01 TEST STARTED **********
+********** RETURN OK **********
+********** SCORT01 TEST ENDED **********
+***  ****  END  ***
+exit 0

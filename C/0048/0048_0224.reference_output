@@ -1,0 +1,4 @@
+ ***  TEST-22 OK   STRUCT  ***
+ ***  TEST-23 OK   UNION   ***
+ ***  TEST-24 OK   ENUM    ***
+exit 0

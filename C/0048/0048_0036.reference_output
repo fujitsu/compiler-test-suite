@@ -1,0 +1,65 @@
+***  *** TEST FOR COMMON ******* STARTED **
+
+***** MPTEST05 START ***** 
+*** OK *** l ***
+*** OK *** s ***
+*** OK *** a ***
+*** OK  0 
+*** OK  1 
+*** OK  2 
+***** MPTEST05  OK ***** 
+
+***** MPTEST05 END ***** 
+*** M3ETRE05 ** MK3 TEST FOR X_TREEMK ** STARTED ***
+*** M3ETRE05-01 *** O K ***
+*** M3ETRE05-02 *** O K ***
+*** M3ETRE05-03 *** O K ***
+*** M3ETRE05-04 *** O K ***
+*** M3ETRE05-05 *** O K ***
+*** M3ETRE05-06 *** O K ***
+*** M3ETRE05-07 *** O K ***
+*** M3ETRE05-08 *** O K ***
+*** M3ETRE05-09 *** O K ***
+*** M3ETRE05-10 *** O K ***
+*** M3ETRE05-11 *** O K ***
+*** M3ETRE05-12 *** O K ***
+*** M3RTRE05 *** TEST FOR X_TREEMK *** ENDED ***
+
+********** SCPSI01 TEST START **********
+***** SCPSI01 - 01 ***** O   K *****
+***** SCPSI01 - 02 ***** O   K *****
+***** SCPSI01 - 03 ***** O   K *****
+********** SCPSI01 TEST  END  **********
+
+********** SCPSI02 TEST START **********
+***** SCPSI02 - 01 ***** O   K *****
+***** SCPSI02 - 02 ***** O   K *****
+***** SCPSI02 - 03 ***** O   K *****
+********** SCPSI02 TEST  END  **********
+
+* M3ETRE06 *** MK3 TEST FOR X_TREEMK *** STARTED *
+*** M3ETRE06-01 *** O K ***
+*** M3ETRE06-02 *** O K ***
+*** M3ETRE06-03 *** O K ***
+*** M3ETRE06-04 *** O K ***
+*** M3ETRE06-05 *** O K ***
+*** M3ETRE06-06 *** O K ***
+*** M3ETRE06-07 *** O K ***
+*** M3ETRE06-08 *** O K ***
+*** M3ETRE06-09 *** O K ***
+*** M3ETRE06-10 *** O K ***
+*** M3ETRE06-11 *** O K ***
+*** M3ETRE06-12 *** O K ***
+*** M3ETRE06 *** MK3 TEST FOR X_TREEMK *** ENDED ***
+
+***** MPTEST07  START *****
+     TOTLV = 475 
+          TOTLVA = 45 
+          TOTLVB = 145 
+          TOTLVC = 285 
+     TOTLU = 475 
+     TOTLH = 475 
+***** MPTEST07  OK *****
+
+***  *** TEST FOR COMMON ******* ENDED **
+exit 0

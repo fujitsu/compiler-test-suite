@@ -1,0 +1,74 @@
+M3GCOV01 START
+--- M3GCOV01 (01-01) OK ---
+--- M3GCOV01 (01-02) OK ---
+--- M3GCOV01 (01-03) OK ---
+--- M3GCOV01 (01-04) OK ---
+--- M3GCOV01 (01-05) OK ---
+--- M3GCOV01 (01-06) OK ---
+--- M3GCOV01 (01-07) OK ---
+--- M3GCOV01 (01-08) OK ---
+--- M3GCOV01 (01-09) OK ---
+--- M3GCOV01 (01-10) OK ---
+--- M3GCOV01 (01-11) OK ---
+--- M3GCOV01 (01-12) OK ---
+--- M3GCOV01 (01-13) OK ---
+--- M3GCOV01 (01-14) OK ---
+--- M3GCOV01 (01-15) OK ---
+--- M3GCOV01 (01-16) OK ---
+--- M3GCOV01 (01-17) OK ---
+--- M3GCOV01 (01-18) OK ---
+--- M3GCOV01 (01-19) OK ---
+--- M3GCOV01 (01-20) OK ---
+M3GCOV01 END  
+M3GLGO01 START
+M3GLGO01 FUNC1 OK
+M3GLGO01 FUNC2 OK
+M3GLGO01 FUNC3 OK
+M3GLGO01 FUNC4 OK
+M3GLGO01 FUNC5 OK
+M3GLGO01 END  
+ OK 
+ test(no.1) ==> ok SCRPZ04 PASS 
+ok-1
+                                      
+ the smallest  is 1    
+ the second    is 2    
+ the third     is 3    
+ the forth     is 4  
+ the fifth     is 5    
+ the sixth     is 6    
+ the seventh   is 7    
+ the eigth     is 8    
+ the nineth    is 9    
+ the biggest   is 10    
+ok
+
+***** MPTEST07  START *****
+     TOTLV = 475 
+          TOTLVA = 45 
+          TOTLVB = 145 
+          TOTLVC = 285 
+     TOTLU = 475 
+     TOTLH = 475 
+***** MPTEST07  OK *****
+ok of b-1-1
+ok of b-1-2
+error of b-1-3 at second : ei = 1128792064
+error of b-1-4 at second : ei = 1128792064
+ok of b-1-5
+ok of b-1-6
+
+***** MPTEST08 START *****
+    * CALL func1 *
+     +++ OK exi=1 +++
+    * CALL func20 *
+     +++ OK exi=3 +++
+    * CALL func30 *
+     +++ OK exi=6 +++
+   ** MPTEST08 OK OK OK ** 
+***** MPTEST08 END *****
+
+test-1 ok 
+test-2 ok 
+test-3 ok 
+exit 0

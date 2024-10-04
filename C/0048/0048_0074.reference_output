@@ -1,0 +1,16 @@
+ ***  TEST-25 OK -INT    ***
+ ***  TEST-26 OK -CHAR   ***
+ ***  TEST-27 OK -SH.IN  ***
+ ***  TEST-28 OK -LO.IN  ***
+ ***  TEST-29 OK -LL.IN  ***
+ ***  TEST-33 OK -S.INT  ***
+ ***  TEST-34 OK -S.CHAR ***
+ ***  TEST-35 OK -S.SH.IN ***
+ ***  TEST-36 OK -S.LO.IN ***
+ ***  TEST-37 OK -S.LL.IN ***
+ ***  TEST-41 OK -U.INT  ***
+ ***  TEST-42 OK -U.CHAR ***
+ ***  TEST-43 OK -U.SH.IN ***
+ ***  TEST-44 OK -U.LO.IN ***
+ ***  TEST-45 OK -U.LL.IN ***
+exit 0

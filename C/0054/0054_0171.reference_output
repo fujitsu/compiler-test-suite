@@ -1,0 +1,7 @@
+10 TEST-START 
+10 1-1 TEST -O  K- 
+10 1-2 TEST -O  K- 
+10 1-3 TEST -O  K- 
+10 1-4 TEST -O  K- 
+10 TEST-END 
+exit 0

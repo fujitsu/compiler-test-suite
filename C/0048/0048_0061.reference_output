@@ -1,0 +1,44 @@
+
+***** MPTEST03 START *****
+ ** OK *** t1.a = 0 *** 
+ ** OK *** t1.b = x *** 
+ ** OK *** t1.a = 1 *** 
+ ** OK *** t1.b = y *** 
+ ** OK *** t1.a = 2 *** 
+ ** OK *** t1.b = z *** 
+  ( t1a )  a=0, b=x
+  ( t1b )  a=1, b=y
+  ( t1c )  a=2, b=z
+***** MPTEST03 OK ***** 
+
+***** MPTEST05 START ***** 
+*** OK *** l ***
+*** OK *** s ***
+*** OK *** a ***
+*** OK  0 
+*** OK  1 
+*** OK  2 
+***** MPTEST05  OK ***** 
+ SCRLP16 OK1 
+ SCRLP16 OK2 
+ SCRLP16 OK3 
+ SCRLP16 OK4 
+ ok M3EVA207 TEST OK 
+M3EVA337 RECOV OK 
+M3GASS01 START
+M3GASS01 FUNCA OK
+M3GASS01 FUNC2 OK
+M3GASS01 FUNC3 OK
+M3GASS01 FUNC4 OK
+M3GASS01 FUNC5 OK
+M3GASS01 FUNC6 OK
+M3GASS01 FUNC7 OK
+M3GASS01 FUNC8 OK
+M3GASS01 END  
+M3GCDO01 START
+M3GCDO01 FUNCB OK
+M3GCDO01 FUNCC OK
+M3GCDO01 FUNC30 OK
+M3GCDO01 FUNC4 OK
+M3GCDO01 END  
+exit 0

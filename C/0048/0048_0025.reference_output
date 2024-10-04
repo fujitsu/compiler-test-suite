@@ -1,0 +1,92 @@
+***  **** START ***
+*** M3EPTR01 **  ** START ***
+*** M3EPTR01-01 *** O     K ***
+*** M3EPTR01-02 *** O     K ***
+*** M3EPTR01-03 *** O     K ***
+*** M3EPTR01-04 *** O     K ***
+*** M3EPTR01-05 *** O     K ***
+*** M3EPTR01-06 *** O     K ***
+*** M3EPTR01-07 *** O     K ***
+*** M3EPTR01-08 *** O     K ***
+*** M3EPTR01-09 *** O     K ***
+*** M3EPTR01-10 *** O     K ***
+*** M3EPTR01-11 *** O     K ***
+*** M3EPTR01 **  ** END ***
+********** SCOHDI3 STARTED *********
+********** SCOHDI3 -01 OK **********
+********** SCOHDI3 -02 OK **********
+********** SCOHDI3 ENDED  **********
+
+***** MPTEST03 START *****
+ ** OK *** MPT1.A = 0 *** 
+ ** OK *** MPT1.B = X *** 
+ ** OK *** MPT1.A = 1 *** 
+ ** OK *** MPT1.B = Y *** 
+ ** OK *** MPT1.A = 2 *** 
+ ** OK *** MPT1.B = Z *** 
+***** MPTEST03 OK ***** 
+ ****** 
+BLOAD9(I8,I1) OK
+BLOAD9(U8,I1) OK
+BLOAD9(I8,I2) OK
+BLOAD9(U8,I2) OK
+BLOAD9(I8,I4) OK
+BLOAD9(U8,I4) OK
+BLOAD10(I8,U1) OK
+BLOAD10(U8,U1) OK
+BLOAD10(I8,U2) OK
+BLOAD10(U8,U2) OK
+BLOAD10(I8,U4) OK
+BLOAD10(U8,U4) OK
+ ****** 
+BLOAD9(I8,I1) OK
+BLOAD9(U8,I1) OK
+BLOAD9(I8,I2) OK
+BLOAD9(U8,I2) OK
+BLOAD9(I8,I4) OK
+BLOAD9(U8,I4) OK
+BLOAD10(I8,U1) OK
+BLOAD10(U8,U1) OK
+BLOAD10(I8,U2) OK
+BLOAD10(U8,U2) OK
+BLOAD10(I8,U4) OK
+BLOAD10(U8,U4) OK
+TEST01 --> OK 
+TEST02 --> OK 
+TEST03 --> OK 
+TEST04 --> OK 
+TEST05 --> OK 
+TEST06 --> OK 
+TEST07 --> OK 
+TEST08 --> OK 
+TEST09 --> OK 
+TEST10 --> OK 
+TEST11 --> OK 
+TEST12 --> OK 
+TEST13 --> OK 
+TEST14 --> OK 
+TEST15 --> OK 
+TEST16 --> OK 
+********** SCPALN1 START **********
+********** SCPALN1-01 OK **********
+********** SCPALN1-02 OK **********
+********** SCPALN1-03 OK **********
+********** SCPALN1-04 OK **********
+********** SCPALN1-05 OK **********
+********** SCPALN1-06 OK **********
+********** SCPALN1 END   **********
+OK OF A-2
+OK OF C-2
+OK OF B-2
+OK OF B-2
+*** M3ESAD59 **  ** START ***
+*** M3ESAD59-01 *** O K ***
+*** M3ESAD59-02 *** O K ***
+*** M3ESAD59-03 *** O K ***
+*** M3ESAD59-04 *** O K ***
+*** M3ESAD59-05 *** O K ***
+*** M3ESAD59-06 *** O K ***
+*** M3ESAD59 ***  *** END ***
+M3MPRD03 OK
+***  ****  END  ***
+exit 0

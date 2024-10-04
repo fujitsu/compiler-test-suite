@@ -1,0 +1,5 @@
+ a1 = 0x0 
+ OK 
+ a1 = 0x1 
+ OK 
+exit 0

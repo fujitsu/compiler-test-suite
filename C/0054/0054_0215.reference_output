@@ -1,0 +1,5 @@
+05 START
+05 FUNC1 OK
+05 FUNC2 OK
+05 END  
+exit 0

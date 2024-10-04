@@ -1,0 +1,111 @@
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+**************
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+**************
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+**************
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** END *****
+
+***** MPTEST09 START *****
+   ** SORTSS RETURN OK **
+   ** SCHK   RETURN OK **
+***** MPTEST09 OK OK OK *****
+***** MPTEST09 END END *****
+
+***** MPTEST10 START *****
+( 0) D=  1, ATR=OFF  ( 1) D=  2, ATR= ON  ( 2) D=  3, ATR= ON
+( 3) D=  4, ATR=OFF  ( 4) D=  5, ATR= ON  ( 5) D=  6, ATR=OFF
+( 6) D=  7, ATR= ON  ( 7) D=  8, ATR=OFF  ( 8) D=  9, ATR=OFF
+( 9) D= 10, ATR=OFF  (10) D= 11, ATR= ON  (11) D= 12, ATR=OFF
+(12) D= 13, ATR= ON  (13) D= 14, ATR=OFF  (14) D= 15, ATR=OFF
+(15) D= 16, ATR=OFF  (16) D= 17, ATR= ON  (17) D= 18, ATR=OFF
+(18) D= 19, ATR= ON  (19) D= 20, ATR=OFF  (20) D= 21, ATR=OFF
+(21) D= 22, ATR=OFF  (22) D= 23, ATR= ON  (23) D= 24, ATR=OFF
+(24) D= 25, ATR=OFF  (25) D= 26, ATR=OFF  (26) D= 27, ATR=OFF
+(27) D= 28, ATR=OFF  (28) D= 29, ATR= ON  (29) D= 30, ATR=OFF
+(30) D= 31, ATR= ON  (31) D= 32, ATR=OFF  (32) D= 33, ATR=OFF
+(33) D= 34, ATR=OFF  (34) D= 35, ATR=OFF  (35) D= 36, ATR=OFF
+(36) D= 37, ATR= ON  (37) D= 38, ATR=OFF  (38) D= 39, ATR=OFF
+(39) D= 40, ATR=OFF  (40) D= 41, ATR= ON  (41) D= 42, ATR=OFF
+(42) D= 43, ATR= ON  (43) D= 44, ATR=OFF  (44) D= 45, ATR=OFF
+(45) D= 46, ATR=OFF  (46) D= 47, ATR= ON  (47) D= 48, ATR=OFF
+(48) D= 49, ATR=OFF  (49) D= 50, ATR=OFF  (50) D= 51, ATR=OFF
+(51) D= 52, ATR=OFF  (52) D= 53, ATR= ON  (53) D= 54, ATR=OFF
+(54) D= 55, ATR=OFF  (55) D= 56, ATR=OFF  (56) D= 57, ATR=OFF
+(57) D= 58, ATR=OFF  (58) D= 59, ATR= ON  (59) D= 60, ATR=OFF
+(60) D= 61, ATR= ON  (61) D= 62, ATR=OFF  (62) D= 63, ATR=OFF
+(63) D= 64, ATR=OFF  (64) D= 65, ATR=OFF  (65) D= 66, ATR=OFF
+(66) D= 67, ATR= ON  (67) D= 68, ATR=OFF  (68) D= 69, ATR=OFF
+(69) D= 70, ATR=OFF  (70) D= 71, ATR= ON  (71) D= 72, ATR=OFF
+(72) D= 73, ATR= ON  (73) D= 74, ATR=OFF  (74) D= 75, ATR=OFF
+(75) D= 76, ATR=OFF  (76) D= 77, ATR=OFF  (77) D= 78, ATR=OFF
+(78) D= 79, ATR= ON  (79) D= 80, ATR=OFF  (80) D= 81, ATR=OFF
+(81) D= 82, ATR=OFF  (82) D= 83, ATR= ON  (83) D= 84, ATR=OFF
+(84) D= 85, ATR=OFF  (85) D= 86, ATR=OFF  (86) D= 87, ATR=OFF
+(87) D= 88, ATR=OFF  (88) D= 89, ATR= ON  (89) D= 90, ATR=OFF
+(90) D= 91, ATR=OFF  (91) D= 92, ATR=OFF  (92) D= 93, ATR=OFF
+(93) D= 94, ATR=OFF  (94) D= 95, ATR=OFF  (95) D= 96, ATR=OFF
+(96) D= 97, ATR= ON  (97) D= 98, ATR=OFF  (98) D= 99, ATR=OFF
+(99) D=100, ATR=OFF  
+  **  CHAIN OK **
+ *** CHECK OK ***
+***** MPTEST10 OK END *****
+TEST01 --> OK 
+TEST02 --> OK 
+TEST03 --> OK 
+TEST04 --> OK 
+TEST05 --> OK 
+TEST06 --> OK 
+TEST07 --> OK 
+TEST08 --> OK 
+TEST09 --> OK 
+TEST10 --> OK 
+TEST11 --> OK 
+TEST12 --> OK 
+TEST13 --> OK 
+TEST14 --> OK 
+TEST15 --> OK 
+TEST16 --> OK 
+exit 0

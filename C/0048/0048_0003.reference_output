@@ -1,0 +1,92 @@
+TEST01 --> OK 
+TEST02 --> OK 
+TEST03 --> OK 
+TEST04 --> OK 
+TEST05 --> OK 
+TEST06 --> OK 
+TEST07 --> OK 
+TEST08 --> OK 
+TEST09 --> OK 
+TEST10 --> OK 
+TEST11 --> OK 
+TEST12 --> OK 
+TEST13 --> OK 
+TEST14 --> OK 
+TEST15 --> OK 
+TEST16 --> OK 
+TEST01 --> OK 
+TEST02 --> OK 
+TEST03 --> OK 
+TEST04 --> OK 
+TEST05 --> OK 
+TEST06 --> OK 
+TEST07 --> OK 
+TEST08 --> OK 
+TEST09 --> OK 
+TEST10 --> OK 
+TEST11 --> OK 
+TEST12 --> OK 
+TEST13 --> OK 
+TEST14 --> OK 
+TEST15 --> OK 
+TEST16 --> OK 
+TEST01 --> OK 
+TEST02 --> OK 
+TEST03 --> OK 
+TEST04 --> OK 
+TEST05 --> OK 
+TEST06 --> OK 
+TEST07 --> OK 
+TEST08 --> OK 
+TEST09 --> OK 
+TEST10 --> OK 
+TEST11 --> OK 
+TEST12 --> OK 
+TEST13 --> OK 
+TEST14 --> OK 
+TEST15 --> OK 
+TEST16 --> OK 
+
+***** MPTEST05 START ***** 
+*** OK *** L ***
+*** OK *** S ***
+*** OK *** A ***
+*** OK  0 
+*** OK  1 
+*** OK  2 
+***** MPTEST05  OK ***** 
+ ****** 
+BLOAD9(I8,I1) OK
+BLOAD9(U8,I1) OK
+BLOAD9(I8,I2) OK
+BLOAD9(U8,I2) OK
+BLOAD9(I8,I4) OK
+BLOAD9(U8,I4) OK
+BLOAD10(I8,U1) OK
+BLOAD10(U8,U1) OK
+BLOAD10(I8,U2) OK
+BLOAD10(U8,U2) OK
+BLOAD10(I8,U4) OK
+BLOAD10(U8,U4) OK
+ ****** 
+BLOAD9(I8,I1) OK
+BLOAD9(U8,I1) OK
+BLOAD9(I8,I2) OK
+BLOAD9(U8,I2) OK
+BLOAD9(I8,I4) OK
+BLOAD9(U8,I4) OK
+BLOAD10(I8,U1) OK
+BLOAD10(U8,U1) OK
+BLOAD10(I8,U2) OK
+BLOAD10(U8,U2) OK
+BLOAD10(I8,U4) OK
+BLOAD10(U8,U4) OK
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+***** OK *****
+exit 0

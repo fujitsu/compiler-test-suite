@@ -1,0 +1,19 @@
+18 TEST-START 
+18 1-1 TEST -O  K- 
+18 1-2 TEST -O  K- 
+18 1-3 TEST -O  K- 
+18 1-4 TEST -O  K- 
+18 2-1 TEST -O  K- 
+18 2-2 TEST -O  K- 
+18 2-3 TEST -O  K- 
+18 2-4 TEST -O  K- 
+18 3-1 TEST -O  K- 
+18 3-2 TEST -O  K- 
+18 3-3 TEST -O  K- 
+18 3-4 TEST -O  K- 
+18 4-1 TEST -O  K- 
+18 4-2 TEST -O  K- 
+18 4-3 TEST -O  K- 
+18 4-4 TEST -O  K- 
+18 TEST-END 
+exit 0

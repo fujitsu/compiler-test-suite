@@ -1,0 +1,106 @@
+*** M3EAIN01 TEST FOR E_AINIEX *** STARTED ***
+*** M3EAIN01-01 *** O   K ***
+*** M3EAIN01-02 *** O   K ***
+*** M3EAIN01-03 *** O   K ***
+*** M3EAIN01-04 *** O   K ***
+*** M3EAIN01-05 *** O   K ***
+*** M3EAIN01-06 *** O   K ***
+*** M3EAIN01-07 *** O   K ***
+*** M3EAIN01-08 *** O   K ***
+*** M3EAIN01-09 *** O   K ***
+*** M3EAIN01-10 *** O   K ***
+*** M3EAIN01-11 *** O   K ***
+*** M3EAIN01-12 *** O   K ***
+*** M3EAIN01 TEST FOR E_AINIEX *** ENDED ***
+* M3EASG01 ***      MK3  TEST     ****** STARTED *
+*** M3EASG01-01 *** O K ***
+*** M3EASG01-02 *** O K ***
+*** M3EASG01-03 *** O K ***
+*** M3EASG01-04 *** O K ***
+*** M3EASG01-05 *** O K ***
+*** M3EASG01-06 *** O K ***
+*** M3EASG02-07 *** O K ***
+*** M3EASG02-08 *** O K ***
+*** M3EASG02-09 *** O K ***
+*** M3EASG02-10 *** O K ***
+* M3EASG01 ***      MK3  TEST     ****** ENDED ***
+TEST01 --> OK 
+TEST02 --> OK 
+TEST03 --> OK 
+TEST04 --> OK 
+TEST05 --> OK 
+TEST06 --> OK 
+TEST07 --> OK 
+TEST08 --> OK 
+TEST09 --> OK 
+TEST10 --> OK 
+TEST11 --> OK 
+TEST12 --> OK 
+TEST13 --> OK 
+TEST14 --> OK 
+TEST15 --> OK 
+TEST16 --> OK 
+TEST17 --> OK 
+TEST18 --> OK 
+TEST19 --> OK 
+TEST01 --> OK 
+TEST02 --> OK 
+TEST03 --> OK 
+TEST04 --> OK 
+TEST05 --> OK 
+TEST06 --> OK 
+TEST07 --> OK 
+TEST08 --> OK 
+TEST09 --> OK 
+TEST10 --> OK 
+TEST11 --> OK 
+TEST12 --> OK 
+TEST13 --> OK 
+TEST14 --> OK 
+TEST15 --> OK 
+TEST16 --> OK 
+
+***** MPTEST01 START *****
+  IN  ''II'' 
+  IN  ''F'' 
+  IN  ''F1'' 
+  ** OK **
+  IN  ''F1'' 
+  ** OK **
+***** MPTEST01 END *****
+START MPTEST02
+      MPTEST02 OK
+END   MPTEST02
+***** MEMSET OK *****
+***** MEMCPY OK *****
+***** MEMCMP OK *****
+***** MEMCHR OK *****
+***** STRCMP OK *****
+***** STRCPY OK *****
+***** STRLEN OK *****
+***** OK ******
+BSTORE1(I1,I1) OK
+BSTORE1(I2,I1) OK
+BSTORE1(I4,I1) OK
+BSTORE1(U1,I1) OK
+BSTORE1(U2,I1) OK
+BSTORE1(U4,I1) OK
+BSTORE1(I1,U1) OK
+BSTORE1(I2,U1) OK
+BSTORE1(I4,U1) OK
+BSTORE1(U1,U1) OK
+BSTORE1(U2,U1) OK
+BSTORE1(U4,U1) OK
+BSTORE1(I1,I1) OK
+BSTORE1(I2,I1) OK
+BSTORE1(I4,I1) OK
+BSTORE1(U1,I1) OK
+BSTORE1(U2,I1) OK
+BSTORE1(U4,I1) OK
+BSTORE1(I1,U1) OK
+BSTORE1(I2,U1) OK
+BSTORE1(I4,U1) OK
+BSTORE1(U1,U1) OK
+BSTORE1(U2,U1) OK
+BSTORE1(U4,U1) OK
+exit 0

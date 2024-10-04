@@ -1,0 +1,53 @@
+a = 777 --- ok
+*** mptest07 start ***
+     TOTLV = 475 
+          TOTLVA = 45 
+          TOTLVB = 145 
+          TOTLVC = 285 
+     TOTLU = 475 
+     TOTLH = 475 
+*** mptest07  ok ***
+m3mpcm07 ***ok***
+** comk3117 (1) ** OK
+** comk3117 (2) ** OK
+** comk3117 (3) ** OK
+** comk3117 (4) ** OK
+** comk3117 (5) ** OK
+** comk3117 (6) ** OK
+** comk3117 (7) ** OK
+** comk3117 (8) ** OK
+** comk3117 (9) ** OK
+** comk3117 (10) ** OK
+---- scpa007 start ---- 
+  1: ***  ok  *** 
+  2: ***  ok  *** 
+  3: ***  ok  *** 
+---- scpa007  end  ---- 
+ OK 
+
+ Check if i has a store order. 
+
+ OK 
+
+ Check if i has a store order. 
+
+** dpmk2007-(1)** OK
+** dpmk2007-(2)** OK
+** dpmk2007-(3)** OK
+** dpmk2007-(4)** OK
+** dpmk2007-(5)** OK
+** dpmk2007-(6)** OK
+** dpmk2007-(7)** OK
+** dpmk2007-(8)** OK
+** dpmk2007-(9)** OK
+** dpmk2007-(10)** OK
+** dpmk2007-(11)** OK
+** dpmk2007-(12)** OK
+comk2107 (1) ok   
+comk2107 (2) ok   
+comk2107 (3) ok   
+comk2107 (4) ok   
+comk2107 (5) ok   
+comk2107 (6) ok   
+comk2107 (7) ok   
+exit 0

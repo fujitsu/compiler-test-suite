@@ -1,0 +1,12 @@
+ ***  TEST-1  OK  L-CNTRL  ***
+ ***  TEST-4  OK  L-CNTRL  ***
+ ***  TEST-8  OK  L-CNTRL  ***
+
+ *** IF IT WASNt err-msg on line-600'***
+ ***    TEST-19 OK  L-CNTRL  ***
+
+ ***  TEST-21 OK  L-CNTRL  ***
+
+ ***  TEST-22 OK  L-CNTRL  ***
+
+exit 0

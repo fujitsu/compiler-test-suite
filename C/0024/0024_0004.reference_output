@@ -1,0 +1,5 @@
+## va_copy test start ## 
+2 3 4 5 
+2 3 4 5 
+## va_copy test end   ## 
+exit 0

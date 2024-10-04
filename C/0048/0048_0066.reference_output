@@ -1,0 +1,82 @@
+***  **** START ***
+
+M3EVA273 TEST OK 
+M3MPSI03 OK
+M3MPSI03 OK
+*** MPTEST20 < 0> OK ***
+*** MPTEST20 < 1> OK ***
+*** MPTEST20 < 2> OK ***
+*** MPTEST20 < 3> OK ***
+*** MPTEST20 < 4> OK ***
+*** MPTEST20 < 5> OK ***
+*** MPTEST20 < 6> OK ***
+*** MPTEST20 < 7> OK ***
+*** MPTEST20 < 8> OK ***
+*** MPTEST20 < 9> OK ***
+M3EVA222 TEST OK 
+M3GCOV03 START
+--- M3GCOV03 (03-01) OK ---
+--- M3GCOV03 (03-02) OK ---
+--- M3GCOV03 (03-03) OK ---
+--- M3GCOV03 (03-04) OK ---
+--- M3GCOV03 (03-05) OK ---
+--- M3GCOV03 (03-06) OK ---
+--- M3GCOV03 (03-07) OK ---
+--- M3GCOV03 (03-08) OK ---
+--- M3GCOV03 (03-09) OK ---
+--- M3GCOV03 (03-10) OK ---
+--- M3GCOV03 (03-11) OK ---
+--- M3GCOV03 (03-12) OK ---
+--- M3GCOV03 (03-13) OK ---
+--- M3GCOV03 (03-14) OK ---
+--- M3GCOV03 (03-15) OK ---
+--- M3GCOV03 (03-16) OK ---
+--- M3GCOV03 (03-17) OK ---
+--- M3GCOV03 (03-18) OK ---
+--- M3GCOV03 (03-19) OK ---
+--- M3GCOV03 (03-20) OK ---
+--- M3GCOV03 (04-01) OK ---
+--- M3GCOV03 (04-02) OK ---
+M3GCOV03 END  
+OK OF A-2
+OK OF C-2
+OK OF B-2
+M3EVA255 TEST OK 
+*** SCS001 *** OK ***
+M3GCNS06 START
+--- M3GCNS06 (40-01) OK ---
+--- M3GCNS06 (40-02) OK ---
+--- M3GCNS06 (40-03) OK ---
+--- M3GCNS06 (40-04) OK ---
+--- M3GCNS06 (40-05) OK ---
+--- M3GCNS06 (40-06) OK ---
+--- M3GCNS06 (40-07) OK ---
+--- M3GCNS06 (40-08) OK ---
+--- M3GCNS06 (40-09) OK ---
+--- M3GCNS06 (40-10) OK ---
+--- M3GCNS06 (40-11) OK ---
+--- M3GCNS06 (40-12) OK ---
+--- M3GCNS06 (40-13) OK ---
+--- M3GCNS06 (40-14) OK ---
+--- M3GCNS06 (40-15) OK ---
+--- M3GCNS06 (40-16) OK ---
+--- M3GCNS06 (40-17) OK ---
+--- M3GCNS06 (40-18) OK ---
+M3GCNS06 END  
+ I2 VALUE 5 
+*** MPTEST30 I2 OK ***
+ I4 VALUE 5 
+*** MPTEST30 I4 OK ***
+ U2 VALUE 5 
+*** MPTEST30 U2 OK ***
+ U4 VALUE 5 
+*** MPTEST30 U4 OK ***
+ RS VALUE 5.000000 
+*** MPTEST30 RS OK ***
+ RD VALUE 5.000000 
+*** MPTEST30 RD OK ***
+ CH VALUE 5 
+*** MPTEST30 CH OK ***
+
+***  ****  END  ***
+exit 0

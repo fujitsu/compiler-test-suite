@@ -1,0 +1,92 @@
+***  **** START ***
+**** ITEM1 OK ****
+**** ITEM2 OK ****
+OK OF A-2
+OK OF C-2
+OK OF B-2
+TEST01 --> OK 
+TEST02 --> OK 
+TEST03 --> OK 
+TEST04 --> OK 
+TEST05 --> OK 
+TEST06 --> OK 
+TEST07 --> OK 
+TEST08 --> OK 
+TEST09 --> OK 
+TEST10 --> OK 
+TEST11 --> OK 
+TEST12 --> OK 
+TEST13 --> OK 
+TEST14 --> OK 
+TEST15 --> OK 
+TEST16 --> OK 
+*** SCOCV03  START ***
+*** OK  1 ***
+*** SCOCV03  END ***
+*** M3ECHG14 **  ** STARTED ***
+*** M3ECHG14-01 *** O     K ***
+*** M3ECHG14-02 *** O     K ***
+*** M3ECHG14-03 *** O     K ***
+*** M3ECHG14-04 *** O     K ***
+*** M3ECHG14-05 *** O     K ***
+*** M3ECHG14-06 *** O     K ***
+*** M3ECHG14-07 *** O     K ***
+*** M3ECHG14-08 *** O     K ***
+*** M3ECHG14-09 *** O     K ***
+*** M3ECHG14-10 *** O     K ***
+*** M3ECHG14-11 *** O     K ***
+*** M3ECHG14-12 *** O     K ***
+*** M3ECHG14-13 *** O     K ***
+*** M3ECHG14-14 *** O     K ***
+*** M3ECHG14-15 *** O     K ***
+*** M3ECHG14-16 *** O     K ***
+*** M3ECHG14-17 *** O     K ***
+*** M3ECHG14-18 *** O     K ***
+*** M3ECHG14-19 *** O     K ***
+*** M3ECHG14-20 *** O     K ***
+*** M3ECHG14 **    ** ENDED ***
+*** SCODV2  STARTED ***
+*** OK  1 ***
+*** OK  2 ***
+*** OK  3 ***
+*** OK  4 ***
+*** OK  5 ***
+*** OK  6 ***
+*** SCODV2  END ***
+*** MPTEST20 < 0> OK ***
+*** MPTEST20 < 1> OK ***
+*** MPTEST20 < 2> OK ***
+*** MPTEST20 < 3> OK ***
+*** MPTEST20 < 4> OK ***
+*** MPTEST20 < 5> OK ***
+*** MPTEST20 < 6> OK ***
+*** MPTEST20 < 7> OK ***
+*** MPTEST20 < 8> OK ***
+*** MPTEST20 < 9> OK ***
+*** M3EDC106 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC106 TEST-01 OK ***
+ *** M3EDC106 TEST-02 OK ***
+ *** M3EDC106 TEST-03 OK ***
+ *** M3EDC106 TEST-04 OK ***
+ *** M3EDC106 TEST-05 OK ***
+ *** M3EDC106 TEST-06 OK ***
+*** M3EDC106 TEST ENDED ***
+
+***** MPTEST09 START *****
+   ** SORTSS RETURN OK **
+   ** SCHK   RETURN OK **
+***** MPTEST09 OK OK OK *****
+***** MPTEST09 END END *****
+*************
+TEST01 --> OK 
+TEST02 --> OK 
+TEST03 --> OK 
+TEST04 --> OK 
+TEST05 --> OK 
+TEST06 --> OK 
+TEST07 --> OK 
+TEST08 --> OK 
+TEST09 --> OK 
+TEST10 --> OK 
+***  ****  END  ***
+exit 0

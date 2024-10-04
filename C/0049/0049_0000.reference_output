@@ -1,0 +1,78 @@
+ok
+ok
+M2K14001 Start
+Check the GEN Graph and make sure that there are LOOP PSEUDO GEN in main_test.
+test0 start
+test0 ended
+0.000000 -2.000000 -38.000000
+test1 start
+test1 ended
+0.000000 1.000000 19.000000
+M2K14001 End
+M2K14004 Start
+Check the GEN Graph and make sure that there are no LOOP PSEUDO GEN
+test-1 start
+test-1 ended
+1.000000 19.000000
+test1 start
+test1 ended
+-2.000000 -38.000000
+test20 start
+test20 ended
+-2.000000 -38.000000
+M2K14003 End
+test200 start
+test200 ended
+-1.000000 -19.000000
+M2K14004 End
+*** K150 (examine object code) ***
+### M2K16101 START ###
+###      OK-1      ###
+###      OK-2      ###
+### M2K16101 END   ###
+### M2K16102 START ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+### M2K16102 END   ###
+### M2K16103 START ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+### M2K16103 END   ###
+### M2K16104 START ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+###      OK        ###
+### M2K16104 END   ###
+exit 0

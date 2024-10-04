@@ -1,0 +1,17 @@
+*** TEST FOR EXPRESSION *** STARTED
+-TEST01-1*** O     K ***
+-TEST01-2*** O     K ***
+-TEST01-3*** O     K ***
+-TEST01-4*** O     K ***
+-TEST01-5*** O     K ***
+-TEST01-6*** RETURN CORD OK ***
+-TEST02-1*** O     K ***
+-TEST02-2*** O     K ***
+-TEST02-3*** O     K ***
+-TEST02-4*** RETURN CORD OK ***
+-TEST03-1*** O     K ***
+-TEST03-2*** O     K ***
+-TEST04-3*** O     K ***
+-TEST03-4*** RETURN CORD OK ***
+*** TEST FOR EXPRESSION *** ENDED
+exit 0

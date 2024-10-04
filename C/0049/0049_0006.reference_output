@@ -1,0 +1,38 @@
+comk3130 (1) ok
+comk3130 (2) ok
+**dpmk2030-(1)** OK x.a1=0000000000000001
+**dpmk2030-(2)** OK x.a2=0000000000000003
+**dpmk2030-(3)** OK x.a3=0000000000000007
+**dpmk2030-(4)** OK x.a4=000000000000000f
+**dpmk2030-(5)** OK x.a5=000000000000001f
+**dpmk2030-(6)** OK x.a6=000000000000003f
+**dpmk2030-(7)** OK x.a7=000000000000007f
+**dpmk2030-(8)** OK x.a8=00000000000000ff
+ i2 value 5 
+*** mptest30 i2 ok ***
+ i4 value 5 
+*** mptest30 i4 ok ***
+ u2 value 5 
+*** mptest30 u2 ok ***
+ u4 value 5 
+*** mptest30 u4 ok ***
+ rs value 5.000000 
+*** mptest30 rs ok ***
+ rd value 5.000000 
+*** mptest30 rd ok ***
+ ch value 5 
+*** mptest30 ch ok ***
+***** unroll030 ***** unroll 1 never 0 not 0
+ok
+***** unroll030 ***** end
+ ---- spca030 start ----
+     *** ok ***
+ ---- spca030  end  ----
+**kaimk2030-(1) ok
+**kaimk2030-(2) ok
+**kaimk2030-(3) ok
+**kaimk2030-(4) ok
+**kaimk2030-(5) ok
+**kaimk2030-(6) ok
+OK
+exit 0

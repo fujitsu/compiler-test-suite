@@ -1,0 +1,13 @@
+ ***  TEST-1  OK  (INT)INT-INT   ***
+ ***  TEST-2  OK  (INT)INT-CHA   ***
+ ***  TEST-3  OK  (INT)INT-ENU   ***
+ ***  TEST-4  OK  (INT)CHA-INT   ***
+ ***  TEST-5  OK  (INT)CHA-CHA   ***
+ ***  TEST-6  OK  (INT)CHA-ENU   ***
+ ***  TEST-7  OK  (INT)ENU-INT   ***
+ ***  TEST-8  OK  (INT)ENU-CHA   ***
+ ***  TEST-9  OK  (INT)ENU-ENU   ***
+ ***  TEST-10 OK  (INT)DBL-INT   ***
+ ***  TEST-11 OK  (INT)DLB-CHA   ***
+ ***  TEST-12 OK  (INT)DBL-ENU   ***
+exit 0

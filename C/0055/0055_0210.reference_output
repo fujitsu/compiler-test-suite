@@ -1,0 +1,5 @@
+ atomic_is_lock_free 
+ atomic_is_lock_free 
+ atomic_is_lock_free 
+ atomic_is_lock_free 
+exit 0

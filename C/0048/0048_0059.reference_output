@@ -1,0 +1,385 @@
+***  *** TEST FOR COMMON *** STARTED ***
+
+SCQIH13  PASS.
+ OK 
+ ----- ok ----- 
+--------- ok -------- 
+--------- ok -------- 
+--------- ok -------- 
+b = a  a = b 
+
+ ----- ok ----- 
+b = b  a = c 
+
+ ----- ok ----- 
+b = c  a = d 
+
+ ----- ok ----- 
+b = d  a = e 
+
+ ----- ok ----- 
+ ----- ok1 ----- 
+ ----- ok2 ----- 
+ ----- ok1 ----- 
+ ----- ok2 ----- 
+ ----- ok1 ----- 
+ ----- ok2 ----- 
+ ----- ok1 ----- 
+ ----- ok2 ----- 
+ ----- ok1 ----- 
+ ----- ok2 ----- 
+ ----- ok ----- 
+ ----- ok ----- 
+ ----- ok ----- 
+ ----- ok ----- 
+ ----- ok1 ----- 
+ OK 
+####for######
+####end for######
+####sub1######
+####sub2######
+####sub3######
+####sub4######
+####sub5######
+####sub6######
+####sub7######
+####sub8######
+####sub9######
+####sub10######
+####sub11######
+####sub12######
+####sub13######
+####sub14######
+####sub15######
+####sub16######
+####sub17######
+####sub18######
+####sub19######
+####sub20######
+  SCRLP01 OK 
+ OK 
+
+ SCRLP02 OK
+ SCRLP02 OK
+ SCRLP02 OK 
+ OK 
+
+ OK 
+
+ OK 
+
+ OK 
+
+ OK 
+
+ OK 
+
+*** MPTEST21 CHECK01 OK ***
+*** MPTEST21 CHECK02 OK ***
+*** MPTEST21 CHECK3 OK ***
+
+*** MPTEST22 OK ***
+
+*** MPTEST23 START *** 
+** OK ** 
+** OK ** 
+*** MPTEST23  END  *** 
+
+*** mptest25 ok ***
+
+*** OK * 0 ***
+
+*** OK * 1 ***
+
+*** OK * 2 ***
+***** MPTEST26 END *****
+
+******** MPTEST27 START **************
+***    OK                       ***
+******** MPTEST27 END ****************
+
+<<<<<<<< START >>>>>>>>>>>>>>
+<<<<<<<< FUNC2 RECURSIVE >>>>
+<<<<<<<< FUNC2 RECURSIVE >>>>
+<<<<<<<< MPTEST28 OK >>>>>>>>
+<<<<<<<< MPTEST28 OK >>>>>>>>
+<<<<<<<< MPTEST28 OK >>>>>>>>
+<<<<<<<< MPTEST28 OK >>>>>>>>
+<<<<<<<< MPTEST28 OK >>>>>>>>
+<<<<<<<< MPTEST28 OK >>>>>>>>
+<<<<<<<< MPTEST28 END >>>>>>>
+******* FUNC011 IB05 CHECK     OK ****
+
+******* FUNC01 IA01            OK ****
+******* FUNC01 IA02 REAL ARGUM OK ****
+******* FUNC01 IA03 REAL ARGUM OK ****
+******* FUNC01 IA05 REAL ARGUM OK ****
+******* FUNC021 CB05 CHECK     OK ****
+******* FUNC02 CA01            OK ****
+******* FUNC02 CA02 REAL ARGUM OK ****
+******* FUNC02 CA03 REAL ARGUM OK ****
+******* FUNC02 CA05 REAL ARGUM OK ****
+******* FUNC031 SB05 CHECK     OK ****
+******* FUNC03 SA01            OK ****
+******* FUNC03 SA02 REAL ARGUM OK ****
+******* FUNC01 SA03 REAL ARGUM OK ****
+******* FUNC01 SA05 REAL ARGUM OK ****
+******* FUNC041 UIB05 CHECK    OK ****
+******* FUNC04 UIA01           OK ****
+******* FUNC04 UIA02 REAL ARGUM OK ****
+******* FUNC04 UIA03 REAL ARGUM OK ****
+******* FUNC04 UIA05 REAL ARGUM OK ****
+******* FUNC051 UCB05 CHECK    OK ****
+******* FUNC05 UCA01           OK ****
+******* FUNC05 UCA02 REAL ARGUM OK ****
+******* FUNC05 UCA03 REAL ARGUM OK ****
+******* FUNC05 UCA05 REAL ARGUM OK ****
+******* FUNC061 USB05 CHECK    OK ****
+******* FUNC06 USA01           OK ****
+******* FUNC06 USA02 REAL ARGUM OK ****
+******* FUNC06 USA03 REAL ARGUM OK ****
+******* FUNC06 USA05 REAL ARGUM OK ****
+******* FUNC071 FB05 CHECK     OK ****
+******* FUNC07 FA01            OK ****
+******* FUNC07 FA02 REAL ARGUM OK ****
+******* FUNC07 FA03 REAL ARGUM OK ****
+******* FUNC07 FA05 REAL ARGUM OK ****
+******* FUNC081 DB05 CHECK     OK ****
+******* FUNC08 DA01            OK ****
+******* FUNC08 DA02 REAL ARGUM OK ****
+******* FUNC08 DA03 REAL ARGUM OK ****
+******* FUNC08 DA05 REAL ARGUM OK ****
+ i2 value 5 
+*** mptest30 i2 ok ***
+ i4 value 5 
+*** mptest30 i4 ok ***
+ u2 value 5 
+*** mptest30 u2 ok ***
+ u4 value 5 
+*** mptest30 u4 ok ***
+ rs value 5.000000 
+*** mptest30 rs ok ***
+ rd value 5.000000 
+*** mptest30 rd ok ***
+ ch value 5 
+*** mptest30 ch ok ***
+*** MPTEST31 OK ***
+*** MPTEST31 OK ***
+*** MPTEST32 OK ***
+*** MPTEST32 OK ***
+*** MPTEST33  OK ***
+***** MPTEST34 OK *****
+***** MPTEST36 OK *****
+      
+    MPTEST37 START 
+      
+    EIGHT QUEEN PATTERN  = 92 
+      
+      
+    MPTEST37 OK 
+      
+    MPTEST37 END 
+      
+_____ CHECK 1 OK ____________
+_____ RETURN CODE = 999 _____
+_____ MPTEST38 OK ___________
+
+*** ans = 100
+*** MPTEST40 OK ***
+
+*** MPTEST41 CHECK01 OK ***
+*** MPTEST41 CHECK02 OK ***
+*** MPTEST41 CHECK3 OK ***
+*** 3
+
+*** mptest42 ok ***
+*** 3
+
+*** mptest42 ok ***
+*** 3
+
+*** mptest42 ok ***
+*** 3
+
+*** mptest42 ok ***
+
+*** mptest43 ok ***
+ok-1
+ok-2
+21010
+ok-34
+2
+2
+ok-6
+132ok-7
+1
+1ok-8
+ok-9
+ok-10
+ok-11
+ok-13
+ok-12
+ok-14
+ok-15
+ *ok-1*   1
+ **ok-2** 1
+ *ok-3* f8
+ *ok-4* 10
+ *ok-5* 1
+ *ok-6* 
+ *ok-7* 
+ *ok-8* 
+ *ok-8* 8
+ *ok-9* c1 = 1.000000e+00
+ *ok-10* *c2 = 2.000000e+00
+ *ok-11* *c2 = f7
+ *ok-12* c1 = 1.000000e+00
+ *ok-13* 
+ *ok-14* 
+ok of a-2
+ok of c-2
+ok of b-2
+ok of b-2
+ok of b-1-1
+ok of b-1-2
+error of b-1-3 at second : ei = 1128792064
+error of b-1-4 at second : ei = 1128792064
+ok of b-1-5
+ok of b-1-6
+
+M3EVA041 TEST OK 
+
+M3EVA042 TEST OK 
+
+M3EVA043 TEST OK 
+
+M3EVA044 TEST OK 
+
+M3EVA045 TEST OK 
+
+M3EVA046 TEST OK 
+
+M3EVA047 TEST OK 
+
+M3EVA048 TEST OK 
+
+M3EVA049 TEST OK 
+
+M3EVA050 TEST OK 
+
+M3EVA051 TEST OK 
+
+M3EVA052 TEST OK 
+
+M3EVA053 TEST OK 
+
+M3EVA054 TEST OK 
+
+M3EVA055 TEST OK 
+
+M3EVA056 TEST OK 
+
+M3EVA057 TEST OK 
+
+M3EVA058 TEST OK 
+
+M3EVA059 TEST OK 
+
+M3EVA060 TEST OK 
+
+M3EVA080 TEST OK 
+
+M3EVA081 TEST OK 
+
+M3EVA082 TEST OK 
+
+M3EVA083 TEST OK 
+
+M3EVA084 TEST OK 
+
+M3EVA085 TEST OK 
+
+M3EVA086 TEST OK 
+
+M3EVA087 TEST OK 
+
+M3EVA088 TEST OK 
+
+M3EVA089 TEST OK 
+
+M3EVA090 TEST OK 
+
+M3EVA091 TEST OK 
+
+M3EVA092 TEST OK 
+
+M3EVA093 TEST OK 
+
+M3EVA094 TEST OK 
+
+M3EVA095 TEST OK 
+
+M3EVA096 TEST OK 
+
+M3EVA097 TEST OK 
+
+M3EVA098 TEST OK 
+
+M3EVA099 TEST OK 
+
+M3EVA100 TEST OK 
+
+M3EVA101 TEST OK 
+
+M3EVA102 TEST OK 
+
+M3EVA103 TEST OK 
+
+M3EVA104 TEST OK 
+
+M3EVA105 TEST OK 
+
+M3EVA106 TEST OK 
+
+M3EVA108 TEST OK 
+
+M3EVA109 TEST OK 
+
+M3EVA062 TEST OK 
+
+M3EVA063 TEST OK 
+
+M3EVA064 TEST OK 
+
+M3EVA065 TEST OK 
+
+M3EVA066 TEST OK 
+
+M3EVA067 TEST OK 
+
+M3EVA068 TEST OK 
+
+M3EVA069 TEST OK 
+
+M3EVA070 TEST OK 
+
+M3EVA071 TEST OK 
+
+M3EVA072 TEST OK 
+
+M3EVA073 TEST OK 
+
+M3EVA074 TEST OK 
+
+M3EVA075 TEST OK 
+
+M3EVA076 TEST OK 
+
+M3EVA077 TEST OK 
+
+M3EVA078 TEST OK 
+
+M3EVA079 TEST OK 
+
+***  *** TEST FOR COMMON *** ENDED ***
+exit 0

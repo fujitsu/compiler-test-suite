@@ -1,0 +1,98 @@
+************* 
+TEST01 --> OK 
+TEST02 --> OK 
+TEST03 --> OK 
+TEST04 --> OK 
+TEST05 --> OK 
+TEST06 --> OK 
+TEST07 --> OK 
+TEST08 --> OK 
+TEST09 --> OK 
+TEST10 --> OK 
+TEST11 --> OK 
+TEST12 --> OK 
+TEST13 --> OK 
+TEST14 --> OK 
+TEST15 --> OK 
+TEST16 --> OK 
+TEST17 --> OK 
+TEST18 --> OK 
+TEST19 --> OK 
+TEST20 --> OK 
+TEST21 --> OK 
+TEST22 --> OK 
+************* 
+********** SCOPRL1 STARTED *********
+********** SCOPRL1 -01 OK **********
+********** SCOPRL1 -01.5 OK **********
+********** SCOPRL1 -02 OK **********
+********** SCOPRL1 ENDED **********
+*** MPTEST23 START *** 
+** OK ** 
+** OK ** 
+*** MPTEST23  END  *** 
+************* 
+TEST01 --> OK 
+TEST02 --> OK 
+TEST03 --> OK 
+TEST04 --> OK 
+TEST05 --> OK 
+TEST06 --> OK 
+TEST07 --> OK 
+TEST08 --> OK 
+TEST09 --> OK 
+TEST10 --> OK 
+TEST11 --> OK 
+TEST12 --> OK 
+TEST13 --> OK 
+TEST14 --> OK 
+TEST15 --> OK 
+TEST16 --> OK 
+TEST17 --> OK 
+TEST18 --> OK 
+TEST19 --> OK 
+TEST20 --> OK 
+************* 
+********** SCOOD01 STARTED *********
+********** SCOOD01 -01 OK **********
+********** SCOOD01 -02 OK **********
+********** SCOOD01 ENDED **********
+*** MPTEST25 OK ***
+************* 
+TEST01 --> OK 
+TEST02 --> OK 
+TEST03 --> OK 
+TEST04 --> OK 
+TEST05 --> OK 
+************* 
+********** SCOOD02 STARTED *********
+********** SCOOD02 -01 OK **********
+********** SCOOD02 -02 OK **********
+********** SCOOD02 -03 OK **********
+********** SCOOD02 -04 OK **********
+********** SCOOD02 -05 OK **********
+*** MPTEST31 OK ***
+*** MPTEST31 OK ***
+*** MPTEST32 OK ***
+*** MPTEST32 OK ***
+************* 
+TEST01 --> OK 
+TEST02 --> OK 
+TEST03 --> OK 
+TEST04 --> OK 
+TEST05 --> OK 
+TEST06 --> OK 
+TEST07 --> OK 
+TEST08 --> OK 
+TEST09 --> OK 
+TEST10 --> OK 
+TEST11 --> OK 
+TEST12 --> OK 
+TEST13 --> OK 
+TEST14 --> OK 
+TEST15 --> OK 
+*** OK * 0 ***
+*** OK * 1 ***
+*** OK * 2 ***
+***** MPTEST26 END *****
+exit 0

@@ -1,0 +1,87 @@
+***  *** TEST FOR COMMON *** STARTED ***
+ ----- ok1 ----- 
+ ----- ok2 ----- 
+ OK 
+  SCRLP01 OK 
+ OK 
+
+ SCRLP02 OK
+ SCRLP02 OK
+ SCRLP02 OK 
+ *** SSS - (1) OK *** 
+ *** BBB - OK ***
+
+ ***** MPTEST12 END *****
+
+*** MPTEST13 -- START ***
+*** OK e = 600 ***
+*** OK c = 400 ***
+***    OK         ***
+
+*** MPTEST13 -- END   ***
+ *** CHK OK ***
+ *****  MPTEST14  END  *****
+
+*** MPTEST15 -- START ***
+*** MPTEST15 CHECK02 OK ***
+*** MPTEST15 CHECK01 OK ***
+
+*** MPTEST15 -- END   ***
+*** MPTEST16  OK  ***
+
+M3EVA110 TEST OK 
+
+M3EVA111 TEST OK 
+
+M3EVA112 TEST OK 
+
+M3EVA113 TEST OK 
+
+M3EVA114 TEST OK 
+
+M3EVA115 TEST OK 
+
+M3EVA116 TEST OK 
+
+M3EVA117 TEST OK 
+
+M3EVA118 TEST OK 
+
+M3EVA119 TEST OK 
+ OK 
+
+ OK 
+
+ OK 
+
+ OK 
+
+ OK 
+
+
+*** MPTEST18 OK ***
+
+*** MPTEST19 *** OK ***
+
+*** MPTEST20 < 0> OK ***
+
+*** MPTEST20 < 1> OK ***
+
+*** MPTEST20 < 2> OK ***
+
+*** MPTEST20 < 3> OK ***
+
+*** MPTEST20 < 4> OK ***
+
+*** MPTEST20 < 5> OK ***
+
+*** MPTEST20 < 6> OK ***
+
+*** MPTEST20 < 7> OK ***
+
+*** MPTEST20 < 8> OK ***
+
+*** MPTEST20 < 9> OK ***
+
+***  *** TEST FOR COMMON *** ENDED ***
+exit 0

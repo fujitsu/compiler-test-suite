@@ -1,0 +1,103 @@
+*** START ***
+TEST01 --> OK 
+TEST02 --> OK 
+TEST03 --> OK 
+TEST04 --> OK 
+TEST05 --> OK 
+TEST06 --> OK 
+TEST07 --> OK 
+TEST08 --> OK 
+TEST09 --> OK 
+TEST10 --> OK 
+TEST11 --> OK 
+TEST12 --> OK 
+TEST13 --> OK 
+*** END *****
+********** SCOHD01 STARTED **********
+********** SCOHD01 -01 OK **********
+********** SCOHD01 -02 OK **********
+********** SCOHD01 -04 OK **********
+********** SCOHD01 -05 OK **********
+********** SCOHD01 -06 OK **********
+********** SCOHD01 -07 OK **********
+********** SCOHD01 -08 OK **********
+********** SCOHD01 -09 OK **********
+********** SCOHD01 -10 OK **********
+********** SCOHD01 -11 OK **********
+********** SCOHD01  ENDED **********
+*** MPTEST21 CHECK01 OK ***
+*** MPTEST21 CHECK02 OK ***
+*** MPTEST21 CHECK03 OK ***
+*** START ***
+TEST01 --> OK 
+TEST02 --> OK 
+*** END   ***
+********** SCOHD02 STARTED *********
+********** SCOHD02 -01 OK **********
+********** SCOHD02 -02 OK **********
+********** SCOHD02 -03 OK **********
+********** SCOHD02 -04 OK **********
+********** SCOHD02 -05 OK **********
+********** SCOHD02 -06 OK **********
+********** SCOHD02 -07 OK **********
+********** SCOHD02  ENDED **********
+*** MPTEST22 OK ***
+*** START ***
+TEST01 --> OK 
+TEST02 --> OK 
+TEST03 --> OK 
+TEST04 --> OK 
+TEST05 --> OK 
+TEST06 --> OK 
+TEST07 --> OK 
+TEST08 --> OK 
+TEST09 --> OK 
+TEST10 --> OK 
+TEST11 --> OK 
+TEST12 --> OK 
+TEST13 --> OK 
+*** END *****
+********** SCOHD03 STARTED *********
+********** SCOHD03 -01 OK **********
+********** SCOHD03 -02 OK **********
+********** SCOHD03 -03 OK **********
+********** SCOHD03 -04 OK **********
+********** SCOHD03 -05 OK **********
+********** SCOHD03 -06 OK **********
+********** SCOHD03 -07 OK **********
+********** SCOHD03 -08 OK **********
+********** SCOHD03  ENDED **********
+*** m3ecks04 test start ***** 
+TEST01 --> OK 
+TEST02 --> OK 
+TEST03 --> OK 
+TEST04 --> OK 
+TEST05 --> OK 
+TEST06 --> OK 
+TEST07 --> OK 
+TEST08 --> OK 
+TEST09 --> OK 
+TEST10 --> OK 
+TEST11 --> OK 
+TEST12 --> OK 
+TEST13 --> OK 
+*** m3ecks04 test end ***** 
+********** SCOHD04 TEST STARTED **********
+********** SCOHD04 -01 OK **********
+********** SCOHD04 -02 OK **********
+********** SCOHD04 -03 OK **********
+********** SCOHD04 -04 OK **********
+********** SCOHD04 -05 OK **********
+********** SCOHD04 -06 OK **********
+********** SCOHD04 -07 OK **********
+********** SCOHD04 -08 OK **********
+********** SCOHD04 TEST ENDED **********
+********** M3ECMV01 START **********
+***** M3ECMV01 - 01 ***** O K *****
+***** M3ECMV01 - 02 ***** O K *****
+***** M3ECMV01 - 03 ***** O K *****
+********** M3ECMV01  END  **********
+********** SCOHDI5 STARTED *********
+********** SCOHDI5 -01 OK **********
+********** SCOHDI5  ENDED **********
+exit 0

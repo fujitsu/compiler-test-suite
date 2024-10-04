@@ -1,0 +1,9 @@
+ ***  TEST-1  OK  ARRAY  -<>  ***
+ ***  TEST-2  OK  STRUCT - .  ***
+ ***  TEST-3  OK  STRUCT -->  ***
+ ***  TEST-4  OK  UNION  - .  ***
+ ***  TEST-5  OK  UNION  -->  ***
+ ***  TEST-6  OK  ADDRESS- &  ***
+ ***  TEST-7  OK  POINTER- *  ***
+ ***  TEST-8  OK   - *  ***
+exit 0

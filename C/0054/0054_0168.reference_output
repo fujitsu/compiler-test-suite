@@ -1,0 +1,19 @@
+06 TEST-START 
+06 1-1 TEST -O  K- 
+06 1-2 TEST -O  K- 
+06 1-3 TEST -O  K- 
+06 1-4 TEST -O  K- 
+06 2-1 TEST -O  K- 
+06 2-2 TEST -O  K- 
+06 2-3 TEST -O  K- 
+06 2-4 TEST -O  K- 
+06 3-1 TEST -O  K- 
+06 3-2 TEST -O  K- 
+06 3-3 TEST -O  K- 
+06 3-4 TEST -O  K- 
+06 4-1 TEST -O  K- 
+06 4-2 TEST -O  K- 
+06 4-3 TEST -O  K- 
+06 4-4 TEST -O  K- 
+06 TEST-END 
+exit 0

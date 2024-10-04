@@ -1,0 +1,10 @@
+ ***  TEST-1  OK    #      ***
+ ***  TEST-2  OK    [      ***
+ ***  TEST-3  OK    \      ***
+ ***  TEST-4  OK    ]      ***
+ ***  TEST-5  OK    ^      ***
+ ***  TEST-6  OK    {      ***
+ ***  TEST-7  OK    |      ***
+ ***  TEST-8  OK    }      ***
+ ***  TEST-9  OK    ~      ***
+exit 0

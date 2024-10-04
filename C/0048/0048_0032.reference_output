@@ -1,0 +1,108 @@
+***  **** START ***
+******** MPTEST27 START **************
+******** MPTEST27 MP1FNC3 RUN **********
+******** MPTEST27 MP1FNC2 RUN **********
+******** MPTEST27 MP1FNC1 RUN **********
+***    OK                       ***
+******** MPTEST27 END ****************
+*** M3EDC168 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC168 TEST-01 OK ***
+ *** M3EDC168 TEST-02 OK ***
+ *** M3EDC168 TEST-03 OK ***
+ *** M3EDC168 TEST-04 OK ***
+ *** M3EDC168 TEST-05 OK ***
+ *** M3EDC168 TEST-06 OK ***
+ *** M3EDC168 TEST-07 OK ***
+*** M3EDC168 TEST ENDED ***
+********** SCOHDI3 STARTED *********
+********** SCOHDI3 -01 OK **********
+********** SCOHDI3 -02 OK **********
+********** SCOHDI3 ENDED  **********
+********** M3ERMV06 TEST START **********
+***** M3ERMV06 - 01 ***** O K *****
+***** M3ERMV06 - 02 ***** O K *****
+***** M3ERMV06 - 03 ***** O K *****
+***** M3ERMV06 - 04 ***** O K *****
+***** M3ERMV06 - 05 ***** O K *****
+***** M3ERMV06 - 06 ***** O K *****
+***** M3ERMV06 - 07 ***** O K *****
+***** M3ERMV06 - 08 ***** O K *****
+***** M3ERMV06 - 09 ***** O K *****
+***** M3ERMV06 - 10 ***** O K *****
+***** M3ERMV06 - 11 ***** O K *****
+***** M3ERMV06 - 12 ***** O K *****
+***** M3ERMV06 - 13 ***** O K *****
+***** M3ERMV06 - 14 ***** O K *****
+***** M3ERMV06 - 15 ***** O K *****
+***** M3ERMV06 - 16 ***** O K *****
+********** M3ERMV06 TEST  END  **********
+*** M3MPJP01 START ***
+**** OK ****
+*** M3MPJP01 END ***
+*** M3ESAD01 **  ** STARTED ***
+*** M3ESAD71-01 *** O K ***
+*** M3ESAD71-02 *** O K ***
+*** M3ESAD71-03 *** O K ***
+*** M3ESAD71 ***  *** ENDED ***
+*************
+TEST01 --> OK 
+TEST02 --> OK 
+TEST03 --> OK 
+TEST04 --> OK 
+TEST05 --> OK 
+TEST06 --> OK 
+TEST07 --> OK 
+TEST08 --> OK 
+TEST09 --> OK 
+TEST10 --> OK 
+TEST11 --> OK 
+TEST12 --> OK 
+TEST13 --> OK 
+TEST14 --> OK 
+TEST15 --> OK 
+TEST16 --> OK 
+TEST17 --> OK 
+TEST18 --> OK 
+TEST19 --> OK 
+TEST20 --> OK 
+TEST21 --> OK 
+TEST22 --> OK 
+TEST23 --> OK 
+TEST24 --> OK 
+***** SORT *****
+NUMBER:- 1 -
+NUMBER:- 2 -
+NUMBER:- 3 -
+NUMBER:- 4 -
+NUMBER:- 5 -
+NUMBER:- 6 -
+NUMBER:- 7 -
+NUMBER:- 8 -
+NUMBER:- 9 -
+NUMBER:- 10 -
+***** OK *****
+********** SCOPS02 TEST STARTED **********
+********** SCOPS02 - 01 OK **********
+********** SCOPS02 - 02 OK **********
+********** SCOPS02 - 03 OK **********
+********** SCOPS02 - 04 OK **********
+********** SCOPS02 - 05 OK **********
+********** SCOPS02 - 06 OK **********
+********** SCOPS02 - 07 OK **********
+********** SCOPS02 - 08 OK **********
+********** SCOPS02 TEST ENDED **********
+M3MPSI05 OK
+***** M3EDCL07 **  ** START *****
+***** M3EDCL07 - 01 ***** OK *****
+***** M3EDCL07 - 02 ***** OK *****
+***** M3EDCL07 **  **  END  *****
+********** SCOSCR2 TEST STARTED **********
+********** SCOSCR2 -01 OK **********
+********** SCOSCR2 TEST ENDED **********
+********** SCOHDI2 TEST STARTED **********
+********** SCOHDI2 -01 OK **********
+********** SCOHDI2 -02 OK **********
+********** SCOHDI2 -03 OK **********
+********** SCOHDI2 TEST ENDED **********
+***  ****  END  ***
+exit 0

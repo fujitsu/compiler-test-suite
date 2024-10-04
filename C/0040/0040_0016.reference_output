@@ -1,0 +1,4 @@
+--  -- 
+-- parallel  do lastprivate(mi4, mi2, ia) -- 
+OK 
+exit 0

@@ -1,0 +1,25 @@
+ ***  TEST-13 OK  S(INT)INT-INT  ***
+ ***  TEST-14 OK  S(INT)ITN-CHA  ***
+ ***  TEST-15 OK  S(INT)ITN-ENU  ***
+ ***  TEST-16 OK  S(INT)CHA-INT  ***
+ ***  TEST-17 OK  S(INT)CHA-CHA  ***
+ ***  TEST-18 OK  S(INT)CHA-ENU  ***
+ ***  TEST-19 OK  S(INT)ENU-INT  ***
+ ***  TEST-20 OK  S(INT)ENU-CHA  ***
+ ***  TEST-21 OK  S(INT)ENU-ENU  ***
+ ***  TEST-22 OK  S(INT)DBL-INT  ***
+ ***  TEST-23 OK  S(INT)DBL-CHA  ***
+ ***  TEST-24 OK  S(INT)DBL-ENU  ***
+ ***  TEST-25 OK  S(DBL)INT-INT  ***
+ ***  TEST-26 OK  S(DBL)ITN-CHA  ***
+ ***  TEST-27 OK  S(DBL)ITN-ENU  ***
+ ***  TEST-28 OK  S(DBL)CHA-INT  ***
+ ***  TEST-29 OK  S(DBL)CHA-CHA  ***
+ ***  TEST-30 OK  S(DBL)CHA-ENU  ***
+ ***  TEST-31 OK  S(DBL)ENU-INT  ***
+ ***  TEST-32 OK  S(DBL)ENU-CHA  ***
+ ***  TEST-33 OK  S(DBL)ENU-ENU  ***
+ ***  TEST-34 OK  S(DBL)DBL-INT  ***
+ ***  TEST-35 OK  S(DBL)DBL-CHA  ***
+ ***  TEST-36 OK  S(DBL)DBL-ENU  ***
+exit 0

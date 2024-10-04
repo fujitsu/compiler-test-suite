@@ -1,0 +1,10 @@
+***TEST FOR TOKEN***STARTED
+TEST01 *** OK!!
+TEST02 *** OK!!
+TEST03 *** OK!!
+TEST04 *** OK!!
+TEST05 *** OK!!
+TEST06 *** OK!!
+TEST07 *** OK!!
+***TEST FOR TOKEN***END
+exit 0

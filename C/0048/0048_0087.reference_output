@@ -1,0 +1,7 @@
+  TEST START 
+
+ ***  TEST-01 OK  DEFINE  ***
+ ***  TEST-02 OK  DEFINE  ***
+  TEST END   
+
+exit 0

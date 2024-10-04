@@ -1,0 +1,148 @@
+***  *** TEST FOR COMMON *** STARTED ***
+
+M3EVA120 TEST OK 
+
+M3EVA121 TEST OK 
+
+M3EVA122 TEST OK 
+
+M3EVA123 TEST OK 
+
+M3EVA126 TEST OK 
+
+M3EVA127 TEST OK 
+
+M3EVA130 TEST OK 
+
+M3EVA131 TEST OK 
+
+M3EVA132 TEST OK 
+
+M3EVA133 TEST OK 
+
+M3EVA134 TEST OK 
+
+M3EVA135 TEST OK 
+
+M3EVA136 TEST OK 
+
+M3EVA137 TEST OK 
+
+M3EVA138 TEST OK 
+
+M3EVA139 TEST OK 
+
+*** MPTEST21 CHECK01 OK ***
+*** MPTEST21 CHECK02 OK ***
+*** MPTEST21 CHECK3 OK ***
+
+*** MPTEST22 OK ***
+
+*** MPTEST23 START *** 
+** OK ** 
+** OK ** 
+*** MPTEST23  END  *** 
+
+*** mptest25 ok ***
+
+*** OK * 0 ***
+
+*** OK * 1 ***
+
+*** OK * 2 ***
+***** MPTEST26 END *****
+
+******** MPTEST27 START **************
+***    OK                       ***
+******** MPTEST27 END ****************
+
+<<<<<<<< START >>>>>>>>>>>>>>
+<<<<<<<< FUNC2 RECURSIVE >>>>
+<<<<<<<< FUNC2 RECURSIVE >>>>
+<<<<<<<< MPTEST28 OK >>>>>>>>
+<<<<<<<< MPTEST28 OK >>>>>>>>
+<<<<<<<< MPTEST28 OK >>>>>>>>
+<<<<<<<< MPTEST28 OK >>>>>>>>
+<<<<<<<< MPTEST28 OK >>>>>>>>
+<<<<<<<< MPTEST28 OK >>>>>>>>
+<<<<<<<< MPTEST28 END >>>>>>>
+******* FUNC011 IB05 CHECK     OK ****
+
+******* FUNC01 IA01            OK ****
+******* FUNC01 IA02 REAL ARGUM OK ****
+******* FUNC01 IA03 REAL ARGUM OK ****
+******* FUNC01 IA05 REAL ARGUM OK ****
+******* FUNC021 CB05 CHECK     OK ****
+******* FUNC02 CA01            OK ****
+******* FUNC02 CA02 REAL ARGUM OK ****
+******* FUNC02 CA03 REAL ARGUM OK ****
+******* FUNC02 CA05 REAL ARGUM OK ****
+******* FUNC031 SB05 CHECK     OK ****
+******* FUNC03 SA01            OK ****
+******* FUNC03 SA02 REAL ARGUM OK ****
+******* FUNC01 SA03 REAL ARGUM OK ****
+******* FUNC01 SA05 REAL ARGUM OK ****
+******* FUNC041 UIB05 CHECK    OK ****
+******* FUNC04 UIA01           OK ****
+******* FUNC04 UIA02 REAL ARGUM OK ****
+******* FUNC04 UIA03 REAL ARGUM OK ****
+******* FUNC04 UIA05 REAL ARGUM OK ****
+******* FUNC051 UCB05 CHECK    OK ****
+******* FUNC05 UCA01           OK ****
+******* FUNC05 UCA02 REAL ARGUM OK ****
+******* FUNC05 UCA03 REAL ARGUM OK ****
+******* FUNC05 UCA05 REAL ARGUM OK ****
+******* FUNC061 USB05 CHECK    OK ****
+******* FUNC06 USA01           OK ****
+******* FUNC06 USA02 REAL ARGUM OK ****
+******* FUNC06 USA03 REAL ARGUM OK ****
+******* FUNC06 USA05 REAL ARGUM OK ****
+******* FUNC071 FB05 CHECK     OK ****
+******* FUNC07 FA01            OK ****
+******* FUNC07 FA02 REAL ARGUM OK ****
+******* FUNC07 FA03 REAL ARGUM OK ****
+******* FUNC07 FA05 REAL ARGUM OK ****
+******* FUNC081 DB05 CHECK     OK ****
+******* FUNC08 DA01            OK ****
+******* FUNC08 DA02 REAL ARGUM OK ****
+******* FUNC08 DA03 REAL ARGUM OK ****
+******* FUNC08 DA05 REAL ARGUM OK ****
+ i2 value 5 
+*** mptest30 i2 ok ***
+ i4 value 5 
+*** mptest30 i4 ok ***
+ u2 value 5 
+*** mptest30 u2 ok ***
+ u4 value 5 
+*** mptest30 u4 ok ***
+ rs value 5.000000 
+*** mptest30 rs ok ***
+ rd value 5.000000 
+*** mptest30 rd ok ***
+ ch value 5 
+*** mptest30 ch ok ***
+b = a  a = b 
+
+ ----- ok ----- 
+b = b  a = c 
+
+ ----- ok ----- 
+b = c  a = d 
+
+ ----- ok ----- 
+b = d  a = e 
+
+ ----- ok ----- 
+ ----- ok1 ----- 
+ ----- ok2 ----- 
+ ----- ok1 ----- 
+ ----- ok2 ----- 
+ ----- ok1 ----- 
+ ----- ok2 ----- 
+ ----- ok1 ----- 
+ ----- ok2 ----- 
+ ----- ok1 ----- 
+ ----- ok2 ----- 
+
+***  *** TEST FOR COMMON *** ENDED ***
+exit 0

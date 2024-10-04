@@ -1,0 +1,171 @@
+***  *** TEST FOR COMMON *** STARTED ***
+
+SCQIH13  PASS.
+
+SCQIH14  PASS.
+ OK 
+ ----- ok ----- 
+--------- ok -------- 
+--------- ok -------- 
+--------- ok -------- 
+b = a  a = b 
+
+ ----- ok ----- 
+b = b  a = c 
+
+ ----- ok ----- 
+b = c  a = d 
+
+ ----- ok ----- 
+b = d  a = e 
+
+ ----- ok ----- 
+ ----- ok1 ----- 
+ ----- ok2 ----- 
+ ----- ok1 ----- 
+ ----- ok2 ----- 
+ ----- ok1 ----- 
+ ----- ok2 ----- 
+ ----- ok1 ----- 
+ ----- ok2 ----- 
+ ----- ok1 ----- 
+ ----- ok2 ----- 
+ ----- ok ----- 
+ ----- ok ----- 
+ ----- ok ----- 
+ ----- ok ----- 
+ ----- ok1 ----- 
+ ----- ok2 ----- 
+ OK 
+####for######
+####end for######
+####sub1######
+####sub2######
+####sub3######
+####sub4######
+####sub5######
+####sub6######
+####sub7######
+####sub8######
+####sub9######
+####sub10######
+####sub11######
+####sub12######
+####sub13######
+####sub14######
+####sub15######
+####sub16######
+####sub17######
+####sub18######
+####sub19######
+####sub20######
+  SCRLP01 OK 
+ OK 
+
+ SCRLP02 OK
+ SCRLP02 OK
+ SCRLP02 OK 
+ OK 
+
+ OK 
+
+ OK 
+
+ OK 
+
+ OK 
+
+ OK 
+ OK 
+
+ok
+
+ok
+
+ok
+
+ok
+
+SCQIH01  PASS
+
+SCQIH03  PASS.
+SCQIH06 PASS.
+SCQIH07 PASS.
+SCQIH08 PASS.
+SCQIH09 PASS.
+SCQIH10 PASS.
+SCQIH02  PASS.
+SCQIH04  PASS.
+
+********** SCPSI01 TEST START **********
+***** SCPSI01 - 01 ***** O   K *****
+***** SCPSI01 - 02 ***** O   K *****
+***** SCPSI01 - 03 ***** O   K *****
+********** SCPSI01 TEST  END  **********
+
+********** SCPSI02 TEST START **********
+***** SCPSI02 - 01 ***** O   K *****
+***** SCPSI02 - 02 ***** O   K *****
+***** SCPSI02 - 03 ***** O   K *****
+********** SCPSI02 TEST  END  **********
+
+********** SCPSI03 TEST START **********
+***** SCPSI03 - 01 ***** O   K *****
+***** SCPSI03 - 02 ***** O   K *****
+***** SCPSI03 - 03 ***** O   K *****
+***** SCPSI03 - 04 ***** O   K *****
+********** SCPSI03 TEST  END  **********
+
+********** SCPSI04 TEST START **********
+***** SCPSI04 - 01 ***** O   K *****
+********** SCPSI04 TEST  END  **********
+
+********** SCPSI05 TEST START **********
+***** SCPSI05 - 01 ***** O   K *****
+********** SCPSI05 TEST  END  **********
+
+********** SCPSI06 TEST START **********
+***** SCPSI06 - 01 ***** O   K *****
+***** SCPSI06 - 02 ***** O   K *****
+********** SCPSI06 TEST  END  **********
+
+********** SCPSI07 TEST START **********
+***** SCPSI07 - 01 ***** O   K *****
+********** SCPSI07 TEST  END  **********
+
+********** SCPSI08 TEST START **********
+***** SCPSI08 - 01 ***** O   K *****
+***** SCPSI08 - 02 ***** O   K *****
+********** SCPSI08 TEST  END  **********
+
+********** SCPSI11 TEST START **********
+***** SCPSI11 - 01 ***** O   K *****
+***** SCPSI11 - 02 ***** O   K *****
+***** SCPSI11 - 03 ***** O   K *****
+********** SCPSI11 TEST  END  **********
+
+********** SCPSI12 TEST START **********
+***** SCPSI12 - 01 ***** O   K *****
+***** SCPSI12 - 02 ***** O   K *****
+***** SCPSI12 - 03 ***** O   K *****
+***** SCPSI12 - 04 ***** O   K *****
+********** SCPSI12 TEST  END  **********
+
+*** SCPVA01 TEST START ***
+ ** SIGNED CHAR TEST OK            **
+ ** UNSIGNED CHAR TEST OK          **
+ ** SIGNED SHORT INT TEST OK       **
+ ** UNSIGNED SHORT INT TEST OK     **
+ ** SIGNED LONG INT TEST OK        **
+ ** UNSIGNED LOND INT TEST OK      **
+ ** SIGNED LONG LONG INT TEST OK   **
+ ** UNSIGNED LONG LONG INT TEST OK **
+ ** FLOAT TEST OK                  **
+ ** DOUBLE TEST OK                 **
+ ** LONG DOUBLE TEST OK            **
+ ** CHAR*N TEST OK                 **
+ ** LONG CHAR TEST OK              **
+*** SCPVA01 TEST END   ***
+
+***  *** TEST FOR COMMON *** ENDED ***
+exit 0

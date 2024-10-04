@@ -1,0 +1,77 @@
+SCQIH11  PASS.
+**dpmk2011-(1)** OK
+**dpmk2011-(2)** OK
+**dpmk2011-(3)** OK
+**dpmk2011-(4)** OK
+**dpmk2011-(5)** OK
+**dpmk2011-(6)** OK
+**dpmk2011-(7)** OK
+**dpmk2011-(8)** OK
+**dpmk2011-(9)** OK
+**dpmk2011-(10)** OK
+**dpmk2011-(11)** OK
+**kaimk2011-(1)** OK
+**kaimk2011-(2)** OK
+**kaimk2011-(3)** OK
+**kaimk2011-(4)** OK
+**kaimk2011-(5)** OK
+**kaimk2011-(6)** OK
+**kaimk2011-(7)** OK
+ *** MPTEST11 START *** 
+ *** OK          *** 
+ *** ENDED          *** 
+**cdpm0011-(01)** OK
+**cdpm0011-(02)** OK
+**cdpm0011-(03)** OK
+**cdpm0011-(04)** OK
+**cdpm0011-(05)** OK
+**cdpm0011-(06)** OK
+**cdpm0011-(07)** OK
+**cdpm0011-(08)** OK
+**cdpm0011-(09)** OK
+**cdpm0011-(10)** OK
+**cdpm0011-(11)** OK
+**cdpm0011-(12)** OK
+**cdpm0011-(13)** OK
+**cdpm0011-(14)** OK
+**cdpm0011-(15)** OK
+**cdpm0011-(16)** OK
+**cdpm0011-(17)** OK
+**cdpm0011-(18)** OK
+**** SCOCVA11 - 01 * O    K ****
+**** SCOCVA11 - 02 * O    K ****
+**** SCOCVA11 - 03 * O    K ****
+**** SCOCVA11 - 04 * O    K ****
+**** SCOCVA11 - 05 * O    K ****
+**** SCOCVA11 - 06 * O    K ****
+**** SCOCVA11 - 07 * O    K ****
+**** SCOCVA11 - 08 * O    K ****
+**** SCOCVA11 - 09 * O    K ****
+**** SCOCVA11 - 10 * O    K ****
+ OKOKOK 
+ SCRCV11 PASS 
+** comk3111(1) ** OK
+** comk3111(2) ** OK
+** comk3111(3) ** OK
+** comk3111(4) ** OK
+** comk3111(5) ** OK
+** comk3111(6) ** OK
+** comk3111(7) ** OK
+** comk3111(8) ** OK
+** comk3111(9) ** OK
+** comk3111(10) ** OK
+** comk3111(11) ** OK
+** comk3111(12) ** OK
+** comk3111(13) ** OK
+** comk3111(14) ** OK
+** comk3111(15) ** OK
+** comk3111(16) ** OK
+** comk3111(17) ** OK
+** comk3111(18) ** OK
+** comk3111(19) ** OK
+** comk3111(20) ** OK
+** comk3111(21) ** OK
+** comk3111(22) ** OK
+SUM = 1019110
+*** sum OK ***
+exit 0
