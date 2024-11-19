@@ -60,12 +60,14 @@ mkdir llvm-test-suite-build
 cd llvm-test-suite-build
 cmake -GNinja \
       -DCMAKE_C_COMPILER=<path to llvm build>/bin/clang \
-      -DCMAKE_Fortran_COMPILER=<path to llvm build>/bin/flang-new \
+      -DCMAKE_Fortran_COMPILER=<path to llvm build>/bin/flang \
       -DTEST_SUITE_SUBDIRS=Fujitsu \
       -DTEST_SUITE_FORTRAN=ON \
       -C../llvm-test-suite/cmake/caches/O0.cmake \
       ../llvm-test-suite
 ```
+
+Note that the Flang command `flang-new` is renamed to `flang` by the commit [06eb10dadf](https://github.com/llvm/llvm-project/commit/06eb10dadfaeaadc5d0d95d38bea4bfb5253e077) (2024-10-10). If you use an older Flang, you need to specify `flang-new`.
 
 Compilation
 -----------
@@ -83,10 +85,14 @@ Test
 
 Run tests using lit in the directory where CMake is executed.
 
+The Fujitsu Compiler Test Suite includes OpenMP tests. You may need to set `LD_LIBRARY_PATH` to point a directory where `libomp.so` exists.
+
 By default, lit runs tests in parallel using all available CPUs. There may be tests which consume large memory and it may result in an out-of-memory error. In such a case, you may want to specify `-j NUMBER` option to reduce risk of out-of-memory.
 
-Tests which failed to compile are reported as `Executable Missing`.
+Tests which failed to compile are reported as `Executable Missing` on the standard output and as `NOEXE` in the result JSON file.
 
 ```shell
+LD_LIBRARY_PATH=<path to llvm install>/lib/<target triple>:<path to llvm install>/lib
+export LD_LIBRARY_PATH
 lit -o results.json .
 ```
