@@ -33,7 +33,9 @@ function(llvm_singlesource_compile_only_directory)
   if(DEFINED Source)
     set(sources ${Source})
   else()
-    file(GLOB sources *.c *.cpp *.cc *.f *.F *.f90 *.F90 *.f03 *.F03 *.f08 *.F08)
+    file(GLOB sources
+         *.c *.cpp *.cc
+         *.for *.FOR *.fpp *.FPP *.[fF] *.[fF]90 *.[fF]95 *.[fF]03 *.[fF]08)
   endif()
   foreach(source ${sources})
     basename(name ${source})
@@ -60,7 +62,9 @@ function(llvm_singlesource_compile_only_file filename)
   if(DEFINED Source)
     set(sources ${Source})
   else()
-    file(GLOB sources *.c *.cpp *.cc *.f *.F *.f90 *.F90 *.f03 *.F03 *.f08 *.F08)
+    file(GLOB sources
+         *.c *.cpp *.cc
+         *.for *.FOR *.fpp *.FPP *.[fF] *.[fF]90 *.[fF]95 *.[fF]03 *.[fF]08)
   endif()
   foreach(source ${sources})
     get_filename_component(fname ${source} NAME)
