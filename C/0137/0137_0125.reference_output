@@ -1,0 +1,11 @@
+sub = 0
+sub = 3600
+sub = 4400
+sub = 5200
+sub = 6000
+sub = 6800
+sub = 7600
+sub = 8400
+sub = 9200
+sub = 10000
+exit 0

@@ -1,0 +1,26 @@
+integer var
+do i=1,var
+end do
+do i=1,var
+end do
+do i=1,var
+end do
+do i=1,var
+end do
+do i=1,var
+end do
+do i=1,var
+end do
+do i=1,var
+end do
+do i=1,var
+end do
+do i=1,var
+end do
+do i=1,var
+end do
+do i=1,var
+end do
+do i=1,var
+end do
+end

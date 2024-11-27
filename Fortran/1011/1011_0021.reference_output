@@ -1,0 +1,5 @@
+ ----- test --
+       parallel
+       do reduction(+:ca,cb) -----
+ OK
+exit 0

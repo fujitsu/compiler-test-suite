@@ -1,0 +1,15 @@
+aa =   0 aa =   1 aa =   2 aa =   3 aa =   4 aa =   5 aa =   6 aa =   7 aa =   8 aa =   9 
+bb =   1 bb =   2 bb =   3 bb =   4 bb =   5 bb =   6 bb =   7 bb =   8 bb =   9 bb =  10 
+
+aa =  11 aa =  34 aa =  67 aa = 109 aa = 159 aa = 216 aa = 279 aa = 347 aa = 419 aa = 494 
+bb =   2 bb =   4 bb =   6 bb =   8 bb =  10 bb =  12 bb =  14 bb =  16 bb =  18 bb =  65 
+
+aa =  66 aa =  66 aa =  66 aa =  66 aa =  66 aa =  66 aa =  66 aa =  66 aa =  66 aa =  66 
+bb =   2 bb =   4 bb =   6 bb =   8 bb =  10 bb =  12 bb =  14 bb =  16 bb =  18 bb =  65 
+
+aa =  66 aa =  66 aa =  66 aa =  66 aa =  66 aa =  66 aa =  66 aa =  66 aa =  66 aa =  66 
+bb =   2 bb =   4 bb =   6 bb =   8 bb =  10 bb =  12 bb =  14 bb =  16 bb =  18 bb =  65 
+
+val = 10
+val = 4030
+exit 0

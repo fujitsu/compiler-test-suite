@@ -1,0 +1,4 @@
+ Need not to confirm optimization. Result check is enough.
+ mask op. is "or" : no optimize
+  OK
+exit 0

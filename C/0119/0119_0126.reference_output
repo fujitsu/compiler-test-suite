@@ -1,0 +1,21 @@
+* TP=SCPIN01 ENTERED *
+ ** SCPIN01.01 OK **
+ ** SCPIN01.02 OK **
+ ** SCPIN01.03 OK **
+ ** SCPIN01.04 OK **
+ ** SCPIN01.05 OK **
+ ** SCPIN01.06 OK **
+ ** SCPIN01.07 OK **
+ ** SCPIN01.08 OK **
+ ** SCPIN01.09 OK **
+ ** SCPIN01.10 OK **
+ ** SCPIN01.11 OK **
+ ** SCPIN01.12 OK **
+ ** SCPIN01.13 OK **
+ ** SCPIN01.14 OK **
+ ** SCPIN01.15 OK **
+ ** SCPIN01.16 OK **
+ ** SCPIN01.17 OK **
+  * SCPIN01 ENDED *
+
+exit 0

@@ -1,0 +1,3 @@
+REAL B (2)
+EQUIVALENCE (A, B (2))
+END

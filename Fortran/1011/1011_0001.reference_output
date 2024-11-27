@@ -1,0 +1,5 @@
+ ----- test --
+       parallel
+       do private(ic,cc32,cc16,cc8) ------
+ OK
+exit 0

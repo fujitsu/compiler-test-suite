@@ -1,0 +1,34 @@
+san1[0] = 0 , ans1[0] = 0
+san1[1] = 0 , ans1[1] = 0
+san1[2] = 2 , ans1[2] = 2
+san1[3] = 4 , ans1[3] = 4
+san1[4] = 8 , ans1[4] = 8
+san1[5] = 12 , ans1[5] = 12
+san1[6] = 18 , ans1[6] = 18
+san1[7] = 24 , ans1[7] = 24
+san1[8] = 32 , ans1[8] = 32
+san1[9] = 40 , ans1[9] = 40
+san2[0] = 0 , ans2[0] = 0
+san2[1] = 0 , ans2[1] = 0
+san2[2] = 2 , ans2[2] = 2
+san2[3] = 4 , ans2[3] = 4
+san2[4] = 8 , ans2[4] = 8
+san2[5] = 12 , ans2[5] = 12
+san2[6] = 18 , ans2[6] = 18
+san2[7] = 24 , ans2[7] = 24
+san2[8] = 32 , ans2[8] = 32
+san2[9] = 40 , ans2[9] = 40
+san3[0] = 0 , ans3[0] = 0
+san3[1] = 0 , ans3[1] = 0
+san3[2] = 2 , ans3[2] = 2
+san3[3] = 4 , ans3[3] = 4
+san3[4] = 8 , ans3[4] = 8
+san3[5] = 12 , ans3[5] = 12
+san3[6] = 18 , ans3[6] = 18
+san3[7] = 24 , ans3[7] = 24
+san3[8] = 32 , ans3[8] = 32
+san3[9] = 40 , ans3[9] = 40
+i = 0 <--- OK
+aaa[0].character1 = a <----- OK
+aaa[1].character1 = b <----- OK
+exit 0

@@ -1,0 +1,6 @@
+  test start
+ ***** no.1 => ok *****
+ ***** no.2 => ok *****
+ ***** no.3 => ok *****
+  test ended
+exit 0

@@ -1,0 +1,9 @@
+main1 ()
+res: OK
+	1
+main2 ()
+res: OK
+	2
+res: OK
+	1
+exit 0

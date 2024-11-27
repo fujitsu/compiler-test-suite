@@ -1,0 +1,9 @@
+********** 12 TEST START **********
+***** 12 - 01 < PRINT  abcdef ---> OK > *****
+***** RESULT: abcdef 
+***** 12 - 02 < PRINT ABCDEF ---> OK > *****
+***** RESULT: ABCDEF 
+***** 12 - 03 < PRINT TEST   ---> OK > *****
+***** RESULT: TEST 
+********** 12 TEST  END  **********
+exit 0

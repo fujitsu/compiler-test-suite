@@ -1,0 +1,7 @@
+
+   PROGRAM MAIN
+   INTEGER I
+   WRITE(6,*) "OK"
+   STOP
+   END
+

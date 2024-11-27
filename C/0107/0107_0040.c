@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+long *array[1000] ;
+long  target[1000];
+
+void test(void)
+{
+  int i;
+  for(i=0;i<1000;i++) {
+     array[i] = &target[i];
+  }
+}
+
+int main()
+{
+  test();
+
+  {
+    int i;
+    for(i=0;i<1000;i++) {
+      if (array[i] != &target[i]) {
+	puts("NG");
+	abort();
+      }
+    }
+  }
+  puts("OK");
+  return 0;
+}

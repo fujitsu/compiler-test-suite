@@ -14,21 +14,21 @@ class(*),pointer :: obj,oo
 allocate(bt:: obj)
 allocate(at:: oo)
 block
-type,extends(at) :: bt
+type,extends(at) :: bt1
  integer :: j
 end type
 
 class(*),allocatable :: bbj1,bbj
 
-allocate(bt:: bbj,bbj1)
+allocate(bt1:: bbj,bbj1)
 block
-type,extends(at) :: bt
+type,extends(at) :: bt2
  integer :: j
 end type
 
 class(*),allocatable :: bbj
 
-allocate(bt:: bbj)
+allocate(bt2:: bbj)
 
 if(extends_type_of(bbj,obj) .neqv. .true. ) print*, 'pass'
 if(extends_type_of(bbj,oo) .neqv. .true. ) print*, 103

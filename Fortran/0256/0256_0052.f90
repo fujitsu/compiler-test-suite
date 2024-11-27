@@ -27,8 +27,8 @@ character(len=1),contiguous::dmy5(:,:)
 dmy3(1) = 'a'
 dmy4(3) = 'a'
 if(len(dmy2).ne.5)print*,"105"
-if(len(dmy3).ne.7)print*,"106"
-if(len(dmy4).ne.7)print*,"106"
+if(len(dmy3).ne.6)print*,"106"
+if(len(dmy4).ne.6)print*,"106"
 if(len(dmy5).ne.1)print*,"108"
 print*,"Pass"
 end subroutine

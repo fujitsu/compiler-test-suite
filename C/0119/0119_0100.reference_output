@@ -1,0 +1,11 @@
+********** SCPII17 TEST START **********
+ V1 ---> O K
+ V2 ---> O K
+ F1 ---> O K
+ F1 ---> O K
+ F1 ---> O K
+ F2 ---> O K
+ F2 ---> O K
+ F2 ---> O K
+********** SCPII17 TEST  END  **********
+exit 0

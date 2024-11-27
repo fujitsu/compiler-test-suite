@@ -1,0 +1,9 @@
+  main -> ptr1(2,3,2,3,2,3)%ix0= 50
+  main -> ii= 10
+  main -> ptr2(2,2)%ix1= 5
+  main -> t1(2,2,2)%ix0= 100
+  sub -> d1(2,3,2,3,2,3)%ix0= 50
+  sub -> d2= 10
+  sub -> d3(2,2)%ix1= 5
+  sub -> d4(2,2,2)%ix0= 100
+exit 0

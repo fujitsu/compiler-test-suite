@@ -1,0 +1,20 @@
+   SUBROUTINE A$$PENC$$(KOLORS,NPENS)
+   DIMENSION KOLORS(2,NPENS)
+   COMMON /A$$$$$$$$/ JNK(2,16),IDASH,DPCY
+   RETURN
+   ENTRY PEN(IPEN)
+   RETURN
+   ENTRY PENSET(KOLORS,NPENS)
+   RETURN
+   ENTRY A$$PENT$$(PT)
+   RETURN
+   ENTRY A$$DASH$$(IDS)
+   RETURN
+   END
+   DIMENSION KOLORS(2,3)
+   call A$$PENC$$(KOLORS,3)
+   call PEN(4)
+   call PENSET(KOLORS,3)
+   call A$$PENT$$(1.)
+   print *,'pass'
+   end

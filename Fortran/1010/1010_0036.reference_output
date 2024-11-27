@@ -1,0 +1,5 @@
+ -----test  --
+       threadprivate(/com1/)
+       parallel copyin(/com1/) -----
+ OK
+exit 0

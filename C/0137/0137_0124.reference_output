@@ -1,0 +1,11 @@
+sub = 19
+sub = 36
+sub = 44
+sub = 52
+sub = 60
+sub = 68
+sub = 76
+sub = 84
+sub = 92
+sub = 100
+exit 0

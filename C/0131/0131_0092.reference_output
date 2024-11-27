@@ -1,0 +1,11 @@
+tag[0].b => 0 
+tag[1].b => 2 
+tag[2].b => 4 
+tag[3].b => 6 
+tag[4].b => 8 
+tag[5].b => 10 
+tag[6].b => 12 
+tag[7].b => 14 
+tag[8].b => 16 
+tag[9].b => 18 
+exit 0

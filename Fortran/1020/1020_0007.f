@@ -1,0 +1,11 @@
+SUBROUTINE BEST (P, A)
+   REAL, POINTER :: P
+   REAL, TARGET  :: A (:)
+   I = 100
+   P => A (I)
+   RETURN
+END
+
+REAL, POINTER :: PBEST
+REAL, TARGET  :: B (10000)
+END

@@ -1,0 +1,126 @@
+***** M3EDCL08 **  ** START *****
+***** M3EDCL08 - 01 ***** OK *****
+***** M3EDCL08 - 02 ***** OK *****
+***** M3EDCL08 **  **  END  *****
+***** M3EDCL09 **  ** START *****
+***** M3EDCL09 - 01 ***** OK *****
+***** M3EDCL09 - 02 ***** OK *****
+***** M3EDCL09 - 03 ***** OK *****
+***** M3EDCL09 - 04 ***** OK *****
+***** M3EDCL09 **  **  END  *****
+*** M3EDC005 **** STARTED ***
+ *** M3EDC005 TEST-01 OK ***
+ *** M3EDC005 TEST-02 OK ***
+ *** M3EDC005 TEST-03 OK ***
+ *** M3EDC005 TEST-04 OK ***
+ *** M3EDC005 TEST-05 OK ***
+ *** M3EDC005 TEST-06 OK ***
+*** M3EDC005 **** ENDED ***
+*** M3EDC006 **  ** STARTED ***
+ *** M3EDC006 TEST-01 OK ***
+ *** M3EDC006 TEST-02 OK ***
+ *** M3EDC006 TEST-03 OK ***
+ *** M3EDC006 TEST-04 OK ***
+ *** M3EDC006 TEST-05 OK ***
+ *** M3EDC006 TEST-06 OK ***
+*** M3EDC006 **   ** ENDED ***
+*** M3EDC007 **  ** STARTED ***
+ *** M3EDC007 TEST-01 OK ***
+ *** M3EDC007 TEST-02 OK ***
+ *** M3EDC007 TEST-03 OK ***
+ *** M3EDC007 TEST-04 OK ***
+ *** M3EDC007 TEST-05 OK ***
+ *** M3EDC007 TEST-06 OK ***
+*** M3EDC007 **  ** ENDED ***
+******* MFNC011 IB05 CHECK     OK ****
+******* MFNC01 IA01            OK ****
+******* MFNC01 IA02 REAL ARGUM OK ****
+******* MFNC01 IA03 REAL ARGUM OK ****
+******* MFNC01 IA05 REAL ARGUM OK ****
+******* MFNC021 CB05 CHECK     OK ****
+******* MFNC02 CA01            OK ****
+******* MFNC02 CA02 REAL ARGUM OK ****
+******* MFNC02 CA03 REAL ARGUM OK ****
+******* MFNC02 CA05 REAL ARGUM OK ****
+******* MFNC031 SB05 CHECK     OK ****
+******* MFNC03 SA01            OK ****
+******* MFNC03 SA02 REAL ARGUM OK ****
+******* MFNC01 SA03 REAL ARGUM OK ****
+******* MFNC01 SA05 REAL ARGUM OK ****
+******* MFNC041 UIB05 CHECK    OK ****
+******* MFNC04 UIA01           OK ****
+******* MFNC04 UIA02 REAL ARGUM OK ****
+******* MFNC04 UIA03 REAL ARGUM OK ****
+******* MFNC04 UIA05 REAL ARGUM OK ****
+******* MFNC051 UCB05 CHECK    OK ****
+******* MFNC05 UCA01           OK ****
+******* MFNC05 UCA02 REAL ARGUM OK ****
+******* MFNC05 UCA03 REAL ARGUM OK ****
+******* MFNC05 UCA05 REAL ARGUM OK ****
+******* MFNC061 USB05 CHECK    OK ****
+******* MFNC06 USA01           OK ****
+******* MFNC06 USA02 REAL ARGUM OK ****
+******* MFNC06 USA03 REAL ARGUM OK ****
+******* MFNC06 USA05 REAL ARGUM OK ****
+******* MFNC071 FB05 CHECK     OK ****
+******* MFNC07 FA01            OK ****
+******* MFNC07 FA02 REAL ARGUM OK ****
+******* MFNC07 FA03 REAL ARGUM OK ****
+******* MFNC07 FA05 REAL ARGUM OK ****
+******* MFNC081 DB05 CHECK     OK ****
+******* MFNC08 DA01            OK ****
+******* MFNC08 DA02 REAL ARGUM OK ****
+******* MFNC08 DA03 REAL ARGUM OK ****
+******* MFNC08 DA05 REAL ARGUM OK ****
+*** M3EDC008 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC008 TEST-01 OK ***
+ *** M3EDC008 TEST-02 OK ***
+ *** M3EDC008 TEST-03 OK ***
+ *** M3EDC008 TEST-04 OK ***
+ *** M3EDC008 TEST-05 OK ***
+ *** M3EDC008 TEST-06 OK ***
+*** M3EDC008 TEST ENDED ***
+*** M3EDC011 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC011 TEST-01 OK ***
+ *** M3EDC011 TEST-02 OK ***
+ *** M3EDC011 TEST-03 OK ***
+ *** M3EDC011 TEST-04 OK ***
+ *** M3EDC011 TEST-05 OK ***
+ *** M3EDC011 TEST-06 OK ***
+*** M3EDC011 TEST ENDED ***
+*** M3EDC012 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC012 TEST-01 OK ***
+ *** M3EDC012 TEST-02 OK ***
+ *** M3EDC012 TEST-03 OK ***
+ *** M3EDC012 TEST-04 OK ***
+ *** M3EDC012 TEST-05 OK ***
+ *** M3EDC012 TEST-06 OK ***
+*** M3EDC012 TEST ENDED ***
+********** SCORT01 TEST STARTED **********
+********** RETURN OK **********
+********** SCORT01 TEST ENDED **********
+*** M3EDC013 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC013 TEST-01 OK ***
+ *** M3EDC013 TEST-02 OK ***
+ *** M3EDC013 TEST-03 OK ***
+ *** M3EDC013 TEST-04 OK ***
+ *** M3EDC013 TEST-05 OK ***
+ *** M3EDC013 TEST-06 OK ***
+*** M3EDC013 TEST ENDED ***
+*** M3EDC014 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC014 TEST-01 OK ***
+ *** M3EDC014 TEST-02 OK ***
+ *** M3EDC014 TEST-03 OK ***
+ *** M3EDC014 TEST-04 OK ***
+ *** M3EDC014 TEST-05 OK ***
+ *** M3EDC014 TEST-06 OK ***
+*** M3EDC014 TEST ENDED ***
+*** M3EDC015 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC015 TEST-01 OK ***
+ *** M3EDC015 TEST-02 OK ***
+ *** M3EDC015 TEST-03 OK ***
+ *** M3EDC015 TEST-04 OK ***
+ *** M3EDC015 TEST-05 OK ***
+ *** M3EDC015 TEST-06 OK ***
+*** M3EDC015 TEST ENDED ***
+exit 0

@@ -1,0 +1,19 @@
+REAL*8       R
+INTEGER*4 S
+CALL FOO()
+rewind 1
+read (1,*) R,S
+if (abs(R-3.5)>0.0001)print *,'error'
+if (abs(S-3)>0)print *,'error'
+print *,'pass'
+END
+SUBROUTINE FOO ()
+INTEGER*4 RECORD(128)
+SAVE
+REAL*8       RVAL
+INTEGER*4 STTIME
+EQUIVALENCE (RECORD(2), STTIME)
+RVAL=3.5
+STTIME=RVAL
+WRITE(1,*) RVAL,STTIME
+END SUBROUTINE

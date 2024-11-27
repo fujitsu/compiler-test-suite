@@ -1,0 +1,3 @@
+-----  -- parallel do firstprivate(ty1) ------
+OK
+exit 0

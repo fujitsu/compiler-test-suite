@@ -1,0 +1,11 @@
+ tag[0].t => 0 
+ tag[1].t => 1 
+ tag[2].t => 2 
+ tag[3].t => 3 
+ tag[4].t => 4 
+ tag[5].t => 5 
+ tag[6].t => 6 
+ tag[7].t => 7 
+ tag[8].t => 8 
+ tag[9].t => 9 
+exit 0

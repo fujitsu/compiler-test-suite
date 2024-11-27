@@ -1,0 +1,3 @@
+-----  -- parallel do reduction(|:ia) -----
+OK
+exit 0

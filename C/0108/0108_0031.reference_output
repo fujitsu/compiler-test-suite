@@ -1,0 +1,5 @@
+main start
+sub start
+jump: 123
+main end
+exit 0

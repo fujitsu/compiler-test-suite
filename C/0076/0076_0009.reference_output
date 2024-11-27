@@ -1,0 +1,7 @@
+PASS:sin
+PASS:cos
+PASS:log
+PASS:log10
+PASS:exp
+PASS:sqrt
+exit 0

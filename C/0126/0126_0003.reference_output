@@ -1,0 +1,35 @@
+ test1-1 ax= 0  bx= 5 
+ test1-2 cx= 19  bx= 19 
+ test1-3 dx= 1  ix= 1 
+ test1-4 ex= 20  ix= 1 
+ test1-5 ox= 0  ix= 1 
+ test1-6 px= 19  ix= 1 
+ test2-1 cx= 1  bx= 1 
+ test2-2 ax= 4  bx= 19 
+ test2-3 fx= 1  ix= 18 
+ test2-4 dx= 19  ix= 19 
+ test2-5 qx= 0  ix= 15 
+ test2-6 ox= 18  ix= 19 
+ find other rx= 19  ix= 19 
+ sum1-1 ax= 59  rx= 380  dx= 399  ox= 361 
+ sum1-2 bx= 146  sx= 230  ex= 178  px= 160 
+ a= 1  d= 40  o=  18  r= 19 
+ a= 5  d= 97  o=  54  r= 55 
+ a= 5  d= 115  o=  105  r= 106 
+ a= 9  d= 149  o=  169  r= 170 
+ a= 19  d= 197  o=  169  r= 170 
+ a= 19  d= 212  o=  183  r= 184 
+ a= 26  d= 240  o=  209  r= 210 
+ a= 42  d= 279  o=  245  r= 246 
+ a= 42  d= 291  o=  289  r= 290 
+ a= 52  d= 313  o=  289  r= 290 
+ a= 74  d= 343  o=  298  r= 299 
+ a= 74  d= 352  o=  314  r= 315 
+ a= 87  d= 368  o=  335  r= 336 
+ a= 115  d= 389  o=  359  r= 360 
+ a= 115  d= 395  o=  359  r= 360 
+ a= 131  d= 405  o=  363  r= 364 
+ a= 165  d= 417  o=  369  r= 370 
+ a= 165  d= 420  o=  375  r= 376 
+ a= 184  d= 424  o=  379  r= 380 
+exit 0

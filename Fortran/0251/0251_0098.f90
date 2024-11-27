@@ -19,18 +19,18 @@ import ty
 class(ty) :: dd
 end subroutine
 end interface
-type,extends(ty) :: ty2
+type,extends(ty) :: ty3
 integer :: ii2
 end type
 
-allocate(ty2::obj)
+allocate(ty3::obj)
 
 block
-type,extends(ty) :: ty2
+type,extends(ty) :: ty4
 integer :: ii2
 end type
 
-allocate(ty2::obj2)
+allocate(ty4::obj2)
 
 if(extends_type_of(obj2,obj_parent).eqv. .false.) then
 print*,'pass'

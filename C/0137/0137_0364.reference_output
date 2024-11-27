@@ -1,0 +1,25 @@
+**dpmk2024-(01)** OK x.a1=1
+**dpmk2024-(02)** OK x.a2=3
+**dpmk2024-(03)** OK x.a3=7
+**dpmk2024-(04)** OK x.a4=f
+**dpmk2024-(05)** OK x.a5=1f
+**dpmk2024-(06)** OK x.a6=3f
+**dpmk2024-(07)** OK x.a7=7f
+**dpmk2024-(08)** OK x.a8=ff
+**dpmk2024-(09)** OK x.a1=0
+**dpmk2024-(10)** OK x.a2=0
+**dpmk2024-(11)** OK x.a3=0
+**dpmk2024-(12)** OK x.a4=0
+**dpmk2024-(13)** OK x.a5=0
+**dpmk2024-(14)** OK x.a6=0
+**dpmk2024-(15)** OK x.a7=0
+**dpmk2024-(16)** OK x.a8=0
+**dpmk2024-(17)** OK x.a1=0
+**dpmk2024-(18)** OK x.a2=0
+**dpmk2024-(19)** OK x.a3=0
+**dpmk2024-(20)** OK x.a4=0
+**dpmk2024-(21)** OK x.a5=0
+**dpmk2024-(22)** OK x.a6=0
+**dpmk2024-(23)** OK x.a7=0
+**dpmk2024-(24)** OK x.a8=0
+exit 0

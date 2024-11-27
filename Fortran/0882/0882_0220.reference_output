@@ -1,0 +1,3 @@
+ ALLOCATION success to ptr
+ HELLO
+exit 0

@@ -1,0 +1,72 @@
+**dpmk2031-(1)** OK x.a1=0000000000000001
+**dpmk2031-(2)** OK x.a2=0000000000000003
+**dpmk2031-(3)** OK x.a3=0000000000000007
+**dpmk2031-(4)** OK x.a4=000000000000000f
+**dpmk2031-(5)** OK x.a5=000000000000001f
+**dpmk2031-(6)** OK x.a6=000000000000003f
+**dpmk2031-(7)** OK x.a7=000000000000007f
+**dpmk2031-(8)** OK x.a8=00000000000000ff
+comk3003-(01) ok
+comk3003-(02) ok
+********** SCPII12 TEST START **********
+ X  --> O K
+ Y  --> O K
+ Y2 --> O K
+ Z  --> O K
+ W  --> O K
+ Q  --> O K
+ Q2 --> O K
+ Q3 --> O K
+ S  --> O K
+ T  --> O K
+ S2 --> O K
+ T2 --> O K
+********** SCPII12 TEST  END  **********
+***** ok *****
+***** ok *****
+***** ok *****
+***** ok *****
+***** ok *****
+***** ok *****
+***** ok *****
+***** ok *****
+***** ok *****
+***** ok *****
+***** ok *****
+***** ok *****
+***** end *****
+** kaimk2048 (1) ** ok
+** kaimk2048 (2) ** ok
+** kaimk2048 (3) ** ok
+** kaimk2048 (4) ** ok
+** kaimk2048 (5) ** ok
+** kaimk2048 (6) ** ok
+** kaimk2048 (7) ** ok
+** kaimk2048 (8) ** ok
+** kaimk2048 (9) ** ok
+** kaimk2048 (10) ** ok
+** kaimk2048 (11) ** ok
+** kaimk2048 (12) ** ok
+** kaimk2048 (13) ** ok
+** kaimk2048 (14) ** ok
+** kaimk2048 (15) ** ok
+** kaimk2048 (16) ** ok
+** kaimk2048 (17) ** ok
+** kaimk2048 (18) ** ok
+M2K12905 Begin
+test01--long double <-> unsigned short : OK
+test02--char <-> unsigned short : OK
+test03--double <-> unsigned short : OK
+test04--unsigned char <-> unsigned short : OK
+test05--float <-> unsigned short : OK
+test06--short <-> unsigned short : OK
+test07--unsigned long long <-> unsigned short : OK
+test08--unsigned short <-> unsigned short : OK
+test09--long long <-> unsigned short : OK
+test10--short int <-> unsigned short : OK
+test11--unsigned int <-> unsigned short : OK
+M2K12905 End
+---- scpa002 start ---- 
+   ***  ok  *** 
+---- scpa002  end  ---- 
+exit 0

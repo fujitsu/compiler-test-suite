@@ -1,0 +1,97 @@
+*** 
+*** FUNC01 ** CT TEST FOR X_TREEMK ** STARTED ***
+*** FUNC01-01 *** O K ***
+*** FUNC01-02 *** O K ***
+*** FUNC01-03 *** O K ***
+*** FUNC01-04 *** O K ***
+*** FUNC01-05 *** O K ***
+*** FUNC01-06 *** O K ***
+*** FUNC01-07 *** O K ***
+*** FUNC01-08 *** O K ***
+*** FUNC01-09 *** O K ***
+*** FUNC01-10 *** O K ***
+*** FUNC01-11 *** O K ***
+*** FUNC01-12 *** O K ***
+*** FUNC01 *** CT TEST FOR X_TREEMK *** ENDED ***
+*** FUNC02 *** CT TEST FOR MPTEST01 *** STARTED ***
+
+***** MPTEST01 START *****
+  in ''ii''
+  in ''f''
+  in ''f1''
+  ** OK **
+  in ''f1''
+  ** OK **
+***** MPTEST01 END *****
+*** FUNC02 *** CT TEST FOR MPTEST01 *** ENDED ***
+*** FUNC03 *** CT TEST FOR SCP0302 *** STARTED ***
+ok
+*** FUNC03 *** CT TEST FOR SCP0302 *** ENDED ***
+* FUNC04 *** CT TEST FOR X_TREEMK *** STARTED *
+*** FUNC04-01 *** O K ***
+*** FUNC04-02 *** O K ***
+*** FUNC04-03 *** O K ***
+*** FUNC04-04 *** O K ***
+*** FUNC04-05 *** O K ***
+*** FUNC04-06 *** O K ***
+*** FUNC04-07 *** O K ***
+*** FUNC04-08 *** O K ***
+*** FUNC04-09 *** O K ***
+*** FUNC04-10 *** O K ***
+*** M3ETRE02 *** CT TEST FOR X_TREEMK *** ENDED ***
+*** FUNC05 *** CT TEST FOR MPTEST02 *** STARTED ***
+start mptest02
+      mptest02 ok
+end   mptest02
+*** FUNC05 *** CT TEST FOR MPTEST02 *** ENDED ***
+*** FUNC06 *** CT TEST FOR SCP0303 *** STARTED ***
+ok
+*** FUNC06 *** CT TEST FOR SCP0303 *** ENDED ***
+* FUNC07 *** CT TEST FOR X_TREEMK *** STARTED *
+*** FUNC07-01 *** O K ***
+*** FUNC07-02 *** O K ***
+*** FUNC07-03 *** O K ***
+*** FUNC07-04 *** O K ***
+*** FUNC07-05 *** O K ***
+*** FUNC07-06 *** O K ***
+*** FUNC07-07 *** O K ***
+*** FUNC07-08 *** O K ***
+*** FUNC07-09 *** O K ***
+*** FUNC07-10 *** O K ***
+*** FUNC07 *** CT TEST FOR X_TREEMK *** ENDED ***
+*** FUNC08 *** CT TEST FOR MPTEST03 *** STARTED ***
+
+***** MPTEST03 START *****
+ ** OK *** t1.a = 0 *** 
+ ** OK *** t1.b = x *** 
+ ** OK *** t1.a = 1 *** 
+ ** OK *** t1.b = y *** 
+ ** OK *** t1.a = 2 *** 
+ ** OK *** t1.b = z *** 
+  ( t1a )  a=0, b=x
+  ( t1b )  a=1, b=y
+  ( t1c )  a=2, b=z
+***** MPTEST03 OK ***** 
+*** FUNC08 *** CT TEST FOR MPTEST03 *** ENDED ***
+*** FUNC09 *** CT TEST FOR SCPO304 *** STARTED ***
+ok
+*** FUNC09 *** CT TEST FOR SCPO304 *** ENDED ***
+*** FUNC10 *** CT TEST FOR X_TREEMK *** STARTED *
+*** FUNC10-01 *** O K ***
+*** FUNC10-02 *** O K ***
+*** FUNC10-03 *** O K ***
+*** FUNC10-04 *** O K ***
+*** FUNC10-05 *** O K ***
+*** FUNC10-06 *** O K ***
+*** FUNC10-07 *** O K ***
+*** FUNC10 *** CT TEST FOR X_TREEMK *** ENDED ***
+*** FUNC11 *** CT TEST FOR MPTEST04 *** STARTED ***
+
+***** MPTEST04 START *****
+***** MPTEST04 OK END *****
+*** FUNC11 *** CT TEST FOR MPTEST04 *** ENDED ***
+*** FUNC12 *** CT TEST FOR SCPPR01 *** STARTED ***
+ok
+*** FUNC12 *** CT TEST FOR SCPPR01 *** ENDED ***
+*** 
+exit 0

@@ -1,0 +1,11 @@
+ 033 trueratio_prediction test.
+ True ratio prediction can be done only for two functions.
+
+ First try for [0,1,2,....,10] and [10,9,8,....,0]
+Result  : -3 3 -10 -10 30 10
+Correct : -3 3 -10 -10 30 10
+ Second try for [0,1,2,....,10] and [0,1,2,....,10]
+Result  : 99 3 99 99 0 10
+Correct : 99 3 99 99 0 10
+ OK 
+exit 0

@@ -19,19 +19,19 @@ type(tt) :: check
 class(tt),allocatable :: ii2
 allocate(tt2::ii2)
 block
-type,extends(tt) :: tt2
+type,extends(tt) :: tt3
  integer :: jj=3
 end type
 
 class(tt),pointer :: ii,ii22
-type(tt2),target :: obj
+type(tt3),target :: obj
 ii=>obj
 
 select type(ii)
-type is(tt2)
+type is(tt3)
 allocate(ii22,source = ii)
 select type(ii22)
-type is(tt2)
+type is(tt3)
 if(ii22%jj==3) then
  print*,'pass'
 else

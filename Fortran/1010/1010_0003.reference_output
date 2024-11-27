@@ -1,0 +1,3 @@
+ ----- test -- parallel private(it,/com1/) ------
+ OK
+exit 0

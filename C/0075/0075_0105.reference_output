@@ -1,0 +1,9 @@
+ Begin
+The purpose of this program is to check the informationfor the sampler issued by the `optimized' compiler.
+So, you have to specify `-zcom=t',`-O' and '-S' options.
+And you have to check the asembler code by your eyeswhether each `call' instruction has its `line' infomation.
+If you don't need check information for sampler,please go this program and check `OK' or `NG'.
+
+OK
+ End
+exit 0

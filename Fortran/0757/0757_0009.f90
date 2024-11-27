@@ -1,0 +1,2 @@
+allocatable :: a[:]
+end

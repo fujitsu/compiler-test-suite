@@ -1,0 +1,18 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+	int i , j = 0 , a[10] ;
+	for(i=9 ; i>=0 ; i--)
+	{
+		a[i-1+1] = j ;
+		j++ ;
+	}
+	for(i=0 ; i<10 ; i++)
+	{
+		printf("a[%d] = %d \n",i,a[i]);
+	}
+	exit (0);
+}

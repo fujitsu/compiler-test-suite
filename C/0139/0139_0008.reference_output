@@ -1,0 +1,112 @@
+*************
+TEST01 --> OK 
+TEST02 --> OK 
+TEST03 --> OK 
+TEST04 --> OK 
+TEST05 --> OK 
+TEST06 --> OK 
+TEST07 --> OK 
+TEST08 --> OK 
+TEST09 --> OK 
+TEST10 --> OK 
+TEST11 --> OK 
+TEST12 --> OK 
+TEST13 --> OK 
+TEST14 --> OK 
+TEST15 --> OK 
+TEST16 --> OK 
+TEST17 --> OK 
+TEST18 --> OK 
+TEST19 --> OK 
+TEST20 --> OK 
+TEST21 --> OK 
+*** M3EDC111 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC111 TEST-01 OK ***
+ *** M3EDC111 TEST-02 OK ***
+ *** M3EDC111 TEST-03 OK ***
+ *** M3EDC111 TEST-04 OK ***
+ *** M3EDC111 TEST-05 OK ***
+ *** M3EDC111 TEST-06 OK ***
+ *** M3EDC111 TEST-07 OK ***
+ *** M3EDC111 TEST-08 OK ***
+*** M3EDC111 TEST ENDED ***
+*** M3EDC180 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC180 TEST-01 OK ***
+ *** M3EDC180 TEST-02 OK ***
+ *** M3EDC180 TEST-03 OK ***
+ *** M3EDC180 TEST-04 OK ***
+ *** M3EDC180 TEST-05 OK ***
+ *** M3EDC180 TEST-06 OK ***
+ *** M3EDC180 TEST-07 OK ***
+*** M3EDC180 TEST ENDED ***
+*** M3EDC133 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC133 TEST-01 OK ***
+ *** M3EDC133 TEST-02 OK ***
+ *** M3EDC133 TEST-03 OK ***
+ *** M3EDC133 TEST ENDED ***
+********** SCOPRL1 STARTED *********
+********** SCOPRL1 -01 OK **********
+********** SCOPRL1 -01.5 OK **********
+********** SCOPRL1 -02 OK **********
+********** SCOPRL1 ENDED **********
+*** M3EDC156 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC156 TEST-01 OK ***
+ *** M3EDC156 TEST-02 OK ***
+ *** M3EDC156 TEST-03 OK ***
+ *** M3EDC156 TEST-04 OK ***
+ *** M3EDC156 TEST-05 OK ***
+ *** M3EDC156 TEST-06 OK ***
+*** M3EDC156 TEST ENDED ***
+********** SCOHD01 STARTED **********
+********** SCOHD01 -01 OK **********
+********** SCOHD01 -02 OK **********
+********** SCOHD01 -04 OK **********
+********** SCOHD01 -05 OK **********
+********** SCOHD01 -06 OK **********
+********** SCOHD01 -07 OK **********
+********** SCOHD01 -08 OK **********
+********** SCOHD01 -09 OK **********
+********** SCOHD01 -10 OK **********
+********** SCOHD01 -11 OK **********
+********** SCOHD01  ENDED **********
+*** M3EDC143 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC143 TEST-01 OK ***
+ *** M3EDC143 TEST-02 OK ***
+ *** M3EDC143 TEST-03 OK ***
+ *** M3EDC143 TEST-04 OK ***
+ *** M3EDC143 TEST-05 OK ***
+ *** M3EDC143 TEST-06 OK ***
+ *** M3EDC143 TEST-07 OK ***
+ *** M3EDC143 TEST-08 OK ***
+*** M3EDC143 TEST ENDED ***
+*** M3EDC125 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC125 TEST-01 OK ***
+ *** M3EDC125 TEST-02 OK ***
+ *** M3EDC125 TEST-03 OK ***
+ *** M3EDC125 TEST-04 OK ***
+ *** M3EDC125 TEST-05 OK ***
+ *** M3EDC125 TEST-06 OK ***
+*** M3EDC125 TEST ENDED ***
+*** M3EDC170 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC170 TEST-01 OK ***
+ *** M3EDC170 TEST-02 OK ***
+ *** M3EDC170 TEST-03 OK ***
+ *** M3EDC170 TEST-04 OK ***
+ *** M3EDC170 TEST-05 OK ***
+ *** M3EDC170 TEST-06 OK ***
+ *** M3EDC170 TEST-07 OK ***
+*** M3EDC170 TEST ENDED ***
+M3MPRD04 START
+m3mprd01 ok
+m3mprd01 ok
+M3MPRD04 END  
+*** M3EDC163 ** MK3 TEST FOR DCL ** STARTED ***
+ *** M3EDC163 TEST-01 OK ***
+ *** M3EDC163 TEST-02 OK ***
+ *** M3EDC163 TEST-03 OK ***
+ *** M3EDC163 TEST-04 OK ***
+ *** M3EDC163 TEST-05 OK ***
+ *** M3EDC163 TEST-06 OK ***
+ *** M3EDC163 TEST-07 OK ***
+*** M3EDC163 TEST ENDED ***
+exit 0

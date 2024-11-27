@@ -1,0 +1,2 @@
+	1print *,'pass'
+	end

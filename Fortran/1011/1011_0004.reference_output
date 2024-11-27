@@ -1,0 +1,4 @@
+ ----- test --
+       parallel shared(ca) private(it) -----
+ OK
+exit 0

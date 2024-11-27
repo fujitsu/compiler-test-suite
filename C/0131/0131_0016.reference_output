@@ -1,0 +1,14 @@
+ main result-1 
+count1=0 count1=1 count1=2 count1=3 count1=4 count1=5 count1=6 count1=7 count1=8 count1=9 count1=10 count1=11 count1=12 count1=13 count1=14 count1=15 count1=16 count1=17 count1=18 count1=19 
+a1 =0 a1 =1 a1 =2 a1 =3 a1 =4 a1 =5 a1 =6 a1 =7 a1 =8 a1 =9 a1 =10 a1 =11 a1 =12 a1 =13 a1 =14 a1 =15 a1 =16 a1 =17 a1 =18 a1 =19 
+a2 =0 a2 =0 a2 =0 a2 =0 a2 =0 a2 =0 a2 =0 a2 =0 a2 =0 a2 =0 a2 =0 a2 =0 a2 =0 a2 =0 a2 =0 a2 =0 a2 =0 a2 =0 a2 =0 a2 =0 
+ ** sub1 result **
+o =42 o =42 o =42 o =42 o =42 o =42 o =42 o =42 o =42 o =42 o =42 o =42 o =42 o =42 o =42 o =42 o =42 o =42 o =42 o =42 
+p =21 p =20 p =19 p =18 p =17 p =16 p =15 p =14 p =13 p =12 p =11 p =10 p =9 p =8 p =7 p =6 p =5 p =4 p =3 p =2 
+ ** sub2 result **
+o =42 o =42 o =42 o =42 o =42 o =42 o =42 o =42 o =42 o =42 o =42 o =42 o =42 o =42 o =42 o =42 o =42 o =42 o =42 o =42 
+p =21 p =20 p =19 p =18 p =17 p =16 p =15 p =14 p =13 p =12 p =11 p =10 p =9 p =8 p =7 p =6 p =5 p =4 p =3 p =2 
+ ** sub3 result **
+q =42 q =42 q =42 q =42 q =42 q =42 q =42 q =42 q =42 q =42 q =42 q =42 q =42 q =42 q =42 q =42 q =42 q =42 q =42 q =42 
+r =21 r =20 r =19 r =18 r =17 r =16 r =15 r =14 r =13 r =12 r =11 r =10 r =9 r =8 r =7 r =6 r =5 r =4 r =3 r =2 
+exit 0

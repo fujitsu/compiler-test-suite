@@ -1,0 +1,13 @@
+* all variable  *
+-ok1-
+* exp3 constant(2)  *
+-ok2-
+* exp3 constant(1)  *
+-ok3-
+* exp2 constant  *
+-ok4-
+* exp1 constant  *
+-ok5-
+* all  constant  *
+-ok6-
+exit 0

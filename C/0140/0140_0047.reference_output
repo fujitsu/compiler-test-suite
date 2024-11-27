@@ -1,0 +1,5 @@
+sum = 40425
+***** LOOP1 OK *****
+***** LOOP2 OK *****
+***** LOOP3 OK *****
+exit 0

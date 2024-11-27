@@ -1,0 +1,11 @@
+*** mptest08 start ***
+    * CALL func1 *
+     +++ OK exi=1 +++
+    * CALL func2 *
+     +++ OK exi=3 +++
+    * CALL func3 *
+     +++ OK exi=6 +++
+   ** mptest08 OK OK OK ** 
+*** mptest08 end ***
+
+exit 0

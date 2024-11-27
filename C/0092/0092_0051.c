@@ -1,0 +1,88 @@
+
+#include <stdio.h>
+int main( ) {
+  struct t {
+            unsigned char      a1:1;
+            unsigned char      a2:2;
+            unsigned char      a3:3;
+            unsigned char      a4:4;
+            unsigned char      a5:5;
+            unsigned char      a6:6;
+            unsigned char      a7:7;
+            unsigned char      a8:8;
+           } x;
+  x.a1=1;
+           if (x.a1==1  ) printf("**(01)** OK x.a1=%.8x\n",x.a1);
+           else           printf("**(01)** NG x.a1=%.8x\n",x.a1);
+  x.a2=3;
+           if (x.a2==3  ) printf("**(02)** OK x.a2=%.8x\n",x.a2);
+           else           printf("**(02)** NG x.a2=%.8x\n",x.a2);
+  x.a3=7;
+           if (x.a3==7  ) printf("**(03)** OK x.a3=%.8x\n",x.a3);
+           else           printf("**(03)** NG x.a3=%.8x\n",x.a3);
+  x.a4=15;
+           if (x.a4==15 ) printf("**(04)** OK x.a4=%.8x\n",x.a4);
+           else           printf("**(04)** NG x.a4=%.8x\n",x.a4);
+  x.a5=31;
+           if (x.a5==31 ) printf("**(05)** OK x.a5=%.8x\n",x.a5);
+           else           printf("**(05)** NG x.a5=%.8x\n",x.a5);
+  x.a6=63;
+           if (x.a6==63 ) printf("**(06)** OK x.a6=%.8x\n",x.a6);
+           else           printf("**(06)** NG x.a6=%.8x\n",x.a6);
+  x.a7=127;
+           if (x.a7==127) printf("**(07)** OK x.a7=%.8x\n",x.a7);
+           else           printf("**(07)** NG x.a7=%.8x\n",x.a7);
+  x.a8=255;
+           if (x.a8==255) printf("**(08)** OK x.a8=%.8x\n",x.a8);
+           else           printf("**(08)** NG x.a8=%.8x\n",x.a8);
+  
+  x.a1=0;
+           if (x.a1==0  ) printf("**(09)** OK x.a1=%.8x\n",x.a1);
+           else           printf("**(09)** NG x.a1=%.8x\n",x.a1);
+  x.a2=0;
+           if (x.a2==0  ) printf("**(10)** OK x.a2=%.8x\n",x.a2);
+           else           printf("**(10)** NG x.a2=%.8x\n",x.a2);
+  x.a3=0;
+           if (x.a3==0  ) printf("**(11)** OK x.a3=%.8x\n",x.a3);
+           else           printf("**(11)** NG x.a3=%.8x\n",x.a3);
+  x.a4=0;
+           if (x.a4==0  ) printf("**(12)** OK x.a4=%.8x\n",x.a4);
+           else           printf("**(12)** NG x.a4=%.8x\n",x.a4);
+  x.a5=0;
+           if (x.a5==0  ) printf("**(13)** OK x.a5=%.8x\n",x.a5);
+           else           printf("**(13)** NG x.a5=%.8x\n",x.a5);
+  x.a6=0;
+           if (x.a6==0  ) printf("**(14)** OK x.a6=%.8x\n",x.a6);
+           else           printf("**(14)** NG x.a6=%.8x\n",x.a6);
+  x.a7=0;
+           if (x.a7==0  ) printf("**(15)** OK x.a7=%.8x\n",x.a7);
+           else           printf("**(15)** NG x.a7=%.8x\n",x.a7);
+  x.a8=0;
+           if (x.a8==0  ) printf("**(16)** OK x.a8=%.8x\n",x.a8);
+           else           printf("**(16)** NG x.a8=%.8x\n",x.a8);
+  
+  x.a1=2;
+           if (x.a1==0  ) printf("**(17)** OK x.a1=%.8x\n",x.a1);
+           else           printf("**(17)** NG x.a1=%.8x\n",x.a1);
+  x.a2=4;
+           if (x.a2==0  ) printf("**(18)** OK x.a2=%.8x\n",x.a2);
+           else           printf("**(18)** NG x.a2=%.8x\n",x.a2);
+  x.a3=8;
+           if (x.a3==0  ) printf("**(19)** OK x.a3=%.8x\n",x.a3);
+           else           printf("**(19)** NG x.a3=%.8x\n",x.a3);
+  x.a4=16;
+           if (x.a4==0  ) printf("**(20)** OK x.a4=%.8x\n",x.a4);
+           else           printf("**(20)** NG x.a4=%.8x\n",x.a4);
+  x.a5=32;
+           if (x.a5==0  ) printf("**(21)** OK x.a5=%.8x\n",x.a5);
+           else           printf("**(21)** NG x.a5=%.8x\n",x.a5);
+  x.a6=64;
+           if (x.a6==0  ) printf("**(22)** OK x.a6=%.8x\n",x.a6);
+           else           printf("**(22)** NG x.a6=%.8x\n",x.a6);
+  x.a7=128;
+           if (x.a7==0  ) printf("**(23)** OK x.a7=%.8x\n",x.a7);
+           else           printf("**(23)** NG x.a7=%.8x\n",x.a7);
+  x.a8=256;
+           if (x.a8==0  ) printf("**(24)** OK x.a8=%.8x\n",x.a8);
+           else           printf("**(24)** NG x.a8=%.8x\n",x.a8);
+} 

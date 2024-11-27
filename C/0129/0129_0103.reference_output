@@ -1,0 +1,7 @@
+ start
+test-1 **** ok ****
+test-2 **** ok ****
+test-3 **** ok ****
+test-4 **** ok ****
+ end
+exit 0

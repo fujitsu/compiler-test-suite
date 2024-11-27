@@ -1,0 +1,11 @@
+  REAL :: T1,T2
+  INTEGER,DIMENSION(1000) :: IA=(/(I,I=1,1000)/)  
+  COMPLEX,DIMENSION(1000) :: CA
+  CALL CPU_TIME(T1)
+  DO I=1,1000
+    CA(I) = CMPLX(IA(I),-IA(I))
+  END DO
+  CALL CPU_TIME(T2)
+  write(1,*)T2-T1
+  print *,'pass'
+  END

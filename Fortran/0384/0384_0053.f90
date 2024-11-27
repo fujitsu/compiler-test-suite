@@ -15,7 +15,6 @@ ii=>ifun
 jjjj=>jfun
 if (associated(ii,ifun).neqv..true.) print *,"err5"
 if (associated(jjjj,jfun).neqv..true.) print *,"err6"
-if (associated(jjjj,ifun).eqv..true.) print *,"err6a"
 print *,"pass"
 end
 

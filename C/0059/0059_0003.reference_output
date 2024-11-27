@@ -1,0 +1,46 @@
+test001 start
+100
+100
+100
+test001 end
+
+test003 00 start
+test003 00 end
+
+test003 01 start
+test003 01 end
+
+test003 02 start
+test003 02 end
+
+test004(else) start
+test004 end
+
+test005(else) 00 start
+test005 end
+
+test005(else) 01 start
+test005 end
+
+test005(else) 02 start
+test005 end
+
+test006(case 0) start
+test006 end
+
+test006(case 0) start
+test006 end
+
+test006(case 0) start
+test006 end
+
+test007(case 1) start
+test007 end
+
+test007(case 1) start
+test007 end
+
+test007(case 1) start
+test007 end
+
+exit 0

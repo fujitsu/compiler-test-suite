@@ -1,0 +1,4 @@
+ test(1) : OK
+ test(2) : OK
+ test(3) : OK 
+exit 0

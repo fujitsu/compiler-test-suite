@@ -1,0 +1,32 @@
+* TP=SCPIN13 ENTERED *
+ ** SCPIN13.02 OK **
+ ** SCPIN13.03 OK **
+ ** SCPIN13.04 OK **
+ ** SCPIN13.06 OK **
+ ** SCPIN13.07 OK **
+ ** SCPIN13.08 OK **
+ ** SCPIN13.09 OK **
+ ** SCPIN13.10 OK **
+ ** SCPIN13.11 OK **
+ ** SCPIN13.12 OK **
+ ** SCPIN13.13 OK **
+ ** SCPIN13.14 OK **
+ ** SCPIN13.15 OK **
+ ** SCPIN13.16 OK **
+ ** SCPIN13.17 OK **
+ ** SCPIN13.18 OK **
+ ** SCPIN13.19 OK **
+ ** SCPIN13.20 OK **
+ ** SCPIN13.21 OK **
+ ** SCPIN13.22 OK **
+ ** SCPIN13.23 OK **
+ ** SCPIN13.24 OK **
+ ** SCPIN13.25 OK **
+ ** SCPIN13.27 OK **
+ ** SCPIN13.28 OK **
+ ** SCPIN13.29 OK **
+ ** SCPIN13.30 OK **
+ ** SCPIN13.31 OK **
+  * SCPIN13 ENDED *
+
+exit 0

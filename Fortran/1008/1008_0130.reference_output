@@ -1,0 +1,4 @@
+ ----- TEST --
+       parallel private(ith) -----
+ OK
+exit 0

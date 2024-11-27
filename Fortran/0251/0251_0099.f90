@@ -11,11 +11,11 @@ class(ty),allocatable :: obj_parent,obj
 allocate(ty2::obj_parent)
 
 block
-type,extends(ty) :: ty2
+type,extends(ty) :: ty3
 integer :: ii2
 end type
 
-allocate(ty2::obj)
+allocate(ty3::obj)
 if(extends_type_of(obj,obj_parent).eqv. .false.) then
  print*,'pass'
 else
@@ -23,13 +23,13 @@ else
 endif
 
 block
-type,extends(ty) :: ty2
+type,extends(ty) :: ty4
 integer :: ii2
 end type
 
 class(ty),pointer :: obj2
 
-allocate(ty2::obj2)
+allocate(ty4::obj2)
 if(extends_type_of(obj2,obj_parent).eqv. .false.) then
  print*,'pass'
 else

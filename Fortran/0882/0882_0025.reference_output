@@ -1,0 +1,10 @@
+ ALLOCATE OK    -1
+ ALLOCATE OK    -2
+ 10
+ 3
+ 8
+ 3
+ 6
+ 10 20
+ 8
+exit 0

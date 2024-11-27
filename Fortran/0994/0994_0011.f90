@@ -1,0 +1,3 @@
+  program main
+  pause
+  end

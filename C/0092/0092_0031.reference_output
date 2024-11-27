@@ -1,0 +1,19 @@
+print a: a
+print b: b
+print c: c
+print d: d
+ok
+ok
+ok
+ok
+ok
+ok
+ok
+sub5 is return 1 =1
+sub6 ok
+call f1
+call f2
+call f3
+ok
+ok
+exit 0

@@ -1,0 +1,3 @@
+-----  -- parallel do firstprivate(ia) -----
+OK
+exit 0

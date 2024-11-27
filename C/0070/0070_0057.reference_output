@@ -1,0 +1,3 @@
+-----  -- parallel private(ic) do schedule(dynamic,1) -----
+OK
+exit 0

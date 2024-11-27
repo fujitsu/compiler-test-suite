@@ -1,0 +1,8 @@
+ 1  destructor call PASS  100 100
+ i am in my destructor
+ 80
+ i am in my destructor
+ 80
+ 2  destructor call PASS  200
+ 3  destructor call PASS  300
+exit 0

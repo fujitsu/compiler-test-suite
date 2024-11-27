@@ -12,12 +12,12 @@ type(ty2),target :: tgt
 obj_parent=>tgt
 
 block
-type,extends(ty) :: ty2
+type,extends(ty) :: ty3
 integer :: ii2
 end type
 
-type(ty2),pointer :: obj1
-type(ty2),target :: tgt
+type(ty3),pointer :: obj1
+type(ty3),target :: tgt
 obj1=>tgt
 if(same_type_As(obj1,obj_parent).eqv. .false.) then
  print*,'pass1/2'
@@ -25,12 +25,12 @@ else
  print*,101
 endif
 block
-type,extends(ty) :: ty2
+type,extends(ty) :: ty4
 integer :: ii2
 end type
 
-type(ty2),pointer :: obj2
-type(ty2),target :: tgt
+type(ty4),pointer :: obj2
+type(ty4),target :: tgt
 obj2=>tgt
 if((same_type_As(obj2,obj1).eqv. .false.) .and. (same_type_As(obj2,obj_parent).eqv. .false.)) then
  print*,'pass2/2'

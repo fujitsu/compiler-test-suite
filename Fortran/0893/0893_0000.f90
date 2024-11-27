@@ -1,0 +1,18 @@
+PROGRAM main
+  TYPE ty(k,l)
+   INTEGER,KIND::k
+   INTEGER,LEN ::l
+  END TYPE
+  TYPE,EXTENDS(ty)::ty0(l1,k1)
+   INTEGER,KIND::k1
+   INTEGER,LEN ::l1
+  END TYPE
+  TYPE ty1(k,l)
+   INTEGER,KIND::k
+   INTEGER,LEN ::l
+  END TYPE
+  TYPE,EXTENDS(ty0)::ty2(k,l)
+   INTEGER,KIND::k
+   INTEGER,LEN ::l
+  END TYPE
+END PROGRAM

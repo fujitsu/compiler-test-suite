@@ -1,0 +1,5 @@
+ sub dum(1,1,2,1)%i2 =  4
+ 3 3 3
+ sub1 ptr(1,1,2,1)%i2 =   4
+ pass
+exit 0

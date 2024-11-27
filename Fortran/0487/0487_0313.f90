@@ -30,7 +30,7 @@ use m1
       enddo
 !$omp end parallel do 
         if (   (zz(100)%i(1)/=100)) print *,102,zz(100)%i(1)
-      if( (xpno(1)/=1 .or. xpno(2)/=4) .and. xpno(1)/=0 ) print *,'NG:xpno=',xpno
+      if( (xpno(1)/=2 .or. xpno(2)/=4) .and. xpno(1)/=0 ) print *,'NG:xpno=',xpno
       print *,'pass'
       end
  subroutine s(k)

@@ -1,0 +1,18 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+	int       i,m=2,n=1;
+	long int  a[10]={
+		0,0,0,0,0,0,0,0,0,0	};
+	for(i=2*(m-n++);i<10;i++)
+	{
+		a[i] = i ;
+	}
+	for(i=0;i<10;i++){
+		printf(" a[%d] => %d \n",i,a[i]);
+	}
+	exit (0);
+}

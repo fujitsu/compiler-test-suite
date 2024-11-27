@@ -1,0 +1,24 @@
+program main
+  interface
+    function fun01(p01)
+      integer :: p01
+      integer :: fun01
+    end function
+  end interface
+
+  integer :: aaa = 999
+
+  if (fun01(aaa) == 1000) then
+    print *,"pass"
+  else
+    print *,"ng ",aaa
+  end if
+
+end
+
+function fun01(val)
+  value :: val
+  integer :: val,fun01
+
+  fun01 = val + 1
+end function fun01

@@ -1,0 +1,5 @@
+ bofore call subroutin b= 2. 4. 6. 8. 10. 12. 14. 16. 18. 20.
+ into subroutin b= 1. 2. 3. 4. 5. 6. 7. 8. 9. 10.
+ a= 1. 2. 3. 4. 5. 6. 7. 8. 9. 10.
+ after call subroutin b= 1. 2. 3. 4. 5. 6. 7. 8. 9. 10.
+exit 0

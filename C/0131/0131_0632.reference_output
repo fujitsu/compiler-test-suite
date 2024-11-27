@@ -1,0 +1,27 @@
+S3(0)= 65 
+T3(0)= 66 
+ NOT EQUAL 
+S3(1)= 66 
+T3(1)= 65 
+ NOT EQUAL 
+S3(2),T3(2) are equal 
+S3(3)= 68 
+T3(3)= 69 
+ NOT EQUAL 
+S3(4)= 69 
+T3(4)= 70 
+ NOT EQUAL 
+S3(5)= 70 
+T3(5)= 71 
+ NOT EQUAL 
+S3(6)= 71 
+T3(6)= 48 
+ NOT EQUAL 
+S3(7)= 72 
+T3(7)= 73 
+ NOT EQUAL 
+S3(8)= 73 
+T3(8)= 74 
+ NOT EQUAL 
+S3(9),T3(9) are equal 
+exit 0

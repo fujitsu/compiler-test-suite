@@ -1,0 +1,3 @@
+ before move_alloc to_obj is not allocated yet
+ after move_alloc to_obj is allocated
+exit 0

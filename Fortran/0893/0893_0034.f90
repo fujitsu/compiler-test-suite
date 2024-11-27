@@ -1,0 +1,16 @@
+MODULE mod1
+  INTEGER,PARAMETER::p=2
+  TYPE ty(k,l)
+    INTEGER,KIND::k
+    INTEGER,LEN::l
+    INTEGER(KIND =k)::ii
+    PROCEDURE(TYPE(ty(k=p,l=k))),POINTER,NOPASS::cmp
+  END TYPE
+  INTERFACE 
+    SUBROUTINE sub(dmy) 
+      import ty
+      TYPE(ty(2,4))::dmy
+    END SUBROUTINE
+  END INTERFACE
+END MODULE
+END PROGRAM

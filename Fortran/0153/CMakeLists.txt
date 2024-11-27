@@ -1,5 +1,6 @@
 file(COPY lit.local.cfg DESTINATION "${CMAKE_CURRENT_BINARY_DIR}")
 llvm_singlesource_compile_only_file(0153_0001.f90 PREFIX "Fujitsu-Fortran-")
+llvm_singlesource_compile_only_file(0153_0002.f90 PREFIX "Fujitsu-Fortran-")
 llvm_singlesource_compile_only_file(0153_0011.f90 PREFIX "Fujitsu-Fortran-")
 llvm_singlesource_compile_only_file(0153_0174.f90 PREFIX "Fujitsu-Fortran-")
 llvm_singlesource_compile_only_file(0153_0223.f90 PREFIX "Fujitsu-Fortran-")

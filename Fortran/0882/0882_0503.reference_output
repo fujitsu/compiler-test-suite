@@ -1,0 +1,13 @@
+ PASS 6
+ PASS 5
+ PASS 4
+ PASS d2
+ PASS d1
+ PASS d3
+ PASS d2
+ PASS cptr1
+ PASS d1
+ PASS cptr2
+ PASS d3
+ PASS
+exit 0

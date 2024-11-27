@@ -1,0 +1,11 @@
+ ** TEST ITEM NO.1 ** 
+ a= 1  a= 11  a= 11  a= 11  a= 11  a= 11  a= 11  a= 11  a= 11  a= 11 
+ ** TEST ITEM NO.2 ** 
+ a= 1  a= 20  a= 19  a= 18  a= 17  a= 16  a= 15  a= 14  a= 13  a= 12 
+ ** sub a=9 
+ ** TEST ITEM NO.3 ** 
+ a= 1  a= 20  a= 19  a= 18  a= 17  a= 16  a= 15  a= 14  a= 13  a= 12 
+ ** sub a=11 
+ ** TEST ITEM NO.4 ** 
+ a= 1  a= 20  a= 19  a= 18  a= 17  a= 16  a= 15  a= 14  a= 13  a= 12 
+exit 0

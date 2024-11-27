@@ -1,0 +1,7 @@
+*** SCPIL02 TEST START ***
+ ** NO.1 TEST OK **
+ ** NO.2 TEST OK **
+ ** NO.3 TEST OK **
+ ** NO.4 TEST OK **
+*** SCPIL02 TEST END   ***
+exit 0

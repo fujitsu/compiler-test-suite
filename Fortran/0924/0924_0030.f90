@@ -1,0 +1,5 @@
+REAL*2::R1
+CALL CPU_TIME(R1)
+END
+
+

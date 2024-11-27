@@ -12,20 +12,20 @@ call sub
 contains
 subroutine sub()
 block
-type ty
+type ty1
 integer :: ii
 end type
-type(ty),target :: obj
+type(ty1),target :: obj
 class(*),pointer :: cptr
 cptr=>obj         
 call xxx(cptr)
 end block
 
 block
-type ty
+type ty2
 integer :: ii
 end type
-type(ty),target :: obj
+type(ty2),target :: obj
 class(*),pointer :: cptr
 cptr=>obj         
 call xxx(cptr)

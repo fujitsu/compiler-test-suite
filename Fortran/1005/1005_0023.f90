@@ -1,0 +1,3 @@
+INTEGER*1    I
+I=256
+end

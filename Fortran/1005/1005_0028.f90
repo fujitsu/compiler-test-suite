@@ -1,0 +1,3 @@
+CHARACTER*10 A
+A(2:10)=A(1:9)
+END

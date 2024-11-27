@@ -14,13 +14,13 @@ class(at),pointer :: obj
 allocate(bt:: obj)
 
 block
-type,extends(at) :: bt
+type,extends(at) :: bt2
  integer :: j
 end type
 
 class(at),allocatable :: bbj
 
-allocate(bt:: bbj)
+allocate(bt2:: bbj)
 
 if(extends_type_of(bbj,obj) .eqv. .false. ) print*, 'pass'
 end block

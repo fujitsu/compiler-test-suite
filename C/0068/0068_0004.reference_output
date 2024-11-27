@@ -1,0 +1,4 @@
+-----  --
+      parallel for firstprivate(ib) + lastprivate(ia) -----
+OK
+exit 0

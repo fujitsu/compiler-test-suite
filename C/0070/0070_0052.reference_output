@@ -1,0 +1,3 @@
+-----  -- parallel do lastprivate(ty1,ic) ------
+OK
+exit 0

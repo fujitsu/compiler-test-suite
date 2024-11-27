@@ -15,11 +15,11 @@ type(at) :: obj
 class(at),allocatable :: bbj,cbj
 allocate(bt:: cbj)
 block
-type,extends(at) :: bt
+type,extends(at) :: bt2
  integer :: j
 end type
 
-allocate(bt:: bbj)
+allocate(bt2:: bbj)
 
 if(extends_type_of(bbj,obj) .eqv. .true. ) print*,'pass'
 if(extends_type_of(bbj,cbj) .eqv. .true. ) print*,101

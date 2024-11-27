@@ -1,0 +1,11 @@
+ ninputs = 100 ( all zero ) , return value = 0 (0)
+ ninputs = 0 ( all zero ) , return value = 0 (0)
+ ninputs = 99 ( all zero / misalign ) , return value = 0 (0)
+ ninputs = 0 ( all zero / misalign ) , return value = 0 (0)
+ ninputs = 100 ( a has 8 ) , return value = 0 (0)
+ ninputs = 0 ( a has 8 ) , return value = 0 (0)
+ ninputs = 100 ( a==8,b==3 ) , return value = 0 (0)
+ ninputs = 100 ( b==-1 ) , return value = -1 (-1)
+ ninputs = 48 ( a[47]=3 ) , return value = 0 (0)
+ ninputs = 48 ( b[47]=4 ) , return value = 3 (3)
+exit 0

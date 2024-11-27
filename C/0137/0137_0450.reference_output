@@ -1,0 +1,8 @@
+ ***** mreg0370 ***** 
+ before strcpy 
+ after strcpy 
+ after func1 
+ a = 11 
+ after test 
+ ** OK ** 
+exit 0

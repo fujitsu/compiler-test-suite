@@ -1,0 +1,31 @@
+double test 1
+*OK1 
+*OK2 
+*OK3 
+*OK4 
+double test 2
+*OK1 
+*OK2 
+*OK3 
+*OK4 
+float  test 3
+*OK1 
+*OK2 
+*OK3 
+*OK4 
+float  test 4
+*OK1 
+*OK2 
+*OK3 
+*OK4 
+long d test 5
+*OK1 
+*OK2 
+*OK3 
+*OK4 
+long d test 6
+*OK1 
+*OK2 
+*OK3 
+*OK4 
+exit 0

@@ -1,0 +1,4 @@
+ ic=-17280000,  id= -62208000
+-----  -- parallel for reduction(*:ia,ib) -----
+OK
+exit 0

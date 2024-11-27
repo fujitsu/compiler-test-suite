@@ -1,0 +1,85 @@
+call  x(i1,i2,i3,i4)
+print *,'pass'
+end
+subroutine x(i1,i2,i3,i4)
+call sub(i1)
+call sub(i2)
+call sub(i3)
+call sub(i4)
+do i1=1,1
+  call sub(i1)
+  call sub(i2)
+  call sub(i3)
+  call sub(i4)
+  do i2=1,1
+    call sub(i1)
+    call sub(i2)
+    call sub(i3)
+    call sub(i4)
+    do i3=1,1
+     call sub(i1)
+     call sub(i2)
+     call sub(i3)
+     call sub(i4)
+     do i4=1,1
+     end do
+     call sub(i1)
+     call sub(i2)
+     call sub(i3)
+     call sub(i4)
+    end do
+    call sub(i1)
+    call sub(i2)
+    call sub(i3)
+    call sub(i4)
+  end do
+  call sub(i1)
+  call sub(i2)
+  call sub(i3)
+  call sub(i4)
+end do
+call sub(i1)
+call sub(i2)
+call sub(i3)
+call sub(i4)
+do i1=1,1
+  call sub(i1)
+  call sub(i2)
+  call sub(i3)
+  call sub(i4)
+  do i2=1,1
+    call sub(i1)
+    call sub(i2)
+    call sub(i3)
+    call sub(i4)
+    do i3=1,1
+     call sub(i1)
+     call sub(i2)
+     call sub(i3)
+     call sub(i4)
+     do i4=1,1
+     end do
+     call sub(i1)
+     call sub(i2)
+     call sub(i3)
+     call sub(i4)
+    end do
+    call sub(i1)
+    call sub(i2)
+    call sub(i3)
+    call sub(i4)
+  end do
+  call sub(i1)
+  call sub(i2)
+  call sub(i3)
+  call sub(i4)
+end do
+call sub(i1)
+call sub(i2)
+call sub(i3)
+call sub(i4)
+contains
+subroutine sub(j)
+j=1
+end subroutine sub
+end

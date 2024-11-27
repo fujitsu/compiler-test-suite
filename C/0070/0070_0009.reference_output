@@ -1,0 +1,5 @@
+omp_get_dynamic=1-----  --
+      parallel
+      parallel + paralell ----
+OK
+exit 0

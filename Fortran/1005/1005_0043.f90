@@ -1,0 +1,5 @@
+integer*1  C1(3)
+EQUIVALENCE (C1,I4)
+EQUIVALENCE (C1(2),I8)
+c1=1
+end

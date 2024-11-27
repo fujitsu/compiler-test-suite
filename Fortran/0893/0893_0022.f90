@@ -1,0 +1,7 @@
+PROGRAM MAIN
+  TYPE ty(k,l)
+    INTEGER,KIND ::k
+    INTEGER,LEN::l
+    INTEGER(KIND=k)::ch=l
+  END TYPE
+END PROGRAM

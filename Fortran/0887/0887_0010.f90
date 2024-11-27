@@ -1,0 +1,20 @@
+PROGRAM MAIN
+IMPLICIT NONE
+INTEGER :: K,X,L,N
+X=0
+K=10
+L=30
+
+DO CONCURRENT(K=1:5,L=1:4,(K<3 .OR. K==5))
+  GOTO 24
+    DO CONCURRENT(N=1:4,L /= K)
+      IF(X == 25) THEN
+      IF(L /= N) THEN
+      24 IF(X == 24) THEN
+        X=X+1
+      END IF
+      END IF
+      END IF
+    END DO
+END DO
+END PROGRAM

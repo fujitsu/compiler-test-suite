@@ -1,0 +1,13 @@
+type z
+  complex(8),allocatable,dimension(:)::p
+end type
+type (z) a,b
+ allocate(b%p(1))
+ b%p=(1.0D0,2.0D0)
+ a=b
+ b%p=(3.0D0,4.0D0)
+ if (size(a%p)/=1) write(6,*) "NG"
+ if (abs(real(a%p(1))-1.0D0).gt.1.0D-16) write(6,*) "NG"
+ if (abs(imag(a%p(1))-2.0D0).gt.1.0D-16) write(6,*) "NG"
+ print *,'pass'
+end

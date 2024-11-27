@@ -6,7 +6,7 @@
   if (kind(rank(A=[1])) /= n2) print *,202,kind(rank(A=[1])),n2
   if (ubound([1],1)/= k1) print *,301
   if (kind(ubound([1],1))/= k2) print *,302
-if (kind(rank(A=[1]))/=8) print *,801
-if (kind(ubound([1],1))/=8) print *,802
+if (kind(rank(A=[1]))/=4) print *,801
+if (kind(ubound([1],1))/=4) print *,802
 print *,'pass'
 end program

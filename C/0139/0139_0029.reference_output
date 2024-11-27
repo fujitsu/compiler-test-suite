@@ -1,0 +1,14 @@
+*a = 0 
+**p = 0 
+**pp = 0 
+
+pp-p = 1 *pp-a = 1 **pp = 1 
+pp-p = 2 *pp-a = 2 **pp = 2 
+pp-p = 3 *pp-a = 3 **pp = 3 
+pp-p = 3 *pp-a = 4 **pp = 4 
+
+pp-p = 1 *pp-a = 1 **pp = 1 
+pp-p = 1 *pp-a = 2 **pp = 2 
+pp-p = 1 *pp-a = 2 **pp = 3 
+ SCRPZ18 PASS 
+exit 0

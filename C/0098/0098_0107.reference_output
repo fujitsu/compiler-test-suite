@@ -1,0 +1,8 @@
+ ####  ## BUSY ON EXIT ####
+ REAL DATA ***
+ s[0] = 11.0 , s[1] = 2.0
+ s[0] = 11  , s[1] = 2
+ ** LOGICAL DATA ***
+ ls[0] = t   , ls[0] = f
+ ls[0] = 1 , ls[1] = 0
+exit 0

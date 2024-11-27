@@ -1,0 +1,8 @@
+*** OK *** <0> in func
+*** OK *** <0> in main
+*** OK *** <2> in main
+*** OK *** <2> in func
+*** OK *** <4> in main
+*** OK *** <6> in main
+*****  OK ***
+exit 0

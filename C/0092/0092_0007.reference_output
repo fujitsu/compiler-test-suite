@@ -1,0 +1,14 @@
+ Begin
+test01--long double <-> unsigned char : OK
+test02--char <-> unsigned char : OK
+test03--double <-> unsigned char : OK
+test04--unsigned char <-> unsigned char : OK
+test05--float <-> unsigned char : OK
+test06--short <-> unsigned char : OK
+test07--unsigned long long <-> unsigned char : OK
+test08--unsigned short <-> unsigned char : OK
+test09--long long <-> unsigned char : OK
+test10--short int <-> unsigned char : OK
+test11--unsigned int <-> unsigned char : OK
+ End
+exit 0

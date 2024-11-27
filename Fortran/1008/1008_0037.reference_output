@@ -1,0 +1,4 @@
+ ----- TEST --
+       parallel do reduction(.neqv.:la) -----
+ OK
+exit 0

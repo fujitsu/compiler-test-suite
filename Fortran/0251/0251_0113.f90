@@ -15,13 +15,13 @@ type(at),target :: tgt
 obj=>tgt
 
 block
-type,extends(at) :: bt
+type,extends(at) :: bt1
  integer :: j
 end type
 
 class(*),allocatable :: bbj1,bbj,dbj
 
-allocate(bt:: bbj,bbj1)
+allocate(bt1:: bbj,bbj1)
 block
 type,extends(at) :: bt
  integer :: j

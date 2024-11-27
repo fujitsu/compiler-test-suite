@@ -1,0 +1,10 @@
+-----  TEST START -----
+*** INLFUNC2 TEST-01 OK ***
+*** INLFUNC2 TEST-02 OK ***
+*** INLFUNC2 TEST-03 OK ***
+*** INLFUNC2 TEST-04 OK ***
+*** INLFUNC2 TEST-05 OK ***
+*** INLFUNC2 TEST-06 OK ***
+*** INLFUNC2 TEST-07 OK ***
+-----  TEST ENDED -----
+exit 0

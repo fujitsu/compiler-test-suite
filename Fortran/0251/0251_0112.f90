@@ -11,13 +11,13 @@ end module
 use m1
 type(at) :: obj
 block
-type,extends(at) :: bt
+type,extends(at) :: bt1
  integer :: j
 end type
 
 class(at),allocatable :: bbj1,bbj
 
-allocate(bt:: bbj,bbj1)
+allocate(bt1:: bbj,bbj1)
 block
 type,extends(at) :: bt
  integer :: j

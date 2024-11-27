@@ -1,0 +1,15 @@
+ i2 value 5 
+*** mptest30 i2 ok ***
+ i4 value 5 
+*** mptest30 i4 ok ***
+ u2 value 5 
+*** mptest30 u2 ok ***
+ u4 value 5 
+*** mptest30 u4 ok ***
+ rs value 5.000000 
+*** mptest30 rs ok ***
+ rd value 5.000000 
+*** mptest30 rd ok ***
+ ch value 5 
+*** mptest30 ch ok ***
+exit 0

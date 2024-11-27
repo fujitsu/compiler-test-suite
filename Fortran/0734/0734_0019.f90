@@ -1,0 +1,67 @@
+      MODULE kind_var
+       IMPLICIT NONE
+       INTEGER, PARAMETER :: I4B = SELECTED_INT_KIND(9)
+       INTEGER, PARAMETER :: I2B = SELECTED_INT_KIND(4)
+       INTEGER, PARAMETER :: I1B = SELECTED_INT_KIND(2)
+       INTEGER, PARAMETER :: SP = KIND(1.0D0)
+       INTEGER, PARAMETER :: DP = KIND(1.0D0)
+       INTEGER, PARAMETER :: SPC = KIND( (1.0,1.0) )
+       INTEGER, PARAMETER :: DPC = KIND( (1.0D0,1.0D0) )
+       INTEGER, PARAMETER :: LGT = KIND(.true.)
+
+       REAL(SP), PARAMETER :: PI = 3.141592653589793238462643383279502884197_SP
+       REAL(sp), PARAMETER :: PIO2 = 1.57079632679489661923132169163975144209858_SP
+       REAL(sp), PARAMETER :: TWOPI = 6.283185307179586476925286766559005768394_SP
+       REAL(SP), PARAMETER :: SQRT2=1.41421356237309504880168872420969807856967_SP
+       REAL(SP), PARAMETER :: EULER=0.5772156649015328606065120900824024310422_SP
+       COMPLEX(SPC), PARAMETER :: CI_S = ( 0.0_SP,1.0_SP)
+
+       REAL(DP), PARAMETER :: PI_D=3.141592653589793238462643383279502884197_DP
+       REAL(DP), PARAMETER :: PIO2_D=1.57079632679489661923132169163975144209858_DP
+       REAL(DP), PARAMETER :: TWOPI_D=6.283185307179586476925286766559005768394_DP
+       COMPLEX(DPC), PARAMETER :: CI_D = ( 0.0_DP,1.0_DP)
+
+       TYPE sprs2_sp
+        INTEGER(I4B) :: n,len
+        REAL(SP), DIMENSION(:), POINTER :: val
+        INTEGER(I4B), DIMENSION(:), POINTER :: irow
+        INTEGER(I4B), DIMENSION(:), POINTER :: jcol
+       END TYPE sprs2_sp
+
+       TYPE sprs2_dp
+        INTEGER(I4B) :: n,len
+        REAL(DP), DIMENSION(:), POINTER :: val
+        INTEGER(I4B), DIMENSION(:), POINTER :: irow
+        INTEGER(I4B), DIMENSION(:), POINTER :: jcol
+       END TYPE sprs2_dp
+      END MODULE kind_var
+      MODULE com_const
+       IMPLICIT NONE
+       INTEGER :: id = 10, iline
+       CHARACTER( LEN = 80 ) :: chara
+
+       INTEGER :: ni, nj
+       COMMON /size_t/ ni, nj
+
+       INTEGER :: no
+       COMMON /size_scan/ no
+
+       INTEGER :: nx, ny, nz
+       COMMON /size_d/ nx, ny, nz
+
+       INTEGER :: np
+       COMMON /size_scoef/ np
+      END MODULE com_const
+MODULE trans_type_def
+ USE kind_var
+ IMPLICIT NONE
+
+ TYPE trans_type
+   REAL(DP) :: Freq, U0, Lf, theta_t
+   REAL(DP) :: Shift, phi, theta, delta1
+ END TYPE
+
+END MODULE trans_type_def
+use trans_type_def
+print *,'pass'
+end

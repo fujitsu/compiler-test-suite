@@ -11,12 +11,12 @@ class(ty),allocatable :: obj_parent
 allocate(ty2::obj_parent)
 
 block
-type,extends(ty) :: ty2
+type,extends(ty) :: ty3
 integer :: ii2
 end type
 
-type(ty2),allocatable :: obj
-allocate(ty2::obj)
+type(ty3),allocatable :: obj
+allocate(ty3::obj)
 if(same_type_As(obj,obj_parent).eqv. .false.) then
  print*,'pass'
 else

@@ -1,0 +1,32 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+#include <stdarg.h>
+int iadd(int num,...);
+int main( ) {
+
+  printf("********** 031 TEST START **********\n");
+
+if (iadd(3,1,2,3)==6) printf("*** OK ***\n");
+                   else printf("*** NG ***\n");
+  printf("********** 031 TEST  END  **********\n");
+exit (0);
+}
+int iadd(int num,...) {
+int i,sum;
+
+  va_list ap;
+
+  va_start(ap, num);
+
+  for (i=0,sum=0; i < num; i++) {
+
+  sum += va_arg(ap, int);
+  }
+
+  
+
+  return(sum);
+
+}
+

@@ -1,0 +1,5 @@
+scn1219 start
+u8:ok
+i8:ok
+scn1219 ended
+exit 0

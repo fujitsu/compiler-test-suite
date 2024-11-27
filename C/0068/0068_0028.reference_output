@@ -1,0 +1,4 @@
+-----  --
+ parallel reduction(&:ia) private(ic,it) -----
+OK
+exit 0

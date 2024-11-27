@@ -1,0 +1,5 @@
+ ----- test --
+       parallel private(it)
+       sections private(ca) ------
+ OK
+exit 0

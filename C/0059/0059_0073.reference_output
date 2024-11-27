@@ -1,0 +1,11 @@
+test start 
+sizeof  ok1
+sizeof  ok2
+f1 call ok0
+f1 call ok1
+f1 call ok2
+f1 call ok3
+f1 call ok4
+f1 call ok5
+test end
+exit 0

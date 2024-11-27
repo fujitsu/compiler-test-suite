@@ -1,0 +1,11 @@
+ main result-1 
+count1=0 count1=1 count1=2 count1=3 count1=4 count1=5 count1=6 count1=7 count1=8 count1=9 count1=10 count1=11 count1=12 count1=13 count1=14 count1=15 count1=16 count1=17 count1=18 count1=19 
+a1 =40 a1 =2 a1 =2 a1 =2 a1 =2 a1 =2 a1 =2 a1 =2 a1 =2 a1 =2 a1 =2 a1 =2 a1 =2 a1 =2 a1 =2 a1 =2 a1 =2 a1 =2 a1 =2 a1 =2 
+a2 =20 a2 =19 a2 =18 a2 =17 a2 =16 a2 =15 a2 =14 a2 =13 a2 =12 a2 =11 a2 =10 a2 =9 a2 =8 a2 =7 a2 =6 a2 =5 a2 =4 a2 =3 a2 =2 a2 =1 
+ ** sub1 result **
+o =80 o =82 o =82 o =82 o =82 o =82 o =82 o =82 o =82 o =82 o =82 o =82 o =82 o =82 o =82 o =82 o =82 o =82 o =82 o =82 
+p =40 p =38 p =36 p =34 p =32 p =30 p =28 p =26 p =24 p =22 p =20 p =18 p =16 p =14 p =12 p =10 p =8 p =6 p =4 p =2 
+ ** sub2 result **
+o =80 o =82 o =82 o =82 o =82 o =82 o =82 o =82 o =82 o =82 o =82 o =82 o =82 o =82 o =82 o =82 o =82 o =82 o =82 o =82 
+p =40 p =76 p =72 p =68 p =64 p =60 p =56 p =52 p =48 p =44 p =40 p =36 p =32 p =28 p =24 p =20 p =16 p =12 p =8 p =2 
+exit 0

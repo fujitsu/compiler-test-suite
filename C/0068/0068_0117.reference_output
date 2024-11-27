@@ -1,0 +1,3 @@
+-----  -- parallel private(it) sections lastprivate(ia) ------
+OK
+exit 0

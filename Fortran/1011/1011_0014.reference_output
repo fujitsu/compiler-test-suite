@@ -1,0 +1,5 @@
+ ----- test --
+       parallel
+       do firstprivate(ca) -----
+ OK
+exit 0

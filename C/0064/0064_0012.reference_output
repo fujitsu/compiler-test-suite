@@ -1,0 +1,2 @@
+*ptrintb-(*ptrinta+*ptrintc)==> 1
+exit 0

@@ -1,0 +1,104 @@
+#include <stdlib.h>
+#include <math.h>
+#include <stdio.h>
+int sub0(int i){
+ return(i*i);
+}
+int sub1(int i){
+ return(i+i);
+}
+int main( ) {
+ int a,b,c,i;
+        i=10;b=sub0(i);c=sub1(i);
+ a=b==c;
+        if (a) printf("** dpmk2010-(01)** NG\n");
+        else   printf("** dpmk2010-(01)** OK\n");
+ a=b!=c;
+        if (a) printf("** dpmk2010-(02)** OK\n");
+        else   printf("** dpmk2010-(02)** NG\n");
+ a=b<=c;
+        if (a) printf("** dpmk2010-(03)** NG\n");
+        else   printf("** dpmk2010-(03)** OK\n");
+ a=b>=c;
+        if (a) printf("** dpmk2010-(04)** OK\n");
+        else   printf("** dpmk2010-(04)** NG\n");
+ a=b<c;
+        if (a) printf("** dpmk2010-(05)** NG\n");
+        else   printf("** dpmk2010-(05)** OK\n");
+ a=b>c;
+        if (a) printf("** dpmk2010-(06)** OK\n");
+        else   printf("** dpmk2010-(06)** NG\n");
+ a=b==100;
+        if (a) printf("** dpmk2010-(07)** OK\n");
+        else   printf("** dpmk2010-(07)** NG\n");
+ a=b!=100;
+        if (a) printf("** dpmk2010-(08)** NG\n");
+        else   printf("** dpmk2010-(08)** OK\n");
+ a=b<=100;
+        if (a) printf("** dpmk2010-(09)** OK\n");
+        else   printf("** dpmk2010-(09)** NG\n");
+ a=b>=100;
+        if (a) printf("** dpmk2010-(10)** OK\n");
+        else   printf("** dpmk2010-(10)** NG\n");
+ a=b< 100;
+        if (a) printf("** dpmk2010-(11)** NG\n");
+        else   printf("** dpmk2010-(11)** OK\n");
+ a=b> 100;
+        if (a) printf("** dpmk2010-(12)** NG\n");
+        else   printf("** dpmk2010-(12)** OK\n");
+ a=0+0 ==c;
+        if (a) printf("** dpmk2010-(13)** NG\n");
+        else   printf("** dpmk2010-(13)** OK\n");
+ a=0+0 !=c;
+        if (a) printf("** dpmk2010-(14)** OK\n");
+        else   printf("** dpmk2010-(14)** NG\n");
+ a=0+0 <=c;
+        if (a) printf("** dpmk2010-(15)** OK\n");
+        else   printf("** dpmk2010-(15)** NG\n");
+ a=0+0 >=c;
+        if (a) printf("** dpmk2010-(16)** NG\n");
+        else   printf("** dpmk2010-(16)** OK\n");
+ a=0+0 < c;
+        if (a) printf("** dpmk2010-(17)** OK\n");
+        else   printf("** dpmk2010-(17)** NG\n");
+ a=0+0 > c;
+        if (a) printf("** dpmk2010-(18)** NG\n");
+        else   printf("** dpmk2010-(18)** OK\n");
+ a=1+0==c;
+        if (a) printf("** dpmk2010-(19)** NG\n");
+        else   printf("** dpmk2010-(19)** OK\n");
+ a=1+0!=c;
+        if (a) printf("** dpmk2010-(20)** OK\n");
+        else   printf("** dpmk2010-(20)** NG\n");
+ a=1+0<=c;
+        if (a) printf("** dpmk2010-(21)** OK\n");
+        else   printf("** dpmk2010-(21)** NG\n");
+ a=1+0>=c;
+        if (a) printf("** dpmk2010-(22)** NG\n");
+        else   printf("** dpmk2010-(22)** OK\n");
+ a=1+0< c;
+        if (a) printf("** dpmk2010-(23)** OK\n");
+        else   printf("** dpmk2010-(23)** NG\n");
+ a=1+0> c;
+        if (a) printf("** dpmk2010-(24)** NG\n");
+        else   printf("** dpmk2010-(24)** OK\n");
+ a=sub0(1)==sub1(1);
+        if (a) printf("** dpmk2010-(25)** NG\n");
+        else   printf("** dpmk2010-(25)** OK\n");
+ a=sub0(1)!=sub1(1);
+        if (a) printf("** dpmk2010-(26)** OK\n");
+        else   printf("** dpmk2010-(26)** NG\n");
+ a=sub0(1)<=sub1(1);
+        if (a) printf("** dpmk2010-(27)** OK\n");
+        else   printf("** dpmk2010-(27)** NG\n");
+ a=sub0(1)>=sub1(1);
+        if (a) printf("** dpmk2010-(28)** NG\n");
+        else   printf("** dpmk2010-(28)** OK\n");
+ a=sub0(1)<sub1(1);
+        if (a) printf("** dpmk2010-(29)** OK\n");
+        else   printf("** dpmk2010-(29)** NG\n");
+ a=sub0(1)>sub1(1);
+        if (a) printf("** dpmk2010-(30)** NG\n");
+        else   printf("** dpmk2010-(30)** OK\n");
+exit (0);
+}

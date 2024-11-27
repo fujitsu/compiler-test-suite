@@ -1,0 +1,5 @@
+n1,n2 =0 10 
+result(float)=44550.000000 
+n1,n2 =0 10 
+result(double)=44550.000000 
+exit 0

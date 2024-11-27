@@ -1,0 +1,7 @@
+**********  TEST START **********
+str1 : 1234abcd9ab
+*p   : 1234abcd9ab
+*q   : ____abcd9ab
+ OK
+**********  TEST  END  **********
+exit 0

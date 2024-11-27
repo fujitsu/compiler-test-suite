@@ -1,0 +1,5 @@
+INTEGER A(100), J(100)
+READ *, A (A)
+READ *, A (A(1):A(10))
+
+END

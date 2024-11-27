@@ -1,0 +1,13 @@
+test0004 begin
+127
+test0004 end
+
+test0005 begin
+510
+test0005 end
+
+test0008 begin
+32767
+test0008 end
+
+exit 0

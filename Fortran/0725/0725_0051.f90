@@ -1,0 +1,7 @@
+INTEGER A(2,3), B(3,2)
+INTEGER AB(1,1)
+PARAMETER (A = RESHAPE ( (/ 1,2,2,3,3,4 /), (/ 2,3 /)))
+PARAMETER (B = RESHAPE ( (/ 1,2,3,2,3,4 /), (/ 3,2 /)))
+AB = MATMUL(A(1:1,1:2),B(1:2,1:1))
+PRINT *,AB
+END

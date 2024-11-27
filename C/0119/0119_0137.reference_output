@@ -1,0 +1,10 @@
+** SCPLB01 TEST START ***
+ ** NO.1 TEST OK **
+ ** NO.2 TEST OK **
+ ** NO.3 TEST OK **
+ ** NO.4 TEST OK **
+ ** NO.5 TEST OK **
+ ** NO.6 TEST OK **
+ ** NO.7 TEST OK **
+*** SCPLB01 TEST END   ***
+exit 0

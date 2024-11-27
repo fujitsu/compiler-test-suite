@@ -66,6 +66,7 @@ subroutine sub(dmy)
 type(ty),intent(out) :: dmy(2)
 
 allocate(dmy(1)%ii(3))
+allocate(dmy(2)%ii(3))
 allocate(tt::dmy(2)%obj(3))
 allocate(character(len=5)::dmy(2)%obj(1)%msg(2))
 allocate(character(len=6)::dmy(2)%obj(2)%msg(3))

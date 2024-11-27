@@ -1,0 +1,12 @@
+*** mptest03 start ***
+ ** ok *** t1.a = 0 *** 
+ ** ok *** t1.b = x *** 
+ ** ok *** t1.a = 1 *** 
+ ** ok *** t1.b = y *** 
+ ** ok *** t1.a = 2 *** 
+ ** ok *** t1.b = z *** 
+  ( t1a )  a=0, b=x
+  ( t1b )  a=1, b=y
+  ( t1c )  a=2, b=z
+*** mptest03 ok ***
+exit 0

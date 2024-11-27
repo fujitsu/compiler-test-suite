@@ -1,0 +1,15 @@
+ i2 value 5 
+***  i2 ok ***
+ i4 value 5 
+***  i4 ok ***
+ u2 value 5 
+***  u2 ok ***
+ u4 value 5 
+***  u4 ok ***
+ rs value 5.000000 
+***  rs ok ***
+ rd value 5.000000 
+***  rd ok ***
+ ch value 5 
+***  ch ok ***
+exit 0

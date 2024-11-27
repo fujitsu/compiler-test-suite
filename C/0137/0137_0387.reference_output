@@ -1,0 +1,9 @@
+*** mptest01 start ***
+  in ''ii''
+  in ''f''
+  in ''f1''
+  ** OK **
+  in ''f1''
+  ** OK **
+*** mptest01 end ***
+exit 0

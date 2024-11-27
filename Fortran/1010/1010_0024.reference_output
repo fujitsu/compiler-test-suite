@@ -1,0 +1,4 @@
+ ----- test --
+       threadprivate(/com1/) parallel do -----
+ OK
+exit 0

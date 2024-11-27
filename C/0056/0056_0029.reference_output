@@ -1,0 +1,4 @@
+--  --
+-- parallel firstprivate(mii, mrr, mcc, mss) private(ith) --
+OK 
+exit 0

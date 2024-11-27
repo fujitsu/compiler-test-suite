@@ -1,0 +1,2 @@
+PAUSE 'abc'//'abc'
+END

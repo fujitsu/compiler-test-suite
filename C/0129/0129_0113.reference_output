@@ -1,0 +1,6 @@
+flag=2
+c   =3
+flag=3
+***** ok *****
+flag=3
+exit 0

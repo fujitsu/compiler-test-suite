@@ -1,0 +1,4 @@
+
+   INTEGER*1  C1
+   COMMON /COM/ C1,I4
+end

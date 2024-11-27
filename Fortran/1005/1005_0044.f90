@@ -1,0 +1,5 @@
+CHARACTER  CC
+EQUIVALENCE (CC,R4)
+cc='a'
+R4=1
+end

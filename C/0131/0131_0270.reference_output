@@ -1,0 +1,21 @@
+**** SUB PRO j = 0 **** 
+a=0 
+**** SUB PRO j = 1 **** 
+a=1 
+**** SUB PRO j = 2 **** 
+a=2 
+**** SUB PRO j = 3 **** 
+a=3 
+**** SUB PRO j = 4 **** 
+a=4 
+**** SUB PRO j = 5 **** 
+a=5 
+**** SUB PRO j = 6 **** 
+a=6 
+**** SUB PRO j = 7 **** 
+a=7 
+**** SUB PRO j = 8 **** 
+a=8 
+**** SUB PRO j = 9 **** 
+a=9 
+exit 0

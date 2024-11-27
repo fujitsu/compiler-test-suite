@@ -1,0 +1,5 @@
+ ----- test --
+       parallel
+       do firstprivate(ca) reduction(+:cb1) -----
+ OK
+exit 0

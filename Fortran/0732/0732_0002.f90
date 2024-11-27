@@ -1,0 +1,7 @@
+ INTEGER, PARAMETER :: I = 0
+ CHARACTER (LEN=I), TARGET :: TARC
+ CHARACTER (LEN=I), POINTER :: PTRC
+PTRC => TARC
+if (ASSOCIATED (PTRC, TARC))write(6,*) "NG"
+print *,'pass'
+end

@@ -1,0 +1,13 @@
+PROGRAM MAIN
+  TYPE ty(k,l,m)
+    INTEGER,KIND::k,m
+    INTEGER,LEN::l
+    INTEGER::ii
+  END TYPE
+  TYPE ty1(k1,l1)
+    INTEGER,KIND ::k1
+    INTEGER,LEN::l1
+    INTEGER(KIND =k1)::CH
+    TYPE(ty(:,:,:)),ALLOCATABLE::CMP
+  END TYPE
+END PROGRAM

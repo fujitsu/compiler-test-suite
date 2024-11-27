@@ -1,0 +1,6 @@
+ 1  4th-destructor call PASS  100
+ 2  3rd-destructor call PASS  200
+ 3  4th-destructor call PASS  300
+ 4  3rd-destructor call PASS  400
+ pass
+exit 0

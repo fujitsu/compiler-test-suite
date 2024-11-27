@@ -1,0 +1,9 @@
+ sub s1 ptr2(1,1)%ix1   = 1
+ sub s1 ptr1(2,1)%ix0   = 5
+ sub s1 t1(2,2)%ix0     = 10
+ sub s1 t2(1,1,1)%ix1   = 1
+ sub chk d1(1,1)%ix1     = 1
+ sub chk d2(2,1)%ix0     = 5
+ sub chk d3(2,2)%ix0     = 10
+ sub chk d4(1,1,1)%ix1   = 1
+exit 0

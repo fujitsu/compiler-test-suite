@@ -1,0 +1,74 @@
+*** 
+
+M3EVA245 TEST OK 
+4097 
+ OK 
+M3GCNS16 START
+--- M3GCNS16 (50-01) OK ---
+--- M3GCNS16 (50-02) OK ---
+--- M3GCNS16 (50-03) OK ---
+--- M3GCNS16 (50-04) OK ---
+--- M3GCNS16 (50-05) OK ---
+--- M3GCNS16 (50-06) OK ---
+--- M3GCNS16 (50-07) OK ---
+--- M3GCNS16 (50-08) OK ---
+--- M3GCNS16 (50-09) OK ---
+--- M3GCNS16 (50-10) OK ---
+--- M3GCNS16 (50-11) OK ---
+--- M3GCNS16 (50-12) OK ---
+--- M3GCNS16 (50-13) OK ---
+--- M3GCNS16 (50-14) OK ---
+--- M3GCNS16 (50-15) OK ---
+--- M3GCNS16 (50-16) OK ---
+--- M3GCNS16 (50-17) OK ---
+--- M3GCNS16 (50-18) OK ---
+M3GCNS16 END  
+ OK 
+OK OF A-2
+OK OF C-2
+OK OF B-2
+*** M3GARI03 ** MK3 TEST ** STARTED ***
+*** M3GARI03 - 01 ** OK ***
+*** M3GARI03 - 02 ** OK ***
+*** M3GARI03 - 03 ** OK ***
+*** M3GARI03 - 04 ** OK ***
+*** M3GARI03 - 05 ** OK ***
+*** M3GARI03 - 06 ** OK ***
+*** M3GARI03 - 07 ** OK ***
+*** M3GARI03 - 08 ** OK ***
+*** M3GARI03 - 09 ** OK ***
+*** M3GARI03 - 10 ** OK ***
+*** M3GARI03 - 11 ** OK ***
+*** M3GARI03 - 12 ** OK ***
+*** M3GARI03 - 13 ** OK ***
+*** M3GARI03 - 14 ** OK ***
+*** M3GARI03 - 15 ** OK ***
+*** M3GARI03 - 16 ** OK ***
+*** M3GARI03 - 17 ** OK ***
+*** M3GARI03 - 18 ** OK ***
+*** M3GARI03 - 19 ** OK ***
+*** M3GARI03 - 20 ** OK ***
+*** M3GARI03 - 21 ** OK ***
+*** M3GARI03 - 22 ** OK ***
+*** M3GARI03 - 23 ** OK ***
+*** M3GARI03 - 24 ** OK ***
+*** M3GARI03 - 25 ** OK ***
+*** M3GARI03 - 26 ** OK ***
+*** M3GARI03 - 27 ** OK ***
+*** M3GARI03 - 28 ** OK ***
+*** M3GARI03 - 29 ** OK ***
+*** M3GARI03 - 30 ** OK ***
+******* M3GARI03 TEST ENDED *******
+ SCRPZ05 PASS 
+M3EVA332 TEST OK 
+
+***** MPTEST09 START *****
+   ** SORTSS RETURN OK **
+   ** SCHK   RETURN OK **
+***** MPTEST09 OK OK OK *****
+***** MPTEST09 END END *****
+ TEST ==> OK
+M3EVA295 TEST OK 
+
+*** 
+exit 0

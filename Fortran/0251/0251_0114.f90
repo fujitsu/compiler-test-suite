@@ -20,16 +20,16 @@ type(bt) :: act
 call sub(act,bt(1,5))
 
 block
-type,extends(at) :: bt
+type,extends(at) :: bt2
  integer :: j=44
 end type
 
-type,extends(bt) :: ct
+type,extends(bt2) :: ct
  integer :: k=55
 end type
 
-call sub2(bt(2,4),ct(5,6,7))
-call sub3(act,bt(2,4),ct(5,6,7))
+call sub2(bt2(2,4),ct(5,6,7))
+call sub3(act,bt2(2,4),ct(5,6,7))
 end block
 end block
 end subroutine

@@ -1,0 +1,4 @@
+ ----- test --
+       parallel firstprivate(/com1/) private(it) -----
+ OK
+exit 0

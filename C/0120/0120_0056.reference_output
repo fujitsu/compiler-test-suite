@@ -1,0 +1,5 @@
+main a=1 b=2 c=3
+sub1 a=2 b=4 c=6
+sub1 a=3 b=6 c=9
+main a=3 b=6 c=9
+exit 0

@@ -20,11 +20,11 @@ class(ty),allocatable :: obj_parent,obj
 allocate(ty2::obj_parent)
 
 block
-type,extends(ty) :: ty2
+type,extends(ty) :: ty3
 integer :: ii2
 end type
 
-allocate(ty2::obj)
+allocate(ty3::obj)
 if(extends_type_of(obj,obj_parent).eqv. .false.) then
  print*,'pass'
 call ss(obj)

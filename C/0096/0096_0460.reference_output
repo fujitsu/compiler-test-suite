@@ -1,0 +1,13 @@
+** OK ** -- eint 
+** OK ** -- einta[0] 
+** OK ** -- einta[1] 
+** OK ** -- einta[2] 
+** OK ** -- einta[3] 
+** OK ** -- einta[4] 
+** OK ** -- echar
+** OK ** -- echara[0] 
+** OK ** -- echara[1] 
+** OK ** -- echara[2] 
+** OK ** -- echara[3] 
+***  OK ***
+exit 0

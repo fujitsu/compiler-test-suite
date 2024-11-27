@@ -1,0 +1,10 @@
+ START 
+ MOVE 1 FROM a TO b 
+ MOVE 2 FROM a TO c 
+ MOVE 1 FROM b TO c 
+ MOVE 3 FROM a TO b 
+ MOVE 1 FROM c TO a 
+ MOVE 2 FROM c TO b 
+ MOVE 1 FROM a TO b 
+ END : OK  
+exit 0

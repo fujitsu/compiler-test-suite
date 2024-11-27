@@ -1,0 +1,66 @@
+*** 
+********** M3ECCV01 TEST START **********
+***** M3ECCV01 - 01 ***** O K *****
+***** M3ECCV01 - 02 ***** O K *****
+***** M3ECCV01 - 03 ***** O K *****
+***** M3ECCV01 - 04 ***** O K *****
+***** M3ECCV01 - 05 ***** O K *****
+***** M3ECCV01 - 06 ***** O K *****
+***** M3ECCV01 - 07 ***** O K *****
+***** M3ECCV01 - 08 ***** O K *****
+***** M3ECCV01 - 09 ***** O K *****
+***** M3ECCV01 - 10 ***** O K *****
+***** M3ECCV01 - 11 ***** O K *****
+********** M3ECCV01 TEST  END  **********
+M3MPSI03 OK
+M3MPSI03 OK
+********** SCOHD02 STARTED *********
+********** SCOHD02 -01 OK **********
+********** SCOHD02 -02 OK **********
+********** SCOHD02 -03 OK **********
+********** SCOHD02 -04 OK **********
+********** SCOHD02 -05 OK **********
+********** SCOHD02 -06 OK **********
+********** SCOHD02 -07 OK **********
+********** SCOHD02  ENDED **********
+*** START ***
+TEST01 --> OK 
+TEST02 --> OK 
+*** END   ***
+---- SCPA015 START ---- 
+     ***  OK  *** 
+---- SCPA015  END  ---- 
+ I2 VALUE 5 
+*** MPTEST30 I2 OK ***
+ I4 VALUE 5 
+*** MPTEST30 I4 OK ***
+ U2 VALUE 5 
+*** MPTEST30 U2 OK ***
+ U4 VALUE 5 
+*** MPTEST30 U4 OK ***
+ RS VALUE 5.000000 
+*** MPTEST30 RS OK ***
+ RD VALUE 5.000000 
+*** MPTEST30 RD OK ***
+ CH VALUE 5 
+*** MPTEST30 CH OK ***
+ITEM1 OK
+ITEM2 OK
+********** M3ECMV01 START **********
+***** M3ECMV01 - 01 ***** O K *****
+***** M3ECMV01 - 02 ***** O K *****
+***** M3ECMV01 - 03 ***** O K *****
+********** M3ECMV01  END  **********
+
+***** MPTEST08 START *****
+    * CALL MP2FNC1 *
+     +++ OK EXI=1 +++
+    * CALL MP2FNC2 *
+     +++ OK EXI=3 +++
+    * CALL MP2FNC3 *
+     +++ OK EXI=6 +++
+   ** MPTEST08 OK OK OK ** 
+***** MPTEST08 END *****
+
+*** 
+exit 0

@@ -1,0 +1,4 @@
+ sum1= 500 
+ sum2= 100 
+ isum= 210 
+exit 0

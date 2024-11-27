@@ -1,0 +1,2 @@
+!$omp threadprivate(/com/)
+end

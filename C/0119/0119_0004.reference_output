@@ -1,0 +1,8 @@
+***** memset ok *****
+***** memcpy ok *****
+***** memcmp ok *****
+***** memchr ok *****
+***** strcmp ok *****
+***** strcpy ok *****
+***** strlen ok *****
+exit 0

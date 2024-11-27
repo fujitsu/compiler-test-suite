@@ -1,0 +1,2 @@
+omp_get_thread_num : PASSED
+exit 0

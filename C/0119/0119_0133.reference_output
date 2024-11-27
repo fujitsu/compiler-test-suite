@@ -1,0 +1,25 @@
+* TP=SCPIN22 ENTERED *
+       'abc'            'b'            2                   
+ ** SCPIN22.01 OK **
+
+       'abc'            'b'      1                         
+ ** SCPIN22.02 OK **
+
+       'ABCDEFGHIJKLMN'            'M'            13                   
+ ** SCPIN22.03 OK **
+
+       'ABCDEFGHIJKLMN'            'M'      12                         
+ ** SCPIN22.04 OK **
+
+       '0123456789'            '5'      4                         
+ ** SCPIN22.05 OK **
+
+       'long ago,there was a long slope.'            '.'            32                   
+ ** SCPIN22.06 OK **
+
+       '3.14159265358979'            '5'            6                   
+ ** SCPIN22.07 OK **
+
+  * SCPIN22 ENDED *
+
+exit 0

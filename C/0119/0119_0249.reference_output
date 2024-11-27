@@ -1,0 +1,9 @@
+********** EVT01B TEST START **********
+***** EVT01B - FUNC1 ** O   K *****
+***** EVT01B - FUNC2 ** O   K *****
+***** EVT01B - FUNC3 ** O   K *****
+***** EVT01B - FUNC4 ** O   K *****
+***** EVT01B - FUNC5 ** O   K *****
+***** EVT01B - FUNC6 ** O   K *****
+********** EVT01B TEST  END  **********
+exit 0

@@ -1,0 +1,4 @@
+ See .s file and confirm optimization
+ shift value <= 0 , nooptimize
+  OK
+exit 0

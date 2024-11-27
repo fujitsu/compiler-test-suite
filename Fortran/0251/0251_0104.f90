@@ -12,11 +12,11 @@ type(ty2),target :: tgt1
 obj_parent=>tgt1
 
 block
-type,extends(ty) :: ty2
+type,extends(ty) :: ty3
 integer :: ii2=3
 end type
 
-type(ty2),target :: tgt1
+type(ty3),target :: tgt1
 obj=>tgt1
 if(extends_type_of(obj,obj_parent).eqv. .false.) then
  print*,'pass'
@@ -25,13 +25,13 @@ else
 endif
 
 block
-type,extends(ty) :: ty2
+type,extends(ty) :: ty4
 integer :: ii2=4
 end type
 
 class(ty),pointer :: obj2
 
-type(ty2),target :: tgt1
+type(ty4),target :: tgt1
 obj2=>tgt1
 if(extends_type_of(obj2,obj_parent).eqv. .false.) then
  print*,'pass'

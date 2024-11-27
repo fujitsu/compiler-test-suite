@@ -1,0 +1,6 @@
+ TEST START 
+ *** TEST01 O K (30-02) *** 
+ *** TEST02 N G (30-03) *** 
+ *** TEST03 N G (30-04) *** 
+ TEST END 
+exit 0

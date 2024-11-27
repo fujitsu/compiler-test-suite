@@ -1,0 +1,12 @@
+PROGRAM MAIN
+  TYPE ty(k,l)
+    INTEGER,KIND::k=2
+    INTEGER,LEN::l
+  END TYPE
+  TYPE ty1(k1,l1)
+    INTEGER,KIND ::k1
+    INTEGER,LEN::l1
+    INTEGER(KIND =k1)::CH
+    TYPE(ty(2))::CMP
+  END TYPE
+END PROGRAM

@@ -1,0 +1,5 @@
+COMPLEX(KIND=2)::X
+X=(100.566,10.4)
+PRINT*,X  
+
+END

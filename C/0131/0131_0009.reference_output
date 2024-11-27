@@ -1,0 +1,43 @@
+ main result 
+ l= 0  c= 20 
+ l= 0  c= 19 
+ l= 0  c= 18 
+ l= 0  c= 17 
+ l= 0  c= 16 
+ l= 0  c= 15 
+ l= 0  c= 14 
+ l= 0  c= 13 
+ l= 0  c= 12 
+ l= 0  c= 11 
+ l= 0  c= 10 
+ l= 1  c= 9 
+ l= 1  c= 8 
+ l= 1  c= 7 
+ l= 1  c= 6 
+ l= 1  c= 5 
+ l= 1  c= 4 
+ l= 1  c= 3 
+ l= 1  c= 2 
+ l= 1  c= 1 
+ sub  result 
+ l= 0  c= 1 
+ l= 0  c= 1 
+ l= 1  c= 1 
+ l= 1  c= 0 
+ l= 1  c= 0 
+ l= 1  c= 0 
+ l= 1  c= 0 
+ l= 1  c= 0 
+ l= 1  c= 0 
+ l= 1  c= 0 
+ l= 1  c= 0 
+ l= 0  c= 0 
+ l= 0  c= 0 
+ l= 1  c= 0 
+ l= 1  c= 0 
+ l= 1  c= 0 
+ l= 1  c= 0 
+ l= 1  c= 0 
+ l= 1  c= 0 
+ l= 1  c= 0 
+exit 0

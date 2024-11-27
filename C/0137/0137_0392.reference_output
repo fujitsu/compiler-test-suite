@@ -1,0 +1,9 @@
+*** mptest07 start ***
+     TOTLV = 475 
+          TOTLVA = 45 
+          TOTLVB = 145 
+          TOTLVC = 285 
+     TOTLU = 475 
+     TOTLH = 475 
+*** mptest07  ok ***
+exit 0

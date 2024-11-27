@@ -1,0 +1,9 @@
+ok of b-1-1
+ok of b-1-2
+error of b-1-3 at second : ei = 1128792064
+gmicro ei = 0x43480000
+error of b-1-4 at second : ei = 43480000
+gmicro ei = 43480000
+ok of b-1-5
+ok of b-1-6
+exit 0

@@ -1,0 +1,2 @@
+print *,ICHAR('aaaaaa')
+end

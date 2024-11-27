@@ -1,5 +1,3 @@
-llvm_singlesource_compile_only_file(0394_0012.f90 PREFIX "Fujitsu-Fortran-")
-llvm_singlesource_compile_only_file(0394_0013.f90 PREFIX "Fujitsu-Fortran-")
 llvm_singlesource_compile_only_file(0394_0019.f90 PREFIX "Fujitsu-Fortran-")
 llvm_singlesource_compile_only_file(0394_0020.f90 PREFIX "Fujitsu-Fortran-")
 llvm_singlesource_compile_only_file(0394_0021.f90 PREFIX "Fujitsu-Fortran-")

@@ -1,0 +1,5 @@
+    ASSIGN 10 TO I
+    DO 20 I=1,10
+ 10 A=1.0
+ 20 CONTINUE
+    end

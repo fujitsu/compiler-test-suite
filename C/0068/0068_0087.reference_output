@@ -1,0 +1,3 @@
+-----  -- parallel for reduction(+:ia) reduction(-:ib) -----
+OK
+exit 0

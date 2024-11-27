@@ -1,0 +1,11 @@
+ary.b[0] => 0 
+ary.b[1] => 1 
+ary.b[2] => 2 
+ary.b[3] => 3 
+ary.b[4] => 4 
+ary.b[5] => 5 
+ary.b[6] => 6 
+ary.b[7] => 7 
+ary.b[8] => 8 
+ary.b[9] => 9 
+exit 0

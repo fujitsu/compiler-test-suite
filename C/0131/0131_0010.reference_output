@@ -1,0 +1,26 @@
+ main result 
+ l= 0  a= 0   c= 20 
+ l= 0  a= 1   c= 19 
+ l= 0  a= 2   c= 18 
+ l= 0  a= 3   c= 17 
+ l= 0  a= 4   c= 16 
+ l= 0  a= 5   c= 15 
+ l= 0  a= 6   c= 14 
+ l= 0  a= 7   c= 13 
+ l= 0  a= 8   c= 12 
+ l= 0  a= 9   c= 11 
+ l= 0  a= 10   c= 10 
+ l= 1  a= 12   c= 9 
+ l= 1  a= 13   c= 8 
+ l= 1  a= 14   c= 7 
+ l= 1  a= 15   c= 6 
+ l= 1  a= 16   c= 5 
+ l= 1  a= 17   c= 4 
+ l= 1  a= 18   c= 3 
+ l= 1  a= 19   c= 2 
+ l= 1  a= 20   c= 1 
+ sub1 result 
+ k= 1  k= 2  k= 3  k= 4  k= 5  k= 6  k= 7  k= 8  k= 9  k= 10  k= 11  k= 12  k= 13  k= 14  k= 15  k= 16  k= 17  k= 18  k= 19  k= 20 
+ sub2 result 
+ l= 0  l= 1  l= 2  l= 3  l= 4  l= 5  l= 6  l= 7  l= 8  l= 9  l= 10  l= 14  l= 15  l= 16  l= 17  l= 18  l= 19  l= 20  l= 21  l= 22 
+exit 0

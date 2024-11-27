@@ -1,0 +1,37 @@
+ **pass-1** 1 1 
+ **pass-1** 1 1 
+ **pass-1** 1 1 
+ **pass-1** 1 1 
+ **pass-1** 1 1 
+ **pass-1** 1 1 
+ **pass-1** 1 1 
+ NO.1 ic1= 7 ic2= 13 
+ **pass-2** 1 0 
+ **pass-2** 0 1 
+ **pass-2** 1 1 
+ **pass-2** 0 1 
+ **pass-2** 1 0 
+ **pass-2** 0 1 
+ **pass-2** 1 1 
+ **pass-2** 0 1 
+ **pass-2** 1 0 
+ **pass-2** 0 1 
+ **pass-2** 1 1 
+ **pass-2** 0 1 
+ **pass-2** 1 0 
+ **pass-2** 0 1 
+ NO.2 ic1= 14 ic2= 6 
+ **pass-3** 1 1 
+ **pass-3** 1 0 
+ **pass-3** 0 1 
+ **pass-3** 1 0 
+ **pass-3** 1 1 
+ **pass-3** 1 1 
+ **pass-3** 1 0 
+ **pass-3** 0 1 
+ **pass-3** 1 0 
+ **pass-3** 1 1 
+ **pass-3** 1 1 
+ **pass-3** 1 0 
+ NO.3 ic1= 12 ic2= 3 
+exit 0

@@ -1,0 +1,3 @@
+ parallel for private(ic) critical -----
+OK
+exit 0

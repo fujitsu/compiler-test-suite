@@ -1,0 +1,4 @@
+ test start
+ok
+ test end
+exit 0

@@ -1,0 +1,5 @@
+ ----- TEST --
+       parallel
+       do private(/com1/) ------
+ OK
+exit 0

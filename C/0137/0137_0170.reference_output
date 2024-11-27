@@ -1,0 +1,7 @@
+SUM1 = 15050
+*** sum1 OK ***
+SUM2 = 10100
+*** sum2 OK ***
+SUM3 = 14650
+*** sum3 OK ***
+exit 0

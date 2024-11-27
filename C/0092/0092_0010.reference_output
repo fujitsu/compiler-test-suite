@@ -1,0 +1,14 @@
+ Begin
+test01--long double <-> int  : OK
+test02--char <-> int  : OK
+test03--double <-> int  : OK
+test04--unsigned char <-> int  : OK
+test05--float <-> int  : OK
+test06--short <-> int  : OK
+test07--unsigned long long <-> int  : OK
+test08--unsigned short <-> int  : OK
+test09--long long <-> int  : OK
+test10--short int <-> int  : OK
+test11--unsigned int <-> int  : OK
+ End
+exit 0

@@ -1,0 +1,61 @@
+*** 
+
+M3EVA233 TEST OK 
+M3CCNL03   TEST START 
+ *** O K (17-01) *** 
+ *** O K (17-02) *** 
+ *** O K (17-03) *** 
+ *** O K (17-04) *** 
+ *** O K (17-07) *** 
+M3CCNL03   TEST END 
+***** MPTEST34 OK *****
+ TEST ==> OKM3EVA276 TEST OK 
+M3GSWH06 TEST-START 
+M3GSWH06 1-1 TEST -O  K- 
+M3GSWH06 1-2 TEST -O  K- 
+M3GSWH06 1-3 TEST -O  K- 
+M3GSWH06 1-4 TEST -O  K- 
+M3GSWH06 1-5 TEST -O  K- 
+M3GSWH06 1-6 TEST -O  K- 
+M3GSWH06 1-7 TEST -O  K- 
+M3GSWH06 1-8 TEST -O  K- 
+M3GSWH06 2-1 TEST -O  K- 
+M3GSWH06 2-2 TEST -O  K- 
+M3GSWH06 2-3 TEST -O  K- 
+M3GSWH06 2-4 TEST -O  K- 
+M3GSWH06 2-5 TEST -O  K- 
+M3GSWH06 2-6 TEST -O  K- 
+M3GSWH06 2-7 TEST -O  K- 
+M3GSWH06 2-8 TEST -O  K- 
+M3GSWH06 TEST-END 
+
+
+
+
+ SCRPZ21 PASS 
+*** M3GMEB06 TEST *** START ***
+*** M3EMEB06-01 *** O   K ***
+*** M3EMEB06-02 *** O   K ***
+*** M3EMEB06-03 *** O   K ***
+*** M3EMEB06-04 *** O   K ***
+*** M3EMEB06-05 *** O   K ***
+*** M3EMEB06-06 *** O   K ***
+*** M3EMEB06-07 *** O   K ***
+*** M3EMEB06-08 *** O   K ***
+*** M3EMEB06-09 *** O   K ***
+*** M3EMEB06-10 *** O   K ***
+*** M3EMEB06 TEST FOR ***  END  ***
+ OK 
+      
+    MPTEST37 START 
+      
+    EIGHT QUEEN PATTERN  = 92 
+      
+      
+    MPTEST37 OK 
+      
+    MPTEST37 END 
+      
+
+*** 
+exit 0

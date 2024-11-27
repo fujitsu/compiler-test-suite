@@ -1,0 +1,8 @@
+llvm_singlesource(PREFIX "Fujitsu-C-")
+set_property(SOURCE 0060_0000.c APPEND PROPERTY COMPILE_OPTIONS "-fno-unroll-loops")
+set_property(SOURCE 0060_0001.c APPEND PROPERTY COMPILE_OPTIONS "-fno-unroll-loops")
+set_property(SOURCE 0060_0002.c APPEND PROPERTY COMPILE_OPTIONS "-fno-unroll-loops")
+set_property(SOURCE 0060_0003.c APPEND PROPERTY COMPILE_OPTIONS "-fno-unroll-loops")
+set_property(SOURCE 0060_0006.c APPEND PROPERTY COMPILE_OPTIONS "-fno-fast-math")
+set_property(SOURCE 0060_0007.c APPEND PROPERTY COMPILE_OPTIONS "-fno-fast-math")
+set_property(SOURCE 0060_0008.c APPEND PROPERTY COMPILE_OPTIONS "-fhonor-nans")

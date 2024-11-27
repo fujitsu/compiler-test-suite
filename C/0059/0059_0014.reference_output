@@ -1,0 +1,5 @@
+size:8
+__builtin_clzl ok
+__builtin_ctzl ok
+__builtin_popcountl ok 
+exit 0

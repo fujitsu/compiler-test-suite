@@ -1,0 +1,6 @@
+---  test for software pipelining start ---
+10 ( correct value is 10 )
+0 ( correct value is 0 )
+10 ( correct value is 10 )
+    OK
+exit 0

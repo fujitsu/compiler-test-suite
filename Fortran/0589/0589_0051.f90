@@ -21,9 +21,7 @@ call test03
 
 contains
         subroutine test03()
-!        ifun()=1  !! statement function
         if(trg .ne. 1000) print*,"121"
-!        if(ifun().ne. 1) print*,"122"  !! resolve with statement function
         print*,"Pass"
         end subroutine
 end

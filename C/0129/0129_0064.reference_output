@@ -1,0 +1,13 @@
+* all variable =>  x *
+-ok1-
+* exp3 constant(2) =>  x *
+-ok2-
+* exp3 constant(1) =>  o *
+-ok3-
+* exp2 constant =>  x *
+-ok4-
+* exp1 constant =>  x *
+-ok5-
+* all  constant =>  o *
+-ok6-
+exit 0

@@ -1,0 +1,41 @@
+******* FUNC011 IB05 CHECK     OK ****
+******* FUNC01 IA01            OK ****
+******* FUNC01 IA02 REAL ARGUM OK ****
+******* FUNC01 IA03 REAL ARGUM OK ****
+******* FUNC01 IA05 REAL ARGUM OK ****
+******* FUNC021 CB05 CHECK     OK ****
+******* FUNC02 CA01            OK ****
+******* FUNC02 CA02 REAL ARGUM OK ****
+******* FUNC02 CA03 REAL ARGUM OK ****
+******* FUNC02 CA05 REAL ARGUM OK ****
+******* FUNC031 SB05 CHECK     OK ****
+******* FUNC03 SA01            OK ****
+******* FUNC03 SA02 REAL ARGUM OK ****
+******* FUNC01 SA03 REAL ARGUM OK ****
+******* FUNC01 SA05 REAL ARGUM OK ****
+******* FUNC041 UIB05 CHECK    OK ****
+******* FUNC04 UIA01           OK ****
+******* FUNC04 UIA02 REAL ARGUM OK ****
+******* FUNC04 UIA03 REAL ARGUM OK ****
+******* FUNC04 UIA05 REAL ARGUM OK ****
+******* FUNC051 UCB05 CHECK    OK ****
+******* FUNC05 UCA01           OK ****
+******* FUNC05 UCA02 REAL ARGUM OK ****
+******* FUNC05 UCA03 REAL ARGUM OK ****
+******* FUNC05 UCA05 REAL ARGUM OK ****
+******* FUNC061 USB05 CHECK    OK ****
+******* FUNC06 USA01           OK ****
+******* FUNC06 USA02 REAL ARGUM OK ****
+******* FUNC06 USA03 REAL ARGUM OK ****
+******* FUNC06 USA05 REAL ARGUM OK ****
+******* FUNC071 FB05 CHECK     OK ****
+******* FUNC07 FA01            OK ****
+******* FUNC07 FA02 REAL ARGUM OK ****
+******* FUNC07 FA03 REAL ARGUM OK ****
+******* FUNC07 FA05 REAL ARGUM OK ****
+******* FUNC081 DB05 CHECK     OK ****
+******* FUNC08 DA01            OK ****
+******* FUNC08 DA02 REAL ARGUM OK ****
+******* FUNC08 DA03 REAL ARGUM OK ****
+******* FUNC08 DA05 REAL ARGUM OK ****
+exit 0

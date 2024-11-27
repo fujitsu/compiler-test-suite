@@ -21,8 +21,8 @@ allocate(trg%t)
 allocate(character(len=8)::trg%ch(2))
 
 trg%t=1
-trg%ch(2)="face"
-trg%ch(1)="good"
+trg%ch(2)="ffffffff"
+trg%ch(1)="gggggg"
 
 trg%fun() = ty(1000,(/"1234567","7654321"/))
 

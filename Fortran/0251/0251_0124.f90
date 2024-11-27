@@ -40,16 +40,16 @@ use m1
 class(ty2),intent(out) :: dd
 class(ty2) :: dmy(:)
 block
-type,extends(ty) :: ty2
+type,extends(ty) :: ty3
  integer :: ii2=200
 end type
 
 class(ty),allocatable :: oo
-allocate(ty2:: oo)
+allocate(ty3:: oo)
 if(extends_type_of(oo,dd) .neqv. .false.) print*,203,extends_type_of(oo,dd)
 if(extends_type_of(oo,dmy) .neqv. .false.) print*,202,extends_type_of(oo,dd)
 select type(oo)
-type is(ty2)
+type is(ty3)
 dd%ii2=oo%ii2
 end select
 end block

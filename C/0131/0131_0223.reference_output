@@ -1,0 +1,7 @@
+Test Result ax[0][0]=10 
+Test Result ax[0][1]=10 
+Test Result ax[1][0]=11 
+Test Result ax[1][1]=11 
+Test Result ax[2][0]=12 
+Test Result ax[2][1]=12 
+exit 0

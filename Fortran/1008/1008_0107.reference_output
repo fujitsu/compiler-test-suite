@@ -1,0 +1,4 @@
+ ----- TEST --
+       parallel do atomic -----
+ OK
+exit 0

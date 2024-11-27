@@ -1,0 +1,15 @@
+PROGRAM MAIN
+IMPLICIT NONE
+integer :: err
+REAL :: src(10)
+CLASS(*), ALLOCATABLE:: ptr(:)
+src=220.0000
+src(1)=10.0000
+allocate(ptr,SOURCE=src,STAT = err)
+if( err .EQ. 0 ) then 
+    print *, "ALLOCATION success to ptr"
+else
+    print *, "ALLOCATION failure to ptr"
+endif 
+
+END PROGRAM

@@ -1,0 +1,5 @@
+ ----- test --
+       threadprivate(/com1/)
+       copyin(ty1,ic) ------
+ OK
+exit 0

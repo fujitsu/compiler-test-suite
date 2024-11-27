@@ -1,0 +1,5 @@
+ ----- test --
+       parallel
+       do lastprivate(/com1/,ia) -----
+ OK
+exit 0

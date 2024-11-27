@@ -1,0 +1,18 @@
+* TP=SCPIN06 ENTERED *
+                                                    LONG LONG INT                                                     
+ ** SCPIN06.01 OK **
+ ** SCPIN06.02 OK **
+ ** SCPIN06.04 OK **
+ ** SCPIN06.06 OK **
+ ** SCPIN06.07 OK **
+ ** SCPIN06.08 OK **
+ ** SCPIN06.10 OK **
+ ** SCPIN06.11 OK **
+ ** SCPIN06.12 OK **
+ ** SCPIN06.14 OK **
+ ** SCPIN06.15 OK **
+ ** SCPIN06.17 OK **
+ ** SCPIN06.18 OK **
+  * SCPIN06 ENDED *
+
+exit 0

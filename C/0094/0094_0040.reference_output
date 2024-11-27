@@ -1,0 +1,6 @@
+*** ciga0002: short int is OK ***
+*** ciga0002: long int is OK ***
+*** ciga0002: float is OK ***
+*** ciga0002: double is OK ***
+*** ciga0002: long double is OK ***
+exit 0

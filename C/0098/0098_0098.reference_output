@@ -1,0 +1,4 @@
+ ###  ## BUSY ON EXIT ####
+ *** REAL DATA   ***  s =  6.0   =  2
+ *** LOGICAL DATA ** ls =   1    =  0
+exit 0
