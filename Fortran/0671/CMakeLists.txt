@@ -1,7 +1,3 @@
-llvm_singlesource_compile_only_file(0671_0013.inc PREFIX "Fujitsu-Fortran-")
-llvm_singlesource_compile_only_file(0671_0014.inc PREFIX "Fujitsu-Fortran-")
-llvm_singlesource_compile_only_file(0671_0015.inc PREFIX "Fujitsu-Fortran-")
-llvm_singlesource_compile_only_file(0671_0016.inc PREFIX "Fujitsu-Fortran-")
 llvm_singlesource(PREFIX "Fujitsu-Fortran-")
 llvm_set_own_fortran_module_directory()
 set_property(SOURCE 0671_0002.F APPEND PROPERTY COMPILE_OPTIONS "-ffixed-line-length=255")

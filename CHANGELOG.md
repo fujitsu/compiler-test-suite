@@ -1,6 +1,14 @@
 Changelog
 =========
 
+2024-12
+-------
+
+### Fixed
+ 
+- Remove redundant files.
+
+
 2024-11
 -------
 
