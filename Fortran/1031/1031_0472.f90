@@ -1,0 +1,13 @@
+REAL(KIND=8)::A(3,3,2),B(2,2)
+A=reshape((/(i,i=1,18*2)/),(/3,3,2/))
+B=reshape((/(i,i=1,4)/),(/2,2/))
+A(1:2,1:2,1)=A(1:2,1:2,1)+MATMUL(TRANSPOSE(B),A(1:2,1:2,2))
+if (any(abs((/A/)-(/&
+33,76,3,45,100,6,7,8,9,10,11,12,13,14,15,16,17,18&
+/))>0.001))then
+print *,int(A)
+print *,'error'
+endif
+
+print *,'pass'
+end

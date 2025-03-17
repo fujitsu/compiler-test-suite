@@ -1,0 +1,7 @@
+ START
+ FUNC1 OK
+ FUNC2 OK
+ FUNC3 OK
+ FUNC4 OK
+ END  
+exit 0

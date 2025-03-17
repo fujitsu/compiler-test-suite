@@ -3,10 +3,10 @@
       print *,'pass'
       end
       subroutine sub2()
-      if (modulo(8,5).ne.3) call errtra
-      if (modulo(-8,5).ne.2) call errtra
-      if (modulo(8,-5).ne.-2) call errtra
-      if (modulo(-8,-5).ne.-3) call errtra
+      if (modulo(8,5).ne.3) print *,"fail"
+      if (modulo(-8,5).ne.2) print *,"fail"
+      if (modulo(8,-5).ne.-2) print *,"fail"
+      if (modulo(-8,-5).ne.-3) print *,"fail"
       end
       subroutine sub1()
       real*4      r4

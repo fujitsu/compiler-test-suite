@@ -1,3 +1,4 @@
+call sub1()
 end
 
 subroutine sub1()

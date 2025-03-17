@@ -1,0 +1,5 @@
+result of A::*mem1 : (obj.*mem1)10 (obj1.*mem)20
+result of A::*mem1 : (obj.*mem1)100
+Member pointer test.
+result of A::*mem2 : (obj.*mem2)30 (obj2.*mem)40
+exit 0

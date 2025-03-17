@@ -1,0 +1,9 @@
+V::V() called
+V::~V() called
+V::~V() called
+V::~V() called
+V::V() called
+V::~V() called
+V::~V() called
+V::~V() called
+exit 0

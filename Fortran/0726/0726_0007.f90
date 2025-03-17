@@ -7,12 +7,6 @@ call test06()
 call test07()
 print *,'pass'
 end
-subroutine errtra()
-data i /1/
-save
-if (i.eq.1) print *,'ng'
-i=i+1
-end
 
 module mod07
 type ty01

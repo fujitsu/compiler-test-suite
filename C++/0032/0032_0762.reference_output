@@ -1,0 +1,11 @@
+U::U() called
+U::U(U&) called
+U::U(U&) called
+U::U(U&) called
+0
+1
+U::~U() called
+U::~U() called
+U::~U() called
+U::~U() called
+exit 0

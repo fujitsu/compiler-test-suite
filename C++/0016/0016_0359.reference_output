@@ -1,0 +1,17 @@
+Char       :   1
+Short      :   2
+Int        :   3
+Long       :   4
+Signed     :   5
+Unsigned   :   6
+Float      :   7.000000
+Double     :   8.000000
+Char       :   1
+Short      :   2
+Int        :   3
+Long       :   4
+Signed     :   5
+Unsigned   :   6
+Float      :   7.000000
+Double     :   8.000000
+exit 0

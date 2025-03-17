@@ -1,0 +1,6 @@
+start
+div
+	a  s=0 e=7fff f=       0,       0
+	b  s=0 e=   0 f=80000000,       0
+	c  s=0 e=   0 f=       0,       0
+exit 0

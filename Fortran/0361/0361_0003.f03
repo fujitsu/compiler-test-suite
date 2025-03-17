@@ -3,7 +3,7 @@ contains
 subroutine sub
 integer :: ia(2)
 parameter (i1=SIZE(ia))
-if(i1 /= 2) call errtra
+if(i1 /= 2) print *,"fail"
 end subroutine
 end module
 

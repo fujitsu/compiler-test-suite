@@ -1,0 +1,3 @@
+test1: call: OK
+test2: cast: OK
+exit 0

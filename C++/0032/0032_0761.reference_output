@@ -1,0 +1,7 @@
+R<int> catched : 10
+R<char> catched : a
+R<short> catched : 20
+R<int> catched : 10
+R<char> catched : a
+R<short> catched : 20
+exit 0

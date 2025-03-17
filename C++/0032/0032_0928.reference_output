@@ -1,0 +1,5 @@
+S::S() called
+S::S() called
+S::operator=() called
+20
+exit 0

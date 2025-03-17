@@ -1,0 +1,5 @@
+ ----- test --
+       parallel private(it)
+       do schedule(dynamic,50) -----
+ OK
+exit 0

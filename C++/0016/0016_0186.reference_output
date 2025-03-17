@@ -1,0 +1,2 @@
+int (*(*const )[10])(int (*)[2]) 
+exit 0

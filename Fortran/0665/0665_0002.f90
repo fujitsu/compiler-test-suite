@@ -41,16 +41,16 @@ data i07(1:3) /3* 0_1/
 data i08(1:3) /3* 0_1/
 data i09(1:3) /3* 0_1/
 data i10(1:3) /3* 0_1/
-if (.not.all(i01.eq.0_1)) call errtra
-if (.not.all(i02.eq.0_2)) call errtra
-if (.not.all(i03.eq.0_4)) call errtra
-if (.not.all(i04.eq.0_8)) call errtra
-if (.not.all(i05.eq.0.0_4)) call errtra
-if (.not.all(i06.eq.0.0_8)) call errtra
-if (.not.all(i07.eq.0.0_16)) call errtra
-if (.not.all(i08.eq.(0.0_4,0.0_4))) call errtra
-if (.not.all(i09.eq.(0.0_8,0.0_8))) call errtra
-if (.not.all(i10.eq.(0.0_16,0.0_16))) call errtra
+if (.not.all(i01.eq.0_1)) print *,'fail'
+if (.not.all(i02.eq.0_2)) print *,'fail'
+if (.not.all(i03.eq.0_4)) print *,'fail'
+if (.not.all(i04.eq.0_8)) print *,'fail'
+if (.not.all(i05.eq.0.0_4)) print *,'fail'
+if (.not.all(i06.eq.0.0_8)) print *,'fail'
+if (.not.all(i07.eq.0.0_16)) print *,'fail'
+if (.not.all(i08.eq.(0.0_4,0.0_4))) print *,'fail'
+if (.not.all(i09.eq.(0.0_8,0.0_8))) print *,'fail'
+if (.not.all(i10.eq.(0.0_16,0.0_16))) print *,'fail'
 end subroutine
 subroutine test12()
 integer(kind=1)   :: i01(3)
@@ -73,16 +73,16 @@ data i07(1:3) /3* 0_2/
 data i08(1:3) /3* 0_2/
 data i09(1:3) /3* 0_2/
 data i10(1:3) /3* 0_2/
-if (.not.all(i01.eq.0_1)) call errtra
-if (.not.all(i02.eq.0_2)) call errtra
-if (.not.all(i03.eq.0_4)) call errtra
-if (.not.all(i04.eq.0_8)) call errtra
-if (.not.all(i05.eq.0.0_4)) call errtra
-if (.not.all(i06.eq.0.0_8)) call errtra
-if (.not.all(i07.eq.0.0_16)) call errtra
-if (.not.all(i08.eq.(0.0_4,0.0_4))) call errtra
-if (.not.all(i09.eq.(0.0_8,0.0_8))) call errtra
-if (.not.all(i10.eq.(0.0_16,0.0_16))) call errtra
+if (.not.all(i01.eq.0_1)) print *,'fail'
+if (.not.all(i02.eq.0_2)) print *,'fail'
+if (.not.all(i03.eq.0_4)) print *,'fail'
+if (.not.all(i04.eq.0_8)) print *,'fail'
+if (.not.all(i05.eq.0.0_4)) print *,'fail'
+if (.not.all(i06.eq.0.0_8)) print *,'fail'
+if (.not.all(i07.eq.0.0_16)) print *,'fail'
+if (.not.all(i08.eq.(0.0_4,0.0_4))) print *,'fail'
+if (.not.all(i09.eq.(0.0_8,0.0_8))) print *,'fail'
+if (.not.all(i10.eq.(0.0_16,0.0_16))) print *,'fail'
 end subroutine
 subroutine test13()
 integer(kind=1)   :: i01(3)
@@ -105,16 +105,16 @@ data i07(1:3) /3* 0_4/
 data i08(1:3) /3* 0_4/
 data i09(1:3) /3* 0_4/
 data i10(1:3) /3* 0_4/
-if (.not.all(i01.eq.0_1)) call errtra
-if (.not.all(i02.eq.0_2)) call errtra
-if (.not.all(i03.eq.0_4)) call errtra
-if (.not.all(i04.eq.0_8)) call errtra
-if (.not.all(i05.eq.0.0_4)) call errtra
-if (.not.all(i06.eq.0.0_8)) call errtra
-if (.not.all(i07.eq.0.0_16)) call errtra
-if (.not.all(i08.eq.(0.0_4,0.0_4))) call errtra
-if (.not.all(i09.eq.(0.0_8,0.0_8))) call errtra
-if (.not.all(i10.eq.(0.0_16,0.0_16))) call errtra
+if (.not.all(i01.eq.0_1)) print *,'fail'
+if (.not.all(i02.eq.0_2)) print *,'fail'
+if (.not.all(i03.eq.0_4)) print *,'fail'
+if (.not.all(i04.eq.0_8)) print *,'fail'
+if (.not.all(i05.eq.0.0_4)) print *,'fail'
+if (.not.all(i06.eq.0.0_8)) print *,'fail'
+if (.not.all(i07.eq.0.0_16)) print *,'fail'
+if (.not.all(i08.eq.(0.0_4,0.0_4))) print *,'fail'
+if (.not.all(i09.eq.(0.0_8,0.0_8))) print *,'fail'
+if (.not.all(i10.eq.(0.0_16,0.0_16))) print *,'fail'
 end subroutine
 subroutine test14()
 integer(kind=1)   :: i01(3)
@@ -137,16 +137,16 @@ data i07(1:3) /3* 0_8/
 data i08(1:3) /3* 0_8/
 data i09(1:3) /3* 0_8/
 data i10(1:3) /3* 0_8/
-if (.not.all(i01.eq.0_1)) call errtra
-if (.not.all(i02.eq.0_2)) call errtra
-if (.not.all(i03.eq.0_4)) call errtra
-if (.not.all(i04.eq.0_8)) call errtra
-if (.not.all(i05.eq.0.0_4)) call errtra
-if (.not.all(i06.eq.0.0_8)) call errtra
-if (.not.all(i07.eq.0.0_16)) call errtra
-if (.not.all(i08.eq.(0.0_4,0.0_4))) call errtra
-if (.not.all(i09.eq.(0.0_8,0.0_8))) call errtra
-if (.not.all(i10.eq.(0.0_16,0.0_16))) call errtra
+if (.not.all(i01.eq.0_1)) print *,'fail'
+if (.not.all(i02.eq.0_2)) print *,'fail'
+if (.not.all(i03.eq.0_4)) print *,'fail'
+if (.not.all(i04.eq.0_8)) print *,'fail'
+if (.not.all(i05.eq.0.0_4)) print *,'fail'
+if (.not.all(i06.eq.0.0_8)) print *,'fail'
+if (.not.all(i07.eq.0.0_16)) print *,'fail'
+if (.not.all(i08.eq.(0.0_4,0.0_4))) print *,'fail'
+if (.not.all(i09.eq.(0.0_8,0.0_8))) print *,'fail'
+if (.not.all(i10.eq.(0.0_16,0.0_16))) print *,'fail'
 end subroutine
 subroutine test15()
 integer(kind=1)   :: i01(3)
@@ -169,16 +169,16 @@ data i07(1:3) /3* 0.0_4/
 data i08(1:3) /3* 0.0_4/
 data i09(1:3) /3* 0.0_4/
 data i10(1:3) /3* 0.0_4/
-if (.not.all(i01.eq.0_1)) call errtra
-if (.not.all(i02.eq.0_2)) call errtra
-if (.not.all(i03.eq.0_4)) call errtra
-if (.not.all(i04.eq.0_8)) call errtra
-if (.not.all(i05.eq.0.0_4)) call errtra
-if (.not.all(i06.eq.0.0_8)) call errtra
-if (.not.all(i07.eq.0.0_16)) call errtra
-if (.not.all(i08.eq.(0.0_4,0.0_4))) call errtra
-if (.not.all(i09.eq.(0.0_8,0.0_8))) call errtra
-if (.not.all(i10.eq.(0.0_16,0.0_16))) call errtra
+if (.not.all(i01.eq.0_1)) print *,'fail'
+if (.not.all(i02.eq.0_2)) print *,'fail'
+if (.not.all(i03.eq.0_4)) print *,'fail'
+if (.not.all(i04.eq.0_8)) print *,'fail'
+if (.not.all(i05.eq.0.0_4)) print *,'fail'
+if (.not.all(i06.eq.0.0_8)) print *,'fail'
+if (.not.all(i07.eq.0.0_16)) print *,'fail'
+if (.not.all(i08.eq.(0.0_4,0.0_4))) print *,'fail'
+if (.not.all(i09.eq.(0.0_8,0.0_8))) print *,'fail'
+if (.not.all(i10.eq.(0.0_16,0.0_16))) print *,'fail'
 end subroutine
 subroutine test16()
 integer(kind=1)   :: i01(3)
@@ -201,16 +201,16 @@ data i07(1:3) /3* 0.0_8/
 data i08(1:3) /3* 0.0_8/
 data i09(1:3) /3* 0.0_8/
 data i10(1:3) /3* 0.0_8/
-if (.not.all(i01.eq.0_1)) call errtra
-if (.not.all(i02.eq.0_2)) call errtra
-if (.not.all(i03.eq.0_4)) call errtra
-if (.not.all(i04.eq.0_8)) call errtra
-if (.not.all(i05.eq.0.0_4)) call errtra
-if (.not.all(i06.eq.0.0_8)) call errtra
-if (.not.all(i07.eq.0.0_16)) call errtra
-if (.not.all(i08.eq.(0.0_4,0.0_4))) call errtra
-if (.not.all(i09.eq.(0.0_8,0.0_8))) call errtra
-if (.not.all(i10.eq.(0.0_16,0.0_16))) call errtra
+if (.not.all(i01.eq.0_1)) print *,'fail'
+if (.not.all(i02.eq.0_2)) print *,'fail'
+if (.not.all(i03.eq.0_4)) print *,'fail'
+if (.not.all(i04.eq.0_8)) print *,'fail'
+if (.not.all(i05.eq.0.0_4)) print *,'fail'
+if (.not.all(i06.eq.0.0_8)) print *,'fail'
+if (.not.all(i07.eq.0.0_16)) print *,'fail'
+if (.not.all(i08.eq.(0.0_4,0.0_4))) print *,'fail'
+if (.not.all(i09.eq.(0.0_8,0.0_8))) print *,'fail'
+if (.not.all(i10.eq.(0.0_16,0.0_16))) print *,'fail'
 end subroutine
 subroutine test17()
 integer(kind=1)   :: i01(3)
@@ -233,16 +233,16 @@ data i07(1:3) /3* 0.0_16/
 data i08(1:3) /3* 0.0_16/
 data i09(1:3) /3* 0.0_16/
 data i10(1:3) /3* 0.0_16/
-if (.not.all(i01.eq.0_1)) call errtra
-if (.not.all(i02.eq.0_2)) call errtra
-if (.not.all(i03.eq.0_4)) call errtra
-if (.not.all(i04.eq.0_8)) call errtra
-if (.not.all(i05.eq.0.0_4)) call errtra
-if (.not.all(i06.eq.0.0_8)) call errtra
-if (.not.all(i07.eq.0.0_16)) call errtra
-if (.not.all(i08.eq.(0.0_4,0.0_4))) call errtra
-if (.not.all(i09.eq.(0.0_8,0.0_8))) call errtra
-if (.not.all(i10.eq.(0.0_16,0.0_16))) call errtra
+if (.not.all(i01.eq.0_1)) print *,'fail'
+if (.not.all(i02.eq.0_2)) print *,'fail'
+if (.not.all(i03.eq.0_4)) print *,'fail'
+if (.not.all(i04.eq.0_8)) print *,'fail'
+if (.not.all(i05.eq.0.0_4)) print *,'fail'
+if (.not.all(i06.eq.0.0_8)) print *,'fail'
+if (.not.all(i07.eq.0.0_16)) print *,'fail'
+if (.not.all(i08.eq.(0.0_4,0.0_4))) print *,'fail'
+if (.not.all(i09.eq.(0.0_8,0.0_8))) print *,'fail'
+if (.not.all(i10.eq.(0.0_16,0.0_16))) print *,'fail'
 end subroutine
 
 subroutine test18()
@@ -266,16 +266,16 @@ data i07(1:3) /3* (0.0_4 ,0.0_4 )/
 data i08(1:3) /3* (0.0_4 ,0.0_4 )/
 data i09(1:3) /3* (0.0_4 ,0.0_4 )/
 data i10(1:3) /3* (0.0_4 ,0.0_4 )/
-if (.not.all(i01.eq.0_1)) call errtra
-if (.not.all(i02.eq.0_2)) call errtra
-if (.not.all(i03.eq.0_4)) call errtra
-if (.not.all(i04.eq.0_8)) call errtra
-if (.not.all(i05.eq.0.0_4)) call errtra
-if (.not.all(i06.eq.0.0_8)) call errtra
-if (.not.all(i07.eq.0.0_16)) call errtra
-if (.not.all(i08.eq.(0.0_4,0.0_4))) call errtra
-if (.not.all(i09.eq.(0.0_8,0.0_8))) call errtra
-if (.not.all(i10.eq.(0.0_16,0.0_16))) call errtra
+if (.not.all(i01.eq.0_1)) print *,'fail'
+if (.not.all(i02.eq.0_2)) print *,'fail'
+if (.not.all(i03.eq.0_4)) print *,'fail'
+if (.not.all(i04.eq.0_8)) print *,'fail'
+if (.not.all(i05.eq.0.0_4)) print *,'fail'
+if (.not.all(i06.eq.0.0_8)) print *,'fail'
+if (.not.all(i07.eq.0.0_16)) print *,'fail'
+if (.not.all(i08.eq.(0.0_4,0.0_4))) print *,'fail'
+if (.not.all(i09.eq.(0.0_8,0.0_8))) print *,'fail'
+if (.not.all(i10.eq.(0.0_16,0.0_16))) print *,'fail'
 end subroutine
 subroutine test19()
 integer(kind=1)   :: i01(3)
@@ -298,16 +298,16 @@ data i07(1:3) /3* (0.0_8 ,0.0_8 )/
 data i08(1:3) /3* (0.0_8 ,0.0_8 )/
 data i09(1:3) /3* (0.0_8 ,0.0_8 )/
 data i10(1:3) /3* (0.0_8 ,0.0_8 )/
-if (.not.all(i01.eq.0_1)) call errtra
-if (.not.all(i02.eq.0_2)) call errtra
-if (.not.all(i03.eq.0_4)) call errtra
-if (.not.all(i04.eq.0_8)) call errtra
-if (.not.all(i05.eq.0.0_4)) call errtra
-if (.not.all(i06.eq.0.0_8)) call errtra
-if (.not.all(i07.eq.0.0_16)) call errtra
-if (.not.all(i08.eq.(0.0_4,0.0_4))) call errtra
-if (.not.all(i09.eq.(0.0_8,0.0_8))) call errtra
-if (.not.all(i10.eq.(0.0_16,0.0_16))) call errtra
+if (.not.all(i01.eq.0_1)) print *,'fail'
+if (.not.all(i02.eq.0_2)) print *,'fail'
+if (.not.all(i03.eq.0_4)) print *,'fail'
+if (.not.all(i04.eq.0_8)) print *,'fail'
+if (.not.all(i05.eq.0.0_4)) print *,'fail'
+if (.not.all(i06.eq.0.0_8)) print *,'fail'
+if (.not.all(i07.eq.0.0_16)) print *,'fail'
+if (.not.all(i08.eq.(0.0_4,0.0_4))) print *,'fail'
+if (.not.all(i09.eq.(0.0_8,0.0_8))) print *,'fail'
+if (.not.all(i10.eq.(0.0_16,0.0_16))) print *,'fail'
 end subroutine
 subroutine test20()
 integer(kind=1)   :: i01(3)
@@ -331,16 +331,16 @@ data i08(1:3) /3* (0.0_16,0.0_16)/
 data i09(1:3) /3* (0.0_16,0.0_16)/
 data i10(1:3) /3* (0.0_16,0.0_16)/
 i01(2)=0
-if (.not.all(i01.eq.0_1)) call errtra
-if (.not.all(i02.eq.0_2)) call errtra
-if (.not.all(i03.eq.0_4)) call errtra
-if (.not.all(i04.eq.0_8)) call errtra
-if (.not.all(i05.eq.0.0_4)) call errtra
-if (.not.all(i06.eq.0.0_8)) call errtra
-if (.not.all(i07.eq.0.0_16)) call errtra
-if (.not.all(i08.eq.(0.0_4,0.0_4))) call errtra
-if (.not.all(i09.eq.(0.0_8,0.0_8))) call errtra
-if (.not.all(i10.eq.(0.0_16,0.0_16))) call errtra
+if (.not.all(i01.eq.0_1)) print *,'fail'
+if (.not.all(i02.eq.0_2)) print *,'fail'
+if (.not.all(i03.eq.0_4)) print *,'fail'
+if (.not.all(i04.eq.0_8)) print *,'fail'
+if (.not.all(i05.eq.0.0_4)) print *,'fail'
+if (.not.all(i06.eq.0.0_8)) print *,'fail'
+if (.not.all(i07.eq.0.0_16)) print *,'fail'
+if (.not.all(i08.eq.(0.0_4,0.0_4))) print *,'fail'
+if (.not.all(i09.eq.(0.0_8,0.0_8))) print *,'fail'
+if (.not.all(i10.eq.(0.0_16,0.0_16))) print *,'fail'
 end subroutine
 
 subroutine test21()
@@ -364,16 +364,16 @@ data (i07(i),i=1,3) /3* 0_1/
 data (i08(i),i=1,3) /3* 0_1/
 data (i09(i),i=1,3) /3* 0_1/
 data (i10(i),i=1,3) /3* 0_1/
-if (.not.all(i01.eq.0_1)) call errtra
-if (.not.all(i02.eq.0_2)) call errtra
-if (.not.all(i03.eq.0_4)) call errtra
-if (.not.all(i04.eq.0_8)) call errtra
-if (.not.all(i05.eq.0.0_4)) call errtra
-if (.not.all(i06.eq.0.0_8)) call errtra
-if (.not.all(i07.eq.0.0_16)) call errtra
-if (.not.all(i08.eq.(0.0_4,0.0_4))) call errtra
-if (.not.all(i09.eq.(0.0_8,0.0_8))) call errtra
-if (.not.all(i10.eq.(0.0_16,0.0_16))) call errtra
+if (.not.all(i01.eq.0_1)) print *,'fail'
+if (.not.all(i02.eq.0_2)) print *,'fail'
+if (.not.all(i03.eq.0_4)) print *,'fail'
+if (.not.all(i04.eq.0_8)) print *,'fail'
+if (.not.all(i05.eq.0.0_4)) print *,'fail'
+if (.not.all(i06.eq.0.0_8)) print *,'fail'
+if (.not.all(i07.eq.0.0_16)) print *,'fail'
+if (.not.all(i08.eq.(0.0_4,0.0_4))) print *,'fail'
+if (.not.all(i09.eq.(0.0_8,0.0_8))) print *,'fail'
+if (.not.all(i10.eq.(0.0_16,0.0_16))) print *,'fail'
 end subroutine
 subroutine test22()
 integer(kind=1)   :: i01(3)
@@ -396,16 +396,16 @@ data (i07(i),i=1,3) /3* 0_2/
 data (i08(i),i=1,3) /3* 0_2/
 data (i09(i),i=1,3) /3* 0_2/
 data (i10(i),i=1,3) /3* 0_2/
-if (.not.all(i01.eq.0_1)) call errtra
-if (.not.all(i02.eq.0_2)) call errtra
-if (.not.all(i03.eq.0_4)) call errtra
-if (.not.all(i04.eq.0_8)) call errtra
-if (.not.all(i05.eq.0.0_4)) call errtra
-if (.not.all(i06.eq.0.0_8)) call errtra
-if (.not.all(i07.eq.0.0_16)) call errtra
-if (.not.all(i08.eq.(0.0_4,0.0_4))) call errtra
-if (.not.all(i09.eq.(0.0_8,0.0_8))) call errtra
-if (.not.all(i10.eq.(0.0_16,0.0_16))) call errtra
+if (.not.all(i01.eq.0_1)) print *,'fail'
+if (.not.all(i02.eq.0_2)) print *,'fail'
+if (.not.all(i03.eq.0_4)) print *,'fail'
+if (.not.all(i04.eq.0_8)) print *,'fail'
+if (.not.all(i05.eq.0.0_4)) print *,'fail'
+if (.not.all(i06.eq.0.0_8)) print *,'fail'
+if (.not.all(i07.eq.0.0_16)) print *,'fail'
+if (.not.all(i08.eq.(0.0_4,0.0_4))) print *,'fail'
+if (.not.all(i09.eq.(0.0_8,0.0_8))) print *,'fail'
+if (.not.all(i10.eq.(0.0_16,0.0_16))) print *,'fail'
 end subroutine
 subroutine test23()
 integer(kind=1)   :: i01(3)
@@ -428,16 +428,16 @@ data i07(1),i07(2),i07(3) /3* 0_4/
 data i08(1),i08(2),i08(3) /3* 0_4/
 data i09(1),i09(2),i09(3) /3* 0_4/
 data i10(1),i10(2),i10(3) /3* 0_4/
-if (.not.all(i01.eq.0_1)) call errtra
-if (.not.all(i02.eq.0_2)) call errtra
-if (.not.all(i03.eq.0_4)) call errtra
-if (.not.all(i04.eq.0_8)) call errtra
-if (.not.all(i05.eq.0.0_4)) call errtra
-if (.not.all(i06.eq.0.0_8)) call errtra
-if (.not.all(i07.eq.0.0_16)) call errtra
-if (.not.all(i08.eq.(0.0_4,0.0_4))) call errtra
-if (.not.all(i09.eq.(0.0_8,0.0_8))) call errtra
-if (.not.all(i10.eq.(0.0_16,0.0_16))) call errtra
+if (.not.all(i01.eq.0_1)) print *,'fail'
+if (.not.all(i02.eq.0_2)) print *,'fail'
+if (.not.all(i03.eq.0_4)) print *,'fail'
+if (.not.all(i04.eq.0_8)) print *,'fail'
+if (.not.all(i05.eq.0.0_4)) print *,'fail'
+if (.not.all(i06.eq.0.0_8)) print *,'fail'
+if (.not.all(i07.eq.0.0_16)) print *,'fail'
+if (.not.all(i08.eq.(0.0_4,0.0_4))) print *,'fail'
+if (.not.all(i09.eq.(0.0_8,0.0_8))) print *,'fail'
+if (.not.all(i10.eq.(0.0_16,0.0_16))) print *,'fail'
 end subroutine
 subroutine test24()
 integer(kind=1)   :: i01(3)
@@ -460,16 +460,16 @@ data (i07(1),i07(2),i07(3),i=1,1) /3* 0_4/
 data (i08(1),i08(2),i08(3),i=1,1) /3* 0_4/
 data (i09(1),i09(2),i09(3),i=1,1) /3* 0_4/
 data (i10(1),i10(2),i10(3),i=1,1) /3* 0_4/
-if (.not.all(i01.eq.0_1)) call errtra
-if (.not.all(i02.eq.0_2)) call errtra
-if (.not.all(i03.eq.0_4)) call errtra
-if (.not.all(i04.eq.0_8)) call errtra
-if (.not.all(i05.eq.0.0_4)) call errtra
-if (.not.all(i06.eq.0.0_8)) call errtra
-if (.not.all(i07.eq.0.0_16)) call errtra
-if (.not.all(i08.eq.(0.0_4,0.0_4))) call errtra
-if (.not.all(i09.eq.(0.0_8,0.0_8))) call errtra
-if (.not.all(i10.eq.(0.0_16,0.0_16))) call errtra
+if (.not.all(i01.eq.0_1)) print *,'fail'
+if (.not.all(i02.eq.0_2)) print *,'fail'
+if (.not.all(i03.eq.0_4)) print *,'fail'
+if (.not.all(i04.eq.0_8)) print *,'fail'
+if (.not.all(i05.eq.0.0_4)) print *,'fail'
+if (.not.all(i06.eq.0.0_8)) print *,'fail'
+if (.not.all(i07.eq.0.0_16)) print *,'fail'
+if (.not.all(i08.eq.(0.0_4,0.0_4))) print *,'fail'
+if (.not.all(i09.eq.(0.0_8,0.0_8))) print *,'fail'
+if (.not.all(i10.eq.(0.0_16,0.0_16))) print *,'fail'
 end subroutine
 subroutine test25()
 integer(kind=1)   :: i01(3)
@@ -492,16 +492,16 @@ data ((i07(1),i=1,1),i07(2),i07(3),j=1,1) /3* 0.0_4/
 data ((i08(1),i=1,1),i08(2),i08(3),j=1,1) /3* 0.0_4/
 data ((i09(1),i=1,1),i09(2),i09(3),j=1,1) /3* 0.0_4/
 data ((i10(1),i=1,1),i10(2),i10(3),j=1,1) /3* 0.0_4/
-if (.not.all(i01.eq.0_1)) call errtra
-if (.not.all(i02.eq.0_2)) call errtra
-if (.not.all(i03.eq.0_4)) call errtra
-if (.not.all(i04.eq.0_8)) call errtra
-if (.not.all(i05.eq.0.0_4)) call errtra
-if (.not.all(i06.eq.0.0_8)) call errtra
-if (.not.all(i07.eq.0.0_16)) call errtra
-if (.not.all(i08.eq.(0.0_4,0.0_4))) call errtra
-if (.not.all(i09.eq.(0.0_8,0.0_8))) call errtra
-if (.not.all(i10.eq.(0.0_16,0.0_16))) call errtra
+if (.not.all(i01.eq.0_1)) print *,'fail'
+if (.not.all(i02.eq.0_2)) print *,'fail'
+if (.not.all(i03.eq.0_4)) print *,'fail'
+if (.not.all(i04.eq.0_8)) print *,'fail'
+if (.not.all(i05.eq.0.0_4)) print *,'fail'
+if (.not.all(i06.eq.0.0_8)) print *,'fail'
+if (.not.all(i07.eq.0.0_16)) print *,'fail'
+if (.not.all(i08.eq.(0.0_4,0.0_4))) print *,'fail'
+if (.not.all(i09.eq.(0.0_8,0.0_8))) print *,'fail'
+if (.not.all(i10.eq.(0.0_16,0.0_16))) print *,'fail'
 end subroutine
 subroutine test26()
 integer(kind=1)   :: i01(3)
@@ -523,16 +523,16 @@ data i07 /3* 0.0_8/
 data i08 /3* 0.0_8/
 data i09 /3* 0.0_8/
 data i10 /3* 0.0_8/
-if (.not.all(i01.eq.0_1)) call errtra
-if (.not.all(i02.eq.0_2)) call errtra
-if (.not.all(i03.eq.0_4)) call errtra
-if (.not.all(i04.eq.0_8)) call errtra
-if (.not.all(i05.eq.0.0_4)) call errtra
-if (.not.all(i06.eq.0.0_8)) call errtra
-if (.not.all(i07.eq.0.0_16)) call errtra
-if (.not.all(i08.eq.(0.0_4,0.0_4))) call errtra
-if (.not.all(i09.eq.(0.0_8,0.0_8))) call errtra
-if (.not.all(i10.eq.(0.0_16,0.0_16))) call errtra
+if (.not.all(i01.eq.0_1)) print *,'fail'
+if (.not.all(i02.eq.0_2)) print *,'fail'
+if (.not.all(i03.eq.0_4)) print *,'fail'
+if (.not.all(i04.eq.0_8)) print *,'fail'
+if (.not.all(i05.eq.0.0_4)) print *,'fail'
+if (.not.all(i06.eq.0.0_8)) print *,'fail'
+if (.not.all(i07.eq.0.0_16)) print *,'fail'
+if (.not.all(i08.eq.(0.0_4,0.0_4))) print *,'fail'
+if (.not.all(i09.eq.(0.0_8,0.0_8))) print *,'fail'
+if (.not.all(i10.eq.(0.0_16,0.0_16))) print *,'fail'
 end subroutine
 subroutine test27()
 integer(kind=1)   :: i01(3)
@@ -554,16 +554,16 @@ data i07 /3* 0.0_16/
 data i08 /3* 0.0_16/
 data i09 /3* 0.0_16/
 data i10 /3* 0.0_16/
-if (.not.all(i01.eq.0_1)) call errtra
-if (.not.all(i02.eq.0_2)) call errtra
-if (.not.all(i03.eq.0_4)) call errtra
-if (.not.all(i04.eq.0_8)) call errtra
-if (.not.all(i05.eq.0.0_4)) call errtra
-if (.not.all(i06.eq.0.0_8)) call errtra
-if (.not.all(i07.eq.0.0_16)) call errtra
-if (.not.all(i08.eq.(0.0_4,0.0_4))) call errtra
-if (.not.all(i09.eq.(0.0_8,0.0_8))) call errtra
-if (.not.all(i10.eq.(0.0_16,0.0_16))) call errtra
+if (.not.all(i01.eq.0_1)) print *,'fail'
+if (.not.all(i02.eq.0_2)) print *,'fail'
+if (.not.all(i03.eq.0_4)) print *,'fail'
+if (.not.all(i04.eq.0_8)) print *,'fail'
+if (.not.all(i05.eq.0.0_4)) print *,'fail'
+if (.not.all(i06.eq.0.0_8)) print *,'fail'
+if (.not.all(i07.eq.0.0_16)) print *,'fail'
+if (.not.all(i08.eq.(0.0_4,0.0_4))) print *,'fail'
+if (.not.all(i09.eq.(0.0_8,0.0_8))) print *,'fail'
+if (.not.all(i10.eq.(0.0_16,0.0_16))) print *,'fail'
 end subroutine
 
 subroutine test28()
@@ -585,16 +585,16 @@ data i07 /3* (0.0_4 ,0.0_4 )/
 data i08 /3* (0.0_4 ,0.0_4 )/
 data i09 /3* (0.0_4 ,0.0_4 )/
 data i10 /3* (0.0_4 ,0.0_4 )/
-if (.not.all(i01.eq.0_1)) call errtra
-if (.not.all(i02.eq.0_2)) call errtra
-if (.not.all(i03.eq.0_4)) call errtra
-if (.not.all(i04.eq.0_8)) call errtra
-if (.not.all(i05.eq.0.0_4)) call errtra
-if (.not.all(i06.eq.0.0_8)) call errtra
-if (.not.all(i07.eq.0.0_16)) call errtra
-if (.not.all(i08.eq.(0.0_4,0.0_4))) call errtra
-if (.not.all(i09.eq.(0.0_8,0.0_8))) call errtra
-if (.not.all(i10.eq.(0.0_16,0.0_16))) call errtra
+if (.not.all(i01.eq.0_1)) print *,'fail'
+if (.not.all(i02.eq.0_2)) print *,'fail'
+if (.not.all(i03.eq.0_4)) print *,'fail'
+if (.not.all(i04.eq.0_8)) print *,'fail'
+if (.not.all(i05.eq.0.0_4)) print *,'fail'
+if (.not.all(i06.eq.0.0_8)) print *,'fail'
+if (.not.all(i07.eq.0.0_16)) print *,'fail'
+if (.not.all(i08.eq.(0.0_4,0.0_4))) print *,'fail'
+if (.not.all(i09.eq.(0.0_8,0.0_8))) print *,'fail'
+if (.not.all(i10.eq.(0.0_16,0.0_16))) print *,'fail'
 end subroutine
 subroutine test29()
 integer(kind=1)   :: i01(3)
@@ -616,16 +616,16 @@ data i07 /3* (0.0_8 ,0.0_8 )/
 data i08 /3* (0.0_8 ,0.0_8 )/
 data i09 /3* (0.0_8 ,0.0_8 )/
 data i10 /3* (0.0_8 ,0.0_8 )/
-if (.not.all(i01.eq.0_1)) call errtra
-if (.not.all(i02.eq.0_2)) call errtra
-if (.not.all(i03.eq.0_4)) call errtra
-if (.not.all(i04.eq.0_8)) call errtra
-if (.not.all(i05.eq.0.0_4)) call errtra
-if (.not.all(i06.eq.0.0_8)) call errtra
-if (.not.all(i07.eq.0.0_16)) call errtra
-if (.not.all(i08.eq.(0.0_4,0.0_4))) call errtra
-if (.not.all(i09.eq.(0.0_8,0.0_8))) call errtra
-if (.not.all(i10.eq.(0.0_16,0.0_16))) call errtra
+if (.not.all(i01.eq.0_1)) print *,'fail'
+if (.not.all(i02.eq.0_2)) print *,'fail'
+if (.not.all(i03.eq.0_4)) print *,'fail'
+if (.not.all(i04.eq.0_8)) print *,'fail'
+if (.not.all(i05.eq.0.0_4)) print *,'fail'
+if (.not.all(i06.eq.0.0_8)) print *,'fail'
+if (.not.all(i07.eq.0.0_16)) print *,'fail'
+if (.not.all(i08.eq.(0.0_4,0.0_4))) print *,'fail'
+if (.not.all(i09.eq.(0.0_8,0.0_8))) print *,'fail'
+if (.not.all(i10.eq.(0.0_16,0.0_16))) print *,'fail'
 end subroutine
 subroutine test30()
 integer(kind=1)   :: i01(3)
@@ -649,18 +649,14 @@ data i08 /3* (0.0_16,0.0_16)/
 data i09 /3* (0.0_16,0.0_16)/
 data i10 /3* (0.0_16,0.0_16)/
 i01(2)=0
-if (.not.all(i01.eq.0_1)) call errtra
-if (.not.all(i02.eq.0_2)) call errtra
-if (.not.all(i03.eq.0_4)) call errtra
-if (.not.all(i04.eq.0_8)) call errtra
-if (.not.all(i05.eq.0.0_4)) call errtra
-if (.not.all(i06.eq.0.0_8)) call errtra
-if (.not.all(i07.eq.0.0_16)) call errtra
-if (.not.all(i08.eq.(0.0_4,0.0_4))) call errtra
-if (.not.all(i09.eq.(0.0_8,0.0_8))) call errtra
-if (.not.all(i10.eq.(0.0_16,0.0_16))) call errtra
+if (.not.all(i01.eq.0_1)) print *,'fail'
+if (.not.all(i02.eq.0_2)) print *,'fail'
+if (.not.all(i03.eq.0_4)) print *,'fail'
+if (.not.all(i04.eq.0_8)) print *,'fail'
+if (.not.all(i05.eq.0.0_4)) print *,'fail'
+if (.not.all(i06.eq.0.0_8)) print *,'fail'
+if (.not.all(i07.eq.0.0_16)) print *,'fail'
+if (.not.all(i08.eq.(0.0_4,0.0_4))) print *,'fail'
+if (.not.all(i09.eq.(0.0_8,0.0_8))) print *,'fail'
+if (.not.all(i10.eq.(0.0_16,0.0_16))) print *,'fail'
 end subroutine
-
-subroutine errtra()
-print *,"err"
-end

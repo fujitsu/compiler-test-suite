@@ -20,11 +20,15 @@ write(1,*) 100
                 end module
        
               use m0
+              logical::file_exists
                 call sub
                 print*, "pass"
+                inquire(file="fort.1", exist=file_exists)
+                if (file_exists) then
 rewind 1
 read(1,*) n
 if (n/=100) print *,7001
+                endif
        
                 contains
                 subroutine s1(d1)

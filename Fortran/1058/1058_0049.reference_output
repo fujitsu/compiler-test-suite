@@ -1,0 +1,4 @@
+ ----- parallel
+       do firstprivate(ia) reduction(+:ic1) -----
+ OK
+exit 0

@@ -23,7 +23,7 @@ end do
 end do
 !$omp enddo
 !$omp endparallel
-if (ido3.ne.3) print *,'1-ng3:',ido3
+if (ido3.ne.11) print *,'1-ng3:',ido3
 if (ido4.ne.4) print *,'1-ng4:',ido4
 print *,'pass'
 end

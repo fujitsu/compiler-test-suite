@@ -33,7 +33,7 @@ contains
     use mod2
     class(*):: dum(5)
     integer :: yy(3)
-    if(sizeof(dum)==480) print*,yy(1)
+    if(sizeof(dum)==440) print*,yy(1)
   end subroutine
 
 end

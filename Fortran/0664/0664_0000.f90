@@ -4,7 +4,7 @@ call sub(x)
 if ((size(x,1)==10) .or. (size(x,2)==12)) then
   print *,'pass'
 else
-  call errtra
+  print *,'fail'
 end if
 end
 

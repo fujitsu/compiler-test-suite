@@ -1,0 +1,7 @@
+V::V() called
+A::A() called
+V::V() called
+B::B() called
+C::C() called
+3
+exit 0

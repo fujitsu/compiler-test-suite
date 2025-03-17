@@ -1,0 +1,4 @@
+ ----- test90 --
+       parallel firstprivate(ty1) private(ith) -----
+ OK
+exit 0

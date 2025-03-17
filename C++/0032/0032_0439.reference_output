@@ -1,0 +1,3 @@
+test: ok
+test_array: ok
+exit 0

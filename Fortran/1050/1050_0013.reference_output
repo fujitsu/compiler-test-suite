@@ -1,0 +1,12 @@
+ loop01 : OK
+ loop02a : OK
+ loop02b : OK
+ loop02c : OK
+ loop03a : OK
+ loop03b : OK
+ loop03c : OK
+ loop04a : OK
+ loop04b : OK
+ loop04c : OK
+ loop04d : OK
+exit 0

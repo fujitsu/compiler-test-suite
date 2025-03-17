@@ -118,8 +118,8 @@ end type
 type(a)::x
 x= a(2,p1f())
 if (x%a0/=2)print *,301,x%a0
-if (len(x%a1)/=2)print *,302,len(x%a1)
-if (   (x%a1/='cd'))print *,303,x%a1
+if (len(x%a1)/=35)print *,302,len(x%a1)
+if (   (x%a1/='cdefgxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'))print *,303,x%a1
 end subroutine
  function p1f() result(r)
  character(:),allocatable::r
@@ -134,8 +134,8 @@ end type
 type(a)::x
 x= a(2,p1af())
 if (x%a0/=2)print *,301,x%a0
-if (len(x%a1)/=2)print *,302,len(x%a1)
-if (any(x%a1/='cd'))print *,303,x%a1
+if (len(x%a1)/=35)print *,302,len(x%a1)
+if (any(x%a1/='cdefgxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'))print *,303,x%a1
 if (any(ubound(x%a1)/=[2,1,3]))print *,305,x%a1
 end subroutine
  function p1af() result(r)

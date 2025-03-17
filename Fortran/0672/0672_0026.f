@@ -15,7 +15,7 @@
       STOP
       END
       SUBROUTINE    SUB(MEMO,SW2)
-      REAL*8        MEMO
+      character(*)  MEMO
       INTEGER       SW2
       COMPLEX       C1,C2,C3,C4
       NAMELIST      /NAMEL/ C1,C2,C3,C4,

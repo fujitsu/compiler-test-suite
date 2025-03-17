@@ -1,0 +1,4 @@
+ ----- test --
+       parallel reduction(iand:ia) -----
+ OK
+exit 0

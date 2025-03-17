@@ -9,14 +9,14 @@ integer,parameter:: k6(0)=shape( size ( n ) )
 integer,parameter:: k8=sizeof( size ( n ) )
 integer,parameter:: k9=size( n, dim=size ( nn ) )
 integer,parameter:: ka=size( n, dim=sizeof ( nn ) )
-if (k1/=1)call errtra
-if (size(k2)/=0)call errtra
-if (k4/=4)call errtra
-if (k5/=1)call errtra
-if (size(k6)/=0)call errtra
-if (k8/=4)call errtra
-if (k9/=10)call errtra
-if (ka/=10)call errtra
+if (k1/=1)print *,"fail"
+if (size(k2)/=0)print *,"fail"
+if (k4/=4)print *,"fail"
+if (k5/=1)print *,"fail"
+if (size(k6)/=0)print *,"fail"
+if (k8/=4)print *,"fail"
+if (k9/=10)print *,"fail"
+if (ka/=10)print *,"fail"
 end 
 integer(1),dimension(1)::nn
 dimension n(10)

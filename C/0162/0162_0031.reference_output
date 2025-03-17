@@ -1,0 +1,9 @@
+sub_int:ok
+sub_uint:ok
+sub_lint:ok
+sub_ulint:ok
+sub_float:ok
+sub_double:ok
+sub_ldouble:ok
+sub_short:ok
+exit 0

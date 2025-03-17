@@ -1,0 +1,4 @@
+
+ #### C_OMP lastprivate(int) ####
+   OK
+exit 0

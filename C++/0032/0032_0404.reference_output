@@ -1,0 +1,8 @@
+FLOAT(float)
+aaaa
+~FLOAT()
+bbbb
+~FLOAT()
+~FLOAT()
+~FLOAT()
+exit 0

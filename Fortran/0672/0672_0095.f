@@ -31,7 +31,7 @@
       COMMON       /COMN01/ K
       COMMON       /COMN02/ I1,R2
       COMMON       /COMN03/ R3
-      REAL*8       MEMO
+      character(*) MEMO
       INTEGER      SW3,SW14
       NAMELIST     /NAMEL/   I1,I2,I3,I4,
      +                       R1,R2,R3,R4,

@@ -7,5 +7,5 @@ logical, PARAMETER :: &
     end
 subroutine s1
 use m1
-if (R2)call errtra
+if (R2)print *,'fail'
 end

@@ -30,7 +30,7 @@
 
       SUBROUTINE   SUB(MEMO,SW4,SW7)
 
-      REAL*8       MEMO
+      character(*) MEMO
       LOGICAL      SW4,L11,L21,L31,L71
       INTEGER      SW7
       COMPLEX      C11,C12,C21,C22,C31,C41,C42,C61,C62,C71,C01,C04,C06,

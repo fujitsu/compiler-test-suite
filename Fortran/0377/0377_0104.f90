@@ -13,10 +13,10 @@ enum, bind(c)
  enumerator :: a4
  enumerator :: a5=a2
 end enum
-if (a1.ne.1) call errtra
-if (a3.ne.3) call errtra
-if (a4.ne.4) call errtra
-if (a5.ne.2) call errtra
+if (a1.ne.1) print *,'fail'
+if (a3.ne.3) print *,'fail'
+if (a4.ne.4) print *,'fail'
+if (a5.ne.2) print *,'fail'
 end
 
 subroutine test02()
@@ -31,10 +31,10 @@ call sub()
 call sub2()
 contains
 subroutine sub()
-if (a1.ne.1) call errtra
-if (a3.ne.3) call errtra
-if (a4.ne.4) call errtra
-if (a5.ne.2) call errtra
+if (a1.ne.1) print *,'fail'
+if (a3.ne.3) print *,'fail'
+if (a4.ne.4) print *,'fail'
+if (a5.ne.2) print *,'fail'
 end subroutine
 subroutine sub2()
 enum, bind(c)
@@ -43,10 +43,10 @@ enum, bind(c)
  enumerator :: a4
  enumerator :: a5=a2
 end enum
-if (a1.ne.2) call errtra
-if (a3.ne.3) call errtra
-if (a4.ne.4) call errtra
-if (a5.ne.2) call errtra
+if (a1.ne.2) print *,'fail'
+if (a3.ne.3) print *,'fail'
+if (a4.ne.4) print *,'fail'
+if (a5.ne.2) print *,'fail'
 end subroutine
 
 end
@@ -62,18 +62,18 @@ end enum
 end module
 subroutine test03()
 use  mod
-if (a1.ne.1) call errtra
-if (a3.ne.3) call errtra
-if (a4.ne.4) call errtra
-if (a5.ne.2) call errtra
+if (a1.ne.1) print *,'fail'
+if (a3.ne.3) print *,'fail'
+if (a4.ne.4) print *,'fail'
+if (a5.ne.2) print *,'fail'
 end
 
 subroutine test04()
 use  mod,aa=>a5
-if (a1.ne.1) call errtra
-if (a3.ne.3) call errtra
-if (a4.ne.4) call errtra
-if (aa.ne.2) call errtra
+if (a1.ne.1) print *,'fail'
+if (a3.ne.3) print *,'fail'
+if (a4.ne.4) print *,'fail'
+if (aa.ne.2) print *,'fail'
 end
 
 subroutine test05()
@@ -87,9 +87,9 @@ enum, bind(c)
  enumerator :: a5=a2
 end enum
 
-if (a1.ne.1) call errtra
-if (a3.ne.3) call errtra
-if (a4.ne.4) call errtra
-if (aa.ne.2) call errtra
+if (a1.ne.1) print *,'fail'
+if (a3.ne.3) print *,'fail'
+if (a4.ne.4) print *,'fail'
+if (aa.ne.2) print *,'fail'
 end
 

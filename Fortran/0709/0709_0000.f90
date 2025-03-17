@@ -12,14 +12,14 @@
  complex(4) ::h1=0
  complex(8) ::i1=0
  complex(16) ::j1=0
- if (kind(real(a1))/=4)call errtra
- if (kind(real(b1))/=4)call errtra
- if (kind(real(c1))/=4)call errtra
- if (kind(real(d1))/=4)call errtra
- if (kind(real(e1))/=4)call errtra
- if (kind(real(f1))/=4)call errtra
- if (kind(real(g1))/=4)call errtra
- if (kind(real(h1))/=4)call errtra
- if (kind(real(i1))/=8)call errtra
- if (kind(real(j1))/=16)call errtra
+ if (kind(real(a1))/=4)print *,'fail'
+ if (kind(real(b1))/=4)print *,'fail'
+ if (kind(real(c1))/=4)print *,'fail'
+ if (kind(real(d1))/=4)print *,'fail'
+ if (kind(real(e1))/=4)print *,'fail'
+ if (kind(real(f1))/=4)print *,'fail'
+ if (kind(real(g1))/=4)print *,'fail'
+ if (kind(real(h1))/=4)print *,'fail'
+ if (kind(real(i1))/=8)print *,'fail'
+ if (kind(real(j1))/=16)print *,'fail'
  end

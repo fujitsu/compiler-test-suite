@@ -1,0 +1,11 @@
+S::S() called
+func2() start
+func1() start
+~S::S() called
+~S::S() called
+~S::S() called
+~S::S() called
+100
+~S::S() called
+~S::S() called
+exit 0

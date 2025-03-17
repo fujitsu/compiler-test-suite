@@ -43,16 +43,16 @@
         character(kind=1,len=5) ,dimension(2) ::ch5_a
       end type
       complex(kind=8),parameter:: cd_ps=(1e0_8,2e0_8)
-      complex(kind=8),dimension(2),parameter:: 
+      complex(kind=8),dimension(2),parameter::
      1 cd_pa=(/(3e0_8,4e0_8),(5e0_8,6e0_8) /)
       complex(kind= 4),parameter:: c8_ps=(1e0_4,2e0_4)
-      complex(kind= 4),dimension(2),parameter:: 
+      complex(kind= 4),dimension(2),parameter::
      1 c8_pa=(/(3e0_4,4e0_4),(5e0_4,6e0_4) /)
       real   (kind=8) ,parameter:: r8_ps=1e0_8
-      real   (kind=8) ,dimension(2),parameter:: 
+      real   (kind=8) ,dimension(2),parameter::
      1 r8_pa=(/ 3e0_8 , 5e0_8 /)
       real   (kind=4) ,parameter:: r4_ps=1e0_4
-      real   (kind=4) ,dimension(2),parameter:: 
+      real   (kind=4) ,dimension(2),parameter::
      1 r4_pa=(/ 3e0_4 , 5e0_4 /)
       integer(kind=4) ,parameter:: i4_ps=1
       integer(kind=4) ,dimension(2),parameter:: i4_pa=(/ 3 , 5 /)
@@ -63,10 +63,10 @@
       logical(kind=4) ,parameter:: l4_ps=.true._4
       logical(kind=4) ,dimension(2),parameter:: l4_pa=(/.true.,.false./)
       logical(kind=1) ,parameter:: l1_ps=.true._1
-      logical(kind=1) ,dimension(2),parameter:: 
+      logical(kind=1) ,dimension(2),parameter::
      1 l1_pa=(/.true._1,.false._1/)
       character(kind=1,len=5),parameter:: ch5_ps=1_'12345'
-      character(kind=1,len=5),dimension(2),parameter:: 
+      character(kind=1,len=5),dimension(2),parameter::
      1 ch5_pa=(/ 1_'abcde', 1_'fghij' /)
       type (cd),parameter::cd01=cd( cd_ps ,cd_pa )
       type (c8),parameter::c801=c8( c8_ps ,c8_pa )
@@ -78,26 +78,33 @@
       type (i1),parameter::i101=i1( i1_ps ,i1_pa )
       type (l1),parameter::l101=l1( l1_ps ,l1_pa )
       type (ch5),parameter::ch501=ch5( ch5_ps ,ch5_pa )
-      if (cd01%cd_s/=cd_ps)call errtra
-      if (cd01%cd_a(1)/=cd_pa(1).or.cd01%cd_a(2)/=cd_pa(2))call errtra
-      if (c801%c8_s/=c8_ps)call errtra
-      if (c801%c8_a(1)/=c8_pa(1).or.c801%c8_a(2)/=c8_pa(2))call errtra
-      if (r801%r8_s/=r8_ps)call errtra
-      if (r801%r8_a(1)/=r8_pa(1).or.r801%r8_a(2)/=r8_pa(2))call errtra
-      if (r401%r4_s/=r4_ps)call errtra
-      if (r401%r4_a(1)/=r4_pa(1).or.r401%r4_a(2)/=r4_pa(2))call errtra
-      if (i401%i4_s/=i4_ps)call errtra
-      if (i401%i4_a(1)/=i4_pa(1).or.i401%i4_a(2)/=i4_pa(2))call errtra
-      if (l401%l4_s.neqv.l4_ps)call errtra
+      if (cd01%cd_s/=cd_ps)print *,'fail'
+      if (cd01%cd_a(1)/=cd_pa(1).or.cd01%cd_a(2)/=cd_pa(2))
+     1 print *,'fail'
+      if (c801%c8_s/=c8_ps)print *,'fail'
+      if (c801%c8_a(1)/=c8_pa(1).or.c801%c8_a(2)/=c8_pa(2))
+     1 print *,'fail'
+      if (r801%r8_s/=r8_ps)print *,'fail'
+      if (r801%r8_a(1)/=r8_pa(1).or.r801%r8_a(2)/=r8_pa(2))
+     1 print *,'fail'
+      if (r401%r4_s/=r4_ps)print *,'fail'
+      if (r401%r4_a(1)/=r4_pa(1).or.r401%r4_a(2)/=r4_pa(2))
+     1 print *,'fail'
+      if (i401%i4_s/=i4_ps)print *,'fail'
+      if (i401%i4_a(1)/=i4_pa(1).or.i401%i4_a(2)/=i4_pa(2))
+     1 print *,'fail'
+      if (l401%l4_s.neqv.l4_ps)print *,'fail'
       if ((l401%l4_a(1).neqv.l4_pa(1)).or.
-     1    (l401%l4_a(2).neqv.l4_pa(2)))call errtra
-      if (i201%i2_s/=i2_ps)call errtra
-      if (i201%i2_a(1)/=i2_pa(1).or.i201%i2_a(2)/=i2_pa(2))call errtra
-      if (i101%i1_s/=i1_ps)call errtra
-      if (i101%i1_a(1)/=i1_pa(1).or.i101%i1_a(2)/=i1_pa(2))call errtra
+     1    (l401%l4_a(2).neqv.l4_pa(2)))print *,'fail'
+      if (i201%i2_s/=i2_ps)print *,'fail'
+      if (i201%i2_a(1)/=i2_pa(1).or.i201%i2_a(2)/=i2_pa(2))
+     1 print *,'fail'
+      if (i101%i1_s/=i1_ps)print *,'fail'
+      if (i101%i1_a(1)/=i1_pa(1).or.i101%i1_a(2)/=i1_pa(2))
+     1 print *,'fail'
       if ((l101%l1_a(1).neqv.l1_pa(1)).or.
-     1    (l101%l1_a(2).neqv.l1_pa(2)))call errtra
-      if (ch501%ch5_s/=ch5_ps)call errtra
+     1    (l101%l1_a(2).neqv.l1_pa(2)))print *,'fail'
+      if (ch501%ch5_s/=ch5_ps)print *,'fail'
       if (ch501%ch5_a(1)/=ch5_pa(1).or.
-     1    ch501%ch5_a(2)/=ch5_pa(2))call errtra
+     1    ch501%ch5_a(2)/=ch5_pa(2))print *,'fail'
       end

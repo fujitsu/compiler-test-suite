@@ -46,7 +46,7 @@ void sub02() {
 
 void sub03() {
   static int i,s,a;
-# pragma single
+# pragma omp  single
   {
   s=1;
   i=0;

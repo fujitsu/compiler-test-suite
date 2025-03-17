@@ -1,0 +1,2 @@
+catch const char: a
+exit 0

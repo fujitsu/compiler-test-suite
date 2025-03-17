@@ -1,0 +1,4 @@
+
+----- parallel private(it) do critical -----
+OK
+exit 0

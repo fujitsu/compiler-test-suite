@@ -20,13 +20,16 @@
                end module
        
              use m0
-               call sub
+             logical::file_exists
+             call sub
+             inquire(file="fort.2", exist=file_exists)
+             if (file_exists) then
 rewind 2
 read(2,*) n
 if (n/=1) print *,101,n
 read(2,*,end=9) n
 if (n/=1) print *,101,n
-
+             endif
           9     print*, "pass"
       
                 contains

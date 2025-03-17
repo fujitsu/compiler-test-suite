@@ -1,0 +1,26 @@
+module m
+contains
+  function f()
+   f=1.0
+  end function
+end
+module m1
+use m
+   interface flag
+     procedure  f
+   end interface
+
+          type flag
+            integer::x
+          end type
+          type(flag) :: n=flag(1)
+contains
+subroutine s1
+          if (n%x/=1) print *,101
+          if (flag()/=1.0) print *,102
+end
+end
+use m1
+call s1
+          print *,"pass"
+          End

@@ -1,0 +1,7 @@
+S::S() called
+S::~S() called
+10
+S::~S() called
+S::~S() called
+S::~S() called
+exit 0

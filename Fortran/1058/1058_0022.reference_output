@@ -1,0 +1,3 @@
+ ----- parallel reduction(+:ra) reduction(max:rc) private(it) -----
+ OK
+exit 0

@@ -1,0 +1,40 @@
+module mod
+type typea
+complex(kind=4),allocatable::c(:)
+end type
+end module
+call aaaaa
+print *,'pass'
+contains
+subroutine aaaaa
+complex(kind=4)::bb
+call s1(aa(1).ne.bb(1))
+end subroutine
+subroutine s1(l)
+logical(kind=4)::l
+if(l.eqv..true.) print *,'err1'
+end subroutine
+function aa(i) result(res)
+use mod
+integer::i
+type(typea),allocatable::c1(:)
+complex(kind=4)::res
+allocate(c1(5))
+do k=1,5
+allocate(c1(k)%c(k))
+c1(k)%c(k)=cmplx(i)
+enddo
+res=c1(1)%c(1)
+end function 
+end
+function bb(i) result(res)
+use mod
+type(typea),allocatable::c1(:)
+complex(kind=4)::res
+allocate(c1(5))
+do k=1,i
+allocate(c1(k)%c(k))
+c1(k)%c(k)=cmplx(i)
+enddo
+res=c1(1)%c(1)
+end function 

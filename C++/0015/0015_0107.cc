@@ -1,0 +1,37 @@
+extern "C" int printf(const char*, ...);
+int ans;
+
+class Class {
+int a,b;
+public:
+  Class () {
+    a = 1;
+    b = 2;
+    throw a * b / 2;
+  }
+  ~Class() {a = 0; b = 0;}
+};
+
+Class *func1() {
+  return new Class[2];
+}
+int main() {
+  try{
+    func1();
+  }catch(float a){
+  }catch(int a){
+    try{
+    }catch(float a){
+    }
+    try{
+      func1();
+    }catch(float a){
+    }catch(...){
+      if ( a == 1 ){
+ printf("OK\n");
+      }else{
+ printf("NG\n");
+      }
+    }
+  }
+}

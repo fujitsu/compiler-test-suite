@@ -54,9 +54,9 @@ PROGRAM MAIN
     ty_obj(1)%jj=40
     ty_obj(2)%jj=50
     res = Foo(ty_obj)   
-    if (k1/=2) print *,501
+    if (k1/=3) print *,501
     if (k2/=1) print *,502
-    if (k3/=2) print *,503
+    if (k3/=0) print *,503
     if (k4/=12) print *,504
     print *,'pass'
     CONTAINS

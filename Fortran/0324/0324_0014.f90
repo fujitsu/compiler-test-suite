@@ -80,40 +80,40 @@ parameter(x118= r118.eq.( 3_2))
 
 parameter(x001= r001.eq.(-1_2))
 parameter(x002= r002.eq.(-32767_2))
-if (x001.neqv..true.) call errtra
-if (x002.neqv..true.) call errtra
-if (x003.neqv..true.) call errtra
-if (x004.neqv..true.) call errtra
-if (x005.neqv..true.) call errtra
-if (x006.neqv..true.) call errtra
-if (x007.neqv..true.) call errtra
-if (x008.neqv..true.) call errtra
-if (x009.neqv..true.) call errtra
-if (x010.neqv..true.) call errtra
-if (x011.neqv..true.) call errtra
-if (x012.neqv..true.) call errtra
-if (x013.neqv..true.) call errtra
-if (x014.neqv..true.) call errtra
-if (x015.neqv..true.) call errtra
-if (x016.neqv..true.) call errtra
-if (x017.neqv..true.) call errtra
-if (x018.neqv..true.) call errtra
-if (x103.neqv..true.) call errtra
-if (x104.neqv..true.) call errtra
-if (x105.neqv..true.) call errtra
-if (x106.neqv..true.) call errtra
-if (x107.neqv..true.) call errtra
-if (x108.neqv..true.) call errtra
-if (x109.neqv..true.) call errtra
-if (x110.neqv..true.) call errtra
-if (x111.neqv..true.) call errtra
-if (x112.neqv..true.) call errtra
-if (x113.neqv..true.) call errtra
-if (x114.neqv..true.) call errtra
-if (x115.neqv..true.) call errtra
-if (x116.neqv..true.) call errtra
-if (x117.neqv..true.) call errtra
-if (x118.neqv..true.) call errtra
+if (x001.neqv..true.) print *,'fail'
+if (x002.neqv..true.) print *,'fail'
+if (x003.neqv..true.) print *,'fail'
+if (x004.neqv..true.) print *,'fail'
+if (x005.neqv..true.) print *,'fail'
+if (x006.neqv..true.) print *,'fail'
+if (x007.neqv..true.) print *,'fail'
+if (x008.neqv..true.) print *,'fail'
+if (x009.neqv..true.) print *,'fail'
+if (x010.neqv..true.) print *,'fail'
+if (x011.neqv..true.) print *,'fail'
+if (x012.neqv..true.) print *,'fail'
+if (x013.neqv..true.) print *,'fail'
+if (x014.neqv..true.) print *,'fail'
+if (x015.neqv..true.) print *,'fail'
+if (x016.neqv..true.) print *,'fail'
+if (x017.neqv..true.) print *,'fail'
+if (x018.neqv..true.) print *,'fail'
+if (x103.neqv..true.) print *,'fail'
+if (x104.neqv..true.) print *,'fail'
+if (x105.neqv..true.) print *,'fail'
+if (x106.neqv..true.) print *,'fail'
+if (x107.neqv..true.) print *,'fail'
+if (x108.neqv..true.) print *,'fail'
+if (x109.neqv..true.) print *,'fail'
+if (x110.neqv..true.) print *,'fail'
+if (x111.neqv..true.) print *,'fail'
+if (x112.neqv..true.) print *,'fail'
+if (x113.neqv..true.) print *,'fail'
+if (x114.neqv..true.) print *,'fail'
+if (x115.neqv..true.) print *,'fail'
+if (x116.neqv..true.) print *,'fail'
+if (x117.neqv..true.) print *,'fail'
+if (x118.neqv..true.) print *,'fail'
 end
 subroutine test01()
 end

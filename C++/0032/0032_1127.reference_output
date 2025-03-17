@@ -1,0 +1,4 @@
+func2() start
+func1() start
+100
+exit 0

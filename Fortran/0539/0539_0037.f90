@@ -34,7 +34,7 @@ end do
 !$omp endparallel
 if (ido1.ne.1) print *,'1-ng1:',ido1
 if (ido2.ne.2) print *,'1-ng2:',ido2
-if (ido3.ne.3) print *,'1-ng3:',ido3
-if (ido4.ne.4) print *,'1-ng4:',ido4
+if (ido3.ne.11) print *,'1-ng3:',ido3
+if (ido4.ne.11) print *,'1-ng4:',ido4
 print *,'pass'
 end

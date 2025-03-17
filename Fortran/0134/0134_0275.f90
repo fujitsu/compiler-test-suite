@@ -30,20 +30,20 @@ integer,parameter :: n05 = str1%a02
 type(ty0),parameter:: str0=str%ty0
 integer,parameter :: n14 = str0%a01
 integer,parameter :: n15 = str0%a02
-if (j01/=1) call errtra
-if (j02/=2) call errtra
-if (j03/=3) call errtra
-if (j04/=4) call errtra
-if (j05/=5) call errtra
-if (j06/=6) call errtra
-if (j07/=7) call errtra
-if (n01/=1) call errtra
-if (n02/=2) call errtra
-if (n03/=3) call errtra
-if (n04/=6) call errtra
-if (n05/=7) call errtra
-if (n14/=6) call errtra
-if (n15/=7) call errtra
+if (j01/=1) print *,'fail'
+if (j02/=2) print *,'fail'
+if (j03/=3) print *,'fail'
+if (j04/=4) print *,'fail'
+if (j05/=5) print *,'fail'
+if (j06/=6) print *,'fail'
+if (j07/=7) print *,'fail'
+if (n01/=1) print *,'fail'
+if (n02/=2) print *,'fail'
+if (n03/=3) print *,'fail'
+if (n04/=6) print *,'fail'
+if (n05/=7) print *,'fail'
+if (n14/=6) print *,'fail'
+if (n15/=7) print *,'fail'
 end
 call test01()
 print *,'pass'

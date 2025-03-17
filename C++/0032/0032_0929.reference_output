@@ -1,0 +1,8 @@
+B::B() called
+D::D() called
+B::B() called
+D::D() called
+B::operator=() called
+20
+10
+exit 0

@@ -2,7 +2,7 @@ subroutine s(n,nn,k)
 dimension n(k,10)
 integer(1),dimension(1)::nn
 integer,parameter:: k8   =sizeof( sizeof ( n(1,:) ) )
-if (k8/=8)call errtra
+if (k8/=8)print *,"fail"
 end 
 integer(1),dimension(1)::nn
 dimension n(20)

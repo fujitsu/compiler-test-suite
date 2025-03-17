@@ -1,0 +1,6 @@
+throw exception
+delete test
+catch exception
+rethrow exception
+catch exception
+exit 0

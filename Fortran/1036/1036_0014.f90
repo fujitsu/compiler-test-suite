@@ -1,0 +1,54 @@
+module m1
+ type t
+    complex,pointer::a1(:,:)
+    complex,pointer::a2(:,:)
+    complex,pointer::a3(:,:)
+ end type
+ integer,parameter::size=100
+ complex,target,dimension(5,5)::w
+  type (t)::var1,var2
+contains
+subroutine s(x,i)
+type (t)::x
+call sub(x%a1+x%a2,x%a1+x%a2+x%a3,x%a1,x%a2,x%a3,x%a1,x%a2,x%a3,i)
+end subroutine
+subroutine sub(x1,x2,z1,z2,z3,p1,p2,p3,i)
+complex,dimension(*):: z1,z2,z3
+complex,dimension(*):: x1,x2   
+complex,pointer,dimension(:,:):: p1,p2,p3   
+select case(i)
+case (1)
+if (abs(x1(size*size)-(3,3))>0.00001)print *,'error-1b'
+if (abs(x2(size*size)-(6,6))>0.00001)print *,'error-2b'
+if (abs(z1(size*size)-(1,1))>0.00001)print *,'error-1'
+if (abs(z2(size*size)-(2,2))>0.00001)print *,'error-2'
+if (abs(z3(size*size)-(3,3))>0.00001)print *,'error-3'
+if (abs(p1(size,size)-(1,1))>0.00001)print *,'error-1c'
+if (abs(p2(size,size)-(2,2))>0.00001)print *,'error-2c'
+if (abs(p3(size,size)-(3,3))>0.00001)print *,'error-3c'
+case (2)
+if (abs(x1(15)-(20,20))>0.00001)print *,'error-21'
+if (abs(x2(15)-(30,30))>0.00001)print *,'error-22'
+if (abs(z1(15)-(10,10))>0.00001)print *,'error-11'
+if (abs(z2(15)-(10,10))>0.00001)print *,'error-12'
+if (abs(z3(15)-(10,10))>0.00001)print *,'error-13'
+if (abs(p1(3,5)-(10,10))>0.00001)print *,'error-31'
+if (abs(p2(3,5)-(10,10))>0.00001)print *,'error-32'
+if (abs(p3(3,5)-(10,10))>0.00001)print *,'error-33'
+end select
+end subroutine
+end
+use m1
+allocate(var1%a1(size,size), var1%a2(size,size), var1%a3(size,size))
+var1%a1=0;var1%a2=0;var1%a3=0
+var1%a1(size,size)=(1,1);var1%a2(size,size)=(2,2); var1%a3(size,size)=(3,3)
+w=0
+w(5,5)=(10,10)
+var2%a1=> w(::2,:)
+var2%a2=> w(::2,:)
+var2%a3=> w(::2,:)
+
+call s(var1,1)
+call s(var2,2)
+print *,'pass'
+end

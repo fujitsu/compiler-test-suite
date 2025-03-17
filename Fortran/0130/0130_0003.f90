@@ -92,7 +92,7 @@ end subroutine test
 subroutine init(px, py, pz, m, vx, vy, vz)
   integer(kind=4)::i
   DATA_TYPE, dimension(N)::px, py, pz, m, vx, vy, vz
-  DATA_TYPE, r1, r2, r3, r4
+  DATA_TYPE  r1, r2, r3, r4
 
   do i = 1, N
     call random_number(r1)

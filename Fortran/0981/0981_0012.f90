@@ -20,8 +20,8 @@ do i=1,1
 end do
 !$omp endparallel
 
-!$omp parallel 
-!$omp parallel 
+!$omp parallel
+!$omp parallel
 if (loc(i).ne.loc(j)) write(6,*) "NG"
 !$omp do
   do i=1,1
@@ -87,7 +87,7 @@ if (loc(i).ne.loc(j)) write(6,*) "NG"
 do i=1,1
 end do
 !$omp endparallel
-end 
+end
 
 subroutine test02()
 integer , pointer :: j
@@ -106,9 +106,9 @@ do i=1,1
 end do
 !$omp endparallel
 
-!$omp parallel 
+!$omp parallel
 i=1
-!$omp parallel 
+!$omp parallel
 if (loc(i).ne.loc(j)) write(6,*) "NG"
 !$omp do
   do i=1,1
@@ -180,7 +180,7 @@ if (loc(i).ne.loc(j)) write(6,*) "NG"
 do i=1,1
 end do
 !$omp endparallel
-end 
+end
 subroutine test03()
 integer , pointer :: j
 integer , target  :: i
@@ -197,9 +197,9 @@ do i=1,1
 end do
 !$omp endparallel
 
-!$omp parallel 
+!$omp parallel
 i=1
-!$omp parallel 
+!$omp parallel
 j=>i
 if (loc(i).ne.loc(j)) write(6,*) "NG"
 !$omp do
@@ -270,7 +270,4 @@ if (loc(i).ne.loc(j)) write(6,*) "NG"
 do i=1,1
 end do
 !$omp endparallel
-end 
-
-subroutine errtra()
-end subroutine
+end

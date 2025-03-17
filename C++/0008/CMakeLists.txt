@@ -1,0 +1,5 @@
+llvm_singlesource(PREFIX "Fujitsu-C++-")
+set_property(SOURCE 0008_0000.cc APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
+set_property(TARGET Fujitsu-C++-0008_0000 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
+set_property(SOURCE 0008_0001.cc APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
+set_property(TARGET Fujitsu-C++-0008_0001 APPEND PROPERTY LINK_OPTIONS "-fopenmp")

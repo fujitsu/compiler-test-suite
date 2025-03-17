@@ -17,7 +17,7 @@
 
       SUBROUTINE   SUB(MEMO,SW2)
 
-      REAL*8       MEMO
+      character(*) MEMO
       INTEGER      SW2
      0NAMELIST     /NAMEL/   A1,A2,A3,A4,
      1                       C1,C2,C3,C4,

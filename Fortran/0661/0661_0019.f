@@ -24,7 +24,7 @@
       CALL S1(I,L)
       READ (5,*) LL
       DO 2 II=1,2
-        IF (L(II).NE.L(II))CALL ERRTRA
+        IF (L(II).NE.L(II))PRINT *,'FAIL'
  2    WRITE(11,*) L
       DO 11 I=1,2
 11       L(I)=0
@@ -33,7 +33,7 @@
       CALL S2(IA,L)
       READ (5,*) LL
       DO 12 II=1,2
-        IF (L(II).NE.L(II))CALL ERRTRA
+        IF (L(II).NE.L(II))PRINT *,'FAIL'
 12    WRITE(11,*) L
       DO 21 I=1,2
 21       L(I)=0
@@ -42,6 +42,6 @@
       CALL S3(IB,L,2,2)
       READ (5,*) LL
       DO 32 II=1,2
-        IF (L(II).NE.L(II))CALL ERRTRA
+        IF (L(II).NE.L(II))PRINT *,'FAIL'
 32    WRITE(11,*) L
       END

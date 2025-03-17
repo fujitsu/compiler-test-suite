@@ -49,77 +49,77 @@ c
       integer,parameter,dimension(2,2):: j55=a(1: :1 ,2,2:1:-1)
       integer,parameter,dimension(2,2):: j56=a( :2:1 ,2,2:1:-1)
       if (j51(1,1)/=v122 .or. j51(2,1)/=v222 .or.
-     1    j51(1,2)/=v121 .or. j51(2,2)/=v221)call errtra
+     1    j51(1,2)/=v121 .or. j51(2,2)/=v221)print *,'fail'
       if (j52(1,1)/=v222 .or. j52(2,1)/=v122 .or.
-     1    j52(1,2)/=v221 .or. j52(2,2)/=v121)call errtra
+     1    j52(1,2)/=v221 .or. j52(2,2)/=v121)print *,'fail'
       if (j53(1,1)/=v122 .or. j53(2,1)/=v222 .or.
-     1    j53(1,2)/=v121 .or. j53(2,2)/=v221)call errtra
+     1    j53(1,2)/=v121 .or. j53(2,2)/=v221)print *,'fail'
       if (j54(1,1)/=v122 .or. j54(2,1)/=v222 .or.
-     1    j54(1,2)/=v121 .or. j54(2,2)/=v221)call errtra
+     1    j54(1,2)/=v121 .or. j54(2,2)/=v221)print *,'fail'
       if (j55(1,1)/=v122 .or. j55(2,1)/=v222 .or.
-     1    j55(1,2)/=v121 .or. j55(2,2)/=v221)call errtra
+     1    j55(1,2)/=v121 .or. j55(2,2)/=v221)print *,'fail'
       if (j56(1,1)/=v122 .or. j56(2,1)/=v222 .or.
-     1    j56(1,2)/=v121 .or. j56(2,2)/=v221)call errtra
+     1    j56(1,2)/=v121 .or. j56(2,2)/=v221)print *,'fail'
       if (j41(1,1)/=v212 .or. j41(2,1)/=v112 .or.
-     1    j41(1,2)/=v222 .or. j41(2,2)/=v122)call errtra
+     1    j41(1,2)/=v222 .or. j41(2,2)/=v122)print *,'fail'
       if (j42(1,1)/=v222 .or. j42(2,1)/=v122 .or. 
-     1    j42(1,2)/=v212 .or. j42(2,2)/=v112)call errtra
+     1    j42(1,2)/=v212 .or. j42(2,2)/=v112)print *,'fail'
       if (j43(1,1)/=v212 .or. j43(2,1)/=v112 .or.
-     1    j43(1,2)/=v222 .or. j43(2,2)/=v122)call errtra
+     1    j43(1,2)/=v222 .or. j43(2,2)/=v122)print *,'fail'
       if (j44(1,1)/=v212 .or. j44(2,1)/=v112 .or.
-     1    j44(1,2)/=v222 .or. j44(2,2)/=v122)call errtra
+     1    j44(1,2)/=v222 .or. j44(2,2)/=v122)print *,'fail'
       if (j45(1,1)/=v212 .or. j45(2,1)/=v112 .or.
-     1    j45(1,2)/=v222 .or. j45(2,2)/=v122)call errtra
+     1    j45(1,2)/=v222 .or. j45(2,2)/=v122)print *,'fail'
       if (j46(1,1)/=v212 .or. j46(2,1)/=v112 .or.
-     1    j46(1,2)/=v222 .or. j46(2,2)/=v122)call errtra
+     1    j46(1,2)/=v222 .or. j46(2,2)/=v122)print *,'fail'
       if (j31(1,1)/=v221 .or. j31(2,1)/=v211 .or.
-     1    j31(1,2)/=v222 .or. j31(2,2)/=v212)call errtra
+     1    j31(1,2)/=v222 .or. j31(2,2)/=v212)print *,'fail'
       if (j32(1,1)/=v222 .or. j32(2,1)/=v212 .or.
-     1    j32(1,2)/=v221 .or. j32(2,2)/=v211)call errtra
+     1    j32(1,2)/=v221 .or. j32(2,2)/=v211)print *,'fail'
       if (j33(1,1)/=v122 .or. j33(2,1)/=v222 .or.
-     1    j33(1,2)/=v121 .or. j33(2,2)/=v221)call errtra
+     1    j33(1,2)/=v121 .or. j33(2,2)/=v221)print *,'fail'
       if (j34(1,1)/=v222 .or. j34(2,1)/=v122 .or.
-     1    j34(1,2)/=v221 .or. j34(2,2)/=v121)call errtra
+     1    j34(1,2)/=v221 .or. j34(2,2)/=v121)print *,'fail'
       if (j35(1,1)/=v212 .or. j35(2,1)/=v112 .or.
-     1    j35(1,2)/=v222 .or. j35(2,2)/=v122)call errtra
+     1    j35(1,2)/=v222 .or. j35(2,2)/=v122)print *,'fail'
       if (j36(1,1)/=v222 .or. j36(2,1)/=v122 .or. 
-     1    j36(1,2)/=v212 .or. j36(2,2)/=v112)call errtra
+     1    j36(1,2)/=v212 .or. j36(2,2)/=v112)print *,'fail'
       if (j21(1,1)/=v221 .or. j21(2,1)/=v211 .or.
-     1    j21(1,2)/=v222 .or. j21(2,2)/=v212)call errtra
+     1    j21(1,2)/=v222 .or. j21(2,2)/=v212)print *,'fail'
       if (j22(1,1)/=v222 .or. j22(2,1)/=v212 .or.
-     1    j22(1,2)/=v221 .or. j22(2,2)/=v211)call errtra
+     1    j22(1,2)/=v221 .or. j22(2,2)/=v211)print *,'fail'
       if (j23(1,1)/=v221 .or. j23(2,1)/=v211 .or.
-     1    j23(1,2)/=v222 .or. j23(2,2)/=v212)call errtra
+     1    j23(1,2)/=v222 .or. j23(2,2)/=v212)print *,'fail'
       if (j24(1,1)/=v221 .or. j24(2,1)/=v211 .or.
-     1    j24(1,2)/=v222 .or. j24(2,2)/=v212)call errtra
+     1    j24(1,2)/=v222 .or. j24(2,2)/=v212)print *,'fail'
       if (j25(1,1)/=v221 .or. j25(2,1)/=v211 .or.
-     1    j25(1,2)/=v222 .or. j25(2,2)/=v212)call errtra
+     1    j25(1,2)/=v222 .or. j25(2,2)/=v212)print *,'fail'
       if (j26(1,1)/=v221 .or. j26(2,1)/=v211 .or.
-     1    j26(1,2)/=v222 .or. j26(2,2)/=v212)call errtra
+     1    j26(1,2)/=v222 .or. j26(2,2)/=v212)print *,'fail'
       if (j11(1,1)/=v122 .or. j11(2,1)/=v222 .or.
-     1    j11(1,2)/=v121 .or. j11(2,2)/=v221)call errtra
+     1    j11(1,2)/=v121 .or. j11(2,2)/=v221)print *,'fail'
       if (j12(1,1)/=v222 .or. j12(2,1)/=v122 .or.
-     1    j12(1,2)/=v221 .or. j12(2,2)/=v121)call errtra
+     1    j12(1,2)/=v221 .or. j12(2,2)/=v121)print *,'fail'
       if (j13(1,1)/=v122 .or. j13(2,1)/=v222 .or.
-     1    j13(1,2)/=v121 .or. j13(2,2)/=v221)call errtra
+     1    j13(1,2)/=v121 .or. j13(2,2)/=v221)print *,'fail'
       if (j14(1,1)/=v122 .or. j14(2,1)/=v222 .or.
-     1    j14(1,2)/=v121 .or. j14(2,2)/=v221)call errtra
+     1    j14(1,2)/=v121 .or. j14(2,2)/=v221)print *,'fail'
       if (j15(1,1)/=v122 .or. j15(2,1)/=v222 .or.
-     1    j15(1,2)/=v121 .or. j15(2,2)/=v221)call errtra
+     1    j15(1,2)/=v121 .or. j15(2,2)/=v221)print *,'fail'
       if (j16(1,1)/=v122 .or. j16(2,1)/=v222 .or.
-     1    j16(1,2)/=v121 .or. j16(2,2)/=v221)call errtra
+     1    j16(1,2)/=v121 .or. j16(2,2)/=v221)print *,'fail'
       if (j01(1,1)/=v212 .or. j01(2,1)/=v112 .or.
-     1    j01(1,2)/=v222 .or. j01(2,2)/=v122)call errtra
+     1    j01(1,2)/=v222 .or. j01(2,2)/=v122)print *,'fail'
       if (j02(1,1)/=v222 .or. j02(2,1)/=v122 .or. 
-     1    j02(1,2)/=v212 .or. j02(2,2)/=v112)call errtra
+     1    j02(1,2)/=v212 .or. j02(2,2)/=v112)print *,'fail'
       if (j03(1,1)/=v212 .or. j03(2,1)/=v112 .or.
-     1    j03(1,2)/=v222 .or. j03(2,2)/=v122)call errtra
+     1    j03(1,2)/=v222 .or. j03(2,2)/=v122)print *,'fail'
       if (j04(1,1)/=v212 .or. j04(2,1)/=v112 .or.
-     1    j04(1,2)/=v222 .or. j04(2,2)/=v122)call errtra
+     1    j04(1,2)/=v222 .or. j04(2,2)/=v122)print *,'fail'
       if (j05(1,1)/=v212 .or. j05(2,1)/=v112 .or.
-     1    j05(1,2)/=v222 .or. j05(2,2)/=v122)call errtra
+     1    j05(1,2)/=v222 .or. j05(2,2)/=v122)print *,'fail'
       if (j06(1,1)/=v212 .or. j06(2,1)/=v112 .or.
-     1    j06(1,2)/=v222 .or. j06(2,2)/=v122)call errtra
+     1    j06(1,2)/=v222 .or. j06(2,2)/=v122)print *,'fail'
 c     print *,'ia2=',ia2
 c     print *,'jb1=',jb1
       end

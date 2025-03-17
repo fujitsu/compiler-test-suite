@@ -45,6 +45,6 @@ use m1
 xpno=0
 call omp_set_num_threads(4)
 call s1()
-if( xpno /= 3+4+4+4 ) print *,'NG : xpno=',xpno
+if( xpno /= 3+4+4+4+4+4+4 ) print *,'NG : xpno=',xpno
 print *,'PASS'
 end

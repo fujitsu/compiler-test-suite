@@ -1,0 +1,4 @@
+ ----- test--
+       parallel critical do -----
+ OK
+exit 0

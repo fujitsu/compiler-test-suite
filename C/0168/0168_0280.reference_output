@@ -1,0 +1,13 @@
+not memalias(unsigned char & int)
+not memalias(unsigned char & unsigned int)
+not memalias(unsigned char & long)
+not memalias(unsigned char & unsigned long)
+not memalias(unsigned char & short)
+not memalias(unsigned char & unsigned short)
+not memalias(unsigned char & float)
+not memalias(unsigned char & double)
+not memalias(unsigned char & long double)
+not memalias(unsigned char & char)
+not memalias(unsigned char & unsigned char)
+not memalias(unsigned char & signed char)
+exit 0

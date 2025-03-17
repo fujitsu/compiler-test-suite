@@ -34,11 +34,11 @@ type(ttt),pointer,intent(in) :: dmy(:)
 character(len=:),pointer,intent(in) :: arg(:)
 
             if(size(dmy) .ne. 5) print*,"121"
-            if(len(dmy(2)%pcmp%ch(5)) /= 10) print*,"122"
+            if(len(dmy(2)%pcmp%ch(5)) /= 6) print*,"122"
             if(dmy(2)%pcmp%ch(3) /= "abcdef") print*,"123"
 
 if(arg(2) /= "abcdef") print*,"125"
-if(LEN(arg) /= 10) print*,"126"
+if(LEN(arg) /= 6) print*,"126"
 if(size(arg) /= 3) print*,"127"
 arg(2) = "012345"
 arg(3) = "abcdef"

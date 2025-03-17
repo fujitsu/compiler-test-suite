@@ -1,0 +1,3 @@
+ --   parallel reduction(||,&&:int,double) --
+ OK 
+exit 0

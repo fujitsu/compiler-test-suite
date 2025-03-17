@@ -52,8 +52,8 @@ use m1
 allocate(x2::a(2))
 
 deallocate( a )
-if (f1s/=2) print *,19101,f1s
-if (f1a/=0) print *,1102,f1a
+if (f1s/=0) print *,19101,f1s
+if (f1a/=1) print *,1102,f1a
 if (f2s/=0) print *,1111,f2s
 if (f2a/=1) print *,18112,f2a
 if (f3s/=0) print *,1121,f3s

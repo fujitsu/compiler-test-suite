@@ -1,0 +1,4 @@
+ ----- test --
+       parallel do schedule(dynamic,1) -----
+ OK
+exit 0

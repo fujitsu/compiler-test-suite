@@ -10,11 +10,11 @@
  end
  subroutine s1
   use m1
-  if ( kind(cmplx(1,1))/=kind(1.2))call errtra
-  if ( kind(cmplx(1,1,4))/=4)call errtra
+  if ( kind(cmplx(1,1))/=kind(1.2))print *,'fail'
+  if ( kind(cmplx(1,1,4))/=4)print *,'fail'
   contains
   subroutine sub(c)
    implicit complex(c)
-   if (kind(c(1.,1.))/=kind(1.))call errtra
+   if (kind(c(1.,1.))/=kind(1.))print *,'fail'
   end subroutine
 end

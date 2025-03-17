@@ -46,6 +46,6 @@ do ido3=1,10
 end do
 !$omp end simd
 !$omp endparallel
-if (ido2.ne.2) print *,'ng2:',ido2
+if (ido2.ne.11) print *,'ng2:',ido2
 if (ido3.ne.3) print *,'ng3:',ido3
 end

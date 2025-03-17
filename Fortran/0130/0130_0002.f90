@@ -68,7 +68,7 @@ end subroutine test
 subroutine init(px, m, vx)
   integer(kind=4)::i
   DATA_TYPE, dimension(N)::px, m, vx
-  DATA_TYPE, r1, r2
+  DATA_TYPE  r1, r2
 
   do i = 1, N
     call random_number(r1)

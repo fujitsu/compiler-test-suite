@@ -1,0 +1,4 @@
+This is base's vfunc()
+This is derived1's vfunc()
+This is derived1's vfunc()
+exit 0

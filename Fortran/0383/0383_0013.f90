@@ -8,9 +8,9 @@ cha1 = "1234567890"
 cha2 = "1234567890"
 cha3 = "1234567890"
 cha4 = "1234567890"
-if ( len(cha1) .ne. j ) call errtra
-if ( len(cha2) .ne. j ) call errtra
-if ( len(cha3) .ne. j ) call errtra
-if ( len(cha4) .ne. j ) call errtra
+if ( len(cha1) .ne. j ) print *,'fail'
+if ( len(cha2) .ne. j ) print *,'fail'
+if ( len(cha3) .ne. j ) print *,'fail'
+if ( len(cha4) .ne. j ) print *,'fail'
 print *,'pass '
 end

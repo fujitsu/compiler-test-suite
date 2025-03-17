@@ -2,14 +2,14 @@ program main
 call test01()
 call test02()
 print *,'pass'
-end 
+end
 
 module mod1
 contains
  pure function ifun04(j,i)
  integer,intent(in) :: j,i
  ifun04=j+i
- return 
+ return
  entry ifun05(j,i)
  ifun05=j+i
  end function
@@ -21,10 +21,6 @@ interface ifun
  pure function ifun03(j,i)
  integer,intent(in) :: j,i
  end function
-end interface
-interface 
- pure subroutine errtra
- end subroutine
 end interface
 ifun02(j,i)=j+i
 j0=0;j1=0;j2=0;j3=0;j4=0;j5=0
@@ -64,10 +60,6 @@ interface ifun4
 end interface
 interface ifun5
  module procedure ifun05
-end interface
-interface 
- pure subroutine errtra
- end subroutine
 end interface
 ifun02(j,i)=j+i
 ifunc=1

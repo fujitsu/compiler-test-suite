@@ -28,7 +28,7 @@ calc%jj=20
 write(1,*)calc%ii
 end select
 deallocate(calc)
-if (flag/=20)print *,102
+if (flag/=0)print *,102,flag
 print *,'pass'
 end
 

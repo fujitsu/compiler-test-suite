@@ -4,5 +4,5 @@ subroutine sub()
 call sub1(1)
 end subroutine
 subroutine sub1()
-if (.false.) call errtra
+if (.false.) print *,'fail'
 end subroutine

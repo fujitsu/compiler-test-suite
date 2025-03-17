@@ -61,7 +61,7 @@
       SUBROUTINE    SUB(MEMO,SW2,SW5,SW8,SW11)
       LOGICAL       SW5,SW8,SW11
       INTEGER       SW2
-      REAL*8        MEMO
+      character(*)  MEMO
       COMPLEX       C1,C2
       DIMENSION     A(15)
       NAMELIST      /NAMEL/A,B,C,I,C1,C2,T1,T2,T3,T4,T5,T6

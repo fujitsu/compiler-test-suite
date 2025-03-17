@@ -1,0 +1,4 @@
+ ----- test --
+       parallel default(none) private(ia) shared(ib,thread) -----
+ OK
+exit 0

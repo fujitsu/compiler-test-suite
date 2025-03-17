@@ -1,0 +1,3 @@
+B::B() called
+... catched
+exit 0

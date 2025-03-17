@@ -117,7 +117,7 @@ function fun(dmy,dmy2,dmy3,dmy4,dmy5)
  class(*):: dmy,dmy2(3,4),dmy3(:,:,:),dmy4(:,:,:),dmy5
  if(sizeof(dmy) /= 5) print*,'201','dmy',sizeof(dmy)
  if(sizeof(dmy2) /= 5*12) print*,'202','dmy2',sizeof(dmy2)
- if(sizeof(dmy3) /= 5*64) print*,'203','dmy3',sizeof(dmy3)
+ if(sizeof(dmy3) /= 4*64) print*,'203','dmy3',sizeof(dmy3)
  if(sizeof(dmy4) /= 4*125) print*,'204'
  if(sizeof(dmy5) /= 1) print*,'204a'
 

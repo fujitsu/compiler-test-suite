@@ -11,7 +11,7 @@ use mod00
 private:: vb
 contains
 subroutine sub
-if (va.ne.2.0) call errtra
+if (va.ne.2.0) print *,'fail'
 print *,'pass'
 end subroutine
 end 

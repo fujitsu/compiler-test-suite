@@ -10,5 +10,5 @@ type ,extends(ty1) :: ty2
 end type
 type(ty2),parameter :: str = ty2(ty1(1),1)
 integer,parameter :: j = str%a1
-if (j.ne.1) call errtra
+if (j.ne.1) print *,'fail'
 end

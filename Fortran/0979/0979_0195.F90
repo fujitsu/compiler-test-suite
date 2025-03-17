@@ -14,8 +14,6 @@ end
 
 module mod
 contains
-pure subroutine errtra()
-end subroutine
 end
 
 subroutine btest01()
@@ -151,5 +149,3 @@ logical(kind=8) :: i
 if (i.neqv..false.) write(6,*) "NG"
 end subroutine
 end
-
-

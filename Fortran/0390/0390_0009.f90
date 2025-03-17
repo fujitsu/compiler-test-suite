@@ -5,7 +5,7 @@ character*(2) c(j)
 !$OMP PARALLEL 
 !$OMP do            firstprivate(c) 
 do ii=1,1
-if (any(lbound(c)/=1))call errtra
+if (any(lbound(c)/=1))print *,'fail'
 end do
 !$OMP END DO
 !$OMP END PARALLEL

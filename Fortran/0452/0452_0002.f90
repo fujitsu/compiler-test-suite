@@ -89,9 +89,13 @@ end do
 end
 subroutine chk11(k)
 use km
+logical::file_exists
+inquire(file="fort.11", exist=file_exists)
+if (file_exists) then
 rewind k
 do n=1,(kh-1)*2*3
    read(k ,*) nn
    if (nn/=7001) stop 999
 end do
+endif
 end

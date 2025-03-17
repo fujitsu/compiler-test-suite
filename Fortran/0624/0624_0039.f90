@@ -8,6 +8,6 @@
       subroutine ss1(i,j)
       character a(j)*(i)
       a='123'
-      if (any(lbound(a)/=1))call errtra
+      if (any(lbound(a)/=1))print *,'fail'
       end subroutine
       end

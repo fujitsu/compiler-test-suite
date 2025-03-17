@@ -29,6 +29,6 @@ module mod6
 end module
 
 use mod6
-if (cc.ne.1) call errtra
+if (cc.ne.1) print *,'fail'
 print *,'pass'
 end

@@ -1,0 +1,4 @@
+ ----- parallel
+       do reduction(max:ra) reduction(min:rb) -----
+ OK
+exit 0

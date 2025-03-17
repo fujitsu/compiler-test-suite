@@ -10,12 +10,12 @@
  end
  subroutine s1
   use m1
-  if ( kind(ceiling(-1.9))/=kind(2))call errtra
-  if ( kind(ceiling(-1.9d0))/=kind(2))call errtra
-  if ( kind(x01(ceiling(-1.9)))/=kind(2))call errtra
+  if ( kind(ceiling(-1.9))/=kind(2))print *,'fail'
+  if ( kind(ceiling(-1.9d0))/=kind(2))print *,'fail'
+  if ( kind(x01(ceiling(-1.9)))/=kind(2))print *,'fail'
   contains
   function   x01(k1) result(ix01)
-   if (kind(k1)/=kind(1))call errtra
+   if (kind(k1)/=kind(1))print *,'fail'
    ix01=0
   end function
 end

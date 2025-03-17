@@ -69,7 +69,7 @@
       END
       SUBROUTINE    SUB(MEMO,SW2,SW4,SW6,SW7,SW11,SW12)
       IMPLICIT      LOGICAL (L)
-      REAL     *8   MEMO
+      character(*)  MEMO
       LOGICAL       SW2,SW6,SW7,SW11,SW12
       INTEGER       SW4
       COMMON        /COMN1/ IA1,RA1

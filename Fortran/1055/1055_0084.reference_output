@@ -1,0 +1,5 @@
+ ------ test --
+        parallel private(it)
+        master barrier -----
+ OK
+exit 0

@@ -20,8 +20,8 @@ type ty1
  integer    :: a4
  integer    :: a5=a2
 end type
-if (a1.ne.1) call errtra
-if (a3.ne.3) call errtra
-if (a4.ne.4) call errtra
-if (a5.ne.2) call errtra
+if (a1.ne.1) print *,'fail'
+if (a3.ne.3) print *,'fail'
+if (a4.ne.4) print *,'fail'
+if (a5.ne.2) print *,'fail'
 end

@@ -1,0 +1,11 @@
+Class2.Func01() : 9
+Class2.Func1() : 15
+Class2.Func1() CSI : 10000
+Class2.Func02() : 24
+1	
+Class2.Func2() : 24, 29
+Class2.Func2() CAI : 20000
+Class2.Func2() caught : 2
+Class2.Func3() : 29
+21	22	
+exit 0

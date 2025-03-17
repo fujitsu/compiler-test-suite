@@ -40,8 +40,8 @@ deallocate(x1)
 END SUBROUTINE
 use m
 call example
-if (f11/=3) print *,100,f11
-if (f1/=2) print *,101,f1
+if (f11/=4) print *,100,f11
+if (f1/=0) print *,101,f1
 if (f2/=0) print *,102,f2
 if (f3/=0) print *,103,f3
 

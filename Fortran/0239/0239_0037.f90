@@ -120,10 +120,10 @@ end select
 end select
 
 deallocate( a )
-if (f1s/=2) print *,19101,f1s
-if (f1a/=0) print *,1102,f1a
+if (f1s/=0) print *,19101,f1s
+if (f1a/=3) print *,1102,f1a
 if (f2s/=0) print *,1111,f2s
-if (f2a/=1) print *,18112,f2a
+if (f2a/=3) print *,18112,f2a
 if (f3s/=0) print *,1121,f3s
 if (f3a/=0) print *,1122,f3a
 
@@ -226,11 +226,11 @@ deallocate(a)
 end
 use m1
 call s1(1)
-if (f1s/=4) print *,9101,f1s
-if (f1a/=0) print *,102,f1a
-if (f2s/=2) print *,111,f2s
-if (f2a/=1) print *,8112,f2a
+if (f1s/=0) print *,9101,f1s
+if (f1a/=7) print *,102,f1a
+if (f2s/=0) print *,111,f2s
+if (f2a/=7) print *,8112,f2a
 if (f3s/=0) print *,121,f3s
-if (f3a/=1) print *,122,f3a
+if (f3a/=4) print *,122,f3a
 print *,'pass'
 end

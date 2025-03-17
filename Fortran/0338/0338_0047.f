@@ -1,14 +1,12 @@
       PROGRAM MAIN
-      CHARACTER*15 CHR
-      CHARACTER*9 CHR1
-      CHARACTER*3 CHR2(2)
+      CHARACTER*7 CHR
+      CHARACTER*4 CHR1
+      CHARACTER*3 CHR2(1)
       CHARACTER*3 CHR3
       WRITE(6,*)'#### START ####'
-      CHR1='TEST KA'
-      CHR1(8:9)='IN'
-      CHR2(1)='047'
-      CHR2(2)=CHR3()
-      CHR=CHR1//(CHR2(1)//CHR2(2))
+      CHR1='TEST'
+      CHR2(1)=CHR3()
+      CHR=CHR1//CHR2(1)
       IF(CHR.EQ.'TEST OK') THEN
         WRITE(6,*)'*** OK ***'
       ELSE

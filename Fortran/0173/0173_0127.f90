@@ -40,11 +40,11 @@ end do
  type(x):: aa(3)/x('111'),x('222'),x('333')/
 !$omp parallel default(private) firstprivate(aa)
  a1=fun1(aa)
- if (any(a1/=aa)) call errtra
+ if (any(a1/=aa)) print *,'fail'
  a2=fun2(aa)
- if (any(a2/=aa)) call errtra
+ if (any(a2/=aa)) print *,'fail'
  a3=fun3(aa)
- if (any(a3/=aa)) call errtra
+ if (any(a3/=aa)) print *,'fail'
  call ss1(aa,a4,a5,a6)
 !$omp end parallel
   contains
@@ -57,11 +57,11 @@ end do
    type(x),dimension(:)::aa,a1,a2,a3
 !$omp parallel default(private) shared(aa,a1,a2,a3)
  a1=fun1(aa)
- if (any(a1/=aa)) call errtra
+ if (any(a1/=aa)) print *,'fail'
  a2=fun2(aa)
- if (any(a2/=aa)) call errtra
+ if (any(a2/=aa)) print *,'fail'
  a3=fun3(aa)
- if (any(a3/=aa)) call errtra
+ if (any(a3/=aa)) print *,'fail'
 !$omp end parallel
  end subroutine
  end
@@ -71,6 +71,3 @@ end do
     intent(in)::a
     fun2=a
    end function
-subroutine errtra
-print *,'error'
-end

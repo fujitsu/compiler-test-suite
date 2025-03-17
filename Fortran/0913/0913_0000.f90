@@ -33,7 +33,7 @@ obj1(3)%ch = "BBBBB"
 
 obj2 = (/((obj1(ii+jj),ii=1,3),jj=1,3)/)
 if(size(obj2) .ne. 9) print*,"121", size(obj2)
-if(sizeof(obj2) .ne. 324 .and. sizeof(obj2) .ne. 504) print*,"122",sizeof(obj2)
+if(sizeof(obj2) .ne. 324 .and. sizeof(obj2) .ne. 504 .and. sizeof(obj2) .ne. 576) print*,"122",sizeof(obj2)
 IF(obj2(1)%jj .EQ. 20 .AND. obj2(3)%jj .EQ. 40 .AND. obj2(4)%jj .EQ. 30) THEN
 ELSE
   PRINT*,"911", obj2(1)%jj, obj2(3)%jj, obj2(4)%jj

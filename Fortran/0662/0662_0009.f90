@@ -42,57 +42,57 @@ integer(4),parameter::hii4=huge(ii4)
 integer(8),parameter::hi8=huge(i8)
 integer(8),parameter::hii8=huge(ii8)
 
-if(digits(i1).ne.di1) call errtra
-if(digits(ii1).ne.dii1) call errtra
-if(di1.ne.dii1) call errtra
-if(digits(i2).ne.di2) call errtra
-if(digits(ii2).ne.dii2) call errtra
-if(di2.ne.dii2) call errtra
-if(digits(i4).ne.di4) call errtra
-if(digits(ii4).ne.dii4) call errtra
-if(di4.ne.dii4) call errtra
-if(digits(i8).ne.di8) call errtra
-if(digits(ii8).ne.dii8) call errtra
-if(di8.ne.dii8) call errtra
+if(digits(i1).ne.di1) print *,'fail'
+if(digits(ii1).ne.dii1) print *,'fail'
+if(di1.ne.dii1) print *,'fail'
+if(digits(i2).ne.di2) print *,'fail'
+if(digits(ii2).ne.dii2) print *,'fail'
+if(di2.ne.dii2) print *,'fail'
+if(digits(i4).ne.di4) print *,'fail'
+if(digits(ii4).ne.dii4) print *,'fail'
+if(di4.ne.dii4) print *,'fail'
+if(digits(i8).ne.di8) print *,'fail'
+if(digits(ii8).ne.dii8) print *,'fail'
+if(di8.ne.dii8) print *,'fail'
 
-if(radix(i1).ne.rai1) call errtra
-if(radix(ii1).ne.raii1) call errtra
-if(rai1.ne.raii1) call errtra
-if(radix(i2).ne.rai2) call errtra
-if(radix(ii2).ne.raii2) call errtra
-if(rai2.ne.raii2) call errtra
-if(radix(i4).ne.rai4) call errtra
-if(radix(ii4).ne.raii4) call errtra
-if(rai4.ne.raii4) call errtra
-if(radix(i8).ne.rai8) call errtra
-if(radix(ii8).ne.raii8) call errtra
-if(rai8.ne.raii8) call errtra
+if(radix(i1).ne.rai1) print *,'fail'
+if(radix(ii1).ne.raii1) print *,'fail'
+if(rai1.ne.raii1) print *,'fail'
+if(radix(i2).ne.rai2) print *,'fail'
+if(radix(ii2).ne.raii2) print *,'fail'
+if(rai2.ne.raii2) print *,'fail'
+if(radix(i4).ne.rai4) print *,'fail'
+if(radix(ii4).ne.raii4) print *,'fail'
+if(rai4.ne.raii4) print *,'fail'
+if(radix(i8).ne.rai8) print *,'fail'
+if(radix(ii8).ne.raii8) print *,'fail'
+if(rai8.ne.raii8) print *,'fail'
 
-if(range(i1).ne.mii1) call errtra
-if(range(ii1).ne.miii1) call errtra
-if(mii1.ne.miii1) call errtra
-if(range(i2).ne.mii2) call errtra
-if(range(ii2).ne.miii2) call errtra
-if(mii2.ne.miii2) call errtra
-if(range(i4).ne.mii4) call errtra
-if(range(ii4).ne.miii4) call errtra
-if(mii4.ne.miii4) call errtra
-if(range(i8).ne.mii8) call errtra
-if(range(ii8).ne.miii8) call errtra
-if(mii8.ne.miii8) call errtra
+if(range(i1).ne.mii1) print *,'fail'
+if(range(ii1).ne.miii1) print *,'fail'
+if(mii1.ne.miii1) print *,'fail'
+if(range(i2).ne.mii2) print *,'fail'
+if(range(ii2).ne.miii2) print *,'fail'
+if(mii2.ne.miii2) print *,'fail'
+if(range(i4).ne.mii4) print *,'fail'
+if(range(ii4).ne.miii4) print *,'fail'
+if(mii4.ne.miii4) print *,'fail'
+if(range(i8).ne.mii8) print *,'fail'
+if(range(ii8).ne.miii8) print *,'fail'
+if(mii8.ne.miii8) print *,'fail'
 
-if(huge(i1).ne.hi1) call errtra
-if(huge(ii1).ne.hii1) call errtra
-if(hi1.ne.hii1) call errtra
-if(huge(i2).ne.hi2) call errtra
-if(huge(ii2).ne.hii2) call errtra
-if(hi2.ne.hii2) call errtra
-if(huge(i4).ne.hi4) call errtra
-if(huge(ii4).ne.hii4) call errtra
-if(hi4.ne.hii4) call errtra
-if(huge(i8).ne.hi8) call errtra
-if(huge(ii8).ne.hii8) call errtra
-if(hi8.ne.hii8) call errtra
+if(huge(i1).ne.hi1) print *,'fail'
+if(huge(ii1).ne.hii1) print *,'fail'
+if(hi1.ne.hii1) print *,'fail'
+if(huge(i2).ne.hi2) print *,'fail'
+if(huge(ii2).ne.hii2) print *,'fail'
+if(hi2.ne.hii2) print *,'fail'
+if(huge(i4).ne.hi4) print *,'fail'
+if(huge(ii4).ne.hii4) print *,'fail'
+if(hi4.ne.hii4) print *,'fail'
+if(huge(i8).ne.hi8) print *,'fail'
+if(huge(ii8).ne.hii8) print *,'fail'
+if(hi8.ne.hii8) print *,'fail'
 
 end subroutine
 end

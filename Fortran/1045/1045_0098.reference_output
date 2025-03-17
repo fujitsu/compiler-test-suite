@@ -1,0 +1,4 @@
+ ----- test--
+       parallel private(it) do schedule(guided,loop) -----
+ OK
+exit 0

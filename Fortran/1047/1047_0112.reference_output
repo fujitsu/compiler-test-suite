@@ -1,0 +1,5 @@
+ ----- test --
+       parallel
+       do reduction(max:ia) reduction(min:ib) -----
+ OK
+exit 0

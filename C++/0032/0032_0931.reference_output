@@ -1,0 +1,4 @@
+f(char) called
+f(signed char) called
+f(unsigned char) called
+exit 0

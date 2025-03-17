@@ -6,8 +6,5 @@ type ty1
  integer :: i
 end type
 type(ty1) :: ii,jj
-if (.not.same_type_as(ii,jj)) call errtra
-end
-subroutine errtra()
-print *,'err'
+if (.not.same_type_as(ii,jj)) print *,'fail'
 end

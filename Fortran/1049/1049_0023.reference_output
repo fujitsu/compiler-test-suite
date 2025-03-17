@@ -1,0 +1,4 @@
+ ----- test --
+       parallel do reduction(.and.:la) -----
+ OK
+exit 0

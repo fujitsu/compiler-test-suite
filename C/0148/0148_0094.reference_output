@@ -1,0 +1,4 @@
+ #### 8002 ## BUSY ON EXIT ####
+ *** REAL DATA   *** s  = 22.0   =  22
+ *** LOGICAL DATA ** ls =   0    =  0
+exit 0

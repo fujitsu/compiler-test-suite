@@ -1,0 +1,5 @@
+ ----- test --
+       parallel private(ia)
+       do ------
+ OK
+exit 0

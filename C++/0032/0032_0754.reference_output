@@ -1,0 +1,3 @@
+S::S() called
+S::~S() called
+exit 0

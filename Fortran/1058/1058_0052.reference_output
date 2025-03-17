@@ -1,0 +1,4 @@
+ ----- parallel private(it)
+       sections firstprivate(ra) ------
+ OK
+exit 0

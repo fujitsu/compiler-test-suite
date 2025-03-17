@@ -1,0 +1,3 @@
+ --   parallel + sections reduction(||:double):function --
+ OK 
+exit 0

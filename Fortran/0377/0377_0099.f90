@@ -12,22 +12,19 @@ call sub4( (/ character (-6) :: "a"/) )
 contains
 subroutine sub(ccc)
 character(*) :: ccc(1)
-if (len(ccc(1)).ne.6) call errtra
+if (len(ccc(1)).ne.6) print *,'fail'
 end subroutine
 subroutine sub2(ccc)
 character(6) :: ccc(1)
-if (len(ccc(1)).ne.6) call errtra
+if (len(ccc(1)).ne.6) print *,'fail'
 end subroutine
 subroutine sub3(ccc)
 character(*) :: ccc(1)
-if (len(ccc(1)).ne.0) call errtra
+if (len(ccc(1)).ne.0) print *,'fail'
 end subroutine
 subroutine sub4(ccc)
 character(*) :: ccc(1)
-if (len(ccc(1)).ne.0) call errtra
+if (len(ccc(1)).ne.0) print *,'fail'
 end subroutine
 
-end
-subroutine errtra
-print *,"err"
 end

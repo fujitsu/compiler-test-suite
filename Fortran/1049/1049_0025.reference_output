@@ -1,0 +1,4 @@
+ ----- test --
+       parallel reduction(.or.:la) -----
+ OK
+exit 0

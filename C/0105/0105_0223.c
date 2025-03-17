@@ -21,10 +21,11 @@
 void sub_abc_omp(double r[NI][NJ][NK], double s[NI][NJ][NK], int II, int JJ, int KK, int A) {
   int i,j,k;
   for (i=0; i<II; ++i) {
-#pragma omp parallel for firstprivate(A)
+#pragma omp parallel for firstprivate(A) private(k)
     for (j=0; j<JJ; ++j) {
       for (k=0; k<KK; ++k) {
 	r[i][j][k] = (s[i][j][k]) * i -j * k + A;
+	#pragma omp flush
       }
     }
   }

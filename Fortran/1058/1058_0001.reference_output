@@ -1,0 +1,4 @@
+ ----- parallel
+       do private(ic,rr16,rr8,rr4) ------
+ OK
+exit 0

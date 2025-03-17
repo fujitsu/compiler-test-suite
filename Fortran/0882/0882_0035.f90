@@ -22,6 +22,6 @@ contains
   subroutine sub(dum,yy)
     class(*):: dum(:)
     real :: yy(3)
-    if(sizeof(dum)== 440) print*,yy(1)
+    if(sizeof(dum)== 400) print*,yy(1)
   end subroutine sub
 end

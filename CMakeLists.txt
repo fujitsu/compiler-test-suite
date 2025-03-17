@@ -90,6 +90,7 @@ option(TEST_SUITE_FUJITSU_FORCE_UNSUPPORTED_PLATFORM
 if(LINUX OR TEST_SUITE_FUJITSU_FORCE_UNSUPPORTED_PLATFORM)
   if(ARCH STREQUAL "AArch64" OR TEST_SUITE_FUJITSU_FORCE_UNSUPPORTED_PLATFORM)
     add_subdirectory(C)
+    add_subdirectory(C++)
     if(TEST_SUITE_FORTRAN)
       # CMake supports LLVM Flang since 3.24.0 and supports `.f03` and `.f08`
       # filename suffixes since 3.27.0.

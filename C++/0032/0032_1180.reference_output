@@ -1,0 +1,9 @@
+1
+DD:~DD() called
+D::~D() called
+3
+DD:~DD() called
+D::~D() called
+2
+ok
+exit 0

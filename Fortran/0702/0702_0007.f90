@@ -8,8 +8,8 @@ print *,'pass'
 end
 
 subroutine sub01()
-if (lbound(int(ifun01()),1) .ne. 1) call errtra
-if (ubound(int(ifun01()),1) .ne. 10) call errtra
+if (lbound(int(ifun01()),1) .ne. 1) print *,'fail'
+if (ubound(int(ifun01()),1) .ne. 10) print *,'fail'
 contains
 function ifun01() result(ia)
 integer,dimension(1:10) :: ia

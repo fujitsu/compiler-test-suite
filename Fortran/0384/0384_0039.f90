@@ -17,13 +17,10 @@ end
 subroutine s1()
 use mod1
 use mod2
-      if (same_type_as(v1,v2).neqv..false.) call errtra
+      if (same_type_as(v1,v2).neqv..false.) print *,'fail'
       end subroutine
 
 
       call s1
       print *,'pass'
       end
-subroutine errtra()
-print *,'err'
-end

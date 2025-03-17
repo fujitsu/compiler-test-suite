@@ -43,7 +43,7 @@ c
      7 p331=p(3311,'331t',reshape((/'331u','331v'/),s),3312) ,
      8 p332=p(3321,'332w',reshape((/'332x','332y'/),s),3322) ,
      9 p333=p(3331,'333z',reshape((/'333#','333%'/),s),3332)
-      type q 
+      type q
          integer    q1
          type (p):: q2
          type (p):: q3(1,1,2)
@@ -59,11 +59,11 @@ c
       type (q),parameter::q32=q(0,p321,reshape((/p322,p323/),s),0)
       type (q),parameter::q33=q(0,p331,reshape((/p332,p333/),s),0)
       type r
-         integer     r1 
+         integer     r1
          type (q)::  r2
          type (q)::  r3(1,1,2)
-         integer     r4 
-      end type 
+         integer     r4
+      end type
       type (r),parameter::r1=r(0,q11,reshape((/q12,q13/),s),0)
       type (r),parameter::r2=r(0,q21,reshape((/q22,q23/),s),0)
       type (r),parameter::r3=r(0,q31,reshape((/q32,q33/),s),0)
@@ -210,108 +210,132 @@ c
       type(p),parameter,dimension(1,1,2)::yy16=t1%r3(:,:,v)%q2
       integer,parameter,dimension(1,1,2)::y50=yy16%p4
 
-      if (y50(1,1,1)/=t1r31q2p4.or.y50(1,1,2)/=t1r32q2p4)call errtra
-      if (y49(1,1,1)/=t21r2q2p4.or.y49(1,1,2)/=t22r2q2p4)call errtra
-      if (y48(1,1,1)/=t21r2q2p4.or.y48(1,1,2)/=t22r2q2p4)call errtra
-      if (y47(1,1,1)/=t22r32q31p4.or.y47(1,1,2)/=t22r32q32p4)call errtra
-      if (y46(1,1,1)/=t22r32q31p4.or.y46(1,1,2)/=t22r32q32p4)call errtra
-      if (y45(1,1,1)/=t22r31q32p4.or.y45(1,1,2)/=t22r32q32p4)call errtra
-      if (y44(1,1,1)/=t22r31q32p4.or.y44(1,1,2)/=t22r32q32p4)call errtra
-      if (y43(1,1,1)/=t21r32q32p4.or.y43(1,1,2)/=t22r32q32p4)call errtra
-      if (y42(1,1,1)/=t21r32q32p4.or.y42(1,1,2)/=t22r32q32p4)call errtra
-      if (y41(1,1,1)/=t1r31q2p4.or.y41(1,1,2)/=t1r32q2p4)call errtra
-      if (y40(1,1,1)/=t1r31q2p4.or.y40(1,1,2)/=t1r32q2p4)call errtra
-      if (y39(1,1,1)/=t1r2q31p4.or.y39(1,1,2)/=t1r2q32p4)call errtra
-      if (y38(1,1,1)/=t1r2q31p4.or.y38(1,1,2)/=t1r2q32p4)call errtra
-      if (y37/=t1r2q2p4)call errtra
-      if (y36(1,1,1)/=2111.or.y36(1,1,2)/=3111)call errtra
-      if (y35/=1111)call errtra
-      if (y34(1,1,1)/=t1r2q31p4.or.y34(1,1,2)/=t1r2q32p4)call errtra
-      if (y33(1,1,1)/=t1r2q31p4.or.y33(1,1,2)/=t1r2q32p4)call errtra
-      if (y32(1,1,1)/=t1r31q2p4.or.y32(1,1,2)/=t1r32q2p4)call errtra
-      if (y31(1,1,1)/=t21r32q2p4.or.y31(1,1,2)/=t22r32q2p4)call errtra
-      if (y30(1,1,1)/=t21r32q2p4.or.y30(1,1,2)/=t22r32q2p4)call errtra
-      if (y29(1,1,1)/=t21r2q32p4.or.y29(1,1,2)/=t22r2q32p4)call errtra
-      if (y28(1,1,1)/=t21r2q32p4.or.y28(1,1,2)/=t22r2q32p4)call errtra
-      if (y27(1,1,1)/=t22r31q32p4.or.y27(1,1,2)/=t22r32q32p4)call errtra
-      if (y26(1,1,1)/=t22r31q32p4.or.y26(1,1,2)/=t22r32q32p4)call errtra
-      if (y25(1,1,1)/=t22r31q32p4.or.y25(1,1,2)/=t22r32q32p4)call errtra
-      if (y24(1,1,1)/=t22r31q32p4.or.y24(1,1,2)/=t22r32q32p4)call errtra
-      if (y23(1,1,1)/=t21r2q32p4.or.y23(1,1,2)/=t22r2q32p4)call errtra
-      if (y22(1,1,1)/=t21r2q32p4.or.y22(1,1,2)/=t22r2q32p4)call errtra
-      if (y21(1,1,1)/=t21r32q2p4.or.y21(1,1,2)/=t22r32q2p4)call errtra
-      if (y20(1,1,1)/=t21r32q2p4.or.y20(1,1,2)/=t22r32q2p4)call errtra
-      if (y19(1,1,1)/=t1r2q31p4.or.y19(1,1,2)/=t1r2q32p4)call errtra
-      if (y18(1,1,1)/=t1r2q31p4.or.y18(1,1,2)/=t1r2q32p4)call errtra
-      if (y17(1,1,1)/=t1r31q2p4.or.y17(1,1,2)/=t1r32q2p4)call errtra
-      if (y16(1,1,1)/=t1r31q2p4.or.y16(1,1,2)/=t1r32q2p4)call errtra
-      if (y15(1,1,1)/=t21r2q2p4.or.y15(1,1,2)/=t22r2q2p4)call errtra
-      if (y14(1,1,1)/=t21r2q2p4.or.y14(1,1,2)/=t22r2q2p4)call errtra
-      if (y13(1,1,1)/=t22r32q31p4.or.y13(1,1,2)/=t22r32q32p4)call errtra
-      if (y12(1,1,1)/=t22r32q31p4.or.y12(1,1,2)/=t22r32q32p4)call errtra
-      if (y11(1,1,1)/=t22r31q32p4.or.y11(1,1,2)/=t22r32q32p4)call errtra
-      if (y10(1,1,1)/=t22r31q32p4.or.y10(1,1,2)/=t22r32q32p4)call errtra
-      if (y09(1,1,1)/=t21r32q32p4.or.y09(1,1,2)/=t22r32q32p4)call errtra
-      if (y08(1,1,1)/=t21r32q32p4.or.y08(1,1,2)/=t22r32q32p4)call errtra
-      if (y07(1,1,1)/=t1r31q2p4.or.y07(1,1,2)/=t1r32q2p4)call errtra
-      if (y06(1,1,1)/=t1r31q2p4.or.y06(1,1,2)/=t1r32q2p4)call errtra
-      if (y05(1,1,1)/=t1r2q31p4.or.y05(1,1,2)/=t1r2q32p4)call errtra
-      if (y04(1,1,1)/=t1r2q31p4.or.y04(1,1,2)/=t1r2q32p4)call errtra
-      if (y03/=t1r2q2p4)call errtra
-      if (y02(1,1,1)/=2111.or.y02(1,1,2)/=3111)call errtra
-      if (y01/=1111)call errtra
-      if (t1r2q2p1/=1111)call errtra
-      if (t1r2q2p4/=1112)call errtra
-      if (t1r2q31p1/=1121)call errtra
-      if (t1r2q31p4/=1122)call errtra
-      if (t1r2q32p1/=1131)call errtra
-      if (t1r2q32p4/=1132)call errtra
-      if (t1r31q2p1/= 1211)call errtra
-      if (t1r31q2p4/= 1212)call errtra
-      if (t1r31q31p1/=1221)call errtra
-      if (t1r31q31p4/=1222)call errtra
-      if (t1r31q32p1/=1231)call errtra
-      if (t1r31q32p4/=1232)call errtra
-      if (t1r32q2p1/= 1311)call errtra
-      if (t1r32q2p4/= 1312)call errtra
-      if (t1r32q31p1/=1321)call errtra
-      if (t1r32q31p4/=1322)call errtra
-      if (t1r32q32p1/=1331)call errtra
-      if (t1r32q32p4/=1332)call errtra
-      if (t21r2q2p1/=2111)call errtra
-      if (t21r2q2p4/= 2112)call errtra
-      if (t21r2q31p1/=2121)call errtra
-      if (t21r2q31p4/=2122)call errtra
-      if (t21r2q32p1/=2131)call errtra
-      if (t21r2q32p4/=2132)call errtra
-      if (t21r31q2p1/=2211)call errtra
-      if (t21r31q2p4/=2212)call errtra
-      if (t21r31q31p1/=2221)call errtra
-      if (t21r31q31p4/=2222)call errtra
-      if (t21r31q32p1/=2231)call errtra
-      if (t21r31q32p4/=2232)call errtra
-      if (t21r32q2p1/= 2311)call errtra
-      if (t21r32q2p4/=2312)call errtra
-      if (t21r32q31p1/=2321)call errtra
-      if (t21r32q31p4/=2322)call errtra
-      if (t21r32q32p1/=2331)call errtra
-      if (t21r32q32p4/=2332)call errtra
-      if (t22r2q2p1/= 3111)call errtra
-      if (t22r2q2p4/=3112)call errtra
-      if (t22r2q31p1/=3121)call errtra
-      if (t22r2q31p4/=3122)call errtra
-      if (t22r2q32p1/=3131)call errtra
-      if (t22r2q32p4/=3132)call errtra
-      if (t22r31q2p1/=3211)call errtra
-      if (t22r31q2p4/= 3212)call errtra
-      if (t22r31q31p1/=3221)call errtra
-      if (t22r31q31p4/=3222)call errtra
-      if (t22r31q32p1/=3231)call errtra
-      if (t22r31q32p4/=3232)call errtra
-      if (t22r32q2p1/= 3311)call errtra
-      if (t22r32q2p4/= 3312)call errtra
-      if (t22r32q31p1/=3321)call errtra
-      if (t22r32q31p4/=3322)call errtra
-      if (t22r32q32p1/=3331)call errtra
-      if (t22r32q32p4/=3332)call errtra
+      if (y50(1,1,1)/=t1r31q2p4.or.y50(1,1,2)/=t1r32q2p4)print *,'fail'
+      if (y49(1,1,1)/=t21r2q2p4.or.y49(1,1,2)/=t22r2q2p4)print *,'fail'
+      if (y48(1,1,1)/=t21r2q2p4.or.y48(1,1,2)/=t22r2q2p4)print *,'fail'
+      if (y47(1,1,1)/=t22r32q31p4.or.y47(1,1,2)/=t22r32q32p4)
+     1 print *,'fail'
+      if (y46(1,1,1)/=t22r32q31p4.or.y46(1,1,2)/=t22r32q32p4)
+     1 print *,'fail'
+      if (y45(1,1,1)/=t22r31q32p4.or.y45(1,1,2)/=t22r32q32p4)
+     1 print *,'fail'
+      if (y44(1,1,1)/=t22r31q32p4.or.y44(1,1,2)/=t22r32q32p4)
+     1 print *,'fail'
+      if (y43(1,1,1)/=t21r32q32p4.or.y43(1,1,2)/=t22r32q32p4)
+     1 print *,'fail'
+      if (y42(1,1,1)/=t21r32q32p4.or.y42(1,1,2)/=t22r32q32p4)
+     1 print *,'fail'
+      if (y41(1,1,1)/=t1r31q2p4.or.y41(1,1,2)/=t1r32q2p4)print *,'fail'
+      if (y40(1,1,1)/=t1r31q2p4.or.y40(1,1,2)/=t1r32q2p4)print *,'fail'
+      if (y39(1,1,1)/=t1r2q31p4.or.y39(1,1,2)/=t1r2q32p4)print *,'fail'
+      if (y38(1,1,1)/=t1r2q31p4.or.y38(1,1,2)/=t1r2q32p4)print *,'fail'
+      if (y37/=t1r2q2p4)print *,'fail'
+      if (y36(1,1,1)/=2111.or.y36(1,1,2)/=3111)print *,'fail'
+      if (y35/=1111)print *,'fail'
+      if (y34(1,1,1)/=t1r2q31p4.or.y34(1,1,2)/=t1r2q32p4)print *,'fail'
+      if (y33(1,1,1)/=t1r2q31p4.or.y33(1,1,2)/=t1r2q32p4)print *,'fail'
+      if (y32(1,1,1)/=t1r31q2p4.or.y32(1,1,2)/=t1r32q2p4)print *,'fail'
+      if (y31(1,1,1)/=t21r32q2p4.or.y31(1,1,2)/=t22r32q2p4)
+     1 print *,'fail'
+      if (y30(1,1,1)/=t21r32q2p4.or.y30(1,1,2)/=t22r32q2p4)
+     1 print *,'fail'
+      if (y29(1,1,1)/=t21r2q32p4.or.y29(1,1,2)/=t22r2q32p4)
+     1 print *,'fail'
+      if (y28(1,1,1)/=t21r2q32p4.or.y28(1,1,2)/=t22r2q32p4)
+     1 print *,'fail'
+      if (y27(1,1,1)/=t22r31q32p4.or.y27(1,1,2)/=t22r32q32p4)
+     1 print *,'fail'
+      if (y26(1,1,1)/=t22r31q32p4.or.y26(1,1,2)/=t22r32q32p4)
+     1 print *,'fail'
+      if (y25(1,1,1)/=t22r31q32p4.or.y25(1,1,2)/=t22r32q32p4)
+     1 print *,'fail'
+      if (y24(1,1,1)/=t22r31q32p4.or.y24(1,1,2)/=t22r32q32p4)
+     1 print *,'fail'
+      if (y23(1,1,1)/=t21r2q32p4.or.y23(1,1,2)/=t22r2q32p4)
+     1 print *,'fail'
+      if (y22(1,1,1)/=t21r2q32p4.or.y22(1,1,2)/=t22r2q32p4)
+     1 print *,'fail'
+      if (y21(1,1,1)/=t21r32q2p4.or.y21(1,1,2)/=t22r32q2p4)
+     1 print *,'fail'
+      if (y20(1,1,1)/=t21r32q2p4.or.y20(1,1,2)/=t22r32q2p4)
+     1 print *,'fail'
+      if (y19(1,1,1)/=t1r2q31p4.or.y19(1,1,2)/=t1r2q32p4)print *,'fail'
+      if (y18(1,1,1)/=t1r2q31p4.or.y18(1,1,2)/=t1r2q32p4)print *,'fail'
+      if (y17(1,1,1)/=t1r31q2p4.or.y17(1,1,2)/=t1r32q2p4)print *,'fail'
+      if (y16(1,1,1)/=t1r31q2p4.or.y16(1,1,2)/=t1r32q2p4)print *,'fail'
+      if (y15(1,1,1)/=t21r2q2p4.or.y15(1,1,2)/=t22r2q2p4)print *,'fail'
+      if (y14(1,1,1)/=t21r2q2p4.or.y14(1,1,2)/=t22r2q2p4)print *,'fail'
+      if (y13(1,1,1)/=t22r32q31p4.or.y13(1,1,2)/=t22r32q32p4)
+     1 print *,'fail'
+      if (y12(1,1,1)/=t22r32q31p4.or.y12(1,1,2)/=t22r32q32p4)
+     1 print *,'fail'
+      if (y11(1,1,1)/=t22r31q32p4.or.y11(1,1,2)/=t22r32q32p4)
+     1 print *,'fail'
+      if (y10(1,1,1)/=t22r31q32p4.or.y10(1,1,2)/=t22r32q32p4)
+     1 print *,'fail'
+      if (y09(1,1,1)/=t21r32q32p4.or.y09(1,1,2)/=t22r32q32p4)
+     1 print *,'fail'
+      if (y08(1,1,1)/=t21r32q32p4.or.y08(1,1,2)/=t22r32q32p4)
+     1 print *,'fail'
+      if (y07(1,1,1)/=t1r31q2p4.or.y07(1,1,2)/=t1r32q2p4)print *,'fail'
+      if (y06(1,1,1)/=t1r31q2p4.or.y06(1,1,2)/=t1r32q2p4)print *,'fail'
+      if (y05(1,1,1)/=t1r2q31p4.or.y05(1,1,2)/=t1r2q32p4)print *,'fail'
+      if (y04(1,1,1)/=t1r2q31p4.or.y04(1,1,2)/=t1r2q32p4)print *,'fail'
+      if (y03/=t1r2q2p4)print *,'fail'
+      if (y02(1,1,1)/=2111.or.y02(1,1,2)/=3111)print *,'fail'
+      if (y01/=1111)print *,'fail'
+      if (t1r2q2p1/=1111)print *,'fail'
+      if (t1r2q2p4/=1112)print *,'fail'
+      if (t1r2q31p1/=1121)print *,'fail'
+      if (t1r2q31p4/=1122)print *,'fail'
+      if (t1r2q32p1/=1131)print *,'fail'
+      if (t1r2q32p4/=1132)print *,'fail'
+      if (t1r31q2p1/= 1211)print *,'fail'
+      if (t1r31q2p4/= 1212)print *,'fail'
+      if (t1r31q31p1/=1221)print *,'fail'
+      if (t1r31q31p4/=1222)print *,'fail'
+      if (t1r31q32p1/=1231)print *,'fail'
+      if (t1r31q32p4/=1232)print *,'fail'
+      if (t1r32q2p1/= 1311)print *,'fail'
+      if (t1r32q2p4/= 1312)print *,'fail'
+      if (t1r32q31p1/=1321)print *,'fail'
+      if (t1r32q31p4/=1322)print *,'fail'
+      if (t1r32q32p1/=1331)print *,'fail'
+      if (t1r32q32p4/=1332)print *,'fail'
+      if (t21r2q2p1/=2111)print *,'fail'
+      if (t21r2q2p4/= 2112)print *,'fail'
+      if (t21r2q31p1/=2121)print *,'fail'
+      if (t21r2q31p4/=2122)print *,'fail'
+      if (t21r2q32p1/=2131)print *,'fail'
+      if (t21r2q32p4/=2132)print *,'fail'
+      if (t21r31q2p1/=2211)print *,'fail'
+      if (t21r31q2p4/=2212)print *,'fail'
+      if (t21r31q31p1/=2221)print *,'fail'
+      if (t21r31q31p4/=2222)print *,'fail'
+      if (t21r31q32p1/=2231)print *,'fail'
+      if (t21r31q32p4/=2232)print *,'fail'
+      if (t21r32q2p1/= 2311)print *,'fail'
+      if (t21r32q2p4/=2312)print *,'fail'
+      if (t21r32q31p1/=2321)print *,'fail'
+      if (t21r32q31p4/=2322)print *,'fail'
+      if (t21r32q32p1/=2331)print *,'fail'
+      if (t21r32q32p4/=2332)print *,'fail'
+      if (t22r2q2p1/= 3111)print *,'fail'
+      if (t22r2q2p4/=3112)print *,'fail'
+      if (t22r2q31p1/=3121)print *,'fail'
+      if (t22r2q31p4/=3122)print *,'fail'
+      if (t22r2q32p1/=3131)print *,'fail'
+      if (t22r2q32p4/=3132)print *,'fail'
+      if (t22r31q2p1/=3211)print *,'fail'
+      if (t22r31q2p4/= 3212)print *,'fail'
+      if (t22r31q31p1/=3221)print *,'fail'
+      if (t22r31q31p4/=3222)print *,'fail'
+      if (t22r31q32p1/=3231)print *,'fail'
+      if (t22r31q32p4/=3232)print *,'fail'
+      if (t22r32q2p1/= 3311)print *,'fail'
+      if (t22r32q2p4/= 3312)print *,'fail'
+      if (t22r32q31p1/=3321)print *,'fail'
+      if (t22r32q31p4/=3322)print *,'fail'
+      if (t22r32q32p1/=3331)print *,'fail'
+      if (t22r32q32p4/=3332)print *,'fail'
       end

@@ -1,0 +1,4 @@
+ ----- test --
+       parallel do orderd -----
+ OK
+exit 0

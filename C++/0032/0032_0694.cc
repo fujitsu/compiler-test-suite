@@ -1,0 +1,80 @@
+
+
+
+
+
+
+#include <stdio.h>
+
+class BASE {
+    protected:
+        long size;
+    public:
+        virtual void set_size() = 0;
+                int  chk_size(BASE &, int);
+};
+
+int BASE::chk_size( BASE &r, int i )
+{
+    return r.size == i;
+}
+
+class CHAR : public BASE {
+    private:
+        char c;
+    public:
+        void set_size();
+};
+
+void CHAR::set_size()
+{
+    c = 0;
+    size = sizeof(c);
+}
+
+class SHORT : public BASE {
+    private:
+        short s;
+    public:
+        void set_size();
+};
+
+void SHORT::set_size()
+{
+    s = 0;
+    size = sizeof(s);
+}
+
+class INT : public BASE {
+    private:
+        int i;
+    public:
+        void set_size();
+};
+
+void INT::set_size()
+{
+    i = 0;
+    size = sizeof(i);
+}
+int main()
+{
+    CHAR  cobj;
+    SHORT sobj;
+    INT   iobj;
+
+    BASE &r1 = cobj;
+    BASE &r2 = sobj;
+    BASE &r3 = iobj;
+
+    cobj.set_size();
+    sobj.set_size();
+    iobj.set_size();
+
+    if( r1.chk_size( r1, 1 ) &&
+        r2.chk_size( r2, 2 ) &&
+        r3.chk_size( r3, 4 ) )
+        printf("ok\n");
+    else
+        printf("ng\n");
+}

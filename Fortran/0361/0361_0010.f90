@@ -30,15 +30,15 @@ integer,parameter :: if1=sizeof(ty2(ty1("a")))
 integer,parameter :: if2=sizeof(ty1("a")) 
 integer,parameter :: if3=sizeof((/ty2(ty1("a"))/))
 integer,parameter :: if4=sizeof((/ty1("a")/)) 
-if (if1 .ne.20000 ) call errtra
-if (if2 .ne.2000 ) call errtra
-if (if3 .ne.20000 ) call errtra
-if (if4 .ne.2000 ) call errtra
+if (if1 .ne.20000 ) print *,"fail"
+if (if2 .ne.2000 ) print *,"fail"
+if (if3 .ne.20000 ) print *,"fail"
+if (if4 .ne.2000 ) print *,"fail"
 
-if (sizeof(ty2(ty1("a"))) .ne.20000 ) call errtra
-if (sizeof(ty1("a")) .ne.2000 ) call errtra
-if (sizeof((/ty2(ty1("a"))/)) .ne.20000 ) call errtra
-if (sizeof((/ty1("a")/)) .ne.2000 ) call errtra
+if (sizeof(ty2(ty1("a"))) .ne.20000 ) print *,"fail"
+if (sizeof(ty1("a")) .ne.2000 ) print *,"fail"
+if (sizeof((/ty2(ty1("a"))/)) .ne.20000 ) print *,"fail"
+if (sizeof((/ty1("a")/)) .ne.2000 ) print *,"fail"
 end
 
 subroutine test02()
@@ -56,15 +56,15 @@ integer,parameter :: if1=sizeof(ty2(ty1("a")))
 integer,parameter :: if2=sizeof(ty1("a"))
 integer,parameter :: if3=sizeof((/ty2(ty1("a"))/))
 integer,parameter :: if4=sizeof((/ty1("a")/))
-if (if1 .ne.20000 ) call errtra
-if (if2 .ne.2000 ) call errtra
-if (if3 .ne.20000 ) call errtra
-if (if4 .ne.2000 ) call errtra
+if (if1 .ne.20000 ) print *,"fail"
+if (if2 .ne.2000 ) print *,"fail"
+if (if3 .ne.20000 ) print *,"fail"
+if (if4 .ne.2000 ) print *,"fail"
 
-if (sizeof(ty2(ty1("a"))) .ne.20000 ) call errtra
-if (sizeof(ty1("a")) .ne.2000 ) call errtra
-if (sizeof((/ty2(ty1("a"))/)) .ne.20000 ) call errtra
-if (sizeof((/ty1("a")/)) .ne.2000 ) call errtra
+if (sizeof(ty2(ty1("a"))) .ne.20000 ) print *,"fail"
+if (sizeof(ty1("a")) .ne.2000 ) print *,"fail"
+if (sizeof((/ty2(ty1("a"))/)) .ne.20000 ) print *,"fail"
+if (sizeof((/ty1("a")/)) .ne.2000 ) print *,"fail"
 end
 
 module moda
@@ -96,15 +96,15 @@ integer,parameter :: if1=sizeof(ty2(ty1("a")))
 integer,parameter :: if2=sizeof(ty1("a"))
 integer,parameter :: if3=sizeof((/ty2(ty1("a"))/))
 integer,parameter :: if4=sizeof((/ty1("a")/))
-if (if1 .ne.20000 ) call errtra
-if (if2 .ne.2000 ) call errtra
-if (if3 .ne.20000 ) call errtra
-if (if4 .ne.2000 ) call errtra
+if (if1 .ne.20000 ) print *,"fail"
+if (if2 .ne.2000 ) print *,"fail"
+if (if3 .ne.20000 ) print *,"fail"
+if (if4 .ne.2000 ) print *,"fail"
 
-if (sizeof(ty2(ty1("a"))) .ne.20000 ) call errtra
-if (sizeof(ty1("a")) .ne.2000 ) call errtra
-if (sizeof((/ty2(ty1("a"))/)) .ne.20000 ) call errtra
-if (sizeof((/ty1("a")/)) .ne.2000 ) call errtra
+if (sizeof(ty2(ty1("a"))) .ne.20000 ) print *,"fail"
+if (sizeof(ty1("a")) .ne.2000 ) print *,"fail"
+if (sizeof((/ty2(ty1("a"))/)) .ne.20000 ) print *,"fail"
+if (sizeof((/ty1("a")/)) .ne.2000 ) print *,"fail"
 end
 
 subroutine test04()
@@ -122,14 +122,14 @@ integer,parameter :: if1=sizeof(ss2(ty1("a")))
 integer,parameter :: if2=sizeof(ty1("a"))
 integer,parameter :: if3=sizeof((/ss2(ty1("a"))/))
 integer,parameter :: if4=sizeof((/ty1("a")/))
-if (if1 .ne.20000 ) call errtra
-if (if2 .ne.2000 ) call errtra
-if (if3 .ne.20000 ) call errtra
-if (if4 .ne.2000 ) call errtra
+if (if1 .ne.20000 ) print *,"fail"
+if (if2 .ne.2000 ) print *,"fail"
+if (if3 .ne.20000 ) print *,"fail"
+if (if4 .ne.2000 ) print *,"fail"
 
-if (sizeof(ss2(ty1("a"))) .ne.20000 ) call errtra
-if (sizeof(ty1("a")) .ne.2000 ) call errtra
-if (sizeof((/ss2(ty1("a"))/)) .ne.20000 ) call errtra
-if (sizeof((/ty1("a")/)) .ne.2000 ) call errtra
+if (sizeof(ss2(ty1("a"))) .ne.20000 ) print *,"fail"
+if (sizeof(ty1("a")) .ne.2000 ) print *,"fail"
+if (sizeof((/ss2(ty1("a"))/)) .ne.20000 ) print *,"fail"
+if (sizeof((/ty1("a")/)) .ne.2000 ) print *,"fail"
 end
 

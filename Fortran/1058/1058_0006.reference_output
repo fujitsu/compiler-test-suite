@@ -1,0 +1,3 @@
+ ----- parallel shared(ra) private(it) -----
+ OK
+exit 0

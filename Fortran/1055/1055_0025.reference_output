@@ -1,0 +1,4 @@
+ ----- test90 --
+       parallel private(pt1) ------
+ OK
+exit 0

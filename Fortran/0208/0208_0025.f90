@@ -10,6 +10,6 @@ IF(C .NE. ((3,3)**3)) PRINT*,"32", cmplx(cc),cmplx(C) , ((3,3)**3)
 C=DD      **3.0_4
 IF(C .NE. ((3,3)**3)) PRINT*,"33", cmplx(dd),cmplx(C) , ((3,3)**3)
 D=DD      **3.0_4
-IF(D .NE. ((3,3)**3)) PRINT*,"33", cmplx(dd),cmplx(D) , ((3,3)**3)
+IF(D .NE. ((3,3)**3.0_4)) PRINT*,"33", cmplx(dd),cmplx(D) , ((3,3)**3)
 PRINT*,"pass"
 END

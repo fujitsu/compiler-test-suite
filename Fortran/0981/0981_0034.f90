@@ -390,7 +390,3 @@ ttt=(/(i,i=1,10)/)+10
 !$omp endparallel
 !$omp endsingle
 end subroutine
-
-subroutine errtra()
-print *,"err"
-end 

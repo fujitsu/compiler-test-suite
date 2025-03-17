@@ -1,0 +1,5 @@
+CLS::func
+CLS2_before1::func
+CLS2::func
+func
+exit 0

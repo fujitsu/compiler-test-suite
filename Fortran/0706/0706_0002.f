@@ -9,7 +9,7 @@
         parameter (b=a(1:3:2))
         parameter (j=b(1))
         parameter (k=b(2))
-        if (i/=3)call errtra
-        if (j/=1)call errtra
-        if (k/=3)call errtra
+        if (i/=3)print *,'fail'
+        if (j/=1)print *,'fail'
+        if (k/=3)print *,'fail'
       end

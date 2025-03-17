@@ -1,0 +1,111 @@
+      implicit integer (a-h,o-z)
+      dimension q(200)
+      dimension x(3)
+      type y
+         integer nt(8)
+      end type
+      type(y) z
+      data z%nt /7, 3, 3, 1, 7, 3, 3, 1/
+
+      do i = 1,200
+        q(i) = i
+      end do
+
+      is=2
+      jnt=z%nt(is)
+      write(1,*) (q(  j*3),j=1,3) 
+      write(1,*) (q(  3*j),j=1,3) 
+      write(1,*) (q(  j*jnt),j=1,3) 
+      write(1,*) (q(  jnt*j),j=1,3) 
+      write(1,*) (q(  j*z%nt(is)),j=1,3) 
+      write(1,*) (q(  z%nt(is)*j),j=1,3) 
+      write(1,*) (q(  j*z%nt(2)),j=1,3)
+      write(1,*) (q(  j*in(3)),j=1,3) 
+      write(1,*) (q(  3*in(j)),j=1,3) 
+      write(1,*) (q(  j*in(jnt)),j=1,3) 
+      write(1,*) (q(  jnt*in(j)),j=1,3) 
+      write(1,*) (q(  j*in(z%nt(is))),j=1,3) 
+      write(1,*) (q(  z%nt(is)*in(j)),j=1,3) 
+      write(1,*) (q(  j*in(z%nt(2))),j=1,3)  
+      write(1,*) (q(  in(j)*3),j=1,3) 
+      write(1,*) (q(  in(3)*j),j=1,3) 
+      write(1,*) (q(  in(j)*jnt),j=1,3) 
+      write(1,*) (q(  in(jnt)*j),j=1,3) 
+      write(1,*) (q(  in(j)*z%nt(is)),j=1,3) 
+      write(1,*) (q(  in(z%nt(is))*j),j=1,3) 
+      write(1,*) (q(  in(j)*z%nt(2)),j=1,3)
+      write(1,*) (q(  j*(3)),j=1,3) 
+      write(1,*) (q(  3*(j)),j=1,3) 
+      write(1,*) (q(  j*(jnt)),j=1,3) 
+      write(1,*) (q(  jnt*(j)),j=1,3) 
+      write(1,*) (q(  j*(z%nt(is))),j=1,3) 
+      write(1,*) (q(  z%nt(is)*(j)),j=1,3) 
+      write(1,*) (q(  j*(z%nt(2))),j=1,3)
+      write(1,*) (q(  j*(in(3))),j=1,3) 
+      write(1,*) (q(  3*(in(j))),j=1,3) 
+      write(1,*) (q(  j*(in(jnt))),j=1,3) 
+      write(1,*) (q(  jnt*(in(j))),j=1,3) 
+      write(1,*) (q(  j*(in(z%nt(is)))),j=1,3) 
+      write(1,*) (q(  z%nt(is)*(in(j))),j=1,3) 
+      write(1,*) (q(  j*(in(z%nt(2)))),j=1,3)  
+      write(1,*) (q(  in(j)*(3)),j=1,3) 
+      write(1,*) (q(  in(3)*(j)),j=1,3) 
+      write(1,*) (q(  in(j)*(jnt)),j=1,3) 
+      write(1,*) (q(  in(jnt)*(j)),j=1,3) 
+      write(1,*) (q(  in(j)*(z%nt(is))),j=1,3) 
+      write(1,*) (q(  in(z%nt(is))*(j)),j=1,3) 
+      write(1,*) (q(  in(j)*(z%nt(2))),j=1,3)
+      write(1,*) (q(  (j)*3),j=1,3) 
+      write(1,*) (q(  (3)*j),j=1,3) 
+      write(1,*) (q(  (j)*jnt),j=1,3) 
+      write(1,*) (q(  (jnt)*j),j=1,3) 
+      write(1,*) (q(  (j)*z%nt(is)),j=1,3) 
+      write(1,*) (q(  (z%nt(is))*j),j=1,3) 
+      write(1,*) (q(  (j)*z%nt(2)),j=1,3)
+      write(1,*) (q(  (j)*in(3)),j=1,3) 
+      write(1,*) (q(  (3)*in(j)),j=1,3) 
+      write(1,*) (q(  (j)*in(jnt)),j=1,3) 
+      write(1,*) (q(  (jnt)*in(j)),j=1,3) 
+      write(1,*) (q(  (j)*in(z%nt(is))),j=1,3) 
+      write(1,*) (q(  (z%nt(is))*in(j)),j=1,3) 
+      write(1,*) (q(  (j)*in(z%nt(2))),j=1,3)  
+      write(1,*) (q(  (in(j))*3),j=1,3) 
+      write(1,*) (q(  (in(3))*j),j=1,3) 
+      write(1,*) (q(  (in(j))*jnt),j=1,3) 
+      write(1,*) (q(  (in(jnt))*j),j=1,3) 
+      write(1,*) (q(  (in(j))*z%nt(is)),j=1,3) 
+      write(1,*) (q(  (in(z%nt(is)))*j),j=1,3) 
+      write(1,*) (q(  (in(j))*z%nt(2)),j=1,3)
+      write(1,*) (q(  (j)*(3)),j=1,3) 
+      write(1,*) (q(  (3)*(j)),j=1,3) 
+      write(1,*) (q(  (j)*(jnt)),j=1,3) 
+      write(1,*) (q(  (jnt)*(j)),j=1,3) 
+      write(1,*) (q(  (j)*(z%nt(is))),j=1,3) 
+      write(1,*) (q(  (z%nt(is))*(j)),j=1,3) 
+      write(1,*) (q(  (j)*(z%nt(2))),j=1,3)
+      write(1,*) (q(  (j)*(in(3))),j=1,3) 
+      write(1,*) (q(  (3)*(in(j))),j=1,3) 
+      write(1,*) (q(  (j)*(in(jnt))),j=1,3) 
+      write(1,*) (q(  (jnt)*(in(j))),j=1,3) 
+      write(1,*) (q(  (j)*(in(z%nt(is)))),j=1,3) 
+      write(1,*) (q(  (z%nt(is))*(in(j))),j=1,3) 
+      write(1,*) (q(  (j)*(in(z%nt(2)))),j=1,3)  
+      write(1,*) (q(  (in(j))*(3)),j=1,3) 
+      write(1,*) (q(  (in(3))*(j)),j=1,3) 
+      write(1,*) (q(  (in(j))*(jnt)),j=1,3) 
+      write(1,*) (q(  (in(jnt))*(j)),j=1,3) 
+      write(1,*) (q(  (in(j))*(z%nt(is))),j=1,3) 
+      write(1,*) (q(  (in(z%nt(is)))*(j)),j=1,3) 
+      write(1,*) (q(  (in(j))*(z%nt(2))),j=1,3)
+
+      rewind 1
+      do k=1,84
+      read(1,*) x;if (any(x/=(/3,6,9/)))then
+             write(6,*) "NG";print *,'code=',k
+        end if
+      end do
+      print *,'pass'
+      end
+      function in(j) result(k)
+       k=j
+      end

@@ -1,0 +1,3 @@
+ #### C_OMP firstprivate(char)  ####
+   OK
+exit 0

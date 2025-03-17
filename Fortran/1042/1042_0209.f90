@@ -1,0 +1,212 @@
+module m1
+integer m1a01
+integer m1a02
+integer m1a03
+integer m1a04
+type m1t
+   integer m1a01
+   integer m1a02
+   integer m1a03
+   integer m1a04
+end type
+end
+module m2
+integer m2a01
+integer m2a02
+integer m2a03
+integer m2a04
+type m2t
+   integer m2a01
+   integer m2a02
+   integer m2a03
+   integer m2a04
+end type
+end
+module m3
+integer m3a01
+integer m3a02
+integer m3a03
+integer m3a04
+type m3t
+   integer m3a01
+   integer m3a02
+   integer m3a03
+   integer m3a04
+end type
+end
+module n1
+use m1
+use m2
+use m3
+integer n1a01
+integer n1a02
+integer n1a03
+integer n1a04
+type n1t
+   integer n1a01
+   integer n1a02
+   integer n1a03
+   integer n1a04
+end type
+end
+module n2
+use m1
+use m2
+use m3
+integer n2a01
+integer n2a02
+integer n2a03
+integer n2a04
+type n2t
+   integer n2a01
+   integer n2a02
+   integer n2a03
+   integer n2a04
+end type
+end
+module n3
+use m1
+use m2
+use m3
+integer n3a01
+integer n3a02
+integer n3a03
+integer n3a04
+type n3t
+   integer n3a01
+   integer n3a02
+   integer n3a03
+   integer n3a04
+end type
+end
+module k1
+use m1
+use m2
+use m3
+use n1
+use n2
+use n3
+integer k1a01
+integer k1a02
+integer k1a03
+integer k1a04
+type k1t
+   integer k1a01
+   integer k1a02
+   integer k1a03
+   integer k1a04
+end type
+end
+module k2
+use m1
+use m2
+use m3
+use n1
+use n2
+use n3
+integer k2a01
+integer k2a02
+integer k2a03
+integer k2a04
+type k2t
+   integer k2a01
+   integer k2a02
+   integer k2a03
+   integer k2a04
+end type
+end
+module k3
+use m1
+use m2
+use m3
+use n1
+use n2
+use n3
+integer k3a01
+integer k3a02
+integer k3a03
+integer k3a04
+type k3t
+   integer k3a01
+   integer k3a02
+   integer k3a03
+   integer k3a04
+end type
+end
+module j1
+use k1
+use k2
+use k3
+use m1
+use m2
+use m3
+use n1
+use n2
+use n3
+integer j1a01
+integer j1a02
+integer j1a03
+integer j1a04
+type j1t
+   integer j1a01
+   integer j1a02
+   integer j1a03
+   integer j1a04
+end type
+end
+module j2
+use k1
+use k2
+use k3
+use m1
+use m2
+use m3
+use n1
+use n2
+use n3
+integer j2a01
+integer j2a02
+integer j2a03
+integer j2a04
+type j2t
+   integer j2a01
+   integer j2a02
+   integer j2a03
+   integer j2a04
+end type
+end
+module j3
+use k1
+use k2
+use k3
+use m1
+use m2
+use m3
+use n1
+use n2
+use n3
+integer j3a01
+integer j3a02
+integer j3a03
+integer j3a04
+type j3t
+   integer j3a01
+   integer j3a02
+   integer j3a03
+   integer j3a04
+end type
+end
+use k1
+use k2
+use k3
+use m1
+use m2
+use m3
+use j1
+use j2
+use j3
+use n1
+use n2
+use n3
+print *,'pass'
+end

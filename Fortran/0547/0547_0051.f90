@@ -69,11 +69,11 @@ if (k2/=1) print *,102
 end
 use m1
 call s1
-if (ff1/=0) print *,101
+if (ff1/=1) print *,101
 if (ff2/=1) print *,102
 if (ff3/=1) print *,103
-if (qq1/=0) print *,104
-if (qq2/=0) print *,105
+if (qq1/=2) print *,104
+if (qq2/=2) print *,105
 print *,'pass'
 end
    

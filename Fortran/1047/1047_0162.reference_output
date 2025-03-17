@@ -1,0 +1,4 @@
+ ----- test --
+       parallel sections  reduction(*:ia,ib) -----
+ OK
+exit 0

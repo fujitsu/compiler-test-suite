@@ -18,7 +18,7 @@ program main
 
         obj_conArr = conArr(fun_class_arr_ptr(), 9)
         obj_conArr%ty_class(2)%i = 10 
-        if(sizeof(obj_conArr) .NE. 80) then
+        if(sizeof(obj_conArr) .NE. 72) then
             print*,'Fail'
         else
             print*,'Pass'

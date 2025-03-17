@@ -1,0 +1,4 @@
+ ----- test--
+       parallel do private(ic) critical -----
+ OK
+exit 0

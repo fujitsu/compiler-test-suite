@@ -43,18 +43,18 @@ parameter(x010= r010.eq.(-12288_2))
 parameter(x011= r011.eq.(-8192_2))
 parameter(x012= r012.eq.(-4096_2))
 
-if (x001.neqv..true.) call errtra
-if (x002.neqv..true.) call errtra
-if (x003.neqv..true.) call errtra
-if (x004.neqv..true.) call errtra
-if (x005.neqv..true.) call errtra
-if (x006.neqv..true.) call errtra
-if (x007.neqv..true.) call errtra
-if (x008.neqv..true.) call errtra
-if (x009.neqv..true.) call errtra
-if (x010.neqv..true.) call errtra
-if (x011.neqv..true.) call errtra
-if (x012.neqv..true.) call errtra
+if (x001.neqv..true.) print *,'fail'
+if (x002.neqv..true.) print *,'fail'
+if (x003.neqv..true.) print *,'fail'
+if (x004.neqv..true.) print *,'fail'
+if (x005.neqv..true.) print *,'fail'
+if (x006.neqv..true.) print *,'fail'
+if (x007.neqv..true.) print *,'fail'
+if (x008.neqv..true.) print *,'fail'
+if (x009.neqv..true.) print *,'fail'
+if (x010.neqv..true.) print *,'fail'
+if (x011.neqv..true.) print *,'fail'
+if (x012.neqv..true.) print *,'fail'
 end
 subroutine test01()
 implicit integer(kind=1) (r,p)
@@ -82,13 +82,13 @@ parameter(x005= r005.eq.(-81_2))
 parameter(x006= r006.eq.(-49_2))
 parameter(x007= r007.eq.(-113_2))
 
-if (x001.neqv..true.) call errtra
-if (x002.neqv..true.) call errtra
-if (x003.neqv..true.) call errtra
-if (x004.neqv..true.) call errtra
-if (x005.neqv..true.) call errtra
-if (x006.neqv..true.) call errtra
-if (x007.neqv..true.) call errtra
+if (x001.neqv..true.) print *,'fail'
+if (x002.neqv..true.) print *,'fail'
+if (x003.neqv..true.) print *,'fail'
+if (x004.neqv..true.) print *,'fail'
+if (x005.neqv..true.) print *,'fail'
+if (x006.neqv..true.) print *,'fail'
+if (x007.neqv..true.) print *,'fail'
 
 
 

@@ -23,7 +23,7 @@
        pointer ($sp,sp),($qut,qut)
        pointer ($lng,lng)
        data senm/'rat','ox','tiger','hare','dragon','snake',
-     1           'horse','sheep','monkey','rooster','dog','boar'/
+     1           'horse','sheep','monkey','hen','dog','boar'/
        data ctbl/' 1',' 2',' 3',' 4',' 5',' 6',' 7',' 8',' 9',
      1           '10','11','12'/
        data year/1989,1964/
@@ -111,7 +111,7 @@
      1         '( 7) ''horse''  (l= 5)  *****             ',
      1         '( 8) ''sheep''  (l= 5)  *****             ',
      1         '( 9) ''monkey'' (l= 6)  ******            ',
-     1         '(10) ''rooster''(l= 4)  ****              ',
+     1         '(10) ''hen''    (l= 3)  ***               ',
      1         '(11) ''dog''    (l= 3)  ***               ',
      1         '(12) ''boar''   (l= 4)  ****              '/
        data rs/' 1',' 2',' 3',' 4',' 5',' 6',' 7',' 8',' 9',

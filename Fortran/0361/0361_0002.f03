@@ -4,7 +4,7 @@ subroutine sub
 integer :: i1(1)
 integer :: ia(2)
 parameter (i1=SHAPE(ia))
-if(i1(1) /= 2) call errtra
+if(i1(1) /= 2) print *,"fail"
 end subroutine
 end module
 

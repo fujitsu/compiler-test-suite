@@ -36,15 +36,12 @@ use m3
 complex c
 character d
 call s(j)
-if (j/=1)call errtra
+if (j/=1)print *,'fail'
 call s(b)
-if (abs(b-2)>0.001)call errtra
+if (abs(b-2)>0.001)print *,'fail'
 call s(c)
-if (abs(c-(3,3))>0.001)call errtra
+if (abs(c-(3,3))>0.001)print *,'fail'
 call s(d)
-if (d/='1')call errtra
+if (d/='1')print *,'fail'
 print *,'pass'
-end
-subroutine errtra
-print *,'error'
 end

@@ -1,0 +1,6 @@
+llvm_singlesource_compile_only_file(0000_0073.cpp PREFIX "Fujitsu-C++-")
+llvm_singlesource_compile_only_file(0000_0074.cpp PREFIX "Fujitsu-C++-")
+llvm_singlesource_compile_only_file(0000_0075.cpp PREFIX "Fujitsu-C++-")
+llvm_singlesource_compile_only_file(0000_0192.cpp PREFIX "Fujitsu-C++-")
+llvm_singlesource_compile_only_file(0000_0193.cpp PREFIX "Fujitsu-C++-")
+llvm_singlesource(PREFIX "Fujitsu-C++-")

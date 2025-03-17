@@ -1,0 +1,4 @@
+ ----- test --
+       parallel do schedule(guided) -----
+ OK
+exit 0

@@ -4,8 +4,8 @@ integer :: i(0)
 
 cc = [character(ip) :: ]
 
-if (size(cc).ne.size(c_func(ip))) call errtra
-if (kind(cc).ne.kind(c_func(ip))) call errtra
+if (size(cc).ne.size(c_func(ip))) print *,'fail'
+if (kind(cc).ne.kind(c_func(ip))) print *,'fail'
 
 print *,'pass'
 

@@ -15,8 +15,8 @@ integer,parameter :: j01 = str%a1
 integer,parameter :: j02 = str%a2
 integer,parameter :: j03 = str%a3
 integer,parameter :: j04 = str%a4
-if (j01/=1) call errtra
-if (j02/=2) call errtra
-if (j03/=3) call errtra
-if (j04/=4) call errtra
+if (j01/=1) print *,'fail'
+if (j02/=2) print *,'fail'
+if (j03/=3) print *,'fail'
+if (j04/=4) print *,'fail'
 end

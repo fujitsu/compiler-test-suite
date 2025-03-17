@@ -1,0 +1,12 @@
+A::A() called
+B::B() called
+A::A(A&) called
+B::~B() called
+A::~A() called
+A::A(A&) called
+start catch handler
+B::~B() called
+A::~A() called
+B::~B() called
+A::~A() called
+exit 0

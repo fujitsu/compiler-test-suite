@@ -1,0 +1,4 @@
+ ----- parallel
+       do reduction(min:ia,ib) -----
+ OK
+exit 0

@@ -9,15 +9,15 @@
   use m1
   character,allocatable::a(:)
   integer,parameter::p01=kind((/.true./))
-  if ( kind(allocated(a))/=kind(.true.))call errtra
-  if ( kind(all((/.true./)))/=kind(.true.))call errtra
-  if (p01/=kind(.false.))call errtra
-  if ( kind(x01(allocated(a)))/=kind(.true.))call errtra
+  if ( kind(allocated(a))/=kind(.true.))print *,'fail'
+  if ( kind(all((/.true./)))/=kind(.true.))print *,'fail'
+  if (p01/=kind(.false.))print *,'fail'
+  if ( kind(x01(allocated(a)))/=kind(.true.))print *,'fail'
     contains
       function x01(a)
       implicit logical(a,x)
-      if (kind(a)/=kind(.true.))call errtra
-      if (kind(x01)/=kind(.true.))call errtra
+      if (kind(a)/=kind(.true.))print *,'fail'
+      if (kind(x01)/=kind(.true.))print *,'fail'
       x01=.true.
       end function
 end

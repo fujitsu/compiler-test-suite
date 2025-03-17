@@ -1,0 +1,6 @@
+ ----- test --
+       parallel
+       do firstprivate(ia) lastprivate(ia)
+          private(iw) -----
+ OK
+exit 0

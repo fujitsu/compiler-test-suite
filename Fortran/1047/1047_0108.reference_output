@@ -1,0 +1,4 @@
+ ----- test --
+       parallel do reduction(ior:ia) -----
+ OK
+exit 0

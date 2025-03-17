@@ -8,7 +8,7 @@ contains
 subroutine s1(a1,a2,a3,a4)
 integer,optional,intent(in)::a1(:),a2(:),a3(:),a4(:)
 if(any(a1/=a2)) print *,'err1'
-if(any(a3/=[2,4,8,16])) print *,'err2',a3
+if(any(a3/=[2,3,4,8])) print *,'err2',a3
 if(any(a4/=[1])) print *,'err3'
 end subroutine
 end program

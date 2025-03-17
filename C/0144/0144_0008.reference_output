@@ -1,0 +1,3 @@
+ #### C_OMP firstprivate(static int[][])  ####
+  OK
+exit 0

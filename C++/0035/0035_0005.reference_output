@@ -1,0 +1,4 @@
+i:10 j:19
+After swap
+i:19 j:10
+exit 0

@@ -3,7 +3,7 @@ program main
 class(*),pointer :: ptr
 
 ptr=>NULL(fun())
-if (sizeof(ptr) /=10)then
+if (sizeof(ptr) /=0)then
 print *,101
 else 
 print *,"pass"

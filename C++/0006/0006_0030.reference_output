@@ -1,0 +1,2 @@
+omp_set_num_threads PASSED
+exit 0

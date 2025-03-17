@@ -1,0 +1,9 @@
+ctor
+ctor
+def ctor
+func
+def func
+def dtor
+dtor
+dtor
+exit 0

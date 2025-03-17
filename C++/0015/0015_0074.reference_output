@@ -1,0 +1,4 @@
+child catch NEXT
+parent catch 1
+child catch 3.140000
+exit 0

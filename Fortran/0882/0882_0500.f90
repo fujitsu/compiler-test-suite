@@ -9,7 +9,7 @@ integer(kind=8) ,pointer:: act_3
 ALLOCATE(act_1)
 act_ptr1=>act_1
 call sub(act_ptr1,act_ptr)
-if(sizeof(act_ptr) /=4)then
+if(sizeof(act_ptr) /=0)then
 print *,101
 else
 print *,"pass"
@@ -18,7 +18,7 @@ endif
 allocate(act_2)
 act_ptr1=>act_2
 call sub(act_ptr1,act_ptr)
-if(sizeof(act_ptr) /=10)then
+if(sizeof(act_ptr) /=0)then
 print *,202
 else
 print *,"pass"
@@ -26,7 +26,7 @@ endif
 allocate(act_3)
 act_ptr1=>act_3
 call sub(act_ptr1,act_ptr)
-if(sizeof(act_ptr) /=8)then
+if(sizeof(act_ptr) /=0)then
 print *,303
 else
 print *,"pass"

@@ -1,0 +1,3 @@
+ ----- parallel sections reduction(min:ra,rb) -----
+ OK
+exit 0

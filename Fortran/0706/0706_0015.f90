@@ -1,5 +1,4 @@
 c
-c ow=g1128
 c
       call s1
       print *,'pass'
@@ -70,48 +69,48 @@ c
       end module
       subroutine s1
       use test
-       if (l11/=l)call errtra
-       if (l12/=l)call errtra
-       if (l13/=l)call errtra
-       if (l14/=l)call errtra
-       if (u11/=u)call errtra
-       if (u12/=u)call errtra
-       if (u13/=u)call errtra
-       if (u14/=u)call errtra
-       if (l31/=l)call errtra
-       if (l32/=l)call errtra
-       if (l33/=l)call errtra
-       if (u31/=u)call errtra
-       if (u32/=u)call errtra
-       if (u33/=u)call errtra
-       if (l54/=l)call errtra
-       if (u54/=u)call errtra
-       if (l61/=l)call errtra
-       if (l62/=l)call errtra
-       if (l63/=l)call errtra
-       if (u61/=u)call errtra
-       if (u62/=u)call errtra
-       if (u63/=u)call errtra
-       if (l11/=lbound(st11_p,dim=1))call errtra
-       if (l12/=lbound(st12_p,dim=1))call errtra
-       if (l13/=lbound(st13_p,dim=1))call errtra
-       if (l14/=lbound(st14_p,dim=1))call errtra
-       if (u11/=ubound(st11_p,dim=1))call errtra
-       if (u12/=ubound(st12_p,dim=1))call errtra
-       if (u13/=ubound(st13_p,dim=1))call errtra
-       if (u14/=ubound(st14_p,dim=1))call errtra
-       if (l31/=lbound(st14_p(-1)%st11_m,dim=1))call errtra
-       if (l32/=lbound(st14_p(-1)%st12_m,dim=1))call errtra
-       if (l33/=lbound(st14_p(-1)%st13_m,dim=1))call errtra
-       if (u31/=ubound(st14_p(-1)%st11_m,dim=1))call errtra
-       if (u32/=ubound(st14_p(-1)%st12_m,dim=1))call errtra
-       if (u33/=ubound(st14_p(-1)%st13_m,dim=1))call errtra
-       if (l54/=lbound(st24_p(-1)%st21          ,dim=1))call errtra
-       if (u54/=ubound(st24_p(-1)%st21          ,dim=1))call errtra
-       if (l61/=lbound(st24_p(-1)%st21(-1)%st11_m,dim=1))call errtra
-       if (l62/=lbound(st24_p(-1)%st21(-1)%st12_m,dim=1))call errtra
-       if (l63/=lbound(st24_p(-1)%st21(-1)%st13_m,dim=1))call errtra
-       if (u61/=ubound(st24_p(-1)%st21(-1)%st11_m,dim=1))call errtra
-       if (u62/=ubound(st24_p(-1)%st21(-1)%st12_m,dim=1))call errtra
-       if (u63/=ubound(st24_p(-1)%st21(-1)%st13_m,dim=1))call errtra
+       if (l11/=l)print *,'fail'
+       if (l12/=l)print *,'fail'
+       if (l13/=l)print *,'fail'
+       if (l14/=l)print *,'fail'
+       if (u11/=u)print *,'fail'
+       if (u12/=u)print *,'fail'
+       if (u13/=u)print *,'fail'
+       if (u14/=u)print *,'fail'
+       if (l31/=l)print *,'fail'
+       if (l32/=l)print *,'fail'
+       if (l33/=l)print *,'fail'
+       if (u31/=u)print *,'fail'
+       if (u32/=u)print *,'fail'
+       if (u33/=u)print *,'fail'
+       if (l54/=l)print *,'fail'
+       if (u54/=u)print *,'fail'
+       if (l61/=l)print *,'fail'
+       if (l62/=l)print *,'fail'
+       if (l63/=l)print *,'fail'
+       if (u61/=u)print *,'fail'
+       if (u62/=u)print *,'fail'
+       if (u63/=u)print *,'fail'
+       if (l11/=lbound(st11_p,dim=1))print *,'fail'
+       if (l12/=lbound(st12_p,dim=1))print *,'fail'
+       if (l13/=lbound(st13_p,dim=1))print *,'fail'
+       if (l14/=lbound(st14_p,dim=1))print *,'fail'
+       if (u11/=ubound(st11_p,dim=1))print *,'fail'
+       if (u12/=ubound(st12_p,dim=1))print *,'fail'
+       if (u13/=ubound(st13_p,dim=1))print *,'fail'
+       if (u14/=ubound(st14_p,dim=1))print *,'fail'
+       if (l31/=lbound(st14_p(-1)%st11_m,dim=1))print *,'fail'
+       if (l32/=lbound(st14_p(-1)%st12_m,dim=1))print *,'fail'
+       if (l33/=lbound(st14_p(-1)%st13_m,dim=1))print *,'fail'
+       if (u31/=ubound(st14_p(-1)%st11_m,dim=1))print *,'fail'
+       if (u32/=ubound(st14_p(-1)%st12_m,dim=1))print *,'fail'
+       if (u33/=ubound(st14_p(-1)%st13_m,dim=1))print *,'fail'
+       if (l54/=lbound(st24_p(-1)%st21          ,dim=1))print *,'fail'
+       if (u54/=ubound(st24_p(-1)%st21          ,dim=1))print *,'fail'
+       if (l61/=lbound(st24_p(-1)%st21(-1)%st11_m,dim=1))print *,'fail'
+       if (l62/=lbound(st24_p(-1)%st21(-1)%st12_m,dim=1))print *,'fail'
+       if (l63/=lbound(st24_p(-1)%st21(-1)%st13_m,dim=1))print *,'fail'
+       if (u61/=ubound(st24_p(-1)%st21(-1)%st11_m,dim=1))print *,'fail'
+       if (u62/=ubound(st24_p(-1)%st21(-1)%st12_m,dim=1))print *,'fail'
+       if (u63/=ubound(st24_p(-1)%st21(-1)%st13_m,dim=1))print *,'fail'
        end

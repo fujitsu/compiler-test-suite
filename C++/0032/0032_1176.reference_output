@@ -1,0 +1,4 @@
+DD:~DD() called
+D::~D() called
+B::~B() called
+exit 0

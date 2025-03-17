@@ -1,0 +1,3 @@
+ --   for reduction(&&:double) --
+ OK 
+exit 0

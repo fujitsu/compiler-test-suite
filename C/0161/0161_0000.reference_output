@@ -1,0 +1,11 @@
+bit ok
+ret ok
+asm ok
+arg ok
+not ok
+opr ok
+tmp ok
+vid ok
+cmp ok
+elm ok
+exit 0

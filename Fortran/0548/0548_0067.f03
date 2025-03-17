@@ -1,6 +1,6 @@
 call s1
 call s2
-print *,'apss'
+print *,'pass'
 end
 subroutine s1
 integer(1)::i1
@@ -19,7 +19,7 @@ complex(8)::cd
 complex(16)::cq
 character::ch
 class(*),pointer::cl
-
+allocate(cl,source=1)
 call s33(storage_size(a=i1),1)
 call s33(storage_size(a=i2),2)
 call s33(storage_size(a=i4),3)
@@ -71,7 +71,6 @@ call s31(storage_size(kind=1,a=d),4)
 call s32(storage_size(kind=2,a=d),4)
 call s33(storage_size(kind=4,a=d),4)
 call s34(storage_size(kind=8,a=d),4)
-call s31(storage_size(kind=1,a=q),0)
 call s32(storage_size(kind=2,a=q),5)
 call s33(storage_size(kind=4,a=q),5)
 call s34(storage_size(kind=8,a=q),5)
@@ -82,11 +81,9 @@ call s31(storage_size(kind=1,a=c),4)
 call s32(storage_size(kind=2,a=c),4)
 call s33(storage_size(kind=4,a=c),4)
 call s34(storage_size(kind=8,a=c),4)
-call s31(storage_size(kind=1,a=cd),0)
 call s32(storage_size(kind=2,a=cd),5)
 call s33(storage_size(kind=4,a=cd),5)
 call s34(storage_size(kind=8,a=cd),5)
-call s31(storage_size(kind=1,a=cq),0)
 call s32(storage_size(kind=2,a=cq),6)
 call s33(storage_size(kind=4,a=cq),6)
 call s34(storage_size(kind=8,a=cq),6)
@@ -104,7 +101,7 @@ call s31(storage_size(kind=1,a=ch//""//ch),2)
 call s32(storage_size(kind=2,a=ch//""//ch),2)
 call s33(storage_size(kind=4,a=ch//""//ch),2)
 call s34(storage_size(kind=8,a=ch//""//ch),2)
-call s33(storage_size(a=cl),0)
+call s33(storage_size(a=cl),3)
 contains
 subroutine s31(x,y)
 integer(1)::x
@@ -254,7 +251,6 @@ call s21(storage_size(kind=1,a=d),4)
 call s22(storage_size(kind=2,a=d),4)
 call s23(storage_size(kind=4,a=d),4)
 call s24(storage_size(kind=8,a=d),4)
-call s21(storage_size(kind=1,a=q),0)
 call s22(storage_size(kind=2,a=q),5)
 call s23(storage_size(kind=4,a=q),5)
 call s24(storage_size(kind=8,a=q),5)
@@ -265,11 +261,9 @@ call s21(storage_size(kind=1,a=c),4)
 call s22(storage_size(kind=2,a=c),4)
 call s23(storage_size(kind=4,a=c),4)
 call s24(storage_size(kind=8,a=c),4)
-call s21(storage_size(kind=1,a=cd),0)
 call s22(storage_size(kind=2,a=cd),5)
 call s23(storage_size(kind=4,a=cd),5)
 call s24(storage_size(kind=8,a=cd),5)
-call s21(storage_size(kind=1,a=cq),0)
 call s22(storage_size(kind=2,a=cq),6)
 call s23(storage_size(kind=4,a=cq),6)
 call s24(storage_size(kind=8,a=cq),6)

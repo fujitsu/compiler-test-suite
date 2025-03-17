@@ -1,0 +1,5 @@
+test pass
+  default ctor calls: 3
+  ctor calls        : 4
+  dtor calls        : 7
+exit 0

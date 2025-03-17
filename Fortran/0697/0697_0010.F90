@@ -1,4 +1,4 @@
 parameter(i=sizeof(int(  12 )))
-if (i/=4)call errtra
+if (i/=4)print *,"fail"
 print *,'pass'
 end

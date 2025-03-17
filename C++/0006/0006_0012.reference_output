@@ -1,0 +1,4 @@
+
+-- parallel  do lastprivate(mii, mrr, mcc, mss) -- 
+OK 
+exit 0

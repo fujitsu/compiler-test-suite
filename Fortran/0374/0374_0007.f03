@@ -21,7 +21,7 @@ subroutine sub1(d_ch1,d_ch2,d_ch3)
  character(len=val+2) ::  d_ch3
  value :: d_ch1,d_ch2,d_ch3
 
- if(LEN(d_ch1) /= 1) call errtra
- if(LEN(d_ch2) /= 2) call errtra
- if(LEN(d_ch3) /= 3) call errtra
+ if(LEN(d_ch1) /= 1) print *,'fail'
+ if(LEN(d_ch2) /= 2) print *,'fail'
+ if(LEN(d_ch3) /= 3) print *,'fail'
 end

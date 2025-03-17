@@ -1,0 +1,11 @@
+int    3 
+double 2.200000 
+char   3 
+get_nm:3
+ok01
+int    3 
+double 2.200000 
+char   3 
+get_nm:3
+ok02
+exit 0

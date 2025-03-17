@@ -1,5 +1,4 @@
 c
-c ow=g1128
 c
       call s1
       print *,'pass'

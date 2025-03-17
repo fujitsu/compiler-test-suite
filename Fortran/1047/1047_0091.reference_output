@@ -1,0 +1,5 @@
+ ----- test --
+       parallel
+       do private(ic,ia8,ia1) ------
+ OK
+exit 0

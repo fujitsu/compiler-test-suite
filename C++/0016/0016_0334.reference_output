@@ -1,0 +1,21 @@
+A::f
+f
+a::f3i
+1
+a::f2
+1
+mem_g = 16
+bobj_l.*mem_g = 1
+g() aobj_l.*ml1 = 10
+g() aobj_l.*ml2 = 20
+g() bobj_l.*ml3 = 1
+aobj_l.*mem_p = 10
+A::f1
+a::f2
+main aobj_l.*ml1 = 10
+main aobj_l.*ml2 = 20
+main bobj_l.*ml3 = 1
+aobj_l.*ml4 = 10
+aobj_l.*ml5 = 20
+bobj_l.*ml6 = 1
+exit 0

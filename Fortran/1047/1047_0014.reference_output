@@ -1,0 +1,4 @@
+ ----- test --
+       parallel private(ii8,ii4,ii2,ii1,it) ------
+ OK
+exit 0

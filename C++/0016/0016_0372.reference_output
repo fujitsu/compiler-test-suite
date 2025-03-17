@@ -1,0 +1,3 @@
+CLS::func-->a1 = 10
+CLS_before::func
+exit 0

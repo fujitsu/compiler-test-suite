@@ -1,0 +1,5 @@
+__PRETTY_FUNCTION__ = int main()
+__FUNCTION__ = main
+__PRETTY_FUNCTION__ = void test_class::test_pretty_function()
+__FUNCTION__ = test_function
+exit 0

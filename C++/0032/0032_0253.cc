@@ -1,0 +1,50 @@
+
+extern "C" void printf(char*,...);
+struct TAG {
+  struct A {
+    struct B {
+      struct C {
+       int a;
+       C(){a=10;}
+      };
+    };
+  };
+  struct D :virtual A::B::C {};
+  struct E:D{
+    int f(){
+     return this->A::B::C::a;
+    }
+  }x1;
+  struct F:A::B::C {};
+  struct G:F{
+    int f(){
+     return this->A::B::C::a;
+    }
+  }x2;
+}xx;
+
+struct  TAG2 {
+  struct A2 {
+    int a;
+    A2(){a=20;}
+  };
+  struct B2: virtual A2 {};
+  struct C2 : B2 {
+    int f2(){
+      return this->A2::a;
+   }
+  }x1;
+  struct E2 : A2 {};
+  struct D2 : E2 {
+    int f2(){
+      return this->A2::a;
+   }
+  }x2;
+}xx2;
+int main(){
+ if (xx.x1.f()==10 && xx2.x2.f2()==20)
+   printf("ok\n");
+ else
+   printf("ng\n");
+ return 0;
+}

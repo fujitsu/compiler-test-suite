@@ -4,12 +4,6 @@ call test03()
 call test04()
 print *,'pass'
 end
-subroutine errtra()
-data i /1/
-save
-if (i.eq.1) print *,'ng'
-i=i+1
-end
 
 subroutine test01()
 i=1

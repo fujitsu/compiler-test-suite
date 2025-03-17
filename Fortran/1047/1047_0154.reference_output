@@ -1,0 +1,5 @@
+ ----- test --
+       parallel private(it)
+       sections firstprivate(ia) ------
+ OK
+exit 0

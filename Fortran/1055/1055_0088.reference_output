@@ -1,0 +1,4 @@
+ ----- test --
+       parallel master -----
+ OK
+exit 0

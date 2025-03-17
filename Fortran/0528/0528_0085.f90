@@ -13,7 +13,7 @@ end type
 contains
 subroutine prc(dmy)
 type(t1) :: dmy
-print*,dmy%ii
+if(dmy%ii/=(2._16,3._16)) print *,99
 end subroutine
 end module
 

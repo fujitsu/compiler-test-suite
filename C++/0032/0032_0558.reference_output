@@ -1,0 +1,17 @@
+main() : calling Cclass() ... 1
+Cclass() : 0
+M01 : 2, M02 : 3.01
+li : 2, sli : 3
+8	8.8	
+Cclass() : 1
+M01 : 2, M02 : 3.01
+li : 2, sli : 4
+4	440	
+Tclass() : 2
+M01 : 2, M02 : 3
+li : 2, sli : 3
+2	2.2	
+~Tclass() : 2000
+~Cclass() : 6000
+~Cclass() : 3000
+exit 0

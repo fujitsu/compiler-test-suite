@@ -21,7 +21,7 @@ contains
   subroutine sub(dum,yy)
     class(*):: dum(5)
     integer :: yy(3)
-    if(sizeof(dum)==440) print*,yy
+    if(sizeof(dum)==400) print*,yy
   end subroutine sub
 end
 

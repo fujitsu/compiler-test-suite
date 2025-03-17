@@ -1,8 +1,4 @@
 subroutine s(i,k1,k2)
- interface
-   pure subroutine errtra
-   end subroutine
- end interface
  type x
    integer,pointer::p1(:),p2(:)
  end type
@@ -36,5 +32,3 @@ end
 call s(1,2,2)
 print *,'pass'
 end
-   
-

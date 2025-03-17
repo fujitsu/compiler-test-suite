@@ -1,0 +1,3 @@
+ --   parallel + for reduction(||:double):function --
+ OK 
+exit 0

@@ -1,0 +1,4 @@
+
+ --  parallel + reduction(||:float) + for reduction(+,&&:double,float) --
+ OK 
+exit 0

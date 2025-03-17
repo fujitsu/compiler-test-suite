@@ -1,0 +1,7 @@
+aobj.a          = 1
+aobj.*(bobj.ma) = 1
+aobj.b          = 2
+aobj.*(bobj.mb) = 2
+aobj.c          = 3
+aobj.*(bobj.mc) = 3
+exit 0

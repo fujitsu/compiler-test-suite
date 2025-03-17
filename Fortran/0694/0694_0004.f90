@@ -5,9 +5,9 @@ integer,parameter:: k3(0)=shape( sizeof ( n(:) ) )
 integer,parameter:: k7(0)=shape( sizeof ( n ) )
 integer,parameter:: k8   =sizeof( sizeof ( n ) )
 integer,parameter:: k9   =sizeof( sizeof ( n(:) ) )
-if (size(k3)/=0)call errtra
-if (size(k7)/=0)call errtra
-if (k8/=8)call errtra
+if (size(k3)/=0)print *,"fail"
+if (size(k7)/=0)print *,"fail"
+if (k8/=8)print *,"fail"
 end 
 integer(1),dimension(1)::nn
 dimension n(10)

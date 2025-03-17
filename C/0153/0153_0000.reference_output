@@ -1,0 +1,25 @@
+*** r10 -> i4 test STARTED ***
+*** r10 -> i4 test FINISHED ***
+*** r10 -> i8 test STARTED ***
+*** r10 -> i8 test FINISHED ***
+*** r10 -> u4 test STARTED ***
+*** r10 -> u4 test FINISHED ***
+*** r10 -> u8 test STARTED ***
+*** r10 -> u8 test FINISHED ***
+*** r8 -> i4 test STARTED ***
+*** r8 -> i4 test FINISHED ***
+*** r8 -> i8 test STARTED ***
+*** r8 -> i8 test FINISHED ***
+*** r8 -> u4 test STARTED ***
+*** r8 -> u4 test FINISHED ***
+*** r8 -> u8 test STARTED ***
+*** r8 -> u8 test FINISHED ***
+*** r4 -> i4 test STARTED ***
+*** r4 -> i4 test FINISHED ***
+*** r4 -> i8 test STARTED ***
+*** r4 -> i8 test FINISHED ***
+*** r4 -> u4 test STARTED ***
+*** r4 -> u4 test FINISHED ***
+*** r4 -> u8 test STARTED ***
+*** r4 -> u8 test FINISHED ***
+exit 0

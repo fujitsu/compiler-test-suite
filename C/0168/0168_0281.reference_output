@@ -1,0 +1,13 @@
+not memalias(unsigned int & int)
+not memalias(unsigned int & unsigned int)
+memalias OK(unsigned int & long)
+memalias OK(unsigned int & unsigned long)
+memalias OK(unsigned int & short)
+memalias OK(unsigned int & unsigned short)
+memalias OK(unsigned int & float)
+memalias OK(unsigned int & double)
+memalias OK(unsigned int & long double)
+not memalias(unsigned int & char)
+not memalias(unsigned int & unsigned char)
+not memalias(unsigned int & signed char)
+exit 0

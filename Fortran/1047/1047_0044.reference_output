@@ -1,0 +1,4 @@
+ ----- test --
+       parallel reduction(min:ia) private(it) -----
+ OK
+exit 0

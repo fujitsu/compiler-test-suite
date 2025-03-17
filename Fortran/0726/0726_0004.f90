@@ -54,10 +54,3 @@ blockdata ssss
 common /com/ i
 data i/1/
 end
-subroutine errtra
-common /com/ i
-if (i.eq.1) then
-print *,'ng'
-i=2
-endif
-end

@@ -1,0 +1,13 @@
+ *** 8020 ***
+ ** REAL DATA ** S(1) = 11. =  11.000000 
+ ** LOGICAL DATA ** LS(0) = .TRUE. =  0d 
+ ** LOGICAL DATA ** LS(0) = .TRUE. =  0d 
+ ** LOGICAL DATA ** LS(0) = .TRUE. =  0d 
+ ** LOGICAL DATA ** LS(0) = .TRUE. =  0d 
+ ** LOGICAL DATA ** LS(0) = .TRUE. =  0d 
+ ** LOGICAL DATA ** LS(0) = .TRUE. =  0d 
+ ** LOGICAL DATA ** LS(0) = .TRUE. =  0d 
+ ** LOGICAL DATA ** LS(0) = .TRUE. =  0d 
+ ** LOGICAL DATA ** LS(0) = .TRUE. =  0d 
+ ** LOGICAL DATA ** LS(0) = .TRUE. =  0d 
+exit 0

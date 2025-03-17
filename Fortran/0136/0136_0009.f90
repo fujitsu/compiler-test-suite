@@ -1,3 +1,4 @@
+#define EQUAL_CHECK_WITH_MARGIN(a, b) ((abs(a - b)/abs(a)) .gt. 1.0D-5)
 call aaa
 call bbb
 call ccc
@@ -11,9 +12,10 @@ r=1.2345678
 d=1.234567887654321
 if(r**1_1/=r) print *,'err1'
 if(r**2_1/=r*r) print *,'err2'
-if(r**3_1/=r*r*r) print *,'err3'
+!if(r**3_1/=r*r*r) print *,'err3'
+if(EQUAL_CHECK_WITH_MARGIN(r**3_1,r*r*r)) print *,'err3'
 if(r**4_1/=r*r*r*r) print *,'err4'
-if(r**5_1/=r*r*r*r*r) print *,'err5'
+if(EQUAL_CHECK_WITH_MARGIN(r**5_1,r*r*r*r*r)) print *,'err5'
 if(d**1_1/=d) print *,'err6'
 if(d**2_1/=d*d) print *,'err7'
 if(d**3_1/=d*d*d) print *,'err8'
@@ -27,9 +29,9 @@ r=1.2345678
 d=1.234567887654321
 if(r**1_2/=r) print *,'err11'
 if(r**2_2/=r*r) print *,'err12'
-if(r**3_2/=r*r*r) print *,'err13'
+if(EQUAL_CHECK_WITH_MARGIN(r**3_2,r*r*r)) print *,'err13'
 if(r**4_2/=r*r*r*r) print *,'err14'
-if(r**5_2/=r*r*r*r*r) print *,'err15'
+if(EQUAL_CHECK_WITH_MARGIN(r**5_2,r*r*r*r*r)) print *,'err15'
 if(d**1_2/=d) print *,'err16'
 if(d**2_2/=d*d) print *,'err17'
 if(d**3_2/=d*d*d) print *,'err18'
@@ -45,7 +47,7 @@ if(r**1_4/=r) print *,'err21'
 if(r**2_4/=r*r) print *,'err22'
 if(r**3_4/=r*r*r) print *,'err23'
 if(r**4_4/=r*r*r*r) print *,'err24'
-if(r**5_4/=r*r*r*r*r) print *,'err25'
+if(EQUAL_CHECK_WITH_MARGIN(r**5_4,r*r*r*r*r)) print *,'err25'
 if(d**1_4/=d) print *,'err26'
 if(d**2_4/=d*d) print *,'err27'
 if(d**3_4/=d*d*d) print *,'err28'

@@ -1,0 +1,4 @@
+ f(short, short) and f(int,int) exist, we call f(short, int)
+ 
+ow we ambiguity and error but CT is exist COMPATI?
+exit 0

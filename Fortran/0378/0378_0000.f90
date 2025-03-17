@@ -6,7 +6,7 @@ subroutine sub (x)
 real :: x(:,:,:)
 integer,parameter :: as = size(lbound(x))
 real :: b(as)
-if (size(b)/=3)call errtra
+if (size(b)/=3)print *,'fail'
 end subroutine
 end
 subroutine foo2
@@ -18,7 +18,7 @@ subroutine sub (x)
 real :: x(:,:,:)
 pointer x
 real ::b(size(lbound(x)))
-if (size(b)/=3)call errtra
+if (size(b)/=3)print *,'fail'
 end subroutine
 end
 call foo1

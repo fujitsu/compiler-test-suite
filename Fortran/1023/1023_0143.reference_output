@@ -1,0 +1,3 @@
+ rcode_r4,rcode_r8,rcode_c8
+ rcode_r8,rcode_c8
+exit 0

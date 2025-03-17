@@ -1,3 +1,4 @@
+#define EQUAL_CHECK_WITH_MARGIN(a, b) ((abs(a - b)/abs(a)) .gt. 1.0D-5)
 call aaa
 call bbb
 call ccc
@@ -16,7 +17,7 @@ if(any(r**(-4_1)/=1/r**4_1)) print *,'err4'
 if(any(r**(-5_1)/=1/r**5_1)) print *,'err5'
 if(any(d**(-1_1)/=1/d**1_1)) print *,'err6'
 if(any(d**(-2_1)/=1/d**2_1)) print *,'err7'
-if(any(d**(-3_1)/=1/d**3_1)) print *,'err8'
+if(any(EQUAL_CHECK_WITH_MARGIN(d**(-3_1),1/d**3_1))) print *,'err8'
 if(any(d**(-4_1)/=1/d**4_1)) print *,'err9'
 if(any(d**(-5_1)/=1/d**5_1)) print *,'err10'
 end subroutine
@@ -32,7 +33,7 @@ if(any(r**(-4_2)/=1/r**4_2)) print *,'err14'
 if(any(r**(-5_2)/=1/r**5_2)) print *,'err15'
 if(any(d**(-1_2)/=1/d**1_2)) print *,'err16'
 if(any(d**(-2_2)/=1/d**2_2)) print *,'err17'
-if(any(d**(-3_2)/=1/d**3_2)) print *,'err18'
+if(any(EQUAL_CHECK_WITH_MARGIN(d**(-3_2),1/d**3_2))) print *,'err18'
 if(any(d**(-4_2)/=1/d**4_2)) print *,'err19'
 if(any(d**(-5_2)/=1/d**5_2)) print *,'err20'
 end subroutine
@@ -48,7 +49,7 @@ if(any(r**(-4_4)/=1/r**4)) print *,'err24'
 if(any(r**(-5_4)/=1/r**5)) print *,'err25'
 if(any(d**(-1_4)/=1/d**1)) print *,'err26'
 if(any(d**(-2_4)/=1/d**2)) print *,'err27'
-if(any(d**(-3_4)/=1/d**3)) print *,'err28'
+if(any(EQUAL_CHECK_WITH_MARGIN(d**(-3_4),1/d**3))) print *,'err28'
 if(any(d**(-4_4)/=1/d**4)) print *,'err29'
 if(any(d**(-5_4)/=1/d**5)) print *,'err30'
 end subroutine

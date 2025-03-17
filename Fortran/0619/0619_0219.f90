@@ -10,6 +10,6 @@ logical(2), PARAMETER :: &
     end
 subroutine s1
 use m1
-if (.not.R6ALT)call errtra
-if (R6)call errtra
+if (.not.R6ALT)print *,'fail'
+if (R6)print *,'fail'
 end

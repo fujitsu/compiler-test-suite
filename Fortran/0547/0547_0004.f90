@@ -59,7 +59,7 @@ deallocate(vb)
 if (a2f/=1) print *,403
 
 deallocate(ve)
-if (ef/=9) print *,502,ef
+if (ef/=6) print *,502,ef
 end
 call ss
 print *,'pass'

@@ -35,54 +35,54 @@ cc = [complex   :: ]
 ll = [logical   :: ]
 ss = [character :: ]
 
-if (size(ii).ne.size([integer   :: ])) call errtra
-if (size(rr).ne.size([real      :: ])) call errtra
-if (size(cc).ne.size([complex   :: ])) call errtra
-if (size(ll).ne.size([logical   :: ])) call errtra
-if (size(ss).ne.size([character :: ])) call errtra
+if (size(ii).ne.size([integer   :: ])) print *,'fail'
+if (size(rr).ne.size([real      :: ])) print *,'fail'
+if (size(cc).ne.size([complex   :: ])) print *,'fail'
+if (size(ll).ne.size([logical   :: ])) print *,'fail'
+if (size(ss).ne.size([character :: ])) print *,'fail'
 
 i1 = [integer (kind = 1) :: ]
 i2 = [integer (kind = 2) :: ]
 i4 = [integer (kind = 4) :: ]
 i8 = [integer (kind = 8) :: ]
 
-if (size(i1).ne.size([integer (kind = 1) :: ])) call errtra
-if (size(i2).ne.size([integer (kind = 2) :: ])) call errtra
-if (size(i4).ne.size([integer (kind = 4) :: ])) call errtra
-if (size(i8).ne.size([integer (kind = 8) :: ])) call errtra
+if (size(i1).ne.size([integer (kind = 1) :: ])) print *,'fail'
+if (size(i2).ne.size([integer (kind = 2) :: ])) print *,'fail'
+if (size(i4).ne.size([integer (kind = 4) :: ])) print *,'fail'
+if (size(i8).ne.size([integer (kind = 8) :: ])) print *,'fail'
 
 r4  = [real (kind = 4 ) :: ]
 r8  = [real (kind = 8 ) :: ]
 r16 = [real (kind = 16) :: ]
 
-if (size(r4 ).ne.size([real (kind = 4  ) :: ])) call errtra
-if (size(r8 ).ne.size([real (kind = 8  ) :: ])) call errtra
-if (size(r16).ne.size([real (kind = 16 ) :: ])) call errtra
+if (size(r4 ).ne.size([real (kind = 4  ) :: ])) print *,'fail'
+if (size(r8 ).ne.size([real (kind = 8  ) :: ])) print *,'fail'
+if (size(r16).ne.size([real (kind = 16 ) :: ])) print *,'fail'
 
 c4  = [complex (kind = 4 ) :: ]
 c8  = [complex (kind = 8 ) :: ]
 c16 = [complex (kind = 16) :: ]
 
-if (size(c4 ).ne.size([complex (kind = 4  ) :: ])) call errtra
-if (size(c8 ).ne.size([complex (kind = 8  ) :: ])) call errtra
-if (size(c16).ne.size([complex (kind = 16 ) :: ])) call errtra
+if (size(c4 ).ne.size([complex (kind = 4  ) :: ])) print *,'fail'
+if (size(c8 ).ne.size([complex (kind = 8  ) :: ])) print *,'fail'
+if (size(c16).ne.size([complex (kind = 16 ) :: ])) print *,'fail'
 
 l1 = [logical (kind = 1) :: ]
 l2 = [logical (kind = 2) :: ]
 l4 = [logical (kind = 4) :: ]
 l8 = [logical (kind = 8) :: ]
 
-if (size(l1).ne.size([logical (kind = 1) :: ])) call errtra
-if (size(l2).ne.size([logical (kind = 2) :: ])) call errtra
-if (size(l4).ne.size([logical (kind = 4) :: ])) call errtra
-if (size(l8).ne.size([logical (kind = 8) :: ])) call errtra
+if (size(l1).ne.size([logical (kind = 1) :: ])) print *,'fail'
+if (size(l2).ne.size([logical (kind = 2) :: ])) print *,'fail'
+if (size(l4).ne.size([logical (kind = 4) :: ])) print *,'fail'
+if (size(l8).ne.size([logical (kind = 8) :: ])) print *,'fail'
 
 s1 = [character (kind = 1) :: ]
 
-if (size(s1).ne.size([character (kind = 1) :: ])) call errtra
+if (size(s1).ne.size([character (kind = 1) :: ])) print *,'fail'
 
 t1 = [ty1 :: ]
-if (size(t1).ne.size([ty1 :: ])) call errtra
+if (size(t1).ne.size([ty1 :: ])) print *,'fail'
 
 call cont_sub(1)
 
@@ -95,7 +95,7 @@ contains
   character(dummy_len) :: s1(0)
 
   s1 = [character(dummy_len) :: ]
-  if (size(s1).ne.size([character(dummy_len) :: ])) call errtra
+  if (size(s1).ne.size([character(dummy_len) :: ])) print *,'fail'
  end subroutine
 
 end

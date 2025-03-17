@@ -1,0 +1,4 @@
+
+----- parallel do firstprivate(sa) -----
+OK
+exit 0

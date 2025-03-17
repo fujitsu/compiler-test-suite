@@ -1,0 +1,490 @@
+module test_01a
+ intrinsic :: int
+ integer,external :: sin
+ integer,private :: k =200
+ integer :: iii=100,zzz,ooo
+ integer :: VVV=100,x1
+ equivalence (VVV,x1)
+ common /com/ x1
+ type ty1
+    integer :: aaa(10)
+ end type
+ save ooo
+!$omp threadprivate(ooo)
+ contains
+ function ifun(i,j)
+   ifun = i+j+k
+   ooo = 200
+ end function
+end module
+module test_01b
+ use test_01a,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_02b
+ use test_01b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_03b
+ use test_02b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_04b
+ use test_03b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_05b
+ use test_04b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_06b
+ use test_05b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_07b
+ use test_06b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_08b
+ use test_07b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_09b
+ use test_08b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_10b
+ use test_09b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_11b
+ use test_10b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_12b
+ use test_11b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_13b
+ use test_12b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_14b
+ use test_13b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_15b
+ use test_14b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_16b
+ use test_15b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_17b
+ use test_16b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_18b
+ use test_17b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_19b
+ use test_18b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_20b
+ use test_19b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_21b
+ use test_20b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_22b
+ use test_21b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_23b
+ use test_22b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_24b
+ use test_23b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_25b
+ use test_24b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_26b
+ use test_25b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_27b
+ use test_26b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_28b
+ use test_27b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_29b
+ use test_28b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_30b
+ use test_29b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_31b
+ use test_30b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_32b
+ use test_31b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_33b
+ use test_32b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_34b
+ use test_33b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_35b
+ use test_34b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_36b
+ use test_35b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_37b
+ use test_36b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_38b
+ use test_37b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_39b
+ use test_38b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_40b
+ use test_39b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_41b
+ use test_40b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_42b
+ use test_41b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_43b
+ use test_42b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_44b
+ use test_43b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_45b
+ use test_44b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_46b
+ use test_45b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_47b
+ use test_46b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_48b
+ use test_47b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_49b
+ use test_48b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_50b
+ use test_49b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_51b
+ use test_50b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_52b
+ use test_51b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_53b
+ use test_52b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_54b
+ use test_53b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_55b
+ use test_54b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_56b
+ use test_55b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_57b
+ use test_56b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_58b
+ use test_57b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_59b
+ use test_58b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_60b
+ use test_59b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_61b
+ use test_60b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_62b
+ use test_61b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_63b
+ use test_62b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_64b
+ use test_63b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_65b
+ use test_64b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_66b
+ use test_65b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_67b
+ use test_66b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_68b
+ use test_67b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_69b
+ use test_68b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_70b
+ use test_69b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_71b
+ use test_70b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_72b
+ use test_71b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_73b
+ use test_72b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_74b
+ use test_73b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_75b
+ use test_74b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_76b
+ use test_75b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_77b
+ use test_76b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_78b
+ use test_77b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_79b
+ use test_78b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_80b
+ use test_79b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_81b
+ use test_80b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_82b
+ use test_81b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_83b
+ use test_82b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_84b
+ use test_83b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_85b
+ use test_84b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_86b
+ use test_85b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_87b
+ use test_86b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_88b
+ use test_87b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_89b
+ use test_88b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_90b
+ use test_89b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_91b
+ use test_90b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_99b
+ use test_91b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_81b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_71b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_61b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_51b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_41b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_31b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_21b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_11b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_01b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_88b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_78b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_68b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_58b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_48b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_38b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_28b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_18b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_08b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_84b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_74b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_64b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_54b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_44b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_34b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_24b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_14b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_04b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_83b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_73b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_63b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_53b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_43b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_33b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_23b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_13b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_03b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_85b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_75b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_65b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_55b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_45b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_35b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_25b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_15b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_05b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_87b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_77b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_67b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_57b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_47b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_37b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_27b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_17b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_07b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_82b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_72b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_62b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_52b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_42b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_32b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_22b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_12b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_02b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+module test_01ba
+ use test_99b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private jjjj
+end module
+
+module test_01c
+ use test_01ba,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private kkss
+end module
+module test_01d
+ use test_01b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private sss
+end module
+module test_01da
+ use test_01a,only:iii,ifun,ty1,int,sin,VVV,ooo
+ private sss
+end module
+
+module test_01e
+ use test_01a,only:nnn6=>iii
+ use test_01c
+ use test_01d,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_01ba,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_01b,only:iii,ifun,ty1,int,sin,VVV,ooo
+ use test_01b,nnn1=>iii
+ private zzz
+end module
+use test_01e
+type(ty1) :: a
+a=ty1(2)
+if(302.ne.ifun(a%aaa(1),sin(int(iii)))) write(6,*) "NG"
+if (100.ne.nnn1) write(6,*) "NG"
+if (100.ne.nnn6) write(6,*) "NG"
+if (200.ne.ooo) write(6,*) "NG"
+print *,"pass"
+end
+function sin(iii)
+integer :: sin
+sin=iii
+end function

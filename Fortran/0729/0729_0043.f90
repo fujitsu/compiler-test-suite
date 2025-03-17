@@ -29,6 +29,3 @@ if (any(select_x(aa(i1:i4:i2,i1:i5:i2))/=(/3,11,19/)))write(6,*) "NG"
 call select_y(aa(i1:i4:i2,i1:i5:i2),bb)
 if (any(bb/=(/3,11,19/)))write(6,*) "NG"
 end
-subroutine errtra
-print *,'error'
-end

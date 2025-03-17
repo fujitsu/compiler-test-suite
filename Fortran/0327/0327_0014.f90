@@ -10,8 +10,8 @@ subroutine sub(xx,yy)
   integer,allocatable,dimension(:) :: xx , yy
   allocate(xx(5))
   allocate(yy(5))
-  x=0
-  y=0
+  xx=0
+  yy=0
   yy=50+xx
   xx=10
   yy(5) = 30

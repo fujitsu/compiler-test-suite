@@ -14,7 +14,8 @@ end type
 contains
 subroutine prc(dmy)
 type(t1) :: dmy
-print*,dmy%ii
+if(any(dmy%ii/=[((2.0_16,3.0_16),i=1,2000)])) print *,99  
+!print*,dmy%ii
 end subroutine
 end module
 

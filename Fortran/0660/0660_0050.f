@@ -4,8 +4,8 @@
       end
       subroutine ss1()
       integer,dimension(5,-2:2) :: a
-      if (size(a(2:5,-1:1),dim=2).ne.3) call errtra
-      if (size(a(2:5,-1:1)).ne.12) call errtra
+      if (size(a(2:5,-1:1),dim=2).ne.3) print *,"fail"
+      if (size(a(2:5,-1:1)).ne.12) print *,"fail"
       end
       subroutine ss2
       integer(kind=1)  i11(5)
@@ -25,19 +25,20 @@
         real(kind=4) r
       end type
       type(aa),dimension(5,5,5,5,5,5) :: str
-      if (size(i11).ne.size(i21(1:5))) call errtra
-      if (size(i21(2:5)).ne.size(i21(1:4))) call errtra
-      if (size(i41,dim=2).ne.size(i81,dim=3)) call errtra
-      if (size(r41).ne.size(r81)) call errtra
-      if (size(r161,dim=1).ne.size(r81,dim=1)) call errtra
-      if (size(c41,dim=1).ne.size(c81,dim=1)) call errtra
-      if (size(c41,dim=3).ne.size(dim=3,array=c161)) call errtra
-      if (size(l41,dim=3).ne.size(dim=3,array=l11)) call errtra
-      if (size(ch1(1,1,1:5,1,1)).ne.size(dim=3,array=ch1)) call errtra
+      if (size(i11).ne.size(i21(1:5))) print *,"fail"
+      if (size(i21(2:5)).ne.size(i21(1:4))) print *,"fail"
+      if (size(i41,dim=2).ne.size(i81,dim=3)) print *,"fail"
+      if (size(r41).ne.size(r81)) print *,"fail"
+      if (size(r161,dim=1).ne.size(r81,dim=1)) print *,"fail"
+      if (size(c41,dim=1).ne.size(c81,dim=1)) print *,"fail"
+      if (size(c41,dim=3).ne.size(dim=3,array=c161)) print *,"fail"
+      if (size(l41,dim=3).ne.size(dim=3,array=l11)) print *,"fail"
+      if (size(ch1(1,1,1:5,1,1)).ne.size(dim=3,array=ch1))
+     1 print *,"fail"
       call inter_ss2(str)
       contains
         subroutine inter_ss2(strx)
         type(aa),dimension(5,5,5,5,*) :: strx
-        if (size(strx,4).ne.size(strx,3)) call errtra
+        if (size(strx,4).ne.size(strx,3)) print *,"fail"
         end subroutine
       end

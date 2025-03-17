@@ -10,12 +10,12 @@
         type(entry),pointer::c
       end type
       allocate(yt%c)
-      if (kind(aa)/=4)call errtra
-      if (kind(ah)/=4)call errtra
-      if (kind(rr)/=8)call errtra
-      if (kind(sss)/=8)call errtra
-      if (kind(u%a)/=16)call errtra
-      if (kind(uuux_y%a)/=16)call errtra
-      if (kind(z_z_uuux_y%a)/=16)call errtra
-      if (kind(yt%c%a)/=16)call errtra
+      if (kind(aa)/=4)print *,'fail'
+      if (kind(ah)/=4)print *,'fail'
+      if (kind(rr)/=8)print *,'fail'
+      if (kind(sss)/=8)print *,'fail'
+      if (kind(u%a)/=16)print *,'fail'
+      if (kind(uuux_y%a)/=16)print *,'fail'
+      if (kind(z_z_uuux_y%a)/=16)print *,'fail'
+      if (kind(yt%c%a)/=16)print *,'fail'
     end subroutine

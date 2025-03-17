@@ -1,0 +1,18 @@
+V::V() called
+A::A() called
+B::B() called
+C::C() called
+C::~C() called
+B::~B() called
+A::~A() called
+V::~V() called
+1
+C::~C() called
+B::~B() called
+A::~A() called
+V::~V() called
+C::~C() called
+B::~B() called
+A::~A() called
+V::~V() called
+exit 0

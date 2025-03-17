@@ -31,7 +31,7 @@
 
       SUBROUTINE   SUB(MEMO,SW2,SW4,SW5)
 
-      REAL*8       MEMO
+      character(*) MEMO
       LOGICAL      SW4
       INTEGER      SW2,SW5
      0NAMELIST     /NAMEL/   K,K1,

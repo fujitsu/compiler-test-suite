@@ -89,10 +89,10 @@ t2%x = 1
 t2%node%y = 2
 
 write(info,*,iostat=ios)t2
-if (ios==0) print *,701
+if (ios/=0) print *,701
 ios=0
 read(info,*,iostat=ios)t1
-if (ios==0) print *,702
+if (ios/=0) print *,702
 
 print*, "pass"
 end program

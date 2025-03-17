@@ -1,0 +1,10 @@
+test_ng (1) 12345 (char)-57 
+    (short)-12345 
+    (int)-12345 
+    (long)-12345 
+    (long long)-12345 
+    (float)-12345.000000 
+    (double)-12345 
+    (long double)-12345 
+    (pointer)-12345 
+exit 0

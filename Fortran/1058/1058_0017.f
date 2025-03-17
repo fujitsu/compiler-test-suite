@@ -1,0 +1,32 @@
+      program main
+      real*8 ra, rb
+      integer*4 it
+      integer*4 :: thread=4
+!$    integer*4 OMP_GET_MAX_THREADS
+!$    integer*4 OMP_GET_THREAD_NUM
+
+      ra = 0.0
+      rb = 0.0
+!$    thread = OMP_GET_MAX_THREADS()
+
+!$omp parallel reduction(max:ra) private(it)
+!$    it = OMP_GET_THREAD_NUM()
+      ra = (5+it*1.0001)*((-1)**it)
+!$omp end parallel
+
+      do i=0,thread-1
+          rb = max( rb, (5+i*1.0001)*((-1)**i) )
+      enddo
+      write(*,*) "----- parallel reduction(max:ra) ",
+     +                                        "private(it) -----"
+      if(ra.eq.rb) then
+         write(*,*) "OK"
+      else
+         write(*,*) "NG   REDUCTION(MAX) clause is incorrect"
+         write(*,*) "     ra=", ra
+         write(*,*) "     rb=", rb
+      endif
+
+      stop
+      end
+

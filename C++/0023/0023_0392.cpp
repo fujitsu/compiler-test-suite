@@ -1,0 +1,68 @@
+#include <cassert>
+#include <typeinfo>
+
+void test1() {
+  const short i = 1;
+  int *ptr = new int(i);
+  assert(typeid(ptr) == typeid(int *));
+  delete ptr;
+}
+
+void test2() {
+  const char16_t c_16 = 1;
+  const char32_t c_32 = 2;
+  const wchar_t wc = 3;
+  int i = 1;
+  while (i) {
+    switch (i) {
+    case c_16:
+      i = 2;
+      break;
+    case c_32:
+      i = 3;
+      break;
+    case wc:
+      i = 0;
+      break;
+    default:
+      assert(0);
+    }
+  }
+}
+
+void test3() {
+  enum : const int {
+    a,
+    b,
+  };
+  int arr[a];
+  assert(a == 0);
+}
+
+template <int i> struct X {
+  int mem;
+  void fun() {
+    mem = i;
+    assert(mem == 1);
+  }
+};
+void test4() {
+  struct bit_field {
+    int i : 2;
+  };
+  constexpr bit_field a = {1};
+  X<a.i> _x;
+  _x.fun();
+}
+
+void test5() { X<true> _x; }
+
+void test() {
+  test1();
+  test2();
+  test3();
+  test4();
+  test5();
+}
+
+int main() { test(); }

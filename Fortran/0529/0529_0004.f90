@@ -14,7 +14,7 @@ end type
 contains
 subroutine prc(dmy)
 type(t1) :: dmy
-print*,dmy%ii
+if(dmy%ii/=2) print *,99
 end subroutine
 end module
 

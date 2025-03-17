@@ -1,0 +1,4 @@
+
+ --  parallel reduction(||:float):function --
+ OK 
+exit 0

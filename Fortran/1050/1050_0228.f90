@@ -1,0 +1,21 @@
+!
+!
+!
+!
+
+program main
+  integer::a=5
+  !$omp parallel
+    !$omp task
+      !$omp critical
+        a=10
+      !$omp end critical
+    !$omp end task
+    !$omp taskwait
+    if (a.ne.10) then
+      print *,"NG:a=",a
+    end if
+  !$omp end parallel
+
+  print *,"pass"
+end program main

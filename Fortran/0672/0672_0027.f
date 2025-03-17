@@ -30,7 +30,7 @@
 
       SUBROUTINE   SUB(MEMO,SW4,SW7,SW8)
 
-      REAL*8       MEMO
+      character(*) MEMO
       LOGICAL      SW4,SW7,SW8
       COMPLEX      C1,C2,C3
       DIMENSION    A(10)

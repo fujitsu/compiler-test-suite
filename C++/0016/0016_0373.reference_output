@@ -1,0 +1,7 @@
+derived1::derived1
+base::vfunc
+base::base_nest::vfunc
+base::vfunc
+derived1::nest_class::vfunc
+vfunc()
+exit 0

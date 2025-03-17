@@ -40,8 +40,8 @@ type(t2):: obj1(4),obj2(2)
 
  obj1(1:2) = obj2
 
- if(all(obj1(2)%a2%i0/=10)) print*,101
- if(all(obj1(2)%a2%i1/=23)) print*,102
+ if(all(obj1(2)%a2%i0/=40)) print*,101
+ if(all(obj1(2)%a2%i1/=1)) print*,102
  if(all(obj1(2)%aa2%i0/=40)) print*,103
  if(all(obj1(2)%aa2%i1/=1)) print*,104
 end

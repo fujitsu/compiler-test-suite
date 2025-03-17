@@ -1,0 +1,3 @@
+ ----- parallel firstprivate(ra) private(it) -----
+ OK
+exit 0

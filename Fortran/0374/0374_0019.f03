@@ -1,5 +1,5 @@
 use iso_fortran_env,only: OUTPUT_UNIT
-if (OUTPUT_UNIT.ne.4) call errtra
+if (OUTPUT_UNIT.ne.4) print *,'fail'
 print *,'pass'
 end
 

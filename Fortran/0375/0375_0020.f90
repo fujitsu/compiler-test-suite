@@ -18,17 +18,14 @@ interface s
 end interface
 complex c
 call s(j)
-if (j/=1)call errtra
+if (j/=1)print *,'fail'
 call s(b)
-if (abs(b-2)>0.001)call errtra
+if (abs(b-2)>0.001)print *,'fail'
 call s(c)
-if (abs(c-(3,3))>0.001)call errtra
+if (abs(c-(3,3))>0.001)print *,'fail'
 print *,'pass'
 end
   subroutine s3(a)
   complex a
   a=(3,3)
   end subroutine 
-subroutine errtra
-print *,'error'
-end

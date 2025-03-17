@@ -24,46 +24,46 @@
 
  subroutine sub0
  use , non_intrinsic:: iso_fortran_env
- if (CHARACTER_STORAGE_SIZE.ne.4) call errtra
+ if (CHARACTER_STORAGE_SIZE.ne.4) print *,'fail'
  end subroutine
 
  subroutine sub1
  use , NON_INTRINSIC :: ISO_FORTRAN_ENV
- if (ERROR_UNIT.ne.1) call errtra
+ if (ERROR_UNIT.ne.1) print *,'fail'
  end subroutine
 
  subroutine sub2
  use , non_intrinsic:: iso_fortran_env
- if (FILE_STORAGE_SIZE.ne.16) call errtra
+ if (FILE_STORAGE_SIZE.ne.16) print *,'fail'
  end subroutine
 
  subroutine sub3
  use , non_intrinsic:: iso_fortran_env
- if (INPUT_UNIT.ne.4) call errtra
+ if (INPUT_UNIT.ne.4) print *,'fail'
  end subroutine
 
  subroutine sub4
  use , non_intrinsic:: iso_fortran_env
- if (IOSTAT_END.ne.-98) call errtra
+ if (IOSTAT_END.ne.-98) print *,'fail'
  end subroutine
 
  subroutine sub5
  use , non_intrinsic:: ISO_FORTRAN_ENV
- if (IOSTAT_EOR.ne.-99) call errtra
+ if (IOSTAT_EOR.ne.-99) print *,'fail'
  end subroutine
 
  subroutine sub6
  use , NON_INTRINSIC:: iso_fortran_env
- if (NUMERIC_STORAGE_SIZE.ne.64) call errtra
+ if (NUMERIC_STORAGE_SIZE.ne.64) print *,'fail'
  end subroutine
 
  subroutine sub7
  use , NON_INTRINSIC:: ISO_FORTRAN_ENV
- if (OUTPUT_UNIT.ne.7) call errtra
+ if (OUTPUT_UNIT.ne.7) print *,'fail'
  end subroutine
 
  subroutine sub8
  use ,intrinsic:: iso_fortran_env
- if (CHARACTER_STORAGE_SIZE.ne.8) call errtra
+ if (CHARACTER_STORAGE_SIZE.ne.8) print *,'fail'
  end subroutine
 

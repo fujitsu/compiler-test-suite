@@ -29,20 +29,20 @@
        integer,parameter::d2=g%c%b2%a1
        integer,parameter::d3=g%c%c2(2)%a1
        integer,parameter::d4=g%c%c2(2)%b1
-       if (d1/=1)call errtra
-       if (d11%a1/=2)call errtra
-       if (d11%b1/=3)call errtra
-       if (d12(1)%a1/=4)call errtra
-       if (d12(1)%b1/=5)call errtra
-       if (d12(2)%a1/=6)call errtra
-       if (d12(2)%b1/=7)call errtra
-       if (d13%a1/=4)call errtra
-       if (d13%b1/=5)call errtra
-       if (d14%a1/=6)call errtra
-       if (d14%b1/=7)call errtra
-       if (d2/=2)call errtra
-       if (d3/=6)call errtra
-       if (d4/=7)call errtra
+       if (d1/=1)print *,'fail'
+       if (d11%a1/=2)print *,'fail'
+       if (d11%b1/=3)print *,'fail'
+       if (d12(1)%a1/=4)print *,'fail'
+       if (d12(1)%b1/=5)print *,'fail'
+       if (d12(2)%a1/=6)print *,'fail'
+       if (d12(2)%b1/=7)print *,'fail'
+       if (d13%a1/=4)print *,'fail'
+       if (d13%b1/=5)print *,'fail'
+       if (d14%a1/=6)print *,'fail'
+       if (d14%b1/=7)print *,'fail'
+       if (d2/=2)print *,'fail'
+       if (d3/=6)print *,'fail'
+       if (d4/=7)print *,'fail'
        end
        subroutine ss2
        type x
@@ -70,18 +70,18 @@
        integer,parameter::d2=g%c(2)%b2%a1
        integer,parameter::d3=g%c(2)%c2(2)%a1
        integer,parameter::d4=g%c(2)%c2(2)%b1
-       if (d1/=1)call errtra
-       if (d11%a1/=2)call errtra
-       if (d11%b1/=3)call errtra
-       if (d12(1)%a1/=4)call errtra
-       if (d12(1)%b1/=5)call errtra
-       if (d12(2)%a1/=6)call errtra
-       if (d12(2)%b1/=7)call errtra
-       if (d13%a1/=4)call errtra
-       if (d13%b1/=5)call errtra
-       if (d14%a1/=6)call errtra
-       if (d14%b1/=7)call errtra
-       if (d2/=2)call errtra
-       if (d3/=6)call errtra
-       if (d4/=7)call errtra
+       if (d1/=1)print *,'fail'
+       if (d11%a1/=2)print *,'fail'
+       if (d11%b1/=3)print *,'fail'
+       if (d12(1)%a1/=4)print *,'fail'
+       if (d12(1)%b1/=5)print *,'fail'
+       if (d12(2)%a1/=6)print *,'fail'
+       if (d12(2)%b1/=7)print *,'fail'
+       if (d13%a1/=4)print *,'fail'
+       if (d13%b1/=5)print *,'fail'
+       if (d14%a1/=6)print *,'fail'
+       if (d14%b1/=7)print *,'fail'
+       if (d2/=2)print *,'fail'
+       if (d3/=6)print *,'fail'
+       if (d4/=7)print *,'fail'
        end

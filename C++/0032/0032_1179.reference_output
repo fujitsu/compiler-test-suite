@@ -1,0 +1,12 @@
+1
+DD:~DD() called
+D::~D() called
+B::~B() called
+3
+B::~B() called
+DD:~DD() called
+D::~D() called
+B::~B() called
+2
+B::~B() called
+exit 0

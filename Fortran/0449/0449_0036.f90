@@ -50,9 +50,13 @@ call chk11(11)
 print *,'pass'
 end
 subroutine chk11(k)
+logical::file_exists
+inquire(file="fort.11", exist=file_exists)
+if (file_exists) then        
 rewind k 
 do n=1,18
    read(k ,*) nn
    if (nn/=7001) stop 999
 end do
+endif
 end

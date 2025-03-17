@@ -7,11 +7,6 @@ block data aaaa
 common /com/ ierr
 data ierr /0/
 end
-subroutine errtra
-common /com/ ierr
-if (ierr.eq.0) print *,'ng'
-ierr=1
-end 
 
 subroutine test01()
 type ty1

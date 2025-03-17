@@ -1,0 +1,3 @@
+ ----- parallel reduction(+:ra,rb) -----
+ OK
+exit 0

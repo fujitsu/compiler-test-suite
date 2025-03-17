@@ -1,0 +1,4 @@
+ ----- test --
+      parallel default(private) shared(ib) -----
+ OK
+exit 0

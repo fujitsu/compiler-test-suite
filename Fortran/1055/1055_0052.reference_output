@@ -1,0 +1,5 @@
+ ----- test90 --
+       parallel
+       do private(ty1) ------
+ OK
+exit 0

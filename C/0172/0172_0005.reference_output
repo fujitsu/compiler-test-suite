@@ -1,0 +1,4 @@
+sum_short : ok
+sum_int : ok
+sum_long : ok
+exit 0

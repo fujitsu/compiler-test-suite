@@ -1,0 +1,10 @@
+ main
+ sub
+ 3.
+ i_sub
+ 4
+ sub
+ 3.
+ i_sub
+ 4
+exit 0

@@ -1,0 +1,4 @@
+ ----- test --
+       parallel reduction(.eqv.:la) private(it) -----
+ OK
+exit 0

@@ -1,0 +1,5 @@
+ ------ test --
+        parallel private(it)
+        single nowait -----
+ OK
+exit 0

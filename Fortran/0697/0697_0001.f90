@@ -23,20 +23,20 @@ type ty1
  integer ii
 end type
 type(ty1)        :: a16/ty1(1)/
-if (sizeof((/a01/)) .ne.1  ) call errtra
-if (sizeof((/a02/)) .ne.2  ) call errtra
-if (sizeof((/a03/)) .ne.4  ) call errtra
-if (sizeof((/a04/)) .ne.8  ) call errtra
-if (sizeof((/a05/)) .ne.1  ) call errtra
-if (sizeof((/a06/)) .ne.2  ) call errtra
-if (sizeof((/a07/)) .ne.4  ) call errtra
-if (sizeof((/a08/)) .ne.8  ) call errtra
-if (sizeof((/a09/)) .ne.4  ) call errtra
-if (sizeof((/a10/)) .ne.8  ) call errtra
-if (sizeof((/a11/)) .ne.16 ) call errtra
-if (sizeof((/a12/)) .ne.8  ) call errtra
-if (sizeof((/a13/)) .ne.16 ) call errtra
-if (sizeof((/a14/)) .ne.32 ) call errtra
-if (sizeof((/a15/)) .ne.10 ) call errtra
-if (sizeof((/a16/)) .ne.4  ) call errtra
+if (sizeof((/a01/)) .ne.1  ) print *,"fail"
+if (sizeof((/a02/)) .ne.2  ) print *,"fail"
+if (sizeof((/a03/)) .ne.4  ) print *,"fail"
+if (sizeof((/a04/)) .ne.8  ) print *,"fail"
+if (sizeof((/a05/)) .ne.1  ) print *,"fail"
+if (sizeof((/a06/)) .ne.2  ) print *,"fail"
+if (sizeof((/a07/)) .ne.4  ) print *,"fail"
+if (sizeof((/a08/)) .ne.8  ) print *,"fail"
+if (sizeof((/a09/)) .ne.4  ) print *,"fail"
+if (sizeof((/a10/)) .ne.8  ) print *,"fail"
+if (sizeof((/a11/)) .ne.16 ) print *,"fail"
+if (sizeof((/a12/)) .ne.8  ) print *,"fail"
+if (sizeof((/a13/)) .ne.16 ) print *,"fail"
+if (sizeof((/a14/)) .ne.32 ) print *,"fail"
+if (sizeof((/a15/)) .ne.10 ) print *,"fail"
+if (sizeof((/a16/)) .ne.4  ) print *,"fail"
 end

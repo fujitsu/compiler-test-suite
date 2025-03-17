@@ -1,0 +1,4 @@
+ #### 8011 # BUSY ON EXIT ####
+ ** REAL DATA ** s[0] = 10.0 =  10
+ ** LOGICAL DAAT ** ls[0] = 0 =  0
+exit 0

@@ -7,35 +7,35 @@ interface s
 end interface
 subroutine s_1(a,b)
 integer(1)::a,b
-if(a.ne.b) call errtra
+if(a.ne.b) print *,'fail'
 end subroutine
 subroutine s_2(a,b)
 integer(2)::a,b
-if(a.ne.b) call errtra
+if(a.ne.b) print *,'fail'
 end subroutine
 subroutine s_4(a,b)
 integer(4)::a,b
-if(a.ne.b) call errtra
+if(a.ne.b) print *,'fail'
 end subroutine
 subroutine s_8(a,b)
 integer(8)::a,b
-if(a.ne.b) call errtra
+if(a.ne.b) print *,'fail'
 end subroutine
 subroutine ss1(a,b)
 integer(1),dimension(:)::a,b
-if(any(a/=b)) call errtra
+if(any(a/=b)) print *,'fail'
 end subroutine
 subroutine ss2(a,b)
 integer(2),dimension(:)::a,b
-if(any(a/=b)) call errtra
+if(any(a/=b)) print *,'fail'
 end subroutine
 subroutine ss4(a,b)
 integer(4),dimension(:)::a,b
-if(any(a/=b)) call errtra
+if(any(a/=b)) print *,'fail'
 end subroutine
 subroutine ss8(a,b)
 integer(8),dimension(:)::a,b
-if(any(a/=b)) call errtra
+if(any(a/=b)) print *,'fail'
 end subroutine
 end
 subroutine zz1
