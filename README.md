@@ -42,6 +42,5 @@ Current Status
 
 As of the 2025-03 release, the Fujitsu Compiler Test Suite lacks following things. They will be available in the upcoming releases.
 
-- Test programs for C++
-- More test programs for C/Fortran
+- More test programs for C/C++/Fortran
 - Many missing reference output files (used to verify outputs from test programs)
