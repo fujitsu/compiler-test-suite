@@ -24,7 +24,7 @@ if (a2/=sin(a1))print *,103
 end subroutine
 subroutine td(a1,a2)
 implicit real(4)(x),real(8)(b),real(16)(d),complex(4)(a),complex(8)(f),complex(16)(g)
-if (a2/=sin(a1))print *,104
+if ((abs(sin(a1) - a2)/abs(sin(a1))) .gt. 1.0E-6)print *,104
 end subroutine
 subroutine te(a1,a2)
 implicit real(4)(x),real(8)(b),real(16)(d),complex(4)(e),complex(8)(a),complex(16)(g)

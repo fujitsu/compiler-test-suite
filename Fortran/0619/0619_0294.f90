@@ -52,13 +52,13 @@ subroutine c8(x01,x02,x03)
 complex(k)::x01
 integer(k)::x02
 complex(8)::x03
-if (x01/=cmplx(x02**x03,kind=k))print *,402,x01,x02,x03,cmplx(x02**x03,kind=k)
+if (((abs(x01 - cmplx(x02**x03))/abs(x01)) .gt. 1.0D-14)) print *,402,x01,x02,x03,cmplx(x02**x03,kind=k)
 end subroutine
 subroutine c4(x01,x02,x03)
 complex(k)::x01
 integer(k)::x02
 complex(4)::x03
-if (x01/=cmplx(x02**x03,kind=k))print *,401,x01,x02,x03,cmplx(x02**x03,kind=k)
+if (((abs(x01 - cmplx(x02**x03))/abs(x01)) .gt. 1.0E-6)) print *,401,x01,x02,x03,cmplx(x02**x03,kind=k)
 end subroutine
 subroutine r16(x01,x02,x03)
 complex(k)::x01

@@ -31,7 +31,10 @@ program main
 
   do i=1,n
      res = sin(cmplx(-i,i,kind=8))
-     if (abs(b(i) - res) > 1.0e-15) then
+     if (abs(real(b(i))-real(res))/abs(real(b(i))) .gt. 1.0E-14 ) then 
+        print *, "NG"
+     endif
+     if (abs(imag(b(i))-imag(res))/abs(imag(b(i))) .gt. 1.0E-14 ) then 
         print *, "NG"
      endif
   enddo

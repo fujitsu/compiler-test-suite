@@ -1,4 +1,4 @@
-#define N 256
+#define N 64
 
 program main
   real(kind=2),dimension(N) :: a

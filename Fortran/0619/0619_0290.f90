@@ -1,3 +1,4 @@
+#define EQUAL_CHECK(a, b) ((abs(real(a) - real(b))/abs(real(a))) .gt. 1.0D-6 .or. (abs(imag(a) - imag(b))/abs(imag(a))) .gt. 1.0D-6)
 module m1
 interface chk
 module procedure i1,i2,i4,i8,r4,r8,r16,c4,c8,c16
@@ -58,7 +59,7 @@ subroutine c4(x01,x02,x03)
 complex(k)::x01
 complex(k)::x02
 complex(4)::x03
-if (x01/=cmplx(x02**x03))print *,401,x01,x02,x03,cmplx(x02**x03)
+if (EQUAL_CHECK(x01,cmplx(x02**x03)))print *,401,x01,x02,x03,cmplx(x02**x03)
 end subroutine
 subroutine r16(x01,x02,x03)
 complex(k)::x01
@@ -76,7 +77,7 @@ subroutine r4(x01,x02,x03)
 complex(k)::x01
 complex(k)::x02
 real(4)::x03
-if (x01/=x02**x03)print *,301,x01,x02,x03,x02**x03
+if (EQUAL_CHECK(x01,x02**x03))print *,301,x01,x02,x03,x02**x03
 end subroutine
 subroutine i8(x01,x02,x03)
 complex(k)::x01

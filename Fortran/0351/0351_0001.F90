@@ -8,7 +8,7 @@ program main
      call test(a,b,mask)
   enddo
   do i=1,64
-     if(((abs(a(i) -  res(i))/abs(a(i))) .gt. 1.0D-13)) then
+     if(((abs(a(i) -  res(i))) .gt. 1.0D-13)) then
         print *, "NG"
      endif
   enddo

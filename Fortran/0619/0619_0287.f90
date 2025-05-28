@@ -57,7 +57,7 @@ subroutine c4(x01,x02,x03)
 real(k)::x01
 real(k)::x02
 complex(4)::x03
-if (x01/=real(x02**x03))print *,401,x01,x02,x03,real(x02**x03)
+if ((abs(x01 -  real(x02**x03))/abs(x01)) .gt. 1.0E-6)print *,401,x01,x02,x03,real(x02**x03)
 end subroutine
 subroutine r16(x01,x02,x03)
 real(k)::x01

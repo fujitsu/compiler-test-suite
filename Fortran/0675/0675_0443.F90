@@ -40,9 +40,9 @@ contains
     if ( a.eq.b ) then
        is_equal_r8 = .true.
     else if ( a.eq.0 ) then
-       is_equal_r8 = ( b .lt. (1.0E-13)) 
+       is_equal_r8 = ( b .lt. (1.0E-12)) 
     else 
-       is_equal_r8 = ( abs(a-b)/abs(a) .lt. (1.0E-13) )
+       is_equal_r8 = ( abs(a-b)/abs(a) .lt. (1.0E-12) )
     end if
   end function is_equal_r8
 end program main

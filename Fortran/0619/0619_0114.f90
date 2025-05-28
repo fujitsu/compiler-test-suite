@@ -1,3 +1,4 @@
+#define EQUAL_CHECK(a, b) ((abs(real(a) - real(b))/abs(real(a))) .gt. 1.0D-6 .or. (abs(imag(a) - imag(b))/abs(imag(a))) .gt. 1.0D-6)
 module m1
 implicit real(4)(a),real(8)(b),real(16)(c),complex(4)(d),complex(8)(e),complex(16)(f)
 parameter (a01=0.1)
@@ -24,7 +25,7 @@ if (a2/=sin(a1))print *,103
 end subroutine
 subroutine td(a1,a2)
 implicit real(4)(x),real(8)(b),real(16)(d),complex(4)(a),complex(8)(f),complex(16)(g)
-if (a2/=sin(a1))print *,104
+if (EQUAL_CHECK(a2, sin(a1)))print *,104
 end subroutine
 subroutine te(a1,a2)
 implicit real(4)(x),real(8)(b),real(16)(d),complex(4)(e),complex(8)(a),complex(16)(g)

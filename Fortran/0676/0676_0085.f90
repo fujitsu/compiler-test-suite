@@ -14,8 +14,8 @@ program main
   complex(kind=4) a(0:7),b,c,d,e,f,g,h,i,j,k
   real(kind=4),parameter :: REAL_ANS=0.620376600_4
   real(kind=4),parameter :: IMAG_ANS=0.783784150_4
-  real(kind=4),parameter :: REAL_ERROR=0.0000001_4
-  real(kind=4),parameter :: IMAG_ERROR=0.0000001_4
+  real(kind=4),parameter :: REAL_ERROR=1.0E-6
+  real(kind=4),parameter :: IMAG_ERROR=1.0E-6
   b = (1.4_4,2.4_4)
 
   d = (0.0_4,0.0_4) 

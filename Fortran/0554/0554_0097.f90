@@ -1,3 +1,4 @@
+#define EQUAL_CHECK(a, b) (abs(real(a) - real(b))/abs(real(a)) .gt. 1.0D-14 .or. (abs(imag(a) - imag(b)))/abs(real(a)) .gt. 1.0D-14)
 PROGRAM MAIN
 complex*16,PARAMETER::b= 4_8 ** ((3.0_8, 3.0_8))
 
@@ -10,7 +11,7 @@ c = 4_8
 d = ((3.0_8 , 3.0_8))
 
 print *,b ,"--",(c ** d)
-if (b.ne.( c ** d)) then
+if (EQUAL_CHECK(b,(c ** d))) then
  print *,'??? (Error:) ???'
 else
  print*, " OK"

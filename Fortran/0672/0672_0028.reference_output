@@ -1,0 +1,25 @@
+0   SUB-1
+
+ &NAMEL IA= 2 3 4 5 6,M= 2,N= 1,I= 4,J= 10/
+0   SUB-2
+
+ &NAMEL IA= 2 3 4 5 6,M= 2,N= 1,I= 7,J= 10/
+0   SUB-3
+
+ &NAMEL IA= 2 3 4 5 6,M= 2,N= 1,I= 16,J= 10/
+0   SUB-4
+
+ &NAMEL IA= 2 3 4 5 6,M= 2,N= 1,I= 14,J= 10/
+0   SUB-5
+
+ &NAMEL IA= 2 3 4 5 6,M= 2,N= 1,I= 20,J= 10/
+0   SUB-6
+
+ &NAMEL IA= 2 3 4 5 6,M= 2,N= 1,I= 10,J= 10/
+0   SUB-7
+
+ &NAMEL IA= 2 3 4 5 6,M= 2,N= 1,I= 15,J= 10/
+0   SUB-8
+
+ &NAMEL IA= 2 3 4 5 6,M= 2,N= 1,I= 12,J= 10/
+exit 0

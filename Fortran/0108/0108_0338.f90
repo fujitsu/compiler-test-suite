@@ -1,3 +1,4 @@
+#define EQUAL_CHECK(a,b) ((abs(a - b)/abs(a)) .gt. 1.0E-6)
 program main
 integer,parameter :: N=1000
 real(kind=4),dimension(1:N) :: a,b
@@ -26,7 +27,7 @@ call sub32()
 call sub33()
 call sub34()
 call sub35()
-
+print *,"pass"
 contains
 subroutine init_a()
 a = (/(real(i,kind=4),i=1,N)/)
@@ -43,7 +44,9 @@ do i=1,N
   endif
   prg = prg + b(i)
 enddo
-print *,int(prg,kind=8)
+if (EQUAL_CHECK(prg,3.3333302E+08)) then 
+  print *,"NG"
+endif
 end subroutine
 
 subroutine sub01()
@@ -56,7 +59,9 @@ do i=1,N
   endif
   prg = prg + b(i)
 enddo
-print *,int(prg,kind=8)
+if (EQUAL_CHECK(prg,1.E+06)) then
+  print *,"NG"
+endif
 end subroutine
 
 subroutine sub02()
@@ -69,7 +74,9 @@ do i=1,N
   endif
   prg = prg + b(i)
 enddo
-print *,int(prg,kind=8)
+if (EQUAL_CHECK(prg,3.3333302E+08)) then
+  print *,"NG"
+endif
 end subroutine
 
 subroutine sub03()
@@ -82,7 +89,9 @@ do i=1,N
   endif
   prg = prg + b(i)
 enddo
-print *,int(prg,kind=8)
+if (EQUAL_CHECK(prg,3.3333302E+08)) then
+  print *,"NG"
+endif
 end subroutine
 
 subroutine sub04()
@@ -95,7 +104,9 @@ do i=1,N
   endif
   prg = prg + b(i)
 enddo
-print *,int(prg,kind=8)
+if (EQUAL_CHECK(prg,1.E+06)) then
+  print *,"NG"
+endif
 end subroutine
 
 subroutine sub05()
@@ -108,7 +119,9 @@ do i=1,N
   endif
   prg = prg + b(i)
 enddo
-print *,int(prg,kind=8)
+if (EQUAL_CHECK(prg,1.E+06)) then
+  print *,"NG"
+endif
 end subroutine
 
 subroutine sub10()
@@ -122,7 +135,9 @@ do i=1,N
   prg  = prg + b(i)
   prg2 = prg - a(i)
 enddo
-print *,int(prg+prg2,kind=8)
+if (EQUAL_CHECK(prg+prg2,6.66665E+08)) then
+  print *,"NG"
+endif
 end subroutine
 
 subroutine sub11()
@@ -136,7 +151,9 @@ do i=1,N
   prg  = prg + b(i)
   prg2 = prg - a(i)
 enddo
-print *,int(prg+prg2,kind=8)
+if (EQUAL_CHECK(prg+prg2,1.999E+06)) then
+  print *,"NG"
+endif
 end subroutine
 
 subroutine sub12()
@@ -150,7 +167,9 @@ do i=1,N
   prg  = prg + b(i)
   prg2 = prg - a(i)
 enddo
-print *,int(prg+prg2,kind=8)
+if (EQUAL_CHECK(prg+prg2,6.66665E+08)) then
+  print *,"NG"
+endif
 end subroutine
 
 subroutine sub13()
@@ -164,7 +183,9 @@ do i=1,N
   prg  = prg + b(i)
   prg2 = prg - a(i)
 enddo
-print *,int(prg+prg2,kind=8)
+if (EQUAL_CHECK(prg+prg2,6.66665E+08)) then
+  print *,"NG"
+endif
 end subroutine
 
 subroutine sub14()
@@ -178,7 +199,9 @@ do i=1,N
   prg  = prg + b(i)
   prg2 = prg - a(i)
 enddo
-print *,int(prg+prg2,kind=8)
+if (EQUAL_CHECK(prg+prg2,1.999E+06)) then
+  print *,"NG"
+endif
 end subroutine
 
 subroutine sub15()
@@ -192,7 +215,9 @@ do i=1,N
   prg  = prg + b(i)
   prg2 = prg - a(i)
 enddo
-print *,int(prg+prg2,kind=8)
+if (EQUAL_CHECK(prg+prg2,1.999E+06)) then
+  print *,"NG"
+endif
 end subroutine
 
 subroutine sub20()
@@ -206,7 +231,9 @@ do i=1,N
   endif
   prg = prg + b(i)
 enddo
-print *,int(prg+prg2,kind=8)
+if (EQUAL_CHECK(prg+prg2,1.998016E+06)) then
+  print *,"NG"
+endif
 end subroutine
 
 subroutine sub21()
@@ -220,7 +247,9 @@ do i=1,N
   endif
   prg = prg + b(i)
 enddo
-print *,int(prg+prg2,kind=8)
+if (EQUAL_CHECK(prg+prg2,1.000999E+06)) then
+  print *,"NG"
+endif
 end subroutine
 
 subroutine sub22()
@@ -234,7 +263,9 @@ do i=1,N
   endif
   prg = prg + b(i)
 enddo
-print *,int(prg+prg2,kind=8)
+if (EQUAL_CHECK(prg+prg2,1.000999E+06)) then
+  print *,"NG"
+endif
 end subroutine
 
 subroutine sub23()
@@ -248,7 +279,9 @@ do i=1,N
   endif
   prg = prg + b(i)
 enddo
-print *,int(prg+prg2,kind=8)
+if (EQUAL_CHECK(prg+prg2,1.000999E+06)) then
+  print *,"NG"
+endif
 end subroutine
 
 subroutine sub24()
@@ -262,7 +295,9 @@ do i=1,N
   endif
   prg = prg + b(i)
 enddo
-print *,int(prg+prg2,kind=8)
+if (EQUAL_CHECK(prg+prg2,1.998016E+06)) then
+  print *,"NG"
+endif
 end subroutine
 
 subroutine sub25()
@@ -276,7 +311,9 @@ do i=1,N
   endif
   prg = prg + b(i)
 enddo
-print *,int(prg+prg2,kind=8)
+if (EQUAL_CHECK(prg+prg2,1.998016E+06)) then
+  print *,"NG"
+endif
 end subroutine
 
 subroutine sub30()
@@ -291,7 +328,9 @@ do i=1,N
   prg  = prg + b(i)
   prg3 = prg - i
 enddo
-print *,int(prg+prg2+prg3,kind=8)
+if (EQUAL_CHECK(prg+prg2+prg3,3.3533005E+08)) then
+  print *,"NG"
+endif
 end subroutine
 
 subroutine sub31()
@@ -306,7 +345,9 @@ do i=1,N
   prg  = prg + b(i)
   prg3 = prg - i
 enddo
-print *,int(prg+prg2+prg3,kind=8)
+if (EQUAL_CHECK(prg+prg2+prg3,1.999999E+06)) then
+  print *,"NG"
+endif
 end subroutine
 
 subroutine sub32()
@@ -321,7 +362,9 @@ do i=1,N
   prg  = prg + b(i)
   prg3 = prg - i
 enddo
-print *,int(prg+prg2+prg3,kind=8)
+if (EQUAL_CHECK(prg+prg2+prg3,1.999999E+06)) then
+  print *,"NG"
+endif
 end subroutine
 
 subroutine sub33()
@@ -336,7 +379,9 @@ do i=1,N
   prg  = prg + b(i)
   prg3 = prg - i
 enddo
-print *,int(prg+prg2+prg3,kind=8)
+if (EQUAL_CHECK(prg+prg2+prg3,1.999999E+06)) then
+  print *,"NG"
+endif
 end subroutine
 
 subroutine sub34()
@@ -351,7 +396,9 @@ do i=1,N
   prg  = prg + b(i)
   prg3 = prg - i
 enddo
-print *,int(prg+prg2+prg3,kind=8)
+if (EQUAL_CHECK(prg+prg2+prg3,3.3533005E+08)) then
+  print *,"NG"
+endif
 end subroutine
 
 subroutine sub35()
@@ -366,7 +413,9 @@ do i=1,N
   prg  = prg + b(i)
   prg3 = prg - i
 enddo
-print *,int(prg+prg2+prg3,kind=8)
+if (EQUAL_CHECK(prg+prg2+prg3,3.3533005E+08)) then
+  print *,"NG"
+endif
 end subroutine
 
 end program

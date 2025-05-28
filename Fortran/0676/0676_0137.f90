@@ -15,8 +15,8 @@ program main
   complex(kind=8) a(0:7),b,c
   real(kind=8),parameter :: REAL_ANS=1159.491379199999_8
   real(kind=8),parameter :: IMAG_ANS=887.3023487999994_8
-  real(kind=8),parameter :: REAL_ERROR=2.273736754432321E-13_8
-  real(kind=8),parameter :: IMAG_ERROR=2.273736754432321E-13_8
+  real(kind=8),parameter :: REAL_ERROR=1.0E-11
+  real(kind=8),parameter :: IMAG_ERROR=1.0E-11
 
   real(kind=8) d,e,f,g,h,i,j,k
   

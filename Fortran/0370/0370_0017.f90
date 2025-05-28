@@ -1,7 +1,7 @@
 program test
   type tp0
-     integer(kind=2) :: ta(2)
-     integer(kind=4) :: tb(2)
+     integer(kind=2) :: ta(2) = 0
+     integer(kind=4) :: tb(2) = 0
      integer(kind=8) :: tc(2) = 3.0
   end type tp0
 

@@ -1,3 +1,4 @@
+#define EQUAL_CHECK_WITH_MARGIN(a, b) ((abs(a - b)/abs(a)) .gt. 1.0D-16)
 module m1
 implicit none
 integer,parameter::nnn=3
@@ -67,7 +68,7 @@ a2=a1
 b2=b1
 v=x(a1*b1,a1/b1,a1**b1, a2*b2,a2/b2,a2**b2)
 if (v%w01/=v%w11)print *,3101,v%w01,v%w11
-if (v%w02/=v%w12)print *,3102,v%w02,v%w12
+if (EQUAL_CHECK_WITH_MARGIN(v%w02,v%w12))print *,3102,v%w02,v%w12
 if (v%w03/=v%w13)print *,3103,v%w02,v%w13
 end
 call s1

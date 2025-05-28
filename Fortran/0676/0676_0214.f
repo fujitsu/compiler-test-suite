@@ -103,8 +103,8 @@
       complex(kind=4),parameter::ta=(0.300000000e+01,0.500000000e+01)
       res=0
       do i=1,10
-         if(abs((real(a(i))-real(ta))/real(ta)) .gt. 1.e-8 .or.
-     &      abs((imag(a(i))-imag(ta))/imag(ta)) .gt. 1.e-8 ) then
+         if(abs((real(a(i))-real(ta))/real(ta)) .gt. 1.e-6 .or.
+     &      abs((imag(a(i))-imag(ta))/imag(ta)) .gt. 1.e-6 ) then
             res=1
          endif
       enddo

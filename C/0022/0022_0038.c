@@ -30,9 +30,9 @@ int main() {
 #endif
   }
 
-  // -fno-fast-math: 0.031067
+  // -fno-fast-math: 0.031036
   // -ffast-math: 0.031128
-  if (0.031066 <= out && out <= 0.031128)
+  if (0.031035 <= out && out <= 0.031128)
     printf("OK\n");
   else
     printf("NG\n%f\n", (float)out);

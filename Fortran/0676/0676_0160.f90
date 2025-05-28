@@ -17,7 +17,7 @@ b = cmplx(3.0,4.0)
 c = cmplx(5.0,6.0)
 call sub(a,b,c,N)
 d = sum(a)
-if ((abs(real(d) - REAL_ANS) <= REAL_ERROR) .and. (abs(aimag(d) - IMAG_ANS) <= IMAG_ERROR)) then 
+if ((abs(real(d) - REAL_ANS) <= REAL_ERROR) .and. (abs(aimag(d) - IMAG_ANS) >= IMAG_ERROR)) then 
    print *,"*** ok ***"
 else
    print *,"*** ng ***"

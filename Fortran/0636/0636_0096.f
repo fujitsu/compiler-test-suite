@@ -13,6 +13,10 @@
       SUM=SUM+A(I)+B(I)
    30 CONTINUE
       X=SUM/REAL(IDATA)
-      PRINT *,X,A,B
+      IF (ABS(X - 1.2270572)/ABS(X) .GT. 1.0E-5) THEN
+        PRINT *,"NG"
+      ELSE
+        PRINT *,"OK"
+      ENDIF
       STOP
       END

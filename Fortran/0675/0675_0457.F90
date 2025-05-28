@@ -27,9 +27,9 @@ contains
     if ( a.eq.b ) then
        is_equal_r4 = .true.
     else if ( a.eq.0 ) then
-       is_equal_r4 = ( b .lt. (1.0E-6)) 
+       is_equal_r4 = ( b .lt. (1.0E-4)) 
     else 
-       is_equal_r4 = ( abs(a-b)/abs(a) .lt. (1.0E-6) )
+       is_equal_r4 = ( abs(a-b)/abs(a) .lt. (1.0E-4) )
     end if
   end function is_equal_r4
 

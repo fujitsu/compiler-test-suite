@@ -48,7 +48,7 @@
 
       SUBROUTINE   SUB(MEMO,SW2,SW3,SW6,SW7,SW10)
 
-      REAL*8       MEMO
+      character(*) MEMO
       LOGICAL      SW2,SW3,SW7
       INTEGER      SW6,SW10
       DIMENSION    A(10),B(10),C(10),D(10)

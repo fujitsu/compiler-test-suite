@@ -51,13 +51,13 @@ subroutine c8(x01,x02,x03)
 real(k)::x01
 real(k)::x02
 complex(8)::x03
-if (x01/=real(x02**x03,k))print *,402,x01,x02,x03,real(x02**x03,k)
+if ((abs(x01 -  real(x02**x03))/abs(x01)) .gt. 1.0E-14)print *,402,x01,x02,x03,real(x02**x03,k)
 end subroutine
 subroutine c4(x01,x02,x03)
 real(k)::x01
 real(k)::x02
 complex(4)::x03
-if (x01/=real(x02**x03))print *,401,x01,x02,x03,real(x02**x03)
+if ((abs(x01 -  real(x02**x03))/abs(x01)) .gt. 1.0E-14)print *,401,x01,x02,x03,real(x02**x03)
 end subroutine
 subroutine r16(x01,x02,x03)
 real(k)::x01

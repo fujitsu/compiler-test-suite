@@ -39,7 +39,7 @@
          STOP
          END
       SUBROUTINE   SUB(MEMO,SW2,SW3,SW8,SW9,SW10,SW11,SW12)
-         REAL*8    MEMO
+         character(*)  MEMO
          LOGICAL   SW3 , SW8 , SW9 , SW10 , SW11
          INTEGER   SW2 , SW12
          COMPLEX   C   , C0  , C1  , C2

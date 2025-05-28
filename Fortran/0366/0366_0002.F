@@ -1,5 +1,5 @@
-#define EQUAL_CHECK_WITH_MARGIN_REAL8(a, b) ((abs(a - b)/abs(a)) .gt. 1.0D-16)
-#define EQUAL_CHECK_WITH_MARGIN_REAL16(a, b) ((abs(a - b)/abs(a)) .gt. 1.0D-34)
+#define EQUAL_CHECK_WITH_MARGIN_REAL8(a, b) ((a == b).or.(abs(a - b)/max(abs(a),abs(b)).gt.1.0D-16))
+#define EQUAL_CHECK_WITH_MARGIN_REAL16(a, b) ((a == b).or.(abs(a - b)/max(abs(a),abs(b)).gt.1.0D-34))
  program acos
  integer*4,parameter::low=-1000,upper=1000
  real*4 test5

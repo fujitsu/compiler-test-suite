@@ -1,4 +1,6 @@
+#define EQUAL_CHECK_WITH_MARGIN_REAL4(a, b) ((a == b).or.(abs(a - b)/max(abs(a),abs(b)).gt.1.0D-16))
           COMMON  I1, I3, I5
+          real(4),parameter::operation_result=0.4390130E+09
           P1 = 1.0
           P2 = 2.0
           P3 = 3.0
@@ -36,8 +38,10 @@
           P6 = Y + 3.0
           X = X + 0.1
   100     CONTINUE
-
-          WRITE( 6, 900 ) Y
-  900     FORMAT( 1H1,/////, E20.7  )
+          if(.not.EQUAL_CHECK_WITH_MARGIN_REAL4(operation_result,Y))
+     1   then
+            print *,'ng'
+          endif
+          print *,'pass'
           STOP
           END

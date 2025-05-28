@@ -1,9 +1,9 @@
       program main
-      integer*1 ia
-      integer*4 ib, it
+      integer*4 ia, ib, it
       integer*4 :: thread=4
 !$    integer*4 OMP_GET_MAX_THREADS
 !$    integer*4 OMP_GET_THREAD_NUM
+!$    call omp_set_dynamic(.false.)
       ia = 0
 !$    thread = OMP_GET_MAX_THREADS()
 !$omp parallel reduction(max:ia) private(it)

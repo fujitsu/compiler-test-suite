@@ -15,8 +15,8 @@ program main
   real(kind=8),parameter :: REAL_ANS=0.6203780677530639_8
   real(kind=8),parameter :: IMAG_ANS=0.7837840900675967_8
 
-  real(kind=8),parameter :: REAL_ERROR=7.771561172376096E-16_8
-  real(kind=8),parameter :: IMAG_ERROR=2.220446049250313E-16_8
+  real(kind=8),parameter :: REAL_ERROR=1.0E-14
+  real(kind=8),parameter :: IMAG_ERROR=1.0E-14
 
   b = (1.4_8,2.4_8)
   call sub(a,b)

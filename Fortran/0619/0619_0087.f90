@@ -1,3 +1,4 @@
+#define EQUAL_CHECK(a, b) ((abs(real(a) - real(b))) .gt. 1.0D-5 .or. (abs(imag(a) - imag(b))) .gt.1.0D-5)
 module m1
 implicit none
 integer(1) x62
@@ -296,8 +297,8 @@ end subroutine
 subroutine sc4(i11,i12,n)
 complex(4)   ,intent(in)::i11,i12
 integer,intent(in)::n
-if (i11/=i12)print *,301,n,i11,i12
-end subroutine
+if (EQUAL_CHECK(i11,i12))print *,301,n,i11,i12
+end subroutine sc4
 subroutine sc8(i11,i12,n)
 complex(8),intent(in)::i11,i12
 integer,intent(in)::n

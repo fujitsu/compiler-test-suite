@@ -47,15 +47,15 @@ subroutine sd(a1,a2,a3,a4,n)
 implicit real(4)(x),real(8)(y),real(16)(z)
 implicit complex(4)(a),complex(8)(e),complex(16)(f)
 if (a1/=a2)print *,131,a1,a2
-if (a1/=a3)print *,132,a1,a3
-if (a1/=n**a4)print *,133,a1,n**a4
+if ((abs(a1 - a3)/abs(a1)) .gt. 1.0D-6) print *,132,a1,a3
+if ((abs(a1 - n**a4)/abs(a1)) .gt. 1.0D-6) print *,133,a1,n**a4
 end subroutine
 subroutine se(a1,a2,a3,a4,n)
 implicit real(4)(x),real(8)(y),real(16)(z)
 implicit complex(4)(q),complex(8)(a),complex(16)(f)
 if (a1/=a2)print *,141,a1,a2
-if (a1/=a3)print *,142,a1,a3
-if (a1/=n**a4)print *,143,a1,n**a4
+if ((abs(a1 - a3)/abs(a1)) .gt. 1.0D-14) print *,142,a1,a3
+if ((abs(a1 - n**a4)/abs(a1)) .gt. 1.0D-14) print *,143,a1,n**a4
 end subroutine
 subroutine sf(a1,a2,a3,a4,n)
 implicit real(4)(x),real(8)(y),real(16)(z)

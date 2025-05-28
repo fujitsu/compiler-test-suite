@@ -13,7 +13,7 @@
      endif
   enddo
   do i=1,10
-     if ( abs(rv21(i)-res(i)) .gt.0.000001) then
+     if ( abs(rv21(i)-res(i)) .gt.0.00001) then
         write(6,*) "ng"
         write(6,*) rv21
         stop

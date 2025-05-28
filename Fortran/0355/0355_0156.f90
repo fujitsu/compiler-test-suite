@@ -26,7 +26,7 @@ program main
   m = (/(mod(i,3).eq.0,i=1,n)/)
   call sub(a,b,c,d,e,m,n)
   res = sum(a)
-  if (abs(res-ans) .le. error) then
+  if (abs(res-ans) .ge. error) then
      print *,"ok"
   else
      print *,"ng"

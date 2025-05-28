@@ -144,7 +144,7 @@ a03=a01;a04=a02
 a31=abs(a03)
 a32=abs(a04)
 if (a11/=a21.or.a11/=a22.or.a11/=a12)print *,14011,a11,a21,a31
-if(EQUAL_CHECK(a31,a11)) print *,14012,a11,a31 
+if((abs(real(a31) - real(a11)) .gt. 1.0D-13) .or. (abs(imag(a31) - imag(a11)) .gt. 1.0D-13))print *,14012,a11,a31
 if(EQUAL_CHECK(a32,a11)) print *,14013,a11,a31
 if (n01/=16)print *,1402
 if (n02/=3)print *,1403

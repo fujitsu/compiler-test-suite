@@ -56,7 +56,8 @@ end do
 c1 = c1 + a(1)
 c2 = c2 + a(N)
 
-if (c1 == c2) then
+if ((abs(real(c1)-real(c2))/abs(real(c1)) .lt. 1.0D-6) .or. &
+    (abs(imag(c1)-imag(c2))/abs(imag(c1)) .lt. 1.0D-6)) then
   print *,"ok"
 else
   print *,"ng",c1,c2

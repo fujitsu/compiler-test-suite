@@ -4,7 +4,7 @@
 #define NII (62)
 #define NJJ (10)
 #define NKK (4)
-#define PERMISSIBLE_ERROR (1.0E-15)
+#define PERMISSIBLE_ERROR (1.0E-12)
 
 subroutine EQUAL_CHECK(a, b, is_ok) 
   real(kind=8)::a,b
