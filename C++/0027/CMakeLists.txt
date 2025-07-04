@@ -1,5 +1,5 @@
 llvm_singlesource_compile_only_file(0027_0000.cc PREFIX "Fujitsu-C++-")
-llvm_singlesource(PREFIX "Fujitsu-C++-")
+llvm_singlesource_fujitsu(PREFIX "Fujitsu-C++-")
 set_property(SOURCE 0027_0008.cc APPEND PROPERTY COMPILE_OPTIONS "-std=c++03")
 set_property(SOURCE 0027_0009.cc APPEND PROPERTY COMPILE_OPTIONS "-std=c++03")
 set_property(SOURCE 0027_0010.cc APPEND PROPERTY COMPILE_OPTIONS "-std=c++03")

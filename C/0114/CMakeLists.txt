@@ -1,4 +1,4 @@
-llvm_singlesource(PREFIX "Fujitsu-C-")
+llvm_singlesource_fujitsu(PREFIX "Fujitsu-C-")
 set_property(TARGET Fujitsu-C-0114_0071 APPEND PROPERTY LINK_OPTIONS "-lm")
 set_property(SOURCE 0114_0129.c APPEND PROPERTY COMPILE_OPTIONS "-O0")
 set_property(SOURCE 0114_0130.c APPEND PROPERTY COMPILE_OPTIONS "-O0")

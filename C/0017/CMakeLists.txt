@@ -1,4 +1,4 @@
-llvm_singlesource(PREFIX "Fujitsu-C-")
+llvm_singlesource_fujitsu(PREFIX "Fujitsu-C-")
 set_property(SOURCE 0017_0000.c APPEND PROPERTY COMPILE_OPTIONS "-fhonor-nans;-fhonor-infinities")
 set_property(TARGET Fujitsu-C-0017_0000 APPEND PROPERTY LINK_OPTIONS "-lm")
 set_property(SOURCE 0017_0001.c APPEND PROPERTY COMPILE_OPTIONS "-fhonor-nans;-fhonor-infinities")

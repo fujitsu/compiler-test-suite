@@ -1,7 +1,7 @@
 llvm_singlesource_compile_only_file(0003_0015.c PREFIX "Fujitsu-C-")
 llvm_singlesource_compile_only_file(0003_0089.c PREFIX "Fujitsu-C-")
 llvm_singlesource_compile_only_file(0003_0135.c PREFIX "Fujitsu-C-")
-llvm_singlesource(PREFIX "Fujitsu-C-")
+llvm_singlesource_fujitsu(PREFIX "Fujitsu-C-")
 set_property(SOURCE 0003_0000.c APPEND PROPERTY COMPILE_OPTIONS "-fno-inline-functions;-march=armv8.2-a+sve")
 set_property(SOURCE 0003_0001.c APPEND PROPERTY COMPILE_OPTIONS "-fno-inline-functions;-march=armv8.2-a+sve")
 set_property(SOURCE 0003_0002.c APPEND PROPERTY COMPILE_OPTIONS "-fno-inline-functions;-march=armv8.2-a+sve")

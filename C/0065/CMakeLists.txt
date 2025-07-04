@@ -1,7 +1,7 @@
 llvm_singlesource_compile_only_file(0065_0347.c PREFIX "Fujitsu-C-")
 llvm_singlesource_compile_only_file(0065_0419.c PREFIX "Fujitsu-C-")
 llvm_singlesource_compile_only_file(0065_0421.c PREFIX "Fujitsu-C-")
-llvm_singlesource(PREFIX "Fujitsu-C-")
+llvm_singlesource_fujitsu(PREFIX "Fujitsu-C-")
 set_property(SOURCE 0065_0330.c APPEND PROPERTY COMPILE_OPTIONS "-ffp-contract=off")
 set_property(SOURCE 0065_0333.c APPEND PROPERTY COMPILE_OPTIONS "-ffp-contract=off")
 set_property(SOURCE 0065_0334.c APPEND PROPERTY COMPILE_OPTIONS "-ffp-contract=off")

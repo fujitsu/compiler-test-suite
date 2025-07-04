@@ -1,4 +1,4 @@
-llvm_singlesource(PREFIX "Fujitsu-C-")
+llvm_singlesource_fujitsu(PREFIX "Fujitsu-C-")
 set_property(SOURCE 0048_0000.c APPEND PROPERTY COMPILE_OPTIONS "-DS_CHAR")
 set_property(SOURCE 0048_0001.c APPEND PROPERTY COMPILE_OPTIONS "-DS_CHAR")
 set_property(SOURCE 0048_0002.c APPEND PROPERTY COMPILE_OPTIONS "-DS_CHAR;-fsigned-char")

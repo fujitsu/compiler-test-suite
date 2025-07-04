@@ -1,5 +1,5 @@
 llvm_singlesource_compile_only_file(0024_0002.cpp PREFIX "Fujitsu-C++-")
-llvm_singlesource(PREFIX "Fujitsu-C++-")
+llvm_singlesource_fujitsu(PREFIX "Fujitsu-C++-")
 set_property(TARGET Fujitsu-C++-0024_0000 APPEND PROPERTY LINK_OPTIONS "-lm")
 set_property(TARGET Fujitsu-C++-0024_0001 APPEND PROPERTY LINK_OPTIONS "-lm")
 set_property(TARGET Fujitsu-C++-0024_0002 APPEND PROPERTY LINK_OPTIONS "-lm")

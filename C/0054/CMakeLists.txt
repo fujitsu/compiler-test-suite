@@ -1,6 +1,6 @@
 llvm_singlesource_compile_only_file(0054_0010.c PREFIX "Fujitsu-C-")
 llvm_singlesource_compile_only_file(0054_0014.c PREFIX "Fujitsu-C-")
-llvm_singlesource(PREFIX "Fujitsu-C-")
+llvm_singlesource_fujitsu(PREFIX "Fujitsu-C-")
 set_property(SOURCE 0054_0035.c APPEND PROPERTY COMPILE_OPTIONS "-fsigned-char")
 set_property(SOURCE 0054_0036.c APPEND PROPERTY COMPILE_OPTIONS "-fsigned-char")
 set_property(SOURCE 0054_0057.c APPEND PROPERTY COMPILE_OPTIONS "-fsigned-char")

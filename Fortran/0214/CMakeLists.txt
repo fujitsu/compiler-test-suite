@@ -1,4 +1,4 @@
-llvm_singlesource(PREFIX "Fujitsu-Fortran-")
+llvm_singlesource_fujitsu(PREFIX "Fujitsu-Fortran-")
 llvm_set_own_fortran_module_directory()
 set_property(SOURCE 0214_0002.f08 APPEND PROPERTY COMPILE_OPTIONS "-ffixed-form")
 set_property(SOURCE 0214_0003.f08 APPEND PROPERTY COMPILE_OPTIONS "-ffree-form")

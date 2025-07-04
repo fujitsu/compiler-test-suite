@@ -43,14 +43,19 @@ Configuration
 
 Create a build directory and use CMake to configure the LLVM test-suite. Options to CMake are almost same as the LLVM test-suite.
 
-There are three important options for the Fujitsu Compiler Test Suite.
+There are two important options for the Fujitsu Compiler Test Suite.
 
 - **`-DTEST_SUITE_SUBDIRS=Fujitsu`**  
   The LLVM test-suite infrastructure has a setting to select directories in which you want to run tests. You cloned the Fujitsu Compiler Test Suite with the directory name `Fujitsu`. By specifying this option, the LLVM test-suite infrastructure is configured to run only the Fujitsu Compiler Test Suite.
 - **`-DTEST_SUITE_FORTRAN=ON`**  
   This option activates Fortran tests. If not specified, only C/C++ tests are run.
 
-There is an option specific to the Fujitsu Compiler Test Suite.
+There are two options specific to the Fujitsu Compiler Test Suite.
+
+- **`-DTEST_SUITE_FUJITSU_WITH_FAST_MATH=ON`**  
+  If you compile tests with the `-ffast-math` option, specify this option.  
+  The `-ffast-math` option introduces precision errors in floating-point arithmetic. This can result in false positive FAILs when comparing computation results with expected values. This option sets tolerances used by [the `fpcmp` tool](https://github.com/llvm/llvm-test-suite/blob/main/tools/fpcmp.c).  
+  This option is not perfect. False positive FAILs can still occur due to legitimate precision errors that exceed the pre-configured tolerances.
 
 - **`-DTEST_SUITE_FUJITSU_FORCE_UNSUPPORTED_PLATFORM=ON`**  
   The Fujitsu Compiler Test Suite itself is tested only on Linux/AArch64 and activated only on the platform. If you want to try on another platform, specify this option.

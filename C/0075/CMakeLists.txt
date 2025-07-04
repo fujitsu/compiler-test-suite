@@ -1,4 +1,4 @@
-llvm_singlesource(PREFIX "Fujitsu-C-")
+llvm_singlesource_fujitsu(PREFIX "Fujitsu-C-")
 set_property(SOURCE 0075_0000.c APPEND PROPERTY COMPILE_OPTIONS "-O;-finline-functions")
 set_property(SOURCE 0075_0003.c APPEND PROPERTY COMPILE_OPTIONS "-O")
 set_property(SOURCE 0075_0004.c APPEND PROPERTY COMPILE_OPTIONS "-O")

@@ -1,5 +1,5 @@
 llvm_singlesource_compile_only_file(0002_0185.c PREFIX "Fujitsu-C-")
-llvm_singlesource(PREFIX "Fujitsu-C-")
+llvm_singlesource_fujitsu(PREFIX "Fujitsu-C-")
 set_property(SOURCE 0002_0000.c APPEND PROPERTY COMPILE_OPTIONS "-fno-inline-functions")
 set_property(SOURCE 0002_0001.c APPEND PROPERTY COMPILE_OPTIONS "-fno-inline-functions")
 set_property(SOURCE 0002_0002.c APPEND PROPERTY COMPILE_OPTIONS "-fno-inline-functions")

@@ -1,4 +1,4 @@
-llvm_singlesource(PREFIX "Fujitsu-C-")
+llvm_singlesource_fujitsu(PREFIX "Fujitsu-C-")
 set_property(SOURCE 0033_0034.c APPEND PROPERTY COMPILE_OPTIONS "-ffp-contract=off")
 set_property(SOURCE 0033_0046.c APPEND PROPERTY COMPILE_OPTIONS "-ffp-contract=off")
 set_property(SOURCE 0033_0112.c APPEND PROPERTY COMPILE_OPTIONS "-ffp-contract=off")

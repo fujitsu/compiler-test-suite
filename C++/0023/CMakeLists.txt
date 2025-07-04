@@ -1,5 +1,5 @@
 llvm_singlesource_compile_only_file(0023_0720.cc PREFIX "Fujitsu-C++-")
-llvm_singlesource(PREFIX "Fujitsu-C++-")
+llvm_singlesource_fujitsu(PREFIX "Fujitsu-C++-")
 set_property(SOURCE 0023_0000.cpp APPEND PROPERTY COMPILE_OPTIONS "-std=c++17")
 set_property(SOURCE 0023_0001.cpp APPEND PROPERTY COMPILE_OPTIONS "-std=c++17")
 set_property(SOURCE 0023_0002.cpp APPEND PROPERTY COMPILE_OPTIONS "-std=c++17")

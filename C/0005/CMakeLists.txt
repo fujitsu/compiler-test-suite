@@ -1,4 +1,4 @@
-llvm_singlesource(PREFIX "Fujitsu-C-")
+llvm_singlesource_fujitsu(PREFIX "Fujitsu-C-")
 set_property(SOURCE 0005_0036.c APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
 set_property(TARGET Fujitsu-C-0005_0036 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
 set_property(TARGET Fujitsu-C-0005_0054 APPEND PROPERTY LINK_OPTIONS "-lm")

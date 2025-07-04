@@ -1,4 +1,4 @@
-llvm_singlesource(PREFIX "Fujitsu-C-")
+llvm_singlesource_fujitsu(PREFIX "Fujitsu-C-")
 set_property(SOURCE 0082_0029.c APPEND PROPERTY COMPILE_OPTIONS "-O0")
 set_property(SOURCE 0082_0030.c APPEND PROPERTY COMPILE_OPTIONS "-O0")
 set_property(SOURCE 0082_0031.c APPEND PROPERTY COMPILE_OPTIONS "-O0")

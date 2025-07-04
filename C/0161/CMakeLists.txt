@@ -1,4 +1,4 @@
-llvm_singlesource(PREFIX "Fujitsu-C-")
+llvm_singlesource_fujitsu(PREFIX "Fujitsu-C-")
 set_property(SOURCE 0161_0011.c APPEND PROPERTY COMPILE_OPTIONS "-DSPARC")
 set_property(SOURCE 0161_0012.c APPEND PROPERTY COMPILE_OPTIONS "-DSPARC")
 set_property(SOURCE 0161_0014.c APPEND PROPERTY COMPILE_OPTIONS "-DSPARC")

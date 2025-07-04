@@ -1,4 +1,4 @@
-llvm_singlesource(PREFIX "Fujitsu-C-")
+llvm_singlesource_fujitsu(PREFIX "Fujitsu-C-")
 set_property(SOURCE 0072_0001.c APPEND PROPERTY COMPILE_OPTIONS "-fno-fast-math")
 set_property(SOURCE 0072_0006.c APPEND PROPERTY COMPILE_OPTIONS "-fno-fast-math")
 set_property(SOURCE 0072_0030.c APPEND PROPERTY COMPILE_OPTIONS "-fno-fast-math")
