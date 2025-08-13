@@ -4,14 +4,14 @@ module m1
   end type
   interface  write(formatted)
      procedure :: wform
-  end interface 
+  end interface
 contains
 subroutine s
 call test
 end
   subroutine test
     TYPE (ty) :: t1
-    write(1,*) t1
+    write(8,*) t1
   end subroutine test
   subroutine wform(dtv, unit, iotype, vlist, iostat, iomsg)
     class(ty), intent(in) :: dtv
@@ -23,9 +23,8 @@ end
 
     write(unit,*,iostat=iostat,iomsg=iomsg) "PASS", dtv%x+1
   end subroutine wform
-end 
+end
 use m1
 call s
 print *,'pass'
 end
-

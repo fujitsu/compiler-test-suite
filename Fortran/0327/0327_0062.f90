@@ -3,12 +3,12 @@ contains
 subroutine sub(a,b)
 integer,dimension(:)::a,b
 integer :: i
-write(1,*) a(1),a(2),a(3),a(4),a(5)
+write(14,*) a(1),a(2),a(3),a(4),a(5)
 do i=1,5
 a(i)=b(i)
 end do
 entry ent(a,b)
-write(1,*) a(1),a(2),a(3),a(4),a(5)
+write(14,*) a(1),a(2),a(3),a(4),a(5)
 end subroutine
 end 
 

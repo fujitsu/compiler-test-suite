@@ -52,64 +52,64 @@ PROGRAM MAIN
       DO j=1,NU
          DO k=1,NO
             DO l=1,NO
-               WRITE(1,*) i,j,k,l,T2(i,j,k,l)
+               WRITE(2,*) i,j,k,l,T2(i,j,k,l)
             ENDDO
          ENDDO
       ENDDO
    ENDDO
 100 FORMAT(1X,4I3,F13.10)
-rewind 1
+rewind 2
 call chk
 print *,'pass'
 END
 subroutine chk
 integer:: x(4)
-read(1,*) x,r
+read(2,*) x,r
 if (any(x/=[1,1,1,1])) print *,1001
 if (r/= 2) print *,1002
-read(1,*) x,r
+read(2,*) x,r
 if (any(x/=[1,1,1,2])) print *,1001
 if (r/= 4) print *,1002
-read(1,*) x,r
+read(2,*) x,r
 if (any(x/=[1,1,2,1])) print *,1001
 if (r/= 3) print *,1002
-read(1,*) x,r
+read(2,*) x,r
 if (any(x/=[1,1,2,2])) print *,1001
 if (r/= 5) print *,1002
-read(1,*) x,r
+read(2,*) x,r
 if (any(x/=[1,2,1,1])) print *,1001
 if (r/= 4) print *,1002
-read(1,*) x,r
+read(2,*) x,r
 if (any(x/=[1,2,1,2])) print *,1001
 if (r/= 6) print *,1002
-read(1,*) x,r
+read(2,*) x,r
 if (any(x/=[1,2,2,1])) print *,1001
 if (r/= 5) print *,1002
-read(1,*) x,r
+read(2,*) x,r
 if (any(x/=[1,2,2,2])) print *,1001
 if (r/= 7) print *,1002
-read(1,*) x,r
+read(2,*) x,r
 if (any(x/=[2,1,1,1])) print *,1001
 if (r/= 3) print *,1002
-read(1,*) x,r
+read(2,*) x,r
 if (any(x/=[2,1,1,2])) print *,1001
 if (r/= 5) print *,1002
-read(1,*) x,r
+read(2,*) x,r
 if (any(x/=[2,1,2,1])) print *,1001
 if (r/= 4) print *,1002
-read(1,*) x,r
+read(2,*) x,r
 if (any(x/=[2,1,2,2])) print *,1001
 if (r/= 6) print *,1002
-read(1,*) x,r
+read(2,*) x,r
 if (any(x/=[2,2,1,1])) print *,1001
 if (r/= 5) print *,1002
-read(1,*) x,r
+read(2,*) x,r
 if (any(x/=[2,2,1,2])) print *,1001
 if (r/= 7) print *,1002
-read(1,*) x,r
+read(2,*) x,r
 if (any(x/=[2,2,2,1])) print *,1001
 if (r/= 6) print *,1002
-read(1,*) x,r
+read(2,*) x,r
 if (any(x/=[2,2,2,2])) print *,1001
 if (r/= 8) print *,1002
 end

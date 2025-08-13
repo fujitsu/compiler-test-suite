@@ -9,7 +9,7 @@
                                                                         99999999
 *        X                                                              99999999
                                                                         99999999
-      write(1,*)x                                                       99999999
+      write(7,*)x                                                       99999999
                                                                         99999999
                                                                         99999999
       x = 100000 - 100000 + 100000 - 100000 + 100000 - 100000 + 100000 -99999999
@@ -17,11 +17,11 @@
      &11                                                                99999999
 *        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX29999999
                                                                         99999999
-      write(1,*)x                                                       99999999
-      rewind 1                                                          99999999
-      read(1,*) k                                                       99999999
+      write(7,*)x                                                       99999999
+      rewind 7                                                          99999999
+      read(7,*) k                                                       99999999
       if (k/=11)print *,101,k                                           99999999
-      read(1,*) k                                                       99999999
+      read(7,*) k                                                       99999999
       if (k/=11)print *,102,k                                           99999999
       print *,'pass'                                                    99999999
       end                                                               99999999

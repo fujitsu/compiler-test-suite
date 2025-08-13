@@ -36,12 +36,12 @@
  call su(fun1(aa(vs)),bb)
  call su(fun2(aa(vs)),bb)
  call su(fun3(aa(vs)),bb)
- write(1,*) fun1(aa)
- write(1,*) fun2(aa)
- write(1,*) fun3(aa)
- write(2,*) fun1(aa(vs))
- write(2,*) fun2(aa(vs))
- write(2,*) fun3(aa(vs))
+ write(66,*) fun1(aa)
+ write(66,*) fun2(aa)
+ write(66,*) fun3(aa)
+ write(67,*) fun1(aa(vs))
+ write(67,*) fun2(aa(vs))
+ write(67,*) fun3(aa(vs))
  call ss1(aa)
  call chk
   contains
@@ -58,12 +58,12 @@
  call su(fun1(aa(vs)),bb)
  call su(fun2(aa(vs)),bb)
  call su(fun3(aa(vs)),bb)
- write(1,*) fun1(aa)
- write(1,*) fun2(aa)
- write(1,*) fun3(aa)
- write(2,*) fun1(aa(vs))
- write(2,*) fun2(aa(vs))
- write(2,*) fun3(aa(vs))
+ write(66,*) fun1(aa)
+ write(66,*) fun2(aa)
+ write(66,*) fun3(aa)
+ write(67,*) fun1(aa(vs))
+ write(67,*) fun2(aa(vs))
+ write(67,*) fun3(aa(vs))
  end subroutine
  end
    elemental function fun2(a)
@@ -75,18 +75,18 @@
  subroutine chk
   complex*32 x(3),y(3)/(.1,.2),(.3,.4),(.5,.6)/
   complex*32 z(3)/(.5,.6),(.1,.2),(.3,.4)/
- rewind 1
- read(1,*) x;if (any(x/=y))write(6,*) "NG"
- read(1,*) x;if (any(x/=y))write(6,*) "NG"
- read(1,*) x;if (any(x/=y))write(6,*) "NG"
- read(1,*) x;if (any(x/=y))write(6,*) "NG"
- read(1,*) x;if (any(x/=y))write(6,*) "NG"
- read(1,*) x;if (any(x/=y))write(6,*) "NG"
- rewind 2
- read(2,*) x;if (any(x/=z))write(6,*) "NG"
- read(2,*) x;if (any(x/=z))write(6,*) "NG"
- read(2,*) x;if (any(x/=z))write(6,*) "NG"
- read(2,*) x;if (any(x/=z))write(6,*) "NG"
- read(2,*) x;if (any(x/=z))write(6,*) "NG"
- read(2,*) x;if (any(x/=z))write(6,*) "NG"
+ rewind 66
+ read(66,*) x;if (any(x/=y))write(6,*) "NG"
+ read(66,*) x;if (any(x/=y))write(6,*) "NG"
+ read(66,*) x;if (any(x/=y))write(6,*) "NG"
+ read(66,*) x;if (any(x/=y))write(6,*) "NG"
+ read(66,*) x;if (any(x/=y))write(6,*) "NG"
+ read(66,*) x;if (any(x/=y))write(6,*) "NG"
+ rewind 67
+ read(67,*) x;if (any(x/=z))write(6,*) "NG"
+ read(67,*) x;if (any(x/=z))write(6,*) "NG"
+ read(67,*) x;if (any(x/=z))write(6,*) "NG"
+ read(67,*) x;if (any(x/=z))write(6,*) "NG"
+ read(67,*) x;if (any(x/=z))write(6,*) "NG"
+ read(67,*) x;if (any(x/=z))write(6,*) "NG"
 end

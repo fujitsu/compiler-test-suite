@@ -24,7 +24,7 @@ contains
 end module int2str_mod
 use int2str_mod
 do i=-10,10
- write(1,*)int2str(i)
+ write(109,*)int2str(i)
 end do
 print *,'pass'
 end

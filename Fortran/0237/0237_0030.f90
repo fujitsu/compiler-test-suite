@@ -15,7 +15,7 @@ end interface
 k=1
 do n=1,3
 call sub1(k)
-write(1,*)k
+write(109,*)k
 end do
 end
 subroutine s2(k)
@@ -25,7 +25,7 @@ integer,intent(out):: k
 k=1
 do n=1,3
 call sub(k)
-write(1,*)k
+write(109,*)k
 end do
 end
 interface
@@ -44,11 +44,11 @@ end
 subroutine sub1(kk)
 end subroutine
 subroutine chk
-rewind 1
-read(1,*) nn;if (nn/=1)print *,101
-read(1,*) nn;if (nn/=1)print *,101
-read(1,*) nn;if (nn/=1)print *,101
-read(1,*) nn;if (nn/=1)print *,101
-read(1,*) nn;if (nn/=1)print *,101
-read(1,*) nn;if (nn/=1)print *,101
+rewind 109
+read(109,*) nn;if (nn/=1)print *,101
+read(109,*) nn;if (nn/=1)print *,101
+read(109,*) nn;if (nn/=1)print *,101
+read(109,*) nn;if (nn/=1)print *,101
+read(109,*) nn;if (nn/=1)print *,101
+read(109,*) nn;if (nn/=1)print *,101
 end

@@ -14,8 +14,8 @@ k1=loc(a1)
 if (np/=1) print *,501
 nn=loc(a2)
 if (k2/=3) print *,503
-write(1,'("k1",z16.16)')loc(k1)
-write(1,'("k2",z16.16)')loc(k2)
+write(16,'("k1",z16.16)')loc(k1)
+write(16,'("k2",z16.16)')loc(k2)
 end subroutine
 end
 call s1

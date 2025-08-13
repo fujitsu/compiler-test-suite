@@ -57,11 +57,11 @@ t2%node%x = 2
 t2%node%node%x = 3
 t2%node%node%node%x = 4
 
-open(71, file='fort.90',form='UNFORMATTED')
+open(71, file='fort.14',form='UNFORMATTED')
 write(71)t2
 close(71)
 
-open(77, file='fort.90',form='UNFORMATTED')
+open(77, file='fort.14',form='UNFORMATTED')
 read(77)t1
 close(77,status='delete')
 

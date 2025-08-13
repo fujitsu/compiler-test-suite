@@ -17,7 +17,7 @@ end
 subroutine rs
  use const
  implicit none
-write(1,*) value
+write(12,*) value
 end 
 
 use mods,only: init
@@ -27,7 +27,7 @@ print *,'OK'
 end
 
 subroutine chk
-rewind 1
-read(1,*) a
+rewind 12
+read(12,*) a
 if (a/=2) print *,102
 end

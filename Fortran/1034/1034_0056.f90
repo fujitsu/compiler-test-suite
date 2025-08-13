@@ -7,10 +7,10 @@ recursive subroutine sub(j)
   use m1
   type(x)::x1
   type(x),save::x2
-  write(1,*)x1%i,x2%i
+  write(40,*)x1%i,x2%i
   x1%i=10
   x2%i=10
-  write(1,*)x1%i,x2%i
+  write(40,*)x1%i,x2%i
   j=j+1
   if (j<4)call sub(j)
 end
@@ -22,19 +22,19 @@ call chk
 print *,'pass'
 end
 subroutine chk
-rewind 1
+rewind 40
 k=0
-read(1,*) j1,j2;if (j1/=2.or.j2/=2)k=k+1
-read(1,*) j1,j2;if (j1/=10.or.j2/=10)k=k+1
-read(1,*) j1,j2;if (j1/=2.or.j2/=10)k=k+1
-read(1,*) j1,j2;if (j1/=10.or.j2/=10)k=k+1
-read(1,*) j1,j2;if (j1/=2.or.j2/=10)k=k+1
-read(1,*) j1,j2;if (j1/=10.or.j2/=10)k=k+1
-read(1,*) j1,j2;if (j1/=2.or.j2/=10)k=k+1
-read(1,*) j1,j2;if (j1/=10.or.j2/=10)k=k+1
-read(1,*) j1,j2;if (j1/=2.or.j2/=10)k=k+1
-read(1,*) j1,j2;if (j1/=10.or.j2/=10)k=k+1
-read(1,*) j1,j2;if (j1/=2.or.j2/=10)k=k+1
-read(1,*) j1,j2;if (j1/=10.or.j2/=10)k=k+1
+read(40,*) j1,j2;if (j1/=2.or.j2/=2)k=k+1
+read(40,*) j1,j2;if (j1/=10.or.j2/=10)k=k+1
+read(40,*) j1,j2;if (j1/=2.or.j2/=10)k=k+1
+read(40,*) j1,j2;if (j1/=10.or.j2/=10)k=k+1
+read(40,*) j1,j2;if (j1/=2.or.j2/=10)k=k+1
+read(40,*) j1,j2;if (j1/=10.or.j2/=10)k=k+1
+read(40,*) j1,j2;if (j1/=2.or.j2/=10)k=k+1
+read(40,*) j1,j2;if (j1/=10.or.j2/=10)k=k+1
+read(40,*) j1,j2;if (j1/=2.or.j2/=10)k=k+1
+read(40,*) j1,j2;if (j1/=10.or.j2/=10)k=k+1
+read(40,*) j1,j2;if (j1/=2.or.j2/=10)k=k+1
+read(40,*) j1,j2;if (j1/=10.or.j2/=10)k=k+1
 if (k/=0)print *,'error'
 end

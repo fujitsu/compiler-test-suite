@@ -8,7 +8,7 @@ subroutine isub(ip)
 integer ,pointer,intent(in):: ip
 ip=2
 call isub3(ip)
-write(1,*)ip
+write(62,*)ip
 end subroutine
 subroutine isub3(ip)
 integer,intent(in):: ip
@@ -19,4 +19,3 @@ end subroutine
 call s21
 print *,'pass'
 end
-

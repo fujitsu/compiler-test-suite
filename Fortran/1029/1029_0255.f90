@@ -2,11 +2,11 @@ integer e
 logical a, b
 a = .true.
 b = .false.
-open(10)
-write(10, '(2l)') a, b
-rewind(10)
-read(10, '(2l)') a, b
-close(10)
+open(58)
+write(58, '(2l)') a, b
+rewind(58)
+read(58, '(2l)') a, b
+close(58)
 
 e = 0
 if(.not.(.not.(.not.(.not.a)))) then

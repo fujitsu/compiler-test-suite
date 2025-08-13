@@ -22,7 +22,7 @@
   integer,save::id
   !$omp threadprivate(id)  
   !$OMP PARALLEL                
-   write(1,nam)
+   write(2,nam)
   !$OMP END PARALLEL
   end subroutine
  end module
@@ -39,10 +39,10 @@ print *,'pass'
 subroutine chk
 integer::TID
 namelist /nam/ TID
-rewind 1
-read(1,nam)
+rewind 2
+read(2,nam)
 K1=TID
-read(1,nam)
+read(2,nam)
 if (TID==1 .and. K1==2) then
 else
 if (TID==2 .and. K1==1) then

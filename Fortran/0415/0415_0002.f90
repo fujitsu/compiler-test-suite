@@ -26,22 +26,22 @@ USE p
 TYPE (NODE), TARGET :: HEAD
 TYPE (NODE), POINTER :: CURRENT, TEMP
 INTEGER :: IOEM, K
-CURRENT => HEAD 
+CURRENT => HEAD
 DO K=1,10
 ALLOCATE (TEMP)
-TEMP % VALUE = K 
+TEMP % VALUE = K
 CURRENT % NEXT_NODE => TEMP
-CURRENT => TEMP 
+CURRENT => TEMP
 END DO
 CURRENT => HEAD
-write(1,fmt='(dt)')CURRENT
+write(3,fmt='(dt)')CURRENT
 call chk
 print *,'pass'
 END PROGRAM TEST
 subroutine chk
-rewind 1
+rewind 3
 do k=0,10
-  read(1,*) n
+  read(3,*) n
   if (k/=n) print *,200,k,n
 end do
 end

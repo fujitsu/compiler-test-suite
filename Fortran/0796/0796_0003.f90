@@ -26,12 +26,12 @@ p11=>k
 p12=>k
 p13=>k
 
- write(1,*)p01() 
- write(1,*)p02() 
- write(1,*)p03() 
- write(1,*)p11() 
- write(1,*)p12() 
- write(1,*)p13() 
+ write(2,*)p01() 
+ write(2,*)p02() 
+ write(2,*)p03() 
+ write(2,*)p11() 
+ write(2,*)p12() 
+ write(2,*)p13() 
 if (p01()/=1) print *,101
 if (p02()/=1) print *,102
 if (p03()/=1) print *,103

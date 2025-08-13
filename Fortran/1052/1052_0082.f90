@@ -11,14 +11,14 @@ module m1
 contains
   subroutine xp(d)
     type(x):: d
-    write(1,*) 100 
+    write(10,*) 100 
   end subroutine
  end
 subroutine s1
 use m1
   type(y),allocatable:: v
-  integer,allocatable:: kk
-  allocate(v, kk)
+  integer:: kk
+  allocate(v)
   allocate(v%y2)
   kk=-1
   v%y1=1
@@ -29,7 +29,7 @@ use m1
   v%y2%x1=12
   if (v%y1/=11) print *,1201
   if (v%y2%x1/=12) print *,1301
-
+!$omp atomic
   kk=kk+2
 
 !$omp end parallel
@@ -41,11 +41,11 @@ end
 
 call omp_set_num_threads(2)
 call s1
-rewind 1
-read(1,*) k;if(k/=100) print *,101
-read(1,*) k;if(k/=100) print *,101
-read(1,*) k;if(k/=100) print *,101
-read(1,*,end=100) k
+rewind 10
+read(10,*) k;if(k/=100) print *,101
+read(10,*) k;if(k/=100) print *,101
+read(10,*) k;if(k/=100) print *,101
+read(10,*,end=100) k
 print *,102
 100print *,'pass'
 end

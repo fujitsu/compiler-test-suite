@@ -24,7 +24,7 @@ recursive subroutine s1(a)
   if (allocated(a%x4)) print *,104
   if (a%x1/=1        ) print *,103
   allocate(a%x4(2))
-write(1,'(z16.16)') loc(a%x4)
+write(70,'(z16.16)') loc(a%x4)
 end subroutine
 subroutine fy(d)
 type(y)::d
@@ -40,7 +40,7 @@ use m1
 do n=1,kh
 call s1(a)
 end do
-call chk(1)
+call chk(70)
 print *,'pass'
 end
 subroutine chk(n)

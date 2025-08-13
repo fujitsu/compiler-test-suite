@@ -4,7 +4,7 @@ contains
  subroutine init
  implicit none
 lhf = 2
-write(1,*) 3, lhf,loc(lhf)
+write(14,*) 3, lhf,loc(lhf)
   call s1
 end subroutine
 end

@@ -3,7 +3,7 @@ integer,pointer :: p
 p=>t
 t=10
 call sub(t,t)
-write(1,*) t
+write(9,*) t
 print *,'pass'
 contains
 subroutine sub(t1,t2)

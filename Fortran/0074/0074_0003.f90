@@ -9,7 +9,7 @@ contains
  subroutine r_setup
  use const
  implicit none
-write(1,*) 2, lhf,loc(lhf)
+write(4,*) 2, lhf,loc(lhf)
 end subroutine
 end
 
@@ -17,7 +17,7 @@ end
  use const
  implicit none
 lhf = 2
-write(1,*) 3, lhf,loc(lhf)
+write(4,*) 3, lhf,loc(lhf)
   call r_setup
 
 print *,'pass'

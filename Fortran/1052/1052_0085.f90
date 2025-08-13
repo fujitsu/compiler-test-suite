@@ -11,7 +11,7 @@ module m1
 contains
   subroutine xp(d)
     type(x):: d
-    write(1,*) 100 
+    write(3,*) 100 
   end subroutine
  end
 subroutine s1
@@ -56,11 +56,11 @@ use m1
 end
 call omp_set_num_threads(2)
 call s1
-rewind 1
-read(1,*) k;if(k/=100) print *,101
-read(1,*) k;if(k/=100) print *,101
-read(1,*) k;if(k/=100) print *,101
-read(1,*,end=100) k
+rewind 3
+read(3,*) k;if(k/=100) print *,101
+read(3,*) k;if(k/=100) print *,101
+read(3,*) k;if(k/=100) print *,101
+read(3,*,end=100) k
 print *,102
 100print *,'pass'
 end

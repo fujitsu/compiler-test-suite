@@ -8,9 +8,9 @@ integer,dimension(2,3,4)::b
 end type
 type(z)::v
 integer,parameter,dimension(2,3,4)::r=reshape((/(j,j=1,24)/),(/2,3,4/))
-write(1,*) 1
-rewind 1
-read(1,*) ii
+write(4,*) 1
+rewind 4
+read(4,*) ii
 if (ii==1) then
 allocate(a(2,3,4))
 allocate(c(2,3,4))

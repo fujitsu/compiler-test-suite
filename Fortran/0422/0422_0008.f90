@@ -23,8 +23,7 @@ print *,'pass'
  subroutine alloc_mystr
    use mymod
    allocate ( mystr%ptrs(1) )
-   write(1,'(a,z14)') ' loc(mystr%ptrs)=',loc(mystr%ptrs)
+   write(3,'(a,z14)') ' loc(mystr%ptrs)=',loc(mystr%ptrs)
    call init_ptr(1)
-   write(1,'(a,z14)') ' loc(mystr%ptrs(1)%dat)=',loc(mystr%ptrs(1)%dat)
+   write(3,'(a,z14)') ' loc(mystr%ptrs(1)%dat)=',loc(mystr%ptrs(1)%dat)
  end subroutine alloc_mystr
-

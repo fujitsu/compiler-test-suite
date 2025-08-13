@@ -6,10 +6,10 @@ if (k==1) then
 else
   p=>t(1::2)
 endif
-write(1,*)is_contiguous(p(:)(:))
-write(1,*)is_contiguous(p(:)(:2))
-write(1,*)is_contiguous(p(:)(:min(2,k+1)))
-write(1,*)is_contiguous(p(:)(:k))
+write(4,*)is_contiguous(p(:)(:))
+write(4,*)is_contiguous(p(:)(:2))
+write(4,*)is_contiguous(p(:)(:min(2,k+1)))
+write(4,*)is_contiguous(p(:)(:k))
 call=ss(p(:)(:),1, &
         p(:)(:),1, &
         p(:)(:),1)
@@ -56,15 +56,15 @@ end subroutine
 logical n
 call s1(1)
 call s1(2)
-rewind 1
-read(1,*) n;if(.not.n) print *,101
-read(1,*) n;if(.not.n) print *,102
-read(1,*) n;if(.not.n) print *,103
-read(1,*) n;if(     n) print *,201
-read(1,*) n;if(     n) print *,202
-read(1,*) n;if(     n) print *,203
-read(1,*) n;if(     n) print *,204
-read(1,*) n;if(     n) print *,205
+rewind 4
+read(4,*) n;if(.not.n) print *,101
+read(4,*) n;if(.not.n) print *,102
+read(4,*) n;if(.not.n) print *,103
+read(4,*) n;if(     n) print *,201
+read(4,*) n;if(     n) print *,202
+read(4,*) n;if(     n) print *,203
+read(4,*) n;if(     n) print *,204
+read(4,*) n;if(     n) print *,205
 
 print *,'OK'
 end

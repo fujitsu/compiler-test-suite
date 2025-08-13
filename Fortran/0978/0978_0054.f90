@@ -1,7 +1,7 @@
 subroutine x0
-write(11,*) 1
-rewind 11
-read(11,*) i
+write(24,*) 1
+rewind 24
+read(24,*) i
 do k=1,3
 call s(i+2)
 call s(i+2)
@@ -29,9 +29,9 @@ subroutine ss(j)
 integer,value::j
 end subroutine
 end interface
-write(12,*) 1
-rewind 12
-read(12,*) i
+write(25,*) 1
+rewind 25
+read(25,*) i
 do k=1,3
 call ss(i+2)
 call ss(i+2)

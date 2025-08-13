@@ -14,7 +14,7 @@ a =  reshape((/"abcde", "efghi", "jklmn", "opqrs" ,&
                     "tuvwx", "yzabc", "efghi", "jklmn","opqrs","abdef","bbbbb","ccccc"/), (/2,3,2,1/))
 d =  maxval(a,mask = n)
 do i = 1,1
-write(1,*) c(i), '---', d(i)
+write(3,*) c(i), '---', d(i)
 if ( c(i).ne. d(i) ) then
 print*, '??? (Error: ) ???'
 else
@@ -27,7 +27,7 @@ end
 
 subroutine check(x, y)
 integer x, y
-write(1,*) x,'--',y
+write(3,*) x,'--',y
 if (x.ne.y) then
 print*, '??? (KIND Error:) ???'
 else

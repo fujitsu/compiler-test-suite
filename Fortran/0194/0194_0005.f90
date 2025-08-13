@@ -1,10 +1,10 @@
          call s1(1)
          call s1(3)
-rewind 1
-read(1,*) k;if (k/=2) print *,201
-read(1,*) k;if (k/=2) print *,202
-read(1,*) k;if (k/=4) print *,203
-read(1,*) k;if (k/=4) print *,204
+rewind 4
+read(4,*) k;if (k/=2) print *,201
+read(4,*) k;if (k/=2) print *,202
+read(4,*) k;if (k/=4) print *,203
+read(4,*) k;if (k/=4) print *,204
 print *,'pass'
          contains
          subroutine s1(d1)
@@ -13,8 +13,8 @@ print *,'pass'
          character(len=2),target :: trg1='ab'
          character(len=d1+1),pointer :: cptr => NULL()
          character(len=d1+1),pointer :: cptr2 => NULL()
-         write(1,*)len(cptr)
-         write(1,*)len(cptr2)
+         write(4,*)len(cptr)
+         write(4,*)len(cptr2)
          if (len(cptr)==2) then
            cptr=> trg1
            if (cptr/='ab') print *,301

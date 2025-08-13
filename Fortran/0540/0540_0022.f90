@@ -26,7 +26,7 @@ integer::k1=1
 integer::k2=1
      contains
      subroutine prc()
-       write(1,*) 'Okay'
+       write(3,*) 'Okay'
      end subroutine
      end module
      module mod0

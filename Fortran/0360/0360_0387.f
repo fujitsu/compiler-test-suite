@@ -16,17 +16,17 @@
          i4d(i) = abs(i4b(i))
          i4a(i) = sign(i4d(i),i4c(i))
       enddo
-      write(1,*)
+      write(34,*)
       do i=1,16
          r4d(i) = abs(r4b(i))
          r4a(i) = sign(r4d(i),r4c(i))
       enddo
-      write(1,*)
+      write(34,*)
       do i=1,16
          r8d(i) = abs(r8b(i))
          r8a(i) = sign(r8d(i),r8c(i))
       enddo
-      write(1,*)
+      write(34,*)
 
       do i=1,16
          if (i4a(i).ne.res1(i) .or.
@@ -46,17 +46,17 @@
          i4d(i) = abs(i4c(i))
          i4a(i) = sign(i4b(i),i4d(i))
       enddo
-      write(1,*)
+      write(34,*)
       do i=1,16
          r4d(i) = abs(r4c(i))
          r4a(i) = sign(r4b(i),r4d(i))
       enddo
-      write(1,*)
+      write(34,*)
       do i=1,16
          r8d(i) = abs(r8c(i))
          r8a(i) = sign(r8b(i),r8d(i))
       enddo
-      write(1,*)
+      write(34,*)
 
       do i=1,16
          if (i4a(i).ne.res2(i) .or.

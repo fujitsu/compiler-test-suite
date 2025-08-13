@@ -27,14 +27,14 @@ SUBROUTINE get_struct(S)
   use tdef
 
   type(STRUCT2), DIMENSION(5) :: S
-  write(1,*) S(4)%i
+  write(7,*) S(4)%i
 
 call chk
 print *,'pass'
 
 END SUBROUTINE get_struct
 subroutine chk
-rewind 1
-read (1,*) i
+rewind 7
+read (7,*) i
 if (i/=33)print *,'error'
 end

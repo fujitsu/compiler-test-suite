@@ -1,7 +1,7 @@
 TYPE TY
 REAL(2) :: R4=3
 REAL(2) :: R5=4
-END TYPE 
+END TYPE
 TYPE(TY) :: OBJ
 REAL(2) :: R2_1(2)
 REAL(2) :: R2_2(2)
@@ -26,14 +26,14 @@ IF( OBJ%R5 > OBJ%R4)call s(10)
 
 IF( (OBJ%R5+1) .GE. R2_1(1))call s(11)
 IF( (OBJ%R5+1) >= R2_1(1))call s(12)
-rewind 1
+rewind 12
 do k=1,12
-read(1,*) n
+read(12,*) n
 if (n/=k) print *,k,n
 end do
 print *,'PASS'
 
 END
 subroutine s(k)
-write(1,*)k
+write(12,*)k
 end

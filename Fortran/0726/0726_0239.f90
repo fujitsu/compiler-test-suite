@@ -12,7 +12,7 @@
       allocatable :: rows(:)
 
       n = 2000
-      write(1,*)'n = ',n
+      write(68,*)'n = ',n
 
       allocate(rows(n))
 
@@ -30,9 +30,9 @@
          end do
       end do
       call system_clock(count=end_ticks,count_rate=ticks_per_second)
-      write(1,*)"rows(n)%list(n)=",rows(n)%list(n)
+      write(68,*)"rows(n)%list(n)=",rows(n)%list(n)
       time = real(end_ticks - start_ticks) / real(ticks_per_second)
-      write(1,*)'total time: ', time, ' (sec)'
+      write(68,*)'total time: ', time, ' (sec)'
       print *,'pass'
 
       end

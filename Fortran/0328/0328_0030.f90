@@ -9,9 +9,9 @@ use def
 type (ydef) :: y
 y%yy=0
 call sub(y,y)
-write(1,*) y%yy
+write(30,*) y%yy
 call ent(y,y)
-write(1,*) y%yy
+write(30,*) y%yy
 print *,'pass'
 end
 

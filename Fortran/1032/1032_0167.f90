@@ -4,7 +4,7 @@ program main
     forall(i=1:10)
       vec(1:1000000) = mem_leak()
     end forall
-  write(1,*) vec(1)
+  write(22,*) vec(1)
   print *,'pass'
  contains
    pure function mem_leak() result(vec)

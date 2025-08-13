@@ -1,7 +1,7 @@
 do i=1,1000
 call s
 end do
-write(1,*)'Function : '
+write(3,*)'Function : '
 print *,'pass'
 end
 subroutine s

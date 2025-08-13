@@ -58,7 +58,7 @@ subroutine ps( p, name )
   else
       write(answer(32+len(name):),"(A)") " "
   end if
-  write(1,*) answer
+  write(9,*) answer
 
   return
 end subroutine ps

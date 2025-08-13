@@ -4,10 +4,10 @@ subroutine s1
     integer,pointer::ptr
  end type
  type(x)::var
- write(1,*) var%elm
+ write(3,*) var%elm
  allocate(var%ptr)
  n = var%ptr
- write(1,*) n
+ write(3,*) n
 end
 call s1
 print *,'pass'

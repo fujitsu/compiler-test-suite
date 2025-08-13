@@ -5,12 +5,12 @@ parameter (ii=4,jj=5)
 complex z
 if (kind((i,j))/=4)write(6,*) "NG"
 if (kind((ii,jj))/=8)write(6,*) "NG"
-write(1,*) (i,j)
-write(1,*) (ii,jj)
-rewind 1
-read(1,*) z
+write(36,*) (i,j)
+write(36,*) (ii,jj)
+rewind 36
+read(36,*) z
 if(abs(z-(i,j))>0.0001)write(6,*) "NG"
-read(1,*) z
+read(36,*) z
 if(abs(z-(ii,jj))>0.0001)write(6,*) "NG"
 end
 subroutine s2

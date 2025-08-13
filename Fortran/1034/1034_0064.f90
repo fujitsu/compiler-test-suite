@@ -12,13 +12,13 @@ PROGRAM MAIN
         END DO
      END DO
   END DO
-  WRITE(1,*) foo
+  WRITE(45,*) foo
  call chk
 print *,'pass'
 END PROGRAM MAIN
 subroutine chk
 integer a(11)
-rewind 1
-read(1,*) a
+rewind 45
+read(45,*) a
 if (any(a/=(/10,20,30,0,0,0,0,0,0,0,0/)))print *,'error'
 end

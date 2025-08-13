@@ -17,16 +17,16 @@
 subroutine ss1
  allocate(ap(2,3))
  ap=>at
- write(1,*) associated(ap)
+ write(63,*) associated(ap)
  ap=>ap(1::2,1::2)
  ap=>af(ap)
 !
  allocate(ap(i2,i3)%ap(i2,i3))
  ap(i2,i3)%ap=>at
- write(1,*) associated(ap(i2,i3)%ap,at(1::i2,1::i2))
- write(1,*) associated(ap(i2,i3)%ap)
- write(1,*) associated(ap(i2,i3)%ap,at(1::i2,1::i2))
+ write(63,*) associated(ap(i2,i3)%ap,at(1::i2,1::i2))
+ write(63,*) associated(ap(i2,i3)%ap)
+ write(63,*) associated(ap(i2,i3)%ap,at(1::i2,1::i2))
  ap(i2,i3)%ap=>ap(1::2,1::2)
  ap(i2,i3)%ap=>ap(i2,i3)%ap(1::2,1::2)
   end subroutine
-  end 
+  end

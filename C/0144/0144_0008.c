@@ -24,6 +24,8 @@ int main()
             printf("%d ",i1[i][j]);
           printf("\n");
 	}
+
+      omp_set_num_threads(4) ;
 #pragma omp parallel firstprivate(i1) private(ld)
 {
 #ifdef _OPENMP

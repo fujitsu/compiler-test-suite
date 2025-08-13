@@ -14,25 +14,25 @@ implicit none
   type(Smatrix)             :: H
 
   allocate(H%i(n),H%j(n),H%z(n), stat=st)
-  write(1,*) "stat H: ", st
+  write(2,*) "stat H: ", st
   allocate( x(n), stat=st )
-  write(1,*) "stat X: ", st
+  write(2,*) "stat X: ", st
 
   x = (/ (real(i),i=1,n) /)
   H = Heval(x)
 
-  write(1,*) "I: ", associated(H%I)
-  write(1,*) "J: ", associated(H%J)
-  write(1,*) "Z: ", associated(H%Z)
-  write(1,*) "X: ", allocated( X )
+  write(2,*) "I: ", associated(H%I)
+  write(2,*) "J: ", associated(H%J)
+  write(2,*) "Z: ", associated(H%Z)
+  write(2,*) "X: ", allocated( X )
   if (.not.associated(H%I))write(6,*) "NG"
   if (.not.associated(H%J))write(6,*) "NG"
   if (.not.associated(H%Z))write(6,*) "NG"
   if (.not.allocated( X ))write(6,*) "NG"
   deallocate( x, stat=st)
-  write(1,*) "stat X: ", st
+  write(2,*) "stat X: ", st
   deallocate(H%i,H%j,H%z, stat=st)
-  write(1,*) "stat H: ", st
+  write(2,*) "stat H: ", st
   print *,'pass'
 
 contains

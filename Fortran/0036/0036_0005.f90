@@ -29,8 +29,8 @@ SUBROUTINE SUB
   Var_A = 100.0
   String = 'Hello'
   
-  WRITE(1,*) 'Var_A ',Var_A
-  WRITE(1,*) TRIM(String)
+  WRITE(3,*) 'Var_A ',Var_A
+  WRITE(3,*) TRIM(String)
 
   RETURN
 

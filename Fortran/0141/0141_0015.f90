@@ -4,8 +4,8 @@ subroutine ss(k,a,s)
 character(3)::a(k:,k+1:,k+2:)
 character(3),pointer::s
 namelist /nam/a,s
-open(1,delim='quote')
-write(1,nam)
+open(18,delim='quote')
+write(18,nam)
 end subroutine
 end
 use m1
@@ -25,8 +25,8 @@ end
 subroutine chk
 character(3) a(2),s
 namelist /nam/a,s
-rewind 1
-read(1,nam) 
+rewind 18
+read(18,nam)
 if (any(a/=['123','456'])) print *,101
 if (   (s/='789')) print *,102
 end

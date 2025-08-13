@@ -34,18 +34,17 @@ print *,'pass'
 end
 subroutine s1(a)
 dimension a(2)
-write(1,'("a=",z8.8)') a
+write(22,'("a=",z8.8)') a
 end
 subroutine s2(b)
 complex b(2)
-write(1,'("b=",z8.8)') b
+write(22,'("b=",z8.8)') b
 end
 subroutine s3(c)
 complex,dimension(2):: c
-write(1,'("c=",z8.8)') c
+write(22,'("c=",z8.8)') c
 end
 subroutine s4(d)
 dimension d(2)
-write(1,'("d=",z8.8)') d
+write(22,'("d=",z8.8)') d
 end
-

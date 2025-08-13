@@ -11,6 +11,6 @@ end function
 end interface
 integer x(2)
 x=f()
-write(1,*)x
+write(2,*)x
 print *,'pass'
 end

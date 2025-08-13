@@ -21,7 +21,7 @@
             r8a(i,j) = dim(r8b(i,j),r8c(i,j))
          enddo
       enddo
-      write(1,*)
+      write(9,*)
       do j=1,16
          do i=1,16
             if (r8b(i,j) .gt.r8c(i,j)) then
@@ -39,7 +39,7 @@
          enddo
       enddo
 
-      write(1,*)
+      write(9,*)
       do j=1,16
          do i=1,16
             if (2.0 .gt.r8c(i,j)) then
@@ -57,7 +57,7 @@
          enddo
       enddo
 
-      write(1,*)
+      write(9,*)
       do j=1,16
          do i=1,16
             if (r8b(i,j).gt.2.0) then
@@ -74,7 +74,7 @@
             r8a(i,j) = dim(-2.0,r8c(i,j))
          enddo
       enddo
-      write(1,*)
+      write(9,*)
       do j=1,16
          do i=1,16
             if (-2.0.gt.r8c(i,j)) then
@@ -91,7 +91,7 @@
             r8a(i,j) = dim(r8b(i,j),-2.0)
          enddo
       enddo
-      write(1,*)
+      write(9,*)
       do j=1,16
          do i=1,16
             if (r8b(i,j) .gt.-2.0) then

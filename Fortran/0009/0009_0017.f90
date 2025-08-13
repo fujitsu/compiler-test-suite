@@ -25,5 +25,5 @@ end
 
 subroutine ref  
  use m1        
- write(1,*) value 
+ write(20,*) value 
 end 

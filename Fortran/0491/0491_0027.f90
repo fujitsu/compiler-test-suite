@@ -3,7 +3,7 @@ program main
   allocate(tmp)
   tmp=10
   call sub(tmp)
-  write(1,*)tmp
+  write(2,*)tmp
 print *,'pass'
 contains
   subroutine sub(tmp)

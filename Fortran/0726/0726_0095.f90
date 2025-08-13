@@ -26,7 +26,7 @@
            end type test
            type(test),dimension(:)::rows
            rows(:) = test( t(2::2) )
-          end subroutine 
+          end subroutine
       subroutine ssa
             interface
               subroutine ssa1(rows)
@@ -53,10 +53,10 @@
       call ssa1(rows)
       do i = 1,  n
             call set(rows(i)%list)
-         write(20,*)  t(2::2)
+         write(40,*)  t(2::2)
       end do
-      rewind 20
-      read (20,*) x
+      rewind 40
+      read (40,*) x
       if (any(x/=123.0))write(6,*) "NG"
       end
       module ss9m
@@ -71,7 +71,7 @@
           subroutine ss91(rows)
             type(test),dimension(:)::rows
             rows(:) = test( t(2::2) )
-          end subroutine 
+          end subroutine
       end
       subroutine ss9
       use ss9m
@@ -82,10 +82,10 @@
       call ss91(rows)
       do i = 1,  n
             call set(rows(i)%list)
-         write(19,*)  t(2::2)
+         write(49,*)  t(2::2)
       end do
-      rewind 19
-      read (19,*) x
+      rewind 49
+      read (49,*) x
       if (any(x/=123.0))write(6,*) "NG"
       end
       module ss8m
@@ -100,7 +100,7 @@
         contains
           subroutine ss81()
             rows(i) = test( t(2::2) )
-          end subroutine 
+          end subroutine
       end
       subroutine ss8
       use ss8m
@@ -109,10 +109,10 @@
       do i = 1,  n
          call ss81()
             call set(rows(i)%list)
-         write(18,*)  t(2::2)
+         write(48,*)  t(2::2)
       end do
-      rewind 18
-      read (18,*) x
+      rewind 48
+      read (48,*) x
       if (any(x/=123.0))write(6,*) "NG"
       end
       subroutine ss7
@@ -129,9 +129,9 @@
          rows(i)%list=>f(t(2::2))
             call set(rows(i)%list)
       end do
-      write(17,*)  (rows(i)%list,i=1,n)
-      rewind 17
-      read (17,*) x
+      write(47,*)  (rows(i)%list,i=1,n)
+      rewind 47
+      read (47,*) x
       if (any(x/=123.0))write(6,*) "NG"
         contains
           function f(t)
@@ -139,7 +139,7 @@
             double precision,pointer::f(:)
             f=>t
          end function
-      end 
+      end
       subroutine ss6
       double precision :: x(4)
       double precision,target :: t(4)
@@ -154,10 +154,10 @@
       do i = 1,  n
          rows(i) = y
             call set(rows(i)%list)
-         write(16,*)  t(2::2)
+         write(46,*)  t(2::2)
       end do
-      rewind 16
-      read (16,*) x
+      rewind 46
+      read (46,*) x
       if (any(x/=123.0))write(6,*) "NG"
       end
       subroutine ss5
@@ -173,16 +173,16 @@
       do i = 1,  n
          rows(i) = ss51()
             call set(rows(i)%list)
-         write(15,*)  t(2::2)
+         write(45,*)  t(2::2)
       end do
-      rewind 15
-      read (15,*) x
+      rewind 45
+      read (45,*) x
       if (any(x/=123.0))write(6,*) "NG"
         contains
           function ss51()
            type(test)::ss51
             ss51 = test( t(2::2) )
-          end function 
+          end function
       end
       subroutine ss4
       double precision :: x(4)
@@ -197,15 +197,15 @@
       do i = 1,  n
          call ss41
             call set(rows(i)%list)
-         write(14,*)  t(2::2)
+         write(44,*)  t(2::2)
       end do
-      rewind 14
-      read (14,*) x
+      rewind 44
+      read (44,*) x
       if (any(x/=123.0))write(6,*) "NG"
         contains
           subroutine ss41
             rows(i) = test( t(2::2) )
-          end subroutine 
+          end subroutine
       end
       subroutine ss3
       double precision :: x(4)
@@ -220,10 +220,10 @@
       do i = 1,  n
          rows(i) = test( t(2::2) )
             call set(rows(i)%list)
-         write(13,*)  t(2::2)
+         write(43,*)  t(2::2)
       end do
-      rewind 13
-      read (13,*) x
+      rewind 43
+      read (43,*) x
       if (any(x/=123.0))write(6,*) "NG"
       end
       subroutine ss2
@@ -240,11 +240,11 @@
          rows(i)%list=>t(2::2)
             call set(rows(i)%list)
       end do
-      write(12,*)  (rows(i)%list,i=1,n)
-      rewind 12
-      read (12,*) x
+      write(42,*)  (rows(i)%list,i=1,n)
+      rewind 42
+      read (42,*) x
       if (any(x/=123.0))write(6,*) "NG"
-      end 
+      end
       subroutine ss1
       double precision :: x(4)
       type test
@@ -258,8 +258,8 @@
          allocate(rows(i)%list(n))
             call set(rows(i)%list)
       end do
-      write(11,*)  (rows(i)%list,i=1,n)
-      rewind 11
-      read (11,*) x
+      write(41,*)  (rows(i)%list,i=1,n)
+      rewind 41
+      read (41,*) x
       if (any(x/=123.0))write(6,*) "NG"
-      end 
+      end

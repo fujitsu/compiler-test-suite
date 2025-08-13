@@ -11,7 +11,7 @@ end type
 type(ty2) :: str
 allocate(str%al(10))
 str%al=ty1(1)
-write(11,*) str%al
+write(13,*) str%al
 str%al=str%al
 call sub(str%al)
 deallocate(str%al)

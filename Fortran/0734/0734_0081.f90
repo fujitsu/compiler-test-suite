@@ -15,54 +15,54 @@ call chk4(a4)
 call chk5(a5)
 call chk6(a6)
 call chk7(a7)
-write(1,*)a1
-write(1,*)a2
-write(1,*)a3
-write(1,*)a4
-write(1,*)a5
-write(1,*)a6
-write(1,*)a7
-write(1,*)-999
-rewind 1
-read(1,*) j;if (j/=-999)write(6,*) "NG"
-write(2,*)-998
-rewind 2
-read(2,*) j;if (j/=-998)write(6,*) "NG"
+write(46,*)a1
+write(46,*)a2
+write(46,*)a3
+write(46,*)a4
+write(46,*)a5
+write(46,*)a6
+write(46,*)a7
+write(46,*)-999
+rewind 46
+read(46,*) j;if (j/=-999)write(6,*) "NG"
+write(47,*)-998
+rewind 47
+read(47,*) j;if (j/=-998)write(6,*) "NG"
 contains
 subroutine chk1(a)
 character(i) a(:)
 if (size(a)/=0)write(6,*) "NG"
-write(2,*)a
+write(47,*)a
 end subroutine
 subroutine chk2(a)
 character(i) a(:,:)
 if (size(a)/=0)write(6,*) "NG"
-write(2,*)a
+write(47,*)a
 end subroutine
 subroutine chk3(a)
 character(i) a(:,:,:)
 if (size(a)/=0)write(6,*) "NG"
-write(2,*)a
+write(47,*)a
 end subroutine
 subroutine chk4(a)
 character(i) a(:,:,:,:)
 if (size(a)/=0)write(6,*) "NG"
-write(2,*)a
+write(47,*)a
 end subroutine
 subroutine chk5(a)
 character(i) a(:,:,:,:,:)
 if (size(a)/=0)write(6,*) "NG"
-write(2,*)a
+write(47,*)a
 end subroutine
 subroutine chk6(a)
 character(i) a(:,:,:,:,:,:)
 if (size(a)/=0)write(6,*) "NG"
-write(2,*)a
+write(47,*)a
 end subroutine
 subroutine chk7(a)
 character(i) a(:,:,:,:,:,:,:)
 if (size(a)/=0)write(6,*) "NG"
-write(2,*)a
+write(47,*)a
 end subroutine
 end
 common i

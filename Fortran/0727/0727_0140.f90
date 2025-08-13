@@ -26,69 +26,68 @@
  type(w),pointer::x
 !
  allocate(x)
- write(2,*) ss1(x%a1,(x%a1))
+ write(55,*) ss1(x%a1,(x%a1))
  if (any(ss1(x%a1,(x%a1))/=reshape((/'1','2','3','4','5','6'/),(/2,3/))))write(6,*) "NG"
  deallocate(x)
 !
  allocate(x)
- write(2,*) ss1(x%a1(:,:),(x%a1(:,:)))
+ write(55,*) ss1(x%a1(:,:),(x%a1(:,:)))
  if (any(ss1(x%a1(:,:),(x%a1(:,:)))/=reshape((/'1','2','3','4','5','6'/),(/2,3/))))write(6,*) "NG"
  deallocate(x)
 !
  allocate(x)
- write(2,*) ss1(x%a1,(x%a1))
+ write(55,*) ss1(x%a1,(x%a1))
  if (any(ss1(x%a1,(x%a1))/=reshape((/'1','2','3','4','5','6'/),(/2,3/))))write(6,*) "NG"
  deallocate(x)
 !
  allocate(x)
- write(2,*) ss1(x%a1(:,:),(x%a1(i3-i2,i3-i2)))
+ write(55,*) ss1(x%a1(:,:),(x%a1(i3-i2,i3-i2)))
  if (any(ss1(x%a1(:,:),(x%a1(i3-i2,i3-i2)))/=reshape((/'1','2','3','4','5','6'/),(/2,3/))))write(6,*) "NG"
  deallocate(x)
 !
  allocate(x)
- write(2,*) ss1(x%a1(i3-i2,i3-i2),(x%a1(:,:)))
+ write(55,*) ss1(x%a1(i3-i2,i3-i2),(x%a1(:,:)))
  if (any(ss1(x%a1(i3-i2,i3-i2),(x%a1(:,:)))/=reshape((/'1','1','1','1','1','1'/),(/2,3/))))write(6,*) "NG"
  deallocate(x)
 !
  allocate(x);if(associated(x%a2))write(6,*) "NG"
  allocate(x%a2(2,3));x%a2=x%a1
- write(2,*) ss2((x%a2),x%a2)
+ write(55,*) ss2((x%a2),x%a2)
  if (any(ss2((x%a2),x%a2)/=reshape((/'1','2','3','4','5','6'/),(/2,3/))))write(6,*) "NG"
  deallocate(x%a2,x)
 !
  allocate(x);if(associated(x%a2))write(6,*) "NG"
  allocate(x%a2(2,3));x%a2=x%a1
- write(2,*) ss2((x%a2(:,:)),x%a2(:,:))
+ write(55,*) ss2((x%a2(:,:)),x%a2(:,:))
  if (any(ss2((x%a2(:,:)),x%a2(:,:))/=reshape((/'1','2','3','4','5','6'/),(/2,3/))))write(6,*) "NG"
  deallocate(x%a2,x)
 !
  allocate(x);if(associated(x%a2))write(6,*) "NG"
  allocate(x%a2(2,3));x%a2=x%a1
- write(2,*) ss2((x%a2),x%a2)
+ write(55,*) ss2((x%a2),x%a2)
  if (any(ss2((x%a2),x%a2)/=reshape((/'1','2','3','4','5','6'/),(/2,3/))))write(6,*) "NG"
  deallocate(x%a2,x)
 !
  allocate(x);if(associated(x%a2))write(6,*) "NG"
  allocate(x%a2(2,3));x%a2=x%a1
- write(2,*) ss2((x%a2(:,:)),x%a2(i3-i2,i3-i2))
+ write(55,*) ss2((x%a2(:,:)),x%a2(i3-i2,i3-i2))
  if (any(ss2((x%a2(:,:)),x%a2(i3-i2,i3-i2))/=reshape((/'1','2','3','4','5','6'/),(/2,3/))))write(6,*) "NG"
  deallocate(x%a2,x)
 !
  allocate(x);if(associated(x%a2))write(6,*) "NG"
  allocate(x%a2(2,3));x%a2=x%a1
- write(2,*) ss2((x%a2(i3-i2,i3-i2)),x%a2(:,:))
+ write(55,*) ss2((x%a2(i3-i2,i3-i2)),x%a2(:,:))
  if (any(ss2((x%a2(i3-i2,i3-i2)),x%a2(:,:))/=reshape((/'1','1','1','1','1','1'/),(/2,3/))))write(6,*) "NG"
  deallocate(x%a2,x)
-rewind 2
-read(2,*) i;if (i/=123456)write(6,*) "NG"
-read(2,*) i;if (i/=123456)write(6,*) "NG"
-read(2,*) i;if (i/=123456)write(6,*) "NG"
-read(2,*) i;if (i/=123456)write(6,*) "NG"
-read(2,*) i;if (i/=111111)write(6,*) "NG"
-read(2,*) i;if (i/=123456)write(6,*) "NG"
-read(2,*) i;if (i/=123456)write(6,*) "NG"
-read(2,*) i;if (i/=123456)write(6,*) "NG"
-read(2,*) i;if (i/=123456)write(6,*) "NG"
-read(2,*) i;if (i/=111111)write(6,*) "NG"
+rewind 55
+read(55,*) i;if (i/=123456)write(6,*) "NG"
+read(55,*) i;if (i/=123456)write(6,*) "NG"
+read(55,*) i;if (i/=123456)write(6,*) "NG"
+read(55,*) i;if (i/=123456)write(6,*) "NG"
+read(55,*) i;if (i/=111111)write(6,*) "NG"
+read(55,*) i;if (i/=123456)write(6,*) "NG"
+read(55,*) i;if (i/=123456)write(6,*) "NG"
+read(55,*) i;if (i/=123456)write(6,*) "NG"
+read(55,*) i;if (i/=123456)write(6,*) "NG"
+read(55,*) i;if (i/=111111)write(6,*) "NG"
  end
- 

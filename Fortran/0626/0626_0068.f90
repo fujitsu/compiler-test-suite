@@ -20,28 +20,28 @@
     use mod, tt=>ty2, tp=>ty1
      integer , parameter ::x = 2
       type (ty3) :: t21=  ty3(ty2 = (tt(x)))
-      type (ty3) :: t22=  ty3(ty1 = (tp(x))) 
+      type (ty3) :: t22=  ty3(ty1 = (tp(x)))
       type (ty3) :: t23,t24
-       write(1,*) t21
-       write(1,*) t22
+       write(15,*) t21
+       write(15,*) t22
       i = 2
      t23= ty3(ty2 = (tt(i)))
      t24= ty3(ty1 = (tp(i)))
-       write(1,*) t23
-       write(1,*) t24
+       write(15,*) t23
+       write(15,*) t24
 call chk
       print *, 'pass'
      end
 
 subroutine chk
 integer k(8)
-rewind 1
-read(1,*) k
+rewind 15
+read(15,*) k
 if (any(k/=[2,1,2,10,10,10,19,10]))print *,101,k
-read(1,*) k
+read(15,*) k
 if (any(k/=[2,1,2,10,10,10,19,10]))print *,102,k
-read(1,*) k
+read(15,*) k
 if (any(k/=[2,1,2,10,10,10,19,10]))print *,103,k
-read(1,*) k
+read(15,*) k
 if (any(k/=[2,1,2,10,10,10,19,10]))print *,104,k
 end

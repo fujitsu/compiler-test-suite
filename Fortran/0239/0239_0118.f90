@@ -10,8 +10,8 @@ subroutine outpt(nlen)
   write(fnamept,'(a,a,i7.7,a,i4.4,a)') '/x1234/s/y073/24/','pt_',itime,'_cpu',nrnk,'.data'
   write(fnamepn,'(a,a,i7.7,a,i4.4,a)') '/x1234/s/y073/24/','pn_',itime,'_cpu',nrnk,'.data'
 
-  write(1,*)'#'//fnamept//'#'
-  write(1,*)'#'//fnamepn//'#'
+  write(2,*)'#'//fnamept//'#'
+  write(2,*)'#'//fnamepn//'#'
 end subroutine outpt
 
   integer(kind=4):: nlen=17

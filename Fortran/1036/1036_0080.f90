@@ -9,16 +9,16 @@
 
       is=2
       jnt=nt(is)
-      write(1,*) (q(  j+3),j=1,3)
-      write(1,*) (q(  3+j),j=1,3)
-      write(1,*) (q(  j+jnt),j=1,3)
-      write(1,*) (q(  jnt+j),j=1,3)
-      write(1,*) (q(  j+nt(is)),j=1,3)
-      write(1,*) (q(  nt(is)+j),j=1,3)
-      write(1,*) (q(  j+nt(2)),j=1,3)
-      rewind 1
+      write(10,*) (q(  j+3),j=1,3)
+      write(10,*) (q(  3+j),j=1,3)
+      write(10,*) (q(  j+jnt),j=1,3)
+      write(10,*) (q(  jnt+j),j=1,3)
+      write(10,*) (q(  j+nt(is)),j=1,3)
+      write(10,*) (q(  nt(is)+j),j=1,3)
+      write(10,*) (q(  j+nt(2)),j=1,3)
+      rewind 10
       do k=1,7
-      read(1,*) x;if (any(x/=(/4,5,6/)))then
+      read(10,*) x;if (any(x/=(/4,5,6/)))then
              write(6,*) "NG";print *,'code=',k
         end if
       end do

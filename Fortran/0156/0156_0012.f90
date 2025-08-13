@@ -4,7 +4,7 @@ integer n1,n2
 end
  subroutine s1
 use  m1
-write(1,*) n2
+write(11,*) n2
 end
 use  m1
 n2=1

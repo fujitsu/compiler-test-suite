@@ -5,12 +5,12 @@ end interface
 contains
    subroutine xx4(k)
       integer(4)::k
-write(1,*) k
+write(22,*) k
    end subroutine
    subroutine xx8(k)
       integer(8)::k
 print *,8
-write(2,*) k
+write(23,*) k
    end subroutine
 end
 use m1
@@ -21,14 +21,14 @@ use m1
          call sss4(2,4)
          call sss4(j=4)
          call sss5(k=2,j=4, n=4)
-rewind 1
-read(1,*)nn;if (nn/=4.and.nn/=2) print *,301,nn
-read(1,*)nn;if (nn/=4.and.nn/=2) print *,302,nn
-read(1,*)nn;if (nn/=4.and.nn/=2) print *,304,nn
-read(1,*)nn;if (nn/=4.and.nn/=2) print *,306,nn
-read(1,*)nn;if (nn/=4.and.nn/=2) print *,307,nn
-read(1,*)nn;if (nn/=4.and.nn/=2) print *,309,nn
-read(1,*)nn;if (nn/=4.and.nn/=2) print *,310,nn
+rewind 22
+read(22,*)nn;if (nn/=4.and.nn/=2) print *,301,nn
+read(22,*)nn;if (nn/=4.and.nn/=2) print *,302,nn
+read(22,*)nn;if (nn/=4.and.nn/=2) print *,304,nn
+read(22,*)nn;if (nn/=4.and.nn/=2) print *,306,nn
+read(22,*)nn;if (nn/=4.and.nn/=2) print *,307,nn
+read(22,*)nn;if (nn/=4.and.nn/=2) print *,309,nn
+read(22,*)nn;if (nn/=4.and.nn/=2) print *,310,nn
 print *,'pass'
          contains
          subroutine sss0(k)

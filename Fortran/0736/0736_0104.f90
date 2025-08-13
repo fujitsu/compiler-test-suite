@@ -12,6 +12,7 @@ call s1
 print *,'pass'
 contains
 subroutine s1
+save
 integer,parameter::i=500,j=1000
    type(x),dimension(i,j)::xa
 allocate(xa(i,j)%x2(2))

@@ -1,20 +1,20 @@
 call s(1)
-write(11,*)1
-rewind 11
-read(11,*) i
+write(16,*)1
+rewind 16
+read(16,*) i
 if (1/=i)print *,'error-1'
 call t(2)
-write(12,*)2
-rewind 12
-read(12,*) i
+write(17,*)2
+rewind 17
+read(17,*) i
 if (2/=i)print *,'error-2'
 k=4
 call w(k)
 if (k/=4)write(6,*) "NG"
 call w(22)
-write(13,*)22
-rewind 13
-read(13,*) i
+write(18,*)22
+rewind 18
+read(18,*) i
 if (22/=i)print *,'error-2'
 n1=1;n2=2
 call s(n1+n2)
@@ -23,8 +23,8 @@ print *,'pass'
 contains
 subroutine w(k)
 intent(in)::k
-write(100,*) k
-end subroutine 
+write(19,*) k
+end subroutine
 subroutine t(j)
 integer,optional,value::j
 j=10

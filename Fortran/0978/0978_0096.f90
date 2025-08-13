@@ -3,8 +3,8 @@ integer :: length
 integer :: status
 call get_command(command,length,status)
 
-write(1,*)trim(command)
-write(1,*)length
-write(1,*)status
+write(36,*)trim(command)
+write(36,*)length
+write(36,*)status
 print *,'pass'
 end

@@ -24,49 +24,48 @@ do n=1,size(b)
 k=0
 select type( b)
   type is(x2)
-    write(1,*)"Tyep of b is x2"
-    if (any(b(n)%x22/=1)) write(1,*)201,n
-    write(1,'("b%x22 :",z16.16)') n,loc(b(n)%x22)
+    write(11,*)"Tyep of b is x2"
+    if (any(b(n)%x22/=1)) write(11,*)201,n
+    write(11,'("b%x22 :",z16.16)') n,loc(b(n)%x22)
     k=1
   type is(x1)
-    write(1,*)"Tyep of b is x1"
+    write(11,*)"Tyep of b is x1"
     k=2
 end select
-if (k/=1) write(1,*)301,n
+if (k/=1) write(11,*)301,n
 end do
 
 do n=1,size(a)
 k=0
 select type( a)
   type is(x2)
-    write(1,*)"Tyep of a is x2"
-    if (any(a(n)%x22/=1)) write(1,*)202
-    write(1,'("a%x22 :",z16.16)') n,loc(a(n)%x22)
+    write(11,*)"Tyep of a is x2"
+    if (any(a(n)%x22/=1)) write(11,*)202
+    write(11,'("a%x22 :",z16.16)') n,loc(a(n)%x22)
     deallocate ( a(n)%x22 )
     allocate(a(n)%x22(1),source=2)
     k=1
   type is(x1)
-    write(1,*)"Tyep of a is x1"
+    write(11,*)"Tyep of a is x1"
     k=2
 end select
-if (k/=1) write(1,*)302
+if (k/=1) write(11,*)302
 end do
 
 do n=1,size(a)
 select type( b)
   type is(x2)
-    write(1,*)"Tyep of b is x2"
-    if (any(b(n)%x22/=1)) write(1,*)"error 203a"
-    write(1,'("b%x22 :",z16.16)') n, loc(b(n)%x22)
+    write(11,*)"Tyep of b is x2"
+    if (any(b(n)%x22/=1)) write(11,*)"error 203a"
+    write(11,'("b%x22 :",z16.16)') n, loc(b(n)%x22)
     k=1
   type is(x1)
-    write(1,*)"Tyep of b is x1"
+    write(11,*)"Tyep of b is x1"
     k=2
 end select
-if (k/=1) write(1,*)303
+if (k/=1) write(11,*)303
 end do
 end
 call s1
 print   *,'pass'
 end
-   

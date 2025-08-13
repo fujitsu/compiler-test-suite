@@ -23,7 +23,7 @@ P1(1:N2,1:N3) = TRANSPOSE( POP(:,:)+&
                  reshape((/POP(1:N3,1:N2)+POP(VN3,VN2)-POP(:,:)/),(/N3,N2/)) + &
                  POP(1:3,1:2)  - &
                  POP(1:3:N3-N2,1:N2:N3-N2)  )
-write(1,*)(     TRANSPOSE( POP(:,:)+&
+write(21,*)(     TRANSPOSE( POP(:,:)+&
                  POP(1:N3,1:N2)  - &
                  POP(N3-N2:N3,1:N3+N2-N3)  +&
                  POP(VN3,1:N3+N2-N3)  - &
@@ -40,7 +40,7 @@ write(1,*)(     TRANSPOSE( POP(:,:)+&
                  reshape((/POP(1:N3,1:N2)+POP(VN3,VN2)-POP(:,:)/),(/N3,N2/)) + &
                  POP(1:3,1:2)  - &
                  POP(1:3:N3-N2,1:N2:N3-N2)  ))
-write(1,*)P1
+write(21,*)P1
 call chk
 print *,'pass'
 contains
@@ -56,9 +56,9 @@ if (any(abs(x-cos(0.+reshape((/1,4,2,5,3,6/),(/2,3/))))>0.001))write(6,*) "NG"
 end subroutine
 subroutine chk
 real,dimension(2,3)::x
-rewind 1
+rewind 21
 do
-read(1,*,end=1)x
+read(21,*,end=1)x
 if (any(abs(x-reshape((/1,4,2,5,3,6/),(/2,3/)))>0.001))write(6,*) "NG"
 end do
 1 end subroutine

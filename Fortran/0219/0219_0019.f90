@@ -13,10 +13,10 @@ integer,pointer,contiguous::a(:,:,:)
 integer::aa(6)
 call       s(a,k1,k2,n1,n2)
 if (a(3,2,1)/=1) print *,203
-write(2,*) a
+write(26,*) a
 
-rewind 2
-read(2,*) aa
+rewind 26
+read(26,*) aa
 if (aa(6)/=1) print *,403
 print *,'pass'
 end

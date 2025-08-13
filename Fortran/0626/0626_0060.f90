@@ -2,7 +2,7 @@ module m1
   type b0
      integer::x1
   end type
-end 
+end
 module m2
   use m1
   type e0
@@ -17,12 +17,12 @@ subroutine sub2
 type(e1),parameter::pe=e1(x1=1,e11=e0(y1=2),e12=3)
 type(e1):: ve
 ve=e1(x1=1,e11=e0(y1=2),e12=3)
-write(1,*)pe
-write(1,*)ve
-rewind 1
-read(1,*) k1,k2,k3
+write(9,*)pe
+write(9,*)ve
+rewind 9
+read(9,*) k1,k2,k3
 if (any([k1,k2,k3]/=[1,2,3]))print *,101
-read(1,*) k1,k2,k3
+read(9,*) k1,k2,k3
 if (any([k1,k2,k3]/=[1,2,3]))print *,102
 end subroutine
 end
@@ -40,12 +40,12 @@ subroutine s3
 type(f2),parameter::p=f2(x1=1,e11=e0(y1=2),e12=3,f21=f1(z1=4),f22=5)
 type(f2):: v
 v= f2(x1=1,e11=e0(y1=2),e12=3,f21=f1(z1=4),f22=5)
-write(2,*)p
-write(2,*)v
-rewind 2
-read(2,*) k1,k2,k3,k4,k5
+write(10,*)p
+write(10,*)v
+rewind 10
+read(10,*) k1,k2,k3,k4,k5
 if (any([k1,k2,k3,k4,k5]/=[1,2,3,4,5]))print *,111
-read(2,*) k1,k2,k3,k4,k5
+read(10,*) k1,k2,k3,k4,k5
 if (any([k1,k2,k3,k4,k5]/=[1,2,3,4,5]))print *,112
 end subroutine
 end

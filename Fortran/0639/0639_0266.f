@@ -46,6 +46,8 @@
          IF(LT(I,L).OR.LF(I,L)) Z(I,L)=S2-1.000000D0
  21    CONTINUE
 
-       PRINT *,Z,LT,LF
+       PRINT *,Z
+       PRINT *,LT
+       PRINT *,LF
        RETURN
        END

@@ -8,7 +8,7 @@ end type
     subroutine final_proc(d)
     type(x)::d
      d%x1=d%x1+1
-write(1,*)d%x1
+write(3,*)d%x1
     end subroutine
 end
 use mod
@@ -27,8 +27,8 @@ if (allocated(aa%a)) print *,200
 aa%a=vv
 if (aa%a%xv%x1/=1) print *,9001
 aa=v
-rewind 1
-read(1,*) n
+rewind 3
+read(3,*) n
 if (n/=2) print *,2002
 print *,'pass'
 end

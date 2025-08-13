@@ -7,7 +7,7 @@ integer,pointer::a(:)
 namelist /nam/a
 allocate(a(2))
 call sub1(a)
-write(1,nam)
+write(29,nam)
 call sub2(a)
 end subroutine
 subroutine sub1(a)
@@ -18,4 +18,4 @@ subroutine sub2(a)
 integer,pointer::a(:)
 a=a+1
 end subroutine
-end	
+end

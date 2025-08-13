@@ -5,7 +5,7 @@ print *,'pass'
 end
 subroutine ss3
 real(16)::b(3,3),c(3,3),a(3,3),aa(3)
-n=10
+n=55
 b=reshape((/(i,i=1,9)/),(/3,3/))
 c=reshape((/(i,i=1,9)/),(/3,3/))
 a=matmul(b,c)
@@ -42,7 +42,7 @@ contains
 end
 subroutine ss2
 real(8)::b(3,3),c(3,3),a(3,3),aa(3)
-n=20
+n=60
 b=reshape((/(i,i=1,9)/),(/3,3/))
 c=reshape((/(i,i=1,9)/),(/3,3/))
 a=matmul(b,c)
@@ -79,7 +79,7 @@ contains
 end
 subroutine ss1
 real(4)::b(3,3),c(3,3),a(3,3),aa(3)
-n=30
+n=65
 b=reshape((/(i,i=1,9)/),(/3,3/))
 c=reshape((/(i,i=1,9)/),(/3,3/))
 a=matmul(b,c)

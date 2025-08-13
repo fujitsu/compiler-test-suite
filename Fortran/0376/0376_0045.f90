@@ -25,15 +25,15 @@ if (v%x1/=8)print *,'error-01'
 if (v%x2/=c5)print *,'error-02'
 if (abs(v%x3-c67)>0.0001)print *,'error-03'
 if (.not.v%x4)print *,'error-04'
-write(1,nam)
+write(16,nam)
 call chk
 end
 subroutine chk
 use m1,only:a4
 type (a4),save:: v
 namelist /nam/ v
-rewind 1
-read(1,nam)
+rewind 16
+read(16,nam)
 if (v%x1/=8)print *,'error-01'
 if (v%x2/='5')print *,'error-02'
 if (abs(v%x3-(6,7))>0.0001)print *,'error-03'
@@ -42,4 +42,3 @@ end
 call s1
 print *,'pass'
 end
-  

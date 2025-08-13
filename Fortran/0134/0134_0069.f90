@@ -4,8 +4,8 @@ contains
 subroutine s(explicit_shape_array,assumed_shape_array)
 integer::explicit_shape_array(2)
 integer::assumed_shape_array(:)
-write(1,*)explicit_shape_array
-write(1,*)assumed_shape_array
+write(3,*)explicit_shape_array
+write(3,*)assumed_shape_array
 end subroutine
 end
 subroutine x

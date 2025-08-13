@@ -10,12 +10,12 @@ end interface
 contains
 subroutine xxx(k1)
 if (k1/=1) print *,101
-write(1,*) k1
+write(19,*) k1
 end subroutine
 subroutine yyy(k1,k2)
 if (k1/=21) print *,111
 if (k2/=22) print *,121
-write(1,*) k1,k2
+write(19,*) k1,k2
 end subroutine
 end
 use m1
@@ -26,13 +26,13 @@ call chk
 print *,'pass'
 end
 subroutine chk
-rewind 1
-read(1,*) k1
+rewind 19
+read(19,*) k1
 if (k1/=1) print *,211
-read(1,*) k1,k2
+read(19,*) k1,k2
 if (k1/=21) print *,211
 if (k2/=22) print *,221
-read(1,*) k1,k2,k3
+read(19,*) k1,k2,k3
 if (k1/=11) print *,313
 if (k2/=12) print *,323
 if (k3/=13) print *,333
@@ -41,5 +41,5 @@ subroutine zzz(k1,k2,k3)
 if (k1/=11) print *,311
 if (k2/=12) print *,321
 if (k3/=13) print *,331
-write(1,*) k1,k2,k3
+write(19,*) k1,k2,k3
 end subroutine

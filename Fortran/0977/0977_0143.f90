@@ -16,7 +16,7 @@ y=y+1
 ip=x(y)
 if (ip%k/=6)write(6,*) "NG"
 call isub3(ip)
-write(1,*)ip
+write(31,*)ip
 end subroutine
 subroutine isub3(ip)
 type(x),intent(out):: ip

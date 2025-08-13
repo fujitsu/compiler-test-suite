@@ -6,8 +6,8 @@ end module
 
 use mdef
 type(tdef) ,pointer:: tt(:)
-integer::v(4)
-v=(/1,3,3,2/)
+integer::v(3)
+v=(/2,3,4/)
 
 ii=3
 jj=3

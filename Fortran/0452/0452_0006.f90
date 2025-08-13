@@ -28,9 +28,9 @@ optional::a
   end select
   if(k/=1) print *,201
   allocate(a%x4(2))
-write(1,'(z16.16)') loc(a%x4)
+write(24,'(z16.16)') loc(a%x4)
   allocate(yy::a%x2(1002))
-write(2,'(z16.16)') loc(a%x2)
+write(25,'(z16.16)') loc(a%x2)
   k=0
   select type (p=>a%x2)
     type is(yy)
@@ -47,8 +47,8 @@ call s1(a)
   if (.not.allocated(a(2)%x2)) print *,102
   if (.not.allocated(a(3)%x2)) print *,102
 end do
-call chk(1)
-call chk(2)
+call chk(24)
+call chk(25)
 print *,'pass'
 end
 subroutine chk(n)

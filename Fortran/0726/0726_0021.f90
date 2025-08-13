@@ -22,9 +22,9 @@ subroutine test02()
 integer i(10),j(10)
 i=0
 j=(/1,2,3,4,5,6,7,8,9,10/)
-write(17,*) ifun(j)
-rewind 17
-read (17,*) i
+write(10,*) ifun(j)
+rewind 10
+read (10,*) i
 do ido=1,10
 if (i(ido).ne.ido+1) write(6,*) "NG"
 end do

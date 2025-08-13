@@ -120,7 +120,7 @@ subroutine check(a , item ,subcode)
   if (any(a%v/=(/1,2,3,4,5,6/)))then
       write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a
   else 
-      write(1,*) 'OK    :',item
+      write(30,*) 'OK    :',item
   endif
 end subroutine
 subroutine check_s(a , item ,subcode,kv)
@@ -133,7 +133,7 @@ subroutine check_s(a , item ,subcode,kv)
   if (a%v/=kv)then
       write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a
   else 
-      write(1,*) 'OK    :',item
+      write(30,*) 'OK    :',item
   endif
 end subroutine
 subroutine check_1(a , item ,subcode,kv,ksize)
@@ -149,19 +149,19 @@ if (ksize==2) then
   if (any(a(1:2)%v/=(/1,2/)))then
       write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a(:2)
   else 
-      write(1,*) 'OK    :',item
+      write(30,*) 'OK    :',item
   endif
   case(2)
   if (any(a(1:2)%v/=(/3,4/)))then
       write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a(:2)
   else 
-      write(1,*) 'OK    :',item
+      write(30,*) 'OK    :',item
   endif
   case(3)
   if (any(a(1:2)%v/=(/5,6/)))then
       write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a(:2)
   else 
-      write(1,*) 'OK    :',item
+      write(30,*) 'OK    :',item
   endif
   end select
 else
@@ -170,13 +170,13 @@ else
   if (any(a(1:3)%v/=(/1,2,3/)))then
       write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a(:3)
   else 
-      write(1,*) 'OK    :',item
+      write(30,*) 'OK    :',item
   endif
   case(2)
   if (any(a(1:3)%v/=(/4,5,6/)))then
       write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a(:3)
   else 
-      write(1,*) 'OK    :',item
+      write(30,*) 'OK    :',item
   endif
   end select
 endif

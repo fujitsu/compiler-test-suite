@@ -9,7 +9,7 @@ contains
   subroutine typeA_aa( this, array)
     class(typeA), intent(in) :: this
     character(*), intent(in) :: array(*)
-    write(1,*) "typeA aa:", array(:2)
+    write(13,*) "typeA aa:", array(:2)
     if (any(array(:2)/=['23','45'])) print *,201
     if (this%x/=1) print *,301
   end subroutine typeA_aa

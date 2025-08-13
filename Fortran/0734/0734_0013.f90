@@ -1,5 +1,5 @@
       ITEST = ITEOP (1, 2)
-      write(1,*) ITEST
+      write(7,*) ITEST
       print *,'pass'
       END
       RECURSIVE FUNCTION ITEOP (J1, IOP) RESULT (IRES)

@@ -3,7 +3,7 @@ print *,'pass'
 end
 subroutine ss1(i)
 real(4),allocatable::b(:,:),c(:,:),a(:,:),aa(:),d(:)
-n=60
+n=120
 allocate(b(i,i),c(i,i),a(i,i),aa(i),d(i))
 b=1
 c=1
@@ -23,7 +23,7 @@ write(n+3,*)matmul(d,c)
 rewind n+1;read(n+1,*,end=1)k ;write(6,*) "NG"
 1 rewind n+2;read(n+2,*,end=2)k;write(6,*) "NG"
 2 rewind n+3;read(n+3,*,end=3)k;write(6,*) "NG"
-3 return 
+3 return
 contains
  subroutine chk1(b)
  real(4),dimension(:,:)::b

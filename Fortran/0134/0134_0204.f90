@@ -22,7 +22,7 @@ PROGRAM MAIN
 IF (I /= J) THEN
     WRITE(*,*) '*NG*', I, J
 ELSE
-    WRITE(1,*) '*OK*', I, J
+    WRITE(71,*) '*OK*', I, J
 END IF
 
     J = I
@@ -31,7 +31,7 @@ END IF
 IF (I /= J) THEN
     WRITE(*,*) '*NG*', I, J
 ELSE
-    WRITE(1,*) '*OK*', I, J
+    WRITE(71,*) '*OK*', I, J
 END IF
 
 print *,'pass'
@@ -42,15 +42,13 @@ SUBROUTINE a(J)
     REAL(8),VALUE :: J
 
 ENTRY a0(J)
-    WRITE(1,*) J
+    WRITE(71,*) J
     J = J + 1.0
-    WRITE(1,*) J
+    WRITE(71,*) J
     RETURN
 ENTRY a1(J)
-    WRITE(1,*) J
+    WRITE(71,*) J
     J = J + 1.0
-    WRITE(1,*) J
+    WRITE(71,*) J
     RETURN
 END SUBROUTINE
-
-

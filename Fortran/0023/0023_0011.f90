@@ -22,7 +22,7 @@ module m4
 contains
 subroutine sub
 k=1
-  write(1,*)k
+  write(2,*)k
 end subroutine
 end
 
@@ -31,12 +31,12 @@ use m4,ONLY:
   implicit none
 integer::k1
 k=1
-  write(1,*)k
+  write(2,*)k
 call xx 
-rewind 1
-read(1,*) k1
+rewind 2
+read(2,*) k1
 if (k1/=1) print *,201
-read(1,*) k1
+read(2,*) k1
 if (k1/=1) print *,202
 
 print *,'pass'

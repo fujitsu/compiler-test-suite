@@ -10,14 +10,14 @@ CONTAINS
     INTEGER :: j
     integer, ALLOCATABLE :: arr(:,:)
     integer::y(2)=(/1,2/)
-    write(1,*) (y(j),j=arr(k,k),arr(k,k+1))
+    write(20,*) (y(j),j=arr(k,k),arr(k,k+1))
     call chk
   print *,'pass'
   END SUBROUTINE sub
 end
 subroutine chk
-rewind 1
-read(1,*) i,j
+rewind 20
+read(20,*) i,j
 if (i/=1)print *,'error-1'
 if (j/=2)print *,'error-2'
 end

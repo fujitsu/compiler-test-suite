@@ -41,8 +41,8 @@ SUBROUTINE SUB
   Var_A = 100.0
   String = 'Hello'
   
-  WRITE(1,*) 'Var_A ',Var_A
-  WRITE(1,*) TRIM(String)
+  WRITE(7,*) 'Var_A ',Var_A
+  WRITE(7,*) TRIM(String)
 allocate( a(2:3,4:6))
 a(3,6)=1
 call gen( a)

@@ -1,8 +1,8 @@
         CHARACTER*2 R
         LOGICAL L
-        write(1,*) "'xx'",.false.
-        rewind 1
-        read(1,*) R,L
+        write(15,*) "'xx'",.false.
+        rewind 15
+        read(15,*) R,L
         k=0
         IF( (R  == "At" .OR. &
      &       R  == "Co") .AND. &

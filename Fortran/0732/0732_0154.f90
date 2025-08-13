@@ -8,7 +8,7 @@ print *,'pass'
 end
 subroutine ss1(i,a,b,c,d,aa)
 real(4)::b(i,i),c(i,i),a(i,i),aa(i),d(i)
-n=40
+n=95
 a=matmul(b,c)
 call chk1(a)
 call chk1(matmul(b,c))

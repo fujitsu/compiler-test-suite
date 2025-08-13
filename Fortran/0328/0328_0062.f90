@@ -8,7 +8,7 @@ entry ent(b,stat1,stat2)
  allocate(b(5),stat=stat1)
  b=10
  stat2=1
- write(1,*) stat1,stat2
+ write(36,*) stat1,stat2
  end subroutine
 end 
 

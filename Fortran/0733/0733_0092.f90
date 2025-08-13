@@ -1,11 +1,11 @@
         ibig=2**28
         do i=0,15
-        WRITE(2,*) i,ibig,i*ibig
-        WRITE(1,*) i
+        WRITE(57,*) i,ibig,i*ibig
+        WRITE(56,*) i
         end do
-rewind 1
+rewind 56
 do i=0,15
-read(1,*) k;if(k/=i)print *,'error',i
+read(56,*) k;if(k/=i)print *,'error',i
 enddo
 print *,'pass'
         end

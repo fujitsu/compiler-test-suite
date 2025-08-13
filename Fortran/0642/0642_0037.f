@@ -6,6 +6,7 @@
       integer c1(8)
       call s1(a1,a2,a3,a4)
       call s2(1,2)
+      c1=0
       call s3(c1)
       end
       subroutine s1(a1,a2,a3,a4)

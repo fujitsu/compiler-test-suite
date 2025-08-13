@@ -16,9 +16,9 @@
    END TYPE NODE
 
    CALL RANDOM_NUMBER (X)
-   write(1,*) OUT_OF_ORDER()
+   write(7,*) OUT_OF_ORDER()
    CALL BIN_SORT
-   write(1,*) OUT_OF_ORDER()
+   write(7,*) OUT_OF_ORDER()
 
 CONTAINS
 
@@ -32,7 +32,7 @@ CONTAINS
          CALL INSERT (T)
       END DO
 
-      write(1,*) DEPTH (T)
+      write(7,*) DEPTH (T)
 
       I = 1
       CALL EXTRACT (T)

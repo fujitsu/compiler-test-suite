@@ -3,9 +3,9 @@
        real :: a,b
        integer :: i,n
        external leastsqr
-       write (8,*) 5
-       rewind 8
-       read(8,*) n
+       write (16,*) 5
+       rewind 16
+       read(16,*) n
        allocate(x(n),y(n))
        write (11,*) 1.,1.
        write (12,*) 3.,3.2
@@ -18,7 +18,7 @@
        end do
        call leastsqr(n,x,y,a,b)
        write(*,'(f16.4,f16.4)') a,b
-       deallocate(x,y) 
+       deallocate(x,y)
        print *,'pass'
       end program main
 

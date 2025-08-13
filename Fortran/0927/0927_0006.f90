@@ -23,12 +23,12 @@ module m1
 contains
   subroutine xp(d)
     type(x):: d(:)
-    write(1,*) 100
+    write(8,*) 100
   end subroutine
 
   subroutine zp(a)
     type(d):: a
-    write(1,*) 200
+    write(8,*) 200
   end subroutine
 end module
 
@@ -128,14 +128,14 @@ end
 
 use m1
 call s1()
-rewind 1
-read(1,*) k;if(k/=100) print *,101
-read(1,*) k;if(k/=100) print *,102
-read(1,*) k;if(k/=100) print *,103
-read(1,*) k;if(k/=100) print *,104
-read(1,*) k;if(k/=100) print *,105
-read(1,*) k;if(k/=100) print *,106
-read(1,*,end=100) k
+rewind 8
+read(8,*) k;if(k/=100) print *,101
+read(8,*) k;if(k/=100) print *,102
+read(8,*) k;if(k/=100) print *,103
+read(8,*) k;if(k/=100) print *,104
+read(8,*) k;if(k/=100) print *,105
+read(8,*) k;if(k/=100) print *,106
+read(8,*,end=100) k
 print *,112
 100 print *,'PASS'
 end

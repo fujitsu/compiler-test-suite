@@ -58,7 +58,7 @@ program main
   t1%x=9
   gg%x=19
 
-  open(10,file="fort.10",form="formatted")
+  open(10,file="fort.13",form="formatted")
   WRITE(10,NML=list)
   close(10,status="keep")
 
@@ -69,7 +69,7 @@ program main
   if(ch/="NAMELIST") print*,202
   ch="xxxx"
 
-  open(10,file="fort.10",status="old",form="formatted")
+  open(10,file="fort.13",status="old",form="formatted")
   READ(10,NML=list)
   close(10,status="delete")
   if(t1%x/=11) print*,101

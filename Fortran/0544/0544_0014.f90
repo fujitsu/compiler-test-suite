@@ -30,10 +30,10 @@ type, extends(b)::ext
 end type
 contains
 subroutine prc1()
-  write(1,*)300
+  write(4,*)300
 end subroutine
 subroutine cproc1()
-  write(1,*)400
+  write(4,*)400
 end subroutine
 end module
 
@@ -45,8 +45,8 @@ use mm2, only:e=>ext
 
 type(e)::tc1
 call tc1%prc1()
-rewind 1
-read(1,*) k
+rewind 4
+read(4,*) k
 if(k/=400) print *,200
 print *,'pass'
 end

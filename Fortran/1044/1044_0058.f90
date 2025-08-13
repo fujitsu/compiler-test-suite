@@ -108,7 +108,7 @@ subroutine check(a , item ,subcode)
   if (any(abs(a-(/(1,11),(2,22),(3,33),(4,44),(5,55),(6,66)/))>0.01))then
       write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a
   else 
-      write(1,*) 'OK    :',item
+      write(29,*) 'OK    :',item
   endif
 end subroutine
 subroutine check_s(a , item ,subcode,kv)
@@ -117,7 +117,7 @@ subroutine check_s(a , item ,subcode,kv)
   if (abs(a-cmplx(kv,kv*10+kv))>0.01)then
       write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a
   else 
-      write(1,*) 'OK    :',item
+      write(29,*) 'OK    :',item
   endif
 end subroutine
 subroutine check_1(a , item ,subcode,kv,ksize)
@@ -129,19 +129,19 @@ if (ksize==2) then
   if (any(abs(a(1:2)-(/(1,11),(2,22)/))>0.01))then
       write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a(:2)
   else 
-      write(1,*) 'OK    :',item
+      write(29,*) 'OK    :',item
   endif
   case(2)
   if (any(abs(a(1:2)-(/(3,33),(4,44)/))>0.01))then
       write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a(:2)
   else 
-      write(1,*) 'OK    :',item
+      write(29,*) 'OK    :',item
   endif
   case(3)
   if (any(abs(a(1:2)-(/(5,55),(6,66)/))>0.1))then
       write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a(:2)
   else 
-      write(1,*) 'OK    :',item
+      write(29,*) 'OK    :',item
   endif
   end select
 else
@@ -150,13 +150,13 @@ else
   if (any(abs(a(1:3)-(/(1,11),(2,22),(3,33)/))>0.1))then
       write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a(:3)
   else 
-      write(1,*) 'OK    :',item
+      write(29,*) 'OK    :',item
   endif
   case(2)
   if (any(abs(a(1:3)-(/(4,44),(5,55),(6,66)/))>0.01))then
       write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a(:3)
   else 
-      write(1,*) 'OK    :',item
+      write(29,*) 'OK    :',item
   endif
   end select
 endif

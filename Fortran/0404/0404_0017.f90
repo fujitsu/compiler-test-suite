@@ -9,11 +9,11 @@ subroutine s1
 integer :: omp_get_thread_num
 !$omp parallel
 j1 = omp_get_thread_num()
-write(1,*)1,loc(j1)
+write(9,*)1,loc(j1)
 !$omp end parallel
 !$omp parallel
 if (any(j1 /= omp_get_thread_num())) print *,35
-write(1,*)1,loc(j1)
+write(9,*)1,loc(j1)
 !$omp end parallel
 end subroutine
 end

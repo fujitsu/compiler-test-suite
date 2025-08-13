@@ -23,9 +23,9 @@
  program test_module_procedure
    use mymod
    allocate ( mystr%ptrs(1) )
-   write(1,'(a,z14)') ' loc(mystr%ptrs)=',loc(mystr%ptrs)
+   write(3,'(a,z14)') ' loc(mystr%ptrs)=',loc(mystr%ptrs)
    allocate ( mystr%ptrs(1)%dat )
    call init_ptr(1)
-   write(1,'(a,z14)') ' loc(mystr%ptrs(1)%dat)=',loc(mystr%ptrs(1)%dat)
+   write(3,'(a,z14)') ' loc(mystr%ptrs(1)%dat)=',loc(mystr%ptrs(1)%dat)
 print *,'pass'
  end program test_module_procedure

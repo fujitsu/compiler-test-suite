@@ -5,9 +5,9 @@ do i=1,10
   r2(i) = 11 -i
 enddo
 
-write(8,*),(r1(i),i=1,10,1)
-rewind 8
+write(61,*),(r1(i),i=1,10,1)
+rewind 61
 
-read(8,*),(r3(i),i=1,10,1)
+read(61,*),(r3(i),i=1,10,1)
 print *,'pass'
 end

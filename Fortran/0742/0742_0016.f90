@@ -1,3 +1,4 @@
+save
 integer ::y(1000,1000),yy(:,:),k=1
 allocatable yy
 allocate(yy(2,2))

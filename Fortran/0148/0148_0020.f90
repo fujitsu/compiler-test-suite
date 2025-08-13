@@ -3,7 +3,7 @@
     CHARACTER(*),INTENT(out):: c2(2,3,4)
     CHARACTER(*),INTENT(out):: c3(2,3,4)
      call set(c1,c2,c3)
-write(1,*) c1,c2,c3
+write(10,*) c1,c2,c3
 contains
 subroutine set(c1,c2,c3)
 character(*)::c1(:,:,:),c2(:,:,:),c3(:,:,:)

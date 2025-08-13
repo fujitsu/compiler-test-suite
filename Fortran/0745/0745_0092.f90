@@ -25,10 +25,10 @@ Contains
     Character(*), Intent(In) :: line
     Character(*), Intent(In), Optional :: line2
 
-    Write(1,*) line
+    Write(35,*) line
 
     If (Present(line2)) Then
-      Write(1,*) line2
+      Write(35,*) line2
     End If
 
     regurgitate = line
@@ -48,12 +48,12 @@ Program music
 
   line1 = "This is a line with no comment"
 
-  Write(1,*) "This is a test"
-  Write(1,*) line1
+  Write(35,*) "This is a test"
+  Write(35,*) line1
 
   line2 = regurgitate(line1)
 
-  Write(1,*) line2
+  Write(35,*) line2
 print *,'pass'
 
 End Program music

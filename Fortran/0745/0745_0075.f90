@@ -21,12 +21,12 @@ contains
 subroutine sub1(b)
 integer, target:: b(:)
 b(1) = 3
-write(11,*)a(1),b(1)
+write(31,*)a(1),b(1)
 end subroutine
 subroutine sub2(b)
 integer, target:: b
 b = 3
-write(12,*)a(2),b
+write(32,*)a(2),b
 end subroutine
 subroutine sub3(b)
 integer, target:: b(:)
@@ -41,29 +41,29 @@ end subroutine
 subroutine sub5(b)
 integer, target:: b(:)
 b(1) = 3
-write(13,*)(/a(1),b(1)/)
+write(33,*)(/a(1),b(1)/)
 end subroutine
 subroutine sub6(b)
 integer, target:: b
 b = 3
-write(14,*)(/a(2),b/)
+write(34,*)(/a(2),b/)
 end subroutine
 end program p
 subroutine chk11
-rewind 11; read(11,*)i,j
-if(any((/i,j/)/=3))print *,'error11' 
+rewind 31; read(31,*)i,j
+if(any((/i,j/)/=3))print *,'error11'
 end
 subroutine chk12
-rewind 12; read(12,*)i,j
-if(any((/i,j/)/=3))print *,'error12' 
+rewind 32; read(32,*)i,j
+if(any((/i,j/)/=3))print *,'error12'
 end
 subroutine chk13
-rewind 13; read(13,*)i,j
-if(any((/i,j/)/=3))print *,'error13' 
+rewind 33; read(33,*)i,j
+if(any((/i,j/)/=3))print *,'error13'
 end
 subroutine chk14
-rewind 14; read(14,*)i,j
-if(any((/i,j/)/=3))print *,'error14' 
+rewind 34; read(34,*)i,j
+if(any((/i,j/)/=3))print *,'error14'
 end
 subroutine err(i)
 print *,'error',i

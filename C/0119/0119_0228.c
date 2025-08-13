@@ -37,7 +37,7 @@ int main()
       print(y,4); print(z,4);
 
       x=3; y=z=4;
-      print( ( z >= y >= x) ? 1 : 0,0);
+      print( ( (z >= y) >= x) ? 1 : 0,0);
       print( z >= y && y >= x,1);
       puts(" SCRPZ05 PASS ");
 exit(0);

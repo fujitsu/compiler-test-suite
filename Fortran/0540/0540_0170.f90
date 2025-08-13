@@ -33,7 +33,7 @@ subroutine prc1()
   write(6,*)300
 end subroutine
 subroutine cproc1()
-  write(1,*)400
+  write(35,*)400
 end subroutine
 end module
 module m4
@@ -52,8 +52,8 @@ use m4
 
 type(e)::tc1
 call tc1%prc1()
-rewind 1
-read(1,*) k
+rewind 35
+read(35,*) k
 if (k/=400) print *,200
 print *,'pass'
 end

@@ -199,9 +199,9 @@ c
       subroutine sfaj2(isw)
           common    /n02/ i02
           isw = 18
-          write(1)  isw
-          backspace 1
-          read(1)   i02
+          write(18)  isw
+          backspace 18
+          read(18)   i02
           return
       end
 

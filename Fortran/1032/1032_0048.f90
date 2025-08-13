@@ -1,6 +1,6 @@
 program main
 
-  real, allocatable, dimension(:) :: a, b, c 
+  real, allocatable, dimension(:) :: a, b, c
 
   integer :: n=10000,i
   real    :: rnd
@@ -14,7 +14,7 @@ program main
   end do
   i = rnd * n
   a=b+c
-  write(1,*) " After Array add", i, a(i)
+  write(10,*) " After Array add", i, a(i)
 print *,'pass'
 
 end program main

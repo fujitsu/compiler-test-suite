@@ -1,7 +1,7 @@
 MODULE M
   TYPE T
       INTEGER::A
-     CONTAINS 
+     CONTAINS
         PROCEDURE::SUB
         PROCEDURE::SUB1
         procedure runform
@@ -41,7 +41,7 @@ SUBROUTINE SUB (DTV, UNIT, IOTYPE, V_LIST, IOSTAT,IOMSG)
         WRITE(UNIT,*,IOSTAT=IOSTAT,IOMSG=IOMSG) V_LIST(1),DTV%A+1,IOTYPE
       ELSE
         WRITE(UNIT,*,IOSTAT=IOSTAT,IOMSG=IOMSG) DTV%A+1
-      END IF    
+      END IF
     END SUBROUTINE SUB
 
 SUBROUTINE SUB1 (DTV, UNIT, IOTYPE, V_LIST, IOSTAT, IOMSG)
@@ -74,23 +74,23 @@ integer::ios
 OBJW%A=4
 rewind 1
 ios=-1000
-     WRITE(1,nam,IOSTAT=ios,iomsg=msg)  
+     WRITE(15,nam,IOSTAT=ios,iomsg=msg)
 if (ios/=0) print *,101
 ios=-1000
 if(VV .ne. 4)print*,102
-     WRITE(1,*,IOSTAT=ios,iomsg=msg)OBJW  
+     WRITE(15,*,IOSTAT=ios,iomsg=msg)OBJW
 if (ios/=0) print *,102
 ios=-1000
-     WRITE(1,'(dt)',IOSTAT=ios,iomsg=msg)  OBJW
+     WRITE(15,'(dt)',IOSTAT=ios,iomsg=msg)  OBJW
 if (ios/=0) print *,103
 ios=-1000
-     WRITE(1,'(dt"abc"(1,2))',IOSTAT=ios,iomsg=msg) OBJW 
+     WRITE(15,'(dt"abc"(1,2))',IOSTAT=ios,iomsg=msg) OBJW
 if (ios/=0) print *,104
 ios=-1000
-     WRITE(2,IOSTAT=ios,iomsg=msg)  OBJW
+     WRITE(16,IOSTAT=ios,iomsg=msg)  OBJW
 if (ios/=0) print *,105,ios,trim(msg)
 ios=-1000
-     WRITE(1,nam,IOSTAT=ios,iomsg=msg)  
+     WRITE(15,nam,IOSTAT=ios,iomsg=msg)
 if (ios/=0) print *,106
 end
 subroutine s2
@@ -100,38 +100,38 @@ character(1000):: msg
 namelist/nam/OBJW
 integer::ios
 OBJW%A=4
-rewind 1
-rewind 2
+rewind 15
+rewind 16
 ios=-1000
-     READ(1,nam,IOSTAT=ios,iomsg=msg)  
+     READ(15,nam,IOSTAT=ios,iomsg=msg)
 if (ios/=0) print *,201,ios,trim(msg)
 if (objw%a/=6) print *,301,objw%a
 ios=-1000
-   READ (1,*,IOSTAT=ios,iomsg=msg)OBJR
+   READ (15,*,IOSTAT=ios,iomsg=msg)OBJR
 if (ios/=0) print *,203,ios,trim(msg)
 if (objr%a/=6) print *,302,objr%a
 OBJR%A=0
 ios=-1000
-   READ (1,'(dt)',IOSTAT=ios,iomsg=msg)OBJR
+   READ (15,'(dt)',IOSTAT=ios,iomsg=msg)OBJR
 if (ios/=0) print *,204,ios,trim(msg)
 if (objr%a/=6) print *,303,objr%a
 OBJR%A=0
 ios=-1000
-   READ (1,'(dt"abc"(3,4))',IOSTAT=ios,iomsg=msg)OBJR
+   READ (15,'(dt"abc"(3,4))',IOSTAT=ios,iomsg=msg)OBJR
 if (ios/=0) print *,205,ios,trim(msg)
 if (objr%a/=2) print *,304,objr%a
 OBJR%A=0
 ios=-1000
-   READ (2,IOSTAT=ios,iomsg=msg)OBJR
+   READ (16,IOSTAT=ios,iomsg=msg)OBJR
 if (ios/=0) print *,206,ios,trim(msg)
 if (objr%a/=5) print *,305,objr%a
 OBJW%A=0
 ios=-1000
-     READ(1,nam,IOSTAT=ios,iomsg=msg)  
+     READ(15,nam,IOSTAT=ios,iomsg=msg)
 if (ios/=0) print *,201,ios,trim(msg)
 if (objw%a/=6) print *,306,objw%a
 end
 call s1
 call s2
 print *,'pass'
-END 
+END

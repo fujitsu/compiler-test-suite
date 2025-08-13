@@ -3,10 +3,10 @@ integer :: arr(30,30,30,30)
 arr(1:30,1:30,1:30,1:30) =1
 arr(1,2,1+2,4) = 2
 arr(1,2,2+2,4) = 3
-rewind 10
-write(10,*) ((arr(1,k,j+2,arr(1,2,1+2,4)+2),j=1,2),k=2,2) 
-rewind 10
-read(10,*) i,j
+rewind 28
+write(28,*) ((arr(1,k,j+2,arr(1,2,1+2,4)+2),j=1,2),k=2,2)
+rewind 28
+read(28,*) i,j
 if (i.ne.2) write(6,*) "NG"
 if (j.ne.3) write(6,*) "NG"
 end
@@ -16,10 +16,10 @@ integer :: arr(30,30,30,30)
 arr(1:30,1:30,1:30,1:30) =1
 arr(1,2,1+2,4) = 2
 arr(1,2,2+2,4) = 3
-rewind 11
-write(11,*) ((arr(1,k,j+2,arr(1,k,1+k,4)+2),j=1,2),k=2,2) 
-rewind 11
-read(11,*) i,j
+rewind 29
+write(29,*) ((arr(1,k,j+2,arr(1,k,1+k,4)+2),j=1,2),k=2,2)
+rewind 29
+read(29,*) i,j
 if (i.ne.2) write(6,*) "NG"
 if (j.ne.3) write(6,*) "NG"
 end
@@ -29,12 +29,12 @@ integer :: arr(30,30,30,30)
 arr(1:30,1:30,1:30,1:30) =1
 arr(1,2,1+2,4) = 2
 arr(1,2,2+2,4) = 3
-rewind 11
+rewind 29
 k2=2
 k1=1
-write(11,*) ((arr(1,k,j+2,arr(1,k2,k1+2,4)+2),j=1,2),k=2,2) 
-rewind 11
-read(11,*) i,j
+write(29,*) ((arr(1,k,j+2,arr(1,k2,k1+2,4)+2),j=1,2),k=2,2)
+rewind 29
+read(29,*) i,j
 if (i.ne.2) write(6,*) "NG"
 if (j.ne.3) write(6,*) "NG"
 end

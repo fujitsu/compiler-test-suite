@@ -12,7 +12,7 @@ contains
     call sub_p
   end subroutine setup
   subroutine sub
-    write(1,*) "OK"
+    write(8,*) "OK"
   end subroutine sub
 end module test
 

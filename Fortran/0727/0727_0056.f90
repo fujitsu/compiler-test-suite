@@ -45,9 +45,9 @@ end
  use m1;character(n),dimension(5) ::a,b,c
  a=(/'1','0','3','4','0'/);b='z';c='z'
  k1=1;k5=5
- write(1)k1,k5,k5-1
- rewind 1
- read (1)k1,k5,k4
+ write(18)k1,k5,k5-1
+ rewind 18
+ read (18)k1,k5,k4
  forall (i=k1:k5-k4)
    where (a=='0')
     a='x'

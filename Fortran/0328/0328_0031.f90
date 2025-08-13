@@ -9,7 +9,7 @@ use def
 type(ydef)::y(10)
 y%yy=10
 call sub(y(1),y(6))
-write(1,*) y%yy
+write(25,*) y%yy
 print *,'pass'
 end
 

@@ -9,10 +9,10 @@ contains
   subroutine CNST_setup
     implicit none
     CNST_LHF0  = CNST_LHS0 - CNST_LH0
-    write(1,*) '90:CNST_LHF0=', CNST_LHF0,"/",loc(CNST_LHF0)
-    write(1,2) '90:CNST_LHF0=', CNST_LHF0
-    write(1,*) '90:CNST_LHS0=', CNST_LHS0,"/",loc(CNST_LHS0)
-    write(1,*) '90:CNST_LH0=', CNST_LH0,"/",loc(CNST_LH0)
+    write(8,*) '90:CNST_LHF0=', CNST_LHF0,"/",loc(CNST_LHF0)
+    write(8,2) '90:CNST_LHF0=', CNST_LHF0
+    write(8,*) '90:CNST_LHS0=', CNST_LHS0,"/",loc(CNST_LHS0)
+    write(8,*) '90:CNST_LH0=', CNST_LH0,"/",loc(CNST_LH0)
 2   format(Z)
     return
   end subroutine CNST_setup
@@ -29,10 +29,10 @@ contains
          CNST_LHF0
     implicit none
 
-    write(1,*) '91:CNST_LHF0=', CNST_LHF0,"/",loc(CNST_LHF0)
-    write(1,2) '91:CNST_LHF0=', CNST_LHF0
-    write(1,*) '91:CNST_LHS0=', CNST_LHS0,"/",loc(CNST_LHS0)
-    write(1,*) '91:CNST_LH0=', CNST_LH0,"/",loc(CNST_LH0)
+    write(8,*) '91:CNST_LHF0=', CNST_LHF0,"/",loc(CNST_LHF0)
+    write(8,2) '91:CNST_LHF0=', CNST_LHF0
+    write(8,*) '91:CNST_LHS0=', CNST_LHS0,"/",loc(CNST_LHS0)
+    write(8,*) '91:CNST_LH0=', CNST_LH0,"/",loc(CNST_LH0)
 2   format(Z)
    if (abs(CNST_LHF0- 333400.)>10 ) print *,101,CNST_LHF0
        return
@@ -47,10 +47,10 @@ contains
   subroutine mods_init
     implicit none 
     call CNST_setup
-    write(1,*) '92:CNST_LHF0=', CNST_LHF0,"/",loc(CNST_LHF0)
-    write(1,2) '92:CNST_LHF0=', CNST_LHF0
-    write(1,*) '92:CNST_LHS0=', CNST_LHS0,"/",loc(CNST_LHS0)
-    write(1,*) '92:CNST_LH0=', CNST_LH0,"/",loc(CNST_LH0)
+    write(8,*) '92:CNST_LHF0=', CNST_LHF0,"/",loc(CNST_LHF0)
+    write(8,2) '92:CNST_LHF0=', CNST_LHF0
+    write(8,*) '92:CNST_LHS0=', CNST_LHS0,"/",loc(CNST_LHS0)
+    write(8,*) '92:CNST_LH0=', CNST_LH0,"/",loc(CNST_LH0)
 2   format(Z)
     call RUNCONF_setup
   end subroutine mods_init

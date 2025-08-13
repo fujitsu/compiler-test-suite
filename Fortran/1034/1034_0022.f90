@@ -13,8 +13,8 @@
       b%yp%za(1)=20
       yp=>a%yp
       a%yp=b%yp
-      write(1,*) 1,2
-      write(1,*) 3,4
+      write(10,*) 1,2
+      write(10,*) 3,4
       if (yp%za(1)/=20)print *,'error-1'
       if (a%yp%za(1)/=20)print *,'error-2'
       if (b%yp%za(1)/=20)print *,'error-3'

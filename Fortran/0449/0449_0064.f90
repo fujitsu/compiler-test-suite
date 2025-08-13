@@ -14,7 +14,7 @@ subroutine s1(a)
   if (allocated(a(3)%x2)) print *,101
   if (a(3)%x1/=1        ) print *,103
   allocate(a(3)%x2(2))
-write(1,'(z16.16)') loc(a(3)%x2)
+write(138,'(z16.16)') loc(a(3)%x2)
 end subroutine
 end
 use m1
@@ -23,7 +23,7 @@ do n=1,kh
 call s1(a)
   if (.not.allocated(a(3)%x2)) print *,102
 end do
-call chk(1)
+call chk(138)
 print *,'pass'
 end
 subroutine chk(n)

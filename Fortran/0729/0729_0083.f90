@@ -76,17 +76,17 @@ program kinds
     er = er +1
   end do
 
-  write (unit=1,fmt="(A//A)") &
+  write (unit=119,fmt="(A//A)") &
         " Floating Point Kinds implemented:" &
       , " Kind   Precision     Range"
   do i=1,count(fp%p>0)
-     write(unit=1,fmt="(I5,I12,I10)") fp(i)%k, fp(i)%p, fp(i)%r
+     write(unit=119,fmt="(I5,I12,I10)") fp(i)%k, fp(i)%p, fp(i)%r
   end do
-  write(unit=1,fmt="(//A//A)") &
+  write(unit=119,fmt="(//A//A)") &
         " Integer Kinds implemented:" &
        ," Kind   Range"
   do i=1,count( ik%r>0 )
-     write(unit=1,fmt="(I5,I8)") ik(i)%k, ik(i)%r
+     write(unit=119,fmt="(I5,I8)") ik(i)%k, ik(i)%r
   end do
 print *,'pass'
 end program kinds

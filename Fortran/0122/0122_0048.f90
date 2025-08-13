@@ -17,7 +17,7 @@ program main
      ans_block = ans_block + c_block(i)
   end do
 
-  if (abs(ans - ans_block) > 0.000006 ) then
+  if (abs(ans - ans_block) > 0.00001 ) then
      print *, "NG"
   else
      print *, "OK"

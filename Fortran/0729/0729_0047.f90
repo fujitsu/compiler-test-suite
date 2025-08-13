@@ -15,9 +15,9 @@ TYPE (TEMPERATURES) :: WATER = TEMPERATURES(100,0)
 i=100
 WORLDWIDE (I) % CITY = "Nome"
 WORLDWIDE (I) % RANGE (1) % LOW = -83
-write(1,*)WORLDWIDE (I) % CITY
-write(1,*)WORLDWIDE (I) % RANGE (1) % LOW
-write(1,*)WORLDWIDE (I) % RANGE (1) % LOW
-write(1,*)water%high
+write(91,*)WORLDWIDE (I) % CITY
+write(91,*)WORLDWIDE (I) % RANGE (1) % LOW
+write(91,*)WORLDWIDE (I) % RANGE (1) % LOW
+write(91,*)water%high
 print *,'pass'
 end

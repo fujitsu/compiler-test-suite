@@ -39,7 +39,7 @@ c
 c
           i01 = 1
           call sfsb1 (i01)
-          read(1)   i02
+          read(19)   i02
           i01 = i02 + i01
           i9comp = 2
       i9data = i9data + 1
@@ -100,7 +100,7 @@ c
 c
           i05 = ffsb3(5) + i05
           call sfsb1 (i05)
-          read(1)   i06
+          read(19)   i06
           i05 = i05 + i06
           i9comp = 10
       i9data = i9data + 1
@@ -146,7 +146,7 @@ c
 c
           call sfsb3 (8,2)
           call sfsb1 (i0x(2))
-          read(1)   i0x(3)
+          read(19)   i0x(3)
           i9ans1 = i0x(2)+i0x(3)
           i9comp = 16
       i9data = i9data + 1
@@ -176,9 +176,9 @@ c
 23508 i9ans1=0
 c
           isw = 10
-          write(1)  isw
-          backspace 1
-          read(1)   i0x(6)
+          write(19)  isw
+          backspace 19
+          read(19)   i0x(6)
           call sfsb1 (i0x(6))
           jsw = ffsb5 (6)
           call sfsb5 (jsw)
@@ -204,8 +204,8 @@ c
       end
 
       subroutine sfsb1(ix)
-          write(1)  ix
-          backspace 1
+          write(19)  ix
+          backspace 19
           return
       end
 
@@ -213,10 +213,10 @@ c
           common    i06,i05,i04,i03,i02,i01,ix0000(4)
           go to (10,20,10,10,30 ) ,isw
    10     return
-   20     read(1)   jsw
+   20     read(19)   jsw
           if(i02.eq.jsw)      i02=1
           return
-   30     read(1)   jsw
+   30     read(19)   jsw
           if(i06.eq.jsw)      i06=1
           return
       end
@@ -225,13 +225,13 @@ c
           common    i06,i05,i04,i03,i02,i01,ix0000(4)
           ffsb1 = 0
           go to (33,33,30,40) , isw
-   30     read(1)   jsw
+   30     read(19)   jsw
           if(i03-jsw)         33,35,33
    33     i03 = 0
           return
   35      i03 = 35
           return
-   40     read(1)   jsw
+   40     read(19)   jsw
           if(i04-jsw)         43,45,43
    43     i04 = 0
           return
@@ -263,16 +263,16 @@ c
 
       subroutine sfsb3(isw,jsw)
           common    i0x(9),ix0000
-          write(1)  isw
-          backspace 1
-          read(1)   i0x(jsw)
+          write(19)  isw
+          backspace 19
+          read(19)   i0x(jsw)
           return
       end
 
       subroutine sfsb4(isw)
           common    i0x(6),i07,ix0000(3)
           isw = 4
-          read(1)   i07
+          read(19)   i07
           if(i0x(1)-i07)      20,10,20
    10     i0x(1) = 1
           return
@@ -283,7 +283,7 @@ c
       integer function ffsb5 (isw)
           common    i0x(6),i07,i08,i09,i10
           ffsb5 = 0
-          read(1)   i10
+          read(19)   i10
           if(i0x(isw)-i10)    20,10,20
    10     i0x(isw) = 1
           return

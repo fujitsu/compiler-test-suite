@@ -35,9 +35,9 @@ PROGRAM MAIN
    INTEGER :: n
    REAL(dbl), ALLOCATABLE :: x1(:), x2(:,:)
 
-   write(1,*) 1
-   rewind 1
-   read(1,*) n
+   write(3,*) 1
+   rewind 3
+   read(3,*) n
    print *,'pass'
    if (n==1)stop
    CALL blas_GEMM( &
@@ -46,7 +46,7 @@ PROGRAM MAIN
       DB=x1, LDB=n, &
       DBETA=0.0_dbl, DC=x1, LDC=n &
       )
-   
+
    CALL blas_GEMM( &
       TRANSA='T', TRANSB='N', M=n, N=n, K=n, &
       DALPHA=1.0_dbl, DA=x2, LDA=n, &
@@ -76,4 +76,3 @@ END PROGRAM MAIN
          INTEGER          M, N, K, LDA, LDB, LDC
          REAL(dbl)        DALPHA, DA(1,*), DB(1,*), DBETA, DC(1,*)
       END SUBROUTINE DGEMM1
-

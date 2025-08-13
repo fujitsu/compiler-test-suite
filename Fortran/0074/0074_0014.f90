@@ -21,7 +21,7 @@ contains
  implicit none
 !$omp parallel
 lhf = 2
-write(1,*) 3, lhf,loc(lhf)
+write(17,*) 3, lhf,loc(lhf)
   call r_setup
 !$omp end parallel
 end subroutine

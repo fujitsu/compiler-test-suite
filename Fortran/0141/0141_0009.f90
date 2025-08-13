@@ -7,6 +7,6 @@ contains
 subroutine sub(a)
 integer,allocatable::a(:)
 namelist /nam/a
-write(1,nam)
+write(12,nam)
 end subroutine
 end

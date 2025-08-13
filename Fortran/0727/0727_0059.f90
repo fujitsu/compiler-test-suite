@@ -86,9 +86,9 @@ end
 allocate(a(5),b(5),c(5))
  a=(/w('1'),w('0'),w('3'),w('4'),w('0')/);b=w('z');c=w('z')
  k1=1;k5=5
- write(1)k1,k5,k5-1
- rewind 1
- read (1)k1,k5,k4
+ write(21)k1,k5,k5-1
+ rewind 21
+ read (21)k1,k5,k4
  forall (i=k1:k5-k4)
    where (a=='0')
     a=w('x')

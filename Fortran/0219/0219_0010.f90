@@ -13,11 +13,11 @@ character(1),pointer,contiguous::a(:,:,:)
 character     ::aa(6)
 call       s(a,k1,k2,n1,n2)
 if (a(1+3,2+2,3+1)/='1') print *,203
-open(2,delim='quote')
-write(2,*) a
+open(3,delim='quote')
+write(3,*) a
 
-rewind 2
-read(2,*) aa
+rewind 3
+read(3,*) aa
 if (aa(6)/='1') print *,403
 print *,'pass'
 end

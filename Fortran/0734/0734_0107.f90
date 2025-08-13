@@ -4,7 +4,7 @@ module UpperLowerCase
 
 contains
 
-function NOP(s)                
+function NOP(s)
    character(len=*), intent(in) :: s
    character(len=len(s))        :: NOP
    character                    :: ca(len(s))
@@ -151,8 +151,8 @@ subroutine dummy(x)
    common /text_data/  text, text1
    character(len=256) :: text(n), text1(n)
    if (x < 0) then
-      write(1,"(a)") text(-x)(1:128)
+      write(54,"(a)") text(-x)(1:128)
    else
-      write(1,"(a)") text1(x)(1:128)
+      write(54,"(a)") text1(x)(1:128)
    end if
-end subroutine dummy 
+end subroutine dummy

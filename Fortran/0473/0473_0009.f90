@@ -6,7 +6,7 @@ implicit none
  type y
    integer::x1=3
  end type
- interface 
+ interface
   module subroutine sub(i,xv)
   integer::i
   type(x)::xv
@@ -18,7 +18,7 @@ implicit none
    type(x),intent(in)::k1
    integer::r
   end
-  module subroutine sub3(kk,k1) 
+  module subroutine sub3(kk,k1)
    type(x),intent(in)::k1
    integer,intent(out)::kk
   end
@@ -34,7 +34,7 @@ implicit none
     integer, intent(in) :: vlist(:)
     integer, intent(out) :: iostat
     character(*), intent(inout) :: iomsg
-  end 
+  end
  end interface
  interface  write(formatted)
      procedure :: wform
@@ -74,8 +74,8 @@ if (kk      /=2) print *,204
 if (f2(xv,yv)/=5) print *,205
 if (gen2(xv,yv)/=5) print *,206
 if ((xv.op.yv)/=5) print *,207
-write(100,*) yv
-call wform(yv,unit=101,iotype='formated',vlist=[1],iostat=ios,iomsg=iom)
+write(1,*) yv
+call wform(yv,unit=2,iotype='formated',vlist=[1],iostat=ios,iomsg=iom)
  end subroutine
  module subroutine wform(dtv, unit, iotype, vlist, iostat, iomsg)
     class(y), intent(in) :: dtv
@@ -97,7 +97,7 @@ call wform(yv,unit=101,iotype='formated',vlist=[1],iostat=ios,iomsg=iom)
    integer::r
    r=k1%x1
   end
-  module subroutine sub3(kk,k1) 
+  module subroutine sub3(kk,k1)
    type(x),intent(in)::k1
    integer,intent(out)::kk
    kk=k1%x1
@@ -115,11 +115,11 @@ use m
 integer::kk
   type(x)::xv
 call sub(1,xv)
-rewind 100
-read(100,*) kk
+rewind 1
+read(1,*) kk
 if (kk/=4) print *,304
-rewind 101
-read(101,*) kk
+rewind 2
+read(2,*) kk
 if (kk/=4) print *,305
 print *,'pass'
 end

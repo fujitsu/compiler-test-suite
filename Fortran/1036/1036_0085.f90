@@ -11,23 +11,23 @@
       is4=4
       jnt=nt(is)
       nt3(2,5,4)=nt(is)
-      write(1,*) (q(  j*nt(is)),j=1,3)
-      write(1,*) (q(  nt(is)*j),j=1,3)
-      write(1,*) (q(  j*nt(2)),j=1,3)
-      write(1,*) (q(  nt(2)*j),j=1,3)
-      write(1,*) (q(  j*jnt),j=1,3)
-      write(1,*) (q(  jnt*j),j=1,3)
-      write(1,*) (q(  j*nt3(is,5,4)),j=1,3)
-      write(1,*) (q(  nt3(is,5,4)*j),j=1,3)
-      write(1,*) (q(  j*nt3(2,5,4)),j=1,3)
-      write(1,*) (q(  nt3(2,5,4)*j),j=1,3)
-      write(1,*) (q(  j*nt3(is,5,is4)),j=1,3)
-      write(1,*) (q(  nt3(is,5,is4)*j),j=1,3)
-      write(1,*) (q(  j*nt3(2,5,is4)),j=1,3)
-      write(1,*) (q(  nt3(2,5,is4)*j),j=1,3)
-      rewind 1
+      write(15,*) (q(  j*nt(is)),j=1,3)
+      write(15,*) (q(  nt(is)*j),j=1,3)
+      write(15,*) (q(  j*nt(2)),j=1,3)
+      write(15,*) (q(  nt(2)*j),j=1,3)
+      write(15,*) (q(  j*jnt),j=1,3)
+      write(15,*) (q(  jnt*j),j=1,3)
+      write(15,*) (q(  j*nt3(is,5,4)),j=1,3)
+      write(15,*) (q(  nt3(is,5,4)*j),j=1,3)
+      write(15,*) (q(  j*nt3(2,5,4)),j=1,3)
+      write(15,*) (q(  nt3(2,5,4)*j),j=1,3)
+      write(15,*) (q(  j*nt3(is,5,is4)),j=1,3)
+      write(15,*) (q(  nt3(is,5,is4)*j),j=1,3)
+      write(15,*) (q(  j*nt3(2,5,is4)),j=1,3)
+      write(15,*) (q(  nt3(2,5,is4)*j),j=1,3)
+      rewind 15
       do k=1,14
-      read(1,*) x;if (any(x/=(/3,6,9/)))then
+      read(15,*) x;if (any(x/=(/3,6,9/)))then
              write(6,*) "NG";print *,'code=',k
         end if
       end do

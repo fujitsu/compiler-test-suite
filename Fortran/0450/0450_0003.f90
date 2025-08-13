@@ -27,18 +27,18 @@ contains
 subroutine s1(d1)
 type(t4),intent(out) :: d1
 allocate(d1% cmp_alc)
- write(10,'(z16.16)') loc( d1%cmp_alc)
+ write(3,'(z16.16)') loc( d1%cmp_alc)
 allocate(d1% cmp%cmp_alc)
- write(11,'(z16.16)') loc( d1%cmp_alc)
+ write(4,'(z16.16)') loc( d1%cmp_alc)
 end subroutine
 subroutine s2(d1)
 type(t4),intent(out) :: d1
 allocate(d1% cmp_alc)
- write(12,'(z16.16)') loc( d1%cmp_alc)
+ write(7,'(z16.16)') loc( d1%cmp_alc)
 allocate(d1% cmp%cmp_alc)
- write(13,'(z16.16)') loc( d1%cmp_alc)
+ write(8,'(z16.16)') loc( d1%cmp_alc)
 allocate(d1% cmp_alc%cmp_alc)
- write(12,'(z16.16)') loc( d1%cmp_alc)
+ write(7,'(z16.16)') loc( d1%cmp_alc)
 end subroutine
 subroutine s3(d1)
 type(t4),intent(out) :: d1
@@ -63,5 +63,3 @@ end do
 
 print *,'pass'
 end
-
-

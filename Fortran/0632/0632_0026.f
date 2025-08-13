@@ -1,4 +1,5 @@
       SUBROUTINE SUB01(A,B,C,D)
+      SAVE
       REAL A(20,20,20,20,20)
       REAL B(20,20,20,20,20)
       REAL C(20,20,20)
@@ -26,6 +27,7 @@
       END
 
       SUBROUTINE SUB02(A,B,C,D)
+      SAVE
       REAL A(20,20,20,20,20)
       REAL B(20,20,20,20,20)
       REAL C(20,20,20)
@@ -54,6 +56,7 @@
       END
 
       SUBROUTINE SUB03(A,B,C,D)
+      SAVE
       REAL A(20,20,20,20,20)
       REAL B(20,20,20,20,20)
       REAL C(20,20,20)
@@ -224,6 +227,7 @@
       END
 
       PROGRAM MAIN
+      SAVE
       REAL A(3200000)
       REAL B(3200000)
       REAL C(8000)

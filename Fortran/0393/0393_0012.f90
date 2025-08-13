@@ -31,12 +31,12 @@ if (k/=1) print *,701
 contains
 subroutine dump(i)
 pointer (i,ip(8))
-write(1,'(z8.8)') ip(1)
-write(1,'(z8.8)') ip(2)
-write(1,'(z8.8)') ip(3)
-write(1,'(z8.8)') ip(4)
-write(1,'(z8.8)') ip(5)
-write(1,'(z8.8)') ip(6)
+write(7,'(z8.8)') ip(1)
+write(7,'(z8.8)') ip(2)
+write(7,'(z8.8)') ip(3)
+write(7,'(z8.8)') ip(4)
+write(7,'(z8.8)') ip(5)
+write(7,'(z8.8)') ip(6)
 end subroutine
 end
 call s1

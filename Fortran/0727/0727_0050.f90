@@ -23,7 +23,7 @@
 
  namelist /name1/ z1
  namelist /name2/ z2
- end 
+ end
  subroutine ss2(i,z2,z3)
  implicit type(x)(z)
  type x
@@ -34,13 +34,13 @@
 
  namelist /name1/ z1
  namelist /name2/ z2
- open (1,delim='quote')
- open (2,delim='quote')
- write(1,name1) 
- write(1,name2) 
- write(2,*) z3
- write(2,*) z4
- end 
+ open (7,delim='quote')
+ open (8,delim='quote')
+ write(7,name1)
+ write(7,name2)
+ write(8,*) z3
+ write(8,*) z4
+ end
  subroutine chk
  namelist /name1/ z1
  namelist /name2/ z2
@@ -48,19 +48,16 @@
    character*1 ::y
  end type
  type(x):: z1(2),z2(2),z3(2),z4(2)
- rewind 1
- rewind 2
- read (1,name1)
- read (1,name2)
+ rewind 7
+ rewind 8
+ read (7,name1)
+ read (7,name2)
  if (any(z1%y/='x')) write(6,*) "NG"
  if (any(z2%y/='x')) write(6,*) "NG"
- read(2,*) z3
+ read(8,*) z3
  if (any(z3%y/='x'))write(6,*) "NG"
- read(2,*) z4
+ read(8,*) z4
  if (any(z4%y/='x')) write(6,*) "NG"
  rewind 1
  rewind 2
  end
-
-
- 

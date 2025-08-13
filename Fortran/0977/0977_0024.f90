@@ -51,33 +51,31 @@ select case(i)
    if (i1(2)/=12)write(6,*) "NG"
    if (i2(1)/=1)write(6,*) "NG"
    if (i2(2)/=3)write(6,*) "NG"
-   if (loc(i1)/=n1)write(1,*) i,'i1 copied'
-   if (loc(i2)==n2)write(1,*) i,'i2 no copied'
+   if (loc(i1)/=n1)write(17,*) i,'i1 copied'
+   if (loc(i2)==n2)write(17,*) i,'i2 no copied'
  case (2)
    if (i1(1)/=111)write(6,*) "NG"
    if (i1(2)/=112)write(6,*) "NG"
    if (i2(1)/=113)write(6,*) "NG"
    if (i2(2)/=114)write(6,*) "NG"
-   if (loc(i1)/=n1)write(1,*) i,'i1 copied'
-   if (loc(i2)/=n2)write(1,*) i,'i2 copied'
+   if (loc(i1)/=n1)write(17,*) i,'i1 copied'
+   if (loc(i2)/=n2)write(17,*) i,'i2 copied'
  case (3)
    if (i1(1)/=5)write(6,*) "NG"
    if (i1(2)/=7)write(6,*) "NG"
    if (i2(1)/=211)write(6,*) "NG"
    if (i2(2)/=212)write(6,*) "NG"
-   if (loc(i1)==n1)write(1,*) i,'i1 no copied'
-   if (loc(i2)/=n2)write(1,*) i,'i2 copied'
+   if (loc(i1)==n1)write(17,*) i,'i1 no copied'
+   if (loc(i2)/=n2)write(17,*) i,'i2 copied'
  case (4)
    if (i1(1)/=1)write(6,*) "NG"
    if (i1(2)/=3)write(6,*) "NG"
    if (i2(1)/=5)write(6,*) "NG"
    if (i2(2)/=7)write(6,*) "NG"
-   if (loc(i1)==n1)write(1,*) i,'i1 no copied'
-   if (loc(i2)==n2)write(1,*) i,'i2 no copied'
+   if (loc(i1)==n1)write(17,*) i,'i1 no copied'
+   if (loc(i2)==n2)write(17,*) i,'i2 no copied'
 end select
 j=i
 i1=(/-1,-2/)
 i2=(/-3,-4/)
 end
-   
-

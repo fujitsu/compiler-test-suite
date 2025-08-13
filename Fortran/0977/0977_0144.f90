@@ -17,7 +17,7 @@ allocate(ip)
 ip=x(y)
 if (ip%k/=6)write(6,*) "NG"
 call isub3(ip)
-write(1,*)ip
+write(32,*)ip
 end subroutine
 subroutine isub3(ip)
 type(x),pointer,intent(out):: ip

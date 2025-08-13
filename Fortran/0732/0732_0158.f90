@@ -8,7 +8,7 @@ print *,'pass'
 end
 subroutine ss1(i,a,b,c,d,aa)
 real(4)::b(i,i),c(i,i),a(i,i),aa(i),d(i)
-n=40
+n=115
 a=matmul(b,c)
 call chk1(a)
 call chk1(matmul(b,c))
@@ -24,7 +24,7 @@ write(n+3,*)matmul(d,c)
 rewind n+1;read(n+1,*,end=1)k ;write(6,*) "NG"
 1 rewind n+2;read(n+2,*,end=2)k;write(6,*) "NG"
 2 rewind n+3;read(n+3,*,end=3)k;write(6,*) "NG"
-3 return 
+3 return
 contains
  subroutine chk1(b)
  real(4),dimension(:,:)::b

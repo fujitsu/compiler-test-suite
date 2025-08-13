@@ -3,10 +3,10 @@ integer,pointer::pointer_array(:)
 contains
 subroutine s(explicit_shape_array,x)
 integer::explicit_shape_array(2),x(1)
-write(1,*)explicit_shape_array
-write(1,*)x
+write(7,*)explicit_shape_array
+write(7,*)x
 end subroutine
-function if(k) 
+function if(k)
   integer,dimension(:):: k
   integer,dimension(size(k)) ::if
   if=k

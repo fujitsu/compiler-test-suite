@@ -14,7 +14,7 @@ contains
    r=d
    r%x1=r%x1+1
    r%x2=r%x2+1
-  END FUNCTION 
+  END FUNCTION
   subroutine s1
    type(x):: v(kh)
    do k=1,kh
@@ -22,7 +22,7 @@ contains
    end do
    call s2(v)
    end subroutine
-end 
+end
 
 use m1
 call s1
@@ -33,7 +33,7 @@ end
    type(x):: v(kh)
    do k=1,kh
      v(k)= f(v(k))
-     write(1,'(z16.16)') loc( v(k)% x2 )
+     write(107,'(z16.16)') loc( v(k)% x2 )
      if (any(v(k)% x2/=2+1)) print *,200
      if (v(k)% x1/=1+1) print *,201
    end do

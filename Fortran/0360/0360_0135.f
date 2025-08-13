@@ -23,7 +23,7 @@
          enddo
       enddo
 
-      write(1,*)
+      write(8,*)
       do j=1,16
          do i=1,16
             if (r4b(i,j) .gt.r4c(i,j)) then
@@ -41,7 +41,7 @@
             r4a(i,j) = dim(2.0,r4c(i,j))
          enddo
       enddo
-      write(1,*)
+      write(8,*)
       do j=1,16
          do i=1,16
             if (2.0 .gt.r4c(i,j)) then
@@ -58,7 +58,7 @@
             r4a(i,j) = dim(r4b(i,j),2.0)
          enddo
       enddo
-      write(1,*)
+      write(8,*)
       do j=1,16
          do i=1,16
             if (r4b(i,j).gt.2.0) then
@@ -75,7 +75,7 @@
             r4a(i,j) = dim(-2.0,r4c(i,j))
          enddo
       enddo
-      write(1,*)
+      write(8,*)
       do j=1,16
          do i=1,16
             if (-2.0.gt.r4c(i,j)) then
@@ -92,7 +92,7 @@
             r4a(i,j) = dim(r4b(i,j),-2.0)
          enddo
       enddo
-      write(1,*)
+      write(8,*)
       do j=1,16
          do i=1,16
             if (r4b(i,j) .gt.-2.0) then

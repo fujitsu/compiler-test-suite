@@ -19,11 +19,11 @@ allocate(v(nn:nn))
 allocate(v(nn)%xa(2))
 v(nn)%xa(2)%y1=2
 if (v(nn)%xa(2)%y1/=2)write(6,*) "NG"
-write(21,*) loc(v(nn)%xa(2)%y1)
+write(39,*) loc(v(nn)%xa(2)%y1)
 allocate(v(nn)%xa(2)%y2(3))
 v(nn)%xa(2)%y2=(/11,12,13/)
 if (any(v(nn)%xa(2)%y2/=(/11,12,13/)))write(6,*) "NG"
-write(22,*) loc(v(nn)%xa(2)%y2(3))
+write(40,*) loc(v(nn)%xa(2)%y2(3))
 deallocate(v(1)%xa)
-end subroutine 
+end subroutine
 end

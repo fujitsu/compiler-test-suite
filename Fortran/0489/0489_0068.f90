@@ -18,13 +18,13 @@ use m1
  procedure(),pointer::pp
 call s(pp)
 call s
-rewind 1
-read(1,*) k
+rewind 21
+read(21,*) k
 if (k/=100) print *,10001
-read(1,*) k
+read(21,*) k
 if (k/=100) print *,10002
 print *,'pass'
 end
  subroutine sub
-write(1,*) 100
+write(21,*) 100
  end subroutine

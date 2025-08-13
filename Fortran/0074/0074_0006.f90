@@ -4,7 +4,7 @@ module const
 contains
  subroutine r_setup
  implicit none
-write(1,*) 2, lhf,loc(lhf)
+write(9,*) 2, lhf,loc(lhf)
 if (lhf/=2) print *,101,lhf
 end subroutine
 end
@@ -16,7 +16,7 @@ contains
  subroutine init
  implicit none
 lhf = 2
-write(1,*) 3, lhf,loc(lhf)
+write(9,*) 3, lhf,loc(lhf)
   call r_setup
 end subroutine
 end

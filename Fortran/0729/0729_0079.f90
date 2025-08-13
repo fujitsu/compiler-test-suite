@@ -22,7 +22,7 @@ PROGRAM reallocate_ar
    array_2 = 0
 
    DO i = i_1_min, i_1_max
-      WRITE (1,*) array_2(i,:)
+      WRITE (115,*) array_2(i,:)
    END DO
 
    CALL reallocate_2D (1)
@@ -38,7 +38,7 @@ PROGRAM reallocate_ar
    CALL reallocate_2D (2)
 
    DO i = i_1_min, i_1_max
-      WRITE (1,*) array_2(i,:)
+      WRITE (115,*) array_2(i,:)
    END DO
    print *,'pass'
 

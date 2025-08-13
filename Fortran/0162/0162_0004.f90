@@ -26,10 +26,10 @@ print *,'pass'
    use mymod
    type(tt)::str
    allocate ( mystr%ptrs(1) )
-   write(1,'(a,z14)') ' loc(mystr%ptrs)=',loc(mystr%ptrs)
+   write(7,'(a,z14)') ' loc(mystr%ptrs)=',loc(mystr%ptrs)
    allocate ( mystr%ptrs(1)%dat )
    str%i=1
    call init_ptr(str)
-   write(1,'(a,z14)') ' loc(mystr%ptrs(1)%dat)=',loc(mystr%ptrs(1)%dat)
+   write(7,'(a,z14)') ' loc(mystr%ptrs(1)%dat)=',loc(mystr%ptrs(1)%dat)
  end subroutine alloc_mystr
 

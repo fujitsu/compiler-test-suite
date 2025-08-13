@@ -13,23 +13,23 @@ allocate(p,source=q)
 select type(p)
 type is(y)
  k=1
-  write(1,*) p
+  write(3,*) p
 end select
 if (k/=1) print *,101
 deallocate(p)
-rewind 1
-read(1,*) k1,k2
+rewind 3
+read(3,*) k1,k2
 if (any([k1,k2]/=[1,2])) print *,101
 allocate(p,source=a)
 k=0
 select type(p)
 type is(x)
  k=1
-  write(2,*) p
+  write(4,*) p
 end select
 if (k/=1) print *,102
-rewind 2
-read(2,*) k2
+rewind 4
+read(4,*) k2
 if (        k2/=1) print *,102
 print *,'pass'
 end

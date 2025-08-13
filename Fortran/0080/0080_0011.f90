@@ -12,22 +12,22 @@ end
 submodule(m)smod
 contains
   subroutine subx
-write(1,*) 2
+write(11,*) 2
 call sub
   end subroutine
   subroutine suby
 print *,202
    contains
    subroutine sub
-write(1,*) 100
+write(11,*) 100
   end subroutine
   end subroutine
   module subroutine ww
-write(1,*) 5
+write(11,*) 5
 call sub
    contains
    subroutine sub
-write(1,*) 6
+write(11,*) 6
   end subroutine
   end subroutine
 end
@@ -35,10 +35,10 @@ end
 submodule(m:smod)ssmod
 contains
   module subroutine su
-write(1,*) 11
+write(11,*) 11
   end subroutine
   module subroutine sub
-write(1,*) 1
+write(11,*) 1
   end subroutine
 end
 
@@ -46,16 +46,16 @@ use m
 call ww
 call sub
 call subx
-rewind 1
-read(1,*)k;if (k/=5) print *,111
-read(1,*)k;if (k/=6) print *,121
-read(1,*)k;if (k/=1) print *,101
-read(1,*)k;if (k/=3) print *,102
+rewind 11
+read(11,*)k;if (k/=5) print *,111
+read(11,*)k;if (k/=6) print *,121
+read(11,*)k;if (k/=1) print *,101
+read(11,*)k;if (k/=3) print *,102
     print *,'pass'
 end
 subroutine subx
-write(1,*) 3
+write(11,*) 3
 end
    subroutine sub
-write(1,*) 100
+write(11,*) 100
   end subroutine

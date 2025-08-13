@@ -10,7 +10,7 @@ iii=t1(1,2)
 !$omp parallel default(private)
 iii%i1=11
 iii%i2=12
-write(55,na)
+write(59,na)
 !$omp end parallel
 call chk
 end
@@ -24,8 +24,8 @@ type t1
 end type
 type(t1)::iii
 namelist /na/ iii
-rewind 55
-read(55,na)
+rewind 59
+read(59,na)
 if (iii%i1/=11)print *,201,iii
 if (iii%i2/=12)print *,202,iii
 end

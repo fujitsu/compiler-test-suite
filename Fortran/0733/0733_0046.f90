@@ -36,9 +36,9 @@ print *,'error1'
 reshape(&
 (/'vv','uu','xx','ww','tt','ss','pp','oo','rr','qq','nn','mm','jj','ii','ll','kk','hh','gg','dd','cc','ff','ee','bb','aa'/),(/2,3,4/))))&
 print *,'error2'
- write(1,*)ss4(plus2(z1(v1,v2,v3),y1(t1,t2,t3)))
-rewind 1
-read (1,*) z3
+ write(24,*)ss4(plus2(z1(v1,v2,v3),y1(t1,t2,t3)))
+rewind 24
+read (24,*) z3
 if (any(z3/= &
 reshape(&
 (/'vv','uu','xx','ww','tt','ss','pp','oo','rr','qq','nn','mm','jj','ii','ll','kk','hh','gg','dd','cc','ff','ee','bb','aa'/),(/2,3,4/))))&

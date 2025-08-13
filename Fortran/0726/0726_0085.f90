@@ -9,9 +9,9 @@
 999  write(6,*) "NG"
 104  format(5H12345)
 103  assign 104 to i
-     write(1,i) 
-     rewind 1
-     read(1,'(i5)')j
+     write(35,i)
+     rewind 35
+     read(35,'(i5)')j
      if (j/=12345)write(6,*) "NG"
      call s11(*201,*202,0)
      goto 210
@@ -31,23 +31,23 @@
      goto 250
 241  write(6,*) "NG"
 242  write(6,*) "NG"
-250  write(11,*,err=251) 1
-     rewind 11
-     read (11,*,end=252,err=253) j
+250  write(36,*,err=251) 1
+     rewind 36
+     read (36,*,end=252,err=253) j
      if (j/=1)write(6,*) "NG"
      goto 260
 251  write(6,*) "NG"
 252  write(6,*) "NG"
 253  write(6,*) "NG"
-260  write(2,'(3h678)')
-     rewind 2
-     read (2,'(i3)',advance='NO',end=261,err=262,eor=263) j
+260  write(37,'(3h678)')
+     rewind 37
+     read (37,'(i3)',advance='NO',end=261,err=262,eor=263) j
      if (j/=678)write(6,*) "NG"
      goto 270
 261  write(6,*) "NG"
 262  write(6,*) "NG"
 263  write(6,*) "NG"
-270  read (2,'(i3)',advance='NO',end=271,err=272,eor=273) j
+270  read (37,'(i3)',advance='NO',end=271,err=272,eor=273) j
      write(6,*) "NG"
 271  write(6,*) "NG"
 272  write(6,*) "NG"

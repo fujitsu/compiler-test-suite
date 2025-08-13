@@ -23,10 +23,10 @@ select type (a)
 type is(x)
 k=1
 if (a(3,2,1)%x1/=1) print *,203
-write(2,*) a%x1
+write(23,*) a%x1
 
-rewind 2
-read(2,*) aa
+rewind 23
+read(23,*) aa
 if (aa(6)/=1) print *,403
 end select
 if (k/=1) print *,301

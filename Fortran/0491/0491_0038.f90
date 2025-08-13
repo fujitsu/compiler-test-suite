@@ -32,7 +32,7 @@ allocate(objTT%obj1(2,1)%alc2)
 allocate(objTT%obj1(1,2)%alc2)
 allocate(objTT%obj1(2,3)%msg)
 
-write(1,*) allocated(objTT%obj1(1,2)%alc)  &
+write(3,*) allocated(objTT%obj1(1,2)%alc)  &
        , allocated(objTT%obj1(2,1)%alc)  &
        , allocated(objTT%obj1(1,2)%alc2) &
        , allocated(objTT%obj1(2,1)%alc2) &
@@ -68,7 +68,7 @@ print*, "pass"
 end
 subroutine chk
 logical::a(10)
-rewind 1
-read(1,*) a
+rewind 3
+read(3,*) a
 if (any(.not.a) ) print *,100001
 end

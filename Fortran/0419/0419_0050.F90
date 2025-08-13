@@ -1,4 +1,4 @@
-write(1,'("&
+write(9,'("&
 abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx&
 abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx&
 abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwx&

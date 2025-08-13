@@ -5,7 +5,7 @@ module A
 contains
   subroutine S_ ( I )
     integer I
-    write(1,*) I
+    write(95,*) I
   end subroutine S_
 end module A
 
@@ -23,8 +23,8 @@ end module B
 program P
   use B
   call S
-rewind 1
-read(1,*) j
+rewind 95
+read(95,*) j
 if (j/=10)write(6,*) "NG"
 print *,'pass'
 end program P

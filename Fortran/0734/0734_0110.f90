@@ -32,7 +32,7 @@ subroutine read_data (u, p, n, m)
       do i=i1,m-1
          allocate (p(i)%r(0:M2-1),stat=rc);  call check(1,rc)
 
-         do j=0,M2-1       
+         do j=0,M2-1
             read(u,"(a)",iostat=rc) p(i)%r(j)
 
             if (rc < 0) return
@@ -280,8 +280,8 @@ program main
       write(*,"(a,f10.3,a)") "elapsed time:", eth(m), " sec"
       write(*,"(i8,4x,a)")  (i, recval(p,i), i=1,n,n/4)
 
-      call purge(p) 
-   end do   
+      call purge(p)
+   end do
    write(*,"(//a)") "Reading file using the REALLOCATE method"
 
    m = 0
@@ -313,7 +313,7 @@ program main
       deallocate (pp)
    end do
 
-   write(12,"((i8,2(4x,i8,2f9.3)))")   &
+   write(56,"((i8,2(4x,i8,2f9.3)))")   &
       (dlenh(i), plenh(i), cth(i), eth(i), plena(i), cta(i), eta(i), i=1,m)
 
 contains

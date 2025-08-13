@@ -7,17 +7,17 @@
          aa='abc'
          ii=777
          sub0=0.0
-         rr = sub1() 
+         rr = sub1()
        end function
        function sub1()
         namelist /xyz/ aa,ii
-         write(20,nml=xyz) 
+         write(25,nml=xyz)
          sub1=0.0
        end function
       end module
 
       program main
        use mod
-        rr = sub0() 
+        rr = sub0()
         print *,'pass'
       end program

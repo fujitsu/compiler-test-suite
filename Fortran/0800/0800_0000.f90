@@ -23,7 +23,7 @@ program main
 
   use test_module2
   implicit none
-  write(1,*) 'test'
+  write(10,*) 'test'
 print *,'pass'
 
 end program

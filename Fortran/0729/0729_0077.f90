@@ -6,13 +6,13 @@ program WhereStruct
    where ( vec > 0 )
       a(vec) = vec
    end where
-   write(1,*) a
+   write(113,*) a
    a = 0
    vec = (/ 3,0,6,0,5,2 /)
    where ( vec > 0 )
       a(vec) = vec
    end where
-   write(1,*) a
+   write(113,*) a
   print *,'pass'
    stop
 end program WhereStruct

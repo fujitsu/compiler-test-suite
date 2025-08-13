@@ -9,7 +9,7 @@ module m0
  end interface
  contains
    subroutine ss(k1)
-write(1,*) k1
+write(2,*) k1
    end
 end
 submodule (m0) smod
@@ -28,12 +28,12 @@ end
 use m0
 call s1(ss)
 call s2(ss,ss)
-rewind 1
-read(1,*) k
+rewind 2
+read(2,*) k
 if(k/=100) print *,1001
-read(1,*) k
+read(2,*) k
 if(k/=200) print *,1002
-read(1,*) k
+read(2,*) k
 if(k/=300) print *,1003
 print *,'pass'
 end

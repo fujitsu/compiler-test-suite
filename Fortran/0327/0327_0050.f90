@@ -5,7 +5,7 @@ p=>t
 t=10
 t(d)=20
 call sub(t,t)
-write(1,*) t
+write(7,*) t
 print *,'pass'
 contains
 

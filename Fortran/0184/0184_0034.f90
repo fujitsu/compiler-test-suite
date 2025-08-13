@@ -44,11 +44,11 @@ if (a25(1,1)%z(1)/=1) print *,605
   k33=n
   k34=n
   k35=n
-write(1,'(z16.16)')loc(k32)
-write(1,'(z16.16)')loc(k31)
-write(1,'(z16.16)')loc(k33)
-write(1,'(z16.16)')loc(k34)
-write(1,'(z16.16)')loc(k35)
+write(28,'(z16.16)')loc(k32)
+write(28,'(z16.16)')loc(k31)
+write(28,'(z16.16)')loc(k33)
+write(28,'(z16.16)')loc(k34)
+write(28,'(z16.16)')loc(k35)
 n=n+1
 if (n<2) call ss(n)
 n=n-1

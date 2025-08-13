@@ -19,9 +19,9 @@
      use mod
       i=1
       j=3
-      write(1,'(2i4)') i,j
-      rewind(1)
-      read (1,'(2i4)') i,j
+      write(34,'(2i4)') i,j
+      rewind(34)
+      read (34,'(2i4)') i,j
       call sub(i,j)
       if (i/=64) print *,'error i ->',i
       print *,'pass'

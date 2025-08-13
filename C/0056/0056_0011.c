@@ -30,6 +30,7 @@ int main()
 #ifdef _OPENMP
     omp_set_dynamic (1);
     ld=omp_get_dynamic();
+    omp_set_dynamic(0) ;
 #endif
 
     printf( " omp_get_dynamic=%u \n",ld);

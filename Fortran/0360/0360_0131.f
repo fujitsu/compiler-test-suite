@@ -16,19 +16,19 @@
       do i=1,16
          i4a(i) = dim(i4b(i),2)
       enddo
-      write(1,*)
+      write(2,*)
       do i=1,16
          i8a(i) = dim(i8b(i),2)
       enddo
-      write(1,*)
+      write(2,*)
       do i=1,16
          r4a(i) = dim(r4b(i),2.0)
       enddo
-      write(1,*)
+      write(2,*)
       do i=1,16
          r8a(i) = dim(r8b(i),2.0)
       enddo
-      write(1,*)
+      write(2,*)
 
       do i=1,16
          if (i4a(i).ne.res1(i) .or.
@@ -47,19 +47,19 @@
       do i=1,16
          i4a(i) = dim(i4b(i),-2)
       enddo
-      write(1,*)
+      write(2,*)
       do i=1,16
          i8a(i) = dim(i8b(i),-2)
       enddo
-      write(1,*)
+      write(2,*)
       do i=1,16
          r4a(i) = dim(r4b(i),-2.0)
       enddo
-      write(1,*)
+      write(2,*)
       do i=1,16
          r8a(i) = dim(r8b(i),-2.0)
       enddo
-      write(1,*)
+      write(2,*)
 
       do i=1,16
          if (i4a(i).ne.res2(i) .or.

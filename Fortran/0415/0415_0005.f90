@@ -25,7 +25,7 @@ program main
   type (ty) :: v(3)
   integer :: wint=123
   character(len=3) :: wch='abc'
-  open(10,file="fort.9999",status="replace",form="formatted",delim='quote')
+  open(10,file="fort.44",status="replace",form="formatted",delim='quote')
 
   do i=1,3
     do j=1,3

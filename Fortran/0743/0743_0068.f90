@@ -7,7 +7,7 @@ call chk1(d)
 contains
  subroutine chk1(b)
  real(4),dimension(:)::b
- write(1,*)'test'
+ write(33,*)'test'
  if (any(shape(b)/=(/0/)))write(6,*) "NG"
  end subroutine
 end

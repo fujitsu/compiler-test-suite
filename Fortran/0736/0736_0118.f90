@@ -26,7 +26,7 @@ end do
  do j=1,i
  if(x(j)%x1/=1)write(6,*) "NG"
  if(.not.allocated(x(j)%x2))write(6,*) "NG"
-write(1,*)loc(x(5)%x2)
+write(19,*)loc(x(5)%x2)
  if(any(x(j)%x2/=(/1,2/)))write(6,*) "NG"
  if(x(j)%x3/=3)write(6,*) "NG"
 end do

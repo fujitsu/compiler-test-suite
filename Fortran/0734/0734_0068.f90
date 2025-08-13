@@ -16,9 +16,9 @@
          ENDIF
          BAR = .TRUE.
       END DO
-      WRITE (1,*) BASIC
-      rewind 1
-      read(1,*) v
+      WRITE (30,*) BASIC
+      rewind 30
+      read(30,*) v
       if (any(v.neqv.(/F,T,T,T,T,F,F,F,F,F/)))print *,'error'
       if (JJI2/=2)print *,'error-2'
       print *,'pass'

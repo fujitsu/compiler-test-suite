@@ -15,8 +15,8 @@ contains
     integer, intent(out)        :: iostat
     character(*), intent(inout) :: iomsg
 
-    read(10,*) dtv%xi1
-    read(10,*) dtv%xi2
+    read(14,*) dtv%xi1
+    read(14,*) dtv%xi2
 iostat=0
 
   end subroutine rform
@@ -26,20 +26,20 @@ program main
   use m
   type (ty) :: t1
 
-write(10,*) 54321
-write(10,*)1234567
-rewind 10
+write(14,*) 54321
+write(14,*)1234567
+rewind 14
 
-  read(10,*) t1
-  close(10)
+  read(14,*) t1
+  close(14)
 
-  write(1,*) t1
+  write(15,*) t1
 print *,'pass'
 call chk
 end program main
 subroutine chk
 integer c(2)
-rewind 1
-read(1,*)c
+rewind 15
+read(15,*)c
 if (any(c/=[54321,1234567])) print *,102
 end

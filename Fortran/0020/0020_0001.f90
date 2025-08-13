@@ -1,4 +1,4 @@
-write(1,*)1
+write(2,*)1
 call s
 print *,'pass'
 contains

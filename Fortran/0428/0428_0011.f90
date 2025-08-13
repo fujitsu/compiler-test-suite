@@ -9,7 +9,7 @@ MODULE MOD06
 CONTAINS
   SUBROUTINE SUB06()
     IMPLICIT NONE
-    write(1,*) "06"
+    write(9,*) "06"
   END SUBROUTINE SUB06
 END MODULE MOD06
 
@@ -27,8 +27,8 @@ END SUBROUTINE SELECT_TYPE06
 
 PROGRAM MAIN
   CALL SELECT_TYPE06()
-rewind 1
-read(1,*) k
+rewind 9
+read(9,*) k
 if (k/=6) print *,101
   print *, "pass"
 END PROGRAM MAIN

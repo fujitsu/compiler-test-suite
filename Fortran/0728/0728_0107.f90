@@ -24,15 +24,15 @@ subroutine sp1(b,bb,bbb)
    allocate(b(3)%y_n(3)%y_n(3)%x(3))
    b(3)%y_n(3)%y_n(3)%x =(/3,13,23/)
    nullify(b(3)%y_n(3)%y_n(3)%y_n)
-   b(3)%y_n(3)%y_n(3)%y_b => b(3)%y_n 
+   b(3)%y_n(3)%y_n(3)%y_b => b(3)%y_n
    bb=>b
- write(1,*)b(3)%x
- write(1,*)b(3)%y_n(3)%x
- write(1,*)b(3)%y_n(3)%y_n(3)%x
- write(1,*)b(3)%y_n(3)%y_n(3)%y_b(3)%x
- write(1,*)b(3)%y_n(3)%y_n(3)%y_b(3)%y_b(3)%x
- write(1,*)bb(3)%x
- write(1,*)'=='
+ write(21,*)b(3)%x
+ write(21,*)b(3)%y_n(3)%x
+ write(21,*)b(3)%y_n(3)%y_n(3)%x
+ write(21,*)b(3)%y_n(3)%y_n(3)%y_b(3)%x
+ write(21,*)b(3)%y_n(3)%y_n(3)%y_b(3)%y_b(3)%x
+ write(21,*)bb(3)%x
+ write(21,*)'=='
  call chk01(b(3)%x,(/1,11,21/))
  call chk01(b(3)%y_n(3)%x,(/2,12,22/))
  call chk01(b(3)%y_n(3)%y_n(3)%x,(/3,13,23/))
@@ -50,8 +50,8 @@ subroutine sp1(b,bb,bbb)
  call chk033(a(b(3)%y_n(3)%y_n(3)%x,b(3)%y_n(3)%y_n(3)%y_n,b(3)%y_n(3)%y_n(3)%y_b),(/3,13,23/))
  call chk04(a(b(3)%x,b,bb),(/1,11,21/))
    call sub(b(3)%y_n)
- write(1,*)b(3)%x
- write(1,*)b(3)%y_n(3)%x
+ write(21,*)b(3)%x
+ write(21,*)b(3)%y_n(3)%x
 call chk(bbb)
      contains
  subroutine chk04(i1,i2)
@@ -100,17 +100,17 @@ if (any(i1(3)%x/=i2))write(6,*) "NG"
 end subroutine
 subroutine chk(i)
 integer,pointer::i(:)
-rewind 1
-read(1,*)i;if (any(i/=(/1,11,21/)))write(6,*) "NG"
-read(1,*)i;if (any(i/=(/2,12,22/)))write(6,*) "NG"
-read(1,*)i;if (any(i/=(/3,13,23/)))write(6,*) "NG"
-read(1,*)i;if (any(i/=(/2,12,22/)))write(6,*) "NG"
-read(1,*)i;if (any(i/=(/1,11,21/)))write(6,*) "NG"
-read(1,*)i;if (any(i/=(/1,11,21/)))write(6,*) "NG"
-read(1,*)
-read(1,*)i;if (any(i/=(/1,11,21/)))write(6,*) "NG"
-read(1,*)i;if (any(i/=(/3,13,23/)))write(6,*) "NG"
-read(1,*,end=1)i
+rewind 21
+read(21,*)i;if (any(i/=(/1,11,21/)))write(6,*) "NG"
+read(21,*)i;if (any(i/=(/2,12,22/)))write(6,*) "NG"
+read(21,*)i;if (any(i/=(/3,13,23/)))write(6,*) "NG"
+read(21,*)i;if (any(i/=(/2,12,22/)))write(6,*) "NG"
+read(21,*)i;if (any(i/=(/1,11,21/)))write(6,*) "NG"
+read(21,*)i;if (any(i/=(/1,11,21/)))write(6,*) "NG"
+read(21,*)
+read(21,*)i;if (any(i/=(/1,11,21/)))write(6,*) "NG"
+read(21,*)i;if (any(i/=(/3,13,23/)))write(6,*) "NG"
+read(21,*,end=1)i
 write(6,*) "NG"
 return
 1 end subroutine

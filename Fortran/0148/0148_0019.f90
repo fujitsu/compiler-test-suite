@@ -3,9 +3,9 @@
     CHARACTER(1),INTENT(out):: c2(k,k+1,k+2)
     CHARACTER(1),INTENT(out):: c3(k,k+1,k+2)
      call set(c1,c2,c3)
-write(1,*) c1
-write(1,*) c2
-write(1,*) c3
+write(9,*) c1
+write(9,*) c2
+write(9,*) c3
 contains
 subroutine set(c1,c2,c3)
 character(*)::c1(:,:,:),c2(:,:,:),c3(:,:,:)

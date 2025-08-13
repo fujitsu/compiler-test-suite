@@ -11,6 +11,7 @@ END MODULE manager_module
 program main
    use manager_module
    implicit none
+   save
    type(Ref), dimension(5555) :: Changes
    call sort_files (Changes)
 print *,'pass'

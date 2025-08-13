@@ -24,22 +24,22 @@ program main
   use m
   type (ty) :: t1
 
-  open(10,file="fort.9999")
+  open(10,file="fort.54")
 call init
   read(10,*) t1
 
-  write(1,*) t1
+  write(25,*) t1
 call chk
   close(10)
 print *,'pass'
 end program main
 subroutine chk
 integer c
-rewind 1
-read(1,*)c
+rewind 25
+read(25,*)c
 if (   (c/=987)) print *,102
 end
 subroutine init
-write(10,*) 987 
+write(10,*) 987
 rewind 10
 end

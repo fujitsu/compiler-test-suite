@@ -11,7 +11,7 @@ x%yy='0'
 y%yy='0'
 call sub(x,x)
   print *,'pass'
-  write(1,*) 'ng',x%yy,y%yy
+  write(12,*) 'ng',x%yy,y%yy
 end
 
 subroutine sub(a,b)

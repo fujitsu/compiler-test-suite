@@ -7,9 +7,9 @@ r=>t
 end
 end
 use m1
-write(1,*) 1
-rewind 1
-read(1,*) f()
+write(18,*) 1
+rewind 18
+read(18,*) f()
 if (t/=1) print *,101
 print *,'pass'
 end

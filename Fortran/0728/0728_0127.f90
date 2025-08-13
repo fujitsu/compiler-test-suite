@@ -22,7 +22,7 @@ subroutine cc
            I2/4,5,6/,&
            I3/7,8,9/
       EQUIVALENCE  (IJ(1),I1),(IJ(4),I2),(IJ(7),I3)
-      WRITE(1,*) IJ,I1(3),I2(3),I3(3)
+      WRITE(35,*) IJ,I1(3),I2(3),I3(3)
       if (any(IJ/=(/1,2,3,4,5,6,7,8,9/)))write(6,*) "NG"
       if (any((/I1,I2,I3/)/=(/1,2,3,4,5,6,7,8,9/)))write(6,*) "NG"
 end subroutine cc
@@ -36,7 +36,7 @@ subroutine ccc
            I2/4,5,6/,&
            I3/7,8,9/
       EQUIVALENCE  (IJ(1),I1),(IJ(4),I2),(IJ(7),I3)
-      WRITE(1,*) IJ,I1(3),I2(3),I3(3)
+      WRITE(35,*) IJ,I1(3),I2(3),I3(3)
       if (any(IJ/=(/1,2,3,4,5,6,7,8,9/)))write(6,*) "NG"
       if (any((/I1,I2,I3/)/=(/1,2,3,4,5,6,7,8,9/)))write(6,*) "NG"
 end subroutine ccc
@@ -50,7 +50,7 @@ subroutine cccc
            I2/4,5,6/,&
            I3/7,8,9/
       EQUIVALENCE  (IJ(1),I1),(IJ(4),I2),(IJ(7),I3)
-      WRITE(1,*) IJ,I1(3),I2(3),I3(3)
+      WRITE(35,*) IJ,I1(3),I2(3),I3(3)
       if (any(IJ/=(/1,2,3,4,5,6,7,8,9/)))write(6,*) "NG"
       if (any((/I1,I2,I3/)/=(/1,2,3,4,5,6,7,8,9/)))write(6,*) "NG"
 end subroutine cccc
@@ -61,12 +61,12 @@ subroutine s1
  call bb
  call bbb
  call bbbb
- rewind 1
-  read(1,*)a
+ rewind 35
+  read(35,*)a
       if (any(a/=(/1,2,3,4,5,6,7,8,9/)))write(6,*) "NG"
-  read(1,*)a
+  read(35,*)a
       if (any(a/=(/1,2,3,4,5,6,7,8,9/)))write(6,*) "NG"
-  read(1,*)a
+  read(35,*)a
       if (any(a/=(/1,2,3,4,5,6,7,8,9/)))write(6,*) "NG"
 
  end

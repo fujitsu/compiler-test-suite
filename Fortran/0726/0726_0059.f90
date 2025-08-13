@@ -16,13 +16,13 @@
    namelist /a/i
   call xx
   call yy
-  rewind 1
-  read(1,a)
+  rewind 4
+  read(4,a)
   if (i/=2)write(6,*) "NG"
     contains
       subroutine yy
         use m1
-        write(1,a)
+        write(4,a)
         i=3
       end subroutine
  end

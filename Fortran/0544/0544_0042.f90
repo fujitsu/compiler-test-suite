@@ -5,7 +5,7 @@ type base
 end type
 contains
 subroutine prc1()
-  write(3,*)100
+  write(17,*)100
 end subroutine
 end
 module mmm
@@ -43,7 +43,7 @@ private
 public::ext
 contains
 subroutine cproc1()
-  write(1,*)400
+  write(16,*)400
 end subroutine
 end module
 
@@ -55,13 +55,13 @@ class(e),allocatable::tc1
 allocate(tc0,tc1)
 call tc0%prc1()
 call tc1%prc1()
-rewind 1
-read(1,*) k
+rewind 16
+read(16,*) k
 if (k/=400) print *,200
-rewind 3
-read(3,*) k
+rewind 17
+read(17,*) k
 if (k/=100) print *,100
-read(3,*,end=100) k
+read(17,*,end=100) k
 print *,1000
 100 continue
 print *,'pass'

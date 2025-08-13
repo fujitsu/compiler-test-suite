@@ -1,0 +1,110 @@
+C
+      IMPLICIT  INTEGER*2 (I,K), INTEGER*4 (J)
+      COMMON ITEM,GYOCNT
+      DIMENSION  IWK(33000), IC(234)
+      DATA K1,K2,K3,K4,K5,K6,K7,K8,K9,K10,KK1/1,2,3,4,5,6,7,8,9,10,1/
+C
+C
+      II2=234
+      CALL INJINT(II2)
+      J1=32900
+      J2=87
+      J3=88
+      J4=40090
+      J5=7100
+      J6=1031
+      J7=32
+      J8=98979
+      J9=3
+      J10=40997
+      J11=1
+      JJ=32766
+      R1=32900.3
+      R2=89.2
+      R3=46000.5
+      R4=13009.2
+C
+      DO 111  K=1,220
+      IC(K)=K+1
+  111 CONTINUE
+      IC(221)=10
+      IC(222)=5
+      IC(223)=2
+      IC(224)=7
+      IC(225)=48
+      IC(226)=2
+      IC(227)=2
+      IC(228)=6
+      IC(229)=10
+      IC(230)=63
+      IC(231)=5
+      IC(232)=20
+      IC(233)=9
+      IC(234)=25
+C
+C
+      DO 222  J=32767,32986
+      IWK(J)=KK1+1
+      KK1=IWK(J)
+  222 CONTINUE
+      IWK(J1+J2)=K1*K10
+      IWK(J1+J3)=K1+K4
+      IWK(INT(R1+R2))=K10/K5
+      IWK(J4-J5)=K3+K4
+      IWK(INT(R3-R4))=K8*K6
+      IWK(J6*J7)=K9-K7
+      IWK(J8/J9)=K3-K1
+      IWK(J9+32991)=K1+K2+K3
+      IWK(INT(J8-65983.3))=K1+K2+K3+K4
+      IWK(INT(J10-8000.3))=K7*K9
+      IWK(32997*J11)=K10-K5
+      IWK(10000+22998)=K4*K5
+      IWK(INT(32900+99.9))=K10-K9+K8
+      IWK(33000)=K1+K5+K9+K10
+C
+C
+C
+      DO 333 K=1,234
+      JJ=JJ+1
+      CALL INJI(IWK(JJ),IC(K),234)
+  333 CONTINUE
+      STOP
+      END
+      SUBROUTINE  INJINT (ITMMAX)
+C
+      IMPLICIT INTEGER*2 (I,G)
+      COMMON ITEM,GYOCNT
+      CHARACTER*8   ERROR,OK,TEXT
+      DATA     ERROR, OK/ '*ERROR* ', ' *OK*   '/
+C
+      WRITE(6,300)
+      ITEM=1
+      ITMMAX=234
+      III=0
+      GO TO 999
+C
+      ENTRY  INJI(I1,I2,ITMMAX)
+      TEXT=ERROR
+      IDIFF=I1-I2
+      IF(IDIFF.LT.0) IDIFF=III-IDIFF
+      IF(IDIFF.EQ.0)  TEXT=OK
+      WRITE(6,310) ITEM,TEXT,I1,I2,IDIFF
+      GYOCNT=GYOCNT+2
+      ITEM=ITEM+1
+      IF(ITEM.LE.ITMMAX) GO TO 700
+      WRITE(6,390)
+      STOP
+  700 IF(GYOCNT.LE.50)  RETURN
+C
+C
+      WRITE(6,400)
+  999 WRITE(6,380)
+      GYOCNT=0
+      RETURN
+  300 FORMAT(1H1,/ 7X,25H*FORTRAN*          ENTER , //// )
+  310 FORMAT(1H+,6X,1H(,I3,1H),8X,A8,8X,3(27X,I5), // )
+  380 FORMAT(1H+,4X,8H- ITEM -,5X,11H- JUSTICE -,21X,18H- COMPUTED VALUE
+     1 -,15X,17H- COMPARE VALUE -,18X,14H- DIFFERENCE -, /// )
+  390 FORMAT(1H+,6X,24H*FORTRAN*          EXIT )
+  400 FORMAT(1H1,/////)
+      END

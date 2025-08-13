@@ -24,7 +24,7 @@ IMPLICIT NONE
     SUBROUTINE ty0_array_dest( dmy )
       IMPLICIT NONE
       TYPE(ty0), INTENT(INOUT):: dmy(:)
-      write(1,*),900,dmy%ii
+      write(2,*),900,dmy%ii
     END SUBROUTINE ty0_array_dest
 
     SUBROUTINE ty1_scalar_dest( dmy )
@@ -35,7 +35,7 @@ IMPLICIT NONE
     SUBROUTINE ty1_array_dest( dmy )
       IMPLICIT NONE
       TYPE(ty1), INTENT(INOUT):: dmy(:)
-      write(1,*)800,dmy%jj
+      write(2,*)800,dmy%jj
     END SUBROUTINE ty1_array_dest
 END MODULE mod1
 
@@ -66,27 +66,27 @@ END PROGRAM MAIN
 
 subroutine chk
 integer::r(5)
-rewind 1
-read(1,*) k;if (k/=800) print *,300
-read(1,*) k
-read(1,*) k
-read(1,*,end=10) k
-rewind 1
-read(1,*) r ; if (any(r/=[800,300,400,100,100])) print *,10001
-read(1,*) r(:3) ; if (any(r(:3)/=[800,300,400])) print *,10002
-read(1,*) r(:3) ; if (any(r(:3)/=[800,300,400])) print *,10003
-read(1,*) r ; if (any(r/=[800,300,400,100,100])) print *,10004
-read(1,*) r(:3) ; if (any(r(:3)/=[800,300,400])) print *,10005
-read(1,*) r(:3) ; if (any(r(:3)/=[800,300,400])) print *,10006
-read(1,*) r(:3) ; if (any(r(:3)/=[900,500,500])) print *,10007
-read(1,*) r(:3) ; if (any(r(:3)/=[900,600,600])) print *,10008
-read(1,*) r(:3) ; if (any(r(:3)/=[900,500,500])) print *,10009
-read(1,*) r(:3) ; if (any(r(:3)/=[900,600,600])) print *,10010
+rewind 2
+read(2,*) k;if (k/=800) print *,300
+read(2,*) k
+read(2,*) k
+read(2,*,end=10) k
+rewind 2
+read(2,*) r ; if (any(r/=[800,300,400,100,100])) print *,10001
+read(2,*) r(:3) ; if (any(r(:3)/=[800,300,400])) print *,10002
+read(2,*) r(:3) ; if (any(r(:3)/=[800,300,400])) print *,10003
+read(2,*) r ; if (any(r/=[800,300,400,100,100])) print *,10004
+read(2,*) r(:3) ; if (any(r(:3)/=[800,300,400])) print *,10005
+read(2,*) r(:3) ; if (any(r(:3)/=[800,300,400])) print *,10006
+read(2,*) r(:3) ; if (any(r(:3)/=[900,500,500])) print *,10007
+read(2,*) r(:3) ; if (any(r(:3)/=[900,600,600])) print *,10008
+read(2,*) r(:3) ; if (any(r(:3)/=[900,500,500])) print *,10009
+read(2,*) r(:3) ; if (any(r(:3)/=[900,600,600])) print *,10010
 return
 10 continue
-rewind 1
-read(1,*) r(:3) ; if (any(r(:3)/=[800,300,400])) print *,20002
-read(1,*) r(:3) ; if (any(r(:3)/=[900,500,500])) print *,20004
-read(1,*) r(:3) ; if (any(r(:3)/=[900,600,600])) print *,20005
+rewind 2
+read(2,*) r(:3) ; if (any(r(:3)/=[800,300,400])) print *,20002
+read(2,*) r(:3) ; if (any(r(:3)/=[900,500,500])) print *,20004
+read(2,*) r(:3) ; if (any(r(:3)/=[900,600,600])) print *,20005
 end
 

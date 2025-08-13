@@ -7,9 +7,9 @@ sequence
 end type
 type(x),intent(out):: v(k)
      call set(v)
-write(1,*) v(k)%c1
-write(1,*) v(k)%c2
-write(1,*) v(k)%c3
+write(12,*) v(k)%c1
+write(12,*) v(k)%c2
+write(12,*) v(k)%c3
 contains
 subroutine set(v)
 type(x):: v(k)

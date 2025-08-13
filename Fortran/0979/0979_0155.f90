@@ -17,8 +17,7 @@ function  iop(iii)  result(res)
  integer :: iii
  integer :: res
 
- open (unit=10, file='aa.dat',status='NEW')
+ open (unit=10, file='aa2.dat',status='NEW')
  res=iii
 
 end function
-

@@ -32,7 +32,7 @@ endif
   if (allocated(v%a1)) print *,103
   allocate(v%a1(1),source=-1+n*100)
    if (ip_save== loc(v%a1)) then
-     write(1,'(z16.16)' ) loc(v%a1)  
+     write(2,'(z16.16)' ) loc(v%a1)  
    endif
    contains
     elemental function f() result(r)

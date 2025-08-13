@@ -11,7 +11,7 @@ module m
   end interface
 contains
   module procedure sub
-    if (x/=2) write(1,*)101
+    if (x/=2) write(2,*)101
   end procedure
 end
 

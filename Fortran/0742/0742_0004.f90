@@ -71,12 +71,12 @@ end module E20_M
     call Create_Queue( Queue )
     call writex
     do
-      read (1, *) Op
+      read (7, *) Op
       select case (Op)
       case (0)
         exit
       case (1)
-          read (1, *) Item
+          read (7, *) Item
           call Enqueue( Queue, Item )
           write (11, *) " Enqueued: ", Item
       end select
@@ -87,8 +87,8 @@ print *,'pass'
 subroutine dummy
 end
 subroutine writex
-write(1,*) '1'
-write(1,*) 'a'
-write(1,*) '0'
-rewind 1
+write(7,*) '1'
+write(7,*) 'a'
+write(7,*) '0'
+rewind 7
 end

@@ -13,14 +13,14 @@ interface gen
 end interface
 x=       gen( sub )
 call x%e1
-rewind 1
-read(1,*) n
+rewind 40
+read(40,*) n
 if (n/=2) print *,10001
 print *,'pass'
 end
 
   subroutine sub
-   write(1,*) 2
+   write(40,*) 2
   end
   function s1( d )
    print *,'called : s1'

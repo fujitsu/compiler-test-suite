@@ -19,7 +19,7 @@ contains
   subroutine sub2
     call set
     call test
-    write(1,*) 'test_module2'
+    write(2,*) 'test_module2'
   end subroutine sub2
 
 end module test_module2
@@ -28,7 +28,7 @@ program main
 
   use test_module2
   implicit none
-  write(1,*) 'test'
+  write(2,*) 'test'
   call sub2()
 if (n/=1) print *,101
 print *,'pass'

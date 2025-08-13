@@ -15,20 +15,20 @@ print *,'pass'
 end
  subroutine a(x)
   integer,external :: x
-  write(1,*) x(1)
+  write(20,*) x(1)
  end subroutine a
  subroutine b(x)
   real,external :: x
-  write(1,*) x(2)
+  write(20,*) x(2)
  end subroutine b
 subroutine chk
-rewind 1
-read(1,*) i;if (i/=1)print *,'error-1'
-read(1,*) a;if (abs(a-2)>0.0001)print *,'error-2'
+rewind 20
+read(20,*) i;if (i/=1)print *,'error-1'
+read(20,*) a;if (abs(a-2)>0.0001)print *,'error-2'
 end
 integer function x(i)
 x=i
-end 
+end
 real function y(i)
 y=i
-end 
+end

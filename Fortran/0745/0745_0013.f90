@@ -3,9 +3,9 @@
   end type
   type(x1)::xx2(2)
   xx2(2)%i=1
-  write(1,*)xx2(2)
-  rewind 1
-  read(1,*) j
+  write(10,*)xx2(2)
+  rewind 10
+  read(10,*) j
   if (j/=1)print *,'error'
   print *,'pass'
   end

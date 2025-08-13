@@ -2,7 +2,7 @@ i1=100
 !$omp parallel default(none)
 !$omp do 
          do i1=1,1
-write(100,*) (1,i3=1,1)
+write(101,*) (1,i3=1,1)
          end do
 !$omp end do
 !$omp critical

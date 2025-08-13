@@ -53,13 +53,13 @@ program main
     i = 1
     k = 2
 
-    write(unit=1,fmt="(A,2F8.2)") "x,y before swap: ", x,y
+    write(unit=12,fmt="(A,2F8.2)") "x,y before swap: ", x,y
     call swap( x, y )
-    write(unit=1,fmt="(A,2F8.2)") "x,y after  swap: ", x,y
+    write(unit=12,fmt="(A,2F8.2)") "x,y after  swap: ", x,y
 
-    write(unit=1,fmt="(A,2I8.2)") "i,k before swap: ", i,k
+    write(unit=12,fmt="(A,2I8.2)") "i,k before swap: ", i,k
     call swap( i, k )
-    write(unit=1,fmt="(A,2I8.2)") "i,k after  swap: ", i,k
+    write(unit=12,fmt="(A,2I8.2)") "i,k after  swap: ", i,k
 
 print *,'pass'
     stop

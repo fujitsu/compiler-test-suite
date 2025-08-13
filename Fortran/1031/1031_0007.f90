@@ -8,11 +8,11 @@
      call random_seed(get=istart(1:k))
      call random_seed(put=istart(1:k))
      write(99,30) istart(1:k)
-     write(1,30) istart(1:k)
+     write(7,30) istart(1:k)
      call random_number(Z)
      write(row_1,10) Z(1:4)
      write(99,20) 1, row_1
-     write(1,20) 1, row_1
+     write(7,20) 1, row_1
      call flush(1)
      do i=2, imax
         call random_number(Z)
@@ -26,7 +26,7 @@
         write(row_i,10) Z(1:4)
         if (row_i == row_1) then
            write(*,20) i, row_i
-           write(1,20) i, row_i
+           write(7,20) i, row_i
            call flush(1)
         end if
      end do

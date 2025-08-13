@@ -31,26 +31,25 @@ at(::2,::2,::2,::2)=cmplx(reshape((/(i,i=1,2*3*4*5)/),(/2,3,4,5/)),&
 !
  call sa(f1(a1+a1,a1*3),5)
  call s(f1(a1+a1,a1*3),a11);call sa(a11,5);a11=0
- write(11,*)f1(a1+a1,a1*3)
- rewind 11;read (11,*) a11;call sa(a11,5);a11=0
+ write(30,*)f1(a1+a1,a1*3)
+ rewind 30;read (30,*) a11;call sa(a11,5);a11=0
 !
  call sa(f1(a1+a1,a1*3)+f1(a1+a1,a1*3),10)
  call s(f1(a1+a1,a1*3)+f1(a1+a1,a1*3),a11);call sa(a11,10);a11=0
- write(12,*)f1(a1+a1,a1*3)+f1(a1+a1,a1*3)
- rewind 12;read (12,*) a11;call sa(a11,10);a11=0
+ write(31,*)f1(a1+a1,a1*3)+f1(a1+a1,a1*3)
+ rewind 31;read (31,*) a11;call sa(a11,10);a11=0
 !
  call sa(f1(f1(a1+a1,a1*3),f1(a1+a1,a1*3)),10)
  call s(f1(f1(a1+a1,a1*3),f1(a1+a1,a1*3)),a11);call sa(a11,10);a11=0
- write(13,*)f1(f1(a1+a1,a1*3),f1(a1+a1,a1*3))
- rewind 13;read (13,*) a11;call sa(a11,10);a11=0
+ write(32,*)f1(f1(a1+a1,a1*3),f1(a1+a1,a1*3))
+ rewind 32;read (32,*) a11;call sa(a11,10);a11=0
 !
  call sa(f1(f1(a1+a1,a1*3)+f1(a1+a1,a1*3),&
             f1(a1+a1,a1*3)+f1(a1+a1,a1*3)),20)
  call s(f1(f1(a1+a1,a1*3)+f1(a1+a1,a1*3),&
             f1(a1+a1,a1*3)+f1(a1+a1,a1*3)),a11);call sa(a11,20);a11=0
- write(14,*)&
+ write(33,*)&
         f1(f1(a1+a1,a1*3)+f1(a1+a1,a1*3),&
             f1(a1+a1,a1*3)+f1(a1+a1,a1*3))
- rewind 14;read (14,*) a11;call sa(a11,20);a11=0
+ rewind 33;read (33,*) a11;call sa(a11,20);a11=0
  end
-

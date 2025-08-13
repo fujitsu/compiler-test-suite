@@ -22,10 +22,10 @@ c
 31610 format(1h+,9x,1h(, i3, 2h ),21x,e15.8,21x,e15.8,30x,e15.8 )
       data  rvar2,rvar4 / 15.1,16.1 /
           i9keyc = 2
-          rewind 1
-          write (1,90) rvar2,rvar4
+          rewind 16
+          write (16,90) rvar2,rvar4
    90     format(2f15.7)
-          endfile 1
+          endfile 16
 c
           read (5,*) ivar1,ivar2,ivar3
           i9ans1 = ivar1 + ivar2 + ivar3
@@ -71,9 +71,9 @@ c
 23402 write(6,31600) i9data,i9ans1,i9comp
 23502 i9ans1=0
 c
-          rewind 1
-          read (1,90) rvar2,rvar4
-          ivar5 = 1
+          rewind 16
+          read (16,90) rvar2,rvar4
+          ivar5 = 16
           read (ivar5,*,end=704)
           i9ans1 = 0
           go to 754
@@ -90,9 +90,9 @@ c
 23403 write(6,31600) i9data,i9ans1,i9comp
 23503 i9ans1=0
 c
-          rewind 1
-          read (1,90) rvar2,rvar4
-          read (1,*,end=705,err=755)
+          rewind 16
+          read (16,90) rvar2,rvar4
+          read (16,*,end=705,err=755)
   755     i9ans1 = 0
           go to 765
   705     i9ans1 = 1
@@ -108,8 +108,8 @@ c
 23404 write(6,31600) i9data,i9ans1,i9comp
 23504 i9ans1=0
 c
-          rewind 1
-          read (1,90) rvar2,rvar4
+          rewind 16
+          read (16,90) rvar2,rvar4
           read (ivar5,*,end=706,err=756) rvar3
   756     continue
   706     r9ans1 = rvar3 + 1.

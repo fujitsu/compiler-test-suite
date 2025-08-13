@@ -11,7 +11,7 @@ end module
 use mdef
 type(tdef2),pointer :: tt(:)
 integer::v(4)
-v=(/1,3,3,2/)
+v=(/1,3,4,2/)
 ii=2
 jj=2
 allocate(tt(2))

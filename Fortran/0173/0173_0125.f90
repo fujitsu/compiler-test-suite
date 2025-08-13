@@ -45,16 +45,16 @@ end subroutine
 end
 
      subroutine print1
-  write(1,*)1
+  write(14,*)1
      end subroutine
      subroutine print2
-  write(1,*)2
+  write(14,*)2
      end subroutine
 subroutine chk
-rewind 1
-read(1,*) k;if (k/=1) print *,301
-read(1,*) k;if (k/=1) print *,302
-read(1,*) k;if (k/=1) print *,303
-read(1,*) k;if (k/=1) print *,304
-read(1,*,end=10) k; print *,305
+rewind 14
+read(14,*) k;if (k/=1) print *,301
+read(14,*) k;if (k/=1) print *,302
+read(14,*) k;if (k/=1) print *,303
+read(14,*) k;if (k/=1) print *,304
+read(14,*,end=10) k; print *,305
 10 end

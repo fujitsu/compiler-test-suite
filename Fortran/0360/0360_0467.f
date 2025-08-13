@@ -7,7 +7,7 @@
          r4a(i)=r4b(i)+8.0_8
       enddo
 
-      write(1,*)
+      write(41,*)
 
       do i=1,10
          r8a(i)=r8b(i)+2.0_4

@@ -36,7 +36,7 @@ end do
 end subroutine
 end
 use m1
-write(1,'(a)') repeat('0',18)
+write(40,'(a)') repeat('0',18)
 allocate( z%a(k1,k2,k3+1,k4),z%b(k1,k2,k3+1,k4))
 z%a=reshape([(n,n=1,k1*k2*(k3+1)*k4)],[k1,k2,k3+1,k4])
 z%b=reshape([(n,n=1,k1*k2*(k3+1)*k4)],[k1,k2,k3+1,k4])
@@ -52,20 +52,20 @@ print *,'pass'
 end
  subroutine subcheck(x,k)
  if(k/=0) then
-  write(1,'(i1,1x,z16.16)') k,loc(x)
+  write(40,'(i1,1x,z16.16)') k,loc(x)
  endif 
  end subroutine
 subroutine subcheck2
 character(18)::r1,r,r2
 r2=''
-rewind 1
-read (1,'(a)') r1
+rewind 40
+read (40,'(a)') r1
 if (r1==repeat('0',18)) then
-read (1,'(a)',end=10) r
+read (40,'(a)',end=10) r
 r1=r
 endif
 do 
-read (1,'(a)',end=10) r
+read (40,'(a)',end=10) r
 if (r(3:)/=r1(3:)) then
   if (r2=='') then
     r2=r

@@ -7,16 +7,16 @@
        integer :: n,eof
        intrinsic associated
        allocate(root)
-        write(8,*) 3
-       rewind 8
-       read (8,*) root%num
-       write(10,*) 8
-       write(11,*) 1
-       write(12,*) 9
+        write(37,*) 3
+       rewind 37
+       read (37,*) root%num
+       write(38,*) 8
+       write(39,*) 1
+       write(40,*) 9
        ptr =>root
-       ii=10
-       do 
-         if (ii.eq.13) exit 
+       ii=38
+       do
+         if (ii.eq.41) exit
          rewind ii
          read (ii,*,iostat=eof) n
          ii =ii+1
@@ -27,7 +27,7 @@
        end do
        nullify(ptr%next)
        ptr=>root
-       do 
+       do
          write(*,*) ptr%num
          if (.not.associated(ptr%next)) exit
          ptr=>ptr%next

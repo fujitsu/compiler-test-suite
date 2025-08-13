@@ -20,61 +20,61 @@ contains
 subroutine test_regist( PHI )
     integer,target :: PHI(*)
 
-write(2,*)PHI(1:6)
-write(2,*)PHI(7:12)
-write(2,*)PHI(13:18)
+write(52,*)PHI(1:6)
+write(52,*)PHI(7:12)
+write(52,*)PHI(13:18)
 
 end subroutine
 subroutine test_regiss( PHI )
     integer,target :: PHI(*)
 
-write(1,*)PHI(1:6)
+write(15,*)PHI(1:6)
 
 end subroutine
 
 end
 subroutine chk2
 integer a(6)
-rewind 1
-read(1,*) a
+rewind 15
+read(15,*) a
 if (any(a/=(/1,2,3,7,8,9/)))write(6,*) "NG"
-read(1,*) a
+read(15,*) a
 if (any(a/=(/10,11,12,16,17,18/)))write(6,*) "NG"
-read(1,*) a
+read(15,*) a
 if (any(a/=(/19,20,21,25,26,27/)))write(6,*) "NG"
 end subroutine
 subroutine chk
 integer a(6)
-rewind 2
-read(2,*) a
+rewind 52
+read(52,*) a
 if (any(a/=(/1,2,3,7,8,9/)))write(6,*) "NG"
-read(2,*) a
+read(52,*) a
 if (any(a/=(/10,11,12,16,17,18/)))write(6,*) "NG"
-read(2,*) a
+read(52,*) a
 if (any(a/=(/19,20,21,25,26,27/)))write(6,*) "NG"
-read(2,*) a
+read(52,*) a
 if (any(a/=(/1,2,3,7,8,9/)))write(6,*) "NG"
-read(2,*) a
+read(52,*) a
 if (any(a/=(/10,11,12,16,17,18/)))write(6,*) "NG"
-read(2,*) a
+read(52,*) a
 if (any(a/=(/19,20,21,25,26,27/)))write(6,*) "NG"
-read(2,*) a
+read(52,*) a
 if (any(a/=(/1,2,3,7,8,9/)))write(6,*) "NG"
-read(2,*) a
+read(52,*) a
 if (any(a/=(/10,11,12,16,17,18/)))write(6,*) "NG"
-read(2,*) a
+read(52,*) a
 if (any(a/=(/19,20,21,25,26,27/)))write(6,*) "NG"
-read(2,*) a
+read(52,*) a
 if (any(a/=(/1,2,3,7,8,9/)))write(6,*) "NG"
-read(2,*) a
+read(52,*) a
 if (any(a/=(/10,11,12,16,17,18/)))write(6,*) "NG"
-read(2,*) a
+read(52,*) a
 if (any(a/=(/19,20,21,25,26,27/)))write(6,*) "NG"
-read(2,*) a
+read(52,*) a
 if (any(a/=(/1,2,3,7,8,9/)))write(6,*) "NG"
-read(2,*) a
+read(52,*) a
 if (any(a/=(/10,11,12,16,17,18/)))write(6,*) "NG"
-read(2,*) a
+read(52,*) a
 if (any(a/=(/19,20,21,25,26,27/)))write(6,*) "NG"
 end
 

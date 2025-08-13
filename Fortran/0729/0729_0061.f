@@ -1,5 +1,6 @@
       implicit complex*16 (a-c)
       implicit real*8 (d-h,k,o-z)
+      save
       parameter (pi=3.14159265358979323d0,ci=(0.0d0,1.0d0))
       parameter (xo=0.25d0,zo=0.2d0)
       parameter (fc=1.0d0,hz=25.0d0)

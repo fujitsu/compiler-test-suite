@@ -8,7 +8,7 @@
       c=a+1.0
       r=9999.0
       call sub1
-      write(1,*) r
+      write(4,*) r
       print *,'pass'
       stop
       contains

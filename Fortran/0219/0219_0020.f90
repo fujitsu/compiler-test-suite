@@ -23,19 +23,19 @@ if (a(3,2,1)%x1/=1) print *,203
 if (a(3,2,1)%x2/=1) print *,203
 if (a(3,2,1)%x3/=1) print *,203
 if (a(3,2,1)%x4/=1) print *,203
-write(2,*) a%x1
-write(2,*) a%x2
-write(2,*) a%x3
-write(2,*) a%x4
+write(27,*) a%x1
+write(27,*) a%x2
+write(27,*) a%x3
+write(27,*) a%x4
 
-rewind 2
-read(2,*) aa
+rewind 27
+read(27,*) aa
 if (aa(6)/=1) print *,403
-read(2,*) aa
+read(27,*) aa
 if (aa(6)/=1) print *,403
-read(2,*) aa
+read(27,*) aa
 if (aa(6)/=1) print *,403
-read(2,*) aa
+read(27,*) aa
 if (aa(6)/=1) print *,403
 print *,'pass'
 end

@@ -29,15 +29,15 @@ allocate (var )
  var%a%v=1
  var%c%v=[2,3]
 deallocate (var )
-rewind 1
-read(1,*) k;if (k/=1) print *,101
-read(1,*) k;if (k/=2) print *,102
-read(1,*) k;if (k/=3) print *,103
+rewind 2
+read(2,*) k;if (k/=1) print *,101
+read(2,*) k;if (k/=2) print *,102
+read(2,*) k;if (k/=3) print *,103
 print *,'pass'
 end
 subroutine su(v)
 use m
 integer,intent(in)::v
-write(1,*)v
+write(2,*)v
 f3=f3+1
 end subroutine

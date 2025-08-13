@@ -80,9 +80,9 @@ end
  use m1
  type(w),dimension(5) ::a=(/w('1'),w('0'),w('3'),w('4'),w('0')/),b=w('z'),c=w('z')
  k1=1;k5=5
- write(1)k1,k5,k5-1
- rewind 1
- read (1)k1,k5,k4
+ write(20)k1,k5,k5-1
+ rewind 20
+ read (20)k1,k5,k4
  forall (i=k1:k5-k4)
    where (a=='0')
     a=w('x')

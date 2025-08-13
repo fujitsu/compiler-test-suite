@@ -1,6 +1,6 @@
 real :: x=10,func
 r = func (x,x)
-write (1,*) r , x
+write (43,*) r , x
 print *,'pass'
 end
 

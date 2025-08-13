@@ -10,6 +10,6 @@ s=0
 do i=1,10
  s=s+i
 end do
-write(1,*) j+s
+write(27,*) j+s
 end subroutine
 end

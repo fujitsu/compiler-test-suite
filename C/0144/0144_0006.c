@@ -6,7 +6,8 @@
 #endif
 int main()
 {
-      char ca[5], cb[5], cc[5];
+      //char ca[5], cb[5], cc[5];
+      char ca[8], cb[8], cc[8];
       int  i;
       unsigned int ld;
       int  tp_debug = 0;
@@ -21,6 +22,8 @@ int main()
 	{
 	  printf("   tp miss\n");
 	}
+
+      omp_set_num_threads(4) ;
 #pragma omp parallel firstprivate(ca)
 {
 #ifdef _OPENMP

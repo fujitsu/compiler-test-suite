@@ -12,7 +12,7 @@ MODULE MOD_A
     END FUNCTION SUM
     SUBROUTINE DISP_SUM
         IMPLICIT NONE
-        write(1,*)'Last sum: ',B
+        write(105,*)'Last sum: ',B
         if (B/=3)write(6,*) "NG"
     END SUBROUTINE DISP_SUM
     REAL FUNCTION DIFF(INP1,INP2)
@@ -23,7 +23,7 @@ MODULE MOD_A
     END FUNCTION DIFF
     SUBROUTINE DISP_DIFF
         IMPLICIT NONE
-        write(1,*)'Last diff: ',C
+        write(105,*)'Last diff: ',C
         if (C/=-3)write(6,*) "NG"
     END SUBROUTINE DISP_DIFF
 END MODULE MOD_A
@@ -32,14 +32,14 @@ END MODULE MOD_A
     REAL :: Z1, Z2, Z3, Z4
     Z1 = 1.
     Z2 = 2.
-    write(1,*)'Global A:',A
+    write(105,*)'Global A:',A
         if (A/=75)write(6,*) "NG"
     Z3 = SUM(Z1,Z2)
-    write(1,*)'Z3 is:',Z3
+    write(105,*)'Z3 is:',Z3
         if (abs(Z3-(+3))>0.00001)write(6,*) "NG"
     CALL DISP_SUM
     Z4 = DIFF(Z1,Z2)
-    write(1,*)'Z4 is:',Z4
+    write(105,*)'Z4 is:',Z4
         if (abs(Z4-(-3))>0.00001)write(6,*) "NG"
     CALL DISP_DIFF
 print *,'pass'

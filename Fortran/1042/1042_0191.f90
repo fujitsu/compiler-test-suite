@@ -9,6 +9,6 @@ use m1
 namelist /nam/ i,x,j
 x=a(2,3)
 i=1;j=4
-write(1,nam)
+write(18,nam)
 print *,'pass'
 end

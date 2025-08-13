@@ -11,7 +11,7 @@
 
 
         DO I1=1,N
-        write(1,70)(A(I1,I2),I2=1,N)
+        write(18,70)(A(I1,I2),I2=1,N)
         END DO
 70      FORMAT(100(1X,F4.1))
 
@@ -19,7 +19,7 @@
 
 
         DO I1=1,N
-        write(1,70)(A(I1,I2),I2=1,N)
+        write(18,70)(A(I1,I2),I2=1,N)
         END DO
 
         call chK
@@ -56,16 +56,15 @@
         END
         subroutine chk
         real(8)::a(5)
-        rewind 1
- read(1,*) a; if (any(abs(a-(/1.1,1.2,1.3,1.4,1.5/))>0.0001))print *,'error-1'
- read(1,*) a; if (any(abs(a-(/2.1,2.2,2.3,2.4,2.5/))>0.0001))print *,'error-2'
- read(1,*) a; if (any(abs(a-(/3.1,3.2,3.3,3.4,3.5/))>0.0001))print *,'error-3'
- read(1,*) a; if (any(abs(a-(/4.1,4.2,4.3,4.4,4.5/))>0.0001))print *,'error-4'
- read(1,*) a; if (any(abs(a-(/5.1,5.2,5.3,5.4,5.5/))>0.0001))print *,'error-5'
- read(1,*) a; if (any(abs(a-(/1.1,2.1,3.1,4.1,5.1/))>0.0001))print *,'error-6'
- read(1,*) a; if (any(abs(a-(/1.2,2.2,3.2,4.2,5.2/))>0.0001))print *,'error-7'
- read(1,*) a; if (any(abs(a-(/1.3,2.3,3.3,4.3,5.3/))>0.0001))print *,'error-8'
- read(1,*) a; if (any(abs(a-(/1.4,2.4,3.4,4.4,5.4/))>0.0001))print *,'error-9'
- read(1,*) a; if (any(abs(a-(/1.5,2.5,3.5,4.5,5.5/))>0.0001))print *,'error-a'
+        rewind 18
+ read(18,*) a; if (any(abs(a-(/1.1,1.2,1.3,1.4,1.5/))>0.0001))print *,'error-1'
+ read(18,*) a; if (any(abs(a-(/2.1,2.2,2.3,2.4,2.5/))>0.0001))print *,'error-2'
+ read(18,*) a; if (any(abs(a-(/3.1,3.2,3.3,3.4,3.5/))>0.0001))print *,'error-3'
+ read(18,*) a; if (any(abs(a-(/4.1,4.2,4.3,4.4,4.5/))>0.0001))print *,'error-4'
+ read(18,*) a; if (any(abs(a-(/5.1,5.2,5.3,5.4,5.5/))>0.0001))print *,'error-5'
+ read(18,*) a; if (any(abs(a-(/1.1,2.1,3.1,4.1,5.1/))>0.0001))print *,'error-6'
+ read(18,*) a; if (any(abs(a-(/1.2,2.2,3.2,4.2,5.2/))>0.0001))print *,'error-7'
+ read(18,*) a; if (any(abs(a-(/1.3,2.3,3.3,4.3,5.3/))>0.0001))print *,'error-8'
+ read(18,*) a; if (any(abs(a-(/1.4,2.4,3.4,4.4,5.4/))>0.0001))print *,'error-9'
+ read(18,*) a; if (any(abs(a-(/1.5,2.5,3.5,4.5,5.5/))>0.0001))print *,'error-a'
         end
-        

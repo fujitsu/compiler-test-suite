@@ -12,18 +12,18 @@ forall(J=I:n)
  end forall
  end forall
 end forall
-write(1,*)a,aa
+write(48,*)a,aa
 end
 call s
 print *,'pass'
 end
 recursive subroutine sx
 integer k(1000)
-write(1,*) 1,size(k)
-rewind 1
-read(1,*) n1,n2
+write(48,*) 1,size(k)
+rewind 48
+read(48,*) n1,n2
 do n=n1,n2
 k(n)=21474800
 end do
-write(1,*)k(1),k(size(k))
+write(48,*)k(1),k(size(k))
 end

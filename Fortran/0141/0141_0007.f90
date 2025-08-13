@@ -19,7 +19,7 @@ ee=105
 ef=106
 end subroutine
 subroutine ss_1
-write(1,nama)
+write(10,nama)
 end subroutine
 end
 subroutine chk
@@ -30,8 +30,8 @@ integer                         :: wd
 integer                         :: we
 integer                         :: wf
 namelist /nama/wa,wb,wc,wd,we,wf
-rewind 1
-read(1,nama) 
+rewind 10
+read(10,nama)
 if (wa/=101)print *,'error-1'
 if (wb/=102)print *,'error-2'
 if (wc/=103)print *,'error-3'

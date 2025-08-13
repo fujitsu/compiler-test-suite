@@ -60,28 +60,28 @@ program main
     call do_it1(res,x,y,z,ix,iy,iz)
   enddo
   call cpu_time(timef)
-  write(1,'(a,f7.2)') "time taken for do_it1 is ",timef-timei
+  write(9,'(a,f7.2)') "time taken for do_it1 is ",timef-timei
 
   call cpu_time(timei)
   do i=1,n_times
     call do_it2(res,x,y,z,ix,iy,iz)
   enddo
   call cpu_time(timef)
-  write(1,'(a,f7.2)') "time taken for do_it2 is ",timef-timei
+  write(9,'(a,f7.2)') "time taken for do_it2 is ",timef-timei
 
   call cpu_time(timei)
   do i=1,n_times
     call do_it3(res,x,y,z,ix,iy,iz)
   enddo
   call cpu_time(timef)
-  write(1,'(a,f7.2)') "time taken for do_it3 is ",timef-timei
+  write(9,'(a,f7.2)') "time taken for do_it3 is ",timef-timei
 
   call cpu_time(timei)
   do i=1,n_times
     call do_it4(res,x,y,z,ix,iy,iz)
   enddo
   call cpu_time(timef)
-  write(1,'(a,f7.2)') "time taken for do_it4 is ",timef-timei
+  write(9,'(a,f7.2)') "time taken for do_it4 is ",timef-timei
 print *,'pass'
 
 end program main

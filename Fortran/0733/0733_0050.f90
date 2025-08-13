@@ -17,9 +17,9 @@ call yy(a+1)
 end subroutine
 subroutine yy(a)
 integer a(:,:)
-write(1,*) a,99
-rewind 1
-read(1,*) k
+write(27,*) a,99
+rewind 27
+read(27,*) k
 if (k/=99)print *,'error-2'
 end subroutine
 end

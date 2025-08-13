@@ -37,7 +37,7 @@ program main
   integer :: i1=123
   real :: r1=1.2
   character(len=3) :: ch1='abc'
-  open(10,file="fort.9999",status="replace",form="formatted")
+  open(10,file="fort.47",status="replace",form="formatted")
 
   write(10,*) i1, t1, i1
 

@@ -9,13 +9,13 @@
        end subroutine
        subroutine sub1()
         namelist /xyz/ aa,ii
-         write(20,nml=xyz) 
+         write(22,nml=xyz)
        end subroutine
       end module
 
       program main
        use mod
-        call sub0() 
-        call sub1() 
+        call sub0()
+        call sub1()
         print *,'pass'
       end program

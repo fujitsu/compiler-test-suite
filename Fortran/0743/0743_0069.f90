@@ -9,7 +9,7 @@ call chk1(d,k)
 contains
  subroutine chk1(b,k)
  real(4),dimension(:,:)::b
- write(1,*)'test'
+ write(34,*)'test'
 select case(k)
 case(1)
  if (any(shape(b)/=(/0,3/)))write(6,*) "NG"

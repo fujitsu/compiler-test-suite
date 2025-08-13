@@ -32,7 +32,7 @@ contains
    allocate ( &
      a%x1(n),a%x2(n*n),a%x3(n),a%x4(n*n),a%x5(n),a%x6(n*n),a%x7(n),a%x8(n*n),stat=k)
    if (k/=0) stop 1000
-   write(1,'(z16.16, 1x , z16.16)') loc(a%x1),loc(a%x8)
+   write(2,'(z16.16, 1x , z16.16)') loc(a%x1),loc(a%x8)
   end subroutine
 end
 use m1
@@ -40,7 +40,7 @@ use m1
 do nn=1,10000
   call s0(a)
 end do
-call chk(1)
+call chk(2)
 print *,'pass'
 end
 subroutine chk(n)

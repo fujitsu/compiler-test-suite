@@ -19,24 +19,24 @@ AMOUNT=3
       INTEGER                                                 :: IER
 
       ERROR = 0
- 
+
       LOWER = LBOUND(THEARRAY, DIM=1)
       UPPER = UBOUND(THEARRAY, DIM=1)
-    
+
       NEW_UPPER = UPPER + AMOUNT
-    
+
       ALLOCATE(BACKUP(LOWER:NEW_UPPER),STAT=IER)
       IF (IER.NE.0) THEN
          IER = 1
          RETURN
       END IF
-  
 
-      WRITE(1,*)LBOUND(THEARRAY,DIM=1)
-      WRITE(1,*)UBOUND(THEARRAY,DIM=1)
-      WRITE(1,*)NEW_UPPER
-      WRITE(1,*)LBOUND(BACKUP, DIM=1)
-      WRITE(1,*)UBOUND(BACKUP, DIM=1)
+
+      WRITE(58,*)LBOUND(THEARRAY,DIM=1)
+      WRITE(58,*)UBOUND(THEARRAY,DIM=1)
+      WRITE(58,*)NEW_UPPER
+      WRITE(58,*)LBOUND(BACKUP, DIM=1)
+      WRITE(58,*)UBOUND(BACKUP, DIM=1)
 
       BACKUP(LOWER:UPPER) = THEARRAY(LOWER:UPPER)
       DEALLOCATE(THEARRAY)
@@ -44,13 +44,12 @@ AMOUNT=3
       THEARRAY => BACKUP
 
       NULLIFY(BACKUP)
- rewind 1
- read(1,*)i;if (i/=3)write(6,*) "NG"
- read(1,*)i;if (i/=6)write(6,*) "NG"
- read(1,*)i;if (i/=9)write(6,*) "NG"
- read(1,*)i;if (i/=3)write(6,*) "NG"
- read(1,*)i;if (i/=9)write(6,*) "NG"
+ rewind 58
+ read(58,*)i;if (i/=3)write(6,*) "NG"
+ read(58,*)i;if (i/=6)write(6,*) "NG"
+ read(58,*)i;if (i/=9)write(6,*) "NG"
+ read(58,*)i;if (i/=3)write(6,*) "NG"
+ read(58,*)i;if (i/=9)write(6,*) "NG"
 
     END SUBROUTINE EXTEND_CHAR
 end
-

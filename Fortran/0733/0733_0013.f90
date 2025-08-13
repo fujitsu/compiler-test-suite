@@ -2,10 +2,10 @@
       character(len=200) :: line
       character(len=5) :: old = 'Name1'
       character(len=5) :: del = 'Name3'
-    write(1,'(a)' )"Data  & Name1 & 1.23 & 2.34 & 3.45 & 4.56 & 5.67 & Trailers"
-    rewind 1
+    write(13,'(a)' )"Data  & Name1 & 1.23 & 2.34 & 3.45 & 4.56 & 5.67 & Trailers"
+    rewind 13
       do
-        read (1,110,end=900) line
+        read (13,110,end=900) line
   110   format (A)
         if (index(line,del).gt.0) then
             iy = index(line,'\hline')
@@ -19,11 +19,11 @@
         do i=ix+5,nlast
           if (line(i:i).ge.'0' .and. line(i:i).le.'9') line(i:i)=' '
         enddo
-        write(2,*) i
+        write(14,*) i
       enddo
 900   close(1)
-rewind 2
-read(2,*)jj
+rewind 14
+read(14,*)jj
 if (jj/=51)print *,'error'
 print *,'pass'
 end

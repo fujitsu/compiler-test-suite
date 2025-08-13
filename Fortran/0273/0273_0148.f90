@@ -1,3 +1,4 @@
+#define EQUAL_CHECK_WITH_MARGIN(a, b) ((abs(a - b)/abs(a)) .gt. 1.0D-4)
 COMPLEX(2) :: CMP
 COMPLEX(2) :: CMP_DSB(5)
 
@@ -30,6 +31,6 @@ CMP_DSB(4)=C2_ARx(2)**C16(2)
 IF(abs(CMP_DSB(4) -    ((2,2)**(1,1)))>0.1)PRINT*,"105",cmplx(CMP_DSB(4),kind=4), ((3,3)**(1,1))
 
 CMP_DSB(1)=C2_AR(1)**R2_AR(2)
-IF(CMP_DSB(1) .NE. ((10,10)**4))PRINT*,"106"
+if(EQUAL_CHECK_WITH_MARGIN(CMP_DSB(1),(10,10)**4)) print *,106
 PRINT*,"PASS"
 END

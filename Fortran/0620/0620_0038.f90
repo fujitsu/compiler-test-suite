@@ -14,7 +14,7 @@ class is(x)
  print *,'class'
 type is(x)
  flag=flag(3:1:-1)
- write(1,*)flag
+ write(7,*)flag
 end select
 if (associated(p,flag)) then
 else

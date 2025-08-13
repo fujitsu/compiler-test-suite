@@ -7,27 +7,27 @@
       cx='OpenMP'
 !$OMP parallel
 !$OMP single
-      write(UNIT=22,xyz123456789)
-      write(UNIT=23,xyz12345678a)
-      write(UNIT=24,xyz12345678b)
-      write(UNIT=25,xyz12345678c)
-      write(UNIT=26,xyz12345678d)
+      write(UNIT=122,xyz123456789)
+      write(UNIT=123,xyz12345678a)
+      write(UNIT=124,xyz12345678b)
+      write(UNIT=125,xyz12345678c)
+      write(UNIT=126,xyz12345678d)
 !$OMP end single
 !$OMP end parallel
-      rewind (UNIT=22)
-      read(UNIT=22,xyz123456789)
+      rewind (UNIT=122)
+      read(UNIT=122,xyz123456789)
       if (cx/='OpenMP') write(6,*) "NG"
-      rewind (UNIT=23)
-      read(UNIT=23,xyz12345678a)
+      rewind (UNIT=123)
+      read(UNIT=123,xyz12345678a)
       if (cx/='OpenMP') write(6,*) "NG"
-      rewind (UNIT=24)
-      read(UNIT=24,xyz12345678b)
+      rewind (UNIT=124)
+      read(UNIT=124,xyz12345678b)
       if (cx/='OpenMP') write(6,*) "NG"
-      rewind (UNIT=25)
-      read(UNIT=25,xyz12345678c)
+      rewind (UNIT=125)
+      read(UNIT=125,xyz12345678c)
       if (cx/='OpenMP') write(6,*) "NG"
-      rewind (UNIT=26)
-      read(UNIT=26,xyz12345678d)
+      rewind (UNIT=126)
+      read(UNIT=126,xyz12345678d)
       if (cx/='OpenMP') write(6,*) "NG"
       print *,'pass'
       end

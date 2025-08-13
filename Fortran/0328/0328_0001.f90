@@ -12,6 +12,6 @@ integer :: a,b
 a=1
 b=2
 call sub(a,b,b)
-write(1,*) a
+write(16,*) a
 print *,'pass'
 end

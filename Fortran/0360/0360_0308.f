@@ -7,6 +7,11 @@
       data cb/0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9/
       data cy/0.0,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9/
 
+      CHARACTER(LEN=30) :: FMT_A, FMT_X, FMT_CA, FMT_CX
+      FMT_A = '(10(F16.8,1X))'
+      FMT_X = '(10(F22.14,1X))'
+      FMT_CA = '(10(F16.8,1X,F16.8,1X))'
+      FMT_CX = '(10(F22.14,1X,F22.14,1X))'
 
       do i=1,10
          cb(i) = cmplx(real(cb(i)),i/2)
@@ -25,6 +30,11 @@
       do i=1,10
          cx(i) = tanh(cy(i))
       enddo
-      write(6,*) a,x,ca,cx
+
+      write(6,FMT_A) a
+      write(6,FMT_X) x
+      write(6,FMT_CA) ca
+      write(6,FMT_CX) cx
+      
       end
 

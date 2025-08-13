@@ -46,10 +46,10 @@ d1=.true.
 d2=.true.
 d3=.true.
 if (abs(a1+a2+a3+b1+b2+b3+c1+c2+c3-(6+(3,3)))>0.0001)write(6,*) "NG"
-write(1,*)a1,a2,a3,b1,b2,b3,c1,c2,c3,d1,d2,d3
-write(2)a1,a2,a3,b1,b2,b3,c1,c2,c3,d1,d2,d3
-rewind 1
-rewind 2
+write(72,*)a1,a2,a3,b1,b2,b3,c1,c2,c3,d1,d2,d3
+write(73)a1,a2,a3,b1,b2,b3,c1,c2,c3,d1,d2,d3
+rewind 72
+rewind 73
 call tt1
 call tt2
 call ss1(a1,a2,a3,b1,b2,b3,c1,c2,c3,d1,d2,d3)
@@ -81,7 +81,7 @@ equivalence(c3,m(2+n*09:))
 equivalence(d1,m(2+n*10:))
 equivalence(d2,m(2+n*11:))
 equivalence(d3,m(2+n*12:))
-read(2)a1,a2,a3,b1,b2,b3,c1,c2,c3,d1,d2,d3
+read(73)a1,a2,a3,b1,b2,b3,c1,c2,c3,d1,d2,d3
 call ss1(a1,a2,a3,b1,b2,b3,c1,c2,c3,d1,d2,d3)
 if (abs(a1+a2+a3+b1+b2+b3+c1+c2+c3-(6+(3,3)))>0.0001)write(6,*) "NG"
 end
@@ -112,7 +112,7 @@ equivalence(c3,m(2+n*09:))
 equivalence(d1,m(2+n*10:))
 equivalence(d2,m(2+n*11:))
 equivalence(d3,m(2+n*12:))
-read(1,*)a1,a2,a3,b1,b2,b3,c1,c2,c3,d1,d2,d3
+read(72,*)a1,a2,a3,b1,b2,b3,c1,c2,c3,d1,d2,d3
 call ss1(a1,a2,a3,b1,b2,b3,c1,c2,c3,d1,d2,d3)
 if (abs(a1+a2+a3+b1+b2+b3+c1+c2+c3-(6+(3,3)))>0.0001)write(6,*) "NG"
 end

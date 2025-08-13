@@ -1,18 +1,18 @@
          call s1(2)
          call s1(4)
-rewind 1
-read(1,*) k;if (k/=3) print *,201
-read(1,*) k;if (k/=3) print *,202
-read(1,*) k;if (k/=5) print *,203
-read(1,*) k;if (k/=5) print *,204
+rewind 2
+read(2,*) k;if (k/=3) print *,201
+read(2,*) k;if (k/=3) print *,202
+read(2,*) k;if (k/=5) print *,203
+read(2,*) k;if (k/=5) print *,204
 print *,'pass'
          contains
          subroutine s1(d1)
          integer :: d1
          character(len=d1+1),pointer :: cptr => NULL()
          character(len=d1+1),pointer :: cptr2 => NULL()
-         write(1,*)len(cptr)
-         write(1,*)len(cptr2)
+         write(2,*)len(cptr)
+         write(2,*)len(cptr2)
         end subroutine
         end
 

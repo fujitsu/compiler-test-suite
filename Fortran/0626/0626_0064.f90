@@ -2,7 +2,7 @@ module m1
   type b0
      integer::x1
   end type
-end 
+end
 module m2
   use m1,tb0=>b0
   type b0
@@ -38,10 +38,10 @@ call chk(v5,5)
 end subroutine
 subroutine chk(t,n)
 type(e1)::t
-rewind 1
-write(1,*) t
-rewind 1
-read(1,*) k1,k2,k3
+rewind 13
+write(13,*) t
+rewind 13
+read(13,*) k1,k2,k3
 if (any([k1,k2,k3]/=[1,2,3]))print *,n,k1,k1,k3
 end subroutine
 end

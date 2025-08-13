@@ -52,6 +52,6 @@ print *,'pass'
 end
  subroutine subcheck(x,k)
  if(k/=0) then
-  write(1,'(i1,1x,z16.16)') k,loc(x)
- endif 
+  write(7,'(i1,1x,z16.16)') k,loc(x)
+ endif
  end subroutine

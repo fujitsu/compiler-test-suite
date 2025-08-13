@@ -10,34 +10,34 @@ if (n==0) p=>null()
 if (n==1) p=>t(:,:)
 if (n==2) p=>t(1:3:2,:)
 save= loc(p)
-write(1,'(z16.16)') loc(p)
+write(20,'(z16.16)') loc(p)
 do k=1,5
 t=tt
 call ss(p)
 if (any(p(:,1)/=11)) print *,4011
 if (any(p(:1,2)/=11)) print *,4012
 end do
-write(1,*)
-write(1,'(z16.16)') loc(p)
+write(20,*)
+write(20,'(z16.16)') loc(p)
 do k=1,5
 t=tt
-kk= fun(p) 
+kk= fun(p)
 if (any(p(:,1)/=11)) print *,4021
 if (any(p(:1,2)/=11)) print *,4022
 if (kk/=0) print *,101
 end do
 end subroutine
-subroutine ss(x) 
+subroutine ss(x)
 integer:: x(4)
 if (any(x/=[1,2,3,4])) print *,1021
-write(1,'(z16.16)') loc(x)
+write(20,'(z16.16)') loc(x)
 if (save/=loc(x)) print *,3000
 x=11
 end subroutine
 function fun(x) result(k)
 integer:: x(4)
 if (any(x/=[1,2,3,4])) print *,1022
-write(1,'(z16.16)') loc(x)
+write(20,'(z16.16)') loc(x)
 if (save/=loc(x)) print *,3000
 k=0
 x=11

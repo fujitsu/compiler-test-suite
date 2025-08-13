@@ -1,5 +1,4 @@
   log=1
- write(1,*) log
+ write(2,*) log
  print *,'pass'
  end
-

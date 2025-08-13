@@ -41,31 +41,31 @@
 ' 0' , &
 ' 0' /
  character*500 rr
- write(11,*) sum(a1           )
- write(11,*) sum(b1           )
- write(11,*) sum(x1           )
- write(11,*) sum(y1           )
- write(11,*) sum(w1           )
- write(11,*) sum(p1           )
- write(11,*) sum(d1           )
- write(11,*) sum(e1           )
- write(11,*) sum(a7           )
- write(11,*) sum(b7           )
- write(11,*) sum(x7           )
- write(11,*) sum(y7           )
- write(11,*) sum(w7           )
- write(11,*) sum(p7           )
- write(11,*) sum(d7           )
- write(11,*) sum(e7           )
- write(11,*) sum((/(i,i=1,0)/))
- write(11,*) sum((/(i,i=j,0)/))
- rewind 11
-  read(11,*) rx01;if (any(rx01/=0))print *,'error-1'
-  read(11,*) rx02;if (any(rx02/=0))print *,'error-2'
-  read(11,*) rx03;if (any(rx03/=0))print *,'error-3'
-  read(11,*) rx01;if (any(rx01/=0))print *,'error-4'
-  read(11,*) rx02;if (any(rx02/=0))print *,'error-5'
-  read(11,*) rx03;if (any(rx03/=0))print *,'error-6'
-  read(11,*) rx01(1:2);if (any(rx01(1:2)/=0))print *,'error-7'
+ write(10,*) sum(a1           )
+ write(10,*) sum(b1           )
+ write(10,*) sum(x1           )
+ write(10,*) sum(y1           )
+ write(10,*) sum(w1           )
+ write(10,*) sum(p1           )
+ write(10,*) sum(d1           )
+ write(10,*) sum(e1           )
+ write(10,*) sum(a7           )
+ write(10,*) sum(b7           )
+ write(10,*) sum(x7           )
+ write(10,*) sum(y7           )
+ write(10,*) sum(w7           )
+ write(10,*) sum(p7           )
+ write(10,*) sum(d7           )
+ write(10,*) sum(e7           )
+ write(10,*) sum((/(i,i=1,0)/))
+ write(10,*) sum((/(i,i=j,0)/))
+ rewind 10
+  read(10,*) rx01;if (any(rx01/=0))print *,'error-1'
+  read(10,*) rx02;if (any(rx02/=0))print *,'error-2'
+  read(10,*) rx03;if (any(rx03/=0))print *,'error-3'
+  read(10,*) rx01;if (any(rx01/=0))print *,'error-4'
+  read(10,*) rx02;if (any(rx02/=0))print *,'error-5'
+  read(10,*) rx03;if (any(rx03/=0))print *,'error-6'
+  read(10,*) rx01(1:2);if (any(rx01(1:2)/=0))print *,'error-7'
  end subroutine
  end

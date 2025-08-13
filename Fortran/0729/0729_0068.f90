@@ -43,13 +43,13 @@ program t
   use int_str
   integer :: i
   do i=-20,20
-    write(1,*)i
+    write(103,*)i
   end do
-  rewind 1
+  rewind 103
   do
-    read (unit=1,fmt=*,end=1) i
-    write(2,'(a)')"_"//int2str(i,dig(i))//"_"
+    read (unit=103,fmt=*,end=1) i
+    write(104,'(a)')"_"//int2str(i,dig(i))//"_"
   end do
-  1 rewind 2
+  1 rewind 104
   print *,'pass'
 end program t

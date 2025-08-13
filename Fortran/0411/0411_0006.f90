@@ -3,7 +3,7 @@ module m2
 contains
  subroutine init
  implicit none
-write(1,*) 3, lhf,loc(lhf)
+write(3,*) 3, lhf,loc(lhf)
 end subroutine
 end
 

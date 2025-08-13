@@ -39,20 +39,50 @@
        PARAMETER (N = 1)
        REAL RR1
        PARAMETER (RR1 = 1. / 2.)
-       COMMON /CV5307K/ CD62, CD61, CD52, CD51, CD42, RR7, CD41, RR8, 
-     X   CD33, CD32, CD31, CD23, CD22, CD21, CD13, CD12, CD11, CE62, 
+       COMMON /CV5307K/ CD62, CD61, CD52, CD51, CD42, RR7, CD41, RR8,
+     X   CD33, CD32, CD31, CD23, CD22, CD21, CD13, CD12, CD11, CE62,
      X   CE61, CE52, CE51, CE42, CE41, RR9, CE33, CE32, CE31, CE23, CE22
      X   , CE21, D62, D61, D52, D51, RR10, D42, D41, RR11, D33, D32, D31
      X   , D23, D22, D21, E62, E61, E52, E51, E42, E41
-       COMMON /CV5307K/ E33, E32, E31, E23, E22, RR12, E21, N62, N61, 
-     X   N52, N51, RR13, N42, N41, RR14, N33, N32, N31, N23, N22, N21, 
+       COMMON /CV5307K/ E33, E32, E31, E23, E22, RR12, E21, N62, N61,
+     X   N52, N51, RR13, N42, N41, RR14, N33, N32, N31, N23, N22, N21,
      X   L62, RR15, L61, L52, RR16, L51, L42, L41, RR17, L33, L32, RR18,
      X    L31, L23, L22, RR19, L21
        INTEGER II4, II3, II2, II1
        REAL RR6, RR5, RR4, RR3, RR2
-       REAL RR19 (150), RR18 (86), RR17 (86), RR16 (102), RR15 (230), 
+       REAL RR19 (150), RR18 (86), RR17 (86), RR16 (102), RR15 (230),
      X   RR14 (86), RR13 (86), RR12 (86), RR11 (86), RR10 (102), RR9 (
-     X   150), RR8 (86), RR7 (86)
+     X      150), RR8 (86), RR7 (86)
+       real*4 res1(100)/1, 1, 0, 0, 0, 0, 0, 0, 0,
+     +      0, 6.0, 0.6666667,1, 0, 0, 0, 0, 0, 0,
+     +      0, 1, 21.0, 0.75,1, 0, 0, 0, 0, 0, 0,
+     +      1, 0.8,52.0, 0.8,1, 0, 0, 0, 0, 0, 1,
+     +      1, 1, 105.0, 0.8333333,1, 0, 0, 0, 0,
+     +      1, 0.8571429, 0.85714286, 0.5714286,186.0, 0.85714286,
+     +      1, 0, 0, 0, 1, 1, 0.75,1, 0.625,301.0,
+     +      0.875,1, 0, 0, 1, 0.8888889,1, 0.8888889,
+     +      0.5555556, 0.6666667,456.0, 0.8888889,1, 0, 1,
+     +      1, 0.90000003, 0.8,1, 0.6, 0.7,657.0, 0.9,1, 0.1,
+     +      0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8,910.0,1/
+       real*8 res2(100)/1,  10.5,  26,  52.5, 93, 150.5, 228, 328.5,
+     +      455, 0,  30, 1.66666674613953,1.66666666666667, 0, 0, 0,
+     +      0, 0, 0, 0,3.33333333333333,  35, 0.83333333333333,
+     +      0.83333333333333, 0, 0, 0, 0,  0, 0, 2.5, 1,
+     +      43.33333333333334, 0.5, 0.5, 0,  0, 0, 0, 0,
+     +      2, 1, 0.66666666666667,  52.5, 0.33333332061768,
+     +      0.33333333333333, 0, 0,  0, 0, 1.66666666666667,
+     +      0.71428577105204, 0.47619046105279, 0.23809524377187,
+     +      62, 0.23809523052639, 0.23809523809524, 0, 0, 0,
+     +      1.42857142857143, 0.71428571428571, 0.35714285714286,
+     +      0.35714285714286, 0.17857142857143, 71.66666666666667,
+     +      0.17857142857143, 0.17857142857143, 0, 0, 1.25,
+     +      0.55555558204651, 0.41666666666667, 0.27777779102325,
+     +      0.13888889551163, 0.13888889551163, 81.42857142857143,
+     +      0.13888889551163, 0.13888888888889, 0, 1.11111111111111,
+     +      0.55555555555556, 0.33333333333333, 0.22222222222222,
+     +      0.22222222222222, 0.11111111111111, 0.11111111111111,
+     +      91.25, 0.11111111111111, 0.11111111111111, 0.1, 0.1,
+     +      0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 101.11111111111111, 0.1/
 
        CALL INITR (D11,D12,D13,DS1,DS2,DS3,D21,D22,D23,D31,D32,D33,D41,
      X   D42,D51,D52,D61,D62,E11,E12,E13,ES1,ES2,ES3,E21,E22,E23,E31,E32
@@ -65,7 +95,7 @@
      X   N42,N51,N52,N61,N62,L11,L12,L13,LS1,LS2,LS3,L21,L22,L23,L31,L32
      X   ,L33,L41,L42,L51,L52,L61,L62)
 
-                                                       
+
        DO I1=1,9
         ES1 = E11(I1+1) + E11(I1) * E12(I1+1)
         E12(I1) = ES1 - I1
@@ -78,9 +108,15 @@
         E21(I1,I1+1) = ES1
        END DO
 
-       WRITE (6, *) ES1, E12, D21, D22, E21
+       WRITE (6, *) ES1, E12
+       write(6,*)
+       WRITE (6, *) D21
+       write(6,*)
+       WRITE (6, *) D22
+       write(6,*)
+       call check(E21,res1)
+       write(6,*)
 
-                                                       
        DO I1=1,6,5
         RR3 = -E11(I1)
         RR4 = -E11(I1+1)
@@ -100,7 +136,7 @@
        END DO
        DO I2=1,7,4
 
-                                                       
+
         DO I1=1,10
          IF (ABS (E22(I1,I2)) .GT. .5) THEN
           D21(I1,I2) = E21(I1,I2) * 10 / DBLE (E22(I1,I2))
@@ -118,7 +154,7 @@
        END DO
        DO I2=9,10,1
 
-                                                       
+
         DO I1=1,10
          IF (ABS (E22(I1,I2)) .GT. .5) THEN
           D21(I1,I2) = E21(I1,I2) * 10 / DBLE (E22(I1,I2))
@@ -126,13 +162,18 @@
         END DO
        END DO
 
-       WRITE (6, *) E11, E12, D21
-       STOP 
+       WRITE (6, *) E11
+       WRITE (6, *)
+       WRITE (6, *) E12
+       WRITE (6, *)
+       call check8(D21,res2)
+ 1     format(4f24.15)
+       STOP
       END
-    
-      SUBROUTINE INITR ( D11, D12, D13, DS1, DS2, DS3, D21, D22, D23, 
+
+      SUBROUTINE INITR ( D11, D12, D13, DS1, DS2, DS3, D21, D22, D23,
      X  D31, D32, D33, D41, D42, D51, D52, D61, D62, E11, E12, E13, ES1
-     X  , ES2, ES3, E21, E22, E23, E31, E32, E33, E41, E42, E51, E52, 
+     X  , ES2, ES3, E21, E22, E23, E31, E32, E33, E41, E42, E51, E52,
      X  E61, E62 )
        REAL*8 D11(10), D12(10), D13(10), DS1, DS2, DS3
        REAL*8 D21(10,10), D22(10,10), D23(10,10)
@@ -148,14 +189,14 @@
        REAL*4 E61(5,3,3,3,3,2), E62(5,3,3,3,3,2)
        REAL RR1, RR2
        DOUBLEPRECISION DD1, DD2
-       PARAMETER (RR1 = 1. / 4., RR2 = 1. / 2., DD1 = 1D0 / 4., DD2 = 
+       PARAMETER (RR1 = 1. / 4., RR2 = 1. / 2., DD1 = 1D0 / 4., DD2 =
      X   1D0 / 2.)
        INTEGER II6, II5, II4, II3, II2, II1
        REAL RR4, RR3
        DOUBLE PRECISION DD4, DD3
-       LOGICAL LL42, LL41, LL40, LL39, LL38, LL37, LL36, LL35, LL34, 
-     X   LL33, LL32, LL31, LL30, LL29, LL28, LL27, LL26, LL25, LL24, 
-     X   LL23, LL22, LL21, LL20, LL19, LL18, LL17, LL16, LL15, LL14, 
+       LOGICAL LL42, LL41, LL40, LL39, LL38, LL37, LL36, LL35, LL34,
+     X   LL33, LL32, LL31, LL30, LL29, LL28, LL27, LL26, LL25, LL24,
+     X   LL23, LL22, LL21, LL20, LL19, LL18, LL17, LL16, LL15, LL14,
      X   LL13, LL12, LL11, LL10, LL9, LL8, LL7, LL6, LL5, LL4, LL3
        LOGICAL LL2, LL1
 
@@ -263,7 +304,7 @@
        END DO
 C$OMP PARALLEL SHARED (E31,E32,E33,E41,E42,E51,E52,E61,E62) PRIVATE (K,J
 C$OMP& ,I,L,LL9,LL10,LL11,LL12,LL13,LL14,LL15,LL16,LL1,M,LL2)
-C$OMP DO 
+C$OMP DO
        DO K=1,10
         DO J=1,7,4
 
@@ -353,7 +394,7 @@ C$OMP DO
        END DO
 C$OMP END DO NOWAIT
 C$OMP BARRIER
-C$OMP DO 
+C$OMP DO
        DO L=1,8
         DO K=1,5,4
          DO J=1,8
@@ -426,7 +467,7 @@ C$OMP DO
        END DO
 C$OMP END DO NOWAIT
 C$OMP BARRIER
-C$OMP DO 
+C$OMP DO
        DO J=1,8
         LL16 = J .LE. 5
         DO K=1,8
@@ -468,7 +509,7 @@ C$OMP DO
         END DO
        END DO
 C$OMP END DO NOWAIT
-C$OMP END PARALLEL 
+C$OMP END PARALLEL
        DO I=1,6,5
         D11(I) = 0D0
         D11(I+1) = 0D0
@@ -571,7 +612,7 @@ C$OMP END PARALLEL
        END DO
 C$OMP PARALLEL SHARED (D31,D32,D33,D41,D42,D51,D52,D61,D62) PRIVATE (K,J
 C$OMP& ,I,L,LL17,LL18,LL19,LL20,LL21,LL22,LL23,LL24,LL3,M,LL4)
-C$OMP DO 
+C$OMP DO
        DO K=1,10
         DO J=1,7,4
          DO I=1,6,5
@@ -659,7 +700,7 @@ C$OMP DO
        END DO
 C$OMP END DO NOWAIT
 C$OMP BARRIER
-C$OMP DO 
+C$OMP DO
        DO L=1,8
         DO K=1,5,4
          DO J=1,8
@@ -732,7 +773,7 @@ C$OMP DO
        END DO
 C$OMP END DO NOWAIT
 C$OMP BARRIER
-C$OMP DO 
+C$OMP DO
        DO J=1,8
         LL24 = J .LE. 5
         DO K=1,8
@@ -774,7 +815,7 @@ C$OMP DO
         END DO
        END DO
 C$OMP END DO NOWAIT
-C$OMP END PARALLEL 
+C$OMP END PARALLEL
        ES3 = 3.5
        DO I1=1,6,5
         E11(I1) = I1
@@ -999,7 +1040,7 @@ C$OMP DO LASTPRIVATE (ES2)
         END DO
        END DO
 C$OMP END DO NOWAIT
-C$OMP END PARALLEL 
+C$OMP END PARALLEL
 
 
        DS3 = 3.5
@@ -1226,12 +1267,12 @@ C$OMP DO LASTPRIVATE (DS2)
         END DO
        END DO
 C$OMP END DO NOWAIT
-C$OMP END PARALLEL 
-       RETURN 
+C$OMP END PARALLEL
+       RETURN
       END
-    
+
       SUBROUTINE INITC ( CD11, CD12, CD13, CDS1, CDS2, CDS3, CD21, CD22
-     X  , CD23, CD31, CD32, CD33, CD41, CD42, CD51, CD52, CD61, CD62, 
+     X  , CD23, CD31, CD32, CD33, CD41, CD42, CD51, CD52, CD61, CD62,
      X  CE11, CE12, CE13, CES1, CES2, CES3, CE21, CE22, CE23, CE31, CE32
      X  , CE33, CE41, CE42, CE51, CE52, CE61, CE62 )
        COMPLEX*16 CD11(10), CD12(10), CD13(10), CDS1, CDS2, CDS3
@@ -1250,12 +1291,12 @@ C$OMP END PARALLEL
        DOUBLE COMPLEX DC1, DC2
        PARAMETER (CC1 = (1., 0.) / 4., CC2 = (1., 0.) / 2., DC1 = (1
      X   D0, 0D0) / 4., DC2 = (1D0, 0D0) / 2.)
-       INTEGER II27, II26, II25, II24, II23, II22, II21, II20, II19, 
+       INTEGER II27, II26, II25, II24, II23, II22, II21, II20, II19,
      X   II18, II17, II16, II15, II14, II13, II12, II11, II10, II9, II8
      X   , II7, II6, II5, II4, II3, II2, II1
-       LOGICAL LL42, LL41, LL40, LL39, LL38, LL37, LL36, LL35, LL34, 
-     X   LL33, LL32, LL31, LL30, LL29, LL28, LL27, LL26, LL25, LL24, 
-     X   LL23, LL22, LL21, LL20, LL19, LL18, LL17, LL16, LL15, LL14, 
+       LOGICAL LL42, LL41, LL40, LL39, LL38, LL37, LL36, LL35, LL34,
+     X   LL33, LL32, LL31, LL30, LL29, LL28, LL27, LL26, LL25, LL24,
+     X   LL23, LL22, LL21, LL20, LL19, LL18, LL17, LL16, LL15, LL14,
      X   LL13, LL12, LL11, LL10, LL9, LL8, LL7, LL6, LL5, LL4, LL3
        LOGICAL LL2, LL1
        COMPLEX CC8, CC7, CC6, CC5, CC4, CC3
@@ -1363,10 +1404,10 @@ C$OMP END PARALLEL
          CE23(I+4,J) = (0., 0.)
         END DO
        END DO
-C$OMP PARALLEL SHARED (CE31,CE32,CE33,CE41,CE42,CE51,CE52,CE61,CE62) 
+C$OMP PARALLEL SHARED (CE31,CE32,CE33,CE41,CE42,CE51,CE52,CE61,CE62)
 C$OMP& PRIVATE (K,J,I,L,LL9,LL10,LL11,LL12,LL13,LL14,LL15,LL16,LL1,M,LL2
 C$OMP& )
-C$OMP DO 
+C$OMP DO
        DO K=1,10
         DO J=1,7,4
 
@@ -1456,7 +1497,7 @@ C$OMP DO
        END DO
 C$OMP END DO NOWAIT
 C$OMP BARRIER
-C$OMP DO 
+C$OMP DO
        DO L=1,8
         DO K=1,5,4
          DO J=1,8
@@ -1529,7 +1570,7 @@ C$OMP DO
        END DO
 C$OMP END DO NOWAIT
 C$OMP BARRIER
-C$OMP DO 
+C$OMP DO
        DO J=1,8
         LL16 = J .LE. 5
         DO K=1,8
@@ -1571,7 +1612,7 @@ C$OMP DO
         END DO
        END DO
 C$OMP END DO NOWAIT
-C$OMP END PARALLEL 
+C$OMP END PARALLEL
        DO I=1,6,5
         CD11(I) = 0
         CD11(I+1) = 0
@@ -1623,10 +1664,10 @@ C$OMP END PARALLEL
          CD23(I+4,J+1) = 0
         END DO
        END DO
-C$OMP PARALLEL SHARED (CD31,CD32,CD33,CD41,CD42,CD51,CD52,CD61,CD62) 
+C$OMP PARALLEL SHARED (CD31,CD32,CD33,CD41,CD42,CD51,CD52,CD61,CD62)
 C$OMP& PRIVATE (K,J,I,L,LL17,LL18,LL19,LL20,LL21,LL22,LL23,LL24,LL3,M,
 C$OMP& LL4)
-C$OMP DO 
+C$OMP DO
        DO K=1,10
         DO J=1,9,2
          DO I=1,6,5
@@ -1665,7 +1706,7 @@ C$OMP DO
        END DO
 C$OMP END DO NOWAIT
 C$OMP BARRIER
-C$OMP DO 
+C$OMP DO
        DO L=1,8
         DO K=1,6,3
          DO J=1,8
@@ -1742,7 +1783,7 @@ C$OMP DO
        END DO
 C$OMP END DO NOWAIT
 C$OMP BARRIER
-C$OMP DO 
+C$OMP DO
        DO J=1,8
         LL24 = J .LE. 5
         DO K=1,8
@@ -1784,7 +1825,7 @@ C$OMP DO
         END DO
        END DO
 C$OMP END DO NOWAIT
-C$OMP END PARALLEL 
+C$OMP END PARALLEL
        CES3 = (3.5,-3.5)
        DO I1=1,6,5
         CE11(I1) = I1 + (1.,.5)
@@ -1844,7 +1885,7 @@ C$OMP DO LASTPRIVATE (CES1)
         END DO
        END DO
 C$OMP END DO NOWAIT
-C$OMP END PARALLEL 
+C$OMP END PARALLEL
        DO I2=2,7,4
         II4 = I2 + 1
         II5 = I2 + 2
@@ -1896,7 +1937,7 @@ C$OMP END PARALLEL
 C$OMP PARALLEL SHARED (CE31,CE32,CE41,CE42,CE51,CE52,CE61,CE62,CE33,CES2
 C$OMP& ) PRIVATE (I1,I2,I3,CC4,CC5,LL25,LL26,LL27,CC6,CC7,LL28,LL29,LL30
 C$OMP& ,LL31,LL32,LL33,I4,I5,LL5,LL6)
-C$OMP DO 
+C$OMP DO
        DO I1=1,10
         DO I2=2,7,4
          DO I3=1,6,5
@@ -1932,7 +1973,7 @@ C$OMP DO
        END DO
 C$OMP END DO NOWAIT
 C$OMP BARRIER
-C$OMP DO 
+C$OMP DO
        DO I2=2,10
         DO I1=1,7,4
          DO I3=1,6,5
@@ -2052,7 +2093,7 @@ C$OMP DO LASTPRIVATE (CES2)
         END DO
        END DO
 C$OMP END DO NOWAIT
-C$OMP END PARALLEL 
+C$OMP END PARALLEL
 
 
        CDS3 = (3.5,-3.5)
@@ -2114,7 +2155,7 @@ C$OMP DO LASTPRIVATE (CDS1)
         END DO
        END DO
 C$OMP END DO NOWAIT
-C$OMP END PARALLEL 
+C$OMP END PARALLEL
        DO I2=2,9,2
         II10 = I2 + 1
         DO I1=1,6,5
@@ -2170,7 +2211,7 @@ C$OMP END PARALLEL
 C$OMP PARALLEL SHARED (CD31,CD32,CD41,CD42,CD51,CD52,CD61,CD62,CD33,CDS2
 C$OMP& ) PRIVATE (I1,I2,I3,DC3,LL34,LL35,LL36,DC4,LL37,LL38,LL39,LL40,
 C$OMP& LL41,LL42,I4,I5,LL7,LL8)
-C$OMP DO 
+C$OMP DO
        DO I1=1,10
         DO I2=2,7,4
          DO I3=1,6,5
@@ -2206,7 +2247,7 @@ C$OMP DO
        END DO
 C$OMP END DO NOWAIT
 C$OMP BARRIER
-C$OMP DO 
+C$OMP DO
        DO I2=2,10
         DO I1=1,7,4
          DO I3=1,6,5
@@ -2325,15 +2366,15 @@ C$OMP DO LASTPRIVATE (CDS2)
         END DO
        END DO
 C$OMP END DO NOWAIT
-C$OMP END PARALLEL 
-       RETURN 
+C$OMP END PARALLEL
+       RETURN
       END
-    
 
 
-      SUBROUTINE INITIL ( I11, I12, I13, IS1, IS2, IS3, I21, I22, I23, 
+
+      SUBROUTINE INITIL ( I11, I12, I13, IS1, IS2, IS3, I21, I22, I23,
      X  I31, I32, I33, I41, I42, I51, I52, I61, I62, L11, L12, L13, LS1
-     X  , LS2, LS3, L21, L22, L23, L31, L32, L33, L41, L42, L51, L52, 
+     X  , LS2, LS3, L21, L22, L23, L31, L32, L33, L41, L42, L51, L52,
      X  L61, L62 )
        INTEGER*4 I11(10), I12(10), I13(10), IS1, IS2, IS3
        INTEGER*4 I21(10,10), I22(10,10), I23(10,10)
@@ -2349,14 +2390,14 @@ C$OMP END PARALLEL
        LOGICAL*4 L61(5,3,3,3,3,2), L62(5,3,3,3,3,2)
        REAL RR1
        PARAMETER (RR1 = 1. / 2.)
-       INTEGER II36, II35, II34, II33, II32, II31, II30, II29, II28, 
-     X   II27, II26, II25, II24, II23, II22, II21, II20, II19, II18, 
-     X   II17, II16, II15, II14, II13, II12, II11, II10, II9, II8, II7, 
+       INTEGER II36, II35, II34, II33, II32, II31, II30, II29, II28,
+     X   II27, II26, II25, II24, II23, II22, II21, II20, II19, II18,
+     X   II17, II16, II15, II14, II13, II12, II11, II10, II9, II8, II7,
      X   II6, II5, II4, II3, II2, II1
        REAL RR3, RR2
-       LOGICAL LL48, LL47, LL46, LL45, LL44, LL43, LL42, LL41, LL40, 
-     X   LL39, LL38, LL37, LL36, LL35, LL34, LL33, LL32, LL31, LL30, 
-     X   LL29, LL28, LL27, LL26, LL25, LL24, LL23, LL22, LL21, LL20, 
+       LOGICAL LL48, LL47, LL46, LL45, LL44, LL43, LL42, LL41, LL40,
+     X   LL39, LL38, LL37, LL36, LL35, LL34, LL33, LL32, LL31, LL30,
+     X   LL29, LL28, LL27, LL26, LL25, LL24, LL23, LL22, LL21, LL20,
      X   LL19, LL18, LL17, LL16, LL15, LL14, LL13, LL12, LL11, LL10, LL9
        LOGICAL LL8, LL7, LL6, LL5, LL4, LL3, LL2, LL1
 
@@ -2464,7 +2505,7 @@ C$OMP END PARALLEL
        END DO
 C$OMP PARALLEL SHARED (I31,I32,I33,I41,I42,I51,I52,I61,I62) PRIVATE (K,J
 C$OMP& ,I,L,LL9,LL10,LL11,LL12,LL13,LL14,LL15,LL16,LL1,M,LL2)
-C$OMP DO 
+C$OMP DO
        DO K=1,10
         DO J=1,7,4
 
@@ -2554,7 +2595,7 @@ C$OMP DO
        END DO
 C$OMP END DO NOWAIT
 C$OMP BARRIER
-C$OMP DO 
+C$OMP DO
        DO L=1,8
         DO K=1,5,4
          DO J=1,8
@@ -2627,7 +2668,7 @@ C$OMP DO
        END DO
 C$OMP END DO NOWAIT
 C$OMP BARRIER
-C$OMP DO 
+C$OMP DO
        DO J=1,8
         LL16 = J .LE. 5
         DO K=1,8
@@ -2669,7 +2710,7 @@ C$OMP DO
         END DO
        END DO
 C$OMP END DO NOWAIT
-C$OMP END PARALLEL 
+C$OMP END PARALLEL
        DO I=1,6,5
         L11(I) = .FALSE.
         L11(I+1) = .FALSE.
@@ -2772,7 +2813,7 @@ C$OMP END PARALLEL
        END DO
 C$OMP PARALLEL SHARED (L31,L32,L33,L41,L42,L51,L52,L61,L62) PRIVATE (K,J
 C$OMP& ,I,L,LL17,LL18,LL19,LL20,LL21,LL22,LL23,LL24,LL3,M,LL4)
-C$OMP DO 
+C$OMP DO
        DO K=1,10
         DO J=1,7,4
          DO I=1,6,5
@@ -2860,7 +2901,7 @@ C$OMP DO
        END DO
 C$OMP END DO NOWAIT
 C$OMP BARRIER
-C$OMP DO 
+C$OMP DO
        DO L=1,8
         DO K=1,5,4
          DO J=1,8
@@ -2933,7 +2974,7 @@ C$OMP DO
        END DO
 C$OMP END DO NOWAIT
 C$OMP BARRIER
-C$OMP DO 
+C$OMP DO
        DO J=1,8
         LL24 = J .LE. 5
         DO K=1,8
@@ -2975,7 +3016,7 @@ C$OMP DO
         END DO
        END DO
 C$OMP END DO NOWAIT
-C$OMP END PARALLEL 
+C$OMP END PARALLEL
        IS3 = 104
        DO I1=1,6,5
         II19 = I1
@@ -3306,7 +3347,7 @@ C$OMP DO LASTPRIVATE (IS2)
         END DO
        END DO
 C$OMP END DO NOWAIT
-C$OMP END PARALLEL 
+C$OMP END PARALLEL
 
 
        LS3 = .TRUE.
@@ -3424,7 +3465,7 @@ C$OMP DO LASTPRIVATE (LS1)
         END DO
        END DO
 C$OMP END DO NOWAIT
-C$OMP END PARALLEL 
+C$OMP END PARALLEL
        DO I2=2,7,4
         DO I1=1,10
          DO I3=1,6,5
@@ -3543,6 +3584,33 @@ C$OMP DO LASTPRIVATE (LS2)
         END DO
        END DO
 C$OMP END DO NOWAIT
-C$OMP END PARALLEL 
-       RETURN 
-      END
+C$OMP END PARALLEL
+       RETURN
+       END
+
+#define IS_EQUAL(a,b) ((a==b).or.(a==0.and.abs(b)<10E-6).or.(abs(a-b)/abs(a)<10E-6))
+      subroutine check(calc,res)
+      real calc(100),res(100)
+      logical ngcheck/.FALSE./
+      do i=1,100
+         if (IS_EQUAL(calc(i), res(i))) then
+         else
+            ngcheck = .TRUE.
+         endif
+      enddo
+      if (ngcheck) write(6,*) calc
+      end
+
+#define IS_EQUAL8(a,b) ((a==b).or.(a==0.and.abs(b)<10E-7).or.(abs(a-b)/abs(a)<10E-7))
+      subroutine check8(calc,res)
+      real*8 calc(100),res(100)
+      logical ngcheck/.FALSE./
+      do i=1,100
+         if (IS_EQUAL8(calc(i), res(i))) then
+         else
+            ngcheck = .TRUE.
+            write(6,*) "zzz ",i,calc(i),res(i)
+         endif
+      enddo
+      if (ngcheck) write(6,*) calc
+      end

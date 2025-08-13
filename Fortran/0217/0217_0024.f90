@@ -16,19 +16,19 @@ submodule (m333) smod
 contains
 module procedure sub
 use m1
-write(1,*)a
+write(2,*)a
 if (a%i/=4) print *,101
-write(1,*)ty(5)
+write(2,*)ty(5)
 end
 end
 use m1
 use m333
   type(ty) :: a
 call sub(a)
-rewind 1
-read(1,*) n
+rewind 2
+read(2,*) n
 if (n/=4) print *,202
-read(1,*) n
+read(2,*) n
 if (n/=5) print *,203
 print *,'pass'
 end

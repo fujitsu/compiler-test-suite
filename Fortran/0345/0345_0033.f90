@@ -10,14 +10,14 @@
         character(len=3)::aa
         integer::ii
         namelist /xyz/ aa,ii
-         write(20,nml=xyz) 
+         write(21,nml=xyz)
          sub1=0.0
       end function
 
       program main
         character(len=3)::aa
         integer::ii
-        rr = sub0(aa,ii) 
-        rr = sub1(aa,ii) 
+        rr = sub0(aa,ii)
+        rr = sub1(aa,ii)
         print *,'pass'
       end program

@@ -12,13 +12,13 @@ i1=100
 !$omp section
 !$omp critical 
          do i1=1,1
-write(100,*) (1,i3=1,1)
+write(104,*) (1,i3=1,1)
          end do
 !$omp endcritical 
 !$omp section
 !$omp critical
          do i1=1,1
-write(100,*) (1,i2=1,1)
+write(104,*) (1,i2=1,1)
          end do
 !$omp endcritical
 !$omp end sections

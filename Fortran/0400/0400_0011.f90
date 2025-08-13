@@ -3,12 +3,12 @@ module m0
   subroutine xi1(k1)
     integer(1)::k1
     if (k1/=1) print *,101
-    write(1,*) 101
+    write(9,*) 101
   end subroutine
   subroutine xi2(k1)
     integer(2)::k1
     if (k1/=2) print *,102
-    write(1,*) 102
+    write(9,*) 102
   end subroutine
 end
 module m1
@@ -42,10 +42,10 @@ call ss()
 call chk
 contains
 subroutine chk
-rewind 1
-read(1,*) i;if (i/=101) print *,90001
-read(1,*) i;if (i/=102) print *,90002
-read(1,*,end=1) i
+rewind 9
+read(9,*) i;if (i/=101) print *,90001
+read(9,*) i;if (i/=102) print *,90002
+read(9,*,end=1) i
 print *,9999
 1 return
 end subroutine

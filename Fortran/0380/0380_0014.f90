@@ -2,11 +2,11 @@
  do i=1,10
   a(i) =5
  enddo
- open(file="fort.11", unit=1, status="new", access="stream",form="unformatted")
+ open(file="fort.55", unit=1, status="new", access="stream",form="unformatted")
    write(1), a
  close(1,status="keep")
 
- open(file="fort.11", unit=1, status="old", access="stream",form="unformatted")
+ open(file="fort.55", unit=1, status="old", access="stream",form="unformatted")
  read(1) a
  do i = 1,10
    if (a(i) .ne. i) write (6,*),'error at ', i

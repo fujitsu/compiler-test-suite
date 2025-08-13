@@ -14,7 +14,7 @@
      type (t2),INTENT(INOUT)::x(:,:)
      type (t1),INTENT(IN)::y(:,:)
      x%x22%x11 = x%x22%x11+y%x11
-write(2,*) 100
+write(3,*) 100
    END SUBROUTINE
  END MODULE
  MODULE m2
@@ -41,9 +41,9 @@ write(2,*) 100
  use m4
     call s1
     call s2
-rewind 2
+rewind 3
 do nn=1,1
-read(2,*) n
+read(3,*) n
 if (n/=100) print *,9001
 end do
          print*,"pass"

@@ -1,5 +1,9 @@
 integer j(30)
 real(16)::i
+open(unit=10,file="work11.dat")
+open(unit=11,file="work12.dat")
+open(unit=12,file="work13.dat")
+open(unit=13,file="work14.dat")
 do i=-1,2
  j=0
  call sub(j)
@@ -61,7 +65,7 @@ contains
     if (     i<=1)goto 112
     j(ii+3)=1
 112 continue
- end subroutine 
+ end subroutine
      end
 subroutine chk
 integer j(10:13,30),jj(30)

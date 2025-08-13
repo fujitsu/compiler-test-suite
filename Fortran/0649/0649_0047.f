@@ -13,10 +13,10 @@
          str%cha(6 ) = 'i'
          str%cha(7 ) = '1'
          str%cha(8 ) = ')'
-         rewind 10 
-         write (10,str%cha) a
-         rewind 10
-         read (10,*) b
+         rewind 24 
+         write (24,str%cha) a
+         rewind 24
+         read (24,*) b
          do i=1,8
            if (b(i).ne.i) call err()
          end do

@@ -9,6 +9,6 @@ end interface
 character(LEN=5)::st1,st2
 st1='ABCD'//c_null_char
 st2='ABCD'//c_null_char
-if (strcmp(st1,st2)==0)write(1,*)"same string"
+if (strcmp(st1,st2)==0)write(12,*)"same string"
 print *,'pass'
 end

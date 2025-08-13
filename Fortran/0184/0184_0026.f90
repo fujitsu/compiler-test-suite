@@ -15,7 +15,7 @@ end function
 recursive subroutine ss(n)
 integer::n
   k32=n
-write(1,'(z16.16)')loc(k32)
+write(25,'(z16.16)')loc(k32)
 n=n+1
 if (n<2) call ss(n)
 n=n-1

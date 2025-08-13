@@ -252,9 +252,9 @@ c
 25803 continue
 c
           isw    = 10
-          write(1)  isw
-          backspace 1
-          read(1)   i13
+          write(17)  isw
+          backspace 17
+          read(17)   i13
           i13    = i13+3
           i9comp = 13
       i9data = i9data + 1
@@ -270,9 +270,9 @@ c
 23504 i9ans1=0
 c
           rsw    = 1.4
-          write(1)  rsw
-          backspace 1
-          read(1)   r14
+          write(17)  rsw
+          backspace 17
+          read(17)   r14
           r14    = r14*10.
           r9comp = 14.
       i9data = i9data + 1
@@ -292,9 +292,9 @@ c
 23854 r9ans1 = 0.0e00
 c
           lsw    = .true.
-          write(1)  lsw
-          backspace 1
-          read(1)   l15
+          write(17)  lsw
+          backspace 17
+          read(17)   l15
           l15    = .not.l15
           l9comp = .false.
       i9data = i9data + 1
@@ -310,13 +310,13 @@ c
 25804 continue
 c
           isw    = 5
-          write(1)  isw
-          backspace 1
-          read(1)   i16
+          write(17)  isw
+          backspace 17
+          read(17)   i16
           rsw    = 3.2
-          write(1)  rsw
-          backspace 1
-          read(1)   r16
+          write(17)  rsw
+          backspace 17
+          read(17)   r16
           r16    = i16*r16
           r9comp = 16.
       i9data = i9data + 1
@@ -336,13 +336,13 @@ c
 23855 r9ans1 = 0.0e00
 c
           isw    = 17
-          write(1)  isw
-          backspace 1
-          read(1)   i17
+          write(17)  isw
+          backspace 17
+          read(17)   i17
           lsw    = .false.
-          write(1)  lsw
-          backspace 1
-          read(1)   l17
+          write(17)  lsw
+          backspace 17
+          read(17)   l17
           l17    = l17.or.i17.eq.17
           l9comp = .true.
       i9data = i9data + 1
@@ -358,13 +358,13 @@ c
 25805 continue
 c
           rsw    = 1.8
-          write(1)  rsw
-          backspace 1
-          read(1)   r18
+          write(17)  rsw
+          backspace 17
+          read(17)   r18
           lsw    = .true.
-          write(1)  lsw
-          backspace 1
-          read(1)   l18
+          write(17)  lsw
+          backspace 17
+          read(17)   l18
           l18=l18.and. r18.eq.rsw
           l9comp = .true.
       i9data = i9data + 1
@@ -380,17 +380,17 @@ c
 25806 continue
 c
           isw    = 2
-          write(1)  isw
-          backspace 1
-          read(1)   i19
+          write(17)  isw
+          backspace 17
+          read(17)   i19
           rsw    = 9.5
-          write(1)  rsw
-          backspace 1
-          read(1)   r19
+          write(17)  rsw
+          backspace 17
+          read(17)   r19
           lsw    = .false.
-          write(1)  lsw
-          backspace 1
-          read(1)   l19
+          write(17)  lsw
+          backspace 17
+          read(17)   l19
           i19    = i19*r19
           l19    = i19.eq.19.and..not.l19
           l9comp = .true.

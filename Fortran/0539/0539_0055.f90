@@ -12,7 +12,7 @@ i1=100
 !$omp section
 !$omp critical 
          do i1=1,1
-write(100,*) (1,i3=1,1)
+write(105,*) (1,i3=1,1)
          end do
 !$omp endcritical
 !$omp section
@@ -20,7 +20,7 @@ write(100,*) (1,i3=1,1)
 !$omp critical (a3)
 !$omp critical (a4)
          do i1=1,1
-write(100,*) (1,i2=1,1)
+write(105,*) (1,i2=1,1)
          end do
 !$omp endcritical (a4)
 !$omp endcritical (a3)

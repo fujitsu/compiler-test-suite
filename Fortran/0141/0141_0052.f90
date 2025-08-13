@@ -17,11 +17,11 @@ contains
 end
 use mod1
 use iso_c_binding,only:c_funptr,c_funloc
-type (c_funptr):: cp 
-cp= c_funloc( sub )  
+type (c_funptr):: cp
+cp= c_funloc( sub )
 call foo(cp)
 print *,'pass'
 end
   subroutine sub() bind(c)
-    write(1,*)'called sub'
+    write(39,*)'called sub'
   end subroutine

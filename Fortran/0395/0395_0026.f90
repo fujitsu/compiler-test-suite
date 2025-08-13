@@ -55,19 +55,19 @@ end
     end subroutine
         function fx() result(r)
           integer::r
-write(1,*) 'fx'
+write(8,*) 'fx'
           r=2
         end function
         function fy() result(r)
           real   ::r
           r=1.234
-write(1,*) 'fy'
+write(8,*) 'fy'
         end function
 subroutine chk
 character(2)::c
-rewind 1
-read(1,'(x,a)') c
+rewind 8
+read(8,'(x,a)') c
 if (c/='fx') print *,301
-read(1,'(x,a)') c
+read(8,'(x,a)') c
 if (c/='fy') print *,302
 end

@@ -7,7 +7,7 @@ namelist /nam/ k,t,z
 k=101
 t=x(1,2)
 z=20
-write(1,nam)
+write(11,nam)
 print *,'pass'
 
 end

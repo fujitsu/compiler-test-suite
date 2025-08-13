@@ -31,7 +31,7 @@
   end type
   contains
     function   prc(k)
-    write(1,*) 'Okay'
+    write(23,*) 'Okay'
     prc=1
     if (k/=1) print *,9001
     end function

@@ -12,7 +12,7 @@ type(x):: aa(k)/x('111')/
 
 allocate(vs(k))
 vs(1)=1
-write(1,*)fun1(aa(vs))
+write(9,*)fun1(aa(vs))
 call chk
 print *,'pass'
 contains
@@ -24,7 +24,7 @@ contains
 end
 subroutine chk
 character*4 c
-rewind 1
-read(1,'(a)')c
+rewind 9
+read(9,'(a)')c
 if (c/=' 111')print *,'error'
 end

@@ -9,6 +9,6 @@ p1%something=1
 allocate(p2)
 p2%something=2
 
-write(1,*)sizeof(p1)
+write(51,*)sizeof(p1)
 print *,'pass'
 end

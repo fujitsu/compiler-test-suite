@@ -7,13 +7,13 @@ contains
 
   subroutine Output_Str(txt)
     character(len=*) :: txt
-    write(1,'(a)') txt
+    write(23,'(a)') txt
   end subroutine Output_Str
 
   subroutine Output_StrInt(txt,i)
     character(len=*) :: txt
     integer          :: i
-    write(1,'(a,i5)') txt,i
+    write(23,'(a,i5)') txt,i
   end subroutine Output_StrInt
 
 end module outp
@@ -28,10 +28,10 @@ call chk
 print *,'pass'
 
 end program main
-subroutine chk 
+subroutine chk
 character*50 r
-rewind 1
-read(1,'(a)') r;if (r/='Hello')write(6,*) "NG"
-read(1,'(a)') r;if (r/='First integer:    5')write(6,*) "NG"
-read(1,'(a)') r;if (r/='Now second integer:   15')write(6,*) "NG"
+rewind 23
+read(23,'(a)') r;if (r/='Hello')write(6,*) "NG"
+read(23,'(a)') r;if (r/='First integer:    5')write(6,*) "NG"
+read(23,'(a)') r;if (r/='Now second integer:   15')write(6,*) "NG"
 end

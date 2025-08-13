@@ -12,7 +12,8 @@ int main()
       char cb;
       int  tp_debug = 0;
 
-      strcpy(&ca,"M");
+      //strcpy(&ca,"M");
+      ca = 'M' ;
       sub(tp_debug);
       printf(" #### C_OMP firstprivate(static char)  ####\n");
       if(strncmp(&ca,"M",1) == 0)

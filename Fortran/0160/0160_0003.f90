@@ -16,7 +16,7 @@ k=1
 
   call flux()
 
-  write(1,*)f%nv(1)
+  write(8,*)f%nv(1)
 
   deallocate(f%nv)
 print *,'pass'

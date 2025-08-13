@@ -79,6 +79,7 @@ void sub(int *ia0, int *ia1, int *ia2, int ib0[30], int ib1[30], int ib2[30], in
       int i;
 
 
+    omp_set_dynamic (0);
     if(ld) omp_set_num_threads (ist);
     *ith=omp_get_max_threads();
 

@@ -29,7 +29,7 @@
             write(*,*)'NG'
          endif
       enddo
-      write(1,*)'ia=',ia
+      write(7,*)'ia=',ia
       end subroutine sub_static
 
       subroutine sub_dynamic
@@ -56,7 +56,7 @@
             write(*,*)'NG'
          endif
       enddo
-      write(1,*)'ia=',ia
+      write(7,*)'ia=',ia
       end subroutine sub_dynamic
 
       subroutine sub_guided
@@ -83,7 +83,7 @@
             write(*,*)'NG'
          endif
       enddo
-      write(1,*)'ia=',ia
+      write(7,*)'ia=',ia
       end subroutine sub_guided
 
       subroutine sub_runtime
@@ -110,5 +110,5 @@
             write(*,*)'NG'
          endif
       enddo
-      write(1,*)'ia=',ia
+      write(7,*)'ia=',ia
       end subroutine sub_runtime

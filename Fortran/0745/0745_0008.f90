@@ -6,7 +6,7 @@
 
    subroutine init
      logical, save :: first_time=.true.
-     write(1,*) first_time
+     write(4,*) first_time
      first_time=.false.
      return
    end subroutine init
@@ -31,13 +31,13 @@
    call init
    call init
 
-rewind 1
+rewind 4
 call chk
 
  end program ptest
 subroutine chk
 logical Y
-read(1,*) Y;if (.not.Y)print *,'error-1'
-read(1,*) Y;if (     Y)print *,'error-2'
+read(4,*) Y;if (.not.Y)print *,'error-1'
+read(4,*) Y;if (     Y)print *,'error-2'
 print *,'pass'
 end

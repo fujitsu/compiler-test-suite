@@ -6,14 +6,14 @@ ia(4,2)=1
 ia(4,3)=2
 ia(5,2)=3
 ia(5,3)=4
-write(1,*)ia
+write(19,*)ia
 if (any(lbound(ia)/=(/4,2/)))print *,'error-4'
 if (any(ubound(ia)/=(/5,3/)))print *,'error-5'
 if (any(shape(ia)/=(/2,2/)))print *,'error-6'
 if (    size (ia)/=4)print *,'error-7'
 !$OMP END PARALLEL
-rewind 1
-read(1,*) i1,i2,i3,i4
+rewind 19
+read(19,*) i1,i2,i3,i4
 if (any((/i1,i2,i3,i4/)/=(/1,3,2,4/)))print *,'error-1'
 end
 integer ,parameter::i=4,j=5,k=2,m=3

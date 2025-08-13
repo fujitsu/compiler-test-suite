@@ -29,19 +29,19 @@ end type
 contains
 subroutine finalparent_ty(dmy)
 type(parent) :: dmy
-write(1,*)"finalparent_ty",dmy%LL
+write(4,*)"finalparent_ty",dmy%LL
 end subroutine
 subroutine finalbase1_ty(dmy)
 type(base_1) :: dmy(2,2)
-write(1,*)"finalbase1_ty",dmy%kk
+write(4,*)"finalbase1_ty",dmy%kk
 end subroutine
 subroutine finalbase_ty(dmy)
 type(base) :: dmy(3,2)
-write(1,*)"finalbase_ty",dmy%jj
+write(4,*)"finalbase_ty",dmy%jj
 end subroutine
 subroutine final_ty(dmy)
 type(ty) :: dmy(2,3)
-write(1,*)"final_ty",dmy%ii
+write(4,*)"final_ty",dmy%ii
 end subroutine
 end module
 use mod1

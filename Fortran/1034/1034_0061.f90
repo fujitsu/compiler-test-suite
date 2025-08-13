@@ -3,7 +3,7 @@
       PARAMETER(A=Z'FFF')
       S(W, B) = ISHFTC( W, B)
       O = S(S( 1, A), 8)
-      write(1,*)O
+      write(43,*)O
       end
       print *,'pass'
       END

@@ -37,7 +37,7 @@
 121 j(ii)=1
    goto 124
 124 continue
-   write(1,*) j
+   write(8,*) j
 end subroutine
   subroutine ss3
   ii=1
@@ -63,7 +63,7 @@ end subroutine
 121 j(ii)=1
    goto 124
 124 continue
-   write(1,*) j
+   write(8,*) j
 end subroutine
   subroutine ss2
   ii=1
@@ -92,7 +92,7 @@ end subroutine
 122 j(ii+1)=1
    goto 124
 124 continue
-   write(1,*) j
+   write(8,*) j
 end subroutine
   subroutine ss1
   ii=1
@@ -118,7 +118,7 @@ end subroutine
 122 j(ii+1)=1
    goto 124
 124 continue
-   write(1,*) j
+   write(8,*) j
 end subroutine
 end
 subroutine chk
@@ -135,9 +135,9 @@ h(09,:)=(/0,0,1,0,1,0,0,1,0/)
 h(10,:)=(/0,0,1,0,1,0,0,1,0/)
 h(11,:)=(/0,0,1,0,1,0,0,1,0/)
 h(12,:)=(/0,0,1,0,1,0,0,1,0/)
-rewind 1
+rewind 8
 do k=1,12
- read(1,*) hh
+ read(8,*) hh
  if (any(hh/=h(k,:)))write(6,*) "NG"
 end do
 end

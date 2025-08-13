@@ -11,7 +11,7 @@
       contains
          subroutine local_name(i)
          integer, intent(in) :: i
-         if (i==J1) write(1,*)'i=',i
+         if (i==J1) write(22,*)'i=',i
          end subroutine local_name
       end module first
       module second
@@ -23,4 +23,4 @@
       use second
       integer :: i = 0
       call public_name(i)
-      end 
+      end

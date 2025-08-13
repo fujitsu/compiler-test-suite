@@ -12,9 +12,9 @@
     program main
      use mod
       i=1
-      write(1,'(i4)') i
-      rewind (1)
-      read (1,'(i4)') i
+      write(33,'(i4)') i
+      rewind (33)
+      read (33,'(i4)') i
       call sub(i)
       if (i/=2) print *,'error i ->',i
       print *,'pass'

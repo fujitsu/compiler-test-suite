@@ -45,7 +45,7 @@ program main
   end type ty0
   type(ty0) :: ty10
 
-  open(10,file="fort.9999",status="replace",form="formatted")
+  open(10,file="fort.45",status="replace",form="formatted")
 
   write(10,*) ty10%i20, ty10%t10, ty10%i10
 rewind 10

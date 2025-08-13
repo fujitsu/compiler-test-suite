@@ -5,7 +5,7 @@ type base
 end type
 contains
 subroutine prc1()
-  write(3,*)100
+  write(11,*)100
 end subroutine
 end
 module nnn
@@ -27,7 +27,7 @@ type base
 end type
 contains
 subroutine prc1()
-  write(3,*)100
+  write(11,*)100
 end subroutine
 end
 module mmm
@@ -61,7 +61,7 @@ type, extends(b)::ext
 end type
 contains
 subroutine cproc1()
-  write(1,*)400
+  write(10,*)400
 end subroutine
 end module
 
@@ -73,13 +73,13 @@ type(b)::tc0
 type(e)::tc1
 call tc0%prc1()
 call tc1%prc1()
-rewind 1
-read(1,*) k
+rewind 10
+read(10,*) k
 if (k/=400) print *,200
-rewind 3
-read(3,*) k
+rewind 11
+read(11,*) k
 if (k/=100) print *,100
-read(3,*,end=100) k
+read(11,*,end=100) k
 print *,1000
 100 continue
 print *,'pass'

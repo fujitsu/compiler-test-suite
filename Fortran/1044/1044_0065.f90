@@ -46,6 +46,6 @@ integer,parameter::r(6)=(/79,80,81,82,83,84/)
   if (any(a/=r))then
       write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a
   else 
-      write(1,*) 'OK    item&subcode:',item,subcode
+      write(36,*) 'OK    item&subcode:',item,subcode
   endif
 end subroutine

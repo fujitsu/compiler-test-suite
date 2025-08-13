@@ -10,14 +10,14 @@
        end function
        function sub1()
         namelist /xyz/ aa,ii
-         write(20,nml=xyz) 
+         write(23,nml=xyz)
          sub1=0.0
        end function
       end module
 
       program main
        use mod
-        rr = sub0() 
-        rr = sub1() 
+        rr = sub0()
+        rr = sub1()
         print *,'pass'
       end program

@@ -18,9 +18,9 @@
      i=1
      j=2
      k=3
-     write(1,'(5i4)') i,j,k
-     rewind(1)
-     read (1,'(5i4)') i,j,k
+     write(30,'(5i4)') i,j,k
+     rewind(30)
+     read (30,'(5i4)') i,j,k
      call sub1(i,j,k)
      if (i/=38) print *,'error1 i ->',i
      call sub2(i,j,k)

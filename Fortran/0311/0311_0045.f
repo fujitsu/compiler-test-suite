@@ -13,44 +13,44 @@
 
       N=4*INT(COS(0.0))
 
-      WRITE (1,*,ERR=10) R4_ARRAY_1*4.932-9.
+      WRITE (10,*,ERR=10) R4_ARRAY_1*4.932-9.
 
       DO I=1,5
          R4_DVT_5(I)   = R4_ARRAY_1(I)*4.932-9.
       ENDDO
-      WRITE (2,*)        (R4_DVT_5(I),I=1,5)
+      WRITE (11,*)        (R4_DVT_5(I),I=1,5)
 
-      WRITE (1,*,ERR=10) SIN(COS(R4_ARRAY_1(1:N))*0.3)/3.
+      WRITE (10,*,ERR=10) SIN(COS(R4_ARRAY_1(1:N))*0.3)/3.
 
       DO I=1,N
          R4_DVT_5(I)   = SIN(COS(R4_ARRAY_1(I))*0.3)/3.
       ENDDO
-      WRITE (2,*)        (R4_DVT_5(I),I=1,N)
+      WRITE (11,*)        (R4_DVT_5(I),I=1,N)
 
 
-      WRITE (1,*,ERR=10) C8_ARRAY_1*(9.3,-7.0) - (22.1,87.3)
+      WRITE (10,*,ERR=10) C8_ARRAY_1*(9.3,-7.0) - (22.1,87.3)
 
       DO I=1,5
          C8_DVT_5(I)   = C8_ARRAY_1(I)*(9.3,-7.0) - (22.1,87.3)
       ENDDO
-      WRITE (2,*)        (C8_DVT_5(I),I=1,5)
+      WRITE (11,*)        (C8_DVT_5(I),I=1,5)
 
-      WRITE (1,*,ERR=10) LOG(CONJG(C8_ARRAY_1(1:N-1))*3.9)*0.087
+      WRITE (10,*,ERR=10) LOG(CONJG(C8_ARRAY_1(1:N-1))*3.9)*0.087
 
       DO I=1,N-1
          C8_DVT_5(I)   = LOG(CONJG(C8_ARRAY_1(I))*3.9)*0.087
       ENDDO
-      WRITE (2,*)        (C8_DVT_5(I),I=1,N-1)
+      WRITE (11,*)        (C8_DVT_5(I),I=1,N-1)
 
 
-      REWIND(1)
-      REWIND(2)
+      REWIND(10)
+      REWIND(11)
  100  ERROR=0
       END_NUM=0
-      READ(1,FMT='(A80)',END=110,ERR=150) VOUT
+      READ(10,FMT='(A80)',END=110,ERR=150) VOUT
       GOTO 120
  110  END_NUM=1
- 120  READ(2,FMT='(A80)',END=130,ERR=150) SOUT
+ 120  READ(11,FMT='(A80)',END=130,ERR=150) SOUT
       GOTO 140
  130  END_NUM=END_NUM+1
       IF(END_NUM .EQ. 2) GOTO 160

@@ -10,7 +10,7 @@ program main
 
   use test_module
   implicit none
-  write(1,*) 'test'
+  write(3,*) 'test'
 call set
   call test
 if (n/=1) print *,101

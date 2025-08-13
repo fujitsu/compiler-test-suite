@@ -18,13 +18,13 @@ if (k6/=2) print *,801
 contains
 subroutine s11
 namelist /nam/k1,k2,k3,k4,k5,k6
-write(1,nam)
+write(33,nam)
 end subroutine
 end
 namelist /nam/k1,k2,k3,k4,k5,k6
 call s1
-rewind 1
-read(1,nam)
+rewind 33
+read(33,nam)
 if (k1/=2) print *,801
 if (k2/=2) print *,801
 if (k3/=2) print *,801

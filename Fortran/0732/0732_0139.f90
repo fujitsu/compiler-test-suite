@@ -15,14 +15,14 @@ call chk(matmul(matmul(matmul(b(i1:i3,i1:i3),c(i1:i3,i1:i3)),matmul(b(i1:i3,i1:i
 call chk(matmul(matmul(matmul(b(i3-i2:i1+i2,i4-i3:i4-i1),c(i3-i2:i1+i2,i4-i3:i4-i1)),&
 matmul(b(i3-i2:i1+i2,i4-i3:i4-i1),c(i3-i2:i1+i2,i4-i3:i4-i1))),matmul(matmul(b(i3-i2:i1+i2,i4-i3:i4-i1),c(i3-i2:i1+i2,i4-i3:i4-i1)),&
 matmul(b(i3-i2:i1+i2,i4-i3:i4-i1),c(i3-i2:i1+i2,i4-i3:i4-i1)))))
-write(1,*)(matmul(matmul(matmul(b,c),matmul(b,c)),matmul(matmul(b,c),matmul(b,c))))
-write(1,*)(matmul(matmul(matmul(b(i1:i3,i1:i3),c(i1:i3,i1:i3)),matmul(b(i1:i3,i1:i3),c(i1:i3,i1:i3))),matmul(matmul(b(i1:i3,i1:i3),c(i1:i3,i1:i3)),matmul(b(i1:i3,i1:i3),c(i1:i3,i1:i3)))))
-write(1,*)(matmul(matmul(matmul(b(i3-i2:i1+i2,i4-i3:i4-i1),c(i3-i2:i1+i2,i4-i3:i4-i1)),&
+write(48,*)(matmul(matmul(matmul(b,c),matmul(b,c)),matmul(matmul(b,c),matmul(b,c))))
+write(48,*)(matmul(matmul(matmul(b(i1:i3,i1:i3),c(i1:i3,i1:i3)),matmul(b(i1:i3,i1:i3),c(i1:i3,i1:i3))),matmul(matmul(b(i1:i3,i1:i3),c(i1:i3,i1:i3)),matmul(b(i1:i3,i1:i3),c(i1:i3,i1:i3)))))
+write(48,*)(matmul(matmul(matmul(b(i3-i2:i1+i2,i4-i3:i4-i1),c(i3-i2:i1+i2,i4-i3:i4-i1)),&
 matmul(b(i3-i2:i1+i2,i4-i3:i4-i1),c(i3-i2:i1+i2,i4-i3:i4-i1))),matmul(matmul(b(i3-i2:i1+i2,i4-i3:i4-i1),c(i3-i2:i1+i2,i4-i3:i4-i1)),&
 matmul(b(i3-i2:i1+i2,i4-i3:i4-i1),c(i3-i2:i1+i2,i4-i3:i4-i1)))))
-rewind 1
+rewind 48
 do ix=1,3
-read(1,*) a;call chk(a)
+read(48,*) a;call chk(a)
 end do
 print *,'pass'
 contains

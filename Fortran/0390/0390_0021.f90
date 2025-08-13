@@ -11,7 +11,7 @@ subroutine s1
   NAMELIST /nam/ a
   !$omp threadprivate(/com/)
   !$omp parallel copyin(a)
-    write(1,nam)
+    write(9,nam)
   !$omp end parallel
   call chk
 end
@@ -21,7 +21,7 @@ subroutine chk
   !$omp threadprivate(/com/)
   NAMELIST /nam/ a
   !$omp parallel
-    rewind 1
-    read(1,nam)
+    rewind 9
+    read(9,nam)
   !$omp end parallel
 end

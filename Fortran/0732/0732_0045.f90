@@ -112,9 +112,9 @@ END DO
 call msec(mtime1)
 dt_lg = 0.001 * REAL(mtime1 - mtime0)
 dta_lg = 1.E6 * dt_lg / REAL(n)
-WRITE(1, *) 'Old logarithmic method:'
-WRITE(1, *) '  LG Run time =', dt_lg, ' seconds'
-WRITE(1, *) '  LG Average time =', dta_lg
+WRITE(15, *) 'Old logarithmic method:'
+WRITE(15, *) '  LG Run time =', dt_lg, ' seconds'
+WRITE(15, *) '  LG Average time =', dta_lg
 call msec(mtime0)
 do i=1,n
   x = rexpu()
@@ -122,9 +122,9 @@ END DO
 call msec(mtime1)
 dt_eau = 0.001 * REAL(mtime1 - mtime0)
 dta_eau = 1.E6 * dt_eau / REAL(n)
-WRITE(1, *) 'Unstructured:'
-WRITE(1, *) '  EA Run time =', dt_eau, ' seconds'
-WRITE(1, *) '  EA Average time =', dta_eau
+WRITE(15, *) 'Unstructured:'
+WRITE(15, *) '  EA Run time =', dt_eau, ' seconds'
+WRITE(15, *) '  EA Average time =', dta_eau
 call msec(mtime0)
 do i=1,n
   x = rexps()
@@ -132,9 +132,9 @@ END DO
 call msec(mtime1)
 dt_eas = 0.001 * REAL(mtime1 - mtime0)
 dta_eas = 1.E6 * dt_eas / REAL(n)
-WRITE(1, *) 'Structured:'
-WRITE(1, *) '  EA Run time =', dt_eas, ' seconds'
-WRITE(1, *) '  EA Average time =', dta_eas
+WRITE(15, *) 'Structured:'
+WRITE(15, *) '  EA Run time =', dt_eas, ' seconds'
+WRITE(15, *) '  EA Average time =', dta_eas
 print *,'pass'
 stop
 

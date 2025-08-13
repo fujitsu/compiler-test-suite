@@ -6,7 +6,7 @@ block
     case (1)
     x=1
     case (2)
-    write(1,*) x
+    write(4,*) x
   end select
 end block
 end do

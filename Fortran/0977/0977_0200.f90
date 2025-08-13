@@ -45,18 +45,16 @@ integer,parameter::s(18*3)=(/65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,
 select case(i)
  case (1)
    if (any(i1/=(/(i,i=1,18*3)/)))write(6,*) "NG"
-   if (loc(i1)/=n1)write(1,*) i,'i1 copied'
+   if (loc(i1)/=n1)write(60,*) i,'i1 copied'
  case (2)
    if (any(i1/=(/(i,i=1,18*3)/)))write(6,*) "NG"
-   if (loc(i1)/=n1)write(1,*) i,'i1 copied'
+   if (loc(i1)/=n1)write(60,*) i,'i1 copied'
  case (3)
    if (any(i1/=s             ))write(6,*) "NG"
-   if (loc(i1)==n1)write(1,*) i,'i1 no copied'
+   if (loc(i1)==n1)write(60,*) i,'i1 no copied'
  case (4)
    if (any(i1/=r             ))write(6,*) "NG"
-   if (loc(i1)==n1)write(1,*) i,'i1 no copied'
+   if (loc(i1)==n1)write(60,*) i,'i1 no copied'
 end select
 jfoo=i
 end
-   
-

@@ -2,9 +2,9 @@
  integer, dimension(2) :: b=1
  integer, dimension(2) :: y
  integer :: i
- write(1,*) 1
- rewind 1
- read (1,*)i
+ write(14,*) 1
+ rewind 14
+ read (14,*)i
  IF (i==1) THEN
   WHERE (a/=2)
     y = 1

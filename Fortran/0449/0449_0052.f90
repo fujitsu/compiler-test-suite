@@ -14,18 +14,18 @@ contains
    r=d
    r%x1=r%x1+1
    r%x2=r%x2+1
-  END FUNCTION 
+  END FUNCTION
   subroutine s1
    type(x):: v(kh)
    do k=1,kh
    end do
    call s2(v)
    end subroutine
-end 
+end
 
 use m1
 call s1
-call chk(1)
+call chk(108)
 print *,'pass'
 end
   subroutine s2(v)
@@ -34,7 +34,7 @@ end
    do k=1,kh
      allocate( v(k)%x2(10),source=2)
      v(k)= f(v(k))
-     write(1,'(z16.16)') loc( v(k)% x2 )
+     write(108,'(z16.16)') loc( v(k)% x2 )
      if (any(v(k)% x2/=2+1)) print *,200
      if (v(k)% x1/=1+1) print *,201
      deallocate( v(k)%x2)

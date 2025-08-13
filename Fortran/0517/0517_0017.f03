@@ -13,12 +13,12 @@ type(xx)::v
     subroutine fin(d)
     type(x)::d
      if(d%x1/=1) print *,1010
-write(10,*)1
+write(22,*)1
     end subroutine
 end
 use m1
 type(xx),allocatable::a
-write(10,*)-1
+write(22,*)-1
 v%x2=2
 a=v
 if (allocated(a%xv)) print *,200
@@ -29,7 +29,7 @@ allocate(v%xv)
 v%xv%x1=1
 a=v
 if (a%xv%x1/=1) print *,2003
-call chk(10,2)
+call chk(22,2)
 print *,'pass'
 end
 subroutine chk(k,n)

@@ -10,9 +10,9 @@ allocate(aaa(2)%bbb)
 do i = 1,2
 aaa(i)%bbb="abcd"
 enddo
-write(1,*)(aaa(i)%bbb,i=1,2)
-rewind 1
-read(1,'(1x a)')zzz
+write(10,*)(aaa(i)%bbb,i=1,2)
+rewind 10
+read(10,'(1x a)')zzz
 if (zzz/="abcdabcd")print *,'error* :',zzz
 print *,'pass'
 end

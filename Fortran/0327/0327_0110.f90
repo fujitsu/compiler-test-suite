@@ -1,7 +1,7 @@
 real :: x
 x=1.0
 call sub(x,x)
-write (1,*) x
+write (25,*) x
 print *,'pass'
 contains
 

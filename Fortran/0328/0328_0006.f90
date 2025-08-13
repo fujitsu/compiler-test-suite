@@ -1,7 +1,7 @@
 common //c
 integer :: x
 call sub(x,x)
-write(1,*) x
+write(23,*) x
 print *,'pass'
 end
 

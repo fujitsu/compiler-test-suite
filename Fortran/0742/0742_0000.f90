@@ -147,6 +147,6 @@ integer,parameter::double=8
               B_07_6, B_08_6, B_09_6, B_10_6, B_11_6, B_12_6, B_13_6,   &
               B_14_6, B_15_6, B_16_6, B_17_6, B_18_6, B_19_6, B_20_6 /),&
               (/ 21, 6 /) )
-write(1,*) B
+write(2,*) B
 print *,'pass'
 end

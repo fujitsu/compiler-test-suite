@@ -12,26 +12,26 @@
          i4a(1) = max(i4a(1),(i4b(i)),i4c(i))
          i4a(2) = min(i4a(2),i4b(i),(i4c(i)))
       enddo
-      write(1,*)
+      write(24,*)
 
       do i=1,n
          i4a(3) = max(i4a(3),(i4b(i)),i4c(i))
          i4a(4) = min(i4a(4),i4b(i),(i4c(i)))
       enddo
-      write(1,*)
+      write(24,*)
 
       do i=1,n
          i4a(5) = max(i4a(5),(i4b(i)),i4c(i))
          i4a(6) = min(i4a(6),i4b(i),(i4c(i)))
       enddo
-      write(1,*)
+      write(24,*)
 
 
       do i=1,n
          i4a(7) = max(i4a(7),(i4b(i)),i4c(i))
          i4a(8) = min(i4a(8),i4b(i),(i4c(i)))
       enddo
-      write(1,*)
+      write(24,*)
 
       do i=1,n
          i4a(9) = max(i4a(9),(i4b(i)),i4c(i))
@@ -54,26 +54,26 @@
          i8a(1) = max(i8a(1),(i8b(i)),i8c(i))
          i8a(2) = min(i8a(2),i8b(i),(i8c(i)))
       enddo
-      write(1,*)
+      write(24,*)
 
       do i=1,n
          i8a(3) = max(i8a(3),(i8b(i)),i8c(i))
          i8a(4) = min(i8a(4),i8b(i),(i8c(i)))
       enddo
-      write(1,*)
+      write(24,*)
 
       do i=1,n
          i8a(5) = max(i8a(5),(i8b(i)),i8c(i))
          i8a(6) = min(i8a(6),i8b(i),(i8c(i)))
       enddo
-      write(1,*)
+      write(24,*)
 
 
       do i=1,n
          i8a(7) = max(i8a(7),(i8b(i)),i8c(i))
          i8a(8) = min(i8a(8),i8b(i),(i8c(i)))
       enddo
-      write(1,*)
+      write(24,*)
 
       do i=1,n
          i8a(9) = max(i8a(9),(i8b(i)),i8c(i))

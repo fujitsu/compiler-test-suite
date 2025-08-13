@@ -3,6 +3,7 @@
       DIMENSION  RX(N,N),RY(N,N)
       DIMENSION  a(N,N),b(N,N),c(N,N)
 C
+      SAVE
       RXM  = 0
       RYM  = 0
       M=1
@@ -15,8 +16,8 @@ C
       c=3
       do 10 i=1,1024
       do 10 j=1,1024
-  	rx(i,j)=i
-	ry(i,j)=1024-j
+        rx(i,j)=i
+        ry(i,j)=1024-j
         a(i,j) = a(i,j)+b(j,i)+c(i,j)
 10    enddo
 C

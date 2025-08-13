@@ -13,13 +13,13 @@ end subroutine
 subroutine z(p)
 integer,optional::p(:,:)
 save= loc(p)
-write(1,'(z16.16)') loc(p)
+write(2,'(z16.16)') loc(p)
 do k=1,5
 t=tt
 call ss(p)
 end do
-write(1,*)
-write(1,'(z16.16)') loc(p)
+write(2,*)
+write(2,'(z16.16)') loc(p)
 do k=1,5
 t=tt
 kk= fun(p) 

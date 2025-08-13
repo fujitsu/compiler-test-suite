@@ -7,7 +7,7 @@ b=1
 allocate(c)
 c=1
 k1=1
-write(1,nam)
+write(3,nam)
 end
 subroutine s2
 implicit integer(a,b)

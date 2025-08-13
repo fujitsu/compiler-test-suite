@@ -107,23 +107,23 @@ program main
   x34=(/t,f,t,f/)
   x41=(/'11','22','33','44'/)
   x51=(/xx(1),xx(2),xx(3),xx(4)/)
-  write(11) f01()
-  write(11) f02()
-  write(11) f03()
-  write(11) f04()
-  write(11) f11()
-  write(11) f12()
-  write(11) f13()
-  write(11) f21()
-  write(11) f22()
-  write(11) f23()
-  write(11) f31()
-  write(11) f32()
-  write(11) f33()
-  write(11) f34()
-  write(11) f41()
-  write(11) f42(2)
-  Write(11) f51()
+  write(30) f01()
+  write(30) f02()
+  write(30) f03()
+  write(30) f04()
+  write(30) f11()
+  write(30) f12()
+  write(30) f13()
+  write(30) f21()
+  write(30) f22()
+  write(30) f23()
+  write(30) f31()
+  write(30) f32()
+  write(30) f33()
+  write(30) f34()
+  write(30) f41()
+  write(30) f42(2)
+  Write(30) f51()
 call chk
 print *,'pass'
 contains
@@ -145,24 +145,24 @@ subroutine chk
   character (len=2), dimension(2) :: y41
   character (len=2), dimension(2) :: y42
   type (xx),dimension(2) ::y51
-rewind 11
-  read(11) y01
-  read(11) y02
-  read(11) y03
-  read(11) y04
-  read(11) y11
-  read(11) y12
-  read(11) y13
-  read(11) y21
-  read(11) y22
-  read(11) y23
-  read(11) y31
-  read(11) y32
-  read(11) y33
-  read(11) y34
-  read(11) y41
-  read(11) y42
-  read(11) y51
+rewind 30
+  read(30) y01
+  read(30) y02
+  read(30) y03
+  read(30) y04
+  read(30) y11
+  read(30) y12
+  read(30) y13
+  read(30) y21
+  read(30) y22
+  read(30) y23
+  read(30) y31
+  read(30) y32
+  read(30) y33
+  read(30) y34
+  read(30) y41
+  read(30) y42
+  read(30) y51
 if (any(y01/=x01(1:3:2)))write(6,*) "NG"
 if (any(y02/=x02(1:3:2)))write(6,*) "NG"
 if (any(y03/=x03(1:3:2)))write(6,*) "NG"

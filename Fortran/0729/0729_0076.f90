@@ -5,7 +5,7 @@ PROGRAM COPYA
   INTEGER I,J,K
   DO L=1,4
      DO K=1,NI
-        WRITE(1,*)"PASS BY REF",K
+        WRITE(112,*)"PASS BY REF",K
         DO J=1,NI
            DO I=1,NI
               D = FUNC(A(1,1,1,L))
@@ -13,10 +13,10 @@ PROGRAM COPYA
         END DO
      END DO
   END DO
-  WRITE(1,*)"************ SWICTHING TO PASS BY VAL **************"
+  WRITE(112,*)"************ SWICTHING TO PASS BY VAL **************"
   DO L=1,4
      DO K=1,NI
-        WRITE(1,*)"PASS BY VAL",K
+        WRITE(112,*)"PASS BY VAL",K
         DO J=1,NI
            DO I=1,NI
               D = FUNC(A(:,:,:,L))

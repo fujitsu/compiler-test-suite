@@ -25,20 +25,20 @@ program main
   use m
   type (ty) :: t1
 
-  open(10,file="fort.9999")
+  open(10,file="fort.58")
 write(10,*) 111,2222
 rewind 10
 
   read(10,*) t1, t1
   close(10)
 
-  write(1,*) t1
+  write(19,*) t1
 call chk
 print *,'pass'
 end program main
 subroutine chk
 integer c(2)
-rewind 1
-read(1,*)c
+rewind 19
+read(19,*)c
 if (any(c/=[2222,78901])) print *,102
 end

@@ -170,20 +170,20 @@ end
  contains
  subroutine mod_sub()
  implicit none          
- integer*4 a1(9999999) 
+ integer*4 a1(999999) 
  integer*1 b1
- integer*4 a2(9999999) 
+ integer*4 a2(999999) 
  integer*1 b2
- integer*4 a3(9999999) 
+ integer*4 a3(999999) 
  integer*1 b3
- integer*4 a4(9999999),i 
- integer*4 a5(9999999) 
+ integer*4 a4(999999),i 
+ integer*4 a5(999999) 
  equivalence (b1,a1(1))
  equivalence (a1(99999),a2(99))
  equivalence (a2(99999),a3(999))
- equivalence (a4(9999999),a3(9999))
- equivalence (a4(9999992),a5(2))
- a4(9999991:9999999)=(/(i,i=1,9)/)
+ equivalence (a4(999999),a3(9999))
+ equivalence (a4(999992),a5(2))
+ a4(999991:999999)=(/(i,i=1,9)/)
  do i=1,9
  if (a5(i).ne.i) write(6,*) "NG"
  end do

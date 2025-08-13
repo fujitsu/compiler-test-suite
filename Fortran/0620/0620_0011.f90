@@ -34,7 +34,7 @@ end module
  temp=>      pobj%pptr
  select type(temp)
  type is(ty)
- write(1,*)1001,temp%num
+ write(4,*)1001,temp%num
 class default
  print *,9999
 end select
@@ -55,10 +55,10 @@ function pls(a,b)
  type(ty) :: pls
  select type(a)
  type is(ty)
- write(1,*)2001,a%num
+ write(4,*)2001,a%num
   select type(b)
   type is(ty)
- write(1,*)3001,a%num
+ write(4,*)3001,a%num
    pls%num = a%num + b%num
   endselect
  endselect

@@ -1,9 +1,9 @@
 i = 4
-open(10)
-write(10, '(i4)') i
-rewind(10)
-read(10, '(i4)') i
-close(10)
+open(22)
+write(22, '(i4)') i
+rewind(22)
+read(22, '(i4)') i
+close(22)
 
 if(.not.(i.ge.5)) then
    print *, ': ok'

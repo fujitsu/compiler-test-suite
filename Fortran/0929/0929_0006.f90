@@ -18,7 +18,7 @@ module m1
 contains
   subroutine xp(d)
     type(x):: d
-    write(1,*) 100
+    write(7,*) 100
   end subroutine
 end module
 
@@ -52,12 +52,12 @@ use m1
 end subroutine
 
 call s1
-rewind 1
-read(1,*) k;if(k/=100) print *,101
-read(1,*) k;if(k/=100) print *,202
-read(1,*) k;if(k/=100) print *,303
-read(1,*) k;if(k/=100) print *,404
-read(1,*,end=100) k
+rewind 7
+read(7,*) k;if(k/=100) print *,101
+read(7,*) k;if(k/=100) print *,202
+read(7,*) k;if(k/=100) print *,303
+read(7,*) k;if(k/=100) print *,404
+read(7,*,end=100) k
 print *,911
 100 print *,"PASS"
 end

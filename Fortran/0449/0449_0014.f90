@@ -18,7 +18,7 @@ contains
    if (k/=1) print *,711
    allocate ( r:: a%x1(n),stat=k)
    if (k/=0) stop 1000
-   write(1,'(z16.16)') loc(a%x1)
+   write(27,'(z16.16)') loc(a%x1)
    select type(p=>a%x1)
      type is(r)
       k=1
@@ -37,18 +37,18 @@ end
 subroutine chk
 character(16):: c,cc(100)
 k=0
-rewind 1
+rewind 27
 do nn=1,10000
- read(1,'(a)') c
+ read(27,'(a)') c
  do kk=1,k
    if (cc(kk)==c) then
      goto 2
    endif
  end do
  k=k+1
- if (k>100) then 
+ if (k>100) then
     print *,'Eroor memory leak '
-    return 
+    return
  endif
  cc(k)=c
 2 continue

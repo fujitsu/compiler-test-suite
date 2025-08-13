@@ -12,11 +12,11 @@ subroutine sub
 allocate(xa(2))
 xa(2)%y1=2
 if (xa(2)%y1/=2)write(6,*) "NG"
-write(1,*) loc(xa(2)%y1)
+write(27,*) loc(xa(2)%y1)
 allocate(xa(2)%y2(3))
 xa(2)%y2=(/11,12,13/)
 if (any(xa(2)%y2/=(/11,12,13/)))write(6,*) "NG"
-write(2,*) loc(xa(2)%y2(3))
+write(28,*) loc(xa(2)%y2(3))
 deallocate(xa)
-end subroutine 
+end subroutine
 end

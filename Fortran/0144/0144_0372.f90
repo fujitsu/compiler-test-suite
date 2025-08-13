@@ -21,7 +21,7 @@ end forall
 deallocate(xxx)
 allocate(xxx(10))
 if (ip/=loc(xxx)) then
-  write(1,'(z16.16)') ip,loc(xxx)
+  write(25,'(z16.16)') ip,loc(xxx)
 endif
 end subroutine
 subroutine s2(k1,k2,k3)

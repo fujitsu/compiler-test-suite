@@ -8,7 +8,7 @@ END MODULE  mod_var
     USE mod_var
     USE mod_ly
     ly=1.0
-    write(1,*)'ly =',ly
+    write(44,*)'ly =',ly
     if (abs(ly-1.0)>0.0001)print *,'error'
 print *,'pass'
-END 
+END

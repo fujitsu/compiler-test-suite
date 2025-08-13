@@ -63,14 +63,14 @@ subroutine testsub3()
    !$omp critical
     do i=2,10
     do iaa=2,10
-      write(99,*) (i,ibb=1,10)
+      write(100,*) (i,ibb=1,10)
     end do
     end do
    !$omp endcritical
    !$omp critical
     do i2=2,10
     do iaa2=2,10
-      write(99,*) (i2,ibb2=1,10)
+      write(101,*) (i2,ibb2=1,10)
     end do
     end do
    !$omp endcritical
@@ -96,12 +96,12 @@ subroutine testsub4()
    !$omp task default(firstprivate)
    !$omp critical
     do iaa=2,10
-      write(99,*) (i,ibb=1,10)
+      write(102,*) (i,ibb=1,10)
     end do
    !$omp endcritical
    !$omp critical
     do i2=2,10
-      write(99,*) (i2,ibb2=1,10)
+      write(103,*) (i2,ibb2=1,10)
     end do
    !$omp endcritical
    !$omp end task
@@ -125,14 +125,14 @@ subroutine testsub5()
    !$omp parallel shared(prv,iaa,i,ibb,i2,iaa2,ibb2)
    !$omp task default(firstprivate)
    !$omp critical
-      write(99,*) (i,ibb=1,10)
+      write(104,*) (i,ibb=1,10)
     do iaa=2,10
     end do
    !$omp endcritical
    !$omp critical
     do i2=2,10
     end do
-      write(99,*) (i2,ibb2=1,10)
+      write(105,*) (i2,ibb2=1,10)
    !$omp endcritical
    !$omp end task
    if (iaa.ne.1) print *,'err'

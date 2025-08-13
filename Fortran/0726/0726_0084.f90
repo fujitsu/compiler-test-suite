@@ -17,7 +17,7 @@ CONTAINS
 
    SUBROUTINE PrintX
 
-      write(1,*) X
+      write(34,*) X
 
    END SUBROUTINE PrintX
 
@@ -29,8 +29,8 @@ subroutine s1
 
    CALL PrintX
 
-  rewind 1
-  read(1,*) a
+  rewind 34
+  read(34,*) a
   if (a/=15.0)write(6,*) "NG"
 
 END

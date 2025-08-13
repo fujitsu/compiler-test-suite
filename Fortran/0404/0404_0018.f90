@@ -9,12 +9,12 @@ integer :: omp_get_thread_num
 !$omp parallel
 j1 = omp_get_thread_num()
 j2 = omp_get_thread_num()
-write(1,*)1,loc(j1)
+write(10,*)1,loc(j1)
 !$omp end parallel
 !$omp parallel
 if (any(j1 /= omp_get_thread_num())) print *,35
 if (any(j2 /= omp_get_thread_num())) print *,36
-write(1,*)1,loc(j1)
+write(10,*)1,loc(j1)
 !$omp end parallel
 end subroutine
 end

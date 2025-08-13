@@ -13,8 +13,8 @@ i1=200
 !$omp endcritical
 !$omp do 
          do i1=1,1
-write(100,*) (1,i3=1,1)
-write(100,*) (1,i2=1,1)
+write(102,*) (1,i3=1,1)
+write(102,*) (1,i2=1,1)
          end do
 !$omp end do
 !$omp endparallel

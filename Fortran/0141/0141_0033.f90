@@ -8,7 +8,7 @@ subroutine sub(a,k)
 integer,allocatable::a(:)
 integer            ::b(k,k)
 namelist /nam/a,b
-read(1,nam)
+read(24,nam)
 if (a(1)/=1) print *,101,a(1)
 if (a(2)/=2) print *,102,a(2)
 if (b(1,1)/=11) print *,201,b(1,1)
@@ -21,6 +21,6 @@ subroutine chk()
 integer::a(2)=[1,2]
 integer::b(4)=[11,12,13,14]
 namelist /nam/a,b
-write(1,nam)
-rewind 1
+write(24,nam)
+rewind 24
 end subroutine

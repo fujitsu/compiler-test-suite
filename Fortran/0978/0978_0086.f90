@@ -14,7 +14,7 @@ contains
     character(*), DIMENSION(300*2) :: a
     if (any(a/='123'))write(6,*) "NG"
     a(600)='abc'
-    write(1,*)loc(a)
+    write(35,*)loc(a)
   END SUBROUTINE f
   SUBROUTINE w(a)
     character(*), DIMENSION(300*2) :: a
@@ -27,7 +27,7 @@ use m
 type(x),target::v(3)=(/x(1,'2',3),x(1,'123',3),x(1,'2',3)/)
   character(3),pointer,DIMENSION(:,:,:) :: p
     p=>v(2)%a(:100,:,:)
-    write(1,*)loc(p)
+    write(35,*)loc(p)
 call s0(p)
 if (v(2)%a(100,3,2)/='abc')write(6,*) "NG"
 print *,'pass'

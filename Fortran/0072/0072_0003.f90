@@ -5,7 +5,7 @@ namelist /namb/bbb
 allocate(aaa,bbb)
 aaa=1
 bbb=1
-write(1,namb)
-write(1,nama)
+write(4,namb)
+write(4,nama)
 print *,'pass'
 end

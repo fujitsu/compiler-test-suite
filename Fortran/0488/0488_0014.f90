@@ -1,3 +1,3 @@
-write(1,'(g0)') 1
+write(3,'(g0)') 1
 print *,'pass'
 end

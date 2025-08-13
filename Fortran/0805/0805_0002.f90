@@ -15,14 +15,14 @@ contains
   subroutine xp(d)
     type(x):: d
       if (d%x1/=2 .and. d%x1/=12 .and. d%x1/=22) print *,1301
-    write(2,*) 100
+    write(8,*) 100
   end subroutine
  end
 subroutine s1
 use m1
   type(y),allocatable:: v(:)
   allocate(v(2))
-write(1,'(z16.16)') loc( v )
+write(7,'(z16.16)') loc( v )
   allocate(v(2)%y2)
   v(2)%y1=1
   v(2)%y2%x1=2
@@ -50,18 +50,18 @@ call omp_set_num_threads(2)
 do k=1,kh
 call s1
 end do
-call chk(1)
+call chk(7)
 call chkfinal
 print *,'pass'
 end
 subroutine chkfinal
 use km
-rewind 2
+rewind 8
 do nn=1,kh*5
- read(2,*) kk
+ read(8,*) kk
    if (kk/=100) print *,2901
 end do
- read(2,*,end=3) kk
+ read(8,*,end=3) kk
    print *,2902
 3 end
 subroutine chk(n)

@@ -2,9 +2,9 @@
        integer :: n
        real :: a,b
        real,external :: Integral
-       write (8,*) -2.0,2.0,100
-       rewind 8
-       read (8,*) a,b,n
+       write (41,*) -2.0,2.0,100
+       rewind 41
+       read (41,*) a,b,n
        s=Integral(a,b,n)
        write(*,'(f10.5)') s
        print *,'pass'
@@ -24,4 +24,4 @@
           s=s+f(a+i*h)
        end do
        s=h*s
-      end function Integral    
+      end function Integral

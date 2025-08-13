@@ -7,7 +7,7 @@ end module
 use mdef
 type(tdef) ,pointer:: tt(:)
 integer::v(3)
-v=(/2,1,2/)
+v=(/2,1,3/)
 ii=2
 jj=2
 allocate(tt(ii))

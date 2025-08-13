@@ -23,39 +23,39 @@ P1E(1:N2,1:N3) = TRANSPOSE( xcos(reshape((/POP(1:N3,1:N2)/),(/N3,N2/))))
 P1F(1:N2,1:N3) = TRANSPOSE( xcos(reshape((/POP(1:N3,1:N2)+POP(VN3,VN2)-POP(:,:)/),(/N3,N2/))))
 P1G(1:N2,1:N3) = TRANSPOSE( xcos(POP(1:3,1:2) ))
 P1H(1:N2,1:N3) = TRANSPOSE( xcos(POP(1:3:N3-N2,1:N2:N3-N2) ))
-write(1,*)(TRANSPOSE( xcos(POP(:,:)) ))
-write(1,*)(TRANSPOSE( xcos(POP(1:N3,1:N2) )))
-write(1,*)(TRANSPOSE( xcos(POP(N3-N2:N3,1:N3+N2-N3) )))
-write(1,*)(TRANSPOSE( xcos(POP(VN3,1:N3+N2-N3) )))
-write(1,*)(TRANSPOSE( xcos(POP(N3-N2:N3,VN2) )))
-write(1,*)(TRANSPOSE( xcos(POP(VN3,VN2) )))
-write(1,*)(TRANSPOSE( xcos(POP(VN3(N3-N2:N3:N3-N2),VN2(N3-N2:N3-(N3-N2):N3-N2)) )))
-write(1,*)(TRANSPOSE( xcos(real(reshape((/(i,i=1,6)/),(/3,2/))))))
-write(1,*)(TRANSPOSE( xcos(reshape((/1.,2.,3.,4.,5.,6./),(/3,2/)))))
-write(1,*)(TRANSPOSE( xcos(reshape((/POP(1:N3,1:N2)/),(/3,2/)))))
-write(1,*)(TRANSPOSE( xcos(reshape((/POP(1:N3,1:N2)+POP(VN3,VN2)-POP(:,:)/),(/3,2/)))))
-write(1,*)(TRANSPOSE( xcos(real(reshape((/(i,i=1,6)/),(/N3,N2/))))))
-write(1,*)(TRANSPOSE( xcos(reshape((/1.,2.,3.,4.,5.,6./),(/N3,N2/)))))
-write(1,*)(TRANSPOSE( xcos(reshape((/POP(1:N3,1:N2)/),(/N3,N2/)))))
-write(1,*)(TRANSPOSE( xcos(reshape((/POP(1:N3,1:N2)+POP(VN3,VN2)-POP(:,:)/),(/N3,N2/)))))
-write(1,*)(TRANSPOSE( xcos(POP(1:3,1:2) )))
-write(1,*)(TRANSPOSE( xcos(POP(1:3:N3-N2,1:N2:N3-N2) )))
-write(1,*) P11
-write(1,*) P12
-write(1,*) P13
-write(1,*) P14
-write(1,*) P15
-write(1,*) P16
-write(1,*) P17
-write(1,*) P18
-write(1,*) P19
-write(1,*) P1A
-write(1,*) P1B
-write(1,*) P1C
-write(1,*) P1D
-write(1,*) P1E
-write(1,*) P1F
-write(1,*) P1G
+write(19,*)(TRANSPOSE( xcos(POP(:,:)) ))
+write(19,*)(TRANSPOSE( xcos(POP(1:N3,1:N2) )))
+write(19,*)(TRANSPOSE( xcos(POP(N3-N2:N3,1:N3+N2-N3) )))
+write(19,*)(TRANSPOSE( xcos(POP(VN3,1:N3+N2-N3) )))
+write(19,*)(TRANSPOSE( xcos(POP(N3-N2:N3,VN2) )))
+write(19,*)(TRANSPOSE( xcos(POP(VN3,VN2) )))
+write(19,*)(TRANSPOSE( xcos(POP(VN3(N3-N2:N3:N3-N2),VN2(N3-N2:N3-(N3-N2):N3-N2)) )))
+write(19,*)(TRANSPOSE( xcos(real(reshape((/(i,i=1,6)/),(/3,2/))))))
+write(19,*)(TRANSPOSE( xcos(reshape((/1.,2.,3.,4.,5.,6./),(/3,2/)))))
+write(19,*)(TRANSPOSE( xcos(reshape((/POP(1:N3,1:N2)/),(/3,2/)))))
+write(19,*)(TRANSPOSE( xcos(reshape((/POP(1:N3,1:N2)+POP(VN3,VN2)-POP(:,:)/),(/3,2/)))))
+write(19,*)(TRANSPOSE( xcos(real(reshape((/(i,i=1,6)/),(/N3,N2/))))))
+write(19,*)(TRANSPOSE( xcos(reshape((/1.,2.,3.,4.,5.,6./),(/N3,N2/)))))
+write(19,*)(TRANSPOSE( xcos(reshape((/POP(1:N3,1:N2)/),(/N3,N2/)))))
+write(19,*)(TRANSPOSE( xcos(reshape((/POP(1:N3,1:N2)+POP(VN3,VN2)-POP(:,:)/),(/N3,N2/)))))
+write(19,*)(TRANSPOSE( xcos(POP(1:3,1:2) )))
+write(19,*)(TRANSPOSE( xcos(POP(1:3:N3-N2,1:N2:N3-N2) )))
+write(19,*) P11
+write(19,*) P12
+write(19,*) P13
+write(19,*) P14
+write(19,*) P15
+write(19,*) P16
+write(19,*) P17
+write(19,*) P18
+write(19,*) P19
+write(19,*) P1A
+write(19,*) P1B
+write(19,*) P1C
+write(19,*) P1D
+write(19,*) P1E
+write(19,*) P1F
+write(19,*) P1G
 call chk
 print *,'pass'
 contains
@@ -76,9 +76,9 @@ xcos=cos(x)
 end function
 subroutine chk
 real,dimension(2,3)::x
-rewind 1
+rewind 19
 do
-read(1,*,end=1)x
+read(19,*,end=1)x
 if (any(abs(x-xcos(0.+reshape((/1,4,2,5,3,6/),(/2,3/))))>0.001))write(6,*) "NG"
 end do
 1 end subroutine

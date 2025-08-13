@@ -16,7 +16,7 @@ select type(A1=>obj)
 type is(ty(3))
  print*,'aa3'
 type is (ty(4))
- write(1,*)'aa4'
+ write(10,*)'aa4'
 type is (ty(2))
  print*,'aa2'
 end select

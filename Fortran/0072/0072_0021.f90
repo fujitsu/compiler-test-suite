@@ -4,8 +4,8 @@ subroutine ss(k,a,s)
 complex(4)::a(:,:,:)
 complex(4)::s
 namelist /nam/a,s
-open(1,delim='quote')
-write(1,nam)
+open(35,delim='quote')
+write(35,nam)
 end subroutine
 end
 use m1
@@ -25,8 +25,8 @@ end
 subroutine chk
 complex(4) a(2),s
 namelist /nam/a,s
-rewind 1
-read(1,nam) 
+rewind 35
+read(35,nam) 
 if (any(a/=[(1,3),(4,5)])) print *,101
 if (   (s/=(7,9))) print *,102
 end

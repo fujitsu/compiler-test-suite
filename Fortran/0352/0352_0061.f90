@@ -1,4 +1,5 @@
 program main
+save
 type t1
    logical(kind=4) :: l4
    real(kind=8) :: r8

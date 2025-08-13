@@ -34,33 +34,33 @@ q1%q%p3(2:)=>t
 q2%q%v%p1(2:)=>t
 q2%q%v%p2(2:)=>q2%q%p1
 if (q2%q%p1(3)/=1)k=k+8
-write(11,*)lbound(q2%q%p1),ubound(q2%q%p1)
+write(31,*)lbound(q2%q%p1),ubound(q2%q%p1)
 if (q1%q%p2(3)/=1)k=k+1
-write(11,*)lbound(q1%q%p2),ubound(q1%q%p2)
+write(31,*)lbound(q1%q%p2),ubound(q1%q%p2)
 if (q2%q%v%p1(3)/=1)k=k+2
-write(11,*)lbound(q2%q%v%p1),ubound(q2%q%v%p1)
+write(31,*)lbound(q2%q%v%p1),ubound(q2%q%v%p1)
 if (q2%q%v%p2(3)/=1)k=k+4
-write(11,*)lbound(q2%q%v%p2),ubound(q2%q%v%p2)
+write(31,*)lbound(q2%q%v%p2),ubound(q2%q%v%p2)
 if (q1%q%p3(3)/=1)k=k+16
-write(11,*)lbound(q1%q%p3),ubound(q1%q%p3)
+write(31,*)lbound(q1%q%p3),ubound(q1%q%p3)
 q1%q%p3(2:)=>q2%q%p1
 if (q1%q%p3(3)/=1)k=k+32
-write(11,*)lbound(q1%q%p3),ubound(q1%q%p3)
+write(31,*)lbound(q1%q%p3),ubound(q1%q%p3)
 allocate(q2%q%v2)
 q2%q%v2%p1(2:)=>t
 q2%q%v2%p2(2:)=>q2%q%p1
 if (q2%q%v2%p1(3)/=1)k=k+2
-write(11,*)lbound(q2%q%v2%p1),ubound(q2%q%v2%p1)
+write(31,*)lbound(q2%q%v2%p1),ubound(q2%q%v2%p1)
 if (q2%q%v2%p2(3)/=1)k=k+4
-write(11,*)lbound(q2%q%v2%p2),ubound(q2%q%v2%p2)
+write(31,*)lbound(q2%q%v2%p2),ubound(q2%q%v2%p2)
 allocate(q1%q%v3(2))
 n=2
 q1%q%v3(n)%p1(2:)=>t
 q1%q%v3(n)%p2(2:)=>q2%q%p1
 if (q1%q%v3(n)%p1(3)/=1)k=k+2
-write(11,*)lbound(q1%q%v3(n)%p1),ubound(q1%q%v3(n)%p1)
+write(31,*)lbound(q1%q%v3(n)%p1),ubound(q1%q%v3(n)%p1)
 if (q1%q%v3(n)%p2(3)/=1)k=k+4
-write(11,*)lbound(q1%q%v3(n)%p2),ubound(q1%q%v3(n)%p2)
+write(31,*)lbound(q1%q%v3(n)%p2),ubound(q1%q%v3(n)%p2)
 end subroutine
 end
 subroutine z1(k)
@@ -84,33 +84,33 @@ p3(2:,3:,4:)=>t
 v%p1(2:,3:,4:)=>t
 v%p2(2:,3:,4:)=>p1
 if (p1(3,5,7)/=1)k=k+8
-write(12,*)lbound(p1),ubound(p1)
+write(32,*)lbound(p1),ubound(p1)
 if (p2(3,5,7)/=1)k=k+1
-write(12,*)lbound(p2),ubound(p2)
+write(32,*)lbound(p2),ubound(p2)
 if (v%p1(3,5,7)/=1)k=k+2
-write(12,*)lbound(v%p1),ubound(v%p1)
+write(32,*)lbound(v%p1),ubound(v%p1)
 if (v%p2(3,5,7)/=1)k=k+4
-write(12,*)lbound(v%p2),ubound(v%p2)
+write(32,*)lbound(v%p2),ubound(v%p2)
 if (p3(3,5,7)/=1)k=k+16
-write(12,*)lbound(p3),ubound(p3)
+write(32,*)lbound(p3),ubound(p3)
 p3(2:,3:,4:)=>p1
 if (p3(3,5,7)/=1)k=k+32
-write(12,*)lbound(p3),ubound(p3)
+write(32,*)lbound(p3),ubound(p3)
 allocate(v2)
 v2%p1(2:,3:,4:)=>t
 v2%p2(2:,3:,4:)=>p1
 if (v2%p1(3,5,7)/=1)k=k+2
-write(12,*)lbound(v2%p1),ubound(v2%p1)
+write(32,*)lbound(v2%p1),ubound(v2%p1)
 if (v2%p2(3,5,7)/=1)k=k+4
-write(12,*)lbound(v2%p2),ubound(v2%p2)
+write(32,*)lbound(v2%p2),ubound(v2%p2)
 allocate(v3(2,3,4))
 n=2
 v3(n,3,4)%p1(2:,3:,4:)=>t
 v3(n,3,4)%p2(2:,3:,4:)=>p1
 if (v3(n,3,4)%p1(3,5,7)/=1)k=k+2
-write(12,*)lbound(v3(n,3,4)%p1),ubound(v3(n,3,4)%p1)
+write(32,*)lbound(v3(n,3,4)%p1),ubound(v3(n,3,4)%p1)
 if (v3(n,3,4)%p2(3,5,7)/=1)k=k+4
-write(12,*)lbound(v3(n,3,4)%p2),ubound(v3(n,3,4)%p2)
+write(32,*)lbound(v3(n,3,4)%p2),ubound(v3(n,3,4)%p2)
 end subroutine
 end
 subroutine s1(k)
@@ -134,33 +134,33 @@ p3(2:)=>t
 v%p1(2:)=>t
 v%p2(2:)=>p1
 if (p1(2)/=1)k=k+8
-write(13,*)lbound(p1),ubound(p1)
+write(33,*)lbound(p1),ubound(p1)
 if (p2(2)/=1)k=k+1
-write(13,*)lbound(p2),ubound(p2)
+write(33,*)lbound(p2),ubound(p2)
 if (v%p1(2)/=1)k=k+2
-write(13,*)lbound(v%p1),ubound(v%p1)
+write(33,*)lbound(v%p1),ubound(v%p1)
 if (v%p2(2)/=1)k=k+4
-write(13,*)lbound(v%p2),ubound(v%p2)
+write(33,*)lbound(v%p2),ubound(v%p2)
 if (p3(2)/=1)k=k+16
-write(13,*)lbound(p3),ubound(p3)
+write(33,*)lbound(p3),ubound(p3)
 p3(2:)=>p1
 if (p3(2)/=1)k=k+32
-write(13,*)lbound(p3),ubound(p3)
+write(33,*)lbound(p3),ubound(p3)
 allocate(v2)
 v2%p1(2:)=>t
 v2%p2(2:)=>p1
 if (v2%p1(2)/=1)k=k+2
-write(13,*)lbound(v2%p1),ubound(v2%p1)
+write(33,*)lbound(v2%p1),ubound(v2%p1)
 if (v2%p2(2)/=1)k=k+4
-write(13,*)lbound(v2%p2),ubound(v2%p2)
+write(33,*)lbound(v2%p2),ubound(v2%p2)
 allocate(v3(2))
 n=2
 v3(n)%p1(2:)=>t
 v3(n)%p2(2:)=>p1
 if (v3(n)%p1(2)/=1)k=k+2
-write(13,*)lbound(v3(n)%p1),ubound(v3(n)%p1)
+write(33,*)lbound(v3(n)%p1),ubound(v3(n)%p1)
 if (v3(n)%p2(2)/=1)k=k+4
-write(13,*)lbound(v3(n)%p2),ubound(v3(n)%p2)
+write(33,*)lbound(v3(n)%p2),ubound(v3(n)%p2)
 end subroutine
 end
 k=0
@@ -172,21 +172,21 @@ if (k/=0)print *,101,k
 print *,'pass'
 end
 subroutine chk
-rewind  11
-rewind  12
-rewind  13
-do 
-read(12,*,end=11) k1,k2,k3,k4,k5,k6
+rewind  31
+rewind  32
+rewind  33
+do
+read(32,*,end=11) k1,k2,k3,k4,k5,k6
 if (any((/k1,k2,k3,k4,k5,k6/)/=(/2,3,4,3,5,7/)))print *,101
 end do
 11 continue
-do 
-read(11,*,end=12) k1,k2
+do
+read(31,*,end=12) k1,k2
 if (any((/k1,k2/)/=(/2,3/)))print *,201
 end do
 12 continue
-do 
-read(13,*,end=13) k1,k2
+do
+read(33,*,end=13) k1,k2
 if (any((/k1,k2/)/=(/2,3/)))print *,301
 end do
 13 continue

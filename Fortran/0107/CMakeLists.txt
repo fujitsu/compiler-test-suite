@@ -1,2 +1,4 @@
 llvm_singlesource_fujitsu(PREFIX "Fujitsu-Fortran-")
 llvm_set_own_fortran_module_directory()
+set_property(SOURCE 0107_0110.f APPEND PROPERTY COMPILE_OPTIONS "-fno-fast-math")
+set_property(TARGET Fujitsu-Fortran-0107_0110 APPEND PROPERTY LINK_OPTIONS "-fno-fast-math")

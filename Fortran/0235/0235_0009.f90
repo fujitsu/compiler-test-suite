@@ -34,8 +34,8 @@ namelist /na2/ str
 end
 use mod
 use mod2
-write(60,na1)
-write(61,na2)
+write(62,na1)
+write(63,na2)
 call chk
 print *,"pass"
 end
@@ -43,12 +43,12 @@ subroutine chk
 integer str(2)
 namelist /na1/str
 namelist /na2/str
-rewind 60
-read(60,na1)
+rewind 62
+read(62,na1)
 if (str(1)/=2222) print *,1001
 if (str(2)/=2222) print *,1002
-rewind 61
-read(61,na2)
+rewind 63
+read(63,na2)
 if (str(1)/=3333) print *,1011
 if (str(2)/=3333) print *,1022
 end

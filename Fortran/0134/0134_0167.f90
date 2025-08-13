@@ -18,14 +18,14 @@ subroutine s1(i)
   end interface
   NAMELIST /nam/ i
   integer :: i(:)
-  write(1,nam)
+  write(67,nam)
   call chk(i)
 end
 
 subroutine chk(i)
   integer :: i(:)
   NAMELIST /nam/ i
-  rewind 1
-  read(1,nam)
+  rewind 67
+  read(67,nam)
   if (any(i /= (/1,2/))) print *, i
 end

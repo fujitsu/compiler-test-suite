@@ -9,7 +9,7 @@
          CALL SUB(STRESS,Sinc)
       ENDDO
        E_TIME=1
-      WRITE(1,100) (E_TIME-S_TIME)*0.000001
+      WRITE(30,100) (E_TIME-S_TIME)*0.000001
       if (any(abs(Sinc(1:12:2)-(/1._8,1._8,1._8,1._8,0._8,0._8/))>0.0001_8))print *,'error'
  100  FORMAT("time = ",F20.10)
       print *,'pass'

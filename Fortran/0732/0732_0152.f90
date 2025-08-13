@@ -6,7 +6,7 @@ print *,'pass'
 end
 subroutine ss4
 integer(8)::b(3,3),c(3,3),a(3,3),aa(3)
-n=40
+n=70
 b=reshape((/(i,i=1,9)/),(/3,3/))
 c=reshape((/(i,i=1,9)/),(/3,3/))
 a=matmul(b,c)
@@ -43,7 +43,7 @@ contains
 end
 subroutine ss3
 integer(2)::b(3,3),c(3,3),a(3,3),aa(3)
-n=10
+n=75
 b=reshape((/(i,i=1,9)/),(/3,3/))
 c=reshape((/(i,i=1,9)/),(/3,3/))
 a=matmul(b,c)
@@ -80,7 +80,7 @@ contains
 end
 subroutine ss2
 integer(1)::b(3,3),c(3,3),a(3,3),aa(3)
-n=20
+n=80
 b=reshape((/(i,i=-4,4)/),(/3,3/))
 c=reshape((/(i,i=-4,4)/),(/3,3/))
 a=matmul(b,c)
@@ -117,7 +117,7 @@ contains
 end
 subroutine ss1
 integer(4)::b(3,3),c(3,3),a(3,3),aa(3)
-n=30
+n=85
 b=reshape((/(i,i=1,9)/),(/3,3/))
 c=reshape((/(i,i=1,9)/),(/3,3/))
 a=matmul(b,c)

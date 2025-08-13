@@ -48,31 +48,29 @@ select case(i)
    if (abs(i1(2)-real((12,12)))>0.0001)write(6,*) "NG"
    if (abs(i2(1)-real((1,1)))>0.0001)write(6,*) "NG"
    if (abs(i2(2)-real((3,3)))>0.0001)write(6,*) "NG"
-   if (loc(i1)/=n1)write(1,*) i,'i1 copied'
-   if (loc(i2)==n2)write(1,*) i,'i2 no copied'
+   if (loc(i1)/=n1)write(45,*) i,'i1 copied'
+   if (loc(i2)==n2)write(45,*) i,'i2 no copied'
  case (2)
    if (abs(i1(1)-real((111,111)))>0.0001)write(6,*) "NG"
    if (abs(i1(2)-real((112,112)))>0.0001)write(6,*) "NG"
    if (abs(i2(1)-real((113,113)))>0.0001)write(6,*) "NG"
    if (abs(i2(2)-real((114,114)))>0.0001)write(6,*) "NG"
-   if (loc(i1)/=n1)write(1,*) i,'i1 copied'
-   if (loc(i2)/=n2)write(1,*) i,'i2 copied'
+   if (loc(i1)/=n1)write(45,*) i,'i1 copied'
+   if (loc(i2)/=n2)write(45,*) i,'i2 copied'
  case (3)
    if (abs(i1(1)-real((5,5)))>0.0001)write(6,*) "NG"
    if (abs(i1(2)-real((7,7)))>0.0001)write(6,*) "NG"
    if (abs(i2(1)-real((211,211)))>0.0001)write(6,*) "NG"
    if (abs(i2(2)-real((212,212)))>0.0001)write(6,*) "NG"
-   if (loc(i1)==n1)write(1,*) i,'i1 no copied'
-   if (loc(i2)/=n2)write(1,*) i,'i2 copied'
+   if (loc(i1)==n1)write(45,*) i,'i1 no copied'
+   if (loc(i2)/=n2)write(45,*) i,'i2 copied'
  case (4)
    if (abs(i1(1)-real((1,1)))>0.0001)write(6,*) "NG"
    if (abs(i1(2)-real((3,3)))>0.0001)write(6,*) "NG"
    if (abs(i2(1)-real((5,5)))>0.0001)write(6,*) "NG"
    if (abs(i2(2)-real((7,7)))>0.0001)write(6,*) "NG"
-   if (loc(i1)==n1)write(1,*) i,'i1 no copied'
-   if (loc(i2)==n2)write(1,*) i,'i2 no copied'
+   if (loc(i1)==n1)write(45,*) i,'i1 no copied'
+   if (loc(i2)==n2)write(45,*) i,'i2 no copied'
 end select
 jfoo=i
 end
-   
-

@@ -30,10 +30,10 @@ type, extends(b)::ext
 end type
 contains
 subroutine prc1()
-  write(1,*)300
+  write(7,*)300
 end subroutine
 subroutine cproc1()
-  write(1,*)400
+  write(7,*)400
 end subroutine
 end module
 
@@ -47,8 +47,8 @@ type(e),target::tc1t
 type(e),pointer::tc1p
 tc1p=>tc1t
 call tc1p%prc1()
-rewind 1
-read(1,*) k
+rewind 7
+read(7,*) k
 if(k/=400) print *,200
 print *,'pass'
 end

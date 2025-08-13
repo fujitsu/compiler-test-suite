@@ -12,7 +12,7 @@ contains
     TYPE(x), INTENT(IN) :: d
     TYPE(x) :: r
    r=d
-  END FUNCTION 
+  END FUNCTION
   subroutine s1
    type(x):: v(kh)
    do k=1,kh
@@ -20,11 +20,11 @@ contains
    end do
    call s2(v)
    end subroutine
-end 
+end
 
 use m1
 call s1
-call chk(1)
+call chk(105)
 print *,'pass'
 end
   subroutine s2(v)
@@ -32,7 +32,7 @@ end
    type(x):: v(kh),vv(kh)
    do k=1,kh
      vv(k)= f(v(k))
-     write(1,'(z16.16)') loc( vv(k)% x2 )
+     write(105,'(z16.16)') loc( vv(k)% x2 )
      if (any(v(k)% x2/=2)) print *,200
      if (vv(k)% x1/=1) print *,201
      deallocate( vv(k)% x2 )

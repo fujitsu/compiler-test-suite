@@ -8,7 +8,7 @@ use m0
   contains
     subroutine  ss(p)
        procedure(w),pointer::p
-       write(1,*) p()
+       write(3,*) p()
     end
          type(y) function w()
   w%v=100
@@ -19,8 +19,8 @@ use m1
        procedure(w),pointer::x
 x=>w
 call ss(x)
-rewind 1
-read(1,*) k
+rewind 3
+read(3,*) k
 if(k/=100) print *,901
 print *,'pass'
 end

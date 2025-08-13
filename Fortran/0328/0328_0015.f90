@@ -1,7 +1,7 @@
 integer :: x=10,func,ent,r
 r = func (x,x)
 r = ent  (x,x)
-write(1,*) r , x
+write(41,*) r , x
 print *,'pass'
 end
 

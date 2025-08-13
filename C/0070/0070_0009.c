@@ -36,6 +36,7 @@ int main()
 #endif
       printf( "omp_get_dynamic=%d",ld);
 #ifdef _OPENMP
+    omp_set_dynamic (0);
     if(ld) omp_set_num_threads (ist);
     ith=omp_get_max_threads();
     omp_set_max_active_levels (1);

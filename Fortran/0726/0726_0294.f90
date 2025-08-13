@@ -4,14 +4,14 @@
  module Y
   integer::k=0
  end
- module X 
+ module X
   use Y
   contains
     subroutine f
-         write(1,*) 'this is f'
+         write(72,*) 'this is f'
          k=k+1
     end subroutine f
-end module 
+end module
 
 subroutine s1
   use Y

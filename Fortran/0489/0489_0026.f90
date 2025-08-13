@@ -12,7 +12,7 @@ class (x0),target,allocatable:: a0
 class (x2),pointer::p2
 class (x1),pointer::p1
 allocate( x2::a0 )
-write(1,'(a,z16.16)') 'a0: ', loc(a0)
+write(15,'(a,z16.16)') 'a0: ', loc(a0)
 a0%x01=1
 select type(a0)
  type is(x2)
@@ -22,8 +22,8 @@ select type(a0)
    p1=> a0
 end select
 if (a0%x01/=1) print *,201
-write(1,'(a,z16.16)') 'a0: ', loc(a0)
-write(1,'(a,z16.16)') 'p2: ', loc(p2)
+write(15,'(a,z16.16)') 'a0: ', loc(a0)
+write(15,'(a,z16.16)') 'p2: ', loc(p2)
 deallocate( a0)
 end
 call s1

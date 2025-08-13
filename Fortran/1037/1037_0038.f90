@@ -6,6 +6,6 @@
       call random_number(d)
 
       master = matmul(transpose(a),b) + d
-      write(1,*) master
+      write(2,*) master
       print *,'pass'
       end

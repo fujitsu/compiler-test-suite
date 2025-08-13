@@ -1,5 +1,6 @@
       program main
       real a(6)
+      a=0
       a(1)=1
       n=a(1)+1
       call sub(a,n)

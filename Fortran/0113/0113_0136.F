@@ -9,7 +9,7 @@ C        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXZZZZZZZa
                                                                         aaaaaaaa
 C        X                                                              aaaaaaaa
                                                                         aaaaaaaa
-      write(1,*)x                                                       aaaaaaaa
+      write(15,*)x                                                       aaaaaaaa
                                                                         aaaaaaaa
                                                                         aaaaaaaa
       x = 100000 - 100000 + 100000 - 100000 + 100000 - 100000 + 100000 -aaaaaaaa
@@ -17,7 +17,7 @@ C        X                                                              aaaaaaaa
      &11                                                                aaaaaaaa
 C        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXZZZZZZZa
                                                                         aaaaaaaa
-      write(1,*)x                                                       aaaaaaaa
+      write(15,*)x                                                       aaaaaaaa
       rewind 1                                                          aaaaaaaa
       read(1,*) k                                                       aaaaaaaa
       if (k/=11)print *,101,k                                           aaaaaaaa

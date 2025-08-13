@@ -3,16 +3,16 @@ implicit none
 real(8)::X=2.0,Y=3.0, THETA=0.1 , A=4.0 , ZZ,z1,z2,z3,z4
 ASSOCIATE ( Z => EXP(-(X**2+Y**2)) * COS(THETA) )
 X=0;Y=0;THETA=0
-write(11,*)  A+Z, A-Z
+write(12,*)  A+Z, A-Z
 END ASSOCIATE
 if (X/=0 .or.Y/=0 .or.THETA/=0) print *,1005
 
-X=2.0;Y=3.0; THETA=0.1 
-ZZ = EXP(-(X**2+Y**2)) * COS(THETA) 
-write(11,*)  A+ZZ, A-ZZ
-rewind 11
-read(11,*) z1,z2
-read(11,*) z3,z4
+X=2.0;Y=3.0; THETA=0.1
+ZZ = EXP(-(X**2+Y**2)) * COS(THETA)
+write(12,*)  A+ZZ, A-ZZ
+rewind 12
+read(12,*) z1,z2
+read(12,*) z3,z4
 if (abs(z1-z3)>0.0000000001_8) print *,1001,z1,z3,z1-z3
 if (abs(z2-z4)>0.0000000001_8) print *,1002,z2,z4,z2-z4
 end
@@ -30,7 +30,7 @@ type::x2
 end type
 type(x2)::AX
 type(x2)::AZ
-  
+
 I=2;J=3;N=2
 AX%B(2,3)%C%DV=[3,5,7]
 

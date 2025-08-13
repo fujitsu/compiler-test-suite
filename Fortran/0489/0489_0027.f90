@@ -14,7 +14,7 @@ a0%x01=1
 select type(a0)
  type is(x2)
    allocate(a0%x21(1000))
-   write(1,"(z16.16)") loc(a0%x21)
+   write(16,"(z16.16)") loc(a0%x21)
    a0%x11=2
    a0%x21=3
 end select

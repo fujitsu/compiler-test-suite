@@ -46,23 +46,23 @@ implicit none
 integer i
 logical y
 do i = 11,20
-   open (unit=i,file='myfile'//To_String (i))
+   open (unit=i,file='myfile1'//To_String (i))
 end do
 
 do i = 11, 20
    write(i,*) i
 end do
 
-   inquire(file='myfile11',opened=y);if (.not.y)write(6,*) "NG"
-   inquire(file='myfile12',opened=y);if (.not.y)write(6,*) "NG"
-   inquire(file='myfile13',opened=y);if (.not.y)write(6,*) "NG"
-   inquire(file='myfile14',opened=y);if (.not.y)write(6,*) "NG"
-   inquire(file='myfile15',opened=y);if (.not.y)write(6,*) "NG"
-   inquire(file='myfile16',opened=y);if (.not.y)write(6,*) "NG"
-   inquire(file='myfile17',opened=y);if (.not.y)write(6,*) "NG"
-   inquire(file='myfile18',opened=y);if (.not.y)write(6,*) "NG"
-   inquire(file='myfile19',opened=y);if (.not.y)write(6,*) "NG"
-   inquire(file='myfile20',opened=y);if (.not.y)write(6,*) "NG"
+   inquire(file='myfile111',opened=y);if (.not.y)write(6,*) "NG"
+   inquire(file='myfile112',opened=y);if (.not.y)write(6,*) "NG"
+   inquire(file='myfile113',opened=y);if (.not.y)write(6,*) "NG"
+   inquire(file='myfile114',opened=y);if (.not.y)write(6,*) "NG"
+   inquire(file='myfile115',opened=y);if (.not.y)write(6,*) "NG"
+   inquire(file='myfile116',opened=y);if (.not.y)write(6,*) "NG"
+   inquire(file='myfile117',opened=y);if (.not.y)write(6,*) "NG"
+   inquire(file='myfile118',opened=y);if (.not.y)write(6,*) "NG"
+   inquire(file='myfile119',opened=y);if (.not.y)write(6,*) "NG"
+   inquire(file='myfile120',opened=y);if (.not.y)write(6,*) "NG"
 do i = 11, 20
    close (i,status='delete')
 end do

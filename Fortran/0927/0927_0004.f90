@@ -13,7 +13,7 @@ module m1
 contains
   subroutine xp(d)
     type(x):: d
-    write(1,*) 100
+    write(4,*) 100
   end subroutine
 end
 

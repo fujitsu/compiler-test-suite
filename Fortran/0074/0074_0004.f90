@@ -9,7 +9,7 @@ contains
  subroutine r_setup
  use const
  implicit none
-write(1,*) 2, lhf,loc(lhf)
+write(7,*) 2, lhf,loc(lhf)
 end subroutine
 end
 
@@ -31,8 +31,8 @@ call chk
 print *,'pass'
 end
 subroutine chk
-rewind 1
-read(1,*) n1,an2
+rewind 7
+read(7,*) n1,an2
 if (n1/=2) print *,101
 if (an2/=2) print *,102
 end

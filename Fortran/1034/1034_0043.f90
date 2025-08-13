@@ -26,7 +26,7 @@ contains
 
   subroutine sub_chk(a)
      type (childt)  :: a
-  end subroutine 
+  end subroutine
 
   subroutine add (n,m,mx)
     integer, intent (in) :: n
@@ -141,7 +141,7 @@ ml: do while (associated(trav_mother_pt))
        if (k == m) then
           trav_child_pt => trav_mother_pt%root_child_pt
           do while (associated(trav_child_pt))
-             write(1,*) trav_child_pt%k
+             write(37,*) trav_child_pt%k
              trav_child_pt => trav_child_pt%child_pt
           end do
           exit ml
@@ -177,11 +177,11 @@ end program main
   end
 
 subroutine chk
-rewind 1
+rewind 37
 k=0
-read(1,*)i;if (i/=8)k=k+1
-read(1,*)i;if (i/=6)k=k+1
-read(1,*)i;if (i/=4)k=k+1
-read(1,*)i;if (i/=2)k=k+1
+read(37,*)i;if (i/=8)k=k+1
+read(37,*)i;if (i/=6)k=k+1
+read(37,*)i;if (i/=4)k=k+1
+read(37,*)i;if (i/=2)k=k+1
 if (k/=0)print *,'error'
 end

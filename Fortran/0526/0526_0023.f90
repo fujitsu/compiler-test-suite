@@ -45,13 +45,13 @@ module m1
       use m5
    implicit none
 integer::n
-         write(1,*)gen()
-         write(1,*)f1()
-         write(1,*)f2(1)
-rewind 1
-read(1,*) n;if (n/=10) print *,2001
-read(1,*) n;if (n/=10) print *,2011
-read(1,*) n;if (n/=1) print *,2021
+         write(4,*)gen()
+         write(4,*)f1()
+         write(4,*)f2(1)
+rewind 4
+read(4,*) n;if (n/=10) print *,2001
+read(4,*) n;if (n/=10) print *,2011
+read(4,*) n;if (n/=1) print *,2021
     print *,'pass'
          end
 

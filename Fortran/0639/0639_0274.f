@@ -1,11 +1,13 @@
        INTEGER IS1,IS2,IS3,IA1(10),IA2(10),IA3(10)
-       REAL    RS1,RS2,RS3,RA1(10),RA2(10),RA3(10)
+       REAL    RS1,RS2,RS3,RA1(10),RA2(10),RA3(10),res(10)
        REAL*8  DS1,DS2,DS3,DA1(10),DA2(10),DA3(10)
        DATA    IA1,IA2,IA3/30*2/,RA1,RA2,RA3/30*2./,DA1,DA2,DA3/30*2.D0/
        LOGICAL L(10)
        DATA    L/.TRUE.,.FALSE.,.FALSE.,.TRUE.,.TRUE.,.FALSE.,.FALSE.,
      1           .TRUE.,.FALSE.,.FALSE./
-
+       data res/8.0899474E-07,2.9990688E-02,2.9990688E-02,
+     +      8.0899474E-07,8.0899474E-07,2.9990688E-02,2.9990688E-02,
+     +      8.0899474E-07,2.9990688E-02,2.9990688E-02/
          DO 10 I=1,10
            IS1 = IA1(I)
            IS2 = IA2(I)
@@ -48,5 +50,27 @@
            DA3(I) = DS1
    10 CONTINUE
 
-      PRINT *,IA1,IA2,IA3,RA1,RA2,RA3,DA1,DA2,DA3
+      PRINT *,IA1,IA2,IA3
+      write(6,*)
+      PRINT *,RA1
+      write(6,*)
+      call check(RA2,res)
+      write(6,*)
+      PRINT *,RA3
+      write(6,*)
+      write(6,1) DA1,DA2,DA3
+ 1    format(4f20.15)
       END
+
+#define IS_EQUAL(a,b) ((a==b).or.(a==0.and.abs(b)<10E-6).or.(abs(a-b)/abs(a)<10E-6))
+      subroutine check(calc,res)
+      real calc(10),res(10)
+      logical ngcheck/.FALSE./
+      do i=1,10
+         if (IS_EQUAL(calc(i), res(i))) then
+         else
+            ngcheck = .TRUE.
+         endif
+      enddo
+      if (ngcheck) write(6,*) calc
+      end

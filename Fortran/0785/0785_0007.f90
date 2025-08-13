@@ -21,10 +21,10 @@ class(x)::c3
 class(x)::c4(:)
 optional:: c1,c2,c3,c4
 k=0
-write(1,'(z16.16)') loc(c1)
-write(1,'(z16.16)') loc(c2)
-write(1,'(z16.16)') loc(c3)
-write(1,'(z16.16)') loc(c4)
+write(9,'(z16.16)') loc(c1)
+write(9,'(z16.16)') loc(c2)
+write(9,'(z16.16)') loc(c3)
+write(9,'(z16.16)') loc(c4)
 if (present(c1)) then
  k=1
  select type (c1)
@@ -138,7 +138,7 @@ end select
 call ss(c1,c2,c3,c4,n1=2,n2=2,n3=2,n4=2)
 end
 call s1
-rewind 1
+rewind 9
 call chk
 print *,'pass'
 end
@@ -146,11 +146,11 @@ subroutine chk
 character(16) c
 character(*),parameter::z='0000000000000000'
 do k=1,4
-read(1,'(a)') c ;if (c/=z) print *,77101,k
+read(9,'(a)') c ;if (c/=z) print *,77101,k
 end do
 do k=1,8
-read(1,'(a)') c ;if (c==z) print *,77102,k
+read(9,'(a)') c ;if (c==z) print *,77102,k
 end do
-read(1,'(a)',end=1) c 
+read(9,'(a)',end=1) c
 print *,77
 1 end

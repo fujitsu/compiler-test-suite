@@ -1,7 +1,7 @@
 common //c
 integer :: x,y
 call sub(x,y)
-write(1,*) x,y
+write(42,*) x,y
 print *,'pass'
 end
 

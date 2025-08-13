@@ -1,7 +1,7 @@
-write(1,*) k
+write(3,*) k
 data k/1/
-rewind 1
-read(1,*)n
+rewind 3
+read(3,*)n
 if (n/=1)print *,1001
 
 print *,'OK'

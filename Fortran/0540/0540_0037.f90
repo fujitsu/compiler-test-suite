@@ -20,7 +20,7 @@
      public::ext
      contains
      subroutine prc()
-       write(1,*) 'Okay'
+       write(20,*) 'Okay'
      end subroutine
      end module
 

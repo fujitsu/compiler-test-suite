@@ -7,8 +7,8 @@ type(y)::v
 contains
 subroutine s(explicit_shape_array,x)
 integer::explicit_shape_array(2),x(:)
-write(1,*)explicit_shape_array
-write(1,*)x
+write(2,*)explicit_shape_array
+write(2,*)x
 end subroutine
 function if(k) 
   integer,dimension(:):: k

@@ -63,7 +63,7 @@ contains
     trav_child_pt => trav_child_pt%child_pt
     trav_mother_pt%root_child_pt => trav_child_pt
     deallocate (temp_pt)
-    write(1,*)'#Confirm#',iaddr(root_mother_pt%root_child_pt)
+    write(33,*)'#Confirm#',iaddr(root_mother_pt%root_child_pt)
 
   end subroutine removeL
 

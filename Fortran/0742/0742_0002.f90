@@ -13,7 +13,7 @@ subroutine random
    allocate(seed(s))
    call random_seed()
    do i = 1, 100
-      write(1,'(a,i0)') 'i = ', i
+      write(3,'(a,i0)') 'i = ', i
       call random_seed(get=seed)
       call random_number(harvest)
       if(any(harvest >= 1)) then
@@ -28,4 +28,4 @@ subroutine random
             ' Hex: ', transfer(harvest(1), 1)
       end if
    end do
-end 
+end

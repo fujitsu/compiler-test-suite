@@ -8,12 +8,12 @@ IMPLICIT NONE
 CONTAINS
   SUBROUTINE subA()
     IMPLICIT NONE
-    write(1,*) 'subA: arr1 = ', arr1
+    write(20,*) 'subA: arr1 = ', arr1
   END SUBROUTINE subA
   SUBROUTINE subB()
     USE arr
     IMPLICIT NONE
-    write(1,*) 'subB: arr1 = ', arr1
+    write(20,*) 'subB: arr1 = ', arr1
   END SUBROUTINE subB
 END MODULE modb
 PROGRAM MAIN
@@ -26,9 +26,9 @@ print *,'pass'
 END PROGRAM MAIN
 subroutine chk
 character*40 r
-rewind 1
-read(1,'(a)') r
+rewind 20
+read(20,'(a)') r
 if (index(r,'subA: arr1 =  1 2 3 4')==0)write(6,*) "NG"
-read(1,'(a)') r
+read(20,'(a)') r
 if (index(r,'subB: arr1 =  1 2 3 4')==0)write(6,*) "NG"
 end

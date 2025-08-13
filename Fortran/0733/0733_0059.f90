@@ -10,6 +10,6 @@
   end do
   end do
   call cpu_time(x2)
-  write(1,*)x2-x1
+  write(51,*)x2-x1
   print *,'pass'
   end

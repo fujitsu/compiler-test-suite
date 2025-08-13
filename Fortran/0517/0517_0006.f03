@@ -11,7 +11,7 @@ end type
     subroutine fin(d)
     type(x)::d
      if(allocated(d%x1)) deallocate(d%x1)
-write(10,*)1
+write(11,*)1
     end subroutine
     function f() result(r)
      type(xx)::r
@@ -26,7 +26,7 @@ a=f()
 if (a%x1/=1) print *,200
 a=f()
 if (a%x1/=1) print *,200
-call chk(10,4)
+call chk(11,4)
 print *,'pass'
 end
 subroutine chk(k,n)

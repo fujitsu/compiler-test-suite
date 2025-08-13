@@ -1,19 +1,19 @@
 TYPE TY
  INTEGER :: II=5
 END TYPE
-        
+
 TYPE,EXTENDS(TY) :: TTY
 INTEGER :: JJ
 END TYPE
 REAL(2) :: R2(4)
 COMPLEX(KIND=2) :: C2(4)
-R2=5 
-C2=(6,7)     
+R2=5
+C2=(6,7)
 CALL S1(R2)
-CALL S1(C2)        
-rewind 1
-read(1,*) k;if(k/=123) print *,123
-read(1,*) k;if(k/=124) print *,124
+CALL S1(C2)
+rewind 10
+read(10,*) k;if(k/=123) print *,123
+read(10,*) k;if(k/=124) print *,124
 PRINT*,"PASS"
 CONTAINS
 SUBROUTINE S1(D1)
@@ -22,9 +22,9 @@ SUBROUTINE S1(D1)
  TYPE IS(TY)
  PRINT*,D1%II
  TYPE IS(REAL(2))
- write(1,*) 123
+ write(10,*) 123
  TYPE IS(COMPLEX(2))
- write(1,*) 124
+ write(10,*) 124
  CLASS DEFAULT
  PRINT*,"121"
  END SELECT

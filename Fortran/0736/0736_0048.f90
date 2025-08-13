@@ -18,9 +18,9 @@ use m1
      type(x):: u1,u2
 u1=x(100,200)
 u2=x(10,20)
-write(1,*) u1/u2
-rewind 1
-read (1,*) j1,j2
+write(13,*) u1/u2
+rewind 13
+read (13,*) j1,j2
 if (any((/j1,j2/)/=10))print *,'error'
 print *,'pass'
 end

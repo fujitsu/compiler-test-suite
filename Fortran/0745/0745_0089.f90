@@ -1,7 +1,7 @@
  type string
   character, dimension(:), pointer :: str
  end type
- integer :: u = 13
+ integer :: u = 40
  integer :: i, k
  type (string), dimension(:), allocatable :: x
  integer, parameter :: siz = 300
@@ -36,4 +36,4 @@ print *,'pass'
    x%str = ss(1:sl)
    end subroutine read_string
 
- end 
+ end

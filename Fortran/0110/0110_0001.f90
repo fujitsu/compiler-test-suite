@@ -3,6 +3,7 @@ print *,"pass"
 end
 
 subroutine test01()
+save
 integer a(100,100,100,10),b(100,100,100,10)
 integer c(100,100,100,10),d(100,100,100,10)
 n=100

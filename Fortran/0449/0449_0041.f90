@@ -29,9 +29,9 @@ if (present(a)) then
   end select
   if(k/=1) print *,201
   allocate(a%x4(2))
-write(1,'(z16.16)') loc(a%x4)
+write(85,'(z16.16)') loc(a%x4)
   allocate(yy::a%x2(1002))
-write(2,'(z16.16)') loc(a%x2)
+write(86,'(z16.16)') loc(a%x2)
   k=0
   select type (p=>a%x2)
     type is(yy)

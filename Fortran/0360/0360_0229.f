@@ -9,26 +9,26 @@
          r4a(1) = max(r4a(1),(i4b(i)),i4c(i))
          r4a(2) = min(r4a(2),i4b(i),(i4c(i)))
       enddo
-      write(1,*)
+      write(14,*)
 
       do i=1,10
          r4a(3) = max(r4a(3),(i4b(i)),i4c(i))
          r4a(4) = min(r4a(4),i4b(i),(i4c(i)))
       enddo
-      write(1,*)
+      write(14,*)
 
       do i=1,10
          r4a(5) = max(r4a(5),(i4b(i)),i4c(i))
          r4a(6) = min(r4a(6),i4b(i),(i4c(i)))
       enddo
-      write(1,*)
+      write(14,*)
 
 
       do i=1,10
          r4a(7) = max(r4a(7),(i4b(i)),i4c(i))
          r4a(8) = min(r4a(8),i4b(i),(i4c(i)))
       enddo
-      write(1,*)
+      write(14,*)
 
       do i=1,10
          r4a(9) = max(r4a(9),(i4b(i)),i4c(i))

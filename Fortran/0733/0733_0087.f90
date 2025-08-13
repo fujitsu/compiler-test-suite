@@ -17,9 +17,9 @@
  allocate(r1(1,1))
  allocate(r3(1,1))
 r1(1,1)='1'
- r3     =   (plus3(x1(:,:)));write(1,*)r3
- x3     =   (plus3(r1(:,:)));write(1,*)x3
- r3     =   (plus3(r1(:,:)));write(1,*)r3
+ r3     =   (plus3(x1(:,:)));write(52,*)r3
+ x3     =   (plus3(r1(:,:)));write(52,*)x3
+ r3     =   (plus3(r1(:,:)));write(52,*)r3
  if(any(   plus3(x1(:,:))/='1'))print *,'e2'
  if(any(   plus3(r1(:,:))/='1'))print *,'e2'
  if(any(   plus3(x1(:,:))//plus3(x1(:,:))/='11'))print *,'e3'
@@ -27,9 +27,9 @@ r1(1,1)='1'
  end
 character*50 r
 call sub
-rewind 1
-read(1,'(a)') r;if (r/=' 1')print *,'error-1'
-read(1,'(a)') r;if (r/=' 1')print *,'error-1'
-read(1,'(a)') r;if (r/=' 1')print *,'error-1'
+rewind 52
+read(52,'(a)') r;if (r/=' 1')print *,'error-1'
+read(52,'(a)') r;if (r/=' 1')print *,'error-1'
+read(52,'(a)') r;if (r/=' 1')print *,'error-1'
  print *,'pass'
 end

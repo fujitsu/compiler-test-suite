@@ -18,9 +18,10 @@
       ib3 = 0
 !$    call OMP_SET_DYNAMIC(.true.)
 !$    ld=OMP_GET_DYNAMIC()
+!$    call OMP_SET_DYNAMIC(.false.)
 !$    if(ld) call OMP_SET_NUM_THREADS(ist)
 !$    ith=OMP_GET_MAX_THREADS()
-!$    call OMP_SET_MAX_ACTIVE_LEVELS(.true.)
+!$    call OMP_SET_MAX_ACTIVE_LEVELS(1)
 !$    ln=OMP_GET_MAX_ACTIVE_LEVELS()
       call sub(ia1, ia2, ia3, ib1, ib2, ib3, ln)
       write(*,*) "----- test --",

@@ -8,7 +8,7 @@
                 n=1
 
              endif
-      write(1,*) n
+      write(26,*) n
              end
 integer k(20)
 do i1=1,2
@@ -46,18 +46,18 @@ call chk
 print *,'pass'
 end
 subroutine chk
-rewind 1
-read(1,*)k;if (k/=1)write(6,*) "NG"
+rewind 26
+read(26,*)k;if (k/=1)write(6,*) "NG"
 do kk=1,10
-read(1,*)k;if (k/=0)write(6,*) "NG"
+read(26,*)k;if (k/=0)write(6,*) "NG"
 end do
-read(1,*)k;if (k/=1)write(6,*) "NG"
+read(26,*)k;if (k/=1)write(6,*) "NG"
 do kk=1,8
-read(1,*)k;if (k/=0)write(6,*) "NG"
+read(26,*)k;if (k/=0)write(6,*) "NG"
 end do
-read(1,*)k;if (k/=1)write(6,*) "NG"
+read(26,*)k;if (k/=1)write(6,*) "NG"
 do kk=1,10
-read(1,*)k;if (k/=0)write(6,*) "NG"
+read(26,*)k;if (k/=0)write(6,*) "NG"
 end do
-read(1,*)k;if (k/=1)write(6,*) "NG"
+read(26,*)k;if (k/=1)write(6,*) "NG"
 end

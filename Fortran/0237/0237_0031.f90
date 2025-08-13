@@ -16,7 +16,7 @@ end interface
 k=1
 do n=1,3
 nn= ksub1(k)
-write(1,*)k
+write(110,*)k
 end do
 end
 subroutine s2(k)
@@ -26,7 +26,7 @@ integer,intent(out):: k
 k=1
 do n=1,3
 nn= ksub(k)
-write(1,*)k
+write(110,*)k
 end do
 end
 interface
@@ -46,11 +46,11 @@ function  ksub1(kk)
 ksub1=2
 end 
 subroutine chk
-rewind 1
-read(1,*) nn;if (nn/=1)print *,101
-read(1,*) nn;if (nn/=1)print *,101
-read(1,*) nn;if (nn/=1)print *,101
-read(1,*) nn;if (nn/=1)print *,101
-read(1,*) nn;if (nn/=1)print *,101
-read(1,*) nn;if (nn/=1)print *,101
+rewind 110
+read(110,*) nn;if (nn/=1)print *,101
+read(110,*) nn;if (nn/=1)print *,101
+read(110,*) nn;if (nn/=1)print *,101
+read(110,*) nn;if (nn/=1)print *,101
+read(110,*) nn;if (nn/=1)print *,101
+read(110,*) nn;if (nn/=1)print *,101
 end

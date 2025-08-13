@@ -17,14 +17,14 @@
                          subroutine  ss(p)
                                 use m1,only:w
                                 procedure(w)::p
-                                write(1,*)p()
+                                write(7,*)p()
                         end
                         use m1
                         procedure(w),pointer::x
                          x=>w
                          call ss(x)
-rewind 1
-read(1,*) k
+rewind 7
+read(7,*) k
 if (k/=100) print *,1001
 print *,'pass'
                          end

@@ -1,11 +1,11 @@
 logical a, b
 a = .true.
 b = .false.
-open(10)
-write(10, '(2l)') a, b
-rewind(10)
-read(10, '(2l)') a, b
-close(10)
+open(30)
+write(30, '(2l)') a, b
+rewind(30)
+read(30, '(2l)') a, b
+close(30)
 
 if(.not.(a.eqv.b)) then
    print *, ': ok'

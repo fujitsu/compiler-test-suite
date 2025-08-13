@@ -1,7 +1,7 @@
 integer :: x(10)
 x=10
 call sub(x,x)
-write(1,*) x
+write(15,*) x
 print *,'pass'
 end
 

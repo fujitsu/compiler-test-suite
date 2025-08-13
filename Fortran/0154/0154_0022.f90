@@ -8,5 +8,5 @@
       subroutine sub(r1,r2)
       real*8::r1,r2
 
-     write(1,*) abs((r1-r2)/r2)
+     write(3,*) abs((r1-r2)/r2)
       end

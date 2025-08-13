@@ -7,7 +7,7 @@ complex,parameter::a2=(a2r,a2i)
 complex::b1,b2
 b1=a1
 b2=a2
-write(1,*)a1,a2,a1/a2
-write(1,*)1,b2,b1/b2
+write(8,*)a1,a2,a1/a2
+write(8,*)1,b2,b1/b2
 print *,'pass'
 end

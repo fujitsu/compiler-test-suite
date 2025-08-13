@@ -10,7 +10,7 @@
       CONTAINS
       Subroutine b
         use c
-        write(1,d)
+        write(2,d)
       end Subroutine b
      END MODULE a
      MODULE aa
@@ -18,7 +18,7 @@
       recursive Subroutine bb(i)
         use c
         if (i>5)return
-        write(1,d)
+        write(2,d)
         i=i+1
         call bb(i)
       end Subroutine bb
@@ -33,12 +33,12 @@
   end
   subroutine check
       NAMELIST/d/e
-  rewind 1
-        read(1,d); if (abs(e-1)>0.0001)write(6,*) "NG"
-        read(1,d); if (abs(e-1)>0.0001)write(6,*) "NG"
-        read(1,d); if (abs(e-1)>0.0001)write(6,*) "NG"
-        read(1,d); if (abs(e-1)>0.0001)write(6,*) "NG"
-        read(1,d); if (abs(e-1)>0.0001)write(6,*) "NG"
-        read(1,d); if (abs(e-1)>0.0001)write(6,*) "NG"
-        read(1,d); if (abs(e-1)>0.0001)write(6,*) "NG"
+  rewind 2
+        read(2,d); if (abs(e-1)>0.0001)write(6,*) "NG"
+        read(2,d); if (abs(e-1)>0.0001)write(6,*) "NG"
+        read(2,d); if (abs(e-1)>0.0001)write(6,*) "NG"
+        read(2,d); if (abs(e-1)>0.0001)write(6,*) "NG"
+        read(2,d); if (abs(e-1)>0.0001)write(6,*) "NG"
+        read(2,d); if (abs(e-1)>0.0001)write(6,*) "NG"
+        read(2,d); if (abs(e-1)>0.0001)write(6,*) "NG"
   end

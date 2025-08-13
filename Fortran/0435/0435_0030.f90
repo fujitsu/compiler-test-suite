@@ -6,11 +6,11 @@ end type
 integer(8)::ia
 integer::k1=1,k2=2
 contains
-  ELEMENTAL FUNCTION f( d ) RESULT( r ) 
+  ELEMENTAL FUNCTION f( d ) RESULT( r )
     TYPE(x), INTENT(IN) :: d
     TYPE(x) :: r
-   r=d 
-  END FUNCTION 
+   r=d
+  END FUNCTION
 elemental function fz(d) result(r)
 integer,intent(in)::d
 integer::r
@@ -27,8 +27,8 @@ if (.not.allocated(y%z) ) print *,111
 if (y%a   /=2 ) print *,412
 if (y%z(1)/=n ) print *,112
 if (ia==loc(y%z(1))) then
- write(1,'("01: ",z16.16)')ia
- write(1,'("02: ",z16.16)')loc(y%z(1))
+ write(9,'("01: ",z16.16)')ia
+ write(9,'("02: ",z16.16)')loc(y%z(1))
 endif
 end subroutine
 end

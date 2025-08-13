@@ -9,7 +9,7 @@ contains
     TYPE(x), INTENT(IN) :: d
     TYPE(x) :: r
    r=d
-  END FUNCTION 
+  END FUNCTION
   subroutine s1
    type(x):: v(n)
    do k=1,n
@@ -17,10 +17,10 @@ contains
    end do
    do k=1,n
      v(k)= f(v(k))
-     write(1,'(z16.16)') loc( v(k)% x2 )
+     write(103,'(z16.16)') loc( v(k)% x2 )
    end do
   end subroutine
-end 
+end
 
 use m1
 call s1

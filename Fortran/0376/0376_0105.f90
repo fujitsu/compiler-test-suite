@@ -11,10 +11,10 @@ use m1
 interface
     function f(i) result(r)
       character(i),pointer::r
-    end function 
+    end function
     function fa(i) result(r)
       character(i),pointer::r(:,:)
-    end function 
+    end function
 end interface
 call       ss1(p,pa)
 contains
@@ -53,12 +53,12 @@ call chk02x(pa(:,:)//pa(:,:)//pa(:,:),3)
 call chk02(pa(:,:)(:))
 call chk02x(pa(:,:)(:),1)
 call chk02x(pa(:,:)(:)//pa(:,:)(:)//pa(:,:)(:),3)
-write(102,*,delim='quote')1,pa
-write(102,*,delim='quote')2,pa(:,:)
-write(102,*,delim='quote')3,((pa(n1,n2),n1=1,3),n2=1,2)
-write(102,*,delim='quote')4,pa(:,:)(:)
-write(102,*,delim='quote')5,((pa(n1,n2)(:),n1=1,3),n2=1,2)
-call chkwa(102,5,pa(:,:)(:))
+write(103,*,delim='quote')1,pa
+write(103,*,delim='quote')2,pa(:,:)
+write(103,*,delim='quote')3,((pa(n1,n2),n1=1,3),n2=1,2)
+write(103,*,delim='quote')4,pa(:,:)(:)
+write(103,*,delim='quote')5,((pa(n1,n2)(:),n1=1,3),n2=1,2)
+call chkwa(103,5,pa(:,:)(:))
 read(pa,'(a)')cpa
 if (any(cpa/=reshape((/'a','b','c','d','e','f'/),(/3,2/))))print *,'error-12'
 
@@ -102,4 +102,4 @@ end
       else
         r=>ta2
       endif
-    end function 
+    end function

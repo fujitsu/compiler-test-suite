@@ -12,16 +12,16 @@
      k=2
      v22= w2(ty1 = w1(k),z=11)
 
-write(1,*)v21
-write(1,*)v22
+write(17,*)v21
+write(17,*)v22
 call chk
 print *,'pass'
      end
 subroutine chk
 integer k(2)
-rewind 1
-read(1,*) k
+rewind 17
+read(17,*) k
 if (any(k/=[2,11]))print *,101,k
-read(1,*) k
+read(17,*) k
 if (any(k/=[2,11]))print *,101,k
 end

@@ -7,7 +7,7 @@ character(len =8,kind =1)::dd
 integer,parameter::k = kind(adjustr(c))
 d = "abcd    "
 
-write(1,*)l ,"--",adjustr(d)
+write(7,*)l ,"--",adjustr(d)
 if (l.NE.adjustr(d)) then
  print *,'??? (Error: utfchar->utfchar) ???'
 else
@@ -23,7 +23,7 @@ call check(k, kind(adjustr(d)))
 END
 subroutine check(x,y)
       integer x,y
-      write(1,*)"KIND::",x ,"--", "KIND::",y
+      write(7,*)"KIND::",x ,"--", "KIND::",y
       if (x.ne.y) then
         print *,'??? (KIND Error:) ???'
       else

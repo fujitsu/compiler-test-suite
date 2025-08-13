@@ -27,7 +27,11 @@
          CV2(I+1)=(999.,999.)
       ENDIF
   110 CONTINUE
-      WRITE(6,*) DV1,DV2,EV1,CV2,NV1
+      WRITE(6,1) DV1
+      WRITE(6,*) DV2
+      WRITE(6,*) EV1
+      WRITE(6,*) CV2
+      WRITE(6,*) NV1
       K=I-10
       DO 210 I=1,10
       IF(I.LE.9) THEN
@@ -46,6 +50,12 @@
          CV2(I+1)=(999.,999.)
        ENDIF
   210  CONTINUE
-       WRITE(6,*) DV1,DV2,EV1,CV2,NV1
+      WRITE(6,*)
+      WRITE(6,1) DV1
+      WRITE(6,*) DV2
+      WRITE(6,*) EV1
+      WRITE(6,*) CV2
+      WRITE(6,*) NV1
+ 1    format(2f20.13)
        STOP
        END

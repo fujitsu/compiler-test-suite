@@ -9,6 +9,7 @@
       REAL    *4   RV31(10)/3*4.0,5*-1.,2*5./,RV32(10)/10*1.0/,
      &             RS31/10/,RS32/3./
       REAL    *8   DS31/4./,DV31(10)/2*8.,8*4./
+
         CS11 = 1
       DO 100  I=1,10
         CS11 = I + CS11
@@ -21,7 +22,8 @@
       WRITE(6,*) LV11
       WRITE(6,*) LV12
       WRITE(6,*) IV11
-      WRITE(6,*) CDV11
+      WRITE(6,1) CDV11
+
       DO 200  I=1,10
         IS21 = IV21(I) - IS22
         IF (0.LE.IS21)  IS22 = IV21(I)
@@ -44,5 +46,6 @@
       WRITE(6,*) DV31
       WRITE(6,*) RV31
       WRITE(6,*) RV32
+ 1    format(5("(",f6.2,",",f6.2,")") )
       STOP
       END

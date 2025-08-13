@@ -19,11 +19,11 @@ integer(8),parameter::n=4
 contains
    subroutine rf(d)
     type(r)::d(:)
-      write(30,*)3001
+      write(198,*)3001
    end subroutine
    subroutine zf(d)
     type(z)::d
-      write(40,*)4001
+      write(98,*)4001
    end subroutine
    subroutine s1(a)
    type(z),intent(out)::a
@@ -39,8 +39,8 @@ if (present(a)) then
    if (k/=0) stop 1000
    allocate ( a%x2(n),stat=k)
    if (k/=0) stop 1002
-   write(1,'(z16.16)') loc(a%x1)
-   write(2,'(z16.16)') loc(a%x2)
+   write(41,'(z16.16)') loc(a%x1)
+   write(42,'(z16.16)') loc(a%x2)
    select type(p=>a%x1)
      type is(r)
       k=1
@@ -70,9 +70,9 @@ do nn=1,kh
    endif
  end do
  k=k+1
- if (k>100) then 
+ if (k>100) then
     print *,'Eroor memory leak ',n
-    return 
+    return
  endif
  cc(k)=c
 2 continue
@@ -80,18 +80,18 @@ end do
 end
 subroutine chk0(n)
 use km
-rewind n  
+rewind n
 do nn=1,kh
  read(n ,*) nx
- if (n==40) then
-   if (nx/=4001) then 
-      print *,'Error 40 ' 
-      return 
+ if (n==98) then
+   if (nx/=4001) then
+      print *,'Error 40 '
+      return
    endif
- else 
-   if (nx/=3001) then 
-      print *,'Error 30 ' 
-      return 
+ else
+   if (nx/=3001) then
+      print *,'Error 30 '
+      return
    endif
  endif
 end do

@@ -17,8 +17,8 @@ end module mod
 program main
   use mod
 
-  write(1,*)A
-  write(1,*)B
+  write(17,*)A
+  write(17,*)B
 print *,'pass'
 
 end program main

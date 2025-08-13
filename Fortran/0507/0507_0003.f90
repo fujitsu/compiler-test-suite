@@ -13,13 +13,13 @@ contains
 subroutine typeA_aa( this, array )
 class(typeA), intent(in) :: this
 integer :: array(6)
-write(1,*) "typeA aa:", array
+write(7,*) "typeA aa:", array
 end subroutine typeA_aa
 function  ftypeA_aa( this, array )
 class(typeA), intent(in) :: this
 integer :: array(2,3)
 integer :: ftypeA_aa
-write(1,*) "typeA aa:", array
+write(7,*) "typeA aa:", array
 ftypeA_aa=1
 end function ftypeA_aa
 end module class_mod

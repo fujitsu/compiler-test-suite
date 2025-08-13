@@ -1,6 +1,6 @@
 subroutine s1
 !$ CALL OMP_SET_NUM_THREADS(1)
-write(55,*) '&NA III%i1=1 III%i2=2 /'
+write(58,*) '&NA III%i1=1 III%i2=2 /'
 call chk
 end
 call s1
@@ -13,10 +13,10 @@ type it
 end type
 type(it)::iii
 namelist /na/ iii
-rewind 55
+rewind 58
 iii=it(11,12)
 !$omp parallel default(private)
-read(55,na)
+read(58,na)
 if (iii%i1/=1)print *,201,iii%i1
 if (iii%i2/=2)print *,301,iii%i2
 !$omp end parallel

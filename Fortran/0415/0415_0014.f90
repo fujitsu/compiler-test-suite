@@ -24,21 +24,21 @@ program main
   use m
   type (ty) :: t1(3)
 
-  open(10,file="fort.999")
+  open(10,file="fort.56")
 write(10,*) '111 222 333 444 555 666 777 888 999'
 rewind 10
 
   read(10,*) t1
   close(10)
 
-  write(1,*) t1
+  write(23,*) t1
 call chk
 print *,'pass'
 end program main
 subroutine chk
 integer c(9)
-rewind 1
-read(1,*)c
+rewind 23
+read(23,*)c
 if (any(c/=[&
 111,222,333,444,555,666,777,888,999&
 ])) print *,102

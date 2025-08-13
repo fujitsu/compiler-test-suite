@@ -5,7 +5,7 @@
 c1='1'
 c2='1'
 c3='1'
-write(1,*) c2(1,1,1)
+write(16,*) c2(1,1,1)
   END
     CHARACTER(1):: c1(2,3,4)
     CHARACTER(1):: c2(2,3,4)

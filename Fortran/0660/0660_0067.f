@@ -18,7 +18,7 @@
        type (ty1) ::sss(:)
        integer b(10),c(10)
        data b /1,2,3,4,5,6,7,8,9,10/
-       j=33
+       j=114
        write (j,sss%a) b
        rewind j
        read (j,sss%a) c
@@ -33,7 +33,7 @@
        character*4  aaa(:)
        integer b(10),c(10)
        data b /1,2,3,4,5,6,7,8,9,10/
-       j=33
+       j=114
        write (j,aaa(b)) b
        rewind j
        read (j,aaa(1:10)) c

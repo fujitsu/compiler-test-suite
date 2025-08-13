@@ -21,7 +21,7 @@
           ENDIF
         END DO
       call cpu_time(ecpu_time)
-      write(1,100) (ecpu_time-scpu_time)
+      write(8,100) (ecpu_time-scpu_time)
  100  format(" time = ",F20.10)
       print *,'pass'
       STOP

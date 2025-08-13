@@ -26,14 +26,14 @@ integer ::i
    REAL :: TEMP(N_ROWS(A),N_COLS(A))
    REAL :: TEMP_TRANSPOSE(N_COLS(A),N_ROWS(A))
 
-write(1,*)n_rows(a)*n_cols(a)
-write(1,*)n_cols(a)
-write(1,*)2*size(temp)
-write(1,*)2*size(temp_transpose,dim=1)
-rewind 1
-read(1,*)i;if (i/=30)write(6,*) "NG"
-read(1,*)i;if (i/=6)write(6,*) "NG"
-read(1,*)i;if (i/=60)write(6,*) "NG"
-read(1,*)i;if (i/=12)write(6,*) "NG"
+write(15,*)n_rows(a)*n_cols(a)
+write(15,*)n_cols(a)
+write(15,*)2*size(temp)
+write(15,*)2*size(temp_transpose,dim=1)
+rewind 15
+read(15,*)i;if (i/=30)write(6,*) "NG"
+read(15,*)i;if (i/=6)write(6,*) "NG"
+read(15,*)i;if (i/=60)write(6,*) "NG"
+read(15,*)i;if (i/=12)write(6,*) "NG"
 end SUBROUTINE S6
 end

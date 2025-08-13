@@ -9,7 +9,7 @@ implicit none
 if (k1/=2) print *,111
 if (a1(1)/=1) print *,101
 k1=3
-write(1,'("k1",z16.16)')loc(k1)
+write(15,'("k1",z16.16)')loc(k1)
 end subroutine
 end
 call s1

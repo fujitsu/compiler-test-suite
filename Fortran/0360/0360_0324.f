@@ -14,7 +14,9 @@
       do i=1,10
          a(i) = b(i) ** 10_4
       enddo
-      write(6,*) a
+      write(6,1) a
+      write(6,*)
+ 1    format(2("(",f25.14,",",f25.14,") "))
       end
       subroutine c16i8
       complex*16 a(10)
@@ -24,7 +26,9 @@
       do i=1,10
          a(i) = b(i) ** 3_8
       enddo
-      write(6,*) a
+      write(6,1) a
+      write(6,*)
+ 1    format(2("(",f25.14,",",f25.14,") "))
       end
       subroutine c16r4
       complex*16 a(10)
@@ -34,7 +38,9 @@
       do i=1,10
          a(i) = b(i) ** 3.2_4
       enddo
-      write(6,*) a
+      write(6,1) a
+      write(6,*)
+ 1    format(2("(",f25.14,",",f25.14,") "))
       end
       subroutine c16r8
       complex*16 a(10)
@@ -44,7 +50,9 @@
       do i=1,10
          a(i) = b(i) ** 3.2_8
       enddo
-      write(6,*) a
+      write(6,1) a
+      write(6,*)
+ 1    format(2("(",f25.14,",",f25.14,") "))
       end
       subroutine c16c8
       complex*16 a(10)
@@ -55,7 +63,9 @@
       do i=1,10
          a(i) = b(i) ** (3.2_4,4.3_4)
       enddo
-      write(6,*) a
+      write(6,1) a
+      write(6,*)
+ 1    format(2("(",f25.14,",",f25.14,") "))
       end
 
       subroutine c16c16
@@ -67,7 +77,7 @@
       do i=1,10
          a(i) = b(i) ** (3.2_8,4.2_8)
       enddo
-      write(6,*) a
+      write(6,1) a
+      write(6,*)
+ 1    format(2("(",f25.14,",",f25.14,") "))
       end
-
-         

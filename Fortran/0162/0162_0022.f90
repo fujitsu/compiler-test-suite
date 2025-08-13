@@ -8,7 +8,7 @@ type int
  real    ::  ja
 end type
 
-if (int(1.0_4).ne.1) print *,'err'
+if (int(1.0_4).ne.10) print *,'err'
 print *,'pass'
 end
 integer function inta(i)

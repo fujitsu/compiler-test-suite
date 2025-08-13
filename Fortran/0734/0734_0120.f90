@@ -15,8 +15,8 @@
      m=1
      mm=2;nn=2
   else
-     write(1,'(z8)') n
-     write(1,'(z8)') m
+     write(59,'(z8)') n
+     write(59,'(z8)') m
      if (n/=1) write(6,*) "NG"
      if (m/=1) write(6,*) "NG"
      if (nn/=2) write(6,*) "NG"

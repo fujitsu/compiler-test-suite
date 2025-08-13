@@ -1,4 +1,4 @@
-#define EQUAL_CHECK_WITH_MARGIN(a, b) ((abs(a - b)/abs(a)) .gt. 1.0D-16)
+#define EQUAL_CHECK_WITH_MARGIN(a, b) ((a == b).or.(abs(a - b)/max(abs(a),abs(b)).gt.1.0D-16))
 program simple
   implicit none
   integer,parameter:: N = 100

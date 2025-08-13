@@ -14,7 +14,7 @@ contains
  real(4),dimension(:,:,:)::c
  real(4),dimension(:,:,:,:)::d
  real(4),dimension(:,:,:,:,:)::e
- write(1,*)'test'
+ write(37,*)'test'
 select case(kk)
 case(1)
  if (any(shape(a)/=(/0/)))write(6,*) "NG"
@@ -35,6 +35,6 @@ case(3)
  if (any(shape(d)/=(/0,0,3,3/)))write(6,*) "NG"
  if (any(shape(e)/=(/0,0,3,3,3/)))write(6,*) "NG"
 end select
-write(2,*)a,b,c,d,e
+write(38,*)a,b,c,d,e
  end subroutine
 end

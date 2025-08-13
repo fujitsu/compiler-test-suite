@@ -24,7 +24,7 @@ do i=1,10
 iii=it(i,i-1)
 kkk=kt(i+1,i)
 nnn=nt(i+2,i+1)
-write(55,na)
+write(54,na)
 end do
 !$omp end parallel
 if (nnn%n1/=12)print *,301,nnn
@@ -51,9 +51,9 @@ type(it)::iii
 type(nt)::nnn
 type(kt)::kkk
 namelist /na/ iii, nnn, kkk
-rewind 55
+rewind 54
 do mm=1,10
-read(55,na)
+read(54,na)
 if (iii%i1/=mm)print *,201,iii,mm
 if (iii%i2/=mm-1)print *,301,iii,mm
 if (nnn%n1/=mm+2)print *,202,nnn,mm+2

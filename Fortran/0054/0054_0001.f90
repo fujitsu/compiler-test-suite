@@ -25,7 +25,7 @@ CONTAINS
    TYPE(t(double)) :: obj2
    TYPE(t(single)) :: obj3
     int_to_t2%value = x
-write(1,*) 103
+write(2,*) 103
   END 
 END subMODULE smod
 
@@ -34,8 +34,8 @@ type(t(double))::d
 real(double)::r=2.1
 d = t(2, t(double)(0))
 if (abs(d%value-2)>0.001) print *,201
-rewind 1
-read(1,*) k
+rewind 2
+read(2,*) k
 if (k/=103) print *,401
 print *,'pass'
 end

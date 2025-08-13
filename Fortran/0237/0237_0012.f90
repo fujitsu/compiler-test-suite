@@ -6,7 +6,7 @@ recursive subroutine       f1()
 use m,only:f2=>f1
 use m,only:f3=>ff
 call    f2()
-write(1,*) f3()
+write(105,*) f3()
 end 
 print *,'pass'
 end

@@ -8,9 +8,9 @@ type y
 end type
 type(y):: v
 v=y(1,x(2,3))
-write(1,*) v
-rewind 1
-read(1,*) k1,k2,k3
+write(13,*) v
+rewind 13
+read(13,*) k1,k2,k3
 if (any([k1,k2,k3]/=[1,2,3])) print *,101
 
 print *,'pass'

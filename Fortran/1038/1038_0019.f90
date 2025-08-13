@@ -4,7 +4,7 @@
          x(i) = i
       enddo
       call sub(x(1),x(5))
-      write(1,*)x
+      write(4,*)x
 print *,'pass'
       end
       subroutine sub(x,y)

@@ -1,7 +1,7 @@
        I=1
 10     J=10
        PRINT *,'PASS'
-       WRITE (2,*) I
-       REWIND 2
-       READ (2,*) K
+       WRITE (26,*) I
+       REWIND 26
+       READ (26,*) K
        END

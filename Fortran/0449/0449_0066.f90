@@ -20,22 +20,22 @@ end type
 contains
 subroutine f1(d1)
 type(t1) :: d1
-write(1,*) 1001
+write(139,*) 1001
 end subroutine
 
 subroutine f2(d1)
 type(t2) :: d1(:)
-write(2,*) 2001
+write(140,*) 2001
 end subroutine
 
 subroutine s1(d1)
 type(t2),intent(out) :: d1(:)
 allocate(d1(3)% cmp_alc)
-write(11,'(z16.16)') loc( d1(3)%cmp_alc)
+write(141,'(z16.16)') loc( d1(3)%cmp_alc)
 allocate(d1(3)% cmp_alc%alc)
-write(12,'(z16.16)') loc( d1(3)%cmp_alc%alc)
+write(142,'(z16.16)') loc( d1(3)%cmp_alc%alc)
 allocate(d1(3)% cmp%alc)
-write(13,'(z16.16)') loc( d1(3)%cmp%alc)
+write(143,'(z16.16)') loc( d1(3)%cmp%alc)
 end subroutine
 end
 
@@ -46,23 +46,23 @@ call s1(obj)
 end do
 call chk1
 call chk2
-call chk(11)
+call chk(141)
 
 print *,'pass'
 end
 subroutine chk1
 use km
-rewind 1
+rewind 139
 do k=1,(kh*2 -1)
-Read(1,*) kk
+Read(139,*) kk
 if(kk/=1001) stop1000
 end do
 end
 subroutine chk2
 use km
-rewind 2
+rewind 140
 do k=1,kh
-Read(2,*) kk
+Read(140,*) kk
 if(kk/=2001) stop2000
 end do
 end

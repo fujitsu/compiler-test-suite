@@ -50,11 +50,9 @@ select case(i)
  case (1)
    if (any(i1/=(/(m,m=11,18)/)))write(6,*) "NG"
    if (any(i2/=(/1,2,3,4,9,10,11,12/)))write(6,*) "NG"
-   if (loc(i1)==n1)write(1,*) i,'i1 no copied'
-   if (loc(i2)==n2)write(1,*) i,'i2 no copied'
+   if (loc(i1)==n1)write(27,*) i,'i1 no copied'
+   if (loc(i2)==n2)write(27,*) i,'i2 no copied'
 end select
 i1=-1
 i2=-2
 end
-   
-

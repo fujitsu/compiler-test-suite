@@ -8,14 +8,14 @@ contains
 subroutine sub(a)
 integer,allocatable::a(:)
 namelist /nam/a
-write(1,nam)
+write(22,nam)
 end subroutine
 end
 subroutine chk()
 integer::a(2)
 namelist /nam/a
-rewind 1
-read(1,nam)
+rewind 22
+read(22,nam)
 if (a(1)/=1) print *,101,a(1)
 if (a(2)/=2) print *,102,a(2)
 end subroutine

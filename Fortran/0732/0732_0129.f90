@@ -6,7 +6,7 @@ c=reshape((/(i,i=1,8)/),(/2,4/))
 d=reshape((/(i,i=1,12)/),(/4,3/))
 e=reshape((/(i,i=1,6)/),(/3,2/))
 i1=-1;i2=-2;i3=-3;i4=-4
-write(1,*)matmul( matmul(cos(b),cos(c)) , matmul(cos(d),cos(e)) )
+write(39,*)matmul( matmul(cos(b),cos(c)) , matmul(cos(d),cos(e)) )
 call chkx(matmul( matmul(cos(b),cos(c)) , matmul(cos(d),cos(e)) ))
 f= matmul( matmul(cos(b),cos(c)) , matmul(cos(d),cos(e)) )
 call chkx(f)
@@ -19,10 +19,10 @@ call chkx(f)
 call chkx(matmul( matmul(cos(b),cos(c))+matmul(cos(b),cos(c))-matmul(cos(b),cos(c)) , matmul(cos(d),cos(e))+matmul(cos(d),cos(e))-&
 matmul(cos(d),cos(e)) )+ matmul( matmul(cos(b),cos(c)) ,&
  matmul(cos(d),cos(e)) ) -matmul( matmul(cos(b),cos(c)) , matmul(cos(d),cos(e)) ))
-write(1,*)(matmul( matmul(cos(b),cos(c))+matmul(cos(b),cos(c))-matmul(cos(b),cos(c)) ,&
+write(39,*)(matmul( matmul(cos(b),cos(c))+matmul(cos(b),cos(c))-matmul(cos(b),cos(c)) ,&
  matmul(cos(d),cos(e))+matmul(cos(d),cos(e))-matmul(cos(d),cos(e)) )+ matmul( matmul(cos(b),cos(c)) ,&
  matmul(cos(d),cos(e)) ) -matmul( matmul(cos(b),cos(c)) , matmul(cos(d),cos(e)) ))
-write(1,*)matmul( matmul(cos(b(i3:i1:-i1,i2:i1:-i1)),cos(c(i2:i1:-i1,i4:i1:-i1))) , matmul(cos(d(i4:i1:-i1,i3:i1:-i1)),cos(e(i3:i1:-i1,i2:i1:-i1))) )
+write(39,*)matmul( matmul(cos(b(i3:i1:-i1,i2:i1:-i1)),cos(c(i2:i1:-i1,i4:i1:-i1))) , matmul(cos(d(i4:i1:-i1,i3:i1:-i1)),cos(e(i3:i1:-i1,i2:i1:-i1))) )
 call chkx(matmul( matmul(cos(b(i3:i1:-i1,i2:i1:-i1)),cos(c(i2:i1:-i1,i4:i1:-i1))) , matmul(cos(d(i4:i1:-i1,i3:i1:-i1)),cos(e(i3:i1:-i1,i2:i1:-i1))) ))
 f= matmul( matmul(cos(b(i3:i1:-i1,i2:i1:-i1)),cos(c(i2:i1:-i1,i4:i1:-i1))) , matmul(cos(d(i4:i1:-i1,i3:i1:-i1)),cos(e(i3:i1:-i1,i2:i1:-i1))) )
 call chkx(f)
@@ -54,16 +54,16 @@ matmul( matmul(cos(b(i3:i1:-i1,i2:i1:-i1)),cos(c(i2:i1:-i1,i4:i1:-i1))) ,&
  matmul(cos(d(i4:i1:-i1,i3:i1:-i1)),cos(e(i3:i1:-i1,i2:i1:-i1))) ) -&
 matmul( matmul(cos(b(i3:i1:-i1,i2:i1:-i1)),cos(c(i2:i1:-i1,i4:i1:-i1))) ,&
  matmul(cos(d(i4:i1:-i1,i3:i1:-i1)),cos(e(i3:i1:-i1,i2:i1:-i1))) ))
-write(1,*)(matmul( matmul(cos(b(i3:i1:-i1,i2:i1:-i1)),cos(c(i2:i1:-i1,i4:i1:-i1)))+matmul(cos(b(i3:i1:-i1,i2:i1:-i1)),cos(c(i2:i1:-i1,i4:i1:-i1)))-&
+write(39,*)(matmul( matmul(cos(b(i3:i1:-i1,i2:i1:-i1)),cos(c(i2:i1:-i1,i4:i1:-i1)))+matmul(cos(b(i3:i1:-i1,i2:i1:-i1)),cos(c(i2:i1:-i1,i4:i1:-i1)))-&
 matmul(cos(b(i3:i1:-i1,i2:i1:-i1)),cos(c(i2:i1:-i1,i4:i1:-i1))) , matmul(cos(d(i4:i1:-i1,i3:i1:-i1)),cos(e(i3:i1:-i1,i2:i1:-i1)))+&
 matmul(cos(d(i4:i1:-i1,i3:i1:-i1)),cos(e(i3:i1:-i1,i2:i1:-i1)))-matmul(cos(d(i4:i1:-i1,i3:i1:-i1)),cos(e(i3:i1:-i1,i2:i1:-i1))) )+&
  matmul( matmul(cos(b(i3:i1:-i1,i2:i1:-i1)),cos(c(i2:i1:-i1,i4:i1:-i1))) , matmul(cos(d(i4:i1:-i1,i3:i1:-i1)),cos(e(i3:i1:-i1,i2:i1:-i1))) )&
  -matmul( matmul(cos(b(i3:i1:-i1,i2:i1:-i1)),cos(c(i2:i1:-i1,i4:i1:-i1))) , matmul(cos(d(i4:i1:-i1,i3:i1:-i1)),cos(e(i3:i1:-i1,i2:i1:-i1))) ))
-rewind 1
-read(1,*) z; call chkx(z)
-read(1,*) z; call chkx(z)
-read(1,*) z; call chkx(z)
-read(1,*) z; call chkx(z)
+rewind 39
+read(39,*) z; call chkx(z)
+read(39,*) z; call chkx(z)
+read(39,*) z; call chkx(z)
+read(39,*) z; call chkx(z)
 print *,'pass'
 contains
  subroutine chk(b)

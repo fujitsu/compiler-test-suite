@@ -15,11 +15,11 @@ end
 
 subroutine ref  
 use m2
- write(1,*) value
+ write(24,*) value
  end subroutine
 
 subroutine chk
-rewind 1
-read(1,*) x
+rewind 24
+read(24,*) x
 if (x/=2.) print *,202
 end

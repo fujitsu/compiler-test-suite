@@ -15,7 +15,7 @@ use m1
     do concurrent(i=1:nn,j=1:nn,k=1:nn)
       array(i,j,k) = array(i,j,k) + f2()
     end do
-     write(1,*)merge("OK", "NG", all(array == 1.))
+     write(4,*)merge("OK", "NG", all(array == 1.))
      end
       print *,'pass'
       end

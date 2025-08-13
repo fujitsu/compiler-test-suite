@@ -8,7 +8,7 @@ module mod
 contains
   subroutine test
     TYPE (ty) :: t1
-    write(1,*) t1
+    write(9,*) t1
 end
     subroutine wwwww(dtv, unit, iotype, vlist, iostat, iomsg)
       class(ty), intent(in) :: dtv
@@ -26,5 +26,3 @@ program main
   call test
 print *,'pass'
 end program main
-
-

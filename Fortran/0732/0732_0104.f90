@@ -92,7 +92,7 @@ contains
 end module descsub
 program main
   use descsub
-open (11,delim='quote')
+open (26,delim='quote')
   x01=reshape((/(ix,ix=1,4*4*4)/),(/4,4,4,n1,n1,n1/))
   x02=reshape((/(ix,ix=1,4*4*4)/),(/4,4,4,n1,n1,n1/))
   x03=reshape((/(ix,ix=1,4*4*4)/),(/4,4,4,n1,n1,n1/))
@@ -109,23 +109,23 @@ open (11,delim='quote')
   x34=reshape((/(t,f,ix=1,4*4*4/2)/),(/4,4,4,n1,n1,n1/))
   x41=reshape((/('11','22','33','44',ix=1,4*4*4/2/2)/),(/4,4,4,n1,n1,n1/))
   x51=reshape((/(xx(1),xx(2),xx(3),xx(4),ix=1,4*4*4/2/2)/),(/4,4,4,n1,n1,n1/))
-  write(11,*) f01()
-  write(11,*) f02()
-  write(11,*) f03()
-  write(11,*) f04()
-  write(11,*) f11()
-  write(11,*) f12()
-  write(11,*) f13()
-  write(11,*) f21()
-  write(11,*) f22()
-  write(11,*) f23()
-  write(11,*) f31()
-  write(11,*) f32()
-  write(11,*) f33()
-  write(11,*) f34()
-  write(11,*) f41()
-  write(11,*) f42(2)
-  write(11,*) f51()
+  write(26,*) f01()
+  write(26,*) f02()
+  write(26,*) f03()
+  write(26,*) f04()
+  write(26,*) f11()
+  write(26,*) f12()
+  write(26,*) f13()
+  write(26,*) f21()
+  write(26,*) f22()
+  write(26,*) f23()
+  write(26,*) f31()
+  write(26,*) f32()
+  write(26,*) f33()
+  write(26,*) f34()
+  write(26,*) f41()
+  write(26,*) f42(2)
+  write(26,*) f51()
 call chk
 print *,'pass'
 contains
@@ -147,24 +147,24 @@ subroutine chk
   character (len=2), dimension(8) :: y41
   character (len=2), dimension(8) :: y42
   type (xx),dimension(8) ::y51
-rewind 11
-  read(11,*) y01
-  read(11,*) y02
-  read(11,*) y03
-  read(11,*) y04
-  read(11,*) y11
-  read(11,*) y12
-  read(11,*) y13
-  read(11,*) y21
-  read(11,*) y22
-  read(11,*) y23
-  read(11,*) y31
-  read(11,*) y32
-  read(11,*) y33
-  read(11,*) y34
-  read(11,*) y41
-  read(11,*) y42
-  read(11,*) y51
+rewind 26
+  read(26,*) y01
+  read(26,*) y02
+  read(26,*) y03
+  read(26,*) y04
+  read(26,*) y11
+  read(26,*) y12
+  read(26,*) y13
+  read(26,*) y21
+  read(26,*) y22
+  read(26,*) y23
+  read(26,*) y31
+  read(26,*) y32
+  read(26,*) y33
+  read(26,*) y34
+  read(26,*) y41
+  read(26,*) y42
+  read(26,*) y51
 if (any(y01/=(/x01(1:3:2,1:3:2,1:3:2,n1:k1,n1:k1,n1:k1)/)))write(6,*) "NG"
 if (any(y02/=(/x02(1:3:2,1:3:2,1:3:2,n1:k1,n1:k1,n1:k1)/)))write(6,*) "NG"
 if (any(y03/=(/x03(1:3:2,1:3:2,1:3:2,n1:k1,n1:k1,n1:k1)/)))write(6,*) "NG"

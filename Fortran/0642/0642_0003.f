@@ -2,13 +2,18 @@
       print *,'pass'
       end
       subroutine pro
-      integer a(4),b(10)
+      integer a(4),b(10),tmp
       character*10 c,d(10)
       intrinsic cos
+      a=0
+      b=0
+      c=''
+      d=''
       call sub(a,b(5),c(1:5),d(5)(1:5))
       call sub1(b)
       call sub3(cos)
-      call sub2(100,real(a))
+      tmp=100
+      call sub2(tmp,real(a))
       end
       subroutine sub(a,b,c,d)
       integer a(4),b(3)

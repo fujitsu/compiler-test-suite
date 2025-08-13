@@ -9,9 +9,9 @@ C        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX2aaaaaaa
                                                                         aaaaaaaa
 C        X                                                              aaaaaaaa
                                                                         aaaaaaaa
-      write(1,*)x                                                       aaaaaaaa
-      rewind 1                                                          aaaaaaaa
-      read(1,*)k                                                        aaaaaaaa
+      write(14,*)x                                                      aaaaaaaa
+      rewind 14                                                         aaaaaaaa
+      read(14,*)k                                                       aaaaaaaa
       if (k/=11)print *,k                                               aaaaaaaa
                                                                         aaaaaaaa
       print *,'pass'                                                    aaaaaaaa

@@ -14,16 +14,16 @@
      Y = reshape ((/ (I + 0.2, I = 1, 3), X, 2.0 /), YShape)
      Q = (/ ((0.0, J = 1, I - 1), 1.0, (0.0, J = I + 1, N), I = 1, N) /)
      Z = reshape (Q, ZShape)
-      write (unit = 1, fmt = *) " X: ", X
-     write (unit = 1, fmt = *) " Y: "
+      write (unit = 38, fmt = *) " X: ", X
+     write (unit = 38, fmt = *) " Y: "
      do Loop = 1, 3
-       write (unit = 1, fmt = *) " Row ", Loop
-       write (unit = 1, fmt = *) Y(Loop, :)
+       write (unit = 38, fmt = *) " Row ", Loop
+       write (unit = 38, fmt = *) Y(Loop, :)
      end do
-     write (unit = 1, fmt = *) " Z: "
+     write (unit = 38, fmt = *) " Z: "
      do Loop = 1, N
-       write (unit = 1, fmt = *) " Row ", Loop
-       write (unit = 1, fmt = *) Z(Loop, :)
+       write (unit = 38, fmt = *) " Row ", Loop
+       write (unit = 38, fmt = *) Z(Loop, :)
      end do
-     write (unit = 1, fmt = *) " Q: ", Q
-   end 
+     write (unit = 38, fmt = *) " Q: ", Q
+   end

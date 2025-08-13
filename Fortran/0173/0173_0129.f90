@@ -24,8 +24,8 @@ end do
  use m1
  type(w),pointer::x
 allocate(x)
- write(1,*) ss1(x%a1,(x%a1))
-rewind 1
-read(1,*) k
+ write(17,*) ss1(x%a1,(x%a1))
+rewind 17
+read(17,*) k
 if (k/=111111) print *,101
  end

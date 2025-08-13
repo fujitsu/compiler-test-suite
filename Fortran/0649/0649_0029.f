@@ -16,11 +16,11 @@
       equivalence (sta2,iarr2(1))
       sts1%i=1
       if (sts2(1)%i.ne.iarr(5)) print *,'err  1'
-      rewind 1
-      write (1,'(3I2)') 1,2,3
-      rewind 1
-      read  (1,'(3I2)') iarr(6),sts1%i,sta1%a(sts2(1)%i+1)
-      rewind 1
+      rewind 21
+      write (21,'(3I2)') 1,2,3
+      rewind 21
+      read  (21,'(3I2)') iarr(6),sts1%i,sta1%a(sts2(1)%i+1)
+      rewind 21
       rewind 6
       if (sts2(2)%i.ne.1) print *,'err  2'
       if (sts1%i .ne.2) print *,'err  3'

@@ -1,4 +1,3 @@
- call flush(1)
+call flush(3)
  print *,'pass'
  end
-

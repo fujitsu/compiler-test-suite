@@ -30,9 +30,9 @@
  call ss2(fun1(aa)//fun1(aa))
  call ss2(fun2(aa)//fun2(aa))
  call ss2(fun3(aa)//fun3(aa))
- write(1,*)fun1(aa)//fun1(aa)
- write(1,*)fun2(aa)//fun2(aa)
- write(1,*)fun3(aa)//fun3(aa)
+ write(4,*)fun1(aa)//fun1(aa)
+ write(4,*)fun2(aa)//fun2(aa)
+ write(4,*)fun3(aa)//fun3(aa)
  call ss1(aa,a4,a5,a6)
  call chk
   contains
@@ -53,9 +53,9 @@
  call ss2(fun1(aa)//fun1(aa))
  call ss2(fun2(aa)//fun2(aa))
  call ss2(fun3(aa)//fun3(aa))
- write(1,*)fun1(aa)//fun1(aa)
- write(1,*)fun2(aa)//fun2(aa)
- write(1,*)fun3(aa)//fun3(aa)
+ write(4,*)fun1(aa)//fun1(aa)
+ write(4,*)fun2(aa)//fun2(aa)
+ write(4,*)fun3(aa)//fun3(aa)
  end subroutine
  subroutine ss2(ww)
  character*(*),dimension(:)::ww
@@ -72,11 +72,11 @@
    end function
  subroutine chk
  character*19 x,xx/' 111111222222333333'/
- rewind 1
- read(1,'(a)') x;if (x/=xx)write(6,*) "NG"
- read(1,'(a)') x;if (x/=xx)write(6,*) "NG"
- read(1,'(a)') x;if (x/=xx)write(6,*) "NG"
- read(1,'(a)') x;if (x/=xx)write(6,*) "NG"
- read(1,'(a)') x;if (x/=xx)write(6,*) "NG"
- read(1,'(a)') x;if (x/=xx)write(6,*) "NG"
+ rewind 4
+ read(4,'(a)') x;if (x/=xx)write(6,*) "NG"
+ read(4,'(a)') x;if (x/=xx)write(6,*) "NG"
+ read(4,'(a)') x;if (x/=xx)write(6,*) "NG"
+ read(4,'(a)') x;if (x/=xx)write(6,*) "NG"
+ read(4,'(a)') x;if (x/=xx)write(6,*) "NG"
+ read(4,'(a)') x;if (x/=xx)write(6,*) "NG"
 end

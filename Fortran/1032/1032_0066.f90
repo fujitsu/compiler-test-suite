@@ -5,21 +5,21 @@ Program bad4
   real::randomharvest
 
   call random_number(randomharvest)
-  write(1,*)randomharvest
+  write(17,*)randomharvest
   if (randomharvest>=0.and.randomharvest<1)then
   else
    print *,'error-1'
   endif
 
   call random_number(randomharvest)
-  write(1,*)randomharvest
+  write(17,*)randomharvest
   if (randomharvest>=0.and.randomharvest<1)then
   else
    print *,'error-2'
   endif
 
   call random_number(randomharvest)
-  write(1,*)randomharvest
+  write(17,*)randomharvest
   if (randomharvest>=0.and.randomharvest<1)then
   else
    print *,'error-3'

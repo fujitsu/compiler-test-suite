@@ -1,9 +1,9 @@
 i = 4
-open(10)
-write(10, '(i4)') i
-rewind(10)
-read(10, '(i4)') i
-close(10)
+open(20)
+write(20, '(i4)') i
+rewind(20)
+read(20, '(i4)') i
+close(20)
 
 if(.not.(i.ge.4)) then
    print *, 'ng'

@@ -28,19 +28,19 @@ do k=1,2
     XSMS(k,kk)%qq=2
   end do
 end do
-write(1,nam)
+write(25,nam)
 CONTAINS
   function m()
   type::kc
     type(efk) Y
-  end type 
+  end type
   type (kc) nooj
   namelist /nam2/ nooj
   nooj% Y % qq(1,83)=1
   M=nooj% Y % qq(1,83)
   nooj% Y % qq=1
-  write(1,nam2)
-  end function 
+  write(25,nam2)
+  end function
 end subroutine
 subroutine s2
 type(efk) ::XSMSz(2)
@@ -68,19 +68,19 @@ do k=1,2
     XSMS(k,kk)%qq=2
   end do
 end do
-write(1,nam)
+write(25,nam)
 CONTAINS
   function m()
   type::kc
     type(efk) Y
-  end type 
+  end type
   type (kc) nooj
   namelist /nam2/ nooj
   nooj% Y % qq(1,83)=1
   M=nooj% Y % qq(1,83)
   nooj% Y % qq=1
-  write(1,nam2)
-  end function 
+  write(25,nam2)
+  end function
 end subroutine
 subroutine s1
 type(efk) ::yXSMS(2,4)
@@ -110,19 +110,19 @@ do k=1,2
     yXSMS(k,kk)%qq=2
   end do
 end do
-write(1,nam)
+write(25,nam)
 CONTAINS
   function m()
   type::kc
     type(efk) Y
-  end type 
+  end type
   type (kc) nooj
   namelist /nam2/ nooj
   nooj% Y % qq(1,83)=1
   M=nooj% Y % qq(1,83)
   nooj% Y % qq=1
-  write(1,nam2)
-  end function 
+  write(25,nam2)
+  end function
 end subroutine
 end
 use m1
@@ -130,4 +130,4 @@ call s1
 call s2
 call s3
 print *,'pass'
-end 
+end

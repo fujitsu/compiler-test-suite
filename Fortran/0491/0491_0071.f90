@@ -3,9 +3,9 @@ real,parameter:: b(*)= [real:: 1 ]
 type(real):: a
 allocatable::a
 allocate(real:: a)
-write(1,*) [     real :: 1 ]
-write(1,*) [real:: 1 ]
-write(1,*) b,c
+write(7,*) [     real :: 1 ]
+write(7,*) [real:: 1 ]
+write(7,*) b,c
 print *,'pass'
 contains
 type(real) function f()

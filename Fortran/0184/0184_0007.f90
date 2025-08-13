@@ -29,12 +29,12 @@ if (n3(1)/=2) print *,201
 if (n4(1)/=2) print *,201
 if (n5(1)/=2) print *,201
 if (n6(1)/=2) print *,201
-write(1,'("k1",z16.16)')loc(k1)
-write(1,'("k2",z16.16)')loc(k2)
-write(1,'("k3",z16.16)')loc(k3)
-write(1,'("k4",z16.16)')loc(k4)
-write(1,'("k5",z16.16)')loc(k5)
-write(1,'("k6",z16.16)')loc(k6)
+write(3,'("k1",z16.16)')loc(k1)
+write(3,'("k2",z16.16)')loc(k2)
+write(3,'("k3",z16.16)')loc(k3)
+write(3,'("k4",z16.16)')loc(k4)
+write(3,'("k5",z16.16)')loc(k5)
+write(3,'("k6",z16.16)')loc(k6)
 end subroutine
 end
 call s1

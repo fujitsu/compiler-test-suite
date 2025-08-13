@@ -57,7 +57,7 @@ subroutine check(a , item ,subcode)
   if (any(a/=(/1,2,3,4,5,6/)))then
       write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a
   else 
-      write(1,*) 'OK    :',item
+      write(27,*) 'OK    :',item
   endif
 end subroutine
 subroutine check_s(a , item ,subcode,kv)
@@ -65,6 +65,6 @@ subroutine check_s(a , item ,subcode,kv)
   if (a/=kv)then
       write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a
   else 
-      write(1,*) 'OK    :',item
+      write(27,*) 'OK    :',item
   endif
 end subroutine

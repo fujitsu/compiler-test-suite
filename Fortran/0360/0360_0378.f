@@ -13,15 +13,15 @@
       do i=1,16
          i4a(i) = sign(i4b(i),i4c(i))
       enddo
-      write(1,*)
+      write(25,*)
       do i=1,16
          r4a(i) = sign(r4b(i),r4c(i))
       enddo
-      write(1,*)
+      write(25,*)
       do i=1,16
          r8a(i) = sign(r8b(i),r8c(i))
       enddo
-      write(1,*)
+      write(25,*)
 
       do i=1,16
          if (i4a(i).ne.res(i) .or.

@@ -11,7 +11,7 @@ call test
 end
   subroutine test
     TYPE (ty) :: t1
-    write(1,*) t1
+    write(7,*) t1
   end subroutine test
   subroutine wform(dtv, unit, iotype, vlist, iostat, iomsg)
     class(ty), intent(in) :: dtv
@@ -28,4 +28,3 @@ use m
 call s
 print *,'pass'
 end
-

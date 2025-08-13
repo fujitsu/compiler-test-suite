@@ -3,7 +3,7 @@ integer,pointer :: p
 p=>t
 t=10
 call sub(p,p)
-write(1,*) t
+write(2,*) t
 print *,'pass'
 contains
 

@@ -32,9 +32,9 @@
      l=4
      m=5
      n=0
-     write(1,'(5i4)') i,j,k,l,m
-     rewind(1)
-     read (1,'(5i4)') i,j,k,l,m
+     write(18,'(5i4)') i,j,k,l,m
+     rewind(18)
+     read (18,'(5i4)') i,j,k,l,m
      call sub1(i,j,k,l,m)
      call sub2(i,j,k,l,m)
      call sub3(i,j,k,l,m)

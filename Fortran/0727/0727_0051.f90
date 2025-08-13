@@ -37,9 +37,9 @@ end
  subroutine s13
  integer,dimension(5) ::a=(/1,0,3,4,0/),b=-99,c=-99
  k1=1;k5=5
- write(1)k1,k5,k5-1
- rewind 1
- read (1)k1,k5,k4
+ write(9)k1,k5,k5-1
+ rewind 9
+ read (9)k1,k5,k4
  forall (i=k1:k5-k4)
    where (a==0)
     a=-1

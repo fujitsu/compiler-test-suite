@@ -1,6 +1,6 @@
 integer :: x=10,func
 r = func (x,x)
-write(1,*)  r , x
+write(31,*)  r , x
 print *,'pass'
 end
 

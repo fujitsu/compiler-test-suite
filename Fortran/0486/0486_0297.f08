@@ -1,6 +1,6 @@
 subroutine s1
 integer::a(2)
-call ss( (a) )
+call ss( a )
 if (a(1)/=1) print *,101
 if (a(2)/=1) print *,102
 end

@@ -45,17 +45,17 @@ if (present(a1)) then
    allocate ( &
      a1%z1%x1(n),a1%z1%x2(n*n),a1%y1%x3(n),a1%y1%x4(n*n),a1%z1%ww%x5(n),a1%z1%ww%x6(n*n),stat=k)
    if (k/=0) stop 1000
-   write(1,'(z16.16)') loc(a1%z1%x1)
+   write(20,'(z16.16)') loc(a1%z1%x1)
 endif
    allocate ( &
      a2%z1%x1(n),a2%z1%x2(n*n),a2%y1%x3(n),a2%y1%x4(n*n),a2%z1%ww%x5(n),a2%z1%ww%x6(n*n),stat=k)
    if (k/=0) stop 1000
-   write(2,'(z16.16)') loc(a2%z1%x1)
+   write(21,'(z16.16)') loc(a2%z1%x1)
 if (present(a1)) then
    allocate ( &
      a3%z1%x1(n),a3%z1%x2(n*n),a3%y1%x3(n),a3%y1%x4(n*n),a3%z1%ww%x5(n),a3%z1%ww%x6(n*n),stat=k)
    if (k/=0) stop 1000
-   write(3,'(z16.16)') loc(a3%z1%x1)
+   write(22,'(z16.16)') loc(a3%z1%x1)
 endif
   end subroutine
 end
@@ -64,9 +64,9 @@ use m1
 do nn=1,10000
   call s0(a1,a2,a3)
 end do
-call chk(1)
-call chk(2)
-call chk(3)
+call chk(20)
+call chk(21)
+call chk(22)
 print *,'pass'
 end
 subroutine chk(n)
@@ -81,9 +81,9 @@ do nn=1,10000
    endif
  end do
  k=k+1
- if (k>100) then 
+ if (k>100) then
     print *,'Eroor memory leak ',n
-    return 
+    return
  endif
  cc(k)=c
 2 continue

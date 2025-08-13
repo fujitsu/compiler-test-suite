@@ -11,7 +11,7 @@ contains
     integer, intent(in) :: n1, n2
     real(8), intent(in) :: array
     integer::r
-    write(1,*) "typeA aa:", array
+    write(9,*) "typeA aa:", array
     if (   (array/=1)) print *,201
     if (this%x/=1) print *,301
     r=1

@@ -38,11 +38,11 @@ allocate(addr_j5(omp_get_max_threads()))
 allocate(addr_k5(omp_get_max_threads()))
 !$omp parallel
 j1 = omp_get_thread_num()
-write(1,*)1,loc(j1)
+write(4,*)1,loc(j1)
 !$omp end parallel
 !$omp parallel
 if (any(j1 /= omp_get_thread_num())) print *,35
-write(1,*)1,loc(j1)
+write(4,*)1,loc(j1)
 !$omp end parallel
 end
 call s1

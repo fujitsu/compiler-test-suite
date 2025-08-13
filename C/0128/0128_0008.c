@@ -62,7 +62,7 @@ int main()
 
   for(i=n0;i<n10;i=i+n1)
     if (*(r4p01+i)&&l402[i])
-      if (i402[i]<r401[i]>r801[i])
+      if ((i402[i]<r401[i])>r801[i])
         if ((r801[i]=u401[i])>(r401[i]<=*(i4p01+i)))
           r402[i]=0;
         else

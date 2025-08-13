@@ -108,23 +108,23 @@ program main
   x34=reshape((/(t,f,ix=1,4*4*4/2)/),(/4,4,4,n1,n1,n1/))
   x41=reshape((/('11','22','33','44',ix=1,4*4*4/2/2)/),(/4,4,4,n1,n1,n1/))
   x51=reshape((/(xx(1),xx(2),xx(3),xx(4),ix=1,4*4*4/2/2)/),(/4,4,4,n1,n1,n1/))
-  write(11) f01()
-  write(11) f02()
-  write(11) f03()
-  write(11) f04()
-  write(11) f11()
-  write(11) f12()
-  write(11) f13()
-  write(11) f21()
-  write(11) f22()
-  write(11) f23()
-  write(11) f31()
-  write(11) f32()
-  write(11) f33()
-  write(11) f34()
-  write(11) f41()
-  write(11) f42(2)
-  write(11) f51()
+  write(33) f01()
+  write(33) f02()
+  write(33) f03()
+  write(33) f04()
+  write(33) f11()
+  write(33) f12()
+  write(33) f13()
+  write(33) f21()
+  write(33) f22()
+  write(33) f23()
+  write(33) f31()
+  write(33) f32()
+  write(33) f33()
+  write(33) f34()
+  write(33) f41()
+  write(33) f42(2)
+  write(33) f51()
 call chk
 print *,'pass'
 contains
@@ -146,24 +146,24 @@ subroutine chk
   character (len=2), dimension(8) :: y41
   character (len=2), dimension(8) :: y42
   type (xx),dimension(8) ::y51
-rewind 11
-  read(11) y01
-  read(11) y02
-  read(11) y03
-  read(11) y04
-  read(11) y11
-  read(11) y12
-  read(11) y13
-  read(11) y21
-  read(11) y22
-  read(11) y23
-  read(11) y31
-  read(11) y32
-  read(11) y33
-  read(11) y34
-  read(11) y41
-  read(11) y42
-  read(11) y51
+rewind 33
+  read(33) y01
+  read(33) y02
+  read(33) y03
+  read(33) y04
+  read(33) y11
+  read(33) y12
+  read(33) y13
+  read(33) y21
+  read(33) y22
+  read(33) y23
+  read(33) y31
+  read(33) y32
+  read(33) y33
+  read(33) y34
+  read(33) y41
+  read(33) y42
+  read(33) y51
 if (any(y01/=(/x01(1:3:2,1:3:2,1:3:2,n1:k1,n1:k1,n1:k1)/)))write(6,*) "NG"
 if (any(y02/=(/x02(1:3:2,1:3:2,1:3:2,n1:k1,n1:k1,n1:k1)/)))write(6,*) "NG"
 if (any(y03/=(/x03(1:3:2,1:3:2,1:3:2,n1:k1,n1:k1,n1:k1)/)))write(6,*) "NG"

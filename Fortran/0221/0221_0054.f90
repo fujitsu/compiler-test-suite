@@ -22,12 +22,12 @@ endmodule mod02
 
 use mod02
 use mod01
-write(1,*)      bit_size(1  )
+write(3,*)      bit_size(1  )
 call chk
 print *,'pass'
 end
 subroutine chk
-rewind 1
-read(1,*) k
+rewind 3
+read(3,*) k
 if (k/=32)print *,1010
 end

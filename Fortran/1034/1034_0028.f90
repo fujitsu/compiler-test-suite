@@ -8,9 +8,9 @@
    integer i(j,j+1)
    namelist /xxx/i
    call sss1
-   contains 
+   contains
    subroutine sss1
-   write(1,xxx)
+   write(13,xxx)
    end subroutine
    end subroutine
  end

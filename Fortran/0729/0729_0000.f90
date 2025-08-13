@@ -18,11 +18,11 @@ program c07
 real, dimension (:,:), allocatable :: a6
 allocate(a6(5,6))
 call s6(a6)
-rewind 1
-read(1,*) jj;if(jj/=30)write(6,*) "NG"
-read(1,*) jj;if(jj/=6)write(6,*) "NG"
-read(1,*) jj;if(jj/=30)write(6,*) "NG"
-read(1,*) jj;if(jj/=6)write(6,*) "NG"
+rewind 2
+read(2,*) jj;if(jj/=30)write(6,*) "NG"
+read(2,*) jj;if(jj/=6)write(6,*) "NG"
+read(2,*) jj;if(jj/=30)write(6,*) "NG"
+read(2,*) jj;if(jj/=6)write(6,*) "NG"
 print *,'pass'
 contains
 
@@ -33,10 +33,10 @@ use s6_mod
    REAL :: TEMP(N_ROWS(A),N_COLS(A))
    REAL :: TEMP_TRANSPOSE(N_COLS(A),N_ROWS(A))
 
-write(1,*)n_rows(a)*n_cols(a)
-write(1,*)n_cols(a)
-write(1,*)size(temp)
-write(1,*)size(temp_transpose,dim=1)
+write(2,*)n_rows(a)*n_cols(a)
+write(2,*)n_cols(a)
+write(2,*)size(temp)
+write(2,*)size(temp_transpose,dim=1)
 end SUBROUTINE S6
 
 end program c07

@@ -2,7 +2,7 @@ subroutine s1
 integer,pointer::p(:),pp(:)
 allocate(p(1:0))
 p=1
-write(1,*) p
+write(4,*) p
 call s(p)
 call ss(p)
 allocate(pp(1:0))

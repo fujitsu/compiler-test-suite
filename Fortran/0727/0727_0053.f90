@@ -40,9 +40,9 @@ end
  complex,allocatable,dimension(:) ::a,b,c
  allocate(a(5),b(5),c(5)); a=(/(1,1),(0,0),(3,3),(4,4),(0,0)/);b=(-99,-99);c=(-99,-99)
  k1=1;k5=5
- write(1)k1,k5,k5-1
- rewind 1
- read (1)k1,k5,k4
+ write(15)k1,k5,k5-1
+ rewind 15
+ read (15)k1,k5,k4
  forall (i=k1:k5-k4)
    where (a==0)
     a=-(1,1)

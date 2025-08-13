@@ -3,6 +3,6 @@ PROGRAM SAMPLE
   character(1),target,dimension(4,2) :: t='a'
   namelist /nalst/ p
   p=>t
-  write(10,nalst)
+  write(11,nalst)
   print *,'pass'
 END PROGRAM SAMPLE

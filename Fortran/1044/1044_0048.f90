@@ -22,7 +22,7 @@ subroutine check(a , item ,b)
   if (any(a/=(/1,2,3,4,5,6/)))then
       write(6,*) 'ERROR :',item,' Value: ',a
   else 
-      write(1,*) 'OK    :',item
+      write(20,*) 'OK    :',item
   endif
   if (item==2)then
     if (loc(b(1))/=loc(a))write(6,*) "NG"

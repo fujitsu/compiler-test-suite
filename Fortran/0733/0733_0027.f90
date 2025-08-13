@@ -3,15 +3,15 @@
    Integer :: k
    character*100 r
 
-   Write (1, *) U
-   Write (1, *) (LowerCase(U(k:k)), k = 1, 26)
-   Write (1, *) (letter_index(U(k:k)), k = 1, 26)
-   Write (1, *) letter_index(U(7:7))
-rewind 1
-  read(1,'(a)') r;if (r/=' ABCDEFGHIJKLMNOPQrstuVWXYZ')print *,'error-1'
-  read(1,'(a)') r;if (r/=' abcdefghijklmnopqrstuvwxyz')print *,'error-2'
-  read(1,'(a)') r;if (r/=' 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 0 0 0 0 22 23 24 25 26')print *,'error-3'
-  read(1,'(a)') r;if (r/=' 7')print *,'error-4'
+   Write (17, *) U
+   Write (17, *) (LowerCase(U(k:k)), k = 1, 26)
+   Write (17, *) (letter_index(U(k:k)), k = 1, 26)
+   Write (17, *) letter_index(U(7:7))
+rewind 17
+  read(17,'(a)') r;if (r/=' ABCDEFGHIJKLMNOPQrstuVWXYZ')print *,'error-1'
+  read(17,'(a)') r;if (r/=' abcdefghijklmnopqrstuvwxyz')print *,'error-2'
+  read(17,'(a)') r;if (r/=' 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 0 0 0 0 22 23 24 25 26')print *,'error-3'
+  read(17,'(a)') r;if (r/=' 7')print *,'error-4'
 
 print *,'pass'
 

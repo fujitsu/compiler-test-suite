@@ -9,6 +9,6 @@ end module
 
 use mod,s=>sss
 call get_command(s%command)
-write(1,*)s%command
+write(39,*)s%command
 print *,'pass'
 end

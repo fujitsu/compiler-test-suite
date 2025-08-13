@@ -28,8 +28,8 @@ allocate(b2(1)%b1(2),b2(2)%b1(2))
 b2(1)%b1=(/21,22/)
 b2(2)%b1=(/23,24/)
 call sug(b2,a2)
-rewind 1
-read(1,*) i1,i2,i3,i4,i5,i6
+rewind 19
+read(19,*) i1,i2,i3,i4,i5,i6
 if (any((/i1,i2,i3,i4,i5,i6/)/=(/5,6,21,22,23,24/)))print *,'error'
 print *,'pass'
 end
@@ -38,5 +38,5 @@ end
 use m1
    integer,dimension(:),pointer::a
    type(x1),dimension(2)::b
-       write(1,*)a,b(1)%b1,b(2)%b1
+       write(19,*)a,b(1)%b1,b(2)%b1
    end subroutine

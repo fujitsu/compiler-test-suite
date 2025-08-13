@@ -8,7 +8,7 @@ program reall
   do j = 1,10
     nels = nels * 2
     p => reallocate(p, nels)
-    write(1,*)'allocated ', nels
+    write(52,*)'allocated ', nels
   end do
   print   *,'pass'
 
@@ -20,20 +20,20 @@ contains
     integer :: nold, ierr
     allocate(reallocate(1:n), stat=ierr)
     if(ierr /= 0) then
-       write(1,*)'error', ierr, ' trying to allocate', n
+       write(52,*)'error', ierr, ' trying to allocate', n
        stop
     end if
-    write(1,*)'allocated ', n, ' ok'
+    write(52,*)'allocated ', n, ' ok'
     if(.not. associated(p)) return
     nold = min(size(p),n)
     reallocate = 0
     reallocate(1:nold) = p(1:nold)
     deallocate(p, stat=ierr)
     if(ierr /= 0) then
-       write(1,*)'error', ierr, ' trying to deallocate', nold
+       write(52,*)'error', ierr, ' trying to deallocate', nold
        stop
     end if
-    write(1,*)'deallocated ', nold, ' ok'
+    write(52,*)'deallocated ', nold, ' ok'
   end function reallocate
 
 end program reall

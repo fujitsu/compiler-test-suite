@@ -23,7 +23,7 @@ end module m
 submodule(m)smod
 contains
   module subroutine sub
-    write(1, *)ty()
+    write(31, *)ty()
   end subroutine sub
 end submodule smod
 

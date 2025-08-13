@@ -7,7 +7,7 @@ i=ifun()
 if (i.ne.1) print *,'ng'
 contains
 function ifun()
-integer ii(9999999)
+integer,save:: ii(9999999)
 ii=1
 ifun=ii(1)
 end function

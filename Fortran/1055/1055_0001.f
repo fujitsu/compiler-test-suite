@@ -23,9 +23,10 @@
 !$    call OMP_SET_DYNAMIC(.true.)
 !$    ld=OMP_GET_DYNAMIC()
       write(*,*) "OMP_GET_DYNAMIC=",ld
+!$    call OMP_SET_DYNAMIC(.false.)
 !$    if(ld) call OMP_SET_NUM_THREADS(ist)
 !$    ith=OMP_GET_MAX_THREADS()
-!$    call OMP_SET_MAX_ACTIVE_LEVELS(.true.)
+!$    call OMP_SET_MAX_ACTIVE_LEVELS(1)
 !$    ln0=OMP_GET_MAX_ACTIVE_LEVELS()
 !$omp parallel private(itn0,int0)
 !$    itn0 = OMP_GET_THREAD_NUM()+1

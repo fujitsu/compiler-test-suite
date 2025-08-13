@@ -14,7 +14,7 @@ aaa = "abc"
 
 !$omp parallel
 if (aaa/='abc')print *,101
-write(1,*)aaa,loc(aaa)
+write(10,*)aaa,loc(aaa)
 !$omp end parallel
 
 !$omp parallel
@@ -24,7 +24,7 @@ bbb(:) = "abc"
 
 !$omp parallel 
 if (bbb/='abc')print *,201
-write(1,*)bbb,loc(bbb)
+write(10,*)bbb,loc(bbb)
 !$omp end parallel
 end
 

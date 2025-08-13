@@ -25,13 +25,13 @@ end function
 end subroutine
 function ixx(k1)
 if (k1/=1) print *,101
-write(1,*) k1
+write(30,*) k1
 ixx=k1
 end function
 function izz(k1,k2)
 if (k1/=21) print *,112
 if (k2/=22) print *,122
-write(1,*) k1,k2
+write(30,*) k1,k2
 izz=k1+k2
 end function
 end

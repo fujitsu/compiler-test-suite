@@ -46,6 +46,6 @@ end
 function ip(k1,k2)
 if (k1/=21) print *,112
 if (k2/=22) print *,122
-write(1,*) k1,k2
+write(32,*) k1,k2
 ip=k1+k2
 end function

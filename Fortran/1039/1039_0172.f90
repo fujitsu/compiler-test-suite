@@ -12,7 +12,7 @@ subroutine init
   implicit none
   allocate(p(200,100,2))
   p(:,:,:) = 0.0d0
-  write(1,'(a,"0x",z16.16)') 'init: loc(p) = ', loc(p)
+  write(21,'(a,"0x",z16.16)') 'init: loc(p) = ', loc(p)
   allocate(grid%idum(3))
    grid%idum=(/21,22,23/)
   return
@@ -21,7 +21,7 @@ end subroutine init
 subroutine foo(a,idum,k)
   real(kind(0d0)) :: a(200,100,2)
   integer :: idum(3)
-  write(1,'(a,"0x",z16.16)') ' foo: loc(a) = ', loc(a)
+  write(21,'(a,"0x",z16.16)') ' foo: loc(a) = ', loc(a)
   select case(k)
   case(1)
     m=0
@@ -36,7 +36,7 @@ end subroutine foo
 subroutine foo2(a,idum,k)
   real(kind(0d0)) :: a(200,100,1)
   integer :: idum(3)
-  write(1,'(a,"0x",z16.16)') ' foo: loc(a) = ', loc(a)
+  write(21,'(a,"0x",z16.16)') ' foo: loc(a) = ', loc(a)
   select case(k)
   case(1)
     m=0
@@ -51,7 +51,7 @@ end subroutine foo2
 subroutine foo3(a,idum,k)
   real(kind(0d0)) :: a(200,100,2)
   integer :: idum(*)
-  write(1,'(a,"0x",z16.16)') ' foo: loc(a) = ', loc(a)
+  write(21,'(a,"0x",z16.16)') ' foo: loc(a) = ', loc(a)
   select case(k)
   case(1)
     m=0
@@ -66,7 +66,7 @@ end subroutine foo3
 subroutine bar(a,b)
   implicit none
   real(kind(0d0)) :: a(200,100,2), b(200,100,2)
-  write(1,'(a,"0x",z16.16)') ' bar: loc(a) = ', loc(a)
+  write(21,'(a,"0x",z16.16)') ' bar: loc(a) = ', loc(a)
   return
 end subroutine bar
 

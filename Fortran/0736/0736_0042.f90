@@ -19,15 +19,15 @@ integer,allocatable::y2(:)
 allocate(y2(2))
 y2=(/1,2/)
 if (present(y1))then
-write(1,*)y1
+write(41,*)y1
 endif
-write(1,*)y2
+write(41,*)y2
 end subroutine
 end
 call t
-rewind 1
+rewind 41
 do i=1,6
-read(1,*)j1,j2
+read(41,*)j1,j2
 if (any((/j1,j2/)/=(/1,2/)))write(6,*) "NG"
 end do
 print *,'pass'

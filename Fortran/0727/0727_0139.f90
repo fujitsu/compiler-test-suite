@@ -37,56 +37,55 @@
  type(w),pointer::x
 !
  allocate(x)
- write(1,*) ss1(x%a1,(x%a1))
+ write(54,*) ss1(x%a1,(x%a1))
  if (any(ss1(x%a1,(x%a1))/=reshape((/z('1'),z('2'),z('3'),z('4'),z('5'),z('6')/),(/2,3/))))write(6,*) "NG"
  deallocate(x)
 !
  allocate(x)
- write(1,*) ss1(x%a1(:,:),(x%a1(:,:)))
+ write(54,*) ss1(x%a1(:,:),(x%a1(:,:)))
  if (any(ss1(x%a1(:,:),(x%a1(:,:)))/=reshape((/z('1'),z('2'),z('3'),z('4'),z('5'),z('6')/),(/2,3/))))write(6,*) "NG"
  deallocate(x)
 !
  allocate(x)
- write(1,*) ss1(x%a1,(x%a1))
+ write(54,*) ss1(x%a1,(x%a1))
  if (any(ss1(x%a1,(x%a1))/=reshape((/z('1'),z('2'),z('3'),z('4'),z('5'),z('6')/),(/2,3/))))write(6,*) "NG"
  deallocate(x)
 !
  allocate(x)
- write(1,*) ss1(x%a1(i2,i3),(x%a1(i2,i3)))
+ write(54,*) ss1(x%a1(i2,i3),(x%a1(i2,i3)))
  if (   (ss1(x%a1(i2,i3),(x%a1(i2,i3)))/=z('6')))write(6,*) "NG"
  deallocate(x)
 !
  allocate(x);if(associated(x%a2))write(6,*) "NG"
  allocate(x%a2(2,3));x%a2=x%a1
- write(1,*) ss2((x%a2),x%a2)
+ write(54,*) ss2((x%a2),x%a2)
  if (any(ss2((x%a2),x%a2)/=reshape((/z('1'),z('2'),z('3'),z('4'),z('5'),z('6')/),(/2,3/))))write(6,*) "NG"
  deallocate(x%a2,x)
 !
  allocate(x);if(associated(x%a2))write(6,*) "NG"
  allocate(x%a2(2,3));x%a2=x%a1
- write(1,*) ss2((x%a2(:,:)),x%a2(:,:))
+ write(54,*) ss2((x%a2(:,:)),x%a2(:,:))
  if (any(ss2((x%a2(:,:)),x%a2(:,:))/=reshape((/z('1'),z('2'),z('3'),z('4'),z('5'),z('6')/),(/2,3/))))write(6,*) "NG"
  deallocate(x%a2,x)
 !
  allocate(x);if(associated(x%a2))write(6,*) "NG"
  allocate(x%a2(2,3));x%a2=x%a1
- write(1,*) ss2((x%a2),x%a2)
+ write(54,*) ss2((x%a2),x%a2)
  if (any(ss2((x%a2),x%a2)/=reshape((/z('1'),z('2'),z('3'),z('4'),z('5'),z('6')/),(/2,3/))))write(6,*) "NG"
  deallocate(x%a2,x)
 !
  allocate(x);if(associated(x%a2))write(6,*) "NG"
  allocate(x%a2(2,3));x%a2=x%a1
- write(1,*) ss2((x%a2(i2,i3)),x%a2(i2,i3))
+ write(54,*) ss2((x%a2(i2,i3)),x%a2(i2,i3))
  if (   (ss2((x%a2(i2,i3)),x%a2(i2,i3))/=z('6')))write(6,*) "NG"
  deallocate(x%a2,x)
- rewind 1
- read(1,*) i;if (i/=123456)write(6,*) "NG"
- read(1,*) i;if (i/=123456)write(6,*) "NG"
- read(1,*) i;if (i/=123456)write(6,*) "NG"
- read(1,*) i;if (i/=     6)write(6,*) "NG"
- read(1,*) i;if (i/=123456)write(6,*) "NG"
- read(1,*) i;if (i/=123456)write(6,*) "NG"
- read(1,*) i;if (i/=123456)write(6,*) "NG"
- read(1,*) i;if (i/=     6)write(6,*) "NG"
+ rewind 54
+ read(54,*) i;if (i/=123456)write(6,*) "NG"
+ read(54,*) i;if (i/=123456)write(6,*) "NG"
+ read(54,*) i;if (i/=123456)write(6,*) "NG"
+ read(54,*) i;if (i/=     6)write(6,*) "NG"
+ read(54,*) i;if (i/=123456)write(6,*) "NG"
+ read(54,*) i;if (i/=123456)write(6,*) "NG"
+ read(54,*) i;if (i/=123456)write(6,*) "NG"
+ read(54,*) i;if (i/=     6)write(6,*) "NG"
  end
- 

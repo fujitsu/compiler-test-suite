@@ -15,13 +15,13 @@ CONTAINS
     x(2,1)='12'
     x(1,2)='13'
     x(2,2)='14'
-    write(1,*)x
+    write(11,*)x
     call chk
   print *,'pass'
   END SUBROUTINE sub
 end
 subroutine chk
-rewind 1
-read(1,*) i
+rewind 11
+read(11,*) i
 if (i/=11121314)print *,'error-1'
 end

@@ -5,7 +5,7 @@
     do i=1,nn
       array(i,j,k) = array(i,j,k)
     end do
-     write(1,*)merge("OK", "NG", all(array == 1.))
+     write(3,*)merge("OK", "NG", all(array == 1.))
      end
       print *,'pass'
       end

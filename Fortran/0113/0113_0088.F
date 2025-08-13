@@ -9,9 +9,9 @@ D        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX29999999
                                                                         99999999
 D        X                                                              99999999
                                                                         99999999
-      write(1,*)x                                                       99999999
-      rewind 1                                                          99999999
-      read(1,*)k                                                        99999999
+      write(11,*)x                                                      99999999
+      rewind 11                                                         99999999
+      read(11,*)k                                                       99999999
       if (k/=11)print *,k                                               99999999
                                                                         99999999
       print *,'pass'                                                    99999999

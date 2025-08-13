@@ -13,11 +13,11 @@ allocate(a(2:k1+1,3:k2+2,4:1+3))
 a='0'
 call       s(a,k1,k2,n1,n2)
 if (a(1+3,2+2,3+1)/='1') print *,203
-open(2,delim='quote')
-write(2,*) a
+open(7,delim='quote')
+write(7,*) a
 
-rewind 2
-read(2,*) aa
+rewind 7
+read(7,*) aa
 if (aa(6)/='1') print *,403
 print *,'pass'
 end

@@ -143,6 +143,8 @@
          DATA R3A/100*0.0/,R3B/100*0./,R3C/100*0./,R3D/100*0./
          DATA R4A/100*0.0/,R4B/100*0./,R4C/100*0./,R4D/100*0./
          INTEGER*4 L(100)
+         real*4 res(100)
+         data res/1.8,49*5.7999997,50*11.0/
 
          DO 10 I1=1,1
          DO 10 I2=1,I1
@@ -199,11 +201,15 @@
            R2D(I)=1.0+R1A(I)+R1B(I)-R1C(I)+R1D(I)+R2A(I)+1.0
            R4D(I)=1.0+R4A(I)+R4B(I)-R4C(I)+R4D(I)+R3A(I)+1.0
            ENDIF
-10         CONTINUE
+ 10     CONTINUE
          WRITE(6,*) R1A,R1B,R1C,R1D
-         WRITE(6,*) R2A,R2B,R2C,R2D
+         WRITE(6,*) R2A
+         WRITE(6,*) R2B
+         WRITE(6,*) R2C
+         call check(R2D,res)
          WRITE(6,*) R3A,R3B,R3C,R3D
          WRITE(6,*) R4A,R4B,R4C,R4D
+         write(6,*)
          RETURN
          END
          SUBROUTINE SUB3
@@ -302,3 +308,16 @@
 5678     FORMAT(1H ,100(F13.4,F13.4,F13.4,F13.4,/))
          RETURN
          END
+
+#define IS_EQUAL(a,b) ((a==b).or.(a==0.and.abs(b)<10E-6).or.(abs(a-b)/abs(a)<10E-6))
+      subroutine check(calc,res)
+      real calc(50),res(50)
+      logical ngcheck/.FALSE./
+      do i=1,50
+         if (IS_EQUAL(calc(i), res(i))) then
+         else
+            ngcheck = .TRUE.
+         endif
+      enddo
+      if (ngcheck) write(6,*) calc
+      end

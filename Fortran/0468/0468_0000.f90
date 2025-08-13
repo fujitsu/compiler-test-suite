@@ -254,6 +254,6 @@ k=1&
  +1&
  +1&
  +1
-write(1,*) k
+write(4,*) k
 print *,'pass'
 end

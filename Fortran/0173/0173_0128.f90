@@ -40,15 +40,15 @@ call chk
 print *,'pass'
 end
 subroutine chk
-rewind 1
-read(1,*) k;if (k/=2) print *,101
-read(1,*,end=10) k
+rewind 16
+read(16,*) k;if (k/=2) print *,101
+read(16,*,end=10) k
  print *,102
 10 end
 
      subroutine print1
-write(1,*) 1
+write(16,*) 1
      end subroutine
      subroutine print2
-write(1,*) 2
+write(16,*) 2
      end subroutine

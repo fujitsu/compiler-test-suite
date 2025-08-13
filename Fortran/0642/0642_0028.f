@@ -2,6 +2,7 @@
        print *,'pass'
        end
        subroutine pro
+       save
        integer b(10,10)
        integer c(10,10,10)
        integer d(10,10,10,10)

@@ -29,6 +29,7 @@ end do
 end subroutine
 subroutine test02()
 use m1
+save
 type(base) a(100,100,100,10),b(100,100,100,10)
 type(base) c(100,100,100,10),d(100,100,100,10)
 n=100

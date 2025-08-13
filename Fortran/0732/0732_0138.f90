@@ -12,15 +12,15 @@ call chk(matmul(b+b-b,c+c-c))
 call chk(&
   matmul(b(i13:i11,i12:i11)+b(i13:i11,i12:i11)-b(i13:i11,i12:i11),&
   c(i2:i1,i14:i11)+c(i2:i1,i14:i11)-c(i2:i1,i14:i11)))
-write(1,*)matmul(b+b-b,c+c-c)
-write(1,*)matmul(b(i13:i11,i12:i11)+b(i13:i11,i12:i11)-b(i13:i11,i12:i11),c(i2:i1,i14:i11)+c(i2:i1,i14:i11)-c(i2:i1,i14:i11))
-write(1,*)(matmul(b+b-b,c+c-c))
-write(1,*)(&
+write(45,*)matmul(b+b-b,c+c-c)
+write(45,*)matmul(b(i13:i11,i12:i11)+b(i13:i11,i12:i11)-b(i13:i11,i12:i11),c(i2:i1,i14:i11)+c(i2:i1,i14:i11)-c(i2:i1,i14:i11))
+write(45,*)(matmul(b+b-b,c+c-c))
+write(45,*)(&
   matmul(b(i13:i11,i12:i11)+b(i13:i11,i12:i11)-b(i13:i11,i12:i11),&
   c(i2:i1,i14:i11)+c(i2:i1,i14:i11)-c(i2:i1,i14:i11)))
-rewind 1
+rewind 45
 do ix=1,4
-read(1,*) a;call chk(a)
+read(45,*) a;call chk(a)
 end do
 print *,'pass'
 contains

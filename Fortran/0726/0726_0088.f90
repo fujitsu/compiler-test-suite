@@ -148,12 +148,12 @@
          type (List) :: this
          type (Item), pointer :: pt
          pt => this%list
-         write (1,'(a)',advance='no') '( '
+         write (21,'(a)',advance='no') '( '
          do while (associated(pt))
-            write (1,'(i2,a)',advance='no') pt%val, ' '
+            write (21,'(i2,a)',advance='no') pt%val, ' '
             pt => pt%next
          enddo
-         write (1,'(a)') ') '
+         write (21,'(a)') ') '
          end subroutine display
          function at_end(this) result(prev)
          type (List) :: this
@@ -206,7 +206,7 @@
       if ((.not.is_empty(il)).or.(is_present(il,1024))) then
          write (6,*) 'List class internal error (1)'
       else
-         write (1,*) 'ok: empty List class'
+         write (21,*) 'ok: empty List class'
       endif
       tmp = remove(il,1024)
       call display(il)
@@ -223,7 +223,7 @@
          write (6,*) 'List class internal error (2)'
       endif
       odd_cnt = remove(il,odd)
-      write (1,*) odd_cnt,' items of value ',odd,' removed.'
+      write (21,*) odd_cnt,' items of value ',odd,' removed.'
       call display(il)
       do ix = 1, odd_cnt
          call insert(il,odd)
@@ -237,10 +237,10 @@
       do i = size2/2 + 1, size2
          call append(il2,i-1)
       enddo
-      write (1,'(a)',advance='no') 'list il: '  ;  call display(il)
-      write (1,'(a)',advance='no') 'list il2: ' ;  call display(il2)
-      write (1,'(a)',advance='no') 'concat il il2: '
+      write (21,'(a)',advance='no') 'list il: '  ;  call display(il)
+      write (21,'(a)',advance='no') 'list il2: ' ;  call display(il2)
+      write (21,'(a)',advance='no') 'concat il il2: '
       call concat(il,il2)  ;  call display(il)
-      write (1,'(a)',advance='no') 'reverse il: '
+      write (21,'(a)',advance='no') 'reverse il: '
       call removeAll(il2)  ;  call reverse(il)  ;  call display(il)
       end

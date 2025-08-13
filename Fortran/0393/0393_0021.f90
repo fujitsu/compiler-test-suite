@@ -22,7 +22,7 @@ allocate(fun(1)%ii(6))
 fun = d1
 
 if(kind(fun(1)%ii) /= 4 .and. size(fun(1)%ii) /=6 ) then
-write(1,*) "size(fun(1)%ii) =  " , size(fun(1)%ii)
+write(8,*) "size(fun(1)%ii) =  " , size(fun(1)%ii)
 endif
 END FUNCTION
 END PROGRAM

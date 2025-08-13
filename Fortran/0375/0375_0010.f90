@@ -6,7 +6,7 @@ i(1)=1
 data j(2)/2/
 call ss
 write(2,*)i(1),j(2),loc(i),loc(j)
-write(1,xxx)
+write(9,xxx)
 print *,'pass'
 end
 subroutine ss

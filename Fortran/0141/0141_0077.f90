@@ -13,7 +13,7 @@ contains
     sub_p => sub
   end subroutine setup
   subroutine sub
-    write(1,*) "OK"
+    write(44,*) "OK"
   end subroutine sub
 end module test
 
@@ -25,5 +25,3 @@ program main
   call sub_p
 print *,'pass'
 end program main
-
-

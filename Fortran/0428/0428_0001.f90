@@ -9,7 +9,7 @@ MODULE MOD06
 CONTAINS
   SUBROUTINE SUB06()
     IMPLICIT NONE
-    write(1,*) 06
+    write(2,*) 06
   END SUBROUTINE SUB06
 END MODULE MOD06
 
@@ -23,8 +23,8 @@ END MODULE MOD06
   CLASS IS(D06)
      CALL name%PROC()
   END SELECT
-rewind 1
-read(1,*) k
+rewind 2
+read(2,*) k
 if (k/=6) print *,101
   print *, "pass"
 

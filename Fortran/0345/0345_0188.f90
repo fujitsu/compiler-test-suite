@@ -12,9 +12,9 @@
      use mod
       j=100
       i=1
-      write(1,'(i4,i4)') j,i
-      rewind (1)
-      read(1,'(i4,i4)') j,i
+      write(15,'(i4,i4)') j,i
+      rewind (15)
+      read(15,'(i4,i4)') j,i
       call sub1(i,j)
       call sub2(i,j)
       if (j/=100) print *,'error'

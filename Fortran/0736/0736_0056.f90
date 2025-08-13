@@ -45,15 +45,15 @@ subroutine ss(s,cc)
 use charutils
 character*10 c,s*(*),cc(:)*(*)
 c=my_trim(s)
-write(1,*)'#'//c//'#'
-write(1,*)len(my_trim(s))
-write(1,*)(my_trim(cc(i)),i=1,size(cc))
+write(16,*)'#'//c//'#'
+write(16,*)len(my_trim(s))
+write(16,*)(my_trim(cc(i)),i=1,size(cc))
 call sx(s)
 end
 subroutine sx(s)
 character*10 c,s*(*)
 c=trim(s)
-write(1,*)'%1%','#'//c//'#'
-write(1,*)'%2%',len(trim(s))
-write(1,*)'%3%',len_trim(s)
+write(16,*)'%1%','#'//c//'#'
+write(16,*)'%2%',len(trim(s))
+write(16,*)'%3%',len_trim(s)
 end

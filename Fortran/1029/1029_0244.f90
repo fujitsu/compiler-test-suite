@@ -4,11 +4,11 @@ b = 2
 c = 3
 d = 4
 
-open(10)
-write(10, '(4i4)') a, b, c, d
-rewind(10)
-read(10, '(4i4)') a, b, c, d
-close(10)
+open(56)
+write(56, '(4i4)') a, b, c, d
+rewind(56)
+read(56, '(4i4)') a, b, c, d
+close(56)
 
 if(a.gt.b .and. c.gt.d) then
   print *, 'ng'

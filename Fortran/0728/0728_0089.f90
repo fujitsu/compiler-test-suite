@@ -6,10 +6,10 @@
   TYPE(A),POINTER:: BASE_PTR
   do ii=1,1000
   ALLOCATE(BASE_PTR)
-  write(1,*)ASSOCIATED(BASE_PTR%PTR),BASE_PTR%VALUE
- rewind 1
-  read(1,*) kk
- rewind 1
+  write(11,*)ASSOCIATED(BASE_PTR%PTR),BASE_PTR%VALUE
+ rewind 11
+  read(11,*) kk
+ rewind 11
   if (kk)write(6,*) "NG"
   Allocate(BASE_PTR%PTR)
   deallocate(BASE_PTR)

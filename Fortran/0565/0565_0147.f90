@@ -32,5 +32,5 @@ module m1
     if (a1(2)/=1) print *,101
     if (a1(3)/=1) print *,101
     if (a1(4)/=1) print *,101
-    write(1,*) a1,k1,k2,k3,k4
+    write(4,*) a1,k1,k2,k3,k4
     end

@@ -19,9 +19,9 @@
      use mod333
       i=1
       j=2
-      write(1,'(2i4)') i,j
-      rewind(1)
-      read (1,'(2i4)') i,j
+      write(10,'(2i4)') i,j
+      rewind(10)
+      read (10,'(2i4)') i,j
       call sub1(i,j)
       if (k/=3) print *,'error k ->',k
       i=i+j

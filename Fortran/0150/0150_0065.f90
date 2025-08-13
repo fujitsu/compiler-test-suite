@@ -11,11 +11,11 @@ end type
 type (x2)::k2
 
 namelist /name/k1,k2
-write(1,'(a)') '&name k1=1 k2%x23%x12=2 /'
-rewind 1
+write(14,'(a)') '&name k1=1 k2%x23%x12=2 /'
+rewind 14
 k1=21
 k2=x2(-1,-1,x1(-1,-1))
-read(1,name)
+read(14,name)
 if (k1/=1) print *,101
 if (k2%x21/=-1) print *,1021
 if (k2%x22/=-1) print *,1022

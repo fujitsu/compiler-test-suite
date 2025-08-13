@@ -2,7 +2,7 @@
  allocate(a(2,1,2))
  j=2
  a=reshape((/'11','22','33','44'/),(/2,1,2/))
- write(1,*)f(a),f(a)
+ write(62,*)f(a),f(a)
  call sub(f(a))
  call sub(f(f(a)))
  call sub(f(f(f(a))))
@@ -20,4 +20,3 @@
   f=a
   end function
  end
-

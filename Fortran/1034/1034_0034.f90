@@ -4,11 +4,11 @@
 !$OMP parallel
 !$OMP single
       if (cx/='OpenMP') write(6,*) "NG"
-      write(UNIT=22,xyz123456789)
+      write(UNIT=28,xyz123456789)
 !$OMP end single
 !$OMP end parallel
-      rewind (UNIT=22)
-      read(UNIT=22,xyz123456789)
+      rewind (UNIT=28)
+      read(UNIT=28,xyz123456789)
       if (cx/='OpenMP') write(6,*) "NG"
       print *,'pass'
       end

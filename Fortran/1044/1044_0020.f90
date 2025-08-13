@@ -5,7 +5,7 @@ module m1
     integer n
 
     do n=1,3
-       write(1,*)loc(iarr(:,:,:,n))
+       write(4,*)loc(iarr(:,:,:,n))
         call test_regist( iarr(:,:,:,n) )
     end do
 
@@ -13,7 +13,7 @@ end subroutine
 subroutine test_regist( PHI )
     integer,target :: PHI(*)
 
-   write(2,*)loc(PHI)
+   write(51,*)loc(PHI)
 
 end subroutine
 end
@@ -26,11 +26,11 @@ end
 subroutine chk
 pointer (i,p)
 pointer (j,q)
-rewind 1
-rewind 2
+rewind 4
+rewind 51
 do k=1,3
-read(1,*) i
-read(2,*) j
+read(4,*) i
+read(51,*) j
 end do
 if (i/=j)write(6,*) "NG"
 end

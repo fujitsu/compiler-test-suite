@@ -63,14 +63,14 @@ do j=1,NUMFSL-1
    u49(k+1,j+1)= u49(k,j)+ v49(k,j)
 end do
 end do
-write(1,*) u1
-write(1,*) u2
-write(1,*) u3
-write(1,*) u4
-write(1,*) v1
-write(1,*) v2
-write(1,*) v3
-write(1,*) v4
+write(2,*) u1
+write(2,*) u2
+write(2,*) u3
+write(2,*) u4
+write(2,*) v1
+write(2,*) v2
+write(2,*) v3
+write(2,*) v4
 do k=1,NUMIA_I-1
 do j=1,NUMFSL-1
    ud1(k,j) = 1
@@ -88,14 +88,14 @@ do j=1,NUMFSL-1
    ud49(k+1,j+1)= ud39(k,j)+ vd49(k,j)
 end do
 end do
-write(1,*) ud1
-write(1,*) ud2
-write(1,*) ud3
-write(1,*) ud4
-write(1,*) vd1
-write(1,*) vd2
-write(1,*) vd3
-write(1,*) vd4
+write(2,*) ud1
+write(2,*) ud2
+write(2,*) ud3
+write(2,*) ud4
+write(2,*) vd1
+write(2,*) vd2
+write(2,*) vd3
+write(2,*) vd4
  end subroutine
 end
 use m1

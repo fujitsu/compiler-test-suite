@@ -49,6 +49,6 @@ integer,parameter::r(81*2)=(/(iv,iv=1,81*2)/)
   if (any(a/=r))then
       write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a
   else 
-      write(1,*) 'OK    item&subcode:',item,subcode
+      write(38,*) 'OK    item&subcode:',item,subcode
   endif
 end subroutine

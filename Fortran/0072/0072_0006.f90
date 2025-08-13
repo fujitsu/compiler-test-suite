@@ -1,16 +1,16 @@
-write(1,'(a)') '&nam '
-write(1,'(a)') '! comment'
-write(1,'(a)') ' a=1 ! comment'
-write(1,'(a)') ' / ! comment'
-rewind 1
+write(10,'(a)') '&nam '
+write(10,'(a)') '! comment'
+write(10,'(a)') ' a=1 ! comment'
+write(10,'(a)') ' / ! comment'
+rewind 10
 call ss
 print *,'pass'
 end
 subroutine ss
 integer::a
 namelist/nam/a
-rewind 1
-read(1,nam)
+rewind 10
+read(10,nam)
 if (a/=1) print *,101
 end
 

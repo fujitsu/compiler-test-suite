@@ -30,10 +30,10 @@ select case (n)
   d1%i1=1
   d1%i2=2
  case (3)
-write(1,'(z8.8)')a1%i1
-write(1,'(z8.8)')b1%i1
-write(1,'(z8.8)')c1%i1
-write(1,'(z8.8)')d1%i1
+write(2,'(z8.8)')a1%i1
+write(2,'(z8.8)')b1%i1
+write(2,'(z8.8)')c1%i1
+write(2,'(z8.8)')d1%i1
  if (a1%i1/=1)print *,101
  if (a1%i2/=2)print *,102
  if (b1%i1/=1)print *,111

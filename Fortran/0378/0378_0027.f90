@@ -10,9 +10,9 @@ allocate(p2)
 p2%something=2
 p1%anotherthing=> p2
 
-write(1,*)p1%something
-write(1,*)p1%anotherthing%something
+write(50,*)p1%something
+write(50,*)p1%anotherthing%something
 
-write(1,*)sizeof(p1)
+write(50,*)sizeof(p1)
 print *,'pass'
 end

@@ -6,8 +6,8 @@ character(k)::s(:)
 character(3)::aa(:,:,:)
 character(3)::ss(:)
 namelist /nam/a,s,aa,ss
-open(1,delim='quote')
-write(1,nam)
+open(40,delim='quote')
+write(40,nam)
 end subroutine
 end
 use m1
@@ -27,8 +27,8 @@ end
 subroutine chk
 character(3) a(8),s(2),aa(8),ss(2)
 namelist /nam/a,s,aa,ss
-rewind 1
-read(1,nam) 
+rewind 40
+read(40,nam) 
 if (any(a/=&
                 ['123','456','789','abc','def','ghi','jkl','mno'] &
 )) print *,101

@@ -5,7 +5,7 @@ type a
   integer::x3=3
 end type
 type(a),parameter::v=a(1,2,3)
-write(1,*) v
+write(9,*) v
 end
 call s1
 print *,'pass'

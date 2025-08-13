@@ -35,18 +35,18 @@ integer(8)::addr1
 
 obj%cmp2%cmp%dd=>dptr(:,1:2,:)
 d1=>dptr(:,1:2,:)
-write(1,*) loc(d1(:,:,2))
+write(57,*) loc(d1(:,:,2))
 addr1 = loc(d1(:,:,2))
 call sub1(d1(:,:,2),addr1)
 
-write(1,*) obj%cmp2%cmp%dd(:,:,2)
+write(57,*) obj%cmp2%cmp%dd(:,:,2)
 call sub1(obj%cmp2%cmp%dd(:,:,2),addr1)
 print*,'pass'
 end subroutine
 subroutine sub1(dmy,addr1)
 integer(8)::addr1
 integer :: dmy(3,3)
-write(1,*) loc(dmy)
+write(57,*) loc(dmy)
 if (addr1/=loc(dmy)) print *,1001
 end subroutine
 end

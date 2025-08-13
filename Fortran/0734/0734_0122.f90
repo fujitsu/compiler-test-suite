@@ -17,8 +17,8 @@
      m1=1;m2=1;m3=1;n1=1;n2=1
      mm1=2;mm3=2;mm4=2;mm5=2;mm6=2;mm7=2;mm8=2;mm9=2
   else
-     write(1,'(z8)') n
-     write(1,'(z8)') m
+     write(60,'(z8)') n
+     write(60,'(z8)') m
      if (n/=1) write(6,*) "NG"
      if (n1/=1) write(6,*) "NG"
      if (n2/=1) write(6,*) "NG"

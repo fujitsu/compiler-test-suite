@@ -28,6 +28,6 @@ subroutine check(a , item )
   if (any(a/=(/1,2,3,4,5,6/)))then
       write(6,*) 'ERROR :',item,' Value: ',a
   else 
-      write(1,*) 'OK    :',item
+      write(25,*) 'OK    :',item
   endif
 end subroutine

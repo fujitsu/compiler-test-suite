@@ -9,7 +9,7 @@ CONTAINS
 SUBROUTINE   prc(x,y)
   CLASS(t1),INTENT(INOUT)::x
   CLASS(t1),INTENT(IN)::y
-write(2,*)x%x11,y%x11
+write(46,*)x%x11,y%x11
   x%x11 = x%x11+y%x11
 END SUBROUTINE
 END MODULE
@@ -27,15 +27,15 @@ TYPE t3
   TYPE(t2),POINTER:: v21(:),v22(:)
 END TYPE
 END MODULE
- 
+
 
 
 PROGRAM MAIN
 USE m2
 CALL s1
-rewind 2
-read(2,*) n1,n2
-read(2,*) n1,n2
+rewind 46
+read(46,*) n1,n2
+read(46,*) n1,n2
 print *,'pass'
 CONTAINS
 SUBROUTINE s1

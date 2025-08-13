@@ -12,7 +12,7 @@
       character *20 op
       integer ios
       if ( ios .ne. 0 ) then
-         write (1,*) op,': iostat = ',ios
+         write (96,*) op,': iostat = ',ios
       endif
       return
       end
@@ -68,7 +68,7 @@
       open (unit=2, file=fname, status='OLD', iostat=ios)
       op = 'open'
       call iocheck (op, ios)
-      write (1,*) 'Pass 1'
+      write (96,*) 'Pass 1'
       call id
       read (2,foo,iostat=ios)
       op = 'read-foo'
@@ -81,7 +81,7 @@
       call iocheck (op, ios)
       order='foo-bar-baz'
       call cd (order)
-      write (1,*) 'Pass 2'
+      write (96,*) 'Pass 2'
       call id
       rewind 2
       read (2,bar,iostat=ios)
@@ -98,13 +98,13 @@
       order='bar-foo-baz'
       call cd (order)
       close (unit=2,status='delete')
-       rewind 1
+       rewind 96
       call chk
       end
       subroutine chk
       character*10 r
-      read(1,'(a)') r;if (r/=' Pass 1')write(6,*) "NG"
-      read(1,'(a)') r;if (r/=' Pass 2')write(6,*) "NG"
+      read(96,'(a)') r;if (r/=' Pass 1')write(6,*) "NG"
+      read(96,'(a)') r;if (r/=' Pass 2')write(6,*) "NG"
       print *,'pass'
       end
 

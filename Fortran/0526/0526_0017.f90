@@ -28,11 +28,11 @@ use m4
 use m5
         implicit none
 integer::k
-        write(1,*)f1()
-        write(1,*)f2()
-rewind 1
-read(1,*) k;if(k/=10) print *,100
-read(1,*) k;if(k/=20) print *,200
+        write(2,*)f1()
+        write(2,*)f2()
+rewind 2
+read(2,*) k;if(k/=10) print *,100
+read(2,*) k;if(k/=20) print *,200
 print *,'pass'
         end
 

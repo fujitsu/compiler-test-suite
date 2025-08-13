@@ -16,8 +16,8 @@
   end do
   if (any((/b/)/=(/(-1,-1,-1,1,3,-1,i=1,4)/)))print *,'error-1'
   call ss1(a(:,:,:,:,-5:-15,:),bb(:,:,:,:,-5:-15,:),-15)
-rewind 1
-read (1,*) xx(1);if(xx(1)/=-99) print *,'error-2'
+rewind 26
+read (26,*) xx(1);if(xx(1)/=-99) print *,'error-2'
 print *,'pass'
   contains
    subroutine ss1(a,b,n)
@@ -31,11 +31,11 @@ print *,'pass'
      elsewhere (a(k,i,:,:,:,j)==2)
        a(-15,i,:,:,:,5)=a(-15,i,:,:,:,5)+1
      end where
-     write(1,*) b(k,i,:,:,:,j)
-     write(1,*) a(-15,i,:,:,:,5)
+     write(26,*) b(k,i,:,:,:,j)
+     write(26,*) a(-15,i,:,:,:,5)
   end do
   end do
   end do
-     write(1,*) -99
+     write(26,*) -99
    end subroutine
   end

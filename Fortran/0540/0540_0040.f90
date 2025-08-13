@@ -22,7 +22,7 @@
      end type
      contains
      subroutine prc()
-       write(1,*) 'Okay'
+       write(23,*) 'Okay'
      end subroutine
      end module
 module m0

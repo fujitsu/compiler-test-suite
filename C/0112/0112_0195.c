@@ -5,7 +5,7 @@
 #ifndef __USE_ISOC99
 
 
-#include "func_def_ansi.h"
+#include "000.h"
 #endif
 #define n 31
 int main() {

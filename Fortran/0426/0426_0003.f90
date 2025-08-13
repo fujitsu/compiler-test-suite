@@ -45,7 +45,7 @@ call r% h( c+1,f,x+1,y+1)
  end function
  subroutine pt( this )
   class(xyz):: this
-  write(1,*)this%a, this%b , this%x , this%y
+  write(3,*)this%a, this%b , this%x , this%y
  end subroutine
 end module
 
@@ -55,15 +55,15 @@ integer n(3)
 logical :: x
 sh = xyz(5, .true., 100, 200) 
 call sh%pt()
-rewind 1
-read(1,*) n(1),x,n(2:)
+rewind 3
+read(3,*) n(1),x,n(2:)
 if (.not. x) print *,2001
 if (any(n/=[8,103,203])) print *,501
 if ( sh%q(6,.false.,1000,2000) ) print *,3001
-rewind 1
+rewind 3
 call sh%pt()
-rewind 1
-read(1,*) n(1),x,n(2:)
+rewind 3
+read(3,*) n(1),x,n(2:)
 if (x) print *,2101
 if (any(n/=[9,1003,2003])) print *,701
 print *,'pass'

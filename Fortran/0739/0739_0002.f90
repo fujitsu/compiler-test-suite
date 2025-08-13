@@ -10,12 +10,11 @@ subroutine sample
           ALLOCATE(ISEED(ISIZE))
           CALL RANDOM_SEED(GET=ISEED)
 !
-          WRITE(1,*) "SEED=",ISEED
+          WRITE(9,*) "SEED=",ISEED
 !
           CALL RANDOM_NUMBER(R)
-          WRITE(1,*) "RANDOM_NUMBER=",R
+          WRITE(9,*) "RANDOM_NUMBER=",R
 !
           DEALLOCATE(ISEED)
 !
           END
-

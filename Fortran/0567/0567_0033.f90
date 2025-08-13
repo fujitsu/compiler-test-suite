@@ -34,10 +34,10 @@ if (   (z2%x2/=2)) print *,123012
 if (any(z3%x1/=1)) print *,122003,'error'
 if (   (z3%x2/=2)) print *,123013
 if (k/=0) print *,1141
-write(1, '(" w:",z16.16)') loc(  w%x1)
-write(1, '("z1:",z16.16)') loc( z1%x1)
-write(1, '("z2:",z16.16)') loc( z2%x1)
-write(1, '("z3:",z16.16)') loc( z3%x1)
+write(10, '(" w:",z16.16)') loc(  w%x1)
+write(10, '("z1:",z16.16)') loc( z1%x1)
+write(10, '("z2:",z16.16)') loc( z2%x1)
+write(10, '("z3:",z16.16)') loc( z3%x1)
 end subroutine
 end
 use m2
@@ -45,4 +45,3 @@ use m0
 call s1
 print *,'pass'
 end
-

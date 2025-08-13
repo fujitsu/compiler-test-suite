@@ -18,16 +18,16 @@
 
    b%y_n%y_n%x =3
    nullify(b%y_n%y_n%y_n)
-   b%y_n%y_n%y_b => b%y_n 
- write(1,*)b%x
- write(1,*)b%y_n%x
- write(1,*)b%y_n%y_n%x
- write(1,*)b%y_n%y_n%y_b%x
- write(1,*)b%y_n%y_n%y_b%y_b%x
- write(1,*)'=='
+   b%y_n%y_n%y_b => b%y_n
+ write(19,*)b%x
+ write(19,*)b%y_n%x
+ write(19,*)b%y_n%y_n%x
+ write(19,*)b%y_n%y_n%y_b%x
+ write(19,*)b%y_n%y_n%y_b%y_b%x
+ write(19,*)'=='
    call sub(b%y_n)
- write(1,*)b%x
- write(1,*)b%y_n%x
+ write(19,*)b%x
+ write(19,*)b%y_n%x
 call chk
      contains
       subroutine sub(p)
@@ -36,16 +36,16 @@ call chk
       end subroutine
  end
 subroutine chk
-rewind 1
-read(1,*)i;if (i/=1)write(6,*) "NG"
-read(1,*)i;if (i/=2)write(6,*) "NG"
-read(1,*)i;if (i/=3)write(6,*) "NG"
-read(1,*)i;if (i/=2)write(6,*) "NG"
-read(1,*)i;if (i/=1)write(6,*) "NG"
-read(1,*)
-read(1,*)i;if (i/=1)write(6,*) "NG"
-read(1,*)i;if (i/=3)write(6,*) "NG"
-read(1,*,end=1)i
+rewind 19
+read(19,*)i;if (i/=1)write(6,*) "NG"
+read(19,*)i;if (i/=2)write(6,*) "NG"
+read(19,*)i;if (i/=3)write(6,*) "NG"
+read(19,*)i;if (i/=2)write(6,*) "NG"
+read(19,*)i;if (i/=1)write(6,*) "NG"
+read(19,*)
+read(19,*)i;if (i/=1)write(6,*) "NG"
+read(19,*)i;if (i/=3)write(6,*) "NG"
+read(19,*,end=1)i
 write(6,*) "NG"
 return
 1 end

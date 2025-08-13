@@ -11,10 +11,10 @@ bb(j,i)=1
 end forall
 end forall
 do k=1,5
-write(1,*)b(:,k)
+write(22,*)b(:,k)
 end do
 do k=1,5
-write(1,*)bb(:,k)
+write(22,*)bb(:,k)
 end do
 do i=1,5
 do j=1,size(a(1::i))
@@ -23,10 +23,10 @@ cc(j,i)=1
 end do
 end do
 do k=1,5
-write(1,*)c(:,k)
+write(22,*)c(:,k)
 end do
 do k=1,5
-write(1,*)cc(:,k)
+write(22,*)cc(:,k)
 end do
 end
 subroutine ss2(n)
@@ -37,7 +37,7 @@ b(j,i)=1
 end forall
 end forall
 do k=1,5
-write(1,*)b(:,k)
+write(22,*)b(:,k)
 end do
 end
 call ss1(5)
@@ -47,17 +47,17 @@ print *,'pass'
 end
 subroutine chk
 integer x(5)
-rewind 1
+rewind 22
 do j=1,4
-read(1,*)x;if (any(x/=1))write(6,*) "NG"
-read(1,*)x;if (any(x/=(/1,1,1,-9,-10/)))write(6,*) "NG"
-read(1,*)x;if (any(x/=(/1,1,-13,-14,-15/)))write(6,*) "NG"
-read(1,*)x;if (any(x/=(/1,1,-18,-19,-20/)))write(6,*) "NG"
-read(1,*)x;if (any(x/=(/1,-22,-23,-24,-25/)))write(6,*) "NG"
+read(22,*)x;if (any(x/=1))write(6,*) "NG"
+read(22,*)x;if (any(x/=(/1,1,1,-9,-10/)))write(6,*) "NG"
+read(22,*)x;if (any(x/=(/1,1,-13,-14,-15/)))write(6,*) "NG"
+read(22,*)x;if (any(x/=(/1,1,-18,-19,-20/)))write(6,*) "NG"
+read(22,*)x;if (any(x/=(/1,-22,-23,-24,-25/)))write(6,*) "NG"
 end do
-read(1,*)x;if (any(x/=(/1,-2,-3,-4,-5/)))write(6,*) "NG"
-read(1,*)x;if (any(x/=(/1,1,-8,-9,-10/)))write(6,*) "NG"
-read(1,*)x;if (any(x/=(/1,1,1,-14,-15/)))write(6,*) "NG"
-read(1,*)x;if (any(x/=(/1,1,1,1,-20/)))write(6,*) "NG"
-read(1,*)x;if (any(x/=1))write(6,*) "NG"
+read(22,*)x;if (any(x/=(/1,-2,-3,-4,-5/)))write(6,*) "NG"
+read(22,*)x;if (any(x/=(/1,1,-8,-9,-10/)))write(6,*) "NG"
+read(22,*)x;if (any(x/=(/1,1,1,-14,-15/)))write(6,*) "NG"
+read(22,*)x;if (any(x/=(/1,1,1,1,-20/)))write(6,*) "NG"
+read(22,*)x;if (any(x/=1))write(6,*) "NG"
 end

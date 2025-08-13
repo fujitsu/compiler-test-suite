@@ -7,10 +7,10 @@
      &c=500
       if (abc/=500)print *,'error-1'
       ab&
-c=400
+&c=400
       if (abc/=400)print *,'error-2'
       ab&
-c=500
+&c=500
       if (abc/=500)print *,'error-3'
       print *,'pass'
       end

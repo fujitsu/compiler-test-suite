@@ -16,7 +16,7 @@ select type(x)
  type is( t1)
 end select
   x%x11 = y%x11+100
-write(1,*)'x: ',x%x11
+write(2,*)'x: ',x%x11
 END SUBROUTINE
 END MODULE
 

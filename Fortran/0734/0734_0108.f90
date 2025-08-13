@@ -36,9 +36,9 @@
          type (Personnel), intent (in) :: this
          logical, optional, intent (in) :: printssn
          if (present(printssn)) then
-            if (printssn) write (1,'(i2,a2)',advance='no') this%ssn,': '
+            if (printssn) write (55,'(i2,a2)',advance='no') this%ssn,': '
          endif
-         write(1,*) this%firstname, ' ', this%lastname
+         write(55,*) this%firstname, ' ', this%lastname
          end subroutine print_Personnel
          function getssn_Personnel(this) result(ssn)
          type (Personnel), intent (in) :: this
@@ -105,12 +105,12 @@
          integer :: i, j
          call print(this%personnel,printssn)
          if (this%nclasses==0) then
-            write(1,*)'-- Not Enrolled'
+            write(55,*)'-- Not Enrolled'
          else
-            write(1,*)'-- Enrolled'
+            write(55,*)'-- Enrolled'
             do i = 1, this%nclasses
                do j = 1, size(this%classes(i)%stringptr)
-               write (1,'(a)',advance='no') this%classes(i)%stringptr(j)
+               write (55,'(a)',advance='no') this%classes(i)%stringptr(j)
                enddo
             enddo
          endif
@@ -165,7 +165,7 @@
          type (Teacher), intent (in) :: this
          logical, optional, intent (in) :: printssn
          call print(this%personnel,printssn)
-         write(1,*) '-- Salary: ', this%salary
+         write(55,*) '-- Salary: ', this%salary
          end subroutine print_Teacher
          integer function getssn_Teacher(this)
          type (Teacher), intent (in) :: this

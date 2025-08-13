@@ -3,23 +3,23 @@
   do i = 1,1024
     ii(i) = i
   enddo
-  close(10,status="delete")
-  open(10,file='fort.10',err=999,status="new",access="stream",form='unformatted')
-  write(10) ii
-  close(unit=10,err=999,status="keep")
-  open(file="fort.10", unit=10, access="stream",status="old",form='unformatted')
-  read(10) a
+  close(38,status="delete")
+  open(38,file='fort.38',err=999,status="new",access="stream",form='unformatted')
+  write(38) ii
+  close(unit=38,err=999,status="keep")
+  open(file="fort.38", unit=38, access="stream",status="old",form='unformatted')
+  read(38) a
   do i = 1,1024
     if (a(i) .ne. i) print *,'error at ', i
   enddo
   do i = 1024,1,-1
-   read(10, pos=(i-1)*4+1) result
-   inquire(UNIT=10, pos = pos1)
+   read(38, pos=(i-1)*4+1) result
+   inquire(UNIT=38, pos = pos1)
    write(6,*) "pos= ",pos1
    if (result .ne. i) print *,'error at ', i
-   print *,i 
+   print *,i
   enddo
   print *,"pass"
 999 continue
- close(10,status="delete")
+ close(38,status="delete")
 end

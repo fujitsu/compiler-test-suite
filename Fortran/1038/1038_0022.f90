@@ -7,6 +7,6 @@ print *,'pass'
 end
 subroutine s0
 use m1
-write(1,*)i1
-write(1,*)i2
+write(9,*)i1
+write(9,*)i2
 end

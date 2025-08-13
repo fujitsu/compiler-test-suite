@@ -33,7 +33,7 @@ allocate(v%x12(k1)%x22(k2)%x32(k3)%x42(0:N2))
   do k4=0,N2
 allocate(v%x12(k1)%x22(k2)%x32(k3)%x42(k4)%s(0:N3,1:N4,1:N5,1:N6))
 v%x12(k1)%x22(k2)%x32(k3)%x42(k4)%s(0:N3,1:N4,1:N5,1:N6)= &
-    reshape([(n,n=1,(N3+1)*N4*N5*N6)],[N3+1,N4,N5,N6]) 
+    reshape([(n,n=1,(N3+1)*N4*N5*N6)],[N3+1,N4,N5,N6])
   end do
   end do
   end do
@@ -49,7 +49,7 @@ v%x12(k1)%x22(k2)%x32(k3)%x42(k4)%s(0:N3,1:N4,1:N5,1:N6)= &
   enddo
   enddo
 end
-parameter (N1=1,N2=2,N3=2,N4=2,N5=2,N6=2,iout=1)
+parameter (N1=1,N2=2,N3=2,N4=2,N5=2,N6=2,iout=3)
 call       s1(N1,N2,N3,N4,N5,N6,iout)
 rewind iout
 call       s2(N1,N2,N3,N4,N5,N6,iout)

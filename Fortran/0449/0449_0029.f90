@@ -14,7 +14,7 @@ recursive subroutine s1(a)
   if (allocated(a%x2)) print *,101
   if (a%x1/=1        ) print *,103
   allocate(a%x2(2))
-write(1,'(z16.16)') loc(a%x2)
+write(60,'(z16.16)') loc(a%x2)
 end subroutine
 end
 use m1
@@ -23,7 +23,7 @@ do n=1,kh
 call s1(a)
   if (.not.allocated(a%x2)) print *,102
 end do
-call chk(1)
+call chk(60)
 print *,'pass'
 end
 subroutine chk(n)

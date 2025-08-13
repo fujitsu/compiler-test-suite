@@ -5,10 +5,10 @@ CALL OMP_SET_NUM_THREADS(1)
 do i=1,2
    a(i)=i*10
 end do
-write(1,*)a
+write(7,*)a
 !$OMP END PARALLEL
-rewind 1
-read(1,*) x1,x2
+rewind 7
+read(7,*) x1,x2
 if (x1/=10)print *,'error-1'
 if (x2/=20)print *,'error-2'
 print *,'pass'

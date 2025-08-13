@@ -12,6 +12,6 @@ contains
  b=10
  print *,b
  stat2=1
- write(1,*) stat1,stat2
+ write(20,*) stat1,stat2
  end subroutine
  end

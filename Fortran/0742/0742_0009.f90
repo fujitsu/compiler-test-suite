@@ -18,6 +18,6 @@ END MODULE CPU_TIME_MODULE
       IMPLICIT NONE
       REAL :: TIME
       CALL CPU_TIME(TIME)
-      WRITE(1,*) TIME
+      WRITE(21,*) TIME
       print *,'pass'
       END PROGRAM MAIN

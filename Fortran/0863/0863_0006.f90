@@ -17,11 +17,11 @@
 allocate(var%ptr)
    var%ptr = ty( proc)
 call var%ptr%set_services
-rewind 1
-read(1,*) k
+rewind 4
+read(4,*) k
 if (k/=90) print *,90
 print *,'pass'
 end
       subroutine proc
-write(1,*) 90
+write(4,*) 90
       end subroutine

@@ -31,16 +31,16 @@
          pt => this%list
          prev => this%list
          pt => pt%next
-               write(1,*)'#6#',loc(pt%val),loc(prev%val)
+               write(22,*)'#6#',loc(pt%val),loc(prev%val)
                deallocate(pt)
-               write(1,*)'#7#',loc(pt%val),loc(prev%val)
-               write(1,*)prev%val
+               write(22,*)'#7#',loc(pt%val),loc(prev%val)
+               write(22,*)prev%val
                remove=0
          end function remove
          logical function is_present(someItem)
          integer :: someItem
          type (Item), save,pointer :: pt
-             write(1,*)'#',loc(pt%val)
+             write(22,*)'#',loc(pt%val)
             is_present = .true.
          end function is_present
       end module List_module

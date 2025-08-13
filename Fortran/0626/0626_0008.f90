@@ -19,7 +19,7 @@
          a2(i,c(i,j))=b2(i,j)+i
        enddo
        enddo
-       write(1,*) a(5,5)
-       write(1,*) a2(5,5)
+       write(3,*) a(5,5)
+       write(3,*) a2(5,5)
        print *,'pass'
        end

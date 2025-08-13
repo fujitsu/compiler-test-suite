@@ -8,25 +8,25 @@
          r4a(1) = max(r4a(1),abs(r4b(i)),2.0)
          r4a(2) = min(r4a(2),-2.0,abs(r4c(i)))
       enddo
-      write(1,*)
+      write(19,*)
 
       do i=1,10
          r4a(3) = max(r4a(3),abs(r4b(i)),rr)
          r4a(4) = min(r4a(4),-rr,abs(r4c(i)))
       enddo
-      write(1,*)
+      write(19,*)
 
       do i=1,10
          r4a(5) = max(r4a(5),abs(r4b(i)),30)
          r4a(6) = min(r4a(6),30,abs(r4c(i)))
       enddo
-      write(1,*)
+      write(19,*)
 
       do i=1,10
          r4a(7) = max(r4a(7),abs(-30),r4c(i))
          r4a(8) = min(r4a(8),r4b(i),abs(-1))
       enddo
-      write(1,*)
+      write(19,*)
 
       do i=1,10
          r4a(9) = max(r4a(9),abs(r4a(1)),r4c(i))
@@ -49,25 +49,25 @@
          r8a(1) = max(r8a(1),abs(r8b(i)),2)
          r8a(2) = min(r8a(2),-2,abs(r8c(i)))
       enddo
-      write(1,*)
+      write(19,*)
 
       do i=1,10
          r8a(3) = max(r8a(3),abs(r8b(i)),rr8)
          r8a(4) = min(r8a(4),-rr8,abs(r8c(i)))
       enddo
-      write(1,*)
+      write(19,*)
 
       do i=1,10
          r8a(5) = max(r8a(5),abs(r8b(i)),30)
          r8a(6) = min(r8a(6),30,abs(r8c(i)))
       enddo
-      write(1,*)
+      write(19,*)
 
       do i=1,10
          r8a(7) = max(r8a(7),abs(-30),r8c(i))
          r8a(8) = min(r8a(8),r8b(i),abs(-1))
       enddo
-      write(1,*)
+      write(19,*)
 
       do i=1,10
          r8a(9) = max(r8a(9),abs(r8b(1)),r8c(i))

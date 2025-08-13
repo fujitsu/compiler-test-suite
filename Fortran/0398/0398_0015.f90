@@ -53,18 +53,18 @@ print *,'pass'
 end
  subroutine subcheck(x,k)
  if(k==1) then
-  write(1,'(z16.16)') loc(x)
- endif 
+  write(8,'(z16.16)') loc(x)
+ endif
  end subroutine
 subroutine subcheck2
 character(16)::r1,r
-rewind 1
-read (1,'(a)') r1
-do 
-read (1,'(a)',end=10) r
+rewind 8
+read (8,'(a)') r1
+do
+read (8,'(a)',end=10) r
 if (r/=r1) then
   print *,201
-  print *,r1 
+  print *,r1
   print *,r
   return
 endif

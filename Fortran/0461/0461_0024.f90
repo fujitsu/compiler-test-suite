@@ -19,25 +19,25 @@ IMPLICIT NONE
     SUBROUTINE ty0_scalar_dest( dmy )
       IMPLICIT NONE
       TYPE(ty0), INTENT(INOUT):: dmy
-      write(1,*)dmy%ii
+      write(3,*)dmy%ii
     END SUBROUTINE ty0_scalar_dest
 
     SUBROUTINE ty0_array_dest( dmy )
       IMPLICIT NONE
       TYPE(ty0), INTENT(INOUT):: dmy(:)
-      write(1,*)dmy%ii
+      write(3,*)dmy%ii
     END SUBROUTINE ty0_array_dest
 
     SUBROUTINE ty1_scalar_dest( dmy )
       IMPLICIT NONE
       TYPE(ty1), INTENT(INOUT):: dmy
-      write(1,*)dmy%jj
+      write(3,*)dmy%jj
     END SUBROUTINE ty1_scalar_dest
 
     SUBROUTINE ty1_array_dest( dmy )
       IMPLICIT NONE
       TYPE(ty1), INTENT(INOUT):: dmy(:)
-      write(1,*)dmy%jj
+      write(3,*)dmy%jj
     END SUBROUTINE ty1_array_dest
 END MODULE mod1
 
@@ -46,14 +46,14 @@ PROGRAM MAIN
 
   TYPE(ty1),allocatable :: ty1_obj(:)
   ALLOCATE(ty1_obj, SOURCE = (/Foo(1), Foo(2), Foo(3)/) )
-rewind 1
-read(1,*) k1,k2,k3
+rewind 3
+read(3,*) k1,k2,k3
 if (any([k1,k2,k3]/=[103,102,101]))print *,102
-read(1,*) k1
+read(3,*) k1
 if (any([k1]/=[203]))print *,112, k1
-read(1,*) k1
+read(3,*) k1
 if (any([k1]/=[202]))print *,122, k1
-read(1,*) k1
+read(3,*) k1
 if (any([k1]/=[201]))print *,132, k1
 print *,'pass'
 

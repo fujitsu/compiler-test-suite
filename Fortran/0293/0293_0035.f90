@@ -9,7 +9,7 @@ namelist /nam/ i
 !$omp threadprivate(/com/)
 i%k1=1
 i%k2=[2,3]
-write(1,nam)
+write(39,nam)
 end
 !$ CALL OMP_SET_NUM_THREADS(1)
 call s1
@@ -23,13 +23,9 @@ type x
 end type
 type(x)::i
 namelist /nam/ i
-rewind 1
-read(1,nam)
+rewind 39
+read(39,nam)
 if (i%k1/=1)print *,101
 if (i%k2(1)/=2)print *,102
 if (i%k2(2)/=3)print *,103
 end
-
-
-
-

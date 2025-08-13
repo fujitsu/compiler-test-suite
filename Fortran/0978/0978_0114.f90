@@ -8,7 +8,7 @@ module mod
     type(str),allocatable,intent(inout) :: from(:)
     type(str),allocatable,intent(out) :: to(:)
     call move_alloc(from,to)
-   write(1,*) to
+   write(42,*) to
   end subroutine
 end module
 
@@ -21,12 +21,12 @@ do i = 1,10
   iii(i) = str(i,i*10)
 end do
 call sub(iii,jjj)
-   write(1,*) jjj
-rewind 1
-read(1,*) k
+   write(42,*) jjj
+rewind 42
+read(42,*) k
 if (any(k/=&
 (/1,10,2,20,3,30,4,40,5,50,6,60,7,70,8,80,9,90,10,100/)))write(6,*) "NG"
-read(1,*) k
+read(42,*) k
 if (any(k/=&
 (/1,10,2,20,3,30,4,40,5,50,6,60,7,70,8,80,9,90,10,100/)))write(6,*) "NG"
 print *,'pass'

@@ -43,7 +43,7 @@ private
 public::ext
 contains
 subroutine cproc1()
-  write(1,*)400
+  write(18,*)400
 end subroutine
 end module
 
@@ -54,8 +54,8 @@ class(b),allocatable::tc0
 class(e),allocatable::tc1
 allocate(tc0,tc1)
 call tc1%prc1()
-rewind 1
-read(1,*) k
+rewind 18
+read(18,*) k
 if (k/=400) print *,200
 print *,'pass'
 end

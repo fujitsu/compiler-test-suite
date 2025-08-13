@@ -6,10 +6,10 @@ complex,target::tt(1)
 namelist /nam/a,s
 a=>t(:,:,::k-1)
 s=>tt
-open(1,delim='quote')
+open(38,delim='quote')
 a=reshape([(1,2),(4,5)],[1,1,2])
 s=(7,8)
-write(1,nam)
+write(38,nam)
 end
 call ss(3)
 call chk
@@ -18,8 +18,8 @@ end
 subroutine chk
 complex a(2),s
 namelist /nam/a,s
-rewind 1
-read(1,nam) 
+rewind 38
+read(38,nam) 
 if (any(a/=[(1,2),(4,5)])) print *,101
 if (   (s/=(7,8))) print *,102
 end

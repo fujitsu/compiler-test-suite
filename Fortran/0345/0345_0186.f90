@@ -3,7 +3,7 @@
       subroutine subsubsub(jj,rrr)
         kk=jj-2
         rrr = rrr + real(kk)
-      end subroutine 
+      end subroutine
     end module
 
     module mod1
@@ -27,9 +27,9 @@
       do ii=1,i
         call subsub(ii,rrr)
       enddo
-      write(1,'(e9.2)') rrr
-      rewind (1)
-      read(1,'(9a)') ch
+      write(13,'(e9.2)') rrr
+      rewind (13)
+      read(13,'(9a)') ch
       if (ch /=' 0.55E+02') print *,'error ch ->',ch
       print *,'pass'
     end subroutine sub

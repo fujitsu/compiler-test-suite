@@ -8,10 +8,10 @@ a=(/1,2/)
 b=3
 c=(/1,2/)
 d=3
-write(1,*)a
-write(2,*)b
-write(3,*)c
-write(4,*)d
+write(61,*)a
+write(62,*)b
+write(63,*)c
+write(64,*)d
 end
 call s1
 call chk
@@ -22,14 +22,14 @@ integer,dimension(2):: a
 integer             :: b
 integer,dimension(2):: c
 integer             :: d
-rewind 1
-rewind 2
-rewind 3
-rewind 4
-read(1,*)a 
-read(2,*) b
-read(3,*) c
-read(4,*) d
+rewind 61
+rewind 62
+rewind 63
+rewind 64
+read(61,*)a
+read(62,*) b
+read(63,*) c
+read(64,*) d
 if (any(a/=(/1,2/)))print *,'error-1'
 if (    b/=3       )print *,'error-2'
 if (any(c/=(/1,2/)))print *,'error-3'

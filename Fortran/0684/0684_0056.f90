@@ -6,7 +6,7 @@
       type (z) a
       i=2
 !$omp parallel if(a%x(i))
-      write(1,*)'test'
+      write(20,*)'test'
 !$omp endparallel
       print *,'pass'
       end

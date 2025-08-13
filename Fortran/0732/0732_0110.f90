@@ -17,14 +17,14 @@ program main
   pc(2)= 'two'
   pc(3)= 'three'
   pc(4)= 'four'
-  write(1)foo(),foox()
+  write(32)foo(),foox()
 call chk
 print *,'pass'
 end
 subroutine chk
 character*20 c
-rewind 1
-read(1) c;if (index(c,'one')==0)write(6,*) "NG"
+rewind 32
+read(32) c;if (index(c,'one')==0)write(6,*) "NG"
 if (index(c,'three')==0)write(6,*) "NG"
 if (index(c,'two')==0)write(6,*) "NG"
 if (index(c,'four')==0)write(6,*) "NG"

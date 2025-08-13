@@ -8,18 +8,18 @@
          r4a(1) = max(r4a(1),sqrt(abs(r4b(i))),r4c(i))
          r4a(2) = min(r4a(2),r4b(i),sqrt(r4c(i)))
       enddo
-      write(1,*)
+      write(12,*)
 
       do i=1,10
          r4a(3) = max(r4a(3),abs(r4b(i)+r4c(i)))
          r4a(4) = min(r4a(4),r4b(i),abs(r4c(i)),2)
       enddo
-      write(1,*)
+      write(12,*)
 
       do i=1,10
          r4a(5) = max(r4a(5),r4a(1),r4b(i))
       enddo
-      write(1,*)
+      write(12,*)
 
       do i=1,10
          r4a(6) = max(r4a(6),r4a(1),r4b(i)) 

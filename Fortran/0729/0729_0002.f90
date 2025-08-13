@@ -26,7 +26,12 @@ contains
 end module s6_mod
 
 program c07
-real, dimension (:,:), allocatable :: a6
+  real, dimension (:,:), allocatable :: a6
+  character(len=80) :: filename1
+  do m1=11,30
+     write(filename1, '(a, i2.2, a)') 'work1', m1, '.dat'
+     open(unit=m1, file=trim(filename1), status='new')
+  enddo
 allocate(a6(5,6))
 a6=0
 do m1=11,30

@@ -1,8 +1,8 @@
 integer,save::aaa
-save 
+save
 
 aaa=1
 bbb=1
-write(1,*) aaa,bbb
+write(36,*) aaa,bbb
 print *,'pass'
 end

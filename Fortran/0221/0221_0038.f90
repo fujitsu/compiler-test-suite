@@ -20,16 +20,16 @@ use x01
 use x02
 contains
 subroutine s1
-write(1,*)bit_size(1)
-write(1,*)bit_size(.false.)
+write(2,*)bit_size(1)
+write(2,*)bit_size(.false.)
 end subroutine
 end
 use x03
 call s1
-rewind 1
-read(1,*) k
+rewind 2
+read(2,*) k
 if (k/=32) print *,200
-read(1,*) k
+read(2,*) k
 if (k/=0 ) print *,2001
 print *,'pass'
 end

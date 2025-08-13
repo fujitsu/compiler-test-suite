@@ -14,15 +14,15 @@
       do i=1,16
          i4a(i) = sign(abs(i4b(1)),i4c(i))
       enddo
-      write(1,*)
+      write(33,*)
       do i=1,16
          r4a(i) = sign(abs(r4b(1)),r4c(i))
       enddo
-      write(1,*)
+      write(33,*)
       do i=1,16
          r8a(i) = sign(abs(r8b(1)),r8c(i))
       enddo
-      write(1,*)
+      write(33,*)
 
       do i=1,16
          if (i4a(i).ne.res1(i) .or.
@@ -40,15 +40,15 @@
       do i=1,16
          i4a(i) = sign(i4b(i),abs(i4c(1)))
       enddo
-      write(1,*)
+      write(33,*)
       do i=1,16
          r4a(i) = sign(r4b(i),abs(r4c(1)))
       enddo
-      write(1,*)
+      write(33,*)
       do i=1,16
          r8a(i) = sign(r8b(i),abs(r8c(1)))
       enddo
-      write(1,*)
+      write(33,*)
 
       do i=1,16
          if (i4a(i).ne.res2(i) .or.

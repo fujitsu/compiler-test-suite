@@ -1,27 +1,27 @@
       PROGRAM MAIN
-       DIMENSION DV1(10), DV2(10), DV3(10), EV1(10), EV2(10), EV3(10), 
+       DIMENSION DV1(10), DV2(10), DV3(10), EV1(10), EV2(10), EV3(10),
      X   CV1(10), CV2(10)
        REAL*8 DV1, DV2, DV3
        REAL*4 EV1, EV2, EV3, EMX
        COMPLEX*8 CV1, CV2, CV3
        INTEGER NV1(10), J, K
-       DATA NV1/10*2/ 
+       DATA NV1/10*2/
        DIMENSION CV3(10)
        INTEGER I1
        REAL RR5, RR4, RR3, RR2, RR1
-       DOUBLE PRECISION DD10, DD9, DD8, DD7, DD6, DD5, DD4, DD3, DD2, 
+       DOUBLE PRECISION DD10, DD9, DD8, DD7, DD6, DD5, DD4, DD3, DD2,
      X   DD1
        COMPLEX CC5, CC4, CC3, CC2, CC1
        COMPLEX*16 DC5, DC4, DC3, DC2, DC1
        EMX = -99999999.
        J = 1
 
-       DATA DV1/2*10.,8*1.5/ 
-       DATA DV2/3*1.5,5*-2.,2*3.75/ 
-       DATA DV3/7*3.75,3*0/ 
-       DATA EV1/2.,2*3.5,7*6./ 
-       DATA EV2/5*6.,5*-6./ 
-       DATA EV3/5*1,4*5,2./ 
+       DATA DV1/2*10.,8*1.5/
+       DATA DV2/3*1.5,5*-2.,2*3.75/
+       DATA DV3/7*3.75,3*0/
+       DATA EV1/2.,2*3.5,7*6./
+       DATA EV2/5*6.,5*-6./
+       DATA EV3/5*1,4*5,2./
        DO I1=1,6,5
         DD3 = DV1(I1) * EV2(I1)
         DD4 = DV1(I1+1) * EV2(I1+1)
@@ -80,7 +80,11 @@
         END IF
        END DO
 
-       WRITE (6, *) DV1, DV2, EV1, CV2, NV1
+      WRITE(6,1) DV1
+      WRITE(6,*) DV2
+      WRITE(6,*) EV1
+      WRITE(6,*) CV2
+      WRITE(6,*) NV1
 
        K = 1
        DO I1=1,10
@@ -101,6 +105,12 @@
   210   CONTINUE
        END DO
 
-       WRITE (6, *) DV1, DV2, EV1, CV2, NV1
-       STOP 
+      WRITE(6,*)
+      WRITE(6,1) DV1
+      WRITE(6,*) DV2
+      WRITE(6,*) EV1
+      WRITE(6,*) CV2
+      WRITE(6,*) NV1
+ 1    format(2f20.13)
+       STOP
       END

@@ -26,11 +26,11 @@ if(j==1)then
       call make_struct(efgh(i))
    end do
 endif
-write(1,*)loc(efgh)
-write(1,*)loc(efgh(1)%r_sum1(1))
-write(1,*)loc(efgh(1)%i_sum1(1))
-write(1,*)efgh(1)%r_sum1(1)
-write(1,*)efgh(1)%i_sum1(1)
+write(3,*)loc(efgh)
+write(3,*)loc(efgh(1)%r_sum1(1))
+write(3,*)loc(efgh(1)%i_sum1(1))
+write(3,*)efgh(1)%r_sum1(1)
+write(3,*)efgh(1)%i_sum1(1)
 do i=1,j
    efgh(1)%r_sum1=efgh(1)%r_sum1(1)+1
    efgh(1)%i_sum1=efgh(1)%i_sum1(1)+1

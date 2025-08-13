@@ -15,12 +15,12 @@ do k3=1,1; end do
 do k4=1,1; end do
 do k5=1,1; end do
 do k6=1,1; end do
-write(1,'("k1",z16.16)')loc(k1)
-write(1,'("k2",z16.16)')loc(k2)
-write(1,'("k3",z16.16)')loc(k3)
-write(1,'("k4",z16.16)')loc(k4)
-write(1,'("k5",z16.16)')loc(k5)
-write(1,'("k6",z16.16)')loc(k6)
+write(2,'("k1",z16.16)')loc(k1)
+write(2,'("k2",z16.16)')loc(k2)
+write(2,'("k3",z16.16)')loc(k3)
+write(2,'("k4",z16.16)')loc(k4)
+write(2,'("k5",z16.16)')loc(k5)
+write(2,'("k6",z16.16)')loc(k6)
 end subroutine
 end
 use m1

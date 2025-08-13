@@ -34,17 +34,15 @@ k11=1
 k12=2
 k13=3
 k14=4
-write(1,nam)
+write(20,nam)
 call chk
 end
 subroutine chk
 namelist /nam/ k11,k12,k13,k14
-rewind 1
-read(1,nam)
+rewind 20
+read(20,nam)
 if (k11/=1) print *,201
 if (k12/=2) print *,202
 if (k13/=3) print *,203
 if (k14/=4) print *,204
 end
-
-

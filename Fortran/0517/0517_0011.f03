@@ -15,12 +15,12 @@ type(xx)::v
     subroutine fin(d)
     type(x)::d
      if(allocated(d%x1)) deallocate(d%x1)
-write(10,*)1
+write(16,*)1
     end subroutine
     subroutine fin_parent(d)
     type(xx)::d
      if(allocated(d%xv)) deallocate(d%xv)
-write(10,*)2
+write(16,*)2
     end subroutine
 end
 use m1
@@ -33,7 +33,7 @@ if (.not.allocated(a%xv)) print *,201
 allocate(v%xv%x1,source=1)
 a=v
 if (a%xv%x1/=1) print *,202
-call chk(10,2)
+call chk(16,2)
 print *,'pass'
 end
 subroutine chk(k,n)

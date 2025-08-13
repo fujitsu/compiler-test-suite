@@ -30,7 +30,7 @@ module mod6
 end module
 
 use mod6
-write(1,cc)
+write(2,cc)
 call chk
 print *,'pass'
 end
@@ -38,8 +38,8 @@ end
 subroutine chk
   integer :: a,b,c
   namelist /cc/a,b,c
-rewind 1
- read(1,cc) 
+rewind 2
+ read(2,cc) 
 if (a/=1) print *,201
 if (b/=2) print *,202
 if (c/=3) print *,203

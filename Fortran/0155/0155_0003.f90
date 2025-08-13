@@ -16,8 +16,8 @@ subroutine s1
        integer, allocatable :: a(:)
        allocate(a(2))
        addr(i) = loc(a)
-       open(1,form='unformatted')
-       read(1,*,err=1)
+       open(2,form='unformatted')
+       read(2,*,err=1)
        print *,11
      end block
 1    addr(i) = addr(i)
@@ -31,8 +31,8 @@ subroutine s2
        integer, allocatable :: a(:)
        allocate(a(2))
        addr(i) = loc(a)
-       open(1,form='unformatted')
-       write(1,*,err=1)
+       open(2,form='unformatted')
+       write(2,*,err=1)
        print *,21
      end block
 1    addr(i) = addr(i)

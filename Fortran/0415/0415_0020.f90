@@ -15,7 +15,7 @@ contains
     integer, intent(out)        :: iostat
     character(*), intent(inout) :: iomsg
 
-    read(10,*) dtv%xi1, dtv%xch1
+    read(17,*) dtv%xi1, dtv%xch1
 iostat=0
 
   end subroutine rform
@@ -25,22 +25,22 @@ program main
   use m
   type (ty) :: t1
 
-write(10,*) '1357 abc'
-rewind 10
+write(17,*) '1357 abc'
+rewind 17
 
-  read(10,*) t1
-  close(10)
+  read(17,*) t1
+  close(17)
 
-open(1,delim='quote')
-  write(1,*) t1
+open(18,delim='quote')
+  write(18,*) t1
 call chk
 print *,'pass'
 end program main
 subroutine chk
 integer c
 character(3) d
-rewind 1
-read(1,*) c,d
+rewind 18
+read(18,*) c,d
 if (c    /=1357) print *,102
 if (d    /='abc') print *,103
 end

@@ -42,7 +42,7 @@ x%p%i = 5
 
 CALL SUB(x,y)
 
-write(1,*)'y= ',y%p
+write(57,*)'y= ',y%p
 
 print *,'pass'
 END PROGRAM MAIN

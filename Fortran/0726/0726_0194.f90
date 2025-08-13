@@ -36,12 +36,12 @@
  call su(fun1(aa(vs)),bb)
  call su(fun2(aa(vs)),bb)
  call su(fun3(aa(vs)),bb)
- write(1,*) fun1(aa)
- write(1,*) fun2(aa)
- write(1,*) fun3(aa)
- write(2,*) fun1(aa(vs))
- write(2,*) fun2(aa(vs))
- write(2,*) fun3(aa(vs))
+ write(62,*) fun1(aa)
+ write(62,*) fun2(aa)
+ write(62,*) fun3(aa)
+ write(63,*) fun1(aa(vs))
+ write(63,*) fun2(aa(vs))
+ write(63,*) fun3(aa(vs))
  call ss1(aa)
  call chk
   contains
@@ -58,12 +58,12 @@
  call su(fun1(aa(vs)),bb)
  call su(fun2(aa(vs)),bb)
  call su(fun3(aa(vs)),bb)
- write(1,*) fun1(aa)
- write(1,*) fun2(aa)
- write(1,*) fun3(aa)
- write(2,*) fun1(aa(vs))
- write(2,*) fun2(aa(vs))
- write(2,*) fun3(aa(vs))
+ write(62,*) fun1(aa)
+ write(62,*) fun2(aa)
+ write(62,*) fun3(aa)
+ write(63,*) fun1(aa(vs))
+ write(63,*) fun2(aa(vs))
+ write(63,*) fun3(aa(vs))
  end subroutine
  end
    elemental function fun2(a)
@@ -74,18 +74,18 @@
    end function
  subroutine chk
   character*10 x
- rewind 1
- read(1,'(a)') x;if (x/=' 111222333')write(6,*) "NG"
- read(1,'(a)') x;if (x/=' 111222333')write(6,*) "NG"
- read(1,'(a)') x;if (x/=' 111222333')write(6,*) "NG"
- read(1,'(a)') x;if (x/=' 111222333')write(6,*) "NG"
- read(1,'(a)') x;if (x/=' 111222333')write(6,*) "NG"
- read(1,'(a)') x;if (x/=' 111222333')write(6,*) "NG"
- rewind 2
- read(2,'(a)') x;if (x/=' 333111222')write(6,*) "NG"
- read(2,'(a)') x;if (x/=' 333111222')write(6,*) "NG"
- read(2,'(a)') x;if (x/=' 333111222')write(6,*) "NG"
- read(2,'(a)') x;if (x/=' 333111222')write(6,*) "NG"
- read(2,'(a)') x;if (x/=' 333111222')write(6,*) "NG"
- read(2,'(a)') x;if (x/=' 333111222')write(6,*) "NG"
+ rewind 62
+ read(62,'(a)') x;if (x/=' 111222333')write(6,*) "NG"
+ read(62,'(a)') x;if (x/=' 111222333')write(6,*) "NG"
+ read(62,'(a)') x;if (x/=' 111222333')write(6,*) "NG"
+ read(62,'(a)') x;if (x/=' 111222333')write(6,*) "NG"
+ read(62,'(a)') x;if (x/=' 111222333')write(6,*) "NG"
+ read(62,'(a)') x;if (x/=' 111222333')write(6,*) "NG"
+ rewind 63
+ read(63,'(a)') x;if (x/=' 333111222')write(6,*) "NG"
+ read(63,'(a)') x;if (x/=' 333111222')write(6,*) "NG"
+ read(63,'(a)') x;if (x/=' 333111222')write(6,*) "NG"
+ read(63,'(a)') x;if (x/=' 333111222')write(6,*) "NG"
+ read(63,'(a)') x;if (x/=' 333111222')write(6,*) "NG"
+ read(63,'(a)') x;if (x/=' 333111222')write(6,*) "NG"
 end

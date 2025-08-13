@@ -21,6 +21,6 @@
       call sub( pointer_fun_entry(s_p,a_p))
       end
       subroutine sub(k)
-      write(1,*) k
+      write(2,*) k
       end
       

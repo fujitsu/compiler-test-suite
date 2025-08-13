@@ -11,10 +11,10 @@ integer        , dimension(:)  , pointer :: pt_1
 typ%i  =  45
 typ%x  =  3.0
 pt_1   => typ%i
-write(1,*) lbound(typ%i),ubound(typ%i)
-write(1,*) lbound(pt_1),ubound(pt_1)
-rewind 1
-read(1,*) ii,jj;if (any((/ii,jj/)/=(/1,5/)))print *,'error-1'
-read(1,*) ii,jj;if (any((/ii,jj/)/=(/1,5/)))print *,'error-2'
+write(62,*) lbound(typ%i),ubound(typ%i)
+write(62,*) lbound(pt_1),ubound(pt_1)
+rewind 62
+read(62,*) ii,jj;if (any((/ii,jj/)/=(/1,5/)))print *,'error-1'
+read(62,*) ii,jj;if (any((/ii,jj/)/=(/1,5/)))print *,'error-2'
 print *,'pass'
 end program main

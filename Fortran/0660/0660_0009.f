@@ -1,12 +1,12 @@
-      program main   
+      program main
        integer :: n,f
-       write(8,*) 6
-       rewind 8
-       read(8,*) n
+       write(35,*) 6
+       rewind 35
+       read(35,*) n
        write(*,*) 'n=',n
        write(*,*) 'n!=',f(n)
        print *,'pass'
-      end program main   
+      end program main
       recursive function f(n) result(fact)
        integer :: n,fact
        if (n<=0) then
@@ -14,4 +14,4 @@
        else
           fact =n*f(n-1)
        end if
-      end function f 
+      end function f

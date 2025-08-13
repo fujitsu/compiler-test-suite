@@ -20,11 +20,11 @@ use mod
 allocate( wrapper%ptr)
    wrapper%ptr = cap_parameters( root_set_services)
 call wrapper%ptr%set_services
-rewind 1
-read(1,*) k
+rewind 2
+read(2,*) k
 if (k/=891) print *,900
 print *,'pass'
 end
       subroutine root_set_services
-write(1,*) 891
+write(2,*) 891
       end subroutine 

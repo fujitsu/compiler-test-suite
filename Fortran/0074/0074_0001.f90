@@ -9,9 +9,9 @@ contains
  subroutine setup
  implicit none
 lhf = lhs- lho
-write(1,*) 1, lhf,loc(lhf)
-write(1,*) 1, lhs,loc(lhs)
-write(1,*) 1, lho,loc(lho)
+write(2,*) 1, lhf,loc(lhf)
+write(2,*) 1, lhs,loc(lhs)
+write(2,*) 1, lho,loc(lho)
 end subroutine
 end
 
@@ -22,9 +22,9 @@ contains
  subroutine r_setup
  use const,only: lho,lhs,lhf
  implicit none
-write(1,*) 2, lhf,loc(lhf)
-write(1,*) 2, lhs,loc(lhs)
-write(1,*) 2, lho,loc(lho)
+write(2,*) 2, lhf,loc(lhf)
+write(2,*) 2, lhs,loc(lhs)
+write(2,*) 2, lho,loc(lho)
 end subroutine
 end
 
@@ -36,9 +36,9 @@ contains
  subroutine init
  implicit none
  call setup
-write(1,*) 3, lhf,loc(lhf)
-write(1,*) 3, lhs,loc(lhs)
-write(1,*) 3, lho,loc(lho)
+write(2,*) 3, lhf,loc(lhf)
+write(2,*) 3, lhs,loc(lhs)
+write(2,*) 3, lho,loc(lho)
   call r_setup
 end subroutine
 end

@@ -6,7 +6,7 @@
       a=aa
       b=bb
       y = real(a) + imag(b)
-      write(1,*) y
+      write(2,*) y
       if (abs(y- 5)>0.0001) print *,203
 print *,'pass'
       end

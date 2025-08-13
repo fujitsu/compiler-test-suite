@@ -9,7 +9,7 @@
    if (any(x/=array//array))write(6,*) "NG"
    if (any(p(cfu(cfu(array)))/=array//array))write(6,*) "NG"
    call chk(p(cfu(cfu(array))))
-   write(1,*)p(cfu(cfu(array)))
+   write(60,*)p(cfu(cfu(array)))
    call ssx(array,y,'123','456')
    x=p(cfu((/'123','456'/)))
    if (any(x/=array//(/'123','456'/)))write(6,*) "NG"
@@ -18,11 +18,11 @@
    x=p(cfu(cfu((/'123','456'/))))
    if (any(x/=array//(/'123','456'/)))write(6,*) "NG"
    if (any(p(cfu(cfu((/'123','456'/))))/=array//array))write(6,*) "NG"
-   write(1,*)p(cfu(cfu((/'123','456'/))))
-   rewind 1
-  read(1,*)jjj;if(jjj/=123123456456_8)write(6,*) "NG"
-  read(1,*)jjj;if(jjj/=123123456456_8)write(6,*) "NG"
-  read(1,*)jjj;if(jjj/=123123456456_8)write(6,*) "NG"
+   write(60,*)p(cfu(cfu((/'123','456'/))))
+   rewind 60
+  read(60,*)jjj;if(jjj/=123123456456_8)write(6,*) "NG"
+  read(60,*)jjj;if(jjj/=123123456456_8)write(6,*) "NG"
+  read(60,*)jjj;if(jjj/=123123456456_8)write(6,*) "NG"
  print *,'pass'
    contains
 subroutine ssx(a,y,y1,y2)
@@ -43,7 +43,7 @@ character*(*)::y1,y2
    x=p(cfu(cfu((/y1,y2/))))
    if (any(x/=a//(/y1,y2/)))write(6,*) "NG"
    if (any(p(cfu(cfu((/y1,y2/))))/=a//array))write(6,*) "NG"
-   write(1,*)p(cfu(cfu((/y1,y2/))))
+   write(60,*)p(cfu(cfu((/y1,y2/))))
 end subroutine
      elemental function cfu(a)
      character*(i)::cfu
@@ -60,5 +60,3 @@ end subroutine
    if (any(a/=(/'123123','456456'/)))write(6,*) "NG"
    end subroutine
    end
-    
-      

@@ -2,9 +2,9 @@
       Real  F531_IN(404),MSYEAR2(101,4), X
       data f531_in(5:8)/5,6,7,8/
       call ASSIGN(F531_IN,COUNT,MSYEAR2)
-      write(1,*)count,MSYEAR2(2,1:4)
-      rewind 1
-      read(1,*) i1,a1,a2,a3,a4
+      write(58,*)count,MSYEAR2(2,1:4)
+      rewind 58
+      read(58,*) i1,a1,a2,a3,a4
       if (i1/=405)print *,'error-1'
       if (any(abs((/a1,a2,a3,a4/)-(/5,6,7,8/))>0.0001))print *,'error-2'
      print *,'pass'

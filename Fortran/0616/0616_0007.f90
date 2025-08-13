@@ -16,7 +16,7 @@ v=z%a2+z%a2
 v=z%p1+z%p1
 v=z%p2+z%p2
 vv=v
-write(1,*)vv
+write(7,*)vv
 end
 call s1(1)
 print *,'pass'

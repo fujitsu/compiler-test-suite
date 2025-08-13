@@ -130,7 +130,7 @@ time_compiler = REAL(count4 - count3)
 IF (time_compiler < 0.0) time_compiler = time_compiler + count_max
 time_compiler = time_compiler / REAL(count_rate)
 
-WRITE(1, '(a, 3f9.3)') ' Times for TAUS88, LFSR113 & RANDOM_NUMBER = ',  &
+WRITE(12, '(a, 3f9.3)') ' Times for TAUS88, LFSR113 & RANDOM_NUMBER = ',  &
       time_taus88, time_lfsr113, time_compiler
 print *,'pass'
 END PROGRAM MAIN

@@ -12,6 +12,7 @@
       END
 
       SUBROUTINE SUB(N)
+      SAVE
       INTEGER*4 N
       INTEGER*4 TEN
       INTEGER*4 THREE

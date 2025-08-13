@@ -15,7 +15,7 @@ contains
   this%a = 1
  end subroutine
  subroutine prc2(ii )
-  write(1,*) ii
+  write(8,*) ii
  end subroutine
 end
 module m1

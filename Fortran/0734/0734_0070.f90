@@ -7,25 +7,25 @@
    b(i,:,:) = transpose(a(i,:,:))
  end do
  do j = 1, size(a,2)
-  write(1,*) a(3,j,:)
+  write(33,*) a(3,j,:)
  end do
  do j = 1, size(b,2)
-  write(1,*) b(3,j,:)
+  write(33,*) b(3,j,:)
  end do
-rewind 1
+rewind 33
 do i=1,4
-read(1,*) j1,j2,j3,j4,j5
+read(33,*) j1,j2,j3,j4,j5
 if (any((/j1,j2,j3,j4,j5/)/=(/1,2,3,4,5/)))print *,'Error-1',i
 end do
-read(1,*) j1,j2,j3,j4
+read(33,*) j1,j2,j3,j4
 if (any((/j1,j2,j3,j4/)/=1))print *,'Error-2',i
-read(1,*) j1,j2,j3,j4
+read(33,*) j1,j2,j3,j4
 if (any((/j1,j2,j3,j4/)/=2))print *,'Error-3',i
-read(1,*) j1,j2,j3,j4
+read(33,*) j1,j2,j3,j4
 if (any((/j1,j2,j3,j4/)/=3))print *,'Error-4',i
-read(1,*) j1,j2,j3,j4
+read(33,*) j1,j2,j3,j4
 if (any((/j1,j2,j3,j4/)/=4))print *,'Error-5',i
-read(1,*) j1,j2,j3,j4
+read(33,*) j1,j2,j3,j4
 if (any((/j1,j2,j3,j4/)/=5))print *,'Error-6',i
 print *,'pass'
  END

@@ -12,7 +12,7 @@ type(xx)::v
     subroutine fin(d)
     type(x)::d
      if(allocated(d%x1)) deallocate(d%x1)
-write(10,*)1
+write(12,*)1
     end subroutine
 end
 use m1
@@ -23,7 +23,7 @@ a=v
 if (a%x1/=1) print *,200
 a=v
 if (a%x1/=1) print *,200
-call chk(10,1)
+call chk(12,1)
 print *,'pass'
 end
 subroutine chk(k,n)

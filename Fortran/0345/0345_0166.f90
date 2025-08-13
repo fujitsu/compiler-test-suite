@@ -18,10 +18,10 @@
      use mod_1
       j=0
       k=10
-      write(1,'(i4)') k
-      rewind(1)
-      read (1,'(i4)') k
-      do i=1,k  
+      write(4,'(i4)') k
+      rewind(4)
+      read (4,'(i4)') k
+      do i=1,k
         call sub1(i)
       enddo
       call sub22(j)

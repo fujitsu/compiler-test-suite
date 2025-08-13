@@ -10,6 +10,6 @@ end
     v%pa(k) = k*4
   end do
 
-   write(1,*) v%pa
+   write(3,*) v%pa
 print *,'PASS'
 end 

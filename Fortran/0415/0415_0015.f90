@@ -29,15 +29,15 @@ program main
   end type ty0
   type(ty0) :: ty10
 
-  open(10,file="fort.9999")
-write(10,*) '111 1.234 XYZ 333' 
+  open(10,file="fort.57")
+write(10,*) '111 1.234 XYZ 333'
 rewind 10
 
   read(10,*) ty10%i10, ty10%t10, ty10%i20
   close(10)
 
-open(1,delim='quote')
-  write(1,*) ty10%i10, ty10%t10, ty10%i20
+open(22,delim='quote')
+  write(22,*) ty10%i10, ty10%t10, ty10%i20
 print *,'pass'
 call chk
 end program main
@@ -45,8 +45,8 @@ subroutine chk
 integer c,d
 real a
 character(3) b
-rewind 1
-read(1,*)c,a,b,d
+rewind 22
+read(22,*)c,a,b,d
 if (    c/=111 ) print *,102
 if (abs(a-1.23399997)>0.001 ) print *,103
 if (    b/='XYZ' ) print *,104

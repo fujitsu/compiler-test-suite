@@ -10,7 +10,7 @@ contains
     class(typeA), intent(in) :: this
     integer, intent(in) :: n1, n2
     real(8), intent(in) :: array(*    )
-    write(1,*) "typeA aa:", array(:n1*n2)
+    write(11,*) "typeA aa:", array(:n1*n2)
     if (any(array(:n1*n2)/=1)) print *,201
     if (this%x/=1) print *,301
   end subroutine typeA_aa

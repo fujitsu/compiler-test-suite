@@ -9,7 +9,7 @@
       contains
          subroutine local_name(i)
          integer, intent(in) :: i
-         write(1,*)i
+         write(39,*)i
          end subroutine local_name
       end module first
       module second
@@ -20,7 +20,7 @@
       contains
          subroutine local_name(a)
          real, intent(in) :: a
-         write(1,*)a
+         write(39,*)a
          end subroutine local_name
       end module second
  subroutine s1
@@ -30,4 +30,4 @@
       real :: a = 2.0
       call public_name(i)
       call public_name(a)
-      end 
+      end

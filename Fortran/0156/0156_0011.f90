@@ -8,19 +8,19 @@ end
 use  m1
 common /cmn2/ kk1,kk2
 !$omp threadprivate(/cmn2/)
-write(1,*) n2
-write(1,*) i2
-write(1,*) kk2
-write(1,*) k2
+write(7,*) n2
+write(7,*) i2
+write(7,*) kk2
+write(7,*) k2
 end
  subroutine s2
 use  m1
 common /cmn2/ kk1,kk2
 !$omp threadprivate(/cmn2/)
-write(2,*) n2
-write(2,*) i2
-write(2,*) kk2
-write(2,*) k2
+write(8,*) n2
+write(8,*) i2
+write(8,*) kk2
+write(8,*) k2
 end
 
 use  m1
@@ -28,13 +28,13 @@ common /cmn2/ kk1,kk2
 !$omp threadprivate(/cmn2/)
 call s1
 call s2
-write(3,*) n2
-write(3,*) i2
-write(3,*) kk2
-write(3,*) k2
-call chk(1)
-call chk(2)
-call chk(3)
+write(9,*) n2
+write(9,*) i2
+write(9,*) kk2
+write(9,*) k2
+call chk(7)
+call chk(8)
+call chk(9)
 print *,'pass'
 end
 

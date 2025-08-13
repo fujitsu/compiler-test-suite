@@ -1,7 +1,7 @@
 integer,dimension(4)::a
 a=(/1,2,3,4/)
 call sub(a,a)
-write(1,*) a
+write(26,*) a
 print *,'pass'
 contains
 
@@ -13,6 +13,6 @@ where ((/.true.,.false.,.false.,.true./))
 a=c
 r=b
 end where
-write(1,*) r
+write(26,*) r
 end subroutine
 end

@@ -30,19 +30,19 @@ integer :: x
 logical :: y
 
 do x=11,19
-   open (unit=x,file='myfile' // x)
+   open (unit=x,file='myfile2' // x)
    write(x,*)x
 end do
 
-   inquire(file='myfile11',opened=y);if (.not.y)write(6,*) "NG"
-   inquire(file='myfile12',opened=y);if (.not.y)write(6,*) "NG"
-   inquire(file='myfile13',opened=y);if (.not.y)write(6,*) "NG"
-   inquire(file='myfile14',opened=y);if (.not.y)write(6,*) "NG"
-   inquire(file='myfile15',opened=y);if (.not.y)write(6,*) "NG"
-   inquire(file='myfile16',opened=y);if (.not.y)write(6,*) "NG"
-   inquire(file='myfile17',opened=y);if (.not.y)write(6,*) "NG"
-   inquire(file='myfile18',opened=y);if (.not.y)write(6,*) "NG"
-   inquire(file='myfile19',opened=y);if (.not.y)write(6,*) "NG"
+   inquire(file='myfile211',opened=y);if (.not.y)write(6,*) "NG"
+   inquire(file='myfile212',opened=y);if (.not.y)write(6,*) "NG"
+   inquire(file='myfile213',opened=y);if (.not.y)write(6,*) "NG"
+   inquire(file='myfile214',opened=y);if (.not.y)write(6,*) "NG"
+   inquire(file='myfile215',opened=y);if (.not.y)write(6,*) "NG"
+   inquire(file='myfile216',opened=y);if (.not.y)write(6,*) "NG"
+   inquire(file='myfile217',opened=y);if (.not.y)write(6,*) "NG"
+   inquire(file='myfile218',opened=y);if (.not.y)write(6,*) "NG"
+   inquire(file='myfile219',opened=y);if (.not.y)write(6,*) "NG"
 do x = 11, 19
    close (x,status='delete')
 end do

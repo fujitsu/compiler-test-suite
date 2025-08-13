@@ -3,7 +3,7 @@ print *,'pass'
 end
 subroutine ss1(i)
 real(4),pointer::b(:,:),c(:,:),a(:,:),aa(:),d(:)
-n=50
+n=105
 allocate(b(i,i),c(i,i),a(i,i),aa(i),d(i))
 b=reshape((/(i,i=1,9)/),(/3,3/))
 c=reshape((/(i,i=1,9)/),(/3,3/))

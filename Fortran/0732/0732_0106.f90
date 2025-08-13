@@ -13,12 +13,12 @@ program main
   pc(2)= 'two'
   pc(3)= 'three'
   pc(4)= 'four'
-  write(1,*)foo()
+  write(28,*)foo()
 call chk
 print *,'pass'
 end
 subroutine chk
 character*20 c
-rewind 1
-read(1,'(a)') c; if (index(c,'three')==0)write(6,*) "NG"
+rewind 28
+read(28,'(a)') c; if (index(c,'three')==0)write(6,*) "NG"
 end

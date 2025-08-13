@@ -6,8 +6,11 @@
        COMPLEX*16 CDA1(10)
        INTEGER II5, II4, II3, II2, II1
        REAL RR5, RR4, RR3, RR2, RR1
-       DOUBLE PRECISION DD20, DD19, DD18, DD17, DD16, DD15, DD14, DD13, 
+       DOUBLE PRECISION DD20, DD19, DD18, DD17, DD16, DD15, DD14, DD13,
      X   DD12, DD11, DD10, DD9, DD8, DD7, DD6, DD5, DD4, DD3, DD2, DD1
+      real*4 res(10)/12.414213,13.828427,15.2426405,16.656854,
+     +     18.071067,19.485281,20.899494,22.31371,23.727922,
+     +     25.142135/
 
        DO I=1,6,5
         RA1(I) = FLOAT (I)
@@ -94,6 +97,22 @@
        END DO
 
        WRITE (6, *) NA1, NA2, CA1, CDA1
-       WRITE (6, *) RA1, RA2, RA3, RA4
+       WRITE (6, *)
+       WRITE (6, *) RA1, RA2, RA3
+       call check(RA4,res)
+       WRITE (6, *)
        WRITE (6, *) DA1, DA2, DA3, DA4
-      END
+       END
+
+#define IS_EQUAL(a,b) ((a==b).or.(a==0.and.abs(b)<10E-6).or.(abs(a-b)/abs(a)<10E-6))
+      subroutine check(calc,res)
+      real calc(10),res(10)
+      logical ngcheck/.FALSE./
+      do i=1,10
+         if (IS_EQUAL(calc(i), res(i))) then
+         else
+            ngcheck = .TRUE.
+         endif
+      enddo
+      if (ngcheck) write(6,*) calc
+      end

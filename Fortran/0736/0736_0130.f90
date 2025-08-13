@@ -12,7 +12,7 @@ subroutine sub
 allocate(xa(2))
 xa(2)%y1=2
 if (xa(2)%y1/=2)write(6,*) "NG"
-write(1,*) loc(xa(2)%y1)
+write(26,*) loc(xa(2)%y1)
 deallocate(xa)
-end subroutine 
+end subroutine
 end

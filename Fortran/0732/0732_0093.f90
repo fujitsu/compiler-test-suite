@@ -23,39 +23,39 @@ PE(1:N2,1:N3) = TRANSPOSE( reshape((/POP(1:N3,1:N2)/),(/N3,N2/)))
 PF(1:N2,1:N3) = TRANSPOSE( reshape((/POP(1:N3,1:N2)+POP(VN3,VN2)-POP(:,:)/),(/N3,N2/)))
 PG(1:N2,1:N3) = TRANSPOSE( POP(1:3,1:2) )
 PH(1:N2,1:N3) = TRANSPOSE( POP(1:3:N3-N2,1:N2:N3-N2) )
-write(1,*)(TRANSPOSE( POP(:,:) ))
-write(1,*)(TRANSPOSE( POP(1:N3,1:N2) ))
-write(1,*)(TRANSPOSE( POP(N3-N2:N3,1:N3+N2-N3) ))
-write(1,*)(TRANSPOSE( POP(VN3,1:N3+N2-N3) ))
-write(1,*)(TRANSPOSE( POP(N3-N2:N3,VN2) ))
-write(1,*)(TRANSPOSE( POP(VN3,VN2) ))
-write(1,*)(TRANSPOSE( POP(VN3(N3-N2:N3:N3-N2),VN2(N3-N2:N3-(N3-N2):N3-N2)) ))
-write(1,*)(TRANSPOSE( real(reshape((/(i,i=1,6)/),(/3,2/)))))
-write(1,*)(TRANSPOSE( reshape((/1.,2.,3.,4.,5.,6./),(/3,2/))))
-write(1,*)( TRANSPOSE( reshape((/POP(1:N3,1:N2)/),(/3,2/))))
-write(1,*)(TRANSPOSE( reshape((/POP(1:N3,1:N2)+POP(VN3,VN2)-POP(:,:)/),(/3,2/))))
-write(1,*)( TRANSPOSE( real(reshape((/(i,i=1,6)/),(/N3,N2/)))))
-write(1,*)( TRANSPOSE( reshape((/1.,2.,3.,4.,5.,6./),(/N3,N2/))))
-write(1,*)( TRANSPOSE( reshape((/POP(1:N3,1:N2)/),(/N3,N2/))))
-write(1,*)( TRANSPOSE( reshape((/POP(1:N3,1:N2)+POP(VN3,VN2)-POP(:,:)/),(/N3,N2/))))
-write(1,*)( TRANSPOSE( POP(1:3,1:2) ))
-write(1,*)( TRANSPOSE( POP(1:3:N3-N2,1:N2:N3-N2) ))
-write(1,*) P1
-write(1,*) P2
-write(1,*) P3
-write(1,*) P4
-write(1,*) P5
-write(1,*) P6
-write(1,*) P7
-write(1,*) P8
-write(1,*) P9
-write(1,*) PA
-write(1,*) PB
-write(1,*) PC
-write(1,*) PD
-write(1,*) PE
-write(1,*) PF
-write(1,*) PG
+write(17,*)(TRANSPOSE( POP(:,:) ))
+write(17,*)(TRANSPOSE( POP(1:N3,1:N2) ))
+write(17,*)(TRANSPOSE( POP(N3-N2:N3,1:N3+N2-N3) ))
+write(17,*)(TRANSPOSE( POP(VN3,1:N3+N2-N3) ))
+write(17,*)(TRANSPOSE( POP(N3-N2:N3,VN2) ))
+write(17,*)(TRANSPOSE( POP(VN3,VN2) ))
+write(17,*)(TRANSPOSE( POP(VN3(N3-N2:N3:N3-N2),VN2(N3-N2:N3-(N3-N2):N3-N2)) ))
+write(17,*)(TRANSPOSE( real(reshape((/(i,i=1,6)/),(/3,2/)))))
+write(17,*)(TRANSPOSE( reshape((/1.,2.,3.,4.,5.,6./),(/3,2/))))
+write(17,*)( TRANSPOSE( reshape((/POP(1:N3,1:N2)/),(/3,2/))))
+write(17,*)(TRANSPOSE( reshape((/POP(1:N3,1:N2)+POP(VN3,VN2)-POP(:,:)/),(/3,2/))))
+write(17,*)( TRANSPOSE( real(reshape((/(i,i=1,6)/),(/N3,N2/)))))
+write(17,*)( TRANSPOSE( reshape((/1.,2.,3.,4.,5.,6./),(/N3,N2/))))
+write(17,*)( TRANSPOSE( reshape((/POP(1:N3,1:N2)/),(/N3,N2/))))
+write(17,*)( TRANSPOSE( reshape((/POP(1:N3,1:N2)+POP(VN3,VN2)-POP(:,:)/),(/N3,N2/))))
+write(17,*)( TRANSPOSE( POP(1:3,1:2) ))
+write(17,*)( TRANSPOSE( POP(1:3:N3-N2,1:N2:N3-N2) ))
+write(17,*) P1
+write(17,*) P2
+write(17,*) P3
+write(17,*) P4
+write(17,*) P5
+write(17,*) P6
+write(17,*) P7
+write(17,*) P8
+write(17,*) P9
+write(17,*) PA
+write(17,*) PB
+write(17,*) PC
+write(17,*) PD
+write(17,*) PE
+write(17,*) PF
+write(17,*) PG
 call chk
 print *,'pass'
 contains
@@ -71,9 +71,9 @@ if (any(abs(x-cos(0.+reshape((/1,4,2,5,3,6/),(/2,3/))))>0.001))write(6,*) "NG"
 end subroutine
 subroutine chk
 real,dimension(2,3)::x
-rewind 1
+rewind 17
 do
-read(1,*,end=1)x
+read(17,*,end=1)x
 if (any(abs(x-reshape((/1,4,2,5,3,6/),(/2,3/)))>0.001))write(6,*) "NG"
 end do
 1 end subroutine

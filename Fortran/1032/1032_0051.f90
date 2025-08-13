@@ -1,7 +1,7 @@
 program main
 
   type box_type
-    real, allocatable, dimension(:) :: a, b, c 
+    real, allocatable, dimension(:) :: a, b, c
   end type box_type
   type(box_type) :: box
 
@@ -19,7 +19,7 @@ program main
 
   call random_number(rnd)
   i = rnd * n
-  write(1,*) i, box%a(i)
+  write(13,*) i, box%a(i)
 print *,'pass'
 
 end program main

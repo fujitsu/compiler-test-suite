@@ -19,5 +19,5 @@ end
 
 subroutine ref
  use m1
- write(1,*) value
+ write(13,*) value
 end 

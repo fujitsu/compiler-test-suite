@@ -4,17 +4,17 @@ module mod
 end module
 
 use mod
-write(1,*)t
+write(2,*)t
 p=>t
-write(1,*)p,t
+write(2,*)p,t
 call sub
 print *,'pass'
 end
 subroutine sub
 integer v1,v2,v3
-rewind 1
-read(1,*) v1;if (v1/=100)print *,'error-1' 
-read(1,*) v2,v3
-if (v2/=100)print *,'error-2' 
-if (v3/=100)print *,'error-3' 
+rewind 2
+read(2,*) v1;if (v1/=100)print *,'error-1'
+read(2,*) v2,v3
+if (v2/=100)print *,'error-2'
+if (v3/=100)print *,'error-3'
 end

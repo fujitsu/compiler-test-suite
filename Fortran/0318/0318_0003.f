@@ -2,7 +2,7 @@
 #if 0
 #else ! a
       ! a
-      write(1,*) a
+      write(4,*) a
       print *,'pass'
 #endif ! a a
       end

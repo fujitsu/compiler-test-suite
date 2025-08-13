@@ -17,7 +17,7 @@ CONTAINS
   SUBROUTINE sub
     USE mod_var, ONLY : var1
     USE mod_ly, ONLY : ly
-    write(1,*)'ly =',ly
+    write(37,*)'ly =',ly
     if (abs(ly-1.0)>0.0001)print *,'error'
   END SUBROUTINE sub
 END MODULE mod_sub

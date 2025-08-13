@@ -1,4 +1,5 @@
  subroutine sub
+ save
  type x00
    integer,allocatable,dimension(:)::q011
    integer,allocatable,dimension(:)::q012

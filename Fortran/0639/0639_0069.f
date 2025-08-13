@@ -32,15 +32,25 @@
                C2(I) = G(5) - 5.0 + C(I) + W * E(I) / G(3) - Z
                A3(I) = 12.5 * B(I) / G(3) + C(I) - Z + V
  10        CONTINUE
-           PRINT *,E
-           PRINT *,C
-           PRINT *,A
-           PRINT *,A1
-           PRINT *,E1
-           PRINT *,C1
-           PRINT *,A2
-           PRINT *,E2
-           PRINT *,C2
-           PRINT *,A3
+           write(6,1) E
+           write(6,*)
+           write(6,1) C
+           write(6,*)
+           write(6,1) A
+           write(6,*)
+           write(6,1) A1
+           write(6,*)
+           write(6,1) E1
+           write(6,*)
+           write(6,1) C1
+           write(6,*)
+           write(6,1) A2
+           write(6,*)
+           write(6,1) E2
+           write(6,*)
+           write(6,1) C2
+           write(6,*)
+           write(6,1) A3
+ 1    format(2("(",f25.14,",",f25.14,") "))
            STOP
            END

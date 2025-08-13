@@ -32,14 +32,14 @@ c
 31600 format(1h+, 9x,1h( ,i3,2h ),21x,i15,21x,i15 )
 31610 format(1h+,9x,1h(, i3, 2h ),21x,e15.8,21x,e15.8,30x,e15.8 )
 c
-          rewind 1
-          write(1,100) r1dim1(1),r1dim1(2)
+          rewind 13
+          write(13,100) r1dim1(1),r1dim1(2)
   100     format(f7.3,f7.3)
-          write(1,100) r1dim1(3),r1dim1(4)
-          backspace 1
+          write(13,100) r1dim1(3),r1dim1(4)
+          backspace 13
           ic = 1
-          read(1,100) r9ans1,r1dim2(5)
-          rewind 1
+          read(13,100) r9ans1,r1dim2(5)
+          rewind 13
           r9comp=245.321
       i9data = i9data + 1
       if( abs(r9comp) .eq. 0.0e00 ) go to 23650
@@ -59,16 +59,16 @@ c
  5100     format(1h+,18x,6hcount= ,i3)
 c
           ic = 1
-          read(1,100,end=21,err=21) r1dim2(1),r1dim2(2)
-          backspace 1
+          read(13,100,end=21,err=21) r1dim2(1),r1dim2(2)
+          backspace 13
           ic = 2
-          read(1,100,end=21,err=21) r1dim2(3),r1dim2(4)
+          read(13,100,end=21,err=21) r1dim2(3),r1dim2(4)
           if (r1dim2(1).ne.r1dim2(3)) go to 21
           ic = 3
-          read(1,100,end=21,err=21) r1dim2(5),r1dim2(6)
-          backspace 1
+          read(13,100,end=21,err=21) r1dim2(5),r1dim2(6)
+          backspace 13
           ic = 4
-          read(1,100,end=21,err=21) r1dim2(7),r1dim2(8)
+          read(13,100,end=21,err=21) r1dim2(7),r1dim2(8)
           if (r1dim2(5).ne.r1dim2(7)) go to 21
           i9ans1=1
           go to 22
@@ -86,21 +86,21 @@ c
 23200 i9ans1=0
           write(6,5100) ic
 c
-          rewind 1
-          write(1,200) r1dim1(5),r1dim1(6)
-          write(1,200) r1dim1(7),r1dim1(8),r1dim1(9)
+          rewind 13
+          write(13,200) r1dim1(5),r1dim1(6)
+          write(13,200) r1dim1(7),r1dim1(8),r1dim1(9)
   200     format (f7.3)
-          backspace 1
-          backspace 1
+          backspace 13
+          backspace 13
           ic = 1
-          read(1,200) r1dim2(8)
+          read(13,200) r1dim2(8)
           if (r1dim1(8).ne.r1dim2(8)) go to 32
           ic = 2
-          read(1,200) r1dim2(9)
+          read(13,200) r1dim2(9)
           if (r1dim1(9).ne.r1dim2(9)) go to 32
-          rewind 1
+          rewind 13
           ic = 3
-          read(1,200) r1dim2(5),r1dim2(6),r1dim2(7)
+          read(13,200) r1dim2(5),r1dim2(6),r1dim2(7)
           do 31 i=5,7
           if (r1dim1(i).ne.r1dim2(i)) go to 32
    31     continue
@@ -120,23 +120,23 @@ c
 23201 i9ans1=0
           write(6,5100) ic
 c
-          rewind 1
+          rewind 13
           ic = 1
-          read(1,200) r1dim2(1),r1dim2(2),r1dim2(3)
+          read(13,200) r1dim2(1),r1dim2(2),r1dim2(3)
           do 41 i=1,3
           if (r1dim2(i).ne.r1dim1(i+4)) go to 44
    41     continue
           do 42 i=1,4
-          backspace 1
+          backspace 13
    42     continue
           ic = 2
-          read(1,200) r1dim2(3),r1dim2(4),r1dim2(5),r1dim2(6),r1dim2(7)
+          read(13,200) r1dim2(3),r1dim2(4),r1dim2(5),r1dim2(6),r1dim2(7)
           do 43 i=3,7
           if (r1dim2(i).ne.r1dim1(i+2)) go to 44
    43     continue
-          backspace 1
+          backspace 13
           ic = 3
-          read(1,200) r1dim2(1)
+          read(13,200) r1dim2(1)
           if (r1dim2(1).ne.r1dim1(9)) go to 44
           i9ans1=1
           go to 45
@@ -154,18 +154,18 @@ c
 23202 i9ans1=0
           write(6,5100) ic
 c
-          rewind 2
-          write(2,200) r1dim1(1),r1dim1(2),r1dim1(3)
+          rewind 14
+          write(14,200) r1dim1(1),r1dim1(2),r1dim1(3)
           do 51 i=1,4
-          backspace 2
+          backspace 14
    51     continue
           ic = 1
-          read(2,200) r1dim2(50)
+          read(14,200) r1dim2(50)
           if (r1dim1(1).ne.r1dim2(50)) go to 52
-          write(2,200) r1dim1(4),r1dim1(5),r1dim1(6)
-          endfile 2
-          rewind 2
-          read(2,200) r1dim2(10),r1dim2(11),r1dim2(12),r1dim2(13)
+          write(14,200) r1dim1(4),r1dim1(5),r1dim1(6)
+          endfile 14
+          rewind 14
+          read(14,200) r1dim2(10),r1dim2(11),r1dim2(12),r1dim2(13)
           ic = 2
           if (r1dim1(1).ne.r1dim2(10)) go to 52
           ic = 3
@@ -190,22 +190,22 @@ c
 23203 i9ans1=0
           write(6,5100) ic
 c
-          rewind 2
+          rewind 14
           ic = 1
-          read(2,200) r1dim2(30)
+          read(14,200) r1dim2(30)
           if (r1dim2(30).ne.r1dim1(1)) go to 61
-          rewind 2
-          rewind 2
-          read(2,200)  r1dim2(31)
+          rewind 14
+          rewind 14
+          read(14,200)  r1dim2(31)
           ic = 2
-          read(2,200)  r1dim2(32)
+          read(14,200)  r1dim2(32)
           if (r1dim1(1).ne.r1dim2(31)) go to 61
           ic = 3
           if (r1dim1(4).ne.r1dim2(32)) go to 61
-          rewind 2
-          write(2,100) r1dim1(10),r1dim1(11)
-          backspace 2
-          read(2,100) r1dim2(51),r1dim2(52)
+          rewind 14
+          write(14,100) r1dim1(10),r1dim1(11)
+          backspace 14
+          read(14,100) r1dim2(51),r1dim2(52)
           ic = 4
           if (r1dim1(10).ne.r1dim2(51)) go to 61
           ic = 5
@@ -226,25 +226,25 @@ c
 23204 i9ans1=0
           write(6,5100) ic
 c
-          rewind 2
-          endfile 2
-          rewind 2
-          write(2,200) r1dim1(11)
-          write(2,200) r1dim1(10)
-          backspace 2
-          backspace 2
-          backspace 2
-          read(2,200) r1dim2(60),r1dim2(61)
+          rewind 14
+          endfile 14
+          rewind 14
+          write(14,200) r1dim1(11)
+          write(14,200) r1dim1(10)
+          backspace 14
+          backspace 14
+          backspace 14
+          read(14,200) r1dim2(60),r1dim2(61)
           ic = 1
           if (r1dim1(11).ne.r1dim2(60)) go to 71
           ic = 2
           if (r1dim1(10).ne.r1dim2(61)) go to 71
-          write(2,200) r1dim1(7),r1dim1(8),r1dim1(9)
-          endfile 2
-          backspace 2
-          backspace 2
+          write(14,200) r1dim1(7),r1dim1(8),r1dim1(9)
+          endfile 14
+          backspace 14
+          backspace 14
           ic = 3
-          read(2,200,end=71,err=71) r1dim2(80)
+          read(14,200,end=71,err=71) r1dim2(80)
           if (r1dim1(9).ne.r1dim2(80)) go to 71
           i9ans1=1
           go to 72
@@ -262,27 +262,27 @@ c
 23205 i9ans1=0
           write(6,5100) ic
 c
-          rewind 2
-          write(4)  r1dim1(1),r1dim1(2)
-          write(4)  r1dim1(2),r1dim1(3)
-          write(4) r1dim1(3),r1dim1(4)
-          endfile 4
-          rewind 4
+          rewind 14
+          write(15)  r1dim1(1),r1dim1(2)
+          write(15)  r1dim1(2),r1dim1(3)
+          write(15) r1dim1(3),r1dim1(4)
+          endfile 15
+          rewind 15
           ic = 1
-          read(4,end=81) r1dim2(90),r1dim2(91)
+          read(15,end=81) r1dim2(90),r1dim2(91)
           if (r1dim1(1).ne.r1dim2(90)) go to 81
           if (r1dim1(2).ne.r1dim2(91)) go to 81
           ic = 2
-          read(4)  r1dim2(90),r1dim2(91)
+          read(15)  r1dim2(90),r1dim2(91)
           if (r1dim1(2).ne.r1dim2(90)) go to 81
           if (r1dim1(3).ne.r1dim2(91)) go to 81
-          backspace 4
+          backspace 15
           ic = 3
-          read(4,end=81) r1dim2(92),r1dim2(93)
+          read(15,end=81) r1dim2(92),r1dim2(93)
           if (r1dim1(2).ne.r1dim2(92)) go to 81
           if (r1dim1(3).ne.r1dim2(93)) go to 81
           ic = 4
-          read(4,end=81) r1dim2(92),r1dim2(93)
+          read(15,end=81) r1dim2(92),r1dim2(93)
           if (r1dim1(3).ne.r1dim2(92)) go to 81
           if (r1dim1(4).ne.r1dim2(93)) go to 81
           i9ans1=1
@@ -301,31 +301,31 @@ c
 23206 i9ans1=0
           write(6,5100) ic
 c
-          rewind 4
-          write(4) r1dim1(5)
-          write(4) r1dim1(6)
-          write(4) r1dim1(7)
-          backspace 4
-          backspace 4
+          rewind 15
+          write(15) r1dim1(5)
+          write(15) r1dim1(6)
+          write(15) r1dim1(7)
+          backspace 15
+          backspace 15
           ic = 1
-          read(4) r1dim2(20)
+          read(15) r1dim2(20)
           if (r1dim1(6).ne.r1dim2(20)) go to 91
-          write(4) r1dim1(8)
-          write(4) r1dim1(9)
-          backspace 4
-          endfile 4
-          rewind 4
+          write(15) r1dim1(8)
+          write(15) r1dim1(9)
+          backspace 15
+          endfile 15
+          rewind 15
           ic = 2
-          read(4) r1dim2(20)
+          read(15) r1dim2(20)
           if (r1dim1(5).ne.r1dim2(20)) go to 91
           ic = 3
-          read(4)  r1dim2(20)
+          read(15)  r1dim2(20)
           if (r1dim1(6).ne.r1dim2(20)) go to 91
           ic = 4
-          read(4,end=91) r1dim2(20)
+          read(15,end=91) r1dim2(20)
           if (r1dim1(8).ne.r1dim2(20)) go to 91
           ic = 5
-          read(4,end=92) r1dim2(20)
+          read(15,end=92) r1dim2(20)
    91     i9ans1=0
           go to 93
    92     i9ans1=1
@@ -345,31 +345,31 @@ c
           do 99 i=1,704
           r8dim1(i) = i
    99     r8dim2(i) = 0.0
-          rewind 4
-          write (4) (r8dim1(i),i=1,704)
-          write (4) (r8dim1(i),i=1,302)
-          write (4) (r8dim1(i),i=1,201)
-          write (4) (r8dim1(i),i=1,302)
-          write (4) (r8dim1(i),i=1,403)
-          write (4) (r8dim1(i),i=1,704)
-          backspace 4
+          rewind 15
+          write (15) (r8dim1(i),i=1,704)
+          write (15) (r8dim1(i),i=1,302)
+          write (15) (r8dim1(i),i=1,201)
+          write (15) (r8dim1(i),i=1,302)
+          write (15) (r8dim1(i),i=1,403)
+          write (15) (r8dim1(i),i=1,704)
+          backspace 15
           ic = 1
-          read (4,end=104) (r8dim2(i),i=1,704)
+          read (15,end=104) (r8dim2(i),i=1,704)
           do 101 i=1,704
           if (r8dim2(i).ne.r8dim1(i)) go to 104
   101     continue
-          write (4) (r8dim1(i),i=1,302)
-          write (4) (r8dim1(i),i=1,201)
-          rewind 4
+          write (15) (r8dim1(i),i=1,302)
+          write (15) (r8dim1(i),i=1,201)
+          rewind 15
           ic = 2
-          read (4)  (r8dim2(i),i=1,704)
+          read (15)  (r8dim2(i),i=1,704)
           do 102 i=1,704
           if (r8dim2(i).ne.r8dim1(i)) go to 104
   102     continue
-          backspace 4
-          backspace 4
+          backspace 15
+          backspace 15
           ic = 3
-          read (4)  (r8dim2(i),i=1,201)
+          read (15)  (r8dim2(i),i=1,201)
           do 103 i=1,201
           if (r8dim2(i).ne.r8dim1(i)) go to 104
   103     continue
@@ -389,51 +389,51 @@ c
 23208 i9ans1=0
           write(6,5100) ic
 c
-          rewind 4
-          read (4) (r8dim2(i),i=1,704)
+          rewind 15
+          read (15) (r8dim2(i),i=1,704)
           ic = 1
           do 6111 i=1,704
           if (r8dim2(i).ne.r8dim1(i)) go to 116
  6111     continue
           ic = 2
-          read (4) (r8dim2(i),i=1,302)
+          read (15) (r8dim2(i),i=1,302)
           do 7111 i=1,302
           if (r8dim2(i).ne.r8dim1(i)) go to 116
  7111     continue
-          backspace 4
-          backspace 4
-          read (4) (r8dim2(i),i=1,704)
-          read (4) (r8dim2(i),i=1,302)
-          read (4) (r8dim2(i),i=1,201)
+          backspace 15
+          backspace 15
+          read (15) (r8dim2(i),i=1,704)
+          read (15) (r8dim2(i),i=1,302)
+          read (15) (r8dim2(i),i=1,201)
           ic = 3
           do 8111 i=1,201
           if (r8dim2(i).ne.r8dim1(i)) go to 116
  8111     continue
           ic = 4
-          read (4) (r8dim2(i),i=1,302)
+          read (15) (r8dim2(i),i=1,302)
           do 6112 i=1,302
           if (r8dim2(i).ne.r8dim1(i)) go to 116
  6112     continue
           ic = 5
-          read (4) (r8dim2(i),i=1,403)
+          read (15) (r8dim2(i),i=1,403)
           do 7112 i=1,403
           if (r8dim2(i).ne.r8dim1(i)) go to 116
  7112     continue
-          backspace 4
-          read (4) (r8dim2(i),i=1,403)
-          read (4) (r8dim2(i),i=1,704)
+          backspace 15
+          read (15) (r8dim2(i),i=1,403)
+          read (15) (r8dim2(i),i=1,704)
           ic = 6
           do 6113 i=1,704
           if (r8dim2(i).ne.r8dim1(i)) go to 116
  6113     continue
           ic = 7
-          read (4) (r8dim2(i),i=1,302)
+          read (15) (r8dim2(i),i=1,302)
           do 7113 i=1,302
           if (r8dim2(i).ne.r8dim1(i)) go to 116
  7113     continue
-          read (4) (r8dim2(i),i=1,201)
-          backspace 4
-          read (4) (r8dim2(i),i=1,201)
+          read (15) (r8dim2(i),i=1,201)
+          backspace 15
+          read (15) (r8dim2(i),i=1,201)
           ic = 8
           do 6115 i=1,201
           if (r8dim2(i).ne.r8dim1(i)) go to 116
@@ -454,28 +454,28 @@ c
 23209 i9ans1=0
           write(6,5100) ic
 c
-          rewind 4
-          write(4) (r1dim1(i),i=2,11),(r1dim1(j),j=1,11)
-          backspace 4
+          rewind 15
+          write(15) (r1dim1(i),i=2,11),(r1dim1(j),j=1,11)
+          backspace 15
           ic = 1
-          read(4) (r1dim2(i),i=1,20)
+          read(15) (r1dim2(i),i=1,20)
           do 121 i=1,9
           if (r1dim2(i).ne.r1dim2(i+11)) go to 123
   121     continue
-          rewind 4
-          write(4) r1dim1(11)
-          write(4) (r1dim1(i),i=1,11),(r1dim1(j),j=1,11),(r1dim1(k),k=1,
+          rewind 15
+          write(15) r1dim1(11)
+          write(15)(r1dim1(i),i=1,11),(r1dim1(j),j=1,11),(r1dim1(k),k=1,
      111),(r1dim1(l),l=1,11)
-          write(4) r1dim1(10)
-          backspace 4
-          backspace 4
+          write(15) r1dim1(10)
+          backspace 15
+          backspace 15
           ic = 2
-          read(4) (r1dim2(i),i=15,34)
-          read(4) r1dim2(35)
+          read(15) (r1dim2(i),i=15,34)
+          read(15) r1dim2(35)
           do 122 i=15,23
           if (r1dim2(i).ne.r1dim2(i+11)) go to 123
   122     continue
-          rewind 4
+          rewind 15
           i9ans1=1
           go to 124
   123     i9ans1=0

@@ -6,13 +6,12 @@
        subroutine sub
        use mod5
        modxl(i) = 1
-       write(1,*) modxl(1)
+       write(13,*) modxl(1)
        END
 
        call sub
-       rewind 1
-       read(1,*) k
+       rewind 13
+       read(13,*) k
        if (k/=1)write(6,*) "NG"
        print *,'pass'
        end
-

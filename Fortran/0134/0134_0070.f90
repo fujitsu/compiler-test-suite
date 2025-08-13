@@ -3,8 +3,8 @@ integer,pointer::pointer_array(:)
 contains
 subroutine s(explicit_shape_array,x)
 integer::explicit_shape_array(2),x(1)
-write(1,*)explicit_shape_array
-write(1,*)x
+write(4,*)explicit_shape_array
+write(4,*)x
 end subroutine
 end
 subroutine x

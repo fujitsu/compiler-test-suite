@@ -7,21 +7,21 @@ use, intrinsic :: ieee_arithmetic,only=>IEEE_SELECTED_REAL_KIND
 integer :: i=only(6,30)
 integer :: a=sin(0.1)
 if (i/=4)print *,101
-write(1,*) a
+write(4,*) a
 end
 subroutine s0
 use, intrinsic :: ieee_arithmetic,only:IEEE_SELECTED_REAL_KIND
 integer :: i=IEEE_SELECTED_REAL_KIND(6,30)
 integer :: a=sin(0.1)
 if (i/=4)print *,101
-write(1,*) a
+write(4,*) a
 end
 subroutine s1
 use, intrinsic :: ieee_arithmetic
 integer :: i=IEEE_SELECTED_REAL_KIND(6,30)
 integer :: a=sin(0.1)
 if (i/=4)print *,101
-write(1,*) a
+write(4,*) a
 end
 subroutine s2
 use m2

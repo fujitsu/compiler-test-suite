@@ -10,7 +10,7 @@ subroutine isub(ip)
 integer ,pointer,intent(in):: ip
 ip=2
 call isub3(ip)
-write(1,*)ip
+write(2,*)ip
 end subroutine
 subroutine isub3(ip)
 integer,intent(out):: ip
@@ -27,7 +27,7 @@ subroutine isub(ip)
 integer ,pointer,intent(inout):: ip
 ip=2
 call isub3(ip)
-write(1,*)ip
+write(2,*)ip
 end subroutine
 subroutine isub3(ip)
 integer,intent(out):: ip
@@ -45,7 +45,7 @@ integer ,pointer,intent(out):: ip
 allocate(ip)
 ip=2
 call isub3(ip)
-write(1,*)ip
+write(2,*)ip
 end subroutine
 subroutine isub3(ip)
 integer,intent(out):: ip
@@ -62,7 +62,7 @@ subroutine isub(ip)
 integer ,pointer,intent(in):: ip
 ip=2
 call isub3(ip)
-write(1,*)ip
+write(2,*)ip
 end subroutine
 subroutine isub3(ip)
 integer,intent(inout):: ip
@@ -79,7 +79,7 @@ subroutine isub(ip)
 integer ,pointer,intent(inout):: ip
 ip=2
 call isub3(ip)
-write(1,*)ip
+write(2,*)ip
 end subroutine
 subroutine isub3(ip)
 integer,intent(inout):: ip
@@ -97,7 +97,7 @@ integer ,pointer,intent(out):: ip
 allocate(ip)
 ip=2
 call isub3(ip)
-write(1,*)ip
+write(2,*)ip
 end subroutine
 subroutine isub3(ip)
 integer,intent(inout):: ip
@@ -114,7 +114,7 @@ subroutine isub(ip)
 integer ,pointer,intent(in):: ip
 ip=2
 call isub3(ip)
-write(1,*)ip
+write(2,*)ip
 end subroutine
 subroutine isub3(ip)
 integer,intent(in):: ip
@@ -131,7 +131,7 @@ subroutine isub(ip)
 integer ,pointer,intent(inout):: ip
 ip=2
 call isub3(ip)
-write(1,*)ip
+write(2,*)ip
 end subroutine
 subroutine isub3(ip)
 integer,intent(inout):: ip
@@ -149,7 +149,7 @@ integer ,pointer,intent(out):: ip
 allocate(ip)
 ip=2
 call isub3(ip)
-write(1,*)ip
+write(2,*)ip
 end subroutine
 subroutine isub3(ip)
 integer,intent(inout):: ip

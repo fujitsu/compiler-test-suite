@@ -20,7 +20,7 @@ end
     volh = vol / 2
    volh_tot = 4 * (4+2) * (4+2) * (4+2)
 
-    write(1,*) vol,volh,volh_tot
+    write(4,*) vol,volh,volh_tot
   end
 
   program main
@@ -29,7 +29,7 @@ end
    integer :: mu , eo , i
    complex(8), dimension (3, 3) :: uuu
 
-   write(1,*) ' &lt;&lt; main start &gt;&gt;'
+   write(4,*) ' &lt;&lt; main start &gt;&gt;'
 
    call init_common_vol
    allocate(gauge(10),STAT=ierr1)
@@ -53,7 +53,7 @@ end
      end do
     end do
 
-    write(1,*) ' &lt;&lt; main end &gt;&gt;'
+    write(4,*) ' &lt;&lt; main end &gt;&gt;'
     print *,'pass'
     end program main
 
@@ -64,10 +64,10 @@ end
       complex(8), dimension (3, 3, volh_tot, 0:1, 4), intent(in) :: u
       integer, intent(in) :: i, e, mu
       integer :: o, nu, j1, j2, j3, j4
-   
+
       o = 0 + 1 - e
       uuu(1:3,1:3) = 0
-  
+
       do nu = 1, 4
          j1 =  1
          j2 =  2
@@ -76,4 +76,3 @@ end
          uuu(1,1) = u(1,1,i,e,mu)
        enddo
      end subroutine staple
-   

@@ -7,12 +7,12 @@ end
 subroutine s1
 use m1
 n1=1;k1=10;k2=11
-write(1,nam)
+write(3,nam)
 end
 subroutine s2
 namelist /nam/ k1,k2,n1
-rewind 1
-read(1,nam)
+rewind 3
+read(3,nam)
 if (n1/=1)print *,101
 if (k1/=10)print *,102
 if (k2/=11)print *,103

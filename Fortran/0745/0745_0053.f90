@@ -6,7 +6,7 @@
       DO I=1,100000
          CALL SUB(STRESS,Sinc)
       ENDDO
-      WRITE(10,*)Sinc
+      WRITE(28,*)Sinc
  100  FORMAT("time = ",F20.10)
       print *,'pass'
       END PROGRAM ARRAY01

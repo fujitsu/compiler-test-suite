@@ -11,9 +11,9 @@ v(n)%c1='1'
 v(n)%c2='1'
 v(n)%c3='1'
 end do
-write(1,*) v(k)%c1
-write(1,*) v(k)%c2
-write(1,*) v(k)%c3
+write(13,*) v(k)%c1
+write(13,*) v(k)%c2
+write(13,*) v(k)%c3
   END
 type x
 sequence

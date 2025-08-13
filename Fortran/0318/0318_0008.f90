@@ -1,5 +1,5 @@
 #define a(i) 2000
-write(1,*) a &
+write(9,*) a &
 ,1 &
 ,a &
 ,2 &

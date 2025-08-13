@@ -1,3 +1,4 @@
+#define IS_EQUAL(a,b) ((a==b).or.(a==0.and.abs(b)<10E-6).or.(abs(a-b)/abs(a)<10E-6))
        INTEGER * 4 I4001,I4002,I4003,I4004,I4005
        REAL    * 4 R4001,R4002,R4003,R4004,R4005
        REAL    * 8 R8001,R8002,R8003,R8004,R8005
@@ -9,7 +10,8 @@
        LOGICAL * 1 L1A01(20)
        LOGICAL * 4 L4A01(20),L4A02(20),L4A03(20),L4A04(20),L4A05(20)
        COMPLEX *16 C16A1(20),C16A2(20),C16A3(20),C16A4(20),C16A5(20)
-       DATA I4A01/20*1/,I4A02/20*2/,I4A03/20*3/,I4A04/20*4/,I4A05/20*5/ 
+       REAL*4 RES1(20),RES2(20),RES3(20)
+       DATA I4A01/20*1/,I4A02/20*2/,I4A03/20*3/,I4A04/20*4/,I4A05/20*5/
        DATA I4001/1/,I4002/2/,I4003/3/,I4004/4/,I4005/5/
        DATA R4A01/20*1.1/,R4A02/20*2.2/,R4A03/20*0/
        DATA R4A04/20*0/,R4A05/20*0/
@@ -24,6 +26,7 @@
        DATA L4A03/5*.FALSE.,5*.TRUE.,5*.FALSE.,5*.TRUE./
        DATA L4A04/5*.FALSE.,5*.TRUE.,5*.FALSE.,5*.TRUE./
        DATA L4A05/5*.FALSE.,5*.TRUE.,5*.FALSE.,5*.TRUE./
+       DATA RES1/20*24.2/,RES2/20*114.4/,RES3/20*0.25/
        R4001 = 0
        R4002 = 0
        R4003 = 0
@@ -47,7 +50,14 @@
        DO 13 I=1,20
          C1601 = C1601 + C16A1(I)
  13    CONTINUE
-       WRITE(6,*) I4001,R4001,R8001,C1601
+       WRITE(6,*) I4001
+       if (IS_EQUAL(R4001,22.0)) then
+       else
+          WRITE(6,*) R4001
+       endif
+       WRITE(6,*) R8001
+       WRITE(6,1) C1601
+ 1     format(("(",f25.14,",",f25.14,") "))
        I4003 = 0
        DO 20 I=1,20
          IF (L4A01(I))  THEN
@@ -210,7 +220,9 @@
          IF ((I4002 + I4A02(I)) .LT. (R4001 - R4A02(I))) GOTO 69
          L4A01(I) = .NOT. L4A02(I)
  69    CONTINUE
-       WRITE(6,*) I4A01,R4A01,R8A01
+       WRITE(6,*) I4A01
+       call check(R4A01,RES1)
+       WRITE(6,*) R8A01
        DO 80 I=1,20
          I4A01(I) = I4A02(I) * 2 ** 4 + I4A03(I) * 2 ** I4005
          R4A01(I) = R4A02(I) * 2 ** 2 + R4A03(I) * 2 ** R4005
@@ -224,8 +236,21 @@
   90   CONTINUE
        WRITE(6,*) '** ITEM3 **'
        WRITE(6,*) I4A01 , I4A02
-       WRITE(6,*) R4A01 , R4A02
+       call check(R4A01,RES2)
+       call check(R4A02,RES3)
        WRITE(6,*) R8A01 , R8A02
        WRITE(6,*) C16A1
        STOP
        END
+
+      subroutine check(calc,res)
+      real calc(10),res(10)
+      logical ngcheck/.FALSE./
+      do i=1,10
+         if (IS_EQUAL(calc(i), res(i))) then
+         else
+            ngcheck = .TRUE.
+         endif
+      enddo
+      if (ngcheck) write(6,*) calc
+      end

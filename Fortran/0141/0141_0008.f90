@@ -19,7 +19,7 @@ ee=105
 ef=106
 end subroutine
 subroutine ss_1
-write(1,nama)
+write(11,nama)
 end subroutine
 end
 subroutine chk
@@ -30,8 +30,8 @@ ec=0
 ed=0
 ee=0
 ef=0
-rewind 1
-read(1,nama) 
+rewind 11
+read(11,nama)
 if (ea/=101)print *,'error-1'
 if (eb/=102)print *,'error-2'
 if (ec/=103)print *,'error-3'

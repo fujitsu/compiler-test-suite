@@ -26,7 +26,7 @@ ipi4=loc(ii4)
 ipl1=loc(len1)
 ipl2=loc(len2)
 ipl3=loc(len3)
-k=1
+k=10
 write(k,'(1h ,z16.16)')ip1
 write(k,'(1h ,z16.16)')ip2
 write(k,'(1h ,z16.16,1x,z4.4)')ipi1,ii1

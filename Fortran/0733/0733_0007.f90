@@ -1,5 +1,5 @@
-write(1,'(a)') "&FE fenml(3)%elgeom_name = 'HEX' /"
-rewind 1
+write(4,'(a)') "&FE fenml(3)%elgeom_name = 'HEX' /"
+rewind 4
 call sub
 print *,'pass'
 end
@@ -9,6 +9,6 @@ TYPE fenml_type
 END TYPE fenml_type
 TYPE(fenml_type), DIMENSION(5) :: fenml
 NAMELIST /FE/fenml
-read (1,FE)
+read (4,FE)
 if (any(fenml%elgeom_name/=(/'XXX','XXX','HEX','XXX','XXX'/)))print *,'error'
-end 
+end

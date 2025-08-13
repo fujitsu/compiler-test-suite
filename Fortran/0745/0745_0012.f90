@@ -4,12 +4,12 @@
 end
 subroutine sub(X,Y)
  REAL(16) X,Y,Z,U
- Z = X*Y 
+ Z = X*Y
  U = Z/X
- write(1,*)'X=',X
- write(1,*)'Y=',Y
- write(1,*)'Z=X*Y=',Z
- write(1,*)'U=Z/X=',U
- write(1,*)'U-Y=',U-Y
+ write(9,*)'X=',X
+ write(9,*)'Y=',Y
+ write(9,*)'Z=X*Y=',Z
+ write(9,*)'U=Z/X=',U
+ write(9,*)'U-Y=',U-Y
  if (abs(U-Y)>1.E-15_16)print *,'error'
 end

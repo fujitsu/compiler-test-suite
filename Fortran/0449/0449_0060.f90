@@ -32,9 +32,9 @@ subroutine s1(a)
   end select
   if(k/=1) print *,201
   allocate(a(3)%x4(2))
-write(1,'(z16.16)') loc(a(3)%x4)
+write(130,'(z16.16)') loc(a(3)%x4)
   allocate(yy::a(3)%x2(2))
-write(2,'(z16.16)') loc(a(3)%x2)
+write(131,'(z16.16)') loc(a(3)%x2)
   k=0
   select type (p=>a(3)%x2)
     type is(yy)
@@ -44,7 +44,7 @@ write(2,'(z16.16)') loc(a(3)%x2)
 end subroutine
 subroutine fy(d)
 type(y)::d
-write(11,*)7001
+write(132,*)7001
 end subroutine
 subroutine fyy(d)
 type(yy)::d
@@ -57,9 +57,9 @@ do n=1,kh
 call s1(a)
   if (.not.allocated(a(3)%x2)) print *,102
 end do
-call chk(1)
-call chk(2)
-call chk11(11)
+call chk(130)
+call chk(131)
+call chk11(132)
 print *,'pass'
 end
 subroutine chk(n)
@@ -86,7 +86,7 @@ end
 subroutine chk11(k)
 use km
 logical::file_exists
-inquire(file="fort.11", exist=file_exists)
+inquire(file="fort.132", exist=file_exists)
 if (file_exists) then
 rewind k
 do n=1,(kh-1)

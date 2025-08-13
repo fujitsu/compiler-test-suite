@@ -12,11 +12,10 @@ integer :: jj
 type(base):: inst
 end type ty1
 end module
- 
+
 use mod
 type(ty1) :: obj
- 
-write(1,*)extends_type_of(obj,obj%inst)
+
+write(60,*)extends_type_of(obj,obj%inst)
 print *,'pass'
 end
- 

@@ -17,22 +17,22 @@ call c(b)
 
 call chk
 print *,'pass'
-contains 
+contains
 
-subroutine c(b) 
+subroutine c(b)
    type(b_type) :: b
    character(len=len_trim(b%a(1)%n)) :: n
-   write(1,*) b%a(1)%n
-   write(1,*) len(n)
+   write(9,*) b%a(1)%n
+   write(9,*) len(n)
 end subroutine c
 
 subroutine chk
 character*7 c
 integer i
-rewind 1
-read(1,'(a)') c
+rewind 9
+read(9,'(a)') c
 if (c/=' hello')print *,'error'
-read(1,*) i
+read(9,*) i
 if (i/=5)print *,'error-2'
 end subroutine
 

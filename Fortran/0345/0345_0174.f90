@@ -13,9 +13,9 @@
      use mod
       i=1
       j=100
-      write(1,'(2i4)') j,i
-      rewind(1)
-      read (1,'(2i4)') j,i
+      write(9,'(2i4)') j,i
+      rewind(9)
+      read (9,'(2i4)') j,i
       call sub1(i,j)
       if (i/=101.or.j/=201) print *,'error1 i,j->',i,j
       call sub1(i,j)

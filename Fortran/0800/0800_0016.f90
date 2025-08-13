@@ -14,7 +14,7 @@ contains
 
   subroutine sub2
     call test
-    write(1,*) 'test_module2'
+    write(4,*) 'test_module2'
   end subroutine sub2
 
 end module test_module2
@@ -23,7 +23,7 @@ program main
 
   use test_module2
   implicit none
-  write(1,*) 'test'
+  write(4,*) 'test'
     call set
   call sub2()
 if (n/=1) print *,101

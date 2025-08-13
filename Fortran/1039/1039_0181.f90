@@ -12,7 +12,7 @@ subroutine init
   use m_foo
   allocate(p(200,100,2))
   p(:,:,:) = reshape((/(n,n=1,size(p))/),(/200,100,2/))
-  write(1,'(a,"0x",z16.16)') 'init: loc(p) = ', loc(p)
+  write(30,'(a,"0x",z16.16)') 'init: loc(p) = ', loc(p)
   grid%idum=>t1(::2)
    grid%idum=(/21,22,23/)
   return
@@ -21,7 +21,7 @@ end subroutine init
 subroutine foo(a,idum,k,aa,jdum,a2,j2,a3,j3)
   real(kind(0d0)),dimension(200,100,2):: a,aa,a2,a3
   integer :: idum(3),jdum(3),j2(3),j3(3)
-  write(1,'(a,"0x",z16.16,1x,"0x",z16.16)') ' foo: loc(a) = ', loc(a),loc(aa)
+  write(30,'(a,"0x",z16.16,1x,"0x",z16.16)') ' foo: loc(a) = ', loc(a),loc(aa)
   select case(k)
   case(1)
     m=0
@@ -46,7 +46,7 @@ end subroutine foo
 subroutine foo2(a,idum,k,aa,jdum)
   real(kind(0d0)) :: a(200,100,1),aa(200,100,1)
   integer :: idum(3),jdum(3)
-  write(1,'(a,"0x",z16.16,1x,"0x",z16.16)') ' foo: loc(a) = ', loc(a),loc(aa)
+  write(30,'(a,"0x",z16.16,1x,"0x",z16.16)') ' foo: loc(a) = ', loc(a),loc(aa)
   select case(k)
   case(1)
     m=0
@@ -62,7 +62,7 @@ end subroutine foo2
 subroutine foo3(a,idum,k,aa,jdum)
   real(kind(0d0)) :: a(200,100,2),aa(200,100,2)
   integer :: idum(*),jdum(*)
-  write(1,'(a,"0x",z16.16,1x,"0x",z16.16)') ' foo3: loc(a) = ', loc(a),loc(aa)
+  write(30,'(a,"0x",z16.16,1x,"0x",z16.16)') ' foo3: loc(a) = ', loc(a),loc(aa)
   select case(k)
   case(1)
     m=0
@@ -79,8 +79,8 @@ subroutine bar(a,b,aa,bb)
   implicit none
   real(kind(0d0)) :: a(200,100,2), b(200,100,2)
   real(kind(0d0)) :: aa(200,100,2), bb(200,100,2)
-  write(1,'(a,"0x",z16.16)') ' bar: loc(a) = ', loc(a)
-  write(1,'(a,"0x",z16.16)') ' bar: loc(aa) = ', loc(aa)
+  write(30,'(a,"0x",z16.16)') ' bar: loc(a) = ', loc(a)
+  write(30,'(a,"0x",z16.16)') ' bar: loc(aa) = ', loc(aa)
   return
 end subroutine bar
 
@@ -115,7 +115,7 @@ program main
   ha(2,2,2)%ha(2,2,2)%h(1,2,1)=0
   ha(2,2,2)%ha(2,2,2)%h(1,1,1)=3
 
-write(1,*)1
+write(30,*)1
   call foo(p,max(idum1,idum2),2,p,max(idum1,idum2),p+p,idum2+idum2,p+p+p,idum2+idum2+idum2)   
   call foo(p,max(idum1,idum2),2,p,max(idum1,idum2),max(p+p,p),idum2+idum2,max(p,p,p+p+p),idum2+idum2+idum2)   
   call foo(p,max(idum1,idum2),2,p,max(idum1(:),idum2(:)),max(p(:,:,:)+p(:,:,:),p(:,:,:)),idum2+idum2,max(p(:,:,:),p,p(:,:,:)+p(:,:,:)+p(:,:,:)),idum2+idum2+idum2)   
@@ -129,6 +129,6 @@ p+p,max(grid%idum(n:ha(2,2,2)%ha(2,2,2)%h(1,1,1))+grid%idum(n:3),idum2),p*3,max(
 
   call bar(p,t,p,t)
   call bar(p,t(:,:,:),p,t(:,:,:))
-write(1,*)4
+write(30,*)4
 print *,'pass'
 end program main

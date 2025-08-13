@@ -16,111 +16,111 @@
   parameter (r15=z'ff800001')
 
   if (abs(r01).gt.1e-10) then
-    write(1,*)1
+    write(22,*)1
   endif
   if (abs(r01).le.1e-10) then
-    write(1,*)2
+    write(22,*)2
   endif
   if (abs(r02).gt.1e-10) then
-    write(1,*)3
+    write(22,*)3
   endif
   if (abs(r02).le.1e-10) then
-    write(1,*)4
+    write(22,*)4
   endif
   if (abs(r03).gt.1e-10) then
-    write(1,*)5
+    write(22,*)5
   endif
   if (abs(r03).le.1e-10) then
-    write(1,*)6
+    write(22,*)6
   endif
   if (abs(r04).gt.1e-10) then
-    write(1,*)7
+    write(22,*)7
   endif
   if (abs(r04).le.1e-10) then
-    write(1,*)8
+    write(22,*)8
   endif
   if (abs(r05).gt.1e-10) then
-    write(1,*)9
+    write(22,*)9
   endif
   if (abs(r05).le.1e-10) then
-    write(1,*)10
+    write(22,*)10
   endif
   if (abs(r06).gt.1e-10) then
-    write(1,*)11
+    write(22,*)11
   endif
   if (abs(r06).le.1e-10) then
-    write(1,*)12
+    write(22,*)12
   endif
   if (abs(r07).gt.1e-10) then
-    write(1,*)13
+    write(22,*)13
   endif
   if (abs(r07).le.1e-10) then
-    write(1,*)14
+    write(22,*)14
   endif
   if (abs(r08).gt.1e-10) then
-    write(1,*)15
+    write(22,*)15
   endif
   if (abs(r08).le.1e-10) then
-    write(1,*)16
+    write(22,*)16
   endif
   if (abs(r09).gt.1e-10) then
-    write(1,*)17
+    write(22,*)17
   endif
   if (abs(r09).le.1e-10) then
-    write(1,*)18
+    write(22,*)18
   endif
   if (abs(r10).gt.1e-10) then
-    write(1,*)19
+    write(22,*)19
   endif
   if (abs(r10).le.1e-10) then
-    write(1,*)20
+    write(22,*)20
   endif
   if (abs(r11).gt.1e-10) then
-    write(1,*)21
+    write(22,*)21
   endif
   if (abs(r11).le.1e-10) then
-    write(1,*)22
+    write(22,*)22
   endif
   if (abs(r12).gt.1e-10) then
-    write(1,*)23
+    write(22,*)23
   endif
   if (abs(r12).le.1e-10) then
-    write(1,*)24
+    write(22,*)24
   endif
   if (abs(r13).gt.1e-10) then
-    write(1,*)25
+    write(22,*)25
   endif
   if (abs(r13).le.1e-10) then
-    write(1,*)26
+    write(22,*)26
   endif
   if (abs(r14).gt.1e-10) then
-    write(1,*)27
+    write(22,*)27
   endif
   if (abs(r14).le.1e-10) then
-    write(1,*)28
+    write(22,*)28
   endif
   if (abs(r15).gt.1e-10) then
-    write(1,*)29
+    write(22,*)29
   endif
   if (abs(r15).le.1e-10) then
-    write(1,*)30
+    write(22,*)30
   endif
-  write(1,*)999
-  rewind 1
-  read(1,*) ik;if (ik/=2)write(6,*) "NG"
-  read(1,*) ik;if (ik/=3)write(6,*) "NG"
-  read(1,*) ik;if (ik/=5)write(6,*) "NG"
-  read(1,*) ik;if (ik/=8)write(6,*) "NG"
-  read(1,*) ik;if (ik/=10)write(6,*) "NG"
-  read(1,*) ik;if (ik/=12)write(6,*) "NG"
-  read(1,*) ik;if (ik/=14)write(6,*) "NG"
-  read(1,*) ik;if (ik/=16)write(6,*) "NG"
-  read(1,*) ik;if (ik/=18)write(6,*) "NG"
-  read(1,*) ik;if (ik/=19)write(6,*) "NG"
-  read(1,*) ik;if (ik/=21)write(6,*) "NG"
+  write(22,*)999
+  rewind 22
+  read(22,*) ik;if (ik/=2)write(6,*) "NG"
+  read(22,*) ik;if (ik/=3)write(6,*) "NG"
+  read(22,*) ik;if (ik/=5)write(6,*) "NG"
+  read(22,*) ik;if (ik/=8)write(6,*) "NG"
+  read(22,*) ik;if (ik/=10)write(6,*) "NG"
+  read(22,*) ik;if (ik/=12)write(6,*) "NG"
+  read(22,*) ik;if (ik/=14)write(6,*) "NG"
+  read(22,*) ik;if (ik/=16)write(6,*) "NG"
+  read(22,*) ik;if (ik/=18)write(6,*) "NG"
+  read(22,*) ik;if (ik/=19)write(6,*) "NG"
+  read(22,*) ik;if (ik/=21)write(6,*) "NG"
 #if defined(_WIN32) || defined(__i386) || defined(__x86_64)
 #else
-  read(1,*) ik;if (ik/=999)write(6,*) "NG"
+  read(22,*) ik;if (ik/=999)write(6,*) "NG"
 #endif
 print *,'pass'
   end

@@ -10,10 +10,10 @@ end type
 end module
 
 use mod
-type(str) :: sss 
+type(str) :: sss
 sss = str(REAL(Z"7ffffff",kind4),REAL(Z"7ffffffffffffff",kind8))
 
-write(1,*)sss%r4
-write(1,*)sss%r8
+write(16,*)sss%r4
+write(16,*)sss%r8
 print *,'pass'
 end

@@ -19,7 +19,7 @@ contains
     type (n_t), pointer :: emp_NP
   end subroutine Look_Up
   subroutine rint( )
-          write (1, "(tr1, i3)", advance = "NO") 1
+          write (61, "(tr1, i3)", advance = "NO") 1
   end subroutine rint
 end module dm
 

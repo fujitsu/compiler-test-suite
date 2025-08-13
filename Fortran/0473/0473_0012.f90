@@ -7,7 +7,7 @@ implicit none
  type y
    integer,pointer::x1=>t
  end type
- interface 
+ interface
   module subroutine sub(xv)
   type(x)::xv
   end subroutine
@@ -15,7 +15,7 @@ implicit none
 end
 submodule (m) xx
  implicit none
- interface 
+ interface
  module subroutine wform(dtv, unit, iotype, vlist, iostat, iomsg)
     class(y), intent(in) :: dtv
     integer(kind=4), intent(in) :: unit
@@ -23,7 +23,7 @@ submodule (m) xx
     integer, intent(in) :: vlist(:)
     integer, intent(out) :: iostat
     character(*), intent(inout) :: iomsg
-  end 
+  end
  end interface
  interface  write(formatted)
      procedure :: wform
@@ -33,7 +33,7 @@ contains
   type(x)::xv
   type(y)::yv
 integer::ios=0
-write(100,*,iostat=ios) yv
+write(7,*,iostat=ios) yv
 if (ios/=0) print *,901
  end subroutine
  module subroutine wform(dtv, unit, iotype, vlist, iostat, iomsg)
@@ -53,8 +53,8 @@ use m
 integer::kk
   type(x)::xv
 call sub(xv)
-rewind 100
-read(100,*) kk
+rewind 7
+read(7,*) kk
 if (kk/=4) print *,304
 print *,'pass'
 end

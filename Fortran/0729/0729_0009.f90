@@ -27,7 +27,7 @@ implicit none
 
 call initb
 
-write (1,*) 'b=', b
+write (65,*) 'b=', b
 if (b/=6912)write(6,*) "NG"
 print *,'pass'
 

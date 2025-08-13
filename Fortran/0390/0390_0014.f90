@@ -18,24 +18,23 @@ use m1
      integer counter
      str = "hello"
 call omp_set_num_threads(1)
-     
-     
+
+
 !$OMP PARALLEL shared(stopping)
 	stopping=.false.
-!$OMP DO PRIVATE(o,counter) 
+!$OMP DO PRIVATE(o,counter)
      do counter = 1, 10000
 !$OMP critical
  	if (.not. stopping) then
-           o = my_getstr(counter)       
+           o = my_getstr(counter)
            if ( warp(str,o) .EQ. 1) then
-                write(1,*)"Ok, counter = ", counter, "and o = ", o
+                write(8,*)"Ok, counter = ", counter, "and o = ", o
                 print *,'pass'
                 stopping=.true.
            end if
 	end if
 !$OMP end critical
      end do
-!$OMP end do 
+!$OMP end do
 !$OMP end parallel
 end
-

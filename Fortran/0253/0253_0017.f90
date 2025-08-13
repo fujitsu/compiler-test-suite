@@ -11,11 +11,11 @@ character(5)::res1
 integer::res2
 real::res3
 obj = ty(123,120.50,"abcde")
-open(100,file="fort.08",action="write")
+open(100,file="fort.108",action="write")
 write(100,10)obj%ch,obj%i1,obj%r1
 close(100)
 10 FORMAT (*(G0))
-open(200,file="fort.08",action="read")
+open(200,file="fort.108",action="read")
 read(200,20)res1,res2,res3
 close(200)
 20 FORMAT(A5,I3,F6.2)

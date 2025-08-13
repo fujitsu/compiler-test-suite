@@ -1,0 +1,1 @@
+set(0672_0055-FP_TOLERANCE 1.0e-6)

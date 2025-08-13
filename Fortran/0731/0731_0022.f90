@@ -27,11 +27,11 @@ use fuzit
   globally_wierd = wierd(0,0)
 
   do i = 1,10
-    write(1,*)bustit(globally_wierd)
+    write(7,*)bustit(globally_wierd)
   end do
-rewind 1
+rewind 7
 do i=1,10
-read(1,*)jj;if (any((/jj/)/=i-1))write(6,*) "NG"
+read(7,*)jj;if (any((/jj/)/=i-1))write(6,*) "NG"
 end do
 print *,'pass'
 end program main

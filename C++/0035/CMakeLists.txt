@@ -1,3 +1,5 @@
 llvm_singlesource_fujitsu(PREFIX "Fujitsu-C++-")
 set_property(SOURCE 0035_0010.cc APPEND PROPERTY COMPILE_OPTIONS "-Ofast;-fno-inline-functions")
+set_property(TARGET Fujitsu-C++-0035_0010 APPEND PROPERTY LINK_OPTIONS "-Ofast")
 set_property(SOURCE 0035_0011.cc APPEND PROPERTY COMPILE_OPTIONS "-Ofast;-fno-inline-functions")
+set_property(TARGET Fujitsu-C++-0035_0011 APPEND PROPERTY LINK_OPTIONS "-Ofast")

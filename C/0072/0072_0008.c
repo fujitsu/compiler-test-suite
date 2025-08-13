@@ -74,7 +74,7 @@ int main()
 
   for(i=n0;i<n10;i=i+n1)
     if (*(r4p01+i)&&pt->l402[i])
-      if (pt->i402[i]<pt->r401[i]>pt->r801[i])
+      if ((pt->i402[i]<pt->r401[i]) >pt->r801[i])
         if ((pt->r801[i]=pt->u401[i])>(pt->r401[i]<=*(i4p01+i)))
           pt->r402[i]=0;
         else

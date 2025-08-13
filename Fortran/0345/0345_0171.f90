@@ -21,11 +21,11 @@
      use mod
       i=200
       j=100
-      write(1,'(i4)') j
-      write(1,'(i4)') i
-      rewind (1)
-      read(1,'(i4)') j
-      read(1,'(i4)') i
+      write(7,'(i4)') j
+      write(7,'(i4)') i
+      rewind (7)
+      read(7,'(i4)') j
+      read(7,'(i4)') i
       l=.false.
       call sub1(i,j)
       call sub2(i)

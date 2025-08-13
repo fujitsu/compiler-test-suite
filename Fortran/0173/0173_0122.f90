@@ -39,15 +39,15 @@ print *,'pass'
 end
 
      subroutine print1
-  write(1,*)1
+  write(11,*)1
      end subroutine
      subroutine print2
-  write(1,*)2
+  write(11,*)2
      end subroutine
 subroutine chk
-rewind 1
-read(1,*) k;if (k/=1) print *,301
-read(1,*) k;if (k/=2) print *,302
-read(1,*) k;if (k/=1) print *,303
-read(1,*,end=10) k; print *,304
+rewind 11
+read(11,*) k;if (k/=1) print *,301
+read(11,*) k;if (k/=2) print *,302
+read(11,*) k;if (k/=1) print *,303
+read(11,*,end=10) k; print *,304
 10 end

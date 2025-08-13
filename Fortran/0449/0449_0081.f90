@@ -7,9 +7,9 @@
          contains
          subroutine f1(d1)
          type(ty) :: d1(:)
-        write(1,*) d1(1)%alc
-        write(1,*) d1(2)%alc
-        write(1,*) d1(3)%alc
+        write(176,*) d1(1)%alc
+        write(176,*) d1(2)%alc
+        write(176,*) d1(3)%alc
      end subroutine
 
         subroutine s1(d1)
@@ -33,14 +33,14 @@ call chk
 print *,'pass'
        end
 subroutine chk
-rewind 1
-read(1,*) k
+rewind 176
+read(176,*) k
 if (k/=20) print *,301
-read(1,*) k
+read(176,*) k
 if (k/=20) print *,301
-read(1,*) k
+read(176,*) k
 if (k/=20) print *,301
-read(1,*,end=10) k
+read(176,*,end=10) k
 print *,302
 10 return
-end 
+end

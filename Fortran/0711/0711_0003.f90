@@ -41,31 +41,31 @@
 ' 1' , &
 ' 1' /
  character*500 rr
- write(11,*) product(a1           )
- write(11,*) product(b1           )
- write(11,*) product(x1           )
- write(11,*) product(y1           )
- write(11,*) product(w1           )
- write(11,*) product(p1           )
- write(11,*) product(d1           )
- write(11,*) product(e1           )
- write(11,*) product(a7           )
- write(11,*) product(b7           )
- write(11,*) product(x7           )
- write(11,*) product(y7           )
- write(11,*) product(w7           )
- write(11,*) product(p7           )
- write(11,*) product(d7           )
- write(11,*) product(e7           )
- write(11,*) product((/(i,i=1,0)/))
- write(11,*) product((/(i,i=j,0)/))
- rewind 11
-  read(11,*) rx01;if (any(rx01/=1))print *,'error-1'
-  read(11,*) rx02;if (any(rx02/=(1.,0)))print *,'error-2'
-  read(11,*) rx03;if (any(rx03/=1))print *,'error-3'
-  read(11,*) rx01;if (any(rx01/=1))print *,'error-4'
-  read(11,*) rx02;if (any(rx02/=(1,0)))print *,'error-5'
-  read(11,*) rx03;if (any(rx03/=1))print *,'error-6'
-  read(11,*) rx01(1:2);if (any(rx01(1:2)/=1))print *,'error-7'
+ write(13,*) product(a1           )
+ write(13,*) product(b1           )
+ write(13,*) product(x1           )
+ write(13,*) product(y1           )
+ write(13,*) product(w1           )
+ write(13,*) product(p1           )
+ write(13,*) product(d1           )
+ write(13,*) product(e1           )
+ write(13,*) product(a7           )
+ write(13,*) product(b7           )
+ write(13,*) product(x7           )
+ write(13,*) product(y7           )
+ write(13,*) product(w7           )
+ write(13,*) product(p7           )
+ write(13,*) product(d7           )
+ write(13,*) product(e7           )
+ write(13,*) product((/(i,i=1,0)/))
+ write(13,*) product((/(i,i=j,0)/))
+ rewind 13
+  read(13,*) rx01;if (any(rx01/=1))print *,'error-1'
+  read(13,*) rx02;if (any(rx02/=(1.,0)))print *,'error-2'
+  read(13,*) rx03;if (any(rx03/=1))print *,'error-3'
+  read(13,*) rx01;if (any(rx01/=1))print *,'error-4'
+  read(13,*) rx02;if (any(rx02/=(1,0)))print *,'error-5'
+  read(13,*) rx03;if (any(rx03/=1))print *,'error-6'
+  read(13,*) rx01(1:2);if (any(rx01(1:2)/=1))print *,'error-7'
  end subroutine
  end

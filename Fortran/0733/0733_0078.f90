@@ -15,11 +15,11 @@
  allocate(r1(2,3))
  allocate(r3(2,3))
 r1=reshape((/'1','2','3','4','5','6'/),(/2,3/))
- r3     =   (plus3(r1(:,:)));write(1,*)r3
+ r3     =   (plus3(r1(:,:)));write(42,*)r3
  end
 character*50 r
 call sub
-rewind 1
-read(1,'(a)') r;if (r/=' 1    2    3    4    5    6')print *,'error-1'
+rewind 42
+read(42,'(a)') r;if (r/=' 1    2    3    4    5    6')print *,'error-1'
  print *,'pass'
 end

@@ -11,13 +11,12 @@ type(ty),target :: TARG
 type(ty) :: obj
 type(ty1) :: obj1
 
-write(1,*)1,same_type_as(PTR,obj)
+write(13,*)1,same_type_as(PTR,obj)
 PTR => TARG1
-PTR%xx = 4 
-!$OMP PARALLEL 
-write(1,*)2,same_type_as(PTR,obj1)
-write(1,*)3,same_type_as(PTR,obj)
+PTR%xx = 4
+!$OMP PARALLEL
+write(13,*)2,same_type_as(PTR,obj1)
+write(13,*)3,same_type_as(PTR,obj)
 !$OMP END PARALLEL
 print *,'pass'
-END 
-
+END

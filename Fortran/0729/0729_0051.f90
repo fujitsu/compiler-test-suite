@@ -33,9 +33,9 @@ end module bug
 
 program main
    use bug
-   write(1,*) foo(1.0,0), foo(1.0,1)
-   rewind 1
-   read (1,*) a,b
+   write(93,*) foo(1.0,0), foo(1.0,1)
+   rewind 93
+   read (93,*) a,b
    if (abs(a-b)>0.00001)write(6,*) "NG"
 print *,'pass'
 end program main

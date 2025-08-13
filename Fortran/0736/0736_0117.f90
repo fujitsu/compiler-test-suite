@@ -22,7 +22,7 @@ contains
  type(xi)::x
  if(x%x1/=1)write(6,*) "NG"
  if(.not.allocated(x%x2))write(6,*) "NG"
-write(1,*)loc(x%x2)
+write(18,*)loc(x%x2)
  if(any(x%x2/=(/1,2/)))write(6,*) "NG"
  if(x%x3/=3)write(6,*) "NG"
  end subroutine

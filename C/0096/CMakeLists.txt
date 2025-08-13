@@ -277,5 +277,6 @@ set_property(SOURCE 0096_0262.c APPEND PROPERTY COMPILE_OPTIONS "-fno-inline-fun
 set_property(SOURCE 0096_0263.c APPEND PROPERTY COMPILE_OPTIONS "-fno-inline-functions")
 set_property(SOURCE 0096_0264.c APPEND PROPERTY COMPILE_OPTIONS "-fno-inline-functions")
 set_property(SOURCE 0096_0437.c APPEND PROPERTY COMPILE_OPTIONS "-fno-fast-math")
+set_property(TARGET Fujitsu-C-0096_0437 APPEND PROPERTY LINK_OPTIONS "-fno-fast-math")
 set_property(SOURCE 0096_0533.c APPEND PROPERTY COMPILE_OPTIONS "-fno-inline-functions")
 set_property(SOURCE 0096_0534.c APPEND PROPERTY COMPILE_OPTIONS "-fno-inline-functions")

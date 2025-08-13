@@ -3,6 +3,7 @@
  end
  subroutine s1
 implicit none
+ save
 
 interface
  subroutine sum_pointer(n,m,array,sum)

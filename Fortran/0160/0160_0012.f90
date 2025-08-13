@@ -15,7 +15,7 @@ program main
 
   call flux(f)
 
-  write(1,*)f%nv(1,1,1,1,1)
+  write(9,*)f%nv(1,1,1,1,1)
 
   deallocate(f%nv)
 print *,'pass'

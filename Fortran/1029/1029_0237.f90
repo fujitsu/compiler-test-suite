@@ -9,11 +9,11 @@ f = 6
 g = 7
 h = 8
 
-open(10)
-write(10, '(8i4)') a, b, c, d, e, f, g, h
-rewind(10)
-read(10, '(8i4)') a, b, c, d, e, f, g, h
-close(10)
+open(52)
+write(52, '(8i4)') a, b, c, d, e, f, g, h
+rewind(52)
+read(52, '(8i4)') a, b, c, d, e, f, g, h
+close(52)
 
 if(.not.((a.gt.e.or.b.lt.f).and.(c.ge.g.or.d.le.h))) then
    print *, 'ng'

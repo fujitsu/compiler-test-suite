@@ -19,12 +19,12 @@ print *,'pass'
 end
 recursive subroutine sx
 integer k(1000)
-write(1,*) 1,size(k)
-rewind 1
-read(1,*) n1,n2
+write(47,*) 1,size(k)
+rewind 47
+read(47,*) n1,n2
 do n=n1,n2
 k(n)=21474800
 end do
-write(1,*)k(1),k(size(k))
-close (1,status = 'delete')
+write(47,*)k(1),k(size(k))
+close (47,status = 'delete')
 end

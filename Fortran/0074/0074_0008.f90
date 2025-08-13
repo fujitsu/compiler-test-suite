@@ -17,7 +17,7 @@ contains
  subroutine init
  implicit none
 lhf = 2
-write(1,*) 3, lhf,loc(lhf)
+write(11,*) 3, lhf,loc(lhf)
   call r_setup
 end subroutine
 end

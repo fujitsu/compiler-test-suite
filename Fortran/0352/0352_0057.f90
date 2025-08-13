@@ -1,4 +1,5 @@
 program main
+save
 type t1
    real(kind=4) :: r4
 end type t1

@@ -1,12 +1,12 @@
       module m1
          contains
             subroutine sub(i,j)
-             write(1,*)i-j
+             write(14,*)i-j
             end subroutine
       end module
       subroutine sub(c)
       character*(*) c
-        write(1,*)c
+        write(14,*)c
       end
       external sub
       do i=1,3
@@ -23,11 +23,11 @@ print *,'pass'
       call y(sub)
       end
       subroutine chk
-      rewind 1
+      rewind 14
       do ii=1,6
-      read(1,*) i
+      read(14,*) i
       if(i/=2)print *,'error-1'
-      read(1,*) i
+      read(14,*) i
       if(i/=1)print *,'error-2'
       end do
       END

@@ -28,7 +28,7 @@ subroutine prc1()
   write(6,*)300
 end subroutine
 subroutine cproc1()
-  write(1,*)400
+  write(14,*)400
 end subroutine
 end module
 module ym2
@@ -40,8 +40,8 @@ use ym2, only:ext
 
 type(ext)::tc1
 call tc1%prc1()
-rewind 1
-read(1,*) k
+rewind 14
+read(14,*) k
 if (k/=400) print *,200
 print *,'pass'
 end

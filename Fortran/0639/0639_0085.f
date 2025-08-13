@@ -1,6 +1,8 @@
          REAL   A1(1026,2),B1(1026,2),C1(1026,2),D1(1026,2),X1,Y1(50)
          REAL   A2(1026,2),B2(1026,2),C2(1026,2),D2(1026,2),X2,Y2(50)
          REAL   A3(1026,2),A4(1026,2),A5(1026,2)
+         real res(8),tmp(8)
+         data res/ -14.0,-15.5,-14.0,-15.5,-11.0,-15.5,-11.0,-15.5/
          DATA B1/256*1.,256*2.,256*3.,256*4.,
      E             256*1.,256*2.,256*3.,256*4.,4*2.2D0/
          DATA B2/256*1.0D0,256*2.0D0,256*3.0D0,256*4.0D0,
@@ -49,5 +51,36 @@
           A4(I,J) = B1(I,J) - J  - C2(I,J) - Y2(21) - D2(I,J) - M
         ENDIF
  10    CONTINUE
-       PRINT *,A1,A2,A3,A4,A5
+       PRINT *,A1
+       write(6,*)
+       PRINT *,A2
+       write(6,*)
+       PRINT *,A3
+       write(6,*)
+       PRINT *,A4
+       write(6,*)
+       write(6,*) ((A5(i,j),i=1,1022),j=1,2)
+       write(6,*)
+
+       n = 1
+       do i=1023,1026
+          do j=1,2
+             tmp(n) = a5(i,j)
+             n = n + 1
+          enddo
+       enddo
+       call check(tmp,res)
        END
+
+#define IS_EQUAL(a,b) ((a==b).or.(a==0.and.abs(b)<10E-6).or.(abs(a-b)/abs(a)<10E-6))
+      subroutine check(calc,res)
+      real calc(8),res(8)
+      logical ngcheck/.FALSE./
+      do i=1,8
+         if (IS_EQUAL(calc(i), res(i))) then
+         else
+            ngcheck = .TRUE.
+         endif
+      enddo
+      if (ngcheck) write(6,*) calc
+      end

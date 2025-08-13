@@ -27,8 +27,7 @@ select case(i)
  case (1)
    if (i1(1)/=11)write(6,*) "NG"
    if (i1(2)/=12)write(6,*) "NG"
-   if (loc(i1)/=n1)write(1,*) i,'i1 copied'
+   if (loc(i1)/=n1)write(28,*) i,'i1 copied'
 end select
 jf=i
 end
-

@@ -10,15 +10,15 @@
     integer n(12)
     a=x(-1,-2,-3)
     call sub(a(1:3:2,2:5:2))
-    write(1,*)a(1:3:2,2:5:2)
-    write(1,*)a(2:3:2,1:5:2)
-    rewind 1
-    read(1,*) n
+    write(12,*)a(1:3:2,2:5:2)
+    write(12,*)a(2:3:2,1:5:2)
+    rewind 12
+    read(12,*) n
     if (any(n(1:3)/=(/1,2,3/)))write(6,*) "NG"
     if (any(n(4:6)/=(/1,2,3/)))write(6,*) "NG"
     if (any(n(7:9)/=(/1,2,3/)))write(6,*) "NG"
     if (any(n(10:12)/=(/1,2,3/)))write(6,*) "NG"
-    read(1,*) n(1:9)
+    read(12,*) n(1:9)
     if (any(-n(1:3)/=(/1,2,3/)))write(6,*) "NG"
     if (any(-n(4:6)/=(/1,2,3/)))write(6,*) "NG"
     if (any(-n(7:9)/=(/1,2,3/)))write(6,*) "NG"
@@ -28,5 +28,5 @@
     use m1
     type(x),intent(out)::a(:,:)
     a=x(1,2,3)
-   end subroutine 
+   end subroutine
   end

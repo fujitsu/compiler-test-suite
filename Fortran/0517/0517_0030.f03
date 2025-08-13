@@ -8,7 +8,7 @@ end type
     subroutine final_proc(d)
     type(x)::d
      d%x1=d%x1+1
-write(1,*)d%x1
+write(4,*)d%x1
     end subroutine
 end
 use mod
@@ -29,12 +29,12 @@ aa(k)%a=vv
 if (aa(k)%a(2,3)%xv%x1/=1) print *,9001
 end do
 aa=v
-rewind 1
+rewind 4
 do kk=1,12
-read(1,*) n
+read(4,*) n
 if (n/=2) print *,2002
 end do
-read(1,*,end=10) n
+read(4,*,end=10) n
 print *,999
 10 continue
 

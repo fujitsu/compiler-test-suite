@@ -36,9 +36,9 @@ Contains
         Integer, intent (In):: Depth
 
         If (Associated (Client)) then
-            write(1,*) "Client at depth ", Depth, ":"
-            write(1,*) '"', Client % Alphanumeric, '"'
-            write(1,*) Client % Numeric
+            write(4,*) "Client at depth ", Depth, ":"
+            write(4,*) '"', Client % Alphanumeric, '"'
+            write(4,*) Client % Numeric
             Call Display (Client%next, Depth + 1)
         Endif
         End subroutine Display

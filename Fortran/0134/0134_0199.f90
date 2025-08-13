@@ -5,9 +5,9 @@
        iksK=0
        ikp=0
        ksp=ghw(28)
-       write(1,*) jg,ikp
+       write(69,*) jg,ikp
        IF(IOR(jg,16).EQ.16 .AND. ikp.EQ.0 ) iksK=1
-       write(1,*) iksK
+       write(69,*) iksK
        call s
        print *,'pass'
        END
@@ -17,10 +17,10 @@
        END
 
        subroutine s
-       rewind 1
-       read(1,*) i,j
+       rewind 69
+       read(69,*) i,j
        if (i/=114)print *,101,i
        if (j/=0)print *,102,j
-       read(1,*) i
+       read(69,*) i
        if (i/=0)print *,103,i
        end

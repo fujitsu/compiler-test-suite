@@ -13,27 +13,27 @@ contains
 subroutine test_regist( PHI )
     integer,target :: PHI(*)
 
-write(2,*)PHI(1:6)
-write(2,*)PHI(7:12)
-write(2,*)PHI(13:18)
+write(10,*)PHI(1:6)
+write(10,*)PHI(7:12)
+write(10,*)PHI(13:18)
 
 end subroutine
 
 end
 subroutine chk
 integer a(6)
-rewind 2
-read(2,*) a
+rewind 10
+read(10,*) a
 if (any(a/=(/1,2,3,7,8,9/)))write(6,*) "NG"
-read(2,*) a
+read(10,*) a
 if (any(a/=(/10,11,12,16,17,18/)))write(6,*) "NG"
-read(2,*) a
+read(10,*) a
 if (any(a/=(/19,20,21,25,26,27/)))write(6,*) "NG"
-read(2,*) a
+read(10,*) a
 if (any(a/=(/1,2,3,7,8,9/)))write(6,*) "NG"
-read(2,*) a
+read(10,*) a
 if (any(a/=(/10,11,12,16,17,18/)))write(6,*) "NG"
-read(2,*) a
+read(10,*) a
 if (any(a/=(/19,20,21,25,26,27/)))write(6,*) "NG"
 end
 

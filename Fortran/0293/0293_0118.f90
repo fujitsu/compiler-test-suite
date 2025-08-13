@@ -10,7 +10,6 @@
 	a(1:9999) = 0
 	a(10000) = 3
 	call sub(x)
-        write(1,*) x
+        write(65,*) x
 	print *,'pass'
 	end
-

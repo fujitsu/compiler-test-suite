@@ -15,6 +15,7 @@
          a(i) = b(i) ** c(i)
       enddo
       write(6,*) a
+      write(6,*)
       end
       subroutine c8i8
       complex*8 a(10)
@@ -25,16 +26,23 @@
          a(i) = b(i) ** c(i)
       enddo
       write(6,*) a
+      write(6,*)
       end
       subroutine c8r4
-      complex*8 a(10)
+      complex*8 a(10),res(10)
       complex*8 b(10)/(1.,2.),(3.,4.),(5.,6.),(7.,8.),(9.,10.),
      +    (11.,12.),(13.,14.),(15.,16.),(17.,18.),(19.,20.)/
       real*4 c(10)/1,2,2,3,3,3,4,4,4,4/
+      data res/(0.99999994,2.0000002),(-7.,24.000001),
+     +     (-11.000004,59.999984),(-1000.99993,663.9997),
+     +     (-1970.9995,1429.9995),(-3420.9995,2627.9995),
+     +     (-131766.93,-19656.02),(-229439.12,-29760.041),
+     +     (-373319.06,-42840.07),(-576079.2,-59280.097)/
       do i=1,10
          a(i) = b(i) ** c(i)
       enddo
-      write(6,*) a
+      call check(a,res)
+      write(6,*)
       end
       subroutine c8r8
       complex*8 a(10)
@@ -45,17 +53,24 @@
          a(i) = b(i) ** c(i)
       enddo
       write(6,*) a
+      write(6,*)
       end
       subroutine c8c8
-      complex*8 a(10)
+      complex*8 a(10),res(10)
       complex*8 b(10)/(1.,2.),(3.,4.),(5.,6.),(7.,8.),(9.,10.),
      +    (11.,12.),(13.,14.),(15.,16.),(17.,18.),(19.,20.)/
       complex*8 c(10)/(1.,1.),(2.,2.),(2.,2.),(3.,3.),(3.,3.),
-     +    (3.,3.),(4.,4.),(4.,4.),(4.,4.),(4.,4.)/
+     +     (3.,3.),(4.,4.),(4.,4.),(4.,4.),(4.,4.)/
+      data res/(-0.24720007,0.6964504),(1.3823676,-3.660608),
+     +     (9.65763,-4.315096),(-90.94818,-20.548288),
+     +     (-124.54082,-152.79075),(-49.88041,-355.41806),
+     +     (-4045.048,2878.6172),(-8755.8955,751.76275),
+     +     (-13426.965,-5434.8647),(-15648.228,-16288.309)/
       do i=1,10
          a(i) = b(i) ** c(i)
       enddo
-      write(6,*) a
+      call check(a,res)
+      write(6,*)
       end
 
       subroutine c8c16
@@ -70,4 +85,24 @@
       write(6,*) a
       end
 
-         
+#define IS_EQUAL(a,b) ((a==b).or.(a==0.and.abs(b)<10E-6).or.(abs(a-b)/abs(a)<10E-6))
+      subroutine check(calc,res)
+      complex*8 calc(10),res(10)
+      real*4 re1,im1,re2,im2
+      logical ngcheck/.FALSE./
+      do i=1,10
+         re1 = real(calc(i))
+         im1 = imag(calc(i))
+         re2 = real(res(i))
+         im2 = imag(res(i))
+         if (IS_EQUAL(re1, re2)) then
+         else
+            ngcheck = .TRUE.
+         endif
+         if (IS_EQUAL(im1, im2)) then
+         else
+            ngcheck = .TRUE.
+         endif
+      enddo
+      if (ngcheck) write(6,*) calc
+      end

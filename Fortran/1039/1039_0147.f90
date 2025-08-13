@@ -26,7 +26,7 @@ subroutine foo(a,idum)
   implicit none
   real(kind(0d0)) :: a(200,100)
   integer :: idum(2)
-  write(1,'(a,"0x",z16.16)') ' foo: loc(a) = ', loc(a)
+  write(14,'(a,"0x",z16.16)') ' foo: loc(a) = ', loc(a)
   return
 end subroutine foo
 
@@ -35,6 +35,6 @@ subroutine init
   implicit none
   allocate(p(200,100))
   p(:,:) = 0.0d0
-  write(1,'(a,"0x",z16.16)') 'init: loc(p) = ', loc(p)
+  write(14,'(a,"0x",z16.16)') 'init: loc(p) = ', loc(p)
   return
 end subroutine init

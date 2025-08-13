@@ -9,12 +9,11 @@ do i=1,10
  p1(i)=p(i)
 end do
 
-write(1,*)(p1(i)%p1,i=1,10)
-rewind 1
-read (1,*) xx
+write(2,*)(p1(i)%p1,i=1,10)
+rewind 2
+read (2,*) xx
 do j=1,10
 if (any(xx(:,j)/=(/(k,k=1,10)/)))write(6,*) "NG"
 end do
 print *,'pass'
 end
-

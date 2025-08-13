@@ -1,7 +1,7 @@
   INTEGER , DIMENSION(5) :: A,B=0,C=0
-  write(1,*)(/1,2,3,4,5/)
-  rewind 1
-  READ (1,*) A
+  write(15,*)(/1,2,3,4,5/)
+  rewind 15
+  READ (15,*) A
   WHERE (A > 0)
     B = A
     WHERE (A > 3)

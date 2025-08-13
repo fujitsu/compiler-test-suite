@@ -11,7 +11,7 @@
  210     I21(2,1) = 1
  2100 CONTINUE
 
-      write(1,*) I21
+      write(17,*) I21
 
       DO 3000 I=1,2
          DO 3100 J=1,8
@@ -41,7 +41,7 @@
  2100 CONTINUE
 
 
-      write(1,*) I21
+      write(17,*) I21
 
       DO 3000 I=1,2
          DO 3100 J=1,8

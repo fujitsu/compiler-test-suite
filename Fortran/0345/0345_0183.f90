@@ -18,9 +18,9 @@
     use mod
       j=1
       i=1
-      write(1,'(2i4)') i,j
-      rewind(1)
-      read (1,'(2i4)') i,j
+      write(12,'(2i4)') i,j
+      rewind(12)
+      read (12,'(2i4)') i,j
       call sub22(i,j)
      if (i/=1.or.j/=2) print *,'error'
      print *,'pass'

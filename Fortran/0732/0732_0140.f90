@@ -33,13 +33,13 @@ call chk(&
 call chk(matmul(matmul(matmul(b(i3-i2:i1+i2,i4-i3:i4-i1),c(i3-i2:i1+i2,i4-i3:i4-i1)),&
 matmul(b(i3-i2:i1+i2,i4-i3:i4-i1),c(i3-i2:i1+i2,i4-i3:i4-i1))),matmul(matmul(b(i3-i2:i1+i2,i4-i3:i4-i1),c(i3-i2:i1+i2,i4-i3:i4-i1)),&
 matmul(b(i3-i2:i1+i2,i4-i3:i4-i1),c(i3-i2:i1+i2,i4-i3:i4-i1)))))
-write(1,*)&
+write(46,*)&
    matmul(matmul(matmul(b,c),matmul(b,c)),matmul(matmul(b,c),matmul(b,c)))+&
    matmul(matmul(matmul(b,c),matmul(b,c)),matmul(matmul(b,c),matmul(b,c)))-&
    matmul(matmul(matmul(b,c),matmul(b,c)),matmul(matmul(b,c),matmul(b,c)))
-rewind 1
+rewind 46
 do ix=1,1
-read(1,*) a;call chk(a)
+read(46,*) a;call chk(a)
 end do
 print *,'pass'
 contains

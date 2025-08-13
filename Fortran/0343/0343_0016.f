@@ -131,10 +131,10 @@ c
           do  204  i=1,5,3
           do  204  j=2,3
           do  204  k=1,2
-          write(1)  i201(i),i202(j),i203(k),i204(i),i205(j),i206(k),
+          write(11)  i201(i),i202(j),i203(k),i204(i),i205(j),i206(k),
      1                                              i207(i),i208(j)
-          backspace 1
-          read(1)   i209(k),i210(i),i211(j),i212(k),i213(i),i214(j),
+          backspace 11
+          read(11)   i209(k),i210(i),i211(j),i212(k),i213(i),i214(j),
      1                                              i215(k),i216(i)
   204     i9ans1 = i209(k)+i210(i)+i211(j)+i212(k)+i213(i)+i214(j)
      1                                      +i215(k)+i216(i)+i9ans1
@@ -292,7 +292,7 @@ c
 23404 continue
 23504 i9ans1=0
 c
-          rewind 1
+          rewind 11
           do  108  i=1,2
           i301(i,1) = i
           i302(i,1) = i
@@ -376,23 +376,23 @@ c
           i339(i,j)=i339(i,1)+1
           i340(i,j)=i340(i,1)+1
           do  108  k=2,4,3
-          write(1)  i301(i,j),i302(i,j),i303(i,j),i304(i,j),i305(i,j)
-          write(1)  i306(i,j),i307(i,j),i308(i,j),i309(i,j),i310(i,j)
-          write(1)  i311(i,j),i312(i,j),i313(i,j),i314(i,j),i315(i,j)
-          write(1)  i316(i,j),i317(i,j),i318(i,j),i319(i,j),i320(i,j)
-          write(1)  i321(i,j),i322(i,j),i323(i,j),i324(i,j),i325(i,j)
-          write(1)  i326(i,j),i327(i,j),i328(i,j),i329(i,j),i330(i,j)
-          write(1)  i331(i,j),i332(i,j),i333(i,j),i334(i,j),i335(i,j)
-          write(1)  i336(i,j),i337(i,j),i338(i,j),i339(i,j),i340(i,j)
-          rewind 1
-          read(1)   i301(i,k),i302(i,k),i303(i,k),i304(i,k),i305(i,k)
-          read(1)   i306(i,k),i307(i,k),i308(i,k),i309(i,k),i310(i,k)
-          read(1)   i311(i,k),i312(i,k),i313(i,k),i314(i,k),i315(i,k)
-          read(1)   i316(i,k),i317(i,k),i318(i,k),i319(i,k),i320(i,k)
-          read(1)   i321(i,k),i322(i,k),i323(i,k),i324(i,k),i325(i,k)
-          read(1)   i326(i,k),i327(i,k),i328(i,k),i329(i,k),i330(i,k)
-          read(1)   i331(i,k),i332(i,k),i333(i,k),i334(i,k),i335(i,k)
-          read(1)   i336(i,k),i337(i,k),i338(i,k),i339(i,k),i340(i,k)
+          write(11)  i301(i,j),i302(i,j),i303(i,j),i304(i,j),i305(i,j)
+          write(11)  i306(i,j),i307(i,j),i308(i,j),i309(i,j),i310(i,j)
+          write(11)  i311(i,j),i312(i,j),i313(i,j),i314(i,j),i315(i,j)
+          write(11)  i316(i,j),i317(i,j),i318(i,j),i319(i,j),i320(i,j)
+          write(11)  i321(i,j),i322(i,j),i323(i,j),i324(i,j),i325(i,j)
+          write(11)  i326(i,j),i327(i,j),i328(i,j),i329(i,j),i330(i,j)
+          write(11)  i331(i,j),i332(i,j),i333(i,j),i334(i,j),i335(i,j)
+          write(11)  i336(i,j),i337(i,j),i338(i,j),i339(i,j),i340(i,j)
+          rewind 11
+          read(11)   i301(i,k),i302(i,k),i303(i,k),i304(i,k),i305(i,k)
+          read(11)   i306(i,k),i307(i,k),i308(i,k),i309(i,k),i310(i,k)
+          read(11)   i311(i,k),i312(i,k),i313(i,k),i314(i,k),i315(i,k)
+          read(11)   i316(i,k),i317(i,k),i318(i,k),i319(i,k),i320(i,k)
+          read(11)   i321(i,k),i322(i,k),i323(i,k),i324(i,k),i325(i,k)
+          read(11)   i326(i,k),i327(i,k),i328(i,k),i329(i,k),i330(i,k)
+          read(11)   i331(i,k),i332(i,k),i333(i,k),i334(i,k),i335(i,k)
+          read(11)   i336(i,k),i337(i,k),i338(i,k),i339(i,k),i340(i,k)
           i9ans1=i301(i,k)+i302(i,k)+i303(i,k)+i304(i,k)+i9ans1
           i9ans1=i305(i,k)+i306(i,k)+i307(i,k)+i308(i,k)+i9ans1
           i9ans1=i309(i,k)+i310(i,k)+i311(i,k)+i312(i,k)+i9ans1
@@ -403,7 +403,7 @@ c
           i9ans1=i329(i,k)+i330(i,k)+i331(i,k)+i332(i,k)+i9ans1
           i9ans1=i333(i,k)+i334(i,k)+i335(i,k)+i336(i,k)+i9ans1
           i9ans1=i337(i,k)+i338(i,k)+i339(i,k)+i340(i,k)+i9ans1
-          rewind 1
+          rewind 11
   108     continue
       i9comp=480
       i9data = i9data + 1

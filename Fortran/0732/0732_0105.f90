@@ -92,7 +92,7 @@ contains
 end module descsub
 program main
   use descsub
-open (11,delim='quote')
+open (27,delim='quote')
   x01=reshape((/(ix,ix=1,4*4*4)/),(/4,4,4,n1,n1,n1/))
   x02=reshape((/(ix,ix=1,4*4*4)/),(/4,4,4,n1,n1,n1/))
   x03=reshape((/(ix,ix=1,4*4*4)/),(/4,4,4,n1,n1,n1/))
@@ -109,7 +109,7 @@ open (11,delim='quote')
   x34=reshape((/(t,f,ix=1,4*4*4/2)/),(/4,4,4,n1,n1,n1/))
   x41=reshape((/('11','22','33','44',ix=1,4*4*4/2/2)/),(/4,4,4,n1,n1,n1/))
   x51=reshape((/(xx(1),xx(2),xx(3),xx(4),ix=1,4*4*4/2/2)/),(/4,4,4,n1,n1,n1/))
-  write(11,*) f01(), f02(), f03(), f04(), f11(), f12(), f13(), f21(), f22(), f23(), f31(), f32(), f33(), f34(), f41(), f42(2), f51(),-100
+  write(27,*) f01(), f02(), f03(), f04(), f11(), f12(), f13(), f21(), f22(), f23(), f31(), f32(), f33(), f34(), f41(), f42(2), f51(),-100
 call chk
 print *,'pass'
 contains
@@ -131,8 +131,8 @@ subroutine chk
   character (len=2), dimension(8) :: y41
   character (len=2), dimension(8) :: y42
   type (xx),dimension(8) ::y51
-rewind 11
-  read(11,*) y01, y02, y03, y04, y11, y12, y13, y21, y22, y23, y31, y32, y33, y34, y41, y42, y51,ik
+rewind 27
+  read(27,*) y01, y02, y03, y04, y11, y12, y13, y21, y22, y23, y31, y32, y33, y34, y41, y42, y51,ik
 if (any(y01/=(/x01(1:3:2,1:3:2,1:3:2,n1:k1,n1:k1,n1:k1)/)))write(6,*) "NG"
 if (any(y02/=(/x02(1:3:2,1:3:2,1:3:2,n1:k1,n1:k1,n1:k1)/)))write(6,*) "NG"
 if (any(y03/=(/x03(1:3:2,1:3:2,1:3:2,n1:k1,n1:k1,n1:k1)/)))write(6,*) "NG"

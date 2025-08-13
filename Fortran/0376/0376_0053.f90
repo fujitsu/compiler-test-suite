@@ -20,17 +20,16 @@ call s(aa,bb,cc,dd)
 print *,'pass'
 end
 subroutine s1(a)
-write(1,'("a=",z8.8)') a
+write(23,'("a=",z8.8)') a
 end
 subroutine s2(b)
 complex b
-write(1,'("b=",z8.8)') b
+write(23,'("b=",z8.8)') b
 end
 subroutine s3(c)
 complex:: c
-write(1,'("c=",z8.8)') c
+write(23,'("c=",z8.8)') c
 end
 subroutine s4(d)
-write(1,'("d=",z8.8)') d
+write(23,'("d=",z8.8)') d
 end
-

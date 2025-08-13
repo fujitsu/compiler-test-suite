@@ -17,11 +17,11 @@
 allocate(wrapper%ptr)
    wrapper%ptr = cap_parameters( root_set_services)
 call wrapper%ptr%set_services
-rewind 1
-read(1,*) k
+rewind 3
+read(3,*) k
 if (k/=890) print *,900
 print *,'pass'
 end
       subroutine root_set_services
-write(1,*)890
+write(3,*)890
       end subroutine 

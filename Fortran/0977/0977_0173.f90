@@ -21,7 +21,7 @@
               lb = lb .and. .true.
           endif
       enddo
-      write(1,*) "      parallel reduction(.and.:la) ",&
+      write(33,*) "      parallel reduction(.and.:la) ",&
      &                                        "private(it) -----"
       if(any(la.eqv.lb)) then
          print *,'pass'
@@ -30,4 +30,3 @@
          write(*,*) "     la=", la, "  It must be ", lb
       endif
       end
-

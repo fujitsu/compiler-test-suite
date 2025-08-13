@@ -21,5 +21,5 @@ end module
 use m
 type(xdef),dimension(10)::x
 call sub(x(1:5),x(1:10:2))
-  write(1,*) 'pass'
+  write(13,*) 'pass'
 end

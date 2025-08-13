@@ -2,9 +2,9 @@
        integer,dimension(100) :: p
        integer :: n,k,num
        intrinsic mod
-       write(8,*) 300
-       rewind 8     
-       read (8,*) n
+       write(1,*) 300
+       rewind 1
+       read (1,*) n
        p(1)=2; p(2)=3
        k=2
        lp:do num=5,n,2
@@ -16,6 +16,6 @@
           p(k)=num
        end do lp
        write (*,*) 'num=',k
-       write (*,'(10i5)') p(1:k)  
+       write (*,'(10i5)') p(1:k)
        print *,'pass'
       end program main

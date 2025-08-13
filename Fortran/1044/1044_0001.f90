@@ -14,12 +14,12 @@ end select
 13 format(1h ,'c')
 14 format(1h ,'d')
 15 format(1h ,'e')
-write(1,i)
+write(2,i)
 end
 character c
 call sub(3)
-rewind 1
-read(1,'(x ,a)')c
+rewind 2
+read(2,'(x ,a)')c
 if (c/='c')write(6,*) "NG"
 print *,'pass'
 end

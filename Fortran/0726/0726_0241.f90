@@ -11,21 +11,21 @@
  namelist /nnnn/ j
  character(len=*) j
  ifun=i
- write(1,nnnn)
+ write(69,nnnn)
  end
  subroutine sub(j)
  namelist /nnnn/ j
  character(len=*) j
- write(1,nnnn)
+ write(69,nnnn)
  end
  function ifun1(i,j)
  namelist /nnnn/ j
  character(len=*) j(i)
  ifun1=1
- write(1,nnnn)
+ write(69,nnnn)
  end
  subroutine sub1(i,j)
  namelist /nnnn/ j
  character(len=*) j(i)
- write(1,nnnn)
+ write(69,nnnn)
  end

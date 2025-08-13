@@ -28,17 +28,17 @@ end type
 contains
 subroutine test_final_base(yy)
    type(base) :: yy
-   write(1,*)"base des:",yy%ii
+   write(3,*)"base des:",yy%ii
 end subroutine
 
 subroutine test_final_xxx(yy)
    type(xxx) :: yy(:,:)
-   write(1,*)"xxx des:",yy%kk
+   write(3,*)"xxx des:",yy%kk
 end subroutine
 
 subroutine test_final_yyy(yy)
    type(yyy),intent(in) :: yy
-   write(1,*)"test_final_yyy",yy%mm
+   write(3,*)"test_final_yyy",yy%mm
 end subroutine
 
 end module

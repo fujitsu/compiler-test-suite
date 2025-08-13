@@ -1,7 +1,7 @@
 integer,dimension (10)::x
 x=1
 call sub(x,x)
-write(1,*) x
+write(19,*) x
 print *,'pass'
 contains
 

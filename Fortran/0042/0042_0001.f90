@@ -1,4 +1,4 @@
 data k/1/
-write(1,*) k
+write(2,*) k
 print *,'OK'
 end

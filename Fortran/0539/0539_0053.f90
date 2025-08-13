@@ -13,8 +13,8 @@ i1=200
 !$omp endcritical
 !$omp simd
          do i1=1,1
-write(100,*) (1,i3=1,1)
-write(100,*) (1,i2=1,1)
+write(103,*) (1,i3=1,1)
+write(103,*) (1,i2=1,1)
          end do
 !$omp end simd
 !$omp endtask

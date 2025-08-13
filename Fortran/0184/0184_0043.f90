@@ -19,13 +19,13 @@ contains
 subroutine s11
 namelist /nam/k1,k2,k3,k4,k5,k6
 k1=1; k2=1; k3=1; k4=1; k5=1; k6=1;
-write(1,nam)
+write(32,nam)
 end subroutine
 end
 namelist /nam/k1,k2,k3,k4,k5,k6
 call s1
-rewind 1
-read(1,nam)
+rewind 32
+read(32,nam)
 if (k1/=1) print *,801
 if (k2/=1) print *,801
 if (k3/=1) print *,801

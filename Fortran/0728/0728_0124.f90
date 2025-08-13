@@ -21,7 +21,7 @@ subroutine cc
       DATA I1/1,2,3/,&
            I2/4,5,6/,&
            I3/7,8,9/
-      WRITE(1,*) IJ,I1(3),I2(3),I3(3)
+      WRITE(31,*) IJ,I1(3),I2(3),I3(3)
       if (any(IJ/=(/1,2,3,4,5,6,7,8,9/)))write(6,*) "NG"
       if (any((/I1,I2,I3/)/=(/1,2,3,4,5,6,7,8,9/)))write(6,*) "NG"
 end subroutine cc
@@ -34,7 +34,7 @@ subroutine ccc
       DATA I1/1,2,3/,&
            I2/4,5,6/,&
            I3/7,8,9/
-      WRITE(1,*) IJ,I1(3),I2(3),I3(3)
+      WRITE(31,*) IJ,I1(3),I2(3),I3(3)
       if (any(IJ/=(/1,2,3,4,5,6,7,8,9/)))write(6,*) "NG"
       if (any((/I1,I2,I3/)/=(/1,2,3,4,5,6,7,8,9/)))write(6,*) "NG"
 end subroutine ccc
@@ -47,7 +47,7 @@ subroutine cccc
       DATA I1/1,2,3/,&
            I2/4,5,6/,&
            I3/7,8,9/
-      WRITE(1,*) IJ,I1(3),I2(3),I3(3)
+      WRITE(31,*) IJ,I1(3),I2(3),I3(3)
       if (any(IJ/=(/1,2,3,4,5,6,7,8,9/)))write(6,*) "NG"
       if (any((/I1,I2,I3/)/=(/1,2,3,4,5,6,7,8,9/)))write(6,*) "NG"
 end subroutine cccc
@@ -58,12 +58,12 @@ subroutine s1
  call bb
  call bbb
  call bbbb
- rewind 1
-  read(1,*)a
+ rewind 31
+  read(31,*)a
       if (any(a/=(/1,2,3,4,5,6,7,8,9/)))write(6,*) "NG"
-  read(1,*)a
+  read(31,*)a
       if (any(a/=(/1,2,3,4,5,6,7,8,9/)))write(6,*) "NG"
-  read(1,*)a
+  read(31,*)a
       if (any(a/=(/1,2,3,4,5,6,7,8,9/)))write(6,*) "NG"
 
  end

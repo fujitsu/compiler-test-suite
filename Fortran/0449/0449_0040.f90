@@ -28,9 +28,9 @@ recursive subroutine s1(a)
   end select
   if(k/=1) print *,201
   allocate(a%x4(2))
-write(1,'(z16.16)') loc(a%x4)
+write(83,'(z16.16)') loc(a%x4)
   allocate(yy::a%x2(1002))
-write(2,'(z16.16)') loc(a%x2)
+write(84,'(z16.16)') loc(a%x2)
   k=0
   select type (p=>a%x2)
     type is(yy)
@@ -45,8 +45,8 @@ do n=1,kh
 call s1(a)
   if (.not.allocated(a%x2)) print *,102
 end do
-call chk(1)
-call chk(2)
+call chk(83)
+call chk(84)
 print *,'pass'
 end
 subroutine chk(n)

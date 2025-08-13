@@ -23,7 +23,7 @@
          enddo
       enddo
 
-      write(1,*)
+      write(30,*)
       do j=1,16
          do i=1,16
             if (r4c(i,j) .gt.0) then
@@ -40,7 +40,7 @@
             r4a(i,j) = sign(2.0,r4c(i,j))
          enddo
       enddo
-      write(1,*)
+      write(30,*)
       do j=1,16
          do i=1,16
             if (r4c(i,j) .gt.0) then
@@ -57,7 +57,7 @@
             r4a(i,j) = sign(r4b(i,j),2.0)
          enddo
       enddo
-      write(1,*)
+      write(30,*)
       do j=1,16
          do i=1,16
             res(i,j) = abs(r4b(i,j))
@@ -70,7 +70,7 @@
             r4a(i,j) = sign(-2.0,r4c(i,j))
          enddo
       enddo
-      write(1,*)
+      write(30,*)
       do j=1,16
          do i=1,16
             if (r4c(i,j) .gt.0) then
@@ -88,7 +88,7 @@
             r4a(i,j) = sign(r4b(i,j),-2.0)
          enddo
       enddo
-      write(1,*)
+      write(30,*)
       do j=1,16
          do i=1,16
                res(i,j) = -abs(r4b(i,j))

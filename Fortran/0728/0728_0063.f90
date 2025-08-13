@@ -1,3 +1,4 @@
+  open(unit=2,file="work01.dat")
   call s1
   print *,'pass'
   end

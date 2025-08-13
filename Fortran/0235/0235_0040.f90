@@ -1,23 +1,23 @@
-module m 
-type b1 
+module m
+type b1
   type(b1),pointer::pb1
   contains
-   procedure,nopass::prc  
+   procedure,nopass::prc
 end type
 contains
 subroutine prc()
-  write(12,*)1
+  write(21,*)1
 end subroutine
 end
 module mm
 use m
-type, extends(b1)::b21    
+type, extends(b1)::b21
   type(b1),pointer::ppb211
   type(b21),pointer::ppb212
   contains
    procedure,nopass::prc=>cproc21
 end type
-type, extends(b1)::b22 
+type, extends(b1)::b22
   type(b1),pointer::ppb221
   type(b21),pointer::ppb222
   type(b22),pointer::ppb223
@@ -26,10 +26,10 @@ type, extends(b1)::b22
 end type
 contains
 subroutine cproc21()
-  write(12,*)21
+  write(21,*)21
 end subroutine
 subroutine cproc22()
-  write(12,*)22
+  write(21,*)22
 end subroutine
 end
 module mmm
@@ -80,38 +80,38 @@ type, extends(b21)::b34
 end type
 contains
 subroutine cproc31()
-  write(12,*)31
+  write(21,*)31
 end subroutine
 subroutine cproc32()
-  write(12,*)32
+  write(21,*)32
 end subroutine
 subroutine cproc33()
-  write(12,*)33
+  write(21,*)33
 end subroutine
 subroutine cproc34()
-  write(12,*)34
+  write(21,*)34
 end subroutine
 end module
-module n 
-type b1 
+module n
+type b1
   type(b1),pointer::pb1
   contains
-   procedure,nopass::prc  
+   procedure,nopass::prc
 end type
 contains
 subroutine prc()
-  write(11,*)1
+  write(20,*)1
 end subroutine
 end
 module nn
 use n
-type, extends(b1)::b21    
+type, extends(b1)::b21
   type(b1),pointer::ppb211
   type(b21),pointer::ppb212
   contains
    procedure,nopass::prc=>cproc21
 end type
-type, extends(b1)::b22 
+type, extends(b1)::b22
   type(b1),pointer::ppb221
   type(b21),pointer::ppb222
   type(b22),pointer::ppb223
@@ -120,10 +120,10 @@ type, extends(b1)::b22
 end type
 contains
 subroutine cproc21()
-  write(11,*)21
+  write(20,*)21
 end subroutine
 subroutine cproc22()
-  write(11,*)22
+  write(20,*)22
 end subroutine
 end
 module nnn
@@ -175,25 +175,25 @@ end type
 private::b1
 contains
 subroutine cproc31()
-  write(11,*)31
+  write(20,*)31
 end subroutine
 subroutine cproc32()
-  write(11,*)32
+  write(20,*)32
 end subroutine
 subroutine cproc33()
-  write(11,*)33
+  write(20,*)33
 end subroutine
 subroutine cproc34()
-  write(11,*)34
+  write(20,*)34
 end subroutine
 end module
 subroutine s1
 use mmm,only:b1
 use nnn,only:b21,b22,b31,b32,b33,b34
-type(b1) ::b1v 
-type(b21)::b21v 
+type(b1) ::b1v
+type(b21)::b21v
 type(b22)::b22v
-type(b31)::b31v 
+type(b31)::b31v
 type(b32)::b32v
 type(b33)::b33v
 type(b34)::b34v
@@ -204,26 +204,26 @@ call b31v%prc()
 call b32v%prc()
 call b33v%prc()
 call b34v%prc()
-rewind 11
-read(11,*) k
+rewind 20
+read(20,*) k
 if (k/=21) print *,2021
-read(11,*) k
+read(20,*) k
 if (k/=22) print *,2022
-read(11,*) k
+read(20,*) k
 if (k/=31) print *,2021
-read(11,*) k
+read(20,*) k
 if (k/=32) print *,2022
-read(11,*) k
+read(20,*) k
 if (k/=33) print *,2033
-read(11,*) k
+read(20,*) k
 if (k/=34) print *,2034
-read(11,*,end=9) k
+read(20,*,end=9) k
 print *,3000
 9 continue
-rewind 12
-read(12,*) k
+rewind 21
+read(21,*) k
 if (k/=1) print *,2101
-read(12,*,end=19) k
+read(21,*,end=19) k
 print *,4000
 19 continue
 end

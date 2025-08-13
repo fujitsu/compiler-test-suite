@@ -21,33 +21,32 @@ print *,'pass'
 end
 subroutine s1(a)
 dimension a(2)
-write(1,'("a=",z8.8)') a
+write(21,'("a=",z8.8)') a
 end
 subroutine s2(b)
 complex b(2)
-write(1,'("b=",z8.8)') b
+write(21,'("b=",z8.8)') b
 end
 subroutine s3(c)
 complex c
 dimension c(2)
-write(1,'("c=",z8.8)') c
+write(21,'("c=",z8.8)') c
 end
 subroutine s4(d)
 dimension d(2)
-write(1,'("d=",z8.8)') d
+write(21,'("d=",z8.8)') d
 end
 subroutine s1s(a)
-write(1,'("a=",z8.8)') a
+write(21,'("a=",z8.8)') a
 end
 subroutine s2s(b)
 complex b
-write(1,'("b=",z8.8)') b
+write(21,'("b=",z8.8)') b
 end
 subroutine s3s(c)
 complex c
-write(1,'("c=",z8.8)') c
+write(21,'("c=",z8.8)') c
 end
 subroutine s4s(d)
-write(1,'("d=",z8.8)') d
+write(21,'("d=",z8.8)') d
 end
-

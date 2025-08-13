@@ -52,7 +52,7 @@ contains
        end if
        i = i + 1
     end do
-
+111 format(z)
     return
   end subroutine get_sq
 end module useful
@@ -73,12 +73,12 @@ program p971
   call get_sq ( sq3 , csq3 , 3)
   call get_sq ( sq4 , csq4 , 4)
 
-  write(1,*) size(sq2) , " " , size(sq3) , " " , size(sq4)
+  write(98,*) size(sq2) , " " , size(sq3) , " " , size(sq4)
 
   l2: do i2 = 1 , size ( sq2 )
      l3: do i3 = 1 , size ( sq3 )
         l4: do i4 = 1 , size ( sq4 )
-           tot = csq2 (i2) // csq3(i3) // csq4(i4) 
+           tot = csq2 (i2) // csq3(i3) // csq4(i4)
            tot_arr =  (/ ( tot(i:i) , i=1,9 ) /)
            if ( count ( tot_arr == "1" ) /=  1 ) then
               cycle l4
@@ -107,19 +107,19 @@ program p971
            if ( count ( tot_arr == "9" ) /=  1 ) then
               cycle l4
            end if
-           write(1,*) tot(1:2) , " " , tot(3:5) , " " , tot(6:9)
+           write(98,*) tot(1:2) , " " , tot(3:5) , " " , tot(6:9)
         end do l4
      end do l3
   end do l2
-rewind 1
-read(1,*)i1,i2,i3;if(any((/i1,i2,i3/)/=(/6,21,68/)))write(6,*) "NG"
-read(1,*)i1,i2,i3;if(any((/i1,i2,i3/)/=(/16,784,5329/)))write(6,*) "NG"
-read(1,*)i1,i2,i3;if(any((/i1,i2,i3/)/=(/25,784,1369/)))write(6,*) "NG"
-read(1,*)i1,i2,i3;if(any((/i1,i2,i3/)/=(/25,784,1936/)))write(6,*) "NG"
-read(1,*)i1,i2,i3;if(any((/i1,i2,i3/)/=(/25,841,7396/)))write(6,*) "NG"
-read(1,*)i1,i2,i3;if(any((/i1,i2,i3/)/=(/36,729,5184/)))write(6,*) "NG"
-read(1,*)i1,i2,i3;if(any((/i1,i2,i3/)/=(/81,324,7569/)))write(6,*) "NG"
-read(1,*)i1,i2,i3;if(any((/i1,i2,i3/)/=(/81,576,3249/)))write(6,*) "NG"
-read(1,*)i1,i2,i3;if(any((/i1,i2,i3/)/=(/81,729,4356/)))write(6,*) "NG"
+rewind 98
+read(98,*)i1,i2,i3;if(any((/i1,i2,i3/)/=(/6,21,68/)))write(6,*) "NG"
+read(98,*)i1,i2,i3;if(any((/i1,i2,i3/)/=(/16,784,5329/)))write(6,*) "NG"
+read(98,*)i1,i2,i3;if(any((/i1,i2,i3/)/=(/25,784,1369/)))write(6,*) "NG"
+read(98,*)i1,i2,i3;if(any((/i1,i2,i3/)/=(/25,784,1936/)))write(6,*) "NG"
+read(98,*)i1,i2,i3;if(any((/i1,i2,i3/)/=(/25,841,7396/)))write(6,*) "NG"
+read(98,*)i1,i2,i3;if(any((/i1,i2,i3/)/=(/36,729,5184/)))write(6,*) "NG"
+read(98,*)i1,i2,i3;if(any((/i1,i2,i3/)/=(/81,324,7569/)))write(6,*) "NG"
+read(98,*)i1,i2,i3;if(any((/i1,i2,i3/)/=(/81,576,3249/)))write(6,*) "NG"
+read(98,*)i1,i2,i3;if(any((/i1,i2,i3/)/=(/81,729,4356/)))write(6,*) "NG"
 print *,'pass'
 end program p971

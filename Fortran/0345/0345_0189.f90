@@ -48,9 +48,9 @@
      k=3
      l=4
      m=5
-     write(1,'(5i4)') i,j,k,l,m
-     rewind(1)
-     read (1,'(5i4)') i,j,k,l,m
+     write(16,'(5i4)') i,j,k,l,m
+     rewind(16)
+     read (16,'(5i4)') i,j,k,l,m
      call sub1(i,j,k,l,m)
      print *,'pass'
     end program

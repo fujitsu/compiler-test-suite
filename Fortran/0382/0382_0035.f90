@@ -6,9 +6,9 @@ program main
    end subroutine
   end interface
   x=1
-  write(1,*)"x=",x
+  write(4,*)"x=",x
   call foo(x)
-  write(1,*)"x=",x
+  write(4,*)"x=",x
 print *,'pass'
   end
 
@@ -23,7 +23,7 @@ subroutine foo(x)
   enddo
   !$OMP END DO
   !$OMP END PARALLEL
-  write(1,*)"foo x=",x
+  write(4,*)"foo x=",x
  else
       print *, "else"
  end if

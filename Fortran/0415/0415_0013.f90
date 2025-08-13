@@ -25,7 +25,7 @@ program main
   integer :: i1=111
   integer :: i2=222
 
-  open(10,file="fort.9999")
+  open(10,file="fort.55")
 write(10,'(a)') '123'
 write(10,'(a)') '543'
 write(10,'(a)') '678'
@@ -35,16 +35,16 @@ rewind 10
   read(10,*) t1
   close(10)
 
-  write(1,*) t1
-  write(1,*) i1
+  write(24,*) t1
+  write(24,*) i1
 call chk
 print *,'pass'
 end program main
 subroutine chk
 integer c
-rewind 1
-read(1,*)c
+rewind 24
+read(24,*)c
 if (   (c/=678)) print *,102
-read(1,*)c
+read(24,*)c
 if (   (c/=543)) print *,103
 end

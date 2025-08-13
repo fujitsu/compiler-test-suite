@@ -43,6 +43,6 @@ subroutine check(a , item ,subcode)
   if (any(a/=(/1,2,3,4,5,6/)))then
       write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a
   else 
-      write(1,*) 'OK    item&subcode:',item,subcode
+      write(39,*) 'OK    item&subcode:',item,subcode
   endif
 end subroutine

@@ -12,18 +12,18 @@ call chk1(e,kk)
 contains
  subroutine chk1(e,kk)
  integer(4),dimension(:,:)::e
- write(1,*)'test'
-write(2,*)kk,e
+ write(50,*)'test'
+write(51,*)kk,e
  end subroutine
 end
 subroutine x
 integer a(10)
-rewind 2
-read(2,*) a
+rewind 51
+read(51,*) a
 if (a(1)/=1)print *,'error-1'
 if (any(a(2:)/=5))print *,'error-1'
 do i=2,4
-read(2,*) a(i)
+read(51,*) a(i)
 if (a(i)/=i)print *,'error-2'
 end do
 end

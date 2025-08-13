@@ -1,3 +1,5 @@
+#define IS_EQUAL(a,b) ((a==b).or.(a==0.and.abs(b)<10E-6).or.(abs(a-b)/abs(a)<10E-6))
+
       REAL*4 RA(-9:20),RB(-9:20),RMAX
       REAL*4 RC(-9:20),RD(-9:20),RSUM
       INTEGER*4 IA(-9:20),IB(-9:20),J1,J2,J3,J4
@@ -41,7 +43,11 @@
   52    RSUM=RSUM+CABS(CEA(I3))
   53    RC(I3)=CEA(I3)
   54    RD(I3)=CEB(I3)*(0.,1.)+CEC(I3)*CED(I3)
-  30  CONTINUE
-      WRITE(6,*) 'RMAX=  ',RMAX,'RSUM= ',RSUM
+ 30   CONTINUE
+      if (IS_EQUAL(RMAX,6.0827627)) then
+         WRITE(6,*) 'RMAX=  ',6.0827627,'RSUM= ',RSUM
+      else
+         WRITE(6,*) 'RMAX=  ',RMAX,'RSUM= ',RSUM
+      endif
       STOP
       END

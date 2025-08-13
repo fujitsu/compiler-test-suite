@@ -8,10 +8,10 @@ a=i+(/1,2/)
 b=i+3
 c=i+(/1,2/)
 d=i+3
-write(1,*)a
-write(2,*)b
-write(3,*)c
-write(4,*)d
+write(71,*)a
+write(72,*)b
+write(73,*)c
+write(74,*)d
 i=i+1
 if (i<3)call s1(i)
 deallocate(a,b,c,d)
@@ -26,14 +26,14 @@ integer,dimension(2):: a
 integer             :: b
 integer,dimension(2):: c
 integer             :: d
-rewind 1
-rewind 2
-rewind 3
-rewind 4
-read(1,*)a 
-read(2,*) b
-read(3,*) c
-read(4,*) d
+rewind 71
+rewind 72
+rewind 73
+rewind 74
+read(71,*)a
+read(72,*) b
+read(73,*) c
+read(74,*) d
 if (any(a/=(/1,2/)))print *,'error-1'
 if (    b/=3       )print *,'error-2'
 if (any(c/=(/1,2/)))print *,'error-3'

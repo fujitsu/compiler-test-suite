@@ -1,4 +1,4 @@
 implicit none
-write(1,*)3<>2
+write(2,*)3<>2
 print *,'pass'
 end

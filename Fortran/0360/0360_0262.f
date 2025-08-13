@@ -10,12 +10,15 @@
 
       subroutine test_asin()
       real*4 a(10),b(10)/10,9,8,7,6,5,4,3,2,1/
+      real*4 res(10)/0.5235988, 0.4667653, 0.41151685, 0.3575711,
+     +     0.30469266, 0.25268024, 0.20135793, 0.15056827,
+     +     0.10016742, 5.002086E-02/
       n = 1
       do i=1,10
          a(i) = asin(b(n)/20)
          n = n + 1
       enddo
-      write(6,*) a
+      call check(a,res)
       end
 
       subroutine test_dasin()
@@ -30,12 +33,15 @@
 
       subroutine test_acos()
       real*4 a(10),b(10)/10,9,8,7,6,5,4,3,2,1/
+      real*4 res(10)/1.0471976, 1.104031, 1.1592795, 1.2132252,
+     +     1.2661036, 1.3181161, 1.3694384, 1.420228,
+     +     1.4706288, 1.5207754/
       n = 1
       do i=1,10
          a(i) = acos(b(n)/20)
          n = n + 1
       enddo
-      write(6,*) a
+      call check(a,res)
       end
       subroutine test_dacos()
       real*8 a(10),b(10)/10,9,8,7,6,5,4,3,2,1/
@@ -49,12 +55,15 @@
 
       subroutine test_erf()
       real*4 a(10),b(10)/10,9,8,7,6,5,4,3,2,1/
+      real*4 res(10)/0.5204999, 0.47548172, 0.42839235, 0.37938204,
+     +     0.32862678, 0.2763264, 0.2227026, 0.16799597,
+     +     0.112462915, 5.637198E-02/
       n = 1
       do i=1,10
          a(i) = erf(b(n)/20)
          n = n + 1
       enddo
-      write(6,*) a
+      call check(a,res)
       end
       subroutine test_derf()
       real*8 a(10),b(10)/10,9,8,7,6,5,4,3,2,1/
@@ -68,12 +77,15 @@
 
       subroutine test_erfc()
       real*4 a(10),b(10)/10,9,8,7,6,5,4,3,2,1/
+      real*4 res(10)/0.47950011, 0.5245183, 0.57160764, 0.620618,
+     +     0.67137324, 0.7236736, 0.7772974, 0.832004,
+     +     0.88753706, 0.943628/
       n = 1
       do i=1,10
          a(i) = erfc(b(n)/20)
          n = n + 1
       enddo
-      write(6,*) a
+      call check(a,res)
       end
       subroutine test_derfc()
       real*8 a(10),b(10)/10,9,8,7,6,5,4,3,2,1/
@@ -85,3 +97,15 @@
       write(6,*) a
       end
 
+#define IS_EQUAL(a,b) ((a==b).or.(a==0.and.abs(b)<10E-6).or.(abs(a-b)/abs(a)<10E-6))
+      subroutine check(calc,res)
+      real calc(10),res(10)
+      logical ngcheck/.FALSE./
+      do i=1,10
+         if (IS_EQUAL(calc(i), res(i))) then
+         else
+            ngcheck = .TRUE.
+         endif
+      enddo
+      if (ngcheck) write(6,*) calc
+      end

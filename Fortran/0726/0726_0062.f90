@@ -32,21 +32,21 @@
       x = RESHAPE(CMPLX((/(i,i=1,n*n)/),(/(j,j=1,n*n)/)*10,KIND=stnd),(/n,n/))
       u = CMPLX((/(i,i=1,n)/)*3,(/(i,i=1,n)/)*5,KIND=stnd)
       v = MATMUL(x,u)
-      WRITE(1,*) ' Main, RHS Vector Control Sum = ',SUM(u)
-      WRITE(1,*) ' Main, Matrix     Control Sum = ',SUM(x)
-      WRITE(1,*) ' Main, LHS Vector Control Sum = ',SUM(v)
+      WRITE(30,*) ' Main, RHS Vector Control Sum = ',SUM(u)
+      WRITE(30,*) ' Main, Matrix     Control Sum = ',SUM(x)
+      WRITE(30,*) ' Main, LHS Vector Control Sum = ',SUM(v)
 
       kernel = x
       w = kernFun(u)
 
-      WRITE(1,*) ' v   : ',v
-      WRITE(2,*) w
+      WRITE(30,*) ' v   : ',v
+      WRITE(31,*) w
       call ss1
       end
       subroutine ss1
       complex(8) a(6)
-      rewind 2
-      read(2,*) a
+      rewind 31
+      read(31,*) a
       if (any(abs(a- &
 (/ (-20727.00000000000,15435.00000000000),&
    (-21714.00000000000,16170.00000000000),&
@@ -56,7 +56,7 @@
    (-25662.00000000000,19110.00000000000) /) ) > 0.0001_8))write(6,*) "NG"
       print *,'pass'
 
-    END 
+    END
     FUNCTION kernFun(vec)
 
         USE TestData
@@ -67,9 +67,9 @@
 
         kernFun = MATMUL(kernel,vec)
 
-        WRITE(1,*) ' kernFun, RHS Vector Control Sum = ',SUM(vec)
-        WRITE(1,*) ' kernFun, Matrix     Control Sum = ',SUM(kernel)
-        WRITE(1,*) ' kernFun, LHS Vector Control Sum = ',SUM(kernFun)
+        WRITE(30,*) ' kernFun, RHS Vector Control Sum = ',SUM(vec)
+        WRITE(30,*) ' kernFun, Matrix     Control Sum = ',SUM(kernel)
+        WRITE(30,*) ' kernFun, LHS Vector Control Sum = ',SUM(kernFun)
 
         RETURN
 

@@ -8,9 +8,9 @@ integer k(3,4,5)
   allocate(struct01%char01(3,4,5))
 
   struct01%char01='1'
-  write(2,*)struct01%char01
-rewind 2
-read(2,*) k
+  write(41,*)struct01%char01
+rewind 41
+read(41,*) k
 if (any(k/=1))write(6,*) "NG"
 end
 subroutine s1
@@ -22,9 +22,9 @@ subroutine s1
   allocate(struct01%char01(3))
 
   struct01%char01=(/'1','2','3'/)
-  write(1,*)struct01%char01
-rewind 1
-read(1,*) k1,k2,k3
+  write(40,*)struct01%char01
+rewind 40
+read(40,*) k1,k2,k3
 if (any((/k1,k2,k3/)/=(/1,2,3/)))write(6,*) "NG"
 end
 call s1

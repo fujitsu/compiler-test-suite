@@ -12,7 +12,7 @@ subroutine init
   implicit none
   allocate(p(200,100,2))
   p(:,:,:) = 0.0d0
-  write(1,'(a,"0x",z16.16)') 'init: loc(p) = ', loc(p)
+  write(19,'(a,"0x",z16.16)') 'init: loc(p) = ', loc(p)
   allocate(grid%idum(2))
   grid%idum=0
   return
@@ -22,7 +22,7 @@ subroutine foo(a,idum)
   implicit none
   real(kind(0d0)) :: a(200,100,2)
   integer :: idum(2)
-  write(1,'(a,"0x",z16.16)') ' foo: loc(a) = ', loc(a)
+  write(19,'(a,"0x",z16.16)') ' foo: loc(a) = ', loc(a)
   return
 end subroutine foo
 
@@ -30,7 +30,7 @@ subroutine foo2(a,idum)
   implicit none
   real(kind(0d0)) :: a(200,100,1)
   integer :: idum(2)
-  write(1,'(a,"0x",z16.16)') ' foo: loc(a) = ', loc(a)
+  write(19,'(a,"0x",z16.16)') ' foo: loc(a) = ', loc(a)
   return
 end subroutine foo2
 
@@ -38,14 +38,14 @@ subroutine foo3(a,idum)
   implicit none
   real(kind(0d0)) :: a(200,100,2)
   integer :: idum(*)
-  write(1,'(a,"0x",z16.16)') ' foo: loc(a) = ', loc(a)
+  write(19,'(a,"0x",z16.16)') ' foo: loc(a) = ', loc(a)
   return
 end subroutine foo3
 
 subroutine bar(a,b)
   implicit none
   real(kind(0d0)) :: a(200,100,2), b(200,100,2)
-  write(1,'(a,"0x",z16.16)') ' bar: loc(a) = ', loc(a)
+  write(19,'(a,"0x",z16.16)') ' bar: loc(a) = ', loc(a)
   return
 end subroutine bar
 

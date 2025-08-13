@@ -22,7 +22,7 @@
         end do
 
         arrB = arrA
-        write(1,*)"stackTest_init:",MAXVAL( arrB )
+        write(66,*)"stackTest_init:",MAXVAL( arrB )
 
         return
     end subroutine

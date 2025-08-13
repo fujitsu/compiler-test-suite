@@ -15,12 +15,12 @@ use m1
     do concurrent(i=1:nn,j=1:nn,k=1:nn)
       array(i,j,k) = array(i,j,k) + f2()
     end do
-     write(1,*)merge("OK", "NG", all(array == 1.))
+     write(2,*)merge("OK", "NG", all(array == 1.))
     array=0
     do concurrent(i=1:nn,j=1:nn,k=1:nn,mask(i,j,k)==1)
       array(i,j,k) = array(i,j,k) + f2()
     end do
-     write(1,*)merge("OK", "NG", all(array == 1.))
+     write(2,*)merge("OK", "NG", all(array == 1.))
      end
 
      subroutine sub2(nn)
@@ -31,19 +31,19 @@ use m1
       do i=1,nn
       array(i) = array(i) + f2()
       end do
-      write(1,*) ,merge("OK", "NG", all(array == 1.))
+      write(2,*) ,merge("OK", "NG", all(array == 1.))
       end
 
       integer(8)::nn = 10
       character*10 r
       call sub(nn)
       call sub2(nn)
-      rewind 1
-      read(1,'(a)') r
+      rewind 2
+      read(2,'(a)') r
       if (index(r,'OK')==0) print *,101
-      read(1,'(a)') r
+      read(2,'(a)') r
       if (index(r,'OK')==0) print *,102
-      read(1,'(a)') r
+      read(2,'(a)') r
       if (index(r,'OK')==0) print *,103
       print *,'pass'
       end

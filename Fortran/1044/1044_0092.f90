@@ -73,7 +73,7 @@ common ip
   if (any(a/=(/1,2,3,4,5,6/)))then
       write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a
   else 
-      write(1,*) 'OK    item&subcode:',item,subcode
+      write(44,*) 'OK    item&subcode:',item,subcode
   endif
   if (item>=7) then
     if (loc(a)< ip.or. loc(a)>ip+36)then

@@ -17,11 +17,11 @@ use m2
    allocate(ptr)
    ptr = ty( proc)
 call ptr%set_services
-rewind 1
-read(1,*) k
+rewind 16
+read(16,*) k
 if (k/=9) print *,900
 print *,'pass'
 end
       subroutine proc
-write(1,*)9
+write(16,*)9
       end subroutine

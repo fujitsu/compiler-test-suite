@@ -19,8 +19,8 @@ program twlday
      M = (/365,344,325,305,288,268,244,221,200,179,157,131/)
   integer :: n
   do n = 1, 12
-   write(1,*) achar( I((/J(1:7), J(K(n):L(n)), J(90:130), J(M(n):) /)) )
-   write(2,*) iachar(achar( I((/J(1:7), J(K(n):L(n)), J(90:130), J(M(n):) /)) ))
+   write(7,*) achar( I((/J(1:7), J(K(n):L(n)), J(90:130), J(M(n):) /)) )
+   write(8,*) iachar(achar( I((/J(1:7), J(K(n):L(n)), J(90:130), J(M(n):) /)) ))
   end do
 print *,'pass'
 end program twlday

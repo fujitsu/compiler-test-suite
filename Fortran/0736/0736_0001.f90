@@ -7,7 +7,7 @@ MODULE U
   REAL*8       RVAL
   RVAL=3.5
   RECORD(2)=RVAL
-  WRITE(1,*) RVAL,STTIME
+  WRITE(2,*) RVAL,STTIME
   END SUBROUTINE
 END MODULE
 
@@ -15,8 +15,8 @@ use u
 real(8) a1
 integer a2
 CALL FOO()
-rewind 1
-read(1,*) a1,a2
+rewind 2
+read(2,*) a1,a2
 if (abs(a1-3.5)>0.0001)write(6,*) "NG"
 if (a2/=3)write(6,*) "NG"
 print *,'pass'

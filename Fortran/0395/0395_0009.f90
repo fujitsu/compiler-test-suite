@@ -13,13 +13,13 @@ end subroutine
 subroutine z(p)
 integer,optional::p(:,:)
 save= loc(p)
-write(1,'(z16.16)') loc(p)
+write(4,'(z16.16)') loc(p)
 do k=1,5
 t=tt
 call ss(p)
 end do
-write(1,*)
-write(1,'(z16.16)') loc(p)
+write(4,*)
+write(4,'(z16.16)') loc(p)
 do k=1,5
 t=tt
 kk= fun(p) 
@@ -29,13 +29,13 @@ end subroutine
 subroutine ss(x) 
 integer,optional,intent(in):: x(4)
 if (present(x)) print *,801
-write(1,'(z16.16)') loc(x)
+write(4,'(z16.16)') loc(x)
 if (save/=loc(x)) print *,3000
 end subroutine
 function fun(x) result(k)
 integer,optional,intent(in):: x(4)
 if (present(x)) print *,802
-write(1,'(z16.16)') loc(x)
+write(4,'(z16.16)') loc(x)
 if (save/=loc(x)) print *,3000
 k=0
 end function

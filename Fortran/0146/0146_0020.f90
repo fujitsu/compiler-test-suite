@@ -3,7 +3,7 @@
       subroutine sub1 (i,j,k)
       integer,target::i,j,k
       namelist /nam1/i,j,k
-      write(1,nam1) 
+      write(4,nam1)
       i=i+1
       j=j+1
       k=k+1
@@ -12,7 +12,7 @@ end subroutine
       integer,pointer::i,j,k
       integer,parameter::n=2
       namelist /nam1/i,j,k
-      write(1,nam1) 
+      write(4,nam1)
       i=i+1
       j=j+1
       k=k+1
@@ -32,19 +32,18 @@ call sub2(ii,jj,kk)
 if (ii/=12) print *,201
 if (jj/=13) print *,202
 if (kk/=14) print *,203
-  rewind 1
+  rewind 4
 call chk
       print *,'pass'
 end
 subroutine chk
       namelist /nam1/i,j,k
-read(1,nam1) 
+read(4,nam1)
 if (i/=1) print *,1011
 if (j/=2) print *,1021
 if (k/=3) print *,1031
-read(1,nam1) 
+read(4,nam1)
 if (i/=11) print *,2011
 if (j/=12) print *,2021
 if (k/=13) print *,2031
       end
-

@@ -32,13 +32,13 @@ end
   
 subroutine ss ( z ,n)
 real :: z( n )
-write(1,*)n,':',z
+write(8,*)n,':',z
 if (any( z/=[1,2,3,4,5,6,7,8,9])) print *,101
 end
 
 function   it ( z ,n)
 real :: z( n )
-write(1,*)n,':',z
+write(8,*)n,':',z
 if (any( z/=[1,2,3,4,5,6,7,8,9])) print *,101
 it=1
 end

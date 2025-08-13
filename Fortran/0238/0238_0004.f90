@@ -13,8 +13,8 @@ program main
  a2= maxval(a,dim=2)
  a3= maxval(a,dim=3)
 
-write(1,*)a1,b1
-write(1,*)a2,b2
-write(1,*)a3,b3
+write(3,*)a1,b1
+write(3,*)a2,b2
+write(3,*)a3,b3
 print *,'pass'
 end

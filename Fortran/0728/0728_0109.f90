@@ -24,15 +24,15 @@ subroutine sp1(b,bb,bbb)
    allocate(b%y_n%y_n%x)
    b%y_n%y_n%x =3
    nullify(b%y_n%y_n%y_n)
-   b%y_n%y_n%y_b => b%y_n 
+   b%y_n%y_n%y_b => b%y_n
    bb=>b
- write(1,*)b%x
- write(1,*)b%y_n%x
- write(1,*)b%y_n%y_n%x
- write(1,*)b%y_n%y_n%y_b%x
- write(1,*)b%y_n%y_n%y_b%y_b%x
- write(1,*)bb%x
- write(1,*)'=='
+ write(23,*)b%x
+ write(23,*)b%y_n%x
+ write(23,*)b%y_n%y_n%x
+ write(23,*)b%y_n%y_n%y_b%x
+ write(23,*)b%y_n%y_n%y_b%y_b%x
+ write(23,*)bb%x
+ write(23,*)'=='
  call chk01(b%x,1)
  call chk01(b%y_n%x,2)
  call chk01(b%y_n%y_n%x,3)
@@ -50,8 +50,8 @@ subroutine sp1(b,bb,bbb)
  call chk033(a(b%y_n%y_n%x,b%y_n%y_n%y_n,b%y_n%y_n%y_b),3)
  call chk04(a(b%x,b,bb),1)
    call sub(b%y_n)
- write(1,*)b%x
- write(1,*)b%y_n%x
+ write(23,*)b%x
+ write(23,*)b%y_n%x
 call chk(bbb)
      contains
  subroutine chk04(i1,i2)
@@ -100,17 +100,17 @@ if ((i1%x/=i2))write(6,*) "NG"
 end subroutine
 subroutine chk(i)
 integer,pointer::i
-rewind 1
-read(1,*)i;if ((i/=1))write(6,*) "NG"
-read(1,*)i;if ((i/=2))write(6,*) "NG"
-read(1,*)i;if ((i/=3))write(6,*) "NG"
-read(1,*)i;if ((i/=2))write(6,*) "NG"
-read(1,*)i;if ((i/=1))write(6,*) "NG"
-read(1,*)i;if ((i/=1))write(6,*) "NG"
-read(1,*)
-read(1,*)i;if ((i/=1))write(6,*) "NG"
-read(1,*)i;if ((i/=3))write(6,*) "NG"
-read(1,*,end=1)i
+rewind 23
+read(23,*)i;if ((i/=1))write(6,*) "NG"
+read(23,*)i;if ((i/=2))write(6,*) "NG"
+read(23,*)i;if ((i/=3))write(6,*) "NG"
+read(23,*)i;if ((i/=2))write(6,*) "NG"
+read(23,*)i;if ((i/=1))write(6,*) "NG"
+read(23,*)i;if ((i/=1))write(6,*) "NG"
+read(23,*)
+read(23,*)i;if ((i/=1))write(6,*) "NG"
+read(23,*)i;if ((i/=3))write(6,*) "NG"
+read(23,*,end=1)i
 write(6,*) "NG"
 return
 1 end subroutine

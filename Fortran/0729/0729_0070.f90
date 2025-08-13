@@ -30,14 +30,14 @@ end module int_str
 program t
   use int_str
   integer :: i, status
-  write(2,*)10
-  write(2,*)-10
-  rewind 2
+  write(107,*)10
+  write(107,*)-10
+  rewind 107
   do
-    write(1,"(A)",advance="no") "Enter an integer: "
-    read(2,*,iostat=status) i
+    write(106,"(A)",advance="no") "Enter an integer: "
+    read(107,*,iostat=status) i
     if(status /= 0) exit
-    write(3,*) '"' // int2str(i) // '"'
+    write(108,*) '"' // int2str(i) // '"'
   end do
  print *,'pass'
 end program t

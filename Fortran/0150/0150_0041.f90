@@ -11,16 +11,16 @@ if (v%x/=1) print *,101
 !$omp parallel
 t=1
 if (t/=1) print *,101
-write(1, '(z16.16)')loc(t)
+write(9, '(z16.16)')loc(t)
 !$omp end parallel
 call chk
 print *,'pass'
 end
 subroutine chk
 character(16) :: r1(16)
-rewind 1
+rewind 9
 do k=1,16
- read(1,'(a)',end=10) r1(k)
+ read(9,'(a)',end=10) r1(k)
 end do
 10 continue
 k=k-1

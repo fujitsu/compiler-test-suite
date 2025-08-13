@@ -9,7 +9,7 @@ subroutine ss
 implicit none
 if (a1(1)/=1) print *,101
 k1=1
-write(1,'("k1",z16.16)')loc(k1)
+write(11,'("k1",z16.16)')loc(k1)
 end subroutine
 end
 if (k1()/=1) print *,901

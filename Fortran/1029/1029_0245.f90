@@ -4,11 +4,11 @@ b = 2
 c = 3
 d = 4
 
-open(10)
-write(10, '(4i4)') a, b, c, d
-rewind(10)
-read(10, '(4i4)') a, b, c, d
-close(10)
+open(57)
+write(57, '(4i4)') a, b, c, d
+rewind(57)
+read(57, '(4i4)') a, b, c, d
+close(57)
 
 if(a.gt.b .and. c.gt.d) then
    goto 10

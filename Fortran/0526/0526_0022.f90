@@ -34,8 +34,8 @@ module m1
       end
       use m5
          implicit none
-         write(1,*)f1()
-         write(1,*)f2()
+         write(3,*)f1()
+         write(3,*)f2()
     print *,'pass'
          end
 

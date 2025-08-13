@@ -1,4 +1,25 @@
+      module mod_sub2
+      contains
+      subroutine sub2(a,b)
+      integer a(10),b(10),pa,pb
+      pointer (p1 ,pa)
+      pointer (p2 ,pb)
+      target::a
+      p1 = loc(a(1))
+      p2 = loc(b(1))
+
+      do i = 1,9
+         pa = pa + a(i+1)
+         p1 = p1 + 4
+      end do
+
+      b(1:10) = a(1:10) + b(1:10)
+
+      return
+      end subroutine sub2
+      end
       program main
+      use mod_sub2
       structure /str1/
         integer*4  ia(10)/10,9,8,7,6,5,4,3,2,1/
         integer*4  ib(10)/1,2,3,4,5,6,7,8,9,10/
@@ -61,23 +82,5 @@
       b      = x(:,2)
 
       deallocate (x)
-      return
-      end
-
-      subroutine sub2(a,b)
-      integer a(10),b(10),pa,pb
-      pointer (p1 ,pa)
-      pointer (p2 ,pb)
-
-      p1 = loc(a(1))
-      p2 = loc(b(1))
-
-      do i = 1,9
-         pa = pa + a(i+1)
-         p1 = p1 + 4
-      end do
-
-      b(1:10) = a(1:10) + b(1:10)
-
       return
       end

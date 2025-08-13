@@ -5,9 +5,9 @@ end type
 type(t1)::iii
 namelist /na/ iii
 !$ CALL OMP_SET_NUM_THREADS(1)
-read(1,na)
+read(3,na)
 !$omp parallel
-read(2,na)
+read(4,na)
 if (iii%i1/=201)print *,201,iii%i1
 !$omp end parallel
 end
@@ -22,10 +22,9 @@ end type
 type(t1)::iii
 namelist /na/ iii
 iii=t1(101)
-write(1,na)
+write(3,na)
 iii=t1(201)
-write(2,na)
-rewind 1
-rewind 2
+write(4,na)
+rewind 3
+rewind 4
 end
-

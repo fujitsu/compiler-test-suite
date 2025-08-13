@@ -13,7 +13,7 @@ v=a2+a2
 v=p1+p1
 v=p2+p2
 vv=v
-write(1,*)vv
+write(3,*)vv
 end
 call s1(2)
 print *,'pass'

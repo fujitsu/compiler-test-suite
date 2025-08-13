@@ -173,7 +173,7 @@ c
          do  108  i=1,3,2
          do  108  j=2,3
          do  108  k=1,3,3
-          write(1,308)  i33(1,2,j+2),i31(k+2,3,i),i32(4,i+1,5)
+          write(10,308)  i33(1,2,j+2),i31(k+2,3,i),i32(4,i+1,5)
   308     format(1h ,80x,17hitem - 08  ans  =,3i5)
          i9ans1=i9ans1+i+j+k
   108    continue

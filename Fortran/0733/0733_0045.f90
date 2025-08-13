@@ -32,9 +32,9 @@
  if (any((/z3(:,:,1)/)/=(/'ad','bc','cf','de','eb','fa'/)))print *,'error-1'
  if (any((/ss4(plus2(z1(:,:,1),y1(t1,t2,1)))/)/= &
               (/'ad','bc','cf','de','eb','fa'/)))print *,'error-1'
- write(1,*)ss4(plus2(z1(:,:,1),y1(t1,t2,1)))
-rewind 1
-read (1,*) z3(:,:,1)
+ write(23,*)ss4(plus2(z1(:,:,1),y1(t1,t2,1)))
+rewind 23
+read (23,*) z3(:,:,1)
  if (any((/z3(:,:,1)/)/=(/'ad','bc','cf','de','eb','fa'/)))print *,'error-2'
  print *,'pass'
  end

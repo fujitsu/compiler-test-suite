@@ -53,7 +53,7 @@ we1%a2=115
 wf1%a2=116
 end subroutine
 subroutine ss_1
-write(1,nama)
+write(11,nama)
 end subroutine
 end
 subroutine chk
@@ -72,11 +72,11 @@ type(x)                         :: we1
 type(x),pointer                 :: wf1
 namelist /nama/wa,wb,wc,wd,we,wf
 namelist /nama/wa1,wb1,wc1,wd1,we1,wf1
-rewind 1
+rewind 11
 allocate(wa,wc,wd,wf)
 allocate(wf1)
 do k=1,1000
-read(1,nama) 
+read(11,nama) 
 if (wa%a1/=101)print *,'error-1'
 if (wb%a1/=102)print *,'error-2'
 if (wc%a1/=103)print *,'error-3'

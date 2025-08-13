@@ -9,10 +9,10 @@ subroutine ss
 implicit none
 if (a1(1)/=1) print *,101
 k1=1
-write(1,'("k1",z16.16)')loc(k1)
+write(18,'("k1",z16.16)')loc(k1)
 if (a2(1)/=1) print *,101
 k2=1
-write(1,'("k2",z16.16)')loc(k2)
+write(18,'("k2",z16.16)')loc(k2)
 end subroutine
 end
 call s1

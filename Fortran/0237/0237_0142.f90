@@ -14,12 +14,12 @@
        no=1
        ibknct=0
       io = 9
-      write(1,*) (/1,2,3,4/)
-      write(1,*) (/1,2,3,4/)
-      rewind 1
-      read (1,*) name(ibknam+no) , ( ncnt(ibknct+i,no), i=1,3 )
+      write(129,*) (/1,2,3,4/)
+      write(129,*) (/1,2,3,4/)
+      rewind 129
+      read (129,*) name(ibknam+no) , ( ncnt(ibknct+i,no), i=1,3 )
 call chk
-      read (1,*) name(ibknam+no) ,  ncnt(ibknct+1:ibknct+3,no)
+      read (129,*) name(ibknam+no) ,  ncnt(ibknct+1:ibknct+3,no)
 call chk
       end subroutine
 call test

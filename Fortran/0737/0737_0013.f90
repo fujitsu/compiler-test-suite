@@ -10,7 +10,7 @@ logical(kind=1) m(4)/f,t,f,t/
 character(kind=1):: a(4)=(/'1','2','3','4'/) ,b(4)=(/'4','1','2','3'/), c(4)=(/'3','4','1','2'/), d(4)=(/'2','3','4','1'/)
 character(kind=1) e1(4),e2(4)
 character(kind=1),dimension(4)::r1,r2,r3,r4
-integer  ::u=11
+integer  ::u=20
 target a,b,c,d,e1,e2
 type x
 character(kind=1),allocatable:: az(:),bz(:),cz(:),dz(:),e1z(:),e2z(:)

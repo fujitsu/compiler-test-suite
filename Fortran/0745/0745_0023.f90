@@ -2,18 +2,18 @@ module m1
 contains
    subroutine p1(i)
      character*(*) c
-     write(1,*)i
+     write(16,*)i
      return
    entry p2(c)
-     write(1,*)c
+     write(16,*)c
    end subroutine
 end
    subroutine p2(i)
      character*(*) c
-     write(1,*)i
+     write(16,*)i
      return
    entry p1(c)
-     write(1,*)c
+     write(16,*)c
    end subroutine
 do i=1,3
 call s1
@@ -40,9 +40,9 @@ call p('200')
 end
 subroutine chk
 integer i
-rewind 1
+rewind 16
 do j=1,6
-read(1,*)i;if(i/=100)write(6,*) "NG"
-read(1,*)i;if(i/=200)write(6,*) "NG"
+read(16,*)i;if(i/=100)write(6,*) "NG"
+read(16,*)i;if(i/=200)write(6,*) "NG"
 end do
 end

@@ -15,8 +15,8 @@ CO_PrintChar(bo)
 }
 int main()
 {
-        ar.fp=fopen("./dummy.c","w+");
+        ar.fp=fopen("./dummy2.c","w+");
         CO_PrintChar("test is OK\n");
         fclose(ar.fp_d);
-        remove("./dummy.c");
+        remove("./dummy2.c");
 }

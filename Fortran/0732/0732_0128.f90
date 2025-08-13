@@ -5,7 +5,7 @@ c=reshape((/(i,i=1,8)/),(/2,4/))
 d=reshape((/(i,i=1,12)/),(/4,3/))
 e=reshape((/(i,i=1,6)/),(/3,2/))
 i1=-1;i2=-2;i3=-3;i4=-4
-write(1,*)matmul( matmul(b,c) , matmul(d,e) )
+write(38,*)matmul( matmul(b,c) , matmul(d,e) )
 call chkx(matmul( matmul(b,c) , matmul(d,e) ))
 f= matmul( matmul(b,c) , matmul(d,e) )
 call chkx(f)
@@ -14,8 +14,8 @@ call chkx(f)
 f= matmul( matmul(b,c)+matmul(b,c)-matmul(b,c) , matmul(d,e)+matmul(d,e)-matmul(d,e) )+ matmul( matmul(b,c) , matmul(d,e) ) -matmul( matmul(b,c) , matmul(d,e) )
 call chkx(f)
 call chkx(matmul( matmul(b,c)+matmul(b,c)-matmul(b,c) , matmul(d,e)+matmul(d,e)-matmul(d,e) )+ matmul( matmul(b,c) , matmul(d,e) ) -matmul( matmul(b,c) , matmul(d,e) ))
-write(1,*)(matmul( matmul(b,c)+matmul(b,c)-matmul(b,c) , matmul(d,e)+matmul(d,e)-matmul(d,e) )+ matmul( matmul(b,c) , matmul(d,e) ) -matmul( matmul(b,c) , matmul(d,e) ))
-write(1,*)matmul( matmul(b(i3:i1:-i1,i2:i1:-i1),c(i2:i1:-i1,i4:i1:-i1)) , matmul(d(i4:i1:-i1,i3:i1:-i1),e(i3:i1:-i1,i2:i1:-i1)) )
+write(38,*)(matmul( matmul(b,c)+matmul(b,c)-matmul(b,c) , matmul(d,e)+matmul(d,e)-matmul(d,e) )+ matmul( matmul(b,c) , matmul(d,e) ) -matmul( matmul(b,c) , matmul(d,e) ))
+write(38,*)matmul( matmul(b(i3:i1:-i1,i2:i1:-i1),c(i2:i1:-i1,i4:i1:-i1)) , matmul(d(i4:i1:-i1,i3:i1:-i1),e(i3:i1:-i1,i2:i1:-i1)) )
 call chkx(matmul( matmul(b(i3:i1:-i1,i2:i1:-i1),c(i2:i1:-i1,i4:i1:-i1)) , matmul(d(i4:i1:-i1,i3:i1:-i1),e(i3:i1:-i1,i2:i1:-i1)) ))
 f= matmul( matmul(b(i3:i1:-i1,i2:i1:-i1),c(i2:i1:-i1,i4:i1:-i1)) , matmul(d(i4:i1:-i1,i3:i1:-i1),e(i3:i1:-i1,i2:i1:-i1)) )
 call chkx(f)
@@ -47,16 +47,16 @@ matmul( matmul(b(i3:i1:-i1,i2:i1:-i1),c(i2:i1:-i1,i4:i1:-i1)) ,&
  matmul(d(i4:i1:-i1,i3:i1:-i1),e(i3:i1:-i1,i2:i1:-i1)) ) -&
 matmul( matmul(b(i3:i1:-i1,i2:i1:-i1),c(i2:i1:-i1,i4:i1:-i1)) ,&
  matmul(d(i4:i1:-i1,i3:i1:-i1),e(i3:i1:-i1,i2:i1:-i1)) ))
-write(1,*)(matmul( matmul(b(i3:i1:-i1,i2:i1:-i1),c(i2:i1:-i1,i4:i1:-i1))+matmul(b(i3:i1:-i1,i2:i1:-i1),c(i2:i1:-i1,i4:i1:-i1))-&
+write(38,*)(matmul( matmul(b(i3:i1:-i1,i2:i1:-i1),c(i2:i1:-i1,i4:i1:-i1))+matmul(b(i3:i1:-i1,i2:i1:-i1),c(i2:i1:-i1,i4:i1:-i1))-&
 matmul(b(i3:i1:-i1,i2:i1:-i1),c(i2:i1:-i1,i4:i1:-i1)) , matmul(d(i4:i1:-i1,i3:i1:-i1),e(i3:i1:-i1,i2:i1:-i1))+&
 matmul(d(i4:i1:-i1,i3:i1:-i1),e(i3:i1:-i1,i2:i1:-i1))-matmul(d(i4:i1:-i1,i3:i1:-i1),e(i3:i1:-i1,i2:i1:-i1)) )+&
  matmul( matmul(b(i3:i1:-i1,i2:i1:-i1),c(i2:i1:-i1,i4:i1:-i1)) , matmul(d(i4:i1:-i1,i3:i1:-i1),e(i3:i1:-i1,i2:i1:-i1)) )&
  -matmul( matmul(b(i3:i1:-i1,i2:i1:-i1),c(i2:i1:-i1,i4:i1:-i1)) , matmul(d(i4:i1:-i1,i3:i1:-i1),e(i3:i1:-i1,i2:i1:-i1)) ))
-rewind 1
-read(1,*) z; call chkx(z)
-read(1,*) z; call chkx(z)
-read(1,*) z; call chkx(z)
-read(1,*) z; call chkx(z)
+rewind 38
+read(38,*) z; call chkx(z)
+read(38,*) z; call chkx(z)
+read(38,*) z; call chkx(z)
+read(38,*) z; call chkx(z)
 print *,'pass'
 contains
  subroutine chk(b)

@@ -14,10 +14,10 @@
       a=1
       j=0
       k=10
-      write(1,'(i4)') k
-      rewind(1)
-      read (1,'(i4)') k
-      do i=1,k  
+      write(3,'(i4)') k
+      rewind(3)
+      read (3,'(i4)') k
+      do i=1,k
         m=i
         call sub1(m)
       enddo

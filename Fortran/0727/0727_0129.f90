@@ -46,32 +46,31 @@
  at(::2,::2,::2,::2)='x'
  allocate(att(4,6,8,10)); a11=>att(::2,::2,::2,::2)
 !
- open (11,delim='quote')
- open (12,delim='quote')
- open (13,delim='quote')
- open (14,delim='quote')
+ open (43,delim='quote')
+ open (44,delim='quote')
+ open (45,delim='quote')
+ open (46,delim='quote')
  call sa(f1(a1+a1,a1//a1//a1),5)
  call s(f1(a1+a1,a1//a1//a1),a11);call sa(a11,5);a11=0
- write(11,*)f1(a1+a1,a1//a1//a1)
- rewind 11;read (11,*) a11;call sa(a11,5);a11=0
+ write(43,*)f1(a1+a1,a1//a1//a1)
+ rewind 43;read (43,*) a11;call sa(a11,5);a11=0
 !
  call sa(f1(a1+a1,a1//a1//a1)+f1(a1+a1,a1//a1//a1),10)
  call s(f1(a1+a1,a1//a1//a1)+f1(a1+a1,a1//a1//a1),a11);call sa(a11,10);a11=0
- write(12,*)f1(a1+a1,a1//a1//a1)+f1(a1+a1,a1//a1//a1)
- rewind 12;read (12,*) a11;call sa(a11,10);a11=0
+ write(44,*)f1(a1+a1,a1//a1//a1)+f1(a1+a1,a1//a1//a1)
+ rewind 44;read (44,*) a11;call sa(a11,10);a11=0
 !
  call sa(f1(f1(a1+a1,a1//a1//a1),f1(a1+a1,a1//a1//a1)),10)
  call s(f1(f1(a1+a1,a1//a1//a1),f1(a1+a1,a1//a1//a1)),a11);call sa(a11,10);a11=0
- write(13,*)f1(f1(a1+a1,a1//a1//a1),f1(a1+a1,a1//a1//a1))
- rewind 13;read (13,*) a11;call sa(a11,10);a11=0
+ write(45,*)f1(f1(a1+a1,a1//a1//a1),f1(a1+a1,a1//a1//a1))
+ rewind 45;read (45,*) a11;call sa(a11,10);a11=0
 !
  call sa(f1(f1(a1+a1,a1//a1//a1)+f1(a1+a1,a1//a1//a1),&
             f1(a1+a1,a1//a1//a1)+f1(a1+a1,a1//a1//a1)),20)
  call s(f1(f1(a1+a1,a1//a1//a1)+f1(a1+a1,a1//a1//a1),&
             f1(a1+a1,a1//a1//a1)+f1(a1+a1,a1//a1//a1)),a11);call sa(a11,20);a11=0
- write(14,*)&
+ write(46,*)&
         f1(f1(a1+a1,a1//a1//a1)+f1(a1+a1,a1//a1//a1),&
             f1(a1+a1,a1//a1//a1)+f1(a1+a1,a1//a1//a1))
- rewind 14;read (14,*) a11;call sa(a11,20);a11=0
+ rewind 46;read (46,*) a11;call sa(a11,20);a11=0
  end
-

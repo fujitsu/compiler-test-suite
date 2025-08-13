@@ -27,6 +27,11 @@ end module s6_mod
 
 program c07
 real, dimension (:,:), allocatable :: a6
+  character(len=80) :: filename2
+  do m1=11,30
+     write(filename2, '(a, i2.2, a)') 'work2', m1, '.dat'
+     open(unit=m1, file=trim(filename2), status='new')
+  enddo
 allocate(a6(5,6))
 do m1=11,30
 a6=0

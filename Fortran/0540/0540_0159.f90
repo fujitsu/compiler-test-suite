@@ -23,7 +23,7 @@
   end type
   contains
     function   prc()
-    write(1,*) 'Okay'
+    write(32,*) 'Okay'
     prc=1
     end function
   end module

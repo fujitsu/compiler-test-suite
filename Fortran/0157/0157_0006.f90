@@ -13,5 +13,5 @@ integer(8)::n,x
 allocatable :: x
 allocate(x)
 x=max(n,0)
-write(1,'("k=",i4,x, z16.16, x ,z16.16)') k, n
+write(7,'("k=",i4,x, z16.16, x ,z16.16)') k, n
 end

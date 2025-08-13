@@ -1,5 +1,25 @@
 Changelog
 =========
+2025-08
+-------
+
+### Added
+ 
+- Add the `TEST_SUITE_FUJITSU_WITH_FAST_MATH` CMake variable to reduce positive FAILs caused by precision errors in floating-point arithmetic. Please see `RUN.md` for details.
+
+### Fixed
+
+- Fix unexpected errors caused by parallel file read/write ([issue #2](https://github.com/fujitsu/compiler-test-suite/issues/2)).
+- Fix uninitialized local variables in Fortran tests ([issue #24](https://github.com/fujitsu/compiler-test-suite/issues/24)).
+- Reduce false positive FAILs caused by precision errors in floating-point arithmetic ([issue #4](https://github.com/fujitsu/compiler-test-suite/issues/4)).
+- Reduce flaky tests ([issue #35](https://github.com/fujitsu/compiler-test-suite/issues/35)).
+- Fix other bugs in the test programs. (including bugs reported by users and Flang CI)
+
+### Removed
+
+- Remove some test programs that is dependent on the processing-system.
+
+
 2025-06
 -------
 

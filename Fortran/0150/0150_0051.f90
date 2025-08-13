@@ -6,17 +6,17 @@ block
   if (size(a)/=k)print *,101
   k=k+1
   if (size(a)/=k-1)print *,102
-  read(1,*,end=10) k1,k2
+  read(10,*,end=10) k1,k2
   print *,103
 end block
 10 continue
 if (k1/=2) print *,201
 if (k2/=9) print *,202
-rewind 1
+rewind 10
 end do
 end
-write(1,*) 2
-rewind  1
+write(10,*) 2
+rewind  10
 call s1
 print *,'pass'
 end

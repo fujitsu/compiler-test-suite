@@ -9,9 +9,9 @@ c        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX2
 
 c        X
 
-      write(1,*)x
-      rewind 1
-      read(1,*)k
+      write(2,*)x
+      rewind 2
+      read(2,*)k
       if (k/=11)print *,k
 
       print *,'pass'

@@ -9,7 +9,7 @@ use def
 type (ydef) :: y
 y%yy=0
 call sub(y,y)
-write(1,*) y%yy
+write(11,*) y%yy
 print *,'pass'
 end
 

@@ -15,7 +15,7 @@ contains
 
   subroutine sub2
     call test
-    write(1,*) 'test_module2'
+    write(11,*) 'test_module2'
   end subroutine sub2
 
 end module test_module2

@@ -5,10 +5,10 @@ CALL OMP_SET_NUM_THREADS(1)
 x=1
 a(1)=1
 b(1)=2
-write(1,*)(a(i),b(i),i=1,1)
+write(15,*)(a(i),b(i),i=1,1)
 !$OMP END PARALLEL
-rewind 1
-read(1,*) j1,j2
+rewind 15
+read(15,*) j1,j2
 if(j1/=1)print *,'error-1'
 if(j2/=2)print *,'error-2'
 print *,'pass'

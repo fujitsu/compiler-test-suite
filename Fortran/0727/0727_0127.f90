@@ -47,26 +47,25 @@
 !
  call sa(f1(a1+a1,a1.and.a1.and.a1),5)
  call s(f1(a1+a1,a1.and.a1.and.a1),a11);call sa(a11,5);a11=0
- write(11,*)f1(a1+a1,a1.and.a1.and.a1)
- rewind 11;read (11,*) a11;call sa(a11,5);a11=0
+ write(35,*)f1(a1+a1,a1.and.a1.and.a1)
+ rewind 35;read (35,*) a11;call sa(a11,5);a11=0
 !
  call sa(f1(a1+a1,a1.and.a1.and.a1)+f1(a1+a1,a1.and.a1.and.a1),10)
  call s(f1(a1+a1,a1.and.a1.and.a1)+f1(a1+a1,a1.and.a1.and.a1),a11);call sa(a11,10);a11=0
- write(12,*)f1(a1+a1,a1.and.a1.and.a1)+f1(a1+a1,a1.and.a1.and.a1)
- rewind 12;read (12,*) a11;call sa(a11,10);a11=0
+ write(36,*)f1(a1+a1,a1.and.a1.and.a1)+f1(a1+a1,a1.and.a1.and.a1)
+ rewind 36;read (36,*) a11;call sa(a11,10);a11=0
 !
  call sa(f1(f1(a1+a1,a1.and.a1.and.a1),f1(a1+a1,a1.and.a1.and.a1)),10)
  call s(f1(f1(a1+a1,a1.and.a1.and.a1),f1(a1+a1,a1.and.a1.and.a1)),a11);call sa(a11,10);a11=0
- write(13,*)f1(f1(a1+a1,a1.and.a1.and.a1),f1(a1+a1,a1.and.a1.and.a1))
- rewind 13;read (13,*) a11;call sa(a11,10);a11=0
+ write(37,*)f1(f1(a1+a1,a1.and.a1.and.a1),f1(a1+a1,a1.and.a1.and.a1))
+ rewind 37;read (37,*) a11;call sa(a11,10);a11=0
 !
  call sa(f1(f1(a1+a1,a1.and.a1.and.a1)+f1(a1+a1,a1.and.a1.and.a1),&
             f1(a1+a1,a1.and.a1.and.a1)+f1(a1+a1,a1.and.a1.and.a1)),20)
  call s(f1(f1(a1+a1,a1.and.a1.and.a1)+f1(a1+a1,a1.and.a1.and.a1),&
             f1(a1+a1,a1.and.a1.and.a1)+f1(a1+a1,a1.and.a1.and.a1)),a11);call sa(a11,20);a11=0
- write(14,*)&
+ write(38,*)&
         f1(f1(a1+a1,a1.and.a1.and.a1)+f1(a1+a1,a1.and.a1.and.a1),&
             f1(a1+a1,a1.and.a1.and.a1)+f1(a1+a1,a1.and.a1.and.a1))
- rewind 14;read (14,*) a11;call sa(a11,20);a11=0
+ rewind 38;read (38,*) a11;call sa(a11,20);a11=0
  end
-

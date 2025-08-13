@@ -1,5 +1,5 @@
 #define a(i) 100
-write(1,*) a &
+write(10,*) a &
 ,a &
 ,a
 print *,'pass'

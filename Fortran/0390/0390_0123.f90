@@ -13,27 +13,27 @@ end subroutine
 subroutine z(p)
 integer,optional::p(:,:)
 save= loc(p)
-write(1,'(z16.16)') loc(p)
+write(39,'(z16.16)') loc(p)
 do k=1,5
 call ss(p)
 end do
-write(1,*)
-write(1,'(z16.16)') loc(p)
+write(39,*)
+write(39,'(z16.16)') loc(p)
 do k=1,5
-kk= fun(p) 
+kk= fun(p)
 if (kk/=0) print *,101
 end do
 end subroutine
-subroutine ss(x) 
+subroutine ss(x)
 integer,intent(in):: x(4)
 if (any(x/=[1,2,3,4])) print *,1021
-write(1,'(z16.16)') loc(x)
+write(39,'(z16.16)') loc(x)
 if (save/=loc(x)) print *,3000
 end subroutine
 function fun(x) result(k)
 integer,intent(in):: x(4)
 if (any(x/=[1,2,3,4])) print *,1022
-write(1,'(z16.16)') loc(x)
+write(39,'(z16.16)') loc(x)
 if (save/=loc(x)) print *,3000
 k=0
 end function

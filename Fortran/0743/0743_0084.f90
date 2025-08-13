@@ -13,11 +13,11 @@ call chk1(c1,c2,c3,c4)
 contains
  subroutine chk1(c1,c2,c3,c4)
  integer(4),dimension(:,:,:)::c1,c2,c3,c4
-write(2,*)c1
-write(2,*)c2
-write(2,*)c3
-write(2,*)c4,100
-rewind 2
-read(2,*)iu;if (iu/=100)print *,'error'
+write(52,*)c1
+write(52,*)c2
+write(52,*)c3
+write(52,*)c4,100
+rewind 52
+read(52,*)iu;if (iu/=100)print *,'error'
  end subroutine
 end

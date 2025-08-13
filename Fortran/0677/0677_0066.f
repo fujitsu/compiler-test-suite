@@ -3,6 +3,9 @@
         COMPLEX*8 A3(10),B3(10)/10*(2.0,2.5)/
         COMPLEX*16 A4(10),B4(10)/10*(32,0.8)/
         INTEGER*4 M(10),S/2/
+        real*4 res1(10)/4, 100, 4, 100, 4, 100, 4, 100, 4, 100/
+        real*8 res2(10)/4, 100, 4, 100, 4, 100, 4, 100, 4, 100/
+
         DO 10 I=1,10
           C1(I)=2.0
           A1(I)=10.0**B1(I)
@@ -35,6 +38,43 @@
           M(I)=M(I)+I
 60      CONTINUE
 
-          WRITE(6,*) A1,A2,A3,A4,M,C1,C2
+        call check(A1,res1)
+          WRITE(6,*)
+        call check2(A2,res2)
+          WRITE(6,*)
+          WRITE(6,*) A3
+          WRITE(6,*)
+          WRITE(6,*) A4
+          WRITE(6,*)
+          WRITE(6,*) M
+          WRITE(6,*)
+          WRITE(6,*) C1
+          WRITE(6,*)
+          WRITE(6,*) C2
           STOP
           END
+
+#define IS_EQUAL(a,b) ((a==b).or.(a==0.and.abs(b)<10E-6).or.(abs(a-b)/abs(a)<10E-6))
+      subroutine check(calc,res)
+      real calc(10),res(10)
+      logical ngcheck/.FALSE./
+      do i=1,10
+         if (IS_EQUAL(calc(i), res(i))) then
+         else
+            ngcheck = .TRUE.
+         endif
+      enddo
+      if (ngcheck) write(6,*) calc
+      end
+#define IS_EQUAL2(a,b) ((a==b).or.(a==0.and.abs(b)<10E-8).or.(abs(a-b)/abs(a)<10E-8))
+      subroutine check2(calc,res)
+      real*8 calc(10),res(10)
+      logical ngcheck/.FALSE./
+      do i=1,10
+         if (IS_EQUAL2(calc(i), res(i))) then
+         else
+            ngcheck = .TRUE.
+         endif
+      enddo
+      if (ngcheck) write(6,*) calc
+      end

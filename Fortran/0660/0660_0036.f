@@ -7,21 +7,21 @@
        type (tree) ,pointer :: root
        integer :: data, eof
        nullify(root)
-       write (11,*) 99
-       write (12,*) 77
-       write (13,*) 11
-       write (14,*) 33
-       write (15,*) 55
-       jj=11
-       do 
+       write (101,*) 99
+       write (102,*) 77
+       write (103,*) 11
+       write (104,*) 33
+       write (105,*) 55
+       jj=101
+       do
          rewind jj
          read(jj,*,iostat=eof) data
          if (eof/=0) exit
          call store(root,data)
          jj=jj+1
-         if (jj.eq.16) exit
+         if (jj.eq.106) exit
        end do
-       call output(root) 
+       call output(root)
        print *,'pass'
        contains
        recursive subroutine store(ptr,data)
@@ -34,7 +34,7 @@
            nullify(ptr%right)
         else if (data < ptr%node) then
            call store(ptr%left,data)
-        else 
+        else
            call store(ptr%right,data)
         end if
        end subroutine store
@@ -42,7 +42,7 @@
         type (tree),pointer :: ptr
         if(associated(ptr)) then
           call output(ptr%left)
-          write(*,*) ptr%node 
+          write(*,*) ptr%node
           call output(ptr%right)
         end if
        end subroutine output

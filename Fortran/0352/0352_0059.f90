@@ -1,4 +1,5 @@
 program main
+save
 type t1
    logical(kind=8) :: l8
    integer(kind=2) :: i2

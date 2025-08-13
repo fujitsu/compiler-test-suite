@@ -7,17 +7,17 @@ print *,'pass'
  subroutine ss1 &
          (b11v,b12v,i1,i2,i3)
  integer  ,dimension(:)::b11v,b12v
-   write(1,*)b11v+dot_product(b11v(1:3),b12v(1:3))
-   write(1,*)b11v+dot_product(b11v(i1:i3),b12v(3-i2:i1+i2))
-   write(1,*)b11v(i3-i2:i1+i2)+dot_product(b11v(i1:i3),b12v(3-i2:i1+i2))
-   write(1,*)dot_product(b11v(1:3),b12v(1:3))+ b11v
-   write(1,*)dot_product(b11v(i1:i3),b12v(3-i2:i1+i2))+b11v
-   write(1,*)dot_product(b11v(i1:i3),b12v(3-i2:i1+i2))+b11v(i3-i2:i1+i2)
+   write(8,*)b11v+dot_product(b11v(1:3),b12v(1:3))
+   write(8,*)b11v+dot_product(b11v(i1:i3),b12v(3-i2:i1+i2))
+   write(8,*)b11v(i3-i2:i1+i2)+dot_product(b11v(i1:i3),b12v(3-i2:i1+i2))
+   write(8,*)dot_product(b11v(1:3),b12v(1:3))+ b11v
+   write(8,*)dot_product(b11v(i1:i3),b12v(3-i2:i1+i2))+b11v
+   write(8,*)dot_product(b11v(i1:i3),b12v(3-i2:i1+i2))+b11v(i3-i2:i1+i2)
  end subroutine
  end
  subroutine chk
- rewind 1
-read(1,*)i1,i2,i3
+ rewind 8
+read(8,*)i1,i2,i3
 if (any((/i1,i2,i3/)/=80))write(6,*) "NG"
 if (any((/i1,i2,i3/)/=80))write(6,*) "NG"
 if (any((/i1,i2,i3/)/=80))write(6,*) "NG"

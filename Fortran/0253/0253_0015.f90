@@ -8,10 +8,10 @@ logical::res2
 character*10::res3
 type(ty)::obj
 obj = ty(123,.true.,"fortran")
-open(unit=20,file="fort.06",action="write")
+open(unit=20,file="fort.106",action="write")
 write(20,FMT='(*(G0," "))')obj%ii,obj%ll,obj%ch
 close(20)
-open(unit=30,file="fort.06",action="read")
+open(unit=30,file="fort.106",action="read")
 read(30,40)res1,res2,res3
 close(30)
 10 format(*(G0))

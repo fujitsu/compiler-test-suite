@@ -41,13 +41,13 @@ a=b
 if (any(lbound(a)/=2))print *,401
 if (any(shape(a)/=3))print *,242
 end
-write(1,*) 'start s1'
+write(2,*) 'start s1'
 call s1
-write(1,*) 'start s2'
+write(2,*) 'start s2'
 call s2
-write(1,*) 'start s3'
+write(2,*) 'start s3'
 call s3
-write(1,*) 'start s4'
+write(2,*) 'start s4'
 call s4
 print *,'pass'
 end

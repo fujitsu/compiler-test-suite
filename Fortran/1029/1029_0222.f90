@@ -1,9 +1,9 @@
 i = 4
-open(10)
-write(10, '(i4)') i
-rewind(10)
-read(10, '(i4)') i
-close(10)
+open(37)
+write(37, '(i4)') i
+rewind(37)
+read(37, '(i4)') i
+close(37)
 
 if(.not.(.not.(i.lt.5))) then
    print *, ': ok'

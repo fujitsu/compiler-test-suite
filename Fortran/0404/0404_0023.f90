@@ -13,14 +13,14 @@ j1 = omp_get_thread_num()
 j2 = omp_get_thread_num()
 j3 = omp_get_thread_num()
 j4 = omp_get_thread_num()
-write(1,*)1,loc(j1)
+write(15,*)1,loc(j1)
 !$omp end parallel
 !$omp parallel
 if (any(j1 /= omp_get_thread_num())) print *,35
 if (any(j2 /= omp_get_thread_num())) print *,36
 if (any(j3 /= omp_get_thread_num())) print *,36
 if (any(j4 /= omp_get_thread_num())) print *,36
-write(1,*)1,loc(j1)
+write(15,*)1,loc(j1)
 !$omp end parallel
 end subroutine
 end
@@ -31,12 +31,12 @@ call s1
 !$omp parallel
 j2 = omp_get_thread_num()
 j4 = omp_get_thread_num()
-write(1,*)1,loc(j1)
+write(15,*)1,loc(j1)
 !$omp end parallel
 !$omp parallel
 if (any(j2 /= omp_get_thread_num())) print *,37
 if (any(j4 /= omp_get_thread_num())) print *,37
-write(1,*)1,loc(j1)
+write(15,*)1,loc(j1)
 !$omp end parallel
 print *,'pass'
 end

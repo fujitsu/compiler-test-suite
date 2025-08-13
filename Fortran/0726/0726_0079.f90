@@ -13,7 +13,7 @@
              B(I)=I+1
          END DO
          DO I=1,isize,1000
-             write(1,*) A(i)
+             write(33,*) A(i)
          END DO
  print *, 'pass'
  contains

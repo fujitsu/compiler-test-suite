@@ -1,6 +1,6 @@
 module mod
  integer,target:: i(5,5)=reshape((/(k,k=1,25)/),(/5,5/))
- integer,parameter::n=1
+ integer,parameter::n=20
  type x
    integer x1,x2
  end type

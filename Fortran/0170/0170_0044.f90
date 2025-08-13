@@ -162,7 +162,7 @@ do n1=1,loop*2000
 call  s01(a,b,k1)
 end do
 call cpu_time(t2)
-write(1,*)'s01:', t2-t1
+write(8,*)'s01:', t2-t1
 end
 subroutine cs02
 use mod
@@ -174,7 +174,7 @@ do n1=1,loop
 call       s02(a,b,k1)
 end do
 call cpu_time(t2)
-write(1,*)'s02:', t2-t1
+write(8,*)'s02:', t2-t1
 end
 subroutine cs03
 use mod
@@ -186,7 +186,7 @@ do n1=1,loop
 call       s03(a,b,k1)
 end do
 call cpu_time(t2)
-write(1,*)'s03:', t2-t1
+write(8,*)'s03:', t2-t1
 end
 subroutine cs04
 use mod
@@ -198,7 +198,7 @@ do n1=1,loop
 call        s04(a,b,k1,k2,k3)
 end do
 call cpu_time(t2)
-write(1,*)'s04:', t2-t1
+write(8,*)'s04:', t2-t1
 end
 subroutine cs05
 use mod
@@ -210,7 +210,7 @@ do n1=1,loop
 call s05(a,b,k1,k2,k3)
 end do
 call cpu_time(t2)
-write(1,*)'s05:', t2-t1
+write(8,*)'s05:', t2-t1
 end
 subroutine cs06
 use mod
@@ -221,7 +221,7 @@ do n1=1,loop
 call        s06(a,b)
 end do
 call cpu_time(t2)
-write(1,*)'s06:', t2-t1
+write(8,*)'s06:', t2-t1
 end
 subroutine cs07
 use mod
@@ -232,7 +232,7 @@ do n1=1,loop
 call        s07(a,b)
 end do
 call cpu_time(t2)
-write(1,*)'s07:', t2-t1
+write(8,*)'s07:', t2-t1
 end
 subroutine cs08
 use mod
@@ -244,7 +244,7 @@ do n1=1,loop
 call        s08(a,b,k1,k2,k3)
 end do
 call cpu_time(t2)
-write(1,*)'s08:', t2-t1
+write(8,*)'s08:', t2-t1
 end
 subroutine cs09
 use mod
@@ -255,7 +255,7 @@ do n1=1,loop
 call        s09(a,b)
 end do
 call cpu_time(t2)
-write(1,*)'s09:', t2-t1
+write(8,*)'s09:', t2-t1
 end
 subroutine cs10
 use mod
@@ -266,7 +266,7 @@ do n1=1,loop
 call        s10(a,b)
 end do
 call cpu_time(t2)
-write(1,*)'s10:', t2-t1
+write(8,*)'s10:', t2-t1
 end
 subroutine cs11
 use modk
@@ -277,7 +277,7 @@ do n1=1,loop*2000
 call        s11(a,b,k1)
 end do
 call cpu_time(t2)
-write(1,*)'s11:', t2-t1
+write(8,*)'s11:', t2-t1
 end
 subroutine cs12
 use modk
@@ -288,7 +288,7 @@ do n1=1,loop
 call        s12(a,b,k1)
 end do
 call cpu_time(t2)
-write(1,*)'s12:', t2-t1
+write(8,*)'s12:', t2-t1
 end
 subroutine cs13
 use modk
@@ -299,7 +299,7 @@ do n1=1,loop
 call        s13(a,b,k1)
 end do
 call cpu_time(t2)
-write(1,*)'s13:', t2-t1
+write(8,*)'s13:', t2-t1
 end
 subroutine cs14
 use modk
@@ -310,7 +310,7 @@ do n1=1,loop
 call        s14(a,b,k1,k2,k3)
 end do
 call cpu_time(t2)
-write(1,*)'s14:', t2-t1
+write(8,*)'s14:', t2-t1
 end
 subroutine cs15
 use modk
@@ -321,7 +321,7 @@ do n1=1,loop
 call        s15(a,b,k1,k2,k3)
 end do
 call cpu_time(t2)
-write(1,*)'s15:', t2-t1
+write(8,*)'s15:', t2-t1
 end
 subroutine cs16
 use modk
@@ -332,7 +332,7 @@ do n1=1,loop
 call        s16(a,b)
 end do
 call cpu_time(t2)
-write(1,*)'s16:', t2-t1
+write(8,*)'s16:', t2-t1
 end
 subroutine cs17
 use modk
@@ -343,7 +343,7 @@ do n1=1,loop
 call        s17(a,b)
 end do
 call cpu_time(t2)
-write(1,*)'s17:', t2-t1
+write(8,*)'s17:', t2-t1
 end
 subroutine cs18
 use modk
@@ -354,7 +354,7 @@ do n1=1,loop
 call        s18(a,b,k1,k2,k3)
 end do
 call cpu_time(t2)
-write(1,*)'s18:', t2-t1
+write(8,*)'s18:', t2-t1
 end
 subroutine cs19
 use modk
@@ -365,7 +365,7 @@ do n1=1,loop
 call        s19(a,b)
 end do
 call cpu_time(t2)
-write(1,*)'s19:', t2-t1
+write(8,*)'s19:', t2-t1
 end
 subroutine cs20
 use modk
@@ -376,7 +376,7 @@ do n1=1,loop
 call        s20(a,b)
 end do
 call cpu_time(t2)
-write(1,*)'s20:', t2-t1
+write(8,*)'s20:', t2-t1
 end
 subroutine ct01
 use modk
@@ -387,7 +387,7 @@ do n1=1,loop
 call        t01(a,b,k1)
 end do
 call cpu_time(t2)
-write(1,*)'t01:', t2-t1
+write(8,*)'t01:', t2-t1
 end
 subroutine ct02
 use modk
@@ -398,7 +398,7 @@ do n1=1,loop
 call        t02(a,b,k1,w1)
 end do
 call cpu_time(t2)
-write(1,*)'t02:', t2-t1
+write(8,*)'t02:', t2-t1
 end
 subroutine ct03
 use modk
@@ -409,7 +409,7 @@ do n1=1,loop
 call        t03(a,b,k1,w1)
 end do
 call cpu_time(t2)
-write(1,*)'t03:', t2-t1
+write(8,*)'t03:', t2-t1
 end
 subroutine ct04
 use modk
@@ -420,7 +420,7 @@ do n1=1,loop
 call        t04(a,b,w1,k2,k3)
 end do
 call cpu_time(t2)
-write(1,*)'t04:', t2-t1
+write(8,*)'t04:', t2-t1
 end
 subroutine ct05
 use modk
@@ -431,7 +431,7 @@ do n1=1,loop
 call        t05(a,b,w1,k2,k3)
 end do
 call cpu_time(t2)
-write(1,*)'t05:', t2-t1
+write(8,*)'t05:', t2-t1
 end
 subroutine ct06
 use modk
@@ -442,7 +442,7 @@ do n1=1,loop
 call        t06(a,b)
 end do
 call cpu_time(t2)
-write(1,*)'t06:', t2-t1
+write(8,*)'t06:', t2-t1
 end
 subroutine ct07
 use modk
@@ -453,7 +453,7 @@ do n1=1,loop
 call        t07(a,b)
 end do
 call cpu_time(t2)
-write(1,*)'t07:', t2-t1
+write(8,*)'t07:', t2-t1
 end
 subroutine ct11
 use modk
@@ -464,7 +464,7 @@ do n1=1,loop
 call        t11(a,b,k1)
 end do
 call cpu_time(t2)
-write(1,*)'t11:', t2-t1
+write(8,*)'t11:', t2-t1
 end
 subroutine ct12
 use modk
@@ -475,7 +475,7 @@ do n1=1,loop
 call        t12(a,b,k1,w1)
 end do
 call cpu_time(t2)
-write(1,*)'t12:', t2-t1
+write(8,*)'t12:', t2-t1
 end
 subroutine ct13
 use modk
@@ -486,7 +486,7 @@ do n1=1,loop
 call        t13(a,b,k1,w1)
 end do
 call cpu_time(t2)
-write(1,*)'t13:', t2-t1
+write(8,*)'t13:', t2-t1
 end
 subroutine ct14
 use modk
@@ -497,7 +497,7 @@ do n1=1,loop
 call        t14(a,b,w1,k2,k3)
 end do
 call cpu_time(t2)
-write(1,*)'t14:', t2-t1
+write(8,*)'t14:', t2-t1
 end
 subroutine ct15
 use modk
@@ -508,7 +508,7 @@ do n1=1,loop
 call        t15(a,b,w1,k2,k3)
 end do
 call cpu_time(t2)
-write(1,*)'t15:', t2-t1
+write(8,*)'t15:', t2-t1
 end
 subroutine ct16
 use modk
@@ -519,7 +519,7 @@ do n1=1,loop
 call        t16(a,b)
 end do
 call cpu_time(t2)
-write(1,*)'t16:', t2-t1
+write(8,*)'t16:', t2-t1
 end
 subroutine ct17
 use modk
@@ -530,7 +530,7 @@ do n1=1,loop
 call  t17(a,b)
 end do
 call cpu_time(t2)
-write(1,*)'t17:', t2-t1
+write(8,*)'t17:', t2-t1
 end
 
 use mod

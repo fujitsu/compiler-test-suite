@@ -14,7 +14,7 @@ contains
   this%a = 1
  end subroutine
  subroutine prc2(ii )
-  write(1,*) ii
+  write(9,*) ii
  end subroutine
 end
 module m1
@@ -36,8 +36,8 @@ contains
 subroutine chk(x)
 type(xyz)::x
 if (x%a/=1) print *,101
-rewind 1
-read(1,*) k
+rewind 9
+read(9,*) k
  if (k/=109) print *,102
 end subroutine
 end

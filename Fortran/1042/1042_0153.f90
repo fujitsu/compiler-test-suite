@@ -8,7 +8,7 @@
 
         call stackTest_init( arrA(:,:,1), imax,jmax,kmax )
         call stackTest_calc( arrA(:,:,1), imax,jmax,kmax )
-        write(1,*)SUM( arrA(:,:,:) )
+        write(2,*)SUM( arrA(:,:,:) )
         print *,'pass'
     end
 
@@ -25,7 +25,7 @@
         end do
 
         arrB = arrA
-        write(1,*)"stackTest_init:",MAXVAL( arrB )
+        write(2,*)"stackTest_init:",MAXVAL( arrB )
 
         return
     end subroutine

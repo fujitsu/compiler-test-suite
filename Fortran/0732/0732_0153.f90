@@ -3,7 +3,7 @@ print *,'pass'
 end
 subroutine ss1(i)
 real(4)::b(i,i),c(i,i),a(i,i),aa(i),d(i)
-n=30
+n=90
 b=reshape((/(i,i=1,9)/),(/3,3/))
 c=reshape((/(i,i=1,9)/),(/3,3/))
 d=reshape((/(i,i=2,4)/),(/3/))

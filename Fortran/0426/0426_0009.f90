@@ -20,6 +20,6 @@ end module
 use m1
 type(xyz):: w1,w2
 w1=foo(w2) 
-write(1,*) w1%a
+write(4,*) w1%a
 print *,'pass'
 end

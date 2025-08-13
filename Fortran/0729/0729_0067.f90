@@ -4,13 +4,13 @@
       i = 13
 
       rr='|'// trim(image_blk(i))// '|'
-      write(1,*) rr
+      write(102,*) rr
       rrr=>      image_c(i)
-      write(1,*) '|',rrr,'|'
-      rewind 1
-      read(1,'(a)') r
+      write(102,*) '|',rrr,'|'
+      rewind 102
+      read(102,'(a)') r
       if (r/=' |13|')write(6,*) "OK"
-      read(1,'(a)') r
+      read(102,'(a)') r
       if (r/=' |13|')write(6,*) "OK"
       print *,'pass'
 

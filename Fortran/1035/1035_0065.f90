@@ -10,7 +10,7 @@ contains
   SUBROUTINE sub
     USE mod_var
     USE mod_ly
-    write(1,*)'ly =',ly
+    write(40,*)'ly =',ly
     if (abs(ly-1.0)>0.0001)print *,'error'
   END SUBROUTINE sub
 end MODULE mod_sub

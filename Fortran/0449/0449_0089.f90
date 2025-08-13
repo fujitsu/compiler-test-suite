@@ -28,7 +28,7 @@ contains
    allocate ( &
      a(3)%x1(n),a(3)%x2(n*n),a(3)%x3(n),a(3)%x4(n*n),a(3)%x5(n),a(3)%x6(n*n),a(3)%x7(n),a(3)%x8(n*n),stat=k)
    if (k/=0) stop 1000
-   write(1,'(z16.16)') loc(a(3)%x1)
+   write(194,'(z16.16)') loc(a(3)%x1)
   end subroutine
 end
 use m1
@@ -42,18 +42,18 @@ end
 subroutine chk
 character(16):: c,cc(100)
 k=0
-rewind 1
+rewind 194
 do nn=1,10000
- read(1,'(a)') c
+ read(194,'(a)') c
  do kk=1,k
    if (cc(kk)==c) then
      goto 2
    endif
  end do
  k=k+1
- if (k>100) then 
+ if (k>100) then
     print *,'Eroor memory leak '
-    return 
+    return
  endif
  cc(k)=c
 2 continue

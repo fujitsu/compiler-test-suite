@@ -1,3 +1,4 @@
+save
 type ss1
   sequence
   integer,dimension(1000,1000):: a

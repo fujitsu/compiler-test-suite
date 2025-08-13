@@ -6,13 +6,13 @@
        end interface
        integer,dimension(:),allocatable ::data
        integer ::n
-       write(8,*) 10
-       rewind 8
-       read(8,*) n
+       write(33,*) 10
+       rewind 33
+       read(33,*) n
        allocate (data(n))
-       write (9,*) 31,55,33,86,21,45,11,43,33,18
-       rewind 9
-       read(9,*) data
+       write (34,*) 31,55,33,86,21,45,11,43,33,18
+       rewind 34
+       read(34,*) data
         write (*,*) '* imput data *'
         write(*,'(5i10)') data
        call sort(data)

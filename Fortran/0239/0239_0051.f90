@@ -20,12 +20,12 @@ IMPLICIT NONE
     CONTAINS
        SUBROUTINE dest_arr(dmy)
         TYPE(t0):: dmy(:)
-        write(1,*) 101,dmy%jj
+        write(4,*) 101,dmy%jj
         END SUBROUTINE
 
         SUBROUTINE f1_scr_ty(dmy)
         TYPE(ty):: dmy
-        write(1,*) 102,dmy%ii
+        write(4,*) 102,dmy%ii
         END SUBROUTINE
 
 END MODULE
@@ -40,7 +40,7 @@ PROGRAM MAIN
     ty_obj%ii=30
     ty_obj%jj=40
     ty_obj%jj=50
-    res = Foo(ty_obj)   
+    res = Foo(ty_obj)
     call chk
     print *,'pass'
     CONTAINS
@@ -51,10 +51,9 @@ PROGRAM MAIN
          END FUNCTION
 END PROGRAM
 subroutine chk
-rewind 1
-read(1,*) k1,k2 
+rewind 4
+read(4,*) k1,k2
 if (any([k1,k2]/=[102,30])) print *,301
-read(1,*) k1,k2 ,k3,k4,k5,k6
+read(4,*) k1,k2 ,k3,k4,k5,k6
 if (any([k1,k2,k3,k4,k5,k6]/=[101,20,20,20,20,20])) print *,302
 end
-

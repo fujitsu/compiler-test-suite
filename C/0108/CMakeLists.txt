@@ -14,5 +14,6 @@ set_property(SOURCE 0108_0041.c APPEND PROPERTY COMPILE_OPTIONS "-finline-functi
 set_property(SOURCE 0108_0042.c APPEND PROPERTY COMPILE_OPTIONS "-fno-inline-functions")
 set_property(SOURCE 0108_0043.c APPEND PROPERTY COMPILE_OPTIONS "-fno-inline-functions")
 set_property(SOURCE 0108_0094.c APPEND PROPERTY COMPILE_OPTIONS "-O0;-std=c11")
+set_property(TARGET Fujitsu-C-0108_0094 APPEND PROPERTY LINK_OPTIONS "-O0")
 set_property(SOURCE 0108_0095.c APPEND PROPERTY COMPILE_OPTIONS "-fhonor-nans;-fhonor-infinities")
 set_property(SOURCE 0108_0096.c APPEND PROPERTY COMPILE_OPTIONS "-fhonor-nans;-fhonor-infinities")

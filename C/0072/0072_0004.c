@@ -95,11 +95,12 @@ int main()
         {
           *(fp+i) = pt->i400c[i] < 1;
           if(pt->u400a[i]!=pt->u400c[1])
-            *(fp+i) = pt->i400c[i] < pt->i400b[i] < pt->i400b[3];
+            *(fp+i) = !((pt->i400c[i] < pt->i400b[i]) && (pt->i400b[i] < pt->i400b[3]));
           else if(pt->u400b[i]!=pt->u400c[i])
             *(fp+i) = 88;
                else
-            *(fp+i) = (88 > pt->i400b[i] > pt->i400b[3] > 10) + 111;
+            *(fp+i) = ( (88 > pt->i400b[i]) &&  (pt->i400b[i]> pt->i400b[3]) && (pt->i400b[3]> 10)) + 111;
+            //*(fp+i) = (88 > pt->i400b[i] > pt->i400b[3] > 10) + 111;
         }
       }
     }

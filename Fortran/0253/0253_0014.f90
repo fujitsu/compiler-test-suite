@@ -4,10 +4,10 @@ subroutine sub(n)
 integer::n,res
 integer::arr(n)
 arr = (/10,12,14,16/)
-open(unit=10,file="fort.04",action="write")
+open(unit=10,file="fort.104",action="write")
 write(10,'(*(G0))')(arr(i),i=1,n)
 close(10)
-open(unit=20,file="fort.04",action="read")
+open(unit=20,file="fort.104",action="read")
 read(20,'(I2)')res
 close(20)
 if (res/=arr(1))print*,101

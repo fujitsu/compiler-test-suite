@@ -29,6 +29,6 @@ program main
 
 type(ty)::obj
 
-write(1,*)obj
+write(2,*)obj
 print *,'pass'
 End program

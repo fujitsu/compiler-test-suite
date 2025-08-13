@@ -1,12 +1,12 @@
 subroutine s1(k1,k2)
-write(1,*)k1,k2,sign(k1,k2)
+write(46,*)k1,k2,sign(k1,k2)
 if (k1==1 .and. k2==1) then
   if (sign(k1,k2)/=1) print *,101
 else if (k1==-1 .and. k2==1) then
   if (sign(k1,k2)/=1) print *,102
 else if (k1==1 .and. k2==-1) then
   if (sign(k1,k2)/=-1) print *,103
-else 
+else
   if (sign(k1,k2)/=-1) print *,104
 end if
 end
@@ -25,9 +25,9 @@ if (n3/=-1) print *,203
 if (n4/=-1) print *,204
 end
 call s1(1,1)
-call s1(-1,1) 
-call s1(1,-1) 
-call s1(-1,-1) 
+call s1(-1,1)
+call s1(1,-1)
+call s1(-1,-1)
 call s2
 print *,'pass'
 end

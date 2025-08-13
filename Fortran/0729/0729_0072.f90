@@ -16,12 +16,12 @@ end module
 use mod
 i1=1;i2=2;i5=5
 call sub(ia(i1:i5:i2,i1:i5:i2,i1:i5:i2))
-write(1,*)ia(i1:i5:i2,i1:i5:i2,i1:i5:i2)
+write(110,*)ia(i1:i5:i2,i1:i5:i2,i1:i5:i2)
 ibp=>ibt(i1:i5:i2,i1:i5:i2,i1:i5:i2)
 call sub(ibp)
-write(1,*)ibt(i1:i5:i2,i1:i5:i2,i1:i5:i2)
+write(110,*)ibt(i1:i5:i2,i1:i5:i2,i1:i5:i2)
 ic%ct2=reshape((/(i,i=1,27)/),(/3,3,3/))
 call sub(ic%ct2)
-write(1,*)ic%ct2
+write(110,*)ic%ct2
 print *,'pass'
 end

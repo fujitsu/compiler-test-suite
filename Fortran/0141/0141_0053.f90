@@ -14,14 +14,14 @@ contains
    call c_f_procpointer(p,fp)
    call fp
   end subroutine
-  subroutine sub2(pp) 
+  subroutine sub2(pp)
    procedure(sub),pointer::pp
    type (c_funptr):: cp
-   cp= c_funloc( pp )  
+   cp= c_funloc( pp )
    call foo(cp)
   end subroutine
 end
- 
+
 use mod1
    procedure(sub),pointer::fp
 fp=> sub
@@ -29,5 +29,5 @@ call sub2( fp )
 print *,'pass'
 end
   subroutine sub() bind(c)
-    write(1,*)'called sub'
+    write(40,*)'called sub'
   end subroutine

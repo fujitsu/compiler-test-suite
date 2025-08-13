@@ -14,11 +14,11 @@
  character,dimension(:,:),allocatable:: r3
  allocate(r1(1,1),r3(1,1))
 r1(1,1)='1'
- r3     =   plus3(r1);write(1,*)r3
+ r3     =   plus3(r1);write(48,*)r3
  end
 character*50 r
 call sub
-rewind 1
-read(1,'(a)') r;if (r/=' 1')print *,'error-1'
+rewind 48
+read(48,'(a)') r;if (r/=' 1')print *,'error-1'
  print *,'pass'
 end

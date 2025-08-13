@@ -5,9 +5,9 @@
 c1=(1,1)
 c2=(1,1)
 c3=(1,1)
-write(1,*) c1
-write(1,*) c2
-write(1,*) c3
+write(14,*) c1
+write(14,*) c2
+write(14,*) c3
   END
     complex:: c1(2,3,4)
     complex:: c2(2,3,4)

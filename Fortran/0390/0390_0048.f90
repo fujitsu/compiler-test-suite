@@ -41,9 +41,9 @@ print *,'pass'
      real, intent (in), optional :: z(:)
 
      if( present( z ) ) then
-       write(1,*) 11
+       write(16,*) 11
      else
-       write(1,*) 10
+       write(16,*) 10
      endif
    end subroutine
 
@@ -54,25 +54,25 @@ print *,'pass'
      real, intent (in), optional, pointer :: z(:)
 
      if( present( z ) ) then
-       write(1,*) 21
+       write(16,*) 21
      else
-       write(1,*) 20
+       write(16,*) 20
      endif
    end subroutine
  end program
 
 subroutine chk
-rewind 1
-read(1,*) k;if (k/=10) print *,101
-read(1,*) k;if (k/=21) print *,102
-read(1,*) k;if (k/=10) print *,1011
-read(1,*) k;if (k/=21) print *,1021
-read(1,*) k;if (k/=10) print *,1012
-read(1,*) k;if (k/=21) print *,1022
-read(1,*) k;if (k/=11) print *,103
-read(1,*) k;if (k/=21) print *,104
-read(1,*) k;if (k/=11) print *,1031
-read(1,*) k;if (k/=21) print *,1041
-read(1,*) k;if (k/=11) print *,1032
-read(1,*) k;if (k/=21) print *,1042
+rewind 16
+read(16,*) k;if (k/=10) print *,101
+read(16,*) k;if (k/=21) print *,102
+read(16,*) k;if (k/=10) print *,1011
+read(16,*) k;if (k/=21) print *,1021
+read(16,*) k;if (k/=10) print *,1012
+read(16,*) k;if (k/=21) print *,1022
+read(16,*) k;if (k/=11) print *,103
+read(16,*) k;if (k/=21) print *,104
+read(16,*) k;if (k/=11) print *,1031
+read(16,*) k;if (k/=21) print *,1041
+read(16,*) k;if (k/=11) print *,1032
+read(16,*) k;if (k/=21) print *,1042
 end

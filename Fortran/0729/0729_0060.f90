@@ -4,7 +4,7 @@ contains
 subroutine lop(a,c)
 real, intent(out) :: c
 c=a+2+kol()
-write(1,*) a,c
+write(97,*) a,c
 end subroutine
 function kol()
 kol=a+4

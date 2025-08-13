@@ -8,7 +8,7 @@ namelist /nama/ a
 allocate(a)
 a%a1=1
 a%a2=2
-write(1,nama)
+write(8,nama)
 end
 call s1
 call chk
@@ -21,8 +21,8 @@ integer::a2
 end type
 type(at):: a
 namelist /nama/ a
-rewind 1
-read(1,nama) 
+rewind 8
+read(8,nama)
 if(a%a1/=1)print *,'error-1'
 if(a%a2/=2)print *,'error-2'
 end

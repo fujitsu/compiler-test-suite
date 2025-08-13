@@ -13,7 +13,7 @@ contains
  subroutine chk1(b,e,k)
  real(4),dimension(:,:)::b
  real(4),dimension(:)::e
- write(1,*)'test'
+ write(36,*)'test'
 select case(k)
 case(1)
  if (any(shape(b)/=(/0,3/)))write(6,*) "NG"

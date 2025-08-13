@@ -20,12 +20,12 @@ end
 use mod01
 integer i(2)
 i(1:1)=i01fun(1)
-write(1,*)i(1:1)
+write(3,*)i(1:1)
 i(1:2)=i02fun(2)
-write(1,*)i
-rewind 1
-read(1,*) k;if (k/=2)print *,'error-1'
-read(1,*) k1,k2;if (any((/k1,k2/)/=1))print *,'error-2'
+write(3,*)i
+rewind 3
+read(3,*) k;if (k/=2)print *,'error-1'
+read(3,*) k1,k2;if (any((/k1,k2/)/=1))print *,'error-2'
 print *,'pass'
 
 end

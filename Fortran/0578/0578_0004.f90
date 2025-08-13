@@ -11,15 +11,15 @@ use m1
 external sub
 if(s(sub) /= 1) print*, 101
 
-rewind 1
-read(1,*) n
+rewind 3
+read(3,*) n
 if (n/=9) print *,201
 print *,'PASS'
 end
 
 function sub()
 integer::n=9
-write(1,*) n
+write(3,*) n
 sub = 1
 end function
 

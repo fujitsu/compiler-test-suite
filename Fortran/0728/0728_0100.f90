@@ -27,23 +27,23 @@
  type(w)::x
  type(ww)::ssx2
  character  ssx1
- write(1,*) ss1((x%a1(1,1)))
- write(1,*) ssx1((x%a1(1,1)))
- write(1,*) ss2((x%a0(1,1)))
- write(1,*) ssx2((x%a0(1,1)))
- write(1,*) ss1((x%a1(i1+i1,i1+i1+i1)))
- write(1,*) ssx1((x%a1(i1+i1,i1+i1+i1)))
- write(1,*) ss2((x%a0(i1+i1,i1+i1+i1)))
- write(1,*) ssx2((x%a0(i1+i1,i1+i1+i1)))
- rewind 1
- read(1,*)i;if (i/=1)write(6,*) "NG"
- read(1,*)i;if (i/=1)write(6,*) "NG"
- read(1,*)i;if (i/=1)write(6,*) "NG"
- read(1,*)i;if (i/=1)write(6,*) "NG"
- read(1,*)i;if (i/=6)write(6,*) "NG"
- read(1,*)i;if (i/=6)write(6,*) "NG"
- read(1,*)i;if (i/=6)write(6,*) "NG"
- read(1,*)i;if (i/=6)write(6,*) "NG"
+ write(17,*) ss1((x%a1(1,1)))
+ write(17,*) ssx1((x%a1(1,1)))
+ write(17,*) ss2((x%a0(1,1)))
+ write(17,*) ssx2((x%a0(1,1)))
+ write(17,*) ss1((x%a1(i1+i1,i1+i1+i1)))
+ write(17,*) ssx1((x%a1(i1+i1,i1+i1+i1)))
+ write(17,*) ss2((x%a0(i1+i1,i1+i1+i1)))
+ write(17,*) ssx2((x%a0(i1+i1,i1+i1+i1)))
+ rewind 17
+ read(17,*)i;if (i/=1)write(6,*) "NG"
+ read(17,*)i;if (i/=1)write(6,*) "NG"
+ read(17,*)i;if (i/=1)write(6,*) "NG"
+ read(17,*)i;if (i/=1)write(6,*) "NG"
+ read(17,*)i;if (i/=6)write(6,*) "NG"
+ read(17,*)i;if (i/=6)write(6,*) "NG"
+ read(17,*)i;if (i/=6)write(6,*) "NG"
+ read(17,*)i;if (i/=6)write(6,*) "NG"
  end
    function ssx1(x1)
    character,intent(in)::x1

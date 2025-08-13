@@ -25,9 +25,9 @@ integer,parameter:: p1=20,p2=30
 integer:: a(p1,p2),b(p1*p2)
 real:: t1,t2
 a=reshape ( [ (k,k=1,p1*p2) ] , [p1,p2] )
-write(1,*) p1,p2
-rewind 1
-read (1,*)nn1,nn2
+write(7,*) p1,p2
+rewind 7
+read (7,*)nn1,nn2
 
 call cpu_time(t1)
 do n1=p1-10,nn1
@@ -36,9 +36,9 @@ call ss(a,b)
 end do
 end do
 call cpu_time(t2)
-write(1,*)'ss:', t2-t1
-if (   (b(1)/=2)) write(1,*)8001
-if (   (b(nn1*nn2)/=p1*p2+1)) write(1,*)8002
+write(7,*)'ss:', t2-t1
+if (   (b(1)/=2)) write(7,*)8001
+if (   (b(nn1*nn2)/=p1*p2+1)) write(7,*)8002
 
 call cpu_time(t1)
 do n1=p1-10,nn1
@@ -47,9 +47,9 @@ call s0(a,b)
 end do
 end do
 call cpu_time(t2)
-write(1,*) 's0:', t2-t1
-if (   (b(1)/=2)) write(1,*)9001
-if (   (b(nn1*nn2)/=p1*p2+1)) write(1,*)9002
+write(7,*) 's0:', t2-t1
+if (   (b(1)/=2)) write(7,*)9001
+if (   (b(nn1*nn2)/=p1*p2+1)) write(7,*)9002
 
 call cpu_time(t1)
 do n1=1,nn1
@@ -58,7 +58,7 @@ call s1(p1,p2,a,b,n1,n2)
 end do
 end do
 call cpu_time(t2)
-write(1,*)'s1:', t2-t1
+write(7,*)'s1:', t2-t1
 if (   (b(1)/=2)) print *,1001
 if (   (b(nn1*nn2)/=p1*p2+1)) print *,1002
 
@@ -69,7 +69,7 @@ call s2(p1,p2,a,b,n1,n2)
 call cpu_time(t2)
 end do
 end do
-write(1,*)'s2:', t2-t1
+write(7,*)'s2:', t2-t1
 if (   (b(1)/=2)) print *,201
 if (   (b(nn1*nn2)/=p1*p2+1)) print *,202
 
@@ -87,7 +87,7 @@ call s3(p1,p2,a,b,n1,kn2,kn3)
 call cpu_time(t2)
 end do
 end do
-write(1,*)'s3:', t2-t1
+write(7,*)'s3:', t2-t1
 
 if (   (b(1)/=2)) print *,301
 if (   (b(nn1*nn2)/=p1*p2+1)) print *,302

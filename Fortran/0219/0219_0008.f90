@@ -13,10 +13,10 @@ allocate(a(k1,k2,1))
 a=0
 call       s(a,k1,k2,n1,n2)
 if (a(3,2,1)/=1) print *,203
-write(2,*) a
+write(19,*) a
 
-rewind 2
-read(2,*) aa
+rewind 19
+read(19,*) aa
 if (aa(6)/=1) print *,403
 print *,'pass'
 end

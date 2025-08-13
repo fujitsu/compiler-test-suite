@@ -115,7 +115,7 @@ integer,parameter::r(2,3,3)=reshape((/(iv,iv=1,18)/),(/2,3,3/))
   if (any(a/=(/r/)))then
       write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a
   else 
-      write(1,*) 'OK    :',item
+      write(42,*) 'OK    :',item
   endif
 end subroutine
 subroutine check_s(a , item ,subcode,kv,ik)
@@ -124,13 +124,13 @@ if (ik==2)then
   if (any(a/=(/kv*2-1,kv*2/)))then
       write(6,*) 'ERROR-a item&subcode:',item, subcode ,' Value: ',a
   else 
-      write(1,*) 'OK    :',item
+      write(42,*) 'OK    :',item
   endif
 else
   if (any(a/=(/kv*3-2,kv*3-1,kv*3/)))then
       write(6,*) 'ERROR-a item&subcode:',item, subcode ,' Value: ',a
   else 
-      write(1,*) 'OK    :',item
+      write(42,*) 'OK    :',item
   endif
 end if
 end subroutine
@@ -156,7 +156,7 @@ if (ksize==6) then
   if (any(a(1:6)/=(/7,8,9,10,11,12/)))then
       write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a(:6)
   else 
-      write(1,*) 'OK    :',item
+      write(42,*) 'OK    :',item
   endif
   case(3)
    if (item==11 .or. item==12) then
@@ -172,7 +172,7 @@ if (ksize==6) then
   if (any(a(1:6)/=(/13,14,15,16,17,18/)))then
       write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a(:6)
   else 
-      write(1,*) 'OK    :',item
+      write(42,*) 'OK    :',item
   endif
   case default
     print *,'error-?'
@@ -183,19 +183,19 @@ else if (ksize==9) then
   if (any(a(1:9)/=(/1,2,3,4,5,6,7,8,9/)))then
       write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a(:9)
   else 
-      write(1,*) 'OK    :',item
+      write(42,*) 'OK    :',item
   endif
   case(3)
   if (any(a(1:9)/=(/1,2,3,4,5,6,7,8,9/)))then
       write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a(:9)
   else 
-      write(1,*) 'OK    :',item
+      write(42,*) 'OK    :',item
   endif
   case(2,4)
   if (any(a(1:9)/=(/10,11,12,13,14,15,16,17,18/)))then
       write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a(:9)
   else 
-      write(1,*) 'OK    :',item
+      write(42,*) 'OK    :',item
   endif
   end select
 else if (ksize==4) then
@@ -218,13 +218,13 @@ else if (ksize==4) then
     if (any(a(1:4)/=(/7,8,10,11/)))then
         write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a(:4)
     else 
-        write(1,*) 'OK    :',item
+        write(42,*) 'OK    :',item
     endif
   case(2)
     if (any(a(1:4)/=(/7,8,9,10/)))then
         write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a(:4)
     else 
-        write(1,*) 'OK    :',item
+        write(42,*) 'OK    :',item
     endif
   case(3)
    if (item==9 .or. item==10) then
@@ -240,7 +240,7 @@ else if (ksize==4) then
   if (any(a(1:4)/=(/13,14,16,17/)))then
       write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a(:4)
   else 
-      write(1,*) 'OK    :',item
+      write(42,*) 'OK    :',item
   endif
   case default
     print *,'error-?'
@@ -258,19 +258,19 @@ if (ksize==6) then
   if (any(a(1:6)/=(/1,2,3,4,5,6/)))then
       write(6,*) 'ERROR-2 item&subcode:',item, subcode ,' Value: ',a(:2)
   else 
-      write(1,*) 'OK    :',item
+      write(42,*) 'OK    :',item
   endif
   case(2)
   if (any(a(1:2)/=(/3,4/)))then
       write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a(:2)
   else 
-      write(1,*) 'OK    :',item
+      write(42,*) 'OK    :',item
   endif
   case(3)
   if (any(a(1:2)/=(/5,6/)))then
       write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a(:2)
   else 
-      write(1,*) 'OK    :',item
+      write(42,*) 'OK    :',item
   endif
   case default
    write(6,*) "NG"
@@ -281,13 +281,13 @@ else
   if (any(a(1:3)/=(/1,2,3/)))then
       write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a(:3)
   else 
-      write(1,*) 'OK    :',item
+      write(42,*) 'OK    :',item
   endif
   case(2)
   if (any(a(1:3)/=(/4,5,6/)))then
       write(6,*) 'ERROR item&subcode:',item, subcode ,' Value: ',a(:3)
   else 
-      write(1,*) 'OK    :',item
+      write(42,*) 'OK    :',item
   endif
   end select
 endif

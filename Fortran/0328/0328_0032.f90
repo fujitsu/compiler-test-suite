@@ -10,7 +10,7 @@ type(ydef)::y(10)
 y%yy='10'
 call sub(y(1),y(6))
   print *,'pass'
-  write(1,*) 'ng',y%yy
+  write(34,*) 'ng',y%yy
 end
 
 subroutine sub(a,b)

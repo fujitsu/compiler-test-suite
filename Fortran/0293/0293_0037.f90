@@ -7,9 +7,9 @@ type x
 end type
 type (x)::b1(k1,k2),b2(k1+1,k2+1)
 namelist /name/ a1,a2,b1,b2
-write(1,name)
-write(1,name)
-write(1,name)
+write(40,name)
+write(40,name)
+write(40,name)
 end
 parameter(k1=2,k2=3)
 integer a1(k1,k2),a2(k1+1,k2+1)
@@ -41,9 +41,9 @@ type x
 end type
 type (x)::b1(k1,k2),b2(k1+1,k2+1)
 namelist /name/ a1,a2,b1,b2
-rewind 1
+rewind 40
 do i=1,3
-read(1,name)
+read(40,name)
 if (any(a1/=reshape([1,2,3,4,5,6],[2,3])))print *,102
 if (any(a2/=reshape([1,2,3,4,5,6,7,8,9,10,11,12],[3,4])))print *,103
 if (any(b1%x1/=reshape([1,2,3,4,5,6],[2,3])+10))print *,104
@@ -62,9 +62,9 @@ type x
 end type
 type (x)::b1(k1,k2),b2(k1+1,k2+1)
 namelist /name/ a1,a2,b1,b2
-rewind 1
+rewind 40
 do i=1,3
-read(1,name)
+read(40,name)
 if (any(a1/=reshape([1,2,3,4,5,6],[2,3])))print *,102
 if (any(a2/=reshape([1,2,3,4,5,6,7,8,9,10,11,12],[3,4])))print *,103
 if (any(b1%x1/=reshape([1,2,3,4,5,6],[2,3])+10))print *,104
@@ -74,6 +74,3 @@ if (any(b2%x2/=reshape([1,2,3,4,5,6,7,8,9,10,11,12],[3,4])+40))print *,107
 a1=0;a2=0;b1%x1=0;b1%x2=0;b2%x1=0;b2%x2=0
 end do
 end
-
-
-

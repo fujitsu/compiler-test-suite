@@ -11,7 +11,7 @@ end module ad01
 
 program main
    use ad01
-   integer, parameter :: size=1000000
+   integer, parameter :: size=100000
    integer i,j
    real t1,t2,t3
    type(NODE) :: a(size)
@@ -34,6 +34,6 @@ program main
       k = i - 1
    end do
    call cpu_time(t3)
-   write(1,*) t2-t1, t3-t2, sum(a(:)%RVALS(0))
+   write(99,*) t2-t1, t3-t2, sum(a(:)%RVALS(0))
    print *,'pass'
 end program main

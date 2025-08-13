@@ -11,19 +11,19 @@
           J=I+AINT(8.2)
           K=(I+J)/2
 
-          WRITE(1,FMT='(1H ,''A(1:10)      ='',10I3,/ ,
+          WRITE(8,FMT='(1H ,''A(1:10)      ='',10I3,/ ,
      +                  1H , "B(1:10)      =" ,10I3,/)')
      +                  V_A(1:10),V_B
-          WRITE(1,FMT='(1H ,'' I='',I3,
+          WRITE(8,FMT='(1H ,'' I='',I3,
      +                  1H , " J=" ,I3,
      +                  1H ,3H K=  ,I3/)') I,J,K
-          WRITE(1,FMT=CHA//CHB//CHC)
+          WRITE(8,FMT=CHA//CHB//CHC)
      +                          V_A(I:K),V_B(K:J),V_A(I:K)+V_B(K:J)
-          WRITE(1,FMT='(1H ,''A(I:K)-B(K:J)='',5I6)')
+          WRITE(8,FMT='(1H ,''A(I:K)-B(K:J)='',5I6)')
      +                          V_A(I:K)-V_B(K:J)
-          WRITE(1,FMT='(1H ,"A(I:K)*B(K:J)="  ,5I6)',ERR=10)
+          WRITE(8,FMT='(1H ,"A(I:K)*B(K:J)="  ,5I6)',ERR=10)
      +                          V_A(I:K)*V_B(K:J)
-          WRITE(1,FMT=CHD)      V_A(I:K)/REAL(V_B(K:J))
+          WRITE(8,FMT=CHD)      V_A(I:K)/REAL(V_B(K:J))
           ERROR=0
           CALL CHECK(ERROR)
 
@@ -50,9 +50,9 @@
      +         ,' A(I:K)-B(K:J)=    -6    -2     2    -2    -3'
      +         ,' A(I:K)*B(K:J)=    27     3     8     3    40'
      +         ,' A(I:K)/B(K:J)= 0.333 0.333 2.000 0.333 0.625'/
-      REWIND 1
+      REWIND 8
       DO I=1,12
-         READ(1,'(A)',ERR=20) DATA(I)
+         READ(8,'(A)',ERR=20) DATA(I)
       END DO
       GOTO 30
  20   ERROR=1

@@ -30,11 +30,11 @@ recursive subroutine s1(a)
   end select
   if(k/=1) print *,201
   allocate(yy::a%x2(2))
-write(2,'(z16.16)') loc(a%x2)
+write(99,'(z16.16)') loc(a%x2)
 end subroutine
 subroutine fy(d)
 type(y)::d
-write(11,*)7001
+write(71,*)7001
 end subroutine
 subroutine fyy(d)
 type(yy)::d
@@ -46,14 +46,14 @@ use m1
 do n=1,kh
 call s1(a)
 end do
-call chk11(11)
+call chk11(71)
 print *,'pass'
 end
 subroutine chk11(k)
 logical::file_exists
-inquire(file="fort.11", exist=file_exists)
-if (file_exists) then        
-rewind k 
+inquire(file="fort.71", exist=file_exists)
+if (file_exists) then
+rewind k
 do n=1,18
    read(k ,*) nn
    if (nn/=7001) stop 999

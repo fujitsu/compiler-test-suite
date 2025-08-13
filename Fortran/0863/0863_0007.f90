@@ -20,11 +20,11 @@ use m1
 allocate(var%ptr)
    var%ptr = ty( proc)
 call var%ptr%set_services
-rewind 1
-read(1,*) k
+rewind 15
+read(15,*) k
 if(k/=101) print *,901
 print *,'pass'
 end
       subroutine proc
-write(1,*) 101
+write(15,*) 101
       end subroutine

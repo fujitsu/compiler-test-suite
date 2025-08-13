@@ -21,11 +21,11 @@ END TYPE
     CONTAINS
         SUBROUTINE final_my(dmy)
             TYPE(my), INTENT(INOUT):: dmy
-write(1,*)13
+write(23,*)13
         END SUBROUTINE
         SUBROUTINE dest_2Darr(dmy)
             TYPE(ty), INTENT(INOUT):: dmy(:,:)
-write(1,*)11
+write(23,*)11
             counter = counter + 1
             IF ( dmy(1,1)%ii .EQ. (100*counter) ) THEN
             ELSE
@@ -40,10 +40,10 @@ PROGRAM MAIN
     TYPE(ty1) :: ty1_obj
     ty1_obj%ty_cmp(1, 1)%ii = 100
     ty1_obj%ty_cmp(2, 1)%ii = 100
-    ALLOCATE(ty1_obj%ty_cmp(1,1)%alloc)    
-    ALLOCATE(ty1_obj%ty_cmp(1,2)%alloc)    
-    ALLOCATE(ty1_obj%ty_cmp(2,1)%alloc)    
-    ALLOCATE(ty1_obj%ty_cmp(2,2)%alloc)    
+    ALLOCATE(ty1_obj%ty_cmp(1,1)%alloc)
+    ALLOCATE(ty1_obj%ty_cmp(1,2)%alloc)
+    ALLOCATE(ty1_obj%ty_cmp(2,1)%alloc)
+    ALLOCATE(ty1_obj%ty_cmp(2,2)%alloc)
     CALL Foo(ty1_obj%ty_cmp)
 call chk
 print *,'pass'
@@ -54,8 +54,8 @@ print *,'pass'
         END SUBROUTINE
 END PROGRAM MAIN
 subroutine chk
-rewind 1
-read(1,*) k;if (k/=11) print *,103
-read(1,*) k;if (k/=13) print *,101
-read(1,*) k;if (k/=13) print *,102
+rewind 23
+read(23,*) k;if (k/=11) print *,103
+read(23,*) k;if (k/=13) print *,101
+read(23,*) k;if (k/=13) print *,102
 end

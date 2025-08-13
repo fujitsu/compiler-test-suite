@@ -8,7 +8,7 @@ contains
     real(8),dimension(:),target,intent(in):: i1
     real(8),pointer,dimension(:,:):: i3
 
-    write(1,'(a ,x,z16.16)') 'foo ',loc(i1)
+    write(60,'(a ,x,z16.16)') 'foo ',loc(i1)
 
     i3 => boo(10,10,i1)
 
@@ -20,7 +20,7 @@ contains
     real(8),dimension(l1,l2),target,intent(in):: i1
     real(8),pointer,dimension(:,:):: i3
 
-    write(1,'(a ,x,z16.16)') 'boo ',loc(i1)
+    write(60,'(a ,x,z16.16)') 'boo ',loc(i1)
 
     i3 => i1
   end function boo
@@ -33,9 +33,9 @@ program main
   real(8),pointer,dimension(:,:) :: rpnt
 
   allocate(ipnt(100))
-    write(1,'(a ,x,z16.16)') 'ipnt',loc(ipnt)
+    write(60,'(a ,x,z16.16)') 'ipnt',loc(ipnt)
   rpnt => foo(ipnt)
-    write(1,'(a ,x,z16.16)') 'rpnt',loc(rpnt)
+    write(60,'(a ,x,z16.16)') 'rpnt',loc(rpnt)
   deallocate(ipnt)
 call chk
 print *,'pass'
@@ -43,15 +43,12 @@ print *,'pass'
 end program main
 subroutine chk
 character(100) r1,r2
-rewind 1
-read(1,'(a)') r1
-read(1,'(a)') r2
+rewind 60
+read(60,'(a)') r1
+read(60,'(a)') r2
 if (r1(6:)/=r2(6:)) print *,101
-read(1,'(a)') r2
+read(60,'(a)') r2
 if (r1(6:)/=r2(6:)) print *,102
-read(1,'(a)') r2
+read(60,'(a)') r2
 if (r1(6:)/=r2(6:)) print *,103
 end
-
-
-

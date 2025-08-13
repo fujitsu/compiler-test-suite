@@ -1,7 +1,12 @@
+
       real*8 stime,etime
       integer a(512),b(512),c(512),d(512),e(512),f(512),
      &        g(512),h(512)
       real p(512),q(512),r(512),s/11/
+      real res1(5)/9.116994,20.18671,21.386356,25.223508,29.832963/
+      real res2(5)/3.3667507,-95.633255,-123.63324,
+     +             -251.63324,-507.6333/
+      logical check
       integer x(512)/512*1/
       data a/512*0/
       data b/512*1/
@@ -22,7 +27,7 @@
         e(i) = 2
         f(i) = 3
       enddo
-      m = 0  
+      m = 0
 
       do i=1,128
         m = m+1
@@ -77,7 +82,7 @@
         p(i) = 3
         q(i) = 4
         r(i) = 5
-      enddo 
+      enddo
       do i=1,512,2
         b(i) = 1
         c(i) = 1
@@ -85,7 +90,7 @@
         e(i) = 2
         f(i) = 3
       enddo
-      m = 0  
+      m = 0
 
       do i=1,256
         m = m+1
@@ -140,7 +145,7 @@
         p(i) = 3
         q(i) = 4
         r(i) = 5
-      enddo 
+      enddo
       do i=1,512,2
         b(i) = 1
         c(i) = 1
@@ -148,7 +153,7 @@
         e(i) = 2
         f(i) = 3
       enddo
-      m = 0  
+      m = 0
 
       do i=1,512
         m = m+1
@@ -200,7 +205,26 @@
       print *,e(1),e(100),e(128),e(256),e(512)
       print *,f(1),f(100),f(128),f(256),f(512)
       print *,p(1),p(100),p(128),p(256),p(512)
-      print *,q(1),q(100),q(128),q(256),q(512)
-      print *,r(1),r(100),r(128),r(256),r(512)
+      if (check(q,res1) .eqv. .FALSE.) then
+         print *,q(1),q(100),q(128),q(256),q(512)
+      endif
+      if (check(r,res2) .eqv. .FALSE.) then
+         print *,r(1),r(100),r(128),r(256),r(512)
+      endif
       print *,ix
+      end
+
+#define IS_EQUAL(a,b) ((a==b).or.(a==0.and.abs(b)<10E-6).or.(abs(a-b)/abs(a)<10E-6))
+      logical function check(calc,res)
+      real calc(512),res(5)
+      integer index(5)/1,100,128,256,512/
+      logical ret/.TRUE./
+      do i=1,5
+         if (IS_EQUAL(calc(index(i)), res(i))) then
+         else
+            ret = .FALSE.
+         endif
+      enddo
+      check= ret
+      return
       end
