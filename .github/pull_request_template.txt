@@ -1,2 +1,3 @@
-We are sorry but we don't accept pull requests.
-Please read <https://github.com/fujitsu/compiler-test-suite/blob/main/README.md>.
+This PR includes the following changes to the Compiler Test Suite:
+ - Brief description of the changes
+ - (Details of added or modified test cases)
