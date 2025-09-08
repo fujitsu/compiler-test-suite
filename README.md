@@ -19,14 +19,14 @@ Please see [KnownIssues Wiki page](https://github.com/fujitsu/compiler-test-suit
 
 ## License
 
-From the August 2025 release, the Fujitsu Compiler Test Suite is licensed under [the Apache License, Version 2.0 with LLVM Exceptions](https://github.com/llvm/llvm-project/blob/main/LICENSE.TXT), the same license as used in [the LLVM Project](https://github.com/llvm/llvm-project/). This change was made in anticipation of future integration with LLVM test-suite.
+From the 2025-09 release, the Fujitsu Compiler Test Suite is licensed under [the Apache License, Version 2.0 with LLVM Exceptions](https://github.com/llvm/llvm-project/blob/main/LICENSE.TXT), the same license as used in [the LLVM Project](https://github.com/llvm/llvm-project/). This change was made in anticipation of future integration with LLVM test-suite.
 
 
 ## Contribution
 
 [Bug reports are welcome](https://github.com/fujitsu/compiler-test-suite/issues).
 
-From the August 2025 release, this test suite has started accepting pull requests. All contributions will be accepted under the same license as the LLVM project: [Apache License Version 2.0 with LLVM Exceptions](https://github.com/llvm/llvm-project/blob/main/LICENSE.TXT).
+From the 2025-09 release, this test suite has started accepting pull requests. All contributions will be accepted under the same license as the LLVM Project: [Apache License Version 2.0 with LLVM Exceptions](https://github.com/llvm/llvm-project/blob/main/LICENSE.TXT).
 
 Note: We are considering integrating this test suite into the [LLVM test-suite](https://github.com/llvm/llvm-test-suite) in the future. Please contribute only if you agree with this policy.
 
@@ -35,7 +35,7 @@ For details about contributing, please see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Known Issues and Future Plans
 
-As of the 2025-08 release, the Fujitsu Compiler Test Suite lacks following things. They will be available in the upcoming releases.
+As of the 2025-09 release, the Fujitsu Compiler Test Suite lacks following things. They will be available in the upcoming releases.
 
 - Addition of C/C++/Fortran test programs
 - Many missing reference output files (used to verify outputs from test programs)

@@ -1,5 +1,20 @@
 Changelog
 =========
+
+2025-09
+-------
+Started accepting external pull requests.
+
+### Added
+- Add CONTRIBUTING.md to provide clear guidelines for contributors.
+
+### Changed
+- Changed license to Apache License v2.0 with LLVM Exceptions to match the LLVM Project.
+
+### Removed
+- Remove .github directory and pull_request_template.txt as PRs are now accepted. The pull_request_template.txt states that pull requests are not accepted, and this was the only file present in the .github directory.
+
+
 2025-08
 -------
 
