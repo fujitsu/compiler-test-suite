@@ -79,7 +79,7 @@ function(llvm_singlesource_fujitsu)
   endforeach()
 endfunction()
 
-# Set test programs in a directory as compile-only.
+# Set single-source test programs in a directory as compile-only.
 #
 # Each source file in the specified directory is compiled into an executable
 # but it is not run.
@@ -106,10 +106,9 @@ function(llvm_singlesource_compile_only_directory)
   endforeach()
 endfunction()
 
-# Set a test program as compile-only.
+# Set a single-source test program as compile-only.
 #
-# The specified source file is compiled into an executable but it is
-# not run.
+# The specified source file is compiled into an executable but it is not run.
 #
 # This function should be called before llvm_singlesource_fujitsu in the
 # per-directory CMakeLists.txt because this function sets `Source` variable
@@ -138,6 +137,26 @@ function(llvm_singlesource_compile_only_file filename)
     endif()
   endforeach()
   set(Source "${sources}" PARENT_SCOPE)
+endfunction()
+
+# Set a multi-source test program as compile-only.
+#
+# Source files in the current directory is compiled into an executable but it
+# is not run.
+#
+# This function should be called instead of llvm_multisource in the
+# per-directory CMakeLists.txt.
+function(llvm_multisource_compile_only target)
+  # Same as llvm_multisource except that llvm_test_traditional and
+  # llvm_add_test_for_target functions are not called.
+  set(sources ${ARGN})
+  if(NOT sources)
+    file(GLOB sources
+         *.c *.cpp *.cc
+         *.for *.FOR *.fpp *.FPP *.[fF] *.[fF]90 *.[fF]95 *.[fF]03 *.[fF]08)
+  endif()
+
+  llvm_test_executable_no_test(${target} ${sources})
 endfunction()
 
 option(TEST_SUITE_FUJITSU_WITH_FAST_MATH
