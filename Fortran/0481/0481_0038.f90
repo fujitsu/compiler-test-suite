@@ -6,7 +6,7 @@ vv=vv
 yy=yy
 !$omp atomic capture
 vv=yy
-yy=max(1,1,1 ,yy+1)
+yy=max(1,1,1 ,yy)
 !$omp end atomic
 print *,'pass'
 end

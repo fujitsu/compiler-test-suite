@@ -1,0 +1,17 @@
+Class1.ctor()
+throwing 0...
+Class1.dtor()
+caught 0
+Class1.ctor()
+Class1.ctor()
+Class1.ctor()
+throwing 1...
+Class1.dtor()
+Class1.dtor()
+Class1.dtor()
+caught 1
+Class1.ctor()
+throwing 2...
+Class1.dtor()
+caught 2
+exit 0

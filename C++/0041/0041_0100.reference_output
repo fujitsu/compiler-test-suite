@@ -1,0 +1,5 @@
+X = 10
+ok
+id = 10, details: This is old macro
+id = 11, details: 
+exit 0

@@ -43,7 +43,7 @@
       STOP
       END
       SUBROUTINE    SUB(MEMO,SW3,SW4,SW5,SW6,SW8,SW9)
-      REAL*8        MEMO
+      character(*)  MEMO
       LOGICAL  SW3,SW4,SW5,SW6,SW8,SW9
       NAMELIST      /NAMEL/ A  ,B  ,
      *                      C  ,C1

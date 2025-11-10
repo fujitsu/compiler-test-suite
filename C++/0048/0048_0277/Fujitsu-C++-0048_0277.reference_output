@@ -1,0 +1,4 @@
+func1: 10
+func2: 10
+func3: 20
+exit 0

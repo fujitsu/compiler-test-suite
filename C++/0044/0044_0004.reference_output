@@ -1,0 +1,18 @@
+Class.ctor() : 1
+Class.dtor() : 1
+Class.ctor() : 2
+Class.dtor() : 2
+Class.ctor() : 3
+Class.dtor() : 3
+Class.ctor() : 4
+Class.ctor() : 5
+Class.dtor() : 5
+Class.ctor() : 6
+Class.dtor() : 6
+Class.dtor() : 4
+Class.ctor() : 7
+Class.ctor() : 8
+Class.dtor() : 8
+Class.dtor() : 7
+ok
+exit 0

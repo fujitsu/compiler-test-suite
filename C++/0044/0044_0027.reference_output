@@ -1,0 +1,16 @@
+                     uncaught : false
+Class.ctor()  :   1, uncaught : false
+Class.cctor() :  12, uncaught :  true
+                     uncaught : false
+Class.ctor()  :   3, uncaught : false
+Class.cctor() :  34, uncaught : false
+Class.cctor() : 345, uncaught :  true
+                     uncaught : false
+Class.dtor()  : 345, uncaught :  true
+Class.dtor()  :   3, uncaught :  true
+Class.dtor()  :  12, uncaught :  true
+Class.dtor()  :   1, uncaught :  true
+Class.cctor() : 346, uncaught :  true
+Class.dtor()  : 346, uncaught : false
+Class.dtor()  :  34, uncaught : false
+exit 0

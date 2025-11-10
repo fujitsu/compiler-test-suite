@@ -17,7 +17,7 @@ if (any(abs([w1]-&
 [0.30,0.36,0.42,0.66,0.81,0.96,1.01,1.26,1.50]) > 0.2) ) print *,102,real(w1)
 end subroutine
 subroutine s003(p)
-real(k):: p(:,:)
+real(k),target:: p(:,:)
 p=matmul(w1,w2)
 if (any(abs([p1]-&
 [0.30,0.36,0.42,0.66,0.81,0.96,1.01,1.26,1.50]) > 0.2) ) print *,103,real(p1)

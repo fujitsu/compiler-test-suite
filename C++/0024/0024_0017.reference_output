@@ -1,0 +1,7 @@
+
+       test STARTED   no_check_memory_usage         
+
+            *OK*    :  ALL THE ITEMS
+
+       test ENDED   no_check_memory_usage         
+exit 0

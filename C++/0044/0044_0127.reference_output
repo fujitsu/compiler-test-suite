@@ -1,0 +1,11 @@
+Func() start : 0.
+Class.ctor()
+  throwing...
+caught.
+Func() start : 1.
+Class.ctor()
+Func() end   : 1.
+Func() start : 2.
+Func() end   : 2.
+Class.dtor()
+exit 0

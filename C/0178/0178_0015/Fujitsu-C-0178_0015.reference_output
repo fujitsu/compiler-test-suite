@@ -1,0 +1,19 @@
+
+    GNU for STARTED   Gnu Attribute format test     
+test001 5 A
+test002   4
+test003 012
+test004 12.300000
+test005 a
+test006 0.1234
+test007 +1.234000e-01
+test009 %E
+test010 test010
+test011 %Lf
+test012 7d
+test014 4294954951
+
+            *OK*    :  ALL THE ITEMS
+
+    GNU for ENDED   Gnu Attribute format test     
+exit 1

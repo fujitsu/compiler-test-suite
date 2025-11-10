@@ -1,0 +1,5 @@
+BaseClass1.ctor() : 1
+BaseClass2.ctor() : 2
+BaseClass1.dtor() : 1
+ok
+exit 0

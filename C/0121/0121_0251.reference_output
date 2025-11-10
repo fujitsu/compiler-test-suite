@@ -1,0 +1,84 @@
+ #####  #####
+ ----- TEST NO.1 ----- SIMPLEST POSSIBLE        
+                       FIND MAX                 
+ RMAX=  7     IMAX=  4 
+ RB1=  4   IA1=  12  DA1=  6   RA1=  9 
+ RB1=  5   IA1=  20  DA1=  11   RA1=  11 
+ RB1=  6   IA1=  30  DA1=  16   RA1=  13 
+ RB1=  7   IA1=  42  DA1=  21   RA1=  15 
+ RB1=  8   IA1=  56  DA1=  0   RA1=  17 
+ RB1=  9   IA1=  6  DA1=  12   RA1=  19 
+ RB1=  10   IA1=  7  DA1=  14   RA1=  21 
+ RB1=  11   IA1=  8  DA1=  16   RA1=  23 
+ RB1=  12   IA1=  9  DA1=  18   RA1=  25 
+ RB1=  13   IA1=  10  DA1=  20   RA1=  27 
+ ----- TEST NO.2 ----- 2ND SIMPLEST POSSIBLE  
+                       FIND MINIMUM           
+ RMIN=  9     IMIN=  6 
+ RB1=  4   IA1=  12  DA1=  -4   RA1=  9 
+ RB1=  5   IA1=  20  DA1=  -3   RA1=  11 
+ RB1=  6   IA1=  30  DA1=  -2   RA1=  13 
+ RB1=  7   IA1=  42  DA1=  -1   RA1=  15 
+ RB1=  8   IA1=  56  DA1=  0   RA1=  17 
+ RB1=  9   IA1=  72  DA1=  31   RA1=  19 
+ RB1=  10   IA1=  90  DA1=  36   RA1=  21 
+ RB1=  11   IA1=  110  DA1=  41   RA1=  23 
+ RB1=  12   IA1=  132  DA1=  46   RA1=  25 
+ RB1=  13   IA1=  10  DA1=  20   RA1=  27 
+ ----- TEST NO.3 ----- MASK OPTIMIZATION      
+                       COMPRESS/EXPAND        
+ DP1=  4    DM1=  2    RB1=  4 
+ IA1=  9   DA1=  6    RA1=  20 
+ DP1=  6    DM1=  4    RB1=  5 
+ IA1=  16   DA1=  -3    RA1=  30 
+ DP1=  9    DM1=  6    RB1=  6 
+ IA1=  25   DA1=  -2    RA1=  42 
+ DP1=  12    DM1=  8    RB1=  7 
+ IA1=  36   DA1=  -1    RA1=  56 
+ DP1=  15    DM1=  10    RB1=  8 
+ IA1=  49   DA1=  0    RA1=  72 
+ DP1=  18    DM1=  12    RB1=  9 
+ IA1=  64   DA1=  1    RA1=  90 
+ DP1=  21    DM1=  14    RB1=  10 
+ IA1=  81   DA1=  2    RA1=  110 
+ DP1=  24    DM1=  16    RB1=  11 
+ IA1=  100   DA1=  3    RA1=  132 
+ DP1=  27    DM1=  18    RB1=  12 
+ IA1=  121   DA1=  4    RA1=  156 
+ DP1=  30    DM1=  20    RB1=  13 
+ IA1=  10   DA1=  20    RA1=  182 
+ ----- TEST NO.4 ----- MASK OPTIMIZATION      
+                       MIXED MACROS           
+ RMAX=  8   IMAX=  4  RMIN=  9   IMIN=  5 
+ RC1=  5  DP1=  11  DM1=  2 
+ RC1=  6  DP1=  15  DM1=  4 
+ RC1=  7  DP1=  19  DM1=  6 
+ RC1=  8  DP1=  23  DM1=  8 
+ RC1=  9  DP1=  27  DM1=  10 
+ RC1=  10  DP1=  18  DM1=  5 
+ RC1=  11  DP1=  21  DM1=  14 
+ RC1=  12  DP1=  24  DM1=  16 
+ RC1=  13  DP1=  27  DM1=  6 
+ RC1=  14  DP1=  30  DM1=  20 
+   S=  27   RK=  3 
+ CA1=  1 1  CB1=  6 1  IA1=  12 
+ DA1=  6    RA1=  9 
+ CA1=  2 2  CB1=  7 2  IA1=  20 
+ DA1=  -3    RA1=  11 
+ CA1=  16 6  CB1=  21 6  IA1=  30 
+ DA1=  -2    RA1=  13 
+ CA1=  4 4  CB1=  9 4  IA1=  42 
+ DA1=  -1    RA1=  15 
+ CA1=  5 5  CB1=  10 5  IA1=  56 
+ DA1=  0    RA1=  17 
+ CA1=  22 12  CB1=  27 12  IA1=  64 
+ DA1=  1    RA1=  19 
+ CA1=  7 7  CB1=  12 7  IA1=  81 
+ DA1=  2    RA1=  21 
+ CA1=  8 8  CB1=  13 8  IA1=  100 
+ DA1=  3    RA1=  23 
+ CA1=  28 18  CB1=  33 18  IA1=  121 
+ DA1=  4    RA1=  25 
+ CA1=  10 10  CB1=  15 10  IA1=  10 
+ DA1=  20    RA1=  27 
+exit 0

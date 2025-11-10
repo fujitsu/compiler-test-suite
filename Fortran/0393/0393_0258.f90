@@ -23,9 +23,10 @@ k=1
 end select
 deallocate(p)
 allocate(p(3),mold=u)
+p%y1=0
 select type(p)
 type is(y)
-if (any(p%y1/=0)) print *,3,'confirmation'
+if (any(p%y1/=0)) print *,3
 k=1
 end select
 if (k/=1) print *,11

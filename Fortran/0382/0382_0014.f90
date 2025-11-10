@@ -42,8 +42,8 @@ if (any(b/=[11,12]))print *,506,b(1),b(2)
 deallocate(b)
 allocate(b,source=e(a))
 if (any(shape(b)/=[2]))print *,601
-if (any(lbound(b)/=[2]))print *,602
-if (any(ubound(b)/=[3]))print *,603
+if (any(lbound(b)/=[1]))print *,602
+if (any(ubound(b)/=[2]))print *,603
 if (size(b)/=2)print *,604
 if (sizeof(b)/=2*4)print *,605
 if (any(b/=[11,12]))print *,606,b(1),b(2)

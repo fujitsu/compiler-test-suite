@@ -1,0 +1,36 @@
+Class1.ctor()
+Class1.ctor()
+throwing 0...
+Class1.dtor()
+Class1.dtor()
+caught 0
+Class1.ctor()
+Class1.ctor()
+throwing 1...
+Class1.dtor()
+Class1.dtor()
+caught 1
+Class1.ctor()
+Class1.ctor()
+Class1.ctor()
+throwing 2...
+Class1.dtor()
+Class1.dtor()
+Class1.dtor()
+caught 2
+Class1.ctor()
+Class1.ctor()
+Class1.ctor()
+throwing 3...
+Class1.dtor()
+Class1.dtor()
+Class1.dtor()
+caught 3
+Class1.ctor()
+throwing 4...
+Class1.dtor()
+caught 4
+Class1.ctor()
+nothing happends...
+Class1.dtor()
+exit 0

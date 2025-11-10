@@ -1,0 +1,5 @@
+int i = 10
+char ch = a
+double d = 123.234000
+char str[80]  = This test is inline struct.
+exit 0

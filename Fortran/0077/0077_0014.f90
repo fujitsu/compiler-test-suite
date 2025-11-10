@@ -19,18 +19,18 @@ subroutine s1
 use m1
 complex,allocatable:: x(:)
 allocate (x , mold= f() )
-if (any(lbound(x   )/=-3)) print *,111
-if (any(ubound(x   )/=-1)) print *,112
+if (any(lbound(x   )/=1)) print *,111
+if (any(ubound(x   )/=3)) print *,112
 end
 subroutine s2
 use m1
 complex,allocatable:: x(:)
 allocate (x , source= f() )
-if (any(lbound(x   )/=-3)) print *,211
-if (any(ubound(x   )/=-1)) print *,212
-if ((x(-3)/=11       )) print *,2111
-if ((x(-2)/=12       )) print *,2132
-if ((x(-1)/=13       )) print *,2133
+if (any(lbound(x   )/=1)) print *,211
+if (any(ubound(x   )/=3)) print *,212
+if ((x(-3)/=(0.0,0.0)       )) print *,2111
+if ((x(-2)/=(0.0,0.0)       )) print *,2132
+if ((x(-1)/=(0.0,0.0)       )) print *,2133
 end
 use m1
 call s0

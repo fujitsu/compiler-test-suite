@@ -1,3 +1,6 @@
 llvm_singlesource_fujitsu(PREFIX "Fujitsu-C-")
-set_property(SOURCE 0094_0048.c APPEND PROPERTY COMPILE_OPTIONS "-fsigned-char")
+set_property(SOURCE 0094_0003.c APPEND PROPERTY COMPILE_OPTIONS "-Wno-incompatible-pointer-types")
+set_property(SOURCE 0094_0009.c APPEND PROPERTY COMPILE_OPTIONS "-Wno-incompatible-pointer-types")
+set_property(SOURCE 0094_0048.c APPEND PROPERTY COMPILE_OPTIONS "-fsigned-char;-Wno-incompatible-pointer-types")
+set_property(SOURCE 0094_0052.c APPEND PROPERTY COMPILE_OPTIONS "-Wno-incompatible-pointer-types")
 set_property(SOURCE 0094_0090.c APPEND PROPERTY COMPILE_OPTIONS "-fsigned-char")

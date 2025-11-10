@@ -1,0 +1,51 @@
+Class1. ctor()
+  throwing 0...
+caught : 0
+Class1. ctor()
+Class1.cctor()
+  throwing 1...
+Class1. dtor()
+  destructing safely 1, skipping to 2...
+caught : 1
+Class1. ctor()
+Class1.cctor()
+  constructing safely 3, skipping to 4...
+Class1.cctor()
+  throwing 4...
+Class1. dtor()
+  destructing safely 4, skipping to 5...
+Class1. dtor()
+  destructing safely 5, skipping to 6...
+caught : 4
+Class1. ctor()
+Class1.cctor()
+Class1.cctor()
+Func1()
+Class1. dtor()
+  throwing 7, skipping to 8...
+Class1. dtor()
+  destructing safely 8, skipping to 9...
+Class1. dtor()
+  destructing safely 9, skipping to 10...
+caught : 7
+Class1. ctor()
+Class1.cctor()
+Class1.cctor()
+Func1()
+Class1. dtor()
+  destructing safely 11, skipping to 12...
+Class1. dtor()
+  throwing 12, skipping to 13...
+Class1. dtor()
+  destructing safely 13, skipping to 14...
+caught : 12
+Class1. ctor()
+Class1.cctor()
+Class1.cctor()
+Func1()
+Class1. dtor()
+Class1. dtor()
+throwing 15...
+Class1. dtor()
+caught : 15
+exit 0

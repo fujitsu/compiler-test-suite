@@ -1,0 +1,9 @@
+BaseClass1.ctor()   : 1
+BaseClass2.ctor()   : 2
+BaseClass1.dtor()   : 1
+BaseClass1.ctor()   : 3
+BaseClass2.ctor()   : 4
+DerivedClass.ctor() : 5
+DerivedClass.dtor() : 5
+BaseClass1.dtor()   : 3
+exit 0

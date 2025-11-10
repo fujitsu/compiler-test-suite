@@ -1,0 +1,8 @@
+1
+      *FORTRAN*              ENTER /
+0       - ITEM -   -  JUSTICE -       - COMMENT -  
+
+0       ( 1)        *OK*             MCOUNT=   122    ( 122) 
+0       ( 2)        *OK*             M= -1246 MCOUNT= 24006   (-1246),(24006)
+0     *FORTRAN*          EXIT 
+exit 0

@@ -1,0 +1,4 @@
+base(int)
+derived(int)
+base(double)
+exit 0

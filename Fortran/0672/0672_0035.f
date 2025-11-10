@@ -35,7 +35,7 @@
 
       SUBROUTINE   SUB(MEMO,SW3,SW6,SW7,SW8)
 
-      REAL*8       MEMO
+      character(*) MEMO
       LOGICAL      SW3,SW6,SW7,SW8
       COMPLEX      C(15),C1,C2,C3,C4,C5
      0NAMELIST     /NAMEL/   I, J, K,

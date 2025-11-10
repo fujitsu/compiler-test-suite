@@ -1,0 +1,5 @@
+custom __cxa_free_exception() : 1
+catch
+custom __cxa_free_exception() : 2
+ok
+exit 0

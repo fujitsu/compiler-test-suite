@@ -1,0 +1,46 @@
+Base(int)-1 : member: 5
+Base(int)-2 : member: 9
+Derived(int) : member: 9
+Derived()-1 : member: 9
+Base(int)-1 : member: 5
+Base(int)-2 : member: 100
+Derived(int) : member: 100
+Derived()-2 : member: 9
+
+Base(int)-1 : member: 5
+Base(int)-2 : member: 1
+Derived(int) : member: 1
+
+Base(int)-1 : member: 5
+Base(int)-2 : member: 7
+Base()-1 : member: 7
+Base(int)-1 : member: 5
+Base(int)-2 : member: 1
+Base()-2 : member: 7
+Derived(char) : member: 7
+
+Base(int)-1 : member: 5
+Base(int)-2 : member: 9
+Derived(int) : member: 9
+Derived()-1 : member: 9
+Base(int)-1 : member: 5
+Base(int)-2 : member: 100
+Derived(int) : member: 100
+Derived()-2 : member: 9
+main : 9
+
+Base(int)-1 : member: 5
+Base(int)-2 : member: 100
+Derived(int) : member: 100
+main : 100
+
+Base(int)-1 : member: 5
+Base(int)-2 : member: 7
+Base()-1 : member: 7
+Base(int)-1 : member: 5
+Base(int)-2 : member: 1
+Base()-2 : member: 7
+Derived(char) : member: 7
+main : 7
+
+exit 0

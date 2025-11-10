@@ -25,7 +25,7 @@ CONTAINS
         class(ty) :: dmy
         TYPE(ty)::ty_obj
         getData = dmy%i1
-        IF(SIZEOF(dmy) .NE. 80) PRINT*,201
+        IF(SIZEOF(dmy) .NE. 104) PRINT*,201
         IF(SAME_TYPE_AS(dmy,ty_obj) .NEQV. .FALSE.) PRINT*,202
     END FUNCTION
 

@@ -1,7 +1,3 @@
-llvm_singlesource_compile_only_file(0108_0003.c PREFIX "Fujitsu-C-")
-llvm_singlesource_compile_only_file(0108_0005.c PREFIX "Fujitsu-C-")
-llvm_singlesource_compile_only_file(0108_0006.c PREFIX "Fujitsu-C-")
-llvm_singlesource_compile_only_file(0108_0030.c PREFIX "Fujitsu-C-")
 llvm_singlesource_fujitsu(PREFIX "Fujitsu-C-")
 set_property(SOURCE 0108_0000.c APPEND PROPERTY COMPILE_OPTIONS "-finline-functions;-fno-strict-aliasing")
 set_property(SOURCE 0108_0020.c APPEND PROPERTY COMPILE_OPTIONS "-finline-functions")

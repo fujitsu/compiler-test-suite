@@ -1,0 +1,8 @@
+Class.ctor() : 1
+Class.ctor() : 2
+Class.ctor() : 3
+Class.dtor() : 3
+Class.dtor() : 2
+Class.dtor() : 1
+caught.
+exit 0

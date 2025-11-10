@@ -22,6 +22,8 @@
        COMPLEX*16 DC25, DC24, DC23, DC22, DC21, DC20, DC19, DC18, DC17, 
      X   DC16, DC15, DC14, DC13, DC12, DC11, DC10, DC9, DC8, DC7, DC6, 
      X   DC5, DC4, DC3, DC2, DC1
+       CHARACTER(LEN=30) :: FMT_COMPLEX
+       FMT_COMPLEX = '(10(F22.14,1X,F22.14,1X))'
 
 
        WRITE (6, *) '----- TEST NO.1 -----'
@@ -187,7 +189,8 @@ C$OMP END PARALLEL
        WRITE (6, *) ' CS10 = ', CS10, ' CDS10 = ', CDS10, ' LS10 = ', 
      X   LS10
        WRITE (6, *) ' L10 = ', (L10(I1,5), I1=1,50)
-       WRITE (6, *) ' CD10 = ', (CD10(I1,5), I1=1,50)
+       WRITE (6, *) ' CD10 = '
+       WRITE (6, FMT_COMPLEX) (CD10(I1,5), I1=1,50)
 
 
        WRITE (6, *) '----- TEST NO.2 -----'
@@ -458,7 +461,8 @@ C$OMP END PARALLEL
        WRITE (6, *) ' L11= ', (L11(I1,5,2), I1=1,10)
        WRITE (6, *) ' CD11 = ', (CD11(5,I1,3), I1=1,5)
        WRITE (6, *) ' L10 = ', (L10(I1,5), I1=1,10)
-       WRITE (6, *) ' CD10 = ', (CD10(I1,5), I1=1,10)
+       WRITE (6, *) ' CD10 = '
+       WRITE (6, FMT_COMPLEX) (CD10(I1,5), I1=1,10)
        WRITE (6, *) ' L12 = ', (L12(I1), I1=1,10)
        WRITE (6, *) ' C12 = ', (C12(I1), I1=1,10)
 

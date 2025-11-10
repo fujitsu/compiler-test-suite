@@ -1,0 +1,198 @@
+** LOOP 1: 1 **
+** LOOP 1: 3 **
+** LOOP 1: 5 **
+** LOOP 1: 7 **
+** LOOP 1: 9 **
+** LOOP 2: 1 **
+** LOOP 2: 2 **
+** LOOP 2: 3 **
+** LOOP 2: 4 **
+** LOOP 2: 5 **
+** LOOP 2: 6 **
+** LOOP 2: 7 **
+** LOOP 2: 8 **
+** LOOP 2: 9 **
+** LOOP 2: 10 **
+** LOOP 1: 1 **
+** LOOP 1: 3 **
+** LOOP 1: 5 **
+** LOOP 1: 7 **
+** LOOP 1: 9 **
+** LOOP 2: 1 **
+** LOOP 2: 2 **
+** LOOP 2: 3 **
+** LOOP 2: 4 **
+** LOOP 2: 5 **
+** LOOP 2: 6 **
+** LOOP 2: 7 **
+** LOOP 2: 8 **
+** LOOP 2: 9 **
+** LOOP 2: 10 **
+** LOOP 1: 1 **
+** LOOP 1: 3 **
+** LOOP 1: 5 **
+** LOOP 1: 7 **
+** LOOP 1: 9 **
+** LOOP 2: 1 **
+** LOOP 2: 2 **
+** LOOP 2: 3 **
+** LOOP 2: 4 **
+** LOOP 2: 5 **
+** LOOP 2: 6 **
+** LOOP 2: 7 **
+** LOOP 2: 8 **
+** LOOP 2: 9 **
+** LOOP 2: 10 **
+** LOOP 1: 1 **
+** LOOP 1: 3 **
+** LOOP 1: 5 **
+** LOOP 1: 7 **
+** LOOP 1: 9 **
+** LOOP 2: 1 **
+** LOOP 2: 2 **
+** LOOP 2: 3 **
+** LOOP 2: 4 **
+** LOOP 2: 5 **
+** LOOP 2: 6 **
+** LOOP 2: 7 **
+** LOOP 2: 8 **
+** LOOP 2: 9 **
+** LOOP 2: 10 **
+** LOOP 1: 1 **
+** LOOP 1: 3 **
+** LOOP 1: 5 **
+** LOOP 1: 7 **
+** LOOP 1: 9 **
+** LOOP 2: 1 **
+** LOOP 2: 2 **
+** LOOP 2: 3 **
+** LOOP 2: 4 **
+** LOOP 2: 5 **
+** LOOP 2: 6 **
+** LOOP 2: 7 **
+** LOOP 2: 8 **
+** LOOP 2: 9 **
+** LOOP 2: 10 **
+** LOOP 1: 1 **
+** LOOP 1: 3 **
+** LOOP 1: 5 **
+** LOOP 1: 7 **
+** LOOP 1: 9 **
+** LOOP 2: 1 **
+** LOOP 2: 2 **
+** LOOP 2: 3 **
+** LOOP 2: 4 **
+** LOOP 2: 5 **
+** LOOP 2: 6 **
+** LOOP 2: 7 **
+** LOOP 2: 8 **
+** LOOP 2: 9 **
+** LOOP 2: 10 **
+** LOOP 1: 1 **
+** LOOP 1: 3 **
+** LOOP 1: 5 **
+** LOOP 1: 7 **
+** LOOP 1: 9 **
+** LOOP 2: 1 **
+** LOOP 2: 2 **
+** LOOP 2: 3 **
+** LOOP 2: 4 **
+** LOOP 2: 5 **
+** LOOP 2: 6 **
+** LOOP 2: 7 **
+** LOOP 2: 8 **
+** LOOP 2: 9 **
+** LOOP 2: 10 **
+** LOOP 1: 1 **
+** LOOP 1: 3 **
+** LOOP 1: 5 **
+** LOOP 1: 7 **
+** LOOP 1: 9 **
+** LOOP 2: 1 **
+** LOOP 2: 2 **
+** LOOP 2: 3 **
+** LOOP 2: 4 **
+** LOOP 2: 5 **
+** LOOP 2: 6 **
+** LOOP 2: 7 **
+** LOOP 2: 8 **
+** LOOP 2: 9 **
+** LOOP 2: 10 **
+** LOOP 1: 1 **
+** LOOP 1: 3 **
+** LOOP 1: 5 **
+** LOOP 1: 7 **
+** LOOP 1: 9 **
+** LOOP 2: 1 **
+** LOOP 2: 2 **
+** LOOP 2: 3 **
+** LOOP 2: 4 **
+** LOOP 2: 5 **
+** LOOP 2: 6 **
+** LOOP 2: 7 **
+** LOOP 2: 8 **
+** LOOP 2: 9 **
+** LOOP 2: 10 **
+** LOOP 1: 1 **
+** LOOP 1: 3 **
+** LOOP 1: 5 **
+** LOOP 1: 7 **
+** LOOP 1: 9 **
+** LOOP 2: 1 **
+** LOOP 2: 2 **
+** LOOP 2: 3 **
+** LOOP 2: 4 **
+** LOOP 2: 5 **
+** LOOP 2: 6 **
+** LOOP 2: 7 **
+** LOOP 2: 8 **
+** LOOP 2: 9 **
+** LOOP 2: 10 **
+ NN= 1 
+ RV= 1 
+ RV= 1 
+ RV= 1 
+ RV= 1 
+ RV= 1 
+ RV= 1 
+ RV= 1 
+ RV= 1 
+ RV= 1 
+ RV= 1 
+ RV= 4 
+ RV= 1 
+ RV= 1 
+ RV= 1 
+ RV= 1 
+ RV= 1 
+ RV= 1 
+ RV= 1 
+ RV= 1 
+ RV= 1 
+** LOOP 3: 1 **
+** LOOP 3: 3 **
+** LOOP 3: 5 **
+** LOOP 3: 7 **
+** LOOP 3: 9 **
+ MN= 11 
+ C8A 0 0 
+ C8A 0 0 
+ C8A -3 3 
+ C8A 0 0 
+ C8A -5 5 
+ C8A 0 0 
+ C8A -7 7 
+ C8A 0 0 
+ C8A -9 9 
+ C8A 0 0 
+ C8A -11 11 
+ C8A 0 0 
+ C8A 0 0 
+ C8A 0 0 
+ C8A 0 0 
+ C8A 0 0 
+ C8A 0 0 
+ C8A 0 0 
+ C8A 0 0 
+ C8A 0 0 
+exit 0

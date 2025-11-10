@@ -1,0 +1,17 @@
+B::B
+B::B
+B::B
+B::B
+B::B
+B::sub1
+B::sub2 const
+B::sub3 volatile
+B::sub4 const volatile
+B::sub5 __restrict__
+B::sub6 __restrict
+B::~B
+B::~B
+B::~B
+B::~B
+B::~B
+exit 0

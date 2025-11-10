@@ -7,7 +7,7 @@ int main()
 {
   int size, val ;
   val = set_size(19, &size) ;
-        printf("ans = %x, correct ans. = 4c4d4e4f val = %x\n",
+        printf("ans = %x, correct ans. = 4f4e4d4c val = %x\n",
 	       size, 2, val ) ;
         printf(" *** if ANS equal CORRECT ANS ,then OK else NG ***\n");
 exit (0);

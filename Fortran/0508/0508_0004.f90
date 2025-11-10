@@ -14,7 +14,7 @@ a=p(1.0)
 end
 
 call sub(a)
-if (a/=1.0) print *,9001
+if (a/=-1.0) print *,9001
 print *,'pass'
 end
   pure function f(r)

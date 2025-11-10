@@ -1,3 +1,4 @@
+#define EQUAL_CHECK_WITH_MARGIN_REAL4(a, b)((a == b).or.(abs(a - b)/max(abs(a),abs(b)).gt.1.0D-8))
 #define EQUAL_CHECK_WITH_MARGIN_REAL8(a, b)((a == b).or.(abs(a - b)/max(abs(a),abs(b)).gt.1.0D-16))
 #define EQUAL_CHECK_WITH_MARGIN_REAL16(a, b)((a == b).or.(abs(a - b)/max(abs(a),abs(b)).gt.1.0D-34))
  program acos
@@ -10,8 +11,11 @@
 !
  real*8,parameter::res6 = 3141.5700000000047d0
  real*16,parameter:: res7 = 3141.5699999999999999999999999999926q0
- if( test5(low,upper) /= res51 .and. test5(low,upper) /= res52 ) then
-   print *,"NG1"
+ if( .NOT. EQUAL_CHECK_WITH_MARGIN_REAL4(res51, test5(low,upper)) ) then
+   print *,"NG1"      
+ endif
+ if( .NOT. EQUAL_CHECK_WITH_MARGIN_REAL4(res52, test5(low,upper)) ) then
+   print *,"NG1"      
  endif
  if( .NOT. EQUAL_CHECK_WITH_MARGIN_REAL8(res6, test6(low,upper)) ) then
    print *,"NG2"

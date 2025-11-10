@@ -1,0 +1,9 @@
+Class.ctor()  : 1
+Class.cctor() : 12
+Class.ctor()  : 3
+Class.cctor() : 34
+Class.dtor()  : 34
+Class.dtor()  : 3
+Class.dtor()  : 12
+Class.dtor()  : 1
+exit 0

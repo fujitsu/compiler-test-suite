@@ -1,0 +1,22 @@
+
+    GNU not STARTED   Gnu Attribute nothrow test    
+nothrow No.1
+nothrow No.2
+nothrow No.3
+nothrow No.4
+nothrow No.5
+nothrow No.6
+nothrow No.7
+nothrow No.8
+nothrow No.9
+nothrow No.10
+nothrow No.11
+nothrow No.12
+nothrow No.12 result 100
+nothrow No.13
+nothrow No.14
+
+            *OK*    :  ALL THE ITEMS
+
+    GNU not ENDED   Gnu Attribute nothrow test    
+exit 1

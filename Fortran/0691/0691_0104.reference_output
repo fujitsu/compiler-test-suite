@@ -1,0 +1,281 @@
+1
+      *FORTRAN*          ENTER 
+
+
+
+          H-TYPE INPUT
+
+
+
+ - ITEM -
+
+
+ ( 1)
+ 1234567890     *OK*
+
+
+ ( 2)
+ +-/*( ).,$'    *OK*
+
+
+ ( 3)
+ ABCDEFGHIJKLMNOPQRSTUVWXYZ *OK*
+
+
+
+          H-TYPE OUTPUT (H-TYPE ONLY)
+
+ ( 4)
+ '        '                             FORMAT  10H0123456789
+ 0123456789
+
+ ( 5)
+ '         '                            FORMAT  11H+-*/( ).,$'
+ +-*/( ).,$'
+
+ ( 6)
+ '                        '             FORMAT  26HABCDEFGHIJKLMNOPQRSTUVWXYZ
+ ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+ ( 7)
+ '             '                        FORMAT  3HABC,4H ABC,4H ABC,4H ABC
+ ABC ABC ABC ABC
+
+ ( 8)
+ '              '                        FORMAT  16HABCDE      ABCDE/1H ,5H     ,5HABCDE
+ ABCDE      ABCDE
+      ABCDE
+
+ ( 9)
+                                        FORMAT  58H 2345.....7890,50H1234.....7890,19H1234.....789
+ '                                                                                                                    '
+ 2345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
+
+
+          H-TYPE OUTPUT (F,E,I-TYPE)
+
+ (10)
+                                        FORMAT  10HINTEGER = ,I6,5H     ,7HREAL = ,F8.5,5H     ,10HCOMPLEX = ,1H(,2E12.5,1H)
+
+ INTEGER =  12345     REAL =  0.12345     COMPLEX = ( 0.12345E+03 0.12345E+03)
+
+ (11)
+                                        FORMAT  10HINTEGER = ,I6,5H     ,7HREAL = ,F8.5,5H     ,10HCOMPLEX = ,1H(,2E12.5,1H)
+
+ INTEGER = -12345     REAL = -0.12345     COMPLEX = (-0.12345E+03-0.12345E+03)
+1
+
+
+
+
+          X-TYPE INPUT
+
+
+
+ - ITEM -                   - JUSTICE -  - COMPUTED VALUE -   - COMPARE VALUE -   - DIFFERENCE -
+
+
+ (12)
+
+                               * OK *           7890                7890               0
+
+                               * OK *           7890                7890               0
+
+                               * OK *           7890                7890               0
+
+                               * OK *           7890                7890               0
+
+
+ (13)
+
+                               * OK *              1                   1               0
+
+                               * OK *             12                  12               0
+
+                               * OK *            123                 123               0
+
+                               * OK *           1234                1234               0
+
+
+ (14)
+
+                               * OK *              1                   1               0
+
+                               * OK *             23                  23               0
+
+                               * OK *            456                 456               0
+
+                               * OK *           7890                7890               0
+
+
+ (15)
+
+                               * OK *           6789                6789               0
+
+1
+
+
+
+
+          X-TYPE OUTPUT
+
+
+
+                    COLUMN NUMBER
+ 2345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
+
+ - ITEM -
+
+
+ (16)
+                                        1X,2X,3X,4X,5X,6X,7X,8X,9X,10X   TEST
+
+  *  **   ***    ****     *****      ******       *******        ********         *********          **********
+  *  **   ***    ****     *****      ******       *******        ********         *********          **********
+
+ (17)
+                                        10X,20X,30X   TEST
+
+           *                    *                              *                                        *
+           *                    *                              *                                        *
+
+ (18)
+                                        DATA  J,R
+                                        FORMAT  10X,I4,10X,F7.1
+
+           1234           1234.5
+           1234           1234.5
+
+ (19)
+                                        DATA  J,R
+                                        FORMAT  40X,I4,50X,F7.1
+
+                                         1234                                                   1234.5
+                                         1234                                                   1234.5
+
+ (20)
+                                        DATA  J,R,J,R
+                                        FORMAT  5X,I4,5X,F7.1
+
+      1234      1234.5     1234      1234.5
+      1234      1234.5     1234      1234.5
+
+
+          LITERAL TYPE INPUT
+
+
+
+ (21)
+ 1234567890     *OK*
+
+
+ (22)
+ +-/*( ).,$'    *OK*
+
+
+ (23)
+ ABCDEFGHIJKLMNOPQRSTUVWXYZ *OK*
+
+1
+
+
+
+
+          LITERAL TYPE OUTPUT
+
+
+
+ - ITEM -
+
+
+ (24)
+ '        '                             FORMAT  ' 0123456789'
+ 0123456789
+
+ (25)
+ '        '                             FORMAT  ' +-*/( ).,$'
+ +-*/( ).,$
+
+ (26)
+ '                        '             FORMAT  ' ABCD....XYZ'
+ ABCDEFGHIJKLMOPQRSTUVWXYZ
+
+ (27)
+                                        FORMAT  '23456789012.....789'
+ '                                                                                                                    '
+ 2345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
+
+ (28)
+                                        FORMAT  ' INTEGER = ',I4,'     ','REAL = ',F7.2,'COMPLEX = ','     (',2F8.2,')'
+ INTEGER = 1234     REAL =  123.45COMPLEX =      (    1.23    1.23)
+1
+
+
+
+
+          T-TYPE INPUT
+
+
+
+ (29)
+          1234567890   *OK*
+
+
+ (30)
+                    +-/*( ).,$'  *OK*
+
+
+ (31)
+                              ABCDEFGHIJKLMNOPQRSTUVWXYZ  *OK*
+
+
+ - ITEM -                   - JUSTICE -  - COMPUTED VALUE -   - COMPARE VALUE -   - DIFFERENCE -
+
+
+ (32)
+
+                               * OK *           6789                6789               0
+
+                               * OK *           6789                6789               0
+
+                               * OK *           6789                6789               0
+
+                               * OK *           6789                6789               0
+
+1
+
+
+
+
+          T-TYPE OUTPUT
+
+
+
+                    COLUMN NUMBER
+ 2345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
+
+ (33)
+                                        FORMAT  T20,3HT20,T40,3HT40,T80,3HT80,T100,4HT100
+                   ' '                 ' '                                     ' '                 '  '
+                   T20                 T40                                     T80                 T100
+
+ (34)
+                                        FORMAT  T110,4HT110,T90,3HT90,T65,3HT65,T33,3HT33,T5,2HT5
+    ''                          ' '                             ' '                      ' '                 '  '
+    T5                          T33                             T65                      T90                 T110
+
+ (35)
+                                        DATA    J,R,C
+                                        FORMAT  T20,'INTEGER = ',I5,T40,'REAL = ',F8.2,T60,'COMPLEX = ','(',2F7.3')'
+
+                   INTEGER = -1234     REAL =  -123.45     COMPLEX = (  0.123  0.723)
+
+ (36)
+                                        DATA    R,C
+                                        FORMAT  T30,'REAL = ',E12.5,T70,'COMPLEX= (',2E13.5,')'
+
+                             REAL = -0.12345E+03                     COMPLEX= (  0.12300E+00  0.72300E+00)
+0
+      *FORTRAN*          EXIT
+
+exit 0

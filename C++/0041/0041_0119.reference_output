@@ -1,0 +1,8 @@
+ctor
+copy ctor
+copy ctor
+move ctor
+copy operator
+move operator
+ok
+exit 0

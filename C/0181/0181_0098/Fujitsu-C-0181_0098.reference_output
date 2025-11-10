@@ -1,0 +1,135 @@
+4
+-2.000000 -1
+-2.000000 -1
+-2.000000 -1
+0.000000 -1
+-2.000000 -1
+fffffffffffffffe -1
+04
+04 2
+08 2
+00 -1
+05 1
+fffffffffffffffe -3
+-6.000000 -3
+6
+ test start
+
+ test OK
+
+ test end
+ test start
+
+ test OK
+
+ test end
+ test start
+
+ test OK
+
+ test end
+ test start
+
+ test OK
+
+ test end
+ test start
+
+ test OK
+
+ test end
+ test start
+
+ test OK
+
+ test end
+ test start
+
+ test OK
+
+ test end
+ test start
+
+ test OK
+
+ test end
+ test start
+
+ test OK
+
+ test end
+ test start
+
+ test OK
+
+ test end
+ test start
+
+ test OK
+
+ test end
+ test start
+
+ test OK
+
+ test end
+ test start
+
+ test OK
+
+ test end
+ test start
+
+ test OK
+
+ test end
+ test start
+
+ test OK
+
+ test end
+ test start
+
+ test OK
+
+ test end
+ test start
+
+ test OK
+
+ test end
+ test start
+
+ test OK
+
+ test end
+ test start
+ test OK
+ test end
+ test start
+ test OK
+ test end
+ test start
+ test OK
+ test end
+ test start
+ test OK
+ test end
+ test1 start
+
+ test1 OK 1
+
+ test1 end
+ test2 start
+
+ test2 OK 1
+
+ test2 end
+2.000000
+2
+8000
+8000
+8001
+5
+3
+exit 0

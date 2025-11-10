@@ -1,0 +1,724 @@
+ #####  #####
+ ----- TEST NO.1 ----- SIMPLEST POSSIBLE        
+                       S/V MIXTURE              
+
+
+ RMAX=  7  
+ IMAX=  4  
+ RB1=  4 
+ RB1=  5 
+ RB1=  6 
+ RB1=  7 
+ RB1=  8 
+ RB1=  9 
+ RB1=  10 
+ RB1=  11 
+ RB1=  12 
+ RB1=  13 
+
+ IA1=  12 
+ IA1=  20 
+ IA1=  30 
+ IA1=  42 
+ IA1=  56 
+ IA1=  6 
+ IA1=  7 
+ IA1=  8 
+ IA1=  9 
+ IA1=  10 
+
+ DA1=  6 
+ DA1=  11 
+ DA1=  16 
+ DA1=  21 
+ DA1=  0 
+ DA1=  12 
+ DA1=  14 
+ DA1=  16 
+ DA1=  18 
+ DA1=  20 
+
+ RA1=  9 
+ RA1=  11 
+ RA1=  13 
+ RA1=  15 
+ RA1=  17 
+ RA1=  19 
+ RA1=  21 
+ RA1=  23 
+ RA1=  25 
+ RA1=  27 
+
+ RA2=  6 
+ RA2=  7 
+ RA2=  8 
+ RA2=  9 
+ RA2=  7 
+ RA2=  11 
+ RA2=  12 
+ RA2=  13 
+ RA2=  14 
+ RA2=  15 
+ RA2=  7 
+ RA2=  9 
+ RA2=  11 
+ RA2=  13 
+ RA2=  9 
+ RA2=  17 
+ RA2=  19 
+ RA2=  21 
+ RA2=  23 
+ RA2=  25 
+ RA2=  8 
+ RA2=  11 
+ RA2=  14 
+ RA2=  17 
+ RA2=  11 
+ RA2=  23 
+ RA2=  26 
+ RA2=  29 
+ RA2=  32 
+ RA2=  35 
+ RA2=  9 
+ RA2=  13 
+ RA2=  17 
+ RA2=  21 
+ RA2=  13 
+ RA2=  29 
+ RA2=  33 
+ RA2=  37 
+ RA2=  41 
+ RA2=  45 
+ RA2=  10 
+ RA2=  15 
+ RA2=  20 
+ RA2=  25 
+ RA2=  15 
+ RA2=  35 
+ RA2=  40 
+ RA2=  45 
+ RA2=  50 
+ RA2=  55 
+ RA2=  11 
+ RA2=  17 
+ RA2=  23 
+ RA2=  29 
+ RA2=  17 
+ RA2=  41 
+ RA2=  47 
+ RA2=  53 
+ RA2=  59 
+ RA2=  65 
+ RA2=  12 
+ RA2=  19 
+ RA2=  26 
+ RA2=  33 
+ RA2=  19 
+ RA2=  47 
+ RA2=  54 
+ RA2=  61 
+ RA2=  68 
+ RA2=  75 
+ RA2=  13 
+ RA2=  21 
+ RA2=  29 
+ RA2=  37 
+ RA2=  21 
+ RA2=  53 
+ RA2=  61 
+ RA2=  69 
+ RA2=  77 
+ RA2=  85 
+ RA2=  14 
+ RA2=  23 
+ RA2=  32 
+ RA2=  41 
+ RA2=  23 
+ RA2=  59 
+ RA2=  68 
+ RA2=  77 
+ RA2=  86 
+ RA2=  95 
+ RA2=  15 
+ RA2=  25 
+ RA2=  35 
+ RA2=  45 
+ RA2=  25 
+ RA2=  65 
+ RA2=  75 
+ RA2=  85 
+ RA2=  95 
+ RA2=  105 
+
+ QA2=  -6 
+ QA2=  -9 
+ QA2=  -12 
+ QA2=  -15 
+ QA2=  -18 
+ QA2=  -21 
+ QA2=  -24 
+ QA2=  -27 
+ QA2=  -30 
+ QA2=  -33 
+ QA2=  -7 
+ QA2=  -10 
+ QA2=  -13 
+ QA2=  -16 
+ QA2=  -19 
+ QA2=  -22 
+ QA2=  -25 
+ QA2=  -28 
+ QA2=  -31 
+ QA2=  -34 
+ QA2=  -8 
+ QA2=  -11 
+ QA2=  -14 
+ QA2=  -17 
+ QA2=  -20 
+ QA2=  -23 
+ QA2=  -26 
+ QA2=  -29 
+ QA2=  -32 
+ QA2=  -35 
+ QA2=  -9 
+ QA2=  -12 
+ QA2=  -15 
+ QA2=  -18 
+ QA2=  -21 
+ QA2=  -24 
+ QA2=  -27 
+ QA2=  -30 
+ QA2=  -33 
+ QA2=  -36 
+ QA2=  -10 
+ QA2=  -13 
+ QA2=  -16 
+ QA2=  -19 
+ QA2=  -22 
+ QA2=  -25 
+ QA2=  -28 
+ QA2=  -31 
+ QA2=  -34 
+ QA2=  -37 
+ QA2=  -11 
+ QA2=  -14 
+ QA2=  -17 
+ QA2=  -20 
+ QA2=  -23 
+ QA2=  -26 
+ QA2=  -29 
+ QA2=  -32 
+ QA2=  -35 
+ QA2=  -38 
+ QA2=  -12 
+ QA2=  -15 
+ QA2=  -18 
+ QA2=  -21 
+ QA2=  -24 
+ QA2=  -27 
+ QA2=  -30 
+ QA2=  -33 
+ QA2=  -36 
+ QA2=  -39 
+ QA2=  -13 
+ QA2=  -16 
+ QA2=  -19 
+ QA2=  -22 
+ QA2=  -25 
+ QA2=  -28 
+ QA2=  -31 
+ QA2=  -34 
+ QA2=  -37 
+ QA2=  -40 
+ QA2=  -14 
+ QA2=  -17 
+ QA2=  -20 
+ QA2=  -23 
+ QA2=  -26 
+ QA2=  -29 
+ QA2=  -32 
+ QA2=  -35 
+ QA2=  -38 
+ QA2=  -41 
+ QA2=  -15 
+ QA2=  -18 
+ QA2=  -21 
+ QA2=  -24 
+ QA2=  -27 
+ QA2=  -30 
+ QA2=  -33 
+ QA2=  -36 
+ QA2=  -39 
+ QA2=  -42 
+
+ ----- TEST NO.2 ----- 2ND SIMPLEST POSSIBLE  
+                       S/V MIXTURE            
+
+
+ RMIN=  9  
+ IMIN=  6  
+
+ RB1=  4 
+ RB1=  5 
+ RB1=  6 
+ RB1=  7 
+ RB1=  8 
+ RB1=  9 
+ RB1=  10 
+ RB1=  11 
+ RB1=  12 
+ RB1=  13 
+
+ IA1=  12 
+ IA1=  20 
+ IA1=  30 
+ IA1=  42 
+ IA1=  56 
+ IA1=  72 
+ IA1=  90 
+ IA1=  110 
+ IA1=  132 
+ IA1=  10 
+
+ DA1=  -4 
+ DA1=  -3 
+ DA1=  -2 
+ DA1=  -1 
+ DA1=  0 
+ DA1=  31 
+ DA1=  36 
+ DA1=  41 
+ DA1=  46 
+ DA1=  20 
+
+ RA1=  9 
+ RA1=  11 
+ RA1=  13 
+ RA1=  15 
+ RA1=  17 
+ RA1=  19 
+ RA1=  21 
+ RA1=  23 
+ RA1=  25 
+ RA1=  27 
+
+ RA2=  36 
+ RA2=  55 
+ RA2=  78 
+ RA2=  105 
+ RA2=  136 
+ RA2=  0 
+ RA2=  21 
+ RA2=  46 
+ RA2=  75 
+ RA2=  15 
+
+ QA2=  -6 
+ QA2=  -9 
+ QA2=  -12 
+ QA2=  -15 
+ QA2=  -18 
+ QA2=  -21 
+ QA2=  -24 
+ QA2=  -27 
+ QA2=  -30 
+ QA2=  -33 
+
+ ----- TEST NO.3 ----- MASK OPTIMIZATION      
+                       S/V MIXTURE            
+
+ DP1=  4 
+ DP1=  6 
+ DP1=  9 
+ DP1=  12 
+ DP1=  15 
+ DP1=  18 
+ DP1=  21 
+ DP1=  24 
+ DP1=  27 
+ DP1=  30 
+
+ DM1=  2 
+ DM1=  4 
+ DM1=  6 
+ DM1=  8 
+ DM1=  10 
+ DM1=  12 
+ DM1=  14 
+ DM1=  16 
+ DM1=  18 
+ DM1=  20 
+
+ RB1=  4 
+ RB1=  5 
+ RB1=  6 
+ RB1=  7 
+ RB1=  8 
+ RB1=  9 
+ RB1=  10 
+ RB1=  11 
+ RB1=  12 
+ RB1=  13 
+
+ IA1=  9 
+ IA1=  16 
+ IA1=  25 
+ IA1=  36 
+ IA1=  49 
+ IA1=  64 
+ IA1=  81 
+ IA1=  100 
+ IA1=  121 
+ IA1=  10 
+
+ DA1=  6 
+ DA1=  -3 
+ DA1=  -2 
+ DA1=  -1 
+ DA1=  0 
+ DA1=  1 
+ DA1=  2 
+ DA1=  3 
+ DA1=  4 
+ DA1=  20 
+
+ RA1=  20 
+ RA1=  30 
+ RA1=  42 
+ RA1=  56 
+ RA1=  72 
+ RA1=  90 
+ RA1=  110 
+ RA1=  132 
+ RA1=  156 
+ RA1=  182 
+
+ RA2=  -100 
+ RA2=  -120 
+ RA2=  -126 
+ RA2=  -112 
+ RA2=  -72 
+ RA2=  0 
+ RA2=  110 
+ RA2=  264 
+ RA2=  468 
+ RA2=  15 
+
+ ----- TEST NO.4 ----- MASK OPTIMIZATION      
+                       INCLUDING INNER SCR    
+
+ RA2=  140 
+ RA2=  240 
+ RA2=  378 
+ RA2=  560 
+ RA2=  792 
+ RA2=  1080 
+ RA2=  1430 
+ RA2=  1848 
+ RA2=  2340 
+ RA2=  25 
+
+ ----- TEST NO.4 ----- MASK OPTIMIZATION      
+                       INCLUDING INNER SCR    
+
+ RA2=  200 
+ RA2=  330 
+ RA2=  504 
+ RA2=  728 
+ RA2=  1008 
+ RA2=  1350 
+ RA2=  1760 
+ RA2=  2244 
+ RA2=  2808 
+ RA2=  35 
+
+ ----- TEST NO.4 ----- MASK OPTIMIZATION      
+                       INCLUDING INNER SCR    
+
+ RA2=  260 
+ RA2=  420 
+ RA2=  630 
+ RA2=  896 
+ RA2=  1224 
+ RA2=  1620 
+ RA2=  2090 
+ RA2=  2640 
+ RA2=  3276 
+ RA2=  45 
+
+ ----- TEST NO.4 ----- MASK OPTIMIZATION      
+                       INCLUDING INNER SCR    
+
+ RA2=  320 
+ RA2=  510 
+ RA2=  756 
+ RA2=  1064 
+ RA2=  1440 
+ RA2=  1890 
+ RA2=  2420 
+ RA2=  3036 
+ RA2=  3744 
+ RA2=  55 
+
+ ----- TEST NO.4 ----- MASK OPTIMIZATION      
+                       INCLUDING INNER SCR    
+
+ RA2=  380 
+ RA2=  600 
+ RA2=  882 
+ RA2=  1232 
+ RA2=  1656 
+ RA2=  2160 
+ RA2=  2750 
+ RA2=  3432 
+ RA2=  4212 
+ RA2=  65 
+
+ ----- TEST NO.4 ----- MASK OPTIMIZATION      
+                       INCLUDING INNER SCR    
+
+ RA2=  440 
+ RA2=  690 
+ RA2=  1008 
+ RA2=  1400 
+ RA2=  1872 
+ RA2=  2430 
+ RA2=  3080 
+ RA2=  3828 
+ RA2=  4680 
+ RA2=  75 
+
+ ----- TEST NO.4 ----- MASK OPTIMIZATION      
+                       INCLUDING INNER SCR    
+
+ RA2=  500 
+ RA2=  780 
+ RA2=  1134 
+ RA2=  1568 
+ RA2=  2088 
+ RA2=  2700 
+ RA2=  3410 
+ RA2=  4224 
+ RA2=  5148 
+ RA2=  85 
+
+ ----- TEST NO.4 ----- MASK OPTIMIZATION      
+                       INCLUDING INNER SCR    
+
+ RA2=  560 
+ RA2=  870 
+ RA2=  1260 
+ RA2=  1736 
+ RA2=  2304 
+ RA2=  2970 
+ RA2=  3740 
+ RA2=  4620 
+ RA2=  5616 
+ RA2=  95 
+
+ ----- TEST NO.4 ----- MASK OPTIMIZATION      
+                       INCLUDING INNER SCR    
+
+ RA2=  620 
+ RA2=  960 
+ RA2=  1386 
+ RA2=  1904 
+ RA2=  2520 
+ RA2=  3240 
+ RA2=  4070 
+ RA2=  5016 
+ RA2=  6084 
+ RA2=  105 
+
+ ----- TEST NO.4 ----- MASK OPTIMIZATION      
+                       INCLUDING INNER SCR    
+
+ RMAX=  5  
+ IMAX=  1  
+ RMIN=  99999  
+ IMIN=  0  
+
+ RC1=  5 
+ RC1=  6 
+ RC1=  7 
+ RC1=  8 
+ RC1=  9 
+ RC1=  10 
+ RC1=  11 
+ RC1=  12 
+ RC1=  13 
+ RC1=  14 
+
+ DP1=  4 
+ DP1=  6 
+ DP1=  9 
+ DP1=  12 
+ DP1=  15 
+ DP1=  18 
+ DP1=  21 
+ DP1=  24 
+ DP1=  27 
+ DP1=  30 
+
+ DM1=  2 
+ DM1=  4 
+ DM1=  6 
+ DM1=  8 
+ DM1=  10 
+ DM1=  12 
+ DM1=  14 
+ DM1=  16 
+ DM1=  18 
+ DM1=  20 
+
+   S=  9  
+  RK=  0  
+
+ CA1=  1  1  
+ CA1=  2  2  
+ CA1=  3  3  
+ CA1=  4  4  
+ CA1=  5  5  
+ CA1=  6  6  
+ CA1=  7  7  
+ CA1=  8  8  
+ CA1=  9  9  
+ CA1=  10  10  
+
+ CB1=  6  6  
+ CB1=  -3  2  
+ CB1=  -2  3  
+ CB1=  -1  4  
+ CB1=  0  5  
+ CB1=  1  6  
+ CB1=  2  7  
+ CB1=  3  8  
+ CB1=  4  9  
+ CB1=  5  10  
+
+ IA1=  3  
+ IA1=  16  
+ IA1=  25  
+ IA1=  36  
+ IA1=  49  
+ IA1=  64  
+ IA1=  81  
+ IA1=  100  
+ IA1=  121  
+ IA1=  10  
+
+ DA1=  6 
+ DA1=  -3 
+ DA1=  -2 
+ DA1=  -1 
+ DA1=  0 
+ DA1=  1 
+ DA1=  2 
+ DA1=  3 
+ DA1=  4 
+ DA1=  20 
+
+ RA1=  9 
+
+ RA2=  -100 
+ RA2=  -120 
+ RA2=  -126 
+ RA2=  -112 
+ RA2=  -72 
+ RA2=  0 
+ RA2=  110 
+ RA2=  264 
+ RA2=  468 
+ RA2=  15 
+ RA2=  140 
+ RA2=  240 
+ RA2=  378 
+ RA2=  560 
+ RA2=  792 
+ RA2=  1080 
+ RA2=  1430 
+ RA2=  1848 
+ RA2=  2340 
+ RA2=  25 
+ RA2=  200 
+ RA2=  330 
+ RA2=  504 
+ RA2=  728 
+ RA2=  1008 
+ RA2=  1350 
+ RA2=  1760 
+ RA2=  2244 
+ RA2=  2808 
+ RA2=  35 
+ RA2=  260 
+ RA2=  420 
+ RA2=  630 
+ RA2=  896 
+ RA2=  1224 
+ RA2=  1620 
+ RA2=  2090 
+ RA2=  2640 
+ RA2=  3276 
+ RA2=  45 
+ RA2=  320 
+ RA2=  510 
+ RA2=  756 
+ RA2=  1064 
+ RA2=  1440 
+ RA2=  1890 
+ RA2=  2420 
+ RA2=  3036 
+ RA2=  3744 
+ RA2=  55 
+ RA2=  380 
+ RA2=  600 
+ RA2=  882 
+ RA2=  1232 
+ RA2=  1656 
+ RA2=  2160 
+ RA2=  2750 
+ RA2=  3432 
+ RA2=  4212 
+ RA2=  65 
+ RA2=  440 
+ RA2=  690 
+ RA2=  1008 
+ RA2=  1400 
+ RA2=  1872 
+ RA2=  2430 
+ RA2=  3080 
+ RA2=  3828 
+ RA2=  4680 
+ RA2=  75 
+ RA2=  500 
+ RA2=  780 
+ RA2=  1134 
+ RA2=  1568 
+ RA2=  2088 
+ RA2=  2700 
+ RA2=  3410 
+ RA2=  4224 
+ RA2=  5148 
+ RA2=  85 
+ RA2=  560 
+ RA2=  870 
+ RA2=  1260 
+ RA2=  1736 
+ RA2=  2304 
+ RA2=  2970 
+ RA2=  3740 
+ RA2=  4620 
+ RA2=  5616 
+ RA2=  95 
+ RA2=  620 
+ RA2=  960 
+ RA2=  1386 
+ RA2=  1904 
+ RA2=  2520 
+ RA2=  3240 
+ RA2=  4070 
+ RA2=  5016 
+ RA2=  6084 
+ RA2=  105 
+
+exit 0

@@ -1,1 +1,8 @@
 llvm_singlesource_fujitsu(PREFIX "Fujitsu-C-")
+set_property(SOURCE 0013_0605.c APPEND PROPERTY COMPILE_OPTIONS "-Wno-bitfield-constant-conversion")
+set_property(SOURCE 0013_0606.c APPEND PROPERTY COMPILE_OPTIONS "-Wno-bitfield-constant-conversion")
+set_property(SOURCE 0013_0610.c APPEND PROPERTY COMPILE_OPTIONS "-Wno-bitfield-constant-conversion")
+set_property(SOURCE 0013_0611.c APPEND PROPERTY COMPILE_OPTIONS "-Wno-bitfield-constant-conversion")
+set_property(SOURCE 0013_0615.c APPEND PROPERTY COMPILE_OPTIONS "-Wno-bitfield-constant-conversion")
+set_property(SOURCE 0013_0616.c APPEND PROPERTY COMPILE_OPTIONS "-Wno-bitfield-constant-conversion")
+set_property(SOURCE 0013_0673.c APPEND PROPERTY COMPILE_OPTIONS "-Wno-format")

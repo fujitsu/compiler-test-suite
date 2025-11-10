@@ -1,0 +1,17 @@
+throw1
+Class. ctor() : 1
+Class.cctor() : 12
+catch1
+throw2
+Class. ctor() : 3
+Class.cctor() : 34
+catch2
+Class. dtor() : 34
+Class. dtor() : 3
+rethrow1
+Class.cctor() : 15
+catch3
+Class. dtor() : 15
+Class. dtor() : 12
+Class. dtor() : 1
+exit 0

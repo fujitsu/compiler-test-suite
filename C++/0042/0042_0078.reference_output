@@ -1,0 +1,9 @@
+Base()
+Base(int)
+Derived()
+Base(int)
+Derived(int)
+
+Base(int)
+Derived(int)
+exit 0

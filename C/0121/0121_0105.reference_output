@@ -1,0 +1,138 @@
+
+    -LOOP.01 
+
+ k= 10  
+
+ EV11= 100  
+
+ ES10= 1  
+ ES10= 0  
+ ES10= 1.5  
+ ES10= 1.5  
+ ES10= 1.5  
+ ES10= 1.5  
+ ES10= 1.5  
+ ES10= 1.5  
+ ES10= 1.5  
+ ES10= -1.5  
+
+    -LOOP.02 
+
+ i= 1  
+
+ DV10= 1  
+ DV10= 2  
+ DV10= 3  
+ DV10= 4  
+ DV10= 5  
+ DV10= 6  
+ DV10= 7  
+ DV10= 8  
+ DV10= 9  
+ DV10= 10  
+
+    -LOOP.03 
+
+ i=1  
+
+ IV30= 98  EV30= 1.5  EV31= 0  
+ IV30= 2  EV30= 1.5  EV31= 0  
+ IV30= 2  EV30= 1.5  EV31= 0  
+ IV30= 2  EV30= 1.5  EV31= 0  
+ IV30= 2  EV30= 1.5  EV31= 0  
+ IV30= 2  EV30= 1.5  EV31= 0  
+ IV30= 2  EV30= 1.5  EV31= 0  
+ IV30= 2  EV30= 1.5  EV31= 0  
+ IV30= 2  EV30= 1.5  EV31= 0  
+ IV30= 2  EV30= 1.5  EV31= 0  
+ IV30= 2  EV30= 1.5  EV31= 0  
+ IV30= 2  EV30= 1.5  EV31= 0  
+ IV30= 2  EV30= 1.5  EV31= 0  
+ IV30= 2  EV30= 1.5  EV31= 0  
+ IV30= 2  EV30= 1.5  EV31= 0  
+ IV30= 2  EV30= 1.5  EV31= 0  
+ IV30= 2  EV30= 1.5  EV31= 0  
+ IV30= 2  EV30= 1.5  EV31= 0  
+ IV30= 2  EV30= 1.5  EV31= 0  
+ IV30= 2  EV30= 1.75  EV31= 0  
+ IV30= 2  EV30= 0  EV31= 0  
+ IV30= 2  EV30= 0  EV31= 0  
+ IV30= 2  EV30= 0  EV31= 0  
+ IV30= 2  EV30= 0  EV31= 0  
+ IV30= 2  EV30= 0  EV31= 0  
+ IV30= 2  EV30= 0  EV31= 0  
+ IV30= 2  EV30= 0  EV31= 0  
+ IV30= 2  EV30= 0  EV31= 0  
+ IV30= 2  EV30= 0  EV31= 0  
+ IV30= 2  EV30= 0  EV31= 0  
+ IV30= 2  EV30= 0  EV31= 0  
+ IV30= 2  EV30= 0  EV31= 0  
+ IV30= 2  EV30= 0  EV31= 0  
+ IV30= 2  EV30= 0  EV31= 0  
+ IV30= 2  EV30= 0  EV31= 0  
+ IV30= 2  EV30= 0  EV31= 0  
+ IV30= 2  EV30= 0  EV31= 0  
+ IV30= 2  EV30= 0  EV31= 0  
+ IV30= 2  EV30= 0  EV31= 0  
+ IV30= 2  EV30= 0  EV31= 0  
+ IV30= 2  EV30= 0  EV31= 0  
+ IV30= 2  EV30= 0  EV31= 0  
+ IV30= 2  EV30= 0  EV31= 0  
+ IV30= 2  EV30= 0  EV31= 0  
+ IV30= 2  EV30= 0  EV31= 0  
+ IV30= 2  EV30= 0  EV31= 0  
+ IV30= 2  EV30= 0  EV31= 0  
+ IV30= 2  EV30= 0  EV31= 0  
+ IV30= 2  EV30= 0  EV31= 0  
+ IV30= 2  EV30= 0  EV31= 0  
+ IV30= 2  EV30= 1.75  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+ IV30= 2  EV30= 2  EV31= 0  
+exit 0

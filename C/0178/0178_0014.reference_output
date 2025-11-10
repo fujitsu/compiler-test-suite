@@ -1,0 +1,9 @@
+
+    GNU Des STARTED   GNU Designated Initializers   
+	 bit field b1=5 b2=0
+	 bit field union_u6[0].char_var=5
+
+            *OK*    :  ALL THE ITEMS
+
+    GNU Des ENDED   GNU Designated Initializers   
+exit 1

@@ -31,7 +31,7 @@
       SUBROUTINE    SUB(MEMO,SW4,SW5,SW6,SW7)
       DIMENSION     A(8),IA(3)
       LOGICAL       SW4,SW5,SW6,SW7
-      REAL*8        MEMO
+      character(*)  MEMO
       NAMELIST      /NAMEL/A,A1,A2,B1,B2,C1,C2,D1,IA,I,J,J1,J2,J3
 
          WRITE(6,2000)MEMO

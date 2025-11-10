@@ -1,0 +1,443 @@
+ === loopNum : 1
+ input: -1 -10 -1 -1 -10 -1 -1 -10 -1 -1 -10 -1 -1 -10 -1
+ -- loop(lastprivate) --
+ 11 11 11 11 11
+ 2.75E+06
+ -- loop(private) --
+ 11 11 11 11 11
+ 2.75E+06
+ [[[ OK ]]]
+ === loopNum : 2
+ input: -2 -10 -2 -2 -10 -2 -2 -10 -2 -3 -8 -1 -1 -3 -1
+ -- loop(lastprivate) --
+ 12 12 12 9 4
+ 57375.
+ -- loop(private) --
+ 12 12 12 9 4
+ 57375.
+ [[[ OK ]]]
+ === loopNum : 3
+ input: -1 -10 -1 -1 -9 -1 -1 -10 -1 -1 -9 -1 -1 -10 -1
+ -- loop(lastprivate) --
+ 11 10 11 10 11
+ 2.1465E+06
+ -- loop(private) --
+ 11 10 11 10 11
+ 2.1465E+06
+ [[[ OK ]]]
+ === loopNum : 4
+ input: -2 -5 -1 -2 -5 -4 -2 -5 -2 -2 -5 -5 -1 -10 -1
+ -- loop(lastprivate) --
+ 6 6 6 7 11
+ 1280.
+ -- loop(private) --
+ 6 6 6 7 11
+ 1280.
+ [[[ OK ]]]
+ === loopNum : 5
+ input: -2 -5 -1 -2 -5 -3 -2 -5 -5 -2 -5 -4 -1 -10 -1
+ -- loop(lastprivate) --
+ 6 8 7 6 11
+ 1320.
+ -- loop(private) --
+ 6 8 7 6 11
+ 1320.
+ [[[ OK ]]]
+ === loopNum : 6
+ input: -2 -5 -4 -2 -5 -2 -2 -5 -1 -2 -5 -1 -1 -10 -1
+ -- loop(lastprivate) --
+ 6 6 6 6 11
+ 5600.
+ -- loop(private) --
+ 6 6 6 6 11
+ 5600.
+ [[[ OK ]]]
+ === loopNum : 7
+ input: -2 -5 -3 -2 -5 -1 -2 -5 -3 -2 -5 -1 -1 -10 -1
+ -- loop(lastprivate) --
+ 8 6 8 6 11
+ 12480.
+ -- loop(private) --
+ 8 6 8 6 11
+ 12480.
+ [[[ OK ]]]
+ === loopNum : 8
+ input: -2 -5 -2 -2 -5 -2 -2 -5 -2 -2 -5 -2 -1 -10 -1
+ -- loop(lastprivate) --
+ 6 6 6 6 11
+ 2800.
+ -- loop(private) --
+ 6 6 6 6 11
+ 2800.
+ [[[ OK ]]]
+ === loopNum : 9
+ input: -2 -5 -3 -2 -5 -3 -2 -5 -3 -2 -5 -3 -1 -10 -1
+ -- loop(lastprivate) --
+ 8 8 8 8 11
+ 3120.
+ -- loop(private) --
+ 8 8 8 8 11
+ 3120.
+ [[[ OK ]]]
+ === loopNum : 10
+ input: -2 -5 -4 -2 -5 -5 -2 -5 -6 -2 -5 -4 -1 -10 -1
+ -- loop(lastprivate) --
+ 6 7 8 6 11
+ 135.
+ -- loop(private) --
+ 6 7 8 6 11
+ 135.
+ [[[ OK ]]]
+ === loopNum : 11
+ input: 0 -3 -1 0 -3 -1 0 -3 -1 0 -3 -1 -1 -10 -1
+ -- loop(lastprivate) --
+ 4 4 4 4 11
+ 29440.
+ -- loop(private) --
+ 4 4 4 4 11
+ 29440.
+ [[[ OK ]]]
+ === loopNum : 12
+ input: 0 -10 -1 0 -10 -1 0 -10 -1 0 -10 -1 -1 -10 -1
+ -- loop(lastprivate) --
+ 11 11 11 11 11
+ 3.733455E+06
+ -- loop(private) --
+ 11 11 11 11 11
+ 3.733455E+06
+ [[[ OK ]]]
+ === loopNum : 13
+ input: 0 -5 -1 0 -5 -2 0 -5 -5 0 -5 -2 -1 -10 -1
+ -- loop(lastprivate) --
+ 6 6 10 6 11
+ 15660.
+ -- loop(private) --
+ 6 6 10 6 11
+ 15660.
+ [[[ OK ]]]
+ === loopNum : 14
+ input: 0 -5 -1 0 -5 -3 0 -5 -6 0 -5 -3 -1 -10 -1
+ -- loop(lastprivate) --
+ 6 6 6 6 11
+ 2640.
+ -- loop(private) --
+ 6 6 6 6 11
+ 2640.
+ [[[ OK ]]]
+ === loopNum : 15
+ input: 0 -5 -2 0 -5 -5 0 -5 -1 0 -5 -5 -1 -10 -1
+ -- loop(lastprivate) --
+ 6 10 6 10 11
+ 10800.
+ -- loop(private) --
+ 6 10 6 10 11
+ 10800.
+ [[[ OK ]]]
+ === loopNum : 16
+ input: 0 -5 -3 0 -5 -1 0 -5 -1 0 -5 -3 -1 -10 -1
+ -- loop(lastprivate) --
+ 6 6 6 6 11
+ 19440.
+ -- loop(private) --
+ 6 6 6 6 11
+ 19440.
+ [[[ OK ]]]
+ === loopNum : 17
+ input: 0 -5 -2 0 -5 -2 0 -5 -2 0 -5 -2 -1 -10 -1
+ -- loop(lastprivate) --
+ 6 6 6 6 11
+ 10935.
+ -- loop(private) --
+ 6 6 6 6 11
+ 10935.
+ [[[ OK ]]]
+ === loopNum : 18
+ input: 0 -5 -3 0 -5 -3 0 -5 -3 0 -5 -3 -1 -10 -1
+ -- loop(lastprivate) --
+ 6 6 6 6 11
+ 1840.
+ -- loop(private) --
+ 6 6 6 6 11
+ 1840.
+ [[[ OK ]]]
+ === loopNum : 19
+ input: 9 -5 -2 3 -5 -2 3 -5 -6 3 -5 -2 -1 -10 -1
+ -- loop(lastprivate) --
+ 7 7 9 7 11
+ 22000.
+ -- loop(private) --
+ 7 7 9 7 11
+ 22000.
+ [[[ OK ]]]
+ === loopNum : 20
+ input: 10 -5 -3 0 -5 -3 10 -5 -3 0 -5 -3 -1 -10 -1
+ -- loop(lastprivate) --
+ 8 6 8 6 11
+ 5040.
+ -- loop(private) --
+ 8 6 8 6 11
+ 5040.
+ [[[ OK ]]]
+ === loopNum : 21
+ input: -3 -1 1 -3 -1 1 -3 -1 1 -3 -1 1 -1 -10 -1
+ -- loop(lastprivate) --
+ 0 0 0 0 11
+ 10935.
+ -- loop(private) --
+ 0 0 0 0 11
+ 10935.
+ [[[ OK ]]]
+ === loopNum : 22
+ input: -10 -1 1 -10 -1 1 -10 -1 1 -10 -1 1 -1 -10 -1
+ -- loop(lastprivate) --
+ 0 0 0 0 11
+ 2.75E+06
+ -- loop(private) --
+ 0 0 0 0 11
+ 2.75E+06
+ [[[ OK ]]]
+ === loopNum : 23
+ input: -5 -2 1 -5 -2 2 -5 -2 4 -5 -2 2 -1 -10 -1
+ -- loop(lastprivate) --
+ 1 1 1 1 11
+ 3520.
+ -- loop(private) --
+ 1 1 1 1 11
+ 3520.
+ [[[ OK ]]]
+ === loopNum : 24
+ input: -1 -5 -2 1 -5 -2 1 -5 -2 1 -5 -2 -1 -10 -1
+ -- loop(lastprivate) --
+ 7 7 7 7 11
+ 27840.
+ -- loop(private) --
+ 7 7 7 7 11
+ 27840.
+ [[[ OK ]]]
+ === loopNum : 25
+ input: -5 -2 2 -5 -2 1 -5 -2 1 -5 -2 2 -1 -10 -1
+ -- loop(lastprivate) --
+ 1 1 1 1 11
+ 13120.
+ -- loop(private) --
+ 1 1 1 1 11
+ 13120.
+ [[[ OK ]]]
+ === loopNum : 26
+ input: -5 -2 3 -5 -2 1 -5 -2 6 -5 -2 6 -1 -10 -1
+ -- loop(lastprivate) --
+ -1 1 -1 -1 11
+ 1800.
+ -- loop(private) --
+ -1 1 -1 -1 11
+ 1800.
+ [[[ OK ]]]
+ === loopNum : 27
+ input: -5 -2 2 -5 -2 2 -5 -2 2 -5 -2 2 -1 -10 -1
+ -- loop(lastprivate) --
+ 1 1 1 1 11
+ 3440.
+ -- loop(private) --
+ 1 1 1 1 11
+ 3440.
+ [[[ OK ]]]
+ === loopNum : 28
+ input: -5 -2 3 -5 -2 3 -5 -2 3 -5 -2 3 -1 -10 -1
+ -- loop(lastprivate) --
+ -1 -1 -1 -1 11
+ 3120.
+ -- loop(private) --
+ -1 -1 -1 -1 11
+ 3120.
+ [[[ OK ]]]
+ === loopNum : 29
+ input: -3 0 1 -3 0 1 -3 0 1 -3 0 1 -1 -10 -1
+ -- loop(lastprivate) --
+ -1 -1 -1 -1 11
+ 29440.
+ -- loop(private) --
+ -1 -1 -1 -1 11
+ 29440.
+ [[[ OK ]]]
+ === loopNum : 30
+ input: -10 0 1 -10 0 1 -10 0 1 -10 0 1 -1 -10 -1
+ -- loop(lastprivate) --
+ -1 -1 -1 -1 11
+ 3.733455E+06
+ -- loop(private) --
+ -1 -1 -1 -1 11
+ 3.733455E+06
+ [[[ OK ]]]
+ === loopNum : 31
+ input: -5 0 1 -5 0 2 -5 0 2 -5 0 2 -1 -10 -1
+ -- loop(lastprivate) --
+ -1 -1 -1 -1 11
+ 27540.
+ -- loop(private) --
+ -1 -1 -1 -1 11
+ 27540.
+ [[[ OK ]]]
+ === loopNum : 32
+ input: -5 0 1 -5 0 3 -5 0 5 -5 0 1 -1 -10 -1
+ -- loop(lastprivate) --
+ -1 -1 -5 -1 11
+ 23760.
+ -- loop(private) --
+ -1 -1 -5 -1 11
+ 23760.
+ [[[ OK ]]]
+ === loopNum : 33
+ input: -5 0 2 -5 0 1 -5 0 6 -5 0 5 -1 -10 -1
+ -- loop(lastprivate) --
+ -1 -1 -1 -5 11
+ 6660.
+ -- loop(private) --
+ -1 -1 -1 -5 11
+ 6660.
+ [[[ OK ]]]
+ === loopNum : 34
+ input: -5 0 3 -5 0 1 -5 0 3 -5 0 1 -1 -10 -1
+ -- loop(lastprivate) --
+ -1 -1 -1 -1 11
+ 25200.
+ -- loop(private) --
+ -1 -1 -1 -1 11
+ 25200.
+ [[[ OK ]]]
+ === loopNum : 35
+ input: -5 0 2 -5 0 6 -5 0 2 -5 0 2 -1 -10 -1
+ -- loop(lastprivate) --
+ -1 -1 -1 -1 11
+ 5265.
+ -- loop(private) --
+ -1 -1 -1 -1 11
+ 5265.
+ [[[ OK ]]]
+ === loopNum : 36
+ input: -5 0 3 -5 0 3 -5 0 3 -5 0 3 -1 -10 -1
+ -- loop(lastprivate) --
+ -1 -1 -1 -1 11
+ 3120.
+ -- loop(private) --
+ -1 -1 -1 -1 11
+ 3120.
+ [[[ OK ]]]
+ === loopNum : 37
+ input: -5 2 2 -5 10 2 -5 10 2 -5 2 2 -1 -10 -1
+ -- loop(lastprivate) --
+ -3 -11 -11 -3 11
+ 56320.
+ -- loop(private) --
+ -3 -11 -11 -3 11
+ 56320.
+ [[[ OK ]]]
+ === loopNum : 38
+ input: -5 9 3 -5 0 3 -5 9 14 -5 9 3 -1 -10 -1
+ -- loop(lastprivate) --
+ -10 -1 -23 -10 11
+ 5000.
+ -- loop(private) --
+ -10 -1 -23 -10 11
+ 5000.
+ [[[ OK ]]]
+ === loopNum : 39
+ input: 0 0 -2 0 -5 -1 0 -5 -1 0 -5 -1 -1 -10 -1
+ -- loop(lastprivate) --
+ 2 6 6 6 11
+ 28080.
+ -- loop(private) --
+ 2 6 6 6 11
+ 28080.
+ [[[ OK ]]]
+ === loopNum : 40
+ input: 0 -5 -2 0 0 -1 0 0 -2 0 0 -2 -1 -10 -1
+ -- loop(lastprivate) --
+ 6 1 2 2 11
+ 225.
+ -- loop(private) --
+ 6 1 2 2 11
+ 225.
+ [[[ OK ]]]
+ === loopNum : 41
+ input: -2 -5 -2 -5 -2 2 -5 -2 2 -5 -2 2 -1 -10 -1
+ -- loop(lastprivate) --
+ 6 1 1 1 11
+ 3280.
+ -- loop(private) --
+ 6 1 1 1 11
+ 3280.
+ [[[ OK ]]]
+ === loopNum : 42
+ input: -2 -10 -5 -10 -3 2 -2 -10 -5 -2 -10 -5 -1 -10 -1
+ -- loop(lastprivate) --
+ 12 2 12 12 11
+ 8320.
+ -- loop(private) --
+ 12 2 12 12 11
+ 8320.
+ [[[ OK ]]]
+ === loopNum : 43
+ input: -8 -5 6 -2 -5 -3 -9 -5 6 -9 -5 6 -1 -10 -1
+ -- loop(lastprivate) --
+ 2 8 3 3 11
+ 700.
+ -- loop(private) --
+ 2 8 3 3 11
+ 700.
+ [[[ OK ]]]
+ === loopNum : 44
+ input: -8 0 6 -2 -5 -3 -2 -5 -3 -8 0 6 -1 -10 -1
+ -- loop(lastprivate) --
+ -4 8 8 -4 11
+ 3600.
+ -- loop(private) --
+ -4 8 8 -4 11
+ 3600.
+ [[[ OK ]]]
+ === loopNum : 45
+ input: -10 0 6 10 0 -3 -1 -1 -1 10 0 -3 -1 -10 -1
+ -- loop(lastprivate) --
+ -2 2 2 2 11
+ 800.
+ -- loop(private) --
+ -2 2 2 2 11
+ 800.
+ [[[ OK ]]]
+ === loopNum : 46
+ input: -10 0 6 0 -5 -3 -8 0 9 -8 0 9 -1 -10 -1
+ -- loop(lastprivate) --
+ -2 6 -1 -1 11
+ 1200.
+ -- loop(private) --
+ -2 6 -1 -1 11
+ 1200.
+ [[[ OK ]]]
+ === loopNum : 47
+ input: 0 0 -1 0 0 -1 0 0 -1 0 0 -1 -1 -1 -1
+ -- loop(lastprivate) --
+ 1 1 1 1 2
+ 1.
+ -- loop(private) --
+ 1 1 1 1 2
+ 1.
+ [[[ OK ]]]
+ === loopNum : 48
+ input: -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+ -- loop(lastprivate) --
+ 2 2 2 2 2
+ 5.
+ -- loop(private) --
+ 2 2 2 2 2
+ 5.
+ [[[ OK ]]]
+ === loopNum : 49
+ input: 0 0 -1 -1 -1 -1 0 0 -1 0 0 -1 -1 -1 -1
+ -- loop(lastprivate) --
+ 1 2 1 1 2
+ 2.
+ -- loop(private) --
+ 1 2 1 1 2
+ 2.
+ [[[ OK ]]]
+ 2.
+exit 0

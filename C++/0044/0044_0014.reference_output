@@ -1,0 +1,5 @@
+Class.ctor()  : 10
+  throwing...   10
+delete operator called...
+exception caught : 10
+exit 0

@@ -1,0 +1,40 @@
+
+
+
+template<typename T = int>
+class C1{
+  public:
+    C1(T member) : member(member){}
+    T getMember(){
+      return member;
+    }
+
+  private:
+    T member;
+};
+
+
+template<int I = 117>
+class C2{
+  public:
+    C2() : member(I){}
+    int getMember(){
+      return member;
+    }
+
+  private:
+    int member;
+};
+
+
+template<template<typename T> class U = C1 >
+class C3{
+  public:
+    C3(U<int> member) : member(member) {}
+    int getMember(){
+      return member.getMember();
+    }
+
+  private:
+    U<int> member;
+};

@@ -1,0 +1,5 @@
+Base()
+Derived(char)
+Base()
+Derived(char)
+exit 0

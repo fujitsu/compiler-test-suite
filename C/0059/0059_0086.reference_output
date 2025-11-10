@@ -1,0 +1,7 @@
+
+    no_chec STARTED   no_check_memory_usage         
+
+            *OK*    :  ALL THE ITEMS
+
+    no_chec ENDED   no_check_memory_usage         
+exit 0

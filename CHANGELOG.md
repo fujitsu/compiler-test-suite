@@ -1,6 +1,21 @@
 Changelog
 =========
 
+2025-11
+-------
+### Added
+
+- Add more test programs.
+
+### Fixed
+
+- Fix some bugs in the test programs.
+
+### Removed
+
+- Remove redundant files.
+
+
 2025-09
 -------
 Started accepting external pull requests.

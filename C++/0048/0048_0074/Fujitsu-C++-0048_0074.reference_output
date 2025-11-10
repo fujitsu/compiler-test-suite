@@ -1,0 +1,4 @@
+Singleton::Singleton
+B1::sub1
+Singleton::~Singleton
+exit 0

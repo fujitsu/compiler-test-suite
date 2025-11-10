@@ -1,0 +1,18 @@
+#include <iostream>
+#include <array>
+
+int main(void){
+
+  std::array<int, 0> b;
+  std::array<int, 1> c;
+  std::array<int, 10> d;
+
+  if( b.empty() &&
+     !c.empty() && !d.empty() ){
+    std::cout << "ok" << std::endl;
+  } else{
+    std::cout << "ng" << std::endl;    
+  }
+     
+  return 0;
+}

@@ -18,7 +18,7 @@ impure elemental type(ty1) function   sub(i)
 intent(in) :: i
 type (ty1) :: i
 target :: iii
-integer :: iii(10)
+integer,save :: iii(10)
 sub=i
 iii=2
 sub%ip=>iii

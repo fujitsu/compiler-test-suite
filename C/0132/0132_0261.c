@@ -1,0 +1,23 @@
+
+#include "001.h"
+int func(U8 x, U8 y);
+int main() {
+	U4	a = 0x7fffffff;
+	U4	b = 0xffffffff;
+	U8	c,d;
+	
+	c = a;
+	d = b;
+	func(c,d);
+
+	return(0);
+}
+
+int func(x,y) 
+U8	x,y;
+{
+	if( x == 0x7fffffff )	printf("***** conv(U4 -> u8) OK *****\n");
+	else			printf("***** conv(U4 -> u8) NG *****\n");
+	if( y == 0xffffffff )	printf("***** conv(U4 -> u8) OK *****\n");
+	else			printf("***** conv(U4 -> u8) NG *****\n");
+}

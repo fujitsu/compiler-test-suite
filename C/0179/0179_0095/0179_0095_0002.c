@@ -1,0 +1,10 @@
+extern signed int v1 (signed int, signed char);
+extern signed int (*v2) (signed int, signed char);
+extern signed short v3 (unsigned short);
+extern signed short (*v4) (unsigned short);
+extern unsigned char v5 (signed short);
+extern unsigned char (*v6) (signed short);
+extern unsigned char v7 (void);
+extern unsigned char (*v8) (void);
+extern signed char v9 (signed short);
+extern signed char (*v10) (signed short);

@@ -1,0 +1,488 @@
+  ****  *** SUB1 ****   dval = 2 
+  ****  *** SUB1 *** NO.2 ***  idim1[0]=  10 
+idim2[1]= 4  idim3[1]= 6 
+idim2[2]= 6  idim3[2]= 2 
+  ****  *** NO.1 **** 
+da10[2]= 5 
+  ****  *** SUB1 ****   dval = 2 
+  ****  *** SUB1 *** NO.2 ***  idim1[0]=  26 
+idim2[1]= 4  idim3[1]= 6 
+idim2[2]= 6  idim3[2]= 2 
+idim2[3]= 6  idim3[3]= 2 
+  ****  *** NO.1 **** 
+da10[3]= 7 
+  ****  *** SUB1 ****   dval = 2 
+  ****  *** SUB1 *** NO.2 ***  idim1[0]=  50 
+idim2[1]= 4  idim3[1]= 6 
+idim2[2]= 6  idim3[2]= 2 
+idim2[3]= 6  idim3[3]= 2 
+idim2[4]= 6  idim3[4]= 2 
+  ****  *** NO.1 **** 
+da10[4]= 9 
+  ****  *** SUB1 ****   dval = 2 
+  ****  *** SUB1 *** NO.2 ***  idim1[0]=  82 
+idim2[1]= 4  idim3[1]= 6 
+idim2[2]= 6  idim3[2]= 2 
+idim2[3]= 6  idim3[3]= 2 
+idim2[4]= 6  idim3[4]= 2 
+idim2[5]= 6  idim3[5]= 2 
+  ****  *** NO.1 **** 
+da10[5]= 11 
+  ****  *** SUB1 ****   dval = 2 
+  ****  *** SUB1 *** NO.2 ***  idim1[0]=  122 
+idim2[1]= 4  idim3[1]= 6 
+idim2[2]= 6  idim3[2]= 2 
+idim2[3]= 6  idim3[3]= 2 
+idim2[4]= 6  idim3[4]= 2 
+idim2[5]= 6  idim3[5]= 2 
+idim2[6]= 6  idim3[6]= 2 
+  ****  *** NO.1 **** 
+da10[6]= 13 
+  ****  *** SUB1 ****   dval = 5 
+  ****  *** SUB1 *** NO.2 ***  idim1[0]=  170 
+idim2[1]= 4  idim3[1]= 6 
+idim2[2]= 6  idim3[2]= 2 
+idim2[3]= 6  idim3[3]= 2 
+idim2[4]= 6  idim3[4]= 2 
+idim2[5]= 6  idim3[5]= 2 
+idim2[6]= 6  idim3[6]= 2 
+idim2[7]= 6  idim3[7]= 2 
+  ****  *** NO.1 **** 
+da10[7]= 15 
+  ****  *** SUB1 ****   dval = 13 
+  ****  *** SUB1 *** NO.2 ***  idim1[0]=  226 
+idim2[1]= 4  idim3[1]= 6 
+idim2[2]= 6  idim3[2]= 2 
+idim2[3]= 6  idim3[3]= 2 
+idim2[4]= 6  idim3[4]= 2 
+idim2[5]= 6  idim3[5]= 2 
+idim2[6]= 6  idim3[6]= 2 
+idim2[7]= 6  idim3[7]= 2 
+idim2[8]= 6  idim3[8]= 2 
+  ****  *** NO.1 **** 
+da10[8]= 17 
+  ****  *** SUB1 ****   dval = 25 
+  ****  *** SUB1 *** NO.2 ***  idim1[0]=  290 
+idim2[1]= 4  idim3[1]= 6 
+idim2[2]= 6  idim3[2]= 2 
+idim2[3]= 6  idim3[3]= 2 
+idim2[4]= 6  idim3[4]= 2 
+idim2[5]= 6  idim3[5]= 2 
+idim2[6]= 6  idim3[6]= 2 
+idim2[7]= 6  idim3[7]= 2 
+idim2[8]= 6  idim3[8]= 2 
+idim2[9]= 6  idim3[9]= 2 
+  ****  *** NO.1 **** 
+da10[9]= 19 
+  ****  *** SUB1 ****   dval = 41 
+  ****  *** SUB1 *** NO.2 ***  idim1[0]=  362 
+idim2[1]= 4  idim3[1]= 6 
+idim2[2]= 6  idim3[2]= 2 
+idim2[3]= 6  idim3[3]= 2 
+idim2[4]= 6  idim3[4]= 2 
+idim2[5]= 6  idim3[5]= 2 
+idim2[6]= 6  idim3[6]= 2 
+idim2[7]= 6  idim3[7]= 2 
+idim2[8]= 6  idim3[8]= 2 
+idim2[9]= 6  idim3[9]= 2 
+idim2[10]= 6  idim3[10]= 2 
+  ****  *** NO.1 **** 
+da10[10]= 21 
+  ****  *** SUB1 ****   dval = 61 
+  ****  *** SUB1 *** NO.2 ***  idim1[0]=  442 
+idim2[1]= 4  idim3[1]= 6 
+idim2[2]= 6  idim3[2]= 2 
+idim2[3]= 6  idim3[3]= 2 
+idim2[4]= 6  idim3[4]= 2 
+idim2[5]= 6  idim3[5]= 2 
+idim2[6]= 6  idim3[6]= 2 
+idim2[7]= 6  idim3[7]= 2 
+idim2[8]= 6  idim3[8]= 2 
+idim2[9]= 6  idim3[9]= 2 
+idim2[10]= 6  idim3[10]= 2 
+idim2[11]= 6  idim3[11]= 2 
+  ****  *** NO.1 **** 
+da10[11]= 23 
+  ****  *** SUB1 ****   dval = 485 
+  ****  *** SUB1 *** NO.2 ***  idim1[0]=  530 
+idim2[1]= 4  idim3[1]= 6 
+idim2[2]= 6  idim3[2]= 2 
+idim2[3]= 6  idim3[3]= 2 
+idim2[4]= 6  idim3[4]= 2 
+idim2[5]= 6  idim3[5]= 2 
+idim2[6]= 6  idim3[6]= 2 
+idim2[7]= 6  idim3[7]= 2 
+idim2[8]= 6  idim3[8]= 2 
+idim2[9]= 6  idim3[9]= 2 
+idim2[10]= 6  idim3[10]= 2 
+idim2[11]= 6  idim3[11]= 2 
+idim2[12]= 6  idim3[12]= 2 
+  ****  *** NO.1 **** 
+da10[12]= 25 
+  ****  *** SUB1 ****   dval = 9393 
+  ****  *** SUB1 *** NO.2 ***  idim1[0]=  626 
+idim2[1]= 4  idim3[1]= 6 
+idim2[2]= 6  idim3[2]= 2 
+idim2[3]= 6  idim3[3]= 2 
+idim2[4]= 6  idim3[4]= 2 
+idim2[5]= 6  idim3[5]= 2 
+idim2[6]= 6  idim3[6]= 2 
+idim2[7]= 6  idim3[7]= 2 
+idim2[8]= 6  idim3[8]= 2 
+idim2[9]= 6  idim3[9]= 2 
+idim2[10]= 6  idim3[10]= 2 
+idim2[11]= 6  idim3[11]= 2 
+idim2[12]= 6  idim3[12]= 2 
+idim2[13]= 6  idim3[13]= 2 
+  ****  *** NO.1 **** 
+da10[13]= 27 
+  ****  *** SUB1 ****   dval = 196465 
+  ****  *** SUB1 *** NO.2 ***  idim1[0]=  730 
+idim2[1]= 4  idim3[1]= 6 
+idim2[2]= 6  idim3[2]= 2 
+idim2[3]= 6  idim3[3]= 2 
+idim2[4]= 6  idim3[4]= 2 
+idim2[5]= 6  idim3[5]= 2 
+idim2[6]= 6  idim3[6]= 2 
+idim2[7]= 6  idim3[7]= 2 
+idim2[8]= 6  idim3[8]= 2 
+idim2[9]= 6  idim3[9]= 2 
+idim2[10]= 6  idim3[10]= 2 
+idim2[11]= 6  idim3[11]= 2 
+idim2[12]= 6  idim3[12]= 2 
+idim2[13]= 6  idim3[13]= 2 
+idim2[14]= 6  idim3[14]= 2 
+  ****  *** NO.1 **** 
+da10[14]= 29 
+  ****  *** SUB1 ****   dval = 4.12498e+06 
+  ****  *** SUB1 *** NO.2 ***  idim1[0]=  842 
+idim2[1]= 4  idim3[1]= 6 
+idim2[2]= 6  idim3[2]= 2 
+idim2[3]= 6  idim3[3]= 2 
+idim2[4]= 6  idim3[4]= 2 
+idim2[5]= 6  idim3[5]= 2 
+idim2[6]= 6  idim3[6]= 2 
+idim2[7]= 6  idim3[7]= 2 
+idim2[8]= 6  idim3[8]= 2 
+idim2[9]= 6  idim3[9]= 2 
+idim2[10]= 6  idim3[10]= 2 
+idim2[11]= 6  idim3[11]= 2 
+idim2[12]= 6  idim3[12]= 2 
+idim2[13]= 6  idim3[13]= 2 
+idim2[14]= 6  idim3[14]= 2 
+idim2[15]= 6  idim3[15]= 2 
+  ****  *** NO.1 **** 
+da10[15]= 31 
+  ****  *** SUB1 ****   dval = 8.66238e+07 
+  ****  *** SUB1 *** NO.2 ***  idim1[0]=  962 
+idim2[1]= 4  idim3[1]= 6 
+idim2[2]= 6  idim3[2]= 2 
+idim2[3]= 6  idim3[3]= 2 
+idim2[4]= 6  idim3[4]= 2 
+idim2[5]= 6  idim3[5]= 2 
+idim2[6]= 6  idim3[6]= 2 
+idim2[7]= 6  idim3[7]= 2 
+idim2[8]= 6  idim3[8]= 2 
+idim2[9]= 6  idim3[9]= 2 
+idim2[10]= 6  idim3[10]= 2 
+idim2[11]= 6  idim3[11]= 2 
+idim2[12]= 6  idim3[12]= 2 
+idim2[13]= 6  idim3[13]= 2 
+idim2[14]= 6  idim3[14]= 2 
+idim2[15]= 6  idim3[15]= 2 
+idim2[16]= 6  idim3[16]= 2 
+  ****  *** NO.1 **** 
+da10[16]= 33 
+  ****  *** SUB1 ****   dval = 1.8191e+09 
+  ****  *** SUB1 *** NO.2 ***  idim1[0]=  1090 
+idim2[1]= 4  idim3[1]= 6 
+idim2[2]= 6  idim3[2]= 2 
+idim2[3]= 6  idim3[3]= 2 
+idim2[4]= 6  idim3[4]= 2 
+idim2[5]= 6  idim3[5]= 2 
+idim2[6]= 6  idim3[6]= 2 
+idim2[7]= 6  idim3[7]= 2 
+idim2[8]= 6  idim3[8]= 2 
+idim2[9]= 6  idim3[9]= 2 
+idim2[10]= 6  idim3[10]= 2 
+idim2[11]= 6  idim3[11]= 2 
+idim2[12]= 6  idim3[12]= 2 
+idim2[13]= 6  idim3[13]= 2 
+idim2[14]= 6  idim3[14]= 2 
+idim2[15]= 6  idim3[15]= 2 
+idim2[16]= 6  idim3[16]= 2 
+idim2[17]= 6  idim3[17]= 2 
+  ****  *** NO.1 **** 
+da10[17]= 35 
+  ****  *** SUB1 ****   dval = 3.82011e+10 
+  ****  *** SUB1 *** NO.2 ***  idim1[0]=  1226 
+idim2[1]= 4  idim3[1]= 6 
+idim2[2]= 6  idim3[2]= 2 
+idim2[3]= 6  idim3[3]= 2 
+idim2[4]= 6  idim3[4]= 2 
+idim2[5]= 6  idim3[5]= 2 
+idim2[6]= 6  idim3[6]= 2 
+idim2[7]= 6  idim3[7]= 2 
+idim2[8]= 6  idim3[8]= 2 
+idim2[9]= 6  idim3[9]= 2 
+idim2[10]= 6  idim3[10]= 2 
+idim2[11]= 6  idim3[11]= 2 
+idim2[12]= 6  idim3[12]= 2 
+idim2[13]= 6  idim3[13]= 2 
+idim2[14]= 6  idim3[14]= 2 
+idim2[15]= 6  idim3[15]= 2 
+idim2[16]= 6  idim3[16]= 2 
+idim2[17]= 6  idim3[17]= 2 
+idim2[18]= 6  idim3[18]= 2 
+  ****  *** NO.1 **** 
+da10[18]= 37 
+  ****  *** SUB1 ****   dval = 8.02223e+11 
+  ****  *** SUB1 *** NO.2 ***  idim1[0]=  1370 
+idim2[1]= 4  idim3[1]= 6 
+idim2[2]= 6  idim3[2]= 2 
+idim2[3]= 6  idim3[3]= 2 
+idim2[4]= 6  idim3[4]= 2 
+idim2[5]= 6  idim3[5]= 2 
+idim2[6]= 6  idim3[6]= 2 
+idim2[7]= 6  idim3[7]= 2 
+idim2[8]= 6  idim3[8]= 2 
+idim2[9]= 6  idim3[9]= 2 
+idim2[10]= 6  idim3[10]= 2 
+idim2[11]= 6  idim3[11]= 2 
+idim2[12]= 6  idim3[12]= 2 
+idim2[13]= 6  idim3[13]= 2 
+idim2[14]= 6  idim3[14]= 2 
+idim2[15]= 6  idim3[15]= 2 
+idim2[16]= 6  idim3[16]= 2 
+idim2[17]= 6  idim3[17]= 2 
+idim2[18]= 6  idim3[18]= 2 
+idim2[19]= 6  idim3[19]= 2 
+  ****  *** NO.1 **** 
+da10[19]= 39 
+  ****  *** SUB1 ****   dval = 1.68467e+13 
+  ****  *** SUB1 *** NO.2 ***  idim1[0]=  1522 
+idim2[1]= 4  idim3[1]= 6 
+idim2[2]= 6  idim3[2]= 2 
+idim2[3]= 6  idim3[3]= 2 
+idim2[4]= 6  idim3[4]= 2 
+idim2[5]= 6  idim3[5]= 2 
+idim2[6]= 6  idim3[6]= 2 
+idim2[7]= 6  idim3[7]= 2 
+idim2[8]= 6  idim3[8]= 2 
+idim2[9]= 6  idim3[9]= 2 
+idim2[10]= 6  idim3[10]= 2 
+idim2[11]= 6  idim3[11]= 2 
+idim2[12]= 6  idim3[12]= 2 
+idim2[13]= 6  idim3[13]= 2 
+idim2[14]= 6  idim3[14]= 2 
+idim2[15]= 6  idim3[15]= 2 
+idim2[16]= 6  idim3[16]= 2 
+idim2[17]= 6  idim3[17]= 2 
+idim2[18]= 6  idim3[18]= 2 
+idim2[19]= 6  idim3[19]= 2 
+idim2[20]= 6  idim3[20]= 2 
+  ****  *** NO.1 **** 
+da10[20]= 41 
+  ****  *** NO.2 ****  dval1 = 4, ival = 20, icnt = 19 
+dcom1[1][1]= 1.68467e+13 
+dcom2[1][1]= 1 
+dcom1[1][2]= -3 
+dcom2[1][2]= 5 
+dcom1[1][3]= -3 
+dcom2[1][3]= 5 
+dcom1[1][4]= -3 
+dcom2[1][4]= 5 
+dcom1[1][5]= -3 
+dcom2[1][5]= 5 
+dcom1[1][6]= -3 
+dcom2[1][6]= 5 
+dcom1[1][7]= -3 
+dcom2[1][7]= 5 
+dcom1[1][8]= -3 
+dcom2[1][8]= 5 
+dcom1[1][9]= -3 
+dcom2[1][9]= 5 
+dcom1[1][10]= -3 
+dcom2[1][10]= 5 
+dcom1[2][1]= -3 
+dcom2[2][1]= 1 
+dcom1[2][2]= 1.68467e+13 
+dcom2[2][2]= 5 
+dcom1[2][3]= -3 
+dcom2[2][3]= 5 
+dcom1[2][4]= -3 
+dcom2[2][4]= 5 
+dcom1[2][5]= -3 
+dcom2[2][5]= 5 
+dcom1[2][6]= -3 
+dcom2[2][6]= 5 
+dcom1[2][7]= -3 
+dcom2[2][7]= 5 
+dcom1[2][8]= -3 
+dcom2[2][8]= 5 
+dcom1[2][9]= -3 
+dcom2[2][9]= 5 
+dcom1[2][10]= -3 
+dcom2[2][10]= 5 
+dcom1[3][1]= -3 
+dcom2[3][1]= 1 
+dcom1[3][2]= 1 
+dcom2[3][2]= 5 
+dcom1[3][3]= 1.68467e+13 
+dcom2[3][3]= 5 
+dcom1[3][4]= -3 
+dcom2[3][4]= 5 
+dcom1[3][5]= -3 
+dcom2[3][5]= 5 
+dcom1[3][6]= -3 
+dcom2[3][6]= 5 
+dcom1[3][7]= -3 
+dcom2[3][7]= 5 
+dcom1[3][8]= -3 
+dcom2[3][8]= 5 
+dcom1[3][9]= -3 
+dcom2[3][9]= 5 
+dcom1[3][10]= -3 
+dcom2[3][10]= 5 
+dcom1[4][1]= -3 
+dcom2[4][1]= 1 
+dcom1[4][2]= 1 
+dcom2[4][2]= 5 
+dcom1[4][3]= 1 
+dcom2[4][3]= 5 
+dcom1[4][4]= 1.68467e+13 
+dcom2[4][4]= 5 
+dcom1[4][5]= -3 
+dcom2[4][5]= 5 
+dcom1[4][6]= -3 
+dcom2[4][6]= 5 
+dcom1[4][7]= -3 
+dcom2[4][7]= 5 
+dcom1[4][8]= -3 
+dcom2[4][8]= 5 
+dcom1[4][9]= -3 
+dcom2[4][9]= 5 
+dcom1[4][10]= -3 
+dcom2[4][10]= 5 
+dcom1[5][1]= -3 
+dcom2[5][1]= 1 
+dcom1[5][2]= 1 
+dcom2[5][2]= 5 
+dcom1[5][3]= 1 
+dcom2[5][3]= 5 
+dcom1[5][4]= 1 
+dcom2[5][4]= 5 
+dcom1[5][5]= 1.68467e+13 
+dcom2[5][5]= 5 
+dcom1[5][6]= -3 
+dcom2[5][6]= 5 
+dcom1[5][7]= -3 
+dcom2[5][7]= 5 
+dcom1[5][8]= -3 
+dcom2[5][8]= 5 
+dcom1[5][9]= -3 
+dcom2[5][9]= 5 
+dcom1[5][10]= -3 
+dcom2[5][10]= 5 
+dcom1[6][1]= -3 
+dcom2[6][1]= 1 
+dcom1[6][2]= 1 
+dcom2[6][2]= 5 
+dcom1[6][3]= 1 
+dcom2[6][3]= 5 
+dcom1[6][4]= 1 
+dcom2[6][4]= 5 
+dcom1[6][5]= 1 
+dcom2[6][5]= 5 
+dcom1[6][6]= 1.68467e+13 
+dcom2[6][6]= 5 
+dcom1[6][7]= -3 
+dcom2[6][7]= 5 
+dcom1[6][8]= -3 
+dcom2[6][8]= 5 
+dcom1[6][9]= -3 
+dcom2[6][9]= 5 
+dcom1[6][10]= -3 
+dcom2[6][10]= 5 
+dcom1[7][1]= -3 
+dcom2[7][1]= 1 
+dcom1[7][2]= 1 
+dcom2[7][2]= 5 
+dcom1[7][3]= 1 
+dcom2[7][3]= 5 
+dcom1[7][4]= 1 
+dcom2[7][4]= 5 
+dcom1[7][5]= 1 
+dcom2[7][5]= 5 
+dcom1[7][6]= 1 
+dcom2[7][6]= 5 
+dcom1[7][7]= 1.68467e+13 
+dcom2[7][7]= 5 
+dcom1[7][8]= -3 
+dcom2[7][8]= 5 
+dcom1[7][9]= -3 
+dcom2[7][9]= 5 
+dcom1[7][10]= -3 
+dcom2[7][10]= 5 
+dcom1[8][1]= -3 
+dcom2[8][1]= 1 
+dcom1[8][2]= 1 
+dcom2[8][2]= 5 
+dcom1[8][3]= 1 
+dcom2[8][3]= 5 
+dcom1[8][4]= 1 
+dcom2[8][4]= 5 
+dcom1[8][5]= 1 
+dcom2[8][5]= 5 
+dcom1[8][6]= 1 
+dcom2[8][6]= 5 
+dcom1[8][7]= 1 
+dcom2[8][7]= 5 
+dcom1[8][8]= 1.68467e+13 
+dcom2[8][8]= 5 
+dcom1[8][9]= -3 
+dcom2[8][9]= 5 
+dcom1[8][10]= -3 
+dcom2[8][10]= 5 
+dcom1[9][1]= -3 
+dcom2[9][1]= 1 
+dcom1[9][2]= 1 
+dcom2[9][2]= 5 
+dcom1[9][3]= 1 
+dcom2[9][3]= 5 
+dcom1[9][4]= 1 
+dcom2[9][4]= 5 
+dcom1[9][5]= 1 
+dcom2[9][5]= 5 
+dcom1[9][6]= 1 
+dcom2[9][6]= 5 
+dcom1[9][7]= 1 
+dcom2[9][7]= 5 
+dcom1[9][8]= 1 
+dcom2[9][8]= 5 
+dcom1[9][9]= 1.68467e+13 
+dcom2[9][9]= 5 
+dcom1[9][10]= -3 
+dcom2[9][10]= 5 
+dcom1[10][1]= -3 
+dcom2[10][1]= 1 
+dcom1[10][2]= 1 
+dcom2[10][2]= 5 
+dcom1[10][3]= 1 
+dcom2[10][3]= 5 
+dcom1[10][4]= 1 
+dcom2[10][4]= 5 
+dcom1[10][5]= 1 
+dcom2[10][5]= 5 
+dcom1[10][6]= 1 
+dcom2[10][6]= 5 
+dcom1[10][7]= 1 
+dcom2[10][7]= 5 
+dcom1[10][8]= 1 
+dcom2[10][8]= 5 
+dcom1[10][9]= 1 
+dcom2[10][9]= 5 
+dcom1[10][10]= 1.68467e+13 
+dcom2[10][10]= 5 
+  dval3 =  76 
+exit 0

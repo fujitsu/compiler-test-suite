@@ -1,0 +1,4 @@
+my_terminate()  : uncaught : false
+custom abort() returns by longjmp()...
+ok
+exit 0

@@ -1,0 +1,4104 @@
+ PATTERN1018
+ ITEM1
+ BG1= 6  BS2= 18 
+ BG1= 2  BS2= 18 
+ BG1= 6  BS2= 18 
+ BG1= 2  BS2= 18 
+ BG1= 6  BS2= 18 
+ BG1= 2  BS2= 18 
+ BG1= 6  BS2= 18 
+ BG1= 2  BS2= 18 
+ BG1= 6  BS2= 18 
+ BG1= 2  BS2= 18 
+ BG1= 6  BS2= 18 
+ BG1= 2  BS2= 18 
+ BG1= 6  BS2= 18 
+ BG1= 2  BS2= 18 
+ BG1= 6  BS2= 18 
+ BG1= 2  BS2= 18 
+ BG1= 6  BS2= 18 
+ BG1= 2  BS2= 18 
+ BG1= 6  BS2= 18 
+ BG1= 2  BS2= 18 
+ K= 15  KK= 12 
+ K= 15  KK= 13 
+ K= 15  KK= 14 
+ K= 16  KK= 12 
+ K= 16  KK= 13 
+ K= 16  KK= 14 
+ K= 17  KK= 12 
+ K= 17  KK= 13 
+ K= 17  KK= 14 
+ K= 18  KK= 12 
+ K= 18  KK= 13 
+ K= 18  KK= 14 
+ K= 19  KK= 12 
+ K= 19  KK= 13 
+ K= 19  KK= 14 
+ K= 20  KK= 12 
+ K= 20  KK= 13 
+ K= 20  KK= 14 
+ ITEM2
+ G= 0  L= 2  S= 110  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 0 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 0 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 0 
+ G= 1  L= 2  S= 60  NB= 1 
+ G= 1  L= 2  S= 1  NB= 0 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 0 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 0 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 0 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 0 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 71  NB= 0 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 0 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 0 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 0 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 0 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 0 
+ G= 1  L= 2  S= 82  NB= 1 
+ G= 1  L= 2  S= 1  NB= 0 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 0 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 0 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 0 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 0 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 93  NB= 0 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 0 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 0 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 0 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 0 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 0 
+ G= 1  L= 2  S= 104  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 110  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 0  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 0  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 0  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 0  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 0  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 0  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 0  L= 0  S= 71  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 0  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 0  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 0  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 82  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 60  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 93  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 104  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ BS(i,j,1)= -16  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -14  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -10  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 14  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 46  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 110  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 238  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 494  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1006  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2030  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 4078  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 8174  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 16366  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 32750  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 65518  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 131054  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 262126  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 524270  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1048558  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -16  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -14  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -10  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 14  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 46  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 110  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 238  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 494  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1006  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2030  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 4078  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 8174  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 16366  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 32750  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 65518  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 131054  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 262126  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 524270  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1048558  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BG1= 6  BG2= 14  BS2= 18 
+ BG1= 2  BG2= 1  BS2= 18 
+ BG1= 6  BG2= 1  BS2= 18 
+ BG1= 2  BG2= 9  BS2= 18 
+ BG1= 6  BG2= 1  BS2= 18 
+ BG1= 2  BG2= 1  BS2= 18 
+ BG1= 6  BG2= 20  BS2= 18 
+ BG1= 2  BG2= 1  BS2= 18 
+ BG1= 6  BG2= 1  BS2= 18 
+ BG1= 2  BG2= 15  BS2= 18 
+ BG1= 6  BG2= 1  BS2= 18 
+ BG1= 2  BG2= 1  BS2= 18 
+ BG1= 6  BG2= 26  BS2= 18 
+ BG1= 2  BG2= 1  BS2= 18 
+ BG1= 6  BG2= 1  BS2= 18 
+ BG1= 2  BG2= 21  BS2= 18 
+ BG1= 6  BG2= 1  BS2= 18 
+ BG1= 2  BG2= 1  BS2= 18 
+ BG1= 6  BG2= 32  BS2= 18 
+ BG1= 2  BG2= 1  BS2= 18 
+ ITEM3
+ G= 20  L= 2  S= 110  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 4  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 2  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 20  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 4  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 2  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 20  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 4  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 2  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 6 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 2 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 10  NB= 1 
+ G= 1  L= 2  S= 1  NB= 0 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 0 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 20  L= 2  S= 1  NB= 7 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 4  L= 2  S= 1  NB= 2 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 2  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 10  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 0 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 8 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 2 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 10  NB= 1 
+ G= 1  L= 2  S= 1  NB= 0 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 20  L= 2  S= 1  NB= 9 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 4  L= 2  S= 1  NB= 3 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 2  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 10  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 10 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 3 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 2 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 10  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 10  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 0  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 0  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 0  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 0  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 0  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 0  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 0  L= 0  S= 5  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 0  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 0  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 0  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 1  L= 0  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 5  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 3  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 5  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 0  L= 2  S= 5  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ G= 1  L= 2  S= 1  NB= 1 
+ BS(i,j,1)= -16  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -5  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 12  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 29  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 61  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 126  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 254  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 510  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1023  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2047  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 4095  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 8191  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 16383  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 32767  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 65535  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 131071  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 262143  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 524288  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1048576  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -34  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -14  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -4  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 7  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 25  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 58  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 123  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 252  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 508  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1021  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2045  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 4093  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 8190  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 16382  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 32766  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 65534  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 131070  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 262142  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 524287  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1048575  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -52  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -23  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -10  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 3  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 22  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 55  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 121  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 250  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 506  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1019  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2044  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 4092  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 8188  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 16381  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 32765  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 65533  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 131069  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 262141  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 524286  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1048574  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -70  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -32  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -16  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -2  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 18  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 52  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 118  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 247  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 504  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1017  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2042  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 4090  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 8187  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 16379  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 32764  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 65532  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 131068  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 262140  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 524285  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1048573  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -88  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -41  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -22  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -6  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 14  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 49  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 116  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 245  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 502  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1015  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2040  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 4089  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 8186  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 16378  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 32762  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 65531  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 131067  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 262139  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 524284  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1048572  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -106  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -50  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -28  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -11  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 11  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 46  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 113  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 243  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 500  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1014  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2039  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 4087  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 8184  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 16377  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 32761  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 65530  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 131066  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 262138  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 524283  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1048571  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -124  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -59  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -34  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -15  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 7  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 43  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 110  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 241  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 498  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1012  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2037  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 4086  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 8183  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 16375  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 32760  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 65529  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 131065  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 262137  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 524282  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1048570  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -142  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -68  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -40  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -20  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 4  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 40  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 108  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 238  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 496  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1010  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2035  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 4084  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 8181  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 16374  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 32759  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 65527  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 131064  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 262136  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 524281  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1048569  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -160  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -77  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -46  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -24  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 0  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 37  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 105  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 236  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 494  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1008  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2034  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 4083  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 8180  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 16373  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 32758  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 65526  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 131063  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 262135  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 524280  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1048568  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -178  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -86  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -52  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -29  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -4  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 34  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 103  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 234  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 492  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1006  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2032  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 4081  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 8179  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 16372  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 32756  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 65525  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 131062  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 262134  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 524279  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1048567  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -196  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -95  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -58  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -33  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -7  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 31  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 100  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 232  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 490  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1005  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2030  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 4080  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 8177  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 16370  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 32755  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 65524  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 131061  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 262133  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 524278  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1048567  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -214  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -104  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -64  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -38  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -11  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 28  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 98  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 229  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 488  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1003  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2029  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 4078  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 8176  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 16369  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 32754  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 65523  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 131060  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 262132  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 524277  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1048566  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -232  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -113  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -70  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -42  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -14  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 25  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 95  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 227  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 486  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1001  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2027  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 4077  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 8174  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 16368  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 32753  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 65522  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 131059  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 262131  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 524276  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1048565  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -250  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -122  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -76  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -47  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -18  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 22  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 92  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 225  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 484  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 999  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2026  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 4075  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 8173  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 16366  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 32752  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 65521  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 131058  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 262130  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 524275  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1048564  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -268  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -131  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -82  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -51  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -22  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 19  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 90  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 223  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 482  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 997  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2024  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 4074  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 8172  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 16365  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 32750  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 65520  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 131057  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 262129  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 524274  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1048563  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -286  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -140  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -88  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -56  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -25  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 16  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 87  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 220  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 480  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 996  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2022  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 4072  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 8170  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 16364  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 32749  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 65518  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 131056  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 262128  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 524273  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1048562  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -304  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -149  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -94  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -60  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -29  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 13  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 85  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 218  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 478  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 994  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2021  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 4071  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 8169  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 16363  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 32748  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 65517  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 131054  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 262127  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 524272  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1048561  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -322  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -158  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -100  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -65  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -32  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 10  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 82  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 216  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 476  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 992  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2019  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 4069  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 8168  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 16361  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 32747  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 65516  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 131053  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 262126  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 524271  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1048560  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -340  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -167  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -106  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -69  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -36  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 7  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 80  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 214  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 474  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 990  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2017  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 4068  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 8166  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 16360  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 32746  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 65515  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 131052  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 262125  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 524270  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1048559  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -358  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -176  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -112  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -74  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= -40  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 4  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 77  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 211  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 472  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 988  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 2016  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 4066  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 8165  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 16359  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 32744  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 65514  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 131051  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 262124  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 524270  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BS(i,j,1)= 1048558  BS(i,j,2)= 2  BS(i,j,3)= 2  BS(i,j,4)= 2  BS(i,j,5)= 2 
+ BG1= 6  BG2= 14 
+ BG1= 2  BG2= 1 
+ BG1= 6  BG2= 1 
+ BG1= 2  BG2= 2 
+ BG1= 6  BG2= 1 
+ BG1= 2  BG2= 1 
+ BG1= 6  BG2= 2 
+ BG1= 2  BG2= 1 
+ BG1= 6  BG2= 1 
+ BG1= 2  BG2= 1 
+ BG1= 6  BG2= 1 
+ BG1= 2  BG2= 1 
+ BG1= 6  BG2= 2 
+ BG1= 2  BG2= 1 
+ BG1= 6  BG2= 1 
+ BG1= 2  BG2= 1 
+ BG1= 6  BG2= 1 
+ BG1= 2  BG2= 1 
+ BG1= 6  BG2= 1 
+ BG1= 2  BG2= 1 
+ ITEM4
+ 40 2 110 1 
+ 1 2 1 1 
+ 24 2 1 1 
+ 1 2 1 1 
+ 22 2 1 1 
+ 1 2 1 1 
+ 21 2 1 1 
+ 1 2 1 1 
+ 21 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 40 2 1 1 
+ 1 2 1 1 
+ 24 2 1 1 
+ 1 2 1 1 
+ 22 2 1 1 
+ 1 2 1 1 
+ 21 2 1 1 
+ 1 2 1 1 
+ 21 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 110 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 40 2 1 1 
+ 1 2 1 1 
+ 24 2 1 1 
+ 1 2 1 1 
+ 22 2 1 1 
+ 1 2 1 1 
+ 21 2 1 1 
+ 1 2 1 1 
+ 21 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 1 2 1 6 
+ 1 2 1 1 
+ 1 2 1 2 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 10 1 
+ 1 2 1 0 
+ 1 2 1 1 
+ 1 2 1 0 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 40 2 1 7 
+ 1 2 1 1 
+ 24 2 1 2 
+ 1 2 1 1 
+ 22 2 1 1 
+ 1 2 1 1 
+ 21 2 110 1 
+ 1 2 1 1 
+ 21 2 1 0 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 1 2 1 8 
+ 1 2 1 1 
+ 1 2 1 2 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 10 1 
+ 1 2 1 0 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 40 2 1 9 
+ 1 2 1 1 
+ 24 2 1 3 
+ 1 2 1 1 
+ 22 2 1 1 
+ 1 2 1 1 
+ 21 2 1 1 
+ 1 2 1 1 
+ 21 2 10 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 1 2 1 10 
+ 1 2 1 1 
+ 1 2 1 3 
+ 1 2 1 1 
+ 1 2 1 2 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 110 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 10 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 20 0 1 1 
+ 1 0 1 1 
+ 20 0 1 1 
+ 1 0 1 1 
+ 20 0 1 1 
+ 1 0 1 1 
+ 20 0 1 1 
+ 1 0 1 1 
+ 20 0 1 1 
+ 1 0 1 1 
+ 20 0 1 1 
+ 1 0 1 1 
+ 20 0 110 1 
+ 1 0 1 1 
+ 20 0 1 1 
+ 1 0 1 1 
+ 20 0 1 1 
+ 1 0 1 1 
+ 20 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 1 0 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 5 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 110 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 5 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 1 1 
+ 1 2 1 1 
+ 20 2 110 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ 1 2 1 1 
+ -16 
+ -14 
+ -10 
+ -2 
+ 14 
+ 46 
+ 110 
+ 238 
+ 494 
+ 1006 
+ 2030 
+ 4078 
+ 8174 
+ 16366 
+ 32750 
+ 65518 
+ 131054 
+ 262126 
+ 524270 
+ 1048558 
+ -34 
+ -32 
+ -28 
+ -20 
+ -4 
+ 28 
+ 92 
+ 220 
+ 476 
+ 988 
+ 2012 
+ 4060 
+ 8156 
+ 16348 
+ 32732 
+ 65500 
+ 131036 
+ 262108 
+ 524252 
+ 1048540 
+ -52 
+ -50 
+ -46 
+ -38 
+ -22 
+ 10 
+ 74 
+ 202 
+ 458 
+ 970 
+ 1994 
+ 4042 
+ 8138 
+ 16330 
+ 32714 
+ 65482 
+ 131018 
+ 262090 
+ 524234 
+ 1048522 
+ -70 
+ -68 
+ -64 
+ -56 
+ -40 
+ -8 
+ 56 
+ 184 
+ 440 
+ 952 
+ 1976 
+ 4024 
+ 8120 
+ 16312 
+ 32696 
+ 65464 
+ 131000 
+ 262072 
+ 524216 
+ 1048504 
+ -88 
+ -86 
+ -82 
+ -74 
+ -58 
+ -26 
+ 38 
+ 166 
+ 422 
+ 934 
+ 1958 
+ 4006 
+ 8102 
+ 16294 
+ 32678 
+ 65446 
+ 130982 
+ 262054 
+ 524198 
+ 1048486 
+ -106 
+ -104 
+ -100 
+ -92 
+ -76 
+ -44 
+ 20 
+ 148 
+ 404 
+ 916 
+ 1940 
+ 3988 
+ 8084 
+ 16276 
+ 32660 
+ 65428 
+ 130964 
+ 262036 
+ 524180 
+ 1048468 
+ -124 
+ -122 
+ -118 
+ -110 
+ -94 
+ -62 
+ 2 
+ 130 
+ 386 
+ 898 
+ 1922 
+ 3970 
+ 8066 
+ 16258 
+ 32642 
+ 65410 
+ 130946 
+ 262018 
+ 524162 
+ 1048450 
+ -142 
+ -140 
+ -136 
+ -128 
+ -112 
+ -80 
+ -16 
+ 112 
+ 368 
+ 880 
+ 1904 
+ 3952 
+ 8048 
+ 16240 
+ 32624 
+ 65392 
+ 130928 
+ 262000 
+ 524144 
+ 1048432 
+ -160 
+ -158 
+ -154 
+ -146 
+ -130 
+ -98 
+ -34 
+ 94 
+ 350 
+ 862 
+ 1886 
+ 3934 
+ 8030 
+ 16222 
+ 32606 
+ 65374 
+ 130910 
+ 261982 
+ 524126 
+ 1048414 
+ -178 
+ -176 
+ -172 
+ -164 
+ -148 
+ -116 
+ -52 
+ 76 
+ 332 
+ 844 
+ 1868 
+ 3916 
+ 8012 
+ 16204 
+ 32588 
+ 65356 
+ 130892 
+ 261964 
+ 524108 
+ 1048396 
+ -196 
+ -194 
+ -190 
+ -182 
+ -166 
+ -134 
+ -70 
+ 58 
+ 314 
+ 826 
+ 1850 
+ 3898 
+ 7994 
+ 16186 
+ 32570 
+ 65338 
+ 130874 
+ 261946 
+ 524090 
+ 1048378 
+ -214 
+ -212 
+ -208 
+ -200 
+ -184 
+ -152 
+ -88 
+ 40 
+ 296 
+ 808 
+ 1832 
+ 3880 
+ 7976 
+ 16168 
+ 32552 
+ 65320 
+ 130856 
+ 261928 
+ 524072 
+ 1048360 
+ -232 
+ -230 
+ -226 
+ -218 
+ -202 
+ -170 
+ -106 
+ 22 
+ 278 
+ 790 
+ 1814 
+ 3862 
+ 7958 
+ 16150 
+ 32534 
+ 65302 
+ 130838 
+ 261910 
+ 524054 
+ 1048342 
+ -250 
+ -248 
+ -244 
+ -236 
+ -220 
+ -188 
+ -124 
+ 4 
+ 260 
+ 772 
+ 1796 
+ 3844 
+ 7940 
+ 16132 
+ 32516 
+ 65284 
+ 130820 
+ 261892 
+ 524036 
+ 1048324 
+ -268 
+ -266 
+ -262 
+ -254 
+ -238 
+ -206 
+ -142 
+ -14 
+ 242 
+ 754 
+ 1778 
+ 3826 
+ 7922 
+ 16114 
+ 32498 
+ 65266 
+ 130802 
+ 261874 
+ 524018 
+ 1048306 
+ -286 
+ -284 
+ -280 
+ -272 
+ -256 
+ -224 
+ -160 
+ -32 
+ 224 
+ 736 
+ 1760 
+ 3808 
+ 7904 
+ 16096 
+ 32480 
+ 65248 
+ 130784 
+ 261856 
+ 524000 
+ 1048288 
+ -304 
+ -302 
+ -298 
+ -290 
+ -274 
+ -242 
+ -178 
+ -50 
+ 206 
+ 718 
+ 1742 
+ 3790 
+ 7886 
+ 16078 
+ 32462 
+ 65230 
+ 130766 
+ 261838 
+ 523982 
+ 1048270 
+ -322 
+ -320 
+ -316 
+ -308 
+ -292 
+ -260 
+ -196 
+ -68 
+ 188 
+ 700 
+ 1724 
+ 3772 
+ 7868 
+ 16060 
+ 32444 
+ 65212 
+ 130748 
+ 261820 
+ 523964 
+ 1048252 
+ -340 
+ -338 
+ -334 
+ -326 
+ -310 
+ -278 
+ -214 
+ -86 
+ 170 
+ 682 
+ 1706 
+ 3754 
+ 7850 
+ 16042 
+ 32426 
+ 65194 
+ 130730 
+ 261802 
+ 523946 
+ 1048234 
+ -358 
+ -356 
+ -352 
+ -344 
+ -328 
+ -296 
+ -232 
+ -104 
+ 152 
+ 664 
+ 1688 
+ 3736 
+ 7832 
+ 16024 
+ 32408 
+ 65176 
+ 130712 
+ 261784 
+ 523928 
+ 1048216 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 6 18 
+ 2 1 
+ 6 1 
+ 2 13 
+ 6 1 
+ 2 1 
+ 6 24 
+ 2 1 
+ 6 1 
+ 2 19 
+ 6 1 
+ 2 1 
+ 6 30 
+ 2 1 
+ 6 1 
+ 2 25 
+ 6 1 
+ 2 1 
+ 6 36 
+ 2 1 
+exit 0

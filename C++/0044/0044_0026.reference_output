@@ -1,0 +1,7 @@
+BaseClass. ctor() : 1
+BaseClass.cctor() : 12
+BaseClass.cctor() : 123
+BaseClass. dtor() : 123
+BaseClass. dtor() : 12
+BaseClass. dtor() : 1
+exit 0

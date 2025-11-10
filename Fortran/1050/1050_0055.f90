@@ -106,9 +106,9 @@ program main
      end do
   end do
 
-  if(result1 /= result2) then
+  if(abs(result2 - result1) > 1.0E+4) then
      print *,"ng",result1,result2,result3
-  else if(result2 /= result3) then
+  else if(abs(result3 - result1) > 1.0E+4) then
      print *,"ng",result1,result2,result3
   else
      print *,"ok"

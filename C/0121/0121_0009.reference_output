@@ -1,0 +1,67 @@
+ ***  ***
+ RC= 0 ,RD= 0 
+ RC= 0 ,RD= 0 
+ RC= 0 ,RD= 0 
+ RC= 0 ,RD= 0 
+ RC= 0 ,RD= 0 
+ RC= 0 ,RD= 0 
+ RC= 0 ,RD= 0 
+ RC= 0 ,RD= 0 
+ RC= 0 ,RD= 0 
+ RC= 3 ,RD= 4 
+ RC= 3 ,RD= 4 
+ RC= 3 ,RD= 4 
+ RC= 3 ,RD= 4 
+ RC= 3 ,RD= 4 
+ RC= 3 ,RD= 4 
+ RC= 3 ,RD= 4 
+ RC= 3 ,RD= 4 
+ RC= 3 ,RD= 4 
+ RC= 3 ,RD= 4 
+ RC= 3 ,RD= 4 
+ ***  *** 
+ CEA= 3 8 ,CEB= 0 0 
+ CEA= 1 1 ,CEB= 1 1 
+ CEA= 3 8 ,CEB= 0 0 
+ CEA= 1 1 ,CEB= 1 1 
+ CEA= 3 8 ,CEB= 0 0 
+ CEA= 1 1 ,CEB= 1 1 
+ CEA= 3 8 ,CEB= 0 0 
+ CEA= 1 1 ,CEB= 1 1 
+ CEA= 3 8 ,CEB= 0 0 
+ CEA= 1 1 ,CEB= 1 1 
+ CEA= 2 8 ,CEB= 0 0 
+ CEA= 1 1 ,CEB= 1 1 
+ CEA= 2 8 ,CEB= 0 0 
+ CEA= 1 1 ,CEB= 1 1 
+ CEA= 1 1 ,CEB= 1 1 
+ CEA= 1 1 ,CEB= 1 1 
+ CEA= 1 1 ,CEB= 1 1 
+ CEA= 1 1 ,CEB= 1 1 
+ CEA= 1 1 ,CEB= 1 1 
+ CEA= 1 1 ,CEB= 1 1 
+ RB= 0 ,RC= 4 
+ RB= 1 ,RC= 0 
+ RB= 0 ,RC= 4 
+ RB= 1 ,RC= 0 
+ RB= 0 ,RC= 4 
+ RB= 1 ,RC= 0 
+ RB= 0 ,RC= 4 
+ RB= 1 ,RC= 0 
+ RB= 0 ,RC= 4 
+ RB= 2 ,RC= 3 
+ RB= 0 ,RC= 6 
+ RB= 2 ,RC= 3 
+ RB= 0 ,RC= 6 
+ RB= 2 ,RC= 3 
+ RB= 2 ,RC= 3 
+ RB= 2 ,RC= 3 
+ RB= 2 ,RC= 3 
+ RB= 2 ,RC= 3 
+ RB= 2 ,RC= 3 
+ RB= 2 ,RC= 3 
+ ***  ***
+ RMIN= 1000 ,IMN= 0 
+ RMIN1= 10000 ,IMN2= 0 
+ CSUM=(50,124) 
+exit 0

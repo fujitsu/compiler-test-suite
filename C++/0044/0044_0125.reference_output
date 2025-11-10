@@ -1,0 +1,12 @@
+Class1.ctor()
+Class1.ctor()
+returning in half 1...
+Class1.dtor()
+Class1.dtor()
+Class1.ctor()
+Class1.ctor()
+throwing in half 2...
+Class1.dtor()
+Class1.dtor()
+caught 1
+exit 0

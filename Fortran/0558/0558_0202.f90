@@ -36,7 +36,7 @@ FUNCTION nondmy(dd1)
   USE mod1
   CLASS(ty) :: dd1
   CLASS(ty),pointer :: nondmy
-  type(ty),target :: tar
+  type(ty),target,save :: tar
   nondmy=>tar
   SELECT TYPE(nondmy)
     TYPE IS(ty)

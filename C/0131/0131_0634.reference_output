@@ -1,0 +1,9 @@
+ TEST ITEM NO.1 
+ gv1= 274.824  gv2= 118.4 
+ TEST ITEM NO.2 
+ acv= (60.1,680.1) 
+ TEST ITEM NO.3 
+ sv1= 393 
+ TEST ITEM NO.4 
+ acv= (150.1,815.1) 
+exit 0

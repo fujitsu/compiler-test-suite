@@ -3,8 +3,8 @@ subroutine s1
 pointer ::n(:)
 !$omp threadprivate(/com1/)
 
-allocate(n(2))
 !$omp parallel
+allocate(n(2))
 k=0
 n=0
 !$omp single

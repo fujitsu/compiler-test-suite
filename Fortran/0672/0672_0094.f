@@ -44,7 +44,7 @@
       DIMENSION     A(4)
       LOGICAL       SW5,SW6,SW7
       INTEGER       SW3
-      REAL*8        MEMO
+      character(*)  MEMO
       NAMELIST      /NAMEL/ A,I,K,IC,M,N,N1,N2,N3,N4
 
          WRITE(6,2000) MEMO

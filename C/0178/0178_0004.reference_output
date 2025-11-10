@@ -1,0 +1,8 @@
+return add test
+ok count:9 
+ok count:8 
+ok count:7 
+ok count:6 
+ok end 
+test end 
+exit 0

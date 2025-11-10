@@ -1,0 +1,12 @@
+IsFundaT
+IsRefT
+IsArrayT
+IsClassT
+IsPtrT
+IsEnumT
+IsFundaT
+IsPtrT
+IsFuncT
+IsPtrMemT
+IsArrayT
+exit 0

@@ -31,7 +31,7 @@ subroutine  s1
 k=2
   allocate(xx, SOURCE = eprc(k))
   if (any(xx/=[1,2]))print *,101
-  if (any(lbound(xx)/=2))print *,102
+  if (any(lbound(xx)/=1))print *,102
   deallocate(xx)
   allocate(xx(2:3), SOURCE = eprc(k))
   if (any(xx/=[1,2]))print *,103
@@ -39,7 +39,7 @@ k=2
 
   allocate(x2, SOURCE = cprc(k))
   if (any(abs(x2-[(1,2),(3,4)])>0.0001))print *,201
-  if (any(lbound(x2)/=2))print *,202
+  if (any(lbound(x2)/=1))print *,202
   deallocate(x2)
   allocate(x2(2:3), SOURCE = cprc(k))
   if (any(abs(x2-[(1,2),(3,4)])>0.0001))print *,203
@@ -47,7 +47,7 @@ k=2
 
   allocate(x3, SOURCE = hprc(k))
   if (any(x3/=['1','2']))print *,301
-  if (any(lbound(x3)/=2))print *,302
+  if (any(lbound(x3)/=1))print *,302
   deallocate(x3)
   allocate(x3(2:3), SOURCE = hprc(k))
   if (any(x3/=['1','2']))print *,303
@@ -55,7 +55,7 @@ k=2
 
   allocate(x4, SOURCE = tprc(k))
   if (any(x4%w1/=[1,2]))print *,401
-  if (any(lbound(x4)/=2))print *,402
+  if (any(lbound(x4)/=1))print *,402
   deallocate(x4)
   allocate(x4(2:3), SOURCE = tprc(k))
   if (any(x4%w1/=[1,2]))print *,403

@@ -1,0 +1,4 @@
+my_terminate()
+custom abort() exitting...
+ok
+exit 0

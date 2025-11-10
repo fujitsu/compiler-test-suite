@@ -1,0 +1,11 @@
+ pmain
+ 30 1. 40 40 40
+ gsub
+ (1.,2.) (0.,0.) abcabc
+ (1.,2.) (0.,0.) abcabc
+ defdef F T F 6 2 2
+
+ xyzxyz T T T 6 6 6
+ 30
+ 1510
+exit 0

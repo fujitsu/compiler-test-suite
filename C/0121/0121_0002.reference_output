@@ -1,0 +1,73 @@
+ RMIN= 1 
+RA= 1 ,B= 2 ,C= 1 ,D= -99 
+RA= 1 ,B= 2 ,C= 1 ,D= -99 
+RA= 1 ,B= 1 ,C= 1 ,D= -99 
+RA= 1 ,B= 1 ,C= 1 ,D= -99 
+RA= 1 ,B= 1 ,C= 1 ,D= -99 
+RA= -2 ,B= 1 ,C= 1 ,D= -102 
+RA= 2 ,B= 1 ,C= 1 ,D= -98 
+RA= 2 ,B= 1 ,C= 1 ,D= 1 
+RA= 2 ,B= 1 ,C= 1 ,D= 1 
+RA= 2 ,B= 1 ,C= 1 ,D= 1 
+ LOV1= 0 ,RA= 1 ,B= 2 ,C= 3 ,D= -99 
+ LOV1= 0 ,RA= 1 ,B= 2 ,C= 2 ,D= -99 
+ LOV1= 0 ,RA= 1 ,B= 1 ,C= 2 ,D= -99 
+ LOV1= 0 ,RA= 1 ,B= 1 ,C= 2 ,D= -99 
+ LOV1= 0 ,RA= 1 ,B= 1 ,C= 2 ,D= -99 
+ LOV1= 0 ,RA= -2 ,B= 1 ,C= -1 ,D= -102 
+ LOV1= 0 ,RA= 2 ,B= 1 ,C= 3 ,D= -98 
+ LOV1= 0 ,RA= 2 ,B= 1 ,C= 3 ,D= 1 
+ LOV1= 0 ,RA= 2 ,B= 1 ,C= 3 ,D= 1 
+ LOV1= 0 ,RA= 2 ,B= 1 ,C= 3 ,D= 1 
+ LOV1= 1 ,RA= 2 ,B= 1 ,C= 1 ,D= 1 
+ LOV1= 1 ,RA= 2 ,B= 1 ,C= 1 ,D= 1 
+ LOV1= 1 ,RA= 2 ,B= 1 ,C= 1 ,D= 1 
+ LOV1= 1 ,RA= 2 ,B= 1 ,C= 1 ,D= 1 
+ LOV1= 1 ,RA= 2 ,B= 1 ,C= 1 ,D= 1 
+ LOV1= 1 ,RA= 3 ,B= 1 ,C= 1 ,D= 1 
+ LOV1= 1 ,RA= 3 ,B= 1 ,C= 1 ,D= 1 
+ LOV1= 1 ,RA= 3 ,B= 1 ,C= 1 ,D= 1 
+ LOV1= 1 ,RA= 3 ,B= 1 ,C= 1 ,D= 1 
+ LOV1= 1 ,RA= 3 ,B= 1 ,C= 1 ,D= 1 
+ LOV1= 1 ,RA= 3 ,B= 1 ,C= 1 ,D= 1 
+ LOV1= 1 ,RA= 3 ,B= 1 ,C= 1 ,D= 1 
+ LOV1= 1 ,RA= 3 ,B= 1 ,C= 1 ,D= 1 
+ LOV1= 1 ,RA= 3 ,B= 1 ,C= 1 ,D= 1 
+ LOV1= 1 ,RA= 3 ,B= 1 ,C= 1 ,D= 1 
+ LOV1= 1 ,RA= 0 ,B= 1 ,C= 1 ,D= 1 
+ LOV1= 1 ,RA= 0 ,B= 1 ,C= 1 ,D= 1 
+ LOV1= 1 ,RA= 0 ,B= 1 ,C= 1 ,D= 1 
+ LOV1= 1 ,RA= 0 ,B= 1 ,C= 1 ,D= 1 
+ LOV1= 1 ,RA= 0 ,B= 1 ,C= 1 ,D= 1 
+ RA= 0  ZZ= (2,0) B= 2  C= 0  D= 0  CC= 0  DD= 0 
+ RA= 0  ZZ= (0,0) B= 1000  C= 2  D= -99  CC= 100  DD= 1000 
+ RA= 0  ZZ= (2,0) B= 1000  C= 0  D= 0  CC= 0  DD= 0 
+ RA= 0  ZZ= (0,0) B= 1000  C= 2  D= -99  CC= 100  DD= 1000 
+ RA= 0  ZZ= (2,0) B= 1000  C= 0  D= 0  CC= 0  DD= 0 
+ RA= 0  ZZ= (0,0) B= 1000  C= -1  D= -102  CC= 100  DD= 1000 
+ RA= 0  ZZ= (2,0) B= 1000  C= 0  D= 0  CC= 0  DD= 0 
+ RA= 0  ZZ= (0,0) B= 1000  C= 3  D= 1  CC= 100  DD= 1000 
+ RA= 0  ZZ= (2,0) B= 1000  C= 0  D= 0  CC= 0  DD= 0 
+ RA= 0  ZZ= (0,0) B= 1000  C= 3  D= 1  CC= 100  DD= 1000 
+ RA= 2  ZZ= (2,0) B= 1000  C= 0  D= 0  CC= 0  DD= 0 
+ RA= 2  ZZ= (0,0) B= 1000  C= 1  D= 1  CC= 100  DD= 1000 
+ RA= 2  ZZ= (2,0) B= 1  C= 0  D= 0  CC= 0  DD= 0 
+ RA= 2  ZZ= (0,0) B= 1  C= 1  D= 1  CC= 100  DD= 1000 
+ RA= 2  ZZ= (2,0) B= 1  C= 0  D= 0  CC= 0  DD= 0 
+ RA= 3  ZZ= (0,0) B= 1  C= 1  D= 1  CC= 100  DD= 1000 
+ RA= 3  ZZ= (2,0) B= 1  C= 0  D= 0  CC= 0  DD= 0 
+ RA= 3  ZZ= (0,0) B= 1  C= 1  D= 1  CC= 100  DD= 1000 
+ RA= 3  ZZ= (2,0) B= 1  C= 0  D= 0  CC= 0  DD= 0 
+ RA= 3  ZZ= (0,0) B= 1  C= 1  D= 1  CC= 100  DD= 1000 
+ RA= 3  ZZ= (0,0) B= 1  C= 1  D= 1  CC= 100  DD= 1000 
+ RA= 3  ZZ= (0,0) B= 1  C= 1  D= 1  CC= 100  DD= 1000 
+ RA= 3  ZZ= (0,0) B= 1  C= 1  D= 1  CC= 100  DD= 1000 
+ RA= 3  ZZ= (0,0) B= 1  C= 1  D= 1  CC= 100  DD= 1000 
+ RA= 3  ZZ= (0,0) B= 1  C= 1  D= 1  CC= 100  DD= 1000 
+ RA= 0  ZZ= (0,0) B= 1  C= 1  D= 1  CC= 100  DD= 1000 
+ RA= 0  ZZ= (0,0) B= 1  C= 1  D= 1  CC= 100  DD= 1000 
+ RA= 0  ZZ= (0,0) B= 1  C= 1  D= 1  CC= 100  DD= 1000 
+ RA= 0  ZZ= (0,0) B= 1  C= 1  D= 1  CC= 100  DD= 1000 
+ RA= 0  ZZ= (0,0) B= 1  C= 1  D= 1  CC= 100  DD= 1000 
+ SS= 22 
+exit 0

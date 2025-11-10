@@ -1,0 +1,6 @@
+sub1: 4
+sub1: 8
+sub2: 15
+sub3: 7
+sub3: 26
+exit 0

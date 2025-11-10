@@ -1,0 +1,18 @@
+ ****EQUMCR**LOOP1**
+ RE= 2  RE= 2  RE= 2  RE= 2  RE= 2  RE= 2  RE= 2  RE= 2  RE= 2  RE= 2 
+ IA= -1  IA= -1  IA= -1  IA= -1  IA= -1  IA= -1  IA= -1  IA= -1  IA= -1  IA= -1 
+ S= 19 
+ RMX= 2 
+ ****EQUMCR**LOOP2**
+ RMX= 1 
+ JMX= 1 
+ RC= 1  RC= 1  RC= 1  RC= 1  RC= 1  RC= 1  RC= 1  RC= 1  RC= 1  RC= 1 
+ ****EQUMCR**LOOP3**
+ RC= 1  RC= 1  RC= 1  RC= 1  RC= 1  RC= 1  RC= 1  RC= 1  RC= 1  RC= 1 
+ DA= 1  DA= 1  DA= 1  DA= 1  DA= 1  DA= 1  DA= 1  DA= 1  DA= 1  DA= 1 
+ DB= 1  DB= 1  DB= 1  DB= 1  DB= 1  DB= 1  DB= 1  DB= 1  DB= 1  DB= 1 
+****EQUMCR**LOOP4**
+RC= 1 RC= 1 RC= 1 RC= 1 RC= 1 RC= 1 RC= 1 RC= 1 RC= 1 RC= 1 
+DA= 1 DA= 1 DA= 1 DA= 1 DA= 1 DA= 1 DA= 1 DA= 1 DA= 1 DA= 1 
+DB= 1 DB= 1 DB= 1 DB= 1 DB= 1 DB= 1 DB= 1 DB= 1 DB= 1 DB= 1 
+exit 0

@@ -40,7 +40,7 @@ if (any(lbound(b)/=[2]))print *,502
 deallocate(b)
 allocate(b,source=e(2,4))
 if (any(b/=['1','2','3']))print *,601,b
-if (any(lbound(b)/=[2]))print *,602
+if (any(lbound(b)/=[1]))print *,602
 deallocate(b)
 allocate(b,source=(c))
 if (any(b/=['1','2','3']))print *,1101,b

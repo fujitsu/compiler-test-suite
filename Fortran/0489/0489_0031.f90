@@ -50,8 +50,8 @@ use m
 integer::kk
   type(x)::xv
 call sub(xv)
-rewind 101
-read(101,*) kk
-if (kk/=3) print *,304
+rewind 100
+read(100,*) kk
+if (kk/=4) print *,304
 print *,'pass'
 end

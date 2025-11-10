@@ -1,0 +1,15 @@
+ ****EQUMCR**LOOP1**
+ RC= 1  RC= 1  RC= 1  RC= 1  RC= 1  RC= 1  RC= 1  RC= 1  RC= 1  RC= 1 
+ RD= 1  RD= 1  RD= 1  RD= 1  RD= 1  RD= 1  RD= 1  RD= 1  RD= 1  RD= 1 
+ RMX= 1 
+ JMX= 2 
+****EQUMCR**LOOP2**
+RH= 1 RH= 1 RH= 1 RH= 1 RH= 1 RH= 1 RH= 1 RH= 1 RH= 1 RH= 1 RH= 1 RH= 1 RH= 1 RH= 1 RH= 1 RH= 1 RH= 1 RH= 1 RH= 1 RH= 1 
+DA= 3 DA= 3 DA= 3 DA= 3 DA= 3 DA= 3 DA= 3 DA= 3 DA= 3 DA= 3 
+IA= 1 IA= 2 IA= 3 IA= 4 IA= 5 IA= 6 IA= 7 IA= 8 IA= 9 IA= 10 
+RMX= 1 
+ ****EQUMCR**LOOP3**
+ RH= 1  RH= 1  RH= 1  RH= 1  RH= 1  RH= 1  RH= 1  RH= 1  RH= 1  RH= 1  RH= 1  RH= 1  RH= 1  RH= 1  RH= 1  RH= 1  RH= 1  RH= 1  RH= 1  RH= 1 
+ RMX= 2 
+ RA= 1  RA= 1  RA= 1  RA= 1  RA= 1  RA= 1  RA= 1  RA= 1  RA= 1  RA= 1 
+exit 0

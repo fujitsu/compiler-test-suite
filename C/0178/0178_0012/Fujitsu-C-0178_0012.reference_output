@@ -1,0 +1,21 @@
+
+       GNU  STARTED   GNU __attribute__ const       
+	 Pre test_ex1 int_var=1
+	 After test_ex1 int_var=2
+	 Pre test_ex2 int_var=1
+	 After test_ex2 int_var=2
+	 Pre test_ex3 int_var=1
+	 After test_ex3 int_var=2
+	 Pre test_ex4 int_var=1
+	 After test_ex4 int_var=2
+	 Pre test_ex5 int_var=1
+	 After test_ex5 int_var=2
+	 Pre test_ex6 int_var=1
+	 After test_ex6 int_var=2
+	 Pre test_ex7 int_var=1
+	 After test_ex7 int_var=2
+
+            *OK*    :  ALL THE ITEMS
+
+       GNU  ENDED   GNU __attribute__ const       
+exit 1

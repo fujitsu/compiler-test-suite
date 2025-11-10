@@ -1,0 +1,8 @@
+xxx
+n1: 4
+n2: 16
+n3: 16
+float: 4
+double: 8
+int: 4
+exit 0

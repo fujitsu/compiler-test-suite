@@ -1,0 +1,4 @@
+MyClass.ctor() : 10
+MyClass.dtor() : 10
+ok
+exit 0

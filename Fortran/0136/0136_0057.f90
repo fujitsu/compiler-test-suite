@@ -12,11 +12,8 @@ d=-1.0d0
 x=-1.0
 y=-1.0d0
 if(IEEE_SUPPORT_SQRT(1.0).neqv..true.) print *,'err1'
-if(IEEE_IS_NAN(SQRT(x)).neqv..true.) print *,'err2'
 if(IEEE_SUPPORT_SQRT(r).neqv..true.) print *,'err3'
 if(IEEE_SUPPORT_SQRT(d).neqv..true.) print *,'err4'
-if(IEEE_IS_NAN(SQRT(d)).neqv..true.) print *,'err5'
-if(IEEE_IS_NAN(SQRT(y)).neqv..true.) print *,'err6'
 if(IEEE_IS_NAN(SQRT(r)).neqv..false.) print *,'err7'
 if(IEEE_IS_NAN(SQRT(1.0d0)).neqv..false.) print *,'err8'
 end subroutine

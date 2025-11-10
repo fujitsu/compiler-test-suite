@@ -1,0 +1,4 @@
+args = 10
+id = 10, details: This is old macro
+id = 10, details: 
+exit 0

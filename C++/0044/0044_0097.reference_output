@@ -1,0 +1,6 @@
+Class. ctor() : 1
+Class. dtor() : 1
+my_terminate()
+custom abort() returns by longjmp()...
+ok
+exit 0

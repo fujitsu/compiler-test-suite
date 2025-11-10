@@ -7,7 +7,9 @@
 	do i=1,16
 	bc16(i) = ac16(i) * bc16(i)
 	end do
-        print *,bc16
+	do i=1,16
+	   print *,bc16(i)
+	end do
 	end
 	complex*16 ac16(16)
 	data ac16/-1,-2,-3,-4,-5,-6,1,2,3,4,5,6,7,8,9,10/

@@ -27,7 +27,7 @@ if (any(lbound(b)/=[2]))print *,502
 deallocate(b)
 allocate(b,source=e(2,4))
 if (any(abs(b-[(1,1),(2,2),(3,3)])>0.001))print *,601,b
-if (any(lbound(b)/=[2]))print *,602
+if (any(lbound(b)/=[1]))print *,602
 deallocate(b)
 allocate(b,source=(c))
 if (any(abs(b-[(1,1),(2,2),(3,3)])>0.001))print *,1101,b

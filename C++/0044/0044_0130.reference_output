@@ -1,0 +1,6 @@
+Class.ctor()  :  1, uncaught : false
+custom __cxa_free_exception() : 2
+int caught
+custom __cxa_free_exception() : 3
+ok
+exit 0

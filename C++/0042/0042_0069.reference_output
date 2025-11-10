@@ -1,0 +1,5 @@
+__STDC_HOSTED__ is defined
+__STDC_HOSTED__: 1
+__STDC_VERSION__ is not defined
+__STDC_ISO_10646__ is defined
+exit 0

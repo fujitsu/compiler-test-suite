@@ -1,0 +1,324 @@
+ *****  *****
+ ----- NO.1 -----
+ I10S  =  1   I11S  =  0   R11S  =  10 
+ I12   =  2 
+ I12   =  2 
+ I12   =  2 
+ I12   =  2 
+ I12   =  2 
+ I12   =  2 
+ I12   =  2 
+ I12   =  2 
+ I12   =  2 
+ I12   =  2 
+ L12   =  0 
+ L12   =  0 
+ L12   =  0 
+ L12   =  1 
+ L12   =  1 
+ L12   =  1 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ Q10   =  0 
+ D10S  =  0 
+ L14   =  1 
+ L14   =  0 
+ L14   =  0 
+ L14   =  1 
+ L14   =  1 
+ L14   =  0 
+ R12S  =  21    R10S  =  12 
+ L10   =  1   D11   =  6 
+ L10   =  0   D11   =  88.9443 
+ ----- NO.2 -----
+  INNER MOST LOOP I3 = 1 , D21S =  1 
+  INNER MOST LOOP I3 = 2 , D21S =  1 
+  INNER MOST LOOP I3 = 3 , D21S =  2 
+  INNER MOST LOOP I3 = 4 , D21S =  2 
+  INNER MOST LOOP I3 = 5 , D21S =  2 
+  INNER MOST LOOP I3 = 6 , D21S =  2 
+  INNER MOST LOOP I3 = 7 , D21S =  2 
+  INNER MOST LOOP I3 = 8 , D21S =  2 
+  INNER MOST LOOP I3 = 9 , D21S =  2 
+  INNER MOST LOOP I3 = 10 , D21S =  2 
+  INNER MOST LOOP I3 = 1 , D21S =  2 
+  INNER MOST LOOP I3 = 2 , D21S =  2 
+  INNER MOST LOOP I3 = 3 , D21S =  2 
+  INNER MOST LOOP I3 = 4 , D21S =  2 
+  INNER MOST LOOP I3 = 5 , D21S =  2 
+  INNER MOST LOOP I3 = 6 , D21S =  2 
+  INNER MOST LOOP I3 = 7 , D21S =  2 
+  INNER MOST LOOP I3 = 8 , D21S =  2 
+  INNER MOST LOOP I3 = 9 , D21S =  2 
+  INNER MOST LOOP I3 = 10 , D21S =  2 
+  INNER MOST LOOP I3 = 1 , D21S =  2 
+  INNER MOST LOOP I3 = 2 , D21S =  2 
+  INNER MOST LOOP I3 = 3 , D21S =  2 
+  INNER MOST LOOP I3 = 4 , D21S =  2 
+  INNER MOST LOOP I3 = 5 , D21S =  2 
+  INNER MOST LOOP I3 = 6 , D21S =  2 
+  INNER MOST LOOP I3 = 7 , D21S =  2 
+  INNER MOST LOOP I3 = 8 , D21S =  2 
+  INNER MOST LOOP I3 = 9 , D21S =  2 
+  INNER MOST LOOP I3 = 10 , D21S =  2 
+  INNER MOST LOOP I3 = 1 , D21S =  2 
+  INNER MOST LOOP I3 = 2 , D21S =  2 
+  INNER MOST LOOP I3 = 3 , D21S =  2 
+  INNER MOST LOOP I3 = 4 , D21S =  2 
+  INNER MOST LOOP I3 = 5 , D21S =  2 
+  INNER MOST LOOP I3 = 6 , D21S =  2 
+  INNER MOST LOOP I3 = 7 , D21S =  2 
+  INNER MOST LOOP I3 = 8 , D21S =  2 
+  INNER MOST LOOP I3 = 9 , D21S =  2 
+  INNER MOST LOOP I3 = 10 , D21S =  2 
+  INNER MOST LOOP I3 = 1 , D21S =  2 
+  INNER MOST LOOP I3 = 2 , D21S =  2 
+  INNER MOST LOOP I3 = 3 , D21S =  2 
+  INNER MOST LOOP I3 = 4 , D21S =  2 
+  INNER MOST LOOP I3 = 5 , D21S =  2 
+  INNER MOST LOOP I3 = 6 , D21S =  2 
+  INNER MOST LOOP I3 = 7 , D21S =  2 
+  INNER MOST LOOP I3 = 8 , D21S =  2 
+  INNER MOST LOOP I3 = 9 , D21S =  2 
+  INNER MOST LOOP I3 = 10 , D21S =  2 
+  INNER MOST LOOP I3 = 1 , D21S =  2 
+  INNER MOST LOOP I3 = 2 , D21S =  2 
+  INNER MOST LOOP I3 = 3 , D21S =  2 
+  INNER MOST LOOP I3 = 4 , D21S =  2 
+  INNER MOST LOOP I3 = 5 , D21S =  2 
+  INNER MOST LOOP I3 = 6 , D21S =  2 
+  INNER MOST LOOP I3 = 7 , D21S =  2 
+  INNER MOST LOOP I3 = 8 , D21S =  2 
+  INNER MOST LOOP I3 = 9 , D21S =  2 
+  INNER MOST LOOP I3 = 10 , D21S =  2 
+  I20  =  0     R20  =  0      D20  =  0  
+  C20  =  0 0   CD20 =  0 0   Q20  =  0 
+  I20  =  2     R20  =  2      D20  =  2  
+  C20  =  -4 0   CD20 =  -2 0   Q20  =  -2 
+  I20  =  3     R20  =  3      D20  =  3  
+  C20  =  -3 0   CD20 =  -3 0   Q20  =  -3 
+  Q21  =  0 
+  Q21  =  0 
+  Q21  =  0 
+  Q21  =  0 
+  Q21  =  0 
+  Q21  =  0 
+  Q21  =  0 
+  Q21  =  0 
+  Q21  =  0 
+  Q21  =  0 
+  Q21  =  0 
+  Q21  =  0 
+  Q21  =  0 
+  Q21  =  0 
+  Q21  =  0 
+  Q21  =  0 
+  Q21  =  0 
+  Q21  =  0 
+  Q21  =  0 
+  Q21  =  0 
+  Q21  =  0 
+  Q21  =  0 
+  Q21  =  0 
+  Q21  =  0 
+  Q21  =  0 
+  Q21  =  0 
+  Q21  =  0 
+  Q21  =  0 
+  Q21  =  0 
+  Q21  =  0 
+  Q21  =  -2 
+  Q21  =  -2 
+  Q21  =  -2 
+  Q21  =  -2 
+  Q21  =  -2 
+  Q21  =  -2 
+  Q21  =  -2 
+  Q21  =  -2 
+  Q21  =  -2 
+  Q21  =  -2 
+  Q21  =  -2 
+  Q21  =  -2 
+  Q21  =  -2 
+  Q21  =  -2 
+  Q21  =  -2 
+  Q21  =  -2 
+  Q21  =  -2 
+  Q21  =  -2 
+  Q21  =  -2 
+  Q21  =  -2 
+  Q21  =  -2 
+  Q21  =  -2 
+  Q21  =  -2 
+  Q21  =  -2 
+  Q21  =  -2 
+  Q21  =  -2 
+  Q21  =  -2 
+  Q21  =  -2 
+  Q21  =  -2 
+  Q21  =  -2 
+  Q21  =  -3 
+  Q21  =  -3 
+  Q21  =  -3 
+  Q21  =  -3 
+  Q21  =  -3 
+  Q21  =  -3 
+  Q21  =  -3 
+  Q21  =  -3 
+  Q21  =  -3 
+  Q21  =  -3 
+  Q21  =  -3 
+  Q21  =  -3 
+  Q21  =  -3 
+  Q21  =  -3 
+  Q21  =  -3 
+  Q21  =  -3 
+  Q21  =  -3 
+  Q21  =  -3 
+  Q21  =  -3 
+  Q21  =  -3 
+  Q21  =  -3 
+  Q21  =  -3 
+  Q21  =  -3 
+  Q21  =  -3 
+  Q21  =  -3 
+  Q21  =  -3 
+  Q21  =  -3 
+  Q21  =  -3 
+  Q21  =  -3 
+  Q21  =  -3 
+  D20S =  68   D22S =  32   R21S =  2 
+  C21  =  1 1 
+  C21  =  0 1 
+  C21  =  -1 1 
+  C21  =  -3 -2 
+  C21  =  -5 -5 
+  C21  =  3 -3 
+  C21  =  10 -1 
+  C21  =  17 1 
+  C21  =  18 3 
+  C21  =  19 5 
+  D22  =  1 
+  D22  =  4 
+  D22  =  7 
+  D22  =  10 
+  D22  =  13 
+  D22  =  17 
+  D22  =  17 
+  D22  =  20 
+  D22  =  23 
+  D22  =  26 
+  D22  =  1 
+  D22  =  4 
+  D22  =  7 
+  D22  =  10 
+  D22  =  13 
+  D22  =  17 
+  D22  =  17 
+  D22  =  20 
+  D22  =  23 
+  D22  =  26 
+  D22  =  1 
+  D22  =  4 
+  D22  =  7 
+  D22  =  10 
+  D22  =  13 
+  D22  =  -3 
+  D22  =  4 
+  D22  =  7 
+  D22  =  10 
+  D22  =  13 
+  CD21 =  0 0 
+  CD21 =  -4 0 
+  CD21 =  -6 0 
+  D21  =  -3 
+  D21  =  -4 
+  D21  =  7 
+  D21  =  5 
+  D21  =  8 
+  D21  =  4 
+  D21  =  0 
+  D21  =  3 
+  D21  =  3 
+  D21  =  3 
+  D21  =  3 
+  D21  =  5 
+  D21  =  -18 
+  D21  =  6 
+  D21  =  -6 
+  D21  =  4 
+  D21  =  0 
+  D21  =  3 
+  D21  =  3 
+  D21  =  3 
+  D21  =  4 
+  D21  =  6 
+  D21  =  -20 
+  D21  =  7 
+  D21  =  8 
+  D21  =  -16 
+  D21  =  7 
+  D21  =  3 
+  D21  =  3 
+  D21  =  3 
+  R21  =  1      I21  =  0 
+  R21  =  4      I21  =  8 
+  R21  =  2      I21  =  8 
+exit 0

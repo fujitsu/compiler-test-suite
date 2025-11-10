@@ -1,0 +1,240 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+#include "000.h"
+#define A(i) a[i-1]
+#define B(i) b[i-1]
+#define C(i) c[i-1]
+#define D(i) d[i-1]
+#define E(i) e[i-1]
+#define F(i) f[i-1]
+double a[10],b[10],c[10],d[10],e[10],f[10];
+int main()
+{
+	long int N=10;
+	long int J,I,K,i,j,k;
+	for(i=0;i< 10;i++){
+		f[i]=1.0;
+	}
+	printf("  *****  *****                        \n");
+	printf("  NO.1 TIGHTLY LOOP \n");
+	for(I=1;I<=N;I++)
+	{
+		for(J=1;J<=N;J++)
+		{
+			A(J)=I;
+LBL_11:
+			;
+		}
+LBL_10:
+		;
+	}
+	for(I=1;I<=N;I++)
+	{
+		for(J=1;J<=N;J++)
+		{
+LBL_21:
+			;
+		}
+LBL_20:
+		;
+	}
+	for(I=1;I<=N;I++)
+	{
+		for(J=2;J<=N;J++)
+		{
+			A(J)=A(J-1);
+LBL_31:
+			;
+		}
+LBL_30:
+		;
+	}
+	for(I=1;I<=N;I++)
+	{
+		for(J=2;J<=N;J++)
+		{
+			A(J)=A(J-1);
+			B(J)=C(J)+A(J);
+LBL_41:
+			;
+		}
+LBL_40:
+		;
+	}
+	for(I=1;I<=N;I++)
+	{
+		A(I)=B(I);
+		for(J=1;J<=N;J++)
+		{
+			C(J)=D(J);
+LBL_51:
+			;
+		}
+LBL_50:
+		;
+	}
+	for(I=2;I<=N;I++)
+	{
+		A(I)=A(I-1);
+		for(J=1;J<=N;J++)
+		{
+			C(J)=D(J);
+LBL_61:
+			;
+		}
+		C(I)=A(I);
+LBL_60:
+		;
+	}
+	for(I=2;I<=N;I++)
+	{
+		A(I)=A(I-1);
+		for(J=1;J<=N;J++)
+		{
+			C(J)=D(J);
+LBL_71:
+			;
+		}
+		C(I)=B(I)+A(I);
+LBL_70:
+		;
+	}
+	for(i=1;i<=10;i++){
+		printf(" %g %g %g %g %g %g \n",A(i),B(i),C(i),D(i),E(i),F(i));
+	}
+	printf("  NO.2 TIGHTLY LOOP WITH OUTER LOOP\n");
+	for(K=1;K<=N;K++)
+	{
+		B(K)=K;
+		for(I=1;I<=N;I++)
+		{
+			for(J=1;J<=N;J++)
+			{
+				A(J)=I;
+LBL_81:
+				;
+			}
+LBL_80:
+			;
+		}
+		C(K)=B(K);
+LBL_82:
+		;
+	}
+	for(K=2;K<=N;K++)
+	{
+		B(K)=K;
+		for(I=1;I<=N;I++)
+		{
+			for(J=1;J<=N;J++)
+			{
+LBL_91:
+				;
+			}
+LBL_90:
+			;
+		}
+		C(K)=C(K-1);
+LBL_92:
+		;
+	}
+	for(K=2;K<=N;K++)
+	{
+		B(K)=B(K-1);
+		for(I=1;I<=N;I++)
+		{
+			for(J=2;J<=N;J++)
+			{
+				A(J)=A(J-1);
+LBL_101:
+				;
+			}
+LBL_100:
+			;
+		}
+		C(K)=C(K)+B(K);
+LBL_102:
+		;
+	}
+	for(K=1;K<=N;K++)
+	{
+		D(K)=E(K);
+		for(I=1;I<=N;I++)
+		{
+			for(J=2;J<=N;J++)
+			{
+				A(J)=A(J-1);
+				B(J)=C(J)+A(J);
+LBL_111:
+				;
+			}
+LBL_110:
+			;
+		}
+		B(K)=D(K)+1.;
+LBL_112:
+		;
+	}
+	for(K=1;K<=N;K++)
+	{
+		A(K)=B(K);
+		for(I=1;I<=N;I++)
+		{
+			A(I)=B(I);
+			for(J=1;J<=N;J++)
+			{
+				C(J)=D(J);
+LBL_121:
+				;
+			}
+LBL_120:
+			;
+		}
+		D(K)=E(K)-1.;
+LBL_122:
+		;
+	}
+	for(K=1;K<=N;K++)
+	{
+		B(K)=B(K)+1.0;
+		for(I=2;I<=N;I++)
+		{
+			A(I)=A(I-1);
+			for(J=1;J<=N;J++)
+			{
+				C(J)=D(J);
+LBL_131:
+				;
+			}
+			C(I)=A(I);
+LBL_130:
+			;
+		}
+LBL_132:
+		;
+	}
+	for(K=1;K<=N;K++)
+	{
+		for(I=2;I<=N;I++)
+		{
+			A(I)=A(I-1);
+			for(J=1;J<=N;J++)
+			{
+				C(J)=D(J);
+LBL_141:
+				;
+			}
+			C(I)=B(I)+A(I);
+LBL_140:
+			;
+		}
+		E(K)=E(K)+1.0;
+LBL_142:
+		;
+	}
+	for(i=1;i<=10;i++){
+		printf(" %g %g %g %g %g %g \n",A(i),B(i),C(i),D(i),E(i),F(i));
+	}
+	exit (0);
+}

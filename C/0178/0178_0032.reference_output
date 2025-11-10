@@ -1,0 +1,17 @@
+
+    GNU use STARTED   Gnu used test                 
+call_func03
+call_func_04
+varsix_no_use
+FUNCNINE_no_use
+func12_no_use
+var13_no_use
+var14_no_use
+var15_no_use
+func16_no_use
+var17_no_use
+
+            *OK*    :  ALL THE ITEMS
+
+    GNU use ENDED   Gnu used test                 
+exit 1

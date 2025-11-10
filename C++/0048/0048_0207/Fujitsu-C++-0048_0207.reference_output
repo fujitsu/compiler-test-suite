@@ -1,0 +1,7 @@
+B1::sub11
+B1::sub12
+P11::sub11
+P12::sub12
+B3::sub31
+P41::sub41
+exit 0

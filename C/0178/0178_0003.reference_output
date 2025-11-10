@@ -1,0 +1,26 @@
+return add test
+main 0 
+auto   func 0
+static func 1
+auto   func 1
+static func 2
+auto   func 2
+static func 3
+auto   func 3
+static func 4
+auto   func 4
+static func 5
+auto   func 5
+static func 6
+auto   func 6
+static func 7
+auto   func 7
+static func 8
+auto   func 8
+static func 9
+auto   func 9
+static func 10
+auto   func 10
+end    func 11
+test end 
+exit 0

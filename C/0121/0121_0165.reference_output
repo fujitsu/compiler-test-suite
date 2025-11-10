@@ -1,0 +1,21 @@
+ #####  #####
+ ----- TEST NO.1 ----- BUSY-ON-EXIT IN LSB      
+                       VOLUME ( SOON ? )        
+ S = 27
+
+ ----- TEST NO.2 ----- TRIPPLY NESTED         
+       THE OUTERMOST IS ELIMINATED            
+ S = 27
+
+ ----- TEST NO.3 ----- TRIPPLY NESTED         
+            BUSY-ON-ENTRANCE AND EXIT         
+ S = 27
+ ASUM = 85
+
+ ----- TEST NO.4 ----- TRIPPLY NESTED         
+            SHOULD VECTORIZE BY J             
+ S = 27  ASUM = 88  ----- TEST NO.5 ----- TRIPPLY NESTED         
+            SHOULD VECTORIZE BY J             
+            SIMPLER FORM OF TEST NO.4         
+ SSS = 14
+exit 0

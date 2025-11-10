@@ -13,6 +13,6 @@ contains
 end
 use m1
    if (any(if()/=[1,2])) print *,101
-   if (kind(if())/=8) print *,201
+   if (kind(if())/=4) print *,201
 print *,'pass'
 end

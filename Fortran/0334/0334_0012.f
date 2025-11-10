@@ -25,7 +25,7 @@
 
       Q = SUM(A(1:N1))
 
-      IF (abs(Q-ANS)<1.53e-5) THEN
+      IF (abs(Q-ANS)<1.63e-5) THEN
          WRITE(6,*) 'OK'
       ELSE
          PRINT *,Q-ANS

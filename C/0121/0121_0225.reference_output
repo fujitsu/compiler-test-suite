@@ -1,0 +1,411 @@
+ 1 
+ 2 
+ 3 
+ 4 
+ 5 
+ 6 
+ 7 
+ 8 
+ 9 
+ 10 
+ 1 
+ 1 
+ 1 
+ 1 
+ 1 
+ 1 
+ 1 
+ 1 
+ 1 
+ 1 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 2 
+ 3 
+ 3 
+ 3 
+ 3 
+ 3 
+ 3 
+ 3 
+ 3 
+ 3 
+ 3 
+ 4 
+ 4 
+ 4 
+ 4 
+ 4 
+ 4 
+ 4 
+ 4 
+ 4 
+ 4 
+ 5 
+ 5 
+ 5 
+ 5 
+ 5 
+ 5 
+ 5 
+ 5 
+ 5 
+ 5 
+ 6 
+ 6 
+ 6 
+ 6 
+ 6 
+ 6 
+ 6 
+ 6 
+ 6 
+ 6 
+ 7 
+ 7 
+ 7 
+ 7 
+ 7 
+ 7 
+ 7 
+ 7 
+ 7 
+ 7 
+ 8 
+ 8 
+ 8 
+ 8 
+ 8 
+ 8 
+ 8 
+ 8 
+ 8 
+ 8 
+ 9 
+ 9 
+ 9 
+ 9 
+ 9 
+ 9 
+ 9 
+ 9 
+ 9 
+ 9 
+ 10 
+ 10 
+ 10 
+ 10 
+ 10 
+ 10 
+ 10 
+ 10 
+ 10 
+ 10 
+ *****  *****
+ ----- NO.1 -----
+  A    =  2   DA   =  1 
+  B    =  2   DB   =  -1 
+  A    =  4   DA   =  2 
+  B    =  4   DB   =  -2 
+  A    =  6   DA   =  3 
+  B    =  6   DB   =  -3 
+  A    =  8   DA   =  4 
+  B    =  8   DB   =  -4 
+  A    =  10   DA   =  5 
+  B    =  10   DB   =  -5 
+  A    =  12   DA   =  6 
+  B    =  12   DB   =  -6 
+  A    =  14   DA   =  7 
+  B    =  14   DB   =  -7 
+  A    =  16   DA   =  8 
+  B    =  16   DB   =  -8 
+  A    =  18   DA   =  9 
+  B    =  18   DB   =  -9 
+  A    =  20   DA   =  10 
+  B    =  20   DB   =  -10 
+ ----- NO.2 -----
+  A    =  2   DA   =  -1 
+  A    =  4   DA   =  -2 
+  A    =  6   DA   =  -3 
+  A    =  8   DA   =  -4 
+  A    =  10   DA   =  -5 
+  A    =  12   DA   =  -6 
+  A    =  14   DA   =  -7 
+  A    =  16   DA   =  -8 
+  A    =  18   DA   =  -9 
+  A    =  20   DA   =  -10 
+ ----- NO.3 -----
+  A    =  2   DA   =  1 
+  B    =  2   DB   =  -1 
+  A    =  4   DA   =  2 
+  B    =  4   DB   =  -2 
+  A    =  6   DA   =  3 
+  B    =  6   DB   =  -3 
+  A    =  8   DA   =  4 
+  B    =  8   DB   =  -4 
+  A    =  10   DA   =  5 
+  B    =  10   DB   =  -5 
+  A    =  12   DA   =  6 
+  B    =  12   DB   =  -6 
+  A    =  14   DA   =  7 
+  B    =  14   DB   =  -7 
+  A    =  16   DA   =  8 
+  B    =  16   DB   =  -8 
+  A    =  18   DA   =  9 
+  B    =  18   DB   =  -9 
+  A    =  20   DA   =  10 
+  B    =  20   DB   =  -10 
+ ----- NO.4 -----
+  A    =  2   DA   =  -1 
+  A    =  4   DA   =  -2 
+  A    =  6   DA   =  -3 
+  A    =  8   DA   =  -4 
+  A    =  10   DA   =  -5 
+  A    =  12   DA   =  -6 
+  A    =  14   DA   =  -7 
+  A    =  16   DA   =  -8 
+  A    =  18   DA   =  -9 
+  A    =  20   DA   =  -10 
+ ----- NO.5 -----
+  A    =  2   DA   =  -1 
+  A    =  4   DA   =  -2 
+  A    =  6   DA   =  -3 
+  A    =  8   DA   =  -4 
+  A    =  10   DA   =  -5 
+  A    =  12   DA   =  -6 
+  A    =  14   DA   =  -7 
+  A    =  16   DA   =  -8 
+  A    =  18   DA   =  -9 
+  A    =  20   DA   =  -10 
+ ----- NO.6 -----
+  A    =  4   DA   =  -1   QA   =  1 
+  A    =  8   DA   =  -2   QA   =  2 
+  A    =  12   DA   =  -3   QA   =  3 
+  A    =  16   DA   =  -4   QA   =  4 
+  A    =  20   DA   =  -5   QA   =  5 
+  A    =  24   DA   =  -6   QA   =  6 
+  A    =  28   DA   =  -7   QA   =  7 
+  A    =  32   DA   =  -8   QA   =  8 
+  A    =  36   DA   =  -9   QA   =  9 
+  A    =  40   DA   =  -10   QA   =  10 
+ ----- NO.7 -----
+  A    =  4   DA   =  -1   QA   =  10 
+  A    =  8   DA   =  -2   QA   =  10 
+  A    =  12   DA   =  -3   QA   =  10 
+  A    =  16   DA   =  -4   QA   =  10 
+  A    =  20   DA   =  -5   QA   =  10 
+  A    =  24   DA   =  -6   QA   =  10 
+  A    =  28   DA   =  -7   QA   =  10 
+  A    =  32   DA   =  -8   QA   =  10 
+  A    =  36   DA   =  -9   QA   =  10 
+  A    =  40   DA   =  -10   QA   =  10 
+ ----- NO.8 -----
+  D    =  2   DD   =  -1   QD   =  0 
+  D    =  3   DD   =  -1   QD   =  2 
+  D    =  4   DD   =  -2   QD   =  3 
+  D    =  5   DD   =  -3   QD   =  4 
+  D    =  6   DD   =  -4   QD   =  5 
+  D    =  7   DD   =  -5   QD   =  6 
+  D    =  8   DD   =  -6   QD   =  7 
+  D    =  9   DD   =  -7   QD   =  8 
+  D    =  10   DD   =  -8   QD   =  9 
+  D    =  11   DD   =  -9   QD   =  10 
+  D    =  3   DD   =  1   QD   =  2 
+  D    =  4   DD   =  -2   QD   =  0 
+  D    =  5   DD   =  -1   QD   =  6 
+  D    =  6   DD   =  -2   QD   =  8 
+  D    =  7   DD   =  -3   QD   =  10 
+  D    =  8   DD   =  -4   QD   =  12 
+  D    =  9   DD   =  -5   QD   =  14 
+  D    =  10   DD   =  -6   QD   =  16 
+  D    =  11   DD   =  -7   QD   =  18 
+  D    =  12   DD   =  -8   QD   =  20 
+  D    =  4   DD   =  2   QD   =  3 
+  D    =  5   DD   =  1   QD   =  6 
+  D    =  6   DD   =  -3   QD   =  0 
+  D    =  7   DD   =  -1   QD   =  12 
+  D    =  8   DD   =  -2   QD   =  15 
+  D    =  9   DD   =  -3   QD   =  18 
+  D    =  10   DD   =  -4   QD   =  21 
+  D    =  11   DD   =  -5   QD   =  24 
+  D    =  12   DD   =  -6   QD   =  27 
+  D    =  13   DD   =  -7   QD   =  30 
+  D    =  5   DD   =  3   QD   =  4 
+  D    =  6   DD   =  2   QD   =  8 
+  D    =  7   DD   =  1   QD   =  12 
+  D    =  8   DD   =  -4   QD   =  0 
+  D    =  9   DD   =  -1   QD   =  20 
+  D    =  10   DD   =  -2   QD   =  24 
+  D    =  11   DD   =  -3   QD   =  28 
+  D    =  12   DD   =  -4   QD   =  32 
+  D    =  13   DD   =  -5   QD   =  36 
+  D    =  14   DD   =  -6   QD   =  40 
+  D    =  6   DD   =  4   QD   =  5 
+  D    =  7   DD   =  3   QD   =  10 
+  D    =  8   DD   =  2   QD   =  15 
+  D    =  9   DD   =  1   QD   =  20 
+  D    =  10   DD   =  -5   QD   =  0 
+  D    =  11   DD   =  -1   QD   =  30 
+  D    =  12   DD   =  -2   QD   =  35 
+  D    =  13   DD   =  -3   QD   =  40 
+  D    =  14   DD   =  -4   QD   =  45 
+  D    =  15   DD   =  -5   QD   =  50 
+  D    =  7   DD   =  5   QD   =  6 
+  D    =  8   DD   =  4   QD   =  12 
+  D    =  9   DD   =  3   QD   =  18 
+  D    =  10   DD   =  2   QD   =  24 
+  D    =  11   DD   =  1   QD   =  30 
+  D    =  12   DD   =  -6   QD   =  0 
+  D    =  13   DD   =  -1   QD   =  42 
+  D    =  14   DD   =  -2   QD   =  48 
+  D    =  15   DD   =  -3   QD   =  54 
+  D    =  16   DD   =  -4   QD   =  60 
+  D    =  8   DD   =  6   QD   =  7 
+  D    =  9   DD   =  5   QD   =  14 
+  D    =  10   DD   =  4   QD   =  21 
+  D    =  11   DD   =  3   QD   =  28 
+  D    =  12   DD   =  2   QD   =  35 
+  D    =  13   DD   =  1   QD   =  42 
+  D    =  14   DD   =  -7   QD   =  0 
+  D    =  15   DD   =  -1   QD   =  56 
+  D    =  16   DD   =  -2   QD   =  63 
+  D    =  17   DD   =  -3   QD   =  70 
+  D    =  9   DD   =  7   QD   =  8 
+  D    =  10   DD   =  6   QD   =  16 
+  D    =  11   DD   =  5   QD   =  24 
+  D    =  12   DD   =  4   QD   =  32 
+  D    =  13   DD   =  3   QD   =  40 
+  D    =  14   DD   =  2   QD   =  48 
+  D    =  15   DD   =  1   QD   =  56 
+  D    =  16   DD   =  -8   QD   =  0 
+  D    =  17   DD   =  -1   QD   =  72 
+  D    =  18   DD   =  -2   QD   =  80 
+  D    =  10   DD   =  8   QD   =  9 
+  D    =  11   DD   =  7   QD   =  18 
+  D    =  12   DD   =  6   QD   =  27 
+  D    =  13   DD   =  5   QD   =  36 
+  D    =  14   DD   =  4   QD   =  45 
+  D    =  15   DD   =  3   QD   =  54 
+  D    =  16   DD   =  2   QD   =  63 
+  D    =  17   DD   =  1   QD   =  72 
+  D    =  18   DD   =  -9   QD   =  0 
+  D    =  19   DD   =  -1   QD   =  90 
+  D    =  11   DD   =  9   QD   =  10 
+  D    =  12   DD   =  8   QD   =  20 
+  D    =  13   DD   =  7   QD   =  30 
+  D    =  14   DD   =  6   QD   =  40 
+  D    =  15   DD   =  5   QD   =  50 
+  D    =  16   DD   =  4   QD   =  60 
+  D    =  17   DD   =  3   QD   =  70 
+  D    =  18   DD   =  2   QD   =  80 
+  D    =  19   DD   =  1   QD   =  90 
+  D    =  20   DD   =  -10   QD   =  0 
+ ----- NO.9 -----
+  D    =  2   DD   =  -1   QD   =  0 
+  D    =  3   DD   =  -1   QD   =  2 
+  D    =  4   DD   =  -2   QD   =  3 
+  D    =  5   DD   =  -3   QD   =  4 
+  D    =  6   DD   =  -4   QD   =  5 
+  D    =  7   DD   =  -5   QD   =  6 
+  D    =  8   DD   =  -6   QD   =  7 
+  D    =  9   DD   =  -7   QD   =  8 
+  D    =  10   DD   =  -8   QD   =  9 
+  D    =  11   DD   =  -9   QD   =  10 
+  D    =  3   DD   =  1   QD   =  2 
+  D    =  4   DD   =  -2   QD   =  0 
+  D    =  5   DD   =  -1   QD   =  6 
+  D    =  6   DD   =  -2   QD   =  8 
+  D    =  7   DD   =  -3   QD   =  10 
+  D    =  8   DD   =  -4   QD   =  12 
+  D    =  9   DD   =  -5   QD   =  14 
+  D    =  10   DD   =  -6   QD   =  16 
+  D    =  11   DD   =  -7   QD   =  18 
+  D    =  12   DD   =  -8   QD   =  20 
+  D    =  4   DD   =  2   QD   =  3 
+  D    =  5   DD   =  1   QD   =  6 
+  D    =  6   DD   =  -3   QD   =  0 
+  D    =  7   DD   =  -1   QD   =  12 
+  D    =  8   DD   =  -2   QD   =  15 
+  D    =  9   DD   =  -3   QD   =  18 
+  D    =  10   DD   =  -4   QD   =  21 
+  D    =  11   DD   =  -5   QD   =  24 
+  D    =  12   DD   =  -6   QD   =  27 
+  D    =  13   DD   =  -7   QD   =  30 
+  D    =  5   DD   =  3   QD   =  4 
+  D    =  6   DD   =  2   QD   =  8 
+  D    =  7   DD   =  1   QD   =  12 
+  D    =  8   DD   =  -4   QD   =  0 
+  D    =  9   DD   =  -1   QD   =  20 
+  D    =  10   DD   =  -2   QD   =  24 
+  D    =  11   DD   =  -3   QD   =  28 
+  D    =  12   DD   =  -4   QD   =  32 
+  D    =  13   DD   =  -5   QD   =  36 
+  D    =  14   DD   =  -6   QD   =  40 
+  D    =  6   DD   =  4   QD   =  5 
+  D    =  7   DD   =  3   QD   =  10 
+  D    =  8   DD   =  2   QD   =  15 
+  D    =  9   DD   =  1   QD   =  20 
+  D    =  10   DD   =  -5   QD   =  0 
+  D    =  11   DD   =  -1   QD   =  30 
+  D    =  12   DD   =  -2   QD   =  35 
+  D    =  13   DD   =  -3   QD   =  40 
+  D    =  14   DD   =  -4   QD   =  45 
+  D    =  15   DD   =  -5   QD   =  50 
+  D    =  7   DD   =  5   QD   =  6 
+  D    =  8   DD   =  4   QD   =  12 
+  D    =  9   DD   =  3   QD   =  18 
+  D    =  10   DD   =  2   QD   =  24 
+  D    =  11   DD   =  1   QD   =  30 
+  D    =  12   DD   =  -6   QD   =  0 
+  D    =  13   DD   =  -1   QD   =  42 
+  D    =  14   DD   =  -2   QD   =  48 
+  D    =  15   DD   =  -3   QD   =  54 
+  D    =  16   DD   =  -4   QD   =  60 
+  D    =  8   DD   =  6   QD   =  7 
+  D    =  9   DD   =  5   QD   =  14 
+  D    =  10   DD   =  4   QD   =  21 
+  D    =  11   DD   =  3   QD   =  28 
+  D    =  12   DD   =  2   QD   =  35 
+  D    =  13   DD   =  1   QD   =  42 
+  D    =  14   DD   =  -7   QD   =  0 
+  D    =  15   DD   =  -1   QD   =  56 
+  D    =  16   DD   =  -2   QD   =  63 
+  D    =  17   DD   =  -3   QD   =  70 
+  D    =  9   DD   =  7   QD   =  8 
+  D    =  10   DD   =  6   QD   =  16 
+  D    =  11   DD   =  5   QD   =  24 
+  D    =  12   DD   =  4   QD   =  32 
+  D    =  13   DD   =  3   QD   =  40 
+  D    =  14   DD   =  2   QD   =  48 
+  D    =  15   DD   =  1   QD   =  56 
+  D    =  16   DD   =  -8   QD   =  0 
+  D    =  17   DD   =  -1   QD   =  72 
+  D    =  18   DD   =  -2   QD   =  80 
+  D    =  10   DD   =  8   QD   =  9 
+  D    =  11   DD   =  7   QD   =  18 
+  D    =  12   DD   =  6   QD   =  27 
+  D    =  13   DD   =  5   QD   =  36 
+  D    =  14   DD   =  4   QD   =  45 
+  D    =  15   DD   =  3   QD   =  54 
+  D    =  16   DD   =  2   QD   =  63 
+  D    =  17   DD   =  1   QD   =  72 
+  D    =  18   DD   =  -9   QD   =  0 
+  D    =  19   DD   =  -1   QD   =  90 
+  D    =  11   DD   =  9   QD   =  10 
+  D    =  12   DD   =  8   QD   =  20 
+  D    =  13   DD   =  7   QD   =  30 
+  D    =  14   DD   =  6   QD   =  40 
+  D    =  15   DD   =  5   QD   =  50 
+  D    =  16   DD   =  4   QD   =  60 
+  D    =  17   DD   =  3   QD   =  70 
+  D    =  18   DD   =  2   QD   =  80 
+  D    =  19   DD   =  1   QD   =  90 
+  D    =  20   DD   =  -10   QD   =  0 
+exit 0

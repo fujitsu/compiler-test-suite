@@ -35,7 +35,7 @@ For details about contributing, please see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Known Issues and Future Plans
 
-As of the 2025-09 release, the Fujitsu Compiler Test Suite lacks following things. They will be available in the upcoming releases.
+As of the 2025-11 release, the Fujitsu Compiler Test Suite lacks following things. They will be available in the upcoming releases.
 
 - Addition of C/C++/Fortran test programs
 - Many missing reference output files (used to verify outputs from test programs)

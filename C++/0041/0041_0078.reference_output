@@ -1,0 +1,4 @@
+default ctor
+move ctor
+move operator
+exit 0

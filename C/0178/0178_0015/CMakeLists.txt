@@ -1,0 +1,2 @@
+llvm_multisource(Fujitsu-C-0178_0015)
+set_property(TARGET Fujitsu-C-0178_0015 APPEND PROPERTY INCLUDE_DIRECTORIES "${CMAKE_CURRENT_SOURCE_DIR}/../include")

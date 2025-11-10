@@ -1,0 +1,35 @@
+Class0 .ctor() : 30
+Class11.ctor() : 10
+throwing 0...
+Class0 .dtor() : 30
+caught : 0
+Class0 .ctor() : 30
+Class11.ctor() : 10
+Class12.ctor() : 20
+throwing 1...
+Class11.dtor() : 100
+Class0 .dtor() : 30
+caught : 1
+Class0 .ctor() : 30
+Class11.ctor() : 10
+Class12.ctor() : 20
+Class2 .ctor()
+throwing 2...
+Class12.dtor() : 400
+Class11.dtor() : 100
+Class0 .dtor() : 30
+caught : 2
+Class0 .ctor() : 30
+throwing 3...
+caught : 3
+Class0 .ctor() : 30
+Class11.ctor() : 10
+Class12.ctor() : 20
+Class2 .ctor()
+throwing 4...
+Class2 .dtor() : 40
+Class12.dtor() : 400
+Class11.dtor() : 100
+Class0 .dtor() : 30
+caught : 4
+exit 0

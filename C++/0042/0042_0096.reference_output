@@ -1,0 +1,5 @@
+Base()
+Base(int)
+Base(const Base&)
+func()
+exit 0

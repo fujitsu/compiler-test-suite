@@ -1,0 +1,25 @@
+Func1 start
+throw
+Class. ctor() : 1
+Class.cctor() : 12
+catch1
+rethrow
+Class. dtor() : 12
+Class.cctor() : 13
+catch2
+Class. dtor() : 13
+Class. dtor() : 1
+Func1 end
+Func2 start
+throw2
+Class. ctor() : 4
+Class.cctor() : 45
+catch2
+rethrow1
+Class.cctor() : 46
+catch3
+Class. dtor() : 46
+Class. dtor() : 45
+Class. dtor() : 4
+Func2 end
+exit 0

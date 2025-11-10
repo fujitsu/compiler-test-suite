@@ -1,0 +1,15 @@
+EH destructor call test
+local obj without EH
+called CTOR
+called CTOR
+called DTOR
+called DTOR
+local obj with EH
+called CTOR
+called CTOR
+in_eh
+called DTOR
+in_eh
+called DTOR
+catched EH
+exit 0

@@ -1,0 +1,24 @@
+ *****  *****
+  SECONDARY LOOP BYPASS  I =  1 
+  SECONDARY LOOP BYPASS  I =  2 
+  SECONDARY LOOP BYPASS  I =  3 
+  SECONDARY LOOP BYPASS  I =  4 
+  SECONDARY LOOP BYPASS  I =  5 
+  SECONDARY LOOP BYPASS  I =  6 
+  SECONDARY LOOP BYPASS  I =  7 
+  SECONDARY LOOP BYPASS  I =  8 
+  SECONDARY LOOP BYPASS  I =  9 
+  SECONDARY LOOP BYPASS  I =  10 
+  I10S = 720   D10S = -5  I11S = 8   C10S = (-40,-40)   R10S = 450 
+  I12S =  881   R11S =  352720 
+  D11  =  344837   I11  =  8   D10  =  7   R10  =  54   D11  =  344837 
+  D11  =  345710   I11  =  0   D10  =  2   R10  =  2   D11  =  345710 
+  D11  =  346586   I11  =  8   D10  =  5   R10  =  108   D11  =  346586 
+  D11  =  347458   I11  =  32   D10  =  28   R10  =  157.5   D11  =  347458 
+  D11  =  348335   I11  =  0   D10  =  -5   R10  =  207   D11  =  348335 
+  D11  =  349206   I11  =  8   D10  =  2   R10  =  256.5   D11  =  349206 
+  D11  =  350081   I11  =  0   D10  =  3   R10  =  3   D11  =  350081 
+  D11  =  350959   I11  =  8   D10  =  0   R10  =  351   D11  =  350959 
+  D11  =  351839   I11  =  8   D10  =  -1   R10  =  445.5   D11  =  351839 
+  D11  =  352720   I11  =  8   D10  =  -2   R10  =  450   D11  =  352720 
+exit 0

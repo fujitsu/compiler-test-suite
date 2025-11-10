@@ -1,0 +1,56 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#ifdef _OPENMP
+#include <omp.h>
+#endif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int lto_sub_15 () {
+      int ia, ib[50], ic[50], ier;
+      int i, loop=50;
+      ia = 99;
+#pragma omp parallel for firstprivate(ia)
+      for (i=0; i<loop; i+=1){ 
+          ib[i] = ia * i;
+      }
+      for (i=0; i<loop; i+=1){ 
+          ic[i] = ia * i;
+      }
+      ier = 0;
+      for (i=0; i<loop; i+=1){ 
+          if (ib[i]!=ic[i]) {
+              printf( "i=",i," ib[i]=",ib[i]," ic[i]=",ic[i]);
+              ier=ier+1;
+          }
+      }
+
+      printf( "      parallel for firstprivate(ia) -----\n");
+      if(ier==0) {
+         printf( "OK\n");
+      }else{
+         printf( "NG!  FIRSTPRIVATE clause is not active!\n");
+         printf( "     ier=%d\n",ier);
+         printf( "     ib=%d\n",ib);
+         printf( "     ic=%d\n",ic);
+      }
+  return (0) ;
+}

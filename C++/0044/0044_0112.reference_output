@@ -1,0 +1,25 @@
+Class1.ctor() : 10
+throwing 1...
+caught : 1
+Class1.ctor() : 10
+constructing safely 1, skipping to 2...
+Class1.ctor() : 20
+throwing 2...
+Class1.dtor()
+caught : 2
+Class1.ctor() : 10
+Class1.ctor() : 20
+Class2.ctor()
+throwing 3...
+Class1.dtor()
+Class1.dtor()
+caught : 3
+Class1.ctor() : 10
+Class1.ctor() : 20
+Class2.ctor()
+throwing 4...
+Class2.dtor()
+Class1.dtor()
+Class1.dtor()
+caught : 4
+exit 0

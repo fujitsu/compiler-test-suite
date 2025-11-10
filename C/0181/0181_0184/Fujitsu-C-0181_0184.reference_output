@@ -1,0 +1,4 @@
+sub1: OK
+sub2: OK
+sub3: OK
+exit 0

@@ -1,7 +1,7 @@
 module m
 contains
 subroutine sub(a,b)
-integer,dimension(:)::a,b
+integer,dimension(:),target::a,b
 integer :: i
 do i=1,5
 a(i)=b(i)

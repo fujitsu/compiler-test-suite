@@ -1,0 +1,4 @@
+B1::sub1: 1
+B2::sub2: 2
+B3::sub3: 3
+exit 0

@@ -25,6 +25,7 @@
       subroutine sub0(N,a,b,c,e,resf,x,aa)
       integer N
       complex*8  a(N),b(N),c(N),e(N),resf(N)
+      complex*8  t1
       real*4 aa,x(N)
 
       do i=1,N

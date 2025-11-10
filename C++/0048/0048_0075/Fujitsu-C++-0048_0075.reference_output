@@ -1,0 +1,6 @@
+Singleton::Singleton
+B1::B1
+B1::sub1
+B1::~B1
+Singleton::~Singleton
+exit 0

@@ -181,14 +181,14 @@ call s1
 print *,'pass'
 end
 subroutine wr
-write(18,*) '&NA III%i2%k1=111,III%i1=101,III%i2%k2=112 ',&
-           '    NNN%i2%k1=111,NNN%i1=101,NNN%i2%k2=112 ',&
-           '    kkk(2)%i2%k1=111,kkk(2)%i1=101,kkk(2)%i2%k2=112 ',&
-           '    kkk(1)%i2%k1=111,kkk(1)%i1=101,kkk(1)%i2%k2=112 /'
-write(19,*) '&NA III%i1=201,III%i2%k2=212,III%i2%k1=211 ',&
-           '    NNN%i2%k1=211,NNN%i1=201,NNN%i2%k2=212 ',&
-           '    kkk(2)%i2%k1=211,kkk(2)%i1=201,kkk(2)%i2%k2=212 ',&
-           '    kkk(1)%i2%k1=211,kkk(1)%i1=201,kkk(1)%i2%k2=212 /'
+write(18,*) '&NA III%i2%k1=111,III%i1=101,III%i2%k2=112,',&
+     'NNN%i2%k1=111,NNN%i1=101,NNN%i2%k2=112,',&
+     'kkk(2)%i2%k1=111,kkk(2)%i1=101,kkk(2)%i2%k2=112,',&
+     'kkk(1)%i2%k1=111,kkk(1)%i1=101,kkk(1)%i2%k2=112/'
+write(19,*) '&NA III%i1=201,III%i2%k2=212,III%i2%k1=211,',&
+     'NNN%i2%k1=211,NNN%i1=201,NNN%i2%k2=212,',&
+     'kkk(2)%i2%k1=211,kkk(2)%i1=201,kkk(2)%i2%k2=212,',&
+     'kkk(1)%i2%k1=211,kkk(1)%i1=201,kkk(1)%i2%k2=212 /'
 rewind 18
 rewind 19
 end

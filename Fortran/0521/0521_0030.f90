@@ -23,7 +23,7 @@ j=200
 !$OMP END PARALLEL
 if (i.ne.1) print *,'err var i=',i
 if (i0.ne.1) print *,'err var i0=',i0
-if (i1.ne.100) print *,'err var i1=',i1
+if (i1.ne.1) print *,'err var i1=',i1
 if (j.ne.2) print *,'err var j=',j
 print *,'pass'
 

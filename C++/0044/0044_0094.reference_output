@@ -1,0 +1,3 @@
+MyClass.ctor() : 10
+ok : 10
+exit 0

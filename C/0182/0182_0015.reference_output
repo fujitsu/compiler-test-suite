@@ -1,0 +1,7364 @@
+ 
+ ITEM1
+ BG1= 104  BS2= 21 
+ BG1= 100  BS2= 21 
+ BG1= 104  BS2= 21 
+ BG1= 100  BS2= 21 
+ BG1= 104  BS2= 21 
+ BG1= 100  BS2= 21 
+ BG1= 104  BS2= 21 
+ BG1= 100  BS2= 21 
+ BG1= 104  BS2= 21 
+ BG1= 100  BS2= 21 
+ BG1= 104  BS2= 21 
+ BG1= 100  BS2= 21 
+ BG1= 104  BS2= 21 
+ BG1= 100  BS2= 21 
+ BG1= 104  BS2= 21 
+ BG1= 100  BS2= 21 
+ BG1= 104  BS2= 21 
+ BG1= 100  BS2= 21 
+ BG1= 104  BS2= 21 
+ BG1= 100  BS2= 21 
+ K= 15  KK= 12 
+ K= 15  KK= 13 
+ K= 15  KK= 14 
+ K= 16  KK= 12 
+ K= 16  KK= 13 
+ K= 16  KK= 14 
+ K= 17  KK= 12 
+ K= 17  KK= 13 
+ K= 17  KK= 14 
+ K= 18  KK= 12 
+ K= 18  KK= 13 
+ K= 18  KK= 14 
+ K= 19  KK= 12 
+ K= 19  KK= 13 
+ K= 19  KK= 14 
+ K= 20  KK= 12 
+ K= 20  KK= 13 
+ K= 20  KK= 14 
+ ITEM2
+ G= 0 L= 2 S= 110 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 60 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 71 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 82 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 93 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 104 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 110 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 0 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 0 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 0 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 0 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 0 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 0 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 0 L= 0 S= 71 
+ G= 1 L= 0 S= 1 
+ G= 0 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 0 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 0 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 82 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 60 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 93 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 104 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ NB= 1 1 1 1 1 
+ NB= 1 1 1 1 1 
+ NB= 1 1 1 1 1 
+ NB= 1 1 1 1 1 
+ NB= 1 1 1 1 1 
+ NB= 1 1 1 1 1 
+ NB= 1 1 1 1 1 
+ NB= 1 1 1 1 1 
+ NB= 1 1 1 1 1 
+ NB= 1 1 1 1 1 
+ NB= 0 0 0 0 0 
+ NB= 1 1 1 1 1 
+ NB= 0 0 0 0 0 
+ NB= 1 1 1 1 1 
+ NB= 0 0 0 0 0 
+ NB= 1 1 1 1 1 
+ NB= 0 0 0 0 0 
+ NB= 1 1 1 1 1 
+ NB= 0 0 0 0 0 
+ NB= 1 1 1 1 1 
+ BS= -20 
+ BS= -16 
+ BS= -8 
+ BS= 8 
+ BS= 40 
+ BS= 104 
+ BS= 232 
+ BS= 488 
+ BS= 1000 
+ BS= 2024 
+ BS= 4072 
+ BS= 8168 
+ BS= 16360 
+ BS= 32744 
+ BS= 65512 
+ BS= 131048 
+ BS= 262120 
+ BS= 524264 
+ BS= 1048552 
+ BS= 2097128 
+ BS= -20 
+ BS= -16 
+ BS= -8 
+ BS= 8 
+ BS= 40 
+ BS= 104 
+ BS= 232 
+ BS= 488 
+ BS= 1000 
+ BS= 2024 
+ BS= 4072 
+ BS= 8168 
+ BS= 16360 
+ BS= 32744 
+ BS= 65512 
+ BS= 131048 
+ BS= 262120 
+ BS= 524264 
+ BS= 1048552 
+ BS= 2097128 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BG1= 104 BG2= 210 BS= 21 
+ BG1= 100 BG2= 1 BS= 21 
+ BG1= 104 BG2= 1 BS= 21 
+ BG1= 100 BG2= 205 BS= 21 
+ BG1= 104 BG2= 1 BS= 21 
+ BG1= 100 BG2= 1 BS= 21 
+ BG1= 104 BG2= 216 BS= 21 
+ BG1= 100 BG2= 1 BS= 21 
+ BG1= 104 BG2= 1 BS= 21 
+ BG1= 100 BG2= 211 BS= 21 
+ BG1= 104 BG2= 1 BS= 21 
+ BG1= 100 BG2= 1 BS= 21 
+ BG1= 104 BG2= 222 BS= 21 
+ BG1= 100 BG2= 1 BS= 21 
+ BG1= 104 BG2= 1 BS= 21 
+ BG1= 100 BG2= 217 BS= 21 
+ BG1= 104 BG2= 1 BS= 21 
+ BG1= 100 BG2= 1 BS= 21 
+ BG1= 104 BG2= 228 BS= 21 
+ BG1= 100 BG2= 1 BS= 21 
+ ITEM3
+ G= 20 L= 2 S= 110 
+ G= 1 L= 2 S= 1 
+ G= 4 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 2 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 4 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 2 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 4 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 2 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 10 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 4 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 2 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 10 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 10 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 4 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 2 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 10 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 10 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 10 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 0 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 0 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 0 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 0 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 0 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 0 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 0 L= 0 S= 5 
+ G= 1 L= 0 S= 1 
+ G= 0 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 0 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 0 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 5 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 3 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 5 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 0 L= 2 S= 5 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ NB= 1 1 1 1 1 
+ NB= 1 1 1 1 1 
+ NB= 1 1 1 1 1 
+ NB= 1 1 1 1 1 
+ NB= 1 1 1 1 1 
+ NB= 1 1 1 1 1 
+ NB= 1 1 1 1 1 
+ NB= 1 1 1 1 1 
+ NB= 1 1 1 1 1 
+ NB= 1 1 1 1 1 
+ NB= 6 7 8 9 10 
+ NB= 1 1 1 1 1 
+ NB= 2 2 2 3 3 
+ NB= 1 1 1 1 1 
+ NB= 1 1 1 1 2 
+ NB= 1 1 1 1 1 
+ NB= 0 1 1 1 1 
+ NB= 1 1 1 1 1 
+ NB= 0 0 0 1 1 
+ NB= 1 1 1 1 1 
+ BS= -20 
+ BS= -7 
+ BS= 4 
+ BS= 22 
+ BS= 55 
+ BS= 119 
+ BS= 248 
+ BS= 504 
+ BS= 1016 
+ BS= 2041 
+ BS= 4089 
+ BS= 8185 
+ BS= 16377 
+ BS= 32761 
+ BS= 65529 
+ BS= 131065 
+ BS= 262137 
+ BS= 524281 
+ BS= 1048570 
+ BS= 2097146 
+ BS= -38 
+ BS= -16 
+ BS= -2 
+ BS= 17 
+ BS= 51 
+ BS= 116 
+ BS= 245 
+ BS= 502 
+ BS= 1014 
+ BS= 2039 
+ BS= 4087 
+ BS= 8183 
+ BS= 16376 
+ BS= 32760 
+ BS= 65528 
+ BS= 131064 
+ BS= 262136 
+ BS= 524280 
+ BS= 1048569 
+ BS= 2097145 
+ BS= -56 
+ BS= -25 
+ BS= -8 
+ BS= 13 
+ BS= 48 
+ BS= 113 
+ BS= 243 
+ BS= 500 
+ BS= 1012 
+ BS= 2037 
+ BS= 4086 
+ BS= 8182 
+ BS= 16374 
+ BS= 32759 
+ BS= 65527 
+ BS= 131063 
+ BS= 262135 
+ BS= 524279 
+ BS= 1048568 
+ BS= 2097144 
+ BS= -74 
+ BS= -34 
+ BS= -14 
+ BS= 8 
+ BS= 44 
+ BS= 110 
+ BS= 240 
+ BS= 497 
+ BS= 1010 
+ BS= 2035 
+ BS= 4084 
+ BS= 8180 
+ BS= 16373 
+ BS= 32757 
+ BS= 65526 
+ BS= 131062 
+ BS= 262134 
+ BS= 524278 
+ BS= 1048567 
+ BS= 2097143 
+ BS= -92 
+ BS= -43 
+ BS= -20 
+ BS= 4 
+ BS= 40 
+ BS= 107 
+ BS= 238 
+ BS= 495 
+ BS= 1008 
+ BS= 2033 
+ BS= 4082 
+ BS= 8179 
+ BS= 16372 
+ BS= 32756 
+ BS= 65524 
+ BS= 131061 
+ BS= 262133 
+ BS= 524277 
+ BS= 1048566 
+ BS= 2097142 
+ BS= -110 
+ BS= -52 
+ BS= -26 
+ BS= -1 
+ BS= 37 
+ BS= 104 
+ BS= 235 
+ BS= 493 
+ BS= 1006 
+ BS= 2032 
+ BS= 4081 
+ BS= 8177 
+ BS= 16370 
+ BS= 32755 
+ BS= 65523 
+ BS= 131060 
+ BS= 262132 
+ BS= 524276 
+ BS= 1048565 
+ BS= 2097141 
+ BS= -128 
+ BS= -61 
+ BS= -32 
+ BS= -5 
+ BS= 33 
+ BS= 101 
+ BS= 232 
+ BS= 491 
+ BS= 1004 
+ BS= 2030 
+ BS= 4079 
+ BS= 8176 
+ BS= 16369 
+ BS= 32753 
+ BS= 65522 
+ BS= 131059 
+ BS= 262131 
+ BS= 524275 
+ BS= 1048564 
+ BS= 2097140 
+ BS= -146 
+ BS= -70 
+ BS= -38 
+ BS= -10 
+ BS= 30 
+ BS= 98 
+ BS= 230 
+ BS= 488 
+ BS= 1002 
+ BS= 2028 
+ BS= 4077 
+ BS= 8174 
+ BS= 16367 
+ BS= 32752 
+ BS= 65521 
+ BS= 131057 
+ BS= 262130 
+ BS= 524274 
+ BS= 1048563 
+ BS= 2097139 
+ BS= -164 
+ BS= -79 
+ BS= -44 
+ BS= -14 
+ BS= 26 
+ BS= 95 
+ BS= 227 
+ BS= 486 
+ BS= 1000 
+ BS= 2026 
+ BS= 4076 
+ BS= 8173 
+ BS= 16366 
+ BS= 32751 
+ BS= 65520 
+ BS= 131056 
+ BS= 262129 
+ BS= 524273 
+ BS= 1048562 
+ BS= 2097138 
+ BS= -182 
+ BS= -88 
+ BS= -50 
+ BS= -19 
+ BS= 22 
+ BS= 92 
+ BS= 225 
+ BS= 484 
+ BS= 998 
+ BS= 2024 
+ BS= 4074 
+ BS= 8171 
+ BS= 16365 
+ BS= 32750 
+ BS= 65518 
+ BS= 131055 
+ BS= 262128 
+ BS= 524272 
+ BS= 1048561 
+ BS= 2097137 
+ BS= -200 
+ BS= -97 
+ BS= -56 
+ BS= -23 
+ BS= 19 
+ BS= 89 
+ BS= 222 
+ BS= 482 
+ BS= 996 
+ BS= 2023 
+ BS= 4072 
+ BS= 8170 
+ BS= 16363 
+ BS= 32748 
+ BS= 65517 
+ BS= 131054 
+ BS= 262127 
+ BS= 524271 
+ BS= 1048560 
+ BS= 2097137 
+ BS= -218 
+ BS= -106 
+ BS= -62 
+ BS= -28 
+ BS= 15 
+ BS= 86 
+ BS= 220 
+ BS= 479 
+ BS= 994 
+ BS= 2021 
+ BS= 4071 
+ BS= 8168 
+ BS= 16362 
+ BS= 32747 
+ BS= 65516 
+ BS= 131053 
+ BS= 262126 
+ BS= 524270 
+ BS= 1048559 
+ BS= 2097136 
+ BS= -236 
+ BS= -115 
+ BS= -68 
+ BS= -32 
+ BS= 12 
+ BS= 83 
+ BS= 217 
+ BS= 477 
+ BS= 992 
+ BS= 2019 
+ BS= 4069 
+ BS= 8167 
+ BS= 16360 
+ BS= 32746 
+ BS= 65515 
+ BS= 131052 
+ BS= 262125 
+ BS= 524269 
+ BS= 1048558 
+ BS= 2097135 
+ BS= -254 
+ BS= -124 
+ BS= -74 
+ BS= -37 
+ BS= 8 
+ BS= 80 
+ BS= 214 
+ BS= 475 
+ BS= 990 
+ BS= 2017 
+ BS= 4068 
+ BS= 8165 
+ BS= 16359 
+ BS= 32744 
+ BS= 65514 
+ BS= 131051 
+ BS= 262124 
+ BS= 524268 
+ BS= 1048557 
+ BS= 2097134 
+ BS= -272 
+ BS= -133 
+ BS= -80 
+ BS= -41 
+ BS= 4 
+ BS= 77 
+ BS= 212 
+ BS= 473 
+ BS= 988 
+ BS= 2015 
+ BS= 4066 
+ BS= 8164 
+ BS= 16358 
+ BS= 32743 
+ BS= 65512 
+ BS= 131050 
+ BS= 262123 
+ BS= 524267 
+ BS= 1048556 
+ BS= 2097133 
+ BS= -290 
+ BS= -142 
+ BS= -86 
+ BS= -46 
+ BS= 1 
+ BS= 74 
+ BS= 209 
+ BS= 470 
+ BS= 986 
+ BS= 2014 
+ BS= 4064 
+ BS= 8162 
+ BS= 16356 
+ BS= 32742 
+ BS= 65511 
+ BS= 131048 
+ BS= 262122 
+ BS= 524266 
+ BS= 1048555 
+ BS= 2097132 
+ BS= -308 
+ BS= -151 
+ BS= -92 
+ BS= -50 
+ BS= -3 
+ BS= 71 
+ BS= 207 
+ BS= 468 
+ BS= 984 
+ BS= 2012 
+ BS= 4063 
+ BS= 8161 
+ BS= 16355 
+ BS= 32741 
+ BS= 65510 
+ BS= 131047 
+ BS= 262120 
+ BS= 524265 
+ BS= 1048554 
+ BS= 2097131 
+ BS= -326 
+ BS= -160 
+ BS= -98 
+ BS= -55 
+ BS= -6 
+ BS= 68 
+ BS= 204 
+ BS= 466 
+ BS= 982 
+ BS= 2010 
+ BS= 4061 
+ BS= 8159 
+ BS= 16354 
+ BS= 32739 
+ BS= 65509 
+ BS= 131046 
+ BS= 262119 
+ BS= 524264 
+ BS= 1048553 
+ BS= 2097130 
+ BS= -344 
+ BS= -169 
+ BS= -104 
+ BS= -59 
+ BS= -10 
+ BS= 65 
+ BS= 202 
+ BS= 464 
+ BS= 980 
+ BS= 2008 
+ BS= 4059 
+ BS= 8158 
+ BS= 16352 
+ BS= 32738 
+ BS= 65508 
+ BS= 131045 
+ BS= 262118 
+ BS= 524263 
+ BS= 1048552 
+ BS= 2097129 
+ BS= -362 
+ BS= -178 
+ BS= -110 
+ BS= -64 
+ BS= -14 
+ BS= 62 
+ BS= 199 
+ BS= 461 
+ BS= 978 
+ BS= 2006 
+ BS= 4058 
+ BS= 8156 
+ BS= 16351 
+ BS= 32737 
+ BS= 65506 
+ BS= 131044 
+ BS= 262117 
+ BS= 524262 
+ BS= 1048552 
+ BS= 2097128 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BG1= 104 BG2= 210 
+ BG1= 100 BG2= 1 
+ BG1= 104 BG2= 1 
+ BG1= 100 BG2= 51 
+ BG1= 104 BG2= 1 
+ BG1= 100 BG2= 1 
+ BG1= 104 BG2= 30 
+ BG1= 100 BG2= 1 
+ BG1= 104 BG2= 1 
+ BG1= 100 BG2= 21 
+ BG1= 104 BG2= 1 
+ BG1= 100 BG2= 1 
+ BG1= 104 BG2= 17 
+ BG1= 100 BG2= 1 
+ BG1= 104 BG2= 1 
+ BG1= 100 BG2= 13 
+ BG1= 104 BG2= 1 
+ BG1= 100 BG2= 1 
+ BG1= 104 BG2= 12 
+ BG1= 100 BG2= 1 
+ ITEM4
+ G= 40 L= 2 S= 110 
+ G= 1 L= 2 S= 1 
+ G= 24 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 22 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 21 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 21 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 40 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 24 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 22 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 21 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 21 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 110 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 40 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 24 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 22 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 21 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 21 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 10 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 40 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 24 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 22 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 21 L= 2 S= 110 
+ G= 1 L= 2 S= 1 
+ G= 21 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 10 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 40 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 24 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 22 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 21 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 21 L= 2 S= 10 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 110 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 10 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 20 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 20 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 20 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 20 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 20 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 20 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 20 L= 0 S= 110 
+ G= 1 L= 0 S= 1 
+ G= 20 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 20 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 20 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 1 L= 0 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 5 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 110 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 5 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 20 L= 2 S= 110 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ G= 1 L= 2 S= 1 
+ NB= 1 1 1 1 1 
+ NB= 1 1 1 1 1 
+ NB= 1 1 1 1 1 
+ NB= 1 1 1 1 1 
+ NB= 1 1 1 1 1 
+ NB= 1 1 1 1 1 
+ NB= 1 1 1 1 1 
+ NB= 1 1 1 1 1 
+ NB= 1 1 1 1 1 
+ NB= 1 1 1 1 1 
+ NB= 6 7 8 9 10 
+ NB= 1 1 1 1 1 
+ NB= 2 2 2 3 3 
+ NB= 1 1 1 1 1 
+ NB= 1 1 1 1 2 
+ NB= 1 1 1 1 1 
+ NB= 0 1 1 1 1 
+ NB= 1 1 1 1 1 
+ NB= 0 0 0 1 1 
+ NB= 1 1 1 1 1 
+ BS= -20 
+ BS= -16 
+ BS= -8 
+ BS= 8 
+ BS= 40 
+ BS= 104 
+ BS= 232 
+ BS= 488 
+ BS= 1000 
+ BS= 2024 
+ BS= 4072 
+ BS= 8168 
+ BS= 16360 
+ BS= 32744 
+ BS= 65512 
+ BS= 131048 
+ BS= 262120 
+ BS= 524264 
+ BS= 1048552 
+ BS= 2097128 
+ BS= -38 
+ BS= -34 
+ BS= -26 
+ BS= -10 
+ BS= 22 
+ BS= 86 
+ BS= 214 
+ BS= 470 
+ BS= 982 
+ BS= 2006 
+ BS= 4054 
+ BS= 8150 
+ BS= 16342 
+ BS= 32726 
+ BS= 65494 
+ BS= 131030 
+ BS= 262102 
+ BS= 524246 
+ BS= 1048534 
+ BS= 2097110 
+ BS= -56 
+ BS= -52 
+ BS= -44 
+ BS= -28 
+ BS= 4 
+ BS= 68 
+ BS= 196 
+ BS= 452 
+ BS= 964 
+ BS= 1988 
+ BS= 4036 
+ BS= 8132 
+ BS= 16324 
+ BS= 32708 
+ BS= 65476 
+ BS= 131012 
+ BS= 262084 
+ BS= 524228 
+ BS= 1048516 
+ BS= 2097092 
+ BS= -74 
+ BS= -70 
+ BS= -62 
+ BS= -46 
+ BS= -14 
+ BS= 50 
+ BS= 178 
+ BS= 434 
+ BS= 946 
+ BS= 1970 
+ BS= 4018 
+ BS= 8114 
+ BS= 16306 
+ BS= 32690 
+ BS= 65458 
+ BS= 130994 
+ BS= 262066 
+ BS= 524210 
+ BS= 1048498 
+ BS= 2097074 
+ BS= -92 
+ BS= -88 
+ BS= -80 
+ BS= -64 
+ BS= -32 
+ BS= 32 
+ BS= 160 
+ BS= 416 
+ BS= 928 
+ BS= 1952 
+ BS= 4000 
+ BS= 8096 
+ BS= 16288 
+ BS= 32672 
+ BS= 65440 
+ BS= 130976 
+ BS= 262048 
+ BS= 524192 
+ BS= 1048480 
+ BS= 2097056 
+ BS= -110 
+ BS= -106 
+ BS= -98 
+ BS= -82 
+ BS= -50 
+ BS= 14 
+ BS= 142 
+ BS= 398 
+ BS= 910 
+ BS= 1934 
+ BS= 3982 
+ BS= 8078 
+ BS= 16270 
+ BS= 32654 
+ BS= 65422 
+ BS= 130958 
+ BS= 262030 
+ BS= 524174 
+ BS= 1048462 
+ BS= 2097038 
+ BS= -128 
+ BS= -124 
+ BS= -116 
+ BS= -100 
+ BS= -68 
+ BS= -4 
+ BS= 124 
+ BS= 380 
+ BS= 892 
+ BS= 1916 
+ BS= 3964 
+ BS= 8060 
+ BS= 16252 
+ BS= 32636 
+ BS= 65404 
+ BS= 130940 
+ BS= 262012 
+ BS= 524156 
+ BS= 1048444 
+ BS= 2097020 
+ BS= -146 
+ BS= -142 
+ BS= -134 
+ BS= -118 
+ BS= -86 
+ BS= -22 
+ BS= 106 
+ BS= 362 
+ BS= 874 
+ BS= 1898 
+ BS= 3946 
+ BS= 8042 
+ BS= 16234 
+ BS= 32618 
+ BS= 65386 
+ BS= 130922 
+ BS= 261994 
+ BS= 524138 
+ BS= 1048426 
+ BS= 2097002 
+ BS= -164 
+ BS= -160 
+ BS= -152 
+ BS= -136 
+ BS= -104 
+ BS= -40 
+ BS= 88 
+ BS= 344 
+ BS= 856 
+ BS= 1880 
+ BS= 3928 
+ BS= 8024 
+ BS= 16216 
+ BS= 32600 
+ BS= 65368 
+ BS= 130904 
+ BS= 261976 
+ BS= 524120 
+ BS= 1048408 
+ BS= 2096984 
+ BS= -182 
+ BS= -178 
+ BS= -170 
+ BS= -154 
+ BS= -122 
+ BS= -58 
+ BS= 70 
+ BS= 326 
+ BS= 838 
+ BS= 1862 
+ BS= 3910 
+ BS= 8006 
+ BS= 16198 
+ BS= 32582 
+ BS= 65350 
+ BS= 130886 
+ BS= 261958 
+ BS= 524102 
+ BS= 1048390 
+ BS= 2096966 
+ BS= -200 
+ BS= -196 
+ BS= -188 
+ BS= -172 
+ BS= -140 
+ BS= -76 
+ BS= 52 
+ BS= 308 
+ BS= 820 
+ BS= 1844 
+ BS= 3892 
+ BS= 7988 
+ BS= 16180 
+ BS= 32564 
+ BS= 65332 
+ BS= 130868 
+ BS= 261940 
+ BS= 524084 
+ BS= 1048372 
+ BS= 2096948 
+ BS= -218 
+ BS= -214 
+ BS= -206 
+ BS= -190 
+ BS= -158 
+ BS= -94 
+ BS= 34 
+ BS= 290 
+ BS= 802 
+ BS= 1826 
+ BS= 3874 
+ BS= 7970 
+ BS= 16162 
+ BS= 32546 
+ BS= 65314 
+ BS= 130850 
+ BS= 261922 
+ BS= 524066 
+ BS= 1048354 
+ BS= 2096930 
+ BS= -236 
+ BS= -232 
+ BS= -224 
+ BS= -208 
+ BS= -176 
+ BS= -112 
+ BS= 16 
+ BS= 272 
+ BS= 784 
+ BS= 1808 
+ BS= 3856 
+ BS= 7952 
+ BS= 16144 
+ BS= 32528 
+ BS= 65296 
+ BS= 130832 
+ BS= 261904 
+ BS= 524048 
+ BS= 1048336 
+ BS= 2096912 
+ BS= -254 
+ BS= -250 
+ BS= -242 
+ BS= -226 
+ BS= -194 
+ BS= -130 
+ BS= -2 
+ BS= 254 
+ BS= 766 
+ BS= 1790 
+ BS= 3838 
+ BS= 7934 
+ BS= 16126 
+ BS= 32510 
+ BS= 65278 
+ BS= 130814 
+ BS= 261886 
+ BS= 524030 
+ BS= 1048318 
+ BS= 2096894 
+ BS= -272 
+ BS= -268 
+ BS= -260 
+ BS= -244 
+ BS= -212 
+ BS= -148 
+ BS= -20 
+ BS= 236 
+ BS= 748 
+ BS= 1772 
+ BS= 3820 
+ BS= 7916 
+ BS= 16108 
+ BS= 32492 
+ BS= 65260 
+ BS= 130796 
+ BS= 261868 
+ BS= 524012 
+ BS= 1048300 
+ BS= 2096876 
+ BS= -290 
+ BS= -286 
+ BS= -278 
+ BS= -262 
+ BS= -230 
+ BS= -166 
+ BS= -38 
+ BS= 218 
+ BS= 730 
+ BS= 1754 
+ BS= 3802 
+ BS= 7898 
+ BS= 16090 
+ BS= 32474 
+ BS= 65242 
+ BS= 130778 
+ BS= 261850 
+ BS= 523994 
+ BS= 1048282 
+ BS= 2096858 
+ BS= -308 
+ BS= -304 
+ BS= -296 
+ BS= -280 
+ BS= -248 
+ BS= -184 
+ BS= -56 
+ BS= 200 
+ BS= 712 
+ BS= 1736 
+ BS= 3784 
+ BS= 7880 
+ BS= 16072 
+ BS= 32456 
+ BS= 65224 
+ BS= 130760 
+ BS= 261832 
+ BS= 523976 
+ BS= 1048264 
+ BS= 2096840 
+ BS= -326 
+ BS= -322 
+ BS= -314 
+ BS= -298 
+ BS= -266 
+ BS= -202 
+ BS= -74 
+ BS= 182 
+ BS= 694 
+ BS= 1718 
+ BS= 3766 
+ BS= 7862 
+ BS= 16054 
+ BS= 32438 
+ BS= 65206 
+ BS= 130742 
+ BS= 261814 
+ BS= 523958 
+ BS= 1048246 
+ BS= 2096822 
+ BS= -344 
+ BS= -340 
+ BS= -332 
+ BS= -316 
+ BS= -284 
+ BS= -220 
+ BS= -92 
+ BS= 164 
+ BS= 676 
+ BS= 1700 
+ BS= 3748 
+ BS= 7844 
+ BS= 16036 
+ BS= 32420 
+ BS= 65188 
+ BS= 130724 
+ BS= 261796 
+ BS= 523940 
+ BS= 1048228 
+ BS= 2096804 
+ BS= -362 
+ BS= -358 
+ BS= -350 
+ BS= -334 
+ BS= -302 
+ BS= -238 
+ BS= -110 
+ BS= 146 
+ BS= 658 
+ BS= 1682 
+ BS= 3730 
+ BS= 7826 
+ BS= 16018 
+ BS= 32402 
+ BS= 65170 
+ BS= 130706 
+ BS= 261778 
+ BS= 523922 
+ BS= 1048210 
+ BS= 2096786 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BS= 2 
+ BG1= 104  BG2= 214 
+ BG1= 100  BG2= 1 
+ BG1= 104  BG2= 1 
+ BG1= 100  BG2= 209 
+ BG1= 104  BG2= 1 
+ BG1= 100  BG2= 1 
+ BG1= 104  BG2= 220 
+ BG1= 100  BG2= 1 
+ BG1= 104  BG2= 1 
+ BG1= 100  BG2= 215 
+ BG1= 104  BG2= 1 
+ BG1= 100  BG2= 1 
+ BG1= 104  BG2= 226 
+ BG1= 100  BG2= 1 
+ BG1= 104  BG2= 1 
+ BG1= 100  BG2= 221 
+ BG1= 104  BG2= 1 
+ BG1= 100  BG2= 1 
+ BG1= 104  BG2= 232 
+ BG1= 100  BG2= 1 
+exit 0

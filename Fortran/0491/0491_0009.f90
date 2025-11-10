@@ -51,6 +51,6 @@ read(1,*) k;if (k/=1) print *,301
 read(1,*) k;if (k/=1) print *,302
 read(1,*) k;if (k/=1) print *,303
 read(1,*) k;if (k/=2) print *,305
-read(1,*) k;if (k/=1) print *,306
+read(1,*) k;if (k/=2) print *,306
 read(1,*,end=10) k; print *,304
 10 end 

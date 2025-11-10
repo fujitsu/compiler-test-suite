@@ -1,0 +1,5 @@
+set my_terminate_1()
+throw 1
+my_terminate_1() : ok
+custom abort() returns by longjmp()...
+exit 0

@@ -1,0 +1,355 @@
+ ***  **SFGC.2**
+ RD(ID1,ID1,ID1)= 1  
+ ***  ***SFGC.2**
+ RMIN= 2  DMIN= 0  
+ ***  **SFGC.2**
+ RD(ID1,ID1,ID1)= 1  
+ ***  ***SFGC.2**
+ RMIN= 2  DMIN= 0  
+ ***  **SFGC.2**
+ RD(ID1,ID1,ID1)= 1  
+ ***  ***SFGC.2**
+ RMIN= 2  DMIN= 0  
+ ***  **SFGC.2**
+ RD(ID1,ID1,ID1)= 1  
+ RC= 3  RC= 3  RC= 3  RC= 3  RC= 3  RC= 3  RC= 3  RC= 2  RC= 3  RC= 3  ***  ***SFGC.2**
+ RMIN= 2  DMIN= 0  
+ ***  **SFGC.2**
+ RD(ID1,ID1,ID1)= 1  
+ ***  ***SFGC.2**
+ RMIN= 2  DMIN= 0  
+ ***  **SFGC.2**
+ RD(ID1,ID1,ID1)= 1  
+ ***  ***SFGC.2**
+ RMIN= 2  DMIN= 0  
+ ***  **SFGC.2**
+ RD(ID1,ID1,ID1)= 1  
+ ***  ***SFGC.2**
+ RMIN= 2  DMIN= 0  
+
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) CEA=(1,1) 
+
+CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)
+CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)
+CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)
+CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)
+CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)
+CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)
+CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)
+CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)
+CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)
+CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)CEB=(2,1)
+
+CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)
+CDB=(0,0)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)
+CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)
+CDB=(0,0)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)
+CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)
+CDB=(0,0)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)
+CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)
+CDB=(0,0)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)
+CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)
+CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)CDB=(2,1)
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+ RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1   RA= 1  
+
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 3   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 3   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 3   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 3   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 3   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 3   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 2   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 0   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+ DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1   DA= 1  
+
+ RMX= 3  
+exit 0

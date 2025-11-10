@@ -1,0 +1,32 @@
+ #####  #####
+ ----- TEST NO.1 ----- TRIPPLY NESTED         
+            VECTORIZABLE BY J (FUTURE ?)      
+ S = 27
+ ASUM = 90
+
+ ----- TEST NO.2 ----- TRIPPLY NESTED         
+       SHOULD BE VECTORIZABLE BY J (FUTURE ?) 
+       BUSY-ON-EXIT SSS NOT VECTORIZABLE ,    
+       WHEN THERE IS A DUMMY OUTER LOOP ?     
+ SSS = 14
+ ----- TEST NO.3 ----- TRIPPLY NESTED         
+       CONFIRMATION OF TEST NO.2              
+       SHOULD BE VECTORIZABLE BY J (FUTURE ?) 
+       BUSY-ON-EXIT SSS NOT VECTORIZABLE ,    
+       WHEN THERE IS A DUMMY OUTER LOOP ?     
+ SSS = 14
+ ----- TEST NO.4 ----- DOUBLY NESTED          
+       CONFIRMATION OF TEST NO.3              
+       SIMPLER FORM OF BUSY-ON-EXIT (AND ALSO 
+       BUSY-ON-ENTRANCE ) DATA                
+       NOT VECTORIZABLE ?                     
+ SSS = 14
+
+ ----- TEST NO.5 ----- NO NEST                
+            CONFIRMATION OF TEST NO.4         
+            SIMPLEST POSSIBLE                 
+            FORM OF BUSY-ON-EXIT (AND ALSO    
+               BUSY-ON-ENTRANCE ) DATA        
+  WHY THIS IS VECTORIZABLE AND NOT TEST NO.4 ?
+ SSS = 14
+exit 0

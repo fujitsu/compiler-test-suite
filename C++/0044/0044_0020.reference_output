@@ -1,0 +1,6 @@
+Class.ctor() : 1, uncaught : false
+Class.ctor() : 2, uncaught : false
+Class.dtor() : 1, uncaught :  true
+my_terminate()  : uncaught :  true
+maybe ok, exitting...
+exit 0

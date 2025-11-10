@@ -1,0 +1,5 @@
+f()
+f() const
+f() volatile
+f() const volatile
+exit 0

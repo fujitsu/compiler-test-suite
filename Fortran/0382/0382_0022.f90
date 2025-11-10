@@ -43,7 +43,7 @@ if (any(lbound(v%b)/=[2]))print *,502
 deallocate(v%b)
 allocate(v%b,source=e(2,4))
 if (any(v%b/=['1','2','3']))print *,601,v%b
-if (any(lbound(v%b)/=[2]))print *,602
+if (any(lbound(v%b)/=[1]))print *,602
 deallocate(v%b)
 allocate(v%b,source=(c))
 if (any(v%b/=['1','2','3']))print *,1101,v%b

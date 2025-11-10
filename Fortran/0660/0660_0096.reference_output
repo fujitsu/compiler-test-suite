@@ -1,0 +1,22 @@
+ input data : code name
+ input data : code name
+ input data : code name
+ input data : code name
+ input data : code name
+ input data : code name
+ code       name 
+     10    john0  
+     11    john6  
+     12    john5  
+     13    john4  
+     15    john3  
+     17    john2  
+     19    john1  
+     21      johnf
+     22      johne
+     23      johnd
+     25      johnc
+     27      johnb
+     29      johna
+ pass
+exit 0

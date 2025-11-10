@@ -1,5 +1,3 @@
-llvm_singlesource_compile_only_file(0029_0009.cc PREFIX "Fujitsu-C++-")
-llvm_singlesource_compile_only_file(0029_0013.cc PREFIX "Fujitsu-C++-")
 llvm_singlesource_fujitsu(PREFIX "Fujitsu-C++-")
 set_property(SOURCE 0029_0014.cc APPEND PROPERTY COMPILE_OPTIONS "-finline-functions")
 set_property(SOURCE 0029_0015.cc APPEND PROPERTY COMPILE_OPTIONS "-finline-functions")

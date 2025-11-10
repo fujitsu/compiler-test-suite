@@ -1,0 +1,4 @@
+func1: OK
+func2: OK
+func3: OK
+exit 0

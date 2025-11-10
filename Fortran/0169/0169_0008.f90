@@ -6,7 +6,7 @@ module m
 contains
   subroutine sub
     integer:: a(101,102,103,9)
-    if (any(shape(a) /= [9, 101, 102, 103])) print *,101
+    if (any(shape(a) /= [101, 102, 103, 9])) print *,101
   end subroutine
 end
 

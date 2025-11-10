@@ -1,0 +1,8 @@
+  ****  (1) **** 
+     TEST FOR THE SIDE-EFFECT OF MINIMIZE 
+ DS01=71  DS02=402  I=11  J=11  
+  ***  (2) ***
+  RC  OR  RC   31 
+  RC AND  RC   12 
+  RC AND  EX   38 
+exit 0

@@ -1,0 +1,11 @@
+int: trivially_copyable
+int: trivial
+TrivialMoveCtor1: trivially_copyable
+TrivialMoveCtor1: trivial
+TrivialMoveCtor2: trivially_copyable
+TrivialMoveCtor2: trivial
+A: trivially_copyable
+A: not trivial
+B: trivially_copyable
+B: not trivial
+exit 0

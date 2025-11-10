@@ -1,7 +1,7 @@
 llvm_singlesource_fujitsu(PREFIX "Fujitsu-C-")
 set_property(SOURCE 0050_0000.c APPEND PROPERTY COMPILE_OPTIONS "-g;-fopenmp")
 set_property(TARGET Fujitsu-C-0050_0000 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
-set_property(SOURCE 0050_0001.c APPEND PROPERTY COMPILE_OPTIONS "-g;-fopenmp")
+set_property(SOURCE 0050_0001.c APPEND PROPERTY COMPILE_OPTIONS "-g;-fopenmp;-Wno-incompatible-pointer-types")
 set_property(TARGET Fujitsu-C-0050_0001 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
 set_property(SOURCE 0050_0002.c APPEND PROPERTY COMPILE_OPTIONS "-g;-fopenmp")
 set_property(TARGET Fujitsu-C-0050_0002 APPEND PROPERTY LINK_OPTIONS "-fopenmp")

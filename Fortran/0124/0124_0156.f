@@ -62,9 +62,9 @@
       program branch04
       integer,parameter :: N=50
       real,parameter    :: ANS=79.4400253
-      real,parameter    :: G  = 0.0000003
+      real,parameter    :: G  = 0.00003
       real,parameter    :: EANS=78.7200165
-      real,parameter    :: EG  = 0.0000005
+      real,parameter    :: EG  = 0.00005
       real,dimension(1:N) :: x,y
       real res
 

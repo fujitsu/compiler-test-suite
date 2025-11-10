@@ -1,0 +1,6 @@
+C1 member_func
+C1 member_class hello
+C1 member_enum = typeB
+C1 static_data_member = 100
+C1 member_template hello
+exit 0

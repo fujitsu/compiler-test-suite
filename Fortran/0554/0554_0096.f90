@@ -10,8 +10,8 @@ integer::k= kind((4_4 ** (3.0_8 , 3.0_8)))
 c = 4_4
 d = ((3.0_8 , 3.0_8))
 
-print *,b ,"--",(c ** d)
 if (EQUAL_CHECK(b,(c ** d))) then
+ print *,b ,"--",(c ** d)
  print *,'??? (Error:) ???'
 else
  print*, " OK"
