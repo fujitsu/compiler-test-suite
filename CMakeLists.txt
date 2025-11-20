@@ -24,26 +24,38 @@ endfunction()
 # well handle per-test FP_TOLERANCE, FP_ABSTOLERANCE, and FP_IGNOREWHITESPACE
 # settings, which control options for the `fpcmp` command.
 #
-# If the value of the TEST_SUITE_FUJITSU_WITH_FAST_MATH variable is true and
-# the fastmath.cmake file exists in the current directory, this function
-# reads the file and calls llvm_singlesource with per-test `FP_*` settings.
+# If the fpconfig.cmake file exists in the current directory, this function
+# reads the file. In addition, if the value of the
+# TEST_SUITE_FUJITSU_WITH_FAST_MATH variable is true and the fastmath.cmake
+# file exists in the current directory, this function reads the file.
+# Then, this function calls llvm_singlesource with per-test `FP_*` settings.
 # Otherwise, this function simply calls llvm_singlesource.
 #
-# The fastmath.cmake file can set FP_TOLERANCE, FP_ABSTOLERANCE, or
-# FP_IGNOREWHITESPACE settings for each test by prefixing the base name of
-# the test and `-`. For example, if you want to set 1.0e-12 to FP_TOLERANCE
-# for a test program 0123_4567.c, put `set(0123_4567-FP_TOLERANCE 1.0e-12)`.
+# These files can set FP_TOLERANCE, FP_ABSTOLERANCE, or FP_IGNOREWHITESPACE
+# settings for each test by prefixing the base name of the test and `-`.
+# For example, if you want to set 1.0e-12 to FP_TOLERANCE for a test program
+# 0123_4567.c, put `set(0123_4567-FP_TOLERANCE 1.0e-12)`.
 #
 # Arguments for this function is same as those for llvm_singlesource.
 function(llvm_singlesource_fujitsu)
-  if(NOT TEST_SUITE_FUJITSU_WITH_FAST_MATH OR
-     NOT EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/fastmath.cmake)
+  if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/fpconfig.cmake)
+    list(APPEND fp_config_files ./fpconfig.cmake)
+  endif()
+  if(TEST_SUITE_FUJITSU_WITH_FAST_MATH AND
+     EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/fastmath.cmake)
+    list(APPEND fp_config_files ./fastmath.cmake)
+  endif()
+
+  if(NOT fp_config_files)
     llvm_singlesource(${ARGV})
     return()
   endif()
 
-  # Read the fastmath.cmake file, which sets per-test `FP_*` settings.
-  include(./fastmath.cmake)
+  # Read the fpconfig.cmake and fastmath.cmake files, which set per-test
+  # `FP_*` settings.
+  foreach(fp_config_file IN LISTS fp_config_files)
+    include(${fp_config_file})
+  endforeach()
 
   # Save the default `FP_*` values.
   set(fp_config_names FP_TOLERANCE FP_ABSTOLERANCE FP_IGNOREWHITESPACE)
@@ -167,14 +179,21 @@ option(TEST_SUITE_FUJITSU_FORCE_UNSUPPORTED_PLATFORM
   "Force to enable the Fujitsu Compiler Test Suite on unsupported platforms. Currently only Linux/AArch64 is supported."
   OFF)
 
+set(TEST_SUITE_FP_TOLERANCE_FP64 0x1.0p-51 CACHE STRING
+    "Default relative tolerance for IEEE 754 binary64 (double-precision floating-point) arithmetic. This value is used by the fpcmp command. (default: 2 ULPs for IEEE 754 binary64)")
+set(TEST_SUITE_FP_TOLERANCE_FP32 0x1.0p-22 CACHE STRING
+    "Default relative tolerance for IEEE 754 binary32 (single-precision floating-point) arithmetic. This value is used by the fpcmp command. (default: 2 ULPs for IEEE 754 binary32)")
+set(TEST_SUITE_FP_TOLERANCE_FP64_FAST_MATH 1.0e-14 CACHE STRING
+    "Default relative tolerance for IEEE 754 binary64 (double-precision floating-point) fast-math arithmetic. This value is used by the fpcmp command when TEST_SUITE_FUJITSU_WITH_FAST_MATH is ON.")
+
 # Set the default relative tolerance for the `fpcmp` command.
 if(TEST_SUITE_FUJITSU_WITH_FAST_MATH)
   # If the value of the TEST_SUITE_FUJITSU_WITH_FAST_MATH variable is true,
   # relatively large tolerance.
-  set(FP_TOLERANCE 1.0e-14)
+  set(FP_TOLERANCE ${TEST_SUITE_FP_TOLERANCE_FP64_FAST_MATH})
 else()
-  # Otherwise, 2 ULPs for IEEE 754 binary64 (double-precision floating-point).
-  set(FP_TOLERANCE 0x2.0p-52)
+  # Otherwise, the default value for IEEE 754 binary64 (double-precision).
+  set(FP_TOLERANCE ${TEST_SUITE_FP_TOLERANCE_FP64})
 endif()
 
 # Most test programs in this test suite will be able to run on many
