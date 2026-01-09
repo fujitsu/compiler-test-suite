@@ -171,6 +171,9 @@ function(llvm_multisource_compile_only target)
   llvm_test_executable_no_test(${target} ${sources})
 endfunction()
 
+set(TEST_SUITE_FUJITSU_TEST_LANG "C;C++;Fortran" CACHE STRING
+    "List of programming languages to test in the Fujitsu Compiler Test Suite (default: \"C;C++;Fortran\")")
+
 option(TEST_SUITE_FUJITSU_WITH_FAST_MATH
   "Enable special configurations for fast-math. If you use the -ffath-math compiler flag, this option should be set. Side effects by fast-math, like precision errors of floating-point arithmetic, can be absorbed."
   OFF)
@@ -203,14 +206,18 @@ endif()
 # Linux/AArch64.
 if(LINUX OR TEST_SUITE_FUJITSU_FORCE_UNSUPPORTED_PLATFORM)
   if(ARCH STREQUAL "AArch64" OR TEST_SUITE_FUJITSU_FORCE_UNSUPPORTED_PLATFORM)
-    add_subdirectory(C)
-    add_subdirectory(C++)
-    if(TEST_SUITE_FORTRAN)
-      # CMake supports LLVM Flang since 3.24.0 and supports `.f03` and `.f08`
-      # filename suffixes since 3.27.0.
-      cmake_minimum_required(VERSION 3.27.0)
-      add_subdirectory(Fortran)
-    endif()
+    foreach(lang ${TEST_SUITE_FUJITSU_TEST_LANG})
+      if(lang STREQUAL "Fortran")
+        if(TEST_SUITE_FORTRAN)
+          # CMake supports LLVM Flang since 3.24.0 and supports
+          # `.f03` and `.f08` filename suffixes since 3.27.0.
+          cmake_minimum_required(VERSION 3.27.0)
+        else()
+          continue()
+        endif()
+      endif()
+      add_subdirectory(${lang})
+    endforeach()
     file(COPY lit.local.cfg DESTINATION "${CMAKE_CURRENT_BINARY_DIR}")
   endif()
 endif()

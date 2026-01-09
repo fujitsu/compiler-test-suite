@@ -50,13 +50,15 @@ There are two important options for the Fujitsu Compiler Test Suite.
 - **`-DTEST_SUITE_FORTRAN=ON`**  
   This option activates Fortran tests. If not specified, only C/C++ tests are run.
 
-There are two options specific to the Fujitsu Compiler Test Suite.
+There are three options specific to the Fujitsu Compiler Test Suite.
 
 - **`-DTEST_SUITE_FUJITSU_WITH_FAST_MATH=ON`**  
   If you compile tests with the `-ffast-math` option, specify this option.  
   The `-ffast-math` option introduces precision errors in floating-point arithmetic. This can result in false positive FAILs when comparing computation results with expected values. This option sets tolerances used by [the `fpcmp` tool](https://github.com/llvm/llvm-test-suite/blob/main/tools/fpcmp.c).  
   This option is not perfect. False positive FAILs can still occur due to legitimate precision errors that exceed the pre-configured tolerances.
-
+- **`-DTEST_SUITE_FUJITSU_TEST_LANG=...`**  
+  The Fujitsu Compiler Test Suite consists of test programs written in C, C++, and Fortran. By default, if `TEST_SUITE_FORTRAN` (see above) is `OFF`, C/C++ tests are run. If `TEST_SUITE_FORTRAN` is `ON`, C/C++/Fortran tests are run.  
+  By setting this option, you can select the language to run. The value is a semicolon-separated list of `C`, `C++`, and `Fortran`. For example, if `-DTEST_SUITE_FUJITSU_TEST_LANG=C++;Fortran` is specified, only C++/Fortran tests are run. In this case, setting `TEST_SUITE_FORTRAN` is still needed.
 - **`-DTEST_SUITE_FUJITSU_FORCE_UNSUPPORTED_PLATFORM=ON`**  
   The Fujitsu Compiler Test Suite itself is tested only on Linux/AArch64 and is only activated on that platform by default. If you want to try it on another platform, specify this option.
 
