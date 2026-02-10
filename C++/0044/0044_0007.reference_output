@@ -1,0 +1,7 @@
+set my_unexpected_1()
+throw 1
+set my_unexpected_2()
+my_unexpected_2() : ok
+terminate called after throwing an instance of 'int'
+custom abort() returns by longjmp()...
+exit 0

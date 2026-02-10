@@ -10,5 +10,6 @@ stop 2
 30 a = a+3
 if(a.ne.3) print *,'err'
 print *,'pass'
-stop 3
+!stop 3
+stop 3,quiet=.true.
 end

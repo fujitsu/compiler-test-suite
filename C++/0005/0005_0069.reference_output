@@ -1,0 +1,3 @@
+-- parallel do firstprivate(mii, mrr, mcc, mss) -- 
+OK 
+exit 0

@@ -46,7 +46,7 @@ end type
 type(y)::v
 type(x)::z
 call= s1(v%p,0,z)
-call= s1(  kk=0,vv=z)
+call= s1(null(),  kk=0,vv=z)
 allocate(v%p(3),source=c)
 call= s1(v%p,1,z)
 if (any(v%p/=c)) print *,301

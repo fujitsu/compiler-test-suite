@@ -11,7 +11,7 @@ end module
 
 use m
 type ty
-   procedure(),pointer,nopass:: ptr1
+   procedure(real),pointer,nopass:: ptr1
 end type
 
 type tty

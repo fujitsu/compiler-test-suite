@@ -3,7 +3,8 @@
       end
 
       subroutine sub(n)  
-      integer ia,ib,ic
+      integer ia,ic
+      integer,target :: ib
       pointer (ip,ia),(ip,ic)
       ip=loc(ib)
       ib=2

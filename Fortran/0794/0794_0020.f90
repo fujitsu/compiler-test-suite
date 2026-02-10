@@ -1,5 +1,6 @@
 module test
 implicit character*100(p)
+  character(100)::p
   procedure(),pointer:: p=> null()
 end
 module m1

@@ -40,7 +40,7 @@ C
       ANS =7654.3E 10
       RST =Z3(2,1)
       CALL SUB3(ANS,RST,ITM)
-      STOP 1234
+      STOP 1234,quiet=.true.
       END
       SUBROUTINE SUB1(ITM)
       COMMON TT(10)/BCK2/S(6)/BCK3/W(3,3)

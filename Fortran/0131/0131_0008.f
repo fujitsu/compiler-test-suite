@@ -4,7 +4,7 @@
       integer*4  ans( 10), cal( 10), nn
       data ans  / 100,   0,   0,   0,   0,   0,   0,   0,   0,   0/
       parameter (nn=1)
-
+      
       call sort1(m1, m2)
       call sort2( m1 )
       sum=0
@@ -41,6 +41,7 @@
       subroutine init( m1 )
       integer*4  m1(2,100)
       integer*4  i, n, rand
+      external::rand,srand
       do 100 i=1, 100
         m1(1,i)=i
         m1(2,i)=0

@@ -10,7 +10,7 @@
       IF (IFUN().EQ.1 .OR. I(2).EQ.IFUN() .OR. A.EQ.I(2) .OR.
      1  A.EQ.L .OR. I(2).EQ.A) THEN
       PRINT *,'PASS'
-      STOP 'PASS'
+      STOP 'PASS',quiet=.true.
       ENDIF
       STOP 'ERROR'
       END

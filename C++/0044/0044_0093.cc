@@ -14,6 +14,7 @@ void Func() noexcept(false) {
   throw 1.0;
 }
 int main() {
+  setvbuf(stdout, NULL, _IONBF, 0);
   if (!setjmp(env))
     Func();
   else

@@ -1,0 +1,6 @@
+Class. ctor() : 1
+Class. dtor() : 1
+terminate called after throwing an instance of 'int'
+custom abort() returns by longjmp()...
+ok
+exit 0

@@ -1,5 +1,6 @@
       program main
-      integer i,j,of0
+      integer, target :: i
+      integer j,of0
       integer*8  p
       pointer(p, of0)
       integer a(10)

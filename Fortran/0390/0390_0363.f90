@@ -36,7 +36,7 @@ end type
 type(z),pointer::y
 allocate(y)
 call s1(y%p,0)
-call s1(  kk=0)
+call s1(null(),  kk=0)
 allocate(y%p(3),source=c)
 call s1(y%p,1)
 if (any(y%p/=c+1)) print *,301

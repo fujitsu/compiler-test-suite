@@ -19,5 +19,5 @@
       IF (.NOT.I.LT.2.AND..NOT.I.LT.2)STOP 'ERROR-17'
       IF (.NOT.I.LE.1.AND..NOT.I.LE.1)STOP 'ERROR-18'
       PRINT *,'PASS'
-      STOP 'OK'
+      STOP 'OK',quiet=.true.
       END

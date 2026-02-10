@@ -64,7 +64,7 @@ function mul(a,b)
  type(inherit2),intent(in) :: a
  type(inherit2),intent(in) :: b
  class(base),pointer :: mul
- type(inherit2),target :: mtgt
+ type(inherit2),target,save :: mtgt
 
    mtgt%i1= a%i1 + b%i1
    mtgt%i2= a%i2 + b%i2

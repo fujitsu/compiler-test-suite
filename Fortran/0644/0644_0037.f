@@ -20,5 +20,5 @@
         s4=s2
         s5=s3
         print *,s1,s2,s3,s4,s5
-        stop '--exit sub'
+        stop '--exit sub',quiet=.true.
         end

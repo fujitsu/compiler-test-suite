@@ -9,7 +9,7 @@ if (ks2(a,b,n)/=1) print *,102
 end subroutine
 subroutine ss2(x1,x2,n)
 integer,optional           ::x1(2),x2(6)
-if (n==0) then
+if (n==8) then
  if (present(x1)) print *,611
  if (present(x2)) print *,612
 endif
@@ -71,13 +71,13 @@ p1=>t1
 p2=>t2
 ip1=loc(t1)
 ip2=loc(t2)
-call s1(n=0)
+call s1(null(),null(),n=8)
 call s1(p1,p2,3)
-call s1(p1,n=1)
-call s1(b=p2,n=2)
+call s1(p1,null(),n=1)
+call s1(null(),b=p2,n=2)
 p1=>null()
 p2=>null()
-call s1(p1,p2,n=0)
+call s1(p1,p2,n=8)
 p1=>t1
 call s1(p1,p2,n=1)
 p1=>null()
@@ -85,8 +85,8 @@ p2=>t2
 call s1(p1,b=p2,n=2)
 p1=>null()
 p2=>null()
-call s1(b=p2,n=0)
-call s1(p1  ,n=0)
+call s1(null(),b=p2,n=0)
+call s1(p1  ,null(),n=0)
 print *,'pass'
 end
 

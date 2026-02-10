@@ -16,7 +16,7 @@ print *,'pass'
 contains
 
 subroutine sub(a,b)
-type(xdef),dimension(:)::a,b
+type(xdef),dimension(:),target::a,b
 integer :: i
 write(20,*) a(1),a(2),a(3),a(4),a(5)
 do i=2,5

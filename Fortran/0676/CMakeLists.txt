@@ -1,3 +1,7 @@
 llvm_singlesource_compile_only_file(0676_0204.f PREFIX "Fujitsu-Fortran-")
 llvm_singlesource_fujitsu(PREFIX "Fujitsu-Fortran-")
 llvm_set_own_fortran_module_directory()
+set_property(SOURCE 0676_0085.f90 APPEND PROPERTY COMPILE_OPTIONS "-fno-lto")
+set_property(TARGET Fujitsu-Fortran-0676_0085 APPEND PROPERTY LINK_OPTIONS "-fno-lto")
+set_property(SOURCE 0676_0104.f90 APPEND PROPERTY COMPILE_OPTIONS "-fno-lto")
+set_property(TARGET Fujitsu-Fortran-0676_0104 APPEND PROPERTY LINK_OPTIONS "-fno-lto")

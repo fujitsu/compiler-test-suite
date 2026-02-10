@@ -1,4 +1,4 @@
-call sub((NULL()))
+call sub(NULL())
 print*,"pass"
 contains
 subroutine sub(a)

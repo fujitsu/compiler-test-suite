@@ -32,6 +32,7 @@ void Func() {
   }
 }
 int main() {
+  setvbuf(stdout, NULL, _IONBF, 0);
   if (!setjmp(env))
     Func();
 }

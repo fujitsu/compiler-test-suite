@@ -1,0 +1,6 @@
+Class.ctor()  :   1, uncaught : false
+Class.dtor()  :   1, uncaught :  true
+terminate called without an active exception
+custom abort() returns by longjmp()...
+ok
+exit 0

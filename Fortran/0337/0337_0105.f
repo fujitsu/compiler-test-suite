@@ -137,5 +137,5 @@
       N=43
       GO TO 699
     3 CONTINUE
-      STOP 7373
+      STOP 7373,quiet=.true.
       END

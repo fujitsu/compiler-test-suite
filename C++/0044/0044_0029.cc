@@ -37,6 +37,7 @@ void Func() {
   throw 1.0;
 }
 int main() {
+  setvbuf(stdout, NULL, _IONBF, 0);
   std::set_unexpected(my_unexpected);
   if (0==setjmp(env))
     try {

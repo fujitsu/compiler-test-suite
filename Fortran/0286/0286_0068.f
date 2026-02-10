@@ -10,6 +10,8 @@
 	real*4 datas(10),t1,t0
 	real*8 ans(10,10),outline,ans2,ans1
 	integer*8 ians1,ians2
+	logical isnan_real8
+	logical nan1, nan2
 	equivalence(ans1,ians1)
 	equivalence(ans2,ians2)
 	call init
@@ -24,10 +26,11 @@
 	do j=1,10
         ans2 = outline(datas(i),datas(j))
 	ans1 = ans(i,j)
+	nan1 = isnan_real8(ans1)
+	nan2 = isnan_real8(ans2)
 	if( ians1 .ne. ians2 ) then
 !
-        if( i==2 .and. j==1 ) cycle
-        if( i==1 .and. j==2 ) cycle
+	  if ( nan1 .and. nan2 ) cycle
 	print *,"(",i,",",j,")",datas(i),"*",datas(j),"=",ans(i,j),ans2
 	print 2,datas(i)
 	print 2,datas(j)
@@ -67,3 +70,9 @@
 	datas(9) = -one
 	datas(10) = one
 	end
+!
+      logical function isnan_real8(x)
+      real*8 x
+        isnan_real8 = (x .ne. x)
+        return
+      end

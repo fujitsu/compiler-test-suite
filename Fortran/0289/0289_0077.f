@@ -4,7 +4,8 @@
       end
 
       subroutine come
-        integer a,b,c,dummy
+        integer, target :: a
+        integer b,c,dummy
         pointer (aa,dummy)
         call sub(aa,a,100)
         aa=loc(a)

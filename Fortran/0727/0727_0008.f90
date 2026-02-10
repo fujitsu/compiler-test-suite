@@ -11,7 +11,7 @@ end interface
 contains
 elemental function ifunc02(i)
 character(len=*) i
-character(len=len(i//'a')) ifunc02
+character(len=len(i)+1) ifunc02
 intent(in) :: i
 ifunc02=i(1:2)//'z'//i(3:3)
 end function
@@ -50,7 +50,7 @@ if (any(ia.ne.(/'12z5','22z6','33z3'/))) write(6,*) "NG"
 contains 
 elemental function ifunc02(i)
 character(len=*) i
-character(len=len(i//'a')) ifunc02
+character(len=len(i)+1) ifunc02
 intent(in) :: i
 ifunc02=i(1:2)//'z'//i(3:3)
 end function
@@ -65,7 +65,7 @@ subroutine test03()
 interface
 elemental function ifunc02(i)
 character(len=*) i
-character(len=len(i//'a')) ifunc02
+character(len=len(i)+1) ifunc02
 intent(in) :: i
 end function
 elemental function ifunc03(i)
@@ -83,7 +83,7 @@ if (any(ia.ne.(/'12z5','22z6','33z3'/))) write(6,*) "NG"
 end
 elemental function ifunc02(i)
 character(len=*) i
-character(len=len(i//'a')) ifunc02
+character(len=len(i)+1) ifunc02
 intent(in) :: i
 ifunc02=i(1:2)//'z'//i(3:3)
 end function

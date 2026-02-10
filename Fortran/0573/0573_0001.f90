@@ -1,7 +1,7 @@
 integer,allocatable::a
 call sub(NULL())
 call sub(NULL(a))
-call sub((NULL()))
+call sub(NULL())
 print*,"pass"
 contains
 subroutine sub(a)

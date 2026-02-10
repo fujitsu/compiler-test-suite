@@ -46,5 +46,5 @@
          close(10,status='delete')
          close(20,status='delete')
          write(6,*) ' test          end   '
-         stop ' test         end '
+         stop ' test         end ',quiet=.true.
          end

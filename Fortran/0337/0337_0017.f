@@ -14,5 +14,5 @@ C
    50 JANS=7
       WRITE(6,102)
       WRITE(6,103)
-      STOP 4567
+      STOP 4567,quiet=.true.
       END

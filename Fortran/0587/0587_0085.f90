@@ -6,7 +6,7 @@ contains
   end subroutine
 
  function fun( A, B, C )
- INTEGER A, B,C,fun
+ INTEGER A, B,C,fun,r1
 
  ENTRY E1( A, B, C )
  E1=A+B+C
@@ -20,7 +20,7 @@ contains
    d=d+5
   end subroutine
 function fun2( A, B, C )
- INTEGER A, B,C,fun
+ INTEGER A, B,C,fun2,e2
 
  ENTRY E2( A, B, C )
  E2=A+B-C
@@ -37,7 +37,7 @@ use m1
       procedure(s1),pointer,nopass :: ptr3=>s2
       procedure(E1),pointer,nopass:: ptr4=>E1
       procedure(E2),pointer,nopass:: ptr5=>E2
-      procedure(),pointer,nopass:: ptr6=>E2
+      procedure(integer),pointer,nopass:: ptr6=>E2
  end type
   type(ty)::obj
 end

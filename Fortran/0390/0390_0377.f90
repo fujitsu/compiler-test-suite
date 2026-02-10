@@ -26,7 +26,7 @@ end subroutine
 subroutine s0
 integer,allocatable ::p
 call s1(p,0)
-call s1(  kk=0)
+call s1(null(),  kk=0)
 allocate(p,source=c)
 call s1(p,1)
 if ((p/=c)) print *,301

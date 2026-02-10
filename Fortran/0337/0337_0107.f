@@ -130,5 +130,5 @@
       N=54
       GO TO 11
     7 CONTINUE
-      STOP 1234
+      STOP 1234,quiet=.true.
       END

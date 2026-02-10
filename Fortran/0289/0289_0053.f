@@ -1,5 +1,6 @@
        program main
-        integer a,b,c,d,e,r(10),i,rd(10),x,y,z
+        integer a,b,c,d,e,r(10),rd(10),x,y,z
+        integer, target :: i
         data r/0,1,2,3,4,5,6,7,8,9/
         data i/1/
         data rd/5,11,17,23,29,5,6,7,8,9/

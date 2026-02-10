@@ -24,6 +24,7 @@ do       n2=1,3
 end do     
 end
 integer a1(3,2,4),a2(3,2,4)
+call omp_set_num_threads (1)
 a1=0;a2=0
 call s1(a1,0)
 call s2(a2)

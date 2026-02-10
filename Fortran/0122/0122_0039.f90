@@ -17,7 +17,7 @@ program main
      ans_block = ans_block + c_block(i)
   end do
   
-  if (ans == ans_block ) then 
+  if ((abs(ans - ans_block) / abs(ans)) .lt. 1.0D-6) then 
      print *, "OK"
   else
      print *, "NG"

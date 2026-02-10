@@ -77,7 +77,7 @@ function mul(a,b)
  class(base),pointer,intent(in) :: a(:)
  class(inherit1),pointer,intent(in) :: b(:)
  class(base),pointer :: mul(:)
- type(inherit2),target :: mtgt(5)
+ type(inherit2),target,save :: mtgt(5)
 
  SELECT TYPE(a)
   TYPE IS(base)

@@ -1,6 +1,7 @@
       PROGRAM MAIN
       IMPLICIT INTEGER*4(G)
-      INTEGER*4 G,G5
+      INTEGER*4, TARGET :: G
+      INTEGER*4 G5
       type z
         integer::i=-2
         integer::j=-1

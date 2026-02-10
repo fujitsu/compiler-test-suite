@@ -19,6 +19,7 @@ end subroutine
 subroutine t(e)
 external            ::e
 optional::e
+pointer::e
 if (present(e))print *,'error-02'
 end subroutine
 end

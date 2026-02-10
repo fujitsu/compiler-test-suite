@@ -1,4 +1,4 @@
-integer u
+integer, target :: u
 volatile i
 pointer(i,ip)
 i = loc(u)

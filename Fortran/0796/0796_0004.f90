@@ -3,13 +3,13 @@ implicit integer(p)
 integer::p01
        procedure()        :: p01
        pointer        :: p01
-       procedure()        :: p11
+       procedure(integer)        :: p11
        pointer        :: p11
        pointer        :: p02
-       procedure()        :: p02
+       procedure(integer)        :: p02
        pointer        :: p12
-       procedure()        :: p12
-       procedure(),pointer:: p03
+       procedure(integer)        :: p12
+       procedure(integer),pointer:: p03
        procedure(),pointer:: p13
 integer::p13
 end

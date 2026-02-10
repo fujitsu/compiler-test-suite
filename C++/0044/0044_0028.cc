@@ -32,6 +32,7 @@ public:
   }
 };
 int main() {
+  setvbuf(stdout, NULL, _IONBF, 0);
   std::set_unexpected(my_unexpected);
   if      (0==setjmp(env))
     std::unexpected();

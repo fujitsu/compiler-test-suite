@@ -10,7 +10,7 @@ print *,'pass'
 contains
 
 subroutine sub(a,b)
-character,dimension(:)::a,b
+character,dimension(:),target::a,b
 integer :: i
 write(19,*) a(1),a(2),a(3),a(4),a(5)
 do i=1,5

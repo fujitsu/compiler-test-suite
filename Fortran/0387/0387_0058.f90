@@ -2,7 +2,7 @@ module m1
  contains
   subroutine s03()
    type ty1
-    procedure(), pointer, nopass :: pp
+    procedure(real), pointer, nopass :: pp
    end type
    type (ty1) :: tt
    external   :: f,x

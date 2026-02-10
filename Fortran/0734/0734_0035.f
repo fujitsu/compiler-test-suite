@@ -1,3 +1,4 @@
+      target k
       pointer(i,j)
       i=loc(k)
       j=1

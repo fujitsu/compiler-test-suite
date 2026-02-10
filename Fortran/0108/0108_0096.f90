@@ -1,9 +1,9 @@
 program main
 integer,parameter :: N=100
-real(kind=4),parameter :: val=1._4
-real(kind=4),dimension(1:N)         :: a1,b1
-real(kind=4),dimension(1:N,1:N)     :: a2,b2
-real(kind=4),dimension(1:N,1:N,1:N) :: a3,b3
+real(kind=8),parameter :: val=1._8
+real(kind=8),dimension(1:N)         :: a1,b1
+real(kind=8),dimension(1:N,1:N)     :: a2,b2
+real(kind=8),dimension(1:N,1:N,1:N) :: a3,b3
 
 a1 = val
 b1 = val

@@ -40,7 +40,7 @@ integer,allocatable ::p
 end type
 type(z)::y
 call= s1(y%p,0)
-call= s1(  kk=0)
+call= s1(null(),  kk=0)
 allocate(y%p,source=c)
 call= s1(y%p,1)
 if ((y%p/=c+1)) print *,301

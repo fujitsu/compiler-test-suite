@@ -104,20 +104,23 @@ integer,pointer ::p2(:)=>null()
 integer,pointer ::p3(:)=>null()
 end type
 type(y),pointer:: z
+integer,pointer ::x1(:)=>null()
+integer,pointer ::x2(:)=>null()
+integer,pointer ::x3(:)=>null()
 allocate(z)
 call s1(z%p1,z%p2,z%p3,kk1=0,kk2=0,kk3=0)
-call s1(         kk1=0,kk2=0,kk3=0)
+call s1(x1,x2,x3,         kk1=0,kk2=0,kk3=0)
 allocate(z%p1(3),source=c)
 call s1(z%p1,z%p2,p3=z%p3,kk1=1,kk2=0,kk3=0)
 if (any(z%p1/=c+1)) print *,301
 allocate(z%p1(3),source=c)
-call s1(p1=z%p1      ,kk1=1,kk2=0,kk3=0)
+call s1(p2=x2,p3=x3,p1=z%p1      ,kk1=1,kk2=0,kk3=0)
 if (any(z%p1/=c+1)) print *,301
 allocate(z%p2(3),source=c)
-call s1(p2=z%p2      ,kk1=0,kk2=1,kk3=0)
+call s1(x1,p3=x3,p2=z%p2      ,kk1=0,kk2=1,kk3=0)
 if (any(z%p2/=c+1)) print *,301
 allocate(z%p3(3),source=c)
-call s1(p3=z%p3      ,kk1=0,kk2=0,kk3=1)
+call s1(x1,x2,p3=z%p3      ,kk1=0,kk2=0,kk3=1)
 if (any(z%p3/=c+1)) print *,301
 z%p1=>null()
 z%p2=>null()

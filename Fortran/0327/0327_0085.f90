@@ -1,7 +1,7 @@
 module m
 contains
 subroutine sub(a,b)
-integer,dimension(:)::a,b
+integer,dimension(:),target::a,b
 integer :: i
 print *,a(1),a(2),a(3),a(4),a(5)
 entry ent(a,b)

@@ -193,5 +193,5 @@ C
       GO TO 611
    41 WRITE(6,103)ITM,L(8*N+10,4*N-3),JANS
   611 CONTINUE
-      STOP 7777
+      STOP 7777,quiet=.true.
       END

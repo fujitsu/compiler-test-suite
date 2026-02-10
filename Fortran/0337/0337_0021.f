@@ -137,7 +137,7 @@ C
       GO TO 509
    20 WRITE(6,103)ITM
   509 CONTINUE
-      STOP 1234
+      STOP 1234,quiet=.true.
       END
       SUBROUTINE SUB(M,K)
       M=M+3*K

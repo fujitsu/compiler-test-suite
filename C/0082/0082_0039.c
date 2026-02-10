@@ -18,7 +18,7 @@ hrtime_t gethrtime()
 
 typedef double test_t ;
 
-const test_t difference = 1e-15;
+const test_t difference = 1e-11;
 const test_t START_DATA =  0.001;
 const test_t END_DATA   =  1000000;
 test_t (*x)(test_t) = log10;

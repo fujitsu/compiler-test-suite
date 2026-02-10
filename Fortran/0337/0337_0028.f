@@ -25,7 +25,7 @@ C
       GO TO 501
     4 WRITE(6,103)ITM
   501 CONTINUE
-      STOP 3124
+      STOP 3124,quiet=.true.
       END
       SUBROUTINE SUB1
       DIMENSION Y(3)

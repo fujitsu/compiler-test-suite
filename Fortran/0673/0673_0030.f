@@ -166,7 +166,7 @@
   310 continue
       write(6,222) item
       close(unit=dsrn,status='delete')
-      stop '*** test end ***'
+      stop '*** test end ***',quiet=.true.
   111 format(1h ,9x,'item(',i2,') *** error ***',/(1h ,9x,30i4))
   222 format(1h ,9x,'item(',i2,') *** ok ***')
   333 format(1h ,9x,'item(',i2,') *** error ***',/(1h ,9x,15i4))

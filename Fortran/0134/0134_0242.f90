@@ -28,9 +28,10 @@ end subroutine
 
 subroutine q(p,k)
 interface 
- subroutine p
+ subroutine s
  end subroutine 
 end interface
+procedure(s),pointer::p
 optional::p
 integer n
 common /x/ n

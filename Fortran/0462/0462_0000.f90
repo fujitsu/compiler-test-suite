@@ -1,6 +1,6 @@
     module mod
       real ,dimension(10) :: var
-      real ,dimension(20) :: array
+      real ,dimension(20) ,target :: array
        pointer (ptr,var)
       end
 

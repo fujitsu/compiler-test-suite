@@ -8,7 +8,8 @@ module m1
       if (present(x)) print *,101
     end subroutine
     function f() result(r)
-      integer,allocatable::r
+      integer,pointer::r
+      r=>null()
     end function
 end
 subroutine s

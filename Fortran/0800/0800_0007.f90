@@ -1,5 +1,5 @@
          module m
-         procedure(),pointer :: test
+         procedure(real),pointer :: test
          integer::n=0
          end module m
 

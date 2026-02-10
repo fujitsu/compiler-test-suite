@@ -4,7 +4,7 @@ call sub(x(1:5),x(5:9))
 contains
 
 subroutine sub(a,b)
-character,dimension(*)::a,b
+character,dimension(*),target::a,b
 integer :: i
 
 do i=1,5

@@ -67,14 +67,15 @@ use m1
 integer,target  ::t1(2)=[1,2]
 integer,target  ::t2(2,1,3)=reshape([1,2,3,4,5,6],[2,1,3])
 integer,pointer::p1(:),p2(:,:,:)
+integer,pointer::x1(:)=>null(),x2(:,:,:)=>null()
 p1=>t1
 p2=>t2
 ip1=loc(t1)
 ip2=loc(t2)
-call s1(n=0)
+call s1(x1,x2,n=0)
 call s1(p1,p2,3)
-call s1(p1,n=1)
-call s1(b=p2,n=2)
+call s1(p1,x2,n=1)
+call s1(x1,b=p2,n=2)
 p1=>null()
 p2=>null()
 call s1(p1,p2,n=0)
@@ -85,8 +86,8 @@ p2=>t2
 call s1(p1,b=p2,n=2)
 p1=>null()
 p2=>null()
-call s1(b=p2,n=0)
-call s1(p1  ,n=0)
+call s1(x1,b=p2,n=0)
+call s1(p1,x2  ,n=0)
 print *,'pass'
 end
 

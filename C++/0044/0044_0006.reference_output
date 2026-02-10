@@ -1,0 +1,6 @@
+Class.ctor() : 1, uncaught : false
+Class.ctor() : 2, uncaught : false
+terminate called after throwing an instance of 'Class'
+custom abort() returns by longjmp()...
+ok
+exit 0

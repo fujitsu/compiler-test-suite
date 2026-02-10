@@ -1,7 +1,7 @@
 module m
 type  ty
  character(len=2),pointer::ccptr
- procedure() ,nopass,pointer ::p5
+ procedure(real) ,nopass,pointer ::p5
 end type
 character(len=5),target::ctrg(2,2)=transpose(reshape(["111","222","333","444"],shape(ctrg)))
 character(len=2),target::ctrg2= "11"

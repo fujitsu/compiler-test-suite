@@ -97,25 +97,25 @@ if (call/=0) print *,1
 end function
 function s0() &
 result(r)
-integer,allocatable ::p1
+integer,allocatable ::p1,x1,x2,x3
 integer,allocatable ::p2
 integer,allocatable ::p3
 call= s1(p1,p2,p3,kk1=0,kk2=0,kk3=0)
-call= s1(         kk1=0,kk2=0,kk3=0)
+call= s1(x1,x2,x3,         kk1=0,kk2=0,kk3=0)
 allocate(p1,source=c)
 call= s1(p1=p1,p2=p2,p3=p3,kk1=1,kk2=0,kk3=0)
 if ((p1/=c+1)) print *,301
 if (allocated(p1))deallocate(p1)
 allocate(p1,source=c)
-call= s1(p1=p1      ,kk1=1,kk2=0,kk3=0)
+call= s1(p2=x2,p3=x3,p1=p1      ,kk1=1,kk2=0,kk3=0)
 if ((p1/=c+1)) print *,301
 if (allocated(p2))deallocate(p1)
 allocate(p2,source=c)
-call= s1(p2=p2      ,kk1=0,kk2=1,kk3=0)
+call= s1(x1,p3=x3,p2=p2      ,kk1=0,kk2=1,kk3=0)
 if ((p2/=c+1)) print *,301
 if (allocated(p3))deallocate(p1)
 allocate(p3,source=c)
-call= s1(p3=p3      ,kk1=0,kk2=0,kk3=1)
+call= s1(x1,x2,p3=p3      ,kk1=0,kk2=0,kk3=1)
 if ((p3/=c+1)) print *,301
 if (allocated(p1))deallocate(p1)
 if (allocated(p2))deallocate(p2)

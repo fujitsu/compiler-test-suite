@@ -1,0 +1,8 @@
+Class.ctor()  :   1, uncaught : false
+Class.cctor() :  12, uncaught : false
+Class.cctor() : 123, uncaught :  true
+terminate called after throwing an instance of 'int'
+custom abort() returns by longjmp()...
+ok
+Class.dtor()  :   1
+exit 0

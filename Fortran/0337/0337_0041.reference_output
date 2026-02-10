@@ -1,0 +1,9 @@
+
+
+
+          - JUSTICE -     - ITEM -      - COMPUTED RESULT -          - COMPARE VALUE -        - DIFFERENCE -
+
+0            *OK*           ( 1)                     677                          677
+0            *OK*           ( 2)                  -27018                       -27018
+0                           ( 4)         THIS PROGRAM WAS STOPED BY STOP STATEMENT (STOP 55) IN SUBROUTINE SUBPROGRAM 
+exit 55

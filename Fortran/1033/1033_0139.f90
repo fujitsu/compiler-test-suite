@@ -1,13 +1,19 @@
 subroutine s(i1,i2,i3,i4,is)
 integer(4),intent(in)::i1,i2
 integer(8),intent(inout)::is
-integer(8)::array(268435456)
+integer(8), allocatable :: array(:)
+integer :: j
+
+allocate(array(268435456))
 
 array(i1:i2) = 0_8
 array(i1:i2) = array(i3:i4) + 1_8
 do j = i1 , i2
 is = is + array(j)
 enddo
+if (allocated(array)) then
+  deallocate(array)
+end if
 end
 
 program main

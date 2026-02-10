@@ -37,6 +37,7 @@ public:
   }
 };
 int main() {
+  setvbuf(stdout, NULL, _IONBF, 0);
   Class Obj;
   if (!setjmp(env))
     try {

@@ -1,0 +1,5 @@
+my_unexpected() : uncaught : false
+terminate called without an active exception
+custom abort() returns by longjmp()...
+is it correct?
+exit 0

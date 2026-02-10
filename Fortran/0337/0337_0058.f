@@ -43,5 +43,5 @@ C
   703 WRITE(6,103)ITM
       GO TO 1000
     7 CONTINUE
-      STOP 1234
+      STOP 1234,quiet=.true.
       END

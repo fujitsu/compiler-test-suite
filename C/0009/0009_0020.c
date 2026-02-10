@@ -5,13 +5,11 @@ double       x[16] = { -8, -7, -6, -5, -4, -3, -2, -1,
 			   0, 1, 2, 3, 4, 5, 6, 7} ;
 unsigned y[16] ;
 
-#if defined(__aarch64__)
-unsigned z[16] = {  0,  0,  0,  0,  0,  0,  0,  0,
+unsigned z1[16] = {  0,  0,  0,  0,  0,  0,  0,  0,
 			   0, 1, 2, 3, 4, 5, 6, 7} ;
-#else
-unsigned z[16] = { -8, -7, -6, -5, -4, -3, -2, -1,
+unsigned z2[16] = { -8, -7, -6, -5, -4, -3, -2, -1,
 			   0, 1, 2, 3, 4, 5, 6, 7} ;
-#endif
+unsigned *z = NULL;
 int nn = 16;
 
 void foo()
@@ -27,7 +25,13 @@ int main()
   
   foo();
 
-  if (memcmp(&y, &z, sizeof(unsigned)*16) == 0) {
+  if (y[0] != 0){
+    z = z2;
+  }else{
+    z = z1;
+  }
+
+  if (memcmp(&y, z, sizeof(unsigned)*16) == 0) {
     puts("OK");
   }
   else {

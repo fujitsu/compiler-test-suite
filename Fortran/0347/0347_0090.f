@@ -23,11 +23,23 @@
         bb(j) = cc(j) - d(j) + dreal(a(j))
         aa(j-1) = dreal( a(j) + c(j) )
  40   continue
-      write(6,*) (a(i),i=5,9)
-      write(6,*) (b(i),i=6,10)
-      write(6,*) (c(i),i=4,8)
-      write(6,*) (d(i),i=5,9)
-      write(6,*) (aa(i),i=4,13)
-      write(6,*) (bb(i),i=5,14)
+      do i = 5, 9
+        write(6,*) a(i)
+      enddo
+      do i = 6, 10
+        write(6,*) b(i)
+      enddo
+      do i = 4, 8
+        write(6,*) c(i)
+      enddo
+      do i = 5, 9
+        write(6,*) d(i)
+      enddo
+      do i = 4, 13
+        write(6,*) aa(i)
+      enddo
+      do i = 5, 14
+        write(6,*) bb(i)
+      enddo
       stop
       end

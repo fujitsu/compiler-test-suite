@@ -2,7 +2,7 @@ Module m
 integer,target::t1=12
 contains
  function fun( A, B, C ) 
- INTEGER A, B,C,fun
+ INTEGER A, B,C,fun,e1
 
  ENTRY E1( A, B, C ) 
  E1=A+B+C
@@ -12,7 +12,7 @@ end module
 
 use m
 type ty
-  procedure(),pointer,nopass:: ptr1
+  procedure(integer),pointer,nopass:: ptr1
 end type
 type ty2
   integer,pointer:: ptr2

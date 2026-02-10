@@ -1,4 +1,3 @@
-llvm_singlesource_compile_only_file(0032_0718.cpp PREFIX "Fujitsu-C++-")
 llvm_singlesource_compile_only_file(0032_0765.cc PREFIX "Fujitsu-C++-")
 llvm_singlesource_fujitsu(PREFIX "Fujitsu-C++-")
 set_property(SOURCE 0032_0094.cc APPEND PROPERTY COMPILE_OPTIONS "-fsigned-char")
@@ -46,3 +45,5 @@ set_property(TARGET Fujitsu-C++-0032_0457 APPEND PROPERTY LINK_OPTIONS "-O;-fope
 set_property(SOURCE 0032_0614.cc APPEND PROPERTY COMPILE_OPTIONS "-fsigned-char")
 set_property(SOURCE 0032_0902.cc APPEND PROPERTY COMPILE_OPTIONS "-std=c++03")
 set_property(SOURCE 0032_0930.cc APPEND PROPERTY COMPILE_OPTIONS "-std=c++03")
+set_property(SOURCE 0032_1193.cc APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
+set_property(TARGET Fujitsu-C++-0032_1193 APPEND PROPERTY LINK_OPTIONS "-fopenmp")

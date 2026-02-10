@@ -16,7 +16,7 @@ end
 
 function pproc01() result(irst01)
  integer, pointer :: irst01
- integer, target  :: itr
+ integer, target,save  :: itr
  itr = 1
  irst01 => itr
 end function

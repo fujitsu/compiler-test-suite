@@ -1,6 +1,6 @@
           module m
           type  ty
-           procedure() ,nopass,pointer ::p5
+           procedure(real) ,nopass,pointer ::p5
           end type
           interface 
            module function ifun()

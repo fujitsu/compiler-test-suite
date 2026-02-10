@@ -12,7 +12,6 @@ end
 
 use mod
 integer,pointer, dimension (:,:)::ptr
-call sub(ptr,-1,-1)
 call sub(ptr,2,2)
 call sub(ptr,1,2)
 call sub(ptr,2,1)

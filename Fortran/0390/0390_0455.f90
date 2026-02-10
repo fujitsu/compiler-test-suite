@@ -48,7 +48,7 @@ type(y),allocatable::v(:)
 type(x),allocatable::z(:)
 allocate(v(2),z(2))
 call= s1(v(2)%p,0,z)
-call= s1(  kk=0,vv=z)
+call= s1(null(),  kk=0,vv=z)
 allocate(v(2)%p(3),source=c)
 call= s1(v(2)%p,1,z)
 if (any(v(2)%p/=c+1)) print *,301

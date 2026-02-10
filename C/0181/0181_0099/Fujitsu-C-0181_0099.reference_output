@@ -1,0 +1,116 @@
+omp_PARADO_001 OK 
+omp_PARADO_002 OK 
+omp_PARADO_003 OK 
+omp_PARADO_004 OK 
+omp_PARADO_005 OK 
+omp_PARADO_006 OK 
+omp_PARADO_007 OK 
+omp_PARADO_008 OK 
+omp_PARADO_009 OK 
+ omp_get_dynamic=1 
+ parallel + paralell ----
+ OK 
+ parallel for ------
+OK
+      parallel for private(ia) ------
+OK
+      parallel for firstprivate(ia) -----
+OK
+      parallel for firstprivate(ia) -----
+OK
+      parallel for lastprivate(ia) -----
+OK
+      parallel for firstprivate(ib) + lastprivate(ia) -----
+OK
+OK
+ parallel private(sa,it) ------
+OK
+OK
+-- parallel private(mii,mrr,mcc,mss) -- 
+OK
+ parallel private(tt1) ------
+OK
+  parallel shared(ia) private(it) -----
+OK
+ parallel default(private) shared(ib) -----
+OK
+ parallel default(shared) private(it) -----
+OK!
+ parallel default(none)
+ private(ia) shared(ib,thread) -----
+OK
+ parallel firstprivate(sa) private(it) -----
+OK
+  parallel firstprivate(ia) private(it) -----
+OK
+-- parallel firstprivate(mii, mrr, mcc, mss) private(ith) --
+OK 
+ parallel firstprivate(ty1) private(ith) -----
+OK
+ parallel private(ia) do ------
+OK
+ parallel do private(ia) ------
+OK
+-- parallel do private(mii, mrr,mcc, mss) -- 
+OK
+ parallel do private(pt1) ------
+OK
+ parallel do private(ty1) ------
+OK
+ parallel do firstprivate(sa) -----
+OK
+ parallel do firstprivate(ia) -----
+OK
+-- parallel do firstprivate(mii, mrr, mcc, mss) -- 
+OK 
+ parallel do firstprivate(ia) -----
+OK
+ parallel do firstprivate(sa) -----
+OK
+ parallel do lastprivate(ia) -----
+OK
+-- parallel  do lastprivate(mii, mrr, mcc, mss) -- 
+OK 
+ parallel do lastprivate(ty1) ------
+OK
+ parallel do lastprivate(ia) -----
+OK
+0000000000
+OK
+ parallel sections private(it) ----
+OK
+ parallel for atomic -----
+OK
+ parallel private(it) barrier -----
+OK
+ parallel private(it) do critical -----
+OK
+ parallel for private(ic) critical -----
+OK
+ parallel private(it) sections -----
+OK
+ parallel private(it) sections private(ia) ------
+OK
+ parallel private(it) sections firstprivate(ia) ------
+OK
+ parallel private(it) sections lastprivate(ia) ------
+OK
+ parallel private(it) single -----
+OK
+ parallel private(it) single private(ia) ------
+OK
+ parallel private(it) single firstprivate(ia) ------
+OK
+ parallel for reduction(&&:float) --
+ OK 
+ parallel reduction(&&:float) --
+ OK 
+a = 0.000000, c = 0.000000
+ parallel for reduction(||:float) --
+ OK 
+ parallel reduction(||:float) --
+ OK 
+a = 1.000000, c = 1.000000
+ parallel + sections reduction(||:float):function --
+ OK 
+exit 0

@@ -65,7 +65,7 @@ C
       GO TO 505
    12 WRITE(6,103)ITM
   505 CONTINUE
-      STOP 3124
+      STOP 3124,quiet=.true.
       END
       SUBROUTINE SUB(X,Y,Z)
       DIMENSION C(10)

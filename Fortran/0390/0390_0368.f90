@@ -26,7 +26,7 @@ end subroutine
 subroutine s0
 integer,pointer ::p=>null()
 call s1(p,0)
-call s1(  kk=0)
+call s1(null(),  kk=0)
 allocate(p,source=c)
 call s1(p,1)
 if ((p/=c+1)) print *,301

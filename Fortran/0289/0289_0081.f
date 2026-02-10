@@ -7,7 +7,8 @@
       end
 
       subroutine sub1(n)
-      integer a(5),b(5)
+      integer,target :: a(5)
+      integer b(5)
       pointer (pb,b)
       pb=loc(a)
 
@@ -26,7 +27,8 @@
       end
 
       subroutine sub2(n)
-      integer a(5),b(5)
+      integer,target :: a(5)
+      integer b(5)
       pointer (pb,b)
       pb=loc(a)
 
@@ -45,7 +47,8 @@
       end
 
       subroutine sub3(n)
-      integer a(5),b(5),c(5),d(5),check1
+      integer,target :: a(5)
+      integer b(5),c(5),d(5),check1
       pointer (pb,b),(pc,c)
       equivalence (pb,pc)
       pb=loc(a)
@@ -66,7 +69,8 @@
       end
 
       subroutine sub4(n)
-      integer a(5),b(5),c(5),d(5),check2
+      integer,target :: a(5)
+      integer b(5),c(5),d(5),check2
       pointer (pb,b),(pc,c)
       equivalence (pb,pc)
       pb=loc(a)

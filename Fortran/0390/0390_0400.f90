@@ -104,9 +104,10 @@ integer,allocatable ::p2
 integer,allocatable ::p3
 end type
 type(y),allocatable:: z(:)
+integer,allocatable ::x1,x2,x3
 allocate(z(2))
 call s1(z(2)%p1,z(2)%p2,z(2)%p3,kk1=0,kk2=0,kk3=0)
-call s1(         kk1=0,kk2=0,kk3=0)
+call s1(x1,x2,x3,         kk1=0,kk2=0,kk3=0)
 allocate(z(2)%p1,source=c)
 call s1(z(2)%p1,z(2)%p2,p3=z(2)%p3,kk1=1,kk2=0,kk3=0)
 if ((z(2)%p1/=c+1)) print *,301
@@ -114,19 +115,19 @@ if (allocated(z(2)%p1)) deallocate(z(2)%p1)
 if (allocated(z(2)%p2)) deallocate(z(2)%p2)
 if (allocated(z(2)%p3)) deallocate(z(2)%p3)
 allocate(z(2)%p1,source=c)
-call s1(p1=z(2)%p1      ,kk1=1,kk2=0,kk3=0)
+call s1(p2=x2,p3=x3,p1=z(2)%p1      ,kk1=1,kk2=0,kk3=0)
 if ((z(2)%p1/=c+1)) print *,301
 if (allocated(z(2)%p1)) deallocate(z(2)%p1)
 if (allocated(z(2)%p2)) deallocate(z(2)%p2)
 if (allocated(z(2)%p3)) deallocate(z(2)%p3)
 allocate(z(2)%p2,source=c)
-call s1(p2=z(2)%p2      ,kk1=0,kk2=1,kk3=0)
+call s1(x1,p3=x3,p2=z(2)%p2      ,kk1=0,kk2=1,kk3=0)
 if ((z(2)%p2/=c+1)) print *,301
 if (allocated(z(2)%p1)) deallocate(z(2)%p1)
 if (allocated(z(2)%p2)) deallocate(z(2)%p2)
 if (allocated(z(2)%p3)) deallocate(z(2)%p3)
 allocate(z(2)%p3,source=c)
-call s1(p3=z(2)%p3      ,kk1=0,kk2=0,kk3=1)
+call s1(x1,x2,p3=z(2)%p3      ,kk1=0,kk2=0,kk3=1)
 if ((z(2)%p3/=c+1)) print *,301
 if (allocated(z(2)%p1)) deallocate(z(2)%p1)
 if (allocated(z(2)%p2)) deallocate(z(2)%p2)

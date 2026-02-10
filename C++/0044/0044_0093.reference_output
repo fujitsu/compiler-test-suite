@@ -1,0 +1,4 @@
+terminate called after throwing an instance of 'double'
+custom abort() returns by longjmp()...
+ok
+exit 0

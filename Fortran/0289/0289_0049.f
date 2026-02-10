@@ -1,7 +1,7 @@
       program main
        character   cc*30,cname*20,cl*13,cname2*20
        integer     level
-        integer al
+        integer, target :: al
         pointer (pl,level)
        equivalence (cc(9:9),cname(1:1))
        data cc/'i''m in ''                      '/

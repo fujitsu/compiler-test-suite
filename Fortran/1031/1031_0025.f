@@ -4,7 +4,7 @@
       integer*4  ans( 10), cal( 10), nn
       data ans  /   1, 700,   0,   0,   0,   0,   0,   0,   0,   0/
       parameter (nn=2)
-
+      external::rand,srand
       do 1 i=1, 100
         str0(i:i)='0'
         str1(i:i)='1'

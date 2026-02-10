@@ -1,6 +1,19 @@
 Changelog
 =========
 
+2026-02
+-------
+### Added
+
+- Add TEST_SUITE_FUJITSU_TEST_LANG CMake variable to select the language to run. 
+- Make FP tolerances configurable by the `fpconfig.cmake` file for non-fast-math airthmetic.
+- Add more test programs.
+
+### Fixed
+
+- Fix some bugs in the test programs.
+
+
 2025-11
 -------
 ### Added

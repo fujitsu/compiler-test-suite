@@ -3,7 +3,8 @@ c
        integer   reslt1,reslt2,reslt3,times
        integer   stack(2000,1),ans(9)
        data ans/19,23,19,28,16,20,21,29,20/
-c
+       external::rand
+c     
        do 5  i=1,2000
               stack(i,1)=0
    5   continue

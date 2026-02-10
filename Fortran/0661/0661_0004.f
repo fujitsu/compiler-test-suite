@@ -16,6 +16,6 @@
       IF((1.,1.).NE.J .OR . (1.,1.).NE.J .AND. (1.,1.).NE.J)GOTO 5
       STOP 'ERROR-5'
   5   PRINT *,'PASS'
-      STOP 'PASS'
+      STOP 'PASS',quiet=.true.
   1   STOP 'ERROR-1'
       END

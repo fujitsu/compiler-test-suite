@@ -1,0 +1,7 @@
+Class.ctor()  :   1, uncaught : false
+Class.dtor()  :   1, uncaught :  true
+my_unexpected() : uncaught :  true
+terminate called without an active exception
+custom abort() returns by longjmp()...
+is it correct?
+exit 0

@@ -1,7 +1,7 @@
 subroutine gsub ()
   type tpga
      complex(kind=4)         :: ca = (1.0,2.0)
-     complex(kind=8)         :: cb
+     complex(kind=8)         :: cb = (0.0,0.0)
      character(len=3,kind=1) :: sa(2) = 'abc'
   end type tpga
   type tpgb

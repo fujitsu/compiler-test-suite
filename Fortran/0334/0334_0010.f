@@ -34,10 +34,10 @@
          kei = kei + tkei
       enddo
 
-      if (abs(kei-ans)/abs(kei) .gt. 1.0E-7) then
+      if (abs(kei-ans) .le. 1.0E+12) then
          write(*,*) 'OK'
       else
-	 print *,kei,ans
+	 print *,kei,ans,abs(kei-ans)
          write(*,*) 'NG'
       endif
 

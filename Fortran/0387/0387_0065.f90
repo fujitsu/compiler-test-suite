@@ -3,7 +3,7 @@ module mod01
   subroutine m01sub01()
    external              :: out_proc1
    type typ1
-    procedure(), pointer, nopass  :: ext_ptr
+    procedure(real), pointer, nopass  :: ext_ptr
    end type
    type (typ1) :: t1
    t1 = typ1(out_proc1)

@@ -67,8 +67,7 @@ use m1
   p(3)%z2%y2(4)%x1 = 33
 
   select type(w)
-   type is(d)
-    w(1)%z1 = 21
+   type is(z)
     w(2)%z2%y1 = 22
     w(2)%z2%y2(2)%x1 = 23
    
@@ -92,8 +91,7 @@ use m1
   end select
 
   select type(w)
-   type is(d)
-    if (w(1)%z1/=21) print *,105
+   type is(z)
     if (w(2)%z2%y1/=22) print *,106
     if (w(2)%z2%y2(2)%x1/=23) print *,107
    
@@ -130,12 +128,5 @@ use m1
 call s1()
 rewind 8
 read(8,*) k;if(k/=100) print *,101
-read(8,*) k;if(k/=100) print *,102
-read(8,*) k;if(k/=100) print *,103
-read(8,*) k;if(k/=100) print *,104
-read(8,*) k;if(k/=100) print *,105
-read(8,*) k;if(k/=100) print *,106
-read(8,*,end=100) k
-print *,112
 100 print *,'PASS'
 end

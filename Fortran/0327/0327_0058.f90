@@ -10,7 +10,7 @@ end type
 
 contains
 subroutine sub(a,b)
-type(xdef),dimension(:)::a,b
+type(xdef),dimension(:),target::a,b
 integer :: i
 do i=1,5
 a(i)=b(i)

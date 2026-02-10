@@ -92,5 +92,5 @@ C
       GO TO 511
    24 WRITE(6,103)ITM
   511 CONTINUE
-      STOP 4641
+      STOP 4641,quiet=.true.
       END

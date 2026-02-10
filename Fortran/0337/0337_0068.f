@@ -69,7 +69,7 @@ C
       B   =K(2,2,2)
       C   =.TRUE.
       CALL SUB2(ITM,B,C)
-      STOP 7777
+      STOP 7777,quiet=.true.
       END
       SUBROUTINE SUB(ITM,B,C)
       DIMENSION A(10)

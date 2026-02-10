@@ -8,7 +8,7 @@ end function
 program main
 type :: str
   procedure(),nopass,pointer :: ppp1 
-  procedure(),nopass,pointer :: ppp2
+  procedure(real),nopass,pointer :: ppp2
 end type
 type(str) :: sss(1)
 external :: sub00,func00

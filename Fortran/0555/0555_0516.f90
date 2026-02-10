@@ -22,7 +22,7 @@ END TYPE
 TYPE ty2
   INTEGER :: int1
   TYPE(ty1) :: ty1_obj
-  PROCEDURE(),POINTER,NOPASS :: proc_ptr_2=>NULL()
+  PROCEDURE(real),POINTER,NOPASS :: proc_ptr_2=>NULL()
 END TYPE
 
 
