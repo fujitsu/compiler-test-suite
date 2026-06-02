@@ -1,0 +1,49 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE ty
+  INTEGER :: num
+  CONTAINS
+  PROCEDURE,NOPASS :: gnr => msub
+END TYPE
+
+INTERFACE
+SUBROUTINE msub(dd1)
+  IMPORT ty
+  TYPE(ty) :: dd1
+END SUBROUTINE
+END INTERFACE
+
+CONTAINS
+SUBROUTINE mod_sub(dd1)
+  TYPE(ty) :: dd1
+PROCEDURE(msub),POINTER :: prc
+INTERFACE gnr
+  PROCEDURE :: prc
+END INTERFACE
+  prc => msub
+  CALL dd1%gnr(dd1)
+END SUBROUTINE
+END MODULE
+
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+TYPE(ty) :: obj
+obj%num = 14
+CALL mod_sub(obj)
+
+END PROGRAM
+
+SUBROUTINE msub(dd1)
+  USE mod1
+  TYPE(ty) :: dd1
+  dd1%num = dd1%num + 2
+  IF(dd1%num .EQ. 16) THEN
+    PRINT*,"PASS"
+  ELSE
+    PRINT*,"ERROR"
+  END IF
+END SUBROUTINE

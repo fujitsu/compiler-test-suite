@@ -1,0 +1,4 @@
+  *** CVCT2504_str ***
+ DO 30 LOOP, I= 7
+ ITYPE= 1
+exit 0

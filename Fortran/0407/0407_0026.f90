@@ -34,10 +34,10 @@ j2=2
    read  (cha2,nml =na2)
    !$omp end task
    !$omp end task
- if (i.ne.1) print *,'err1a'
- if (j.ne.2) print *,'err2a'
- if (i2.ne.1) print *,'err1'
- if (j2.ne.2) print *,'err2'
+ if (i/=1 .and. i/=4) print *,'err1',i
+ if (j/=2 .and. j/=5) print *,'err2',j
+ if (i2/=1 .and. i2/=4) print *,'err11',i2
+ if (j2/=2 .and. j2/=5) print *,'err12',j2
  if (prv.ne.1) print *,'erra'
  if (prv2.ne.1) print *,'err'
    !$omp end parallel

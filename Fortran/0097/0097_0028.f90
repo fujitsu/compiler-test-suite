@@ -16,8 +16,8 @@
           print*,"Pass"
         contains
          subroutine s1_int(dmy,dmy2)
-        integer::dmy(:)
-        integer::dmy2(:)
+        integer,target::dmy(:)
+        integer,target::dmy2(:)
 
 
            if(loc(dmy).ne.loc(trg))print *,201,loc(dmy),loc(trg)
@@ -27,8 +27,8 @@
         subroutine s2_int(dmy,dmy2)
 
 
-        integer::dmy(5)
-        integer::dmy2(3)
+        integer,target::dmy(5)
+        integer,target::dmy2(3)
            if(loc(dmy).ne.loc(trg))print *,203,loc(dmy),loc(trg)
            if(loc(dmy2).eq.loc(trg2))print *,204,loc(dmy2),loc(trg2)
         dmy = dmy + 10

@@ -11,7 +11,7 @@ subroutine ss(aptr)
 integer,contiguous::aptr(:)
 
 call sub(aptr)
-call sub(aptr([2,3,4,5,6]))
+call sub(aptr([2,3,4,5,5]))
 end subroutine
 
 subroutine sub(dptr)

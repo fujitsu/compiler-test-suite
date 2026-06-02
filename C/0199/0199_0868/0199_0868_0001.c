@@ -1,0 +1,72 @@
+#include <stdlib.h>
+extern signed short v1 (signed char);
+extern signed short (*v2) (signed char);
+extern unsigned short v5 (signed char, signed short, unsigned char);
+extern unsigned short (*v6) (signed char, signed short, unsigned char);
+extern unsigned short v7 (void);
+extern unsigned short (*v8) (void);
+extern signed int v9 (unsigned int, signed int, unsigned int);
+extern signed int (*v10) (unsigned int, signed int, unsigned int);
+unsigned short v11 (unsigned char, unsigned int);
+unsigned short (*v12) (unsigned char, unsigned int) = v11;
+extern signed int v13 (unsigned short, unsigned char, signed short);
+extern signed int (*v14) (unsigned short, unsigned char, signed short);
+extern unsigned short v15 (unsigned short, unsigned char, unsigned short, signed int);
+extern unsigned short (*v16) (unsigned short, unsigned char, unsigned short, signed int);
+extern unsigned int v17 (unsigned short, signed short, unsigned char, unsigned char);
+extern unsigned int (*v18) (unsigned short, signed short, unsigned char, unsigned char);
+extern unsigned char v19 (unsigned short, unsigned short, unsigned char, unsigned char);
+extern unsigned char (*v20) (unsigned short, unsigned short, unsigned char, unsigned char);
+unsigned short v21 (unsigned char, signed short, signed int);
+unsigned short (*v22) (unsigned char, signed short, signed int) = v21;
+extern void v23 (void);
+extern void (*v24) (void);
+extern unsigned short v25 (signed short, signed int, unsigned int);
+extern unsigned short (*v26) (signed short, signed int, unsigned int);
+extern unsigned int v27 (signed short, signed char, unsigned int);
+extern unsigned int (*v28) (signed short, signed char, unsigned int);
+extern void v29 (unsigned char, signed int, unsigned int);
+extern void (*v30) (unsigned char, signed int, unsigned int);
+extern int history[];
+extern int history_index;
+extern int trace;
+unsigned char v85 = 6;
+signed int v84 = -4;
+unsigned short v83 = 2;
+
+unsigned short v21 (unsigned char v86, signed short v87, signed int v88)
+{
+history[history_index++] = (int)v86;
+history[history_index++] = (int)v87;
+history[history_index++] = (int)v88;
+{
+for (;;) {
+signed char v91 = -4;
+signed char v90 = -4;
+unsigned char v89 = 0;
+trace++;
+switch (trace)
+{
+default: abort ();
+}
+}
+}
+}
+
+unsigned short v11 (unsigned char v92, unsigned int v93)
+{
+history[history_index++] = (int)v92;
+history[history_index++] = (int)v93;
+{
+for (;;) {
+signed char v96 = -2;
+unsigned short v95 = 2;
+signed int v94 = 2;
+trace++;
+switch (trace)
+{
+default: abort ();
+}
+}
+}
+}

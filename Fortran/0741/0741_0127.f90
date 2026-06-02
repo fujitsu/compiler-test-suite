@@ -14,8 +14,8 @@ logical(1),dimension(:,:,:),allocatable::mask
   aa(1,2,1)%za2=(/2,3/)
   aa(1,3,1)%za2=(/3,4/)
   aa(1,4,1)%za2=(/4,5/)
-  allocate(mask(1,2,2))
-  mask=reshape((/.true.,.false.,.false.,.false./),(/1,2,2/))
+  allocate(mask(1,2,1))
+  mask=reshape((/.true.,.false.,.false.,.false./),(/1,2,1/))
 
   forall (j=1:1,i=1:2,k=1:1)
     where (.not.mask)

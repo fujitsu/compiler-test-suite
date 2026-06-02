@@ -1,0 +1,82 @@
+module m1
+TYPE t0
+  INTEGER :: x00
+end type
+
+TYPE,extends(t0):: t1
+  INTEGER :: x11
+END TYPE
+interface operator (+)
+module procedure::concat
+end interface
+
+contains
+function concat(d1, d2)
+class(*), value, intent(in)::d1
+class(*), value, intent(in)::d2
+class(t1),allocatable::concat
+select type(A=>d1)
+ type is(t1)
+   if(A%x00.ne.10)print*,"101",A%x00
+  select type(B=>d2)
+   type is(t1)
+     if(B%x00.ne.20)print*,"102"
+       allocate(concat)
+     concat%x00 = A%x00 + B%x00
+  end select
+end select
+end function
+end module
+
+use m1
+class(t0),allocatable:: x11
+class(t0),allocatable:: x22
+class(t0),allocatable:: x33
+class(t0),allocatable:: x44
+class(t1),allocatable:: x55
+allocate(t0::x11)
+allocate(t0::x44)
+allocate(t1::x55)
+allocate(t1::x22)
+allocate(t1::x33)
+x11%x00  =10
+x22%x00  =20
+x55%x00  =10
+x44%x00  =10
+select type(A=>x11)
+type is(t0)
+   x11= x55
+   x33 = x11 +  x22
+type is(t1)
+  print*,"103"
+end select
+select type(A=>x33)
+type is(t1)
+if(A%x00.ne.30)print*,"105"
+type is(t0)
+  print*,"106"
+end select
+
+ x33 = x11 +  x22
+select type(A=>x33)
+type is(t1)
+if(A%x00.ne.30)print*,"105"
+type is(t0)
+  print*,"106"
+end select
+
+select type(A=>x11)
+type is(t1)
+   x11= x44
+   x33 = A +  x22
+type is(t0)
+  print*,"104"
+end select
+select type(A=>x33)
+type is(t1)
+if(A%x00.ne.30)print*,"105"
+type is(t0)
+  print*,"106"
+end select
+print*,"PASS"
+end

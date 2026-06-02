@@ -1,0 +1,225 @@
+ call s1
+ print *,'pass'
+ end
+ module m1
+  integer::iu
+  integer::v2(2)=(/2,4/),v3(3)=(/1,2,3/),v4(4)=(/1,2,3,4/),v5(5)=(/1,2,3,4,5/)
+  interface i4
+   module procedure i4_1,i4_2,i4_3,i4_4
+  end interface
+  integer::n=1
+  interface cmplx
+   module procedure d,d1,d2,d3,d4
+  end interface
+  contains
+  function d1(n1,n2,n3) result(r)
+  integer      ::n1(:),n2(:)
+  character(n),pointer ::r(:)
+  allocate(r(size(n1)))
+  do i=1,size(n1)
+  write(r(i),'(i1)')mod(n1(i),10)
+  end do
+  end function
+  function d2(n1,n2,n3) result(r)
+  integer      ::n1(:,:),n2(:,:)
+  character(n) ,pointer::r(:,:)
+  allocate(r(size(n1,1),size(n1,2)))
+  do ii=1,size(n1,2)
+  do i=1,size(n1,1)
+  write(r(i,ii),'(i1)')mod(n1(i,ii),10)
+  end do
+  end do
+  end function
+  function d3(n1,n2,n3) result(r)
+  integer      ::n1(:,:,:),n2(:,:,:)
+  character(n),pointer ::r(:,:,:)
+  allocate(r(size(n1,1),size(n1,2),size(n1,3)))
+  do iii=1,size(n1,3)
+  do ii=1,size(n1,2)
+  do i=1,size(n1,1)
+  write(r(i,ii,iii),'(i1)')mod(n1(i,ii,iii),10)
+  end do
+  end do
+  end do
+  end function
+  function d4(n1,n2,n3) result(r)
+  integer      ::n1(:,:,:,:),n2(:,:,:,:)
+  character(n),pointer ::r(:,:,:,:)
+  allocate(r(size(n1,1),size(n1,2),size(n1,3),size(n1,4)))
+  do iiii=1,size(n1,4)
+  do iii=1,size(n1,3)
+  do ii=1,size(n1,2)
+  do i=1,size(n1,1)
+  write(r(i,ii,iii,iiii),'(i1)')mod(n1(i,ii,iii,iiii),10)
+  end do
+  end do
+  end do
+  end do
+  end function
+  character(n) function d(n1,n2,n3) result(r)
+  write(r,'(i1)')mod(n1,10)
+  end function
+  subroutine i4_4(a)
+   character(n),dimension(2,3,4,5)::a,ax(2*2,3,4,5);target ax
+   character(n),dimension(:,:,:,:),pointer::ap
+   ax(2::2,:,:,:)=a
+   ap=>ax(2::2,:,:,:)
+   call ss2(reshape(a, (/2,3,4,5/)))
+   call ss2(reshape(ap,(/2,3,4,5/)))
+   call ss2(reshape(ax(2::2,:,:,:),(/2,3,4,5/)))
+   call ss2(reshape(ax(v2,v3,v4,v5),(/2,3,4,5/)))
+   call ss2(reshape((/(cmplx(i,i,16),i=11,11+2*3*4*5-1)/),(/2,3,4,5/)))
+   call ss3(reshape(a, (/2,3,4,5/)))
+   call ss3(reshape(ap,(/2,3,4,5/)))
+   call ss3(reshape(ax(2::2,:,:,:),(/2,3,4,5/)))
+   call ss3(reshape(ax(v2,v3,v4,v5),(/2,3,4,5/)))
+   call ss3(reshape((/(cmplx(i,i,16),i=11,11+2*3*4*5-1)/),(/2,3,4,5/)))
+   write(iu,*) reshape(a,(/2,3,4,5/))
+   write(iu,*) reshape(ap,(/2,3,4,5/))
+   write(iu,*) reshape(ax(2::2,:,:,:),(/2,3,4,5/))
+   write(iu,*) reshape(ax(v2,v3,v4,v5),(/2,3,4,5/))
+   call ss4
+   contains
+    subroutine ss2(a)
+     character(n),dimension(2,3,4,5)::a
+     if (any(a/= reshape((/(cmplx(i,i,16),i=11,11+2*3*4*5-1)/),(/2,3,4,5/))))print *,'fail'
+    end subroutine
+    subroutine ss3(a)
+     character(n),dimension(:,:,:,:)::a
+     if (any(a/= reshape((/(cmplx(i,i,16),i=11,11+2*3*4*5-1)/),(/2,3,4,5/))))print *,'fail'
+     if (size(a)/=2*3*4*5)print *,'fail'
+    end subroutine
+    subroutine ss4()
+     character(n),dimension(2,3,4,5)::a; rewind iu
+     do iz=1,4; read(iu,*) a
+     if (any(a/= reshape((/(cmplx(i,i,16),i=11,11+2*3*4*5-1)/),(/2,3,4,5/))))print *,'fail'
+     enddo
+    end subroutine
+  end subroutine
+  subroutine i4_3(a)
+   character(n),dimension(2,3,4)::a,ax(2*2,3,4);target ax
+   character(n),dimension(:,:,:),pointer::ap
+   ax(2::2,:,:)=a
+   ap=>ax(2::2,:,:)
+   call ss2(reshape(a, (/2,3,4/)))
+   call ss2(reshape(ap,(/2,3,4/)))
+   call ss2(reshape(ax(2::2,:,:),(/2,3,4/)))
+   call ss2(reshape(ax(v2,v3,v4),(/2,3,4/)))
+   call ss2(reshape((/(cmplx(i,i,16),i=11,11+2*3*4-1)/),(/2,3,4/)))
+   call ss3(reshape(a, (/2,3,4/)))
+   call ss3(reshape(ap,(/2,3,4/)))
+   call ss3(reshape(ax(2::2,:,:),(/2,3,4/)))
+   call ss3(reshape(ax(v2,v3,v4),(/2,3,4/)))
+   call ss3(reshape((/(cmplx(i,i,16),i=11,11+2*3*4-1)/),(/2,3,4/)))
+   write(iu,*) reshape(a,(/2,3,4/))
+   write(iu,*) reshape(ap,(/2,3,4/))
+   write(iu,*) reshape(ax(2::2,:,:),(/2,3,4/))
+   write(iu,*) reshape(ax(v2,v3,v4),(/2,3,4/))
+   call ss4
+   contains
+    subroutine ss2(a)
+     character(n),dimension(2,3,4)::a
+     if (any(a/= reshape((/(cmplx(i,i,16),i=11,11+2*3*4-1)/),(/2,3,4/))))print *,'fail'
+    end subroutine
+    subroutine ss3(a)
+     character(n),dimension(:,:,:)::a
+     if (any(a/= reshape((/(cmplx(i,i,16),i=11,11+2*3*4-1)/),(/2,3,4/))))print *,'fail'
+     if (size(a)/=2*3*4)print *,'fail'
+    end subroutine
+    subroutine ss4()
+     character(n),dimension(2,3,4)::a; rewind iu
+     do iz=1,4; read(iu,*) a
+     if (any(a/= reshape((/(cmplx(i,i,16),i=11,11+2*3*4-1)/),(/2,3,4/))))print *,'fail'
+     enddo
+    end subroutine
+  end subroutine
+  subroutine i4_2(a)
+   character(n),dimension(2,3)::a,ax(2*2,3);target ax
+   character(n),dimension(:,:),pointer::ap
+   ax(2::2,:)=a
+   ap=>ax(2::2,:)
+   call ss2(reshape(a, (/2,3/)))
+   call ss2(reshape(ap,(/2,3/)))
+   call ss2(reshape(ax(2::2,:),(/2,3/)))
+   call ss2(reshape(ax(v2,v3),(/2,3/)))
+   call ss2(reshape((/(cmplx(i,i,16),i=11,11+2*3-1)/),(/2,3/)))
+   call ss3(reshape(a, (/2,3/)))
+   call ss3(reshape(ap,(/2,3/)))
+   call ss3(reshape(ax(2::2,:),(/2,3/)))
+   call ss3(reshape(ax(v2,v3),(/2,3/)))
+   call ss3(reshape((/(cmplx(i,i,16),i=11,11+2*3-1)/),(/2,3/)))
+   write(iu,*) reshape(a,(/2,3/))
+   write(iu,*) reshape(ap,(/2,3/))
+   write(iu,*) reshape(ax(2::2,:),(/2,3/))
+   write(iu,*) reshape(ax(v2,v3),(/2,3/))
+   call ss4
+   contains
+    subroutine ss2(a)
+     character(n),dimension(2,3)::a
+     if (any(a/= reshape((/(cmplx(i,i,16),i=11,11+2*3-1)/),(/2,3/))))print *,'fail'
+    end subroutine
+    subroutine ss3(a)
+     character(n),dimension(:,:)::a
+     if (any(a/= reshape((/(cmplx(i,i,16),i=11,11+2*3-1)/),(/2,3/))))print *,'fail'
+     if (size(a)/=2*3)print *,'fail'
+    end subroutine
+    subroutine ss4()
+     character(n),dimension(2,3)::a; rewind iu
+     do iz=1,4; read(iu,*) a
+     if (any(a/= reshape((/(cmplx(i,i,16),i=11,11+2*3-1)/),(/2,3/))))print *,'fail'
+     enddo
+    end subroutine
+  end subroutine
+  subroutine i4_1(a)
+   character(n),dimension(2)::a,ax(2*2);target ax
+   character(n),dimension(:),pointer::ap
+   ax(2::2)=a
+   ap=>ax(2::2)
+   call ss2(reshape(a, (/2/)))
+   call ss2(reshape(ap,(/2/)))
+   call ss2(reshape(ax(2::2),(/2/)))
+   call ss2(reshape(ax(v2),(/2/)))
+   call ss2(reshape((/(cmplx(i,i,16),i=11,11+2-1)/),(/2/)))
+   call ss3(reshape(a, (/2/)))
+   call ss3(reshape(ap,(/2/)))
+   call ss3(reshape(ax(2::2),(/2/)))
+   call ss3(reshape(ax(v2),(/2/)))
+   call ss3(reshape((/(cmplx(i,i,16),i=11,11+2-1)/),(/2/)))
+   write(iu,*) reshape(a,(/2/))
+   write(iu,*) reshape(ap,(/2/))
+   write(iu,*) reshape(ax(2::2),(/2/))
+   write(iu,*) reshape(ax(v2),(/2/))
+   call ss4
+   contains
+    subroutine ss2(a)
+     character(n),dimension(2)::a
+     if (any(a/= reshape((/(cmplx(i,i,16),i=11,12)/),(/2/))))print *,'fail'
+    end subroutine
+    subroutine ss3(a)
+     character(n),dimension(:)::a
+     if (any(a/= reshape((/(cmplx(i,i,16),i=11,12)/),(/2/))))print *,'fail'
+     if (size(a)/=2)print *,'fail'
+    end subroutine
+    subroutine ss4()
+     character(n),dimension(2)::a; rewind iu
+     do iz=1,4
+     read(iu,*) a; if (any(a/= reshape((/(cmplx(i,i,16),i=11,12)/),(/2/))))print *,'fail'
+     end do
+    end subroutine
+  end subroutine
+ end
+ subroutine s1
+ use m1
+ integer,dimension(2),parameter::a1=reshape((/(i,i=11,11+2-1)/),(/2/))
+ integer,dimension(2,3),parameter::a2=reshape((/(i,i=11,11+2*3-1)/),(/2,3/))
+ integer,dimension(2,3,4),parameter::a3=reshape((/(i,i=11,11+2*3*4-1)/),(/2,3,4/))
+ integer,dimension(2,3,4,5),parameter::a4=reshape((/(i,i=11,11+2*3*4*5-1)/),(/2,3,4,5/))
+ iu=10;open(iu+1,delim='quote')
+ iu=iu+1;call i4(cmplx(a1,a1,16))
+ open(iu+1,delim='quote')
+ iu=iu+1;call i4(cmplx(a2,a2,16))
+ open(iu+1,delim='quote')
+ iu=iu+1;call i4(cmplx(a3,a3,16))
+ open(iu+1,delim='quote')
+ iu=iu+1;call i4(cmplx(a4,a4,16))
+ end 

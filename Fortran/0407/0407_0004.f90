@@ -11,6 +11,8 @@ ii2=1
    !$omp task default(firstprivate)
    !$omp critical
    prv = prv + 1
+   iaa=200
+   iaa2=200
    ii=if(ii)
    !$omp endcritical
    !$omp critical

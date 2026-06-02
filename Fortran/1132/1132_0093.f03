@@ -1,0 +1,59 @@
+PROGRAM  CV4207
+  TYPE STR
+     REAL*4    EV10(10),EV11(10)
+     REAL*8    DV20(100)
+     INTEGER   N,IV20(100)
+     INTEGER   IV30(10),IS30
+     LOGICAL   LV30(2)
+  END type STR
+  TYPE(STR) STR_DATA
+
+      DATA      STR_DATA%EV10/0,0,8*1.5/,STR_DATA%EV11/10*1000/
+      DATA      STR_DATA%DV20/19*10.,0.,19*20.,0,60*30./,STR_DATA%N/100/,STR_DATA%IV20/100*0/
+      DATA      STR_DATA%IS30/0/,STR_DATA%IV30/10*0/
+      DATA      STR_DATA%LV30/.TRUE.,.FALSE./
+ 100  CONTINUE
+      DO 10 I=1,10
+        IF (STR_DATA%EV10(I).GE.0)  THEN
+          IF (STR_DATA%EV10(I).EQ.0)  THEN
+            STR_DATA%EV11(I)=999.
+            GOTO  19
+          ELSE
+            STR_DATA%EV11(I)=100.
+          ENDIF
+        ELSE
+          STR_DATA%EV11(I)=I
+        ENDIF
+ 10   CONTINUE
+ 19   CONTINUE
+
+      WRITE(6,*)  '  CVCT4207-LOOP.01 '
+      WRITE(6,*)  STR_DATA%EV10,STR_DATA%EV11 
+
+ 200  DO 20 I=1,STR_DATA%N
+        IF (STR_DATA%DV20(I).GT.0) THEN
+          STR_DATA%IV20(I)=100
+        ELSE
+          STR_DATA%IV20(I)=200
+          GOTO 29
+        ENDIF
+  20  CONTINUE
+  29  CONTINUE
+
+      WRITE(6,*)  '  CVCT4207-LOOP.02 '
+      WRITE(6,*)  I,STR_DATA%IV20
+      IF (I.EQ.20) THEN
+        STR_DATA%DV20(I)=1.0
+        GOTO  200
+      END IF
+      DO 30 I=1,10
+       IF (STR_DATA%LV30(1).AND.STR_DATA%LV30(2)) GOTO  39
+         STR_DATA%IV30(I)=I
+ 30   STR_DATA%IS30 = STR_DATA%IS30 + 1
+
+ 39   CONTINUE
+      WRITE(6,*)  '  CVCT4207-LOOP.03 '
+      WRITE(6,*) STR_DATA%IS30,STR_DATA%IV30
+
+      STOP
+      END

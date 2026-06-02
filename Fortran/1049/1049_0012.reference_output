@@ -1,0 +1,5 @@
+ ----- test --
+       parallel if(mod(itn,2).eq.0 .and. itn.gt.2.and.itn.le.loop)
+       private(it) -----
+ OK!
+exit 0

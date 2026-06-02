@@ -1,0 +1,84 @@
+    module mod
+      character(len=9),target,dimension(5,1) ::string1='OPENMP V2'
+      character(len=9),target,dimension(4,1) ::string2='openmp v2'
+      character(len=9),target,dimension(3,1) ::string3='OpenMP V2'
+    end module mod
+
+    program ompv2
+     use mod
+     interface
+       subroutine sub1(p_string,pa_string)
+         character(len=9),pointer,dimension(:,:)::p_string
+         character(len=9),pointer,dimension(:,:)::pa_string
+       end subroutine sub1
+       subroutine sub2(p_string,pa_string)
+         character(len=9),pointer,dimension(:,:)::p_string
+         character(len=9),pointer,dimension(:,:)::pa_string
+       end subroutine sub2
+     end interface
+     character(len=9),pointer,dimension(:,:)::p_string
+     character(len=9),pointer,dimension(:,:)::pa_string
+      p_string=>string1
+      allocate(pa_string(6:10,1))
+      pa_string='OPENMP v2'
+
+      call sub1(p_string,pa_string)
+!$omp parallel private(p_string,pa_string)
+      call sub2(p_string,pa_string)
+!$omp end parallel
+
+      if (.not.associated(p_string)) print *,"fail"
+      if (.not.associated(pa_string)) print *,"fail"
+      if (size( p_string) /= 5) print *,"fail"
+      if (any( p_string /= 'OPENMP V2' )) print *,"fail"
+      if (any( pa_string /= 'OPENMP v2' )) print *,"fail"
+      p_string=>null()
+      deallocate(pa_string)
+      print *,'pass'
+    end program
+
+    subroutine sub1(p_string,pa_string)
+     use mod
+     character(len=9),pointer,dimension(:,:)::p_string
+     character(len=9),pointer,dimension(:,:)::pa_string
+!$omp parallel private(p_string,pa_string)
+      p_string=>string2
+      allocate(pa_string(6:10,1))
+!$omp single
+      p_string=>string3
+      pa_string='OpenMP v2'
+!$omp end single copyprivate(p_string,pa_string)
+      if (.not.associated(p_string)) print *,"fail"
+      if (.not.associated(pa_string)) print *,"fail"
+      if (size( p_string) /= 3) print *,"fail"
+      if (any( p_string /= 'OpenMP V2' )) print *,"fail"
+      if (any( pa_string /= 'OpenMP v2' )) print *,"fail"
+      p_string=>null()
+!$omp barrier
+!$omp single
+      deallocate(pa_string)
+!$omp end single
+!$omp end parallel
+    end subroutine sub1
+
+    subroutine sub2(p_string,pa_string)
+     use mod
+     character(len=9),pointer,dimension(:,:)::p_string
+     character(len=9),pointer,dimension(:,:)::pa_string
+      p_string=>string2
+      allocate(pa_string(6:10,1))
+!$omp single
+      p_string=>string3
+      pa_string='OpenMP v2'
+!$omp end single copyprivate(p_string,pa_string)
+      if (.not.associated(p_string)) print *,"fail"
+      if (.not.associated(pa_string)) print *,"fail"
+      if (size( p_string) /= 3) print *,"fail"
+      if (any( p_string /= 'OpenMP V2' )) print *,"fail"
+      if (any( pa_string /= 'OpenMP v2' )) print *,"fail"
+      p_string=>null()
+!$omp barrier
+!$omp master
+      deallocate(pa_string)
+!$omp end master
+    end subroutine sub2

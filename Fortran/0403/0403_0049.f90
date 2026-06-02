@@ -1,0 +1,18 @@
+subroutine s1
+integer,save,pointer    ::      m3(:)
+!$omp threadprivate(m3)
+!$omp parallel
+allocate(m3(2))
+!$omp end parallel
+!$omp parallel copyin (m3)
+!$omp single
+m3=3
+!$omp end single copyprivate(m3)
+if (any(m3/=3)) print *,1133
+!$omp end parallel
+end subroutine
+call s1
+print *,'pass'
+end
+
+

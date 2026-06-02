@@ -1,8 +1,7 @@
 module m
 contains
   subroutine sub(a,b,c)
-     real, dimension(:), target:: a
-     real, dimension(2)        :: b,c
+     real, dimension(:), target:: a,b,c
      a(:) = b(:) + c(:)
   end subroutine sub
 end module m

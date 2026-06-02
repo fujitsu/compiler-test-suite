@@ -8,8 +8,7 @@ MODULE TYPES
   TYPE ,extends(T0):: T1
      INTEGER :: KK(2)
    CONTAINS   
-     PROCEDURE :: A1
-     GENERIC :: GEN=> A1
+     PROCEDURE :: A0=> A1
   END TYPE T1
 integer:: y=0
 CONTAINS
@@ -40,7 +39,7 @@ select type (v)
    v%kk(2)=102
 end select
   CALL v%GEN()
-if (y/=2) print *,702
+if (y/=101) print *,702
 print *,'pass'
 END
 

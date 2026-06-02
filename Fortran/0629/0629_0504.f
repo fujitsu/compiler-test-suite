@@ -1,0 +1,17 @@
+      INTEGER*8 A(1000000)
+      INTEGER*8 B(1000000)
+      INTEGER*8 N
+      DATA N/1000000/
+      DATA B/1000000*2/
+
+      CALL ROTATE(N,A,B)
+
+      WRITE(*,*) A(1),A(1000000)
+      END
+
+      SUBROUTINE ROTATE(N,A,B)
+      INTEGER*8 N,A(N),B(N),I
+      DO 120 I = 1,N
+  120   A(I) = B(I)
+      RETURN
+      END SUBROUTINE

@@ -39,7 +39,7 @@ ty_obj2%ii=70
 tar%cmp%ii=10
 tar(4)%cmp%ii=79
 tar(8)%cmp%ii=89
-ptr=>tar(2:6:2)
+ptr=>tar(2:8:2)
 ptr(v)%cmp=ty_obj2
 IF(tar(4)%cmp%ii .NE. 70) print*,201,ptr(2)%cmp%ii
 END

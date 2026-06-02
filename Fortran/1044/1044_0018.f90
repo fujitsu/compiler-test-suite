@@ -24,15 +24,13 @@ end module
 program main
 use mod2,only:jjj,jj
 use mod2a,only:jjj,jj
-write(1,jjj)
+write(60,jjj)
 call chk
 print *,'pass'
 end
 subroutine chk
 namelist /jjj/jj
-rewind 1
-read(1,jjj)
+rewind 60
+read(60,jjj)
 if (jj/=100)write(6,*) "NG"
 end
-
-

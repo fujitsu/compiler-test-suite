@@ -57,12 +57,14 @@
          COMPLEX   A1 , A2 , A3 , A4 , C(4) ,
      *             B1 , B2 , B3 , B4 ,
      *             D1 , D2 , D3 , D4
-         NAMELIST  /NAMEL/   A1 , A2 , A3 , A4 ,
-     *                       B1 , B2 , B3 , B4 , C ,
-     *                       D1 , D2 , D3 , D4 ,
-     *                       E1 , E2 , E3 , E4 ,
-     *                       P1 , P2 , P3 , P4 ,
-     *                       Q1 , Q2 , Q3 , M
+         NAMELIST  /NA1/  A1 , A2
+         NAMELIST  /NA2/  A3 , A4
+         NAMELIST  /NB/   B1 , B2 , B3 , B4
+         NAMELIST  /NC/   C
+         NAMELIST  /ND/   D1 , D2 , D3 , D4
+         NAMELIST  /NE/   E1 , E2 , E3 , E4
+         NAMELIST  /NP/   P1 , P2 , P3 , P4
+         NAMELIST  /NQ/   Q1 , Q2 , Q3 , M
 
          WRITE(6,2000) MEMO
  2000         FORMAT(1H0,A8)
@@ -152,7 +154,14 @@
          GO TO (2 , 7 , 11) , SW10
 
    11 CONTINUE
-         WRITE(6,NAMEL)
+         WRITE(6,NA1)
+         WRITE(6,NA2)
+         WRITE(6,NB)
+         WRITE(6,NC)
+         WRITE(6,ND)
+         WRITE(6,NE)
+         WRITE(6,NP)
+         WRITE(6,NQ)
          RETURN
          END
       SUBROUTINE   SUB01(B4)

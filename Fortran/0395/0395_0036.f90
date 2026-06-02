@@ -12,7 +12,7 @@
           common /dd/ kk,k
 !$omp threadprivate (/dd/)
 !$omp parallel
-         write (1,*) (a1(1),kk=1,k)
+         write (15,*) (a1(1),kk=1,k)
          if (kk/=4) print *,201,kk
 !$omp end parallel
          end

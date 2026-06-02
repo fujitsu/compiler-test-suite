@@ -1,0 +1,6 @@
+ OMP_GET_DYNAMIC= T
+ ----- test --
+       parallel
+       parallel + paralell ----
+ OK
+exit 0

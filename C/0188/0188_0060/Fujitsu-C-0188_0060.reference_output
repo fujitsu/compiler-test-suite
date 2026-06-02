@@ -1,0 +1,3 @@
+ -- omp_reduction.and.parallel1-1.c  parallel reduction(&&:float) --
+ OK 
+exit 0

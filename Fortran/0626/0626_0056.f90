@@ -5,11 +5,11 @@ module mod
   contains
   subroutine sub01(arg1,arg2,arg3)
     type(str1),allocatable,target       :: arg1,arg2,arg3
-      write(11,*)arg1,arg2,arg3
+      write(18,*)arg1,arg2,arg3
   end subroutine
   subroutine sub02(arg1,arg2,arg3)
     type(str1),dimension(:),allocatable,target       :: arg1,arg2,arg3
-      write(12,*)arg1,arg2,arg3
+      write(19,*)arg1,arg2,arg3
   end subroutine
 end module
 use mod
@@ -20,11 +20,11 @@ arg2(1)%iii=1
 arg2(2)%iii=1
   call       sub01(arg1,arg1,arg1)
   call       sub02(arg2,arg2,arg2)
-rewind 11
-rewind 12
-read(11,*)k1,k2,k3
+rewind 18
+rewind 19
+read(18,*)k1,k2,k3
 if (any([k1,k2,k3]/=1))print *,301
-read(12,*)k1,k2,k3,k4,k5,k6
+read(19,*)k1,k2,k3,k4,k5,k6
 if (any([k1,k2,k3,k4,k5,k6]/=1))print *,302
 print *,'pass'
 end

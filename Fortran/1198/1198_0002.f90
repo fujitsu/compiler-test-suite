@@ -1,0 +1,161 @@
+     module mod
+       type :: base
+          integer(8)::di
+          character(:),allocatable::na
+       end type base
+       type, extends(base) :: ext
+          character(:),allocatable::name
+       end type ext
+       type :: b
+          integer(8)::dk
+          class(base) ,allocatable::ma(:)
+       end type
+       type, extends(b) :: e
+          class(base),allocatable::qa(:)
+          class(ext),allocatable::mame(:)
+       end type
+       integer,parameter::m=1000
+       character(*),parameter::a=repeat('1',m)
+       character(*),parameter::aa=repeat('2',m)
+     contains
+       subroutine s2(var,war,xar)
+         class (b),optional, intent(out) :: var(:)
+         class (b),optional, intent(out) :: war(:)
+         class (b),optional, intent(out) :: xar(:)
+          class(base),allocatable::base_x
+          class(ext),allocatable::ext_x
+      k=0
+      select type(p=>var(2))
+       type is(e)
+         p%dk=1
+         if (allocated(p%ma)) print *,6452
+         if (allocated(p%mame)) print *,6453
+         if (allocated(p%qa  )) print *,6454
+         if (.not.same_type_as(p%ma,base_x)) print *,7451
+         if (.not.same_type_as(p%qa,base_x)) print *,7452
+         if (.not.same_type_as(p%mame,ext_x)) print *,7453
+         k=1
+       end select
+       if (k/=1) print *,3628
+      k=0
+      select type(p=>war(2))
+       type is(e)
+         p%dk=1
+         if (allocated(p%ma)) print *,6452
+         if (allocated(p%mame)) print *,6453
+         if (allocated(p%qa  )) print *,6454
+         if (.not.same_type_as(p%ma,base_x)) print *,7451
+         if (.not.same_type_as(p%qa,base_x)) print *,7452
+         if (.not.same_type_as(p%mame,ext_x)) print *,7453
+         k=1
+       end select
+       if (k/=1) print *,3628
+      k=0
+      select type(p=>xar(2))
+       type is(e)
+         p%dk=1
+         if (allocated(p%ma)) print *,6452
+         if (allocated(p%mame)) print *,6453
+         if (allocated(p%qa  )) print *,6454
+         if (.not.same_type_as(p%ma,base_x)) print *,7451
+         if (.not.same_type_as(p%qa,base_x)) print *,7452
+         if (.not.same_type_as(p%mame,ext_x)) print *,7453
+         k=1
+       end select
+       if (k/=1) print *,3628
+       end subroutine s2
+     end module mod
+subroutine ss
+     use mod
+     class (b   ), allocatable :: v(:),v1(:),v2(:)
+         allocate(e::v(2))
+      select type(v)
+       type is(e)
+         allocate(ext::v(2)%ma(2))
+         allocate(ext::v(2)%qa(2))
+         allocate(ext::v(2)%mame(2))
+     k=0
+     select type(p=>v(2)%ma(2))
+     type is(ext)
+       allocate(p%name,source= a)
+       allocate(p%na,source= a)
+       write(1,"(z16.16)") loc(p%name)
+       write(2,"(z16.16)") loc(p%na)
+       k=1
+     end select
+     if (k/=1) print *,1002
+     k=0
+     select type(p=>v(2)%mame(2))
+     type is(ext)
+       allocate(p  %name,source= a)
+       allocate(p  %na,source= a)
+       write(3,"(z16.16)") loc(p  %name)
+       write(4,"(z16.16)") loc(p  %na)
+       k=1
+     end select
+     if (k/=1) print *,1002
+     end select
+    v1=v
+    v2=v
+    call s2(v,v1,v2)
+    if (.not.allocated(v)) print *,8292
+     k=0
+      select type(v)
+       type is(e)
+         if (v(2)%dk/=1) print *,656
+         if (allocated(v(2)%ma)) print *,64521
+         if (allocated(v(2)%mame)) print *,64531
+         if (allocated(v(2)%qa  )) print *,64541
+       k=1
+     end select
+     if (k/=1) print *,1022
+    if (.not.allocated(v1)) print *,8292
+     k=0
+      select type(v1)
+       type is(e)
+         if (v1(2)%dk/=1) print *,656
+         if (allocated(v1(2)%ma)) print *,64521
+         if (allocated(v1(2)%mame)) print *,64531
+         if (allocated(v1(2)%qa  )) print *,64541
+       k=1
+     end select
+     if (k/=1) print *,1022
+    if (.not.allocated(v2)) print *,8292
+     k=0
+      select type(v2)
+       type is(e)
+         if (v2(2)%dk/=1) print *,656
+         if (allocated(v2(2)%ma)) print *,64521
+         if (allocated(v2(2)%mame)) print *,64531
+         if (allocated(v2(2)%qa  )) print *,64541
+       k=1
+     end select
+     if (k/=1) print *,1022
+end
+do n=1,30
+call ss
+end do
+!call chk(1)
+!call chk(2)
+!call chk(3)
+!call chk(4)
+     print *,'sngg834s : pass'
+     end
+subroutine  chk(k)
+     character(16)::x(1000)
+     rewind (k)
+     kk=1
+     do
+       read(k ,'(a)',end=100) x(kk)
+       kk=kk+1
+     end do
+  100 continue
+     kk=kk-1
+     if (kk>1000) stop 999
+     do nn=1,kk-1
+      do nnn=nn+1,kk
+        if (x(nn)==x(nnn)) return
+      end do
+     end do
+  500 print *,"Please check UNIT",k
+     end

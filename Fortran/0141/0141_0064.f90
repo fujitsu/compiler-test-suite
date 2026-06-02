@@ -14,8 +14,8 @@ b=13
 !$omp end task
 write(41, *)n
 write(41, *)a
-if (n/=1) print *,101,a
-if (a/=12) print *,102
+if (n/=1) print *,101,n
+if (a/=2) print *,102,a
 if (b/=13) print *,103,b
 print  *,'pass'
 end

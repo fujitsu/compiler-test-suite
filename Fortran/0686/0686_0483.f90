@@ -1,0 +1,31 @@
+    program omp
+     integer(4)::a(5)=(/-2,-1,0,2,3/)
+      call sub(a,5)
+      if (any(a/=(/-1,0,1,3,4/))) print *,a
+      print *,'pass'
+    end program
+
+    subroutine sub(a,n)
+     integer(4)::a(n)
+     integer(4)::b(n)
+     i=0
+      call OMP_SET_MAX_ACTIVE_LEVELS(.false.)
+!$omp parallel
+!$omp parallel
+
+!$omp end parallel
+!$omp end parallel
+
+!$omp parallel if(all(a==(/-2,-1,0,2,3/))),num_threads(sum(a))
+!$omp atomic
+      i=i+1
+!$omp workshare
+      b=a
+!$omp end workshare
+!$omp do schedule(static,maxval(b)) 
+      do i=1,5
+        a(i)=a(i)+1
+      end do
+!$omp enddo
+!$omp end parallel
+    end subroutine

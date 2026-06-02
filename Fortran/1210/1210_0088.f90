@@ -1,0 +1,47 @@
+module m1
+  type z
+    integer(8)::z1
+  end type
+  type,extends(z)::e
+     integer(8),allocatable::e1(:)
+ end type
+contains
+subroutine s1(w)
+     class(z),allocatable::name(:)
+  class(e)::w(:)
+    w(:)%z1=11 
+    allocate(w(2)%e1,source=[111_8,111_8]) 
+       name=w    
+       if (name(1)%z1/=11) print *,2828
+       if (name(2)%z1/=11) print *,2828
+   k=0
+   select type(p=>name)
+    type is(e)
+      if (any(p(2)  %e1/=111)) print *,2829
+      p (2) %e1=222
+      k=1
+   end select
+   if (k/=1) print *,1228
+       if (w(1)%z1/=11) print *,3828
+       if (w(2)%z1/=11) print *,3828
+       if (any(w(2)%e1/=111)) print *,3829
+end
+end
+recursive subroutine s2(k)
+  integer::a(1000)
+  a=k
+  call s21(a)
+end
+subroutine s21(a)
+  integer::a(*   )
+ write(1001,*)a(1:1000)
+end
+use m1
+integer::k=-1
+  class(e),allocatable::w(:)
+allocate(w(2))
+call s2(k)
+call s1(w)
+     print *,'sngg800r : pass'
+     end 
+

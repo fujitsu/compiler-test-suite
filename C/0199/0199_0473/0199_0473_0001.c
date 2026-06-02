@@ -1,0 +1,53 @@
+#include <stdlib.h>
+extern signed char v1 (void);
+extern signed char (*v2) (void);
+extern signed char v5 (unsigned short, unsigned short, signed int);
+extern signed char (*v6) (unsigned short, unsigned short, signed int);
+extern signed int v7 (signed char, unsigned char, unsigned short, unsigned int);
+extern signed int (*v8) (signed char, unsigned char, unsigned short, unsigned int);
+extern unsigned short v9 (unsigned int, signed short, unsigned int, signed short);
+extern unsigned short (*v10) (unsigned int, signed short, unsigned int, signed short);
+extern unsigned char v11 (signed short, unsigned int);
+extern unsigned char (*v12) (signed short, unsigned int);
+extern unsigned char v13 (void);
+extern unsigned char (*v14) (void);
+extern void v15 (unsigned short);
+extern void (*v16) (unsigned short);
+extern unsigned int v17 (unsigned short, unsigned short, unsigned int, unsigned int);
+extern unsigned int (*v18) (unsigned short, unsigned short, unsigned int, unsigned int);
+extern signed int v19 (unsigned int);
+extern signed int (*v20) (unsigned int);
+extern signed short v21 (unsigned short, unsigned char, signed char);
+extern signed short (*v22) (unsigned short, unsigned char, signed char);
+unsigned short v23 (unsigned int, signed char);
+unsigned short (*v24) (unsigned int, signed char) = v23;
+extern unsigned short v25 (signed int, unsigned int, unsigned char, signed short);
+extern unsigned short (*v26) (signed int, unsigned int, unsigned char, signed short);
+extern unsigned char v27 (signed short, unsigned char, signed short, unsigned int);
+extern unsigned char (*v28) (signed short, unsigned char, signed short, unsigned int);
+extern signed short v29 (void);
+extern signed short (*v30) (void);
+extern int history[];
+extern int history_index;
+extern int trace;
+unsigned int v48 = 2U;
+unsigned char v47 = 1;
+unsigned char v46 = 6;
+
+unsigned short v23 (unsigned int v49, signed char v50)
+{
+history[history_index++] = (int)v49;
+history[history_index++] = (int)v50;
+{
+for (;;) {
+signed short v53 = 1;
+unsigned short v52 = 3;
+signed int v51 = -4;
+trace++;
+switch (trace)
+{
+default: abort ();
+}
+}
+}
+}

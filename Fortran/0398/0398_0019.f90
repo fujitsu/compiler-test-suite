@@ -44,8 +44,8 @@ call s1(k1,k2,k3,k4)
 call s2(k1,k2,k3,k4)
 if (any(z%a/=z%b)) then
 print *,101
-print *,z%a
-print *,z%b
+!print *,z%a
+!print *,z%b
 endif
 print *,'pass'
 end

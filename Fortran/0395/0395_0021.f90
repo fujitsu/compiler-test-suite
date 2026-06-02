@@ -12,7 +12,7 @@ contains
     sub_p => sub
   end subroutine setup
   subroutine sub
-    write(1,*) "OK"
+    write(14,*) "OK"
   end subroutine sub
 end module test
 

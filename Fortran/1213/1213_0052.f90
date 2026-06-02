@@ -1,0 +1,40 @@
+module m4
+  type z
+    integer(8)::z1
+  end type
+  type t
+     integer(8)::du
+     class(z),allocatable::n2
+  end type
+  class(z),allocatable::q
+  class(t),allocatable::v,w,y
+contains
+subroutine s4
+  class(z),allocatable::r
+    allocate(   v,y,w, stat=n)
+    if (n/=0) print *,31001
+    if (.not.allocated(v)) print *,32002 
+    if (.not.allocated(y)) print *,32003 
+    if (.not.allocated(w)) print *,32004 
+    if (allocated(v%n2)) print *,32005
+    if (.not.same_type_as(v%n2,r)) print *,32006
+    if (allocated(w%n2)) print *,32007
+    if (.not.same_type_as(w%n2,r)) print *,32008
+    if (allocated(y%n2)) print *,32009
+    if (.not.same_type_as(y%n2,r)) print *,32010
+end
+end
+subroutine x4
+use m4
+call s4()
+end
+call ss
+call x4
+     print *,'sngg419s : pass'
+     end
+subroutine ss
+  integer,allocatable::d(:)
+  allocate(d(1000),source=-1)
+  write(1,*) d
+  deallocate(d)
+end

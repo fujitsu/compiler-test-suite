@@ -1,0 +1,243 @@
+#include <stdio.h>
+
+#if defined (__STDC_VERSION__) && __STDC_VERSION__ >= 199901L
+#include <complex.h>
+
+  long double _Complex comp20_1_1 = {1.0 + 2.0I};
+  struct C20_1_2 {
+    long double _Complex comp20_1_2_1 ;
+    long double _Complex comp20_1_2_2 ;
+  } comp20_1_2 = {1.0 + 2.0I, 1.0 + 2.0I} ;
+  union C20_1_3 {
+    long double _Complex comp20_1_3_1 ;
+    long double _Complex comp20_1_3_2 ;
+  } comp20_1_3 = {1.0 + 2.0I} ;
+  long double _Complex comp20_1_4[10] = {1.0 + 2.0I};
+  long double _Complex *comp20_1_5 = &comp20_1_1;
+  typedef long double _Complex C20_1_6 ;
+  C20_1_6 comp20_1_6 = {1.0 + 2.0I};
+  long double _Complex comp20_1_7[] = {1.0 + 2.0I};
+
+  long double _Complex comp20_2_0 = {1.0 + 2.0I};
+  const long double _Complex comp20_2_1 = {1.0 + 2.0I};
+  struct C20_2_2 {
+    const long double _Complex comp20_2_2_1 ;
+    const long double _Complex comp20_2_2_2 ;
+  } comp20_2_2 = {1.0 + 2.0I, 1.0 + 2.0I} ;
+  union C20_2_3 {
+    const long double _Complex comp20_2_3_1 ;
+    const long double _Complex comp20_2_3_2 ;
+  } comp20_2_3 = {1.0 + 2.0I} ;
+  const long double _Complex comp20_2_4[10] = {1.0 + 2.0I};
+  const long double _Complex *comp20_2_5 = &comp20_2_1;
+  typedef long double _Complex C20_2_6 ;
+  const C20_2_6 comp20_2_6 = {1.0 + 2.0I};
+  const long double _Complex comp20_2_7[] = {1.0 + 2.0I};
+
+  volatile long double _Complex comp20_3_1 = {1.0 + 2.0I};
+  struct C20_3_2 {
+    volatile long double _Complex comp20_3_2_1 ;
+    volatile long double _Complex comp20_3_2_2 ;
+  } comp20_3_2 = {1.0 + 2.0I, 1.0 + 2.0I} ;
+  union C20_3_3 {
+    volatile long double _Complex comp20_3_3_1 ;
+    volatile long double _Complex comp20_3_3_2 ;
+  } comp20_3_3 = {1.0 + 2.0I} ;
+  volatile long double _Complex comp20_3_4[10] = {1.0 + 2.0I};
+  volatile long double _Complex *comp20_3_5 = &comp20_3_1;
+  typedef long double _Complex C20_3_6 ;
+  volatile C20_3_6 comp20_3_6 = {1.0 + 2.0I};
+  volatile long double _Complex comp20_3_7[] = {1.0 + 2.0I};
+
+  long double _Complex comp20_4_0 = {1.0 + 2.0I};
+  const volatile long double _Complex comp20_4_1 = {1.0 + 2.0I};
+  struct C20_4_2 {
+    const volatile long double _Complex comp20_4_2_1 ;
+    const volatile long double _Complex comp20_4_2_2 ;
+  } comp20_4_2 = {1.0 + 2.0I, 1.0 + 2.0I} ;
+  union C20_4_3 {
+    const volatile long double _Complex comp20_4_3_1 ;
+    const volatile long double _Complex comp20_4_3_2 ;
+  } comp20_4_3 = {1.0 + 2.0I} ;
+  const volatile long double _Complex comp20_4_4[10] = {1.0 + 2.0I};
+  const volatile long double _Complex *comp20_4_5 = &comp20_4_1;
+  typedef long double _Complex C20_4_6 ;
+  const volatile C20_4_6 comp20_4_6 = {1.0 + 2.0I};
+  const volatile long double _Complex comp20_4_7[] = {1.0 + 2.0I};
+
+  long double _Complex comp20_5_0 = {1.0 + 2.0I};
+  long double _Complex * restrict comp20_5_1 = &comp20_5_0;
+  struct C20_5_2 {
+    long double _Complex * restrict comp20_5_2_1 ;
+    long double _Complex * restrict comp20_5_2_2 ;
+  } comp20_5_2 = {&comp20_5_0, &comp20_5_0};
+  union C20_5_3 {
+    long double _Complex * restrict comp20_5_3_1 ;
+    long double _Complex * restrict comp20_5_3_2 ;
+  } comp20_5_3 = {&comp20_5_0} ;
+  long double _Complex * restrict comp20_5_4[10] = {&comp20_5_0};
+  long double _Complex * restrict comp20_5_5 = &comp20_5_0;
+  typedef long double _Complex C20_5_6 ;
+  C20_5_6 * restrict comp20_5_6 = &comp20_5_0;
+  long double _Complex * restrict comp20_5_7[] = {&comp20_5_0};
+
+void sub_1()
+{
+  extern long double _Complex comp20_1_1;
+
+  extern struct C20_1_2 comp20_1_2;
+  extern union C20_1_3 comp20_1_3;
+  extern long double _Complex comp20_1_4[10] ;
+  extern long double _Complex *comp20_1_5;
+  typedef long double _Complex C20_1_6 ;
+  extern C20_1_6 comp20_1_6;
+  extern long double _Complex comp20_1_7[];
+
+  printf("###  sub_1 ###\n");
+  if (comp20_1_1 != comp20_1_2.comp20_1_2_1) printf("NG\n");
+  if (comp20_1_1 != comp20_1_2.comp20_1_2_2) printf("NG\n");
+  if (comp20_1_1 != comp20_1_3.comp20_1_3_1) printf("NG\n");
+  if (comp20_1_1 != comp20_1_3.comp20_1_3_2) printf("NG\n");
+  if (comp20_1_1 != comp20_1_4[0]) printf("NG\n");
+  if (comp20_1_1 != *comp20_1_5) printf("NG\n");
+  if (comp20_1_1 != comp20_1_6) printf("NG\n");
+  if (comp20_1_1 != comp20_1_7[0]) printf("NG\n");
+
+  comp20_1_1 = comp20_1_1 + comp20_1_2.comp20_1_2_1;
+  comp20_1_1 = comp20_1_1 - comp20_1_2.comp20_1_2_2;
+  comp20_1_1 = comp20_1_1 * comp20_1_3.comp20_1_3_1;
+  comp20_1_1 = comp20_1_1 / comp20_1_3.comp20_1_3_2;
+  comp20_1_1 = comp20_1_1 + comp20_1_4[0];
+  if (comp20_1_1 == comp20_1_7[0]) printf("NG\n");
+}
+
+void sub_2()
+{
+  extern long double _Complex comp20_2_0;
+  extern const long double _Complex comp20_2_1;
+  extern struct C20_2_2 comp20_2_2;
+  extern union C20_2_3 comp20_2_3;
+  extern const long double _Complex comp20_2_4[10];
+  extern const long double _Complex *comp20_2_5;
+  typedef long double _Complex C20_2_6 ;
+  extern const C20_2_6 comp20_2_6;
+  extern const long double _Complex comp20_2_7[];
+
+  printf("###  sub_2 ###\n");
+  if (comp20_2_1 != comp20_2_2.comp20_2_2_1) printf("NG\n");
+  if (comp20_2_1 != comp20_2_2.comp20_2_2_2) printf("NG\n");
+  if (comp20_2_1 != comp20_2_3.comp20_2_3_1) printf("NG\n");
+  if (comp20_2_1 != comp20_2_3.comp20_2_3_2) printf("NG\n");
+  if (comp20_2_1 != comp20_2_4[0]) printf("NG\n");
+  if (comp20_2_1 != *comp20_2_5) printf("NG\n");
+  if (comp20_2_1 != comp20_2_6) printf("NG\n");
+  if (comp20_2_1 != comp20_2_7[0]) printf("NG\n");
+
+  comp20_2_0 = comp20_2_0 + comp20_2_2.comp20_2_2_1;
+  comp20_2_0 = comp20_2_0 - comp20_2_2.comp20_2_2_2;
+  comp20_2_0 = comp20_2_0 * comp20_2_3.comp20_2_3_1;
+  comp20_2_0 = comp20_2_0 / comp20_2_3.comp20_2_3_2;
+  comp20_2_0 = comp20_2_0 + comp20_2_4[0];
+  if (comp20_2_0 == comp20_2_6) printf("NG\n");
+}
+
+void sub_3()
+{
+  extern volatile long double _Complex comp20_3_1;
+  extern struct C20_3_2 comp20_3_2;
+  extern union C20_3_3 comp20_3_3;
+  extern volatile long double _Complex comp20_3_4[10];
+  extern volatile long double _Complex *comp20_3_5;
+  typedef long double _Complex C20_3_6 ;
+  extern volatile C20_3_6 comp20_3_6;
+  extern volatile long double _Complex comp20_3_7[];
+
+  printf("###  sub_3 ###\n");
+  if (comp20_3_1 != comp20_3_2.comp20_3_2_1) printf("NG\n");
+  if (comp20_3_1 != comp20_3_2.comp20_3_2_2) printf("NG\n");
+  if (comp20_3_1 != comp20_3_3.comp20_3_3_1) printf("NG\n");
+  if (comp20_3_1 != comp20_3_3.comp20_3_3_2) printf("NG\n");
+  if (comp20_3_1 != comp20_3_4[0]) printf("NG\n");
+  if (comp20_3_1 != *comp20_3_5) printf("NG\n");
+  if (comp20_3_1 != comp20_3_6) printf("NG\n");
+  if (comp20_3_1 != comp20_3_7[0]) printf("NG\n");
+
+  *comp20_3_5 = *comp20_3_5 + comp20_3_2.comp20_3_2_1;
+  *comp20_3_5 = *comp20_3_5 - comp20_3_2.comp20_3_2_2;
+  *comp20_3_5 = *comp20_3_5 * comp20_3_3.comp20_3_3_1;
+  *comp20_3_5 = *comp20_3_5 / comp20_3_3.comp20_3_3_2;
+  *comp20_3_5 = *comp20_3_5 + comp20_3_4[0];
+  if (*comp20_3_5 == comp20_3_7[0]) printf("NG\n");
+}
+
+void sub_4()
+{
+  extern long double _Complex comp20_4_0;
+  extern const volatile long double _Complex comp20_4_1;
+  extern struct C20_4_2 comp20_4_2;
+  extern union C20_4_3 comp20_4_3;
+  extern const volatile long double _Complex comp20_4_4[10];
+  extern const volatile long double _Complex *comp20_4_5;
+  typedef long double _Complex C20_4_6 ;
+  extern const volatile C20_4_6 comp20_4_6;
+  extern const volatile long double _Complex comp20_4_7[];
+
+  printf("###  sub_4 ###\n");
+  if (comp20_4_1 != comp20_4_2.comp20_4_2_1) printf("NG\n");
+  if (comp20_4_1 != comp20_4_2.comp20_4_2_2) printf("NG\n");
+  if (comp20_4_1 != comp20_4_3.comp20_4_3_1) printf("NG\n");
+  if (comp20_4_1 != comp20_4_3.comp20_4_3_2) printf("NG\n");
+  if (comp20_4_1 != comp20_4_4[0]) printf("NG\n");
+  if (comp20_4_1 != *comp20_4_5) printf("NG\n");
+  if (comp20_4_1 != comp20_4_6) printf("NG\n");
+  if (comp20_4_1 != comp20_4_7[0]) printf("NG\n");
+
+  comp20_4_0 = comp20_4_0 + comp20_4_2.comp20_4_2_1;
+  comp20_4_0 = comp20_4_0 - comp20_4_2.comp20_4_2_2;
+  comp20_4_0 = comp20_4_0 * comp20_4_3.comp20_4_3_1;
+  comp20_4_0 = comp20_4_0 / comp20_4_3.comp20_4_3_2;
+  comp20_4_0 = comp20_4_0 + comp20_4_4[0];
+  if (comp20_4_0 == comp20_4_6) printf("NG\n");
+}
+
+void sub_5()
+{
+  extern long double _Complex * restrict comp20_5_1;
+  extern struct C20_5_2 comp20_5_2;
+  extern union C20_5_3 comp20_5_3;
+  extern long double _Complex * restrict comp20_5_4[10];
+  extern long double _Complex * restrict comp20_5_5;
+  typedef long double _Complex C20_5_6 ;
+  extern C20_5_6 * restrict comp20_5_6;
+  extern long double _Complex * restrict comp20_5_7[];
+
+  printf("###  sub_5 ###\n");
+  if (comp20_5_1 != comp20_5_2.comp20_5_2_1) printf("NG\n");
+  if (comp20_5_1 != comp20_5_2.comp20_5_2_2) printf("NG\n");
+  if (comp20_5_1 != comp20_5_3.comp20_5_3_1) printf("NG\n");
+  if (comp20_5_1 != comp20_5_3.comp20_5_3_2) printf("NG\n");
+  if (comp20_5_1 != comp20_5_4[0]) printf("NG\n");
+  if (comp20_5_1 != comp20_5_5) printf("NG\n");
+  if (comp20_5_1 != comp20_5_6) printf("NG\n");
+  if (comp20_5_1 != comp20_5_7[0]) printf("NG\n");
+}
+#endif
+
+int main()
+{
+#if defined (__STDC_VERSION__) && __STDC_VERSION__ >= 199901L
+  sub_1();
+  sub_2();
+  sub_3();
+  sub_4();
+  sub_5();
+#else
+  printf("###  sub_1 ###\n");
+  printf("###  sub_2 ###\n");
+  printf("###  sub_3 ###\n");
+  printf("###  sub_4 ###\n");
+  printf("###  sub_5 ###\n");
+#endif
+
+  return 0;
+}

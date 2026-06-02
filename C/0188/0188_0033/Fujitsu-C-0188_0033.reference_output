@@ -1,0 +1,4 @@
+-- omp_PARALLEL_DO_002m.c --
+-- parallel do private(mii, mrr,mcc, mss) -- 
+OK
+exit 0

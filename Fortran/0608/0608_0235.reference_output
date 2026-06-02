@@ -1,0 +1,13 @@
+ start array destructor
+ 50 100
+ end destructor
+ 
+ start array destructor
+ 200 250
+ end destructor
+ 
+ start scalar destructor
+ 300
+ end destructor
+ 
+exit 0

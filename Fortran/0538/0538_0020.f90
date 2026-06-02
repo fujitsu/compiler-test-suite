@@ -1,13 +1,13 @@
 ido1=1
 ido2=2
 !$omp parallel default(none)
-!$omp dosimd 
+!$omp dosimd private(ido1,ido2)
 do ido1=1,10
 do ido2=1,10
 end do
 end do
 !$omp enddosimd
-!$omp dosimd 
+!$omp dosimd private(ido1,ido2) 
 do ido2=1,10
 do ido1=1,10
 end do

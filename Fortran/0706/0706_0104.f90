@@ -1,0 +1,177 @@
+c
+c
+      call s1
+      print *,'pass'
+      end
+      module type
+       type ty; character*3 i ; character*3 a(2); end type 
+      end module
+      module cnt  
+       character(len=*),parameter:: c= char(i char('1'))//
+     1                                achar(iachar('2'))//
+     1                                achar(i char('3'))
+       character(len=len(c)),target 
+     1                           :: t= char(i char('1'))//
+     1                                achar(iachar('2'))//
+     1                                achar(i char('3'))
+      end module
+      module data 
+       integer,parameter::u=-1,l=-2
+       character(len=*),dimension(l:u),parameter::x1=
+     1  (/ char(i char('a'))//achar(iachar('b'))//achar(i char('c')), 
+     1     char(i char('d'))//achar(iachar('e'))//achar(i char('f'))/)
+       character(len=len(x1)),dimension(l:u),target   ::x2=
+     1  (/ char(i char('a'))//achar(iachar('b'))//achar(i char('c')), 
+     1     char(i char('d'))//achar(iachar('e'))//achar(i char('f'))/)
+      end module
+      module chk_m
+      use type;use cnt
+      contains
+       subroutine chk(d)
+        type(ty)::d
+        if (d%i/='123')print *,'fail'
+        if (any(d%a/=(/'abc','def'/)))print *,'fail'
+       end subroutine
+      end module
+      subroutine s1
+       use data
+       interface
+       subroutine t1(j,x3,x4,x5,x6,x7,x8,x9,xa,xb,xx,xy)
+       character*(3):: p;pointer(ip,p)
+       character*(3),pointer:: g
+       character*(3)::x3(:)
+       character*(*)::x4(:)
+       character*(j)::x5(:)
+       character*(3)::x6(j-1)
+       character*(*)::x7(j-1)
+       character*(j)::x8(j-1)
+       character*(3),pointer::x9(:)
+       character*(*),pointer::xa(:)
+       character*(j),pointer::xb(:)
+       character*(*) xx,xy(:)
+       end subroutine
+       end interface
+       parameter (j=3)
+       character*(3)::x3(2)
+       character*(3)::x4(2)
+       character*(j)::x5(2)
+       character*(3)::x6(j-1)
+       character*(3)::x7(j-1)
+       character*(j)::x8(j-1)
+       character*(3),pointer::x9(:)
+       character*(3),pointer::xa(:)
+       character*(j),pointer::xb(:)
+       character*(3) xx,xy(3)
+       xx='xxx';xy='yyy'
+       allocate (x9(l:u),xa(l:u),xb(l:u))
+       x3=x1;x4=x1;x5=x1;x6=x1;x7=x1;x8=x1;x9=x1;xa=x1;xb=x1
+      call       t1(j,x3,x4,x5,x6,x7,x8,x9,xa,xb,xx,xy)
+      end      
+      subroutine t1(j,x3,x4,x5,x6,x7,x8,x9,xa,xb,xx,xy)
+       use type;use cnt;use data;use chk_m
+       type (ty) :: st
+       character*(3):: p;pointer(ip,p)
+       character*(3),pointer:: g
+       character*(3)::x3(l:)
+       character*(*)::x4(l:)
+       character*(j)::x5(l:)
+       character*(3)::x6(l:j-4)
+       character*(*)::x7(l:j-4)
+       character*(j)::x8(l:j-4)
+       character*(3),pointer::x9(:)
+       character*(*),pointer::xa(:)
+       character*(j),pointer::xb(:)
+       integer,pointer,dimension(:)::v
+       character*(*) xx,xy(:)
+       allocate(v(l:u));v(l)=l;v(u)=u
+       ip=loc(t);g=>t
+      st=ty(c   ,(/x1//xx//xx/));call chk(st)
+      st=ty(t   ,(/x1//xx//xx/));call chk(st)
+      st=ty(p   ,(/x1//xx//xx/));call chk(st)
+      st=ty(g   ,(/x1//xx//xx/));call chk(st)
+      st=ty(c   ,(/x2//xx//xx/));call chk(st)
+      st=ty(t   ,(/x2//xx//xx/));call chk(st)
+      st=ty(p   ,(/x2//xx//xx/));call chk(st)
+      st=ty(g   ,(/x2//xx//xx/));call chk(st)
+      st=ty(c   ,(/x3//xx//xx/));call chk(st)
+      st=ty(t   ,(/x3//xx//xx/));call chk(st)
+      st=ty(p   ,(/x3//xx//xx/));call chk(st)
+      st=ty(g   ,(/x3//xx//xx/));call chk(st)
+      st=ty(c   ,(/x4//xx//xx/));call chk(st)
+      st=ty(t   ,(/x4//xx//xx/));call chk(st)
+      st=ty(p   ,(/x4//xx//xx/));call chk(st)
+      st=ty(g   ,(/x4//xx//xx/));call chk(st)
+      st=ty(c   ,(/x5//xx//xx/));call chk(st)
+      st=ty(t   ,(/x5//xx//xx/));call chk(st)
+      st=ty(p   ,(/x5//xx//xx/));call chk(st)
+      st=ty(g   ,(/x5//xx//xx/));call chk(st)
+      st=ty(c   ,(/x6//xx//xx/));call chk(st)
+      st=ty(t   ,(/x6//xx//xx/));call chk(st)
+      st=ty(p   ,(/x6//xx//xx/));call chk(st)
+      st=ty(g   ,(/x6//xx//xx/));call chk(st)
+      st=ty(c   ,(/x7//xx//xx/));call chk(st)
+      st=ty(t   ,(/x7//xx//xx/));call chk(st)
+      st=ty(p   ,(/x7//xx//xx/));call chk(st)
+      st=ty(g   ,(/x7//xx//xx/));call chk(st)
+      st=ty(c   ,(/x8//xx//xx/));call chk(st)
+      st=ty(t   ,(/x8//xx//xx/));call chk(st)
+      st=ty(p   ,(/x8//xx//xx/));call chk(st)
+      st=ty(g   ,(/x8//xx//xx/));call chk(st)
+      st=ty(c   ,(/x9//xx//xx/));call chk(st)
+      st=ty(t   ,(/x9//xx//xx/));call chk(st)
+      st=ty(p   ,(/x9//xx//xx/));call chk(st)
+      st=ty(g   ,(/x9//xx//xx/));call chk(st)
+      st=ty(c   ,(/xa//xx//xx/));call chk(st)
+      st=ty(t   ,(/xa//xx//xx/));call chk(st)
+      st=ty(p   ,(/xa//xx//xx/));call chk(st)
+      st=ty(g   ,(/xa//xx//xx/));call chk(st)
+      st=ty(c   ,(/xb//xx//xx/));call chk(st)
+      st=ty(t   ,(/xb//xx//xx/));call chk(st)
+      st=ty(p   ,(/xb//xx//xx/));call chk(st)
+      st=ty(g   ,(/xb//xx//xx/));call chk(st)
+      n1=1;n2=3
+      st=ty(c,(/x1(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(t,(/x1(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(p,(/x1(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(g,(/x1(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(c,(/x2(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(t,(/x2(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(p,(/x2(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(g,(/x2(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(c,(/x3(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(t,(/x3(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(p,(/x3(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(g,(/x3(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(c,(/x4(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(t,(/x4(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(p,(/x4(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(g,(/x4(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(c,(/x5(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(t,(/x5(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(p,(/x5(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(g,(/x5(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(c,(/x6(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(t,(/x6(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(p,(/x6(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(g,(/x6(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(c,(/x7(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(t,(/x7(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(p,(/x7(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(g,(/x7(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(c,(/x8(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(t,(/x8(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(p,(/x8(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(g,(/x8(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(c,(/x9(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(t,(/x9(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(p,(/x9(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(g,(/x9(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(c,(/xa(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(t,(/xa(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(p,(/xa(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(g,(/xa(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(c,(/xb(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(t,(/xb(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(p,(/xb(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      st=ty(g,(/xb(v)(n1:n2)//xy(v)(n1:n2)//xy(v)(n1:n2)/));call chk(st)
+      end

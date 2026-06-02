@@ -1,0 +1,49 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  REAL,DIMENSION(3:12) :: marr
+END TYPE
+
+INTERFACE
+REAL FUNCTION fun_2(ddn)
+REAL :: ddn
+END FUNCTION
+END INTERFACE
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+REAL :: num = 2.0
+REAL,POINTER :: ptr
+TYPE(t1),ALLOCATABLE :: obj
+ALLOCATE(obj,ptr)
+ptr = 5.0
+
+obj%marr = (/-1.0,2.0,-3.0,4.0,-5.0,6.0,-7.0,8.0,-1.0,10.0/)
+
+ASSOCIATE(aa => obj%marr(4:12:2) * fun_2(num) + ptr)
+  CALL sub(aa)     
+END ASSOCIATE
+
+CONTAINS
+
+SUBROUTINE sub(ddr)
+IMPLICIT NONE
+REAL,DIMENSION(1:5) :: ddr
+IF(ddr(3) .EQ. 29.0) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF
+END SUBROUTINE
+
+END PROGRAM
+
+REAL FUNCTION fun_2(ddn)
+REAL :: ddn
+fun_2 = ddn * 2.0
+END FUNCTION

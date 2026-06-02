@@ -35,3 +35,7 @@ set_property(SOURCE 0055_0803.c APPEND PROPERTY COMPILE_OPTIONS "-Wno-sync-fetch
 set_property(SOURCE 0055_0804.c APPEND PROPERTY COMPILE_OPTIONS "-Wno-sync-fetch-and-nand-semantics-changed")
 set_property(SOURCE 0055_0805.c APPEND PROPERTY COMPILE_OPTIONS "-Wno-sync-fetch-and-nand-semantics-changed")
 set_property(SOURCE 0055_0806.c APPEND PROPERTY COMPILE_OPTIONS "-Wno-sync-fetch-and-nand-semantics-changed")
+set_property(TARGET Fujitsu-C-0055_0841 APPEND PROPERTY LINK_LIBRARIES "m")
+set_property(SOURCE 0055_0882.c APPEND PROPERTY COMPILE_OPTIONS "-std=gnu99")
+set_property(SOURCE 0055_0895.c APPEND PROPERTY COMPILE_OPTIONS "-std=gnu99")
+set_property(SOURCE 0055_0896.c APPEND PROPERTY COMPILE_OPTIONS "-std=gnu99")

@@ -1,7 +1,7 @@
         implicit none
         integer:: i1=0
                     !$omp task default(none)
-                    !$omp parallel do simd
+                    !$omp parallel do simd private(i1)
                         do i1=1,5
                            if(real(1)/=1.0) print *,'err'
                         end do

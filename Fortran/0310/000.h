@@ -1,0 +1,2 @@
+COMMON/R/N,M
+REAL(8) Q,P

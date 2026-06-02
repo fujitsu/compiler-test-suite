@@ -18,7 +18,7 @@ end module
 use mod2
 
 type(drv2),allocatable ::ptr(:)
-integer :: vec(5)=(/2,3,4,1,6/)
+integer :: vec(5)=(/2,3,4,1,5/)
 
 allocate(ptr(5))
 ptr%ii=10

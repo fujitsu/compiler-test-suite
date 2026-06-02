@@ -1,5 +1,4 @@
 llvm_singlesource_compile_only_file(0139_0027.c PREFIX "Fujitsu-C-")
-llvm_singlesource_compile_only_file(0139_0034.c PREFIX "Fujitsu-C-")
 llvm_singlesource_fujitsu(PREFIX "Fujitsu-C-")
 set_property(SOURCE 0139_0002.c APPEND PROPERTY COMPILE_OPTIONS "-fno-fast-math")
 set_property(TARGET Fujitsu-C-0139_0002 APPEND PROPERTY LINK_OPTIONS "-fno-fast-math")

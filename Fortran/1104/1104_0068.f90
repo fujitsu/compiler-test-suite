@@ -1,0 +1,138 @@
+     module mod
+       type :: yase
+         integer(8)::y0(3)
+         character(:),allocatable::o
+       end type 
+       type, extends(yase) :: yxt
+          character(:),allocatable::name
+       end type
+
+       type :: base
+         integer(8)::b0(2)
+         class(yase),allocatable::yv(:)
+       end type base
+       type, extends(base) :: ext
+         class(yase),allocatable::zv(:)
+       end type ext
+
+       type b
+         integer(8)::dmy
+         class(base),allocatable::bv(:)
+       end type
+
+     contains
+
+       subroutine s1(var, value)
+         class(b), allocatable, intent(inout) :: var(:)
+         class(b), intent(in) :: value(:)
+         var=value
+       end subroutine s1
+     end module mod
+
+     subroutine w
+     use mod
+     class(b), allocatable :: var(:)
+     type(b), allocatable :: value(:)
+     integer(8)::k1,k2
+     allocate(value(2))
+     allocate(ext::value(1)%bv(3))
+     allocate(ext::value(2)%bv(3))
+     select type(p=>value(1)%bv)
+       type is(ext)
+         allocate(yxt::p(1)%yv(4))
+         select type (q=>p(1)%yv)
+           type is(yxt)
+             allocate(q(4)%o   ,source='11')
+             allocate(q(4)%name,source='11')
+         end select
+         allocate(yxt::p(3)%yv(4))
+         select type (q=>p(3)%yv)
+           type is(yxt)
+             allocate(q(4)%o   ,source='aa')
+             allocate(q(4)%name,source='aa')
+         end select
+     end select
+     select type(p=>value(2)%bv)
+       type is(ext)
+         allocate(yxt::p(1)%yv(4))
+         select type (q=>p(1)%yv)
+           type is(yxt)
+             allocate(q(4)%o   ,source='22')
+             allocate(q(4)%name,source='22')
+         end select
+         allocate(yxt::p(3)%yv(4))
+         select type (q=>p(3)%yv)
+           type is(yxt)
+             allocate(q(4)%o   ,source='bb')
+             allocate(q(4)%name,source='bb')
+         end select
+     end select
+     call s1(var, value) 
+     k=0
+     select type( p=>var(1)%bv )
+       type is(ext)
+         select type (q=>p(1)%yv)
+           type is(yxt)
+             q(4)%o   (:)='00'
+             q(4)%name(:)='00'
+             k1=loc(q(4)%name)
+         end select
+         select type (q=>p(3)%yv)
+           type is(yxt)
+             q(4)%o   (:)='00'
+             q(4)%name(:)='00'
+         end select
+     end select
+       k=1
+     if (k/=1) print *,1002
+     select type(p=>value(1)%bv)
+       type is(ext)
+         select type (q=>p(1)%yv)
+           type is(yxt)
+             if (q(4)%o   (:)/='11') print *,3009
+             if (q(4)%name(:)/='11') print *,3008
+         k2=              loc(q(4)%name)
+         end select
+         select type (q=>p(3)%yv)
+           type is(yxt)
+             if (q(4)%o   (:)/='aa') print *,3007
+             if (q(4)%name(:)/='aa') print *,3006
+         end select
+     end select
+     if (k1==k2) print *,2002
+     k=0
+     select type( p=>var(2)%bv )
+       type is(ext)
+         select type (q=>p(1)%yv)
+           type is(yxt)
+             q(4)%o   (:)='00'
+             q(4)%name(:)='00'
+             k1=loc(q(4)%name)
+             k=1
+         end select
+         select type (q=>p(3)%yv)
+           type is(yxt)
+             q(4)%o   (:)='00'
+             q(4)%name(:)='00'
+         end select
+     end select
+     if (k/=1) print *,1102
+     select type(p=>value(2)%bv)
+       type is(ext)
+         select type (q=>p(1)%yv)
+           type is(yxt)
+             if (q(4)%o   (:)/='22') print *,3101
+             if (q(4)%name(:)/='22') print *,3901
+         k2=              loc(q(4)%name)
+         end select
+         select type (q=>p(3)%yv)
+           type is(yxt)
+             if (q(4)%o   (:)/='bb') print *,3101
+             if (q(4)%name(:)/='bb') print *,3801
+         end select
+     end select
+     if (k1==k2) print *,2102
+     end
+     call w
+     print *,'sngg647p : pass'
+     end 

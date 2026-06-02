@@ -1,7 +1,3 @@
-llvm_singlesource_compile_only_file(0128_0001.c PREFIX "Fujitsu-C-")
-llvm_singlesource_compile_only_file(0128_0002.c PREFIX "Fujitsu-C-")
-llvm_singlesource_compile_only_file(0128_0023.c PREFIX "Fujitsu-C-")
-llvm_singlesource_compile_only_file(0128_0045.c PREFIX "Fujitsu-C-")
 llvm_singlesource_fujitsu(PREFIX "Fujitsu-C-")
 set_property(SOURCE 0128_0002.c APPEND PROPERTY COMPILE_OPTIONS "-Wno-incompatible-pointer-types")
 set_property(SOURCE 0128_0006.c APPEND PROPERTY COMPILE_OPTIONS "-fno-fast-math")

@@ -1,0 +1,90 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE t1
+  REAL :: r1
+END TYPE
+
+TYPE,EXTENDS(t1) :: t2
+  REAL :: r2
+END TYPE
+
+INTERFACE OPERATOR ( * )
+  MODULE PROCEDURE multip
+END INTERFACE
+
+INTERFACE OPERATOR( + )
+  MODULE PROCEDURE addit
+END INTERFACE
+
+INTERFACE
+FUNCTION fun_2(d1,d2,d3)
+IMPLICIT NONE
+REAL :: d1,d2,d3,fun_2
+END FUNCTION
+END INTERFACE
+
+CONTAINS
+
+FUNCTION multip(ddy1,ddy2)
+IMPLICIT NONE
+CLASS(t2),DIMENSION(:),INTENT(IN) :: ddy1
+TYPE(t1),DIMENSION(1:10),INTENT(IN) :: ddy2
+CLASS(t2),DIMENSION(:),ALLOCATABLE :: multip
+ALLOCATE(multip(1:10))
+multip%r2 = ddy1%r2 * ddy2%r1
+END FUNCTION
+
+FUNCTION addit(dy1,dy2)
+IMPLICIT NONE
+CLASS(t2),DIMENSION(:),INTENT(IN) :: dy1
+REAL,INTENT(IN) :: dy2
+CLASS(t2),DIMENSION(:),ALLOCATABLE :: addit
+ALLOCATE(addit(1:10))
+addit%r2 = dy1%r2 + dy2
+END FUNCTION
+
+END MODULE
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+REAL :: num = 20.0,res,xx = 12.0,yy = 6.0,zz = 1.0
+TYPE(t1),DIMENSION(1:10) :: obj1
+CLASS(t2),DIMENSION(:),ALLOCATABLE :: allc
+ALLOCATE(allc(1:10))
+allc%r2 = 3.0
+obj1%r1 = 2.0
+
+res = fun(num)
+
+IF(res .EQ. 20.0) THEN
+  PRINT*,'pass'
+ELSE
+  PRINT*,101
+END IF 
+
+CONTAINS
+
+REAL FUNCTION fun(dd1)
+REAL,VALUE :: dd1
+ASSOCIATE(aa => (allc * obj1) + (dd1 - fun_2(xx,yy,zz)))
+  IF(ALL(aa(1: : 2)%r2 .EQ. 21.0)) THEN
+    fun = dd1 
+  ELSE
+    fun = 0.0
+  END IF
+  IF(SIZE(aa) .NE. 10) PRINT*,102
+  IF(SIZEOF(aa) .NE. 80) PRINT*,103
+  IF(ALL(SHAPE(aa) .NE. 10)) PRINT*,104
+END ASSOCIATE
+END FUNCTION
+
+END PROGRAM
+
+FUNCTION fun_2(d1,d2,d3)
+IMPLICIT NONE
+REAL :: d1,d2,d3,fun_2
+fun_2 = d1 - d2 - d3
+END FUNCTION

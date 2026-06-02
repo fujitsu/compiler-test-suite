@@ -43,7 +43,7 @@ rewind 7
  do ii=1,25
  read (7) d,e;call chk(d,e)
  end do
- read (11,end=1) d,e;print *,'fail'
+ read (7,end=1) d,e;print *,'fail'
 1 continue
       end subroutine
       subroutine chk(x,z)

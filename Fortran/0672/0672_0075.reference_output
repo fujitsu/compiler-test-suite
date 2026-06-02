@@ -1,0 +1,9 @@
+0   SUB-1
+ &NAMEL M1= 18,M2= -30,N1= 4,N2= 6/
+0   SUB-2
+ &NAMEL M1= 56,M2= 301,N1= 4,N2= 6/
+0   SUB-3
+ &NAMEL M1= 56,M2= 280,N1= 4,N2= 6/
+0   SUB-4
+ &NAMEL M1= 21,M2= -56,N1= 4,N2= 6/
+exit 0

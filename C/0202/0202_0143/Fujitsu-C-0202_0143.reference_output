@@ -1,0 +1,5 @@
+4_3-1    sizeof a = 4800 (4800) 
+4_3-2    sizeof p = 8 (8) 
+4_3-3    sizeof c = 48000 (48000) 
+4_3-4    sizeof r = 8 (8) 
+exit 0

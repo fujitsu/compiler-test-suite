@@ -1,0 +1,80 @@
+PROGRAM CV2400
+  TYPE STR
+     INTEGER*4  IA(10,10)/100*1./
+     INTEGER*4  IB(10)/1,2,3,4,5,6,7,8,9,10/
+     REAL   *4  RA(10,10)/100*1./
+     REAL   *4  RB(10,10,10)/1000*1./
+     REAL   *8  DA(10,10)/100*1./
+  END type STR
+  TYPE(STR) STR_DATA
+
+  ID=0
+  DO I=1,10
+10   IF(STR_DATA%IB(I).LE.8) THEN
+        CYCLE
+     ELSE
+        IF(STR_DATA%IB(I).EQ.5) CYCLE
+     ENDIF
+     ID=ID+1
+     DO J=1,10
+        STR_DATA%IA(I,J)=I+J+ID
+        STR_DATA%RA(I,J)=STR_DATA%IA(I,J)-STR_DATA%RA(I,J)
+        DO K=1,10
+           STR_DATA%RB(I,J,K)=I+J+K
+           IF(I.GE.8) GO TO 21
+           IF(K.GE.3) GO TO 2
+17         STR_DATA%RB(I,J,K)=STR_DATA%RB(I,J,K)+1.
+2          IF(K.EQ.5.OR.STR_DATA%RB(I,J,K).LE.3.) GO TO 17
+        END DO
+     END DO
+     STR_DATA%IB(I)=I-1
+     CYCLE
+21   IF(I.EQ.3) GO TO 10
+     STR_DATA%DA(I,I)=I*I
+  END DO
+  WRITE(6,*) 'IA=',STR_DATA%IA
+  WRITE(6,*) 'IB=',STR_DATA%IB
+  WRITE(6,*) 'RA=',STR_DATA%RA
+  WRITE(6,*) 'RB=',STR_DATA%RB
+  WRITE(6,*) 'DA=',STR_DATA%DA
+
+  ID=0
+  GO TO 100
+200 IF(ID.EQ.5) GO TO 300
+  ID=ID+1
+  DO I=1,10
+     DO J=1,10
+        STR_DATA%RA(I,J)=2+I+J
+     END DO
+  END DO
+
+  GO TO 200
+100 CONTINUE
+300 IF(ID.NE.0) GO TO 400
+  DO I=1,10
+     IF(STR_DATA%IB(I).GE.5) THEN
+        WRITE(6,*) 'LOOP2'
+     ELSE
+        GO TO 360
+     ENDIF
+310  CONTINUE
+     STR_DATA%IB(I)=I-1
+     CYCLE
+360  DO J=1,10
+        STR_DATA%RA(I,J)=STR_DATA%RA(I,J)+STR_DATA%IB(J)
+        IF(J.GE.3) GO TO 322
+        GO TO 310
+322     STR_DATA%RA(I,J)=0
+     END DO
+     IF(I.EQ.3) CYCLE
+     GO TO 120
+  END DO
+
+400 WRITE(6,*) '*** LOOP2 ***'
+  WRITE(6,*) 'IA=',STR_DATA%IA
+  WRITE(6,*) 'IB=',STR_DATA%IB
+  WRITE(6,*) 'RA=',STR_DATA%RA
+  WRITE(6,*) 'RB=',STR_DATA%RB
+  WRITE(6,*) 'DA=',STR_DATA%DA
+120 STOP
+END PROGRAM CV2400

@@ -1,0 +1,86 @@
+     module mod
+       type :: b
+          integer::d1
+          class(b),allocatable::n
+          integer::dd1(1000)
+       end type
+       type,extends(b) :: e
+          integer::d2
+          character(:),allocatable::c
+       end type
+       character(*),parameter::cp=repeat('1',1000)
+     end module mod
+
+     subroutine s1
+     use mod
+type g
+     integer(8)::d1
+     class (b),allocatable :: v,u
+end type
+ type(g)::h(2)
+ mm=2
+
+     allocate(e::h(mm)%v)
+             write (11,"(z16.16)") loc(h(mm)%v     )
+     select type(p=>h(mm)%v)
+      type is(e)
+       allocate(p      %c,source=cp )
+             write (21,"(z16.16)") loc(p      %c  )
+     end select
+     h(mm)%v%d1=1
+     allocate(e::h(mm)%v%n)
+     select type(p=>h(mm)%v%n)
+      type is(e)
+       allocate(p%c,source=cp )
+             write (22,"(z16.16)") loc(p%c  )
+     end select
+             write (12,"(z16.16)") loc(h(mm)%v%n   )
+     h(mm)%v%n%d1=2
+     allocate(e::h(mm)%v%n%n)
+     select type(p=>h(mm)%v%n%n)
+      type is(e)
+       allocate(p%c,source=cp )
+             write (23,"(z16.16)") loc(p%c  )
+     end select
+             write (13,"(z16.16)") loc(h(mm)%v%n%n )
+     h(mm)%v%n%n%d1=3
+
+     h(mm)%u=h(mm)%v
+
+     if (h(mm)%u%d1/=1) print *,10001
+     if (h(mm)%u%n%d1/=2) print *,10002
+     if (h(mm)%u%n%n%d1/=3) print *,10003
+     if (allocated(h(mm)%u%n%n%n)) print *,10004
+     deallocate(h(mm)%v)
+     !!!deallocate(h(mm)%u)
+     end
+use mod
+do n=1,120
+      call s1
+end do
+!call chk(11)
+!call chk(12)
+!call chk(13)
+!call chk(21)
+!call chk(22)
+!call chk(23)
+     print *,'sngg043r : pass'
+     end 
+      subroutine  chk(k)
+     character(16)::x(1000)
+     rewind (k)
+     kk=1
+     do
+       read(k ,'(a)',end=100) x(kk)
+       kk=kk+1
+     end do
+  100 continue
+     kk=kk-1
+     if (kk>1000) stop 999
+     do nn=1,kk-1
+      do nnn=nn+1,kk
+        if (x(nn)==x(nnn)) return
+      end do
+     end do
+  500 print *,"Please check UNIT",k
+     end

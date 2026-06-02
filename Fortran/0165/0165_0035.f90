@@ -1,11 +1,11 @@
 i=10
 j=20
 k=30
-         !$omp parallel do default(none) collapse(3) private(i) shared(j,i1,j1,k1)
+         !$omp parallel do default(none) collapse(3) private(i,j,k) shared(i1,j1,k1)
          do i=1,1
            do j=1,1
            do k=1,1
-         !$omp parallel do default(none) collapse(3) private(i1) shared(j1)
+         !$omp parallel do default(none) collapse(3) private(i1,j1,k1) 
          do i1=1,1
            do j1=1,1
            do k1=1,1
@@ -25,11 +25,11 @@ if (k.ne.30) print *,'err',k
 i=10
 j=20
 k=30
-         !$omp parallel do default(none) collapse(3) private(i) shared(j,k,i1,j1,k1)
+         !$omp parallel do default(none) collapse(3) private(i,j,k) shared(i1,j1,k1)
          do i=1,1
            do j=1,1
            do k=1,1
-         !$omp parallel default(none) private(i1) shared(j1)
+         !$omp parallel default(none) private(i1,j1,k1) 
          !$omp do collapse(3)
          do i1=1,1
            do j1=1,1

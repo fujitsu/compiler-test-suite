@@ -1,0 +1,12 @@
+ **IFD1**
+ LA =  T T T T T T T T T T
+ **IFD2**
+ LC =  T T T T T T T T T T
+ **IFD3**
+ LG =  F F F F F F F F F F
+ LC =  T T T T T T T T T T
+ **IFD3**
+ LA =  T T T T T T F F F F
+ LD =  T T T T T T T T T T
+ LF =  T T T T T T T T T T
+exit 0

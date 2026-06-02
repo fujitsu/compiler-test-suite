@@ -7,6 +7,7 @@ ii=1
    !$omp parallel shared(prv)
    !$omp task default(firstprivate)
    prv = prv + 1
+   iaa=200
    ii=if(ii)
    !$omp end task
    if (iaa.ne.1) print *,'err'

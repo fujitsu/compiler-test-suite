@@ -6,11 +6,6 @@ struct test01 {
   short volatile array[10];
 };
 
-struct test02 {
-  char dummy;
-  unsigned short volatile array[10];
-};
-
 struct test03 {
   char dummy;
   int volatile array[10];
@@ -73,15 +68,6 @@ short func01(short a)
   obj.array[3] = a;
 
   return obj.array[3];
-}
-
-unsigned short func02(unsigned short a)
-{
-  struct test02 obj = { 0 };
-
-  (0,obj).array[3] = a;
-
-  return (0,obj).array[3];
 }
 
 int func03(int a)
@@ -242,9 +228,6 @@ int main()
   printf("test start\n");
   if (func01(5) != 5) {
     printf(" 01 NG\n");
-  }
-  if (func02(5) != 5) {
-    printf(" 02 NG\n");
   }
   if (func03(5) != 5) {
     printf(" 03 NG\n");

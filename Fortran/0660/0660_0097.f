@@ -21,8 +21,8 @@
          jj=jj+1
          if (jj.eq.84) exit
        end do
-       call output('student.ins    ')
-       call outlist('student.ins    ')
+       call output('student.ins2   ')
+       call outlist('student.ins2   ')
        print *,'pass'
        contains
        subroutine input(fn)

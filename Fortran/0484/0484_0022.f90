@@ -1,8 +1,9 @@
 i3=1
 a=1
 b=1
-!$omp  parallel
+!$omp  parallel private(i3)
 !$omp  sections
+!$omp  section
 !$omp  critical(k1)
 !$omp  critical(k2)
 i3=2

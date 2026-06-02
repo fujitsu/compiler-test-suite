@@ -1,0 +1,4 @@
+ c8: ok
+ c16: ok
+ c32: ok
+exit 0

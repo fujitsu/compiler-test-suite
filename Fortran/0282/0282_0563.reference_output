@@ -1,0 +1,13 @@
+ ABCDEFG             --ABCDEFG             
+ string->string OK
+ KIND:: 1 --KIND:: 1
+ KIND OK
+ ABCDEFG             --ABCDEFG             
+ string->string OK
+ KIND:: 1 --KIND:: 1
+ KIND OK
+ ABCDEFG             --ABCDEFG             
+ string->string OK
+ KIND:: 1 --KIND:: 1
+ KIND OK
+exit 0

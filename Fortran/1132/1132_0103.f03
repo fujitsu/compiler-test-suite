@@ -1,0 +1,48 @@
+      PROGRAM  CV4218
+        type STR
+           INTEGER   ITR1(2),IS10
+           REAL*4    EV10(100),EV11(100)
+           REAL*4    EV20(100,2)
+           REAL*8    DV20(100)
+           INTEGER   ITR3
+           REAL*4    EV30(2000)
+        END type STR
+        TYPE(STR) STR_DATA
+
+      DATA      STR_DATA%EV10/5*0.0,6*2.,-2,30*1.5,-.5,49*-2.5,14.2,6*0,.5/
+      DATA      STR_DATA%ITR1/100,0/STR_DATA%EV11/100*0/
+      DATA      STR_DATA%DV20/90*10,.5,9*10/STR_DATA%EV20/200*200/
+      DATA      STR_DATA%EV30/31*2048,1000,1968*2048/,STR_DATA%ITR3/2048/
+      DO 10 I=1,STR_DATA%ITR1(1)
+        IF (STR_DATA%EV10(I).GT.1) THEN
+          STR_DATA%IS10=STR_DATA%EV10(I)*2.5
+        ELSE
+          STR_DATA%IS10=1.0
+        ENDIF
+        IF (STR_DATA%EV10(I)*STR_DATA%EV10(I).GT.STR_DATA%IS10)  THEN
+          GOTO  19
+        ENDIF
+        STR_DATA%EV11(I)=STR_DATA%IS10/2.0
+ 10   CONTINUE
+ 19   WRITE(6,*) STR_DATA%EV11
+      DO 20 J=1,2
+       L=1
+      DO 20 I=100,1,-1
+        IS20=LOG(STR_DATA%DV20(I))
+        IF(IS20) 29,21,22
+  21    STR_DATA%EV20(L,J)=IS20*L
+        GOTO  20
+  22    STR_DATA%EV20(L,J)=STR_DATA%DV20(I)-L
+  20  L=L+1
+  29  CONTINUE
+      WRITE(6,*) ' CVCT4218-LOOP.02 '
+      WRITE(6,*) I,L
+      WRITE(6,*) STR_DATA%EV20
+      WRITE(6,*)  '  CVCT4218-LOOP.03 '
+      DO 30 I=1,STR_DATA%ITR3
+       IF (STR_DATA%EV30(I)/STR_DATA%ITR3.GE.1.AND.STR_DATA%EV30(I).GE.STR_DATA%ITR3)  GOTO  30
+         GOTO  38
+ 30   CONTINUE
+ 38   WRITE(6,*)  I
+      STOP
+      END

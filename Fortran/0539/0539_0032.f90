@@ -2,7 +2,7 @@ ido1=1
 ido2=2
 !$omp parallel default(none)
 do ido1=1,10
-!$omp simd
+!$omp simd private(ido2)
 do ido2=1,10
 end do
 end do

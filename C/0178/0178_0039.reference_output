@@ -1,0 +1,30 @@
+return add test
+main ok 
+auto   func ok 0 
+static func ok 1 
+auto   func ok 1 
+static func ok 2 
+auto   func ok 2 
+static func ok 3 
+auto   func ok 3 
+static func ok 4 
+auto   func ok 4 
+static func ok 5 
+auto   func ok 5 
+static func ok 6 
+auto   func ok 6 
+static func ok 7 
+auto   func ok 7 
+static func ok 8 
+auto   func ok 8 
+static func ok 9 
+auto   func ok 9 
+static func ok 10 
+auto   func ok 10 
+const & exper test 
+const0 ok 
+const1 ok 
+ptr ok 
+end func ok 11 
+test end 
+exit 0

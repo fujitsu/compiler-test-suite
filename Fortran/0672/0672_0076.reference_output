@@ -1,0 +1,11 @@
+0   SUB-1
+ &NAMEL K= 3,K1= 3,M= 36,M1= 21,M2= -6/
+0   SUB-2
+ &NAMEL K= 3,K1= 3,M= 18,M1= 12,M2= -6/
+0   SUB-3
+ &NAMEL K= 3,K1= 3,M= 24,M1= 12,M2= 0/
+0   SUB-4
+ &NAMEL K= 3,K1= 3,M= 42,M1= 21,M2= 0/
+0   SUB-5
+ &NAMEL K= 3,K1= 3,M= 42,M1= 21,M2= 0/
+exit 0

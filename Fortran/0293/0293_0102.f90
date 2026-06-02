@@ -15,7 +15,7 @@ type(ty1):: fun
 end function
 end interface
 type(ty) :: obj
-write(59,*)extends_type_of(fun(),obj)
+write(71,*)extends_type_of(fun(),obj)
 print *,'pass'
 end
 

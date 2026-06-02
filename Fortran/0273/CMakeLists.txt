@@ -1,6 +1,3 @@
-llvm_singlesource_compile_only_file(0273_0136.f90 PREFIX "Fujitsu-Fortran-")
-llvm_singlesource_compile_only_file(0273_0185.f90 PREFIX "Fujitsu-Fortran-")
-llvm_singlesource_compile_only_file(0273_0201.f90 PREFIX "Fujitsu-Fortran-")
 llvm_singlesource_fujitsu(PREFIX "Fujitsu-Fortran-")
 llvm_set_own_fortran_module_directory()
 set_property(SOURCE 0273_0142.f90 APPEND PROPERTY COMPILE_OPTIONS "-fno-fast-math")

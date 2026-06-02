@@ -1,0 +1,52 @@
+program main
+  TYPE STR
+     REAL*4  A(20,20),B(20,20),C(20,20),D(20,20)
+  END type STR
+  TYPE(STR) STR_DATA
+  DATA    N/19/
+
+  DO I=1,20
+     DO J=1,20
+        STR_DATA%A(J,I)=I+J*1.1
+        STR_DATA%B(J,I)=I+J*2.2
+        STR_DATA%C(J,I)=I+J*3.3
+        STR_DATA%D(J,I)=I+J*4.4
+     END DO
+  END DO
+
+  DO I=1,N
+     DO J=3,N
+        CALL  SUB1(STR_DATA%D(I,N))
+        STR_DATA%A(I,J)=STR_DATA%B(I,J)+STR_DATA%C(I,J)
+        STR_DATA%D(I,J)=STR_DATA%B(I,J)*2.-STR_DATA%A(I,J-1)
+     END DO
+     DO J=2,N-1
+        RX=FLOAT(J)
+        CALL  SUB2(STR_DATA%B(1,I),RX)
+        STR_DATA%B(1,I)=STR_DATA%B(1,I)+STR_DATA%C(I,J)
+        STR_DATA%C(J,I)=STR_DATA%C(J+1,I+1)+STR_DATA%A(J,I)
+     END DO
+     DO J=1,N-2
+        STR_DATA%A(J,I)=STR_DATA%B(1,I)+STR_DATA%D(I,J)
+        CALL  SUB2(STR_DATA%A(1,I),STR_DATA%A(N,I+1))
+        STR_DATA%C(J,I)=STR_DATA%C(J+1,I+1)+STR_DATA%A(J,I+1)
+     END DO
+  END DO
+  WRITE(6,99) ((STR_DATA%A(I,J),I=1,10),J=1,10)
+  WRITE(6,99) ((STR_DATA%B(I,J),I=1,10),J=1,10)
+  WRITE(6,99) ((STR_DATA%C(I,J),I=1,10),J=1,10)
+  WRITE(6,99) ((STR_DATA%D(I,J),I=1,10),J=1,10)
+99 FORMAT(8F10.3)
+  STOP
+END program main
+
+SUBROUTINE  SUB1(X)
+  X=X+1
+  RETURN
+END SUBROUTINE SUB1
+
+SUBROUTINE  SUB2(X,Y)
+  X=X+1.
+  Y=Y+1.
+  RETURN
+END SUBROUTINE SUB2

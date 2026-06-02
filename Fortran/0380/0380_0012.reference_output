@@ -1,0 +1,12 @@
+  ROUND = UP                  
+ 1.
+  ROUND = DOWN                
+ 1.
+  ROUND = ZERO                
+ 1.
+  ROUND = COMPATIBLE          
+ 1.
+  ROUND = NEAREST             
+ 1.
+ pass
+exit 0

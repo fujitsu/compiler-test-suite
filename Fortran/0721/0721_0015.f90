@@ -1,0 +1,68 @@
+module mod
+contains
+integer function ifun()
+ifun=1
+end function
+subroutine sub(i)
+integer :: i
+i=100
+end subroutine
+end
+
+subroutine test01()
+use mod
+external :: ip
+pointer :: ip
+ip=>ifun
+i=ip()
+if (i.ne.1) print *,'fail'
+end
+
+subroutine test02()
+use mod
+external :: ip
+pointer :: ip
+integer :: ip
+ip=>ifun
+i=ip()
+if (i.ne.1) print *,'fail'
+end
+
+subroutine test03()
+use mod
+external :: ip
+pointer :: ip
+ip=>sub
+call ip(i)
+if (i.ne.100) print *,'fail'
+end
+
+subroutine test04()
+use mod
+external :: ip,ip2
+pointer :: ip,ip2
+ip2=>sub
+ip=>ip2
+call ip(i)
+if (i.ne.100) print *,'fail'
+end
+
+subroutine test05()
+use mod
+external :: ip
+pointer :: ip
+external :: ip2
+pointer :: ip2
+ip2=>sub
+ip=>ip2
+call ip(i)
+if (i.ne.100) print *,'fail'
+end
+
+call test01()
+call test02()
+call test03()
+call test04()
+call test05()
+print *,"pass"
+end

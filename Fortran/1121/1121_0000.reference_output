@@ -1,0 +1,2 @@
+ do lastprivate test: pass
+exit 0

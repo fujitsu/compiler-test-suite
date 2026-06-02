@@ -1,5 +1,5 @@
 i1=100
-!$omp parallel default(none)
+!$omp parallel default(none) shared(i1,i3)
 !$omp do 
          do i1=1,1
 write(101,*) (1,i3=1,1)

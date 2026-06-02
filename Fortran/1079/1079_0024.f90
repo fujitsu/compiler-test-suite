@@ -1,0 +1,232 @@
+module m
+  type ty
+    integer :: x    =9
+    complex :: y=(6.5,8.0)
+    contains
+  end type
+  type:: ty2
+    integer :: z=-1,x    =9
+    complex :: y=(6.5,8.0)
+    contains
+  end type
+  interface
+    subroutine foo
+    end subroutine
+  end interface
+  interface  write(unformatted)
+     procedure :: pform
+  end interface
+  interface  write(unformatted)
+     procedure :: pform2
+  end interface
+  interface read(formatted)
+    procedure::rform
+  end interface
+  interface read(formatted)
+    procedure::rform2
+  end interface
+  interface  read(unformatted)
+     procedure :: sform
+  end interface
+  interface  read(unformatted)
+     procedure :: sform2
+  end interface
+ interface  write(formatted)
+      procedure::yform
+  end interface
+ interface  write(formatted)
+      procedure::yform2
+  end interface
+integer::k1,k2,k3,k4(2)
+complex::z
+character(5)::zz
+contains
+    subroutine yform(dtv, unit, iotype, vlist, iostat, iomsg)
+      class(ty), intent(in) :: dtv
+      integer(kind=4), intent(in) :: unit
+      character(*), intent(in) :: iotype
+      integer, intent(in) :: vlist(:)
+      integer, intent(out) :: iostat
+      character(*), intent(inout) :: iomsg
+        write(unit,*,iostat=iostat,iomsg=iomsg) vlist(1),vlist(2),dtv%x+2,dtv%y,'"',iotype,'"'
+    end subroutine
+    subroutine yform2(dtv, unit, iotype, vlist, iostat, iomsg)
+      class(ty2), intent(in) :: dtv
+      integer(kind=4), intent(in) :: unit
+      character(*), intent(in) :: iotype
+      integer, intent(in) :: vlist(:)
+      integer, intent(out) :: iostat
+      character(*), intent(inout) :: iomsg
+        write(unit,*,iostat=iostat,iomsg=iomsg) vlist(1),vlist(2),dtv%x+3,dtv%y,'"',iotype,'"'
+    end subroutine
+    subroutine sform(dtv, unit, iostat, iomsg)
+      class(ty), intent(inout) :: dtv
+      integer(kind=4), intent(in) :: unit
+      integer, intent(out) :: iostat
+      character(*), intent(inout) :: iomsg
+        read(unit,iostat=iostat,iomsg=iomsg) k1,k2,dtv%x,dtv%y
+     k3=dtv%x
+     z=dtv%y
+    end subroutine
+    subroutine sform2(dtv, unit, iostat, iomsg)
+      class(ty2), intent(inout) :: dtv
+      integer(kind=4), intent(in) :: unit
+      integer, intent(out) :: iostat
+      character(*), intent(inout) :: iomsg
+        read(unit,iostat=iostat,iomsg=iomsg) k1,k2,dtv%x,dtv%y
+     k1=k1+1
+     k3=dtv%x
+     z=dtv%y
+    end subroutine
+    subroutine rform(dtv, unit, iotype, vlist, iostat, iomsg)
+      class(ty), intent(inout) :: dtv
+      integer(kind=4), intent(in) :: unit
+      character(*), intent(in) :: iotype
+      integer, intent(in) :: vlist(:)
+      integer, intent(out) :: iostat
+      character(*), intent(inout) :: iomsg
+        read(unit,*,iostat=iostat,iomsg=iomsg) k1,k2,dtv%x,dtv%y
+     k3=dtv%x
+     z=dtv%y
+     zz=iotype
+     k4=vlist
+    end subroutine
+    subroutine rform2(dtv, unit, iotype, vlist, iostat, iomsg)
+      class(ty2), intent(inout) :: dtv
+      integer(kind=4), intent(in) :: unit
+      character(*), intent(in) :: iotype
+      integer, intent(in) :: vlist(:)
+      integer, intent(out) :: iostat
+      character(*), intent(inout) :: iomsg
+        read(unit,*,iostat=iostat,iomsg=iomsg) k1,k2,dtv%x,dtv%y
+     k1=k1+1
+     k3=dtv%x
+     z=dtv%y
+     zz=iotype
+     k4=vlist
+    end subroutine
+    subroutine pform(dtv, unit, iostat, iomsg)
+      class(ty), intent(in) :: dtv
+      integer(kind=4), intent(in) :: unit
+      integer, intent(out) :: iostat
+      character(*), intent(inout) :: iomsg
+        write(unit,iostat=iostat,iomsg=iomsg) dtv%x+2,dtv%y
+    end subroutine
+    subroutine pform2(dtv, unit, iostat, iomsg)
+      class(ty2), intent(in) :: dtv
+      integer(kind=4), intent(in) :: unit
+      integer, intent(out) :: iostat
+      character(*), intent(inout) :: iomsg
+        write(unit,iostat=iostat,iomsg=iomsg)dtv%x+3,dtv%y
+    end subroutine
+end module
+    subroutine foo
+    end subroutine
+
+subroutine sub1()
+use m
+implicit none
+  class (ty),pointer :: t1
+  class (ty2),pointer :: t2
+  allocate(t1)
+  read(unit=114,'(DT(2,3))'),t1
+write(122,*)k1,k2,k4,k3,z,"'",zz,"'"
+k1=0;k2=0;k3=0;z=0;zz='';k4=0
+  allocate(ty2::t2)
+  read(unit=115,'(DT(2,3))'),t2
+write(122,*)k1,k2,k4,k3,z,"'",zz,"'"
+  allocate(t1)
+  read(unit=116)t1
+write(123,*)k1,k2,k3,z
+k1=0;k2=0;k3=0;z=0
+  allocate(ty2::t2)
+  read(unit=117)t2
+write(124,*)k1,k2,k3,z
+
+  allocate(t1)
+    open(unit=118, form='FORMATTED')
+  write(unit=118,'(DT(2,3))'),t1
+  allocate(t2)
+    open(unit=119, form='FORMATTED')
+  write(unit=119,'(DT(2,3))'),t2
+  allocate(t1)
+  write(unit=120)t1
+  allocate(ty2::t2)
+  write(unit=121)t2
+  end
+
+
+call put(114)
+call put(115)
+call zput(116)
+call zput(117)
+call sub1
+call chk801
+call chk1801
+call chk1301
+call chk7801
+print *,'sngg857n : pass'
+end
+subroutine chk7801
+integer n(1)
+complex c
+rewind 120
+read(120) n,c
+if (any(n/=[11]))print *,7901
+if (c/=(6.5,8))print *,7902
+rewind 121
+read(121) n,c
+if (any(n/=[12]))print *,79011
+if (c/=(6.5,8))print *,79021
+end
+subroutine put(i)
+write(i  ,*) [2,3,11],(1.5,3)
+rewind i
+end
+subroutine zput(i)
+write(i  ) [2,3,11],(1.5,3)
+rewind i
+end
+subroutine chk801
+integer n(5),w(3)
+complex c
+character*2 d
+rewind 122
+read(122,*) n,c,d
+if (any(n/=[2,3,2,3,11]))print *,901
+if (c/=(1.5,3))print *,902
+if (d/='DT')print *,903
+read(122,*) n,c,d
+if (any(n/=[3,3,2,3,11]))print *,9012,n
+if (c/=(1.5,3))print *,1902
+if (d/='DT')print *,1903
+
+rewind 123
+read(123,*) w,c
+if (any(w/=[2,3,11]))print *,1901
+if (c/=(1.5,3))print *,1902
+rewind 124
+read(124,*) w,c
+if (any(w/=[3,3,11]))print *,19011,n
+if (c/=(1.5,3))print *,11902
+end
+subroutine chk1801
+integer n(3)
+complex c
+character*2 d
+rewind 118
+read(118,*) n,c,d
+if (any(n/=[2,3,11]))print *,2901
+if (c/=(6.5,8))print *,2902
+if (d/='DT')print *,2903
+end
+subroutine chk1301
+integer n(3)
+complex c
+character*2 d
+rewind 119
+read(119,*) n,c,d
+if (any(n/=[2,3,12]))print *,22901
+if (c/=(6.5,8))print *,22902
+if (d/='DT')print *,22903
+end

@@ -1,0 +1,35 @@
+subroutine s
+!!!! implicit none
+!integer::ia00014=0,ia00015=0,ia00082=0,ia00083=0
+  block
+integer::                ia00082
+integer::        ia00015
+integer::ia00014
+integer::                        ia00083
+integer::ia00900,ia00901,ia00902,ia00903,ia00904,ia00905,ia00906,ia00907,ia00908ia00909
+integer::ia00910,ia00911,ia00912,ia00913,ia00914,ia00915,ia00916,ia00917,ia00918ia00919
+integer::ia00920,ia00921,ia00922,ia00923,ia00924,ia00925,ia00926,ia00927,ia00928ia00929
+integer::ia00930,ia00931,ia00932,ia00933,ia00934,ia00935,ia00936,ia00937,ia00908ia00939
+integer::ia00940,ia00941,ia00942,ia00943,ia00944,ia00945,ia00946,ia00947,ia00948ia00949
+integer::ia00950,ia00951,ia00952,ia00953,ia00954,ia00955,ia00956,ia00957,ia00958ia00959
+integer::ia00960,ia00961,ia00962,ia00963,ia00964,ia00965,ia00966,ia00967,ia00968ia00969
+integer::ia00970,ia00971,ia00972,ia00973,ia00974,ia00975,ia00976,ia00977,ia00978ia00979
+integer::ia00980,ia00981,ia00982,ia00983,ia00984,ia00985,ia00986,ia00987,ia00988ia00989
+integer::ia00990,ia00991,ia00992,ia00993,ia00994,ia00995,ia00996,ia00997,ia00998ia00999
+!ia00014=1
+!ia00015=3
+!ia00082=2
+!ia00083=4
+!if (ia00014/=1) print *,1001
+!if (ia00082/=2) print *,1002
+!if (ia00015/=3) print *,1003
+!if (ia00083/=4) print *,1004
+end  block
+!if (ia00014/=0) print *,2001
+!if (ia00082/=0) print *,2002
+!if (ia00015/=0) print *,2003
+!if (ia00083/=0) print *,2004
+end
+call s
+print *,'pass'
+end

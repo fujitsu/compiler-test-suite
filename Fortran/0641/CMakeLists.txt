@@ -1,3 +1,7 @@
-llvm_singlesource_compile_only_file(0641_0297.f PREFIX "Fujitsu-Fortran-")
 llvm_singlesource_fujitsu(PREFIX "Fujitsu-Fortran-")
 llvm_set_own_fortran_module_directory()
+set_property(SOURCE 0641_0043.f APPEND PROPERTY COMPILE_OPTIONS "-ffp-contract=off")
+set_property(SOURCE 0641_0085.f APPEND PROPERTY COMPILE_OPTIONS "-fno-associative-math")
+set_property(SOURCE 0641_0087.f APPEND PROPERTY COMPILE_OPTIONS "-ffp-contract=off")
+set_property(SOURCE 0641_0184.f APPEND PROPERTY COMPILE_OPTIONS "-ffp-contract=off")
+set_property(SOURCE 0641_0349.f APPEND PROPERTY COMPILE_OPTIONS "-ffp-contract=off;-fno-associative-math")

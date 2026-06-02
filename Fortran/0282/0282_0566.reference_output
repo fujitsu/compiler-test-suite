@@ -1,0 +1,11 @@
+   ABCDEFG           --             ABCDEFG
+ string->string OK
+   fortran           --             fortran
+ string->string OK
+   FORTRAN           --             FORTRAN
+ string->string OK
+   abcdefg           --             abcdefg
+ string->string OK
+ KIND:: 1 --KIND:: 1
+ KIND OK
+exit 0

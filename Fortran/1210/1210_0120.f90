@@ -1,0 +1,54 @@
+module m1
+  type z
+    integer(8)::z1
+  end type
+  type,extends(z)::e
+     integer(8),allocatable::e1
+ end type
+contains
+subroutine s1(w)
+     class(*),allocatable::name
+  class(*)::w
+   select type(w      )
+    type is(e)
+    w%z1=11 
+    allocate(w%e1,source=111_8) 
+end select
+       allocate(name,source=w)    
+   k=0
+   select type(p=>name)
+    type is(e)
+       if (p   %z1/=11) print *,2828
+      if (p     %e1/=111) print *,2829
+      p     %e1=222
+      k=1
+   end select
+   if (k/=1) print *,1228
+   k=0
+   select type(w      )
+    type is(e)
+       if (w%z1/=11) print *,3828
+       if (w%e1/=111) print *,3829
+      k=1
+   end select
+   if (k/=1) print *,1227
+end
+end
+recursive subroutine s2(k)
+  integer::a(1000)
+  a=k
+  call s21(a)
+end
+subroutine s21(a)
+  integer::a(*   )
+ write(1001,*)a(1:1000)
+end
+use m1
+integer::k=-1
+  class(e),allocatable::w
+allocate(w)
+call s2(k)
+call s1(w)
+     print *,'sngg832r : pass'
+     end 
+

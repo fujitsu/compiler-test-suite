@@ -1,0 +1,93 @@
+PROGRAM  CV3500
+  TYPE STR
+     REAL*8     DA10(20),DA20(20),DA30(20),DA40(20)
+     COMPLEX*16 CD10(20),CD20(20),CD30(20)
+     LOGICAL*4  LD10(20),LD20(20),LD30(20)
+  END type STR
+  REAL*8     DX,DY,DZ
+  TYPE(STR) STR_DATA
+
+  DATA   STR_DATA%CD10,STR_DATA%CD20,STR_DATA%CD30/30*(2.D0,1.D0),30*(1.5D0,4.D0)/
+  DATA   STR_DATA%LD10,STR_DATA%LD20,STR_DATA%LD30/60*.FALSE./
+  DATA   IT1/1/,IT2/2/,IT3/3/,IT4/10/
+  N1 = 2
+
+  DO I=1,20
+     STR_DATA%DA10(I) = I*1.1
+     STR_DATA%DA20(I) = I*2.2
+     STR_DATA%DA30(I) = I*3.3
+     STR_DATA%DA40(I) = I*4.4
+  END DO
+
+  DO I=2,IT4
+     N2 = I+IT1
+     DO J=N2,20
+        STR_DATA%DA10(N2-1) = STR_DATA%DA10(N2-1) + STR_DATA%DA40(J)
+        STR_DATA%DA20(J) = STR_DATA%DA30(I+N1) * DREAL(STR_DATA%CD20(J))
+        DX = STR_DATA%DA10(N2)
+        DY = STR_DATA%DA20(J-N1)
+        STR_DATA%CD30(J) = STR_DATA%CD30(J) + DCMPLX(DX,DY)
+        IF ( DX .GT. DY ) THEN
+           STR_DATA%DA40(J-N1) = DX - DY
+           STR_DATA%LD10(J) = .TRUE.
+        ELSE
+           STR_DATA%DA30(N2) = STR_DATA%DA30(N2) + DIMAG(STR_DATA%CD20(J))
+           STR_DATA%LD20(J) = .TRUE.
+        ENDIF
+        N3 = J-1
+        IF ( STR_DATA%LD10(J) ) THEN
+           STR_DATA%CD10(N3) = STR_DATA%CD10(J) - STR_DATA%CD30(N3)
+        ENDIF
+        IF ( STR_DATA%LD20(J) ) THEN
+           STR_DATA%CD20(N3) = STR_DATA%CD30(J) - STR_DATA%CD10(N3)
+        ENDIF
+     END DO
+  END DO
+  WRITE(6,*) ' *** CVCT3500_str *** NO.1 *** '
+  WRITE(6,*) ' (DA10) ',STR_DATA%DA10
+  WRITE(6,*) ' (DA20) ',STR_DATA%DA20
+  WRITE(6,*) ' (DA30) ',STR_DATA%DA30
+  WRITE(6,*) ' (DA40) ',STR_DATA%DA40
+  WRITE(6,*) ' (CD10) ',STR_DATA%CD10
+  WRITE(6,*) ' (CD20) ',STR_DATA%CD20
+  WRITE(6,*) ' (CD30) ',STR_DATA%CD30
+
+  N1 = -1
+  DO I=1,IT3
+     IF ( STR_DATA%LD10(I) ) THEN
+        N2 = I
+     ELSE
+        N2 = I+1
+     ENDIF
+     N3 = I+IT2
+     DO J=IT4,N3,-1
+        DX = REAL(STR_DATA%CD10(J)) + DIMAG(STR_DATA%CD30(J+N1))
+        DY = STR_DATA%DA10(N3) - DIMAG(STR_DATA%CD20(J+N2))
+        DZ =DABS(DX-DY)
+        N4 = J
+        IF ( DX.GT.DY ) THEN
+           STR_DATA%LD30(J) = .TRUE.
+           N4 = J + IT1
+           DZ = STR_DATA%DA20(N4)
+           IF ( DZ .GT. DX ) THEN
+              STR_DATA%DA30(N4) = STR_DATA%DA30(J) - DX
+           ELSE
+              STR_DATA%DA10(J-N1) = DREAL(STR_DATA%CD10(N4))
+              N4 = J + IT2
+              STR_DATA%CD20(N4) = DCMPLX(DY,DZ)
+           ENDIF
+        ENDIF
+        STR_DATA%CD10(N3) = STR_DATA%CD10(N3) + DCMPLX(DX,DY)
+        STR_DATA%DA40(J+N3) = STR_DATA%DA40(J+I) - DMIN1(DX,DZ)
+     END DO
+  END DO
+  WRITE(6,*) ' *** CVCT3500_str ** NO.2 *** '
+  WRITE(6,*) ' (DA10) ',STR_DATA%DA10
+  WRITE(6,*) ' (DA30) ',STR_DATA%DA30
+  WRITE(6,*) ' (DA40) ',STR_DATA%DA40
+  WRITE(6,*) ' (CD10) ',STR_DATA%CD10
+  WRITE(6,*) ' (CD20) ',STR_DATA%CD20
+  WRITE(6,*) ' (LD30) ',STR_DATA%LD30
+
+  STOP
+END PROGRAM CV3500

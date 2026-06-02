@@ -1,0 +1,13 @@
+ **IFB1**
+ LA =  T T T T T T T T T T
+ **IFB2**
+ LC =  T T T T T T T T T T
+ **IFB3**
+ LG =  F F F F F F F F F F
+ LB =  F F F F F F F F F F
+ LC =  T T T T T T T T T T
+ **IFB4**
+ LA =  F F F F F F F F F F
+ LF =  F F F F F F F T T T
+ LD =  T T T T T T F T T T
+exit 0

@@ -1,0 +1,75 @@
+module mod1
+  type base
+	integer :: ii=0
+	integer :: jj=0
+  end type
+ 
+  type,extends(base) :: deriv
+	integer :: kk=0
+  end type
+ 
+  type new
+	class(base),pointer :: cptr(:,:)
+  end type
+ 
+contains
+ function fun(d1,d2,d3)
+   type(new) :: d1
+   type(new) :: d2(:,:)
+   type(new) :: d3(:,:,:)
+
+
+   type(base),target :: tgt1(7,8)
+   type(deriv),target :: tgt2(10,10)
+   type(base),target :: tgt3(5,5)
+
+   d1 = new(tgt1)
+   d2(1,1) = new(tgt2)
+   d3(1,2,3) = new(tgt3)
+
+ 
+   select type(cptr=>d2(1,1)%cptr)
+     type is(deriv)
+      cptr%kk =10
+      if(sizeof(cptr(2,2)) .NE. 12) print*,"fail 4"
+      select type(cptr=>d1%cptr)
+         class is(deriv)
+           print*,"FAIL d2"
+         type is(base)
+            cptr%ii =20 
+            if(sizeof(cptr(1,1)) .NE. 8) print*,"fail 5"
+            if(any(cptr%ii.ne.20))print*,"101"
+           select type(cptr2=>d3(1,2,3)%cptr)
+            class is(deriv)
+              print*,"FAIL d2"
+            class is(base)
+             block
+             !import::cptr2,cptr
+              cptr2%ii =10
+              if(sizeof(cptr2(3,3)) .NE. 8) print*,"fail 4"
+              if(any(cptr%ii.ne.20))print*,"151"
+             end block
+           end select
+      end select
+     type is(base)
+        print*,"FAIL d2"
+   end select
+
+   fun=9
+ end function
+end module
+
+program main
+  use mod1
+  class(new),pointer :: cptr_var1
+  class(new),pointer :: cptr_var2(:,:)
+  class(new),pointer :: cptr_var3(:,:,:)
+  type(new),target :: cptr_tgt1
+  type(new),target :: cptr_tgt2(5,7)
+  type(new),target :: cptr_tgt3(10,5,10)
+  cptr_var1 => cptr_tgt1 
+  cptr_var2 => cptr_tgt2 
+  cptr_var3 => cptr_tgt3 
+
+  if(fun(cptr_var1,cptr_var2,cptr_var3) ==9) print*,'PASS'
+end

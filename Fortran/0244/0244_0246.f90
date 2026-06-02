@@ -1,0 +1,25 @@
+interface
+function fun2()
+integer, contiguous,pointer :: fun2(:,:,:)
+end function
+
+function fun()
+integer, contiguous, pointer :: fun(:,:,:)
+end function
+end interface
+
+
+associate(aa=>fun())
+ if(is_contiguous(aa(:,:,2:))) print*,'pass'
+end associate
+
+end
+
+function fun2()
+integer, contiguous,pointer :: fun2(:,:,:)
+
+entry fun()
+integer, contiguous, pointer :: fun(:,:,:)
+allocate(fun(6,7,8))
+fun=3
+end function

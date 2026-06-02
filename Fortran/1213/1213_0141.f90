@@ -1,0 +1,110 @@
+module m1
+type y
+     integer(8)::dx
+  class(t),allocatable::v
+ end type
+  type z
+    integer(8)::z1
+  end type
+  type t
+     integer(8)::du
+     class(z),allocatable::na(:)
+  end type
+  type ,extends(t)::te
+     integer(8)::dx
+     class(z),allocatable::name(:)
+  end type
+contains
+subroutine s1(m)
+ type(y)::va(m),vb(m)
+  class(z),allocatable::q
+  class(*),allocatable::v
+type ww
+    integer(8)::z1
+  class(t),allocatable::w(:)
+end type
+type(ww)::xt(m)
+    allocate(te::xt(m)%w(2))
+    select type(p=>xt(m)%w(2))
+     type is(te)
+       allocate(z::p   %name(2))
+    end select
+
+    call ss
+
+  allocate(   va(m)%v,v,vb(m)%v,mold=xt(m)%w(m))
+
+    k=0
+    select type(v)
+     type is(te)
+      if (allocated(v%na)) print *,2829
+      k=1
+      if (.not.same_type_as(q,v%na)) print *,2828
+      deallocate(v%na,stat=n)
+      if (n==0) print *,282
+    end select
+    if (k/=1) print *,5255
+    k=0
+    select type(v)
+     type is(te)
+      if (allocated(v%name)) print *,2829
+      k=1
+      if (.not.same_type_as(q,v%name)) print *,2828
+      deallocate(v%name,stat=n)
+      if (n==0) print *,282
+    end select
+    if (k/=1) print *,5255
+ k=0
+    select type(p=>va(m)%v)
+     type is(te)
+      if (allocated(p%name)) print *,2829
+      k=1
+      if (.not.same_type_as(q,p      %name)) print *,2828
+      deallocate(p      %name,stat=n)
+      if (n==0) print *,282
+    end select
+    if (k/=1) print *,5255
+    k=0
+    select type(p=>vb(m)%v)
+     type is(te)
+      if (allocated(p%name)) print *,2829
+      k=1
+      if (.not.same_type_as(q,p      %name)) print *,2828
+      deallocate(p      %name,stat=n)
+      if (n==0) print *,282
+    end select
+    if (k/=1) print *,5255
+ k=0
+    select type(p=>va(m)%v)
+     type is(te)
+      if (allocated(p%na)) print *,2829
+      k=1
+      if (.not.same_type_as(q,p      %na)) print *,2828
+      deallocate(p      %na,stat=n)
+      if (n==0) print *,282
+    end select
+    if (k/=1) print *,5255
+    k=0
+    select type(p=>vb(m)%v)
+     type is(te)
+      if (allocated(p%na)) print *,2829
+      k=1
+      if (.not.same_type_as(q,p      %na)) print *,2828
+      deallocate(p      %na,stat=n)
+      if (n==0) print *,282
+    end select
+    if (k/=1) print *,5255
+end
+end
+use m1
+do n=1,30
+call s1(2)
+end do
+     print *,'sngg600s : pass'
+     end
+subroutine ss
+  integer,allocatable::d(:)
+  allocate(d(1000),source=-1)
+  write(1,*) d
+  deallocate(d)
+end

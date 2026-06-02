@@ -1,0 +1,4 @@
+ ----- test --
+       parallel if(.true.) private(it) -----
+ OK!
+exit 0

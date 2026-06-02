@@ -1,0 +1,26 @@
+integer,contiguous,pointer:: a(:)
+integer,target :: b(3)=[1,2,3]
+a=>b(:)
+call test(a)
+call test2(a)
+call test3(a)
+call test4(a)
+print *,'pass'
+contains
+subroutine test(u)
+ integer,asynchronous,contiguous:: u(:)
+if (any(u/=[1,2,3])) print *,201
+end subroutine
+subroutine test2(u)
+ integer,volatile    ,contiguous:: u(:)
+if (any(u/=[1,2,3])) print *,202
+end subroutine
+subroutine test3(u)
+ integer,asynchronous,contiguous,pointer:: u(:)
+if (any(u/=[1,2,3])) print *,203
+end subroutine
+subroutine test4(u)
+ integer,volatile    ,contiguous,pointer:: u(:)
+if (any(u/=[1,2,3])) print *,204
+end subroutine
+end

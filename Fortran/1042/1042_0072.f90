@@ -4,7 +4,7 @@ type tdef1
  integer:: y(2)
 end type
 type tdef2
-  type(tdef1)::x(2)
+  type(tdef1)::x(4)
 end type
 end module
 

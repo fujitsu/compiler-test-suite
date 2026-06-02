@@ -1,15 +1,15 @@
 ido1=1
 ido2=2
-!$omp parallel default(none)
-!$omp do
+!$omp parallel default(none) private(ido2)
+!$omp do  private(ido1)
 do ido1=1,10
-!$omp simd
+!$omp simd private(ido2)
 do ido2=1,10
 end do
 !$omp endsimd
 end do
 !$omp enddo
-!$omp do
+!$omp do private(ido2)
 do ido2=1,10
 end do
 !$omp enddo

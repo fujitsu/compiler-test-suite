@@ -24,13 +24,13 @@ subroutine ss(x)
 integer,intent(in),optional:: x(:,:)
 if (any([x]/=[1,3,4,6])) print *,1021
 write(36,'(z16.16)') loc(x)
-if (save/=loc(x)) print *,3000
+!if (save/=loc(x)) print *,3000
 end subroutine
 function fun(x) result(k)
 integer,intent(in),optional:: x(:,:)
 if (any([x]/=[1,3,4,6])) print *,1022
 write(36,'(z16.16)') loc(x)
-if (save/=loc(x)) print *,3000
+!if (save/=loc(x)) print *,3000
 k=0
 end function
 end

@@ -1,6 +1,21 @@
 Changelog
 =========
 
+2026-06
+-------
+### Added
+
+- Add more test programs.
+
+### Fixed
+
+- Fix some bugs in the test programs.
+
+### Removed
+
+- Remove some test programs that is dependent on the processing-system.
+
+
 2026-02
 -------
 ### Added

@@ -90,11 +90,11 @@
                        DO 111 I=1,10
  111                   IF(PATD(2/I-2/I+1).NE.0) PRINT *,'FAIL'
       IDATA = 1
-      REWIND 1
-      WRITE(1,*)  (DAN1(I),DAN2(I),DAN3(I),DAN4(I),DAN5(I),DAN6(I),
+      REWIND 28
+      WRITE(28,*)  (DAN1(I),DAN2(I),DAN3(I),DAN4(I),DAN5(I),DAN6(I),
      1             DAN7(I),DAN8(I),DAN9(I),I=1,IDATA)
-      REWIND 1
-      READ (1,*)  (PAN1(I),PAN2(I),PAN3(I),PAN4(I),PAN5(I),PAN6(I),
+      REWIND 28
+      READ (28,*)  (PAN1(I),PAN2(I),PAN3(I),PAN4(I),PAN5(I),PAN6(I),
      1             PAN7(I),PAN8(I),PAN9(I),I=1,IDATA)
       IF(PAN1(1).NE.1) PRINT *,'FAIL'
       IF(PAN2(1).NE.2) PRINT *,'FAIL'
@@ -105,11 +105,11 @@
       IF(PAN7(1).NE.7) PRINT *,'FAIL'
       IF(PAN8(1).NE.8) PRINT *,'FAIL'
       IF(PAN9(1).NE.9) PRINT *,'FAIL'
-      REWIND 1
-      WRITE(1,*) ((((((((DAN1(I),I1=1,1),I2=1,1),I3=1,1),I4=1,1)
+      REWIND 28
+      WRITE(28,*) ((((((((DAN1(I),I1=1,1),I2=1,1),I3=1,1),I4=1,1)
      1            ,I5=1,1),I6=1,1),I7=1,1),I8=1,1)
-      REWIND 1
-      READ (1,*) ((((((((PAN1(I),I1=1,1),I2=1,1),I3=1,1),I4=1,1)
+      REWIND 28
+      READ (28,*) ((((((((PAN1(I),I1=1,1),I2=1,1),I3=1,1),I4=1,1)
      1            ,I5=1,1),I6=1,1),I7=1,1),I8=1,1)
       IF(PAN1(1).NE.1) PRINT *,'FAIL'
       PRINT *,'PASS'

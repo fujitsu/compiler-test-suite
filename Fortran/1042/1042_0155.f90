@@ -1,7 +1,7 @@
 do i=1,1000
 call s
 end do
-write(1,*)'Subroutine : '
+write(20,*)'Subroutine : '
 print *,'pass'
 end
 subroutine s
@@ -40,4 +40,3 @@ subroutine set(a,i)
 complex*16 a(i)
 a=(1,1)
 end
-

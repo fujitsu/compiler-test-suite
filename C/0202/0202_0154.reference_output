@@ -1,0 +1,5 @@
+test1: call: OK
+test2: cond: OK
+test3: assign: OK
+test4: comma: OK
+exit 0

@@ -4,7 +4,7 @@ integer::a(0:1)
 integer::ip
 a=[1,2]
 ip=100
-!$omp parallel  shared(a)
+!$omp parallel  shared(a) private(ip)
     write(3,*) (a(ip),ip = 0,1)
 if (ip/=2) print *,2001,ip
 !$omp end parallel

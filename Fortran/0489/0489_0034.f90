@@ -8,9 +8,9 @@
 
                  call s1(2_8)
                  call s1(2)
-rewind 16
-read(16,*) n ;if(n/=121) print *,201
-read(16,*,end=1) n
+rewind 51
+read(51,*) n ;if(n/=121) print *,201
+read(51,*,end=1) n
 stop 1
 1 print*,"pass"
 
@@ -23,7 +23,7 @@ stop 1
                 type is(integer(8))
                  if (d1/=2) print *,101
                 class default
-                 write(16,*)"121"
+                 write(51,*)"121"
                 end select
                end subroutine
               end

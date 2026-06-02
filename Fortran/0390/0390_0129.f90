@@ -11,7 +11,7 @@ if (n==2) p=>t(1:3:2,:)
 call z(p)
 end subroutine
 subroutine z(p)
-integer,optional::p(:,:)
+integer,optional,target::p(:,:)
 save= loc(p)
 write(45,'(z16.16)') loc(p)
 do k=1,5

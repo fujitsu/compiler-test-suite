@@ -7,7 +7,7 @@
 
       do i=1,n
          a(i) = mod(i,6)+1
-         c(i) = mod(i,2)
+         c(i) = mod(i,2)+1
          if (mod(i,4)==0) then
             mk(i) = .true.
          endif

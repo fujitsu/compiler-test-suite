@@ -1,7 +1,7 @@
 recursive function jfunc01(i) result(ifun)
  character(len=*) i(:)
  character(len=len(i)) ifun(10)
- character(0)::a(3)
+ character(0)::a(10)
  intent(in) :: i
  ifun=jfunc02(a)
 return

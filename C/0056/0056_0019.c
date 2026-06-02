@@ -11,8 +11,8 @@ int main()
 {
   int it, ier;
   int  loop = 10, thread;
-  char sa[10]={"abc"};
-  char sb[10][10], sc[10];
+  char sa[11]={"abc"};
+  char sb[11][11], sc[11];
   int i,j;
 
   thread = it = MAX_NUM_THREADS;
@@ -24,6 +24,11 @@ int main()
     printf( " parallel private(sa,it) ------\n");
     printf("OK\n");
     exit(0);
+  }
+  if(thread > 10)
+  {
+	  thread = 10 ;
+	  omp_set_num_threads(thread) ;
   }
 #endif
 #pragma omp parallel private(sa,it)

@@ -1,5 +1,5 @@
 i1=100
-!$omp parallel default(none)
+!$omp parallel default(none) private(i1,i2,i3)
 !$omp critical
 !$omp simd collapse(2)
          do i3=1,1

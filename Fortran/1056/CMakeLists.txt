@@ -1,8 +1,3 @@
-llvm_singlesource_compile_only_file(1056_0044.f PREFIX "Fujitsu-Fortran-")
-llvm_singlesource_compile_only_file(1056_0045.f PREFIX "Fujitsu-Fortran-")
-llvm_singlesource_compile_only_file(1056_0046.f PREFIX "Fujitsu-Fortran-")
-llvm_singlesource_compile_only_file(1056_0047.f PREFIX "Fujitsu-Fortran-")
-llvm_singlesource_compile_only_file(1056_0048.f PREFIX "Fujitsu-Fortran-")
 llvm_singlesource_fujitsu(PREFIX "Fujitsu-Fortran-")
 llvm_set_own_fortran_module_directory()
 set_property(SOURCE 1056_0000.f APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")

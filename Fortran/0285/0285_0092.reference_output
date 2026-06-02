@@ -1,0 +1,2 @@
+ pass,ERRMSG=Memory allocation failed                          
+exit 0

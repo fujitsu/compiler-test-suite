@@ -36,7 +36,7 @@ struct	st1	*(*st_array)[] = NULL;
 int main(){
 	void	operation1();
 
-	st_array = (struct st1 *(*)[])malloc(100*4);
+	st_array = (struct st1 *(*)[])malloc(100*sizeof(struct st1 *));
 
 	for(i=0; i<100; i++){
 		(*st_array)[i] = (struct st1 *)malloc(sizeof(struct st1));

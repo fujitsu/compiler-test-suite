@@ -133,7 +133,25 @@
          IF(SW8) GO TO 2
 
     9 CONTINUE
-         WRITE(6,NAMEL)
+         WRITE(6,9000)
+         WRITE(6,9010) A1,A2,A3,A4
+         WRITE(6,9020) B1,B2,B3,B4
+         WRITE(6,9030) C1,C2,C3,C4
+         WRITE(6,9040) D1,D2,D3,D4
+         WRITE(6,9050) E1,E2,E3,E4
+         WRITE(6,9060) F1,F2,F3,F4
+         WRITE(6,9070) G1,G2,G3,G4
+         WRITE(6,9080) H1,H2,H3,H4
+
+ 9000    FORMAT(' &NAMEL')
+ 9010    FORMAT(' A1=',G0,',A2=',G0,',A3=',G0,',A4=',G0,',')
+ 9020    FORMAT(' B1=',G0,',B2=',G0,',B3=',G0,',B4=',G0,',')
+ 9030    FORMAT(' C1=',G0,',C2=',G0,',C3=',G0,',C4=',G0,',')
+ 9040    FORMAT(' D1=',G0,',D2=',G0,',D3=',G0,',D4=',G0,',')
+ 9050    FORMAT(' E1=',G0,',E2=',G0,',E3=',G0,',E4=',G0,',')
+ 9060    FORMAT(' F1=',G0,',F2=',G0,',F3=',G0,',F4=',G0,',')
+ 9070    FORMAT(' G1=',G0,',G2=',G0,',G3=',G0,',G4=',G0,',')
+ 9080    FORMAT(' H1=',G0,',H2=',G0,',H3=',G0,',H4=',G0)
 
       RETURN
       END

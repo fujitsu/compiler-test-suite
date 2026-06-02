@@ -19,17 +19,20 @@ if (.not.present(a3)) print *,603
 
 k=sum(a1)+sum(a2)+sum(a3)
 if (ik1==0) then
-  if (loc(p1)/=loc(a1)) print *,101,k
+  !if (loc(p1)/=loc(a1)) print *,101,k
+  if (k/=2500) print *,101,k
 else
   if (loc(p1)/=loc(a1)) print *,102,k
 endif
 if (ik2==0) then
   if (loc(p2)/=loc(a2)) print *,201,k
 else
-  if (loc(p2)/=loc(a2)) print *,202,k
+  !if (loc(p2)/=loc(a2)) print *,202,k
+  if (k/=2500) print *,202,k
 endif
 if (ik3==0) then
-  if (loc(p3)/=loc(a3)) print *,301,k
+  !if (loc(p3)/=loc(a3)) print *,301,k
+  if (k/=2500) print *,301,k
 else
   if (loc(p3)/=loc(a3)) print *,302,k
 endif

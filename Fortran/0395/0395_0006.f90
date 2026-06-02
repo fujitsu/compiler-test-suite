@@ -10,7 +10,7 @@ module mod
 
   contains
     subroutine proc()
-      write(1,*)1
+      write(12,*)1
     end subroutine
 end module mod
 
@@ -22,6 +22,6 @@ call chk
   print *,'pass'
 end
 subroutine chk
-rewind 1
-read(1,*) k;if (k/=1)print *,k
+rewind 12
+read(12,*) k;if (k/=1)print *,k
 end

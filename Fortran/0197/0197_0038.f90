@@ -1,4 +1,4 @@
  character*1 a
-  write(1,*) len(a)
+  write(8,*) len(a)
   print *,'pass'
-  end 
+  end

@@ -1,5 +1,5 @@
          !$omp parallel default(none) 
-         !$omp do simd collapse(2)
+         !$omp do simd collapse(2) private(i,j)
          do i=1,1
            do j=1,1
            end do

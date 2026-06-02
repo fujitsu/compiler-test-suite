@@ -2,8 +2,9 @@ a=1
 b=1
 i3=1
 !$omp single
-!$omp  parallel
+!$omp  parallel private(i3)
 !$omp  sections
+!$omp  section
 i3=2
 !$omp  simd collapse(2)
  do i1=1,10

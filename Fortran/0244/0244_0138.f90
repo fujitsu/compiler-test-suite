@@ -7,7 +7,7 @@ call sub(trg(2:6))
 
 contains
 subroutine sub(dptr)
-integer,contiguous::dptr(:)
+integer,target,contiguous::dptr(:)
 
 call sub2(dptr(1:5))
 call sub3(dptr(1:5:2))
@@ -24,9 +24,9 @@ if(is_contiguous(dd([2,3,4]))) print*,203
 end subroutine
 
 subroutine sub3(dd)
-integer::dd(:)
+integer,target::dd(:)
 if(is_contiguous(dd)) print*,102
 if(is_contiguous(dd(::2))) print*,103
-if(is_contiguous(dd([2,3,4]))) print*,104 
+if(is_contiguous(dd([1,2,3]))) print*,104 
 end subroutine
 end

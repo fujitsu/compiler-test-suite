@@ -1,0 +1,13 @@
+ PASS ifunc01 10
+ PASS ifunc01 11
+ PASS ifunc01 12
+ PASS ifunc01 13
+ PASS ifunc01 14
+ PASS ifunc01 15
+ PASS ifunc01 16
+ PASS ifunc01 17
+ PASS ifunc01 18
+ PASS ifunc01 19
+ PASS ifunc01 20
+ PASS
+exit 0

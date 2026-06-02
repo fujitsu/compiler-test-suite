@@ -1,0 +1,38 @@
+module m1
+  type q
+     integer(8)::d
+  end type
+  type,extends(q)::qe
+     integer(8),allocatable::qd
+  end type
+  type t
+     integer(8)::d
+     integer(8)::ts=1
+     class(q),allocatable::ta
+  end type
+  type,extends(t)::te
+     integer(8)::dx
+     integer(8)::d1
+     class(q),allocatable::tb
+  end type
+contains
+ subroutine s2(v)
+     class(q),allocatable::g
+  class(*),intent(out)::v
+select type(v)
+  type is(t)
+v%d  =1
+if (v%ts/=1) print *,672
+end select
+end
+end
+ subroutine s1
+use m1
+  class(*),allocatable::v
+    allocate(te::v)
+!
+ call s2(v)
+end
+call s1()
+     print *,'sngg365t : pass'
+     end

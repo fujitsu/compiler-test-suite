@@ -12,7 +12,7 @@ z=-1
 z1=[a(2,b)]
 if(z1(1)/=2) print *,'err'
 if(z1(2)/=4) print *,'err'
-z2=[z(2,b),1,a(c,2)]
+z2=[z(2,b),1,a(b,2),a(1,c(3))]
 
 if(z2(1)/=-1)  print *,'err'
 if(z2(2)/=-1)  print *,'err'

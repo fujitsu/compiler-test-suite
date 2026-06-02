@@ -91,7 +91,7 @@ contains
 end module descsub
 program main
   use descsub
-open (11,delim='quote')
+open (168,delim='quote')
   x01=(/1,2,3,4/)
   x02=(/1,2,3,4/)
   x03=(/1,2,3,4/)
@@ -108,7 +108,7 @@ open (11,delim='quote')
   x34=(/t,f,t,f/)
   x41=(/'11','22','33','44'/)
   x51=(/xx(1),xx(2),xx(3),xx(4)/)
-  write(11,*) f01(), f02(), f03(), f04(), f11(), f12(), f13(), f21(), f22(), f23(), f31(), f32(), f33(), f34(), f41(), f42(2), f51(), -100
+  write(168,*) f01(), f02(), f03(), f04(), f11(), f12(), f13(), f21(), f22(), f23(), f31(), f32(), f33(), f34(), f41(), f42(2), f51(), -100
 call chk
 print *,'pass'
 contains
@@ -130,8 +130,8 @@ subroutine chk
   character (len=2), dimension(2) :: y41
   character (len=2), dimension(2) :: y42
   type (xx),dimension(2) ::y51
-rewind 11
-  read(11,*) y01, y02, y03, y04, y11, y12, y13, y21, y22, y23, y31, y32, y33, y34, y41, y42, y51,ik
+rewind 168
+  read(168,*) y01, y02, y03, y04, y11, y12, y13, y21, y22, y23, y31, y32, y33, y34, y41, y42, y51,ik
 if (any(y01/=x01(1:3:2)))write(6,*) "NG"
 if (any(y02/=x02(1:3:2)))write(6,*) "NG"
 if (any(y03/=x03(1:3:2)))write(6,*) "NG"

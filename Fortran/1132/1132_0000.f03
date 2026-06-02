@@ -1,0 +1,24 @@
+PROGRAM CV2000
+  TYPE STR
+     REAL*8 A(10,100)/900*3.5,100*2.5/
+  END type STR
+  TYPE(STR) STR_DATA
+
+  DO I=1,10
+     DO J=1,100
+11      IF(STR_DATA%A(I,J).LT.3) CYCLE
+        STR_DATA%A(I,J)=STR_DATA%A(I,J)*.1
+        GOTO 11
+     end DO
+  end DO
+  WRITE(6,*) STR_DATA%A
+
+  DO I=1,10
+     DO J=1,100
+  21    CONTINUE
+         STR_DATA%A(I,J)=STR_DATA%A(I,J)*10
+        IF(STR_DATA%A(I,J).LT.3) GOTO 21
+     end DO
+  end DO
+  WRITE(6,*) STR_DATA%A
+END PROGRAM CV2000

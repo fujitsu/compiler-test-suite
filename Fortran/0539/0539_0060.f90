@@ -1,9 +1,9 @@
 ido1=1
 ido2=2
-!$omp parallel default(none)
+!$omp parallel default(none) shared(ido1,ido2,ido3,ido4,ido5)
 !$omp do
 do ido1=1,10
-!$omp simd collapse(2)
+!$omp simd collapse(2) 
 do ido2=1,10
  do ido3=1,10
  end do

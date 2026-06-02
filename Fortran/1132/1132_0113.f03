@@ -1,0 +1,30 @@
+      PROGRAM CV4566
+        
+        type STR
+           REAL*8  DV1(0:12,0:12)/169*3.5/,DV2(1:13,-13:-1)/169*2.25/
+           LOGICAL LV1(1:13,1:13)/169*.FALSE./
+           INTEGER NV1(1:13,1:13)/169*2/
+        end type STR
+        TYPE(STR) STR_DATA
+        
+      DO 110 I=2,11
+       IF(MOD(I,2).EQ.0) THEN
+        STR_DATA%LV1(I,I)=MOD(I+1,3).NE.1
+        STR_DATA%DV1(I-1,I-1)=STR_DATA%DV2(I-1,-I+1)**3
+        STR_DATA%NV1(2,2)=STR_DATA%NV1(2,2)+3
+        STR_DATA%DV1(I,I)=STR_DATA%DV2(I,-I)**2.
+        STR_DATA%LV1(I+1,I+1)=STR_DATA%DV1(I,I)*I.GT.5
+        STR_DATA%DV1(I+1,I+1)=FLOAT(I)**I
+       ELSE
+        STR_DATA%LV1(I,I)=STR_DATA%DV1(I-1,I-1)*I.GT.3
+        STR_DATA%DV1(I-1,I-1)=STR_DATA%DV2(I-1,-I+1)**2
+        STR_DATA%NV1(1,2)=STR_DATA%NV1(1,2)+STR_DATA%NV1(I,3)*I
+        STR_DATA%DV1(I,I)=STR_DATA%DV2(I,-I)**3.
+        STR_DATA%LV1(I+1,I+1)=MOD(I+1,3).NE.2
+        STR_DATA%DV1(I+1,I+1)=FLOAT(I)**I+STR_DATA%NV1(I,1)
+       ENDIF
+ 110  CONTINUE
+
+       WRITE(6,*) STR_DATA%DV1,STR_DATA%DV2,STR_DATA%LV1,STR_DATA%NV1
+      STOP
+      END

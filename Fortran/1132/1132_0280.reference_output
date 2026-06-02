@@ -1,0 +1,100 @@
+ ***** CVCT6115 *****
+ ----- NO.1 -----
+ str%I10S  =  1
+ str%I11S  =  0
+ str%R11S  =  10.  str%I12 =  2 2 2 2 2 2 2 2 2 2
+ str%L12   =  F T F T F T
+ str%Q10   =  0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 5. 10. 15. 20. 25. 30. 35. 40. 45.
+ 50. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 5. 10. 15. 20.
+ 25. 30. 35. 40. 45. 50. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ str%D10S  =  550.
+ str%L14   =  T F F F F F
+ str%R12S  =  21.
+ str%R10S  =  12.
+ str%L10   =  T F
+ str%D11   =         1.0324555320      828.2842712475
+ ----- NO.2 -----
+  INNER MOST LOOP I3 =  1  str2%D21S =  1.
+  INNER MOST LOOP I3 =  2  str2%D21S =  2.
+  INNER MOST LOOP I3 =  3  str2%D21S =  2.
+  INNER MOST LOOP I3 =  4  str2%D21S =  2.
+  INNER MOST LOOP I3 =  5  str2%D21S =  2.
+  INNER MOST LOOP I3 =  6  str2%D21S =  2.
+  INNER MOST LOOP I3 =  7  str2%D21S =  2.
+  INNER MOST LOOP I3 =  8  str2%D21S =  2.
+  INNER MOST LOOP I3 =  9  str2%D21S =  1.
+  INNER MOST LOOP I3 =  10  str2%D21S =  1.
+  INNER MOST LOOP I3 =  1  str2%D21S =  1.
+  INNER MOST LOOP I3 =  2  str2%D21S =  1.
+  INNER MOST LOOP I3 =  3  str2%D21S =  1.
+  INNER MOST LOOP I3 =  4  str2%D21S =  2.
+  INNER MOST LOOP I3 =  5  str2%D21S =  2.
+  INNER MOST LOOP I3 =  6  str2%D21S =  2.
+  INNER MOST LOOP I3 =  7  str2%D21S =  2.
+  INNER MOST LOOP I3 =  8  str2%D21S =  2.
+  INNER MOST LOOP I3 =  9  str2%D21S =  2.
+  INNER MOST LOOP I3 =  10  str2%D21S =  2.
+  INNER MOST LOOP I3 =  1  str2%D21S =  2.
+  INNER MOST LOOP I3 =  2  str2%D21S =  2.
+  INNER MOST LOOP I3 =  3  str2%D21S =  2.
+  INNER MOST LOOP I3 =  4  str2%D21S =  2.
+  INNER MOST LOOP I3 =  5  str2%D21S =  2.
+  INNER MOST LOOP I3 =  6  str2%D21S =  2.
+  INNER MOST LOOP I3 =  7  str2%D21S =  2.
+  INNER MOST LOOP I3 =  8  str2%D21S =  2.
+  INNER MOST LOOP I3 =  9  str2%D21S =  2.
+  INNER MOST LOOP I3 =  10  str2%D21S =  2.
+  INNER MOST LOOP I3 =  1  str2%D21S =  2.
+  INNER MOST LOOP I3 =  2  str2%D21S =  2.
+  INNER MOST LOOP I3 =  3  str2%D21S =  2.
+  INNER MOST LOOP I3 =  4  str2%D21S =  2.
+  INNER MOST LOOP I3 =  5  str2%D21S =  2.
+  INNER MOST LOOP I3 =  6  str2%D21S =  2.
+  INNER MOST LOOP I3 =  7  str2%D21S =  2.
+  INNER MOST LOOP I3 =  8  str2%D21S =  2.
+  INNER MOST LOOP I3 =  9  str2%D21S =  2.
+  INNER MOST LOOP I3 =  10  str2%D21S =  2.
+  INNER MOST LOOP I3 =  1  str2%D21S =  2.
+  INNER MOST LOOP I3 =  2  str2%D21S =  2.
+  INNER MOST LOOP I3 =  3  str2%D21S =  2.
+  INNER MOST LOOP I3 =  4  str2%D21S =  2.
+  INNER MOST LOOP I3 =  5  str2%D21S =  2.
+  INNER MOST LOOP I3 =  6  str2%D21S =  2.
+  INNER MOST LOOP I3 =  7  str2%D21S =  2.
+  INNER MOST LOOP I3 =  8  str2%D21S =  2.
+  INNER MOST LOOP I3 =  9  str2%D21S =  2.
+  INNER MOST LOOP I3 =  10  str2%D21S =  2.
+  INNER MOST LOOP I3 =  1  str2%D21S =  2.
+  INNER MOST LOOP I3 =  2  str2%D21S =  2.
+  INNER MOST LOOP I3 =  3  str2%D21S =  2.
+  INNER MOST LOOP I3 =  4  str2%D21S =  2.
+  INNER MOST LOOP I3 =  5  str2%D21S =  2.
+  INNER MOST LOOP I3 =  6  str2%D21S =  2.
+  INNER MOST LOOP I3 =  7  str2%D21S =  2.
+  INNER MOST LOOP I3 =  8  str2%D21S =  2.
+  INNER MOST LOOP I3 =  9  str2%D21S =  2.
+  INNER MOST LOOP I3 =  10  str2%D21S =  2.
+  str2%I20  =  0 2 3
+  str2%R20  =  0. 2. 3.
+  str2%D20  =  0. 2. 3.
+  str2%C20  =  (0.,0.) (-4.,0.) (-3.,0.)
+  str2%CD20 =  (0.,0.) (-2.,0.) (-3.,0.)
+  str2%Q20  =  0. -2. -3.
+  str2%Q21  =  0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. -2. -2. -2. -2. -2. -2. -2. -2. -2. -2. -2. -2. -2.
+ -2. -2. -2. -2. -2. -2. -2. -2. -2. -2. -2. -2. -2. -2. -2. -2. -2. -3. -3.
+ -3. -3. -3. -3. -3. -3. -3. -3. -3. -3. -3. -3. -3. -3. -3. -3. -3. -3. -3.
+ -3. -3. -3. -3. -3. -3. -3. -3. -3.
+  str2%D20S =  68.
+  D22S =  43.
+  R21S =  -112.
+  str2%C21  =  (1.,1.) (8.,3.) (15.,5.) (22.,7.) (29.,9.) (30.,11.) (31.,13.)
+ (32.,15.) (33.,17.) (34.,19.)
+  str2%D22  =  1. 4. 7. 10. 13. 19. 26. 8. -12. -7. 2. 7. 12. 17. 22. 26. 30.
+ 14. 14. 14. 2. 2. 2. 2. 2. 5. 8. 11. 14. 17.
+  str2%CD21 =  (0.,0.) (-4.,0.) (-6.,0.)
+  str2%D21  =  -3. 3. 4. -4. 5. 6. 7. -18. -20. 5. 6. 7. 8. -6. 8. 4. 4. -16.
+ 0. 0. 7. 3. 3. 3. 3. 3. 3. 3. 3. 3.
+  str2%R21  =  1. 4. 2.
+  str2%I21  =  0 8 8
+exit 0

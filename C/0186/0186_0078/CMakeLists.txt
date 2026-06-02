@@ -1,0 +1,3 @@
+llvm_multisource(Fujitsu-C-0186_0078)
+set_property(TARGET Fujitsu-C-0186_0078 APPEND PROPERTY COMPILE_OPTIONS "-O0")
+set_property(TARGET Fujitsu-C-0186_0078 APPEND PROPERTY LINK_OPTIONS "-O0")

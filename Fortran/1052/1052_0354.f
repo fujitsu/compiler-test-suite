@@ -1,0 +1,22 @@
+      subroutine foo()
+      integer i
+      integer*4 z(10)/1_4,2_4,3_4,4_4,5_4,6_4,7_4,8_4,9_4,10_4/
+      integer*4 x,y
+      x=NOT(0_4)
+      y=x
+!$omp simd reduction(iand:x)
+      do i=1,10
+        x=iand(x,z(i))
+      enddo
+      do i=1,10
+        y=iand(y,z(i))
+      enddo
+      if (x.ne.y) then
+        print*,"NG:",x,y
+        stop 1
+      endif
+      print*,"OK"
+      end
+
+      call foo()
+      end

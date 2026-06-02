@@ -2,7 +2,7 @@ ido1=1
 ido2=2
 ido3=3
 ido4=4
-!$omp parallel default(none)
+!$omp parallel default(none) shared(ido3,ido4)
 !$omp do collapse(1)
 do ido1=1,10
 do ido2=1,10
@@ -16,7 +16,7 @@ end do
 end do
 !$omp enddo
 
-!$omp sections
+!$omp sections private(ido1,ido2)
 !$omp section
 do ido3=1,10
 do ido4=1,10

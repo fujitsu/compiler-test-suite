@@ -1,0 +1,50 @@
+subroutine s1
+  type z
+    integer(8)::z1
+  end type
+  type t
+     integer(8)::du
+  end type
+  type ,extends(t)::te
+     integer(8)::dx
+     class(z),allocatable::name
+     type (z),allocatable::n2
+  end type
+
+  class(z),allocatable::q
+  class(t),allocatable::v,w
+    allocate(te::w)
+    select type(w)
+     type is(te)
+       allocate(w%name)
+       allocate(w%n2  )
+    end select
+
+    call ss
+
+    allocate(   v,mold=w)
+
+    k=0
+    select type(v)
+     type is(te)
+      if (allocated(v%name)) print *,2829
+      if (allocated(v%n2 )) print *,28292
+      k=1
+      if (.not.same_type_as(q,v%name)) print *,2828
+      if (.not.same_type_as(q,v%n2  )) print *,28282
+      deallocate(v%name,stat=n)
+      if (n==0) print *,282
+      deallocate(v%n2  ,stat=n)
+      if (n==0) print *,2822
+    end select
+    if (k/=1) print *,5255
+end
+call s1()
+     print *,'sngg388s : pass'
+     end
+subroutine ss
+  integer,allocatable::d(:)
+  allocate(d(1000),source=-1)
+  write(1,*) d
+  deallocate(d)
+end

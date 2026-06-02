@@ -1,42 +1,42 @@
   integer,parameter :: inum=1
   integer :: vnum=1
   real,dimension(5,5,5) :: rdata, res
-  
+
   rdata=1.0
   res=0.0
 
-  write(50) rdata
-  FLUSH(UNIT=50,IOSTAT=ios)
+  write(70) rdata
+  FLUSH(UNIT=70,IOSTAT=ios)
   if(ios .ne. 0) write(6,*) "NG"
-  rewind 50
-  read(50) res
-  close(50)
+  rewind 70
+  read(70) res
+  close(70)
 
   rdata=rdata+res
 
-  write(51) rdata
-  FLUSH(50+1,IOSTAT=ios)
+  write(71) rdata
+  FLUSH(70+1,IOSTAT=ios)
   if(ios .ne. 0) write(6,*) "NG"
-  rewind 51
-  read(51) res
-  close(51)
+  rewind 71
+  read(71) res
+  close(71)
 
   rdata=rdata+res
 
-  write(52) rdata
-  FLUSH(IOSTAT=ios,UNIT=50+1+inum)
+  write(72) rdata
+  FLUSH(IOSTAT=ios,UNIT=70+1+inum)
   if(ios .ne. 0) write(6,*) "NG"
-  rewind 52
-  read(52) res
-  close(52)
+  rewind 72
+  read(72) res
+  close(72)
 
   rdata=rdata+res
 
-  write(53) rdata
-  FLUSH(ERR=99,UNIT=vnum+50+1+inum)
-  rewind 53
-  read(53) res
-  close(53)
+  write(73) rdata
+  FLUSH(ERR=99,UNIT=vnum+70+1+inum)
+  rewind 73
+  read(73) res
+  close(73)
 
   do i=1,5
    do j=1,5

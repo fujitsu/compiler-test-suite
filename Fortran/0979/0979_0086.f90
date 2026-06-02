@@ -17,9 +17,9 @@ integer :: ip
 pointer :: ip
 intent(out) :: ip
 allocate(ip)
-write(33,*) (ip,ip=1,1)
-rewind 33
-read(33,*) ii
+write(55,*) (ip,ip=1,1)
+rewind 55
+read(55,*) ii
 if (ii.ne.1) write(6,*) "NG"
 call sub_a(ip)
 end subroutine

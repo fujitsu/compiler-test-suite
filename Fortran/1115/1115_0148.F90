@@ -1,0 +1,26 @@
+PROGRAM MAIN
+  IMPLICIT NONE
+  INTEGER:: N
+  !---
+  N = 10
+  !====
+  !$OMP PARALLEL
+  BLOCK
+    INTEGER,ALLOCATABLE:: X(:)
+    INTEGER:: IFLAG
+    !
+    ALLOCATE (X(N), STAT=IFLAG)
+    IF (IFLAG /= 0) THEN
+       PRINT *, 'IFLAG=', IFLAG
+       STOP '!!!! FAILED TO ALLOCATE THE ARRAY X.'
+    ENDIF
+    !---
+    X(1:N) = 1
+    PRINT *, 'SUM OF X IS :', SUM(X(1:N))
+    !---
+    DEALLOCATE (X)
+    !
+  END BLOCK
+  !$OMP END PARALLEL
+  !====
+END PROGRAM MAIN

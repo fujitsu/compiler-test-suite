@@ -1,0 +1,6 @@
+0   SUB-1
+ &NAMEL2 K= 5,K1= 5,L= 11,M= 2,N= 3/
+0   SUB-2
+ &NAMEL1 M= 20,N= 47/
+ &NAMEL2 K= 30,K1= 5,L= 21,M= 2,N= 3/
+exit 0

@@ -1,5 +1,5 @@
         integer::c=0, a=0
-                    !$omp task  default(none)
+                    !$omp task  default(none) firstprivate(c,a)
                     !$omp parallel
                     !$omp task
                      a=a+real(1)

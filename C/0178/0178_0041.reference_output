@@ -1,0 +1,6 @@
+memcmp ret pattaern test 
+ok01 
+ok02 
+ok03 
+end 
+exit 0

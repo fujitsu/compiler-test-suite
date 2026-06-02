@@ -4,6 +4,7 @@
 !$    integer*4 OMP_GET_MAX_THREADS
 !$    integer*4 OMP_GET_THREAD_NUM
       ia = 10
+      id = -huge(1) - 1
 !$    thread = OMP_GET_MAX_THREADS()
 !$omp parallel reduction(+:ia) reduction(max:id) private(it)
 !$    it = OMP_GET_THREAD_NUM()

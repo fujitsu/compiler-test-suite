@@ -1,0 +1,56 @@
+MODULE mod1
+IMPLICIT NONE
+TYPE ty
+  INTEGER :: ii=1
+  CONTAINS
+    FINAL::destructor1
+END TYPE
+
+TYPE,EXTENDS(ty)::ty1
+  INTEGER :: jj=1
+  CONTAINS
+    FINAL::destructor2
+END TYPE
+
+INTERFACE
+SUBROUTINE sub(ty_dmy)
+  IMPORT ty
+    CLASS(*),ALLOCATABLE :: ty_dmy(:)
+END SUBROUTINE
+END INTERFACE
+
+CONTAINS
+SUBROUTINE destructor1(dmy)
+  TYPE(ty),INTENT(INOUT)::dmy(4)
+    PRINT*,dmy(1)%ii
+END SUBROUTINE
+SUBROUTINE destructor2(dmy)
+  TYPE(ty1),INTENT(INOUT)::dmy(4)
+    PRINT*,dmy(1)%ii
+END SUBROUTINE
+END MODULE 
+
+
+
+PROGRAM MAIN
+USE mod1
+IMPLICIT NONE
+CLASS(*),ALLOCATABLE :: ty_actual(:)
+TYPE(ty) :: ty_obj2(4)
+ty_obj2%ii=10
+ALLOCATE(ty_actual,SOURCE=ty_obj2)
+CALL sub(ty_actual)
+END
+
+
+
+SUBROUTINE sub(ty_dmy)
+USE mod1
+IMPLICIT NONE
+CLASS(*),ALLOCATABLE :: ty_dmy(:)
+TYPE(ty1) :: ty1_obj3(4)
+ty1_obj3%ii=20
+DEALLOCATE(ty_dmy)
+ALLOCATE(ty_dmy,SOURCE=ty1_obj3)
+DEALLOCATE(ty_dmy)
+END SUBROUTINE

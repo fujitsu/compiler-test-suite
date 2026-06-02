@@ -1,0 +1,13 @@
+ 6 -- 6
+ string->integer OK
+ KIND:: 4 --KIND:: 4
+ KIND OK
+ 6 -- 6
+ string->integer OK
+ KIND:: 4 --KIND:: 4
+ KIND OK
+ 6 -- 6
+ string->integer OK
+ KIND:: 4 --KIND:: 4
+ KIND OK
+exit 0

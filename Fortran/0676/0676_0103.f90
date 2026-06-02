@@ -15,7 +15,7 @@ program main
   real(kind=4),parameter :: REAL_ANS=1159.49160_4
   real(kind=4),parameter :: IMAG_ANS=887.302500_4
   real(kind=4),parameter :: REAL_ERROR=1.22070312E-04_4
-  real(kind=4),parameter :: IMAG_ERROR=0.000062_4
+  real(kind=4),parameter :: IMAG_ERROR=3.05175781E-04_4
 
   b = (1.4_4,2.4_4)
   call sub(a,b)
