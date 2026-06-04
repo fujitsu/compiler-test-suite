@@ -6,8 +6,8 @@ if (any(abs((/a(3:4,2)/)-(/85.,137./))>0.001))print *,' error'
 print *,'pass'
 contains
 subroutine sub1(x,y,z)
-real(8),dimension(:,:)::y
-real(8),dimension(:)::x
+real(8),dimension(:,:),target::y
+real(8),dimension(:),target::x
 real(8),dimension(:),target::z
 z=matmul(x,y)
 end subroutine sub1

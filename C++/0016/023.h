@@ -1,0 +1,5 @@
+
+void funcba (){
+st ++;
+st--;
+}

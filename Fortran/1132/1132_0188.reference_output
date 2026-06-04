@@ -1,0 +1,1262 @@
+ ***** CVCT5405 MI METHOD TEST PROGRAM *****
+ +++++ TEST NO. 1 +++++
+ F T F T
+ T T T T T T T T T T T T T T T T T T T T F F F F F F F F F F T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T T
+T
+ +++++ TEST NO. 2 +++++
+    1.000    2.000    2.000    1.000
+    0.000    0.000    0.000    0.000    0.000    0.000    0.000    0.000    0.000    0.000
+    2.000    2.000    2.000    2.000    2.000    2.000    2.000    2.000    2.000    2.000
+    2.000    2.000    2.000    2.000    2.000    2.000    2.000    2.000    2.000    2.000
+    1.000    1.000    1.000    1.000    1.000    1.000    1.000    1.000    1.000    1.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000    4.000
+exit 0

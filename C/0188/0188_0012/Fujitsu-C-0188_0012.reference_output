@@ -1,0 +1,4 @@
+ omp_get_dynamic=1 
+----- omp_PARALLEL2_001.c -- parallel + paralell ----
+ OK 
+exit 0

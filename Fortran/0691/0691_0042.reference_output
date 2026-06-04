@@ -1,0 +1,56 @@
+1
+      *FORTRAN*          ENTER
+
+0
+           *** TEST (01) ***   .....  OUTPUT  ....
+
+0
+                     (01)     FORMAT(T40,21H1970 INVENTORY REPORT,80T,9HDECEMBER ,T1,15H  PRT N0. 10095 )
+
+  PRT NO. 10095                        1970 INVENTORY REPORT                   DECEMBER 
+  PRT NO. 10095                        1970 INVENTORY REPORT                   DECEMBER 
+
+0
+                     (02)     FORMAT(1H0,T21,     26HTEST PROGRAM NUMBER  =  FC,I5,T75,11HCPTOTAL = (,2E15.7,1H),T12, 8HFORTRAN )
+
+0          FORTRAN  TEST PROGRAM NUMBER  =  21401                         CPTOTAL = (  0.1234567E-18 -0.4396000E+13)
+           FORTRAN  TEST PROGRAM NUMBER  =  21401                       CPTOTAL = (  0.1234567E-18 -0.4396000E+13)               G
+
+0
+                     (03)     FORMAT(1H0,T36,F15.7,E15.3,21T,E15.7)
+
+0                    -0.1874536E+01     -1.8745360      0.420E+21
+                     -0.1874536E+01     -1.8745360      0.420E+21
+1
+
+0                    + JUSTICE +     + ITEM +          + ANSWER +          + COMPARE VALUE +
+
+0          *** TEST(02) ***     .... INPUT ....
+
+0
+           (01)     FORMAT(T1,F5.2,T30,E10.6,T80,I1)
+
+0                      *OK*            ( 1)          -0.1234000E+02          -0.1234000E+02
+0                      *OK*            ( 2)           0.8765030E+20           0.8765030E+20
+0                      *OK*            ( 3)                    3                      3
+0
+           (02)     FORMAT( T80,T15,F15.6,T3,E10.2 / I5T20,F10.6 )
+
+0                      *OK*            ( 1)          -0.4006020E+00          -0.4006020E+00
+0                      *OK*            ( 2)           0.4162800E-15           0.4162800E-15
+0                      *OK*            ( 3)                  -76                    -76
+0                      *OK*            ( 4)           0.1003000E-02           0.1003000E-02
+0
+           (03)     FORMAT(T7,I4,20X,F10.3,T30,F10.4 )
+
+0                      *OK*            ( 1)                  777                    777
+0                      *OK*            ( 2)           0.4653018E+04           0.4653018E+04
+0                      *OK*            ( 3)           0.4653010E+02           0.4653010E+02
+0
+           (04)     FORMAT(T40,'          ' I5,T3010H          T58,A4 )
+
+0                             JOB STEP TOTAL  =  12345   
+                                                 12345       
+0
+      *FORTRAN*          EXIT
+exit 0

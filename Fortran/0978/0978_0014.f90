@@ -1,4 +1,4 @@
 intrinsic new_line
-write(1,*) new_line('a')
+write(43,*) new_line('a')
 print *,'pass'
 end

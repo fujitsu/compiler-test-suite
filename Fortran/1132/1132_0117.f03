@@ -1,0 +1,40 @@
+  type STR
+     REAL*8  A(100),B(100),C(100),D(100)
+  end type STR
+  TYPE(STR) STR_DATA
+
+      STR_DATA%D(100) = 1
+      DO 10 I=1,100,2
+       STR_DATA%A(I)=1.5
+       STR_DATA%A(I+1)=2.5
+       STR_DATA%B(I)=-1
+       STR_DATA%B(I+1)=2.
+       STR_DATA%C(I)=0.
+  10   STR_DATA%C(I+1)=-10
+      DO 20 I=1,99
+       STR_DATA%D(I)=STR_DATA%A(I)*STR_DATA%B(I)
+  20   STR_DATA%A(I+1)=STR_DATA%D(I)/(STR_DATA%C(I)+1)
+      WRITE(6,*) I
+      AMX=0
+      DO 30 I=1,99
+       IF(AMX.LT.STR_DATA%D(I)+STR_DATA%B(I+1)) THEN
+        AMX=STR_DATA%D(I)+STR_DATA%B(I+1)
+        J=I
+       ENDIF
+       STR_DATA%C(I+1)=STR_DATA%C(I)*STR_DATA%D(I)*STR_DATA%A(I)
+  30  CONTINUE
+      WRITE(6,*) AMX,J
+      DO 40 I=1,99
+       IF(AMX.LT.STR_DATA%D(I)+STR_DATA%B(I+1)) THEN
+        AMX=STR_DATA%D(I)+STR_DATA%B(I+1)
+       ENDIF
+       STR_DATA%C(I+1)=STR_DATA%C(I)*STR_DATA%D(I)*STR_DATA%A(I)
+  40  CONTINUE
+      WRITE(6,*) AMX
+      DO 50 I=1,99
+       STR_DATA%D(I)=STR_DATA%A(I)*(STR_DATA%B(I)-1)
+       STR_DATA%A(I+1)=(STR_DATA%D(I)-1+I)/(STR_DATA%C(I)+1)
+  50   STR_DATA%D(100)=STR_DATA%D(100)+STR_DATA%A(10)
+      WRITE(6,*) I
+      WRITE(6,*) STR_DATA%A,STR_DATA%B,STR_DATA%C,STR_DATA%D
+      END

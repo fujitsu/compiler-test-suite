@@ -1,0 +1,34 @@
+!             CVCT6413            LEVEL=1        DATE=87.03.09
+!
+! 1. PROGRAM NAME : CVCT6413
+! 2. PURPOSE      : IF(0) AND COMPRESS MACRO AND VL-LOOP
+!                    VECTOR LENGTH MUST BE CALCULATED IN AN ARTICULATION
+!                   BLOCK.
+! 3. RESULT       : VSMM TEXT APPEARES BEFORE BRANCH INSTEAD OF VFM TEXT
+! 4. ENVIRONMENT  : VOCL OPTION OR XOPT(NOAMOVE)
+! 5. HISTORY      : 1987.03.09
+!
+PROGRAM CV6413
+  type st1
+     REAL A(192)/192*0./
+  end type st1
+  type(st1) :: str
+  LOGICAL M(192)/64*.TRUE.,64*.FALSE.,64*.TRUE./
+  IP=0
+
+  DO  K=1,192
+
+     IF(M(K)) THEN
+        IP=IP+1
+        str%A(IP)=K
+     ENDIF
+10   CONTINUE
+  enddo
+  WRITE(6,*) IP
+
+  DO  K=192,1,-1
+20   IF(str%A(K).NE.0) GOTO 21
+  enddo
+21 WRITE(6,999) K,str%A(K)
+999 FORMAT(10G20.6)
+END PROGRAM CV6413

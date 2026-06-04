@@ -1,8 +1,9 @@
 i3=1
 a=1
 b=1
-!$omp  parallel
+!$omp  parallel private(i3)
 !$omp  sections
+!$omp  section
 !$omp  simd collapse(2)
  do j1=1,10
  do j2=1,10

@@ -1,0 +1,33 @@
+      module mod
+        character(len=8)::string='OPENMPV2'
+      end module mod
+
+      program abc
+      use mod
+        call sub1()
+        if (string /= 'OPENMPV2') print *,"fail"
+  !$omp parallel private(string)
+        call sub2(string)
+  !$omp end parallel
+        print *,'pass'
+      end program abc
+
+      subroutine sub1()
+      use mod
+  !$omp parallel private(string)
+        string='openmpv2'
+  !$omp single
+        string='OpenMPV2'
+  !$omp end single copyprivate(string)
+        if (string /= 'OpenMPV2') print *,"fail"
+  !$omp end parallel
+      end subroutine sub1
+
+      subroutine sub2(string)
+       character(len=8)::string
+        string='openmpv2'
+  !$omp single
+        string='OpenMPV2'
+  !$omp end single copyprivate(string)
+        if (string /= 'OpenMPV2') print *,"fail"
+      end subroutine sub2

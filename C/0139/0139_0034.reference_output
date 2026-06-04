@@ -1,0 +1,77 @@
+*** 
+
+M3EVA228 TEST OK 
+******** MPTEST27 START **************
+******** MPTEST27 MP1FNC3 RUN **********
+******** MPTEST27 MP1FNC2 RUN **********
+******** MPTEST27 MP1FNC1 RUN **********
+***    OK                       ***
+******** MPTEST27 END ****************
+M3CCNT03   TEST START 
+ *** O K (38-01) *** 
+ *** O K (38-03) *** 
+ *** O K (38-06) *** 
+ *** O K (38-08) *** 
+ *** O K (39-02) *** 
+ *** O K (39-05) *** 
+M3CCNT03   TEST END 
+    TEST ==> OK 
+***** SORT *****
+value:- 1 -
+value:- 2 -
+value:- 3 -
+value:- 4 -
+value:- 5 -
+value:- 6 -
+value:- 7 -
+value:- 8 -
+value:- 9 -
+value:- 10 -
+***** OK *****
+M3EVA260 TEST OK 
+ SCRPZ07 START
+ SCRPZ07 PASS 
+M3MPSI05 OK
+M3GRTN02 TEST-START 
+M3GRTN02 1-1 TEST -O  K- 
+M3GRTN02 1-2 TEST -O  K- 
+M3GRTN02 1-3 TEST -O  K- 
+M3GRTN02 1-4 TEST -O  K- 
+M3GRTN02 2-1 TEST -O  K- 
+M3GRTN02 2-2 TEST -O  K- 
+M3GRTN02 2-3 TEST -O  K- 
+M3GRTN02 2-4 TEST -O  K- 
+M3GRTN02 3-1 TEST -O  K- 
+M3GRTN02 3-2 TEST -O  K- 
+M3GRTN02 3-3 TEST -O  K- 
+M3GRTN02 3-4 TEST -O  K- 
+M3GRTN02 4-1 TEST -O  K- 
+M3GRTN02 4-2 TEST -O  K- 
+M3GRTN02 4-3 TEST -O  K- 
+M3GRTN02 4-4 TEST -O  K- 
+M3GRTN02 TEST-END 
+M3EVA289 TEST OK 
+i = 5 
+i = 2 
+i = 5 
+i = 0 
+i = 5 
+ SCRPZ15 PASS 
+*** M3MPJP01 START ***
+**** OK ****
+*** M3MPJP01 END ***
+*** M3GMEB22 TEST * START ***
+*** M3EMEB22-01 *** O   K ***
+*** M3EMEB22-02 *** O   K ***
+*** M3EMEB22-03 *** O   K ***
+*** M3EMEB22-04 *** O   K ***
+*** M3EMEB22-05 *** O   K ***
+*** M3EMEB22-06 *** O   K ***
+*** M3EMEB22-07 *** O   K ***
+*** M3EMEB22-08 *** O   K ***
+*** M3EMEB22-09 *** O   K ***
+*** M3EMEB22-10 *** O   K ***
+*** M3EMEB22 TEST *** END ***
+
+*** 
+exit 0

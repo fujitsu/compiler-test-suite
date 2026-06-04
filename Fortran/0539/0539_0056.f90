@@ -6,7 +6,7 @@ subroutine test01()
 ido1=1
 ido2=2
 ido3=3
-!$omp parallel do  default(none)
+!$omp parallel do  default(none) private(ido1,ido2)
 do ii=1,1
 !$omp  simd
 do ido1=1,10
@@ -28,7 +28,7 @@ subroutine test02()
 ido1=1
 ido2=2
 ido3=3
-!$omp parallel do  default(none)
+!$omp parallel do  default(none) private(ido1,ido2)
 do ii=1,1
 !$omp  simd
 do ido1=1,10

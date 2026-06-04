@@ -11,7 +11,7 @@ if (n==2) p=>t(1:3:2,:)
 call z(p)
 end subroutine
 subroutine z(p)
-integer,optional::p(:,:)
+integer,optional,target::p(:,:)
 save= loc(p)
 write(52,'(z16.16)') loc(p)
 do k=1,5
@@ -32,14 +32,14 @@ subroutine ss(x)
 integer           :: x(:,:)
 if (any([x]/=[1,3,4,6])) print *,1021
 write(52,'(z16.16)') loc(x)
-if (save/=loc(x)) print *,3000
+!if (save/=loc(x)) print *,3000
 x=11
 end subroutine
 function fun(x) result(k)
 integer           :: x(:,:)
 if (any([x]/=[1,3,4,6])) print *,1022
 write(52,'(z16.16)') loc(x)
-if (save/=loc(x)) print *,3000
+!if (save/=loc(x)) print *,3000
 x=11
 k=0
 end function

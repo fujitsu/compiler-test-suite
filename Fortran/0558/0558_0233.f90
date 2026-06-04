@@ -1,0 +1,54 @@
+MODULE mod1
+IMPLICIT NONE
+
+TYPE ty
+ INTEGER :: num
+END TYPE
+
+INTERFACE
+SUBROUTINE esub(dd1)
+  IMPORT ty
+  CLASS(ty) :: dd1
+END SUBROUTINE 
+SUBROUTINE ext_sub(dd1)
+  IMPORT ty
+  CLASS(ty)  :: dd1
+END SUBROUTINE
+END INTERFACE
+
+END MODULE
+
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+CLASS(ty),ALLOCATABLE :: obj
+ALLOCATE(ty :: obj)
+
+obj%num = 14
+CALL ext_sub(obj)
+
+IF(obj%num .EQ. 28) THEN
+  PRINT*,"PASS"
+ELSE
+  PRINT*,"ERROR"
+END IF
+
+END PROGRAM
+
+SUBROUTINE esub(dd1)
+  USE mod1
+  CLASS(ty) :: dd1
+  dd1%num = dd1%num * 2
+END SUBROUTINE
+
+SUBROUTINE ext_sub(dd1)
+USE mod1
+CLASS(ty) :: dd1
+INTERFACE gnr
+  PROCEDURE :: esub
+END INTERFACE
+CALL gnr(dd1)
+END SUBROUTINE
+

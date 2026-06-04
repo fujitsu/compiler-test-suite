@@ -4,7 +4,7 @@ character(len=2) :: cc(3,3)
 end type ty
 contains 
 subroutine sub(dmy)
-type(*) :: dmy(:)
+type(*),target :: dmy(:)
 if(is_contiguous(dmy) .neqv. .FALSE.)print*,"101"
 print*,"PASS"
 end subroutine sub

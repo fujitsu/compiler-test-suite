@@ -1,0 +1,3 @@
+ans = 4f4e4d4c, correct ans. = 4f4e4d4c val = 2
+ *** if ANS equal CORRECT ANS ,then OK else NG ***
+exit 0

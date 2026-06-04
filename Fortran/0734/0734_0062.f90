@@ -7,7 +7,7 @@ contains
     implicit none
     real*8, dimension(:), pointer :: x
 
-    write(29, *) 'X(1) = ', x(1)
+    write(62, *) 'X(1) = ', x(1)
 
     y = x(1)**2
 
@@ -34,14 +34,14 @@ contains
 
     real*8 :: x, y
 
-    write(29, *) 'BEGIN test: '
-    write(29, *) 'a = ', a(1), a(2)
-    write(29, *) 'b = ', b(1), b(2)
+    write(62, *) 'BEGIN test: '
+    write(62, *) 'a = ', a(1), a(2)
+    write(62, *) 'b = ', b(1), b(2)
 
     x = f(a)
     y = f(b)
 
-    write(29, *) 'END test: ',x, y
+    write(62, *) 'END test: ',x, y
 
   end subroutine test_func
 

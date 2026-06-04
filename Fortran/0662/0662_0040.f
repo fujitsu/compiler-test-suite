@@ -1,0 +1,184 @@
+      CALL S
+      PRINT *,'PASS'
+      END
+      SUBROUTINE S
+      IMPLICIT INTEGER*2(A),INTEGER*4(B),INTEGER*8(C)
+      PARAMETER (MA=5)
+      DIMENSION AD(MA)
+      DATA AD(1)/-32767/
+      DATA AD(2)/-    1/
+      DATA AD(3)/     0/
+      DATA AD(4)/     1/
+      DATA AD(5)/ 32767/
+      PARAMETER (MB=9)
+      DIMENSION BD(MB)
+      DATA BD(1)/-2147483647/
+      DATA BD(2)/    -32768/
+      DATA BD(3)/    -32767/
+      DATA BD(4)/    -    1/
+      DATA BD(5)/         0/
+      DATA BD(6)/         1/
+      DATA BD(7)/     32767/
+      DATA BD(8)/     32768/
+      DATA BD(9)/ 2147483647/
+      PARAMETER (MC=13)
+      DIMENSION CD(MC)
+      DATA CD(1)/-9223372036854775807/
+      DATA CD(2)/-2147483648/
+      DATA CD(3)/-2147483647/
+      DATA CD(4)/    -32768/
+      DATA CD(5)/    -32767/
+      DATA CD(6)/    -    1/
+      DATA CD(7)/         0/
+      DATA CD(8)/         1/
+      DATA CD(9)/     32767/
+      DATA CD(10)/     32768/
+      DATA CD(11)/ 2147483647/
+      DATA CD(12)/ 2147483648/
+      DATA CD(13)/ 9223372036854775807/
+      M=1
+  1   A=AD(M)
+      JA=1
+   11 AA=AD(JA)
+      JB=1
+  111 BB=BD(JB)
+      JC=1
+ 1111 CC=CD(JC)
+      CALL SA(A,AA,BB,CC)
+      JC=JC+1
+      IF (JC.LE.MC)GOTO 1111
+      JB=JB+1
+      IF (JB.LE.MB)GOTO 111
+      JA=JA+1
+      IF (JA.LE.MA)GOTO 11
+      M=M+1
+      IF (M.LE.MA)GOTO 1
+      M=1
+  2   B=BD(M)
+      JA=1
+   22 AA=AD(JA)
+      JB=1
+  222 BB=BD(JB)
+      JC=1
+ 2222 CC=CD(JC)
+      CALL SB(B,AA,BB,CC)
+      JC=JC+1
+      IF (JC.LE.MC)GOTO 2222
+      JB=JB+1
+      IF (JB.LE.MB)GOTO 222
+      JA=JA+1
+      IF (JA.LE.MA)GOTO 22
+      M=M+1
+      IF (M.LE.MB)GOTO 2
+      M=1
+  3   C=CD(M)
+      JA=1
+   33 AA=AD(JA)
+      JB=1
+  333 BB=BD(JB)
+      JC=1
+ 3333 CC=CD(JC)
+      CALL SC(C,AA,BB,CC)
+      JC=JC+1
+      IF (JC.LE.MC)GOTO 3333
+      JB=JB+1
+      IF (JB.LE.MB)GOTO 333
+      JA=JA+1
+      IF (JA.LE.MA)GOTO 33
+      M=M+1
+      IF (M.LE.MC)GOTO 3
+      END
+      SUBROUTINE AASUB(A,A1,A2)
+      IMPLICIT INTEGER*2(A),INTEGER*4(B),INTEGER*8(C)
+      IF (A.NE.IOR(A1,A2))PRINT *,'FAIL'
+      END
+      SUBROUTINE ABSUB(B,A1,B2)
+      IMPLICIT INTEGER*2(A),INTEGER*4(B),INTEGER*8(C)
+      IF (B.NE.IOR(A1,B2))PRINT *,'FAIL'
+      END
+      SUBROUTINE ACSUB(C,A1,C2)
+      IMPLICIT INTEGER*2(A),INTEGER*4(B),INTEGER*8(C)
+      IF (C.NE.IOR(A1,C2))PRINT *,'FAIL'
+      END
+      SUBROUTINE SA(A1,A2,B2,C2)
+      IMPLICIT INTEGER*2(A)
+      IMPLICIT INTEGER*4(B)
+      IMPLICIT INTEGER*8(C)
+      AAOR(AD1,AD2)=IOR(AD1,AD2)
+      BAOR(AD1,BD2)=IOR(AD1,BD2)
+      CAOR(AD1,CD2)=IOR(AD1,CD2)
+      CINT(A)=A
+      IF (       IOR(A1,A2).NE.AAOR(A1,A2))PRINT *,'FAIL'
+      CALL AASUB(IOR(A1,A2),A1,A2)
+      IF (       IOR(A1,B2).NE.BAOR(A1,B2))PRINT *,'FAIL'
+      CALL ABSUB(IOR(A1,B2),A1,B2)
+      IF (       IOR(A1,C2).NE.CAOR(A1,C2))PRINT *,'FAIL'
+      CALL ACSUB(IOR(A1,C2),A1,C2)
+      IF (       IOR(INT(A1),B2).NE.BAOR(INT(A1),B2))PRINT *,'FAIL'
+      CALL ABSUB(IOR(INT(A1),B2),A1,B2)
+      IF (       IOR(A1,C2).NE.CAOR(INT(A1),C2))PRINT *,'FAIL'
+      CALL ACSUB(IOR(CINT(A1),C2),A1,C2)
+      END
+      SUBROUTINE BASUB(B,B1,A2)
+      IMPLICIT INTEGER*2(A),INTEGER*4(B),INTEGER*8(C)
+      IF (B.NE.IOR(B1,A2))PRINT *,'FAIL'
+      END
+      SUBROUTINE BBSUB(B,B1,B2)
+      IMPLICIT INTEGER*2(A),INTEGER*4(B),INTEGER*8(C)
+      IF (B.NE.IOR(B1,B2))PRINT *,'FAIL'
+      END
+      SUBROUTINE BCSUB(C,B1,C2)
+      IMPLICIT INTEGER*2(A),INTEGER*4(B),INTEGER*8(C)
+      IF (C.NE.IOR(B1,C2))PRINT *,'FAIL'
+      END
+      SUBROUTINE SB(B1,A2,B2,C2)
+      IMPLICIT INTEGER*2(A)
+      IMPLICIT INTEGER*4(B)
+      IMPLICIT INTEGER*8(C)
+      BAOR(BD1,AD2)=IOR(BD1,AD2)
+      BBOR(BD1,BD2)=IOR(BD1,BD2)
+      CBOR(BD1,CD2)=IOR(BD1,CD2)
+      CINT(B)=B
+      IF (       IOR(B1,A2).NE.BAOR(B1,A2))PRINT *,'FAIL'
+      CALL BASUB(IOR(B1,A2),B1,A2)
+      IF (       IOR(B1,B2).NE.BBOR(B1,B2))PRINT *,'FAIL'
+      CALL BBSUB(IOR(B1,B2),B1,B2)
+      IF (       IOR(B1,C2).NE.CBOR(B1,C2))PRINT *,'FAIL'
+      CALL BCSUB(IOR(B1,C2),B1,C2)
+      IF (       IOR(B1,INT(A2)).NE.BAOR(B1,INT(A2)))PRINT *,'FAIL'
+      CALL BASUB(IOR(B1,INT(A2)),B1,A2)
+      IF (       IOR(CINT(B1),C2).NE.CBOR(B1,C2))PRINT *,'FAIL'
+      CALL BCSUB(IOR(CINT(B1),C2),B1,C2)
+      END
+      SUBROUTINE CASUB(C,C1,A2)
+      IMPLICIT INTEGER*2(A),INTEGER*4(B),INTEGER*8(C)
+      IF (C.NE.IOR(C1,A2))PRINT *,'FAIL'
+      END
+      SUBROUTINE CBSUB(C,C1,B2)
+      IMPLICIT INTEGER*2(A),INTEGER*4(B),INTEGER*8(C)
+      IF (C.NE.IOR(C1,B2))PRINT *,'FAIL'
+      END
+      SUBROUTINE CCSUB(C,C1,C2)
+      IMPLICIT INTEGER*2(A),INTEGER*4(B),INTEGER*8(C)
+      IF (C.NE.IOR(C1,C2))PRINT *,'FAIL'
+      END
+      SUBROUTINE SC(C1,A2,B2,C2)
+      IMPLICIT INTEGER*2(A)
+      IMPLICIT INTEGER*4(B)
+      IMPLICIT INTEGER*8(C)
+      CAOR(CD1,AD2)=IOR(CD1,AD2)
+      CBOR(CD1,BD2)=IOR(CD1,BD2)
+      CCOR(CD1,CD2)=IOR(CD1,CD2)
+      CAINT(A)=A
+      CBINT(B)=B
+      IF (       IOR(C1,A2).NE.CAOR(C1,A2))PRINT *,'FAIL'
+      CALL CASUB(IOR(C1,A2),C1,A2)
+      IF (       IOR(C1,B2).NE.CBOR(C1,B2))PRINT *,'FAIL'
+      CALL CBSUB(IOR(C1,B2),C1,B2)
+      IF (       IOR(C1,C2).NE.CCOR(C1,C2))PRINT *,'FAIL'
+      CALL CCSUB(IOR(C1,C2),C1,C2)
+      IF (       IOR(C1,A2).NE.CAOR(C1,A2))PRINT *,'FAIL'
+      CALL CASUB(IOR(C1,CAINT(A2)),C1,A2)
+      IF (       IOR(C1,B2).NE.CBOR(C1,B2))PRINT *,'FAIL'
+      CALL CBSUB(IOR(C1,CBINT(B2)),C1,B2)
+      END

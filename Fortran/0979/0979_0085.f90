@@ -18,9 +18,9 @@ subroutine sub(ip)
 integer :: ip
 pointer :: ip
 intent(inout) :: ip
-write(9,*) ip          
-rewind 9             
-read(9,*) ip          
+write(54,*) ip
+rewind 54
+read(54,*) ip
 call sub_a(ip)
 end subroutine
 subroutine sub_a(pp)

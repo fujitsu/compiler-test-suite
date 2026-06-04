@@ -10,7 +10,7 @@ class Class {
 public:
 Class(int num, ...)
 {
-      char ca[5], cb[5], cc[5];
+      char ca[6], cb[6], cc[6];
 
       unsigned int ld;
       int  tp_debug = 0;
@@ -36,6 +36,8 @@ Class(int num, ...)
 	{
 	  printf("   tp miss\n");
 	}
+
+    omp_set_num_threads(4) ;
 #pragma omp parallel firstprivate(ca)
 {
 #ifdef _OPENMP

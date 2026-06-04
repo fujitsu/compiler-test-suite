@@ -10,7 +10,7 @@ integer,pointer::p(:)
        print *,'pass'
        contains
       subroutine foo(d)
-      integer,optional::d(:)
+      integer,optional,target::d(:)
 
       if (present(d)) then
       if(loc(d).ne.loc(p))print*,"102"
@@ -20,7 +20,7 @@ integer,pointer::p(:)
 
       end subroutine
       subroutine foo2(d)
-      integer,optional,contiguous::d(:)
+      integer,optional,contiguous,target::d(:)
 
       if (present(d)) then
       if(loc(d).eq.loc(p))print*,"103"

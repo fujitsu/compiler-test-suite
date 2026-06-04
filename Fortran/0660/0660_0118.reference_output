@@ -1,0 +1,5 @@
+ pack i/o output test
+ 9 7
+ 9 7 6 8 10 12
+ pass
+exit 0

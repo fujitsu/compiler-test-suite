@@ -1,0 +1,3 @@
+ PASS with endfile message:End of file during input                            
+                   
+exit 0

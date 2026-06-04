@@ -11,7 +11,7 @@
         contains
            SUBROUTINE sub3(aa)
            IMPLICIT NONE
-           type(*)::aa(:)
+           type(*),target::aa(:)
           if(lbound(aa,1) /=1 ) print*,'403'
           if(ubound(aa,1) /=2 ) print*,'404'
           if(size(aa,1) /= 2) print*,'405'

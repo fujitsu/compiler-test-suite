@@ -1,0 +1,5 @@
+ 3.50000000
+ ptr_ty2 is associated
+ 2.00000000
+ as ptr was associated to from_obj, from_obj is now unallocated
+exit 0

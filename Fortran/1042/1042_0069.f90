@@ -12,10 +12,10 @@ v=(/2,3,4/)
 ii=3
 jj=3
 allocate(tt(ii-1))
-allocate(tt(ii-1)%p(jj-1))
+allocate(tt(ii-1)%p(0:jj-1))
 
 tt(ii-1)%p(jj-1) = 1
-tt(ii-1)%p(v-1)  = 1
+tt(ii-1)%p(v-2)  = 1
 if ( tt(2)%p(2) == 1 ) then
   print *,'pass'
 else

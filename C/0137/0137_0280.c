@@ -11,7 +11,7 @@ exit (0);
 int sub(L)
 int L;
 {
-  char *stp, str[10];
+  char *stp, str[11];
   static char cpy[] = "abcdefghij";
   int i;
 

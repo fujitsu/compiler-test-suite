@@ -30,7 +30,7 @@ integer::ios=0
  interface  write(formatted)
      procedure :: wform
   end interface
-write(101,*,iostat=ios) yv
+write(102,*,iostat=ios) yv
 if (ios/=0) print *,901
  end subroutine
  module subroutine wform(dtv, unit, iotype, vlist, iostat, iomsg)
@@ -50,8 +50,8 @@ use m
 integer::kk
   type(x)::xv
 call sub(xv)
-rewind 100
-read(100,*) kk
+rewind 102
+read(102,*) kk
 if (kk/=4) print *,304
 print *,'pass'
 end

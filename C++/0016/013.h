@@ -1,0 +1,4 @@
+
+void funcb(){
+  st++;  
+}

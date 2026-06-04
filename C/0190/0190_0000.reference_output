@@ -1,0 +1,5 @@
+      parallel private(it)
+      do schedule(static) -----
+OK
+
+exit 0

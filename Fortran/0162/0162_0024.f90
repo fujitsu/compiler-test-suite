@@ -1,6 +1,6 @@
 ip=100
 ip2=100
-!$omp parallel do default(none) shared(ip,ip2) 
+!$omp parallel do default(none) private(ip,ip2) 
     DO ip = 0, 1
 ip2=10000
     DO ip2 = 0, 1

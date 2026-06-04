@@ -1,0 +1,21 @@
+#define N 1000
+int b[N][N];
+int main()
+{
+  int i, j, a[N], b[N][N];
+  for (j=0; j<N; ++j) {
+    for (i=0; i<N; ++i) {
+      a[i] = a[i] + b[j][i];
+    }
+  }
+  return 0;
+}
+
+void foo(double a[N], double b[N][N]) {
+  int i,j;
+  for (j=0; j<N; ++j) {
+    for (i=0; i<N; ++i) {
+      a[i] = a[i] + b[j][i];
+    }
+  }
+}

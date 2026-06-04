@@ -1,0 +1,50 @@
+      PROGRAM  CV4216
+        type STR
+           INTEGER   ITR1(2),IS10
+           REAL*4    EV10(100),EV20(100)
+           REAL*4    DV20(100)
+           INTEGER   ITR3(2)
+           REAL*4    EV30(64),EV31(64)
+        END type STR
+        TYPE(STR) STR_DATA
+      DATA      STR_DATA%ITR1/100,0/,STR_DATA%EV10/11*0.0,31*15,50*-25,7*0,.5/,STR_DATA%EV20/100*0/
+      DATA      STR_DATA%DV20/30*-3,-1,36*5,0,9*5,-1,20*4,2,-1/
+      DATA      STR_DATA%EV30/31*1.5,31*2,3,1.75/,STR_DATA%ITR3/0,64/,STR_DATA%EV31/64*100/
+
+      DO 100 J=1,2
+      LPNO=1
+      DO 10 I=1,STR_DATA%ITR1(J)
+        STR_DATA%IS10=STR_DATA%EV10(I)
+        IF (STR_DATA%EV10(I).EQ.STR_DATA%IS10)  THEN
+          STR_DATA%EV20(I)=STR_DATA%IS10+1
+        ELSE
+          GOTO  19
+        ENDIF
+ 10   CONTINUE
+
+ 19   WRITE(6,600)  LPNO
+ 600  FORMAT('  CVCT4216-LOOP.0',I1)
+      GOTO (18,29) LPNO
+ 18   WRITE(6,*)  STR_DATA%EV20,STR_DATA%ITR1(J)
+      LPNO=2
+      DO 20 I=100,1,-1
+        IF(STR_DATA%DV20(I).LT.0) THEN
+          GOTO  19
+        ELSE
+          STR_DATA%DV20(I)=SQRT(STR_DATA%DV20(I))
+        ENDIF
+  20  CONTINUE
+  29  CONTINUE
+      WRITE(6,*) I
+      STR_DATA%DV20(I)=0
+      DO 30 I=1,STR_DATA%ITR3(J)
+       IF (SIN(STR_DATA%EV30(I)).GT.0)  GOTO  30
+         GOTO  39
+ 30   STR_DATA%EV31(I)=I
+
+ 39   WRITE(6,*)  '  CVCT4216-LOOP.03 '
+      WRITE(6,*)  STR_DATA%EV31,I
+100   CONTINUE
+
+      STOP
+      END

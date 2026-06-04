@@ -1,0 +1,73 @@
+ psubA
+ this present
+ psubA
+ this present
+ psubA
+ psubA
+ this present
+ ----------------------- check gen -1 ------------------
+ psubA
+ this present
+ psubA
+ this present
+ psubB
+ this present
+ psubB
+ this present
+ psubD
+ this present
+ ----------------------- check 2 ---------------------
+ A3 5 4
+ A3 5 4
+ B3 3.00000000
+ B3 3.00000000
+ B3 3.00000000
+ B3 3.00000000
+ B3 5.00000000
+ C3
+ C3
+ C3
+ x present
+ C3
+ x present
+ C3
+ x present
+ y present
+ C3
+ x present
+ y present
+ C3
+ x present
+ z present
+ C3
+ x present
+ z present
+ C3
+ x present
+ z present
+ C3
+ x present
+ y present
+ C3
+ x present
+ y present
+ z present
+ C3
+ x present
+ y present
+ z present
+ ------------------checking gen -2 -------------------
+ A3 4 3
+ B3 4.00000000
+ C3
+ C3
+ x present
+ C3
+ x present
+ y present
+ C3
+ x present
+ y present
+ z present
+ Pass
+exit 0

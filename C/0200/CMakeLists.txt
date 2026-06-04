@@ -1,0 +1,8 @@
+add_subdirectory(0200_0000)
+add_subdirectory(0200_0001)
+add_subdirectory(0200_0002)
+add_subdirectory(0200_0003)
+add_subdirectory(0200_0004)
+add_subdirectory(0200_0005)
+add_subdirectory(0200_0006)
+add_subdirectory(0200_0007)

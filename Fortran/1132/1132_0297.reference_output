@@ -1,0 +1,8 @@
+  **** CVCT6300 (1) **** 
+     TEST FOR THE SIDE-EFFECT OF MINIMIZE 
+ 71. 402. 11 11
+  *** CVCT6300 (2) ***
+  RC  OR  RC   31
+  RC AND  RC   12
+  RC AND  EX   38
+exit 0

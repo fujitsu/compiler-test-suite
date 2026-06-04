@@ -9,11 +9,19 @@ contains
  end subroutine
 
  subroutine s1
-  real(kind=8),dimension( NUMIA_I, NUMFSL ) :: u1,u2,u3,u4,v1,v2,v3,v4
-  real(kind=8),dimension( NUMIA_I, NUMFSL ) :: ud1,ud2,ud3,ud4,vd1,vd2,vd3,vd4
-  real(kind=8),dimension( NUMIA_I, NUMFSL ) :: u19,u29,u39,u49,v19,v29,v39,v49
-  real(kind=8),dimension( NUMIA_I, NUMFSL ) :: ud19,ud29,ud39,ud49,vd19,vd29,vd39,vd49
  integer::k,j
+ real(kind=8),allocatable :: u1(:,:),u2(:,:),u3(:,:),u4(:,:),v1(:,:),v2(:,:),v3(:,:),v4(:,:)
+ real(kind=8),allocatable :: ud1(:,:),ud2(:,:),ud3(:,:),ud4(:,:),vd1(:,:),vd2(:,:),vd3(:,:),vd4(:,:)
+ real(kind=8),allocatable :: u19(:,:),u29(:,:),u39(:,:),u49(:,:),v19(:,:),v29(:,:),v39(:,:),v49(:,:)
+ real(kind=8),allocatable :: ud19(:,:),ud29(:,:),ud39(:,:),ud49(:,:),vd19(:,:),vd29(:,:),vd39(:,:),vd49(:,:)
+ allocate(u1(NUMIA_I, NUMFSL) ,u2(NUMIA_I, NUMFSL), u3(NUMIA_I, NUMFSL), u4(NUMIA_I, NUMFSL), &
+          v1(NUMIA_I, NUMFSL), v2(NUMIA_I, NUMFSL), v3(NUMIA_I, NUMFSL), v4(NUMIA_I, NUMFSL), &
+          ud1(NUMIA_I, NUMFSL), ud2(NUMIA_I, NUMFSL), ud3(NUMIA_I, NUMFSL), ud4(NUMIA_I, NUMFSL), &
+          vd1(NUMIA_I, NUMFSL), vd2(NUMIA_I, NUMFSL), vd3(NUMIA_I, NUMFSL), vd4(NUMIA_I, NUMFSL), &
+          u19(NUMIA_I, NUMFSL), u29(NUMIA_I, NUMFSL), u39(NUMIA_I, NUMFSL), u49(NUMIA_I, NUMFSL), &
+          v19(NUMIA_I, NUMFSL), v29(NUMIA_I, NUMFSL), v39(NUMIA_I, NUMFSL), v49(NUMIA_I, NUMFSL), &
+          ud19(NUMIA_I, NUMFSL), ud29(NUMIA_I, NUMFSL), ud39(NUMIA_I, NUMFSL), ud49(NUMIA_I, NUMFSL), &
+          vd19(NUMIA_I, NUMFSL), vd29(NUMIA_I, NUMFSL), vd39(NUMIA_I, NUMFSL), vd49(NUMIA_I, NUMFSL))
 u1=0
 u2=0
 u3=0
@@ -96,6 +104,10 @@ write(3,*) vd1
 write(3,*) vd2
 write(3,*) vd3
 write(3,*) vd4
+deallocate(u1,u2,u3,u4,v1,v2,v3,v4, &
+          ud1,ud2,ud3,ud4,vd1,vd2,vd3,vd4, &
+          u19,u29,u39,u49,v19,v29,v39,v49, &
+          ud19,ud29,ud39,ud49,vd19,vd29,vd39,vd49)
  end subroutine
 end
 use m1

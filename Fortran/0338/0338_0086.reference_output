@@ -1,0 +1,5 @@
+ #### START ####
+ &NAM1 INT1= 100,INT2= 10 20 30 40 50,FLOAT= 100.5625,HEX= a/
+ &NAM2 COMP= (10.,20.),BOOL1= T,BOOL2= T,CHR= FORTRAN/
+ ####  END  ####
+exit 0

@@ -3,7 +3,7 @@
                  integer:: i1=1
                  real::a =0.0
                             !$omp parallel
-                            !$omp task  default(none) shared(i1)
+                            !$omp task  default(none) shared(i1) shared(a)
                             !$omp task  shared(a)
                             !$omp task 
                             !$omp task

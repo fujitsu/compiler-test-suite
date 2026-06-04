@@ -20,6 +20,9 @@
 
       m = maxval(b) + minval(b)
       where (d(1:m))
+         where (c(3:m+2) .eq. 0)
+            c(3:m+2) = 1
+         endwhere
          p(2:m+1) = b(3:m+2) * b(c(3:m+2))
          c(1:m) = a(1:m) + b (1:m) + c(1:m)
       endwhere

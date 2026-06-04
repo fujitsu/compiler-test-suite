@@ -44,7 +44,7 @@ call sub(trg(:,:,:,2:6))
 
 contains
 subroutine sub(dptr)
-character(kind=4),contiguous::dptr(:,:,:,:)
+character(kind=4),target,contiguous::dptr(:,:,:,:)
 
 if(is_contiguous(dptr) .neqv. .true.) print*,201,'dptr'
 if(is_contiguous(dptr(:,:,:,:)) .neqv. .true.) print*,202,'dptr(:,:,:,:)'
@@ -68,7 +68,7 @@ call sub2(dptr(:,:,1:5,:))
 end subroutine
 
 subroutine sub2(dd)
-character(kind=4)::dd(:,:,:,:)
+character(kind=4),target::dd(:,:,:,:)
 if(is_contiguous(dd) .neqv. .false.) print*,301,'dd'
 if(is_contiguous(dd(:,:,:,:)) .neqv. .false.) print*,302,'dd(:,:,:,:)'
 if(is_contiguous(dd(2:,:,:,:)) .neqv. .false.) print*,303,'dd(2:,:,:,:)'

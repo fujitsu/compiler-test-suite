@@ -2,7 +2,7 @@ i=10
 j=20
 k=30
          !$omp parallel 
-         !$omp parallel do default(firstprivate) collapse(3) private(i) shared(j)
+         !$omp parallel do default(firstprivate) collapse(3) private(i,j,k)
          do i=1,1
            do j=1,1
            do k=1,1

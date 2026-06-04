@@ -1,0 +1,7 @@
+ destructor 1
+ 10
+ destructor 1
+ 20
+ destructor 1
+ 20
+exit 0

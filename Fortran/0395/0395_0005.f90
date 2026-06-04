@@ -15,7 +15,7 @@ module mod
 
       sumx = me%val1 + me%val2
 
-      write(1,*)sumx
+      write(11,*)sumx
 
     end subroutine printsum
 
@@ -38,7 +38,7 @@ call chk
 print *,'pass'
 end
 subroutine chk
-rewind 1
-read(1,*) k;if (k/=7)print *,k
-read(1,*) k;if (k/=1)print *,k
+rewind 11
+read(11,*) k;if (k/=7)print *,k
+read(11,*) k;if (k/=1)print *,k
 end

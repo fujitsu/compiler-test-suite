@@ -48,7 +48,7 @@ call sub(trg(:,:,:,:))
 
 contains
 subroutine sub(dptr)
-class(ty),contiguous::dptr(:,:,:,:)
+class(ty),target,contiguous::dptr(:,:,:,:)
  
 if(is_contiguous(dptr) .neqv. .true.) print*,201,'dptr'
 if(is_contiguous(dptr(:,:,:,:)) .neqv. .true.) print*,202,'dptr(:,:,:,:)'
@@ -70,7 +70,7 @@ call ss2(dptr(:,:,1:5,:))
 end subroutine
 
 subroutine ss2(dd)
-class(ty)::dd(:,:,:,:)
+class(ty),target::dd(:,:,:,:)
 
 if(is_contiguous(dd) .neqv. .false.) print*,301,'dd'
 if(is_contiguous(dd(:,:,:,:)) .neqv. .false.) print*,302,'dd(:,:,:,:)'

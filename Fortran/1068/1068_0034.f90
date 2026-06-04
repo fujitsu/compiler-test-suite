@@ -1,0 +1,107 @@
+     module mod
+       integer,parameter::mm=1000
+       type :: base
+          integer(8)::d0(2)
+       end type base
+
+       type, extends(base) :: ext
+          integer(8)::d1
+          character(:),allocatable::name
+       end type ext
+
+       type y
+         integer(8)::yd(4)
+         class(base), allocatable :: var
+       end type
+       type z
+         integer(8)::zd(6)
+         class(y),allocatable :: zv(:)
+       end type
+contains
+       subroutine ss(yv  , value)
+         class(z)::yv(:)
+         class(base), intent(in) :: value
+          do m=2,size(yv)
+         yv(m)%zv(m)%var=value
+          end do
+         write (75,"(z16.16)") loc(yv(2)%zv(2)%var)
+       end subroutine
+
+     subroutine s1(nn)
+         class(z),allocatable::yv(: )
+     class(base), allocatable :: value
+     allocate(yv(nn))
+     do m=2,size(yv)
+     allocate(yv(m)%zv(m))
+     allocate(ext::yv(m)%zv(m)%var)
+     end do
+         write (76,"(z16.16)") loc(yv(2)%zv(2)%var)
+     select type(p=>yv(2)%zv(2)%var)
+       type is(ext)
+         allocate(character(mm)::p%name)
+         write (74,"(z16.16)") loc(p%name)
+     end select
+     allocate(value)
+     call ss(yv , value)
+     end
+     end
+     subroutine dg
+     use mod
+     do n=1,10
+      call s1(2)
+     end do
+     end
+     call dg
+ !   call chk(74)
+  !  call chk(75)
+   ! call chk(76)
+     print *,'sngg792q : pass'
+     end
+     subroutine  chk(k)
+     character(16)::n1,n2
+     rewind (k)
+     read(k ,'(a)') n1
+     do
+       read(k ,'(a)',end=100) n2
+       if (n1==n2) return
+     end do
+  100 continue
+     rewind (k)
+     read(k ,'(a)') n1
+     read(k ,'(a)') n1
+     do
+       read(k ,'(a)',end=200) n2
+       if (n1==n2) return
+     end do
+  200 continue
+     rewind (k)
+     read(k ,'(a)') n1
+     read(k ,'(a)') n1
+     read(k ,'(a)') n1
+     do
+       read(k ,'(a)',end=300) n2
+       if (n1==n2) return
+     end do
+  300 continue
+     rewind (k)
+     read(k ,'(a)') n1
+     read(k ,'(a)') n1
+     read(k ,'(a)') n1
+     read(k ,'(a)') n1
+     do
+       read(k ,'(a)',end=400) n2
+       if (n1==n2) return
+     end do
+  400 continue
+     rewind (k)
+     read(k ,'(a)') n1
+     read(k ,'(a)') n1
+     read(k ,'(a)') n1
+     read(k ,'(a)') n1
+     read(k ,'(a)') n1
+     do
+       read(k ,'(a)',end=500) n2
+       if (n1==n2) return
+     end do
+  500 print *,"Please check UNIT",k
+     end

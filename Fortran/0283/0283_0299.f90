@@ -1,7 +1,7 @@
 MODULE mod1
 IMPLICIT NONE
 
-INTEGER,DIMENSION(:,:,:),ALLOCATABLE :: arr1
+INTEGER,DIMENSION(:,:,:),TARGET,ALLOCATABLE :: arr1
 
 INTERFACE
 FUNCTION fun_1(dd)
@@ -19,8 +19,10 @@ IMPLICIT NONE
 
 ALLOCATE(arr1(-3:0,1:5,10:15))
 
-ASSOCIATE(aa => fun_1(arr1) + arr1(-1,1,10) )   
+ASSOCIATE(p  => fun_1(arr1)  )   
+ASSOCIATE(aa => p           + arr1(-1,1,10) )   
   IF(ALL(aa(1:2,1:3,1:4) .EQ. 6)) PRINT*,'pass'
+END ASSOCIATE
 END ASSOCIATE
 
 END PROGRAM

@@ -27,6 +27,8 @@
        PARAMETER (DC1 = (1D0, 0D0) / 2)
        DATA CDV31/10*(0.,0.)/ 
        COMPLEX CC4, CC3, CC2, CC1
+       INTEGER NPL, K, L, I
+       PARAMETER (NPL=5)
 
 
        RS11 = DMOD (DV11(1), 2D0) - IV11(2)
@@ -85,7 +87,8 @@
        END DO
 
        WRITE (6, *) RV21, RV22, RV23
-       WRITE (6, *) CDV21
+       WRITE(6,'(5(1X,"(",F0.1,",",F0.1,")"))')
+     &      (DBLE(CDV21(I)), DIMAG(CDV21(I)), I=1,10)
        WRITE (6, *) 1, 2, .FALSE., .TRUE., LV21
        CC3 = CMPLX (1., 2D0)
        CC4 = CMPLX (0, 2D0)
@@ -112,7 +115,15 @@
    16    CONTINUE
         END DO
         WRITE (6, *) LV31, LS31
-        WRITE (6, *) CDV31
+        DO 50 K=1,10,NPL
+          L = MIN0(10, K+NPL-1)
+          DO 40 I=K,L
+            WRITE(6,30,ADVANCE='NO') DBLE(CDV31(I)), DIMAG(CDV31(I))
+   30       FORMAT(1X,'(',0P,F0.1,',',F0.1,')')
+   40  CONTINUE
+
+       WRITE(6,*)
+   50  CONTINUE
 
         LS31 = .FALSE.
        END DO

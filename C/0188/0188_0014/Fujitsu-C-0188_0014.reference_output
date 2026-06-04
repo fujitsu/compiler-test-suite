@@ -1,0 +1,4 @@
+----- omp_PARALLELDO_002i.c --
+      parallel for private(ia) ------
+OK
+exit 0

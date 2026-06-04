@@ -1,0 +1,918 @@
+    5                                                                   00001001
+   -1.0                                                                 00002001
+   -2.0                                                                 00003001
+    3.0                                                                 00004001
+    4.0                                                                 00005001
+    0.0                                                                 00006001
+   -6.0                                                                 00007001
+    5                                                                   00008001
+   -1.0                                                                 00009001
+   -2.0                                                                 00010001
+    3.0                                                                 00011001
+    4.0                                                                 00012001
+    0.0                                                                 00013001
+   -6.0                                                                 00014001
+$no       d81054,                         f11303f1                      00015001
+$user q100,q100                                                         00016001
+$fjob 0571,'qa90203pz72140',d                                           00017001
+$m7.fort cp,opt2,phzinf,param,  area=100                                00018001
+cm*                                                                     00019001
+c                                                                       00020001
+c     f11303f1           ( y.tsuchiya )        73.07.12                 00021001
+c                                                                       00022001
+c     using subroutine  : none                                          00023001
+c     using function    : faaf1,faaf2,faaf3,faaf4  (4)                  00024001
+c     program lebel     : b                                             00025001
+c     test item no      : 44                                            00026001
+c     check             : *ok*,*error*.check.                           00027001
+c     using device      : none                                          00028001
+c     data              : none                                          00029001
+c     using block data  : none                                          00030001
+c                                                                       00031001
+c     =*=           arithimetic   if   statement          =*=           00032001
+c                   if( e )   k1,k2,k3                                  00033001
+c                   test e - type                                       00034001
+c                                                                       00035001
+      integer    i9ans1,i9comp,i9dif1,lq,l9eans,l9ecom                  00036001
+      real       r9ans1,r9comp,r9dif1,r9dif2,r9dif3                     00037001
+      double precision   d9ans1,d9comp,d9dif1,d9dif2,d9dif3             00038001
+      real*16    q9ans1,q9comp,q9dif1,q9dif2,q9dif3                     00039001
+      complex    c9ans1,c9comp,c9df9                                    00040001
+      real       r9dif5,r9dif6,r9dif7,r9dif8,r9dif9,r9df10,r9df11       00041001
+      real       r9dim1(2),r9dim2(2),r9df99(2)                          00042001
+      equivalence        (c9ans1,r9dim1(1)),(c9comp,r9dim2(1)),         00043001
+     *                   (c9df9,r9df99(1))                              00044001
+      complex*16 cd9ans,cd9com,cd9df9                                   00045001
+      double precision   d9dif5,d9dif6,d9dim1(2),d9dim2(2),d9dif7,d9dif800046001
+      double precision   d9dif9,d9df10,d9df11,d9df99(2)                 00047001
+      equivalence        (cd9ans,d9dim1(1)),(cd9com,d9dim2(1)),         00048001
+     *                    (cd9df9,d9df99(1))                            00049001
+      complex*32 cq9ans,cq9com,cq9df9                                   00050001
+      real*16    q9dif5,q9dif6,q9dim1(2),q9dim2(2),q9dif7,q9dif8        00051001
+      real*16    q9dif9,q9df10,q9df11,q9df99(2)                         00052001
+      equivalence        (cq9ans,q9dim1(1)),(cq9com,q9dim2(1)),         00053001
+     *                   (cq9df9,q9df99(1))                             00054001
+      logical    l9ans1,l9comp                                          00055001
+      equivalence     (l9eans,l9ans1),(l9ecom,l9comp)                   00056001
+      integer           i11,i12,i13,i1dim1(3),i1dim2(5)                 00057001
+      real              r11,r12,r13,r1dim1(2),r1dim2(4)                 00058001
+      double precision  d11,d12,d13,d1dim1(1),d1dim2(3)                 00059001
+      real * 16         q11,q12,q13,q1dim1(2),q1dim2(3)                 00060001
+      integer           faaf1                                           00061001
+          real      faaf2                                               00062001
+      double precision   ufuf3,faaf3                                    00063001
+      real * 16         ufuf4,faaf4                                     00064001
+      ufuf1(i11)   =    i11**3+2*i11                                    00065001
+      ufuf2(r11)   =    r11**3.0+2.0*r11                                00066001
+      ufuf3(d11)   =    d11**1.0d0+5.0d0*d11                            00067001
+      ufuf4(q11)   =    q11**3.0q0+q11                                  00068001
+c                                                                       00069001
+31500 format(1h0,1x,4h*ok*,4x,1h( ,i3,2h ))                             00070001
+31510 format(1h0,1x,7h*error*,1x,1h( ,i3,2h ))                          00071001
+31520 format(1h0,1x,4h*ok* )                                            00072001
+31530 format(1h0,1x,7h*error* )                                         00073001
+31540 format(1h1 / 6x,9h*fortran*,5x,8hf11303f1,5x,5henter / )          00074001
+31550 format( // 19h + justice + item +,15x,19h+ computed result +,     00075001
+     *       19x,17h+ compare value +,31x,14h+ difference + / )         00076001
+      write(6,31540)                                                    00077001
+      i9keyc=1                                                          00078001
+      if (i9keyc.eq.0) go to 32010                                      00079001
+32000 write(6,31550)                                                    00080001
+32010 i9keyc = i9keyc + 1                                               00081001
+      i9data=0                                                          00082001
+      i9errc=0                                                          00083001
+      i9ans1=0                                                          00084001
+c                                                                       00085001
+31600 format(1h+, 9x,1h( ,i3,2h ),21x,i15,21x,i15 )                     00086001
+31610 format(1h+,9x,1h(, i3, 2h ),21x,e15.8,21x,e15.8,30x,e15.8 )       00087001
+31620 format(1h+,9x,1h(, i3,2h ),12x,d24.17,12x,d24.17,21x,d24.17 )     00088001
+31630 format(1h+,9x,1h(, i3,2h ),  1x,q44.37,1x,q44.37,1x,q16.9 )       00089001
+31640 format(1h+,9x,1h(,i3,2h ),21x,e15.8,21x,e15.8,30x,e15.8 /         00090001
+     *      37x,e15.8,21x,e15.8,30x,e15.8 )                             00091001
+31650 format(1h ,36x,e15.8,21x,e15.8,30x,e15.8 )                        00092001
+31660 format(1h+,9x,1h(,i3,2h ), 12x,d24.17,12x,d24.17,21x,d24.17 /     00093001
+     *      28x,d24.17,12x,d24.17,21x,d24.17 )                          00094001
+31670 format(1h ,27x,d24.17,12x,d24.17,21x,d24.17 )                     00095001
+31680 format(1h+,9x,1h(,i3,2h ),2q45.37,q17.9/16x,2q45.37,q17.9)        00096001
+31690 format(1h ,16x,q44.37,1x,q44.37,1x,q16.9 )                        00097001
+31700 format(1h+,9x,1h( ,i3,2h ),33x,l3,33x,l3 )                        00098001
+c     test  e = primary                                                 00099001
+c                                                                       00100001
+c     * test item ( 1 ) *  const-1                                      00101001
+c                                                                       00102001
+          i9ans  =  0                                                   00103001
+          if( 113.7523416572451d14 )    15,15,10                        00104001
+   10     i9ans   = 1                                                   00105001
+   15 i9data = i9data + 1                                               00106001
+      if(i9ans.eq.1) go to 23000                                        00107001
+      if(i9keyc.eq.1) go to 23100                                       00108001
+      write(6,31510) i9data                                             00109001
+      go to 23100                                                       00110001
+23000 if(i9keyc.eq.1) go to 23200                                       00111001
+      write(6,31500) i9data                                             00112001
+      go to 23200                                                       00113001
+23100 i9errc = i9errc + 1                                               00114001
+23200 i9ans1=0                                                          00115001
+c                                                                       00116001
+c     * test item ( 2 ) *  const-2                                      00117001
+c                                                                       00118001
+          i9ans  =  0                                                   00119001
+          if( -3.14159265358973846264338327956145321q24 )   20,25,25    00120001
+   20     i9ans   = 1                                                   00121001
+   25 i9data = i9data + 1                                               00122001
+      if(i9ans.eq.1) go to 23001                                        00123001
+      if(i9keyc.eq.1) go to 23101                                       00124001
+      write(6,31510) i9data                                             00125001
+      go to 23101                                                       00126001
+23001 if(i9keyc.eq.1) go to 23201                                       00127001
+      write(6,31500) i9data                                             00128001
+      go to 23201                                                       00129001
+23101 i9errc = i9errc + 1                                               00130001
+23201 i9ans1=0                                                          00131001
+c                                                                       00132001
+c     * test item ( 3 ) *  val-1                                        00133001
+c                                                                       00134001
+          i9ans  =  0                                                   00135001
+      r11 = -1118115.0                                                  00136001
+      if( r11 )                         30,35,35                        00137001
+   30     i9ans   = 1                                                   00138001
+   35 i9data = i9data + 1                                               00139001
+      if(i9ans.eq.1) go to 23002                                        00140001
+      if(i9keyc.eq.1) go to 23102                                       00141001
+      write(6,31510) i9data                                             00142001
+      go to 23102                                                       00143001
+23002 if(i9keyc.eq.1) go to 23202                                       00144001
+      write(6,31500) i9data                                             00145001
+      go to 23202                                                       00146001
+23102 i9errc = i9errc + 1                                               00147001
+23202 i9ans1=0                                                          00148001
+c                                                                       00149001
+c     * test item ( 4 ) *  val-2                                        00150001
+c                                                                       00151001
+      d11 = 0.0d00                                                      00152001
+          i9ans  =  0                                                   00153001
+      if( d11)                          45,40,45                        00154001
+   40     i9ans   = 1                                                   00155001
+   45 i9data = i9data + 1                                               00156001
+      if(i9ans.eq.1) go to 23003                                        00157001
+      if(i9keyc.eq.1) go to 23103                                       00158001
+      write(6,31510) i9data                                             00159001
+      go to 23103                                                       00160001
+23003 if(i9keyc.eq.1) go to 23203                                       00161001
+      write(6,31500) i9data                                             00162001
+      go to 23203                                                       00163001
+23103 i9errc = i9errc + 1                                               00164001
+23203 i9ans1=0                                                          00165001
+c                                                                       00166001
+c     * test item ( 5 ) *  val-3                                        00167001
+c                                                                       00168001
+          i9ans  =  0                                                   00169001
+      q11 = 0.3q-15                                                     00170001
+      if( q11 )                         55,55,50                        00171001
+   50     i9ans   = 1                                                   00172001
+   55 i9data = i9data + 1                                               00173001
+      if(i9ans.eq.1) go to 23004                                        00174001
+      if(i9keyc.eq.1) go to 23104                                       00175001
+      write(6,31510) i9data                                             00176001
+      go to 23104                                                       00177001
+23004 if(i9keyc.eq.1) go to 23204                                       00178001
+      write(6,31500) i9data                                             00179001
+      go to 23204                                                       00180001
+23104 i9errc = i9errc + 1                                               00181001
+23204 i9ans1=0                                                          00182001
+c                                                                       00183001
+c     * test item ( 6 ) *  dim-1                                        00184001
+c                                                                       00185001
+          i9ans  =  0                                                   00186001
+      i1dim1(1)  =  0                                                   00187001
+      if( i1dim1(1) )                   65,60,65                        00188001
+   60     i9ans  =  1                                                   00189001
+   65 i9data = i9data + 1                                               00190001
+      if(i9ans.eq.1) go to 23005                                        00191001
+      if(i9keyc.eq.1) go to 23105                                       00192001
+      write(6,31510) i9data                                             00193001
+      go to 23105                                                       00194001
+23005 if(i9keyc.eq.1) go to 23205                                       00195001
+      write(6,31500) i9data                                             00196001
+      go to 23205                                                       00197001
+23105 i9errc = i9errc + 1                                               00198001
+23205 i9ans1=0                                                          00199001
+c                                                                       00200001
+c     * test item ( 7 ) *  dim-2                                        00201001
+c                                                                       00202001
+          i9ans  =  0                                                   00203001
+          d1dim1(1) = 3.24536421732314d02                               00204001
+          if( d1dim1(1) )               75,75,70                        00205001
+   70     i9ans   = 1                                                   00206001
+   75 i9data = i9data + 1                                               00207001
+      if(i9ans.eq.1) go to 23006                                        00208001
+      if(i9keyc.eq.1) go to 23106                                       00209001
+      write(6,31510) i9data                                             00210001
+      go to 23106                                                       00211001
+23006 if(i9keyc.eq.1) go to 23206                                       00212001
+      write(6,31500) i9data                                             00213001
+      go to 23206                                                       00214001
+23106 i9errc = i9errc + 1                                               00215001
+23206 i9ans1=0                                                          00216001
+c                                                                       00217001
+c     * test item ( 8 ) *  dim-3                                        00218001
+c                                                                       00219001
+          i9ans  =  0                                                   00220001
+          q1dim1(1) = -6.24352364513278351403256728341536q01            00221001
+          if( q1dim1(1) )               80,85,85                        00222001
+   80     i9ans   = 1                                                   00223001
+   85 i9data = i9data + 1                                               00224001
+      if(i9ans.eq.1) go to 23007                                        00225001
+      if(i9keyc.eq.1) go to 23107                                       00226001
+      write(6,31510) i9data                                             00227001
+      go to 23107                                                       00228001
+23007 if(i9keyc.eq.1) go to 23207                                       00229001
+      write(6,31500) i9data                                             00230001
+      go to 23207                                                       00231001
+23107 i9errc = i9errc + 1                                               00232001
+23207 i9ans1=0                                                          00233001
+c                                                                       00234001
+c     * test item ( 9 ) *  outfunc                                      00235001
+c                                                                       00236001
+          i9ans  =  0                                                   00237001
+      i11 = 18                                                          00238001
+      if( faaf1(i11) )                  95,95,90                        00239001
+   90     i9ans   = 1                                                   00240001
+   95 i9data = i9data + 1                                               00241001
+      if(i9ans.eq.1) go to 23008                                        00242001
+      if(i9keyc.eq.1) go to 23108                                       00243001
+      write(6,31510) i9data                                             00244001
+      go to 23108                                                       00245001
+23008 if(i9keyc.eq.1) go to 23208                                       00246001
+      write(6,31500) i9data                                             00247001
+      go to 23208                                                       00248001
+23108 i9errc = i9errc + 1                                               00249001
+23208 i9ans1=0                                                          00250001
+c                                                                       00251001
+c     * test item ( 10 ) *  outfunc-2                                   00252001
+c                                                                       00253001
+          i9ans  =  0                                                   00254001
+      r11 =  1.0                                                        00255001
+      if( faaf2(r11) )                  105,105,100                     00256001
+  100     i9ans   = 1                                                   00257001
+  105 i9data = i9data + 1                                               00258001
+      if(i9ans.eq.1) go to 23009                                        00259001
+      if(i9keyc.eq.1) go to 23109                                       00260001
+      write(6,31510) i9data                                             00261001
+      go to 23109                                                       00262001
+23009 if(i9keyc.eq.1) go to 23209                                       00263001
+      write(6,31500) i9data                                             00264001
+      go to 23209                                                       00265001
+23109 i9errc = i9errc + 1                                               00266001
+23209 i9ans1=0                                                          00267001
+c                                                                       00268001
+c     * test item ( 11 ) *  outfunc-3                                   00269001
+c                                                                       00270001
+          i9ans  =  0                                                   00271001
+      d11 =   1.414213567623d01                                         00272001
+      if( -faaf3(d11) )                 110,115,115                     00273001
+  110     i9ans   = 1                                                   00274001
+  115 i9data = i9data + 1                                               00275001
+      if(i9ans.eq.1) go to 23010                                        00276001
+      if(i9keyc.eq.1) go to 23110                                       00277001
+      write(6,31510) i9data                                             00278001
+      go to 23110                                                       00279001
+23010 if(i9keyc.eq.1) go to 23210                                       00280001
+      write(6,31500) i9data                                             00281001
+      go to 23210                                                       00282001
+23110 i9errc = i9errc + 1                                               00283001
+23210 i9ans1=0                                                          00284001
+c                                                                       00285001
+c     * test item ( 12 ) *  outfunc-3                                   00286001
+c                                                                       00287001
+          i9ans  =  0                                                   00288001
+      q11 =   3.141592953589793846264338327956q02                       00289001
+      if( -faaf4(q11) )                 120,125,125                     00290001
+  120     i9ans   = 1                                                   00291001
+  125 i9data = i9data + 1                                               00292001
+      if(i9ans.eq.1) go to 23011                                        00293001
+      if(i9keyc.eq.1) go to 23111                                       00294001
+      write(6,31510) i9data                                             00295001
+      go to 23111                                                       00296001
+23011 if(i9keyc.eq.1) go to 23211                                       00297001
+      write(6,31500) i9data                                             00298001
+      go to 23211                                                       00299001
+23111 i9errc = i9errc + 1                                               00300001
+23211 i9ans1=0                                                          00301001
+c                                                                       00302001
+c     * test item ( 13 ) *  infunc-1                                    00303001
+c                                                                       00304001
+          i9ans  =  0                                                   00305001
+      i11 = -115                                                        00306001
+      if(ufuf1(i11) )                   130,135,135                     00307001
+  130     i9ans   = 1                                                   00308001
+  135 i9data = i9data + 1                                               00309001
+      if(i9ans.eq.1) go to 23012                                        00310001
+      if(i9keyc.eq.1) go to 23112                                       00311001
+      write(6,31510) i9data                                             00312001
+      go to 23112                                                       00313001
+23012 if(i9keyc.eq.1) go to 23212                                       00314001
+      write(6,31500) i9data                                             00315001
+      go to 23212                                                       00316001
+23112 i9errc = i9errc + 1                                               00317001
+23212 i9ans1=0                                                          00318001
+c                                                                       00319001
+c     * test item ( 14 ) *  infunc-2                                    00320001
+c                                                                       00321001
+          i9ans  =  0                                                   00322001
+      r11 =  0.0                                                        00323001
+          if( ufuf2(r11) )              145,140,145                     00324001
+  140     i9ans   = 1                                                   00325001
+  145 i9data = i9data + 1                                               00326001
+      if(i9ans.eq.1) go to 23013                                        00327001
+      if(i9keyc.eq.1) go to 23113                                       00328001
+      write(6,31510) i9data                                             00329001
+      go to 23113                                                       00330001
+23013 if(i9keyc.eq.1) go to 23213                                       00331001
+      write(6,31500) i9data                                             00332001
+      go to 23213                                                       00333001
+23113 i9errc = i9errc + 1                                               00334001
+23213 i9ans1=0                                                          00335001
+c                                                                       00336001
+c     * test item ( 15 ) *  infunc-3                                    00337001
+c                                                                       00338001
+          i9ans  =  0                                                   00339001
+      d11 = 1.0d01                                                      00340001
+      if(ufuf3(d11) )                   155,155,150                     00341001
+  150     i9ans   = 1                                                   00342001
+  155 i9data = i9data + 1                                               00343001
+      if(i9ans.eq.1) go to 23014                                        00344001
+      if(i9keyc.eq.1) go to 23114                                       00345001
+      write(6,31510) i9data                                             00346001
+      go to 23114                                                       00347001
+23014 if(i9keyc.eq.1) go to 23214                                       00348001
+      write(6,31500) i9data                                             00349001
+      go to 23214                                                       00350001
+23114 i9errc = i9errc + 1                                               00351001
+23214 i9ans1=0                                                          00352001
+      if(i9keyc.eq.1) go to 25900                                       00353001
+      write(6,31570)                                                    00354001
+25900 continue                                                          00355001
+c                                                                       00356001
+c     * test item ( 16 ) *  infunc-4                                    00357001
+c                                                                       00358001
+          i9ans  =  0                                                   00359001
+      q11 =  1.0q01                                                     00360001
+      if(ufuf4(q11) )                   165,165,160                     00361001
+  160     i9ans   = 1                                                   00362001
+  165 i9data = i9data + 1                                               00363001
+      if(i9ans.eq.1) go to 23015                                        00364001
+      if(i9keyc.eq.1) go to 23115                                       00365001
+      write(6,31510) i9data                                             00366001
+      go to 23115                                                       00367001
+23015 if(i9keyc.eq.1) go to 23215                                       00368001
+      write(6,31500) i9data                                             00369001
+      go to 23215                                                       00370001
+23115 i9errc = i9errc + 1                                               00371001
+23215 i9ans1=0                                                          00372001
+c                                                                       00373001
+c     * test item ( 17 ) *  libfunc-1                                   00374001
+c                                                                       00375001
+          i9ans  =  0                                                   00376001
+      r11 =  3.14159265*0.5                                             00377001
+      if(dble(r11) )                    175,175,170                     00378001
+  170     i9ans   = 1                                                   00379001
+  175 i9data = i9data + 1                                               00380001
+      if(i9ans.eq.1) go to 23016                                        00381001
+      if(i9keyc.eq.1) go to 23116                                       00382001
+      write(6,31510) i9data                                             00383001
+      go to 23116                                                       00384001
+23016 if(i9keyc.eq.1) go to 23216                                       00385001
+      write(6,31500) i9data                                             00386001
+      go to 23216                                                       00387001
+23116 i9errc = i9errc + 1                                               00388001
+23216 i9ans1=0                                                          00389001
+c                                                                       00390001
+c     * test item ( 18 ) *  libfunc-2                                   00391001
+c                                                                       00392001
+          i9ans  =  0                                                   00393001
+      d11 =  3.14159265d00*1.5d00                                       00394001
+      if(-qextd(d11))                   180,185,185                     00395001
+  180     i9ans   = 1                                                   00396001
+  185 i9data = i9data + 1                                               00397001
+      if(i9ans.eq.1) go to 23017                                        00398001
+      if(i9keyc.eq.1) go to 23117                                       00399001
+      write(6,31510) i9data                                             00400001
+      go to 23117                                                       00401001
+23017 if(i9keyc.eq.1) go to 23217                                       00402001
+      write(6,31500) i9data                                             00403001
+      go to 23217                                                       00404001
+23117 i9errc = i9errc + 1                                               00405001
+23217 i9ans1=0                                                          00406001
+c                                                                       00407001
+c     * test item ( 19 ) *  libfunc-3                                   00408001
+c                                                                       00409001
+          i9ans  =  0                                                   00410001
+      q11 =  3.14q00*1.5q00                                             00411001
+      if(-dbleq(q11))                   190,195,195                     00412001
+  190     i9ans   = 1                                                   00413001
+  195 i9data = i9data + 1                                               00414001
+      if(i9ans.eq.1) go to 23018                                        00415001
+      if(i9keyc.eq.1) go to 23118                                       00416001
+      write(6,31510) i9data                                             00417001
+      go to 23118                                                       00418001
+23018 if(i9keyc.eq.1) go to 23218                                       00419001
+      write(6,31500) i9data                                             00420001
+      go to 23218                                                       00421001
+23118 i9errc = i9errc + 1                                               00422001
+23218 i9ans1=0                                                          00423001
+c                                                                       00424001
+c     * test item ( 20 ) *  basic-libfunc-1                             00425001
+c                                                                       00426001
+          i9ans  =  0                                                   00427001
+      if( cos(r11) )                    205,205,200                     00428001
+  200     i9ans   = 1                                                   00429001
+  205 i9data = i9data + 1                                               00430001
+      if(i9ans.eq.1) go to 23019                                        00431001
+      if(i9keyc.eq.1) go to 23119                                       00432001
+      write(6,31510) i9data                                             00433001
+      go to 23119                                                       00434001
+23019 if(i9keyc.eq.1) go to 23219                                       00435001
+      write(6,31500) i9data                                             00436001
+      go to 23219                                                       00437001
+23119 i9errc = i9errc + 1                                               00438001
+23219 i9ans1=0                                                          00439001
+c                                                                       00440001
+c     * test item ( 21 ) *  basic-libfunc-2                             00441001
+c                                                                       00442001
+          i9ans  =  0                                                   00443001
+      if( dcos(d11) )                   210,215,215                     00444001
+  210     i9ans   = 1                                                   00445001
+  215 i9data = i9data + 1                                               00446001
+      if(i9ans.eq.1) go to 23020                                        00447001
+      if(i9keyc.eq.1) go to 23120                                       00448001
+      write(6,31510) i9data                                             00449001
+      go to 23120                                                       00450001
+23020 if(i9keyc.eq.1) go to 23220                                       00451001
+      write(6,31500) i9data                                             00452001
+      go to 23220                                                       00453001
+23120 i9errc = i9errc + 1                                               00454001
+23220 i9ans1=0                                                          00455001
+c                                                                       00456001
+c     * test item ( 22 ) *  basic-libfunc-3                             00457001
+c                                                                       00458001
+          i9ans  =  0                                                   00459001
+      if(-qcos(q11) )                   225,225,220                     00460001
+  220     i9ans   = 1                                                   00461001
+  225 i9data = i9data + 1                                               00462001
+      if(i9ans.eq.1) go to 23021                                        00463001
+      if(i9keyc.eq.1) go to 23121                                       00464001
+      write(6,31510) i9data                                             00465001
+      go to 23121                                                       00466001
+23021 if(i9keyc.eq.1) go to 23221                                       00467001
+      write(6,31500) i9data                                             00468001
+      go to 23221                                                       00469001
+23121 i9errc = i9errc + 1                                               00470001
+23221 i9ans1=0                                                          00471001
+c     test e = primary ** primary                                       00472001
+c                                                                       00473001
+c     * test item ( 23 ) *  val**const                                  00474001
+c                                                                       00475001
+          i9ans  =  0                                                   00476001
+      i11 = 15                                                          00477001
+      if ( i11**3 )           235,235,230                               00478001
+  230     i9ans   = 1                                                   00479001
+  235 i9data = i9data + 1                                               00480001
+      if(i9ans.eq.1) go to 23022                                        00481001
+      if(i9keyc.eq.1) go to 23122                                       00482001
+      write(6,31510) i9data                                             00483001
+      go to 23122                                                       00484001
+23022 if(i9keyc.eq.1) go to 23222                                       00485001
+      write(6,31500) i9data                                             00486001
+      go to 23222                                                       00487001
+23122 i9errc = i9errc + 1                                               00488001
+23222 i9ans1=0                                                          00489001
+c                                                                       00490001
+c     * test item ( 24 ) *  val**val                                    00491001
+c                                                                       00492001
+          i9ans  =  0                                                   00493001
+      r11 =  1.0                                                        00494001
+      i11 = 24                                                          00495001
+      if(-i11**r11 )                    240,245,245                     00496001
+  240     i9ans  = 1                                                    00497001
+  245 i9data = i9data + 1                                               00498001
+      if(i9ans.eq.1) go to 23023                                        00499001
+      if(i9keyc.eq.1) go to 23123                                       00500001
+      write(6,31510) i9data                                             00501001
+      go to 23123                                                       00502001
+23023 if(i9keyc.eq.1) go to 23223                                       00503001
+      write(6,31500) i9data                                             00504001
+      go to 23223                                                       00505001
+23123 i9errc = i9errc + 1                                               00506001
+23223 i9ans1=0                                                          00507001
+c                                                                       00508001
+c     * test item ( 25 ) *  val**val                                    00509001
+c                                                                       00510001
+          i9ans  =  0                                                   00511001
+      d11 = 5.0d00                                                      00512001
+      if(-i11**d11 )                    250,255,255                     00513001
+  250     i9ans  = 1                                                    00514001
+  255 i9data = i9data + 1                                               00515001
+      if(i9ans.eq.1) go to 23024                                        00516001
+      if(i9keyc.eq.1) go to 23124                                       00517001
+      write(6,31510) i9data                                             00518001
+      go to 23124                                                       00519001
+23024 if(i9keyc.eq.1) go to 23224                                       00520001
+      write(6,31500) i9data                                             00521001
+      go to 23224                                                       00522001
+23124 i9errc = i9errc + 1                                               00523001
+23224 i9ans1=0                                                          00524001
+c                                                                       00525001
+c     * test item ( 26 ) *  val**val                                    00526001
+c                                                                       00527001
+          i9ans  =  0                                                   00528001
+      q11 =  1.0q00                                                     00529001
+      i11 = 115                                                         00530001
+      if( i11**q11 )                    265,265,260                     00531001
+  260     i9ans  = 1                                                    00532001
+  265 i9data = i9data + 1                                               00533001
+      if(i9ans.eq.1) go to 23025                                        00534001
+      if(i9keyc.eq.1) go to 23125                                       00535001
+      write(6,31510) i9data                                             00536001
+      go to 23125                                                       00537001
+23025 if(i9keyc.eq.1) go to 23225                                       00538001
+      write(6,31500) i9data                                             00539001
+      go to 23225                                                       00540001
+23125 i9errc = i9errc + 1                                               00541001
+23225 i9ans1=0                                                          00542001
+c                                                                       00543001
+c     * test item ( 27 ) *  val**const                                  00544001
+c                                                                       00545001
+          i9ans  =  0                                                   00546001
+      r11 = 0.0                                                         00547001
+      if( r11**1.0 )                    275,270,275                     00548001
+  270     i9ans  = 1                                                    00549001
+  275 i9data = i9data + 1                                               00550001
+      if(i9ans.eq.1) go to 23026                                        00551001
+      if(i9keyc.eq.1) go to 23126                                       00552001
+      write(6,31510) i9data                                             00553001
+      go to 23126                                                       00554001
+23026 if(i9keyc.eq.1) go to 23226                                       00555001
+      write(6,31500) i9data                                             00556001
+      go to 23226                                                       00557001
+23126 i9errc = i9errc + 1                                               00558001
+23226 i9ans1=0                                                          00559001
+c                                                                       00560001
+c     * test item ( 28 ) *  val**val                                    00561001
+c                                                                       00562001
+          i9ans  =  0                                                   00563001
+      r11 = 775.0                                                       00564001
+      q11 =  1.0q00                                                     00565001
+      if( r11**q11 )                    285,285,280                     00566001
+  280     i9ans  = 1                                                    00567001
+  285 i9data = i9data + 1                                               00568001
+      if(i9ans.eq.1) go to 23027                                        00569001
+      if(i9keyc.eq.1) go to 23127                                       00570001
+      write(6,31510) i9data                                             00571001
+      go to 23127                                                       00572001
+23027 if(i9keyc.eq.1) go to 23227                                       00573001
+      write(6,31500) i9data                                             00574001
+      go to 23227                                                       00575001
+23127 i9errc = i9errc + 1                                               00576001
+23227 i9ans1=0                                                          00577001
+c                                                                       00578001
+c     * test item ( 29 ) *  val**val                                    00579001
+c                                                                       00580001
+          i9ans  =  0                                                   00581001
+      d11 = -1.0d11                                                     00582001
+      i11 = 1                                                           00583001
+      if( d11**i11 )                    290,295,295                     00584001
+  290     i9ans  = 1                                                    00585001
+  295 i9data = i9data + 1                                               00586001
+      if(i9ans.eq.1) go to 23028                                        00587001
+      if(i9keyc.eq.1) go to 23128                                       00588001
+      write(6,31510) i9data                                             00589001
+      go to 23128                                                       00590001
+23028 if(i9keyc.eq.1) go to 23228                                       00591001
+      write(6,31500) i9data                                             00592001
+      go to 23228                                                       00593001
+23128 i9errc = i9errc + 1                                               00594001
+23228 i9ans1=0                                                          00595001
+c                                                                       00596001
+c     * test item ( 30 ) *  val**outfunc                                00597001
+c                                                                       00598001
+          i9ans  =  0                                                   00599001
+      d11 =  1.0d00                                                     00600001
+      if( d11**faaf3(d11) )             305,305,300                     00601001
+  300     i9ans   = 1                                                   00602001
+  305 i9data = i9data + 1                                               00603001
+      if(i9ans.eq.1) go to 23029                                        00604001
+      if(i9keyc.eq.1) go to 23129                                       00605001
+      write(6,31510) i9data                                             00606001
+      go to 23129                                                       00607001
+23029 if(i9keyc.eq.1) go to 23229                                       00608001
+      write(6,31500) i9data                                             00609001
+      go to 23229                                                       00610001
+23129 i9errc = i9errc + 1                                               00611001
+23229 i9ans1=0                                                          00612001
+      if(i9keyc.eq.1) go to 25901                                       00613001
+      write(6,31570)                                                    00614001
+25901 continue                                                          00615001
+c                                                                       00616001
+c     * test item ( 31 ) *  val**const                                  00617001
+c                                                                       00618001
+          i9ans  =  0                                                   00619001
+      q11  =  1.0q00                                                    00620001
+      if ( q11**7.0 )         315,315,310                               00621001
+  310     i9ans  = 1                                                    00622001
+  315 i9data = i9data + 1                                               00623001
+      if(i9ans.eq.1) go to 23030                                        00624001
+      if(i9keyc.eq.1) go to 23130                                       00625001
+      write(6,31510) i9data                                             00626001
+      go to 23130                                                       00627001
+23030 if(i9keyc.eq.1) go to 23230                                       00628001
+      write(6,31500) i9data                                             00629001
+      go to 23230                                                       00630001
+23130 i9errc = i9errc + 1                                               00631001
+23230 i9ans1=0                                                          00632001
+c                                                                       00633001
+c     * test item ( 32 ) *  val**val                                    00634001
+c                                                                       00635001
+          i9ans  =  0                                                   00636001
+      if( q11**q11 )                    325,325,320                     00637001
+  320     i9ans  = 1                                                    00638001
+  325 i9data = i9data + 1                                               00639001
+      if(i9ans.eq.1) go to 23031                                        00640001
+      if(i9keyc.eq.1) go to 23131                                       00641001
+      write(6,31510) i9data                                             00642001
+      go to 23131                                                       00643001
+23031 if(i9keyc.eq.1) go to 23231                                       00644001
+      write(6,31500) i9data                                             00645001
+      go to 23231                                                       00646001
+23131 i9errc = i9errc + 1                                               00647001
+23231 i9ans1=0                                                          00648001
+c                                                                       00649001
+c     * test item ( 33 ) *  outfunc**const                              00650001
+c                                                                       00651001
+          i9ans  =  0                                                   00652001
+      i11 = 0                                                           00653001
+      if( faaf1(i11)**2 )               335,330,335                     00654001
+  330     i9ans   = 1                                                   00655001
+  335 i9data = i9data + 1                                               00656001
+      if(i9ans.eq.1) go to 23032                                        00657001
+      if(i9keyc.eq.1) go to 23132                                       00658001
+      write(6,31510) i9data                                             00659001
+      go to 23132                                                       00660001
+23032 if(i9keyc.eq.1) go to 23232                                       00661001
+      write(6,31500) i9data                                             00662001
+      go to 23232                                                       00663001
+23132 i9errc = i9errc + 1                                               00664001
+23232 i9ans1=0                                                          00665001
+c                                                                       00666001
+c     * test item ( 34 ) *  outfunc**outfunc                            00667001
+c                                                                       00668001
+          i9ans  =  0                                                   00669001
+          r11=1.41421                                                   00670001
+          i11=2                                                         00671001
+          if(-faaf2(r11)**faaf1(i11) )            340,345,345           00672001
+  340     i9ans =  1                                                    00673001
+  345 i9data = i9data + 1                                               00674001
+      if(i9ans.eq.1) go to 23033                                        00675001
+      if(i9keyc.eq.1) go to 23133                                       00676001
+      write(6,31510) i9data                                             00677001
+      go to 23133                                                       00678001
+23033 if(i9keyc.eq.1) go to 23233                                       00679001
+      write(6,31500) i9data                                             00680001
+      go to 23233                                                       00681001
+23133 i9errc = i9errc + 1                                               00682001
+23233 i9ans1=0                                                          00683001
+c                                                                       00684001
+c     * test item ( 35 ) *  outfunc**val                                00685001
+c                                                                       00686001
+          i9ans  =  0                                                   00687001
+      r11 = +1.0                                                        00688001
+      d11 = 2.0d00                                                      00689001
+      if( faaf2(r11)**d11 )             355,355,350                     00690001
+  350     i9ans  = 1                                                    00691001
+  355 i9data = i9data + 1                                               00692001
+      if(i9ans.eq.1) go to 23034                                        00693001
+      if(i9keyc.eq.1) go to 23134                                       00694001
+      write(6,31510) i9data                                             00695001
+      go to 23134                                                       00696001
+23034 if(i9keyc.eq.1) go to 23234                                       00697001
+      write(6,31500) i9data                                             00698001
+      go to 23234                                                       00699001
+23134 i9errc = i9errc + 1                                               00700001
+23234 i9ans1=0                                                          00701001
+c                                                                       00702001
+c     * test item ( 36 ) *  outfunc**const                              00703001
+c                                                                       00704001
+          i9ans  =  0                                                   00705001
+      d11 =  1.0d00                                                     00706001
+      if( faaf3(d11)**2.0 )             365,365,360                     00707001
+  360     i9ans  = 1                                                    00708001
+  365 i9data = i9data + 1                                               00709001
+      if(i9ans.eq.1) go to 23035                                        00710001
+      if(i9keyc.eq.1) go to 23135                                       00711001
+      write(6,31510) i9data                                             00712001
+      go to 23135                                                       00713001
+23035 if(i9keyc.eq.1) go to 23235                                       00714001
+      write(6,31500) i9data                                             00715001
+      go to 23235                                                       00716001
+23135 i9errc = i9errc + 1                                               00717001
+23235 i9ans1=0                                                          00718001
+c                                                                       00719001
+c     * test item ( 37 ) *  outfunc**outfunc                            00720001
+c                                                                       00721001
+          i9ans  =  0                                                   00722001
+      q11 = 1.0q00                                                      00723001
+      if( -faaf3(d11)**faaf4(q11) )     370,375,375                     00724001
+  370     i9ans  = 1                                                    00725001
+  375 i9data = i9data + 1                                               00726001
+      if(i9ans.eq.1) go to 23036                                        00727001
+      if(i9keyc.eq.1) go to 23136                                       00728001
+      write(6,31510) i9data                                             00729001
+      go to 23136                                                       00730001
+23036 if(i9keyc.eq.1) go to 23236                                       00731001
+      write(6,31500) i9data                                             00732001
+      go to 23236                                                       00733001
+23136 i9errc = i9errc + 1                                               00734001
+23236 i9ans1=0                                                          00735001
+c                                                                       00736001
+c     * test item ( 38 ) *  outfunc**val                                00737001
+c                                                                       00738001
+          i9ans  =  0                                                   00739001
+      i11 = 2                                                           00740001
+          q11 =  1.41421356173205082267253826q00                        00741001
+      if( faaf4(q11)**i11 )             385,385,380                     00742001
+  380     i9ans =  1                                                    00743001
+      q11 =  1.0q00                                                     00744001
+  385 i9data = i9data + 1                                               00745001
+      if(i9ans.eq.1) go to 23037                                        00746001
+      if(i9keyc.eq.1) go to 23137                                       00747001
+      write(6,31510) i9data                                             00748001
+      go to 23137                                                       00749001
+23037 if(i9keyc.eq.1) go to 23237                                       00750001
+      write(6,31500) i9data                                             00751001
+      go to 23237                                                       00752001
+23137 i9errc = i9errc + 1                                               00753001
+23237 i9ans1=0                                                          00754001
+c                                                                       00755001
+c     * test item ( 39 ) *  outfunc**val                                00756001
+c                                                                       00757001
+          i9ans  =  0                                                   00758001
+      d11 = 2.0d00                                                      00759001
+      if( faaf4(q11)**faaf3(d11) )                395,395,390           00760001
+  390     i9ans  = 1                                                    00761001
+  395 i9data = i9data + 1                                               00762001
+      if(i9ans.eq.1) go to 23038                                        00763001
+      if(i9keyc.eq.1) go to 23138                                       00764001
+      write(6,31510) i9data                                             00765001
+      go to 23138                                                       00766001
+23038 if(i9keyc.eq.1) go to 23238                                       00767001
+      write(6,31500) i9data                                             00768001
+      go to 23238                                                       00769001
+23138 i9errc = i9errc + 1                                               00770001
+23238 i9ans1=0                                                          00771001
+c                                                                       00772001
+c     * test item ( 40 ) *  (val+val)**val                              00773001
+c                                                                       00774001
+          i9ans  =  0                                                   00775001
+      i11 =  1                                                          00776001
+      i12 = -1                                                          00777001
+      if( (i11+i12)**i11 )              405,400,405                     00778001
+  400     i9ans  = 1                                                    00779001
+  405 i9data = i9data + 1                                               00780001
+      if(i9ans.eq.1) go to 23039                                        00781001
+      if(i9keyc.eq.1) go to 23139                                       00782001
+      write(6,31510) i9data                                             00783001
+      go to 23139                                                       00784001
+23039 if(i9keyc.eq.1) go to 23239                                       00785001
+      write(6,31500) i9data                                             00786001
+      go to 23239                                                       00787001
+23139 i9errc = i9errc + 1                                               00788001
+23239 i9ans1=0                                                          00789001
+c                                                                       00790001
+c     * test item ( 41 ) *  (val+val)**const                            00791001
+c                                                                       00792001
+          i9ans  =  0                                                   00793001
+      r11 = 1650.0                                                      00794001
+      r12 = 750.0                                                       00795001
+      if( (r12-r11)**1 )                410,415,415                     00796001
+  410     i9ans  = 1                                                    00797001
+  415 i9data = i9data + 1                                               00798001
+      if(i9ans.eq.1) go to 23040                                        00799001
+      if(i9keyc.eq.1) go to 23140                                       00800001
+      write(6,31510) i9data                                             00801001
+      go to 23140                                                       00802001
+23040 if(i9keyc.eq.1) go to 23240                                       00803001
+      write(6,31500) i9data                                             00804001
+      go to 23240                                                       00805001
+23140 i9errc = i9errc + 1                                               00806001
+23240 i9ans1=0                                                          00807001
+c                                                                       00808001
+c     * test item ( 42 ) *  (val+val)**val                              00809001
+c                                                                       00810001
+          i9ans  =  0                                                   00811001
+      d11 =  1.0d00                                                     00812001
+      d12 =  2.0d00                                                     00813001
+      i11 = 7                                                           00814001
+      if( (d11+d12)**i11 )              425,425,420                     00815001
+  420     i9ans  = 1                                                    00816001
+  425 i9data = i9data + 1                                               00817001
+      if(i9ans.eq.1) go to 23041                                        00818001
+      if(i9keyc.eq.1) go to 23141                                       00819001
+      write(6,31510) i9data                                             00820001
+      go to 23141                                                       00821001
+23041 if(i9keyc.eq.1) go to 23241                                       00822001
+      write(6,31500) i9data                                             00823001
+      go to 23241                                                       00824001
+23141 i9errc = i9errc + 1                                               00825001
+23241 i9ans1=0                                                          00826001
+c                                                                       00827001
+c     * test item ( 43 ) *  (val+val)**val                              00828001
+c                                                                       00829001
+          i9ans  =  0                                                   00830001
+      q11 = 11543.0q5                                                   00831001
+      q12 = 343521.0q-1                                                 00832001
+      i11 = 2                                                           00833001
+      if( (q11+q12)**i11 )              435,435,430                     00834001
+  430     i9ans  = 1                                                    00835001
+  435 i9data = i9data + 1                                               00836001
+      if(i9ans.eq.1) go to 23042                                        00837001
+      if(i9keyc.eq.1) go to 23142                                       00838001
+      write(6,31510) i9data                                             00839001
+      go to 23142                                                       00840001
+23042 if(i9keyc.eq.1) go to 23242                                       00841001
+      write(6,31500) i9data                                             00842001
+      go to 23242                                                       00843001
+23142 i9errc = i9errc + 1                                               00844001
+23242 i9ans1=0                                                          00845001
+c                                                                       00846001
+c     * test item ( 44 ) *  val**(val**const)                           00847001
+c                                                                       00848001
+          i9ans  =  0                                                   00849001
+      i11 = 5                                                           00850001
+      i12 = 2                                                           00851001
+      if( i11**i12**3 )                 445,445,440                     00852001
+  440     i9ans  = 1                                                    00853001
+  445 i9data = i9data + 1                                               00854001
+      if(i9ans.eq.1) go to 23043                                        00855001
+      if(i9keyc.eq.1) go to 23143                                       00856001
+      write(6,31510) i9data                                             00857001
+      go to 23143                                                       00858001
+23043 if(i9keyc.eq.1) go to 23243                                       00859001
+      write(6,31500) i9data                                             00860001
+      go to 23243                                                       00861001
+23143 i9errc = i9errc + 1                                               00862001
+23243 i9ans1=0                                                          00863001
+c                                                                       00864001
+c                                                                       00865001
+c                                                                       00866001
+c                                                                       00867001
+      if (i9keyc-1) 32030,32020,32030                                   00868001
+32020 if( i9errc )     32000,32030,32000                                00869001
+32030 write(6,31560)                                                    00870001
+      call  tcheck(8hf11303f1  ,i9data,i9data-i9errc,i9errc)            00871001
+      stop                                                              00872001
+31560 format(1h0 / 6x,9h*fortran*,5x,8hf11303f1,5x,4hexit )             00873001
+31570 format(1h1 // 19h + justice + item +,15x,19h+ computed result +,  00874001
+     *      19x,17h+ comapre value +,31x,14h+ difference + / )          00875001
+      end                                                               00876001
+cf*                                                                     00877001
+      integer function faaf1*4 ( i11 )                                  00878001
+c                                                                       00879001
+c     1,function name   : faaf1                                         00880001
+c     2,function type   : integer*4                                     00881001
+c     3,entry           :                                               00882001
+c                                                                       00883001
+      faaf1 = i11**3+5*i11                                              00884001
+      return                                                            00885001
+      end                                                               00886001
+cf*                                                                     00887001
+      real function faaf2*4 ( r11 )                                     00888001
+c                                                                       00889001
+c     1,function name   : faaf2                                         00890001
+c     2,function type   : real*4                                        00891001
+c     3,entry           :                                               00892001
+c                                                                       00893001
+      faaf2 = r11**3.0+3.0*r11                                          00894001
+      return                                                            00895001
+      end                                                               00896001
+      double precision function faaf3 (d11)                             00897001
+c                                                                       00898001
+c       1, function name : faaf3                                        00899001
+c       2, function type : real 8                                       00900001
+c       3, entry                                                        00901001
+c                                                                       00902001
+      double precision   d11                                            00903001
+      faaf3  =  d11**1.0d0 + 3.14159d01                                 00904001
+      return                                                            00905001
+      end                                                               00906001
+cf*                                                                     00907001
+      real function faaf4*16 ( q11 )                                    00908001
+c                                                                       00909001
+c     1,function name   : faaf4                                         00910001
+c     2,function type   : real*16                                       00911001
+c     3,entry           :                                               00912001
+c                                                                       00913001
+      real*16  q11                                                      00914001
+      faaf4 = q11**3.0q0+q11                                            00915001
+      return                                                            00916001
+      end                                                               00917001
+$m7.frun cp=on, rparam='fdam=on'                                        00918001

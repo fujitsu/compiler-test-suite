@@ -1,0 +1,36 @@
+MODULE m1
+  TYPE :: x
+    integer, ALLOCATABLE :: z(:)
+  END TYPE
+CONTAINS
+  ELEMENTAL FUNCTION f( d ) RESULT( r )
+    TYPE(x), INTENT(IN) :: d
+    TYPE(x) :: r
+   r=d
+  END FUNCTION 
+END MODULE 
+subroutine s1
+use  m1
+  TYPE(x) :: w(1)
+  integer:: var(2)=[1,2]
+  integer,allocatable:: var2(:)
+!print '("1",z16.16)',loc(var) 
+w= x(    var  )
+if (any(w(1)%z/=[1,2]) ) print *,101
+call sub( x( var ) )
+allocate(var2(2),source=[1,2])
+call sub( x( var2 ) )
+end
+do k=1,3
+call s1
+end do
+print *,'sngg573r : pass'
+end
+subroutine sub(w)
+use m1
+  TYPE(x) :: w
+!print '("2",z16.16)',loc(w%z) 
+if (any(w%z/=[1,2]) ) print *,101
+deallocate (w%z)
+end
+

@@ -1,5 +1,6 @@
 subroutine test01()
-integer :: arr(100,100,100,9)
+integer, allocatable :: arr(:,:,:,:)
+allocate(arr(100,100,100,9))
 arr(1:30,1:30,1:30,1:9) =1
 arr(1,2,1+2,4) = 2
 arr(1,2,2+2,4) = 3
@@ -9,10 +10,12 @@ rewind 23
 read(23,*) i,j
 if (i.ne.2) write(6,*) "NG"
 if (j.ne.3) write(6,*) "NG"
+deallocate(arr)
 end
 
 subroutine test02()
-integer :: arr(100,100,100,90)
+integer, allocatable :: arr(:,:,:,:)
+allocate(arr(100,100,100,90))
 arr(1:30,1:30,1:30,1:30) =1
 arr(1,2,1+2,4) = 2
 arr(1,2,2+2,4) = 3
@@ -22,6 +25,7 @@ rewind 24
 read(24,*) i,j
 if (i.ne.2) write(6,*) "NG"
 if (j.ne.3) write(6,*) "NG"
+deallocate(arr)
 end
 
 subroutine test03()

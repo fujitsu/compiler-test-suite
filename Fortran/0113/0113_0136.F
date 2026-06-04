@@ -18,10 +18,10 @@ C        X                                                              aaaaaaaa
 C        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXZZZZZZZa
                                                                         aaaaaaaa
       write(15,*)x                                                       aaaaaaaa
-      rewind 1                                                          aaaaaaaa
-      read(1,*) k                                                       aaaaaaaa
+      rewind 15                                                         aaaaaaaa
+      read(15,*) k                                                      aaaaaaaa
       if (k/=11)print *,101,k                                           aaaaaaaa
-      read(1,*) k                                                       aaaaaaaa
+      read(15,*) k                                                      aaaaaaaa
       if (k/=11)print *,102,k                                           aaaaaaaa
       print *,'pass'                                                    aaaaaaaa
       end                                                               aaaaaaaa

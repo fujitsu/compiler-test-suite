@@ -1,39 +1,39 @@
   integer,parameter :: inum=1
   integer :: vnum=1
   real,dimension(5,5,5) :: rdata, res
-  
+
   rdata=1.0
   res=0.0
 
-  write(50) rdata
-  FLUSH(50)
-  rewind 50
-  read(50) res
-  close(50)
+  write(60) rdata
+  FLUSH(60)
+  rewind 60
+  read(60) res
+  close(60)
 
   rdata=rdata+res
 
-  write(51) rdata
-  FLUSH(50+1)
-  rewind 51
-  read(51) res
-  close(51)
+  write(61) rdata
+  FLUSH(60+1)
+  rewind 61
+  read(61) res
+  close(61)
 
   rdata=rdata+res
 
-  write(52) rdata
-  FLUSH(50+1+inum)
-  rewind 52
-  read(52) res
-  close(52)
+  write(62) rdata
+  FLUSH(60+1+inum)
+  rewind 62
+  read(62) res
+  close(62)
 
   rdata=rdata+res
 
-  write(53) rdata
-  FLUSH(vnum+50+1+inum)
-  rewind 53
-  read(53) res
-  close(53)
+  write(63) rdata
+  FLUSH(vnum+60+1+inum)
+  rewind 63
+  read(63) res
+  close(63)
 
   do i=1,5
    do j=1,5

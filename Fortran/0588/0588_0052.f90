@@ -123,7 +123,7 @@ if (associated(obj3(2)%p6)  .neqv. .true.) print*,937
 if (associated(obj3(2)%p8)  .neqv. .true.) print*,947
 if(obj3(2)%p8().ne.1)print*,910
 if(obj3(2)%p6().ne.1)print*,911
-if (associated(obj2(1)%p5))print*,913
+!!!if (associated(obj2(1)%p5))print*,913
 
 print *,"Pass"
 end

@@ -1,0 +1,69 @@
+     module mod
+       type :: bb
+       end type
+       type, extends(bb) :: ee
+          character(:),allocatable::name
+       end type
+
+       type :: b
+       end type
+       type, extends(b) :: e
+          class(bb),allocatable::ev
+       end type
+       
+
+       type :: base
+       end type base
+       type, extends(base) :: ext
+          type(e):: bv4
+       end type ext
+       class (base), pointer     :: var
+       class (base), allocatable :: v2
+
+     contains
+
+       subroutine s1(value)
+         class (base), intent(in) :: value
+         allocate(var, v2,source=value)
+       end subroutine s1
+     end module mod
+
+subroutine s
+     use mod
+     type(ext), allocatable :: value
+     allocate(value)
+     allocate(ee::value%bv4%ev)
+     select type(p=>value%bv4%ev)
+     type is(ee)
+       allocate(p%name,source='ok')
+     end select
+     call s1(value) 
+     k=0
+     select type(var)
+     type is(ext)
+       select type(p=>var%bv4%ev)
+       type is(ee)
+       p%name(:)='11'
+       k=1
+     end select
+     end select
+     if (k/=1) print *,1002
+     select type(p=>value%bv4%ev)
+     type is(ee)
+       if (p    %name(:)/='ok') print *,1003
+     end select
+     k=0
+     select type(v2)
+     type is(ext)
+       select type(p=>v2%bv4%ev)
+       type is(ee)
+     if (p    %name(:)/='ok') print *,3002
+       k=1
+     end select
+     end select
+     if (k/=1) print *,3302
+end
+call s
+     print *,'sngg279q : pass'
+     end program
+

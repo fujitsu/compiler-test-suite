@@ -1,0 +1,19 @@
+   INCLUDE "000.h"
+   CALL JSUB (A,B,K)
+   IF (K.NE.0) GO TO 10
+10 CONTINUE
+   Q=3.0D0;P=4.0D0
+   IF (N.EQ.Q.AND.M.EQ.P) PRINT *,"*** OK ***"
+   IF (ABS(A-1.00000000)>1.0E-06) PRINT *,"NG A=",A
+   IF (ABS(B-2.00000000)>1.0E-06) PRINT *,"NG B=",B
+   IF (K.NE.7) PRINT *,"NG K=",K
+   END
+   SUBROUTINE JSUB(X,Y,J)
+   INCLUDE "000.h"
+   PARAMETER (Q=1.0D0,P=2.0D0)
+   N=3
+   M=4
+   X=Q
+   Y=P
+   J=N+M
+   END

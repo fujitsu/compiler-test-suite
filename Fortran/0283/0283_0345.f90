@@ -42,19 +42,21 @@ PROGRAM main
 USE mod1     
 IMPLICIT NONE
 
-CLASS(t2),DIMENSION(:),ALLOCATABLE :: arr1,arr2,arr3
+CLASS(t2),DIMENSION(:),TARGET,ALLOCATABLE :: arr1,arr2,arr3
 ALLOCATE(arr1(5),arr2(5),arr3(5))
 
 arr1%r2 = 2.0
 arr2%r2 = 3.0
 arr3%r2 = 1.0
 
-ASSOCIATE(aa => fun_1(arr1,arr2) * fun_2(arr1,arr2,arr3) + 5.0)
+ASSOCIATE(p  => fun_1(arr1,arr2))
+ASSOCIATE(aa => p                * fun_2(arr1,arr2,arr3) + 5.0)
   IF(aa(3)%r2 .EQ. 265.0) THEN
     PRINT*,'pass'
   ELSE
     PRINT*,101
   END IF
+END ASSOCIATE
 END ASSOCIATE
 
 CONTAINS

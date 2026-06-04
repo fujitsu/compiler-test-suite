@@ -1,0 +1,46 @@
+PROGRAM  CV3122
+  TYPE STR
+     REAL*4  RC(10)
+     REAL*8  DD(10,10,10)
+  END type STR
+  TYPE(STR) STR_DATA
+
+  DO I=1,10
+     STR_DATA%RC(I) = I-4.5
+     DO J=1,10
+        DO K=1,10
+           STR_DATA%DD(K,J,I) = I+J+K
+        END DO
+     END DO
+  END DO
+
+
+  RMIN=0.
+  DO I3=2,8
+     DIF=RMIN-STR_DATA%RC(I3)
+     IF (DIF .GT. 0.0 ) THEN
+        RMIN=STR_DATA%RC(I3)
+     END IF
+  END DO
+  WRITE(6,*) '*** CVCT3121_str ** SFGC.2 **'
+  WRITE(6,*) 'RMIN=',RMIN
+
+  I1=3
+  I2=8
+  ID3=8
+  RMIN=0.
+  RMX=0.
+  DO I3=2,8
+     DIF=RMIN-STR_DATA%RC(I3)
+     RMX=MAX(RMX,STR_DATA%DD(I1,I2,ID3))
+     ID3=ID3-1
+     IF(DIF .GT. 0.0) THEN
+        RMIN=STR_DATA%RC(I3)
+     END IF
+  END DO
+
+  WRITE(6,*) '*** CVCT3121_str ** SFGC.2 **'
+  WRITE(6,*) 'RMIN=',RMIN
+  WRITE(6,*) 'RMX=',RMX
+  STOP
+END PROGRAM CV3122

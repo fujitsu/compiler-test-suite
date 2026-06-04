@@ -50,7 +50,7 @@ int main()
   result8 =0;
   for (j=0;j<11;j++){
     for (i=0;i<11;i++){
-      result8=result8+c4[j][i];
+      result8=result8+c8[j][i];
     }
   }
   printf("result(double)=%f \n",result8);

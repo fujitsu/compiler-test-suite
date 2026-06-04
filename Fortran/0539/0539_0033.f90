@@ -6,7 +6,7 @@ ido4=4
 !$omp do collapse(1)
 do ido1=1,10
 do ido4=1,10
-!$omp simd collapse(2)
+!$omp simd collapse(2) private(ido2,ido3)
 do ido2=1,10
 do ido3=1,10
 end do

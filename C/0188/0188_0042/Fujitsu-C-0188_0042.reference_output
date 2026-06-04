@@ -1,0 +1,3 @@
+----- omp_PARALLEL_DO_005i.c -- parallel do lastprivate(ia) -----
+OK
+exit 0

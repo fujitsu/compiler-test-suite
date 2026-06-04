@@ -1,5 +1,5 @@
 integer :: i=0 
-  !$omp task default(none) 
+  !$omp task default(none) firstprivate(i)
    !$omp critical
    !$omp task  private(i)
    do i=1,1

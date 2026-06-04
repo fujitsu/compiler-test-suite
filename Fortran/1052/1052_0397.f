@@ -1,0 +1,29 @@
+      subroutine foo(x)
+      integer i
+      integer*8 z(10)/1_8,2_8,3_8,4_8,5_8,6_8,7_8,8_8,9_8,10_8/
+      integer*8 x(10),y(10)/10*5_8/
+      x=5_8 
+!$omp simd reduction(min:x)
+      do i=1,10
+        x(i)=min(x(i),z(i))
+      enddo
+      do i=1,10
+        y(i)=min(y(i),z(i))
+      enddo
+      do i=1,10
+        if (x(i).ne.y(i)) then
+          print*,"NG:",i,x(i),y(i)
+          stop 1
+        endif
+      enddo
+      print*,"OK"
+      end
+
+      interface
+        subroutine foo(x)
+        integer*8 x(10)
+        end subroutine
+      end interface
+      integer*8 a(10)
+      call foo(a)
+      end

@@ -3,7 +3,7 @@ integer,target :: trg(10,10,10,10) = 2
 
 interface
 subroutine sub(dptr)
- integer,contiguous::dptr(:,:,:,:)
+ integer,target,contiguous::dptr(:,:,:,:)
 end subroutine
 end interface
 
@@ -13,12 +13,12 @@ call sub(trg(:,:,:,2:6))
 end
 
 subroutine sub(dptr)
-integer,contiguous::dptr(:,:,:,:)
+integer,target,contiguous::dptr(:,:,:,:)
 integer::i=1,j=2
 
 interface
 subroutine sub2(dd)
- integer::dd(:,:,:,:)
+ integer,target::dd(:,:,:,:)
 end subroutine
 end interface
 
@@ -44,7 +44,7 @@ call sub2(dptr(:,:,1:5,:))
 end subroutine
 
 subroutine sub2(dd)
-integer::dd(:,:,:,:)
+integer,target::dd(:,:,:,:)
 integer::i=1,j=2
 if(is_contiguous(dd) .neqv. .false.) print*,301,'dd'
 if(is_contiguous(dd(:,:,:,:)) .neqv. .false.) print*,302,'dd(:,:,:,:)'

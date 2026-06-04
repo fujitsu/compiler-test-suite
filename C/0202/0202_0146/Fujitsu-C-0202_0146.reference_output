@@ -1,0 +1,5 @@
+1-1    sizeof C = 8 (8) 
+1-2    sizeof D = 80 (80) 
+1-3    sizeof s = 8 (8) 
+1-4    sizeof q = 8 (8) 
+exit 0

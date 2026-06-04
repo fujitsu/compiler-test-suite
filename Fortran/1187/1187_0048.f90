@@ -1,0 +1,49 @@
+module m1
+  type, abstract :: TParam
+  contains
+  end type
+  integer,parameter::dp=8
+end
+module m2
+  use m1
+  implicit none
+
+  type, extends(TParam) :: type_params_one
+    real(dp) :: s1
+  end type
+
+type :: TDddfuncInput
+    integer :: iparams_type
+    real(dp) :: s1
+    integer, allocatable :: izp(:)
+  end type TDddfuncInput
+
+end
+
+module m3
+ use m2
+ type :: TDddfunc
+    integer(8)::x0
+    class(TParam), allocatable :: param
+ end type
+    class(TParam), allocatable :: param(:)
+contains
+subroutine s1()
+param = [type_params_one(s1=1.0d0), type_params_one(s1=1.0d0)]
+end subroutine
+end
+
+use m3
+call s1()
+k=0
+select type(p=>param)
+ type is(type_params_one)
+   k=1
+   if (p(1)%s1/=1) print *,2001
+   if (p(2)%s1/=1) print *,2001
+end select
+
+if  (k/=1) print *,2929
+
+print *,'sngg427r : pass'
+end

@@ -15,8 +15,8 @@
                     !$omp end task
                     !$omp end task
 
-                    !$omp task  default(none)
-                    !$omp task  default(none)
+                    !$omp task  default(none) shared(a)
+                    !$omp task  default(none) shared(a)
                     !$omp task  default(none) shared(a)
                         a=fun1(3)
                         if(a/=4) print *,"err"

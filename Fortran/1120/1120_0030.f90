@@ -1,0 +1,20 @@
+PROGRAM MAIN
+  INTEGER A,B,VAR
+  POINTER (P,VAR)
+  call omp_set_num_threads(2)
+  A=100
+  B=200
+  PRINT *,A
+!$OMP PARALLEL 
+    PRINT *,B
+!$OMP TASK 
+!$OMP PARALLEL 
+ !$OMP single
+    PRINT *,B
+ !$OMP END single
+!$OMP END PARALLEL
+!$OMP END TASK
+    PRINT *,B
+!$OMP END PARALLEL
+
+END PROGRAM MAIN

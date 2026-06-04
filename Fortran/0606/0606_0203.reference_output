@@ -1,0 +1,4 @@
+ equ3 ASSIGNMENT(=) call
+ equ4 ASSIGNMENT(=) call
+ pass
+exit 0

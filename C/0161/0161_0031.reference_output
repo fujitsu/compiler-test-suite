@@ -1,0 +1,10 @@
+
+ test no.1 ==> ok
+ test no.2 ==> ok
+ test no.3 ==> ok
+ test no.1 ==> ok
+ *** test-1 ok ***
+ *** test-2 ok ***
+ *** test-3 ok ***
+ *** test-4 ok ***
+exit 0

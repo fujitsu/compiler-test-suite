@@ -1,0 +1,40 @@
+complex(4),target,save:: cmp1(10)
+real(4),pointer,save :: ptr11(:)=>cmp1(1:10:2)%re
+real(4),pointer,save :: ptr12(:)=>cmp1(1:10:2)%im
+
+complex(8),target,save:: cmp2(10)
+real(8),pointer,save :: ptr21(:)=>cmp2(1:10:2)%re
+real(8),pointer,save :: ptr22(:)=>cmp2(1:10:2)%im
+
+complex(16),target,save:: cmp3(10)
+real(16),pointer,save :: ptr31(:)=>cmp3(1:10:2)%re
+real(16),pointer,save :: ptr32(:)=>cmp3(1:10:2)%im
+
+print *,'pass'
+
+cmp1(1)=(2.0,4.0)
+cmp1(3)=(2.0,4.0)
+cmp1(5)=(2.0,4.0)
+cmp1(7)=(2.0,4.0)
+cmp1(9)=(3.0,5.0)
+if (ptr11(5 ).ne.3.0) print *,'err'
+if (ptr12(5 ).ne.5.0) print *,'err'
+
+cmp2=(2.0,4.0)
+cmp2(1)=(2.0,4.0)
+cmp2(3)=(2.0,4.0)
+cmp2(5)=(2.0,4.0)
+cmp2(7)=(2.0,4.0)
+cmp2(9)=(3.0,5.0)
+if (ptr21(5 ).ne.3.0) print *,'err'
+if (ptr22(5 ).ne.5.0) print *,'err'
+
+cmp3=(2.0,4.0)
+cmp3(1)=(2.0,4.0)
+cmp3(3)=(2.0,4.0)
+cmp3(5)=(2.0,4.0)
+cmp3(7)=(2.0,4.0)
+cmp3(9)=(3.0,5.0)
+if (ptr31(5 ).ne.3.0) print *,'err'
+if (ptr32(5 ).ne.5.0) print *,'err'
+end

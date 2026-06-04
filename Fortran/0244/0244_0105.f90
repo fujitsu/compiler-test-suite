@@ -56,7 +56,7 @@ call ss2(dptr(:,:,1:5,:))
 end subroutine
 
 subroutine ss2(dd)
-class(ty)::dd(:,:,:,:)
+class(ty),target::dd(:,:,:,:)
 
 if(is_contiguous(dd) .neqv. .false.) print*,301,'dd'
 if(is_contiguous(dd(:,:,:,:)) .neqv. .false.) print*,302,'dd(:,:,:,:)'

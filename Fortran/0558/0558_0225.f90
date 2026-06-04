@@ -1,0 +1,74 @@
+MODULE mod1
+IMPLICIT NONE
+
+PROCEDURE(en_2),POINTER :: ptr
+
+INTERFACE
+INTEGER FUNCTION ss(dd)
+INTEGER :: dd
+END FUNCTION
+END INTERFACE
+
+CONTAINS
+REAL FUNCTION en_1(d1,d2,d3,d4)
+REAL :: d1,d2,d3,d4,en_2
+en_1 = d1 + d2
+RETURN
+ENTRY en_2(d3,d4)
+en_2 = d3 * d4
+RETURN
+END FUNCTION
+END MODULE
+
+MODULE mod2
+USE mod1
+IMPLICIT NONE
+
+INTERFACE
+SUBROUTINE sub(dum)
+IMPORT en_2
+PROCEDURE(en_2),POINTER :: dum
+INTEGER :: res
+END SUBROUTINE
+END INTERFACE
+
+END MODULE
+
+
+PROGRAM main
+USE mod2
+IMPLICIT NONE
+
+ptr => en_2
+CALL sub(ptr)
+
+END PROGRAM
+
+SUBROUTINE sub(dum)
+USE mod2
+PROCEDURE(en_2),POINTER :: dum
+PROCEDURE(ss) :: npfun
+REAL :: res
+REAL :: num1 = 2.0,num2 = 4.0
+
+INTERFACE gnr
+  PROCEDURE :: dum
+  PROCEDURE npfun
+END INTERFACE
+
+dum => en_2
+res = gnr(num1,num2)
+
+IF(res .EQ. 8.0) THEN
+  PRINT*,"PASS"
+ELSE
+  PRINT*,"ERROR"
+END IF
+
+END SUBROUTINE
+
+INTEGER FUNCTION npfun(dd)
+INTEGER :: dd
+npfun = dd + 2
+END FUNCTION
+

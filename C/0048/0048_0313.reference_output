@@ -1,0 +1,92 @@
+M3EVA206 TEST OK 
+M3GARG01 START
+M3GARG01 FUNC1 OK
+M3GARG01 END  
+*** M3GARI01 ** MK3 TEST ** STARTED ***
+*** M3GARI01 - 01 ** OK ***
+*** M3GARI01 - 02 ** OK ***
+*** M3GARI01 - 03 ** OK ***
+*** M3GARI01 - 04 ** OK ***
+*** M3GARI01 - 05 ** OK ***
+*** M3GARI01 - 06 ** OK ***
+*** M3GARI01 - 07 ** OK ***
+*** M3GARI01 - 08 ** OK ***
+*** M3GARI01 - 09 ** OK ***
+*** M3GARI01 - 10 ** OK ***
+*** M3GARI01 - 11 ** NOT RUN ***
+*** M3GARI01 - 12 ** OK ***
+*** M3GARI01 - 13 ** OK ***
+*** M3GARI01 - 14 ** NOT RUN ***
+*** M3GARI01 - 15 ** OK ***
+*** M3GARI01 - 16 ** OK ***
+*** M3GARI01 - 17 ** NOT RUN ***
+*** M3GARI01 - 18 ** OK ***
+*** M3GARI01 - 19 ** OK ***
+*** M3GARI01 - 20 ** NOT RUN ***
+*** M3GARI01 - 21 ** OK ***
+*** M3GARI01 - 22 ** OK ***
+*** M3GARI01 - 21 ** OK ***
+*** M3GARI01 - 24 ** OK ***
+*** M3GARI01 - 25 ** OK ***
+*** M3GARI01 - 26 ** OK ***
+*** M3GARI01 - 27 ** OK ***
+*** M3GARI01 - 28 ** OK ***
+*** M3GARI01 - 29 ** OK ***
+*** M3GARI01 - 30 ** OK ***
+*** M3GARI01 - 31 ** OK ***
+*** M3GARI01 - 32 ** OK ***
+*** M3GARI01 - 33 ** OK ***
+*** M3GARI01 - 34 ** OK ***
+*** M3GARI01 - 35 ** OK ***
+*** M3GARI01 - 36 ** OK ***
+*** M3GARI01 - 37 ** OK ***
+*** M3GARI01 - 38 ** OK ***
+*** M3GARI01 - 39 ** OK ***
+*** M3GARI01 - 40 ** OK ***
+*** M3GARI01 - 41 ** NOT RUN ***
+*** M3GARI01 - 42 ** OK ***
+*** M3GARI01 - 43 ** OK ***
+*** M3GARI01 - 44 ** OK ***
+*** M3GARI01 - 45 ** NOT RUN ***
+*** M3GARI01 - 46 ** OK ***
+*** M3GARI01 - 47 ** OK ***
+*** M3GARI01 - 477 ** OK ***
+*** M3GARI01 - 48 ** NOT RUN ***
+*** M3GARI01 - 49 ** OK ***
+*** M3GARI01 - 50 ** OK ***
+*** M3GARI01 - 51 ** OK ***
+*** M3GARI01 - 52 ** NOT RUN ***
+*** M3GARI01 - 53 ** OK ***
+*** M3GARI01 - 54 ** OK ***
+*** M3GARI01 - 55 ** OK ***
+*** M3GARI01 - 56 ** OK ***
+*** M3GARI01 - 57 ** OK ***
+*** M3GARI01 - 58 ** OK ***
+*** M3GARI01 - 59 ** OK ***
+*** M3GARI01 - 60 ** OK ***
+*** M3GARI01 - 61 ** OK ***
+*** M3GARI01 - 62 ** OK ***
+*** M3GARI01 - 63 ** OK ***
+*** M3GARI01 - 64 ** OK ***
+*** M3GARI01 - 65 ** OK ***
+*** M3GARI01 - 66 ** OK ***
+*** M3GARI01 - 67 ** OK ***
+******* M3GARI01 TEST ENDED *******
+
+***** MPTEST01 START *****
+  in ''ii''
+  in ''f''
+  in ''f1''
+  ** OK **
+  in ''f1''
+  ** OK **
+***** MPTEST01 END *****
+start mptest02
+      mptest02 ok
+end   mptest02
+ OK 
+******* OK.1 ******
+003141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117067982148086513282306647093844609550582231725359408128481117450284102701938521105559644622948954930381964428810975665933446128475648233786783165271201909145648566923460348610454326648213393607260249148
+
+OK 
+exit 0

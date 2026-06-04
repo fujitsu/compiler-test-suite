@@ -1,0 +1,5 @@
+ ----- test --
+       parallel if(xy)
+       parallel if(xn) -----
+ OK!
+exit 0

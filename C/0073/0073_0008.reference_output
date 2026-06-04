@@ -1,0 +1,6 @@
+8
+Peephole test1 : OK
+Peephole test2 : OK
+sum= 13
+Peephole test3 : OK
+exit 0

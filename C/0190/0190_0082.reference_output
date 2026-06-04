@@ -1,0 +1,2 @@
+      parallel for schedule(guided,chunk=1) -----OK
+exit 0

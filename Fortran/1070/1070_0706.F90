@@ -1,0 +1,75 @@
+! option : -Kocl
+
+#ifdef SIM_RUN
+#define USE_SIMFUNC use simfunc
+#define PRINT_NG call simprintl("NG")
+#define PRINT_OK call simprintl("OK")
+#else
+#define USE_SIMFUNC
+#define PRINT_NG print *, "NG"
+#define PRINT_OK print *, "OK"
+#endif
+
+#if defined(ROLL_TIMES)
+#define N ROLL_TIMES
+#elif defined(MOD)
+#define N 257
+#else
+#define N 256
+#endif
+
+#if !defined(ASM_ONLY)
+program main
+USE_SIMFUNC
+
+real(kind=4),dimension(N) :: a
+real(kind=8) :: dest,res
+real(kind=8), dimension(N) :: x,y
+
+do i=1,2
+call init(a,res,N,x,y)
+call test(a,dest,x,y)
+enddo
+if(res .ne. dest) then
+PRINT_NG
+endif
+
+do i=1,N
+if(x(i) .ne. real(i,kind=8)) then
+PRINT_NG
+endif
+enddo
+   
+PRINT_OK
+end program main
+
+subroutine init(a,res,n1,x,y)
+USE_SIMFUNC
+real(kind=4),dimension(1:n1) :: a
+real(kind=8) :: res
+real(kind=8), dimension(N) :: x,y
+res = 0._8
+!ocl nosimd
+do i=1,n1
+a(i) = real(i,kind=4)
+res = res + real(i,kind=8)
+x(i) = 1._8
+y(i) = real(i,kind=8)
+enddo
+res = res + 1._8
+end subroutine init
+#endif
+
+subroutine test(a,dest,x,y)
+USE_SIMFUNC
+real(kind=4), dimension(N) :: a
+real(kind=8) :: dest,tmp
+real(kind=8), dimension(N) :: x,y
+tmp = 1._8
+
+do i=1,N
+x(i) = y(i)
+tmp = tmp + a(i)
+enddo
+dest = tmp
+end subroutine test

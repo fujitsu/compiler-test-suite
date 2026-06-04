@@ -1,9 +1,13 @@
 subroutine s01(k)
-integer a1(max(k,10000))
+integer, allocatable, target :: a1(:)
+integer, allocatable, target :: a2(:,:)
+allocate(a1(max(k,10000)))
 block
-integer a2(k,max(k,100000))
+allocate(a2(k, max(k, 100000)))
 call ss(k,loc(a2),loc(a1))
+deallocate(a2)
 end block
+deallocate(a1)
 end
 
 do k=1,1000

@@ -1,0 +1,96 @@
+module base_mod
+  type::base_type
+    integer::x1
+   contains
+    procedure:: proc=>base_proc
+  end type
+  type(base_type)::v
+ contains
+    subroutine base_proc(this, a01,a02,n,k,m)
+      class(base_type)  :: this
+      real :: a01(:,2:),a02(:,2:)
+write(1,*) 1
+if (.not.same_type_as(this,v)) print *,10001
+if (lbound(a01,1)/=1) print *,20001
+if (ubound(a01,1)/=2) print *,20002
+if (lbound(a01,2)/=2) print *,20003
+if (ubound(a01,2)/=4) print *,20004
+if (any(a01(:,:)/=1)) print *,20006
+if (lbound(a02,1)/=1) print *,21001
+if (ubound(a02,1)/=2) print *,21002
+if (lbound(a02,2)/=2) print *,21003
+if (ubound(a02,2)/=4) print *,21004
+if (any(a02(:,:)/=1)) print *,21006
+if (this%x1/=1) print *,20007
+do n2=2,4
+  do n1=1,2
+    if (a01(n1,n2)/=1) print *,4002
+    if (a02(n1,n2)/=1) print *,4022
+  end do
+end do
+    end subroutine
+end
+module ext_mod
+  use base_mod
+  type, extends(base_type) :: ext_type
+    integer::x2
+   contains
+     procedure :: proc
+  end type 
+contains
+    subroutine proc(this, a01,a02,n,k,m)
+      class(ext_type)  :: this
+      real :: a01(:,2:),a02(:,2:)
+write(1,*) 2
+if (same_type_as(this,v)) print *,11001
+if (lbound(a01,1)/=1) print *,21001
+if (ubound(a01,1)/=2) print *,21002
+if (lbound(a01,2)/=2) print *,21003
+if (ubound(a01,2)/=4) print *,21004
+if (any(a01(:,:)/=1)) print *,21006
+if (lbound(a02,1)/=1) print *,21201
+if (ubound(a02,1)/=2) print *,21202
+if (lbound(a02,2)/=2) print *,21203
+if (ubound(a02,2)/=4) print *,21204
+if (any(a02(:,:)/=1)) print *,21206
+if (this%x1/=1) print *,21007
+if (this%x2/=2) print *,21008
+do n2=2,4
+  do n1=1,2
+    if (a01(n1,n2)/=1) print *,4102
+    if (a02(n1,n2)/=1) print *,4112
+  end do
+end do
+    end subroutine
+end
+
+use ext_mod
+  class(base_type),allocatable  :: this
+  integer,parameter::n1=1,k=2,m=3
+!     real :: b01(k,3)=1,b02(k,3)=1
+      real :: a01(2:3,3)=1,a02(2:3,3)=1
+allocate(this)
+this%x1=1
+call this%proc(a01,a02,n,k,m)
+deallocate(this)
+allocate(ext_type::this)
+this%x1=1
+select type(this)
+  type is(ext_type)
+    this%x2=2
+end select
+call this%proc(a01,a02,n,k,m)
+deallocate(this)
+allocate(this)
+this%x1=1
+call this%proc(a01,a02,n,k,m)
+rewind 1
+read(1,*) n
+if (n/=1) print *,3001
+read(1,*) n
+if (n/=2) print *,3002
+read(1,*) n
+if (n/=1) print *,3003
+        
+print *,'sngg389m : pass'
+end

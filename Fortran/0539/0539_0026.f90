@@ -2,11 +2,11 @@ ido1=1
 ido2=2
 ido3=3
 ido4=4
-!$omp parallel default(none)
+!$omp parallel default(none) private(ido2,ido3)
 !$omp do collapse(2)
 do ido1=1,10
 do ido4=1,10
-!$omp simd collapse(2)
+!$omp simd collapse(2) private(ido2,ido3)
 do ido2=1,10
 do ido3=1,10
 end do
@@ -15,7 +15,7 @@ end do
 end do
 end do
 !$omp enddo
-!$omp do
+!$omp do private(ido1)
 do ido2=1,10
 do ido1=1,10
 end do

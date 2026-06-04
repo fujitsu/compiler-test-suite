@@ -1,3 +1,3 @@
-open(1,encoding='default')
+open(105,encoding='default')
 print *,'pass'
 end

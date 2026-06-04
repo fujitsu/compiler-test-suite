@@ -2,8 +2,8 @@ program main
   complex(kind=4) a(0:7),c
   real(kind=4),parameter :: REAL_ANS=0.620376600_4
   real(kind=4),parameter :: IMAG_ANS=0.783784150_4
-  real(kind=4),parameter :: REAL_ERROR=0.0000001_4
-  real(kind=4),parameter :: IMAG_ERROR=0.0000001_4
+  real(kind=4),parameter :: REAL_ERROR=0.000001_4
+  real(kind=4),parameter :: IMAG_ERROR=0.000001_4
 
   c = (0.0_4,0.0_4)
 

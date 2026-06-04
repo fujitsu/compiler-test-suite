@@ -1,0 +1,57 @@
+!             CVCT7113            LEVEL=1        DATE=84.07.28
+!********************************************************************C
+!  1. PROGRAM NAME  : CVCT7113                                       C
+!  2. PURPOSE       : ANALYZING DOP-DICT                             C
+!                      . MAKE OCL OF TERM 2. (CONSTANT - VERIABLE)   C
+!  3. RESULT        :                                                C
+!  4. ENVIRONMENT   : VOCL NOMIVECT                                  C
+!  5. HISTORY       : 1984 - 07 - 24                                 C
+!********************************************************************C
+      PROGRAM CV7113
+      type::str_R4
+      REAL * 4 A(30),B(30),C(30)
+      end type
+      type (str_R4)::R4
+      DATA R4%A/10*1.,10*2.,10*3./
+      DATA R4%B/10*1.,10*2.,10*3./
+      DATA R4%C/10*1.,10*2.,10*3./
+      DATA  N/-5/,N1/1/,M1/-10/ ,L/10/,L1/10/,L2/5/
+!
+! TEST NO. 1 : INCREMENT SIGN PLUS
+!
+      DO 10 I=1,N,-1
+        DO 11 I1=10,N1,-1
+          DO 12 I2=1,M1+3,-1
+            DO 13 K1=1,10
+              R4%A(K1) = R4%A(K1-N)
+              R4%A(K1+N1) = R4%A(K1+10)
+              R4%A(K1) = R4%A(K1-M1)
+ 13         CONTINUE
+            DO 14 K2=15,30
+              R4%A(K2) = R4%A(K2)+ 1.
+ 14         CONTINUE
+ 12       CONTINUE
+ 11     CONTINUE
+ 10   CONTINUE
+!
+! TEST NO. 2 : INCREMENT SIGN PLUS
+!
+      DO 20 I=1,L,1
+        DO 21 I1=3,L1,1
+          DO 22 I2=1,L2-3,1
+            DO 23 K1=1,10
+              R4%B(K1) = R4%B(K1+L)
+              R4%B(K1+2) = R4%B(K1+L1)
+              R4%B(K1+2) = R4%B(K1+L2)
+ 23         CONTINUE
+            DO 24 K2=1,10
+              R4%B(K2) = R4%B(K2+I)
+ 24         CONTINUE
+ 22       CONTINUE
+ 21     CONTINUE
+ 20   CONTINUE
+!
+      WRITE(6,*) '### CVCT7113 ## DOP TEST ###'
+      WRITE(6,*) 'A=',R4%A,'B=',R4%B,'C=',R4%C
+      STOP
+      END

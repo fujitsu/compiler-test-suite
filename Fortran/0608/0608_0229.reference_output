@@ -1,0 +1,7 @@
+ correct destructor called
+ 10 10 10 10
+ correct destructor called
+ 20 20 20 20
+ correct destructor called
+ 20 20 20 20
+exit 0

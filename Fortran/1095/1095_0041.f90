@@ -1,0 +1,27 @@
+module m
+implicit none
+ integer,target::t=3
+ type y
+   integer,pointer::x1=>t
+ end type
+ interface
+ module subroutine w1(dtv)
+    class(y), intent(in) :: dtv
+  end 
+ end interface
+end
+
+submodule (m) xx
+ implicit none
+contains
+ module subroutine w1(dtv)
+    class(y), intent(in) :: dtv
+if (dtv%x1/=3) print *,201
+end
+end
+
+use m
+  type(y)::xv
+call w1(xv)
+print *,'sngg287h : pass'
+end

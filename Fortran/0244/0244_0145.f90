@@ -44,7 +44,7 @@ if(sub(trg(:,:,:,2:6))==1) print*,'pass'
 contains
 function sub(dptr)
 integer :: sub
-integer,contiguous::dptr(:,:,:,:)
+integer,target,contiguous::dptr(:,:,:,:)
 
 if(is_contiguous(dptr) .neqv. .true.) print*,201,'dptr'
 if(is_contiguous(dptr(:,:,:,:)) .neqv. .true.) print*,202,'dptr(:,:,:,:)'
@@ -69,7 +69,7 @@ end function
 
 function sub2(dd)
 integer :: sub2
-integer::dd(:,:,:,:)
+integer,target::dd(:,:,:,:)
 if(is_contiguous(dd) .neqv. .false.) print*,301,'dd'
 if(is_contiguous(dd(:,:,:,:)) .neqv. .false.) print*,302,'dd(:,:,:,:)'
 if(is_contiguous(dd(2:,:,:,:)) .neqv. .false.) print*,303,'dd(2:,:,:,:)'

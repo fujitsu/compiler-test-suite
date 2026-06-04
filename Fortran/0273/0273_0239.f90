@@ -1,0 +1,26 @@
+REAL(KIND=2) :: R2=4
+REAL(KIND=2) :: R2_2
+COMPLEX(KIND=2) :: C2=(5,6)
+COMPLEX(KIND=2) :: C2_2
+COMPLEX(2)::DEST(10),SRC(10)
+COMPLEX(2)::CC1,CC2
+R2=-R2
+C2=-C2
+R2_2=+5
+C2_2=+(5,6)
+SRC(5)=(10.1,20.2)
+SRC(1)=(30.1,40.2)
+CC2=(50.5,60.6)
+CC1     = - CC2 
+DEST(5) = - SRC(5) 
+DEST(4) = - SRC(5)+SRC(1) 
+IF(abs(DEST(5) -    (-10.1,-20.2))>0.05)PRINT*,"1011"
+IF(abs(CC1 -    (-50.5,-60.6))>0.05)PRINT*,"1021"
+IF(abs(DEST(4) -    (20,20))>0.05)PRINT*,"1031"
+IF(R2 .NE. -4)PRINT*,"101"
+IF(C2 .NE. -(5,6))PRINT*,"102"
+IF(R2_2 .NE. +5)PRINT*,"103"
+IF(C2_2 .NE. +(5,6))PRINT*,"104"
+
+PRINT*,"PASS"
+END

@@ -1,0 +1,31 @@
+      subroutine foo(x,y)
+      logical*1,allocatable::x
+      logical*1 y(10)
+!$omp simd reduction(.eqv.:x)
+      do i=1,10
+        x=x.eqv.y(i)
+      enddo
+      end
+
+      interface
+        subroutine foo(x,y)
+        logical*1,allocatable::x
+        logical*1 y(10)
+        end subroutine
+      end interface
+      logical*1,allocatable::r1,r2
+      logical*1 x(10)/.true.,.false.,.true.,.false.,.true.,
+     &                .false.,.true.,.false.,.true.,.false./
+      allocate(r1,r2)
+      r1=.true.
+      r2=.true.
+      call foo(r1,x)
+      do i=1,10
+        r2=r2.eqv.x(i)
+      enddo
+      if (r1.neqv.r2) then
+        print*,"NG:",r1,r2
+        stop 1
+      endif
+      print*,"OK"
+      end

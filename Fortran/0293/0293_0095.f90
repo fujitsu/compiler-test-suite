@@ -2,7 +2,7 @@ module m1
 contains
 subroutine s(a)
 integer a(:)
-write(56,*)a
+write(73,*)a
 end subroutine
 end
 use m1

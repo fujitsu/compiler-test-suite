@@ -1,0 +1,16 @@
+union uu1 {signed int f3; unsigned char f2; unsigned int f1; double f0; };
+union uu0 {unsigned int f4; signed char f3; unsigned short f2; unsigned int f1; signed char f0; };
+struct ss1 {unsigned short f3; signed int f2 : 27; unsigned int f1 : 26; unsigned int f0 : 9; };
+struct ss0 {unsigned int f2 : 20; unsigned int f1 : 20; unsigned short f0; };
+extern void v3 (signed short, signed short, union uu0);
+extern void (*v4) (signed short, signed short, union uu0);
+extern unsigned char v5 (struct ss0);
+extern unsigned char (*v6) (struct ss0);
+extern struct ss0 v9 (void);
+extern struct ss0 (*v10) (void);
+extern int history[];
+extern int history_index;
+extern int trace;
+union uu1 v41 = {716822194 };
+unsigned char v40 = 228;
+union uu0 v39 = {3669841669U };

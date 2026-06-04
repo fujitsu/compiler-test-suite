@@ -27,7 +27,7 @@ int main()
     }
   }
 
-  
+
   for (k=0;k<n;k++){
     for (j=0;j<n;j++){
       for (i=0;i<n;i++){
@@ -55,7 +55,7 @@ int main()
   result =0;
   for (j=0;j<10;j++){
     for (i=0;i<10;i++){
-      result=result+c4[j][i];
+      result=result+c2[j][i];
     }
   }
   printf("test-2 = %f \n",result);
@@ -72,7 +72,7 @@ int main()
   result =0;
   for (j=0;j<10;j++){
     for (i=0;i<10;i++){
-      result=result+c4[j][i];
+      result=result+c3[j][i];
     }
   }
   printf("test-3 = %f \n",result);

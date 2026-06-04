@@ -1,0 +1,4 @@
+ ----- test --
+       parallel if(lb.eqv.lc.neqv.ld) private(it) -----
+ OK!
+exit 0

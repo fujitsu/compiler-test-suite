@@ -1,0 +1,19 @@
+REAL*4 :: A4(16),S4(16)
+REAL*8 :: A8(16),S8(16)
+
+DO I=1,16
+   A4(I) = I
+   A8(I) = I
+END DO
+
+DO I=1,16
+   S4(I)=1/A4(I)
+END DO
+PRINT *,S4
+
+DO I=1,16
+   S8(I)=1/A8(I)
+END DO
+PRINT *,S8
+
+END PROGRAM

@@ -18,7 +18,7 @@ contains
 
   recursive subroutine sub3(aa,bb,r)        
    implicit none       
- type(*),optional::aa(:)     
+ type(*),optional,target::aa(:)     
  type(*),optional::bb     
         integer::r
 if( r /= 0)then

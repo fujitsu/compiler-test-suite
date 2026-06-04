@@ -9,8 +9,8 @@ allocate(character(len=3)::obj%ch(2,2))
 call sub(obj%cc(2:3,2:3),obj%ch(1,:),3)
 contains
 subroutine sub(dmy1,dmy2,n)
-type(*) :: dmy1(2,*)
-type(*) :: dmy2(:)
+type(*),target :: dmy1(2,*)
+type(*),target :: dmy2(:)
 integer :: n
 if(is_contiguous(dmy2) .neqv. .FALSE.)print*,"102"
 if(is_contiguous(dmy1) .neqv. .TRUE.)print*,"103"

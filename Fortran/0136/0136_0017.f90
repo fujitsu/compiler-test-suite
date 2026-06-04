@@ -5,9 +5,10 @@ call s1
 print *,'pass'
 end
 subroutine s1
-real(4)::r(1000,1000)
-real(8)::d(1000,1000)
+real(4), allocatable::r(:,:)
+real(8), allocatable::d(:,:)
 integer(1)::i1,i2,i3,i4,i5
+allocate(r(1000,1000), d(1000,1000))
 call random_number(harvest=r)
 call random_number(harvest=d)
 i1=1
@@ -29,12 +30,14 @@ do j1=1,1000
       if(EQUAL_CHECK_WITH_MARGIN_D(d(j1,j2)**5_1,d(j1,j2)**i5)) print *,'err5'
    end do
 end do
+deallocate(r,d)
 end 
 
 subroutine s2
-real(4)::r(1000,1000)
-real(8)::d(1000,1000)
+real(4), allocatable::r(:,:)
+real(8), allocatable::d(:,:)
 integer(2)::i1,i2,i3,i4,i5
+allocate(r(1000,1000), d(1000,1000))
 call random_number(harvest=r)
 call random_number(harvest=d)
 i1=1
@@ -56,12 +59,14 @@ do j1=1,1000
       if(EQUAL_CHECK_WITH_MARGIN_D(d(j1,j2)**5_2,d(j1,j2)**i5)) print *,'err5'
    end do
 end do
+deallocate(r,d)
 end 
 
 subroutine s3
-real(4)::r(1000,1000)
-real(8)::d(1000,1000)
+real(4), allocatable::r(:,:)
+real(8), allocatable::d(:,:)
 integer(4)::i1,i2,i3,i4,i5
+allocate(r(1000,1000), d(1000,1000))
 call random_number(harvest=r)
 call random_number(harvest=d)
 i1=1
@@ -83,12 +88,14 @@ do j1=1,1000
       if(EQUAL_CHECK_WITH_MARGIN_D(d(j1,j2)**5_4,d(j1,j2)**i5)) print *,'err5'
    end do
 end do
+deallocate(r,d)
 end 
 
 subroutine s4
-real(4)::r(1000,1000)
-real(8)::d(1000,1000)
+real(4), allocatable::r(:,:)
+real(8), allocatable::d(:,:)
 integer(8)::i1,i2,i3,i4,i5
+allocate(r(1000,1000), d(1000,1000))
 call random_number(harvest=r)
 call random_number(harvest=d)
 i1=1
@@ -110,4 +117,5 @@ do j1=1,1000
       if(EQUAL_CHECK_WITH_MARGIN_D(d(j1,j2)**5_8,d(j1,j2)**i5)) print *,'err5'
    end do
 end do
+deallocate(r,d)
 end 

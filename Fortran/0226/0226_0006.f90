@@ -3,9 +3,9 @@
          real:: a=0.0
          integer:: i1=1, iX=0
                   !$omp task  default(none)
-                  !$omp parallel do
+                  !$omp parallel do private(iX)
                   do iX=1,5
-                    !$omp simd
+                    !$omp simd private(i1,a)
                     do i1=1,5
                     a =real(1)
                     if(real(1)/=1.0) print *,'err'

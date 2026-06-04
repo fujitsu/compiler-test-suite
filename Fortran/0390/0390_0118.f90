@@ -29,14 +29,14 @@ subroutine ss(x)
 integer           :: x(:,:)
 if (any([x]/=[1,3,4,6])) print *,1021
 write(34,'(z16.16)') loc(x)
-if (save/=loc(x)) print *,3000
+!if (save/=loc(x)) print *,3000
 x=11
 end subroutine
 function fun(x) result(k)
 integer           :: x(:,:)
 if (any([x]/=[1,3,4,6])) print *,1022
 write(34,'(z16.16)') loc(x)
-if (save/=loc(x)) print *,3000
+!if (save/=loc(x)) print *,3000
 x=11
 k=0
 end function

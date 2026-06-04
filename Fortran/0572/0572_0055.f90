@@ -28,7 +28,7 @@ function f1(aa)
 
   function f2(aa)        
    implicit none       
- type(*),optional::aa(:)    
+ type(*),target,optional::aa(:)    
         integer::f2
        f2= rank(aa)
   if(present(aa).neqv. .true.) print*,'402'

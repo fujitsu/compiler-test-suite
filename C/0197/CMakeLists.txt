@@ -1,0 +1,6 @@
+add_subdirectory(0197_0000)
+add_subdirectory(0197_0001)
+add_subdirectory(0197_0002)
+add_subdirectory(0197_0003)
+add_subdirectory(0197_0004)
+llvm_singlesource_fujitsu(PREFIX "Fujitsu-C-")

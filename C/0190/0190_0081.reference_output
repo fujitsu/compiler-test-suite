@@ -1,0 +1,2 @@
+      parallel for schedule(guided) -----OK
+exit 0

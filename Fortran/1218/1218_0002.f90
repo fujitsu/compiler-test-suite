@@ -1,0 +1,108 @@
+module m1
+     type t1
+       integer(8)::z1
+     end type
+     type tt
+       class(t1),allocatable::z3
+     end type
+     type t4
+       integer(8)::dummy
+       type(tt)::tv
+       class(t1),allocatable::w3
+     end type
+     type t3
+       integer(8)::dummy
+       type(t3),allocatable::tyy
+       type(t4)::tw
+       class(t1),allocatable::r3
+     end type
+     class (* ),allocatable::a1,a2
+     type(t1)::v=t1(-1_8)
+contains
+subroutine set_t3(d,kk)
+type(t3)::d
+ allocate(d%tw%tv%z3,source=v)
+ kk=kk+1
+ allocate(d%tyy)
+ allocate(d%tyy%tw%tv%z3,source=v)
+ allocate(d%tyy%tw%w3,source=v)
+ allocate(d%tyy%r3,source=v)
+ allocate(d%r3,source=v)
+ kk=kk+1
+end
+subroutine reset_t3(d,kk)
+type(t3)::d
+ select type (p=> d%tw%tv%z3)
+   type is(t1)
+      p%z1=10
+ end select
+ kk=kk+1
+ select type (p=> d%tyy%tw%tv%z3)
+   type is(t1)
+      p%z1=10
+ end select
+ select type (p=> d%tyy%tw%w3)
+   type is(t1)
+      p%z1=100
+ end select
+ select type (p=> d%tyy%r3)
+   type is(t1)
+      p%z1=1000
+ end select
+ select type (p=> d%r3)
+   type is(t1)
+      p%z1=10000
+ end select
+end
+ subroutine chk_t3(d,kk)
+type(t3)::d
+ select type (p=> d%tw%tv%z3)
+   type is(t1)
+         if ((p%z1/=-1)) print *,'2001',kk,p%z1
+ end select
+ kk=kk+1
+ select type (q=> d%tyy%tw%tv%z3)
+   type is(t1)
+         if ((q%z1/=-1)) print *,'2101',kk,q%z1
+ end select
+ select type (r=> d%tyy%tw%w3)
+   type is(t1)
+         if ((r%z1/=-1)) print *,'2201',kk,r%z1
+ end select
+ select type (r=> d%tyy%r3)
+   type is(t1)
+         if ((r%z1/=-1)) print *,'2301',kk,r%z1
+ end select
+ select type (r=> d%r3)
+   type is(t1)
+         if ((r%z1/=-1)) print *,'2401',kk,r%z1
+ end select
+end
+end
+     subroutine s1
+use m1
+     allocate(t3::a1)
+     kk=1
+select type(a1)
+ type is(t3)
+     call set_t3(a1,kk)
+     select type (d=>a1%tw%tv%z3)
+       type is (t1)
+         if ((d%z1/=-1)) print *,'1001',d%z1
+     end select
+     end select
+     allocate(a2,source=a1)
+select type(a1)
+ type is(t3)
+     kk=1
+     call reset_t3(a1,kk)
+end select
+     kk=1
+select type(a2)
+ type is(t3)
+     call chk_t3(a2,kk)
+end select
+     end
+     call s1
+     print *,'sngg840s : pass'
+     end

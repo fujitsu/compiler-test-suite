@@ -15,6 +15,8 @@
       REAL    *4    RS31/1.0/
       REAL    *8    DS31/2.0/
       COMPLEX *16   CDV31(10)/10*(0.,0.)/
+      INTEGER NPL, K, L, I
+      PARAMETER (NPL=5)
 
       DO 100  I=2,9
         RS11 = DMOD ( DV11 (I-1),DS11 ) - IV11 (I)
@@ -44,7 +46,8 @@
   200 CONTINUE
 
       WRITE(6,*) RV21,RV22,RV23
-      WRITE(6,*) CDV21
+      WRITE(6,'(5(1X,"(",F0.1,",",F0.1,")"))')
+     &     (DBLE(CDV21(I)), DIMAG(CDV21(I)), I=1,10)
       WRITE(6,*) IS21,IS22,LS21,LS22,LV21
 
       DO 300  J= 2,8,3
@@ -62,7 +65,17 @@
 
   310  CONTINUE
        WRITE(6,*) LV31,LS31
-       WRITE(6,*) CDV31
+       DO 9220 K=1,10,NPL
+         L = MIN0(10, K+NPL-1)
+         WRITE(6,9200,ADVANCE='NO') K, L
+ 9200    FORMAT('CDV31(',I2,':',I2,')=')
+         DO 9210 I=K,L
+           WRITE(6,9211,ADVANCE='NO') DBLE(CDV31(I)), DIMAG(CDV31(I))
+ 9211      FORMAT(1X,'(',0P,F0.1,',',F0.1,')')
+ 9210    CONTINUE
+
+         WRITE(6,*)
+ 9220    CONTINUE
 
        LS31 = .FALSE.
   300 CONTINUE

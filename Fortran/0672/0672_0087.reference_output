@@ -1,0 +1,11 @@
+0   SUB-1
+ &NAMEL J= 5,K= -7,L= 1,M= -2,N= 6/
+0   SUB-2
+ &NAMEL J= 6,K= 7,L= 1,M= -3,N= 9/
+0   SUB-3
+ &NAMEL J= 4,K= -7,L= -6,M= -1,N= 3/
+0   SUB-4
+ &NAMEL J= 6,K= 7,L= -6,M= -3,N= 9/
+0   SUB-5
+ &NAMEL J= 11,K= 4,L= 3,M= -6,N= 18/
+exit 0

@@ -1,0 +1,2 @@
+ parallel shared test: pass
+exit 0

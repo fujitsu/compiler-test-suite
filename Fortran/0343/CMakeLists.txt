@@ -6,3 +6,6 @@ set_property(SOURCE 0343_0030.f APPEND PROPERTY COMPILE_OPTIONS "-fno-fast-math"
 set_property(TARGET Fujitsu-Fortran-0343_0030 APPEND PROPERTY LINK_OPTIONS "-fno-fast-math")
 set_property(SOURCE 0343_0031.f APPEND PROPERTY COMPILE_OPTIONS "-fno-fast-math")
 set_property(TARGET Fujitsu-Fortran-0343_0031 APPEND PROPERTY LINK_OPTIONS "-fno-fast-math")
+set_property(SOURCE 0343_0048.f APPEND PROPERTY COMPILE_OPTIONS "-fprotect-parens")
+set_property(SOURCE 0343_0055.f APPEND PROPERTY COMPILE_OPTIONS "-fprotect-parens;-fno-associative-math")
+set_property(SOURCE 0343_0056.f APPEND PROPERTY COMPILE_OPTIONS "-fprotect-parens;-fno-associative-math")

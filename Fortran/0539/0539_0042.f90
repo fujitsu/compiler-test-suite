@@ -2,8 +2,8 @@ ido1=1
 ido2=2
 ido3=3
 ido4=4
-!$omp parallel default(none)
-!$omp do collapse(2)
+!$omp parallel default(none)  shared(ido1,ido2,ido3)
+!$omp do collapse(2) lastprivate(ido1,ido2) private(ido3)
 do ido1=1,10
 do ido2=1,10
 do ido3=1,10
@@ -12,7 +12,7 @@ end do
 end do
 !$omp enddo
 
-!$omp simd collapse(3)
+!$omp simd collapse(3) private(ido1,ido2) lastprivate(ido3)
 do ido1=1,10
 do ido2=1,10
 do ido3=1,10

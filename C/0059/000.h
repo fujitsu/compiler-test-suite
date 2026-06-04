@@ -11,7 +11,6 @@
  /*              if not agree,print information and call nogood      */
  /*               '##' stands for each type                          */
  /*     main programs   :  for all programs that test c-language     */
- /*     compiler level  :  v11l10 -> v99l99                          */
  /********************************************************************/
 #define _chk  0                        /*  eyes check is necessary   */
 #define _ok   1                        /*  no defect                 */

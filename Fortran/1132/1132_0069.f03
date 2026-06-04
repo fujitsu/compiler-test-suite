@@ -1,0 +1,94 @@
+subroutine ranu2(a,n)
+  real a(n)
+  do ii=1,n
+     a(ii)=real(ii)/n
+     if(ii.eq.1) a(ii)=2./n
+  end do
+end subroutine ranu2
+
+program main
+  TYPE STR
+     REAL*4  A(100),B(1000),C(10000)
+     INTEGER*4 L1(100),L2(1000),L3(10000)
+     INTEGER*4 N1(100),N2(1000),N3(10000)
+  END type STR
+  TYPE(STR) STR_DATA
+
+  DATA  STR_DATA%N1,STR_DATA%N2,STR_DATA%N3/11100*0/
+
+  CALL  RANU2(STR_DATA%A,100)
+  DO I=1,100
+     STR_DATA%L1(I)=ANINT(STR_DATA%A(I)*100.)
+  END DO
+  CALL  RANU2(STR_DATA%B,1000)
+  DO I=1,1000
+     STR_DATA%L2(I)=ANINT(STR_DATA%B(I)*1000.)
+  END DO
+  CALL  RANU2(STR_DATA%C,10000)
+  DO I=1,10000
+     STR_DATA%L3(I)=ANINT(STR_DATA%C(I)*10000.)
+  END DO
+  WRITE(6,*) (STR_DATA%L1(I),I=1,64)
+  WRITE(6,*) (STR_DATA%L2(I),I=1,64)
+  WRITE(6,*) (STR_DATA%L3(I),I=1,64)
+
+  DO I=1,100
+     NN=MOD(STR_DATA%L1(I),2)
+     IF (NN.EQ.0) STR_DATA%L1(I)=STR_DATA%L1(I)-1
+     NN=MOD(STR_DATA%L2(I),2)
+     IF (NN.EQ.0) STR_DATA%L2(I)=STR_DATA%L2(I)-1
+     NN=MOD(STR_DATA%L3(I),2)
+     IF (NN.EQ.0) STR_DATA%L3(I)=STR_DATA%L3(I)-1
+  END DO
+  DO I=1,100
+     IF (STR_DATA%N1(STR_DATA%L1(I)).GE.1) THEN
+        STR_DATA%N1(STR_DATA%L1(I))=STR_DATA%N1(STR_DATA%L1(I))+1
+     ELSE
+        STR_DATA%N1(STR_DATA%L1(I))=1
+     ENDIF
+     IF (STR_DATA%N2(STR_DATA%L2(I)).GE.1) THEN
+        STR_DATA%N2(STR_DATA%L2(I))=STR_DATA%N2(STR_DATA%L2(I))+1
+     ELSE
+        STR_DATA%N2(STR_DATA%L2(I))=1
+     ENDIF
+     IF (STR_DATA%N3(STR_DATA%L1(I)).GE.1) THEN
+        STR_DATA%N3(STR_DATA%L3(I))=STR_DATA%N3(STR_DATA%L3(I))+1
+     ELSE
+        STR_DATA%N3(STR_DATA%L3(I))=1
+     ENDIF
+  END DO
+  IC0=0
+  IC1=0
+  IC2=0
+  DO I=1,100
+     IF (STR_DATA%N1(I).EQ.0) IC0=IC0+1
+     IF (STR_DATA%N1(I).EQ.1) IC1=IC1+1
+     IF (STR_DATA%N1(I).GT.1) IC2=IC2+1
+  END DO
+  WRITE(6,*) ' RAN=100   IC0=',IC0
+  WRITE(6,*) '           IC1=',IC1
+  WRITE(6,*) '           IC2=',IC2
+  IC0=0
+  IC1=0
+  IC2=0
+  DO I=1,1000
+     IF (STR_DATA%N2(I).EQ.0) IC0=IC0+1
+     IF (STR_DATA%N2(I).EQ.1) IC1=IC1+1
+     IF (STR_DATA%N2(I).GT.1) IC2=IC2+1
+  END DO
+  WRITE(6,*) ' RAN=1000  IC0=',IC0
+  WRITE(6,*) '           IC1=',IC1
+  WRITE(6,*) '           IC2=',IC2
+  IC0=0
+  IC1=0
+  IC2=0
+  DO I=1,10000
+     IF (STR_DATA%N3(I).EQ.0) IC0=IC0+1
+     IF (STR_DATA%N3(I).EQ.1) IC1=IC1+1
+     IF (STR_DATA%N3(I).GT.1) IC2=IC2+1
+  END DO
+  WRITE(6,*) ' RAN=10000 IC0=',IC0
+  WRITE(6,*) '           IC1=',IC1
+  WRITE(6,*) '           IC2=',IC2
+  STOP
+END program main

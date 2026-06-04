@@ -1,0 +1,37 @@
+MODULE mod1
+IMPLICIT NONE
+
+INTEGER(kind = 4) :: xx = 12,yy = 5,res
+
+INTERFACE
+SUBROUTINE ext_sub()
+END SUBROUTINE
+END INTERFACE
+
+END MODULE
+
+
+PROGRAM main
+USE mod1
+IMPLICIT NONE
+
+CALL ext_sub()
+
+IF(res .EQ. 2) THEN
+  PRINT*,"PASS"
+ELSE
+  PRINT*,"ERROR"
+END IF
+
+END PROGRAM
+
+SUBROUTINE ext_sub()
+USE mod1
+PROCEDURE(mod),POINTER :: prc
+INTERFACE gnr
+  PROCEDURE :: prc
+END INTERFACE
+prc => mod
+res = gnr(xx,yy)
+END SUBROUTINE
+

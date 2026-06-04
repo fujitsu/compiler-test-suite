@@ -1,0 +1,4 @@
+ #### START ####
+ &NAM A= 10,B= 10 10 10 10 10,C= FORTRAN/
+ ####  END  ####
+exit 0

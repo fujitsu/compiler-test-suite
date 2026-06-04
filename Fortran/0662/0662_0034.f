@@ -1,0 +1,21 @@
+       REAL*16 A1,A2,X1,X2,X3,X4,X5,X
+       COMPLEX*32 B1,B2,Y1,Y2,Y3,Y4,Y5,Y
+       DATA    A1,A2/2*1.23456789Q0/
+       DATA    B1,B2/2*(1.23456789Q0,1.23456789Q0)/
+       PARAMETER (X=1.23456789Q0,Y=(1.23456789Q0,1.23456789Q0))
+       PARAMETER (X1=X+X,X2=X-X1,X3=X*X1,X4=X/X1)
+       PARAMETER (Y1=Y+Y,Y2=Y-Y1,Y3=Y*Y1,Y4=Y/Y1)
+       X5=X**X1
+       Y5=Y**Y1
+       IF (A1+A2.NE.X1) PRINT *,'FAIL'
+       IF (A1-(A2+A1).NE.X2) PRINT *,'FAIL'
+       IF (A1*(A1+A2).NE.X3) PRINT *,'FAIL'
+       IF (A1/(A2+A2).NE.X4) PRINT *,'FAIL'
+       IF (A1**(A2+A1).NE.X5) PRINT *,'FAIL'
+       IF (B1+B2.NE.Y1) PRINT *,'FAIL'
+       IF (B1-(B2+B1).NE.Y2) PRINT *,'FAIL'
+       IF (B1*(B1+B2).NE.Y3) PRINT *,'FAIL'
+       IF (B1/(B2+B2).NE.Y4) PRINT *,'FAIL'
+       IF (B1**(B2+B1).NE.Y5) PRINT *,'FAIL'
+       PRINT *,'PASS'
+       END

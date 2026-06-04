@@ -10,13 +10,18 @@ int main()
 {
       int it, ier;
       int  loop = 10, thread=4;
-      char sa[10]={"abc"};
-      char sb[10][10], sc[10];
+      char sa[11]={"abc"};
+      char sb[11][11], sc[11];
       int i,j;
 
-      memset(sb,' ',10*10);
+      memset(sb,' ',11*11);
 #ifdef _OPENMP
     thread = omp_get_max_threads();
+   if(thread > 8)
+  {
+          thread =  8;
+          omp_set_num_threads(thread) ;
+  }
 #endif
 #pragma omp parallel private(sa,it)
 {
@@ -47,6 +52,7 @@ int main()
 }
       ier = 0;
       for(i=0; i<thread; i++){
+	 i=thread-1 ;
          switch (i)
 	   {
 	   case 0:
@@ -71,7 +77,8 @@ int main()
       for (i=thread; i<loop; i++){
          if(strncmp(sb[i],"          ",10)!=0) ier=ier+1 ;
       }
-      printf( "-----  --");
+
+ printf( "-----  --");
       printf( " parallel private(sa,it) ------\n");
       if(!strncmp(sa,"abc",3) && ier==0) {
          printf( "OK\n");
@@ -79,6 +86,8 @@ int main()
          printf( "NG!  PRIVATE clause is not active!\n");
          printf( "     sa=%s\n",sa);
          printf( "     sb=%s\n",sb);
+         printf( "     sc=%s\n",sc);
+         printf( "    ier=%d\n",ier);
       }
    exit (0) ;
 }

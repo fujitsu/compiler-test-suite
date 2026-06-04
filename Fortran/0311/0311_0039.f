@@ -4,7 +4,7 @@
       DATA   B,C/1000*1,1000*2/
       DATA ERROR/0/
 
-      OPEN(1)
+      OPEN(9)
       DO 20 I=1,10,1
          BACKSPACE 9
          WRITE(9,*) I

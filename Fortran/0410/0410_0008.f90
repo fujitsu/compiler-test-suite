@@ -1,0 +1,20 @@
+module m
+  private i,j,k
+  !$omp threadprivate(i,j,k)
+  integer,bind(c) :: j(1000)
+contains
+  subroutine s
+    integer omp_get_thread_num
+    !$omp parallel
+    j = omp_get_thread_num()
+    !$omp end parallel
+    !$omp parallel
+    if (any(j/=omp_get_thread_num())) print *,1
+    !$omp end parallel
+  end subroutine
+end
+
+use m
+call s
+print *,'pass'
+end

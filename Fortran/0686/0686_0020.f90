@@ -1,6 +1,6 @@
       module mod
-       integer::i,ii,iii,iiii
-       integer::j,jj,jjj,jjjj
+       integer::i=0,ii=0,iii=0,iiii=0
+       integer::j=0,jj=0,jjj=0,jjjj=0
        integer::k=0
       end module
 
@@ -9,7 +9,7 @@
 
 !$omp parallel
 
-!$omp do reduction(+:k),lastprivate(i,ii,iii,iiii)
+!$omp do reduction(+:k),lastprivate(i),private(ii,iii,iiii)
       do i=1,10
       do ii=1,10
       do iii=1,10
@@ -20,7 +20,7 @@
       enddo
       enddo
 
-!$omp do reduction(+:k),lastprivate(j,jj,jjj,jjjj)
+!$omp do reduction(+:k),lastprivate(j),private(jj,jjj,jjjj)
       do j=1,10
       do jj=1,10
       do jjj=1,10
@@ -31,7 +31,7 @@
       enddo
       enddo
 
-!$omp do reduction(+:k),lastprivate(m,mm,mmm,mmmm)
+!$omp do reduction(+:k),lastprivate(m),private(mm,mmm,mmmm)
       do m=1,10
       do mm=1,10
       do mmm=1,10
@@ -44,9 +44,9 @@
 
 !$omp end parallel
       if (k/=30000) print *,k
-      if (i/=11.or.ii/=11.or.iii/=11.or.iiii/=11) print *,i,ii,iii,iiii
-      if (j/=11.or.jj/=11.or.jjj/=11.or.jjjj/=11) print *,j,jj,jjj,jjjj
-      if (m/=11.or.mm/=11.or.mmm/=11.or.mmmm/=11) print *,m,mm,mmm,mmmm
+      if (i/=11.or.ii/=0.or.iii/=0.or.iiii/=0) print *,i,ii,iii,iiii
+      if (j/=11.or.jj/=0.or.jjj/=0.or.jjjj/=0) print *,j,jj,jjj,jjjj
+      if (m/=11) print *,m
 
       print *,'pass'
 

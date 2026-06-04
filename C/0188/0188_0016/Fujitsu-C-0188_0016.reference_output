@@ -1,0 +1,4 @@
+----- omp_PARALLELDO_004i.c --
+      parallel for firstprivate(ia) -----
+OK
+exit 0

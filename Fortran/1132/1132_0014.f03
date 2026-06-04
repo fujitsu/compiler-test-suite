@@ -1,0 +1,17 @@
+PROGRAM  CV2500
+  TYPE STR
+     REAL*4   EV01(50,2,2)/200*1/
+  END type STR
+  TYPE(STR) STR_DATA
+  DO I=1,2
+     DO J=1,2
+        DO K=1,50
+           STR_DATA%EV01(K,J,I)=I+K+J
+        END DO
+     END DO
+  END DO
+
+  WRITE(6,*) ' *** CVCT2500_str ***'
+  WRITE(6,*) STR_DATA%EV01
+  STOP
+END PROGRAM CV2500

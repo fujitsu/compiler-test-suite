@@ -1,0 +1,52 @@
+ psub  c = A
+ this present
+ psub  c = A
+ this present
+ psub  c = A
+ psub  c = A
+ this present
+ ----------------------- check gen -1 ------------------
+ psub  c = A
+ this present
+ psub  c = A
+ this present
+ ----------------------- check 2 ---------------------
+ A3 4 5
+ A3 4 5
+ B3 4.00000000
+ B3 4.00000000
+ C3
+ C3
+ C3
+ x present
+ C3
+ x present
+ C3
+ x present
+ y present
+ C3
+ x present
+ y present
+ C3
+ x present
+ y present
+ z present
+ C3
+ x present
+ y present
+ z present
+ ------------------ checking gen -2 -------------------
+ A3 3 4
+ B3 4.00000000
+ C3
+ C3
+ x present
+ C3
+ x present
+ y present
+ C3
+ x present
+ y present
+ z present
+ Pass
+exit 0

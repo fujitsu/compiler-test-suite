@@ -1,0 +1,8 @@
+ XP 1
+ YP 2
+ XP 3
+ YP 4
+ XP 3
+ YP 4
+ PASS
+exit 0

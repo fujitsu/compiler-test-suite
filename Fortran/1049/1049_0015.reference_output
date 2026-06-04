@@ -1,0 +1,5 @@
+ ----- test --
+       parallel if(a%x1(i1))
+       parallel if(a%x2(i2)) -----
+ OK!
+exit 0

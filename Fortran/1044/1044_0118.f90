@@ -5,7 +5,7 @@ call sub( ia(:,1:5:2) )
 print *,'pass'
 contains
 subroutine sub(iarr)
-integer iarr(:,:)
+integer,target:: iarr(:,:)
 ia=reshape((/(i,i=1,10)/),(/2,5/))
 call sub1(iarr(:,:),2)
 end subroutine

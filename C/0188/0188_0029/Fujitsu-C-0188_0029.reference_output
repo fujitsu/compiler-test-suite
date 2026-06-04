@@ -1,0 +1,4 @@
+-- omp_PARALLEL_007m.c --
+-- parallel firstprivate(mii, mrr, mcc, mss) private(ith) --
+OK 
+exit 0

@@ -8,6 +8,7 @@ ii=1
    !$omp parallel shared(prv)
    !$omp task default(firstprivate)
    !$omp critical
+   iaa=200
    prv = prv + 1
    ii=if(ii)
    !$omp endcritical

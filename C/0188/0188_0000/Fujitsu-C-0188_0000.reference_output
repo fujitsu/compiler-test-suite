@@ -1,0 +1,3 @@
+----- omp_LOCK_001.c-- omp_test_nest_lock or omp_test_lock -----
+OK
+exit 0

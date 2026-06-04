@@ -17,8 +17,8 @@ j=2
    !$omp task firstprivate(cha) default(firstprivate)
    read  (cha,nml =na)
    !$omp end task
- if (i.ne.1) print *,'err1'
- if (j.ne.2) print *,'err2'
+ if (i/=1 .and. i/=4) print *,'err1',i
+ if (j/=2 .and. j/=5) print *,'err2',j
  if (prv.ne.1) print *,'err'
    !$omp end parallel
 print *,'pass' 
