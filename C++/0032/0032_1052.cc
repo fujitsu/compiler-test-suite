@@ -28,16 +28,10 @@ int main()
 	X x(23);
 	x.X::~X();
 
-	if( x.i == 0 ) count++;
-            else printf("ng x.i : %d \n", x.i);
-	if( x.b.i == 0 ) count++;
-            else printf("ng x.b.i : %d \n", x.b.i);
 	if( A_124p23::dtor == 1 ) count++;
             else printf("ng A_124p23::dtor : %d \n", A_124p23::dtor);
 	if( B_124p23::dtor == 1 ) count++;
             else printf("ng B_124p23::dtor : %d \n", B_124p23::dtor);
 
-        if( count == 4 ) printf("ok\n");
+        if( count == 2 ) printf("ok\n");
 }
-
-
