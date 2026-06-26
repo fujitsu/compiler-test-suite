@@ -1,3 +1,7 @@
+file(GLOB Source *.cc)
+if (NOT OpenMP_${LANG}_FOUND)
+  list(REMOVE_ITEM Source ${CMAKE_CURRENT_LIST_DIR}/0033_0106.cc)
+endif()
 llvm_singlesource_fujitsu(PREFIX "Fujitsu-C++-")
 set_property(SOURCE 0033_0061.cc APPEND PROPERTY COMPILE_OPTIONS "-fsigned-char")
 set_property(SOURCE 0033_0062.cc APPEND PROPERTY COMPILE_OPTIONS "-fsigned-char")

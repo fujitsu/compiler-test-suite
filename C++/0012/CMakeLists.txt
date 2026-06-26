@@ -1,1 +1,5 @@
+file(GLOB Source *.cc)
+if (NOT OpenMP_${LANG}_FOUND)
+  list(REMOVE_ITEM Source ${CMAKE_CURRENT_LIST_DIR}/0012_0000.cc)
+endif()
 llvm_singlesource_fujitsu(PREFIX "Fujitsu-C++-")
