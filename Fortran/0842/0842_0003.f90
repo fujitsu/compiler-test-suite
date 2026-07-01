@@ -1,4 +1,4 @@
- !$omp parallel do simd shared(j1) collapse(1)
+ !$omp parallel do simd collapse(1)
   do j1=1,10
    do j2=1,10
     do j3=1,10

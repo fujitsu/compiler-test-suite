@@ -1,4 +1,4 @@
-         !$omp parallel do default(none) collapse(3) private(i, j, j1, j2) 
+         !$omp parallel do default(none) collapse(3) private(j2)
          do i=1,1
            do j=1,1
            do j1=1,1
