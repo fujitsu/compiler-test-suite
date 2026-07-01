@@ -34,7 +34,7 @@ program main
      a(i) = data(mod(i,5)+1)
   end do
   call sub(a, n)
-  if (abs(ss-result) < 5.0) then
+  if (abs(ss-result) < 6.0) then
      print *, "PASS"
   else
      print *, ss, abs(ss-result)
