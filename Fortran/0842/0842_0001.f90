@@ -7,7 +7,7 @@ subroutine sub(a)
  b = b + a
  enddo
 !$omp endparallel
-!$omp  parallel do simd  shared(i)
+!$omp  parallel do simd
  do i=1,10
  b = b + a
  enddo
