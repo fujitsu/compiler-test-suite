@@ -22,7 +22,7 @@ if(.true. .neqv. r5) print*,"108"
 if(.true. .neqv. r6) print*,"109"
 
 
-if(.true. .neqv. r7) print*,"110"
+if(.false. .neqv. r7) print*,"110"
 
 
 
