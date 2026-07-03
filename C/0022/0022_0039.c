@@ -32,7 +32,8 @@ int main() {
 
   // -fno-fast-math: 5.214844
   // -ffast-math: 5.167969
-  if (5.167968 <= out && out <= 5.214844)
+  // LLVM-2221: 5.164061
+  if (5.164061 <= out && out <= 5.214844)
     printf("OK\n");
   else
     printf("NG\n%f\n", (float)out);
