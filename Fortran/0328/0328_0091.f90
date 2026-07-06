@@ -3,7 +3,7 @@ sequence
 integer :: a1,a2,a3
 end type
 
-type(a) :: b(3)
+type(a) :: b(4)
 call sub(b(1),b(2))
        print *,'pass'
 end
