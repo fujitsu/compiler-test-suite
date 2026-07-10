@@ -3,7 +3,10 @@
 
 static char corrval[30] = { "CORRECTVAL  :" } ,
 	 compval[30] = { "COMPUTEDVAL :" } ;
-typedef long    wchar_t;
+
+#if !defined(_WCHAR_T)
+  typedef long    wchar_t;
+#endif
 int main()
 {
   int    judge = 0 ;
