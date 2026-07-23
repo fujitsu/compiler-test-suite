@@ -11,7 +11,7 @@
       ia = it*2+1
 !$omp end parallel
       do i=0,thread-1
-          ib = iand( ib, i*2+1 )
+          ib = iand( ib, int(i*2+1, kind = 2) )
       enddo
       write(*,*) "----- test --"
       write(*,*) "      parallel reduction(iand:ia) ",
