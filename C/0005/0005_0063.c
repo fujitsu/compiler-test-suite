@@ -2,6 +2,7 @@
 #include <time.h>
 
 int main(void){
+#if defined(__GLIBC_PREREQ)
 #if __GLIBC_PREREQ(2, 17)
   struct timespec ts;
   timespec_get(&ts, TIME_UTC);
@@ -9,6 +10,7 @@ int main(void){
   char buff[1024];
   strftime(buff, sizeof(buff), "%D %T", gmtime(&ts.tv_sec));
   // printf("%s.%09ld [UTC]\n", buff, ts.tv_nsec);
+#endif
 #endif
 
   return 0;

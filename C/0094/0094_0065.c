@@ -5,7 +5,11 @@
 jmp_buf env;
 long int j=9;
 long int s=0;
+#if defined(__aarch64__) || defined(__x86_64)
+int sub(volatile long int *k);
+#else
 int sub(long int *k);
+#endif
 int main( ) {
 #if defined(__aarch64__) || defined(__x86_64)
 volatile long int k=1;
@@ -22,7 +26,11 @@ long int k=1;
   sub(&k);
   printf("ng\n");
 }
+#if defined(__aarch64__) || defined(__x86_64)
+int sub(volatile long int *k) {
+#else
 int sub(long int *k) {
+#endif
   for (;s<j; s++) {
     if (s==8) longjmp(env,1);
     else {

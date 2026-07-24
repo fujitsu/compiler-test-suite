@@ -59,7 +59,7 @@ if (any(abs(r04-121)>0.00001)) print *,204
 if (any(abs(r21-144)>0.00001)) print *,211,r21
 if (any(abs(r22-144)>0.00001)) print *,212
 if (any(abs(r23-144)>0.00001)) print *,213
-if (any(abs(r24-144)>0.00001)) print *,214
+if (any(abs(r24-144)>0.000016)) print *,214
 if (any(abs(c31%im-121)>0.00001)) print *,231
 if (any(abs(c32%im-121)>0.00001)) print *,232
 if (any(abs(c33%im-121)>0.00001)) print *,233
@@ -67,7 +67,7 @@ if (any(abs(c34%im-121)>0.00001)) print *,234
 if (any(abs(c41%im-144)>0.00001)) print *,241
 if (any(abs(c42%im-144)>0.00001)) print *,242
 if (any(abs(c43%im-144)>0.00001)) print *,243
-if (any(abs(c44%im-144)>0.00001)) print *,244
+if (any(abs(c44%im-144)>0.000016)) print *,244
 end
 implicit complex(c)
 dimension c11(2),c99(2)

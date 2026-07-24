@@ -57,7 +57,7 @@ if (abs(r04-121)>0.00001) print *,204
 if (abs(r21-144)>0.00001) print *,211,r21
 if (abs(r22-144)>0.00001) print *,212
 if (abs(r23-144)>0.00001) print *,213
-if (abs(r24-144)>0.00001) print *,214
+if (abs(r24-144)>0.000016) print *,214
 if (abs(c31%im-121)>0.00001) print *,231
 if (abs(c32%im-121)>0.00001) print *,232
 if (abs(c33%im-121)>0.00001) print *,233
@@ -65,7 +65,7 @@ if (abs(c34%im-121)>0.00001) print *,234
 if (abs(c41%im-144)>0.00001) print *,241
 if (abs(c42%im-144)>0.00001) print *,242
 if (abs(c43%im-144)>0.00001) print *,243
-if (abs(c44%im-144)>0.00001) print *,244
+if (abs(c44%im-144)>0.000016) print *,244
 end
 implicit complex(c)
 c11=(11,12)

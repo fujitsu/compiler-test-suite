@@ -93,7 +93,10 @@
          E     = A / B + EXP(1.0)
          IF ( .NOT. SW7 ) GO TO 5
     8 CONTINUE
-         WRITE(6,NAMEL)
-
+         !WRITE(6,NAMEL)
+         WRITE(6,'(8(A,E16.9,","),A,I5,",",2(A,E16.9,","),A,E16.9)') 
+     * 'A=',A,'B=',B,'C=',C,'D=',D,
+     * 'E=',E,'F=',F,'G=',G,'H=',H,
+     * 'I=',I,'W=',W,'X=',X,'Z=',Z
       RETURN
       END

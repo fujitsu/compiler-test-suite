@@ -14,12 +14,14 @@ void func3(void){
 }
 
 int main(void){
+#if defined(__GLIBC_PREREQ)
 #if __GLIBC_PREREQ(2, 17)
   at_quick_exit( func3 );
   at_quick_exit( func2 );
   at_quick_exit( func1 );
 
   printf("ok\n");
+#endif
 #endif
 
   return 0;

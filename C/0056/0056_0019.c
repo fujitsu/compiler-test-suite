@@ -16,7 +16,7 @@ int main()
   int i,j;
 
   thread = it = MAX_NUM_THREADS;
-  memset(sb,' ',10*10);
+  memset(sb,' ',sizeof(sb));
 #ifdef _OPENMP
   thread = omp_get_max_threads();
   if (thread > MAX_NUM_THREADS) {
@@ -107,7 +107,7 @@ int main()
   }else{
     printf( "NG!  PRIVATE clause is not active!\n");
     printf( "     sa=%s\n",sa);
-    printf( "     sb=%s\n",sb);
+    printf( "     sb=%s\n",sb[0]);
   }
   exit (0) ;
 }
