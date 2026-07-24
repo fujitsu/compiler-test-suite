@@ -3,7 +3,6 @@ set(cxx17_sources
   attr_namespace_enum.cpp
   attribute_namespace_using.cpp
   auto_non_type_template_param.cpp
-  # bool_increment_removed.cpp
   class_template_argument_deduction.cpp
   constexpr_if.cpp
   constexpr_lambda.cpp
@@ -27,7 +26,6 @@ set(cxx17_sources
   overaligned_allocation.cpp
   pack_expansion_using_declaration.cpp
   range_for_sentinel.cpp
-  # remove_register_storage_class.cpp
   removed_dynamic_exception_spec.cpp
   static_assert_no_message.cpp
   stricter_expression_evaluation_order.cpp
@@ -39,7 +37,9 @@ set(cxx17_sources
 
 foreach(src ${cxx17_sources})
   set_property(SOURCE ${src}
-               APPEND PROPERTY COMPILE_OPTIONS "-std=c++17")
+               APPEND PROPERTY COMPILE_OPTIONS "-std=c++17" "-Wall" "-Wextra")
 endforeach()
+
+set(Source ${cxx17_sources})
 
 llvm_singlesource_fujitsu(PREFIX "Fujitsu-C++-")

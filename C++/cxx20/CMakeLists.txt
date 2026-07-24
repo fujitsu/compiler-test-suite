@@ -48,7 +48,9 @@ set(cxx20_sources
 
 foreach(src ${cxx20_sources})
   set_property(SOURCE ${src}
-               APPEND PROPERTY COMPILE_OPTIONS "-std=c++20")
+               APPEND PROPERTY COMPILE_OPTIONS "-std=c++20" "-Wall" "-Wextra")
 endforeach()
+
+set(Source ${cxx20_sources})
 
 llvm_singlesource_fujitsu(PREFIX "Fujitsu-C++-")
