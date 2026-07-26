@@ -42,6 +42,7 @@ real(kind=8),dimension(1:n1) :: a
 real(kind=4) :: res
 res = 1._4
 !ocl nosimd
+!dir$ novector
 do i=1,n1
 a(i) = 2._8
 res = res * 2._4
