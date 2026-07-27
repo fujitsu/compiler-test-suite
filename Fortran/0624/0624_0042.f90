@@ -23,7 +23,7 @@ b2=b1
 v=x(a1*b1,a1/b1,a1**b1, a2*b2,a2/b2,a2**b2)
 if (v%w01/=v%w11)print *,101,v%w01,v%w11
 if (abs(v%w02-v%w12)>0.00001)print *,102,v%w02,v%w12
-if (v%w03/=v%w13)print *,103,v%w02,v%w13
+if (v%w03/=v%w13)print *,103,v%w03,v%w13
 end
 subroutine s2
 use m1
@@ -47,7 +47,7 @@ if (v%w01/=v%w11)print *,2101,v%w01,v%w11
 if ((abs(real(v%w02)-real(v%w12)) > 0.00001) .or. (abs(aimag(v%w02)-aimag(v%w12)) > 0.00001)) then
    print *,2102,v%w02,v%w12
 endif
-if (v%w03/=v%w13)print *,2103,v%w02,v%w13
+if (v%w03/=v%w13)print *,2103,v%w03,v%w13
 end
 subroutine s3
 use m1
@@ -69,7 +69,7 @@ b2=b1
 v=x(a1*b1,a1/b1,a1**b1, a2*b2,a2/b2,a2**b2)
 if (v%w01/=v%w11)print *,3101,v%w01,v%w11
 if (EQUAL_CHECK_WITH_MARGIN(v%w02,v%w12))print *,3102,v%w02,v%w12
-if (v%w03/=v%w13)print *,3103,v%w02,v%w13
+if (v%w03/=v%w13)print *,3103,v%w03,v%w13
 end
 call s1
 call s2
