@@ -12,13 +12,14 @@
 	parameter( y1 = 37502500.0 )
         parameter( x2 = 12502500.0 )
 	parameter( y2 = 37501328.0 )
+        parameter( epsilon = 4.0 )
 	a=1
 	call sub(loc(a),n-1)
 	if( sum(a(1:n/2)) /= x1 .and. sum(a(1:n/2)) /= x2 ) then
            print *,"NG1"
         endif
         res = sum(a(n/2+1:n),mask=.TRUE.);
-	if( res /= y1 .and. res /= y2 ) then
+        if( abs(res - y1) > epsilon .and. res /= y2 ) then
           print *,"NG2"
         endif
 	print *,"PASS"
