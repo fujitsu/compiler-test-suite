@@ -1,7 +1,7 @@
 
 #include <stdio.h>
 
-#define LOOP_CONST 64 
+#define LOOP_CONST 50
 #define TRUE_RES 1
 #define FALSE_RES 0
 #define IF_RES 1
