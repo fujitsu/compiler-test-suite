@@ -1,13 +1,3 @@
-
-!             CVCT6021            LEVEL=7        DATE=83.01.25
-!********************************************************************C
-!*  1. PROGRAM NAME   :  CVCT6021                                   *C
-!*  2. PURPOSE        :  VGEN FUNCTION TEST                         *C
-!*                       . TOTAL TEST (2)                           *C
-!*  3. RESULTS        :  ALL STATEMENTS WILL BE VECTORIZED          *C
-!*  4. ENVIRONMENT    :  VPLEVEL(2)                                 *C
-!*  5. HISTORY        :  1983.1.17                                  *C
-!********************************************************************C
 PROGRAM  CV6021
   DATA N5/5/,N8/8/,N10/10/
   !
@@ -105,7 +95,8 @@ PROGRAM  CV6021
   WRITE(6,*) 'str%C10 = ',str%C10
   WRITE(6,*) 'str%R10 = ',str%R10
   WRITE(6,*) 'str%Q10 = ',str%Q10
-  WRITE(6,*) 'str%CD10 = ',str%CD10
+  WRITE(6,'(A)') ' str%CD10 ='
+  WRITE(6,'((1X,5("(",G0,",",G0,")"1X)))') str%CD10
   WRITE(6,*) 'RD10V = ',RD10V
   WRITE(6,*) 'str%I11 = ',str%I11
   !
