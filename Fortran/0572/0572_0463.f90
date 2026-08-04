@@ -4,8 +4,9 @@ call sub(d)
 contains
 subroutine sub(c)
 complex ::c(..),c2=0
+complex ::x
 real :: sfun1,x1    
-sfun1(c) = range(c)
+sfun1(x) = range(x)
 x1=sfun1(c2)
 if(x1 /= 37.0000)print*,101
 print*,"pass"
