@@ -3,6 +3,7 @@ subroutine sub1()
   integer,save::ta1,ta2
   real(8)::b(10)
   real(8),save::tb1(10),tb2(10)
+  integer(8), save :: pa,pb
   pointer(pa, a)
   pointer(pb, b)
   ta1=1
