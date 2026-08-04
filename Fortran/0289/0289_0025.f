@@ -42,7 +42,7 @@
       data   (a(i),i=1,10)/1*9.,2*9.,3*9.,4*9./
       data   (b(i),i=1,10)/4*9.,3*9.,2*9.,1*9./
       logical lscmp
-      lscmp(a,b)=a.ne.b .or. a.ne.0. .or. b.ne.0.
+      lscmp(x,y)=x.ne.y .or. x.ne.0. .or. y.ne.0.
       do 10 i=1,10
        call sub1(a,b,i)
    10  continue
