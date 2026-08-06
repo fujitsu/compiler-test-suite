@@ -81,7 +81,7 @@ void test_ex2()
 	printf("\t After test_ex2 int_var=%d\n", 2);
 }
 
-#if defined(__aarch64__)
+#if defined(__aarch64__) && defined(__clang__)
 __attribute((const)) void test_ex3()
 {
 	int_var = 1;
