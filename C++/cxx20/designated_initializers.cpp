@@ -23,11 +23,9 @@ struct Outer {
 };
 
 struct preinit {
-    char *strings = "abc";
+    const char *strings = "abc";
     int pre1 = 100;
-    short int no_init1;
     long int pre2 = 345L;
-    int no_init2;
     long long pre3 = 678LL;
 };
 
@@ -36,12 +34,12 @@ int main()
     Outer o = {
         .id = 42,
         .enabled = true,
+        .ratio = 0.0,
         .values = { 1, 2, 3 },
         .inner = {
-            .y = 3.5,
-            .x = 7
+            .x = 7,
+            .y = 3.5
         }
-        // ratio is intentionally omitted
     };
 
     preinit p = {
