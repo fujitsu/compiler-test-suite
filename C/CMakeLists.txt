@@ -1,3 +1,4 @@
+set(llvm_test_lang C)
 link_libraries(m)
 add_subdirectory(0000)
 add_subdirectory(0001)
