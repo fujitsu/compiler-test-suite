@@ -9,4 +9,7 @@ endforeach()
 
 set(Source ${cxx23_sources})
 
+# Do not look for reference output files.
+set(NO_REFERENCE_OUTPUT 1)
+
 llvm_singlesource_fujitsu(PREFIX "Fujitsu-C++-")
