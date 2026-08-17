@@ -128,7 +128,7 @@ void sub15( int a, ...)
   va_list ap;
 
   va_start( ap , a );
-  va_arg( ap , enum E1 );
+  va_arg( ap , int );
 }
 
 void sub16( int a, ...)
