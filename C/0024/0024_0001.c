@@ -22,7 +22,7 @@ short int sum1(short int num, ...){
 
   va_start(argptr, num);
   for( ; num > 0; num--){
-    ans += va_arg(argptr,signed short int);
+    ans += va_arg(argptr,int);
   }
 
   va_end(argptr);
@@ -35,7 +35,7 @@ short int sum2(short int num, ...){
 
   va_start(argptr, num);
   for( ; num > 0; num--){
-    ans += (int)va_arg(argptr,float);
+    ans += (int)va_arg(argptr,double);
   }
 
   va_end(argptr);

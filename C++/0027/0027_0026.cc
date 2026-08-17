@@ -20,23 +20,23 @@ template <class T> T loop_fusion_for_va(T *p, int n, ...) {
 }
 
 int main() {
-  char ca[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-  short sa[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+  int ca[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+  int sa[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
   int ia[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
   long long lla[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-  unsigned char uca[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-  unsigned short usa[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+  unsigned int uca[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+  unsigned int usa[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
   unsigned ua[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
   unsigned long long ulla[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
   int res = 0;
-  res = (int)loop_fusion_for_va(ca, (char)10, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
-  res += (int)loop_fusion_for_va(sa, (short)10, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
+  res = (int)loop_fusion_for_va(ca, (int)10, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
+  res += (int)loop_fusion_for_va(sa, (int)10, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
   res += (int)loop_fusion_for_va(ia, (int)10, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
   res += (int)loop_fusion_for_va(lla, (long long)10, 1LL, 1LL, 1LL, 1LL, 1LL,
                                  1LL, 1LL, 1LL, 1LL, 1LL);
-  res += (int)loop_fusion_for_va(uca, (unsigned char)10, 1, 1, 1, 1, 1, 1, 1, 1,
+  res += (int)loop_fusion_for_va(uca, (unsigned int)10, 1, 1, 1, 1, 1, 1, 1, 1,
                                  1, 1);
-  res += (int)loop_fusion_for_va(usa, (unsigned short)10, 1, 1, 1, 1, 1, 1, 1,
+  res += (int)loop_fusion_for_va(usa, (unsigned int)10, 1, 1, 1, 1, 1, 1, 1,
                                  1, 1, 1);
   res += (int)loop_fusion_for_va(ua, (unsigned int)10, 1U, 1U, 1U, 1U, 1U, 1U,
                                  1U, 1U, 1U, 1U);

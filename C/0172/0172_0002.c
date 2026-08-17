@@ -34,7 +34,7 @@ void foo4(int i, ...)
 {
   va_list ap;
   va_start(ap,i);
-  if(((float)va_arg(ap, short))==2.0 )
+  if(((float)va_arg(ap, int))==2.0 )
     puts("ok");
   else
     puts("ng");
@@ -44,7 +44,7 @@ void foo5(int i, ...)
 {
   va_list ap;
   va_start(ap,i);
-  if(((double)va_arg(ap, short))==2.0 )
+  if(((double)va_arg(ap, int))==2.0 )
     puts("ok");
   else
     puts("ng");
@@ -54,7 +54,7 @@ void foo6(int i, ...)
 {
   va_list ap;
   va_start(ap,i);
-  if(((long double)va_arg(ap, short))==2.0 )
+  if(((long double)va_arg(ap, int))==2.0 )
     puts("ok");
   else
     puts("ng");
@@ -64,7 +64,7 @@ void foo7(int i, ...)
 {
   va_list ap;
   va_start(ap,i);
-  if(((long double)va_arg(ap, char))==2.0 )
+  if(((long double)va_arg(ap, int))==2.0 )
     puts("ok");
   else
     puts("ng");
