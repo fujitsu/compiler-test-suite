@@ -11,7 +11,8 @@ int main()
 	}
 	for(i=9;i>1;--i)
 	{
-		printf("a[%d] = %d \n",i,a[--i]);
+                int idx = --i;
+                printf("a[%d] = %d \n",idx, a[idx]);
 	}
 	exit (0);
 }
