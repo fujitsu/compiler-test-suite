@@ -26,5 +26,7 @@ set_property(SOURCE 0113_0079.c APPEND PROPERTY COMPILE_OPTIONS "-ffast-math;-fn
 set_property(TARGET Fujitsu-C-0113_0079 APPEND PROPERTY LINK_OPTIONS "-ffast-math")
 set_property(SOURCE 0113_0080.c APPEND PROPERTY COMPILE_OPTIONS "-ffast-math;-fno-inline-functions")
 set_property(TARGET Fujitsu-C-0113_0080 APPEND PROPERTY LINK_OPTIONS "-ffast-math")
+set_property(SOURCE 0113_0098.c APPEND PROPERTY COMPILE_OPTIONS "-fno-strict-aliasing")
+set_property(SOURCE 0113_0107.c APPEND PROPERTY COMPILE_OPTIONS "-fno-strict-aliasing")
 set_property(SOURCE 0113_0109.c APPEND PROPERTY COMPILE_OPTIONS "-fsigned-char")
 set_property(SOURCE 0113_0116.c APPEND PROPERTY COMPILE_OPTIONS "-fno-inline-functions")
