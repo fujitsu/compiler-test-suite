@@ -10,7 +10,7 @@ typedef struct s1{
 		double	a;
 		short	b;
 		}c;
-	char	d[5];
+	char	d[6];
 	struct	s2{
 		union u2{
 			float	a;
@@ -21,7 +21,7 @@ typedef struct s1{
 					short	a;
 					long	b;
 					}b;
-				char c[10];
+				char c[11];
 				}c;
 			}a;
 		short b;
