@@ -1,3 +1,5 @@
 llvm_singlesource_compile_only_directory(PREFIX "Fujitsu-Fortran-")
 llvm_set_own_fortran_module_directory()
-set_property(SOURCE 1014_0015.f APPEND PROPERTY COMPILE_OPTIONS "-ffixed-line-length=255")
+if(TEST_SUITE_FUJITSU_ENABLE_${llvm_test_lang}_NON_OPENMP)
+  set_property(SOURCE 1014_0015.f APPEND PROPERTY COMPILE_OPTIONS "-ffixed-line-length=255")
+endif()

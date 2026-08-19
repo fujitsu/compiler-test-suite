@@ -1,3 +1,5 @@
 llvm_singlesource_fujitsu(PREFIX "Fujitsu-C++-")
-set_property(SOURCE 0033_0061.cc APPEND PROPERTY COMPILE_OPTIONS "-fsigned-char")
-set_property(SOURCE 0033_0062.cc APPEND PROPERTY COMPILE_OPTIONS "-fsigned-char")
+if(TEST_SUITE_FUJITSU_ENABLE_${llvm_test_lang}_NON_OPENMP)
+  set_property(SOURCE 0033_0061.cc APPEND PROPERTY COMPILE_OPTIONS "-fsigned-char")
+  set_property(SOURCE 0033_0062.cc APPEND PROPERTY COMPILE_OPTIONS "-fsigned-char")
+endif()
