@@ -22,7 +22,7 @@ const test_t difference = 1e-6;
 const test_t START_DATA =  0.1;
 const test_t END_DATA   =  1000000;
 
-#if __STDC_VERSION__ == 199901L
+#if __STDC_VERSION__ >= 199901L
 test_t (*x)(test_t) = logf;
 #else
 

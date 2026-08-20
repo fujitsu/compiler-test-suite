@@ -25,7 +25,7 @@ const test_t END_DATA   =  1000000;
 #if defined(__SUNPRO_C)
 #include <sunmath.h>
 test_t (*x)(test_t) = cbrtf;
-#elif __STDC_VERSION__ == 199901L
+#elif __STDC_VERSION__ >= 199901L
 test_t (*x)(test_t) = cbrtf;
 #else
 
