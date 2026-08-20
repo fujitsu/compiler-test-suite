@@ -22,7 +22,7 @@ const test_t difference = 1e-6;
 const test_t START_DATA = -88;
 const test_t END_DATA   =  88;
 
-#if __STDC_VERSION__ == 199901L
+#if __STDC_VERSION__ >= 199901L
 test_t (*x)(test_t) = expf;
 #else
 
