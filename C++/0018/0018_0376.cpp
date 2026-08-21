@@ -8,6 +8,6 @@
 int main()
 {
     typedef std::geometric_distribution<> D;
-    D d(3);
-    assert(d.p() == 3);
+    D d(0.3);
+    assert(d.p() == 0.3);
 }

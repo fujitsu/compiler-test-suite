@@ -9,7 +9,7 @@ int main()
 
     {
         typedef std::bernoulli_distribution D;
-        D d(2);
-        assert(d.p() == 2);
+        D d(0.75);
+        assert(d.p() == 0.75);
     }
 }

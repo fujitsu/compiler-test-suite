@@ -8,15 +8,15 @@ int main()
 {
     {
         typedef std::binomial_distribution<> D;
-        D d(3, 2); 
+        D d(3, 0.5);
         assert(d.t() == 3);
-        assert(d.p() == 2);
+        assert(d.p() == 0.5);
     }
 	
 	{
         typedef std::binomial_distribution<> D;
-        D d(-1, 0.75); 
-        assert(d.t() == -1);
+        D d(1, 0.75);
+        assert(d.t() == 1);
         assert(d.p() == 0.75);
     }
 }
