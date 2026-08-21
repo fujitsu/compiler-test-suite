@@ -1,10 +1,9 @@
+set(openmp_tests
+  0486_0036
+  0486_0077
+  0486_0195
+)
 file(COPY lit.local.cfg DESTINATION "${CMAKE_CURRENT_BINARY_DIR}")
 llvm_singlesource_compile_only_file(0486_0078.f08 PREFIX "Fujitsu-Fortran-")
 llvm_singlesource_fujitsu(PREFIX "Fujitsu-Fortran-")
 llvm_set_own_fortran_module_directory()
-set_property(SOURCE 0486_0036.f08 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-0486_0036 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
-set_property(SOURCE 0486_0077.f08 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-0486_0077 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
-set_property(SOURCE 0486_0195.f08 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-0486_0195 APPEND PROPERTY LINK_OPTIONS "-fopenmp")

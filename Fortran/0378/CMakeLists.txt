@@ -1,11 +1,11 @@
+set(openmp_tests
+  0378_0005
+  0378_0006
+  0378_0008
+  0378_0009
+)
 llvm_singlesource_fujitsu(PREFIX "Fujitsu-Fortran-")
 llvm_set_own_fortran_module_directory()
-set_property(SOURCE 0378_0005.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-0378_0005 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
-set_property(SOURCE 0378_0006.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-0378_0006 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
-set_property(SOURCE 0378_0008.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-0378_0008 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
-set_property(SOURCE 0378_0009.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-0378_0009 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
-set_property(SOURCE 0378_0026.F APPEND PROPERTY COMPILE_OPTIONS "-ffixed-line-length=255;-ffixed-line-length=255")
+if(TEST_SUITE_FUJITSU_ENABLE_${llvm_test_lang}_NON_OPENMP)
+  set_property(SOURCE 0378_0026.F APPEND PROPERTY COMPILE_OPTIONS "-ffixed-line-length=255;-ffixed-line-length=255")
+endif()
