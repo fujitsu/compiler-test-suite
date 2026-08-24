@@ -1,6 +1,7 @@
 set(cxx23_sources
     size_t_literal_suffix.cpp
     lambda_optional_parens.cpp
+    simpler_implicit_move.cpp
 )
 
 foreach(src ${cxx23_sources})
