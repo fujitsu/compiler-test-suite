@@ -3,6 +3,7 @@ set(cxx23_sources
     lambda_optional_parens.cpp
     simpler_implicit_move.cpp
     if_consteval.cpp
+    duplicate_attributes.cpp
 )
 
 foreach(src ${cxx23_sources})
