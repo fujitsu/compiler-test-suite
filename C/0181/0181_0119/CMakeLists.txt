@@ -1,3 +1,6 @@
+if(NOT TEST_SUITE_FUJITSU_ENABLE_${llvm_test_lang}_NON_OPENMP)
+  return()
+endif()
 llvm_multisource(Fujitsu-C-0181_0119)
 set_property(TARGET Fujitsu-C-0181_0119 APPEND PROPERTY COMPILE_OPTIONS "-O1;-ffast-math;-flto")
 set_property(TARGET Fujitsu-C-0181_0119 APPEND PROPERTY LINK_OPTIONS "-O1;-ffast-math;-flto;-fuse-ld=lld")

@@ -1,3 +1,7 @@
+set(openmp_tests
+  0370_0269
+  0370_0270
+)
 llvm_singlesource_compile_only_file(0370_0021.f90 PREFIX "Fujitsu-Fortran-")
 llvm_singlesource_compile_only_file(0370_0022.f90 PREFIX "Fujitsu-Fortran-")
 llvm_singlesource_compile_only_file(0370_0023.f90 PREFIX "Fujitsu-Fortran-")
@@ -11,9 +15,7 @@ llvm_singlesource_compile_only_file(0370_0055.f90 PREFIX "Fujitsu-Fortran-")
 llvm_singlesource_compile_only_file(0370_0056.f90 PREFIX "Fujitsu-Fortran-")
 llvm_singlesource_fujitsu(PREFIX "Fujitsu-Fortran-")
 llvm_set_own_fortran_module_directory()
-set_property(SOURCE 0370_0097.f90 APPEND PROPERTY COMPILE_OPTIONS "-fsave-main-program")
-set_property(SOURCE 0370_0115.f90 APPEND PROPERTY COMPILE_OPTIONS "-fsave-main-program")
-set_property(SOURCE 0370_0269.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-0370_0269 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
-set_property(SOURCE 0370_0270.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-0370_0270 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
+if(TEST_SUITE_FUJITSU_ENABLE_${llvm_test_lang}_NON_OPENMP)
+  set_property(SOURCE 0370_0097.f90 APPEND PROPERTY COMPILE_OPTIONS "-fsave-main-program")
+  set_property(SOURCE 0370_0115.f90 APPEND PROPERTY COMPILE_OPTIONS "-fsave-main-program")
+endif()

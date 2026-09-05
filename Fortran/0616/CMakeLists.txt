@@ -1,33 +1,20 @@
+set(openmp_tests
+  0616_0000
+  0616_0001
+  0616_0002
+  0616_0008
+  0616_0009
+  0616_0010
+  0616_0011
+  0616_0016
+  0616_0017
+  0616_0018
+  0616_0019
+  0616_0061
+  0616_0062
+  0616_0063
+  0616_0064
+)
 llvm_singlesource_compile_only_file(0616_0016.f90 PREFIX "Fujitsu-Fortran-")
 llvm_singlesource_fujitsu(PREFIX "Fujitsu-Fortran-")
 llvm_set_own_fortran_module_directory()
-set_property(SOURCE 0616_0000.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-0616_0000 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
-set_property(SOURCE 0616_0001.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-0616_0001 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
-set_property(SOURCE 0616_0002.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-0616_0002 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
-set_property(SOURCE 0616_0008.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-0616_0008 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
-set_property(SOURCE 0616_0009.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-0616_0009 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
-set_property(SOURCE 0616_0010.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-0616_0010 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
-set_property(SOURCE 0616_0011.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-0616_0011 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
-set_property(SOURCE 0616_0016.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-0616_0016 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
-set_property(SOURCE 0616_0017.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-0616_0017 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
-set_property(SOURCE 0616_0018.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-0616_0018 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
-set_property(SOURCE 0616_0019.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-0616_0019 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
-set_property(SOURCE 0616_0061.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-0616_0061 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
-set_property(SOURCE 0616_0062.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-0616_0062 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
-set_property(SOURCE 0616_0063.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-0616_0063 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
-set_property(SOURCE 0616_0064.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-0616_0064 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
