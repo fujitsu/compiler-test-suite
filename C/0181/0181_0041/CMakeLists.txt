@@ -1,3 +1,6 @@
+if(NOT TEST_SUITE_FUJITSU_ENABLE_${llvm_test_lang}_NON_OPENMP)
+  return()
+endif()
 llvm_multisource(Fujitsu-C-0181_0041)
 set_property(TARGET Fujitsu-C-0181_0041 APPEND PROPERTY COMPILE_DEFINITIONS "MULTI_SEC;ARG_S2")
 set_property(TARGET Fujitsu-C-0181_0041 APPEND PROPERTY COMPILE_OPTIONS "-O;-flto")

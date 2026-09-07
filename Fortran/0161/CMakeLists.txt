@@ -1,3 +1,5 @@
 llvm_singlesource_fujitsu(PREFIX "Fujitsu-Fortran-")
 llvm_set_own_fortran_module_directory()
-set_property(SOURCE 0161_0003.f90 APPEND PROPERTY COMPILE_OPTIONS "-ffixed-form")
+if(TEST_SUITE_FUJITSU_ENABLE_${llvm_test_lang}_NON_OPENMP)
+  set_property(SOURCE 0161_0003.f90 APPEND PROPERTY COMPILE_OPTIONS "-ffixed-form")
+endif()

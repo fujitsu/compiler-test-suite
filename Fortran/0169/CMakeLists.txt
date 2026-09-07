@@ -1,6 +1,6 @@
+set(openmp_tests
+  0169_0189
+  0169_0192
+)
 llvm_singlesource_fujitsu(PREFIX "Fujitsu-Fortran-")
 llvm_set_own_fortran_module_directory()
-set_property(SOURCE 0169_0189.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-0169_0189 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
-set_property(SOURCE 0169_0192.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-0169_0192 APPEND PROPERTY LINK_OPTIONS "-fopenmp")

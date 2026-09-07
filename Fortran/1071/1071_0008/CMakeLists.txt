@@ -1,3 +1,5 @@
+if(NOT TEST_SUITE_FUJITSU_ENABLE_${llvm_test_lang}_OPENMP)
+  return()
+endif()
 llvm_multisource(Fujitsu-Fortran-1071_0008)
-set_property(TARGET Fujitsu-Fortran-1071_0008 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-1071_0008 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
+llvm_set_openmp_targets(Fujitsu-Fortran-1071_0008)

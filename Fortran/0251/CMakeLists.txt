@@ -1,3 +1,6 @@
+set(openmp_tests
+  0251_0174
+)
 llvm_singlesource_compile_only_file(0251_0167.f90 PREFIX "Fujitsu-Fortran-")
 llvm_singlesource_compile_only_file(0251_0168.f90 PREFIX "Fujitsu-Fortran-")
 llvm_singlesource_compile_only_file(0251_0181.f90 PREFIX "Fujitsu-Fortran-")
@@ -5,5 +8,3 @@ llvm_singlesource_compile_only_file(0251_0182.f90 PREFIX "Fujitsu-Fortran-")
 llvm_singlesource_compile_only_file(0251_0183.f90 PREFIX "Fujitsu-Fortran-")
 llvm_singlesource_fujitsu(PREFIX "Fujitsu-Fortran-")
 llvm_set_own_fortran_module_directory()
-set_property(SOURCE 0251_0174.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-0251_0174 APPEND PROPERTY LINK_OPTIONS "-fopenmp")

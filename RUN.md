@@ -50,7 +50,7 @@ There are two important options for the Fujitsu Compiler Test Suite.
 - **`-DTEST_SUITE_FORTRAN=ON`**  
   This option activates Fortran tests. If not specified, only C/C++ tests are run.
 
-There are three options specific to the Fujitsu Compiler Test Suite.
+There are four options specific to the Fujitsu Compiler Test Suite.
 
 - **`-DTEST_SUITE_FUJITSU_WITH_FAST_MATH=ON`**  
   If you compile tests with the `-ffast-math` option, specify this option.  
@@ -59,6 +59,11 @@ There are three options specific to the Fujitsu Compiler Test Suite.
 - **`-DTEST_SUITE_FUJITSU_TEST_LANG=...`**  
   The Fujitsu Compiler Test Suite consists of test programs written in C, C++, and Fortran. By default, if `TEST_SUITE_FORTRAN` (see above) is `OFF`, C/C++ tests are run. If `TEST_SUITE_FORTRAN` is `ON`, C/C++/Fortran tests are run.  
   By setting this option, you can select the language to run. The value is a semicolon-separated list of `C`, `C++`, and `Fortran`. For example, if `-DTEST_SUITE_FUJITSU_TEST_LANG=C++;Fortran` is specified, only C++/Fortran tests are run. In this case, setting `TEST_SUITE_FORTRAN` is still needed.
+- **`-DTEST_SUITE_FUJITSU_TEST_OPENMP={ON|OFF|ONLY}`**  
+  The Fujitsu Compiler Test Suite includes OpenMP tests. This option controls enabling/disabling OpenMP tests.
+  * `ON` (default): If the compiler supports OpenMP, enable OpenMP tests. If not, disable OpenMP tests.
+  * `OFF`: Disable OpenMP tests.
+  * `ONLY`: Enable only OpenMP tests. Disable non-OpenMP tests.
 - **`-DTEST_SUITE_FUJITSU_FORCE_UNSUPPORTED_PLATFORM=ON`**  
   The Fujitsu Compiler Test Suite itself is tested only on Linux/AArch64 and is only activated on that platform by default. If you want to try it on another platform, specify this option.
 

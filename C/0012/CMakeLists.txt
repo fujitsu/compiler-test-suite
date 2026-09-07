@@ -1,2 +1,4 @@
 llvm_singlesource_fujitsu(PREFIX "Fujitsu-C-")
-set_property(SOURCE 0012_0007.c APPEND PROPERTY COMPILE_OPTIONS "-fsigned-char")
+if(TEST_SUITE_FUJITSU_ENABLE_${llvm_test_lang}_NON_OPENMP)
+  set_property(SOURCE 0012_0007.c APPEND PROPERTY COMPILE_OPTIONS "-fsigned-char")
+endif()

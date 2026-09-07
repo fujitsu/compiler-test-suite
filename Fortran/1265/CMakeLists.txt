@@ -1,20 +1,13 @@
+set(openmp_tests
+  1265_0089
+  1265_0091
+  1265_0094
+  1265_0096
+  1265_0098
+  1265_0100
+  1265_0104
+  1265_0105
+  1265_0108
+)
 llvm_singlesource_fujitsu(PREFIX "Fujitsu-Fortran-")
 llvm_set_own_fortran_module_directory()
-set_property(SOURCE 1265_0089.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-1265_0089 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
-set_property(SOURCE 1265_0091.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-1265_0091 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
-set_property(SOURCE 1265_0094.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-1265_0094 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
-set_property(SOURCE 1265_0096.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-1265_0096 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
-set_property(SOURCE 1265_0098.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-1265_0098 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
-set_property(SOURCE 1265_0100.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-1265_0100 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
-set_property(SOURCE 1265_0104.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-1265_0104 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
-set_property(SOURCE 1265_0105.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-1265_0105 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
-set_property(SOURCE 1265_0108.f90 APPEND PROPERTY COMPILE_OPTIONS "-fopenmp")
-set_property(TARGET Fujitsu-Fortran-1265_0108 APPEND PROPERTY LINK_OPTIONS "-fopenmp")
