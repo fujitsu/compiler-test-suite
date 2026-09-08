@@ -4,6 +4,7 @@ set(cxx23_sources
     simpler_implicit_move.cpp
     if_consteval.cpp
     duplicate_attributes.cpp
+    contextual_bool_conversion.cpp
 )
 
 foreach(src ${cxx23_sources})
