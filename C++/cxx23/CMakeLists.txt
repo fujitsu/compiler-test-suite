@@ -5,6 +5,7 @@ set(cxx23_sources
     if_consteval.cpp
     duplicate_attributes.cpp
     contextual_bool_conversion.cpp
+    trimming_whitespaces_before_line_splicing.cpp
 )
 
 foreach(src ${cxx23_sources})
