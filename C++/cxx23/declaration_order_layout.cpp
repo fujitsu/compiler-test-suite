@@ -1,59 +1,90 @@
 /*
- * FEATURE: C++23 Make declaration order layout mandated
- * SPEC: P1847R4 Make declaration order layout mandated
- * PURPOSE: Verify that non-static data members are laid out in declaration order
- *          even when separated by different access-specifiers.
- * RUN: clang++ -std=c++23 -Wall -Wextra -Werror declaration_order_layout.cpp
+ - FEATURE: C++23 Make declaration order layout mandated
+ - SPEC: P1847R4 Make declaration order layout mandated
+ - PURPOSE: Verify that non-static data members are laid out in declaration
+            order across access control boundaries, including cases where
+            padding may be introduced by alignment requirements
+ - RUN: clang++ -std=c++23 -Wall -Wextra -Werror declaration_order_layout.cpp
  */
 
-#include <cstddef>
 #include <cstdlib>
+#include <cstdint>
 
-class Test {
+// Verify declaration order across public/private/public boundaries
+// using member types that may introduce padding.
+class AccessBoundaryTest {
 public:
-    int first;
+    char first;
 
 private:
-    int second;
+    double second;
 
 public:
     int third;
 
-    // Return offset of first member
-    std::size_t first_offset() const {
-        return reinterpret_cast<const char*>(&first)
-             - reinterpret_cast<const char*>(this);
-    }
+public:
+    static bool verify()
+    {
+        AccessBoundaryTest obj;
 
-    // Return offset of second member
-    std::size_t second_offset() const {
-        return reinterpret_cast<const char*>(&second)
-             - reinterpret_cast<const char*>(this);
-    }
+        const auto p1 =
+            reinterpret_cast<std::uintptr_t>(&obj.first);
+        const auto p2 =
+            reinterpret_cast<std::uintptr_t>(&obj.second);
+        const auto p3 =
+            reinterpret_cast<std::uintptr_t>(&obj.third);
 
-    // Return offset of third member
-    std::size_t third_offset() const {
-        return reinterpret_cast<const char*>(&third)
-             - reinterpret_cast<const char*>(this);
+        return (p1 < p2) &&
+               (p2 < p3);
     }
 };
 
-int main() {
-    // Create test object
-    Test obj{};
+// Verify declaration order across public/protected/private/public
+// boundaries using a different type sequence and alignment profile.
+class MixedAccessTest {
+public:
+    char first;
 
-    // Verify declaration order is preserved
-    if (!(obj.first_offset() < obj.second_offset())) {
+protected:
+    long long second;
+
+private:
+    double third;
+
+public:
+    int fourth;
+
+public:
+    static bool verify()
+    {
+        MixedAccessTest obj;
+
+        const auto p1 =
+            reinterpret_cast<std::uintptr_t>(&obj.first);
+        const auto p2 =
+            reinterpret_cast<std::uintptr_t>(&obj.second);
+        const auto p3 =
+            reinterpret_cast<std::uintptr_t>(&obj.third);
+        const auto p4 =
+            reinterpret_cast<std::uintptr_t>(&obj.fourth);
+
+        return (p1 < p2) &&
+               (p2 < p3) &&
+               (p3 < p4);
+    }
+};
+
+int main()
+{
+    // Verify declaration order across public/private/public boundaries.
+    if (!AccessBoundaryTest::verify()) {
         return EXIT_FAILURE;
     }
 
-    // Verify declaration order is preserved
-    if (!(obj.second_offset() < obj.third_offset())) {
+    // Verify declaration order across all access control levels.
+    if (!MixedAccessTest::verify()) {
         return EXIT_FAILURE;
     }
 
-    // Test passed
     return EXIT_SUCCESS;
 }
-
-
