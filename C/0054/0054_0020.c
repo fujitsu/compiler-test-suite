@@ -192,7 +192,7 @@ int main()
 
  size = sizeof(st3) ;
 
-#if __clang__ || __gcc__
+#if __clang__ || __GNUC__
    if( size == 8 )
 #else
    if( size == 4 )
@@ -223,7 +223,7 @@ int main()
 
 #if INT64
    if( size == 8 )
-#elif __clang__ || __gcc__
+#elif __clang__ || __GNUC__
    if( size == 4 )
 #else
    if( size == 1 )
@@ -236,7 +236,7 @@ int main()
 
 #if INT64
    if( size == 8 )
-#elif __clang__ || __gcc__
+#elif __clang__ || __GNUC__
    if( size == 4 )
 #else
    if( size == 1 )
