@@ -1,18 +1,25 @@
 /*
 FEATURE: Trimming whitespaces before line splicing
 SPEC: P2223R2
-PURPOSE: Verify that whitespace characters before a backslash-newline sequence are ignored during line splicing.
+PURPOSE: Verify that whitespace characters between a backslash and the following newline are ignored during line splicing.
+    NOTE:
+    This test is not currently enabled in CMakeLists.txt because
+    GCC and Clang emit warnings for backslash and newline
+    separated by space under -Wall/-Wextra, causing failures
+    when warnings are treated as errors.
 RUN: clang++ -std=c++23 -Wall -Wextra -Werror trimming_whitespaces_before_line_splicing.cpp
 */
 
 #include <cstdlib>
 
-// Define a macro using line splicing with whitespace before the backslash.
-#define ADD_VALUES(a, b) ((a) + (b))     \
+// Define a macro using line splicing with whitespace before
+// the backslash and between the backslash and newline.
+#define ADD_VALUES(a, b) ((a) + (b))     \    
                           + 1
 
-// Define a string literal using line splicing with whitespace before the backslash.
-#define MESSAGE "Hello"      \
+// Define a string literal using line splicing with whitespace before
+// the backslash and between the backslash and newline.
+#define MESSAGE "Hello"      \    
                 "World"
 
 int main() {
