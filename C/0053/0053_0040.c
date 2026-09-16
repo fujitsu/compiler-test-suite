@@ -43,9 +43,9 @@ int main()
     printf("TEST02 --> NG \n");
 
 #if INT64 || LONG64  || __x86_64__ || __aarch64__
-  ( int )c == 18446744073709551601 ? (a=1) : (a=0);
+  ( int )c == 18446744073709551601U ? (a=1) : (a=0);
 #else
-  ( int )c == 4294967281 ? (a=1) : (a=0);
+  ( int )c == 4294967281U ? (a=1) : (a=0);
 #endif
   if ( a==1 )
     printf("TEST03 --> OK \n");
