@@ -5,6 +5,7 @@ set(cxx23_sources
     if_consteval.cpp
     duplicate_attributes.cpp
     contextual_bool_conversion.cpp
+    uax31_identifier.cpp
 )
 
 foreach(src ${cxx23_sources})
