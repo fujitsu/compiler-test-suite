@@ -5,10 +5,11 @@ set(cxx23_sources
     if_consteval.cpp
     duplicate_attributes.cpp
     contextual_bool_conversion.cpp
-  # P2223R2
-  # GCC/Clang emit warnings for backslash-newline separated by space.
-  # Test source is retained for future evaluation.
-  # trimming_whitespaces_before_line_splicing.cpp
+    declaration_order_layout.cpp
+    # P2223R2
+    # GCC/Clang emit warnings for backslash-newline separated by space.
+    # Test source is retained for future evaluation.
+    # trimming_whitespaces_before_line_splicing.cpp
 )
 
 foreach(src ${cxx23_sources})
