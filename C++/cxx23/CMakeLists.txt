@@ -7,10 +7,16 @@ set(cxx23_sources
     contextual_bool_conversion.cpp
     declaration_order_layout.cpp
     uax31_identifier.cpp
+
     # P2223R2
     # GCC/Clang emit warnings for backslash-newline separated by space.
     # Test source is retained for future evaluation.
     # trimming_whitespaces_before_line_splicing.cpp
+
+    # P2201R1
+    # The proposal makes mixed-encoding string literal concatenation ill-formed.
+    # Test source is retained for future evaluation.
+    # mixed_string_literal_concat.cpp
 )
 
 foreach(src ${cxx23_sources})
