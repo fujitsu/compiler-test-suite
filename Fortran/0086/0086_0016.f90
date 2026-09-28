@@ -1,6 +1,6 @@
 real(8)::aaa(2)
 real(8)::bbb(2,3)
-integer::ccc(3)
+integer::ccc(2)
 integer::ddd
 bbb=3
 ccc=4
