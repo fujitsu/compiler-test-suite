@@ -7,6 +7,7 @@ set(cxx23_sources
     contextual_bool_conversion.cpp
     declaration_order_layout.cpp
     uax31_identifier.cpp
+    deducing_this.cpp
 
     # P2223R2
     # GCC/Clang emit warnings for backslash-newline separated by space.
