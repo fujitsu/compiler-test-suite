@@ -17,18 +17,19 @@ else if (mm==2) then
 k2s=loc(k)
 n2s=loc(n)
 m2s=loc(m)
+#ifndef __GFORTRAN__
 if (k1s==k2s) print *,1001
 if (n1s==n2s) print *,1002
 if (m1s==m2s) print *,1003
+#endif
 endif
 mm=mm+1
 if (mm<3) then
-  call s1(mm)
+  call s2(mm)
 endif
 end subroutine
 end
 recursive subroutine s1(mm)
-use m1
 integer::m(mm)
 integer(8),save:: k1s,k2s,n1s,n2s,m1s,m2s
 k=1  
@@ -41,9 +42,11 @@ else if (mm==2) then
 k2s=loc(k)
 n2s=loc(n)
 m2s=loc(m)
+#ifndef __GFORTRAN__
 if (k1s==k2s) print *,1001
 if (n1s==n2s) print *,1002
 if (m1s==m2s) print *,1003
+#endif
 endif
 mm=mm+1
 if (mm<3) then
