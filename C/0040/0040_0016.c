@@ -13,6 +13,7 @@ int main() {
       int         mi4[5], ii4[5];
       short int   mi2[5], ii2[5];
 
+      omp_set_num_threads(4);
       for(i=0;i<150;i++) ib[i] = 0;
       for (i=0; i<loop5; i+=1){ 
          mi4[i] = i*2;
@@ -58,7 +59,7 @@ int main() {
 	 for(i=0;i<150;i=i+10) printf( "  ib[%d-%d]= %d %d %d %d %d %d %d %d %d %d\n",
 				     i,i+9,ib[i],ib[i+1],ib[i+2],ib[i+3],ib[i+4],
 				     ib[i+5],ib[i+6],ib[i+7],ib[i+8],ib[i+9]);
-         printf( "  ier=",ier);
+         printf( "  ier=%d",ier);
          printf( "  mi4[0-4]= %d %d %d %d %d \n",mi4[0],mi4[1],mi4[2],mi4[3],mi4[4]);
          printf( "  ii4[0-4]= %d %d %d %d %d \n",ii4[0],ii4[1],ii4[2],ii4[3],ii4[4]);
          printf( "  mi2[0-4]= %d %d %d %d %d \n",mi2[0],mi2[1],mi2[2],mi2[3],mi2[4]);
