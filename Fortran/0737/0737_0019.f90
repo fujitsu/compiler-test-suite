@@ -36,10 +36,10 @@ subroutine sub(pproc,dproc)
  use m1
   interface 
      function dproc()
-     integer,allocatable::dproc(:)
+     integer,pointer::dproc(:)
      end function
      function pproc()
-     integer,pointer::pproc(:)
+     integer,allocatable::pproc(:)
      end function
   end interface
   type(x)::v(3)
