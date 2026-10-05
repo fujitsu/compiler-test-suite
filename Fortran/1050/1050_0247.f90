@@ -5,6 +5,11 @@ program main
   real(8)::a=10
   !$ max_th=omp_get_max_threads()
 
+  if (max_th > 4) then
+    call omp_set_num_threads(4)
+    max_th=4
+  endif
+
   !$omp parallel
     !$omp atomic
       i8=i8+a

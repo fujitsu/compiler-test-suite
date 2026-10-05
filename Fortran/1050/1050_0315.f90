@@ -1,7 +1,13 @@
 
 program main
   complex(16)::c32
+  integer::tnum=1
   c32=5
+
+  !$ tnum = omp_get_max_threads()
+  if (tnum > 4) then
+    call omp_set_num_threads(4)
+  endif
 
   !$omp parallel
     !$omp atomic
