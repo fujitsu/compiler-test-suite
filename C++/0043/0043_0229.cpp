@@ -4,7 +4,7 @@
 std::atomic<int> a_x;
 
 void* test1(void *) {
-   std::atomic_store_explicit(&a_x, 10, std::memory_order_consume); 
+   std::atomic_store_explicit(&a_x, 10, std::memory_order_release);
    return NULL;
 }
 
