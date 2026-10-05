@@ -25,7 +25,7 @@ main (void)
  const int cfnc2(const  int c, const long *cp) ;
  struct sttag1 { int i; const long l; } st1 = { -1, -1 };
  const struct sttag2 { int i; char c; } cst1 = { -1, 255 };
- const union untag1 { int i; long l; } cun1 = { -1 };
+ const union untag1 { int i; long l; } cun1 = { .l=0xffffffffL };
  union untag2 { int i; const long cl; } const cun2 = { -1 };
  const enum entag { en1, en2 } en = 1;
  extern const char ca[];
