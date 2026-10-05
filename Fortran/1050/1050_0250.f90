@@ -1,6 +1,12 @@
 
 program main
   real(16)::r16=5,x=10
+  integer::tnum=1
+
+  !$ tnum = omp_get_max_threads()
+  if (tnum > 4) then
+    call omp_set_num_threads(4)
+  endif
 
   !$omp parallel
     !$omp atomic
