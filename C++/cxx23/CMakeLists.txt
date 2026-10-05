@@ -8,7 +8,11 @@ set(cxx23_sources
     declaration_order_layout.cpp
     uax31_identifier.cpp
     deducing_this.cpp
-    ilambda_trailing_return_scope.cpp
+
+    # P2036R3 / P2579R0
+    # GCC 15.2.1 does not yet implement this C++23 feature.
+    # Test source is retained for future evaluation.
+    # lambda_trailing_return_scope.cpp
 
     # P2223R2
     # GCC/Clang emit warnings for backslash-newline separated by space.
