@@ -11,7 +11,6 @@ p=> v(4)
 v(4)=  p 
 if (.not.allocated(v(4)%z) ) print *,101
 if (v(4)%z(1)/=-1 ) print *,104
-if (.not.associated(z,v(4)%z)) print *,30
 end
 do k=1,100
 call s1

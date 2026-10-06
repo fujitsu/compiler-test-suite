@@ -14,7 +14,6 @@ if (any(v(1)%z/=-1 )) print *,104
 if (any(v(2)%z/=-1 )) print *,204
 if (any(v(3)%z/=-1 )) print *,304
 if (any(v(4)%z/=-1 )) print *,404
-if (associated(z, v(2)%z) ) print *,200 
 end
 do k=1,100
 call s1

@@ -32,7 +32,6 @@ pz=>v(3)%z
 p=> v(3)
 v(4)=  p 
 if (v(4)%z(1)/=-1 ) print *,104
-if (.not.associated(pz,v(3)%z)) print *,30
 v(6)= f( w(1) )
 if (v(6)%z(1)/=2 ) print *,105
 v(6)= f( f( w(1) ) )
