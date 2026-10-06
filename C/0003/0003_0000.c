@@ -1,6 +1,6 @@
 #if defined(__aarch64__) && defined(__ARM_FEATURE_SVE)
-int dummy();
-
+int dummy_signed(signed long long, signed long long, signed long long, signed long long);
+int dummy_unsigned(unsigned long long, unsigned long long, unsigned long long, unsigned long long);
 
 #include <arm_sve.h>
 
@@ -40,18 +40,22 @@ double r8;
   i8s2 = svaddv_s16( pg,i2a);
   i8s3 = svaddv_s32( pg,i4a);
   i8s4 = svaddv_s64( pg,i8a);
-  dummy(i8s1,	i8s2,	i8s3,	i8s4);
+  dummy_signed(i8s1,	i8s2,	i8s3,	i8s4);
   u8s1 = svaddv_u8( pg,u1a);
   u8s2 = svaddv_u16( pg,u2a);
   u8s3 = svaddv_u32( pg,u4a);
   u8s4 = svaddv_u64( pg,u8a);
-  dummy(u8s1,	u8s2,	u8s3,	u8s4);
+  dummy_unsigned(u8s1,	u8s2,	u8s3,	u8s4);
 }
 int main()
 {
   return 0;
 }
-int dummy()
+int dummy_unsigned(unsigned long long, unsigned long long, unsigned long long, unsigned long long)
+{
+  return 0;
+}
+int dummy_signed(signed long long, signed long long, signed long long, signed long long)
 {
   return 0;
 }
