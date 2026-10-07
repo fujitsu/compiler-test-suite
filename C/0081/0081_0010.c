@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-#if defined(__i386) || defined(__x86_64__)
+// #if defined(__i386) || defined(__x86_64__)
 
 typedef  int    test_t ;
-#else
-typedef  short  test_t ;
-#endif
+// #else
+// typedef  short  test_t ;
+// #endif
 
 void vsub(test_t a1, ...)
 {
