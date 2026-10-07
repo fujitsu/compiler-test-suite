@@ -19,6 +19,16 @@ set(cxx23_sources
     # Test source is retained for future evaluation.
     # mixed_string_literal_concat.cpp
 )
+    # P2036R3 / P2579R0
+    # GCC 15.2.1 does not yet implement this C++23 feature.
+    # Test source is retained for future evaluation.
+    # GCC emits warnings for backslash-newline separated by space.
+    # Run only on Clang-based compilers.
+    if(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+        list(APPEND cxx23_sources
+            lambda_trailing_return_scope.cpp
+            )
+    endif()
 
 foreach(src ${cxx23_sources})
   set_property(SOURCE ${src}
