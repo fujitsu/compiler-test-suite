@@ -5,7 +5,7 @@
 #include <assert.h>
 void test_store() {
 #ifndef __STDC_NO_ATOMICS__
-    atomic_int x = ATOMIC_VAR_INIT(2);
+    atomic_int x = 2;
     atomic_int *pa = &x;
     atomic_store(pa, 42);
     assert(*pa == 42);
