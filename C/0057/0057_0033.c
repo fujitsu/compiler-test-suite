@@ -5,7 +5,7 @@
 
 void test_fetch_add() {
 #ifndef __STDC_NO_ATOMICS__
-    atomic_int i_a = ATOMIC_VAR_INIT(1);
+    atomic_int i_a = 1;
     atomic_int i_b = i_a;
     int b = atomic_fetch_add(&i_a, 2);
     assert(i_b == b);
@@ -14,7 +14,7 @@ void test_fetch_add() {
 }
 void test_fetch_add_explicit() {
 #ifndef __STDC_NO_ATOMICS__
-    atomic_int i_a = ATOMIC_VAR_INIT(1);
+    atomic_int i_a = 1;
     atomic_int i_b = i_a;
     int b = atomic_fetch_add_explicit(&i_a, 2, memory_order_relaxed);
     assert(i_b == b);
@@ -24,7 +24,7 @@ void test_fetch_add_explicit() {
 
 void test_fetch_sub() {
 #ifndef __STDC_NO_ATOMICS__
-    atomic_int i_a = ATOMIC_VAR_INIT(1);
+    atomic_int i_a = 1;
     atomic_int i_b = i_a;
     int b = atomic_fetch_sub(&i_a, 2);
     assert(i_b == b);
@@ -33,7 +33,7 @@ void test_fetch_sub() {
 }
 void test_fetch_sub_explicit() {
 #ifndef __STDC_NO_ATOMICS__
-    atomic_int i_a = ATOMIC_VAR_INIT(1);
+    atomic_int i_a = 1;
     atomic_int i_b = i_a;
     int b = atomic_fetch_sub_explicit(&i_a, 2, memory_order_relaxed);
     assert(i_b == b);
@@ -43,7 +43,7 @@ void test_fetch_sub_explicit() {
 
 void test_fetch_or() {
 #ifndef __STDC_NO_ATOMICS__
-    atomic_int i_a = ATOMIC_VAR_INIT(1);
+    atomic_int i_a = 1;
     atomic_int i_b = i_a;
     int b = atomic_fetch_or(&i_a, 2);
     assert(i_b == b);
@@ -52,7 +52,7 @@ void test_fetch_or() {
 }
 void test_fetch_or_explicit() {
 #ifndef __STDC_NO_ATOMICS__
-    atomic_int i_a = ATOMIC_VAR_INIT(1);
+    atomic_int i_a = 1;
     atomic_int i_b = i_a;
     int b = atomic_fetch_or_explicit(&i_a, 2, memory_order_relaxed);
     assert(i_b == b);
@@ -62,7 +62,7 @@ void test_fetch_or_explicit() {
 
 void test_fetch_xor() {
 #ifndef __STDC_NO_ATOMICS__
-    atomic_char i_a = ATOMIC_VAR_INIT(1);
+    atomic_char i_a = 1;
     atomic_char i_b = i_a;
     int b = atomic_fetch_xor(&i_a, 2);
     assert(i_b == b);
@@ -71,7 +71,7 @@ void test_fetch_xor() {
 }
 void test_fetch_xor_explicit() {
 #ifndef __STDC_NO_ATOMICS__
-    atomic_char i_a = ATOMIC_VAR_INIT(1);
+    atomic_char i_a = 1;
     atomic_char i_b = i_a;
     int b = atomic_fetch_xor_explicit(&i_a, 2, memory_order_relaxed);
     assert(i_b == b);
@@ -81,7 +81,7 @@ void test_fetch_xor_explicit() {
 
 void test_fetch_and() {
 #ifndef __STDC_NO_ATOMICS__
-    atomic_int i_a = ATOMIC_VAR_INIT(1);
+    atomic_int i_a = 1;
     atomic_int i_b = i_a;
     int b = atomic_fetch_and(&i_a, 2);
     assert(i_b == b);
@@ -90,7 +90,7 @@ void test_fetch_and() {
 }
 void test_fetch_and_explicit() {
 #ifndef __STDC_NO_ATOMICS__
-    atomic_int i_a = ATOMIC_VAR_INIT(1);
+    atomic_int i_a = 1;
     atomic_int i_b = i_a;
     int b = atomic_fetch_and_explicit(&i_a, 2, memory_order_relaxed);
     assert(i_b == b);

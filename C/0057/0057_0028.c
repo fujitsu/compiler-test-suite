@@ -19,8 +19,8 @@
 
 
 #ifndef __STDC_NO_ATOMICS__
-atomic_int x = ATOMIC_VAR_INIT(0);
-atomic_int y = ATOMIC_VAR_INIT(0);
+atomic_int x = 0;
+atomic_int y = 0;
 int r1, r2, r3, r4;
 
 void* Ta(void *ptr) {

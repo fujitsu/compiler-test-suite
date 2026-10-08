@@ -6,7 +6,7 @@
 
 void test() {
 #ifndef __STDC_NO_ATOMICS__
-    atomic_int x = ATOMIC_VAR_INIT(1);
+    atomic_int x = 1;
     int y = kill_dependency(x);
     assert(y == 1);
 #endif 

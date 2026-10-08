@@ -5,7 +5,7 @@
 
 void test_load() {
 #ifndef __STDC_NO_ATOMICS__
-    atomic_char x_a = ATOMIC_VAR_INIT('x');
+    atomic_char x_a = 'x';
     char x_na = atomic_load(&x_a);
     assert(x_na == 'x');
 #endif 

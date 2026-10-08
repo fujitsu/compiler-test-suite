@@ -5,7 +5,7 @@
 
 void test_cmp_exchange_strong() {
 #ifndef __STDC_NO_ATOMICS__
-    atomic_int i_a = ATOMIC_VAR_INIT(1);
+    atomic_int i_a = 1;
     int i_na = 2;
     atomic_compare_exchange_strong(&i_a, &i_na, 3);
     assert(i_a == 1);
@@ -14,7 +14,7 @@ void test_cmp_exchange_strong() {
 
 void test_cmp_exchange_strong_explicit() {
 #ifndef __STDC_NO_ATOMICS__
-    atomic_int i_a = ATOMIC_VAR_INIT(1);
+    atomic_int i_a = 1;
     int i_na = 2;
     atomic_compare_exchange_strong_explicit(&i_a, &i_na, 3, 
                                             memory_order_release, 
