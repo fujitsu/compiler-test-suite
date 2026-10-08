@@ -5,7 +5,11 @@ namespace case2
     struct X 
     {
         template<typename T>
+#if defined(__GNUC__) && !defined(__clang__)
+        X(T n,T,T,T)
+#else
         X(T n,...)
+#endif
         {
             x = 123;
         }
@@ -30,7 +34,11 @@ namespace case3
     struct X
     {
         template <typename T>
+#if defined(__GNUC__) && !defined(__clang__)
+        X(T n,T,T) : x(n) {}
+#else
         X(T n,...) : x(n) {}
+#endif
         int x;
     };
 
@@ -52,7 +60,11 @@ namespace case4
     struct X
     {
         template <typename T>
+#if defined(__GNUC__) && !defined(__clang__)
+        X(T n,T y,T,T)
+#else
         X(T n,T y,...)
+#endif
         {
             i = n;
             j = y;

@@ -2,7 +2,11 @@
 
 struct B1
 {
+#if defined(__GNUC__) && !defined(__clang__)
+    B1(int,int,int) { }
+#else
     B1(int,...) { }
+#endif
 };
 
 int get()
