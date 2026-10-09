@@ -8,7 +8,11 @@
 
 #include <stdarg.h>
 
+#if defined(__GNUC__) && !defined(__clang__)
+static int max(int x, ...)
+#else
 static ATTR(always_inline) int max(int x, ...)
+#endif
 {
   int y;
   va_list ap;
