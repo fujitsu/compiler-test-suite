@@ -9,6 +9,7 @@ set(cxx23_sources
     uax31_identifier.cpp
     deducing_this.cpp
     multidimensional_subscript.cpp
+    constexpr_nonliteral.cpp
 
     # P2223R2
     # GCC/Clang emit warnings for backslash-newline separated by space.
