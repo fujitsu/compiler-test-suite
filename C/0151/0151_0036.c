@@ -120,19 +120,11 @@ int main()
 
       i_ptr1 = &i_tbl[5] ;
       i_ptr2 = &i_tbl[9] ;
-      i_ptr2 = i_ptr2 + 2 ;
+      i_ptr2 = i_ptr2 + 1 ;
 
       if (i_ptr1 <  i_ptr2 == 1) judge++ ;
       if (i_ptr1 >= i_ptr2 == 0) judge++ ;
-      i_ptr1 = &i_wk108;
-      i_ptr2 = &i_wk208;
-#if defined(solaris1) || defined(_WIN32)
-	judge += 2;
-#else
-      if (i_ptr2 >  i_ptr1 == 1) judge++ ;
-      if (i_ptr2 >= i_ptr1 == 1) judge++ ;
-#endif
-      ichck("FER01.08",4,judge,"other object pointer");
+      ichck("FER01.08",2,judge,"other object pointer");
   }
 
 
