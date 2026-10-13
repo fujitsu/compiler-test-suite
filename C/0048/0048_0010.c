@@ -8,7 +8,7 @@
 #include <setjmp.h>
 void m3edtr04 (void);
 void m3edc042 (void);
-void mptest40();
+void mptest40(void);
 void m3edc043 (void);
 void m3edc041 (void);
 int  mptest38 (void);
@@ -715,7 +715,7 @@ int
 mptest38 (void)
  {
     int rtncd,*p1,p2,p3,s1;
-    void mp1fnc1();
+    void mp1fnc1(int);
     signal(SIGSEGV,mp1fnc1);
     rtncd=setjmp(env);
     if(rtncd!=0) {
@@ -743,13 +743,14 @@ l3: if(s1==0)
 
     for(p3=1;p3<400;p3++) {    
     p1=p1-20000;                
-	mp1fnc1();
+	mp1fnc1(0);
     } ;                        
     return 0;
  }
  void 
-mp1fnc1 (void)
+mp1fnc1 (int sig)
  {
+    (void)sig;
     longjmp(env,999);
  }
 
@@ -874,7 +875,7 @@ mp1fnc1 (void)
       ,c1081,c1082,c1083,c1084,c1085,c1086,c1087,c1088,c1089,c1090
       ,c1091,c1092,c1093,c1094,c1095,c1096,c1097,c1098,c1099,c1100
        endblock sw ;
- void mptest40() proc
+ void mptest40(void) proc
       int ans;
       sw=0 ;
       ans=0 ;

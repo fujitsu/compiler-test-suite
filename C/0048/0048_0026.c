@@ -210,8 +210,8 @@ void fe3fnc6(struct tag a)
 
 
  int y;
- int mpsub();
- void m3mpsi05() {
+ int mpsub(void);
+ void m3mpsi05(void) {
  struct mptag {
   int mema;
   int memb;
@@ -705,7 +705,7 @@ fmb (void)
 {
 
     int rtncd,*p1,p2,p3,s1;
-    void mp1fnc1();
+    void mp1fnc1(int);
 
     static char        ch1 = 1;
     static short int   si1 = 2;
@@ -788,7 +788,7 @@ l3: if(s1==0)
 
     for(p3=1;p3<400;p3++) {    
     p1=p1-20000;                
-	mp1fnc1();
+	mp1fnc1(0);
    p2=*p1;                     
     } ;                        
 
@@ -870,9 +870,9 @@ fefnc166 (void)
   return (st1);
 }
 
- void 
-mp1fnc1 (void)
+ void mp1fnc1 (int sig)
  {
+    (void)sig;
     longjmp(env,999);
  }
 

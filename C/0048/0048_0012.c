@@ -1000,9 +1000,11 @@ sun10 (void)
 
 void
 scpbc01 (void) {
-   int    a,b,z,befnc1();
+   int    a,b,z;
+   int befnc1(int);
    char   c[3],d[5];
-   void   beok(),beng();
+   void   beok(int);
+   void   beng(int);
      a=0xa;
      z=1000;
      b=befnc1(z);

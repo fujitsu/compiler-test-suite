@@ -244,9 +244,10 @@ m3eccv01 (void)
 
  int 
 scpbc01 (void) {
-   int    a,b,z,befnc1();
+   int    a,b,z;
+   int    befnc1(int);
    char   c[3],d[5];
-   void   beok(),beng();
+   void   beok(int),beng(int);
      a=0xa;
      z=1000;
      b=befnc1(z);
@@ -312,7 +313,7 @@ int
 m3ecks02 (void)
 {
   int a,i;
-  int fe2fnc();
+  int fe2fnc(int);
 
   i = 0;
 
@@ -849,7 +850,7 @@ scpa015 (void)
 {
     long int     li1;
     long int     li2;
-    long int     be1sub();
+    long int     be1sub(long int, long int);
 
     printf("---- SCPA015 START ---- \n");
     eli1 = 2;    eli2 = eli1*5;

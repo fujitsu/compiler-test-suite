@@ -231,9 +231,9 @@ m3ecas23 (void)
 
  int 
 scpbc01 (void) {
-   int    a,b,z,befnc1();
+   int    a,b,z,befnc1(int);
    char   c[3],d[5];
-   void   beok(),beng();
+   void   beok(int),beng(int);
      a=0xa;
      z=1000;
      b=befnc1(z);
