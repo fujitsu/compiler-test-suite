@@ -1,14 +1,14 @@
 
 #include <stdio.h>
-int m3edcl07();
-int scops02();
-int m3edcl06();
-int m3edcl05();
-int scops01();
-int m3edcl02();
-int mptest30();
-int mptest27();
-int m3edcl01();
+int m3edcl07(void);
+int scops02(void);
+int m3edcl06(void);
+int m3edcl05(void);
+int scops01(void);
+int m3edcl02(void);
+int mptest30(void);
+int mptest27(void);
+int m3edcl01(void);
 
 void mptest28();
 int main()
@@ -99,7 +99,7 @@ printf("*** M3EDCL01 **  ** STARTED ***\n");
      {
        short  sic;
        short  sid =2;
-       short  fe1fnc6();
+       short  fe1fnc6(short);
        sic = fe1fnc6(sid);
        if(sic == 6)
            printf("*** M3EDCL01-06 *** O   K ***\n");
@@ -195,8 +195,7 @@ char  fe1fnc5(char c)
         return(0);
 }
 
-short int fe1fnc6(s)
-short int s;
+short int fe1fnc6(short int s)
 {
     if(s==2)
         return(6);
@@ -212,9 +211,7 @@ int fe1fnc7(int ia)
         return(0);
 }
 
-long int fe1fnc8(la,ia)
-long la;
-int  ia;
+long int fe1fnc8(long la, int ia)
 {
     if(la == 4 && ia == 5)
         return(8);
@@ -269,7 +266,7 @@ int *fe1fnc12(register  int re,int iii)
        static int  fe2fnc3();
        extern int  fe2fnc4();
        char        fe2fnc5(char);
-       short  fe2fnc6();
+       short  fe2fnc6(short int);
        int    fe2fnc7(int);
        long   fe2fnc8(long,int);
        void   fe2fnc9(short,int,long);
@@ -425,8 +422,7 @@ char  fe2fnc5(char c)
         return(0);
 }
 
-short int fe2fnc6(s)
-short int s;
+short int fe2fnc6(short int s)
 {
     if(s==2)
         return(6);
@@ -629,10 +625,10 @@ int fe5f02(int a) { return(a - 9);  }
 
 
     int    mp1err=0;
-    void   mp1errck();
+    void   mp1errck(void);
  int mptest27()
     {
-           int *mp1fnc1(int),*c,mp1fnc2(int *),*mp1fnc3();
+           int *mp1fnc1(int),*c,mp1fnc2(int *),*mp1fnc3(void);
            printf("******** MPTEST27 START **************\n");
            c=mp1fnc1(mp1fnc2(mp1fnc3()));
            if(*c!=6)
@@ -667,7 +663,7 @@ int fe5f02(int a) { return(a - 9);  }
              return(0);
             }
     }
-    int    *mp1fnc3()
+    int    *mp1fnc3(void)
     {
            static int f=10;
            printf("******** MPTEST27 MP1FNC3 RUN **********\n");
@@ -686,8 +682,7 @@ int fe5f02(int a) { return(a - 9);  }
         mp1errck();
         printf("******** MPTEST27 END ****************\n");
  }
- void   mp1fnc(c)
-        int          *c;
+ void   mp1fnc(int *c)
  {
         int           d;
         d=5;
@@ -695,7 +690,7 @@ int fe5f02(int a) { return(a - 9);  }
         if(d!=10)
           mp1err++;
  }
- void   mp1errck()
+ void   mp1errck(void)
     {
            if(mp1err==0)
             {
@@ -716,9 +711,9 @@ int fe5f02(int a) { return(a - 9);  }
      char  e,*f                 ;
      int   a1[4]              ;
      }    mp2p                 ;
-   int  mp2g,mp2h,*mp2i,mp2fnc2();
+   int  mp2g,mp2h,*mp2i,mp2fnc2(void);
    int  mp2b1=0,mp2b2=50,mp2b3=0,mp2b4=0,mp2z=0;
-   void mp2fnc1();
+   void mp2fnc1(void);
 
 void mptest28()
     {
@@ -782,14 +777,14 @@ void mptest28()
     printf("<<<<<<<< MPTEST28 END >>>>>>>\n");
     }
 
-  void mp2fnc1()
+  void mp2fnc1(void)
         {
         int         **k,l ;
           k=&(mp2p.b)                    ;
           l=mp2fnc2()                 ;
         }
 
-  int  mp2fnc2()
+  int  mp2fnc2(void)
     {
       static int c1=2,c2=5,c3=10,c4=1 ;
       mp2b1=mp2b1+2 ;

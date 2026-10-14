@@ -14,10 +14,10 @@ int scodv01 (void);
 int scpa013 (void);
 int m3edc116 (void);
 int scpa012 (void);
-int mptest41();
+int mptest41(void);
 
 
-#define NULL  0
+#define tp_NULL  0
 #define proc     {
 #define endproc  }
 
@@ -523,15 +523,15 @@ m3edc060 (void)
 
 
 
-  int *mp1fnc2(),mp1fnc4();
-int  mp1fnc4(a)
-      int *a ;
+  int *mp1fnc2(void);
+  int mp1fnc4(int *);
+int  mp1fnc4(int *a)
 proc
       *a=1 ;
       return 0;
 endproc
 
-  void mp1fnc1(),mp1fnc3(),mp1fnc5();
+  void mp1fnc1(void),mp1fnc3(void),mp1fnc5(void),mp1fnc6(int *);
   int mptest41()
   {
        mp1fnc1();
@@ -542,7 +542,7 @@ endproc
   void 
 mp1fnc1 (void)
   {
-       static int *(*eee)()=mp1fnc2;
+       static int *(*eee)(void)=mp1fnc2;
        if(*(*eee)() == 10)
         printf("*** MPTEST41 CHECK01 OK ***\n");
        else
@@ -559,7 +559,7 @@ mp1fnc2 (void)
 mp1fnc3 (void)
   {
        int    ccc;
-       static int aaa=20,(*bbb)()=mp1fnc4;
+       static int aaa=20,(*bbb)(int *)=mp1fnc4;
        static int *ddd=&aaa;
        *ddd=*ddd+30;
        if(*ddd==50)
@@ -571,7 +571,7 @@ mp1fnc3 (void)
   void 
 mp1fnc5 (void)
   {
-       void   mp1fnc6();
+       void   mp1fnc6(int *);
        static int b=20,*e;
        e=&b;
        mp1fnc6(e);
@@ -619,7 +619,7 @@ scpa012 (void)
                        break;
          }
     }
-    cha2[5] = NULL;
+    cha2[5] = tp_NULL;
 
     if ( !memcmp(cha2, cha0, 6) )
         printf ("   ***  OK  *** \n");
@@ -750,8 +750,7 @@ m3mprd06 (void)
    else printf("M3MPRD06 NG A=%d B=%d\n",a,b);
    return 0;
 }
-int mp1fnc(j)
-int *j;
+int mp1fnc(int *j)
 {
 *j=5;
 return 0;
@@ -898,7 +897,7 @@ scpa013 (void)
 
     be1cal[0] = t1_st1.t1_ch1 + t1_st1.t1_si1;
 
-    for (tmp=0, i=0; t2_st1.t2_cha1[i]!=NULL; i++)
+    for (tmp=0, i=0; t2_st1.t2_cha1[i]!=tp_NULL; i++)
          tmp += t2_st1.t2_cha1[i]-'0';
     be1cal[1] = t2_st1.t2_st11.t1_ch1 + t2_st1.t2_st11.t1_si1 +
                t2_st1.t2_ll1 + tmp;
@@ -931,7 +930,8 @@ scpa013 (void)
  int exv;
  int 
 scpbc02 (void) {
-   int    a,b,z,beafun1();
+   int    a,b,z;
+   int    beafun1(int);
    char   c[3],d[5];
    void   beaok(),beang();
      a=0xa;
