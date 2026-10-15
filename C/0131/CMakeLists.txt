@@ -1,3 +1,5 @@
+llvm_singlesource_compile_only_file(0131_0106.c PREFIX "Fujitsu-C-")
+llvm_singlesource_compile_only_file(0131_0108.c PREFIX "Fujitsu-C-")
 llvm_singlesource_compile_only_file(0131_0173.c PREFIX "Fujitsu-C-")
 llvm_singlesource_compile_only_file(0131_0174.c PREFIX "Fujitsu-C-")
 llvm_singlesource_compile_only_file(0131_0175.c PREFIX "Fujitsu-C-")
