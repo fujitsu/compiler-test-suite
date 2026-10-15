@@ -11,6 +11,7 @@ set(cxx23_sources
     multidimensional_subscript.cpp
     constexpr_nonliteral.cpp
     diagnostic_text_encoding.cpp
+    character_set_encoding.cpp
 
     # P2223R2
     # GCC/Clang emit warnings for backslash-newline separated by space.
