@@ -9,6 +9,12 @@ void weak001n_1(int val) {
 	}
 }
 
+#ifdef __GNUC__
+#ifndef __clang__
+void weak001n(int);
+#endif
+#endif
+
 #pragma weak weak001n = weak001n_1
 
 int main()
