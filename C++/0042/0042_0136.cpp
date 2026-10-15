@@ -1,6 +1,10 @@
 
 struct X {
-    X(int = 0, const X* = 0, ...) {}
+    #if defined(__GNUC__) && !defined(__clang__)
+        X(int = 0, const X* = 0, int = 0) {}
+    #else
+        X(int = 0, const X* = 0, ...) {}
+    #endif
 };
 
 struct Y : public X {

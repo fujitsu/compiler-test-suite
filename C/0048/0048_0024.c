@@ -488,10 +488,10 @@ int
 mptest02 (void)
 {
   int   a,b,c,d,i;
-  int   mpfff(),(*mpfp)(),ii;
+  int   mpfff(void),(*mpfp)(void),ii;
 
   mpfp=mpfff;i=0;
-  ii=(*mpfp)(i);
+  ii=(*mpfp)();
 
   ga=1;
   printf("START MPTEST02\n");

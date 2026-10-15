@@ -2,22 +2,22 @@
 
 #include<stdio.h>
 #include<string.h>
-void m3edc060();
-void m3edc059();
-void m3edc056();
-void m3edc055();
-void scpa014();
-void scpa013();
-void scpa012();
-void m3edc054();
-void m3edc053();
-int mptest42();
-void mptest41();
-void m3edc048();
-void m3edc047();
-void m3edc046();
-void m3edc045();
-void m3edc044();
+void m3edc060(void);
+void m3edc059(void);
+void m3edc056(void);
+void m3edc055(void);
+void scpa014(void);
+void scpa013(void);
+void scpa012(void);
+void m3edc054(void);
+void m3edc053(void);
+int mptest42(void);
+void mptest41(void);
+void m3edc048(void);
+void m3edc047(void);
+void m3edc046(void);
+void m3edc045(void);
+void m3edc044(void);
 
 
 #define proc     {
@@ -32,7 +32,7 @@ void m3edc044();
 #define      num      4
 
 #define      bexnum   2
-int main()
+int main(void)
 {
    m3edc044();  
    m3edc045();  
@@ -699,37 +699,37 @@ void m3edc060()
 
 
 
-  int *mp1fnc2(),mp1fnc4();
-int  mp1fnc4(a)
-      int *a ;
+  int *mp1fnc2(void);
+  int mp1fnc4(int *a)
 proc
       *a=1 ;
+      return 0;
 endproc
-  void mp1fnc1(),mp1fnc3(),mp1fnc5();
- void mptest41()
+  void mp1fnc1(void),mp1fnc3(void),mp1fnc5(void),mp1fnc6(int *);
+  void mptest41(void)
   {
        mp1fnc1();
        mp1fnc3();
        mp1fnc5();
   }
-  void mp1fnc1()
+  void mp1fnc1(void)
   {
-       static int *(*eee)()=mp1fnc2;
+       static int *(*eee)(void)=mp1fnc2;
        if(*(*eee)() == 10)
         printf("*** MPTEST41 CHECK01 OK ***\n");
        else
         printf("*** MPTEST41 CHECK01 NG ***\n");
   }
-  int  *mp1fnc2()
+  int  *mp1fnc2(void)
   {
        static int ooo=0;
        ooo=ooo+10;
        return(&ooo);
   }
-  void mp1fnc3()
+  void mp1fnc3(void)
   {
        int    ccc;
-       static int aaa=20,(*bbb)()=mp1fnc4;
+       static int aaa=20,(*bbb)(int *)=mp1fnc4;
        static int *ddd=&aaa;
        *ddd=*ddd+30;
        if(*ddd==50)
@@ -738,9 +738,9 @@ endproc
         printf("*** MPTEST41 CHECK02 NG ***\n");
        ccc=(*bbb)(&ccc);
   }
-  void mp1fnc5()
+  void mp1fnc5(void)
   {
-       void   mp1fnc6();
+       void   mp1fnc6(int *);
        static int b=20,*e;
        e=&b;
        mp1fnc6(e);
@@ -785,13 +785,15 @@ endproc
         struct mp2tagc c  ;
         int         x_(4) ;
                 end       ;
- int mptest42() proc
+ int mptest42(void) proc
       struct mp2taga *ap ;
       struct mp2tagb *bp ;
       struct mp2tagc *cp ;
       union  mp2tag abc ;
       int          i ;
-      void   mpfnca(),mpfncb(),mpfncc() ;
+      void   mpfnca(struct mp2taga *);
+      void   mpfncb(struct mp2tagb *);
+      void   mpfncc(struct mp2tagc *);
 
       memset(&abc,'\0',sizeof(union mp2tag)) ;
 
@@ -815,8 +817,7 @@ endproc
        if(abc.x_(i)==3) printf("*** MPTEST42 OK ***\n");
        }
       end
-void  mpfnca(p)
-      struct mp2taga *p ;
+void  mpfnca(struct mp2taga *p)
       proc
       p->a1_(0)+=1 ;
       p->a1_(1)+=1 ;
@@ -824,8 +825,7 @@ void  mpfnca(p)
       p->a3    +=1 ;
       return ;
       end
-void  mpfncb(p)
-      struct mp2tagb *p ;
+void  mpfncb(struct mp2tagb *p)
       proc
       p->b1    +=1 ;
       p->b2_(0)+=1 ;
@@ -833,8 +833,7 @@ void  mpfncb(p)
       p->b3    +=1 ;
       return ;
       end
-void  mpfncc(p)
-      struct mp2tagc *p ;
+void  mpfncc(struct mp2tagc *p)
       proc
       p->c1    +=1 ;
       p->c2    +=1 ;

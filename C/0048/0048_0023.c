@@ -1056,7 +1056,7 @@ scpa015 (void)
 {
     long int     li1;
     long int     li2;
-    long int     be1sub();
+    long int     be1sub(long int, long int);
 
     printf("---- SCPA015 START ---- \n");
     eli1 = 2;    eli2 = eli1*5;
@@ -1085,9 +1085,11 @@ be1sub (long int pli1, long int pli2)
  static char be4n1[]={"**** ITEM1 NG ****"};
  int 
 scpba01 (void) {
-   int    a,b,z,be4fnc1();
+   int    a,b,z;
+   int    be4fnc1(int);
    char   c[3],d[5];
-   void   be4ok(),be4ng();
+   void   be4ok(int);
+   void   be4ng(int);
      a=0xa;
      z=1000;
      b=be4fnc1(z);

@@ -416,9 +416,9 @@ scodv02 (void)
  static char be4n1[]={"**** ITEM1 NG ****"};
  int 
 scpba01 (void) {
-   int    a,b,z,be4fnc1();
+   int    a,b,z,be4fnc1(int);
    char   c[3],d[5];
-   void   be4ok(),be4ng();
+   void   be4ok(int),be4ng(int);
      a=0xa;
      z=1000;
      b=be4fnc1(z);
