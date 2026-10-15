@@ -52,7 +52,7 @@ int main(void) {
   short i2[] = {1, 1, 1, 1, -1, -1, -1, -1, 1, -1};
   int i4[] = {1, 1, 1, 1, -1, -1, -1, -1, 1, -1};
   long long int i8[] = {1, 1, 1, 1, -1, -1, -1, -1, 1, -1};
-#ifdef __clang__
+#if defined(__clang__) || defined(__GNUC__)
   unsigned char u1[] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
   unsigned short u2[] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
   unsigned int u4[] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
@@ -93,7 +93,7 @@ int main(void) {
   res += u8obj.shift_test(u8, 10);
   res += u8obj.shift_test(u8, 9);
 
-#ifndef __clang__
+#if !defined(__clang__) && !defined(__GNUC__)
   res += i1obj.shift_test_minus(i1, 10);
   res += i1obj.shift_test_minus(i1, 9);
   res += i2obj.shift_test_minus(i2, 10);
