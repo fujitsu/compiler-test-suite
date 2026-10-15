@@ -1,5 +1,9 @@
 struct X {
-    template <class T> X(T, int = 1, int = 2, ...) {}
+    #if defined(__GNUC__) && !defined(__clang__)
+        template <class T> X(T, int = 1, int = 2, int = 0) {}
+    #else
+        template <class T> X(T, int = 1, int = 2, ...) {}
+    #endif
 };
 struct Y : public X {
     using X::X; 
