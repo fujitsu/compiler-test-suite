@@ -62,7 +62,7 @@ int test10_1(int int_var)
 void test10_2() __attribute__((section("Y"), weak));
 void test10_2(){}
 
-void test10_3() __attribute__((section("2"), alias("test10_2")));
+void test10_3() __attribute__((section("Y"), alias("test10_2")));
 
 inline st1* test10_4(int, float*, char*) __attribute__((section("8"), always_inline));
 st1* test10_4(int int_var, float *float_var, char *char_var)
@@ -86,7 +86,7 @@ int test10_5(int int_var)
 __attribute__((section("\t"), malloc)) static double* test11_1(int );
 __attribute((section("\n"), deprecated)) static u1 test11_2();
 
-u1 al_test12(u1 ) __attribute__((alias("test12"), weak, section("al_test12")));
+u1 al_test12(u1 ) __attribute__((alias("test12"), weak));
 u1 test12(u1 union_u1)
 {
 	return union_u1;
