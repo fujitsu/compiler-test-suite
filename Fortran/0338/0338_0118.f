@@ -34,5 +34,5 @@ C
       END
 C
       SUBROUTINE SUB2
-      STOP 111
+      STOP 111,quiet=.true.
       END

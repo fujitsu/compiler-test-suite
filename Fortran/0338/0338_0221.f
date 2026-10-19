@@ -30,5 +30,5 @@ C
   100 WRITE(6,*) A1,B1,C1,D1,E1,F1,G1,H1,I1,J1
       WRITE(6,*) A2,B2,C2,D2,E2,F2,G2,H2,I2,J2
       WRITE(6,*) A3,B3,C3,D3,E3,F3,G3,H3,I3,J3
-      STOP 100
+      STOP 100,quiet=.true.
       END
