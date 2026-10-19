@@ -13,6 +13,7 @@ set(cxx23_sources
     diagnostic_text_encoding.cpp
     character_set_encoding.cpp
     character_literal_encoding.cpp
+    elifdef_elifndef.cpp
 
     # P2223R2
     # GCC/Clang emit warnings for backslash-newline separated by space.
