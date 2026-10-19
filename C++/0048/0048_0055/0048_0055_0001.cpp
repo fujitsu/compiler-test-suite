@@ -17,7 +17,7 @@ void sub1()
 
 class B2;
 
-class ::B2 {};
+class B2 {};
 
 void sub2()
 {
