@@ -2,6 +2,7 @@
 #ifdef _OPENMP
 #include <omp.h>
 #endif
+#include <stdlib.h>
 
 int f(int x) {
   return x+1;
