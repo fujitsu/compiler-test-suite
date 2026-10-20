@@ -1,6 +1,7 @@
 #include <omp.h>
 #include <stdio.h>
 #include <unistd.h>
+#include <stdlib.h>
 class test {
 public:
   int a, b, c;
