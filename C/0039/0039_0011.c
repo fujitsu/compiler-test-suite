@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <omp.h>
+#include <stdlib.h>
 
 int main()
 {
