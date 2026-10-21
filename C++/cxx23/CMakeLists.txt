@@ -15,6 +15,7 @@ set(cxx23_sources
     character_literal_encoding.cpp
     elifdef_elifndef.cpp
     init_statement_alias.cpp
+    auto_decay_copy.cpp
 
     # P2223R2
     # GCC/Clang emit warnings for backslash-newline separated by space.
