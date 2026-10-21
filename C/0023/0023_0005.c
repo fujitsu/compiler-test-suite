@@ -15,8 +15,8 @@ struct su {
   unsigned short int upp;
 };
 
-static void sub1();
-static void sub2();
+static void sub1(struct u8 *a, struct u8 *b);
+static void sub2(unsigned int *a, unsigned int *b);
 int main()
 {
   struct u8 a, b;
@@ -33,18 +33,13 @@ int main()
 }
 
 
-void sub1(a, b)
-struct u8 *a;
-struct u8 *b;
+void sub1(struct u8 *a, struct u8 *b)
 {
   sub2(&((*a).upp), &((*b).low));
   sub2(&((*a).upp), &((*b).upp));
 }
 
-void sub2(a, b)
-struct su *a;
-struct su *b;
+void sub2(unsigned int *a, unsigned int *b)
 {
-  (*b).low = (*a).low;
-  (*b).upp = (*a).upp;
+  *b = *a;
 }

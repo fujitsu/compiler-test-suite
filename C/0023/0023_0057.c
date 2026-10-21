@@ -2,7 +2,7 @@
 
 #define X80 (unsigned long long int)0x8000000000000000
 
-static void sub();
+static void sub(unsigned long long int *a);
 int main()
 {
   unsigned long long int a;
@@ -16,8 +16,7 @@ int main()
     printf("NG\n");
 }
 
-static void sub(a)
-     unsigned long long int *a;
+static void sub(unsigned long long int *a)
 {
   *a = (unsigned long long int)0x2000000000000000;
   *a = *a << 1;

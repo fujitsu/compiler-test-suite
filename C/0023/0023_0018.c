@@ -3,7 +3,7 @@
 #define X2FFFD  0x0002fffd
 #define X27FFD  0x00027ffd
 
-static void sub();
+static void sub(unsigned short int *a, unsigned short int *b);
 int main()
 {
   unsigned short int a, b, c;
@@ -20,8 +20,7 @@ int main()
     printf("NG\n");
 }
 
-static void sub(a,b)
-  unsigned short int *a,*b;
+static void sub(unsigned short int *a, unsigned short int *b)
 {
   *a = 0;
   *b = 0;
