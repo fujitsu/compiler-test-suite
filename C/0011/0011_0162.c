@@ -5,7 +5,7 @@ int main()
 static int c = 1 ;
 extern int f1(int i) ;
 struct {
-       int (*a[5])() ;
+       int (*a[5])(int) ;
        int *b[5] ;
        } x[5] = { { {f1,f1,f1,f1,f1},{&c,&c,&c,&c,&c}},
                       { {f1,f1,f1,f1,f1},{&c,&c,&c,&c,&c}},
@@ -17,7 +17,7 @@ struct {
 
  {
    int y = 0 ;
-   int (*g)() ;
+   int (*g)(int) ;
    int count = 0 ;
 
    while (count < 5)

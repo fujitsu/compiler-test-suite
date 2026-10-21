@@ -7,36 +7,36 @@
  *
  */
 #ifdef NO_LONG_DOUBLE
-double f1() ;
-double f2() ;
-double f3() ;
-double f4() ;
-double f5() ;
+double f1(int a, int b, int c, double d) ;
+double f2(double a) ;
+double f3(int a) ;
+double f4(void) ;
+double f5(double a) ;
 int main()
 {
-  double a,(*p)() ;
+  double a,(*p4)(void), (*p5)(double) ;
 #else
-long double f1() ;
-long double f2() ;
-long double f3() ;
-long double f4() ;
-long double f5() ;
+long double f1(int a, int b, int c, double d) ;
+long double f2(long double a) ;
+long double f3(int a) ;
+long double f4(void) ;
+long double f5(long double a) ;
 int main()
 {
-  long double a,(*p)() ;
+  long double a,(*p4)(void), (*p5)(long double) ;
 #endif
   printf("SCPLD01 START \n") ;
   a = f1(1,2,3,4.0) ;
   if (a == 1.0) printf("  F1 = OK \n") ;
   else          printf("  F1 = NG \n") ;
 
-  p = f4 ;
-  a = (*p)() ;
-  p = f5 ;
+  p4 = f4 ;
+  a = (*p4)() ;
+  p5 = f5 ;
 #ifdef NO_LONG_DOUBLE
-  a = (*p)((double)2) ;
+  a = (*p5)((double)2) ;
 #else
-  a = (*p)((long double)2) ;
+  a = (*p5)((long double)2) ;
 #endif
   if (a == 2.0) printf("  F5 = OK \n") ;
   else          printf("  F5 = NG \n") ;
@@ -44,12 +44,10 @@ int main()
   printf("SCPLD01  END  \n") ;
 }
 #ifdef NO_LONG_DOUBLE
-double f1(a,b,c,d)
+double f1(int a, int b, int c, double d)
 #else
-long double f1(a,b,c,d)
+long double f1(int a, int b, int c, double d)
 #endif
-int    a,b,c ;
-double d     ;
 {
 #ifdef NO_LONG_DOUBLE
   double e ;
@@ -65,13 +63,11 @@ double d     ;
   return a ;
 }
 #ifdef NO_LONG_DOUBLE
-double f2(a)
-double a ;
+double f2(double a)
 {
   double b = a ;
 #else
-long double f2(a)
-long double a ;
+long double f2(long double a)
 {
   long double b = a ;
 #endif
@@ -79,11 +75,10 @@ long double a ;
   return b ;
 }
 #ifdef NO_LONG_DOUBLE
-double f3(a)
+double f3(int a)
 #else
-long double f3(a)
+long double f3(int a)
 #endif
-int a ;
 {
   printf("  F3 = OK \n") ;
 #ifdef NO_LONG_DOUBLE
@@ -93,9 +88,9 @@ int a ;
 #endif
 }
 #ifdef NO_LONG_DOUBLE
-double f4()
+double f4(void)
 #else
-long double f4()
+long double f4(void)
 #endif
 {
   printf("  F4 = OK \n") ;
@@ -106,11 +101,9 @@ long double f4()
 #endif
 }
 #ifdef NO_LONG_DOUBLE
-double f5(a)
-double a ;
+double f5(double a)
 #else
-long double f5(a)
-long double a ;
+long double f5(long double a)
 #endif
 {
   return a ;
