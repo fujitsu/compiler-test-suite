@@ -6,6 +6,8 @@
  * RUN: clang++ -std=c++23 -Wall -Wextra -Werror init_statement_alias.cpp
  */
 
+#include <cstdlib>
+
 int main()
 {
   // if statement
@@ -47,6 +49,6 @@ int main()
   if (sum != 6)
     return 5;
 
-  return 0;
+  return EXIT_SUCCESS;
 }
 
