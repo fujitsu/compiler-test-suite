@@ -1,11 +1,12 @@
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <omp.h>
 int main() {
   int tnum;
   static int tnum2;
 #pragma omp threadprivate(tnum2)
-  setenv("OMP_NESTED","TRUE",1);
+  setenv("OMP_MAX_ACTIVE_LEVELS","2",1);
   omp_set_dynamic(0);
   omp_set_num_threads(1);
 

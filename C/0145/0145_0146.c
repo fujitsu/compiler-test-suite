@@ -1,6 +1,7 @@
 
 
 #include <stdio.h>
+#include <stdlib.h>
 #ifdef _OPENMP
 #include <omp.h>
 #endif
@@ -14,7 +15,7 @@ int main()
 
 #ifdef _OPENMP
   omp_set_dynamic(0);
-  setenv("OMP_NESTED","TRUE",1);
+  setenv("OMP_MAX_ACTIVE_LEVELS","3",1);
   omp_set_num_threads(2);
 #endif
 

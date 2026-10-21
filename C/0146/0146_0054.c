@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <omp.h>
 void sub() {
   int tnum;
@@ -37,7 +38,7 @@ void sub() {
 }
 
 int main() {
-  setenv("OMP_MAX_ACTIVE_LEVEL","1",1);
+  setenv("OMP_MAX_ACTIVE_LEVELS","1",1);
   omp_set_dynamic(0);
   omp_set_num_threads(1);
 
