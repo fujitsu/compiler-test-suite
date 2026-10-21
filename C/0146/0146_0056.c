@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <omp.h>
 int func() {
   return 2;

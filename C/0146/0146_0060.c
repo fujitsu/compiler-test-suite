@@ -1,11 +1,12 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <omp.h>
 void sub() {
   int ifval;
   long int ifval2;
   ifval = 1;
   ifval2 = 1;
-  setenv("OMP_NESTED","TRUE",1);
+  
   omp_set_max_active_levels(2) ;
   omp_set_dynamic(0);
   omp_set_num_threads(2);
