@@ -12,7 +12,7 @@ union ss {
   } bbb;
 };
 
-static void sub1();
+static void sub1(union ss *a, union ss *b);
 int main()
 {
   union ss a,b;
@@ -27,9 +27,7 @@ int main()
   }
 }
 
-void sub1(a, b)
-union ss *a;
-union ss *b;
+void sub1(union ss *a, union ss *b)
 {
   (*b).bbb.low = (*a).bbb.low;
   (*b).bbb.upp = (*a).bbb.upp;
