@@ -350,8 +350,8 @@ m3etre15 (void)
   {
 printf("\n* M3ETRE15 *** MK3 TEST FOR X_TREEMK *** STARTED *\n");
 {
-  int f();
-  int ff();
+  int f(int);
+  int ff(int);
   int a=0;
   int i=0;
   i=(f(a)&ff(a));
@@ -588,7 +588,7 @@ int
 mptest12 (void)
  {
      int func1( int *i );
-     struct st stfunc();
+     struct st stfunc(struct st, int);
      static int bbb[5]={0,1,2,3,4};
      struct st sss;
      int i;

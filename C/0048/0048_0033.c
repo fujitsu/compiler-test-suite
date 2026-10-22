@@ -171,7 +171,7 @@ m3edc070 (void)
 
 
 
-static int mp1fnc() ;
+static int mp1fnc(int);
 int mptest43() proc
       int i ;
       i=1 ;
@@ -182,8 +182,7 @@ int mptest43() proc
        printf("*** MPTEST43 OK ***\n") ;
       return 0;
 end
-int mp1fnc(i)
-      int i ;
+int mp1fnc(int i)
       proc
       int j ;
       i+=1 ;
@@ -202,9 +201,10 @@ end
  static char be4n1[]={"**** ITEM1 NG ****"};
  int 
 scpba01 (void) {
-   int    a,b,z,be4fnc1();
+   int    a,b,z;
+   int be4fnc1(int);
    char   c[3],d[5];
-   void   be4ok(),be4ng();
+   void   be4ok(int),be4ng(int);
      a=0xa;
      z=1000;
      b=be4fnc1(z);

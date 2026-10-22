@@ -919,7 +919,7 @@ scosh01 (void)
        static int  fe2fnc3();
        extern int  fe2fnc4();
        char        fe2fnc5(char);
-       short  fe2fnc6();
+       short  fe2fnc6(int);
        int    fe2fnc7(int);
        long   fe2fnc8(long,int);
        void   fe2fnc9(short,int,long);
