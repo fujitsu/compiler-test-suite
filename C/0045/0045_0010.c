@@ -28,7 +28,7 @@ void foo1(){
       }
     }
   }
-  output(0,N);
+  output();
 }
 
 
@@ -52,7 +52,7 @@ void foo2(){
       }
     }
   }
-  output(0,N);
+  output();
 }
 
 
@@ -75,7 +75,7 @@ void foo3(){
 
     }
   }
-  output(0,N);
+  output();
 }
 
 int main()
