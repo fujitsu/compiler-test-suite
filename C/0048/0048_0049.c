@@ -582,7 +582,7 @@ mptest37 (void)
 int mptest38 (void)
  {
     int rtncd,*p1,p2,p3,s1;
-    void func1();
+    void func1(int);
     signal(SIGSEGV,func1);
     rtncd=setjmp(env);
     if(rtncd!=0) {
@@ -611,7 +611,7 @@ l3: if(s1==0)
     return 0;
  }
  void 
-func1 (void)
+func1 (int)
  {
     longjmp(env,999);
  }

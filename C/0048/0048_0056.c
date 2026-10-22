@@ -120,7 +120,7 @@ int
 scpo302 (void) {
    static char c1[]={"ok"};
    static char c2[]={"ng"};
-   void   fun1(),fun2();
+   void   fun1(void),fun2(void);
      memcpy(u1.c,"1234",4);
      fun1();
      fun2();
@@ -134,14 +134,14 @@ scpo302 (void) {
        }
  }
  void 
-fun1 (int a) {
+fun1 (void) {
      u1.b.b1=u1.b.b1-'0';
      u1.b.b2=u1.b.b2-'0';
      u1.b.b3=u1.b.b3-'0';
      u1.b.b4=u1.b.b4-'0';
  }
  void 
-fun2 (int a) {
+fun2 (void) {
      u1.a=u1.a+0x40404040;
  }
  union tag1a {
@@ -158,7 +158,7 @@ int
 scpo303 (void) {
    static char c1[]={"ok"};
    static char c2[]={"ng"};
-   void   fun1a(),fun2a();
+   void   fun1a(void),fun2a(void);
      memcpy(u1a.c,"1234",4);
      fun1a();
      fun2a();
@@ -172,14 +172,14 @@ scpo303 (void) {
        }
  }
  void 
-fun1a (int a) {
+fun1a (void) {
      u1a.b.b1=u1a.b.b1-'0';
      u1a.b.b2=u1a.b.b2-'0';
      u1a.b.b3=u1a.b.b3-'0';
      u1a.b.b4=u1a.b.b4-'0';
  }
  void 
-fun2a (int a) {
+fun2a (void) {
      u1a.a=u1a.a+0x40404040;
  }
  union tag1b {
@@ -220,7 +220,7 @@ fun1b (void) {
 fun2b (void) {
      u1b.a=u1b.a+0x40404040;
  }
- static int    fun1c();
+ static int    fun1c(int);
  static void   ok();
  int    a;
 int 
@@ -239,7 +239,7 @@ scppr01 (void) {
        }
  }
  static int 
-fun1c (void) {
+fun1c (int) {
      return(a);
  }
  static void 
@@ -818,7 +818,7 @@ mptest02 (void)
 {
 int     ga;
   int   a,b,c,d,i;
-  int   fff(),(*fp)(),ii;
+  int   fff(int),(*fp)(int),ii;
 
   fp=fff;i=0;
   ii=(*fp)(i);
@@ -851,7 +851,7 @@ func (void)
   return 1;
 }
 int 
-fff (void)
+fff (int)
 {
   return 1;
 }

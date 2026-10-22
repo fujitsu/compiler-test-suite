@@ -110,7 +110,7 @@ int
 scpo302 (void) {
    static char c1[]={"ok"};
    static char c2[]={"ng"};
-   void   fun1(),fun2();
+   void   fun1(void),fun2(void);
      memcpy(u1.c,"1234",4);
      fun1();
      fun2();
@@ -125,14 +125,14 @@ scpo302 (void) {
      return 0;
  }
  void 
-fun1 (int a) {
+fun1 (void) {
      u1.b.b1=u1.b.b1-0x10;
      u1.b.b2=u1.b.b2-0x10;
      u1.b.b3=u1.b.b3-0x10;
      u1.b.b4=u1.b.b4-0x10;
  }
  void 
-fun2 (int a) {
+fun2 (void) {
      u1.a=u1.a+0x20202020;
  }
  union tag1a {
@@ -149,7 +149,7 @@ int
 scpo303 (void) {
    static char c1[]={"ok"};
    static char c2[]={"ng"};
-   void   fun1a(),fun2a();
+   void   fun1a(void),fun2a(void);
      memcpy(u1a.c,"1234",4);
      fun1a();
      fun2a();
@@ -164,14 +164,14 @@ scpo303 (void) {
      return 0;
  }
  void 
-fun1a (int a) {
+fun1a (void) {
      u1a.b.b1=u1a.b.b1-0x10;
      u1a.b.b2=u1a.b.b2-0x10;
      u1a.b.b3=u1a.b.b3-0x10;
      u1a.b.b4=u1a.b.b4-0x10;
  }
  void 
-fun2a (int a) {
+fun2a (void) {
      u1a.a=u1a.a+0x20202020;
  }
  union tag1b {
@@ -213,8 +213,8 @@ fun1b (void) {
 fun2b (void) {
      u1b.a=u1b.a+0x20202020;
  }
- static int    fun1c();
- static void   ok();
+ static int    fun1c(int);
+ static void   ok(void);
  int    a;
 int 
 scppr01 (void) {
@@ -233,7 +233,7 @@ scppr01 (void) {
      return 0;
  }
  static int 
-fun1c (void) {
+fun1c (int) {
      return(a);
  }
  static void 
@@ -1100,7 +1100,7 @@ m3etrm07 (void)
    return 0;
 }
   void func1av(),func3(),func5();
-  int *func2(),func4();
+  int *func2(void),func4(int *);
 int 
 mptest21 (void)
   {
@@ -1112,7 +1112,7 @@ mptest21 (void)
   void 
 func1av (void)
   {
-       static int *(*eee)()=func2;
+       static int *(*eee)(void)=func2;
        if(*(*eee)() == 10)
         printf("\n*** MPTEST21 CHECK01 OK ***\n");
        else
@@ -1129,7 +1129,7 @@ func2 (void)
 func3 (void)
   {
        int    ccc;
-       static int aaa=20,(*bbb)()=func4;
+       static int aaa=20,(*bbb)(int *)=func4;
        static int *ddd=&aaa;
        *ddd=*ddd+30;
        if(*ddd==50)
@@ -1141,7 +1141,7 @@ func3 (void)
   void 
 func5 (void)
   {
-       void   func6();
+       void   func6(int *);
        static int b=20,*e;
        e=&b;
        func6(e);
@@ -1160,8 +1160,7 @@ func6 (
   }
 #define proc     {
 #define endproc  }
-int  func4(a)
-      int *a ;
+int  func4(int *a)
 proc
       *a=1 ;
       return 0;
@@ -2746,7 +2745,7 @@ int
 mptest38 (void)
  {
     int rtncd,*p1,p2,p3,s1;
-    void func1w();
+    void func1w(int);
     signal(SIGSEGV,func1w);
     rtncd=setjmp(env);
     if(rtncd!=0) {
@@ -2775,12 +2774,12 @@ l3: if(s1==0)
 
     for(p3=1;p3<400;p3++) {    
     p1=p1-20000;                
-	func1w();
+	func1w(0);
     } ;                        
     return 0;
  }
  void 
-func1w (void)
+func1w (int)
  {
     longjmp(env,999);
  }

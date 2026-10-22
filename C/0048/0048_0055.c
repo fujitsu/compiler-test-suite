@@ -1056,7 +1056,7 @@ rand (void)
 void 
 maktree (void)
 {
-    void addtree();
+    void addtree(int);
     int i;
 
     for (i = 1; i < ARRAY_MAX; ++i)
@@ -1101,7 +1101,7 @@ addtree (int n)
 void 
 gettree (void)
 {
-    struct x *srctree();
+    struct x *srctree(struct x *p);
 
     srctree(s1);
     return;

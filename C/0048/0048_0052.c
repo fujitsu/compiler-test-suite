@@ -151,7 +151,7 @@ mptest02 (void)
 {
 int     ga;
   int   a,b,c,d,i;
-  int   fff(),(*fp)(),ii;
+  int   fff(int),(*fp)(int),ii;
 
   fp=fff;i=0;
   ii=(*fp)(i);
@@ -184,7 +184,7 @@ func (void)
   return 1;
 }
 int 
-fff (void)
+fff (int)
 {
   return 1;
 }
@@ -1306,7 +1306,7 @@ printf("\n*** M3ETRE59 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE59-09 *** N G ********** N G ***\n");
 }
 {
-  int i=5,a=1,faaa();
+  int i=5,a=1,faaa(int);
   static int arr[]={7,8,9};
   i=faaa(a),i=arr[i];
   if(i==9)
@@ -1335,7 +1335,7 @@ printf("\n*** M3ETRE60 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE60-01 *** N G ********** N G ***\n");
 }
 {
-  int i=5,f60(),a=0;
+  int i=5,f60(int),a=0;
   i=(f60(a)*2);
   if(i==4)
     printf("*** M3ETRE60-02 *****     O    K     *****\n");
@@ -1351,7 +1351,7 @@ printf("\n*** M3ETRE60 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE60-03 *** N G ********** N G ***\n");
 }
 {
-  int i=5,a=0,f60();
+  int i=5,a=0,f60(int);
   i=(f60(a)-1);
   if(i==1)
     printf("*** M3ETRE60-04 *****     O    K     *****\n");
@@ -1368,7 +1368,7 @@ printf("\n*** M3ETRE60 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE60-05 *** N G ********** N G ***\n");
 }
 {
-  int i=5,a=0,f60();
+  int i=5,a=0,f60(int);
   i=(f60(a)+1);
   if(i==3)
     printf("*** M3ETRE60-06 *****     O    K     *****\n");
@@ -1376,7 +1376,7 @@ printf("\n*** M3ETRE60 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE60-06 *** N G ********** N G ***\n");
 }
 {
-  int i=5,a=0,f60();
+  int i=5,a=0,f60(int);
   i=a++ <=1;
   if(i==1&a==1)
     printf("*** M3ETRE60-07 *****     O    K     *****\n");
@@ -1384,7 +1384,7 @@ printf("\n*** M3ETRE60 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE60-07 *** N G ********** N G ***\n");
 }
 {
-  int i=5,a=0,f60();
+  int i=5,a=0,f60(int);
   i=a-- <=1;
   if(i==1&a==-1)
     printf("*** M3ETRE60-08 *****     O    K     *****\n");
@@ -1392,7 +1392,7 @@ printf("\n*** M3ETRE60 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE60-08 *** N G ********** N G ***\n");
 }
 {
-  int i=5,a=0,f60();
+  int i=5,a=0,f60(int);
   i=(f60(a)<=1);
   if(i==0)
     printf("*** M3ETRE60-09 *****     O    K     *****\n");
@@ -1400,7 +1400,7 @@ printf("\n*** M3ETRE60 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE60-09 *** N G ********** N G ***\n");
 }
 {
-  int i=5,a=0,f60();
+  int i=5,a=0,f60(int);
   i=a++ > 1;
   if(i==0&a==1)
     printf("*** M3ETRE60-10 *****     O    K     *****\n");
