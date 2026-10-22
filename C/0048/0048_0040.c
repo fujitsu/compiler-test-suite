@@ -520,7 +520,7 @@ mptest37 (void)
 int mptest38 (void)
  {
     int rtncd,*p1,p2,p3,s1;
-    void func1();
+    void func1(int);
     signal(SIGSEGV,func1);
     rtncd=setjmp(env);
     if(rtncd!=0) {
@@ -550,12 +550,12 @@ l3: if(s1==0)
     p1=0;
     for(p3=1;p3<400;p3++) {    
     p1=p1-20000;                
-	func1();
+	func1(0);
     } ;                        
     return 0;
  }
  void 
-func1 (void)
+func1 (int)
  {
     longjmp(env,999);
  }
@@ -629,7 +629,7 @@ printf("*** M3ETRE44 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE44-08 *** N G ***\n");
 }
 {
-  int f44();
+  int f44(int);
   int i=1,a=2,b=0;
   i=i==f44(b)?a:0;
   if(i==2)
@@ -638,7 +638,7 @@ printf("*** M3ETRE44 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE44-09 *** N G ***\n");
 }
 {
-  int f44();
+  int f44(int);
   int i=1,a=2,b=1;
   i=i==b?2:0;
   if(i==2)
@@ -701,7 +701,7 @@ printf("*** M3ETRE45 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE45-05 *** N G ***\n");
 }
 {
-  int i=2,b=2,f45(),a=0;
+  int i=2,b=2,f45(int),a=0;
   i=i==b?f45(a):0;
   if(i==3)
     printf("*** M3ETRE45-06 *****     O    K     *****\n");
@@ -709,7 +709,7 @@ printf("*** M3ETRE45 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE45-06 *** N G ***\n");
 }
 {
-  int i=0,f45(),a=0;
+  int i=0,f45(int),a=0;
   i=f45(a);
   if(i==3)
     printf("*** M3ETRE45-07 *****     O    K     *****\n");
@@ -1111,7 +1111,7 @@ printf("*** M3ETRE50 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE50-01 *** N G ***\n");
 }
 {
-  int f50();char a=1;
+  int f50(int);char a=1;
   a=f50(1);
   if(a==2)
     printf("*** M3ETRE50-02 *****     O    K     *****\n");
@@ -1119,7 +1119,7 @@ printf("*** M3ETRE50 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE50-02 *** N G ***\n");
 }
 {
-  int f50();char a=1,b=1;
+  int f50(int);char a=1,b=1;
   a=f50(b);
   if(a==2)
     printf("*** M3ETRE50-03 *****     O    K     *****\n");
@@ -1127,7 +1127,7 @@ printf("*** M3ETRE50 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE50-03 *** N G ***\n");
 }
 {
-  int f50();char a=1;
+  int f50(int);char a=1;
   static int arr[]={1,2,3};
   a=f50(arr[0]);
   if(a==2)
@@ -1144,7 +1144,7 @@ printf("*** M3ETRE50 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE50-05 *** N G ***\n");
 }
 {
-  int f50();char a=2;
+  int f50(int);char a=2;
   a=f50(a=(a+(-1)));
   if(a==2)
     printf("*** M3ETRE50-06 *****     O    K     *****\n");
@@ -1168,7 +1168,7 @@ printf("*** M3ETRE50 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE50-08 *** N G ***\n");
 }
 {
-  int f50();char a=1,b=0;
+  int f50(int);char a=1,b=0;
   b=(a=f50(a));
   if(b==2)
     printf("*** M3ETRE50-09 *****     O    K     *****\n");

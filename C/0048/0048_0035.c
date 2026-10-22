@@ -268,7 +268,7 @@ f1 (struct bt *pp, int j)
 func03 (void) {
    static char c1[]={"ok"};
    static char c2[]={"ng"};
-   void   fun1(),fun2();
+   void   fun1(void),fun2(void);
 printf("*** FUNC03 *** CT TEST FOR SCP0302 *** STARTED ***\n");
      memcpy(u1.c,"1234",4);
      fun1();
@@ -285,14 +285,14 @@ printf("*** FUNC03 *** CT TEST FOR SCP0302 *** ENDED ***\n");
  return 0;
  }
  void 
-fun1 (int a) {
+fun1 (void) {
      u1.b.b1=u1.b.b1-'0';
      u1.b.b2=u1.b.b2-'0';
      u1.b.b3=u1.b.b3-'0';
      u1.b.b4=u1.b.b4-'0';
  }
  void 
-fun2 (int a) {
+fun2 (void) {
      u1.a=u1.a+0x40404040;
  }
 #if INT64
@@ -396,10 +396,10 @@ func05 (void)
 {
 int     ga;
   int   a,b,c,d,i;
-  int   fff(),(*fp)(),ii;
+  int   fff(void),(*fp)(void),ii;
 
   fp=fff;i=0;
-  ii=(*fp)(i);
+  ii=(*fp)();
 
   ga=1;
 printf("*** FUNC05 *** CT TEST FOR MPTEST02 *** STARTED ***\n");
@@ -454,7 +454,7 @@ fff (void)
 func06 (void) {
    static char c1[]={"ok"};
    static char c2[]={"ng"};
-   void   fun11(),fun12();
+   void   fun11(void),fun12(void);
 printf("*** FUNC06 *** CT TEST FOR SCP0303 *** STARTED ***\n");
      memcpy(u11.c,"1234",4);
      fun11();
@@ -470,14 +470,14 @@ printf("*** FUNC06 *** CT TEST FOR SCP0303 *** STARTED ***\n");
 printf("*** FUNC06 *** CT TEST FOR SCP0303 *** ENDED ***\n");
  }
  void 
-fun11 (int a) {
+fun11 (void) {
      u11.b1.b11=u11.b1.b11-'0';
      u11.b1.b12=u11.b1.b12-'0';
      u11.b1.b13=u11.b1.b13-'0';
      u11.b1.b14=u11.b1.b14-'0';
  }
  void 
-fun12 (int a) {
+fun12 (void) {
      u11.a1=u11.a1+0x40404040;
  }
 #if INT64
@@ -706,7 +706,7 @@ int chk(struct t1 *ptr)
 func09 (void) {
    static char c1[]={"ok"};
    static char c2[]={"ng"};
-   void   fun21(),fun22();
+   void   fun21(void),fun22(void);
 printf("*** FUNC09 *** CT TEST FOR SCPO304 *** STARTED ***\n");
      memcpy(u21.c,"1234",4);
      fun21();
@@ -791,7 +791,7 @@ printf("*** FUNC10 *** CT TEST FOR X_TREEMK *** STARTED *\n");
     printf("*** FUNC10-06 ***   N   G   ***\n");
 }
 {
-  int ff1();
+  int ff1(int, int);
   int a=1;
   int b=0;
   b=ff1(a,1);
@@ -942,7 +942,7 @@ stfunc (int i, int j)
      w=fun(i,j)+j;
      return(w);
 }
- static int    funz1();
+ static int    funz1(void);
  static void   ok();
  int    za;
  int 
@@ -951,7 +951,7 @@ func12 (void) {
    void   ng();
 printf("*** FUNC12 *** CT TEST FOR SCPPR01 *** STARTED ***\n");
      za=10;
-     b=funz1(za);
+     b=funz1();
      if(za==b)
        {
          ok();

@@ -133,8 +133,9 @@ printf("\n* M3ETRE37 *** MK3 TEST FOR X_TREEMK *** STARTED *\n");
 printf("*** M3ETRE37 *** MK3 TEST FOR X_TREEMK *** ENDED ***\n");
  return 0;
   }
-  void func1(),func3(),func5();
-  int *func2(),func4();
+  void func1(void),func3(void),func5(void);
+  int *func2(void);
+  int func4(int *);
 int 
 mptest21 (void)
   {
@@ -146,7 +147,7 @@ mptest21 (void)
   void 
 func1 (void)
   {
-       static int *(*eee)()=func2;
+       static int *(*eee)(void)=func2;
        if(*(*eee)() == 10)
         printf("\n*** MPTEST21 CHECK01 OK ***\n");
        else
@@ -163,7 +164,7 @@ func2 (void)
 func3 (void)
   {
        int    ccc;
-       static int aaa=20,(*bbb)()=func4;
+       static int aaa=20,(*bbb)(int *)=func4;
        static int *ddd=&aaa;
        *ddd=*ddd+30;
        if(*ddd==50)
@@ -175,15 +176,13 @@ func3 (void)
   void 
 func5 (void)
   {
-       void   func6();
+       void   func6(int *);
        static int b=20,*e;
        e=&b;
        func6(e);
   }
   void 
-func6 (
-    int *a
-)
+func6 (int *a)
   {
        int    c=5;
        c=c+*a;
@@ -383,7 +382,7 @@ mptest26 (void)
 int 
 mptest27 (void)
  {
-        void          func27(int *),errcheck();
+        void          func27(int *),errcheck(void);
         static int    b;
         int          *a;
         printf("\n******** MPTEST27 START **************\n");
@@ -421,10 +420,10 @@ errcheck (void)
      char  e,*f                 ;
      int   a1[4]              ;
      }    p                    ;
-   int  g,h,*i,func228(),b1=0,b2=50,b3=0,b4=0,z=0;
-   void func128();
+   int  g,h,*i,func228(void),b1=0,b2=50,b3=0,b4=0,z=0;
+   void func128(void);
 
-   int mptest28()
+   int mptest28(void)
     {
     printf("\n<<<<<<<< START >>>>>>>>>>>>>>\n");
     h=2 ;
@@ -531,8 +530,8 @@ func228 (void)
  int 
 mptest29 (void)
  {
-    void func01(),func02(),func03(),func04(),func05(),func06();
-    void func07(),func08();
+    void func01(void),func02(void),func03(void),func04(void),func05(void),func06(void);
+    void func07(void),func08(void);
     func01();
     func02();
     func03();

@@ -640,7 +640,7 @@ printf("\n* M3ETRE10 *** MK3 TEST FOR X_TREEMK *** STARTED *\n");
     printf("*** M3ETRE10-08 ***   N   G   ***\n");
 }
 {
-  int f();
+  int f(int);
   int a=0;
   int b=100;
   int c=50;
