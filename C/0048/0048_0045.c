@@ -324,7 +324,7 @@ rand (void)
 void 
 maktree (void)
 {
-    void addtree();
+    void addtree(int);
     int i;
 
     for (i = 1; i < ARRAY_MAX; ++i)
@@ -369,7 +369,7 @@ addtree (int n)
 void 
 gettree (void)
 {
-    struct x *srctree();
+    struct x *srctree(struct x *p);
 
     srctree(s1);
     return;
@@ -590,7 +590,7 @@ mptest02 (void)
 {
 int     ga;
   int   a,b,c,d,i;
-  int   fff(),(*fp)(),ii;
+  int   fff(int),(*fp)(int),ii;
 
   fp=fff;i=0;
   ii=(*fp)(i);
@@ -624,7 +624,7 @@ func (void)
   return 1;
 }
 int 
-fff (void)
+fff (int)
 {
   return 1;
 }

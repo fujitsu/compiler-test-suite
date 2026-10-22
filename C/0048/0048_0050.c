@@ -1194,7 +1194,7 @@ static int res [92][8] = {{ 0, 4, 7, 5, 2, 6, 1, 3},
                           { 7, 2, 0, 5, 1, 4, 6, 3},
                           { 7, 3, 0, 2, 5, 1, 6, 4}};
 
-void generate();
+void generate(int x[], int col[], int up[], int down[]);
 
 int 
 scqih02 (void)
@@ -1285,9 +1285,9 @@ struct  TAG{
     unsigned char           ua1[SIZE1];
 };
 
-struct  TAG setst();
-BOOL     chkst();
-void        prst256();
+struct TAG setst(BOOL p_sw);
+BOOL     chkst(struct TAG *chk_st_p, BOOL p_sw);
+void     prst256(struct TAG *pr_st_p);
 
 
 int 

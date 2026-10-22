@@ -384,8 +384,8 @@ m3eva139 (void)
     printf("M3EVA139 TEST NG = %d \n",a);
   return 0;
 }
-  void func1(),func3(),func5();
-  int *func2(),func4();
+  void func1(void),func3(void),func5(void);
+  int *func2(void),func4(int *);
 int 
 mptest21 (void)
   {
@@ -414,7 +414,7 @@ func2 (void)
 func3 (void)
   {
        int    ccc;
-       static int aaa=20,(*bbb)()=func4;
+       static int aaa=20,(*bbb)(int *)=func4;
        static int *ddd=&aaa;
        *ddd=*ddd+30;
        if(*ddd==50)
@@ -426,7 +426,7 @@ func3 (void)
   void 
 func5 (void)
   {
-       void   func6();
+       void   func6(int *a);
        static int b=20,*e;
        e=&b;
        func6(e);
@@ -445,8 +445,7 @@ func6 (
   }
 #define proc     {
 #define endproc  }
-int  func4(a)
-      int *a ;
+int  func4(int *a)
 proc
       *a=1 ;
       return 0;

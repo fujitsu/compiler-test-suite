@@ -2,8 +2,8 @@
 #include <string.h>
 int scrlc09 (void);
 int scrlc04 (void);
-int mptest41();
-int mptest40();
+int mptest41(void);
+int mptest40(void);
 int m3etre60 (void);
 int m3etre59 (void);
 int m3etre58 (void);
@@ -14,8 +14,8 @@ int m3etre54 (void);
 int m3etre53 (void);
 int m3etre52 (void);
 int m3etre51 (void);
-int mptest42();
-int mptest43();
+int mptest42(void);
+int mptest43(void);
 int main()
 {
    printf("***  ** TEST FOR COMMON **** STARTED \n");
@@ -813,7 +813,7 @@ printf("\n*** M3ETRE59 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE59-09 *** N G ********** N G ***\n");
 }
 {
-  int i=5,a=1,f();
+  int i=5,a=1,f(int);
   static int arr[]={7,8,9};
   i=f(a),i=arr[i];
   if(i==9)
@@ -842,7 +842,7 @@ printf("\n*** M3ETRE60 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE60-01 *** N G ********** N G ***\n");
 }
 {
-  int i=5,f60(),a=0;
+  int i=5,f60(int),a=0;
   i=(f60(a)*2);
   if(i==4)
     printf("*** M3ETRE60-02 *****     O    K     *****\n");
@@ -858,7 +858,7 @@ printf("\n*** M3ETRE60 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE60-03 *** N G ********** N G ***\n");
 }
 {
-  int i=5,a=0,f60();
+  int i=5,a=0,f60(int);
   i=(f60(a)-1);
   if(i==1)
     printf("*** M3ETRE60-04 *****     O    K     *****\n");
@@ -875,7 +875,7 @@ printf("\n*** M3ETRE60 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE60-05 *** N G ********** N G ***\n");
 }
 {
-  int i=5,a=0,f60();
+  int i=5,a=0,f60(int);
   i=(f60(a)+1);
   if(i==3)
     printf("*** M3ETRE60-06 *****     O    K     *****\n");
@@ -883,7 +883,7 @@ printf("\n*** M3ETRE60 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE60-06 *** N G ********** N G ***\n");
 }
 {
-  int i=5,a=0,f60();
+  int i=5,a=0,f60(int);
   i=a++ <=1;
   if(i==1&a==1)
     printf("*** M3ETRE60-07 *****     O    K     *****\n");
@@ -891,7 +891,7 @@ printf("\n*** M3ETRE60 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE60-07 *** N G ********** N G ***\n");
 }
 {
-  int i=5,a=0,f60();
+  int i=5,a=0,f60(int);
   i=a-- <=1;
   if(i==1&a==-1)
     printf("*** M3ETRE60-08 *****     O    K     *****\n");
@@ -899,7 +899,7 @@ printf("\n*** M3ETRE60 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE60-08 *** N G ********** N G ***\n");
 }
 {
-  int i=5,a=0,f60();
+  int i=5,a=0,f60(int);
   i=(f60(a)<=1);
   if(i==0)
     printf("*** M3ETRE60-09 *****     O    K     *****\n");
@@ -907,7 +907,7 @@ printf("\n*** M3ETRE60 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE60-09 *** N G ********** N G ***\n");
 }
 {
-  int i=5,a=0,f60();
+  int i=5,a=0,f60(int);
   i=a++ > 1;
   if(i==0&a==1)
     printf("*** M3ETRE60-10 *****     O    K     *****\n");
@@ -1073,9 +1073,8 @@ f60 (int a)
       else
         printf("*** MPTEST40 NG ***\n");
       endproc
-  int *func2(),func4();
-int  func4(a)
-      int *a ;
+  int *func2(void),func4(int *);
+int  func4(int *a)
 proc
       *a=1 ;
 endproc
@@ -1106,7 +1105,7 @@ func2 (void)
 func3 (void)
   {
        int    ccc;
-       static int aaa=20,(*bbb)()=func4;
+       static int aaa=20,(*bbb)(int *)=func4;
        static int *ddd=&aaa;
        *ddd=*ddd+30;
        if(*ddd==50)
@@ -1118,7 +1117,7 @@ func3 (void)
   void 
 func5 (void)
   {
-       void   func6();
+       void   func6(int *);
        static int b=20,*e;
        e=&b;
        func6(e);
@@ -1175,7 +1174,7 @@ func6 (
       struct tagc *cp ;
       union  tag   abc ;
       int          i ;
-      void   funa(),funb(),func() ;
+      void   funa(struct taga *p),funb(struct tagb *p),func(struct tagc *p);
 
       memset(&abc,'\0',sizeof(union tag)) ;
 
@@ -1199,8 +1198,7 @@ func6 (
        if(abc.x_(i)==3) printf("\n*** mptest42 ok ***\n");
        }
       end
-void  funa(p)
-      struct taga *p ;
+void  funa(struct taga *p)
       proc
       p->a1_(0)+=1 ;
       p->a1_(1)+=1 ;
@@ -1208,8 +1206,7 @@ void  funa(p)
       p->a3    +=1 ;
       return ;
       end
-void  funb(p)
-      struct tagb *p ;
+void  funb(struct tagb *p)
       proc
       p->b1    +=1 ;
       p->b2_(0)+=1 ;
@@ -1217,8 +1214,7 @@ void  funb(p)
       p->b3    +=1 ;
       return ;
       end
-void  func(p)
-      struct tagc *p ;
+void  func(struct tagc *p)
       proc
       p->c1    +=1 ;
       p->c2    +=1 ;
@@ -1229,7 +1225,7 @@ void  func(p)
 #define proc    {
 #define then    {
 #define end     }
-static int fun() ;
+static int fun(int) ;
  int mptest43() proc
       int i ;
       i=1 ;
@@ -1239,8 +1235,7 @@ static int fun() ;
       else
        printf("\n*** mptest43 ok ***\n") ;
 end
-int fun(i)
-      int i ;
+int fun(int i)
       proc
       int j ;
       i+=1 ;

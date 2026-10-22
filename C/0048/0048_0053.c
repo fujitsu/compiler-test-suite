@@ -106,10 +106,10 @@ sub (void)
 }
 
 
-static int sub1(), sub2(), sub3(), sub4(), sub5();
-static int sub6(), sub7(), sub8(), sub9(), sub10();
-static int sub11(),sub12(),sub13(),sub14(),sub15();
-static int sub16(),sub17(),sub18(),sub19(),sub20();
+static int sub1(int dim[]), sub2(int dim[]), sub3(int dim[]), sub4(int dim[]), sub5(int dim[]);
+static int sub6(int dim[]), sub7(int dim[]), sub8(int dim[]), sub9(int dim[]), sub10(int dim[]);
+static int sub11(int dim[]),sub12(int dim[]),sub13(int dim[]),sub14(int dim[]),sub15(int dim[]);
+static int sub16(int dim[]),sub17(int dim[]),sub18(int dim[]),sub19(int dim[]),sub20(int dim[]);
 
 void 
 scrlp01 (void)
@@ -570,7 +570,7 @@ printf("\n*** M3ETRE61 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE61-01 *** N G ********** N G ***\n");
 }
 {
-  int i=5,a=0,f();
+  int i=5,a=0,f(int);
   i=(f(a)> 1);
   if(i==1)
     printf("*** M3ETRE61-02 *****     O    K     *****\n");
@@ -594,7 +594,7 @@ printf("\n*** M3ETRE61 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE61-04 *** N G ********** N G ***\n");
 }
 {
-  int i=5,a=0,f();
+  int i=5,a=0,f(int);
   i=(f(a)>=1);
   if(i==1)
     printf("*** M3ETRE61-05 *****     O    K     *****\n");
@@ -618,7 +618,7 @@ printf("\n*** M3ETRE61 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE61-07 *** N G ********** N G ***\n");
 }
 {
-  int i=5,a=0,f();
+  int i=5,a=0,f(int);
   i=(f(a)==1);
   if(i==0)
     printf("*** M3ETRE61-08 *****     O    K     *****\n");
@@ -662,7 +662,7 @@ printf("*** M3ETRE61 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE61-01 *** N G ********** N G ***\n");
 }
 {
-  int i=5,a=0,faa();
+  int i=5,a=0,faa(int);
   i=(faa(a)> 1);
   if(i==1)
     printf("*** M3ETRE61-02 *****     O    K     *****\n");
@@ -686,7 +686,7 @@ printf("*** M3ETRE61 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE61-04 *** N G ********** N G ***\n");
 }
 {
-  int i=5,a=0,faa();
+  int i=5,a=0,faa(int);
   i=(faa(a)>=1);
   if(i==1)
     printf("*** M3ETRE61-05 *****     O    K     *****\n");
@@ -710,7 +710,7 @@ printf("*** M3ETRE61 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE61-07 *** N G ********** N G ***\n");
 }
 {
-  int i=5,a=0,faa();
+  int i=5,a=0,faa(int);
   i=(faa(a)==1);
   if(i==0)
     printf("*** M3ETRE61-08 *****     O    K     *****\n");
@@ -762,7 +762,7 @@ printf("*** M3ETRE63 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE63-02 *** N G ********** N G ***\n");
 }
 {
-  int i=5,a=0,fbb();
+  int i=5,a=0,fbb(int);
   i=(fbb(a) %1);
   if(i==0)
     printf("*** M3ETRE63-03 *****     O    K     *****\n");
@@ -786,7 +786,7 @@ printf("*** M3ETRE63 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE63-05 *** N G ********** N G ***\n");
 }
 {
-  int i=5,a=0,fbb();
+  int i=5,a=0,fbb(int);
   i=(fbb(a)<<1);
   if(i==4)
     printf("*** M3ETRE63-06 *****     O    K     *****\n");
@@ -810,7 +810,7 @@ printf("*** M3ETRE63 ** MK3 TEST FOR X_TREEMK **** STARTED \n");
     printf("*** M3ETRE63-08 *** N G ********** N G ***\n");
 }
 {
-  int i=5,a=0,fbb();
+  int i=5,a=0,fbb(int);
   i=(fbb(a)>>1);
   if(i==1)
     printf("*** M3ETRE63-09 *****     O    K     *****\n");
