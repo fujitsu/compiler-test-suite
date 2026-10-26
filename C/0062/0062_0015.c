@@ -1,7 +1,7 @@
 
 #include <stdio.h>
 #include <math.h>
-void sub();
+void sub(double a[10][10][10], int len, int st, int end, int inc);
 int main()
 {
   double a[10][10][10];
@@ -19,9 +19,7 @@ int main()
   printf("-end- \n");
   printf("%f \n",a[3][3][3]);
 }
-void sub(a,len,st,end,inc)
-   int len,st,end,inc;
-   double a[10][10][10];
+void sub(double a[10][10][10], int len, int st, int end, int inc)
 {
 
   int i,j,k;
