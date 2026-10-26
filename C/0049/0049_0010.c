@@ -1304,9 +1304,9 @@ reduction15 (void)
 
 int 
 scn1215 (void) {
-  unsigned char          u1();
-  unsigned short int     u2();
-  unsigned int           u4();
+  unsigned char          u1(int ua, int ub);
+  unsigned short int     u2(int ua, int ub);
+  unsigned int           u4(unsigned int ua, unsigned int ub);
   unsigned char          u1a,u1b;
   unsigned short int     u2a,u2b;
   unsigned int           u4a,u4b;

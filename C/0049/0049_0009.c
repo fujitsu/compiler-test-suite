@@ -244,11 +244,11 @@ struct argtg {
 int 
 scosc14 (void){
     int  iarg[10][150];
-    void sub1();
+    void sub1(int *a, struct argtg *b);
 
     iarg[9][149] = 0xff;
 
-    sub1(iarg,&argst);
+    sub1(&iarg[0][0],&argst);
     if(argst.stmem1[50] == 456)
       printf("***** SCOSC14 *** O    K *****\n");
     else

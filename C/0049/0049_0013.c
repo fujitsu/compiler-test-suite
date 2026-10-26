@@ -8,7 +8,7 @@ int suba (void);
 int dpmk2019()
 {
 int a,b,c,d,e,f,g,h;
-void subb( ),subc( ),subd( ),sube( ),subf( ),subg( ),subh( );
+void subb(int),subc(int),subd(int),sube(int),subf(int),subg(int),subh(int);
 a=suba( );
 labelk1:
 switch (a) {
@@ -96,9 +96,9 @@ func (void)
 int 
 scn1219 (void) {
   unsigned long long int u8a,u8b,u8ans;
-  unsigned long long int u8();
+  unsigned long long int u8(unsigned long long int u8a, unsigned long long int u8b);
   signed   long long int i8a,i8b,i8ans;
-  signed   long long int i8();
+  signed   long long int i8(signed long long int i8a, signed long long int i8b);
   printf("scn1219 start\n");
   u8a=1;u8b=3;u8ans=u8(u8a,u8b);
   if (u8ans==8) printf("u8:ok\n");else printf("u8:ng\n");
@@ -116,7 +116,8 @@ i8 (signed long long int i8a, signed long long int i8b){return(i8a<<i8b);}
 int 
 scpa019 (void)
 {
-    long int    li = 2, sub19();
+    long int    li = 2;
+    long int sub19(long int);
     double      dl, ans=2.0;
 
     printf(" ---- scpa019 start ---- \n");
@@ -202,7 +203,7 @@ struct t   {
 int 
 cdpm0019 (void)
 {
-  struct t f1( );
+  struct t f1(struct t);
   struct t p;
   p.s001 =(struct t00 *)malloc(sizeof(struct t00));
   p.s002 =(struct t00 *)malloc(sizeof(struct t00));
@@ -295,8 +296,7 @@ free(p.s001);
 free(p.s002);
 
 }
-struct t 
-f1 (struct t p) { 
+struct t f1 (struct t p) { 
   *(p.s002)=*(p.s001);
   return(p);
 }

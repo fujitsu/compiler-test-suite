@@ -1205,9 +1205,17 @@ int scocva11()
    unsigned long long int   ulli;
    float                     f;
    double                    d;
-   long double               ldsub1(),ldsub2(),ldsub3(),ldsub4(),
-                             ldsub5(),ldsub6(),ldsub7(),ldsub8(),
-                             ldsub9(),ldsub10(),ld;
+   long double               ld;
+   long double ldsub1(long double ld, signed char sch);
+   long double ldsub2(long double ld, short sh);
+   long double ldsub3(long double ld,long int li);
+   long double ldsub4(long double ld, long long int lli);
+   long double ldsub5(long double ld, unsigned char uch);
+   long double ldsub6(long double ld, unsigned short ush);
+   long double ldsub7(long double ld, unsigned long int uli);
+   long double ldsub8(long double ld, unsigned long long int ulli);
+   long double ldsub9(long double ld, float f);
+   long double ldsub10(long double ld, double d);
 
    sch = 1;
    ld = ldsub1(ld,sch);
@@ -1280,81 +1288,61 @@ int scocva11()
       printf("**** SCOCVA11 - 10 * N    G  VAL = %x ****\n",ld);
 }
 
-long double ldsub1(ld,sch)
-  long double ld;
-  signed char  sch;
+long double ldsub1(long double ld, signed char sch)
 {
     ld = sch;
     return ld;
 }
 
-long double ldsub2(ld,sh)
-  long double ld;
-  short sh;
+long double ldsub2(long double ld, short sh)
 {
     ld = sh;
     return ld;
 }
 
-long double ldsub3(ld,li)
-  long double ld;
-  long int     li;
+long double ldsub3(long double ld,long int li)
 {
     ld = li;
     return ld;
 }
 
-long double ldsub4(ld,lli)
-  long double ld;
-  long long int     lli;
+long double ldsub4(long double ld, long long int lli)
 {
     ld = lli;
     return ld;
 }
 
-long double ldsub5(ld,uch)
-  long double ld;
-  unsigned char   uch;
+long double ldsub5(long double ld, unsigned char uch)
 {
     ld = uch;
     return ld;
 }
 
-long double ldsub6(ld,ush)
-  long double ld;
-  unsigned short       ush;
+long double ldsub6(long double ld, unsigned short ush)
 {
     ld = ush;
     return ld;
 }
 
-long double ldsub7(ld,uli)
-  long double             ld;
-  unsigned long int      uli;
+long double ldsub7(long double ld, unsigned long int uli)
 {
     ld = uli;
     return ld;
 }
 
-long double ldsub8(ld,ulli)
-  long double             ld;
-  unsigned long long int ulli;
+long double ldsub8(long double ld, unsigned long long int ulli)
 {
     ld = ulli;
     return ld;
 }
 
-long double ldsub9(ld,f)
-  long double    ld;
-  float          f;
+long double ldsub9(long double ld, float f)
 {
     ld = f;
     return ld;
 }
 
-long double ldsub10(ld,d)
-  long double    ld;
-  double         d;
+long double ldsub10(long double ld, double d)
 {
     ld = d;
     return ld;
@@ -1373,11 +1361,14 @@ long double ldsub10(ld,d)
   long int result9;
   int j;
 int comk3111 ( ) {
-  long int i,subx( );
-  long int f1( ),f2( ),f3( ),f4( ),f5( ),f6( ),f7( ),f8( ),f9( ),f10( );
-  long int f11( ),f12( ),f13( ),f14( ),f15( ),f16( ),f17( ),f18( ),f19( ),f20( );
-  static long int (*sub[ ])( )={f1,f2,f3,f4,f5,f6,f7,f8,f9,f10
-                          ,f11,f12,f13,f14,f15,f16,f17,f18,f19,f20};
+  long int i,subx(long int p0, long int p1, long int p2, long int p3, long int p4,
+                  long int p5, long int p6, long int p7, long int p8, long int p9);
+  long int f1(long int),f2(long int),f3(long int),f4(long int),f5(long int),
+           f6(long int),f7(long int),f8(long int),f9(long int),f10(long int);
+  long int f11(long int),f12(long int),f13(long int),f14(long int),f15(long int),
+           f16(long int),f17(long int),f18(long int),f19(long int),f20(long int);
+  static long int (*sub[ ])(long int)={f1,f2,f3,f4,f5,f6,f7,f8,f9,
+                                       f10,f11,f12,f13,f14,f15,f16,f17,f18,f19,f20};
   for (i=0; i<=10;i++) {
   result=sub[i](result1=
            sub[i+1](result2=
@@ -1419,28 +1410,29 @@ int comk3111 ( ) {
       printf ("** comk3111(%d) ** NG result=%d\n",(int)(i+12),result);
   }
 }
-long int f10(p) long int p;{return p+p;}
-long int f9(p) long int p;{return p+p;}
-long int f8(p) long int p;{return p+p;}
-long int f7(p) long int p;{return p+p;}
-long int f6(p) long int p;{return p+p;}
-long int f5(p) long int p;{return p+p;}
-long int f4(p) long int p;{return p+p;}
-long int f3(p) long int p;{return p+p;}
-long int f2(p) long int p;{return p+p;}
-long int f1(p) long int p;{return p+p;}
-long int f20(p) long int p;{return p+p;}
-long int f19(p) long int p;{return p+p;}
-long int f18(p) long int p;{return p+p;}
-long int f17(p) long int p;{return p+p;}
-long int f16(p) long int p;{return p+p;}
-long int f15(p) long int p;{return p+p;}
-long int f14(p) long int p;{return p+p;}
-long int f13(p) long int p;{return p+p;}
-long int f12(p) long int p;{return p+p;}
-long int f11(p) long int p;{return p+p;}
-long int subx(p0,p1,p2,p3,p4,p5,p6,p7,p8,p9)
-   long int p0,p1,p2,p3,p4,p5,p6,p7,p8,p9;{
+long int f10(long int p){return p+p;}
+long int f9(long int p){return p+p;}
+long int f8(long int p){return p+p;}
+long int f7(long int p){return p+p;}
+long int f6(long int p){return p+p;}
+long int f5(long int p){return p+p;}
+long int f4(long int p){return p+p;}
+long int f3(long int p){return p+p;}
+long int f2(long int p){return p+p;}
+long int f1(long int p){return p+p;}
+long int f20(long int p){return p+p;}
+long int f19(long int p){return p+p;}
+long int f18(long int p){return p+p;}
+long int f17(long int p){return p+p;}
+long int f16(long int p){return p+p;}
+long int f15(long int p){return p+p;}
+long int f14(long int p){return p+p;}
+long int f13(long int p){return p+p;}
+long int f12(long int p){return p+p;}
+long int f11(long int p){return p+p;}
+long int subx(long int p0, long int p1, long int p2, long int p3, long int p4,
+                  long int p5, long int p6, long int p7, long int p8, long int p9)
+{
 return p0+p1+p2+p3+p4+p5+p6+p7+p8+p9;
 }
 

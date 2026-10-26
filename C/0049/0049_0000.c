@@ -82,8 +82,7 @@ sub3 ()
     printf ("ng,%d\n", j);
 }
 static void 
-sub4 (L)
-     int L;
+sub4 (int L)
 {
   int i;
   int j = 0;
@@ -182,14 +181,12 @@ int sub7(int L)
     printf("ng\n");
 }
 
-int sub8(L)
-     int L;
+int sub8(int L)
 {
   return L;
 }
 
-int sub9(L)
-     int L;
+int sub9(int L)
 {
   int i;
   int p=0;
@@ -201,8 +198,7 @@ int sub9(L)
     printf("ng\n");
 }
 
-int sub10(i,j)
-     int i,j;
+int sub10(int i, int j)
 {
   return i+j;
 }
@@ -211,10 +207,9 @@ int sub10(i,j)
 jmp_buf env1,env2;
 
 double A[I_MAX],B[I_MAX];
-static void sub11(),sub12();
+static void sub11(int),sub12(int);
 
-static void main_test1(n)
-int n;
+static void main_test1(int n)
 {
   int x=0,y=0,test=iii(n);
   int i=0;
@@ -241,8 +236,7 @@ LOOP_1:
 }
   
 static int iii(x) int x; {return x;}
-static void sub11(n)
-int n;
+static void sub11(int n)
 {
   longjmp(env1,n);
   printf("******\n");
@@ -277,8 +271,7 @@ int M2K14001()
 
 double A[I_MAX],B[I_MAX];
 
-static void main_test3(n)
-int n;
+static void main_test3(int n)
 {
   int x=0,y=0,test=iii(n);
   int i=0;

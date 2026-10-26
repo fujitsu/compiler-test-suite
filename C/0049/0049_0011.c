@@ -439,7 +439,7 @@ typedef struct node {
 #define DD3 3
 #define DD4 4
 
-static double sw_node();
+static double sw_node(NODE *q);
 
 int estreg16()
 {
@@ -472,8 +472,7 @@ int estreg16()
 }
 
 static double
-sw_node(q)
-  NODE *q;
+sw_node(NODE *q)
 {
   double value = *(q->dl);
 
@@ -558,8 +557,7 @@ int comb16()
       printf(" ### OK ###\n");
     }
 }
-int get_int(a)
-int a;
+int get_int(int a)
 {
   return a;
 }
