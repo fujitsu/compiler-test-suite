@@ -11,11 +11,12 @@ double b[10] = {
 2.225073858507201E-308,
 -100, -10, -5, -0.0 };
 
-void test(double (*p)(),void (*test)(),char *func)
+void test(double (*p)(double),
+          void (*test_func)(int, double[], double[]), char *func)
 {
   int i;
 
-  test(10,a,b);
+  test_func(10,a,b);
 
   for(i=0;i<10;i++) {
     double x = (*p)(b[i]);
