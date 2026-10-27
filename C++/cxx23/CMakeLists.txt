@@ -27,6 +27,11 @@ set(cxx23_sources
     # The proposal makes mixed-encoding string literal concatenation ill-formed.
     # Test source is retained for future evaluation.
     # mixed_string_literal_concat.cpp
+
+    # P0533R9
+    # This C++23 feature is not yet supported in the current test environment.
+    # Test source is retained for future evaluation.
+    # constexpr_cmath_cstdlib.cpp
 )
     # P2036R3 / P2579R0
     # GCC 15.2.1 does not yet implement this C++23 feature.
