@@ -24,5 +24,5 @@ void test() {
 int main() {
   b1.stb_m1 = 1;
   b1.stb_m2 = 2;
-  test(b1);
+  test();
 }
