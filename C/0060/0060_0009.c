@@ -29,7 +29,7 @@ typedef  struct all_t{
 
 ALL_T x,y;
 
-extern void sub(),p();
+extern void sub(void),p(ALL_T *);
 int main()
 {
   x.sc = 1;
@@ -65,7 +65,7 @@ int main()
   p(&y);
 }
 
-void sub()
+void sub(void)
 {
   signed char sc = x.sc+1;
   unsigned char uc= x.uc+1;
@@ -112,8 +112,7 @@ void sub()
   return;
 }  
 
-void p(x)
-ALL_T *x;
+void p(ALL_T *x)
 {
   printf("%d\n",x->sc);
   printf("%u\n",x->uc);
