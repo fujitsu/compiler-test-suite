@@ -10,9 +10,9 @@ union u {
    unsigned int b;
  } r;
 int dpmk2018() { 
-  int p,   sub0(),sub00();
-  struct t sub1(),xxx,sub2( );
-  union u  sub3(),yyy,sub4( );
+  int p,   sub0(void),sub00(void);
+  struct t sub1(int p),xxx,sub2(int p);
+  union u  sub3(int p),yyy,sub4(int p);
   p  =sub0( );
   if (p== -1) printf("**dpmk2018-(1)** OK\n");
   else        printf("**dpmk2018-(1)** NG p=%d\n",p);
@@ -36,25 +36,25 @@ int dpmk2018() {
               printf("**dpmk2018-(6)** OK\n");
   else        printf("**dpmk2018-(6)** NG r.b=%d\n",r.b);
 }
-int sub0( ) { return -1;}
-int sub00( ) { int a; a=-1;return a;}
-struct t sub1(p ) int p; {
+int sub0(void){ return -1;}
+int sub00(void){ int a; a=-1;return a;}
+struct t sub1(int p){
   struct t z;
   z.a=p  ;
   z.b=10;
   return(z);
 }
-struct t sub2(p ) int p; {
+struct t sub2(int p){
   q.b=p;
   return(q);
 }
-union u sub3(p ) int p; {
+union u sub3(int p){
   union u z;
   z.a=p  ;
   z.b=10;
   return(z);
 }
-union u sub4(p ) int p; {
+union u sub4(int p){
   r.b=p;
   return(r);
 }
@@ -139,8 +139,7 @@ int comb18()
       printf(" ### OK ###\n");
     }
 }
-int get_int(a)
-int a;
+int get_int(int a)
 {
   return a;
 }
@@ -168,13 +167,7 @@ int if_18()
   }
   printf("s=%d\n",s);
 }
-void  sub22(pk,pj1,pj2,pj3,pj4,pj5)
-int *pk;
-int *pj1;
-int *pj2;
-int *pj3;
-int *pj4;
-int *pj5;
+void  sub22(int *pk, int *pj1, int *pj2, int *pj3, int *pj4, int *pj5)
 {
   *pk = 10;
   *pj1 = 100 ;
@@ -185,7 +178,7 @@ int *pj5;
 }
 
 void fatal_error (void);
-int rng_18()
+int rng_18(void)
 {
   int i;
   i = 0;
@@ -225,7 +218,7 @@ void fatal_error ()
 
 #include  <stdio.h>
 
-int scobe18()
+int scobe18(void)
 {
    static long int a[6]={ 1,1,1,1,1,1 };
    static float    b[2]={ 1.0,1.0 };
@@ -336,10 +329,15 @@ struct tag {
    struct atag ast;
    }st;
 int i;
-int scosc18()
-{
-    void sub18(),sub28(),sub38(),sub48(),sub58();
 
+void sub18(struct tag *p);
+void sub28(struct atag *p);
+void sub38(struct btag *p);
+void sub48(struct ctag *p);
+void sub58(struct dtag *p);
+
+int scosc18(void)
+{
     for(i=0; i<=9; i++){
       sub18(&st);
       if(*(st.ast.bst.cst.dst.i[0])!=i)
@@ -352,33 +350,28 @@ int scosc18()
     }
     printf("****** SCOSC18 *** O      K ****\n");
 }
-void sub18(p)
-  struct tag *p;
+void sub18(struct tag *p)
 {
    sub28(&p->ast);
 }
-void sub28(p)
-  struct atag *p;
+void sub28(struct atag *p)
 {
    sub38(&p->bst);
 }
-void sub38(p)
-  struct btag *p;
+void sub38(struct btag *p)
 {
    sub48(&p->cst);
 }
-void sub48(p)
-  struct ctag *p;
+void sub48(struct ctag *p)
 {
    sub58(&p->dst);
 }
-void sub58(p)
-  struct dtag *p;
+void sub58(struct dtag *p)
 {
    p->i[0] = &i;
 }
 
-int url018 ()
+int url018 (void)
 {
   struct tag
     {
@@ -408,30 +401,16 @@ int url018 ()
   printf("***** unroll018 ***** end\n");
 }
 
-int result_chk(r00,
-                   c00,f00,l00,d00,x00,s00,h00,i00
-                  ,c01,f01,l01,d01,x01,s01,h01,i01
-                  ,c02,f02,l02,d02,x02,s02,h02,i02
-                  ,c03,f03,l03,d03,x03,s03,h03,i03
-                  ,c04,f04,l04,d04,x04,s04,h04,i04
-                  ,c05,f05,l05,d05,x05,s05,h05,i05
-                  ,c06,f06,l06,d06,x06,s06,h06,i06
-                  ,c07,f07,l07,d07,x07,s07,h07,i07
-                  ,c08,f08,l08,d08,x08,s08,h08,i08) 
-long   r00;
-float  f00,f01,f02,f03,f04,f05,f06,f07,f08;
-double d00,d01,d02,d03,d04,d05,d06,d07,d08;
-long
-double x00,x01,x02,x03,x04,x05,x06,x07,x08;
-
-int    l00,l01,l02,l03,l04,l05,l06,l07,l08;
-long
-int    i00,i01,i02,i03,i04,i05,i06,i07,i08;
-
-int    h00,h01,h02,h03,h04,h05,h06,h07,h08;
-char   c00,c01,c02,c03,c04,c05,c06,c07,c08;
-short
-int    s00,s01,s02,s03,s04,s05,s06,s07,s08;
+int result_chk(long r00,
+             char c00, float f00, int l00, double d00, long double x00, short int s00, int h00, long int i00
+            ,char c01, float f01, int l01, double d01, long double x01, short int s01, int h01, long int i01
+            ,char c02, float f02, int l02, double d02, long double x02, short int s02, int h02, long int i02
+            ,char c03, float f03, int l03, double d03, long double x03, short int s03, int h03, long int i03
+            ,char c04, float f04, int l04, double d04, long double x04, short int s04, int h04, long int i04
+            ,char c05, float f05, int l05, double d05, long double x05, short int s05, int h05, long int i05
+            ,char c06, float f06, int l06, double d06, long double x06, short int s06, int h06, long int i06
+            ,char c07, float f07, int l07, double d07, long double x07, short int s07, int h07, long int i07
+            ,char c08, float f08, int l08, double d08, long double x08, short int s08, int h08, long int i08) 
 {
   if (r00==      (  c00+f00+l00+d00+x00+s00+h00+i00
                   + c01+f01+l01+d01+x01+s01+h01+i01
@@ -447,28 +426,15 @@ int    s00,s01,s02,s03,s04,s05,s06,s07,s08;
     return 0;
 }  
 int result_chkm(
-                   c00,f00,l00,d00,x00,s00,h00,i00
-                  ,c01,f01,l01,d01,x01,s01,h01,i01
-                  ,c02,f02,l02,d02,x02,s02,h02,i02
-                  ,c03,f03,l03,d03,x03,s03,h03,i03
-                  ,c04,f04,l04,d04,x04,s04,h04,i04
-                  ,c05,f05,l05,d05,x05,s05,h05,i05
-                  ,c06,f06,l06,d06,x06,s06,h06,i06
-                  ,c07,f07,l07,d07,x07,s07,h07,i07
-                  ,c08,f08,l08,d08,x08,s08,h08,i08) 
-float  f00,f01,f02,f03,f04,f05,f06,f07,f08;
-double d00,d01,d02,d03,d04,d05,d06,d07,d08;
-long
-double x00,x01,x02,x03,x04,x05,x06,x07,x08;
-
-int    l00,l01,l02,l03,l04,l05,l06,l07,l08;
-long
-int    i00,i01,i02,i03,i04,i05,i06,i07,i08;
-
-int    h00,h01,h02,h03,h04,h05,h06,h07,h08;
-char   c00,c01,c02,c03,c04,c05,c06,c07,c08;
-short
-int    s00,s01,s02,s03,s04,s05,s06,s07,s08;
+	char c00, float f00, int l00, double d00, long double x00, short int s00, int h00, long int i00
+       ,char c01, float f01, int l01, double d01, long double x01, short int s01, int h01, long int i01
+       ,char c02, float f02, int l02, double d02, long double x02, short int s02, int h02, long int i02
+       ,char c03, float f03, int l03, double d03, long double x03, short int s03, int h03, long int i03
+       ,char c04, float f04, int l04, double d04, long double x04, short int s04, int h04, long int i04
+       ,char c05, float f05, int l05, double d05, long double x05, short int s05, int h05, long int i05
+       ,char c06, float f06, int l06, double d06, long double x06, short int s06, int h06, long int i06
+       ,char c07, float f07, int l07, double d07, long double x07, short int s07, int h07, long int i07
+       ,char c08, float f08, int l08, double d08, long double x08, short int s08, int h08, long int i08)
 {
    return(          c00*f00*l00*d00*x00*s00*h00*i00
                   * c01*f01*l01*d01*x01*s01*h01*i01

@@ -1,7 +1,7 @@
 
 #include <stdio.h>
 int sub(int a, int b, int c, int d, int n);
-int dpmk2012(){
+int dpmk2012(void){
   struct t {
            signed   char      b01:1;
            unsigned char      b02:2;
@@ -116,14 +116,14 @@ int dpmk2012(){
         char stc;
      };
 
-  int mptest12()
+  int mptest12(void)
  {
 #ifdef __STDC__
      int func1( int *i );
 #else
-     int func1();
+     int func1(int *);
 #endif
-     struct st stfunc();
+     struct st stfunc(struct st s,int i);
   
      static int bbb[5]={0,1,2,3,4};
      struct st sss;
@@ -145,8 +145,7 @@ int dpmk2012(){
      }
      printf("\n ***** MPTEST12 END *****\n");
  }
-  int func1(ccc)
-    int *ccc;
+  int func1(int *ccc)
  {
  
     int i=0;
@@ -155,9 +154,7 @@ int dpmk2012(){
        if(*(--ccc) != aaa[i]) return(1);
     return(0);
  }
- struct st stfunc(s,i)
-    struct st s;
-    int       i;
+ struct st stfunc(struct st s,int i)
  {
     s.sti += i;
     s.stc += i;
@@ -175,7 +172,7 @@ int dpmk2012(){
 #define ANS4 (float)0.00435
 #define ANS5 (float)0.000435
 
-int reduction12()
+int reduction12(void)
 {
   int i;
   double b=R, c=R, d=R, e=R, f=R;
@@ -245,7 +242,7 @@ int reduction12()
 
 #include  <stdio.h>
 
-int scobe12()
+int scobe12(void)
 {
    struct tag
    {
@@ -309,7 +306,7 @@ int scobe12()
 
 #include <setjmp.h>
 long int z=0xffff0000;
-int comk3112 ( ) {
+int comk3112 (void) {
 volatile   long int x=0xff00ff00;
   jmp_buf env;
   if (setjmp(env)==0) goto sub1;
@@ -351,12 +348,12 @@ struct str {
            };
  
 
-long long int          funcl1();
-unsigned long long int funcl2();
-long double            funcl3();
-struct str             funcl4();
+long long int          funcl1(signed char wi1, short int wi2, int wi4);
+unsigned long long int funcl2(signed char xi1, short int xi2, int xi4);
+long double            funcl3(signed char yi1, short int yi2, int yi4);
+struct str             funcl4(struct str zstr);
  
-int snitr12 ()
+int snitr12(void)
 {
 
 signed char            li1=0;
@@ -401,10 +398,7 @@ else
  
 }
  
-long long int funcl1(wi1,wi2,wi4)
-                     signed char  wi1;
-                     short int    wi2;
-                     int          wi4;
+long long int funcl1(signed char wi1, short int wi2, int wi4)
 {
   printf(" FUNCL1 ENTERED : WI1 =  %d \n",wi1);
   if(wi1==0)
@@ -413,10 +407,7 @@ long long int funcl1(wi1,wi2,wi4)
     return(wi1+wi2+wi4);
 }
  
-unsigned long long int funcl2(xi1,xi2,xi4)
-                              signed char  xi1;
-                              short int    xi2;
-                              int          xi4;
+unsigned long long int funcl2(signed char xi1, short int xi2, int xi4)
 {
   printf(" FUNCL2 ENTERED : XI1 =  %d \n",xi1);
   if(xi1==1)
@@ -425,10 +416,7 @@ unsigned long long int funcl2(xi1,xi2,xi4)
     return(funcl2(1,xi2,xi4));
 }
  
-long double funcl3(yi1,yi2,yi4)
-                   signed char  yi1;
-                   short int    yi2;
-                   int          yi4;
+long double funcl3(signed char yi1, short int yi2, int yi4)
 {
   printf(" FUNCL3 ENTERED : YI1 =  %d \n",yi1);
   if(yi1==1)
@@ -437,8 +425,7 @@ long double funcl3(yi1,yi2,yi4)
     return(funcl3(1,yi2,yi4));
 }
  
-struct str funcl4(zstr)
-                  struct str zstr;
+struct str funcl4(struct str zstr)
 {
   printf(" FUNCL4 ENTERED : SI1 =  %d \n", zstr.si1);
   if(zstr.si1==0)

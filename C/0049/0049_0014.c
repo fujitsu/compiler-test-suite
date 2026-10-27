@@ -143,9 +143,12 @@ int ok()
 }
 
 int cdpm0025 ( ) {
-   int f1( ),f2( ),f3( ),f4( ),f5( ),f6( ),f7( ),f8( ),f9( ),f10( );
-   int f11( ),f12( ),f13( ),f14( ),f15( ),f16( ),f17( ),f18( ),f19( ),f20( );
-   int i,subx( );
+   int f1(int),f2(int),f3(int),f4(int),f5(int),f6(int),f7(int),f8(int),f9(int);
+   int f10(volatile int p);
+   int f11(int),f12(int),f13(int),f14(int),f15(int),f16(int),f17(int),f18(int),f19(int),f20(int);
+   int i,subx(volatile int, volatile int, volatile int, volatile int,
+	      volatile int, volatile int, volatile int, volatile int,
+	      volatile int, volatile int);
    register volatile  int result;
    register volatile int result0;
    register volatile int result1;
@@ -158,7 +161,7 @@ int cdpm0025 ( ) {
    register volatile int result8;
    register volatile int result9;
   int j;
-  static  int (*sub[ ])( )={f1,f2,f3,f4,f5,f6,f7,f8,f9,f10
+  static  int (*sub[])(int)={f1,f2,f3,f4,f5,f6,f7,f8,f9,f10
                           ,f11,f12,f13,f14,f15,f16,f17,f18,f19,f20};
   for (i=0; i<=10;i++) {
   result=sub[i](result1=
@@ -200,28 +203,30 @@ int cdpm0025 ( ) {
       printf ("** cdpm0025(%d) ** NG result=%d\n",(int)(i+12),result);
   }
 }
- int f10(p)  register volatile int p;{return p+p;}
- int f9(p)  int p;{return p+p;}
- int f8(p)  int p;{return p+p;}
- int f7(p)  int p;{return p+p;}
- int f6(p)  int p;{return p+p;}
- int f5(p)  int p;{return p+p;}
- int f4(p)  int p;{return p+p;}
- int f3(p)  int p;{return p+p;}
- int f2(p)  int p;{return p+p;}
- int f1(p)  int p;{return p+p;}
- int f20(p)  int p;{return p+p;}
- int f19(p)  int p;{return p+p;}
- int f18(p)  int p;{return p+p;}
- int f17(p)  int p;{return p+p;}
- int f16(p)  int p;{return p+p;}
- int f15(p)  int p;{return p+p;}
- int f14(p)  int p;{return p+p;}
- int f13(p)  int p;{return p+p;}
- int f12(p)  int p;{return p+p;}
- int f11(p)  int p;{return p+p;}
- int subx(p0,p1,p2,p3,p4,p5,p6,p7,p8,p9)
-    register volatile int p0,p1,p2,p3,p4,p5,p6,p7,p8,p9;{
+ int f10(volatile int p){return p+p;}
+ int f9(int p){return p+p;}
+ int f8(int p){return p+p;}
+ int f7(int p){return p+p;}
+ int f6(int p){return p+p;}
+ int f5(int p){return p+p;}
+ int f4(int p){return p+p;}
+ int f3(int p){return p+p;}
+ int f2(int p){return p+p;}
+ int f1(int p){return p+p;}
+ int f20(int p){return p+p;}
+ int f19(int p){return p+p;}
+ int f18(int p){return p+p;}
+ int f17(int p){return p+p;}
+ int f16(int p){return p+p;}
+ int f15(int p){return p+p;}
+ int f14(int p){return p+p;}
+ int f13(int p){return p+p;}
+ int f12(int p){return p+p;}
+ int f11(int p){return p+p;}
+ int subx(register volatile int p0, register volatile int p1, register volatile int p2,
+          register volatile int p3, register volatile int p4, register volatile int p5,
+	  register volatile int p6, register volatile int p7, register volatile int p8, register volatile int p9)
+{
 return p0+p1+p2+p3+p4+p5+p6+p7+p8+p9;
 }
 struct t {
@@ -321,9 +326,7 @@ int scrna14()
            printf(" ng \n");
  }
 
-int sub54(i,j)
- volatile   long long int i;
- volatile   long long int j; {
+int sub54(long long int i, long long int j){
 i=~i;
 i=i<< (j+30);
 i=(~j ) & i;

@@ -1,12 +1,12 @@
 #include <stdio.h>
 int get_int(int a);
 
-int subK();
 union UTAG { int v1; int w1; };
+int subK(union UTAG);
 #define IN(p) p.v1 = subK(p)
 #define OUT(p) p.w1 = p.w1 + p.v1 
 #define ADD(p) p.w1 
-int ABCDEF1() {
+int ABCDEF1(void) {
   int i,sum=0;
   union UTAG u0000,u0001,u0002,u0003,u0004,u0005,u0006,u0007,u0008,u0009;
   union UTAG u0010,u0011,u0012,u0013,u0014,u0015,u0016,u0017,u0018,u0019;
@@ -89,8 +89,7 @@ int ABCDEF1() {
   else
     printf("ABCDEF1 is NG \n");
 }
-int subK(p)
-union UTAG p;
+int subK(union UTAG p)
 {
   p.v1 = 0;
   p.w1 = 1;
@@ -101,7 +100,7 @@ union UTAG p;
 #define ANS (double)200.0
 #define ZERO (double)0.0
 
-int estreg08()
+int estreg08(void)
 {
   int i, j;
   double a[N], b[N], c[N][N];
@@ -154,7 +153,7 @@ int estreg08()
   }
 }
 
-int reduction08()
+int reduction08(void)
 {
    int i;
    int o=0, p=0, q=0, r=0, s=0, t=0, u=0;
@@ -222,13 +221,13 @@ int reduction08()
   }
 }
 
-int dpmk2128 ( ) {
+int dpmk2128 (void) {
       float       r4;
   double      r8;
   long double r16;
-  float       subr4( );
-  double      subr8( );
-  long double subr16( );
+  float       subr4(float);
+  double      subr8(double);
+  long double subr16(long double);
 signed        char i1;
 signed  short int  i2;
 signed        int  i4;
@@ -293,17 +292,17 @@ signed        int  i4;
           if (u4==4) printf("**dpmk2128-(18)** OK\n");
           else          printf("**dpmk2128-(18)** NG u4=%d\n",u4);
 }
-float subr4(p)  float p;{
+float subr4(float p){
   return p+p;
 }
-double subr8(p)  double p;{
+double subr8(double p){
   return p+p;
 }
-long double subr16(p) long double p;{
+long double subr16(long double p){
   return p+p;
 }
 
-int url028 ()
+int url028(void)
 {
   int i;
   int j1 = 0, j2 = 0;
@@ -320,10 +319,13 @@ int url028 ()
   printf("***** unroll028 ***** end\n");
 }
 
-int comk3108 ( ) {
-  long int f1( ),f2( ),f3( ),f4( ),f5( ),f6( ),f7( ),f8( ),f9( ),f10( );
-  long int f11( ),f12( ),f13( ),f14( ),f15( ),f16( ),f17( ),f18( ),f19( ),f20( );
-  long int i,subx( );
+int comk3108(void) {
+  long int f1(long int),f2(long int),f3(long int),f4(long int),f5(long int);
+  long int f6(long int),f7(long int),f8(long int),f9(long int),f10(long int);
+  long int f11(long int),f12(long int),f13(long int),f14(long int),f15(long int);
+  long int f16(long int),f17(long int),f18(long int),f19(long int),f20(long int);
+  long int i,subx(long int p0, long int p1, long int p2, long int p3, long int p4,
+		  long int p5, long int p6, long int p7, long int p8, long int p9);
   long int result;
   long int result0;
   long int result1;
@@ -336,8 +338,8 @@ int comk3108 ( ) {
   long int result8;
   long int result9;
   int j;
-  static long int (*sub[ ])( )={f1,f2,f3,f4,f5,f6,f7,f8,f9,f10
-                          ,f11,f12,f13,f14,f15,f16,f17,f18,f19,f20};
+  static long int (*sub[ ])(long int)={f1,f2,f3,f4,f5,f6,f7,f8,f9,
+	                               f10,f11,f12,f13,f14,f15,f16,f17,f18,f19,f20};
   for (i=0; i<=10;i++) {
   result=sub[i](result1=
            sub[i+1](result2=
@@ -379,28 +381,28 @@ int comk3108 ( ) {
       printf ("** comk3108(%d) ** NG result=%d\n",(int)(i+12),result);
   }
 }
-long int f10(p) long int p;{return p+p;}
-long int f9(p) long int p;{return p+p;}
-long int f8(p) long int p;{return p+p;}
-long int f7(p) long int p;{return p+p;}
-long int f6(p) long int p;{return p+p;}
-long int f5(p) long int p;{return p+p;}
-long int f4(p) long int p;{return p+p;}
-long int f3(p) long int p;{return p+p;}
-long int f2(p) long int p;{return p+p;}
-long int f1(p) long int p;{return p+p;}
-long int f20(p) long int p;{return p+p;}
-long int f19(p) long int p;{return p+p;}
-long int f18(p) long int p;{return p+p;}
-long int f17(p) long int p;{return p+p;}
-long int f16(p) long int p;{return p+p;}
-long int f15(p) long int p;{return p+p;}
-long int f14(p) long int p;{return p+p;}
-long int f13(p) long int p;{return p+p;}
-long int f12(p) long int p;{return p+p;}
-long int f11(p) long int p;{return p+p;}
-long int subx(p0,p1,p2,p3,p4,p5,p6,p7,p8,p9)
-   long int p0,p1,p2,p3,p4,p5,p6,p7,p8,p9;{
+long int f10(long int p){return p+p;}
+long int f9(long int p){return p+p;}
+long int f8(long int p){return p+p;}
+long int f7(long int p){return p+p;}
+long int f6(long int p){return p+p;}
+long int f5(long int p){return p+p;}
+long int f4(long int p){return p+p;}
+long int f3(long int p){return p+p;}
+long int f2(long int p){return p+p;}
+long int f1(long int p){return p+p;}
+long int f20(long int p){return p+p;}
+long int f19(long int p){return p+p;}
+long int f18(long int p){return p+p;}
+long int f17(long int p){return p+p;}
+long int f16(long int p){return p+p;}
+long int f15(long int p){return p+p;}
+long int f14(long int p){return p+p;}
+long int f13(long int p){return p+p;}
+long int f12(long int p){return p+p;}
+long int f11(long int p){return p+p;}
+long int subx(long int p0, long int p1, long int p2, long int p3, long int p4, long int p5, long int p6, long int p7, long int p8, long int p9)
+{
 return p0+p1+p2+p3+p4+p5+p6+p7+p8+p9;
 }
 
@@ -414,7 +416,7 @@ long int sub(float  fl, struct tag1 st, long int li[]);
 
 long int     cal, ans = 6;
 
-int scpa008()
+int scpa008(void)
 {
     long int           i, lia1[5];
     float              fl1;
@@ -446,7 +448,7 @@ long int      c[5])
 }
 
 int a;
-int expr48()
+int expr48(void)
 {
   a=get_int(1234567);
 
@@ -465,14 +467,15 @@ int expr48()
   printf(" OKOKOK \n");
   return 0;
 }
-int get_int(a)
-int a;
+int get_int(int a)
 {
   return a;
 }
 
-int func();
-int snitr08 ()
+int func(signed char, short int, int, long long int, unsigned char,
+	  	unsigned short int, unsigned int, unsigned long long int,
+	       	float, double, long double);
+int snitr08 (void)
 {
 signed char            wi1=0;
 short int              wi2=2;
@@ -495,18 +498,9 @@ else
     printf(" SNITR08 NG \n");
   }
 }
-int func(pi1,pi2,pi4,pi8,pu1,pu2,pu4,pu8,pr4,pr8,prq)
-signed char            pi1;
-short int              pi2;
-int                    pi4;
-long long int          pi8;
-unsigned char          pu1;
-unsigned short int     pu2;
-unsigned int           pu4;
-unsigned long long int pu8;
-float                  pr4;
-double                 pr8;
-long double            prq;
+int func(signed char pi1, short int pi2, int pi4, long long int pi8,
+         unsigned char pu1, unsigned short int pu2, unsigned int pu4,
+	 unsigned long long int pu8, float pr4, double pr8, long double prq)
 {
   printf(" FUNC ENTERED : PI1 = %d \n",pi1);
   if(pi1==1)
@@ -514,7 +508,7 @@ long double            prq;
   else
     return(func(pi1+1,pi2,pi4,pi8,pu1,pu2,pu4,pu8,pr4,pr8,prq));
 }
-int main( ) {
+int main(void) {
   ABCDEF1(  );
   estreg08( );
   reduction08( );
