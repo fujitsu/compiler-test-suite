@@ -8,7 +8,7 @@
 
  static int  icount= 0 ,
              condsw =1 ;
-        int  exit() ;
+        int  exit(int) ;
  static char corrval[30] = { "CORRECTVAL  :" } ,
              compval[30] = { "COMPUTEDVAL :" } ;
 
