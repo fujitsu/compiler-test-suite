@@ -12,7 +12,7 @@ int foo(int i, int j, int k)
 void ord_dep(int n, int a[][n][n], int b[][n][n], int c[][n][n])
 {
 
-  int i, j, k, foo();
+  int i, j, k;
 
   #pragma omp parallel for ordered(3)
   for (k=2-1; k<n; k++) {
@@ -33,7 +33,7 @@ void ord_dep(int n, int a[][n][n], int b[][n][n], int c[][n][n])
 void ord_dep_seq(int n, int a[][n][n], int b[][n][n], int c[][n][n])
 {
 
-  int i, j, k, foo();
+  int i, j, k;
 
   for (k=2-1; k<n; k++) {
      for (j=4-1; j<n; j++) {

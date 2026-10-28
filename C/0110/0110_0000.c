@@ -14,7 +14,7 @@ void ord_dep(int n, int a[][n][n], int b[][n][n], int c[][n][n])
   long long j;
   short n2=2;
   int const z=20;
-  int i, k, foo();
+  int i, k;
 
   #pragma omp parallel for ordered(3) collapse(1)
   for (k=n2-1; k<20; k++) {
@@ -37,7 +37,7 @@ void ord_dep_seq(int n, int a[][n][n], int b[][n][n], int c[][n][n])
   long long j;
   short n2=2;
   int const z=20;
-  int i, k, foo();
+  int i, k;
 
   for (k=n2-1; k<20; k++) {
      for (j=z-2-1; j>=2-1; j-=n2) {
