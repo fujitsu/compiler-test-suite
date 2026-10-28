@@ -44,6 +44,15 @@ set(cxx23_sources
             )
     endif()
 
+    # P2255R2
+    # Clang does not yet support this C++23 feature.
+    # Run only on GCC.
+    if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+        list(APPEND cxx23_sources
+            reference_binds_temporary.cpp
+            )
+    endif()
+
 foreach(src ${cxx23_sources})
   set_property(SOURCE ${src}
                APPEND PROPERTY COMPILE_OPTIONS "-std=c++23" "-Wall" "-Wextra")
