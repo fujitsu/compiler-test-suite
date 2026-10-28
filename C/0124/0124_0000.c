@@ -3,7 +3,10 @@
 #include <math.h>
 #include <stdio.h>
 #include <math.h>
-int (*signum)() ;
+#define signum(x) _Generic((x), \
+    int*: isignum, \
+    double*: dsignum \
+)(x)
 int isignum(int *a) ;
 int dsignum(double *a) ;
 int main()
@@ -20,7 +23,6 @@ for(i=0 ; i<100 ; i++)
    {
    mf[i] = 50.0 + (-(double)i) ;
    }
-signum = isignum ;
 for(i=0 ; i<100 ; i++)
    {
    ret1[i] = signum(mi) ;
@@ -36,7 +38,6 @@ for(i=0 ; i<100 ; i++)
    {
    printf("data[i]:%d ret[i]:%d \n",mi[i],ret1[i]) ;
    }
-signum = dsignum ;
 for(i=0 ; i<100 ; i++)
    {
    ret2[i] = signum(mf) ;
