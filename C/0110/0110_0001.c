@@ -13,7 +13,7 @@ void ord_dep(int x1[][20][20], int x2[][20][20], int x3[][20][20])
 {
 
   int const n=20;
-  int i, j, k, foo();
+  int i, j, k;
   int a[n][n][n], b[n][n][n], c[n][n][n];
 
   for (k=0; k<n; k++) for (j=0; j<n; j++) for (i=0; i<n; i++) a[k][j][i] = 9999;
@@ -45,7 +45,7 @@ void ord_dep(int x1[][20][20], int x2[][20][20], int x3[][20][20])
 void ord_dep_seq(int x1[][20][20], int x2[][20][20], int x3[][20][20])
 {
   int const n=20;
-  int i, j, k, foo();
+  int i, j, k;
   int a[n][n][n], b[n][n][n], c[n][n][n];
 
   for (k=0; k<n; k++) for (j=0; j<n; j++) for (i=0; i<n; i++) a[k][j][i] = 9999;

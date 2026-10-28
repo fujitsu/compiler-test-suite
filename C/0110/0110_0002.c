@@ -12,7 +12,7 @@ int foo(int i, int j, int k)
 void ord_dep(int n, int a[][n][n], int b[][n][n], int c[][n][n])
 {
 
-  int i, j, k, foo(), lb,ub,st;
+  int i, j, k, lb,ub,st;
 
   st = 1;
   lb = 4;
@@ -40,7 +40,7 @@ void ord_dep(int n, int a[][n][n], int b[][n][n], int c[][n][n])
 void ord_dep_seq(int n, int a[][n][n], int b[][n][n], int c[][n][n])
 {
 
-  int i, j, k, foo(), lb,ub,st;
+  int i, j, k, lb,ub,st;
 
   st = 1;
   lb = 4;
