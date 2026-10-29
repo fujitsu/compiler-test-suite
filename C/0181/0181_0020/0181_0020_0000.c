@@ -2,19 +2,18 @@
 
 
 
- 
-extern int func();
-#if MULTI_SEC 
-extern int func2();
-#endif 
-extern int printf(const char *, ...);
-
-enum enum1 {
+ enum enum1 {
   e0,
   e1,
   e2,
   e_last = 10
 };
+
+extern int func();
+#if MULTI_SEC 
+extern int func2(enum enum1 *);
+#endif 
+extern int printf(const char *, ...);
 
 int main() {
   int i;
