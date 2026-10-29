@@ -20,7 +20,7 @@
 
 
   short int func06(short int *************);
-  int func0701(int (*)(), int, int);
+  int func0701(int (*)(int,int), int, int);
   int func0702(int, int);
   int func08(int *volatile *);
 
@@ -59,7 +59,7 @@ int func0702(int arg0703, int arg0704)
 
 
 
-int func0701(int (*fptr1)(), int arg0701, int arg0702)
+int func0701(int (*fptr1)(int,int), int arg0701, int arg0702)
 {
   int intf1;
 
@@ -137,7 +137,7 @@ int main()
 
 
 {
-  int (*const volatile fptr7[])() = { func0701,func0702 };
+  int (*const volatile fptr7[])(int,int) = { (int (*)(int,int))func0701,func0702 };
   int int0701,int0702,int0703;
 
   int0702 = 1;
@@ -211,7 +211,7 @@ int main()
   static int ************i09_0213 = (int ************)&i09_0212;
 
   int *const ************arrint09[3] =
-                         {&i09_0013, &i09_0113, &i09_0213};
+                         {(int *const ************)&i09_0013, (int *const ************)&i09_0113, (int *const ************)&i09_0213};
 
   i09_0001 = *************arrint09[1];
 
@@ -236,7 +236,7 @@ int main()
   char ***********c1011 = (char ***********)&c1010;
   char ************c1012 = (char ************)&c1011;
   char *volatile const *(*(*(*(*(*(*(*(*(*(*(* a)))))))))))
-                      = &c1012;
+                      = (char *volatile const *(*(*(*(*(*(*(*(*(*(*(*))))))))))))&c1012;
   char10 = **(*(*(*(*(*(*(*(*(*(*(* a)))))))))));
 
   cchck("DDP01_10",'X',char10,"( declarator ) test");

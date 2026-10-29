@@ -21,9 +21,9 @@
 
   short int func02(short int *************,
                    short int *             );
-  int func0401(int (*)(), int, int);
+  int func0401(int (*)(int,int), int, int);
   int func0402(int, int);
-  int func0501(int (*)(), int **, int **);
+  int func0501(int (*)(int *,int *), int **, int **);
   int func0502(int *, int *);
 
 
@@ -63,7 +63,7 @@ int func0402(int arg0403, int arg0404)
 
 
 
-int func0401(int fptr1(), int arg0401, int arg0402)
+int func0401(int fptr1(int,int), int arg0401, int arg0402)
 {
   int intf1;
 
@@ -97,7 +97,7 @@ int func0502(int *arg0503,
 
 
 
-int func0501( int (fptr51)(),
+int func0501( int (fptr51)(int*,int*),
               int **arg0501,
               int **arg0502   )
 {
@@ -227,7 +227,7 @@ int main()
 
 
 {
-  int (*fptr4)();
+  int (*fptr4)(int,int);
   int int0401,int0402,int0403;
 
   int0402 = 1;
@@ -242,7 +242,7 @@ int main()
 
 
 {
-  int (*fptr5)();
+  int (*fptr5)(int*,int*);
   static int int0501 = 10;
   static int int0502 = 20;
   static int *int0503;
