@@ -1,9 +1,9 @@
 #include <stdio.h>
 int gen_int(int a);
-int false[19];
+int tp_false[19];
 int main()
 {
-  int *p = false;
+  int *p = tp_false;
 
   int t1;
   int t2;
