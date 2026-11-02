@@ -68,15 +68,15 @@ CD foo() {
   c##t = op Y##t, d(c##t)
 
 #define e3a(t,T)  \
-  c##T = foo() + (true ? x##t : y##t), d(c##T);\
-  c##T = foo() - (false ? x##t : y##t), d(c##T)
+  c##T = foo() + (tp_true ? x##t : y##t), d(c##T);\
+  c##T = foo() - (tp_false ? x##t : y##t), d(c##T)
 
 #define e3(t)  \
-  c##t = foo() + (true ? X##t : Y##t), d(c##t);\
-  c##t = foo() - (false ? X##t : Y##t), d(c##t)
+  c##t = foo() + (tp_true ? X##t : Y##t), d(c##t);\
+  c##t = foo() - (tp_false ? X##t : Y##t), d(c##t)
 
-int true = 1;
-int false = 0;
+int tp_true = 1;
+int tp_false = 0;
 int main()
 {
   CF cF;
