@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <math.h>
 int gen_int(int a);
-int false[39];
+int tp_false[39];
 int main()
 {
-  int *p = false;
+  int *p = tp_false;
 
   int t1;
   int t2;
