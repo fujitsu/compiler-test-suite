@@ -18,6 +18,7 @@ set(cxx23_sources
     auto_decay_copy.cpp
     lambda_attributes.cpp
     equality_operator_rules.cpp
+    volatile_compound_ops.cpp
 
     # P2223R2
     # GCC/Clang emit warnings for backslash-newline separated by space.
