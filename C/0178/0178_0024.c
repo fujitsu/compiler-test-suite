@@ -65,7 +65,7 @@ __attribute__ ((aligned(1))) union u5
 	__attribute__ ((aligned(8))) float _Complex complex_var;
 } union_u5={.complex_var = 155.25f + 63.25fi};
 
-typedef enum { false, true } __attribute__ ((packed)) bool;
+typedef enum { tp_false, tp_true } __attribute__ ((packed)) tp_bool;
 
 int main()
 {
