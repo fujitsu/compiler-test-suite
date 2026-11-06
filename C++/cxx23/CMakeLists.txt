@@ -19,6 +19,7 @@ set(cxx23_sources
     lambda_attributes.cpp
     equality_operator_rules.cpp
     volatile_compound_ops.cpp
+    warning_directive.cpp
 
     # P2223R2
     # GCC/Clang emit warnings for backslash-newline separated by space.
@@ -59,6 +60,16 @@ foreach(src ${cxx23_sources})
   set_property(SOURCE ${src}
                APPEND PROPERTY COMPILE_OPTIONS "-std=c++23" "-Wall" "-Wextra")
 endforeach()
+
+# P2437R1
+# Keep #warning as a warning even when -Werror is enabled.
+if(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  set_property(SOURCE warning_directive.cpp
+               APPEND PROPERTY COMPILE_OPTIONS "-Wno-error=#warnings")
+elseif(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+  set_property(SOURCE warning_directive.cpp
+               APPEND PROPERTY COMPILE_OPTIONS "-Wno-error=cpp")
+endif()
 
 set(Source ${cxx23_sources})
 
