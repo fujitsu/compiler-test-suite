@@ -50,6 +50,9 @@ read(m1,*) jj;if(jj/=6)write(6,*) "NG"
 read(m1,*) jj;if(jj/=30)write(6,*) "NG"
 read(m1,*) jj;if(jj/=6)write(6,*) "NG"
 end do
+do m1=11,30
+close(unit=m1, status='delete')
+end do
 print *,'pass'
 contains
 
