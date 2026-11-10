@@ -112,7 +112,6 @@ if (obj4(4)%ii /= 10) print *,116
 if (size(obj4(4)%cptr) /= 4) print *,117
 if (len(obj4(4)%cptr) /= 3) print *,119
 if (associated(obj4(4)%rr)) print *,120
-if (any(obj4(4)%rr /= [555.55,555.55,555.55]))print *,122,obj4(4)%rr
 if (obj4(4)%ll .neqv. .true.) print *,123
 if (obj4(4)%dd /= 9999.99) print *,124, obj4(4)%dd
 if (associated(obj1%p5)  .neqv. .true.) print*,906
