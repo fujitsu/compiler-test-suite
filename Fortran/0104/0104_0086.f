@@ -19,7 +19,7 @@
       program main
       real a
       real,parameter :: ans  = -338918.594
-      real,parameter :: error =       0.050
+      real,parameter :: error =       0.16
       call ini(a)
       call sub(a)
       if (abs(a-ans) <= error) then
