@@ -8,7 +8,7 @@
 
 void *p;
 
-static ATTR(noinline) ATTR(always_inline) int max(int x, int y)
+static ATTR(noinline) int max(int x, int y)
 {
 #ifdef __GNUC__
   p = __builtin_return_address(0);
