@@ -8,18 +8,19 @@
         end
         subroutine sub2(a,s,n)
         implicit none
-        integer n,i
+        integer n,i,k
         real*16 a(n),s(n)
+        i=1
         call inn
         contains
           subroutine  inn
-          do i=1,n/2
+          do k=1,n/2
             a(i)=s(i)-1
             call inn2
           end do
           end subroutine
           subroutine  inn2
-          i=i+1
+          i=i+2
           end subroutine
         end
         subroutine sub3(a,s,n)

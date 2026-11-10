@@ -13,9 +13,11 @@
       a%j=-1
 
       G5=0
-      DO  G=-2,-7,-2
+      G=-2
+      DO  I=1,3
         G5=G5+5
         GPL6L=G+a%i+a%j
+        G=G-2
       END DO
 
       if (GPL6L.ne.-17) then

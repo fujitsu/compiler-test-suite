@@ -51,10 +51,10 @@
       cal(6)=sum
 
       sum=0
-      p=loc(i)
+      p=loc(j)
       do 700 i=1, 10
-         x=m(i)
-         sum=sum+i
+         x=m(2*i-1)
+         sum=sum+x
   700 continue
       cal(7)=sum
 
