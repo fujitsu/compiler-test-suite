@@ -23,8 +23,8 @@ if (any(ubound(A)/=[2,4,7])) print *,202
 if (any(lbound(A)/=[1,2,4])) print *,203
 if (size(A)/=size(b)) print *,204
 if (size(A)/=24     ) print *,205
-ASSOCIATE(P=>B,Y=>C)
 C(K1:K2,K2:K4,K4:K5,K6:K7) => B(:,:) 
+ASSOCIATE(P=>B,Y=>C)
 if (any([Y]/=[(k,k=1,24)])) print *,201,A
 end associate
 if (any(ubound(C)/=[2,4,5,7])) print *,202
