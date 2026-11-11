@@ -2,6 +2,7 @@
 #include <iterator>
 #include <numeric>
 #include <initializer_list>
+#include <algorithm>
 
 template<class T>
 struct X{
@@ -9,17 +10,18 @@ struct X{
   typedef T* iterator;
   typedef const T* const_iterator;
   
-  std::initializer_list<value_type> elem_;
+  value_type elem_[3];
 
-  X(std::initializer_list<value_type> x): elem_(x){
+  X(std::initializer_list<value_type> x){
+  std::copy(x.begin(), x.end(), elem_);
   }
 
   const_iterator begin(void) const{
-    return elem_.begin();
+    return elem_;
   }
 
   const_iterator end(void) const{
-    return elem_.end();
+    return elem_ + 3;
   }
 };
 

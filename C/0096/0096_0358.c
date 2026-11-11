@@ -2,7 +2,7 @@
 
 int main() {
 int ar[4];
-int a=0,b,c,d,e,i,s,aa;
+int a=0,b,c,d=0,e=0,i,s,aa;
   printf("***  test start ***\n");
   for(i=0;i<4;i++) {
     aa=a;
