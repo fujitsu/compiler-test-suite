@@ -34,7 +34,7 @@ void init(float * dest, float * src, float * src2, float * res, float (*func)(fl
 }
 #endif
 
-void test(float * restrict dest, float * restrict src, int * restrict src2) {
+void test(float * restrict dest, float * restrict src, float * restrict src2) {
   int i;
   for(i = 0;i < N;i++ ) {
     dest[i] = powf(src[i],src2[i]);
