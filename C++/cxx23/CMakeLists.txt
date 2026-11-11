@@ -22,6 +22,7 @@ set(cxx23_sources
     warning_directive.cpp
     wide_character_literals.cpp
     label_at_end_of_block.cpp
+    delimited_escape_sequence.cpp
 
     # P2223R2
     # GCC/Clang emit warnings for backslash-newline separated by space.
