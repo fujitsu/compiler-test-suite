@@ -21,6 +21,7 @@ set(cxx23_sources
     volatile_compound_ops.cpp
     warning_directive.cpp
     wide_character_literals.cpp
+    label_at_end_of_block.cpp
 
     # P2223R2
     # GCC/Clang emit warnings for backslash-newline separated by space.
