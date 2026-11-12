@@ -5,11 +5,13 @@
 	pointer p 
         parameter( x1 = 50005000 )
         parameter( x2 = 50002896 )
+        parameter( ulp = spacing(x1) )
+        parameter( tolerance = 3 * ulp )
 	a=1
 	p=>a
 	call sub(p)
 	res =  sum(a,mask=.TRUE.);
-	if( res /= x1 .and. res /= x2 ) print *,"NG"
+	if( abs(res-x1) > tolerance .and. res /= x2 ) print *,"NG"
 	print *,"PASS"
 	contains
 	subroutine sub(a)

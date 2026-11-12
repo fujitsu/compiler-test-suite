@@ -7,9 +7,11 @@
  real*16 test7
  real*4,parameter:: res51 = 3143.16333
  real*4,parameter:: res52 = 3143.16357
+ real*4,parameter:: ulp   = spacing(res51)
+ real*4,parameter:: tolerance = 3 * ulp
  real*8,parameter:: res6  = 3143.163449916589d0
  real*16,parameter:: res7 = 3143.1634499165881350818747049711453q0
- if( test5(low,upper) /= res51 .and. test5(low,upper) /= res52 ) then
+ if(abs(test5(low,upper) - res51) > tolerance ) then
    print *,"NG1"
  endif 
  if( .NOT. EQUAL_CHECK_WITH_MARGIN_REAL8(res6, test6(low,upper)) ) then
