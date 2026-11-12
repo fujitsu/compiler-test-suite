@@ -1,10 +1,10 @@
 module m0
-    procedure(sin),pointer ::p=>f
 interface
   pure function f(r)
   intent(in)::r
   end function
 end interface
+    procedure(f),pointer ::p=>f
 end
 
 pure subroutine sub(a)
