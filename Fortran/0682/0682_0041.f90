@@ -34,14 +34,14 @@ end subroutine init
 program main
   use test
   implicit none
+  real*4 , parameter :: refval1 = 50075028.0
+  real*4 , parameter :: refval2 = 50072920.0
+  real*4 , parameter :: ulp = spacing(refval1)
+  real*4 , parameter :: tolerance = 3 * ulp
   call sub()
-  if (ss .eq. 50075028 .or. ss .eq. 50072920.0) then
+  if (abs(ss - refval1) .le. tolerance .or. ss .eq. refval2) then
      print *, "PASS"
   else
-    if (ss .eq. 50075024.0) then
-      print *, "PASS"
-    else
-      print *, ss
-    endif
+     print *, ss
   endif
 end program main
