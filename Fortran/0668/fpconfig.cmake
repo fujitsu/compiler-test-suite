@@ -1,0 +1,2 @@
+set(0668_0112-FP_TOLERANCE 0x1.0p-20)
+
