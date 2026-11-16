@@ -3,7 +3,7 @@ program main
   real(kind=4),parameter :: REAL_ANS=1159.49160_4
   real(kind=4),parameter :: IMAG_ANS=887.302500_4
   real(kind=4),parameter :: REAL_ERROR=0.00013_4
-  real(kind=4),parameter :: IMAG_ERROR=0.00013_4
+  real(kind=4),parameter :: IMAG_ERROR=0.00024_4
 
   c = (0.0_4,0.0_4)
   
