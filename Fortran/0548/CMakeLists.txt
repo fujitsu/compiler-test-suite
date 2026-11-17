@@ -17,6 +17,9 @@ set(openmp_tests
   0548_0088
   0548_0089
 )
+if(CMAKE_Fortran_COMPILER_ID STREQUAL "GNU")
+  llvm_singlesource_compile_only_file(0548_0070.f03 PREFIX "Fujitsu-Fortran-")
+endif()
 llvm_singlesource_fujitsu(PREFIX "Fujitsu-Fortran-")
 llvm_set_own_fortran_module_directory()
 if(TEST_SUITE_FUJITSU_ENABLE_${llvm_test_lang}_NON_OPENMP)
