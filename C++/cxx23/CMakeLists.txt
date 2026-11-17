@@ -24,6 +24,7 @@ set(cxx23_sources
     label_at_end_of_block.cpp
     delimited_escape_sequence.cpp
     named_unicode_escape.cpp
+    relaxed_constexpr.cpp
 
     # P2223R2
     # GCC/Clang emit warnings for backslash-newline separated by space.
