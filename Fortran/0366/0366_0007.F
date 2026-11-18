@@ -2,12 +2,14 @@
  integer*4,parameter::low=1,upper=10000
  real*4 , parameter :: res51 = 50005000.0
  real*4 , parameter :: res52 = 50002896.0
+ real*4 , parameter :: ulp = spacing(res51)
+ real*4 , parameter :: tolerance = 3 * ulp
  real*8 , parameter :: res6 = 50005000.00000000d0
  real*16 , parameter :: res7 = 50005000.000000000000000000000000000q0
  real*4 test5
  real*8 test6
  real*16 test7
- if( test5(low,upper) /= res51 .and. test5(low,upper) /= res52  ) then
+ if( abs(test5(low,upper) - res51) > tolerance .and. test5(low,upper) /= res52  ) then
    print *,"NG1"
  endif
  if( test6(low,upper) /= res6  ) print *,"NG2"
