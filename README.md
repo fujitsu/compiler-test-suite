@@ -44,7 +44,4 @@ As of the 2026-06 release, the Fujitsu Compiler Test Suite lacks following thing
 
 
 ## Contact
-For general communication, suggestions, or proposals, please open an issue on GitHub.  
-If local/private communication is required, please contact us by email:  
-contact-compiler-test-suite@cs.jp.fujitsu.com
-
+For general communication, suggestions, or proposals, please open an issue on GitHub.
