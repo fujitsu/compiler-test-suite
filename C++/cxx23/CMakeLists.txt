@@ -26,6 +26,7 @@ set(cxx23_sources
     named_unicode_escape.cpp
     relaxed_constexpr.cpp
     constexpr_unknown_pointer.cpp
+    static_call_operator.cpp
 
     # P2223R2
     # GCC/Clang emit warnings for backslash-newline separated by space.
