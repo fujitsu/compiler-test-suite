@@ -1,0 +1,11 @@
+--- ../org_CMakeLists.txt	2025-10-06 18:14:23.000000000 +0900
++++ ../CMakeLists.txt	2025-10-09 19:17:32.000000000 +0900
+@@ -395,7 +395,7 @@
+ if(TEST_SUITE_COLLECT_CODE_SIZE)
+   list(APPEND LIT_MODULES codesize)
+ endif()
+-list(APPEND LIT_MODULES hash)
++#list(APPEND LIT_MODULES hash)
+ if(TEST_SUITE_COLLECT_COMPILE_TIME)
+   list(APPEND LIT_MODULES compiletime)
+ endif()
