@@ -11,6 +11,8 @@
 
 int main()
 {
+    // Clang currently supports only the f16 suffix among those tested here,
+    // while GCC also supports f32, f64, and f128.
 #if defined(__clang__)
     constexpr auto f16 = 1.5f16;
 
