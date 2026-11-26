@@ -27,6 +27,7 @@ set(cxx23_sources
     relaxed_constexpr.cpp
     constexpr_unknown_pointer.cpp
     static_call_operator.cpp
+    extended_floating_types.cpp
 
     # P2223R2
     # GCC/Clang emit warnings for backslash-newline separated by space.
