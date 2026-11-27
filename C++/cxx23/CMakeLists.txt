@@ -64,6 +64,15 @@ set(cxx23_sources
             )
     endif()
 
+    # P2582R1
+    # Clang does not yet support this C++23 feature.
+    # Run only on GCC.
+    if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+        list(APPEND cxx23_sources
+            ctad_inherited_constructor.cpp
+            )
+    endif()
+
 foreach(src ${cxx23_sources})
   set_property(SOURCE ${src}
                APPEND PROPERTY COMPILE_OPTIONS "-std=c++23" "-Wall" "-Wextra")
